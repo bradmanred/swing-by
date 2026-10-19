@@ -1,5 +1,7 @@
 import * as maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
+// MapLibre loads its worker as a separate file, so the bundler has to ship it and tell MapLibre where it is.
+import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?url';
 import type { ClientPark } from '../lib/card';
 import type { MapView } from './finder';
 
@@ -19,6 +21,7 @@ function circle(lat: number, lng: number, metres: number) {
 
 export function createMap(el: HTMLElement, onPick: (id: string) => void): MapView | null {
   let map: maplibregl.Map;
+  maplibregl.setWorkerUrl(workerUrl);
   try {
     el.innerHTML = '';
     map = new maplibregl.Map({ container: el, style: STYLE, center: [-0.336, 51.752], zoom: 12, cooperativeGestures: true });
@@ -70,4 +73,36 @@ export function createMap(el: HTMLElement, onPick: (id: string) => void): MapVie
     },
   };
   return view;
+}
+
+export type Spot = { lat: number; lng: number; label: string; kind: 'park' | 'parking' | 'toilets' | 'cafe' | 'transport' | 'other' | 'nearby'; href?: string };
+
+const BADGE: Record<Spot['kind'], string> = { park: '🛝', parking: 'P', toilets: 'WC', cafe: '☕', transport: '⇄', other: '★', nearby: '🛝' };
+
+/** A close-up map of one playground. The basemap already shows car parks, toilets and cafés from OpenStreetMap. */
+export function createSpotMap(el: HTMLElement, spots: Spot[]) {
+  maplibregl.setWorkerUrl(workerUrl);
+  let map: maplibregl.Map;
+  try {
+    el.innerHTML = '';
+    map = new maplibregl.Map({ container: el, style: STYLE, center: [spots[0].lng, spots[0].lat], zoom: 16, cooperativeGestures: true });
+  } catch {
+    el.innerHTML = '<p class="nojs">Your browser can\'t show the map. Use the directions link instead.</p>';
+    return;
+  }
+  map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
+  map.getCanvas().setAttribute('aria-label', 'Map. Use arrow keys to move and plus or minus to zoom.');
+  const bounds = new maplibregl.LngLatBounds([spots[0].lng, spots[0].lat], [spots[0].lng, spots[0].lat]);
+  spots.forEach((s, i) => {
+    const node = document.createElement(s.href ? 'a' : 'div');
+    node.className = `spot spot-${s.kind}`;
+    node.innerHTML = `<span aria-hidden="true">${BADGE[s.kind]}</span>`;
+    if (s.href) (node as HTMLAnchorElement).href = s.href;
+    else node.setAttribute('role', 'img');
+    node.setAttribute('aria-label', s.label);
+    node.title = s.label;
+    new maplibregl.Marker({ element: node, anchor: i === 0 ? 'bottom' : 'center' }).setLngLat([s.lng, s.lat]).addTo(map);
+    if (s.kind !== 'nearby') bounds.extend([s.lng, s.lat]);
+  });
+  if (spots.some((s, i) => i > 0 && s.kind !== 'nearby')) map.fitBounds(bounds, { padding: 70, maxZoom: 17, duration: 0 });
 }

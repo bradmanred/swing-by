@@ -1,6 +1,6 @@
 // Accessibility and smoke tests: run with `npm test` after `npm run build`.
 import { createServer } from 'node:http';
-import { readFile, stat } from 'node:fs/promises';
+import { readFile, readdir, stat } from 'node:fs/promises';
 import { extname, join, normalize } from 'node:path';
 import { chromium } from 'playwright';
 import { AxeBuilder } from '@axe-core/playwright';
@@ -30,6 +30,9 @@ const fail = (msg) => {
   failures++;
   console.error('✗', msg);
 };
+
+// MapLibre loads its worker from a separate file; without it the map stays blank.
+if (!(await readdir('dist/_astro')).some((f) => f.startsWith('maplibre-gl-worker'))) fail('map worker file missing from the build');
 
 try {
   for (const width of [1280, 375]) {
