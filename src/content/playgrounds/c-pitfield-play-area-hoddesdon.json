@@ -1,0 +1,31 @@
+{
+  "name": "Pitfield Play Area",
+  "region": "herts",
+  "area": "Hoddesdon",
+  "lat": 51.77725,
+  "lng": -0.00411,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "rb",
+    "cl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Play area with swings, roundabouts, rockers and a climbing frame, for ages 3 to 10.",
+  "nearby": [],
+  "operator": "Borough of Broxbourne Council",
+  "sources": [
+    {
+      "label": "Borough of Broxbourne Council: Pitfield Play Area",
+      "url": "https://www.broxbourne.gov.uk/directory-record/630602/pitfield"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}

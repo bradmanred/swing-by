@@ -1,0 +1,36 @@
+{
+  "name": "Haldens Park Play Area",
+  "region": "herts",
+  "area": "Welwyn Garden City",
+  "lat": 51.81494,
+  "lng": -0.19022,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl"
+  ],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "largePlayArea": true,
+  "description": "Enclosed play area with junior and toddler swings, three spring animals, a balancing beam and climbing frame with slide, in open space with a basketball court, football, teenage shelter, climbing track and ball wall.",
+  "nearby": [],
+  "operator": "Welwyn Hatfield Borough Council",
+  "sources": [
+    {
+      "label": "Welwyn Hatfield Borough Council: Haldens Park Play Area",
+      "url": "https://www.welhat.gov.uk/directory-record/26971/haldens-park-play-area"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}

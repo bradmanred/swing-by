@@ -1,0 +1,33 @@
+{
+  "name": "Fishers Close Play Area",
+  "region": "herts",
+  "area": "Waltham Cross",
+  "lat": 51.68478,
+  "lng": -0.01587,
+  "ages": [
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "sw",
+    "rb",
+    "sl",
+    "cl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Play area with swings, roundabouts, a slide, rockers and a climbing frame and a goal-end, for ages 3 to teenage.",
+  "nearby": [],
+  "operator": "Borough of Broxbourne Council",
+  "sources": [
+    {
+      "label": "Borough of Broxbourne Council: Fishers Close Play Area",
+      "url": "https://www.broxbourne.gov.uk/directory-record/630581/fishers-close"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}

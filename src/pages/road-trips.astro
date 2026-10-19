@@ -1,0 +1,39 @@
+---
+import Base from '../layouts/Base.astro';
+import { allParks, km, L } from '../lib/parks';
+import { fmtMiles } from '../lib/card';
+import junctionsFile from '../data/junctions.json';
+
+const parks = await allParks();
+// About 5 minutes' drive off the junction: 3 miles in a straight line.
+const RADIUS_KM = 4.8;
+const rows = junctionsFile.junctions.map((j) => ({
+  j,
+  near: parks
+    .map((p) => ({ p, d: km(j, p) }))
+    .filter((x) => x.d <= RADIUS_KM)
+    .sort((a, b) => Number(b.p.facilities.includes('wc')) - Number(a.p.facilities.includes('wc')) || a.d - b.d)
+    .slice(0, 3),
+}));
+---
+<Base title="Road trips" current="/road-trips/" description="Playgrounds within about 5 minutes of motorway and major road junctions.">
+  <h1>Break a long drive</h1>
+  <p style="max-width:60ch">Playgrounds within about 5 minutes of a motorway or major road junction, with toilets listed first. Distances are in a straight line from the junction, so check the route before you leave the motorway.</p>
+  <ul class="cards">
+    {rows.map(({ j, near }) => (
+      <li class="card">
+        <div class="body">
+          <h2 style="font-size:1.75rem">{j.name}</h2>
+          <p>{j.serves}</p>
+          {near.length ? (
+            <ul class="facts">
+              {near.map(({ p, d }) => (
+                <li><a href={`/playgrounds/${p.id}/`}>{p.name}</a>, {fmtMiles(d)}{p.facilities.includes('wc') && ', toilets'}{!p.checked && ' (Unverified)'}</li>
+              ))}
+            </ul>
+          ) : <p class="hint">We haven't found a playground within 5 minutes of this junction yet.</p>}
+        </div>
+      </li>
+    ))}
+  </ul>
+</Base>

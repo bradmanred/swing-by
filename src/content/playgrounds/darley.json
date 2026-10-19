@@ -1,0 +1,45 @@
+{
+  "name": "Darley Park Play Area",
+  "region": "derbyshire",
+  "area": "Darley Abbey, Derby",
+  "lat": 52.9405,
+  "lng": -1.48,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl"
+  ],
+  "access": [
+    "sf"
+  ],
+  "facilities": [
+    "fen",
+    "fp"
+  ],
+  "opens": "24h",
+  "description": "",
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "Free car park, Darley Park Drive",
+      "free": true
+    },
+    {
+      "type": "cafe",
+      "label": "Tea rooms"
+    },
+    {
+      "type": "other",
+      "label": "Riverside walk"
+    }
+  ],
+  "sources": [],
+  "checked": null,
+  "notConfirmed": "",
+  "photo": null
+}

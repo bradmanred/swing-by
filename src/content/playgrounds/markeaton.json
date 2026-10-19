@@ -1,0 +1,56 @@
+{
+  "name": "Markeaton Park Playground",
+  "region": "derbyshire",
+  "area": "Derby",
+  "lat": 52.93,
+  "lng": -1.511,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "zw",
+    "sp",
+    "wp",
+    "ad"
+  ],
+  "access": [
+    "inc",
+    "sf"
+  ],
+  "facilities": [
+    "wc",
+    "bc",
+    "cf",
+    "fen"
+  ],
+  "opens": "08:00",
+  "description": "",
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "Pay & display car park"
+    },
+    {
+      "type": "cafe",
+      "label": "Café"
+    },
+    {
+      "type": "toilets",
+      "label": "Toilets"
+    },
+    {
+      "type": "other",
+      "label": "Boating lake (seasonal)"
+    }
+  ],
+  "sources": [],
+  "checked": null,
+  "notConfirmed": "",
+  "photo": null
+}

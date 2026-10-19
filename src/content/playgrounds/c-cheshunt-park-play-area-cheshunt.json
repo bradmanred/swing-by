@@ -1,0 +1,34 @@
+{
+  "name": "Cheshunt Park Play Area",
+  "region": "herts",
+  "area": "Cheshunt",
+  "lat": 51.71628,
+  "lng": -0.04868,
+  "ages": [
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "sw",
+    "rb",
+    "sl",
+    "cl",
+    "sk"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Park playground with swings, roundabouts, a slide, rockers and a climbing frame, a multi-use games area and a skate park, for ages 3 to teenage, with parking.",
+  "nearby": [],
+  "operator": "Borough of Broxbourne Council",
+  "sources": [
+    {
+      "label": "Borough of Broxbourne Council: Cheshunt Park Play Area",
+      "url": "https://www.broxbourne.gov.uk/directory-record/630578/cheshunt-park"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}

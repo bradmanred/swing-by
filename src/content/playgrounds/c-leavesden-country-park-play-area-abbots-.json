@@ -1,0 +1,35 @@
+{
+  "name": "Leavesden Country Park Play Area",
+  "region": "herts",
+  "area": "Abbots Langley",
+  "lat": 51.70203,
+  "lng": -0.40599,
+  "ages": [
+    "under-3",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "rb"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "A large play space with a tower, slide, crawling tunnels, flying carpet swing, toddler and basket swings, disc roundabout, aeroplane climber and junior multi-play, with Woodlands Café and toilets in the country park.",
+  "nearby": [],
+  "operator": "Three Rivers District Council",
+  "sources": [
+    {
+      "label": "Three Rivers District Council: Leavesden Country Park Play Area",
+      "url": "https://www.threerivers.gov.uk/services/leisure-parks-culture/play-areas/abbots-langley-play-area"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}

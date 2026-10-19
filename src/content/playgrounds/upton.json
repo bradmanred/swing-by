@@ -1,0 +1,40 @@
+{
+  "name": "Upton Park Play Area",
+  "region": "devon",
+  "area": "Torquay",
+  "lat": 50.468,
+  "lng": -3.532,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "sp"
+  ],
+  "access": [
+    "sf"
+  ],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "24h",
+  "description": "",
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "Pay & display, Lymington Road"
+    },
+    {
+      "type": "cafe",
+      "label": "Cafés in Castle Circus"
+    }
+  ],
+  "sources": [],
+  "checked": null,
+  "notConfirmed": "",
+  "photo": null
+}

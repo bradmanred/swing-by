@@ -1,0 +1,44 @@
+{
+  "name": "King George Recreation Ground Play Area and Splash Park",
+  "region": "herts",
+  "area": "Bushey",
+  "lat": 51.64252,
+  "lng": -0.35103,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "cl",
+    "zw",
+    "sl",
+    "sw",
+    "rb",
+    "wp"
+  ],
+  "access": [
+    "inc",
+    "sf"
+  ],
+  "facilities": [
+    "wc",
+    "cf",
+    "fp"
+  ],
+  "opens": "",
+  "largePlayArea": true,
+  "description": "Inclusive play destination for ages 2 to 12 with a pyramid net, double cableway, multi-units with slides, swings and a wheelchair-accessible roundabout, teen climbing, and a seasonal tropical island splash park, with toilets and a café.",
+  "nearby": [],
+  "operator": "Hertsmere Borough Council",
+  "sources": [
+    {
+      "label": "Hertsmere Borough Council: King George Recreation Ground Play Area and Splash Park",
+      "url": "https://www.parksherts.co.uk/parks/king-george-recreation-ground/"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Opening hours, toilets and parking.",
+  "photo": null
+}

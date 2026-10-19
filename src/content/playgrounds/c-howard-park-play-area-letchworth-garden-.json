@@ -1,0 +1,29 @@
+{
+  "name": "Howard Park Play Area",
+  "region": "herts",
+  "area": "Letchworth Garden City",
+  "lat": 51.97976,
+  "lng": -0.22427,
+  "ages": [],
+  "equipment": [
+    "wp"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "Play areas in a central park with a summer paddling pool and splash fountains, public toilets and a refreshment kiosk.",
+  "nearby": [],
+  "operator": "North Herts Council",
+  "sources": [
+    {
+      "label": "North Herts Council: Howard Park Play Area",
+      "url": "https://www.north-herts.gov.uk/howard-park-and-gardens"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}

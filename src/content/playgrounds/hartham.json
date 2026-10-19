@@ -1,0 +1,46 @@
+{
+  "name": "Hartham Common Play Areas",
+  "region": "herts",
+  "area": "Hertford",
+  "lat": 51.799,
+  "lng": -0.075,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "rb",
+    "sp",
+    "wp",
+    "sk"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Two play areas. The younger children's one has swings, a roundabout, a sandpit with water play in summer, a Viking swing and two bird-nest towers joined by a rope tunnel, with slides and rope ladders. The older children's one has a Freerider swing, rotators and a climbing boulder. Skate park by the main entrance.",
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "Public car parks nearby (charges apply; see East Herts Council)"
+    },
+    {
+      "type": "other",
+      "label": "Hartham Leisure Centre with swimming pool"
+    }
+  ],
+  "operator": "East Herts Council",
+  "sources": [
+    {
+      "label": "East Herts council: Hartham Common play areas",
+      "url": "https://www.eastherts.gov.uk/sports-leisure-parks/local-parks-open-spaces-0/parks-open-spaces-hertford/hartham-common-park-play-areas"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Toilets, café, accessibility and opening hours.",
+  "photo": null
+}

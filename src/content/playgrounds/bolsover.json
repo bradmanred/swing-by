@@ -1,0 +1,57 @@
+{
+  "name": "Bolsover Castle Play Area",
+  "region": "derbyshire",
+  "area": "Bolsover",
+  "lat": 53.2312,
+  "lng": -1.2958,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "bc",
+    "cf",
+    "fp"
+  ],
+  "opens": "",
+  "description": "Wooden play area built like a mini Bolsover Castle, with swings, a slide, battlements and towers, right outside the café. The grounds are uneven and there are sheer drops outside the castle walls, so keep little ones close.",
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "Free parking in Bolsover, including the castle car park",
+      "free": true
+    },
+    {
+      "type": "cafe",
+      "label": "Café at the entrance, with children's portions and high chairs"
+    },
+    {
+      "type": "toilets",
+      "label": "Toilets in the visitor centre and by the Riding House; baby change"
+    }
+  ],
+  "operator": "English Heritage",
+  "membership": "eh",
+  "fee": "Paid entry for non-members",
+  "sources": [
+    {
+      "label": "English Heritage: Bolsover Castle facilities",
+      "url": "https://www.english-heritage.org.uk/link/1e5a921cd41742459e8a1ca43c9800a5.aspx"
+    },
+    {
+      "label": "English Heritage: play areas",
+      "url": "https://www.english-heritage.org.uk/visit/familydaysout/english-heritage-play-areas/"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Opening days, entry prices and age ranges.",
+  "photo": null
+}

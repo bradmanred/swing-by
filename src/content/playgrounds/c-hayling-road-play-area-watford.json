@@ -1,0 +1,34 @@
+{
+  "name": "Hayling Road Play Area",
+  "region": "herts",
+  "area": "Watford",
+  "lat": 51.62928,
+  "lng": -0.39184,
+  "ages": [
+    "under-3"
+  ],
+  "equipment": [
+    "sw",
+    "cl",
+    "rb",
+    "zw",
+    "sp"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A zip wire, climbing unit, climbing wall, sand play, maze, willow tunnel, toddler swings and inclusive basket swing, hammock and roundabout; the council says it is due for refurbishment.",
+  "nearby": [],
+  "operator": "Three Rivers District Council",
+  "sources": [
+    {
+      "label": "Three Rivers District Council: Hayling Road Play Area",
+      "url": "https://www.threerivers.gov.uk/services/leisure-parks-culture/play-areas/south-oxhey-carpenders-park-play-areas"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}

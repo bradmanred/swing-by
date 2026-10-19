@@ -1,0 +1,34 @@
+{
+  "name": "Lemonfield Drive Play Area",
+  "region": "herts",
+  "area": "Watford",
+  "lat": 51.69488,
+  "lng": -0.37661,
+  "ages": [
+    "under-3",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "rb"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "Managed by Abbots Langley Parish Council. Has inclusive play panels, junior and toddler swings, a multi-play unit and slide, a balance trail, spring rockers, a spring seesaw and a whizzer.",
+  "nearby": [],
+  "operator": "Three Rivers District Council",
+  "sources": [
+    {
+      "label": "Three Rivers District Council: Lemonfield Drive Play Area",
+      "url": "https://www.threerivers.gov.uk/services/leisure-parks-culture/play-areas/abbots-langley-play-area"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,62 @@
+{
+  "name": "Verulamium Park Playground",
+  "region": "herts",
+  "area": "St Albans",
+  "lat": 51.752,
+  "lng": -0.353,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "rb",
+    "wp"
+  ],
+  "access": [
+    "sf"
+  ],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "Roman-themed playground with about 30 features, including a five-way swing, a multi see-saw, a battering-ram group swing and two carousels, plus a toddler splash park.",
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "Pay & display, Verulamium Park car park (St Michael's Street)"
+    },
+    {
+      "type": "other",
+      "label": "Toddler splash park"
+    },
+    {
+      "type": "cafe",
+      "label": "Inn on the Park café"
+    },
+    {
+      "type": "toilets",
+      "label": "Toilets, including accessible"
+    },
+    {
+      "type": "parking",
+      "label": "Westminster Lodge car park (off Holywell Hill)"
+    }
+  ],
+  "operator": "St Albans City & District Council",
+  "sources": [
+    {
+      "label": "St Albans council: new playground",
+      "url": "https://www.stalbans.gov.uk/news/verulamium-parks-new-playground-opening"
+    },
+    {
+      "label": "ParksHerts: Verulamium Park",
+      "url": "https://parksherts.co.uk/parks/verulamium-park/"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Age ranges, slides, opening hours and baby change.",
+  "photo": null
+}

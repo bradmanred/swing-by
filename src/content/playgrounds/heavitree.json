@@ -1,0 +1,44 @@
+{
+  "name": "Heavitree Park Play Area",
+  "region": "devon",
+  "area": "Exeter",
+  "lat": 50.72,
+  "lng": -3.505,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "sp"
+  ],
+  "access": [
+    "inc",
+    "sf",
+    "sen"
+  ],
+  "facilities": [
+    "fen",
+    "sh"
+  ],
+  "opens": "08:00",
+  "description": "",
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "Free street parking nearby (check signs)",
+      "free": true
+    },
+    {
+      "type": "cafe",
+      "label": "Cafés on Fore Street"
+    }
+  ],
+  "sources": [],
+  "checked": null,
+  "notConfirmed": "",
+  "photo": null
+}

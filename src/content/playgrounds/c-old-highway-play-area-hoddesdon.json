@@ -1,0 +1,33 @@
+{
+  "name": "Old Highway Play Area",
+  "region": "herts",
+  "area": "Hoddesdon",
+  "lat": 51.76904,
+  "lng": 0.00377,
+  "ages": [
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "sw",
+    "rb",
+    "sl",
+    "cl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Play area with swings, roundabouts, a slide, rockers and a climbing frame plus a multi-use games area, for ages 3 to teenage.",
+  "nearby": [],
+  "operator": "Borough of Broxbourne Council",
+  "sources": [
+    {
+      "label": "Borough of Broxbourne Council: Old Highway Play Area",
+      "url": "https://www.broxbourne.gov.uk/directory-record/630600/old-highway"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}

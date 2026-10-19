@@ -1,0 +1,36 @@
+{
+  "name": "Barton Way Play Area",
+  "region": "herts",
+  "area": "Croxley Green",
+  "lat": 51.64981,
+  "lng": -0.44564,
+  "ages": [
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "sw",
+    "cl",
+    "rb",
+    "zw",
+    "sp",
+    "ad"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A wild play area with a sandy landscape, tree house climbing unit, zip wire, net climb and trampoline; the council page said it was being refurbished and would reopen on 26 March 2026, so equipment may have changed.",
+  "nearby": [],
+  "operator": "Three Rivers District Council",
+  "sources": [
+    {
+      "label": "Three Rivers District Council: Barton Way Play Area",
+      "url": "https://www.threerivers.gov.uk/services/leisure-parks-culture/play-areas/croxley-green-play-area"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,47 @@
+{
+  "name": "Rock Park Play Area",
+  "region": "devon",
+  "area": "Barnstaple",
+  "lat": 51.077,
+  "lng": -4.053,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "zw",
+    "sk"
+  ],
+  "access": [
+    "sf"
+  ],
+  "facilities": [
+    "wc",
+    "fen"
+  ],
+  "opens": "24h",
+  "description": "",
+  "nearby": [
+    {
+      "type": "other",
+      "label": "Riverside cycle path (Tarka Trail)"
+    },
+    {
+      "type": "parking",
+      "label": "Pay car park, Rock Park"
+    },
+    {
+      "type": "toilets",
+      "label": "Toilets"
+    }
+  ],
+  "sources": [],
+  "checked": null,
+  "notConfirmed": "",
+  "photo": null
+}

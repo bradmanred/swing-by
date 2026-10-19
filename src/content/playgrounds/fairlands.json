@@ -1,0 +1,60 @@
+{
+  "name": "Fairlands Valley Park Play Areas",
+  "region": "herts",
+  "area": "Stevenage",
+  "lat": 51.897,
+  "lng": -0.187,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "wp",
+    "ad"
+  ],
+  "access": [
+    "sf"
+  ],
+  "facilities": [
+    "wc",
+    "cf",
+    "fp"
+  ],
+  "opens": "",
+  "description": "An adventure trail and a main play area for toddlers to teens, next to the Aqua Playground water play.",
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "Four free car parks (Broadhall Way, Shephall View, Fairlands Way, Six Hills Way)",
+      "free": true
+    },
+    {
+      "type": "other",
+      "label": "Aqua Playground, summer 9.30am–5.30pm (weather permitting)"
+    },
+    {
+      "type": "cafe",
+      "label": "Costello's Café; Sailing Centre café (all year)"
+    },
+    {
+      "type": "toilets",
+      "label": "Toilets, including accessible"
+    }
+  ],
+  "operator": "Stevenage Borough Council",
+  "sources": [
+    {
+      "label": "Stevenage council: Fairlands Valley Park",
+      "url": "https://www.stevenage.gov.uk/leisure-culture-and-wellbeing/parks-and-open-spaces/fairlands-valley-park"
+    },
+    {
+      "label": "ParksHerts: Fairlands Valley Park",
+      "url": "https://www.parksherts.co.uk/parks/fairlands-valley-park/"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact equipment and opening hours. The council has posted that the splash park was temporarily closed, so check before a summer visit.",
+  "photo": null
+}

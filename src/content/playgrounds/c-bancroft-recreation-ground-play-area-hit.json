@@ -1,0 +1,31 @@
+{
+  "name": "Bancroft Recreation Ground Play Area",
+  "region": "herts",
+  "area": "Hitchin",
+  "lat": 51.95221,
+  "lng": -0.27587,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "wp"
+  ],
+  "access": [],
+  "facilities": [
+    "cf"
+  ],
+  "opens": "",
+  "description": "Play area for younger children in a town park with a summer splash pad and a café kiosk.",
+  "nearby": [],
+  "operator": "North Herts Council",
+  "sources": [
+    {
+      "label": "North Herts Council: Bancroft Recreation Ground Play Area",
+      "url": "https://www.north-herts.gov.uk/bancroft-recreation-ground"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}

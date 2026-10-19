@@ -1,0 +1,45 @@
+{
+  "name": "Morden Hall Park Natural Play",
+  "region": "london",
+  "area": "Morden",
+  "lat": 51.4025,
+  "lng": -0.1855,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "zw",
+    "sw",
+    "cl"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "bc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "Natural play area with a zip wire, play fort, stepping stones, bucket swings and climbing posts. The park is free for everyone, members or not.",
+  "nearby": [
+    {
+      "type": "cafe",
+      "label": "Potting Shed Café and Stableyard Café"
+    },
+    {
+      "type": "toilets",
+      "label": "Stableyard toilets with baby change"
+    }
+  ],
+  "operator": "National Trust (free for everyone)",
+  "sources": [
+    {
+      "label": "National Trust: things to do at Morden Hall Park",
+      "url": "https://nationaltrust.org.uk/visit/london/morden-hall-park/things-to-do-at-morden-hall-park"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Parking charges, opening hours and age ranges.",
+  "photo": null
+}

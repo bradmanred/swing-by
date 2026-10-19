@@ -1,0 +1,54 @@
+{
+  "name": "Victoria Park Playground",
+  "region": "london",
+  "area": "Hackney",
+  "lat": 51.536,
+  "lng": -0.039,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "sp",
+    "wp",
+    "rb"
+  ],
+  "access": [
+    "inc",
+    "sf",
+    "sen"
+  ],
+  "facilities": [
+    "wc",
+    "bc",
+    "cf",
+    "fen",
+    "sh"
+  ],
+  "opens": "07:00",
+  "description": "",
+  "nearby": [
+    {
+      "type": "cafe",
+      "label": "Pavilion Café"
+    },
+    {
+      "type": "toilets",
+      "label": "Toilets"
+    },
+    {
+      "type": "parking",
+      "label": "Free parking, Old Ford Road bays (4 hrs)",
+      "free": true
+    }
+  ],
+  "sources": [],
+  "checked": null,
+  "notConfirmed": "",
+  "photo": null
+}

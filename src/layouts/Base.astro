@@ -1,0 +1,54 @@
+---
+import '../styles/global.css';
+interface Props { title: string; description?: string; current?: string }
+const { title, description = 'Find a playground worth the trip. Checked against council and operator websites.', current } = Astro.props;
+const nav = [
+  ['/', 'Find'],
+  ['/road-trips/', 'Road trips'],
+  ['/memberships/', 'Memberships'],
+  ['/my-parks/', 'My parks'],
+];
+const full = title === 'Swing By' ? title : `${title} | Swing By`;
+---
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{full}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Baloo+2:wght@700;800&family=Bricolage+Grotesque:opsz,wght@12..96,800&display=swap" />
+    <slot name="head" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="logo" href="/">
+          <svg width="40" height="40" viewBox="0 0 36 36" aria-hidden="true"><path d="M5 32 L11 6 H25 L31 32" fill="none" stroke="#1E6B4F" stroke-width="3" stroke-linecap="round"/><path d="M15 6 V21 M21 6 V21" stroke="#1B2A22" stroke-width="1.6"/><rect x="13" y="21" width="10" height="3.5" rx="1.5" fill="#B5651D"/></svg>
+          <span>Swing By</span>
+        </a>
+        <nav class="nav" aria-label="Main">
+          <ul>
+            {nav.map(([href, label]) => (
+              <li><a href={href} aria-current={current === href ? 'page' : undefined}>{label}</a></li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main" tabindex="-1">
+      <div class="wrap stack"><slot /></div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>Always check equipment before children use it. If something is dangerous, report it to the council or operator that runs the playground. In an emergency, call 999.</p>
+        <p>Playground details come from council and operator websites. Places marked "Unverified" have not been checked yet. <a href="/about/">About our data</a> · <a href="/playgrounds/">All playgrounds A to Z</a></p>
+        <p>Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+{
+  "name": "Greenwich Park Playground",
+  "region": "london",
+  "area": "Greenwich",
+  "lat": 51.48,
+  "lng": -0.002,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "sp",
+    "wp"
+  ],
+  "access": [
+    "inc",
+    "sf"
+  ],
+  "facilities": [
+    "wc",
+    "bc",
+    "cf",
+    "fen"
+  ],
+  "opens": "06:00",
+  "description": "",
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "Pay car park, Blackheath Avenue"
+    },
+    {
+      "type": "toilets",
+      "label": "Toilets"
+    },
+    {
+      "type": "cafe",
+      "label": "Pavilion Café"
+    }
+  ],
+  "operator": "The Royal Parks",
+  "sources": [],
+  "checked": null,
+  "notConfirmed": "",
+  "photo": null
+}

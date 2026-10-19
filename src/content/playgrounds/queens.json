@@ -1,0 +1,48 @@
+{
+  "name": "Queen's Park Playground",
+  "region": "derbyshire",
+  "area": "Chesterfield",
+  "lat": 53.233,
+  "lng": -1.44,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "zw",
+    "wp"
+  ],
+  "access": [
+    "sf"
+  ],
+  "facilities": [
+    "wc",
+    "cf",
+    "fen"
+  ],
+  "opens": "08:00",
+  "description": "",
+  "nearby": [
+    {
+      "type": "other",
+      "label": "Miniature railway (seasonal)"
+    },
+    {
+      "type": "parking",
+      "label": "Pay car park, Boythorpe Road"
+    },
+    {
+      "type": "cafe",
+      "label": "Café"
+    }
+  ],
+  "sources": [],
+  "checked": null,
+  "notConfirmed": "",
+  "photo": null
+}

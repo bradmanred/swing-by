@@ -1,0 +1,43 @@
+{
+  "name": "Aberford Park Playground and Sensory Play Area",
+  "region": "herts",
+  "area": "Borehamwood",
+  "lat": 51.66285,
+  "lng": -0.27783,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "cl",
+    "sw",
+    "rb",
+    "zw",
+    "sk"
+  ],
+  "access": [
+    "sen",
+    "sf"
+  ],
+  "facilities": [
+    "wc",
+    "cf",
+    "fp",
+    "sh"
+  ],
+  "opens": "",
+  "largePlayArea": true,
+  "description": "A playground for under-8s with a multi-play unit, toddler and flat swings, roundabout and zip wire, plus a sensory play area for up to 12s with a basket swing, rotating dish, rope bridge and climbing wall, next to a skate park, restaurant and toilets.",
+  "nearby": [],
+  "operator": "Hertsmere Borough Council",
+  "sources": [
+    {
+      "label": "Hertsmere Borough Council: Aberford Park Playground and Sensory Play Area",
+      "url": "https://www.parksherts.co.uk/parks/aberford-park/"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Opening hours, toilets and parking.",
+  "photo": null
+}

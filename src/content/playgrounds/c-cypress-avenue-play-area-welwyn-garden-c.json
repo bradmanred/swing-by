@@ -1,0 +1,35 @@
+{
+  "name": "Cypress Avenue Play Area",
+  "region": "herts",
+  "area": "Welwyn Garden City",
+  "lat": 51.79283,
+  "lng": -0.17289,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "cl",
+    "rb"
+  ],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "largePlayArea": true,
+  "description": "Enclosed play area with toddler and junior swings, a roundabout, see-saw, a new toddler climber and a bench for parents.",
+  "nearby": [],
+  "operator": "Welwyn Hatfield Borough Council",
+  "sources": [
+    {
+      "label": "Welwyn Hatfield Borough Council: Cypress Avenue Play Area",
+      "url": "https://www.welhat.gov.uk/directory-record/26968/cypress-avenue-play-area"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}

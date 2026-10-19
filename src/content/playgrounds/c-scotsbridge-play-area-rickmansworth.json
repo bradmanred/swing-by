@@ -1,0 +1,33 @@
+{
+  "name": "Scotsbridge Play Area",
+  "region": "herts",
+  "area": "Rickmansworth",
+  "lat": 51.64296,
+  "lng": -0.46512,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "rb",
+    "zw",
+    "sp"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A landscaped playground with grassy knolls, a zip wire, trampoline, space net, gyro spiral and inclusive swings, slide, dish roundabout and sand play.",
+  "nearby": [],
+  "operator": "Three Rivers District Council",
+  "sources": [
+    {
+      "label": "Three Rivers District Council: Scotsbridge Play Area",
+      "url": "https://www.threerivers.gov.uk/services/leisure-parks-culture/play-areas/rickmansworth-moor-park-play-areas"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}
