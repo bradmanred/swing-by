@@ -5,52 +5,32 @@
   "lat": 51.4795,
   "lng": -0.157,
   "ages": [
-    "under-3",
-    "3-6",
     "7-12",
     "teens"
   ],
-  "equipment": [
-    "sw",
-    "sl",
-    "cl",
-    "zw",
-    "ad",
-    "wp"
-  ],
-  "access": [
-    "inc",
-    "sf"
-  ],
-  "facilities": [
-    "wc",
-    "bc",
-    "cf",
-    "fen",
-    "sh"
-  ],
-  "opens": "08:00",
-  "description": "",
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Free playground by the Sun Gate entrance on Albert Bridge Road (SW11 4PY), with challenging equipment aimed at children over 8. Younger children need an adult with them. It keeps the same hours as Battersea Park.",
   "nearby": [
     {
-      "type": "parking",
-      "label": "Pay car parks inside the park"
-    },
-    {
-      "type": "toilets",
-      "label": "Toilets"
-    },
-    {
-      "type": "cafe",
-      "label": "Café by the lake"
+      "type": "transport",
+      "label": "Battersea Park station; buses 44, 49, 137, 319, 344, 345 and 452"
     },
     {
       "type": "other",
-      "label": "Children's zoo"
+      "label": "Children's zoo in the park"
     }
   ],
-  "sources": [],
-  "checked": null,
-  "notConfirmed": "",
-  "photo": null
+  "sources": [
+    {
+      "label": "Wandsworth Family Information Service: Battersea Park Playground",
+      "url": "https://fis.wandsworth.gov.uk/all-services/hr-battersea-park-playground/"
+    }
+  ],
+  "checked": "2026-10-20",
+  "notConfirmed": "Exact position, equipment, opening hours, under-8s play, toilets, baby change, café and parking.",
+  "photo": null,
+  "operator": "Wandsworth Council"
 }
