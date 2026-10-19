@@ -8,7 +8,7 @@ Find a playground worth the trip. Swing By lists playgrounds with who runs them,
 - `src/data/`: counties and towns, motorway junctions, and the labels for equipment and facilities.
 - `src/pages/`: the pages (finder with map, playground pages, road trips, memberships, my parks).
 - `public/admin/`: the content editor (Decap CMS).
-- `functions/api/`: GitHub sign-in for the content editor, run by Cloudflare Pages.
+- `worker/` and `functions/api/`: GitHub sign-in for the content editor, run on Cloudflare.
 - `tests/a11y.mjs`: automated accessibility (axe, WCAG 2.2 AA) and smoke checks.
 
 ## Rules for content
@@ -30,22 +30,26 @@ npm test           # accessibility and smoke checks against dist/
 
 To use the content editor locally, run `npm run cms` in one terminal and `npm run dev` in another, then open http://localhost:4321/admin/.
 
-## Free hosting on Cloudflare Pages
+## Free hosting on Cloudflare
+
+The site runs as a Cloudflare Worker that serves the built pages (see `wrangler.jsonc`), with `worker/index.js` handling sign-in for the content editor.
 
 1. Sign up at https://dash.cloudflare.com (free).
-2. Go to Workers & Pages, create a Pages project and connect this GitHub repository.
-3. Set the build command to `npm run build`, the output folder to `dist`, and add an environment variable `NODE_VERSION` = `22`.
-4. Deploy. Your link will be `https://<project-name>.pages.dev`. If it isn't `swing-by.pages.dev`, change `site` in `astro.config.mjs` and `base_url` and `site_url` in `public/admin/config.yml` to match.
-
-Every pull request also gets its own preview link.
+2. Go to Workers & Pages, create an application, choose to import a repository and pick this one.
+3. Use these build settings:
+   - Build command: `npm run build`
+   - Deploy command: `npx wrangler deploy`
+   - Root directory: leave blank (`/`)
+   - Build variable: `NODE_VERSION` = `22`
+4. Deploy. Your link will be `https://swing-by.<your-subdomain>.workers.dev`. Change `site` in `astro.config.mjs` and `base_url` and `site_url` in `public/admin/config.yml` to match.
 
 ## Turn on the content editor online
 
 1. On GitHub, go to Settings > Developer settings > OAuth Apps > New OAuth App.
-2. Set the homepage URL to your Pages link and the callback URL to `https://<your-pages-link>/api/callback`.
+2. Set the homepage URL to your site link and the callback URL to `https://<your-site-link>/api/callback`.
 3. Copy the client ID, and generate a client secret.
-4. In the Cloudflare Pages project, under Settings > Environment variables, add `GITHUB_CLIENT_ID` and `GITHUB_CLIENT_SECRET` (mark the secret as encrypted). Redeploy.
-5. Open `https://<your-pages-link>/admin/` and sign in with GitHub. Edits are saved as pull requests for review before they go live.
+4. In the Worker's Settings > Variables and Secrets, add `GITHUB_CLIENT_ID` as a text variable and `GITHUB_CLIENT_SECRET` as a secret. Redeploy.
+5. Open `https://<your-site-link>/admin/` and sign in with GitHub. Edits are saved as pull requests for review before they go live.
 
 ## Coming next
 
