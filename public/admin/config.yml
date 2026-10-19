@@ -111,6 +111,8 @@ collections:
               - { label: "Also nearby", value: "other" }
           - { label: Details, name: label, widget: string }
           - { label: Free, name: free, widget: boolean, required: false }
+          - { label: Latitude, name: lat, widget: number, value_type: float, required: false, hint: "Optional. Adds this to the playground's map." }
+          - { label: Longitude, name: lng, widget: number, value_type: float, required: false }
       - { label: Run by, name: operator, widget: string, required: false }
       - label: Membership
         name: membership

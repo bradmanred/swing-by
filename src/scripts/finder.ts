@@ -30,6 +30,8 @@ export function startFinder() {
   const where = $<HTMLInputElement>('#where');
   where.value = st.origin.how === 'gps' ? '' : st.origin.name;
   let map: MapView | null = null;
+  // Each lookup gets a number so a slow answer (often "Near me") can't overwrite a newer search.
+  let lookup = 0;
 
   function list() {
     const mine = getMine();
@@ -101,18 +103,21 @@ export function startFinder() {
 
   $('#search').addEventListener('submit', async (e) => {
     e.preventDefault();
+    const mine = ++lookup;
     const btn = (e.target as HTMLFormElement).querySelector<HTMLButtonElement>('[type=submit]')!;
     btn.disabled = true;
     hint.classList.remove('err');
     hint.textContent = 'Looking that up…';
     try {
       const o = await resolve(where.value);
+      if (mine !== lookup) return;
       if (o) {
         setOrigin(o);
         hint.textContent = `Showing playgrounds near ${o.name}.`;
         $('#near-title').scrollIntoView({ block: 'start' });
       } else hint.textContent = 'Enter a town or postcode first.';
     } catch (err) {
+      if (mine !== lookup) return;
       hint.classList.add('err');
       hint.textContent = err instanceof Error && err.message.startsWith('We ') ? err.message : "We couldn't look that up just now. Check your connection and try again.";
     } finally {
@@ -127,19 +132,23 @@ export function startFinder() {
     }
     hint.classList.remove('err');
     hint.textContent = 'Finding you… your browser may ask for permission.';
+    const mine = ++lookup;
     navigator.geolocation.getCurrentPosition(
       async (pos) => {
+        if (mine !== lookup) return;
         const o: Origin = { name: 'your location', lat: pos.coords.latitude, lng: pos.coords.longitude, acc: pos.coords.accuracy, how: 'gps' };
         try {
           const r = await fetch(`https://api.postcodes.io/postcodes?lon=${o.lng}&lat=${o.lat}&limit=1`);
           const pc = r.ok ? (await r.json()).result?.[0]?.postcode : null;
           if (pc) o.name = pc;
         } catch {}
+        if (mine !== lookup) return;
         where.value = '';
         setOrigin(o);
         hint.textContent = `Found you, accurate to about ${Math.max(10, Math.round(o.acc / 10) * 10)} metres.`;
       },
       () => {
+        if (mine !== lookup) return;
         hint.classList.add('err');
         hint.textContent = "We couldn't get your location. Enter a town or postcode instead.";
       },
