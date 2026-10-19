@@ -1,0 +1,199 @@
+{
+  "launchOrder": [
+    "herts",
+    "london",
+    "derbyshire",
+    "devon"
+  ],
+  "regions": [
+    {
+      "id": "herts",
+      "name": "Hertfordshire",
+      "towns": [
+        {
+          "name": "St Albans",
+          "lat": 51.752,
+          "lng": -0.336
+        },
+        {
+          "name": "Watford",
+          "lat": 51.6565,
+          "lng": -0.3903
+        },
+        {
+          "name": "Hertford",
+          "lat": 51.795,
+          "lng": -0.078
+        },
+        {
+          "name": "Stevenage",
+          "lat": 51.903,
+          "lng": -0.196
+        },
+        {
+          "name": "Hemel Hempstead",
+          "lat": 51.753,
+          "lng": -0.448
+        },
+        {
+          "name": "Welwyn Garden City",
+          "lat": 51.801,
+          "lng": -0.205
+        },
+        {
+          "name": "Hatfield",
+          "lat": 51.763,
+          "lng": -0.226
+        },
+        {
+          "name": "Harpenden",
+          "lat": 51.816,
+          "lng": -0.357
+        },
+        {
+          "name": "Hitchin",
+          "lat": 51.948,
+          "lng": -0.28
+        },
+        {
+          "name": "Letchworth Garden City",
+          "lat": 51.979,
+          "lng": -0.229
+        },
+        {
+          "name": "Bishop's Stortford",
+          "lat": 51.871,
+          "lng": 0.158
+        },
+        {
+          "name": "Ware",
+          "lat": 51.811,
+          "lng": -0.028
+        },
+        {
+          "name": "Cheshunt",
+          "lat": 51.7,
+          "lng": -0.034
+        },
+        {
+          "name": "Borehamwood",
+          "lat": 51.657,
+          "lng": -0.272
+        },
+        {
+          "name": "Rickmansworth",
+          "lat": 51.64,
+          "lng": -0.473
+        },
+        {
+          "name": "Berkhamsted",
+          "lat": 51.76,
+          "lng": -0.565
+        },
+        {
+          "name": "Royston",
+          "lat": 52.048,
+          "lng": -0.024
+        }
+      ]
+    },
+    {
+      "id": "london",
+      "name": "London",
+      "towns": [
+        {
+          "name": "King's Cross",
+          "lat": 51.5308,
+          "lng": -0.1238
+        },
+        {
+          "name": "Clapham Junction",
+          "lat": 51.4643,
+          "lng": -0.1704
+        },
+        {
+          "name": "Hackney Central",
+          "lat": 51.547,
+          "lng": -0.056
+        },
+        {
+          "name": "Notting Hill Gate",
+          "lat": 51.509,
+          "lng": -0.1967
+        },
+        {
+          "name": "Greenwich",
+          "lat": 51.478,
+          "lng": -0.015
+        },
+        {
+          "name": "Brixton",
+          "lat": 51.4627,
+          "lng": -0.1145
+        }
+      ]
+    },
+    {
+      "id": "derbyshire",
+      "name": "Derbyshire",
+      "towns": [
+        {
+          "name": "Derby city centre",
+          "lat": 52.9225,
+          "lng": -1.4746
+        },
+        {
+          "name": "Chesterfield",
+          "lat": 53.235,
+          "lng": -1.421
+        },
+        {
+          "name": "Buxton",
+          "lat": 53.259,
+          "lng": -1.911
+        },
+        {
+          "name": "Matlock",
+          "lat": 53.138,
+          "lng": -1.555
+        },
+        {
+          "name": "Belper",
+          "lat": 53.024,
+          "lng": -1.482
+        }
+      ]
+    },
+    {
+      "id": "devon",
+      "name": "Devon",
+      "towns": [
+        {
+          "name": "Exeter city centre",
+          "lat": 50.7184,
+          "lng": -3.5339
+        },
+        {
+          "name": "Plymouth",
+          "lat": 50.3755,
+          "lng": -4.1427
+        },
+        {
+          "name": "Torquay",
+          "lat": 50.4619,
+          "lng": -3.5253
+        },
+        {
+          "name": "Exmouth",
+          "lat": 50.62,
+          "lng": -3.413
+        },
+        {
+          "name": "Barnstaple",
+          "lat": 51.08,
+          "lng": -4.058
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Bushey Ley Play Area",
+  "region": "herts",
+  "area": "Welwyn Garden City",
+  "lat": 51.79508,
+  "lng": -0.17805,
+  "ages": [
+    "under-3"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "rb"
+  ],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "largePlayArea": true,
+  "description": "Enclosed site on public open space with toddler swings, a three-way see-saw, roundabout and a climbing frame with slide, plus a bench for parents.",
+  "nearby": [],
+  "operator": "Welwyn Hatfield Borough Council",
+  "sources": [
+    {
+      "label": "Welwyn Hatfield Borough Council: Bushey Ley Play Area",
+      "url": "https://www.welhat.gov.uk/directory-record/26967/bushey-ley-play-area"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}

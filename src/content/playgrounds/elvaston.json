@@ -1,0 +1,42 @@
+{
+  "name": "Elvaston Castle Play Area",
+  "region": "derbyshire",
+  "area": "Elvaston",
+  "lat": 52.892,
+  "lng": -1.388,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "cl",
+    "ad",
+    "sw"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "08:00",
+  "description": "",
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "Pay & display car park"
+    },
+    {
+      "type": "cafe",
+      "label": "Café"
+    },
+    {
+      "type": "toilets",
+      "label": "Toilets"
+    }
+  ],
+  "sources": [],
+  "checked": null,
+  "notConfirmed": "",
+  "photo": null
+}

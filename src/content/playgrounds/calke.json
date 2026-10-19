@@ -1,0 +1,50 @@
+{
+  "name": "Calke Explore Natural Play, Calke Abbey",
+  "region": "derbyshire",
+  "area": "Ticknall",
+  "lat": 52.7996,
+  "lng": -1.456,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "cl",
+    "ad"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "fp"
+  ],
+  "opens": "",
+  "description": "Natural play with a human-sized badger sett to crawl into, tree trunks to balance on and fallen branches for den building. There's a short trail suitable for wheelchairs and mobility scooters.",
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "No parking charge",
+      "free": true
+    },
+    {
+      "type": "toilets",
+      "label": "Accessible toilets at Calke Explore"
+    }
+  ],
+  "operator": "National Trust",
+  "membership": "nt",
+  "fee": "Non-members pay for the park and gardens: £8.50 adult, £4.25 child (5–17), £21.25 family; under-5s free",
+  "sources": [
+    {
+      "label": "National Trust: Calke Explore",
+      "url": "https://www.nationaltrust.org.uk/calke-abbey/features/enjoy-outdoor-adventures-at-calke-explore"
+    },
+    {
+      "label": "National Trust: best natural play areas",
+      "url": "https://www.nationaltrust.org.uk/visit/family-friendly/best-natural-play-areas-for-kids"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Opening hours and age ranges. The Changing Places toilet is closed for maintenance.",
+  "photo": null
+}

@@ -1,0 +1,35 @@
+{
+  "name": "Baldwins Lane Play Area",
+  "region": "herts",
+  "area": "Croxley Green",
+  "lat": 51.65371,
+  "lng": -0.44903,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "rb",
+    "zw",
+    "ad"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "One of the council's flagship adventure playgrounds, with a zip wire, junior multi-play, suspension bridge, crawling tunnel, embankment slide, inclusive basket roundabout and swings.",
+  "nearby": [],
+  "operator": "Three Rivers District Council",
+  "sources": [
+    {
+      "label": "Three Rivers District Council: Baldwins Lane Play Area",
+      "url": "https://www.threerivers.gov.uk/services/leisure-parks-culture/play-areas/croxley-green-play-area"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}

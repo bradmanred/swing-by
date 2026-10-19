@@ -1,0 +1,28 @@
+---
+import Base from '../../layouts/Base.astro';
+import { allParks, regions } from '../../lib/parks';
+const parks = await allParks();
+---
+<Base title="All playgrounds A to Z">
+  <h1>All playgrounds A to Z</h1>
+  <p>Every playground we list, grouped by county and town. Places marked "Unverified" haven't been checked yet.</p>
+  {regions.map((r) => {
+    const inR = parks.filter((p) => p.region === r.id);
+    const areas = [...new Set(inR.map((p) => p.area))].sort((a, b) => a.localeCompare(b, 'en-GB'));
+    return (
+      <section aria-labelledby={`r-${r.id}`}>
+        <h2 id={`r-${r.id}`}>{r.name} ({inR.length})</h2>
+        {areas.map((a) => (
+          <div style="margin-top:16px">
+            <h3>{a}</h3>
+            <ul>
+              {inR.filter((p) => p.area === a).map((p) => (
+                <li><a href={`/playgrounds/${p.id}/`}>{p.name}</a>{!p.checked && ' (Unverified)'}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </section>
+    );
+  })}
+</Base>

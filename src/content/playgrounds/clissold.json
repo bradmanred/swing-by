@@ -1,0 +1,54 @@
+{
+  "name": "Clissold Park Playground",
+  "region": "london",
+  "area": "Stoke Newington",
+  "lat": 51.5615,
+  "lng": -0.088,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "sp",
+    "wp"
+  ],
+  "access": [
+    "inc",
+    "sf"
+  ],
+  "facilities": [
+    "wc",
+    "bc",
+    "cf",
+    "fen"
+  ],
+  "opens": "07:30",
+  "description": "",
+  "nearby": [
+    {
+      "type": "toilets",
+      "label": "Toilets"
+    },
+    {
+      "type": "cafe",
+      "label": "Clissold House café"
+    },
+    {
+      "type": "other",
+      "label": "Paddling pool (summer)"
+    },
+    {
+      "type": "parking",
+      "label": "Free Sunday street parking, Queen Elizabeth's Walk",
+      "free": true
+    }
+  ],
+  "sources": [],
+  "checked": null,
+  "notConfirmed": "",
+  "photo": null
+}

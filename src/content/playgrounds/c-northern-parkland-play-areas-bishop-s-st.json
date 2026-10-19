@@ -1,0 +1,35 @@
+{
+  "name": "Northern Parkland Play Areas",
+  "region": "herts",
+  "area": "Bishop's Stortford",
+  "lat": 51.86369,
+  "lng": 0.13648,
+  "ages": [
+    "under-3",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "rb"
+  ],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "Two enclosed play areas: one for younger children with swings, springers, a seesaw, roundabout, toddler multi-unit with slide and talk tubes, and one for older children with a freerider swing, teenage shelter and goal posts.",
+  "nearby": [],
+  "operator": "East Herts Council",
+  "sources": [
+    {
+      "label": "East Herts Council: Northern Parkland Play Areas",
+      "url": "https://www.eastherts.gov.uk/sports-leisure-and-parks/local-parks-and-open-spaces/parks-and-open-spaces-bishops-stortford/northern-parkland"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,35 @@
+{
+  "name": "Thorley Wedge Park Play Area",
+  "region": "herts",
+  "area": "Bishop's Stortford",
+  "lat": 51.85864,
+  "lng": 0.14458,
+  "ages": [
+    "under-3",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "rb"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "Play area with cradle, flat and basket swings, a tower slide, toddler, junior and senior multi-units, springers, an accessible roundabout, an agility trim trail, a teenage shelter and goal posts.",
+  "nearby": [],
+  "operator": "East Herts Council",
+  "sources": [
+    {
+      "label": "East Herts Council: Thorley Wedge Park Play Area",
+      "url": "https://www.eastherts.gov.uk/sports-leisure-and-parks/local-parks-and-open-spaces/parks-and-open-spaces-bishops-stortford/thorley-wedge-park-play-area"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}

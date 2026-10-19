@@ -1,0 +1,72 @@
+import { getCollection, type CollectionEntry } from 'astro:content';
+import labels from '../data/labels.json';
+import regionsFile from '../data/regions.json';
+
+export type Park = CollectionEntry<'playgrounds'>['data'] & { id: string };
+
+export const L = labels as {
+  ages: Record<string, string>;
+  equipment: Record<string, string>;
+  access: Record<string, string>;
+  facilities: Record<string, string>;
+  memberships: Record<string, string>;
+  nearby: Record<string, string>;
+  duskByMonth: string[];
+};
+
+export const regions = regionsFile.regions;
+export const regionName = (id: string) => regions.find((r) => r.id === id)?.name ?? id;
+
+export async function allParks(): Promise<Park[]> {
+  const entries = await getCollection('playgrounds');
+  return entries.map((e) => ({ ...e.data, id: e.id })).sort((a, b) => a.name.localeCompare(b.name, 'en-GB'));
+}
+
+export function km(a: { lat: number; lng: number }, b: { lat: number; lng: number }) {
+  const r = Math.PI / 180;
+  const h =
+    Math.sin(((b.lat - a.lat) * r) / 2) ** 2 +
+    Math.cos(a.lat * r) * Math.cos(b.lat * r) * Math.sin(((b.lng - a.lng) * r) / 2) ** 2;
+  return 12742 * Math.asin(Math.sqrt(h));
+}
+
+export const miles = (k: number) => {
+  const mi = k * 0.621371;
+  return mi < 0.1 ? 'Under 0.1 mi' : `${mi.toFixed(mi < 10 ? 1 : 0)} mi`;
+};
+
+export const fmtDate = (d: string) =>
+  new Date(d + 'T12:00').toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+export function hoursText(p: Park) {
+  const bits: string[] = [];
+  if (p.opens === '24h') bits.push('Open 24 hours');
+  else if (p.opens) bits.push(`Opens ${p.opens}, ${p.closes ? `closes ${p.closes}` : 'locks at dusk'}`);
+  else bits.push('Opening times not confirmed. Most parks lock at dusk.');
+  if (p.weekendsOnly) bits.push('Weekends and school holidays only.');
+  if (p.season) bits.push(`Open ${MONTHS[p.season.from - 1]} to ${MONTHS[p.season.to - 1]}.`);
+  return bits.join(' ');
+}
+
+/** Decorative icons; the text label is always shown next to them. */
+export const ICON: Record<string, string> = {
+  sw: '🛝', sl: '🛝', cl: '🧗', zw: '🚡', sp: '🏖️', wp: '💦', ad: '🏴‍☠️', rb: '🎠', tr: '🚂', sk: '🛹',
+  inc: '♿', sf: '♿', sen: '✋', wc: '🚻', bc: '🍼', cf: '☕', fen: '🚧', sh: '🌳', fp: '🅿️',
+};
+
+/** The lightweight record the finder script needs in the browser. */
+export const clientPark = (p: Park) => ({
+  id: p.id,
+  n: p.name,
+  a: p.area,
+  r: p.region,
+  lat: p.lat,
+  lng: p.lng,
+  ages: p.ages,
+  f: [...p.equipment, ...p.access, ...p.facilities],
+  c: p.checked,
+  m: p.membership ?? null,
+  d: p.description.slice(0, 140),
+});

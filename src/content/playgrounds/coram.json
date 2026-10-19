@@ -1,0 +1,52 @@
+{
+  "name": "Coram's Fields",
+  "region": "london",
+  "area": "Bloomsbury",
+  "lat": 51.524,
+  "lng": -0.1199,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "sp",
+    "zw",
+    "ad"
+  ],
+  "access": [
+    "sf"
+  ],
+  "facilities": [
+    "wc",
+    "bc",
+    "cf",
+    "fen"
+  ],
+  "opens": "09:00",
+  "description": "",
+  "rules": "Adults can only go in with a child.",
+  "nearby": [
+    {
+      "type": "cafe",
+      "label": "Café on site"
+    },
+    {
+      "type": "transport",
+      "label": "Russell Square station"
+    },
+    {
+      "type": "parking",
+      "label": "Paid street parking only"
+    }
+  ],
+  "operator": "Coram's Fields (charity)",
+  "sources": [],
+  "checked": null,
+  "notConfirmed": "",
+  "photo": null
+}

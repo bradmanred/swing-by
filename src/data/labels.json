@@ -1,0 +1,59 @@
+{
+  "ages": {
+    "under-3": "Under 3s",
+    "3-6": "Ages 3–6",
+    "7-12": "Ages 7–12",
+    "teens": "Teens"
+  },
+  "equipment": {
+    "sw": "Swings",
+    "sl": "Slides",
+    "cl": "Climbing frame",
+    "zw": "Zip wire",
+    "sp": "Sandpit",
+    "wp": "Water play",
+    "ad": "Adventure play",
+    "rb": "Roundabout",
+    "tr": "Miniature railway",
+    "sk": "Skate park"
+  },
+  "access": {
+    "inc": "Inclusive equipment",
+    "sf": "Step-free access",
+    "sen": "Sensory play"
+  },
+  "facilities": {
+    "wc": "Toilets",
+    "bc": "Baby change",
+    "cf": "Café",
+    "fen": "Fully fenced",
+    "sh": "Shade",
+    "fp": "Free parking"
+  },
+  "memberships": {
+    "nt": "National Trust",
+    "eh": "English Heritage",
+    "hh": "Historic Houses"
+  },
+  "nearby": {
+    "parking": "Parking",
+    "toilets": "Toilets",
+    "cafe": "Café",
+    "transport": "Transport",
+    "other": "Also nearby"
+  },
+  "duskByMonth": [
+    "16:35",
+    "17:25",
+    "18:15",
+    "20:05",
+    "20:50",
+    "21:20",
+    "21:15",
+    "20:25",
+    "19:20",
+    "18:15",
+    "16:25",
+    "15:55"
+  ]
+}

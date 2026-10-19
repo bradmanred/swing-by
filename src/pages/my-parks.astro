@@ -1,0 +1,37 @@
+---
+import Base from '../layouts/Base.astro';
+import { allParks, clientPark } from '../lib/parks';
+const data = (await allParks()).map(clientPark);
+---
+<Base title="My parks" current="/my-parks/">
+  <h1>My parks</h1>
+  <p>Places you've ticked off and rated. These are saved on this device only for now.</p>
+  <div class="results-head">
+    <h2 id="mine-title">Where we've been</h2>
+    <label style="display:flex;gap:10px;align-items:center">Sort by
+      <select id="sort"><option value="rated">Highest rated</option><option value="recent">Most recent</option><option value="az">A to Z</option></select>
+    </label>
+  </div>
+  <ul class="cards" id="cards"></ul>
+  <p id="empty" hidden>You haven't ticked off any playgrounds yet. Open a playground and choose "We've been here".</p>
+  <noscript><p>This page needs JavaScript because your list is stored in your browser.</p></noscript>
+  <script type="application/json" id="parks-data" set:html={JSON.stringify(data)} />
+  <script>
+    import { cardHTML, type ClientPark } from '../lib/card';
+    import { getMine } from '../scripts/store';
+    const parks = JSON.parse(document.getElementById('parks-data')!.textContent!) as ClientPark[];
+    const sel = document.getElementById('sort') as HTMLSelectElement;
+    function render() {
+      const mine = getMine();
+      const rows = parks.filter((p) => mine[p.id]?.v).map((p) => ({ p, m: mine[p.id] }));
+      const by = sel.value;
+      rows.sort((a, b) =>
+        by === 'az' ? a.p.n.localeCompare(b.p.n) : by === 'recent' ? (b.m.t ?? '').localeCompare(a.m.t ?? '') : (b.m.r ?? 0) - (a.m.r ?? 0),
+      );
+      document.getElementById('cards')!.innerHTML = rows.map((x) => cardHTML(x.p, { mine: x.m })).join('');
+      document.getElementById('empty')!.hidden = rows.length > 0;
+    }
+    sel.addEventListener('change', render);
+    render();
+  </script>
+</Base>

@@ -1,0 +1,35 @@
+{
+  "name": "Grundy Park Play Area",
+  "region": "herts",
+  "area": "Cheshunt",
+  "lat": 51.70257,
+  "lng": -0.03364,
+  "ages": [
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "sw",
+    "rb",
+    "sl",
+    "cl"
+  ],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "Park playground with swings, roundabouts, a slide, rockers and a climbing frame and a multi-use games area, with toilets and pay and display parking at Laura Trott Leisure Centre.",
+  "nearby": [],
+  "operator": "Borough of Broxbourne Council",
+  "sources": [
+    {
+      "label": "Borough of Broxbourne Council: Grundy Park Play Area",
+      "url": "https://www.broxbourne.gov.uk/directory-record/630586/grundy-park"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}

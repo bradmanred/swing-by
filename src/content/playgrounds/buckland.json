@@ -1,0 +1,53 @@
+{
+  "name": "Buckland Abbey Natural Play Area",
+  "region": "devon",
+  "area": "Yelverton",
+  "lat": 50.4805,
+  "lng": -4.1335,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "cl",
+    "ad"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "bc",
+    "cf",
+    "fp"
+  ],
+  "opens": "",
+  "description": "Natural play area at the start of the red walk, with stepping stones, balance beams and climbing logs made from the estate's fallen trees. You can't get a buggy there, so bring a baby carrier.",
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "Free car park",
+      "free": true
+    },
+    {
+      "type": "cafe",
+      "label": "Ox Yard coffee shop with high chairs"
+    },
+    {
+      "type": "toilets",
+      "label": "Accessible toilet and baby change by Visitor Welcome"
+    }
+  ],
+  "operator": "National Trust",
+  "membership": "nt",
+  "fee": "Paid entry for non-members",
+  "sources": [
+    {
+      "label": "National Trust: families at Buckland Abbey",
+      "url": "https://www.nationaltrust.org.uk/visit/devon/buckland-abbey/families-at-buckland-abbey"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Opening hours.",
+  "photo": null
+}

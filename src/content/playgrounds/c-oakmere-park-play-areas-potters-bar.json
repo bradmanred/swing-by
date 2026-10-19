@@ -1,0 +1,40 @@
+{
+  "name": "Oakmere Park Play Areas",
+  "region": "herts",
+  "area": "Potters Bar",
+  "lat": 51.69605,
+  "lng": -0.17345,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "cl",
+    "sl",
+    "sw",
+    "rb",
+    "zw"
+  ],
+  "access": [
+    "sf"
+  ],
+  "facilities": [
+    "wc",
+    "cf",
+    "fen"
+  ],
+  "opens": "",
+  "description": "Fenced toddler play area for under-8s with multi-play, slide, swings and roundabout, plus a junior play area with climbing, a double zip wire and a large slide; toilets and Oakmere House restaurant on site.",
+  "nearby": [],
+  "operator": "Hertsmere Borough Council",
+  "sources": [
+    {
+      "label": "Hertsmere Borough Council: Oakmere Park Play Areas",
+      "url": "https://www.parksherts.co.uk/parks/oakmere-park/"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Opening hours, toilets and parking.",
+  "photo": null
+}

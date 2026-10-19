@@ -1,0 +1,52 @@
+{
+  "junctions": [
+    {
+      "name": "A1(M) J4",
+      "serves": "Welwyn Garden City, Hatfield (A414, A6129)",
+      "lat": 51.786,
+      "lng": -0.231
+    },
+    {
+      "name": "A1(M) J7",
+      "serves": "Stevenage South, Knebworth (A602)",
+      "lat": 51.884,
+      "lng": -0.211
+    },
+    {
+      "name": "M1 J8",
+      "serves": "Hemel Hempstead (A414)",
+      "lat": 51.745,
+      "lng": -0.427
+    },
+    {
+      "name": "M25 J19",
+      "serves": "Watford (A411)",
+      "lat": 51.694,
+      "lng": -0.421
+    },
+    {
+      "name": "M1 J29A",
+      "serves": "Markham Vale, Bolsover",
+      "lat": 53.249,
+      "lng": -1.338
+    },
+    {
+      "name": "A38 Markeaton",
+      "serves": "Derby (A38/A52)",
+      "lat": 52.931,
+      "lng": -1.505
+    },
+    {
+      "name": "M5 J30",
+      "serves": "Exeter (A379, A376)",
+      "lat": 50.709,
+      "lng": -3.473
+    },
+    {
+      "name": "A38 Manadon",
+      "serves": "Plymouth (A386)",
+      "lat": 50.398,
+      "lng": -4.131
+    }
+  ]
+}

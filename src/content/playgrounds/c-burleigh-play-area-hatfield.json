@@ -1,0 +1,32 @@
+{
+  "name": "Burleigh Play Area",
+  "region": "herts",
+  "area": "Hatfield",
+  "lat": 51.76658,
+  "lng": -0.23041,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Toddler swings, two spring animals, a balancing beam and a climbing frame with a slide for toddlers and juniors, with two benches.",
+  "nearby": [],
+  "operator": "Welwyn Hatfield Borough Council",
+  "sources": [
+    {
+      "label": "Welwyn Hatfield Borough Council: Burleigh Play Area",
+      "url": "https://www.welhat.gov.uk/directory-record/22493/burleigh-play-area"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}
