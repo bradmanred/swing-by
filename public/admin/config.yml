@@ -4,11 +4,11 @@ backend:
   name: github
   repo: bradmanred/swing-by
   branch: main
-  base_url: https://swing-by.pages.dev
+  base_url: https://swing-by.bradman1981.workers.dev
   auth_endpoint: api/auth
 publish_mode: editorial_workflow
 local_backend: true
-site_url: https://swing-by.pages.dev
+site_url: https://swing-by.bradman1981.workers.dev
 locale: en
 media_folder: public/images/playgrounds
 public_folder: /images/playgrounds
