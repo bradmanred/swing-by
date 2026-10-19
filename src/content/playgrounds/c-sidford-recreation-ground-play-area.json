@@ -1,0 +1,31 @@
+{
+  "name": "Sidford Recreation Ground Play Area",
+  "region": "devon",
+  "area": "Sidford",
+  "lat": 50.70145,
+  "lng": -3.22582,
+  "ages": [
+    "7-12",
+    "teens"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Play area on the recreation ground off Byes Lane in Sidford, run by East Devon District Council. The council's equipment supplier lists a Byes Lane play area here aimed at juniors and teenagers.",
+  "nearby": [],
+  "operator": "East Devon District Council",
+  "sources": [
+    {
+      "label": "East Devon District Council: play areas reopening (lists Recreation Ground, Sidford)",
+      "url": "https://eastdevon.gov.uk/news/2020/07/east-devon-district-council-to-re-open-a-further-12-play-areas-from-monday-27-july"
+    },
+    {
+      "label": "Proludic: Byes Lane Play Area",
+      "url": "https://www.proludic.com/reference/byes-lane-play-area/"
+    }
+  ],
+  "checked": "2026-10-20",
+  "notConfirmed": "Exact position (mapped from the Sidford Social Hall postcode on Byes Lane), equipment, under-7s provision, opening hours, toilets and parking. The council source is from 2020.",
+  "photo": null
+}
