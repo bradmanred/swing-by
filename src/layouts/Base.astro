@@ -43,6 +43,12 @@ const full = title === 'Swing By' ? title : `${title} | Swing By`;
     <main id="main" tabindex="-1">
       <div class="wrap stack"><slot /></div>
     </main>
+    {/* Advert slot. Swap the placeholder for the AdSense unit once there's a publisher ID and a cookie consent banner. */}
+    <aside class="ad-slot wrap" aria-label="Advertisement">
+      <div class="ad-box" data-ad-slot="banner">
+        <span>Advertisement</span>
+      </div>
+    </aside>
     <footer class="site-footer">
       <div class="wrap">
         <p>Always check equipment before children use it. If something is dangerous, report it to the council or operator that runs the playground. In an emergency, call 999.</p>
