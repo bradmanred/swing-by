@@ -24,7 +24,13 @@
   "opens": "",
   "largePlayArea": true,
   "description": "Fenced play area for children up to 13 with toddler and junior multi-units, swings, rotor dish, see-saw and climbing boulder, plus a zip wire and small BMX-style cycle track outside, beside Three Ways Community Centre.",
-  "nearby": [],
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "Free car park by the community centre (limited spaces)",
+      "free": true
+    }
+  ],
   "operator": "Hertsmere Borough Council",
   "sources": [
     {
@@ -32,7 +38,7 @@
       "url": "https://www.parksherts.co.uk/parks/ripon-park/"
     }
   ],
-  "checked": "2026-10-19",
-  "notConfirmed": "Opening hours, toilets and parking.",
+  "checked": "2026-10-20",
+  "notConfirmed": "Opening hours, toilets and café.",
   "photo": null
 }
