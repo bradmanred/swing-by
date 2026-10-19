@@ -23,7 +23,9 @@ const playgrounds = defineCollection({
     largePlayArea: z.boolean().nullish(),
     description: z.string().default(''),
     rules: z.string().nullish(),
-    nearby: z.array(z.object({ type: z.string(), label: z.string(), free: z.boolean().optional() })).default([]),
+    nearby: z
+      .array(z.object({ type: z.string(), label: z.string(), free: z.boolean().nullish(), lat: z.number().nullish(), lng: z.number().nullish() }))
+      .default([]),
     operator: z.string().nullish(),
     membership: z.enum(['nt', 'eh', 'hh']).nullish(),
     fee: z.string().nullish(),

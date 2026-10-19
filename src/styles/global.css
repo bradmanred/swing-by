@@ -130,3 +130,14 @@ legend { font-weight: 700; padding: 0; margin-bottom: 8px; }
 
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; animation: none !important; } }
 @media (forced-colors: active) { .btn, .chk, .card, .panel, .nav a { border-color: CanvasText; } }
+
+/* Playground page map */
+.spotmap { margin: 32px 0 0; overflow: hidden; padding: 0; }
+#park-map { height: 360px; background: #eaf6df; position: relative; }
+#park-map .nojs { position: absolute; inset: 0; display: grid; place-items: center; padding: 24px; text-align: center; }
+.spotmap figcaption { padding: 10px 16px; border-top: var(--line); font-size: 1rem; }
+.spot { min-width: 34px; height: 34px; padding: 0 6px; border-radius: 10px; border: 3px solid var(--ink); background: var(--white); color: var(--ink); display: grid; place-items: center; font-weight: 700; font-size: 0.95rem; text-decoration: none; }
+.spot-park { min-width: 44px; height: 44px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); background: var(--red); }
+.spot-park span { transform: rotate(45deg); font-size: 1.25rem; }
+.spot-parking { background: var(--blue); color: var(--white); }
+.spot-nearby { background: var(--yellow); opacity: 0.9; }

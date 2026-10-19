@@ -17,6 +17,11 @@ const feats = (keys: string[], names: Record<string, string>) => keys.filter((k)
 const eq = feats(p.equipment, L.equipment);
 const acc = feats(p.access, L.access);
 const fac = feats(p.facilities, L.facilities);
+const spots = [
+  { lat: p.lat, lng: p.lng, label: p.name, kind: 'park' },
+  ...p.nearby.filter((n) => n.lat != null && n.lng != null).map((n) => ({ lat: n.lat!, lng: n.lng!, label: `${L.nearby[n.type] ?? 'Nearby'}: ${n.label}`, kind: L.nearby[n.type] ? n.type : 'other' })),
+  ...others.map(({ x, d }) => ({ lat: x.lat, lng: x.lng, label: `${x.name}, ${fmtMiles(d)}`, kind: 'nearby', href: `/playgrounds/${x.id}/` })),
+];
 const fms = `https://www.fixmystreet.com/around?latitude=${p.lat}&longitude=${p.lng}`;
 const dirs = `https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.lng}`;
 ---
@@ -80,6 +85,12 @@ const dirs = `https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.ln
         <h2 style="font-size:1.75rem">Getting there</h2>
         <p style="margin-top:10px"><a class="btn btn-yellow" href={dirs} rel="noopener">Directions in Google Maps</a></p>
       </div>
+      <figure class="panel spotmap">
+        <div id="park-map" role="region" aria-label={`Map of ${p.name} and what's around it`} data-spots={JSON.stringify(spots)}>
+          <p class="nojs">The map needs JavaScript. Use the directions link instead.</p>
+        </div>
+        <figcaption>The red pin is the playground. Car parks (P), toilets and cafés from OpenStreetMap show on the map when you zoom in. Yellow pins are other playgrounds.</figcaption>
+      </figure>
       <div class="panel" id="mine" data-id={p.id}>
         <h2 style="font-size:1.75rem">Been here?</h2>
         <p style="margin-top:12px"><label class="chk"><input type="checkbox" id="been" /> We've been here</label></p>
@@ -109,6 +120,10 @@ const dirs = `https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.ln
   </div>
   <script>
     import { store, getMine } from '../../scripts/store';
+    import('../../scripts/map').then(({ createSpotMap }) => {
+      const el = document.getElementById('park-map');
+      if (el) createSpotMap(el, JSON.parse(el.dataset.spots!));
+    });
     const DUSK = ['16:35', '17:25', '18:15', '20:05', '20:50', '21:20', '21:15', '20:25', '19:20', '18:15', '16:25', '15:55'];
     const d = document.querySelector('[data-dusk]');
     if (d) d.textContent = `Dusk is around ${DUSK[new Date().getMonth()]} this month.`;
