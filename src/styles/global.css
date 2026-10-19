@@ -141,3 +141,8 @@ legend { font-weight: 700; padding: 0; margin-bottom: 8px; }
 .spot-park span { transform: rotate(45deg); font-size: 1.25rem; }
 .spot-parking { background: var(--blue); color: var(--white); }
 .spot-nearby { background: var(--yellow); opacity: 0.9; }
+
+/* Advert banner placeholder: space is reserved so the page doesn't jump when an ad loads. */
+.ad-slot { padding-bottom: 32px; }
+.ad-box { max-width: 728px; min-height: 90px; margin: 0 auto; display: grid; place-items: center; border: 3px dashed var(--muted); border-radius: 12px; background: var(--white); color: var(--muted); font-size: 0.875rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
+@media (max-width: 760px) { .ad-box { max-width: 320px; min-height: 100px; } }
