@@ -1,0 +1,57 @@
+{
+  "name": "Diana Memorial Playground",
+  "region": "london",
+  "area": "Kensington Gardens",
+  "lat": 51.5076,
+  "lng": -0.1876,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "sp",
+    "wp",
+    "ad"
+  ],
+  "access": [
+    "inc",
+    "sf",
+    "sen"
+  ],
+  "facilities": [
+    "wc",
+    "bc",
+    "cf",
+    "fen",
+    "sh"
+  ],
+  "opens": "10:00",
+  "description": "",
+  "nearby": [
+    {
+      "type": "toilets",
+      "label": "Toilets at the entrance"
+    },
+    {
+      "type": "cafe",
+      "label": "Café"
+    },
+    {
+      "type": "transport",
+      "label": "Queensway station"
+    },
+    {
+      "type": "parking",
+      "label": "Pay & display, West Carriage Drive"
+    }
+  ],
+  "operator": "The Royal Parks",
+  "sources": [],
+  "checked": null,
+  "notConfirmed": "",
+  "photo": null
+}

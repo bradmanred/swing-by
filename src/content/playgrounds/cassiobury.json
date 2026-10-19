@@ -1,0 +1,68 @@
+{
+  "name": "Cassiobury Park Playgrounds",
+  "region": "herts",
+  "area": "Watford",
+  "lat": 51.661,
+  "lng": -0.425,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "wp",
+    "tr"
+  ],
+  "access": [
+    "sf"
+  ],
+  "facilities": [
+    "wc",
+    "cf",
+    "fp"
+  ],
+  "opens": "",
+  "description": "Two children's playgrounds, paddling pools and splash fountains by the park hub, and a miniature railway.",
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "Gade Avenue car park: 6 hours free with a ticket (88 spaces, fills early on hot days)",
+      "free": true
+    },
+    {
+      "type": "other",
+      "label": "Paddling pools, 10am–7pm daily in summer"
+    },
+    {
+      "type": "other",
+      "label": "Miniature railway"
+    },
+    {
+      "type": "cafe",
+      "label": "Cha Café and Daisy's in the Park"
+    },
+    {
+      "type": "toilets",
+      "label": "Toilets, including accessible"
+    },
+    {
+      "type": "transport",
+      "label": "Watford station (Metropolitan line), about 2 minutes' walk"
+    }
+  ],
+  "operator": "Watford Borough Council",
+  "sources": [
+    {
+      "label": "Watford council: Cassiobury Park",
+      "url": "https://www.watford.gov.uk/directory-record/345/cassiobury-park-and-whippendell-wood"
+    },
+    {
+      "label": "ParksHerts: Cassiobury Park",
+      "url": "https://www.parksherts.co.uk/parks/cassiobury-park/"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact play equipment, age ranges and baby change.",
+  "photo": null
+}

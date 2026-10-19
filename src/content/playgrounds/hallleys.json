@@ -1,0 +1,46 @@
+{
+  "name": "Hall Leys Park Play Area",
+  "region": "derbyshire",
+  "area": "Matlock",
+  "lat": 53.137,
+  "lng": -1.556,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "sp"
+  ],
+  "access": [
+    "sf"
+  ],
+  "facilities": [
+    "wc",
+    "cf",
+    "fen"
+  ],
+  "opens": "24h",
+  "description": "",
+  "nearby": [
+    {
+      "type": "other",
+      "label": "Boating lake & paddling pool"
+    },
+    {
+      "type": "transport",
+      "label": "Matlock station"
+    },
+    {
+      "type": "parking",
+      "label": "Pay car park, Bakewell Road"
+    }
+  ],
+  "sources": [],
+  "checked": null,
+  "notConfirmed": "",
+  "photo": null
+}

@@ -1,0 +1,110 @@
+---
+import Base from '../layouts/Base.astro';
+import { allParks, clientPark, km, regions } from '../lib/parks';
+import { cardHTML, fmtMiles } from '../lib/card';
+
+const parks = await allParks();
+const data = parks.map(clientPark);
+const towns = regions.flatMap((r) => r.towns.map((t) => ({ ...t, r: r.id })));
+const start = towns[0]; // St Albans: Hertfordshire is the launch region
+const near = data
+  .map((p) => ({ p, d: km(start, p) }))
+  .sort((a, b) => a.d - b.d);
+const herts = data.filter((p) => p.r === 'herts').length;
+const loves = [
+  ['wp', '💦', 'Splash play'],
+  ['cl', '🧗', 'Climbing'],
+  ['zw', '🚡', 'Zip wire'],
+  ['inc', '♿', 'Inclusive equipment'],
+  ['wc', '🚻', 'Toilets'],
+];
+const ages = [
+  ['under-3', 'Toddlers'],
+  ['3-6', '3–6'],
+  ['7-12', '7–12'],
+  ['teens', 'Teens'],
+];
+---
+<Base title="Swing By" current="/">
+  <section class="hero" aria-labelledby="hero-title">
+    <div>
+      <h1 id="hero-title">Where shall we play today?</h1>
+      <p class="lede">{herts} Hertfordshire playgrounds, checked against council and operator websites.</p>
+    </div>
+    <form class="search" id="search" action="/playgrounds/" role="search" aria-label="Find playgrounds">
+      <div>
+        <label for="where">Town or postcode</label>
+        <div class="where">
+          <input id="where" name="q" type="text" autocomplete="postal-code" value={start.name} aria-describedby="where-hint" />
+          <button class="btn btn-yellow" type="button" id="locate"><span aria-hidden="true">📍</span> Near me</button>
+        </div>
+        <p class="hint" id="where-hint" aria-live="polite">Try a town such as Hitchin, or a postcode such as AL1 1BX.</p>
+      </div>
+      <fieldset>
+        <legend>Who's coming?</legend>
+        <div class="row">
+          {ages.map(([v, l]) => <label class="chk"><input type="checkbox" name="age" value={v} /> {l}</label>)}
+        </div>
+      </fieldset>
+      <button class="btn btn-red" type="submit">Let's go!</button>
+    </form>
+  </section>
+
+  <section aria-labelledby="loves-title">
+    <h2 id="loves-title" style="margin-bottom:14px">What do they love?</h2>
+    <div class="row" role="group" aria-labelledby="loves-title">
+      {loves.map(([k, i, l]) => (
+        <button class="btn" type="button" data-love={k} aria-pressed="false"><span aria-hidden="true">{i}</span> {l}</button>
+      ))}
+    </div>
+  </section>
+
+  <section class="near" aria-labelledby="near-title">
+    <figure class="panel mapbox">
+      <div id="map" role="region" aria-label="Map of where we think you are and the nearest playgrounds">
+        <p class="nojs">The map needs JavaScript. The list of nearby parks works without it.</p>
+      </div>
+      <figcaption>
+        <span id="where-caption"><strong>Showing parks near {start.name}.</strong> Use "Near me" or enter a postcode to start from where you are.</span>
+        <button class="btn btn-yellow" type="button" id="change">Not right? Change</button>
+      </figcaption>
+    </figure>
+    <div class="panel" style="display:flex;flex-direction:column;gap:12px">
+      <h2 id="near-title">Parks near you</h2>
+      <ol class="nearlist" id="nearlist">
+        {near.slice(0, 5).map(({ p, d }, i) => (
+          <li><a href={`/playgrounds/${p.id}/`}><span class="num" aria-hidden="true">{i + 1}</span><span>{p.n}</span><span class="dist">{fmtMiles(d)}</span></a></li>
+        ))}
+      </ol>
+      <a href="#results-title" style="margin-top:auto;font-weight:700">See all results</a>
+    </div>
+  </section>
+
+  <section aria-labelledby="results-title">
+    <div class="results-head">
+      <h2 id="results-title">Playgrounds near {start.name}</h2>
+      <label style="display:flex;gap:10px;align-items:center">Sort by
+        <select id="sort">
+          <option value="near">Closest</option>
+          <option value="rated">Your top rated</option>
+          <option value="new">Not been yet</option>
+        </select>
+      </label>
+    </div>
+    <p id="count" class="sr-only" aria-live="polite"></p>
+    <ul class="cards" id="cards" set:html={near.slice(0, 12).map(({ p, d }) => cardHTML(p, { dist: d })).join('')} />
+    <p style="margin-top:20px"><button class="btn" type="button" id="more">Show more playgrounds</button></p>
+  </section>
+
+  <section class="tiles" aria-label="More ways to play">
+    <a class="tile y" href="/road-trips/"><strong><span aria-hidden="true">🚗</span> Long drive?</strong><span>Run-around stops within 5 minutes of a motorway junction.</span></a>
+    <a class="tile" href="/memberships/"><strong><span aria-hidden="true">🏰</span> Got a membership?</strong><span>National Trust, English Heritage and Historic Houses play areas.</span></a>
+    <a class="tile r" href="/my-parks/"><strong><span aria-hidden="true">🏅</span> My parks</strong><span>Tick off where you've been and rate it.</span></a>
+  </section>
+
+  <script type="application/json" id="parks-data" set:html={JSON.stringify({ parks: data, towns })} />
+  <script>
+    import { startFinder } from '../scripts/finder';
+    startFinder();
+  </script>
+</Base>

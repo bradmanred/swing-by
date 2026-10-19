@@ -1,0 +1,58 @@
+{
+  "name": "Gadebridge Park Play Areas",
+  "region": "herts",
+  "area": "Hemel Hempstead",
+  "lat": 51.756,
+  "lng": -0.479,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "wp"
+  ],
+  "access": [
+    "sf"
+  ],
+  "facilities": [
+    "wc",
+    "fen",
+    "fp"
+  ],
+  "opens": "",
+  "description": "Enclosed toddler play area, a second small enclosed play area and a free splash park with jets and fountains. Pushchair-friendly paths.",
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "Free car park, Gadebridge Lane (open 24/7)",
+      "free": true
+    },
+    {
+      "type": "parking",
+      "label": "Pay & display, Queensway car park"
+    },
+    {
+      "type": "other",
+      "label": "Free splash park, 10am–6pm daily until September"
+    },
+    {
+      "type": "cafe",
+      "label": "Seasonal kiosk by the splash park"
+    },
+    {
+      "type": "toilets",
+      "label": "Two toilet blocks, including accessible"
+    }
+  ],
+  "operator": "Dacorum Borough Council",
+  "sources": [
+    {
+      "label": "ParksHerts: Gadebridge Park",
+      "url": "https://www.parksherts.co.uk/parks/gadebridge-park/"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Play equipment details, age ranges and opening hours.",
+  "photo": null
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Peartree Park",
+  "region": "herts",
+  "area": "Stevenage",
+  "lat": 51.89527,
+  "lng": -0.17516,
+  "ages": [
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "sk"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Play area at the north of the park with equipment for juniors, plus a small skate park and multi-use games area for teens.",
+  "nearby": [],
+  "operator": "Stevenage Borough Council",
+  "sources": [
+    {
+      "label": "Stevenage Borough Council: Peartree Park",
+      "url": "https://www.stevenage.gov.uk/leisure-culture-and-wellbeing/parks-and-open-spaces/local-parks/peartree-park"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}

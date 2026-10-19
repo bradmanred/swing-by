@@ -1,0 +1,56 @@
+{
+  "name": "Battersea Park Playground",
+  "region": "london",
+  "area": "Battersea",
+  "lat": 51.4795,
+  "lng": -0.157,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "zw",
+    "ad",
+    "wp"
+  ],
+  "access": [
+    "inc",
+    "sf"
+  ],
+  "facilities": [
+    "wc",
+    "bc",
+    "cf",
+    "fen",
+    "sh"
+  ],
+  "opens": "08:00",
+  "description": "",
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "Pay car parks inside the park"
+    },
+    {
+      "type": "toilets",
+      "label": "Toilets"
+    },
+    {
+      "type": "cafe",
+      "label": "Café by the lake"
+    },
+    {
+      "type": "other",
+      "label": "Children's zoo"
+    }
+  ],
+  "sources": [],
+  "checked": null,
+  "notConfirmed": "",
+  "photo": null
+}

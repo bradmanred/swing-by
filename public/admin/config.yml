@@ -1,0 +1,143 @@
+# Decap CMS: edit playgrounds in the browser at /admin/.
+# Every change is saved to GitHub and goes through review before it is published.
+backend:
+  name: github
+  repo: bradmanred/swing-by
+  branch: main
+  base_url: https://swing-by.pages.dev
+  auth_endpoint: api/auth
+publish_mode: editorial_workflow
+local_backend: true
+site_url: https://swing-by.pages.dev
+locale: en
+media_folder: public/images/playgrounds
+public_folder: /images/playgrounds
+
+collections:
+  - name: playgrounds
+    label: Playgrounds
+    label_singular: Playground
+    folder: src/content/playgrounds
+    extension: json
+    format: json
+    create: true
+    slug: "{{slug}}"
+    identifier_field: name
+    summary: "{{name}} ({{area}})"
+    sortable_fields: [name, area, checked]
+    view_filters:
+      - { label: Unverified, field: checked, pattern: "^$" }
+      - { label: Hertfordshire, field: region, pattern: herts }
+    fields:
+      - { label: Name, name: name, widget: string }
+      - label: County
+        name: region
+        widget: select
+        options:
+          - { label: Hertfordshire, value: herts }
+          - { label: London, value: london }
+          - { label: Derbyshire, value: derbyshire }
+          - { label: Devon, value: devon }
+      - { label: Town or area, name: area, widget: string }
+      - { label: Latitude, name: lat, widget: number, value_type: float, hint: "For example 51.752. Right-click the spot in Google Maps to copy it." }
+      - { label: Longitude, name: lng, widget: number, value_type: float, hint: "For example -0.353" }
+      - label: Ages
+        name: ages
+        widget: select
+        multiple: true
+        required: false
+        options:
+          - { label: "Under 3s", value: "under-3" }
+          - { label: "Ages 3–6", value: "3-6" }
+          - { label: "Ages 7–12", value: "7-12" }
+          - { label: "Teens", value: "teens" }
+      - label: Equipment
+        name: equipment
+        widget: select
+        multiple: true
+        required: false
+        options:
+          - { label: "Swings", value: "sw" }
+          - { label: "Slides", value: "sl" }
+          - { label: "Climbing frame", value: "cl" }
+          - { label: "Zip wire", value: "zw" }
+          - { label: "Sandpit", value: "sp" }
+          - { label: "Water play", value: "wp" }
+          - { label: "Adventure play", value: "ad" }
+          - { label: "Roundabout", value: "rb" }
+          - { label: "Miniature railway", value: "tr" }
+          - { label: "Skate park", value: "sk" }
+      - label: Accessibility
+        name: access
+        widget: select
+        multiple: true
+        required: false
+        options:
+          - { label: "Inclusive equipment", value: "inc" }
+          - { label: "Step-free access", value: "sf" }
+          - { label: "Sensory play", value: "sen" }
+      - label: Facilities
+        name: facilities
+        widget: select
+        multiple: true
+        required: false
+        options:
+          - { label: "Toilets", value: "wc" }
+          - { label: "Baby change", value: "bc" }
+          - { label: "Café", value: "cf" }
+          - { label: "Fully fenced", value: "fen" }
+          - { label: "Shade", value: "sh" }
+          - { label: "Free parking", value: "fp" }
+      - { label: Opens, name: opens, widget: string, required: false, hint: "HH:MM, or 24h. Leave blank if not confirmed.", pattern: ["^(\\d{2}:\\d{2}|24h)?$", "Use HH:MM or 24h"] }
+      - { label: Closes, name: closes, widget: string, required: false, hint: "HH:MM. Leave blank if it locks at dusk.", pattern: ["^(\\d{2}:\\d{2})?$", "Use HH:MM"] }
+      - { label: Weekends and school holidays only, name: weekendsOnly, widget: boolean, required: false }
+      - { label: Large play area, name: largePlayArea, widget: boolean, required: false }
+      - { label: Description, name: description, widget: text, required: false }
+      - { label: Rules, name: rules, widget: string, required: false, hint: "For example: Adults can only go in with a child." }
+      - label: Parking, toilets and food
+        name: nearby
+        widget: list
+        required: false
+        summary: "{{fields.label}}"
+        fields:
+          - label: Type
+            name: type
+            widget: select
+            options:
+              - { label: "Parking", value: "parking" }
+              - { label: "Toilets", value: "toilets" }
+              - { label: "Café", value: "cafe" }
+              - { label: "Transport", value: "transport" }
+              - { label: "Also nearby", value: "other" }
+          - { label: Details, name: label, widget: string }
+          - { label: Free, name: free, widget: boolean, required: false }
+      - { label: Run by, name: operator, widget: string, required: false }
+      - label: Membership
+        name: membership
+        widget: select
+        required: false
+        options:
+          - { label: "National Trust", value: "nt" }
+          - { label: "English Heritage", value: "eh" }
+          - { label: "Historic Houses", value: "hh" }
+      - { label: Entry fee for non-members, name: fee, widget: string, required: false }
+      - label: Sources
+        name: sources
+        widget: list
+        required: false
+        summary: "{{fields.label}}"
+        fields:
+          - { label: Name, name: label, widget: string }
+          - { label: Link, name: url, widget: string }
+      - { label: Last checked, name: checked, widget: datetime, required: false, format: YYYY-MM-DD, date_format: DD/MM/YYYY, time_format: false, hint: "Leave blank if not checked against an official source." }
+      - { label: Not confirmed yet, name: notConfirmed, widget: string, required: false }
+      - label: Photo
+        name: photo
+        widget: object
+        required: false
+        hint: "Only use photos you have permission to use, with no identifiable children."
+        fields:
+          - { label: Image, name: src, widget: image }
+          - { label: Description for screen readers, name: alt, widget: string }
+          - { label: Credit, name: credit, widget: string }
+          - { label: Licence, name: licence, widget: string, hint: "For example CC BY-SA 4.0, or Permission from the council" }

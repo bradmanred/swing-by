@@ -1,0 +1,29 @@
+{
+  "name": "Amwell Common Play Area",
+  "region": "herts",
+  "area": "Welwyn Garden City",
+  "lat": 51.79651,
+  "lng": -0.17477,
+  "ages": [
+    "under-3"
+  ],
+  "equipment": [
+    "sl",
+    "cl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A climbing unit with a slide, good for climbing and balancing, with a bench for parents.",
+  "nearby": [],
+  "operator": "Welwyn Hatfield Borough Council",
+  "sources": [
+    {
+      "label": "Welwyn Hatfield Borough Council: Amwell Common Play Area",
+      "url": "https://www.welhat.gov.uk/directory-record/26964/amwell-common-play-area"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}

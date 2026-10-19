@@ -1,0 +1,33 @@
+{
+  "name": "swing-by",
+  "version": "1.0.0",
+  "description": "Find a playground worth the trip",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "test": "node tests/a11y.mjs",
+    "cms": "npx decap-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradmanred/swing-by.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bradmanred/swing-by/issues"
+  },
+  "homepage": "https://github.com/bradmanred/swing-by#readme",
+  "dependencies": {
+    "astro": "^7.4.1",
+    "maplibre-gl": "^6.15.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "playwright": "^1.56.1"
+  },
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  }
+}

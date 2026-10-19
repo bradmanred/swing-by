@@ -1,0 +1,30 @@
+{
+  "name": "Grange Recreation Ground Play Area",
+  "region": "herts",
+  "area": "Letchworth Garden City",
+  "lat": 51.99707,
+  "lng": -0.22415,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sk"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Play area for younger and older children with a wheeled sport facility, exercise zone, basketball court and car park.",
+  "nearby": [],
+  "operator": "North Herts Council",
+  "sources": [
+    {
+      "label": "North Herts Council: Grange Recreation Ground Play Area",
+      "url": "https://www.north-herts.gov.uk/grange-recreation-ground"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}

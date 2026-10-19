@@ -1,0 +1,30 @@
+{
+  "name": "Avenue Park Play Area",
+  "region": "herts",
+  "area": "Baldock",
+  "lat": 51.98914,
+  "lng": -0.19448,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "wp"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Play area for younger and older children in an enclosed park with a summer splash pad, multi-use games area, youth shelter and limited on-site parking.",
+  "nearby": [],
+  "operator": "North Herts Council",
+  "sources": [
+    {
+      "label": "North Herts Council: Avenue Park Play Area",
+      "url": "https://www.north-herts.gov.uk/avenue-park"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}

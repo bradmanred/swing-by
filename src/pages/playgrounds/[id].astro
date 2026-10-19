@@ -1,0 +1,135 @@
+---
+import Base from '../../layouts/Base.astro';
+import { allParks, clientPark, fmtDate, hoursText, km, L, regionName, ICON, type Park } from '../../lib/parks';
+import { art, fmtMiles } from '../../lib/card';
+
+export async function getStaticPaths() {
+  const parks = await allParks();
+  return parks.map((p) => ({ params: { id: p.id }, props: { p, parks } }));
+}
+const { p, parks } = Astro.props as { p: Park; parks: Park[] };
+const others = parks
+  .filter((x) => x.id !== p.id)
+  .map((x) => ({ x, d: km(p, x) }))
+  .sort((a, b) => a.d - b.d)
+  .slice(0, 3);
+const feats = (keys: string[], names: Record<string, string>) => keys.filter((k) => names[k]).map((k) => ({ k, label: names[k] }));
+const eq = feats(p.equipment, L.equipment);
+const acc = feats(p.access, L.access);
+const fac = feats(p.facilities, L.facilities);
+const fms = `https://www.fixmystreet.com/around?latitude=${p.lat}&longitude=${p.lng}`;
+const dirs = `https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.lng}`;
+---
+<Base title={p.name} description={p.description || `${p.name}, ${p.area}`}>
+  <div>
+    <p class="crumbs"><a href="/">Find</a> › <a href="/playgrounds/">All playgrounds</a> › {regionName(p.region)}</p>
+    <h1>{p.name}</h1>
+    <p style="margin-top:8px;font-size:1.25rem">{p.area}{p.operator && <> · Run by {p.operator}</>}</p>
+  </div>
+  <div class="detail">
+    <div>
+      <div class="panel" style="padding:0;overflow:hidden">
+        {p.photo ? (
+          <figure style="margin:0"><img src={p.photo.src} alt={p.photo.alt} style="display:block;width:100%" /><figcaption class="hint" style="padding:8px 16px">Photo: {p.photo.credit}, {p.photo.licence}</figcaption></figure>
+        ) : (
+          <Fragment set:html={art(clientPark(p))} />
+        )}
+      </div>
+      {!p.checked && <p class="warn" style="margin-top:20px">Unverified: these details haven't been checked against an official source yet.</p>}
+      {p.membership && (
+        <p class="panel" style="margin-top:20px;box-shadow:none">{L.memberships[p.membership]} property. {p.fee ?? 'Members get in free.'}</p>
+      )}
+      <section aria-labelledby="what">
+        <h2 id="what" style="margin-top:24px">What's here</h2>
+        <div class="prose" style="margin-top:10px">
+          {p.description && <p>{p.description}</p>}
+          {p.rules && <p><strong>{p.rules}</strong></p>}
+        </div>
+        {(eq.length > 0 || acc.length > 0 || fac.length > 0) && (
+          <ul class="chips" style="margin-top:14px" aria-label="Features">
+            {[...eq, ...acc, ...fac].map((f) => <li><span aria-hidden="true">{ICON[f.k]}</span> {f.label}</li>)}
+          </ul>
+        )}
+        {p.ages.length > 0 && <p style="margin-top:12px">Best for: {p.ages.map((a) => L.ages[a]).join(', ')}{p.largePlayArea && '. Large play area.'}</p>}
+      </section>
+      <section aria-labelledby="hours">
+        <h2 id="hours">Opening times</h2>
+        <p style="margin-top:10px">{hoursText(p)} <span data-dusk></span></p>
+      </section>
+      {p.nearby.length > 0 && (
+        <section aria-labelledby="nearby">
+          <h2 id="nearby">Parking, toilets and food</h2>
+          <ul class="facts" style="margin-top:10px">
+            {p.nearby.map((n) => <li><strong>{L.nearby[n.type] ?? 'Nearby'}:</strong> {n.label}{n.free && ' (free)'}</li>)}
+          </ul>
+        </section>
+      )}
+      <section aria-labelledby="src">
+        <h2 id="src">Where these details come from</h2>
+        <div class="prose" style="margin-top:10px">
+          {p.checked && <p>Checked on {fmtDate(p.checked)} against:</p>}
+          {p.sources.length > 0 ? (
+            <ul>{p.sources.map((s) => <li><a href={s.url} rel="noopener">{s.label}</a></li>)}</ul>
+          ) : <p>No official source yet.</p>}
+          {p.notConfirmed && <p><strong>Not confirmed yet:</strong> {p.notConfirmed}</p>}
+        </div>
+      </section>
+    </div>
+    <aside class="stack" style="--gap:20px">
+      <div class="panel">
+        <h2 style="font-size:1.75rem">Getting there</h2>
+        <p style="margin-top:10px"><a class="btn btn-yellow" href={dirs} rel="noopener">Directions in Google Maps</a></p>
+      </div>
+      <div class="panel" id="mine" data-id={p.id}>
+        <h2 style="font-size:1.75rem">Been here?</h2>
+        <p style="margin-top:12px"><label class="chk"><input type="checkbox" id="been" /> We've been here</label></p>
+        <fieldset style="margin-top:16px">
+          <legend>Your rating</legend>
+          <div class="stars">
+            {[1, 2, 3, 4, 5].map((n) => (
+              <><input type="radio" name="rating" id={`r${n}`} value={n} /><label for={`r${n}`}><span aria-hidden="true">{'★'.repeat(n)}</span><span class="sr-only">{n} out of 5</span></label></>
+            ))}
+          </div>
+        </fieldset>
+        <p class="hint" id="mine-status" aria-live="polite" style="margin-top:10px">Saved on this device only.</p>
+      </div>
+      <div class="panel">
+        <h2 style="font-size:1.75rem">Something wrong?</h2>
+        <p style="margin-top:10px">If equipment is broken or dangerous, keep children off it and tell the people who run the playground.</p>
+        <p style="margin-top:12px"><a class="btn" href={fms} rel="noopener">Report it on FixMyStreet</a></p>
+        <p class="hint" style="margin-top:10px">FixMyStreet sends your report to the right council. In an emergency, call 999.</p>
+      </div>
+      <div class="panel">
+        <h2 style="font-size:1.75rem">Also nearby</h2>
+        <ul class="facts" style="margin-top:10px">
+          {others.map(({ x, d }) => <li><a href={`/playgrounds/${x.id}/`}>{x.name}</a>, {fmtMiles(d)}</li>)}
+        </ul>
+      </div>
+    </aside>
+  </div>
+  <script>
+    import { store, getMine } from '../../scripts/store';
+    const DUSK = ['16:35', '17:25', '18:15', '20:05', '20:50', '21:20', '21:15', '20:25', '19:20', '18:15', '16:25', '15:55'];
+    const d = document.querySelector('[data-dusk]');
+    if (d) d.textContent = `Dusk is around ${DUSK[new Date().getMonth()]} this month.`;
+    const box = document.getElementById('mine')!;
+    const id = box.dataset.id!;
+    const been = document.getElementById('been') as HTMLInputElement;
+    const status = document.getElementById('mine-status')!;
+    const cur = getMine()[id] ?? {};
+    been.checked = !!cur.v;
+    if (cur.r) (document.getElementById(`r${cur.r}`) as HTMLInputElement).checked = true;
+    function save(msg: string) {
+      const mine = getMine();
+      const r = Number((box.querySelector('input[name=rating]:checked') as HTMLInputElement | null)?.value) || undefined;
+      mine[id] = { v: been.checked || !!r, r, t: new Date().toISOString().slice(0, 10) };
+      if (r) been.checked = true;
+      store.set('sb-mine', mine);
+      status.textContent = `${msg} Saved on this device only.`;
+    }
+    been.addEventListener('change', () => save(been.checked ? 'Ticked off.' : 'Unticked.'));
+    box.querySelectorAll('input[name=rating]').forEach((r) =>
+      r.addEventListener('change', () => save(`Rated ${(r as HTMLInputElement).value} out of 5.`)),
+    );
+  </script>
+</Base>

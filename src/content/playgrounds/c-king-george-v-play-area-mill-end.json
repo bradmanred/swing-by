@@ -1,0 +1,36 @@
+{
+  "name": "King George V Play Area",
+  "region": "herts",
+  "area": "Mill End",
+  "lat": 51.63917,
+  "lng": -0.49844,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "rb",
+    "zw",
+    "sp",
+    "ad"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A wide range of equipment at the playing fields, including junior and senior multi-play, a zip wire, trampoline, adventure trail and inclusive swings, slide, sand play and roundabout.",
+  "nearby": [],
+  "operator": "Three Rivers District Council",
+  "sources": [
+    {
+      "label": "Three Rivers District Council: King George V Play Area",
+      "url": "https://www.threerivers.gov.uk/services/leisure-parks-culture/play-areas/mill-end-maple-cross-play-area"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}

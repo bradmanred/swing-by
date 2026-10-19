@@ -1,0 +1,32 @@
+{
+  "name": "Norton Common Play Areas",
+  "region": "herts",
+  "area": "Letchworth Garden City",
+  "lat": 51.98451,
+  "lng": -0.22435,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sk"
+  ],
+  "access": [],
+  "facilities": [
+    "cf"
+  ],
+  "opens": "",
+  "description": "Play areas for young and older children on a nature reserve with a skateboard park, picnic area, café at the outdoor pool and two car parks.",
+  "nearby": [],
+  "operator": "North Herts Council",
+  "sources": [
+    {
+      "label": "North Herts Council: Norton Common Play Areas",
+      "url": "https://www.north-herts.gov.uk/norton-common"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}

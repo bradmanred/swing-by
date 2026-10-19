@@ -1,0 +1,47 @@
+{
+  "name": "Brockwell Park Playground",
+  "region": "london",
+  "area": "Herne Hill",
+  "lat": 51.453,
+  "lng": -0.106,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "sp",
+    "wp"
+  ],
+  "access": [
+    "sf"
+  ],
+  "facilities": [
+    "wc",
+    "cf",
+    "fen"
+  ],
+  "opens": "07:30",
+  "description": "",
+  "nearby": [
+    {
+      "type": "other",
+      "label": "Brockwell Lido"
+    },
+    {
+      "type": "cafe",
+      "label": "Café in Brockwell Hall"
+    },
+    {
+      "type": "transport",
+      "label": "Herne Hill station"
+    }
+  ],
+  "sources": [],
+  "checked": null,
+  "notConfirmed": "",
+  "photo": null
+}

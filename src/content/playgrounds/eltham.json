@@ -1,0 +1,54 @@
+{
+  "name": "Eltham Palace Play Area",
+  "region": "london",
+  "area": "Eltham",
+  "lat": 51.447,
+  "lng": 0.0485,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "cl",
+    "sl"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "bc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "Travel-themed play area with a plane to fly, a castle and mountains to climb, and an art-deco slide, right next to the café.",
+  "nearby": [
+    {
+      "type": "cafe",
+      "label": "Greenhouse café next to the play area"
+    },
+    {
+      "type": "parking",
+      "label": "Large car park off Court Road (SE9 5NP)"
+    },
+    {
+      "type": "toilets",
+      "label": "Accessible toilets and baby change"
+    }
+  ],
+  "operator": "English Heritage",
+  "membership": "eh",
+  "fee": "Paid entry for non-members",
+  "sources": [
+    {
+      "label": "English Heritage: Eltham Palace family guide",
+      "url": "https://www.english-heritage.org.uk/visit/places/eltham-palace-and-gardens/family-property-guide"
+    },
+    {
+      "label": "English Heritage: play areas",
+      "url": "https://www.english-heritage.org.uk/visit/familydaysout/english-heritage-play-areas/"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Opening days, entry prices and age ranges.",
+  "photo": null
+}

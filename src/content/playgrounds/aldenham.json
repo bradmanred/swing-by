@@ -1,0 +1,55 @@
+{
+  "name": "Aldenham Country Park Playgrounds",
+  "region": "herts",
+  "area": "Elstree",
+  "lat": 51.64,
+  "lng": -0.306,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "ad",
+    "cl"
+  ],
+  "access": [
+    "inc",
+    "sen"
+  ],
+  "facilities": [
+    "cf"
+  ],
+  "opens": "",
+  "weekendsOnly": true,
+  "description": "An adventure playground plus the Aldenham Country Playground, a specialist play space for children and young people with special needs, with sensory play. Playgrounds open at weekends and daily in school holidays and half terms; booking ahead is recommended. Parts are being refurbished.",
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "Car park: fixed daily fee, £4.50 term-time weekdays, £5.50 weekends and holidays"
+    },
+    {
+      "type": "cafe",
+      "label": "Clock House Kiosk and the Warm Welcome Café"
+    },
+    {
+      "type": "other",
+      "label": "Farm (tickets; booking recommended)"
+    }
+  ],
+  "operator": "Aldenham Country Park (private)",
+  "sources": [
+    {
+      "label": "Aldenham Country Park: play",
+      "url": "https://aldenhamcountrypark.co.uk/welcome/play"
+    },
+    {
+      "label": "Aldenham Country Park: plan your visit",
+      "url": "https://aldenhamcountrypark.co.uk/plan-your-visit"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Playground entry prices, toilets and baby change.",
+  "photo": null
+}

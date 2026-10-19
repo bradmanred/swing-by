@@ -1,0 +1,26 @@
+{
+  "name": "Onslow Close Play Area",
+  "region": "herts",
+  "area": "Hatfield",
+  "lat": 51.7622,
+  "lng": -0.2187,
+  "ages": [
+    "under-3"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "An array of floor games in a residential area.",
+  "nearby": [],
+  "operator": "Welwyn Hatfield Borough Council",
+  "sources": [
+    {
+      "label": "Welwyn Hatfield Borough Council: Onslow Close Play Area",
+      "url": "https://www.welhat.gov.uk/directory-record/22501/onslow-close-play-area"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}

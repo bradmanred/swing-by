@@ -1,0 +1,33 @@
+{
+  "name": "Barclay Park Play Area",
+  "region": "herts",
+  "area": "Hoddesdon",
+  "lat": 51.7586,
+  "lng": -0.01495,
+  "ages": [
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "sw",
+    "rb",
+    "sl",
+    "cl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Park playground with swings, roundabouts, a slide, rockers and a climbing frame and a multi-use games area, for ages 3 to teenage, with Barclay Park Car Park nearby.",
+  "nearby": [],
+  "operator": "Borough of Broxbourne Council",
+  "sources": [
+    {
+      "label": "Borough of Broxbourne Council: Barclay Park Play Area",
+      "url": "https://www.broxbourne.gov.uk/directory-record/630574/barclay-park"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}
