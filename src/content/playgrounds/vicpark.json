@@ -4,51 +4,43 @@
   "area": "Hackney",
   "lat": 51.536,
   "lng": -0.039,
-  "ages": [
-    "under-3",
-    "3-6",
-    "7-12",
-    "teens"
-  ],
+  "ages": [],
   "equipment": [
-    "sw",
-    "sl",
-    "cl",
-    "sp",
-    "wp",
-    "rb"
+    "wp"
   ],
-  "access": [
-    "inc",
-    "sf",
-    "sen"
-  ],
+  "access": [],
   "facilities": [
     "wc",
-    "bc",
-    "cf",
-    "fen",
-    "sh"
+    "cf"
   ],
   "opens": "07:00",
-  "description": "",
+  "description": "Children's play areas in Victoria Park, run by Tower Hamlets Council, with a splash pool that runs 11am–5pm daily from the late May bank holiday to the end of the summer holidays (off when it rains). The park has two accessible cafés, accessible toilets and a Changing Places toilet.",
   "nearby": [
     {
       "type": "cafe",
-      "label": "Pavilion Café"
+      "label": "Two cafés, both wheelchair accessible"
     },
     {
       "type": "toilets",
-      "label": "Toilets"
+      "label": "Toilets with accessible cubicles and a Changing Places toilet"
     },
     {
       "type": "parking",
-      "label": "Free parking, Old Ford Road bays (4 hrs)",
-      "free": true
+      "label": "No cars in the park except blue badge holders (bays in the two main car parks)"
+    },
+    {
+      "type": "other",
+      "label": "Splash pool, 11am–5pm daily, late May to end of summer holidays"
     }
   ],
-  "sources": [],
-  "checked": null,
-  "notConfirmed": "",
-  "photo": null
+  "sources": [
+    {
+      "label": "Tower Hamlets Council: Victoria Park",
+      "url": "https://www.towerhamlets.gov.uk/victoriapark"
+    }
+  ],
+  "checked": "2026-10-20",
+  "notConfirmed": "Exact position, play equipment and age ranges, baby change and general parking.",
+  "photo": null,
+  "operator": "Tower Hamlets Council"
 }

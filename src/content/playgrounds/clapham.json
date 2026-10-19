@@ -4,43 +4,35 @@
   "area": "Clapham",
   "lat": 51.461,
   "lng": -0.146,
-  "ages": [
-    "under-3",
-    "3-6",
-    "7-12"
-  ],
+  "ages": [],
   "equipment": [
-    "sw",
-    "sl",
-    "cl",
-    "sp"
+    "wp"
   ],
   "access": [
-    "sf"
+    "inc",
+    "sen"
   ],
-  "facilities": [
-    "wc",
-    "cf",
-    "fen"
-  ],
-  "opens": "24h",
-  "description": "",
+  "facilities": [],
+  "opens": "",
+  "description": "Lambeth Council's Windmill Drive playground on Clapham Common was redesigned as a bigger, inclusive play area, with wooden wildlife sculptures and a bug hotel, and won a PiPA Gold Award. A water play area with jets, designed for children with physical, developmental and sensory disabilities as well, opened on the common in July 2023.",
   "nearby": [
-    {
-      "type": "cafe",
-      "label": "Café on the common"
-    },
     {
       "type": "transport",
       "label": "Clapham Common station"
-    },
-    {
-      "type": "toilets",
-      "label": "Toilets"
     }
   ],
-  "sources": [],
-  "checked": null,
-  "notConfirmed": "",
-  "photo": null
+  "sources": [
+    {
+      "label": "Lambeth Council: Windmill Drive playground redesign",
+      "url": "https://www.lambeth.gov.uk/better-fairer-lambeth/projects/clapham-common-windmill-drive-playground-redesign"
+    },
+    {
+      "label": "Love Lambeth: new water play area on Clapham Common",
+      "url": "https://love.lambeth.gov.uk/clapham-lambeth-council-opens-new-waterplay-area"
+    }
+  ],
+  "checked": "2026-10-20",
+  "notConfirmed": "Exact position, play equipment, age ranges, opening hours, water play season, toilets, café and parking.",
+  "photo": null,
+  "operator": "Lambeth Council"
 }

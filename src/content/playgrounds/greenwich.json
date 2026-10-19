@@ -11,40 +11,39 @@
   ],
   "equipment": [
     "sw",
-    "sl",
-    "cl",
+    "rb",
     "sp",
     "wp"
   ],
   "access": [
-    "inc",
-    "sf"
+    "inc"
   ],
   "facilities": [
     "wc",
     "bc",
-    "cf",
-    "fen"
+    "cf"
   ],
   "opens": "06:00",
-  "description": "",
+  "description": "Maritime-themed inclusive playground for children up to 12, built with logs, rope and bark. It has a basket swing, a roundabout and sand and water play at ground level and in raised channels, so children with different abilities can play together. There's seating, picnic tables and a refreshment kiosk.",
   "nearby": [
     {
-      "type": "parking",
-      "label": "Pay car park, Blackheath Avenue"
-    },
-    {
       "type": "toilets",
-      "label": "Toilets"
+      "label": "Children's toilets and an accessible toilet with baby change"
     },
     {
       "type": "cafe",
-      "label": "Pavilion Café"
+      "label": "Refreshment kiosk"
     }
   ],
   "operator": "The Royal Parks",
-  "sources": [],
-  "checked": null,
-  "notConfirmed": "",
-  "photo": null
+  "sources": [
+    {
+      "label": "The Royal Parks: Greenwich Park Playground",
+      "url": "https://www.royalparks.org.uk/visit/parks/greenwich-park/greenwich-park-playground"
+    }
+  ],
+  "checked": "2026-10-20",
+  "notConfirmed": "Exact position, fencing and parking.",
+  "photo": null,
+  "rules": "Closes 6pm Nov–Feb, 7pm Mar (8pm once clocks go forward), 8pm Apr, 9pm May, 9.30pm Jun–Jul, 9pm Aug, 8pm Sep, 7pm Oct (6pm once clocks go back). Closed 25 December."
 }
