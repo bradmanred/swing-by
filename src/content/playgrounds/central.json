@@ -1,0 +1,52 @@
+{
+  "name": "Central Park Playground",
+  "region": "devon",
+  "area": "Plymouth",
+  "lat": 50.387,
+  "lng": -4.145,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "zw",
+    "sp",
+    "rb"
+  ],
+  "access": [
+    "inc",
+    "sf"
+  ],
+  "facilities": [
+    "wc",
+    "cf",
+    "fen",
+    "fp"
+  ],
+  "opens": "24h",
+  "description": "",
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "Free car park by the leisure centre",
+      "free": true
+    },
+    {
+      "type": "cafe",
+      "label": "Café at the leisure centre"
+    },
+    {
+      "type": "toilets",
+      "label": "Toilets"
+    }
+  ],
+  "sources": [],
+  "checked": null,
+  "notConfirmed": "",
+  "photo": null
+}

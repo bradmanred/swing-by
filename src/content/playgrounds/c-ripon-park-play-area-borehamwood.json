@@ -1,0 +1,38 @@
+{
+  "name": "Ripon Park Play Area",
+  "region": "herts",
+  "area": "Borehamwood",
+  "lat": 51.65048,
+  "lng": -0.25886,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "cl",
+    "sw",
+    "rb",
+    "zw",
+    "sk"
+  ],
+  "access": [],
+  "facilities": [
+    "fen",
+    "fp"
+  ],
+  "opens": "",
+  "largePlayArea": true,
+  "description": "Fenced play area for children up to 13 with toddler and junior multi-units, swings, rotor dish, see-saw and climbing boulder, plus a zip wire and small BMX-style cycle track outside, beside Three Ways Community Centre.",
+  "nearby": [],
+  "operator": "Hertsmere Borough Council",
+  "sources": [
+    {
+      "label": "Hertsmere Borough Council: Ripon Park Play Area",
+      "url": "https://www.parksherts.co.uk/parks/ripon-park/"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Eastbury Play Area",
+  "region": "herts",
+  "area": "Eastbury",
+  "lat": 51.62427,
+  "lng": -0.41656,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "rb",
+    "ad"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "Designed with local schoolchildren, it has a tower with den and slide, a rope and log tangle, a willow tunnel and inclusive cradle swings, spinner bowl and basket swing.",
+  "nearby": [],
+  "operator": "Three Rivers District Council",
+  "sources": [
+    {
+      "label": "Three Rivers District Council: Eastbury Play Area",
+      "url": "https://www.threerivers.gov.uk/services/leisure-parks-culture/play-areas/rickmansworth-moor-park-play-areas"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}

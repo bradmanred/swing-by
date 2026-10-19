@@ -1,0 +1,35 @@
+{
+  "name": "Farm Close Play Area",
+  "region": "herts",
+  "area": "Welwyn Garden City",
+  "lat": 51.79893,
+  "lng": -0.2145,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl"
+  ],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "largePlayArea": true,
+  "description": "Enclosed play area with toddler and junior swings, two spring animals, a balancing beam, seesaw, climbing frame with slide and a junior trim trail, with grass and a bench.",
+  "nearby": [],
+  "operator": "Welwyn Hatfield Borough Council",
+  "sources": [
+    {
+      "label": "Welwyn Hatfield Borough Council: Farm Close Play Area",
+      "url": "https://www.welhat.gov.uk/directory-record/26970/farm-close-play-area"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,35 @@
+{
+  "name": "Clarence Park Play Area",
+  "region": "herts",
+  "area": "St Albans",
+  "lat": 51.75353,
+  "lng": -0.32401,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "zw",
+    "sp"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "largePlayArea": true,
+  "description": "Playground reopened in 2021 with over 35 features including a rope bridge, musical bandstand, swings, a cricket pavilion multi-play unit, slide, zip wire and sandpit, with inclusive play and public toilets beside it.",
+  "nearby": [],
+  "operator": "St Albans City and District Council",
+  "sources": [
+    {
+      "label": "St Albans City and District Council: Clarence Park Play Area",
+      "url": "https://www.stalbans.gov.uk/news/new-ps220000-clarence-park-play-area-opens"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}

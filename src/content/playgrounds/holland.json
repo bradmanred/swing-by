@@ -1,0 +1,44 @@
+{
+  "name": "Holland Park Adventure Playground",
+  "region": "london",
+  "area": "Kensington",
+  "lat": 51.5025,
+  "lng": -0.2035,
+  "ages": [
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "cl",
+    "zw",
+    "ad",
+    "sw"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf",
+    "sh"
+  ],
+  "opens": "07:30",
+  "description": "",
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "Pay car park, Abbotsbury Road"
+    },
+    {
+      "type": "toilets",
+      "label": "Toilets"
+    },
+    {
+      "type": "cafe",
+      "label": "Café"
+    }
+  ],
+  "sources": [],
+  "checked": null,
+  "notConfirmed": "",
+  "photo": null
+}

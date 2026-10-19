@@ -1,0 +1,34 @@
+{
+  "name": "Hornhill Play Area",
+  "region": "herts",
+  "area": "Maple Cross",
+  "lat": 51.62177,
+  "lng": -0.5127,
+  "ages": [
+    "under-3"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "rb",
+    "zw"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area with a zip wire, climbing unit, trampoline, balance logs, toddler swings and an inclusive roundabout, basket swing and slide.",
+  "nearby": [],
+  "operator": "Three Rivers District Council",
+  "sources": [
+    {
+      "label": "Three Rivers District Council: Hornhill Play Area",
+      "url": "https://www.threerivers.gov.uk/services/leisure-parks-culture/play-areas/mill-end-maple-cross-play-area"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}

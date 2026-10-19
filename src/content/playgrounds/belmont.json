@@ -1,0 +1,39 @@
+{
+  "name": "Belmont Park Play Area",
+  "region": "devon",
+  "area": "Exeter",
+  "lat": 50.73,
+  "lng": -3.52,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl"
+  ],
+  "access": [
+    "sf"
+  ],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "24h",
+  "description": "",
+  "nearby": [
+    {
+      "type": "transport",
+      "label": "St James Park station"
+    },
+    {
+      "type": "parking",
+      "label": "Paid street parking"
+    }
+  ],
+  "sources": [],
+  "checked": null,
+  "notConfirmed": "",
+  "photo": null
+}

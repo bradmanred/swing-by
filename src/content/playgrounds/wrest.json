@@ -1,0 +1,49 @@
+{
+  "name": "Wrest Park Play Area",
+  "region": "herts",
+  "area": "Silsoe, just over the border in Bedfordshire",
+  "lat": 52.0045,
+  "lng": -0.412,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "cl",
+    "sl",
+    "zw"
+  ],
+  "access": [],
+  "facilities": [
+    "cf"
+  ],
+  "opens": "",
+  "description": "Play area inspired by the house, with climbing frames, a mini pavilion to climb, a slide and a zip wire. The café overlooks it.",
+  "nearby": [
+    {
+      "type": "cafe",
+      "label": "Café right next to the play area"
+    },
+    {
+      "type": "parking",
+      "label": "Visitor car park"
+    }
+  ],
+  "operator": "English Heritage",
+  "membership": "eh",
+  "fee": "Paid entry for non-members",
+  "sources": [
+    {
+      "label": "English Heritage: Wrest Park things to do",
+      "url": "https://www.english-heritage.org.uk/visit/places/wrest-park/things-to-do/"
+    },
+    {
+      "label": "English Heritage: play areas",
+      "url": "https://www.english-heritage.org.uk/visit/familydaysout/english-heritage-play-areas/"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Opening days, age ranges and toilets.",
+  "photo": null
+}

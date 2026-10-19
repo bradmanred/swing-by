@@ -1,0 +1,33 @@
+{
+  "name": "Edens Mount Play Area",
+  "region": "herts",
+  "area": "Sawbridgeworth",
+  "lat": 51.81975,
+  "lng": 0.15412,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "rb"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "Play area with cradle and flat swings, a springer seesaw, an accessible roundabout and a senior multi-unit with slide.",
+  "nearby": [],
+  "operator": "East Herts Council",
+  "sources": [
+    {
+      "label": "East Herts Council: Edens Mount Play Area",
+      "url": "https://www.eastherts.gov.uk/sports-leisure-parks/parks-open-spaces-east-herts/local-parks-open-spaces-sawbridgeworth/edens"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Meadow Park Play Areas and Splash Zone",
+  "region": "herts",
+  "area": "Borehamwood",
+  "lat": 51.66313,
+  "lng": -0.26979,
+  "ages": [
+    "under-3"
+  ],
+  "equipment": [
+    "sl",
+    "wp",
+    "cl"
+  ],
+  "access": [
+    "inc",
+    "sf"
+  ],
+  "facilities": [
+    "sh"
+  ],
+  "opens": "",
+  "largePlayArea": true,
+  "description": "Two inclusive space- and earth-themed play areas with an 8m tube slide, trampoline mounds and interactive play, a toddler area, and a seasonal splash zone with jets and water columns.",
+  "nearby": [],
+  "operator": "Hertsmere Borough Council",
+  "sources": [
+    {
+      "label": "Hertsmere Borough Council: Meadow Park Play Areas and Splash Zone",
+      "url": "https://www.parksherts.co.uk/parks/meadow-park/"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Opening hours, toilets and parking.",
+  "photo": null
+}

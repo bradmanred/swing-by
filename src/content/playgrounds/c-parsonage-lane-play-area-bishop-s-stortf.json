@@ -1,0 +1,34 @@
+{
+  "name": "Parsonage Lane Play Area",
+  "region": "herts",
+  "area": "Bishop's Stortford",
+  "lat": 51.87618,
+  "lng": 0.17167,
+  "ages": [
+    "under-3",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "rb",
+    "sk"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Play area with swings, a springer seesaw, a fire engine springer, low rotators, toddler, junior and senior multi-units with slides, a teenage shelter, basketball hoop, static skate unit and goal posts.",
+  "nearby": [],
+  "operator": "East Herts Council",
+  "sources": [
+    {
+      "label": "East Herts Council: Parsonage Lane Play Area",
+      "url": "https://www.eastherts.gov.uk/sports-leisure-parks/local-parks-open-spaces-0/parks-open-spaces-bishops-stortford/parsonage-lane-play-area"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,35 @@
+{
+  "name": "Lawrence Hall End Play Area",
+  "region": "herts",
+  "area": "Welwyn Garden City",
+  "lat": 51.78607,
+  "lng": -0.2012,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "cl",
+    "rb"
+  ],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "largePlayArea": true,
+  "description": "Enclosed site with junior and toddler swings, two multi-play units, springers, roundabout, see-saw, spinning disc, stepping stones and a springy balancing beam, with benches and a basketball court nearby.",
+  "nearby": [],
+  "operator": "Welwyn Hatfield Borough Council",
+  "sources": [
+    {
+      "label": "Welwyn Hatfield Borough Council: Lawrence Hall End Play Area",
+      "url": "https://www.welhat.gov.uk/directory-record/26974/lawrence-hall-end-play-area"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}

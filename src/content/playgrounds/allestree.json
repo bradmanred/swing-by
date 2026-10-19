@@ -1,0 +1,41 @@
+{
+  "name": "Allestree Park Play Area",
+  "region": "derbyshire",
+  "area": "Allestree, Derby",
+  "lat": 52.958,
+  "lng": -1.493,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl"
+  ],
+  "access": [
+    "sf"
+  ],
+  "facilities": [
+    "fen",
+    "fp"
+  ],
+  "opens": "24h",
+  "description": "",
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "Free car park off Duffield Road",
+      "free": true
+    },
+    {
+      "type": "other",
+      "label": "Lake and woodland trails"
+    }
+  ],
+  "sources": [],
+  "checked": null,
+  "notConfirmed": "",
+  "photo": null
+}

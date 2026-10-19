@@ -1,0 +1,33 @@
+{
+  "name": "Appleby Street Play Area",
+  "region": "herts",
+  "area": "Cheshunt",
+  "lat": 51.72196,
+  "lng": -0.07048,
+  "ages": [
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "sw",
+    "rb",
+    "sl",
+    "cl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Play area with swings, roundabouts, a slide, rockers and a climbing frame, for ages 3 to teenage.",
+  "nearby": [],
+  "operator": "Borough of Broxbourne Council",
+  "sources": [
+    {
+      "label": "Borough of Broxbourne Council: Appleby Street Play Area",
+      "url": "https://www.broxbourne.gov.uk/directory-record/630573/appleby-street"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}

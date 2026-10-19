@@ -1,0 +1,49 @@
+{
+  "name": "Pavilion Gardens Play Area",
+  "region": "derbyshire",
+  "area": "Buxton",
+  "lat": 53.259,
+  "lng": -1.918,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "sp",
+    "tr"
+  ],
+  "access": [
+    "inc",
+    "sf"
+  ],
+  "facilities": [
+    "wc",
+    "bc",
+    "cf",
+    "fen"
+  ],
+  "opens": "08:00",
+  "description": "",
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "Pay & display car park"
+    },
+    {
+      "type": "cafe",
+      "label": "Café in the Pavilion"
+    },
+    {
+      "type": "other",
+      "label": "Miniature train (seasonal)"
+    }
+  ],
+  "sources": [],
+  "checked": null,
+  "notConfirmed": "",
+  "photo": null
+}

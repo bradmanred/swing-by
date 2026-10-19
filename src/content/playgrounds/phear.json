@@ -1,0 +1,48 @@
+{
+  "name": "Phear Park Play Area",
+  "region": "devon",
+  "area": "Exmouth",
+  "lat": 50.625,
+  "lng": -3.405,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "zw"
+  ],
+  "access": [
+    "inc",
+    "sf"
+  ],
+  "facilities": [
+    "wc",
+    "fen",
+    "fp"
+  ],
+  "opens": "08:00",
+  "description": "",
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "Free car park, Phear Park",
+      "free": true
+    },
+    {
+      "type": "cafe",
+      "label": "Café"
+    },
+    {
+      "type": "other",
+      "label": "Splash pad (summer)"
+    }
+  ],
+  "sources": [],
+  "checked": null,
+  "notConfirmed": "",
+  "photo": null
+}

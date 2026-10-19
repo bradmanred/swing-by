@@ -1,0 +1,36 @@
+{
+  "name": "Knightsfield Play Area",
+  "region": "herts",
+  "area": "Welwyn Garden City",
+  "lat": 51.81503,
+  "lng": -0.20462,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "sw",
+    "cl",
+    "rb"
+  ],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "largePlayArea": true,
+  "description": "Enclosed play area on a large open space with three multi-play units, toddler and junior swings, a roundabout, spinning bowl and springers, two benches and a teenage shelter.",
+  "nearby": [],
+  "operator": "Welwyn Hatfield Borough Council",
+  "sources": [
+    {
+      "label": "Welwyn Hatfield Borough Council: Knightsfield Play Area",
+      "url": "https://www.welhat.gov.uk/directory-record/26973/knightsfield-play-area"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}

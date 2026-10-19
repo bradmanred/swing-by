@@ -1,0 +1,46 @@
+{
+  "name": "Knebworth Park Adventure Playground",
+  "region": "herts",
+  "area": "Knebworth",
+  "lat": 51.8722,
+  "lng": -0.2152,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "ad"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "10:30",
+  "closes": "17:00",
+  "season": {
+    "from": 3,
+    "to": 9
+  },
+  "description": "Adventure playground and dinosaur trail in Knebworth Park, open 10.30am–5pm (last tickets 4.15pm) on set days from late March to September: weekends in spring and September, daily in the school holidays. Historic Houses members get in free on non-event days.",
+  "nearby": [
+    {
+      "type": "other",
+      "label": "Dinosaur trail"
+    },
+    {
+      "type": "other",
+      "label": "Gardens and house (house 11.30am–5pm)"
+    }
+  ],
+  "operator": "Knebworth House (private estate)",
+  "membership": "hh",
+  "fee": "Paid entry for non-members; members pay park entry on event days",
+  "sources": [
+    {
+      "label": "Historic Houses: Knebworth",
+      "url": "https://www.historichouses.org/house/knebworth-house-park-gardens/"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Next season's exact dates (check Knebworth's own website), equipment, toilets and café.",
+  "photo": null
+}

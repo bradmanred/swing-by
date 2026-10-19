@@ -1,0 +1,46 @@
+{
+  "name": "Clapham Common Playground",
+  "region": "london",
+  "area": "Clapham",
+  "lat": 51.461,
+  "lng": -0.146,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "sp"
+  ],
+  "access": [
+    "sf"
+  ],
+  "facilities": [
+    "wc",
+    "cf",
+    "fen"
+  ],
+  "opens": "24h",
+  "description": "",
+  "nearby": [
+    {
+      "type": "cafe",
+      "label": "Café on the common"
+    },
+    {
+      "type": "transport",
+      "label": "Clapham Common station"
+    },
+    {
+      "type": "toilets",
+      "label": "Toilets"
+    }
+  ],
+  "sources": [],
+  "checked": null,
+  "notConfirmed": "",
+  "photo": null
+}

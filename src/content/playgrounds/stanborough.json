@@ -1,0 +1,53 @@
+{
+  "name": "Splashlands, Stanborough Park",
+  "region": "herts",
+  "area": "Welwyn Garden City",
+  "lat": 51.785,
+  "lng": -0.225,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "wp",
+    "ad",
+    "cl"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "Free splash pad with 67 jets and a paddling river, plus a nautical adventure playground with a big pirate ship. No booking needed; on busy days you may have to queue.",
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "Pay car park: first 20 min free, £1.50 1 hr, £6 3 hrs, £10 all day (cashless)"
+    },
+    {
+      "type": "toilets",
+      "label": "Toilets and changing, 9am–6pm"
+    },
+    {
+      "type": "cafe",
+      "label": "Kiosk, 10am–6pm daily"
+    }
+  ],
+  "operator": "Welwyn Hatfield Borough Council",
+  "sources": [
+    {
+      "label": "Welwyn Hatfield council: Splashlands",
+      "url": "https://one.welhat.gov.uk/splashlands"
+    },
+    {
+      "label": "Better: Stanborough Park car parks",
+      "url": "https://www.better.org.uk/leisure-centre/welwyn-hatfield/stanborough-park-water-sports-centre/news/stanborough-park-car-parks-are-going-cashless"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Splash pad season and hours, and accessibility.",
+  "photo": null
+}

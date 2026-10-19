@@ -1,0 +1,35 @@
+{
+  "name": "Little Rivers Play Area",
+  "region": "herts",
+  "area": "Welwyn Garden City",
+  "lat": 51.80392,
+  "lng": -0.18142,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "cl",
+    "rb"
+  ],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "largePlayArea": true,
+  "description": "Enclosed site with three multi-play units for toddlers and juniors, junior and toddler swings, a spinning bowl, whirling platform, spring animal, see-saw and rocker, with two benches.",
+  "nearby": [],
+  "operator": "Welwyn Hatfield Borough Council",
+  "sources": [
+    {
+      "label": "Welwyn Hatfield Borough Council: Little Rivers Play Area",
+      "url": "https://www.welhat.gov.uk/directory-record/26975/little-rivers-play-area"
+    }
+  ],
+  "checked": "2026-10-19",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}
