@@ -5,36 +5,22 @@
   "lat": 50.468,
   "lng": -3.532,
   "ages": [
-    "under-3",
-    "3-6",
     "7-12"
   ],
-  "equipment": [
-    "sw",
-    "sl",
-    "cl",
-    "sp"
-  ],
-  "access": [
-    "sf"
-  ],
-  "facilities": [
-    "fen"
-  ],
-  "opens": "24h",
-  "description": "",
-  "nearby": [
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Town park on Lymington Road (TQ1 4BG), run by Torbay Council, with a junior playground and outdoor fitness equipment.",
+  "nearby": [],
+  "sources": [
     {
-      "type": "parking",
-      "label": "Pay & display, Lymington Road"
-    },
-    {
-      "type": "cafe",
-      "label": "Cafés in Castle Circus"
+      "label": "Torbay Council: Upton Park",
+      "url": "https://www.torbay.gov.uk/leisure-sports-and-community/parks/find-a-park/upton-park/"
     }
   ],
-  "sources": [],
-  "checked": null,
-  "notConfirmed": "",
-  "photo": null
+  "checked": "2026-10-20",
+  "notConfirmed": "Exact position, play equipment, provision for under-7s, opening hours, toilets, café and parking.",
+  "photo": null,
+  "operator": "Torbay Council"
 }
