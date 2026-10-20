@@ -5,40 +5,41 @@
   "lat": 51.5025,
   "lng": -0.2035,
   "ages": [
+    "under-3",
     "3-6",
     "7-12",
     "teens"
   ],
   "equipment": [
-    "cl",
     "zw",
+    "sw",
+    "rb",
     "ad",
-    "sw"
+    "ss"
   ],
-  "access": [],
+  "access": [
+    "inc"
+  ],
   "facilities": [
     "wc",
-    "cf",
-    "sh"
+    "bc"
   ],
   "opens": "07:30",
-  "description": "",
+  "description": "Adventure playground in Holland Park for ages 5 to 14, with a 25-metre zip wire, a 10-person see-saw, a 10-person dragon swinger, a wheelchair-accessible roundabout and accessible swings. There's a separate toddler playground nearby. Children must be supervised.",
   "nearby": [
     {
-      "type": "parking",
-      "label": "Pay car park, Abbotsbury Road"
-    },
-    {
       "type": "toilets",
-      "label": "Toilets"
-    },
-    {
-      "type": "cafe",
-      "label": "Café"
+      "label": "Toilets in the playground, with baby change and an accessible toilet; more by the toddler playground"
     }
   ],
-  "sources": [],
-  "checked": null,
-  "notConfirmed": "",
-  "photo": null
+  "sources": [
+    {
+      "label": "RBKC: Holland Park Adventure Playground",
+      "url": "https://webtest.rbkc.gov.uk/holland-park-adventure-playground"
+    }
+  ],
+  "checked": "2026-10-20",
+  "notConfirmed": "Exact position, toddler playground equipment, café and parking. The council page was last updated in 2021.",
+  "photo": null,
+  "operator": "Royal Borough of Kensington and Chelsea"
 }

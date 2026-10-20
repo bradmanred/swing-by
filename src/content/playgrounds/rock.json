@@ -4,44 +4,42 @@
   "area": "Barnstaple",
   "lat": 51.077,
   "lng": -4.053,
-  "ages": [
-    "under-3",
-    "3-6",
-    "7-12",
-    "teens"
-  ],
+  "ages": [],
   "equipment": [
-    "sw",
-    "sl",
-    "cl",
-    "zw",
     "sk"
   ],
-  "access": [
-    "sf"
-  ],
+  "access": [],
   "facilities": [
-    "wc",
-    "fen"
+    "wc"
   ],
-  "opens": "24h",
-  "description": "",
+  "opens": "",
+  "description": "Riverside park on the Taw in Barnstaple, mostly looked after by Barnstaple Town Council, with a children's play area, public toilets and a refreshment kiosk. North Devon Council runs the skatepark. The play equipment was commended for its condition in the 2024 South West in Bloom Pride in Parks awards.",
   "nearby": [
     {
-      "type": "other",
-      "label": "Riverside cycle path (Tarka Trail)"
-    },
-    {
-      "type": "parking",
-      "label": "Pay car park, Rock Park"
+      "type": "cafe",
+      "label": "Refreshment kiosk"
     },
     {
       "type": "toilets",
-      "label": "Toilets"
+      "label": "Public toilets"
     }
   ],
-  "sources": [],
-  "checked": null,
-  "notConfirmed": "",
-  "photo": null
+  "sources": [
+    {
+      "label": "Barnstaple Town Council: events in Rock Park",
+      "url": "https://barnstapletowncouncil.gov.uk/?p=7941"
+    },
+    {
+      "label": "Barnstaple Town Council: parks and green spaces",
+      "url": "https://www.barnstapletowncouncil.gov.uk/?p=4912"
+    },
+    {
+      "label": "Barnstaple Town Council: five-star award for Rock Park",
+      "url": "https://barnstapletowncouncil.gov.uk/?p=9042"
+    }
+  ],
+  "checked": "2026-10-20",
+  "notConfirmed": "Exact position, play equipment and age ranges, opening hours, kiosk hours, baby change and parking.",
+  "photo": null,
+  "operator": "Barnstaple Town Council"
 }

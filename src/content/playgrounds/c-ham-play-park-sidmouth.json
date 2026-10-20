@@ -1,0 +1,42 @@
+{
+  "name": "The Ham Play Park",
+  "region": "devon",
+  "area": "Sidmouth",
+  "lat": 50.6792,
+  "lng": -3.2355,
+  "ages": [],
+  "equipment": [
+    "zw",
+    "cl",
+    "sl",
+    "sw",
+    "sp",
+    "tp"
+  ],
+  "access": [],
+  "facilities": [
+    "sh"
+  ],
+  "opens": "",
+  "description": "Seaside-themed play park on the Ham at the east end of the seafront, rebuilt by Sidmouth Town Council and reopened in February 2023. It has a zip wire, climbing wall, slides, swings, a trampoline and boat-themed play units, plus a sandpit with 'fossils' hidden in it. A gravel path runs through it, with extra seating and a shaded area.",
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "Ham East and Ham West pay car parks, EX10 8BW"
+    }
+  ],
+  "operator": "Sidmouth Town Council",
+  "sources": [
+    {
+      "label": "Sidmouth Town Council: new Ham play park ready",
+      "url": "https://sidmouth.gov.uk/new-ham-play-park-ready"
+    },
+    {
+      "label": "Sidmouth Town Council: car and coach parks",
+      "url": "https://sidmouth.gov.uk/directory/car-and-coach-parks-for-sidmouth"
+    }
+  ],
+  "checked": "2026-10-20",
+  "notConfirmed": "Exact position (mapped from the Ham East car park), age ranges, opening hours, toilets and parking charges.",
+  "photo": null
+}

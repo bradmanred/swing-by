@@ -11,25 +11,21 @@
     "teens"
   ],
   "equipment": [
-    "sw",
     "sl",
     "cl",
     "sp",
     "zw",
-    "ad"
+    "ad",
+    "wp"
   ],
-  "access": [
-    "sf"
-  ],
+  "access": [],
   "facilities": [
-    "wc",
-    "bc",
     "cf",
     "fen"
   ],
   "opens": "09:00",
-  "description": "",
-  "rules": "Adults can only go in with a child.",
+  "description": "Seven-acre park for children in Bloomsbury, at 93 Guilford Street. There are several playgrounds, including an adventure playground with a zip wire, a climbing wall and one of London's longest slides, plus a paddling pool and giant sandpits in summer, free sports pitches, a wildlife garden and a café. Indoor soft play runs for under-5s on winter weekday mornings.",
+  "rules": "Adults can only go in with a child under 16. Open daily from 9am to dusk; closed Christmas Day and Boxing Day.",
   "nearby": [
     {
       "type": "cafe",
@@ -38,15 +34,16 @@
     {
       "type": "transport",
       "label": "Russell Square station"
-    },
-    {
-      "type": "parking",
-      "label": "Paid street parking only"
     }
   ],
   "operator": "Coram's Fields (charity)",
-  "sources": [],
-  "checked": null,
-  "notConfirmed": "",
+  "sources": [
+    {
+      "label": "Visit London: Coram's Fields",
+      "url": "https://www.visitlondon.com/things-to-do/place/288666-corams-fields"
+    }
+  ],
+  "checked": "2026-10-20",
+  "notConfirmed": "Exact position, toilets, baby change, parking and paddling pool dates.",
   "photo": null
 }

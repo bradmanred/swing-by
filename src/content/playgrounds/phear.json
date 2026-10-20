@@ -4,45 +4,29 @@
   "area": "Exmouth",
   "lat": 50.625,
   "lng": -3.405,
-  "ages": [
-    "under-3",
-    "3-6",
-    "7-12"
-  ],
+  "ages": [],
   "equipment": [
-    "sw",
-    "sl",
     "cl",
-    "zw"
+    "sk",
+    "tp"
   ],
-  "access": [
-    "inc",
-    "sf"
-  ],
-  "facilities": [
-    "wc",
-    "fen",
-    "fp"
-  ],
-  "opens": "08:00",
-  "description": "",
-  "nearby": [
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Exmouth's main town park play area, run by East Devon District Council. It is being rebuilt by Kompan: work was due to start in mid-September 2026 and take about two months, with a four-metre oak-tree climbing unit, a large squirrel play unit and owl touches, including one set into the trampoline surfacing. The multi-use games area is being renewed and a wheeled-sports area and pump track added next to the skate park.",
+  "nearby": [],
+  "sources": [
     {
-      "type": "parking",
-      "label": "Free car park, Phear Park",
-      "free": true
+      "label": "Devon Air Radio: improvements to begin at Higher Brook Meadow and Phear Park play areas (5 Aug 2026)",
+      "url": "https://www.devonairradio.com/news/local-news/improvements-to-begin-at-higher-brook-meadow-and-phear-park-play-areas/"
     },
     {
-      "type": "cafe",
-      "label": "Café"
-    },
-    {
-      "type": "other",
-      "label": "Splash pad (summer)"
+      "label": "East Devon District Council: Phear Park play area upgrades",
+      "url": "https://eastdevon.gov.uk/community-engagement/previous-consultationsurvey-updates/place/phear-park-exmouth-play-area-upgrades/"
     }
   ],
-  "sources": [],
-  "checked": null,
-  "notConfirmed": "",
-  "photo": null
+  "checked": "2026-10-20",
+  "notConfirmed": "Whether the play area has reopened after the autumn 2026 rebuild (check before you go), exact position, age ranges, opening hours, toilets, café and parking.",
+  "photo": null,
+  "operator": "East Devon District Council"
 }

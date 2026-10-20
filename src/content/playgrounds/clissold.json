@@ -7,48 +7,45 @@
   "ages": [
     "under-3",
     "3-6",
-    "7-12"
+    "7-12",
+    "teens"
   ],
   "equipment": [
     "sw",
-    "sl",
     "cl",
     "sp",
-    "wp"
+    "wp",
+    "rb",
+    "sk"
   ],
-  "access": [
-    "inc",
-    "sf"
-  ],
+  "access": [],
   "facilities": [
-    "wc",
-    "bc",
-    "cf",
-    "fen"
+    "wc"
   ],
   "opens": "07:30",
-  "description": "",
+  "description": "Natural-style play area opened in 2011 as part of the park's restoration, with swaying wooden bridges, hollow logs, climbing boulders, tractor-tyre swings, a desert-island sand valley and water play, plus a climbing web, swings, springers and roundabouts for smaller children. The Wheels Park next door has jumps and mounds for skateboards, scooters and BMX.",
   "nearby": [
     {
       "type": "toilets",
-      "label": "Toilets"
-    },
-    {
-      "type": "cafe",
-      "label": "Clissold House café"
-    },
-    {
-      "type": "other",
-      "label": "Paddling pool (summer)"
+      "label": "Accessible toilets in the park"
     },
     {
       "type": "parking",
-      "label": "Free Sunday street parking, Queen Elizabeth's Walk",
-      "free": true
+      "label": "No car park; limited street parking nearby"
     }
   ],
-  "sources": [],
-  "checked": null,
-  "notConfirmed": "",
-  "photo": null
+  "sources": [
+    {
+      "label": "Hackney Council: fun in the sun at the new Clissold Park play area",
+      "url": "https://news.hackney.gov.uk/fun-in-the-sun-at-the-new-clissold-park-play-area"
+    },
+    {
+      "label": "Clissold Park: visiting the park",
+      "url": "https://clissoldpark.com/?p=2767"
+    }
+  ],
+  "checked": "2026-10-20",
+  "notConfirmed": "Exact position, current equipment (the council description is from 2011), closing times, café and baby change.",
+  "photo": null,
+  "operator": "Hackney Council"
 }

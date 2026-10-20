@@ -1,52 +1,52 @@
 {
-  "name": "Central Park Playground",
+  "name": "Central Park Play Space",
   "region": "devon",
   "area": "Plymouth",
   "lat": 50.387,
   "lng": -4.145,
-  "ages": [
-    "under-3",
-    "3-6",
-    "7-12",
-    "teens"
-  ],
+  "ages": [],
   "equipment": [
-    "sw",
-    "sl",
-    "cl",
     "zw",
+    "cl",
+    "sl",
     "sp",
-    "rb"
+    "wp",
+    "tp"
   ],
-  "access": [
-    "inc",
-    "sf"
-  ],
+  "access": [],
   "facilities": [
     "wc",
     "cf",
-    "fen",
-    "fp"
+    "fen"
   ],
   "opens": "24h",
-  "description": "",
+  "description": "Plymouth's biggest park play space, refitted with trampolines, hammocks and a double zip wire. It has three areas: two fenced areas for toddlers with sand and water play, and an open area with a big climbing and sliding structure, trampolines, hammocks, a low ropes course and the zip wire. The council says it suits children of all ages and abilities. The park is open 24 hours and free.",
   "nearby": [
     {
-      "type": "parking",
-      "label": "Free car park by the leisure centre",
-      "free": true
-    },
-    {
       "type": "cafe",
-      "label": "Café at the leisure centre"
+      "label": "The Meadow Café by the clock tower, overlooking the play space"
     },
     {
       "type": "toilets",
-      "label": "Toilets"
+      "label": "Free toilets at The Meadow Café, during café hours"
+    },
+    {
+      "type": "parking",
+      "label": "Milehouse Park and Ride"
     }
   ],
-  "sources": [],
-  "checked": null,
-  "notConfirmed": "",
-  "photo": null
+  "sources": [
+    {
+      "label": "Plymouth City Council: Central Park",
+      "url": "https://www.plymouth.gov.uk/findpark/centralpark0"
+    },
+    {
+      "label": "Visit Plymouth: Central Park",
+      "url": "https://visitplymouth.co.uk/things-to-do/central-park-p2106953"
+    }
+  ],
+  "checked": "2026-10-20",
+  "notConfirmed": "Exact position, current café opening hours (the council page gives two different sets), parking charges and baby change.",
+  "photo": null,
+  "operator": "Plymouth City Council"
 }

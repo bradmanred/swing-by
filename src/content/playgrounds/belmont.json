@@ -4,36 +4,28 @@
   "area": "Exeter",
   "lat": 50.73,
   "lng": -3.52,
-  "ages": [
-    "under-3",
-    "3-6",
-    "7-12"
-  ],
+  "ages": [],
   "equipment": [
-    "sw",
-    "sl",
-    "cl"
+    "cl",
+    "ss"
   ],
-  "access": [
-    "sf"
-  ],
-  "facilities": [
-    "fen"
-  ],
-  "opens": "24h",
-  "description": "",
-  "nearby": [
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Victorian park in Newtown between Belmont Road and Blackboy Road, opened in 1886 as a children's play area and run by Exeter City Council. Its play area has a pony seesaw and a play tower with a house and balcony, aimed at toddlers to young teens.",
+  "nearby": [],
+  "sources": [
     {
-      "type": "transport",
-      "label": "St James Park station"
+      "label": "Exeter City Council: play park equipment bonus",
+      "url": "https://news.exeter.gov.uk/play-park-equipment-bonus-for-exeter/"
     },
     {
-      "type": "parking",
-      "label": "Paid street parking"
+      "label": "Exeter Views: Belmont Park",
+      "url": "https://exeterviews.co.uk/exeter-maps/venue/belmont-park"
     }
   ],
-  "sources": [],
-  "checked": null,
-  "notConfirmed": "",
-  "photo": null
+  "checked": "2026-10-20",
+  "notConfirmed": "Exact position, current equipment (the council source is from 2019), opening hours, fencing, toilets and parking.",
+  "photo": null,
+  "operator": "Exeter City Council"
 }
