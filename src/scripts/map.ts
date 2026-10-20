@@ -3,7 +3,7 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 // MapLibre loads its worker as a separate file, so the bundler has to ship it and tell MapLibre where it is.
 import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?url';
 import type { ClientPark } from '../lib/card';
-import type { MapView } from './finder';
+import type { Bounds, MapView } from './finder';
 
 // OpenFreeMap: free vector tiles from OpenStreetMap data, no API key needed.
 const STYLE = 'https://tiles.openfreemap.org/styles/liberty';
@@ -19,7 +19,11 @@ function circle(lat: number, lng: number, metres: number) {
   return { type: 'Feature' as const, properties: {}, geometry: { type: 'Polygon' as const, coordinates: [pts] } };
 }
 
-export function createMap(el: HTMLElement, onPick: (id: string) => void): MapView | null {
+export function createMap(
+  el: HTMLElement,
+  onPick: (id: string) => void,
+  onMove?: (centre: { lat: number; lng: number }, bounds: Bounds) => void,
+): MapView | null {
   let map: maplibregl.Map;
   maplibregl.setWorkerUrl(workerUrl);
   try {
@@ -41,6 +45,24 @@ export function createMap(el: HTMLElement, onPick: (id: string) => void): MapVie
   let pending: Parameters<MapView['update']> | null = null;
   let ready = false;
 
+  // Search the new area when someone drags, zooms or uses the keyboard on the map. Moves the page makes itself
+  // (fitting the map to new results) have no originalEvent, so they don't count.
+  let userMove = false;
+  let timer: ReturnType<typeof setTimeout> | undefined;
+  map.on('movestart', (e) => {
+    if ((e as { originalEvent?: Event }).originalEvent) userMove = true;
+  });
+  map.on('moveend', (e) => {
+    if (!userMove && !(e as { originalEvent?: Event }).originalEvent) return;
+    userMove = false;
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      const c = map.getCenter();
+      const b = map.getBounds();
+      onMove?.({ lat: c.lat, lng: c.lng }, { n: b.getNorth(), s: b.getSouth(), e: b.getEast(), w: b.getWest() });
+    }, 350);
+  });
+
   map.on('load', () => {
     map.addSource('acc', { type: 'geojson', data: circle(51.752, -0.336, 1) });
     map.addLayer({ id: 'acc-fill', type: 'fill', source: 'acc', paint: { 'fill-color': '#1A3FB8', 'fill-opacity': 0.12 } });
@@ -50,9 +72,9 @@ export function createMap(el: HTMLElement, onPick: (id: string) => void): MapVie
   });
 
   const view: MapView = {
-    update(o, top) {
+    update(o, top, opts = {}) {
       if (!ready) {
-        pending = [o, top];
+        pending = [o, top, opts];
         return;
       }
       (map.getSource('acc') as maplibregl.GeoJSONSource).setData(circle(o.lat, o.lng, Math.max(o.acc, 60)));
@@ -67,6 +89,16 @@ export function createMap(el: HTMLElement, onPick: (id: string) => void): MapVie
         b.addEventListener('click', () => onPick(p.id));
         return new maplibregl.Marker({ element: b, anchor: 'bottom' }).setLngLat([p.lng, p.lat]).addTo(map);
       });
+      for (const p of opts.more ?? []) {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'pin-dot';
+        b.setAttribute('aria-label', `${p.n}. Go to its card.`);
+        b.title = p.n;
+        b.addEventListener('click', () => onPick(p.id));
+        pins.push(new maplibregl.Marker({ element: b, anchor: 'center' }).setLngLat([p.lng, p.lat]).addTo(map));
+      }
+      if (opts.fit === false) return;
       const bounds = new maplibregl.LngLatBounds([o.lng, o.lat], [o.lng, o.lat]);
       top.forEach((p) => bounds.extend([p.lng, p.lat]));
       map.fitBounds(bounds, { padding: 60, maxZoom: 15, duration: matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 600 });
