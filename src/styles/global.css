@@ -58,7 +58,7 @@ label { font-weight: 700; }
 fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
 legend { font-weight: 700; padding: 0; margin-bottom: 8px; }
 .chk { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 0 16px; border: 3px solid var(--ink); border-radius: 14px; background: var(--white); font-weight: 700; cursor: pointer; }
-.chk input { width: 22px; height: 22px; accent-color: var(--ink); margin: 0; }
+.chk input { width: 22px; height: 22px; flex: none; accent-color: var(--ink); margin: 0; }
 .chk:has(input:checked) { background: var(--yellow); }
 .row { display: flex; flex-wrap: wrap; gap: 10px; }
 
@@ -67,8 +67,22 @@ legend { font-weight: 700; padding: 0; margin-bottom: 8px; }
 @media (min-width: 900px) { .hero { grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); align-items: center; padding: 32px; } }
 .hero .lede { margin-top: 14px; font-size: 1.25rem; max-width: 46ch; }
 .search { background: var(--white); color: var(--ink); border: var(--line); border-radius: var(--radius); padding: 20px; display: grid; gap: 16px; }
-.search .where { display: flex; flex-wrap: wrap; gap: 10px; }
-.search .where input { flex: 1 1 200px; min-width: 0; }
+.hero .counter { display: inline-flex; align-items: baseline; gap: 8px; margin: 0 0 16px; padding: 4px 16px; border: 3px solid var(--ink); border-radius: 999px; background: var(--yellow); color: var(--ink); font-weight: 700; }
+.hero .counter strong { font-family: var(--display); font-weight: 800; font-size: 1.625rem; line-height: 1.2; font-variant-numeric: tabular-nums; }
+.search label[for='where'] { display: block; margin-bottom: 6px; }
+.search #where { width: 100%; }
+.search .hint { margin-top: 6px; }
+/* "Near me" and "Let's go!" sit side by side under the box, so both are in view on a phone. */
+.search .go { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 12px; }
+.search .go .btn { min-height: 58px; padding: 0 10px; white-space: nowrap; }
+@media (max-width: 499px) {
+  .hero { padding: 18px; gap: 18px; }
+  .hero .counter { margin-bottom: 12px; padding: 2px 12px; font-size: 0.9375rem; white-space: nowrap; }
+  .hero .counter strong { font-size: 1.375rem; }
+  .hero .lede { margin-top: 10px; font-size: 1.0625rem; }
+  .search { padding: 16px; gap: 14px; }
+  .search .go .btn-red { font-size: 1.25rem; }
+}
 .hint { font-size: 1rem; color: var(--muted); }
 .hint.err { color: #a3001b; font-weight: 700; }
 
@@ -108,6 +122,23 @@ legend { font-weight: 700; padding: 0; margin-bottom: 8px; }
 .tile strong { font-family: var(--display); font-weight: 800; font-size: 1.625rem; line-height: 1.1; }
 .tile.y { background: var(--yellow); }
 .tile.r { background: var(--red); color: var(--white); }
+
+/* Next-area vote */
+.vote { display: grid; gap: 20px 36px; padding: 24px; }
+@media (min-width: 900px) { .vote { grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); align-items: start; } }
+.vote h2 + p { margin-top: 10px; max-width: 42ch; }
+.vote form { display: grid; gap: 14px; }
+.vote form[hidden], .vote [hidden] { display: none; }
+.vote-options { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr)); }
+.vote-note { color: var(--muted); }
+#vote-summary { font-weight: 700; margin: 0 0 12px; }
+#vote-summary:focus { outline: none; }
+.vote-bars { list-style: none; margin: 0 0 16px; padding: 0; display: grid; gap: 12px; }
+.vote-bars li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; }
+.vote-bars .n { font-variant-numeric: tabular-nums; }
+.vote-bars .bar { grid-column: 1 / -1; height: 14px; border: 2px solid var(--ink); border-radius: 999px; background: var(--white); overflow: hidden; }
+.vote-bars .bar span { display: block; height: 100%; background: var(--blue); }
+.vote-bars .mine { display: inline-block; margin-left: 6px; padding: 1px 8px; border-radius: 8px; background: var(--yellow); font-size: 0.875rem; white-space: nowrap; }
 .results-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 16px; }
 
 /* Detail */

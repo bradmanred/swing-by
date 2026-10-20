@@ -8,7 +8,9 @@ Find a playground worth the trip. Swing By lists playgrounds with who runs them,
 - `src/data/`: counties and towns, motorway junctions, and the labels for equipment and facilities.
 - `src/pages/`: the pages (finder with map, playground pages, road trips, memberships, my parks).
 - `public/admin/`: the content editor (Decap CMS).
-- `worker/` and `functions/api/`: GitHub sign-in for the content editor, run on Cloudflare.
+- `worker/` and `functions/api/`: GitHub sign-in for the content editor, and the "Where should we go next?" vote (`worker/vote.js`), run on Cloudflare.
+- `src/data/next-areas.json`: the areas people can vote for. Edit this list to change the options.
+- `db/votes.sql`: the table behind the vote, in the Cloudflare D1 database `swing-by-votes`.
 - `tests/a11y.mjs`: automated accessibility (axe, WCAG 2.2 AA) and smoke checks.
 
 ## Rules for content
@@ -50,6 +52,16 @@ The site runs as a Cloudflare Worker that serves the built pages (see `wrangler.
 3. Copy the client ID, and generate a client secret.
 4. In the Worker's Settings > Variables and Secrets, add `GITHUB_CLIENT_ID` as a text variable and `GITHUB_CLIENT_SECRET` as a secret. Redeploy.
 5. Open `https://<your-site-link>/admin/` and sign in with GitHub. Edits are saved as pull requests for review before they go live.
+
+## The next-area vote
+
+Votes are stored in the D1 database `swing-by-votes`, bound to the Worker as `VOTES` in `wrangler.jsonc`. Each browser gets one vote (remembered with a cookie) and can change it. To see the totals, open `/api/vote` on the site, or in the Cloudflare dashboard go to Storage & databases > D1 > swing-by-votes and run:
+
+```sql
+SELECT area, COUNT(*) AS votes FROM votes GROUP BY area ORDER BY votes DESC;
+```
+
+To try the vote on your computer: `npx wrangler d1 execute swing-by-votes --local --file db/votes.sql`, then `npm run build` and `npx wrangler dev`.
 
 ## Coming next
 
