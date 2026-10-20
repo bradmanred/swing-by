@@ -4,39 +4,36 @@
   "area": "Elvaston",
   "lat": 52.892,
   "lng": -1.388,
-  "ages": [
-    "under-3",
-    "3-6",
-    "7-12"
-  ],
-  "equipment": [
-    "cl",
-    "ad",
-    "sw"
-  ],
+  "ages": [],
+  "equipment": [],
   "access": [],
   "facilities": [
-    "wc",
-    "cf"
+    "wc"
   ],
-  "opens": "08:00",
-  "description": "",
+  "opens": "",
+  "description": "Children's play area in Elvaston Castle Country Park, run by Derbyshire County Council, with toilets, light refreshments and parking on site.",
   "nearby": [
     {
-      "type": "parking",
-      "label": "Pay & display car park"
+      "type": "cafe",
+      "label": "Light refreshments"
     },
     {
-      "type": "cafe",
-      "label": "Café"
+      "type": "parking",
+      "label": "Car park"
     },
     {
       "type": "toilets",
       "label": "Toilets"
     }
   ],
-  "sources": [],
-  "checked": null,
-  "notConfirmed": "",
-  "photo": null
+  "sources": [
+    {
+      "label": "Derbyshire County Council: Elvaston Castle Country Park",
+      "url": "https://www.derbyshire.gov.uk/leisure/countryside/countryside-sites/country-parks-and-visitor-centres/elvaston-castle-country-park-and-information-centre.aspx"
+    }
+  ],
+  "checked": "2026-10-20",
+  "notConfirmed": "Exact position, play equipment and age ranges, opening hours, café and parking charges.",
+  "photo": null,
+  "operator": "Derbyshire County Council"
 }

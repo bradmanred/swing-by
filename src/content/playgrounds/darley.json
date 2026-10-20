@@ -4,42 +4,26 @@
   "area": "Darley Abbey, Derby",
   "lat": 52.9405,
   "lng": -1.48,
-  "ages": [
-    "under-3",
-    "3-6",
-    "7-12"
-  ],
-  "equipment": [
-    "sw",
-    "sl",
-    "cl"
-  ],
-  "access": [
-    "sf"
-  ],
-  "facilities": [
-    "fen",
-    "fp"
-  ],
-  "opens": "24h",
-  "description": "",
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Riverside park in Darley Abbey with a play area run by Derby City Council. In 2025 the council planned to rebuild the play area as a heritage-themed space, subject to a National Lottery bid.",
   "nearby": [
-    {
-      "type": "parking",
-      "label": "Free car park, Darley Park Drive",
-      "free": true
-    },
-    {
-      "type": "cafe",
-      "label": "Tea rooms"
-    },
     {
       "type": "other",
       "label": "Riverside walk"
     }
   ],
-  "sources": [],
-  "checked": null,
-  "notConfirmed": "",
-  "photo": null
+  "sources": [
+    {
+      "label": "Derby City Council: improvement project planned for Darley Park (March 2025)",
+      "url": "https://derby.gov.uk/news/2025/march/improvement-project-planned-for-darley-park"
+    }
+  ],
+  "checked": "2026-10-20",
+  "notConfirmed": "Whether the play area rebuild has happened, exact position, equipment, age ranges, opening hours, toilets, café and parking.",
+  "photo": null,
+  "operator": "Derby City Council"
 }
