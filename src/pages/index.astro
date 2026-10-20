@@ -15,9 +15,12 @@ const loves = [
   ['wp', '💦', 'Splash play'],
   ['cl', '🧗', 'Climbing'],
   ['zw', '🚡', 'Zip wire'],
+  ['tp', '🤸', 'Trampolines'],
+  ['ss', '⚖️', 'See-saws'],
+  ['mb', '🐒', 'Monkey bars'],
   ['inc', '♿', 'Inclusive equipment'],
   ['wc', '🚻', 'Toilets'],
-];
+].filter(([k]) => data.some((p) => p.f.includes(k))); // a filter only shows once a playground has it
 const ages = [
   ['under-3', 'Toddlers'],
   ['3-6', '3–6'],

@@ -67,6 +67,9 @@ collections:
           - { label: "Roundabout", value: "rb" }
           - { label: "Miniature railway", value: "tr" }
           - { label: "Skate park", value: "sk" }
+          - { label: "Trampoline", value: "tp" }
+          - { label: "See-saw", value: "ss" }
+          - { label: "Monkey bars", value: "mb" }
       - label: Accessibility
         name: access
         widget: select
