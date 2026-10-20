@@ -58,6 +58,7 @@ collections:
         required: false
         options:
           - { label: "Swings", value: "sw" }
+          - { label: "Baby swings", value: "bs" }
           - { label: "Slides", value: "sl" }
           - { label: "Climbing frame", value: "cl" }
           - { label: "Zip wire", value: "zw" }
