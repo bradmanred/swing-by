@@ -33,7 +33,7 @@ const dirs = `https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.ln
   </div>
   <div class="detail">
     <div>
-      <div class="panel" style="padding:0;overflow:hidden">
+      <div class="panel" style="padding:0;overflow:hidden" id="photo-box" data-curated={p.photo ? 'yes' : undefined}>
         {p.photo ? (
           <figure style="margin:0"><img src={p.photo.src} alt={p.photo.alt} style="display:block;width:100%" /><figcaption class="hint" style="padding:8px 16px">Photo: {p.photo.credit}, {p.photo.licence}</figcaption></figure>
         ) : (
@@ -84,6 +84,7 @@ const dirs = `https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.ln
       <div class="panel">
         <h2 style="font-size:1.75rem">Getting there</h2>
         <p style="margin-top:10px"><a class="btn btn-yellow" href={dirs} rel="noopener">Directions in Google Maps</a></p>
+        <p class="signoff">See-saw you there!</p>
       </div>
       <figure class="panel spotmap">
         <div id="park-map" role="region" aria-label={`Map of ${p.name} and what's around it`} data-spots={JSON.stringify(spots)}>
@@ -105,6 +106,34 @@ const dirs = `https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.ln
         <p class="hint" id="mine-status" aria-live="polite" style="margin-top:10px">Saved on this device only.</p>
       </div>
       <div class="panel">
+        <h2 style="font-size:1.75rem" id="photo-title">Share a photo</h2>
+        <p style="margin-top:10px">{p.photo ? 'Been recently? Help other parents see what it\'s like now.' : "We don't have a photo of this playground yet. If you've been, you can add one."}</p>
+        <details class="photo-rules" style="margin-top:12px" open>
+          <summary>Photo guidelines</summary>
+          <ul>
+            <li><strong>No people.</strong> Only share photos with nobody in them, especially children. Wait for a quiet moment.</li>
+            <li>Show the playground and its equipment.</li>
+            <li>Only share photos you took yourself.</li>
+            <li>Avoid car number plates and house numbers.</li>
+          </ul>
+          <p class="hint">We check every photo before it appears, and remove any that show people. We strip the photo's hidden location details before it leaves your phone.</p>
+        </details>
+        <form id="photo-form" data-park={p.id} data-name={p.name} aria-labelledby="photo-title" style="margin-top:14px;display:grid;gap:12px">
+          <div>
+            <label for="photo-file">Photo</label>
+            <input id="photo-file" name="photo" type="file" accept="image/jpeg,image/png,image/webp,image/heic" required style="display:block;margin-top:6px;max-width:100%" />
+          </div>
+          <label class="chk"><input type="checkbox" name="no_people" required /> There are no people in this photo</label>
+          <label class="chk"><input type="checkbox" name="own_photo" required /> I took this photo and agree it can be shared under CC BY 4.0</label>
+          <div>
+            <label for="photo-credit">Name to credit <span class="hint">(optional)</span></label>
+            <input id="photo-credit" name="credit" type="text" maxlength="60" autocomplete="nickname" placeholder="For example, Sam from Hatfield" style="display:block;width:100%;margin-top:6px" />
+          </div>
+          <button class="btn btn-blue" type="submit">Send photo for checking</button>
+          <p class="hint" id="photo-msg" role="status"></p>
+        </form>
+      </div>
+      <div class="panel">
         <h2 style="font-size:1.75rem">Something wrong?</h2>
         <p style="margin-top:10px">If equipment is broken or dangerous, keep children off it and tell the people who run the playground.</p>
         <p style="margin-top:12px"><a class="btn" href={fms} rel="noopener">Report it on FixMyStreet</a></p>
@@ -120,6 +149,8 @@ const dirs = `https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.ln
   </div>
   <script>
     import { store, getMine } from '../../scripts/store';
+    import { startPhotos } from '../../scripts/photos';
+    startPhotos();
     import('../../scripts/map').then(({ createSpotMap }) => {
       const el = document.getElementById('park-map');
       if (el) createSpotMap(el, JSON.parse(el.dataset.spots!));

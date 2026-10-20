@@ -107,6 +107,7 @@ legend { font-weight: 700; padding: 0; margin-bottom: 8px; }
 .cards { list-style: none; margin: 0; padding: 0; display: grid; gap: 20px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); }
 .card { background: var(--white); border: var(--line); border-radius: 24px; overflow: hidden; box-shadow: var(--shadow); display: flex; flex-direction: column; }
 .art { display: block; width: 100%; height: auto; }
+img.art { aspect-ratio: 360 / 170; object-fit: cover; background: var(--blue-soft); }
 .card .body { padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
 .card h3 a { color: var(--ink); }
 .card .meta { margin: 0; }
@@ -177,3 +178,16 @@ legend { font-weight: 700; padding: 0; margin-bottom: 8px; }
 .ad-slot { padding-bottom: 32px; }
 .ad-box { max-width: 728px; min-height: 90px; margin: 0 auto; display: grid; place-items: center; border: 3px dashed var(--muted); border-radius: 12px; background: var(--white); color: var(--muted); font-size: 0.875rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
 @media (max-width: 760px) { .ad-box { max-width: 320px; min-height: 100px; } }
+
+/* Parent photos */
+.photo-cap { padding: 8px 16px; }
+.photo-rules summary { font-weight: 700; cursor: pointer; }
+.photo-rules ul { margin: 8px 0; padding-left: 20px; display: grid; gap: 4px; }
+.linkbtn { font: inherit; background: none; border: 0; padding: 0; color: var(--blue); text-decoration: underline; cursor: pointer; }
+.linkbtn:disabled { color: var(--muted); cursor: default; }
+.mod-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 20px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); }
+.mod-list img { display: block; width: 100%; height: auto; background: var(--blue-soft); min-height: 120px; }
+.mod-list .body { padding: 14px 16px; display: grid; gap: 8px; }
+.mod-list .row .btn { flex: 1; }
+.signoff { margin-top: 12px; font-family: var(--display); font-weight: 800; font-size: 1.25rem; }
+#photo-file::file-selector-button { font: inherit; font-weight: 700; min-height: 48px; padding: 0 16px; margin-right: 12px; border: 3px solid var(--ink); border-radius: 14px; background: var(--yellow); color: var(--ink); cursor: pointer; }
