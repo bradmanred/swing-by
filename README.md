@@ -61,6 +61,8 @@ Votes are stored in the D1 database `swing-by-votes`, bound to the Worker as `VO
 SELECT area, COUNT(*) AS votes FROM votes GROUP BY area ORDER BY votes DESC;
 ```
 
+Branch previews use a separate test database, `swing-by-votes-preview` (the `previews` block in `wrangler.jsonc`), so votes cast while testing a pull request don't count.
+
 To try the vote on your computer: `npx wrangler d1 execute swing-by-votes --local --file db/votes.sql`, then `npm run build` and `npx wrangler dev`.
 
 ## Coming next
