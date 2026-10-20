@@ -52,7 +52,7 @@ export function hoursText(p: Park) {
 
 /** Decorative icons; the text label is always shown next to them. */
 export const ICON: Record<string, string> = {
-  sw: '🛝', sl: '🛝', cl: '🧗', zw: '🚡', sp: '🏖️', wp: '💦', ad: '🏴‍☠️', rb: '🎠', tr: '🚂', sk: '🛹',
+  sw: '🪢', bs: '👶', sl: '🛝', tp: '🤸', ss: '⚖️', mb: '🐒', cl: '🧗', zw: '🚡', sp: '🏖️', wp: '💦', ad: '🏴‍☠️', rb: '🎠', tr: '🚂', sk: '🛹',
   inc: '♿', sf: '♿', sen: '✋', wc: '🚻', bc: '🍼', cf: '☕', fen: '🚧', sh: '🌳', fp: '🅿️',
 };
 
