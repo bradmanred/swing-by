@@ -15,10 +15,16 @@
       "binding": "VOTES",
       "database_name": "swing-by-votes",
       "database_id": "28f3f17b-40db-4155-a88a-cef7130681e5"
+    },
+    // Parent photos, held for approval before they're shown. Table: db/photos.sql
+    {
+      "binding": "PHOTOS_DB",
+      "database_name": "swing-by-photos",
+      "database_id": "ec6cfb8b-97cf-4f15-aa7a-3fe4e774e401"
     }
   ],
   // Branch previews (npx wrangler preview) use these settings instead of the ones above.
-  // Votes cast on a preview go to a separate test database, never the real one.
+  // Votes and photos sent from a preview go to separate test databases, never the real ones.
   // The content editor's GitHub sign-in isn't set up on previews; use the live site for that.
   "previews": {
     "d1_databases": [
@@ -26,6 +32,11 @@
         "binding": "VOTES",
         "database_name": "swing-by-votes-preview",
         "database_id": "a2158f15-95d9-498b-baea-52917c9bc807"
+      },
+      {
+        "binding": "PHOTOS_DB",
+        "database_name": "swing-by-photos-preview",
+        "database_id": "9c4669bf-9268-40d6-bc52-6774ed826892"
       }
     ]
   }

@@ -1,4 +1,4 @@
-import { cardHTML, esc, fmtMiles, type ClientPark } from '../lib/card';
+import { cardHTML, esc, fmtMiles, type CardPhoto, type ClientPark } from '../lib/card';
 import { store, getMine } from './store';
 
 type Origin = { name: string; lat: number; lng: number; acc: number; how: 'town' | 'postcode' | 'gps' };
@@ -25,6 +25,7 @@ export function startFinder() {
     loves: new Set<string>(),
     sort: 'near',
     limit: PAGE,
+    photos: {} as Record<string, CardPhoto>,
   };
   const hint = $('#where-hint');
   const where = $<HTMLInputElement>('#where');
@@ -50,7 +51,7 @@ export function startFinder() {
     $('#results-title').textContent = `Playgrounds near ${label}`;
     $('#cards').innerHTML = rows
       .slice(0, st.limit)
-      .map((x, i) => cardHTML(x.p, { dist: x.d, num: i < 5 ? i + 1 : undefined, mine: x.m }))
+      .map((x, i) => cardHTML(x.p, { dist: x.d, num: i < 5 ? i + 1 : undefined, mine: x.m, photo: st.photos[x.p.id] }))
       .join('');
     $('#nearlist').innerHTML = rows
       .slice(0, 5)
@@ -190,6 +191,17 @@ export function startFinder() {
   });
 
   render(false);
+
+  // Approved parent photos replace the illustrations on cards. Without them the illustrations stay.
+  fetch('/api/photos/approved')
+    .then((r) => (r.ok && r.headers.get('Content-Type')?.includes('json') ? r.json() : null))
+    .then((photos: Record<string, CardPhoto> | null) => {
+      if (photos && Object.keys(photos).length) {
+        st.photos = photos;
+        render(false);
+      }
+    })
+    .catch(() => {});
 
   // The map is an extra; everything above works without it.
   import('./map')

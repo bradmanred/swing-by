@@ -41,7 +41,13 @@ export function art(p: ClientPark) {
   return `<svg class="art" viewBox="0 0 360 170" aria-hidden="true" focusable="false"><rect width="360" height="170" fill="${sky}"/>${scene}</svg>`;
 }
 
-export function cardHTML(p: ClientPark, o: { dist?: number; num?: number; mine?: { v?: boolean; r?: number } } = {}) {
+export type CardPhoto = { url: string; credit: string | null };
+
+/** An approved parent photo if there is one, otherwise the illustration. */
+const picture = (p: ClientPark, photo?: CardPhoto) =>
+  photo ? `<img class="art" src="${esc(photo.url)}" alt="" loading="lazy" decoding="async" />` : art(p);
+
+export function cardHTML(p: ClientPark, o: { dist?: number; num?: number; mine?: { v?: boolean; r?: number }; photo?: CardPhoto } = {}) {
   const chips = p.f
     .filter((k) => NAMES[k])
     .slice(0, 4)
@@ -51,7 +57,7 @@ export function cardHTML(p: ClientPark, o: { dist?: number; num?: number; mine?:
   const foot = p.c
     ? `✓ Checked ${fmtDate(p.c)}`
     : '<span class="chips"><span class="unv" style="padding:4px 12px;border-radius:10px">Unverified</span></span> Details not checked yet';
-  return `<li class="card" id="card-${esc(p.id)}">${art(p)}<div class="body">
+  return `<li class="card" id="card-${esc(p.id)}">${picture(p, o.photo)}<div class="body">
 <h3>${o.num ? `<span class="sr-only">${o.num}. </span>` : ''}<a href="/playgrounds/${esc(p.id)}/">${esc(p.n)}</a></h3>
 <p class="meta">${o.dist != null ? `<strong>${fmtMiles(o.dist)}</strong> · ` : ''}${esc(p.a)}${o.mine?.v ? ' · ✓ Been here' : ''}</p>
 ${chips.length ? `<ul class="chips" aria-label="Features">${chips.join('')}</ul>` : ''}
