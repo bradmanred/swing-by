@@ -1,0 +1,38 @@
+{
+  "name": "Moneyhole Lane Playing Fields Playground",
+  "region": "herts",
+  "area": "Panshanger, Welwyn Garden City",
+  "lat": 51.79733,
+  "lng": -0.164427,
+  "ages": [
+    "under-3"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fp"
+  ],
+  "opens": "",
+  "description": "Large playing fields in Panshanger with a children's playground and a separate toddler play area, a multi-activity area, a 1.5 km pushchair-friendly perimeter path and dog-free areas.",
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "Free car park off Sylvan Way (height barrier)",
+      "free": true
+    }
+  ],
+  "operator": "Welwyn Hatfield Borough Council (run by Better)",
+  "sources": [
+    {
+      "label": "Better: Money Hole Lane Playing Fields",
+      "url": "https://www.better.org.uk/leisure-centre/welwyn-hatfield/money-hole-lane-playing-fields"
+    },
+    {
+      "label": "ParksHerts: Moneyhole Lane Playing Fields",
+      "url": "https://www.parksherts.co.uk/parks/moneyhole-lane-playing-fields/"
+    }
+  ],
+  "checked": "2026-10-20",
+  "notConfirmed": "Exact position (mapped from the car park postcode, AL7 2RT), equipment, age ranges and toilets.",
+  "photo": null
+}

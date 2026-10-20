@@ -1,0 +1,43 @@
+{
+  "name": "King George V Playing Fields Playground",
+  "region": "herts",
+  "area": "Welwyn Garden City",
+  "lat": 51.787059,
+  "lng": -0.186912,
+  "ages": [
+    "under-3"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc",
+    "fp"
+  ],
+  "opens": "",
+  "description": "Playing fields off Beehive Lane with a children's playground and a toddler play area, plus tennis courts and bowling greens. Toilets, including accessible toilets, and a free car park next to the pavilion.",
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "Free car park next to the pavilion, off Beehive Lane",
+      "free": true
+    },
+    {
+      "type": "toilets",
+      "label": "Toilets and accessible toilets at the pavilion"
+    }
+  ],
+  "operator": "Welwyn Hatfield Borough Council (run by Better)",
+  "sources": [
+    {
+      "label": "Better: King George V Playing Fields",
+      "url": "https://www.better.org.uk/leisure-centre/welwyn-hatfield/king-george-v-playing-fields"
+    },
+    {
+      "label": "ParksHerts: King George V Playing Field, Welwyn Garden City",
+      "url": "https://www.parksherts.co.uk/parks/king-george-v-playing-field-welwyn-garden-city/"
+    }
+  ],
+  "checked": "2026-10-20",
+  "notConfirmed": "Exact position (mapped from the postcode, AL7 4BP), equipment and age ranges.",
+  "photo": null
+}

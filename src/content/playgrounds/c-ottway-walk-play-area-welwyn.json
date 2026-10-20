@@ -1,0 +1,37 @@
+{
+  "name": "Ottway Walk Play Area",
+  "region": "herts",
+  "area": "Welwyn",
+  "lat": 51.827002,
+  "lng": -0.216888,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [
+    "cl",
+    "zw",
+    "rb"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "Play area for older children next to the playing fields, with climbing equipment, a short zip wire and a large roundabout with a chariot seat for children with physical disabilities. Kick wall and a basketball net.",
+  "nearby": [
+    {
+      "type": "other",
+      "label": "Whitehill Play Area for younger children, next door"
+    }
+  ],
+  "operator": "Welwyn Parish Council",
+  "sources": [
+    {
+      "label": "Welwyn Parish Council: Welwyn play areas",
+      "url": "https://welwyn-pc.gov.uk/welwyn-play-areas"
+    }
+  ],
+  "checked": "2026-10-20",
+  "notConfirmed": "Exact position (mapped from the postcode, AL6 9AS), opening hours, toilets and parking.",
+  "photo": null
+}
