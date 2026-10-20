@@ -16,5 +16,17 @@
       "database_name": "swing-by-votes",
       "database_id": "28f3f17b-40db-4155-a88a-cef7130681e5"
     }
-  ]
+  ],
+  // Branch previews (npx wrangler preview) use these settings instead of the ones above.
+  // Votes cast on a preview go to a separate test database, never the real one.
+  // The content editor's GitHub sign-in isn't set up on previews; use the live site for that.
+  "previews": {
+    "d1_databases": [
+      {
+        "binding": "VOTES",
+        "database_name": "swing-by-votes-preview",
+        "database_id": "a2158f15-95d9-498b-baea-52917c9bc807"
+      }
+    ]
+  }
 }
