@@ -1,0 +1,46 @@
+{
+  "name": "Digswell Playing Fields Play Area",
+  "region": "herts",
+  "area": "Digswell, Welwyn",
+  "lat": 51.818385,
+  "lng": -0.189675,
+  "ages": [
+    "under-3"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fp"
+  ],
+  "opens": "",
+  "description": "Toddler play area at Digswell Playing Fields, beside the Digswell Viaduct with the River Mimram along one side. Close to Welwyn North station.",
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "Free car park off Digswell Park Road",
+      "free": true
+    },
+    {
+      "type": "transport",
+      "label": "Welwyn North station, a short walk away"
+    },
+    {
+      "type": "other",
+      "label": "Digswell Viaduct"
+    }
+  ],
+  "operator": "Welwyn Hatfield Borough Council (run by Better)",
+  "sources": [
+    {
+      "label": "Better: Digswell Playing Fields",
+      "url": "https://www.better.org.uk/leisure-centre/welwyn/digswell-playing-fields"
+    },
+    {
+      "label": "ParksHerts: Digswell Playing Fields",
+      "url": "https://www.parksherts.co.uk/parks/digswell-playing-fields/"
+    }
+  ],
+  "checked": "2026-10-20",
+  "notConfirmed": "Exact position (mapped from the postcode, AL6 0BX), equipment, age ranges and toilets.",
+  "photo": null
+}
