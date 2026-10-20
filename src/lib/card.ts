@@ -7,7 +7,7 @@ export type ClientPark = {
 };
 
 const ICON: Record<string, string> = {
-  sw: '🛝', sl: '🛝', cl: '🧗', zw: '🚡', sp: '🏖️', wp: '💦', ad: '🏴‍☠️', rb: '🎠', tr: '🚂', sk: '🛹',
+  sw: '🪢', bs: '👶', sl: '🛝', tp: '🤸', ss: '⚖️', mb: '🐒', cl: '🧗', zw: '🚡', sp: '🏖️', wp: '💦', ad: '🏴‍☠️', rb: '🎠', tr: '🚂', sk: '🛹',
   inc: '♿', sf: '♿', sen: '✋', wc: '🚻', bc: '🍼', cf: '☕', fen: '🚧', sh: '🌳', fp: '🅿️',
 };
 const NAMES: Record<string, string> = { ...labels.equipment, ...labels.access, ...labels.facilities };
