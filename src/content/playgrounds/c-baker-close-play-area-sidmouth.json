@@ -1,0 +1,30 @@
+{
+  "name": "Baker Close Play Area",
+  "region": "devon",
+  "area": "Sidmouth",
+  "lat": 50.70003,
+  "lng": -3.24313,
+  "ages": [],
+  "equipment": [],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "Neighbourhood play area run by East Devon District Council. It was one of the first sites rebuilt in the council's 2026 play area upgrade and has reopened; the upgrade added equipment designed for children of all abilities, such as wheelchair-accessible roundabouts and ground-level trampolines, though the council hasn't listed exactly what went in here.",
+  "nearby": [],
+  "operator": "East Devon District Council",
+  "sources": [
+    {
+      "label": "East Devon District Council: play area upgrades",
+      "url": "https://eastdevon.gov.uk/community-engagement/previous-consultationsurvey-updates/place/public-consultation-for-play-area-upgrades/"
+    },
+    {
+      "label": "Devon Air Radio: work begins on East Devon play area upgrades",
+      "url": "https://www.devonairradio.com/news/exeter-and-east-devon/work-begins-on-1-2million-upgrade-for-10-east-devon-play-areas"
+    }
+  ],
+  "checked": "2026-10-20",
+  "notConfirmed": "Exact position (mapped from the postcode), equipment, age ranges, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -10,7 +10,8 @@
   "equipment": [
     "sl",
     "wp",
-    "cl"
+    "cl",
+    "tp"
   ],
   "access": [
     "inc",
@@ -22,7 +23,16 @@
   "opens": "",
   "largePlayArea": true,
   "description": "Two inclusive space- and earth-themed play areas with an 8m tube slide, trampoline mounds and interactive play, a toddler area, and a seasonal splash zone with jets and water columns.",
-  "nearby": [],
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "Pay and display car park off Brook Road"
+    },
+    {
+      "type": "other",
+      "label": "Splash park, 10am–6pm daily in season"
+    }
+  ],
   "operator": "Hertsmere Borough Council",
   "sources": [
     {
@@ -30,7 +40,7 @@
       "url": "https://www.parksherts.co.uk/parks/meadow-park/"
     }
   ],
-  "checked": "2026-10-19",
-  "notConfirmed": "Opening hours, toilets and parking.",
+  "checked": "2026-10-20",
+  "notConfirmed": "Splash park season dates, play area opening hours, toilets, café and age ranges.",
   "photo": null
 }

@@ -6,40 +6,45 @@
   "lng": -0.16,
   "ages": [
     "under-3",
-    "3-6"
+    "3-6",
+    "7-12"
   ],
   "equipment": [
     "sw",
-    "sl",
     "cl",
-    "sp"
+    "sp",
+    "wp",
+    "rb"
   ],
   "access": [
-    "sf"
+    "inc"
   ],
   "facilities": [
-    "fen",
+    "wc",
+    "bc",
     "sh"
   ],
-  "opens": "05:00",
-  "description": "",
+  "opens": "10:00",
+  "description": "Royal Parks playground for children up to 12, recently improved. It has a giant scramble net, a musical floor, swings, climbing nets and a new roundabout, around a central beach area with a wheelchair-accessible water play feature, a large sandpit with a raised table so children of all abilities can play together, logs, boulders and a wobbly bridge. The works are finished but the council says it will reopen soon, so check before you go.",
   "nearby": [
+    {
+      "type": "toilets",
+      "label": "Children's toilets, an accessible toilet and baby change"
+    },
     {
       "type": "transport",
       "label": "Chalk Farm station"
-    },
-    {
-      "type": "cafe",
-      "label": "Cafés on Regent's Park Road"
-    },
-    {
-      "type": "parking",
-      "label": "Paid street parking"
     }
   ],
   "operator": "The Royal Parks",
-  "sources": [],
-  "checked": null,
-  "notConfirmed": "",
-  "photo": null
+  "sources": [
+    {
+      "label": "The Royal Parks: Primrose Hill Playground",
+      "url": "https://www.royalparks.org.uk/visit/parks/regents-park-primrose-hill/primrose-hill-playground"
+    }
+  ],
+  "checked": "2026-10-20",
+  "notConfirmed": "Whether it has reopened after the improvement works, exact position, fencing, café and parking.",
+  "photo": null,
+  "rules": "Closes 4pm Nov–Jan, 5pm Feb, 6pm Mar (7pm once clocks go forward), 7.30pm Apr–Aug, 7pm Sep, 6pm Oct (5pm once clocks go back). Closed 25 December."
 }

@@ -10,7 +10,6 @@
     "7-12"
   ],
   "equipment": [
-    "sw",
     "sl",
     "cl",
     "sp",
@@ -19,39 +18,37 @@
   ],
   "access": [
     "inc",
-    "sf",
     "sen"
   ],
   "facilities": [
     "wc",
-    "bc",
-    "cf",
-    "fen",
-    "sh"
+    "fen"
   ],
   "opens": "10:00",
-  "description": "",
+  "description": "Free playground in Kensington Gardens, reopened on 5 August 2026 after a £3 million renewal. The centrepiece is a new 17-metre pirate galleon on a sandy beach with crow's nests, a big tunnel slide and a play kitchen below deck. There's also a treehouse with three towers, a 4-metre tunnel slide and an accessible walkway with talk tubes and musical instruments, a crocodile water play area, and a younger children's area with timber houses, play ships and a large sandpit. Wheelchair users can get onto the galleon and treehouse, and there are raised tables at the sand and water play. Expect queues at weekends for the first few months.",
   "nearby": [
     {
       "type": "toilets",
-      "label": "Toilets at the entrance"
-    },
-    {
-      "type": "cafe",
-      "label": "Café"
+      "label": "Toilets, including two accessible toilets"
     },
     {
       "type": "transport",
       "label": "Queensway station"
-    },
-    {
-      "type": "parking",
-      "label": "Pay & display, West Carriage Drive"
     }
   ],
   "operator": "The Royal Parks",
-  "sources": [],
-  "checked": null,
-  "notConfirmed": "",
-  "photo": null
+  "sources": [
+    {
+      "label": "The Royal Parks: Diana Memorial Playground",
+      "url": "https://www.royalparks.org.uk/index.php/visit/parks/kensington-gardens/diana-memorial-playground"
+    },
+    {
+      "label": "The Royal Parks: playground to reopen after renewal (4 Aug 2026)",
+      "url": "https://www.royalparks.org.uk/get-in-touch/media-centre/news-press-releases/diana-princess-wales-memorial-playground-reopen-following-multi-million-pound-renewal"
+    }
+  ],
+  "checked": "2026-10-20",
+  "notConfirmed": "Exact position, baby change, café and parking. Check whether the water play is back on.",
+  "photo": null,
+  "rules": "Adults can only go in with a child aged 12 or under, except between 9.30 and 10am. Closes 7.45pm May–Aug, 6.45pm Apr and Sep, 5.45pm Mar and early Oct, 4.45pm Feb and late Oct, 3.45pm Nov–Jan; last entry 15 minutes before. Water play is switched off during the Thames Water hosepipe ban."
 }

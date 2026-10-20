@@ -1,44 +1,54 @@
 {
-  "name": "Heavitree Park Play Area",
+  "name": "Heavitree Pleasure Ground Play Area",
   "region": "devon",
   "area": "Exeter",
   "lat": 50.72,
   "lng": -3.505,
-  "ages": [
-    "under-3",
-    "3-6",
-    "7-12"
-  ],
+  "ages": [],
   "equipment": [
-    "sw",
-    "sl",
     "cl",
-    "sp"
+    "wp"
   ],
-  "access": [
-    "inc",
-    "sf",
-    "sen"
-  ],
+  "access": [],
   "facilities": [
-    "fen",
-    "sh"
+    "wc"
   ],
-  "opens": "08:00",
-  "description": "",
+  "opens": "",
+  "description": "Play area and free paddling pools at Heavitree Pleasure Ground on Whipton Lane, run by Exeter City Council. The play area has a climbing frame and a ride tower suited to toddlers through to young teens. The paddling pools open in summer, 10am to 7pm. The council has consulted on improving the play area and water play, subject to approvals and funding.",
   "nearby": [
     {
       "type": "parking",
-      "label": "Free street parking nearby (check signs)",
-      "free": true
+      "label": "Parking along Whipton Lane"
     },
     {
-      "type": "cafe",
-      "label": "Cafés on Fore Street"
+      "type": "toilets",
+      "label": "Toilets in the park"
+    },
+    {
+      "type": "other",
+      "label": "Paddling pools, summer only, 10am–7pm"
     }
   ],
-  "sources": [],
-  "checked": null,
-  "notConfirmed": "",
-  "photo": null
+  "sources": [
+    {
+      "label": "Visit Exeter: Heavitree Pleasure Grounds",
+      "url": "https://www.visitexeter.com/things-to-do/heavitree-pleasure-grounds-p763523"
+    },
+    {
+      "label": "Exeter City Council: time to splash into summer",
+      "url": "https://news.exeter.gov.uk/time-to-splash-into-summer"
+    },
+    {
+      "label": "Exeter City Council: play park equipment bonus",
+      "url": "https://news.exeter.gov.uk/play-park-equipment-bonus-for-exeter/"
+    },
+    {
+      "label": "Exeter City Council: Heavitree play area consultation",
+      "url": "https://engage.exeter.gov.uk/heavitree-play-area"
+    }
+  ],
+  "checked": "2026-10-20",
+  "notConfirmed": "Exact position, current play equipment and age ranges, play area opening hours, this year's paddling pool dates, café and baby change.",
+  "photo": null,
+  "operator": "Exeter City Council"
 }

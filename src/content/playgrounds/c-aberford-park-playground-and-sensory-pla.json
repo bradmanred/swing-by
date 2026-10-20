@@ -14,7 +14,8 @@
     "sw",
     "rb",
     "zw",
-    "sk"
+    "sk",
+    "bs"
   ],
   "access": [
     "sen",
@@ -29,7 +30,21 @@
   "opens": "",
   "largePlayArea": true,
   "description": "A playground for under-8s with a multi-play unit, toddler and flat swings, roundabout and zip wire, plus a sensory play area for up to 12s with a basket swing, rotating dish, rope bridge and climbing wall, next to a skate park, restaurant and toilets.",
-  "nearby": [],
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "Free car park on Aberford Road (enter from Brook Road)",
+      "free": true
+    },
+    {
+      "type": "toilets",
+      "label": "Toilets, including accessible"
+    },
+    {
+      "type": "cafe",
+      "label": "Aberford Restaurant (Greek), 10am–10pm daily"
+    }
+  ],
   "operator": "Hertsmere Borough Council",
   "sources": [
     {
@@ -37,7 +52,7 @@
       "url": "https://www.parksherts.co.uk/parks/aberford-park/"
     }
   ],
-  "checked": "2026-10-19",
-  "notConfirmed": "Opening hours, toilets and parking.",
+  "checked": "2026-10-20",
+  "notConfirmed": "Play area opening hours, toilet opening hours and baby change.",
   "photo": null
 }

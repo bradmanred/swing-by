@@ -30,7 +30,25 @@
   "opens": "",
   "largePlayArea": true,
   "description": "Inclusive play destination for ages 2 to 12 with a pyramid net, double cableway, multi-units with slides, swings and a wheelchair-accessible roundabout, teen climbing, and a seasonal tropical island splash park, with toilets and a café.",
-  "nearby": [],
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "Free car park off King George Avenue: 8am–4pm Oct–Mar, 8am–7pm Apr–May, 8am–9pm Jun–Sep",
+      "free": true
+    },
+    {
+      "type": "parking",
+      "label": "Overflow car park off Chiltern Avenue, by the bowls club"
+    },
+    {
+      "type": "toilets",
+      "label": "Toilets, including accessible: 8am–6.30pm in summer, 8am–3.30pm in winter"
+    },
+    {
+      "type": "cafe",
+      "label": "Café in the old pavilion"
+    }
+  ],
   "operator": "Hertsmere Borough Council",
   "sources": [
     {
@@ -38,7 +56,7 @@
       "url": "https://www.parksherts.co.uk/parks/king-george-recreation-ground/"
     }
   ],
-  "checked": "2026-10-19",
-  "notConfirmed": "Opening hours, toilets and parking.",
+  "checked": "2026-10-20",
+  "notConfirmed": "Play area opening hours, splash park season and hours, café hours and baby change.",
   "photo": null
 }
