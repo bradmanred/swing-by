@@ -8,5 +8,13 @@
     "binding": "ASSETS",
     "not_found_handling": "404-page",
     "run_worker_first": ["/api/*"]
-  }
+  },
+  // Votes for the next area to cover. Table: db/votes.sql
+  "d1_databases": [
+    {
+      "binding": "VOTES",
+      "database_name": "swing-by-votes",
+      "database_id": "28f3f17b-40db-4155-a88a-cef7130681e5"
+    }
+  ]
 }
