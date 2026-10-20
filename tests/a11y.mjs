@@ -63,6 +63,21 @@ try {
   if ((await page.getByRole('button', { name: 'Splash play' }).getAttribute('aria-pressed')) !== 'true') fail('toggle does not set aria-pressed');
   if (!(await page.locator('#count').textContent())?.includes('playgrounds found')) fail('result count not announced');
 
+  // The counter must match the number of playground files.
+  const files = (await readdir('src/content/playgrounds')).filter((f) => f.endsWith('.json')).length;
+  const counter = await page.locator('.counter strong').textContent();
+  if (Number(counter) !== files) fail(`counter says ${counter} but there are ${files} playgrounds`);
+
+  // "Let's go!" sits on the same row as "Near me".
+  const near = await page.locator('#locate').boundingBox();
+  const go = await page.getByRole('button', { name: "Let's go!" }).boundingBox();
+  if (Math.abs(near.y - go.y) > 2) fail('"Let\'s go!" is not next to "Near me"');
+
+  // Vote: with no /api/vote (this static server), voting says so instead of failing silently.
+  await page.getByRole('radio', { name: 'Essex' }).check();
+  await page.getByRole('button', { name: 'Cast my vote' }).click();
+  await page.locator('#vote-msg.err').waitFor({ timeout: 5000 }).catch(() => fail('vote failure not reported'));
+
   await page.goto(BASE + '/playgrounds/verulamium/');
   await page.getByLabel('4 out of 5').focus();
   await page.keyboard.press('Space');
