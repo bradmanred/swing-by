@@ -2,6 +2,8 @@
 import Base from '../layouts/Base.astro';
 import { allParks, clientPark, km, regions } from '../lib/parks';
 import { cardHTML, fmtMiles } from '../lib/card';
+import regionsFile from '../data/regions.json';
+import nextAreas from '../data/next-areas.json';
 
 const parks = await allParks();
 const data = parks.map(clientPark);
@@ -10,7 +12,12 @@ const start = towns[0]; // St Albans: Hertfordshire is the launch region
 const near = data
   .map((p) => ({ p, d: km(start, p) }))
   .sort((a, b) => a.d - b.d);
-const herts = data.filter((p) => p.r === 'herts').length;
+// Both come straight from the playground files, so they stay right as playgrounds and counties are added.
+const total = data.length;
+const covered = regionsFile.launchOrder
+  .filter((id) => data.some((p) => p.r === id))
+  .map((id) => regions.find((r) => r.id === id)?.name ?? id);
+const coveredText = covered.length > 1 ? `${covered.slice(0, -1).join(', ')} and ${covered.at(-1)}` : covered[0];
 const loves = [
   ['bs', '👶', 'Baby swings'],
   ['sw', '🪢', 'Swings'],
@@ -34,17 +41,19 @@ const ages = [
 <Base title="Swing By" current="/">
   <section class="hero" aria-labelledby="hero-title">
     <div>
+      <p class="counter"><strong>{total}</strong> playgrounds and counting</p>
       <h1 id="hero-title">Where shall we play today?</h1>
-      <p class="lede">{herts} Hertfordshire playgrounds, checked against council and operator websites.</p>
+      <p class="lede">Playgrounds across {coveredText}, checked against council and operator websites.</p>
     </div>
     <form class="search" id="search" action="/playgrounds/" role="search" aria-label="Find playgrounds">
       <div>
         <label for="where">Town or postcode</label>
-        <div class="where">
-          <input id="where" name="q" type="text" autocomplete="postal-code" value={start.name} aria-describedby="where-hint" />
-          <button class="btn btn-yellow" type="button" id="locate"><span aria-hidden="true">📍</span> Near me</button>
-        </div>
+        <input id="where" name="q" type="text" autocomplete="postal-code" value={start.name} aria-describedby="where-hint" />
         <p class="hint" id="where-hint" aria-live="polite">Try a town such as Hitchin, or a postcode such as AL1 1BX.</p>
+        <div class="go">
+          <button class="btn btn-yellow" type="button" id="locate"><span aria-hidden="true">📍</span> Near me</button>
+          <button class="btn btn-red" type="submit">Let's go!</button>
+        </div>
       </div>
       <fieldset>
         <legend>Who's coming?</legend>
@@ -52,7 +61,6 @@ const ages = [
           {ages.map(([v, l]) => <label class="chk"><input type="checkbox" name="age" value={v} /> {l}</label>)}
         </div>
       </fieldset>
-      <button class="btn btn-red" type="submit">Let's go!</button>
     </form>
   </section>
 
@@ -108,9 +116,38 @@ const ages = [
     <a class="tile r" href="/my-parks/"><strong><span aria-hidden="true">🏅</span> My parks</strong><span>Tick off where you've been and rate it.</span></a>
   </section>
 
+  <section class="panel vote" aria-labelledby="vote-title">
+    <div>
+      <h2 id="vote-title">Where should we go next?</h2>
+      <p>We check every playground against official sources, so we add one area at a time. Vote for yours and we'll start with the most wanted.</p>
+    </div>
+    <form id="vote" action="/api/vote" method="post">
+      <fieldset>
+        <legend>Pick one area</legend>
+        <div class="vote-options">
+          {nextAreas.areas.map((a) => (
+            <label class="chk"><input type="radio" name="area" value={a.id} required /> {a.name}</label>
+          ))}
+        </div>
+      </fieldset>
+      <div class="row" style="align-items:center">
+        <button class="btn btn-blue" type="submit">Cast my vote</button>
+        <span class="vote-note">One vote per family. You'll see the results once you've voted.</span>
+      </div>
+      <p class="hint" id="vote-msg" role="status"></p>
+    </form>
+    <div id="vote-results" hidden>
+      <p id="vote-summary" tabindex="-1"></p>
+      <ol class="vote-bars" id="vote-bars"></ol>
+      <button class="btn" type="button" id="vote-change">Change my vote</button>
+    </div>
+  </section>
+
   <script type="application/json" id="parks-data" set:html={JSON.stringify({ parks: data, towns })} />
   <script>
     import { startFinder } from '../scripts/finder';
+    import { startVote } from '../scripts/vote';
     startFinder();
+    startVote();
   </script>
 </Base>
