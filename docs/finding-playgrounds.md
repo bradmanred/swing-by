@@ -1,0 +1,51 @@
+# Finding every playground in an area
+
+Use this checklist whenever you add a new county or district, or check an existing one for gaps.
+
+**Why it exists.** Welwyn Hatfield was first imported from the borough council's "play areas" directory alone. That list only covers small neighbourhood play areas run directly by the council. It left out:
+
+- playgrounds inside playing fields run for the council by a leisure operator (King George V Playing Fields, Moneyhole Lane Playing Fields and Digswell Playing Fields, all run by Better)
+- play areas run by town and parish councils (Welwyn, Northaw and Cuffley, North Mymms)
+
+One council list is never the whole picture. Work through every source type below for each district before calling an area done.
+
+## 1. List who runs playgrounds in the area
+
+For each district or borough, write down every organisation that may run a play area:
+
+| Who | Where to look | Herts examples |
+| --- | --- | --- |
+| District or borough council: play areas | The council's play area directory or "parks and play areas" pages. Check every category and the A to Z, not just one page. | welhat.gov.uk play area finder |
+| District or borough council: parks and leisure sites | The council's "parks and leisure facilities" page. Large parks and playing fields are often listed here, not in the play area directory. | one.welhat.gov.uk council parks and leisure facilities |
+| Leisure operators running council sites | The operator's site, for each venue it runs in the district. Look for "children's playground" or "play area" in the facilities. | Better (GLL), Everyone Active, Places Leisure, Fusion, Finesse Leisure |
+| County-wide park portals | Search the portal for every town in the district. Note each park that mentions a play area or toddler area. | ParksHerts (parksherts.co.uk) |
+| Town councils | The town council's parks, open spaces or play area pages. | Hatfield, Hertford, Bishop's Stortford, Harpenden, Berkhamsted, Tring, Royston |
+| Parish councils | "Our services", "recreation grounds", "play areas" pages, the asset register and the playground inspection reports. Every parish in the district, not only the big ones. | Welwyn, Northaw and Cuffley, North Mymms, Woolmer Green |
+| Trusts and foundations | Their own park pages. | Letchworth Garden City Heritage Foundation |
+| County council | Country parks and countryside sites. | Hertfordshire County Council countryside sites |
+| Charities and membership bodies | Their property pages. | National Trust, English Heritage, Historic Houses |
+| Private attractions and estates | Their own websites (check opening and fees). | Knebworth, Aldenham Country Park |
+
+## 2. Cross-check for gaps
+
+After importing, look for playgrounds you may still have missed:
+
+- **OpenStreetMap.** Compare against places tagged `leisure=playground` in the district (for example with overpass-turbo.eu). Use this only to find candidates. Every playground still needs an official source before it goes in, and OpenStreetMap positions must keep the OpenStreetMap credit.
+- **Playing fields and recreation grounds.** Search the council and ParksHerts for "playing field" and "recreation ground" in each town. Many have a play area that isn't listed separately.
+- **Local knowledge.** Reports from parents (the Suggest form, or comments like "why isn't X listed?") often point straight at a missing source type. Add that source type here.
+
+Don't use Google Maps or Google Places to find or place playgrounds. Their terms don't allow storing the data.
+
+## 3. Adding each playground
+
+- One JSON file per play area in `src/content/playgrounds/`. Name files `c-<name>-<town>.json`.
+- `operator` says who runs it, for example "Welwyn Hatfield Borough Council (run by Better)" or "Welwyn Parish Council".
+- `sources` links to the official page or pages you used: the council, operator, parish or ParksHerts page.
+- `checked` is today's date only once an official source confirms the playground exists. Otherwise leave it blank, and the site labels it "Unverified".
+- Position: use the site's own postcode, or the car park's postcode, via postcodes.io. If you only have a street, say "approximate" in `notConfirmed`. If you can't place it reasonably, leave it out and list it in the pull request.
+- `notConfirmed` lists anything the sources don't say: equipment, ages, toilets, parking, exact position.
+- Don't guess equipment or ages. Leave them empty if the source doesn't say.
+
+## 4. In the pull request
+
+Say which source types you checked for each district and which you couldn't check, so the next person knows where the gaps might be. The pull request template has a checklist for this.

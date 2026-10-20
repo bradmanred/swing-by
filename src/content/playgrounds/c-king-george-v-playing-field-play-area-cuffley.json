@@ -1,0 +1,33 @@
+{
+  "name": "King George V Playing Field Play Area",
+  "region": "herts",
+  "area": "Cuffley",
+  "lat": 51.701641,
+  "lng": -0.119518,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Children's play area at King George V Playing Field on Northaw Road East, run by the parish council. The council is planning a bigger, improved play area here.",
+  "nearby": [
+    {
+      "type": "other",
+      "label": "Public tennis court"
+    }
+  ],
+  "operator": "Northaw and Cuffley Parish Council",
+  "sources": [
+    {
+      "label": "Northaw and Cuffley Parish Council: KGV refurbishment",
+      "url": "https://northawcuffley-pc.gov.uk/news/kgv-refurbishment/"
+    },
+    {
+      "label": "Northaw and Cuffley Parish Council: tennis court at KGV",
+      "url": "https://northawcuffley-pc.gov.uk/public-tennis-court-at-kgv-playing-field"
+    }
+  ],
+  "checked": "2026-10-20",
+  "notConfirmed": "Exact position (mapped from the postcode, EN6 4RD), equipment, age ranges, toilets and parking.",
+  "photo": null
+}
