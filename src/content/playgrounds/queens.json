@@ -4,45 +4,36 @@
   "area": "Chesterfield",
   "lat": 53.233,
   "lng": -1.44,
-  "ages": [
-    "under-3",
-    "3-6",
-    "7-12",
-    "teens"
-  ],
-  "equipment": [
-    "sw",
-    "sl",
-    "cl",
-    "zw",
-    "wp"
-  ],
-  "access": [
-    "sf"
-  ],
+  "ages": [],
+  "equipment": [],
+  "access": [],
   "facilities": [
-    "wc",
-    "cf",
-    "fen"
+    "cf"
   ],
-  "opens": "08:00",
-  "description": "",
+  "opens": "",
+  "description": "Play area in Chesterfield's main town park, run by Chesterfield Borough Council, with North Lodge café and a miniature train in the park. The play area was closed for repairs after flooding in early 2024, with the decking and sand replaced.",
   "nearby": [
     {
-      "type": "other",
-      "label": "Miniature railway (seasonal)"
-    },
-    {
-      "type": "parking",
-      "label": "Pay car park, Boythorpe Road"
-    },
-    {
       "type": "cafe",
-      "label": "Café"
+      "label": "North Lodge café"
+    },
+    {
+      "type": "other",
+      "label": "Miniature train"
     }
   ],
-  "sources": [],
-  "checked": null,
-  "notConfirmed": "",
-  "photo": null
+  "sources": [
+    {
+      "label": "Chesterfield Borough Council: Queen's Park",
+      "url": "https://chesterfield.gov.uk/explore-chesterfield/parks-and-green-spaces/parks/parks-and-play-areas/queens-park"
+    },
+    {
+      "label": "Derbyshire Times: Queen's Park play area damaged by flood (Jan 2024)",
+      "url": "https://derbyshiretimes.co.uk/news/people/play-area-in-chesterfields-queens-park-damaged-by-flood-set-to-be-closed-for-6-weeks-4494339"
+    }
+  ],
+  "checked": "2026-10-20",
+  "notConfirmed": "Exact position, play equipment and age ranges, opening hours, toilets, train season and parking.",
+  "photo": null,
+  "operator": "Chesterfield Borough Council"
 }
