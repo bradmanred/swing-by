@@ -30,6 +30,20 @@ export function startVote() {
     box.hidden = false;
   }
 
+  // The "where?" box only shows once "Somewhere else" is picked (without JavaScript it's always there).
+  const otherBox = $('#vote-other');
+  const otherText = $<HTMLInputElement>('#vote-other-text');
+  const syncOther = () => {
+    const on = radios.find((r) => r.checked)?.value === 'other';
+    otherBox.hidden = !on;
+    otherText.required = on;
+  };
+  radios.forEach((r) => r.addEventListener('change', () => {
+    syncOther();
+    if (r.value === 'other' && r.checked) otherText.focus();
+  }));
+  syncOther();
+
   // Already voted (this browser has the vote cookie)? Go straight to the results.
   fetch('/api/vote', { headers: { Accept: 'application/json' } })
     .then((r) => (r.ok && r.headers.get('Content-Type')?.includes('json') ? r.json() : null))
@@ -47,13 +61,20 @@ export function startVote() {
       msg.textContent = 'Pick an area first.';
       return;
     }
+    const other = area === 'other' ? otherText.value.trim() : '';
+    if (area === 'other' && !other) {
+      msg.classList.add('err');
+      msg.textContent = "Tell us where you'd like us to go next.";
+      otherText.focus();
+      return;
+    }
     btn.disabled = true;
     msg.textContent = 'Sending your vote…';
     try {
       const r = await fetch('/api/vote', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({ area }),
+        body: JSON.stringify({ area, other }),
       });
       if (!r.ok || !r.headers.get('Content-Type')?.includes('json')) throw new Error();
       msg.textContent = '';
