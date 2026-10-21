@@ -59,5 +59,10 @@
     "18:15",
     "16:25",
     "15:55"
-  ]
+  ],
+  "sizes": {
+    "small": "Small play area",
+    "medium": "Medium play area",
+    "large": "Large play area"
+  }
 }

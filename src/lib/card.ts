@@ -3,7 +3,7 @@ import labels from '../data/labels.json';
 
 export type ClientPark = {
   id: string; n: string; a: string; r: string; lat: number; lng: number;
-  ages: string[]; f: string[]; c: string | null; m: string | null; d: string;
+  ages: string[]; f: string[]; c: string | null; m: string | null; d: string; s?: string | null;
 };
 
 const ICON: Record<string, string> = {
@@ -12,6 +12,7 @@ const ICON: Record<string, string> = {
 };
 const NAMES: Record<string, string> = { ...labels.equipment, ...labels.access, ...labels.facilities };
 const MEM = labels.memberships as Record<string, string>;
+const SIZES = labels.sizes as Record<string, string>;
 
 export const esc = (s: unknown) =>
   String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]!);
@@ -52,6 +53,7 @@ export function cardHTML(p: ClientPark, o: { dist?: number; num?: number; mine?:
     .filter((k) => NAMES[k])
     .slice(0, 4)
     .map((k) => `<li><span aria-hidden="true">${ICON[k] ?? ''}</span> ${esc(NAMES[k])}</li>`);
+  if (p.s && SIZES[p.s]) chips.unshift(`<li class="size size-${esc(p.s)}"><span class="size-dots" aria-hidden="true">${'●'.repeat(p.s === 'small' ? 1 : p.s === 'medium' ? 2 : 3)}</span> ${esc(SIZES[p.s])}</li>`);
   if (p.m) chips.push(`<li class="mem">${esc(MEM[p.m])}</li>`);
   if (o.mine?.r) chips.push(`<li class="rate">Your rating: ${o.mine.r} out of 5</li>`);
   const foot = p.c

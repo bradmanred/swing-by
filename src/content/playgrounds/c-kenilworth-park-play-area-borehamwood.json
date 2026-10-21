@@ -9,7 +9,6 @@
   "access": [],
   "facilities": [],
   "opens": "",
-  "largePlayArea": true,
   "description": "Large play area at Kenilworth Park (King George V Playing Fields), with basketball and football.",
   "nearby": [],
   "operator": "Hertsmere Borough Council",
@@ -21,5 +20,6 @@
   ],
   "checked": "2026-10-19",
   "notConfirmed": "Opening hours, toilets and parking.",
-  "photo": null
+  "photo": null,
+  "size": "large"
 }

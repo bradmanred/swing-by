@@ -78,6 +78,14 @@ try {
   await page.getByRole('button', { name: 'Cast my vote' }).click();
   await page.locator('#vote-msg.err').waitFor({ timeout: 5000 }).catch(() => fail('vote failure not reported'));
 
+  // Size filter lives under "More filters" and only shows graded playgrounds of that size.
+  await page.goto(BASE + '/');
+  await page.getByText('More filters').click();
+  await page.getByRole('checkbox', { name: /^Large/ }).check();
+  const sized = await page.locator('#cards .card').count();
+  const large = await page.locator('#cards .card .size-large').count();
+  if (!(sized > 0 && sized === large)) fail(`size filter: ${sized} cards, ${large} marked large`);
+
   // Site search finds a park by name (including a missing space or a slip) and by town.
   for (const [q, want] of [['moneyhole', 'Moneyhole Lane Playing Fields Playground'], ['money hole lane', 'Moneyhole Lane Playing Fields Playground'], ['digswel', 'Digswell Playing Fields Play Area']]) {
     await page.goto(BASE + '/search/?q=' + encodeURIComponent(q));

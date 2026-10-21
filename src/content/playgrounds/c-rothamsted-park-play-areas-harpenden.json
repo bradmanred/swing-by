@@ -12,7 +12,6 @@
     "fp"
   ],
   "opens": "",
-  "largePlayArea": true,
   "description": "A large fenced and hedged play area with a good selection of equipment near the hard courts and rose garden, plus a separate junior play area at the town centre end of the park; small free car park off Orchard Avenue.",
   "nearby": [],
   "operator": "St Albans City and District Council",
@@ -24,5 +23,6 @@
   ],
   "checked": "2026-10-19",
   "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
-  "photo": null
+  "photo": null,
+  "size": "large"
 }

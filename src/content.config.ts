@@ -20,7 +20,8 @@ const playgrounds = defineCollection({
     closes: time.nullish(),
     weekendsOnly: z.boolean().nullish(),
     season: z.object({ from: z.number().int().min(1).max(12), to: z.number().int().min(1).max(12) }).nullish(),
-    largePlayArea: z.boolean().nullish(),
+    // From the council's own grading (small, medium, large; or LAP / LEAP / NEAP). Leave out if it isn't graded.
+    size: z.enum(['small', 'medium', 'large']).nullish(),
     description: z.string().default(''),
     rules: z.string().nullish(),
     nearby: z
