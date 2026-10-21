@@ -13,6 +13,8 @@
 //   GET  /api/photos/queue             pending and reported photos
 //   POST /api/photos/<id>/review       JSON { decision: "approve" | "reject" }
 
+import { isModerator } from './auth.js';
+
 const MAX_BYTES = 1_500_000; // the page shrinks photos to about 1600px before sending, well under this
 const PER_HOUR = 5;
 const PER_DAY = 20;
@@ -41,15 +43,6 @@ async function uploaderId(request) {
   const day = new Date().toISOString().slice(0, 10);
   const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(`swing-by:${day}:${ip}`));
   return [...new Uint8Array(buf)].slice(0, 16).map((x) => x.toString(16).padStart(2, '0')).join('');
-}
-
-function isModerator(request, env) {
-  const token = env.MOD_TOKEN;
-  const given = (request.headers.get('Authorization') || '').replace(/^Bearer\s+/i, '');
-  if (!token || !given || token.length !== given.length) return false;
-  let diff = 0;
-  for (let i = 0; i < token.length; i++) diff |= token.charCodeAt(i) ^ given.charCodeAt(i);
-  return diff === 0;
 }
 
 const sameOrigin = (request) => {

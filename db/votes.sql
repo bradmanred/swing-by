@@ -4,6 +4,8 @@
 CREATE TABLE IF NOT EXISTS votes (
   voter TEXT PRIMARY KEY,
   area TEXT NOT NULL,
+  other TEXT, -- what they typed for "Somewhere else" (private)
   created_at TEXT NOT NULL DEFAULT (datetime('now')),
   updated_at TEXT NOT NULL DEFAULT (datetime('now'))
 );
+-- Added later: on an older copy of the table run  ALTER TABLE votes ADD COLUMN other TEXT;

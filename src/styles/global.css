@@ -135,6 +135,9 @@ img.art { aspect-ratio: 360 / 170; object-fit: cover; background: var(--blue-sof
 .vote form[hidden], .vote [hidden] { display: none; }
 .vote-options { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr)); }
 .vote-note { color: var(--muted); }
+.vote-other { display: grid; gap: 6px; max-width: 420px; }
+.vote-other[hidden] { display: none; }
+.vote-other input { width: 100%; }
 #vote-summary { font-weight: 700; margin: 0 0 12px; }
 #vote-summary:focus { outline: none; }
 .vote-bars { list-style: none; margin: 0 0 16px; padding: 0; display: grid; gap: 12px; }

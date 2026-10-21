@@ -12,7 +12,7 @@ export default {
     const { pathname } = new URL(request.url);
     if (pathname === '/api/auth') return auth({ request, env });
     if (pathname === '/api/callback') return callback({ request, env });
-    if (pathname === '/api/vote') return vote({ request, env });
+    if (pathname === '/api/vote' || pathname === '/api/vote/suggestions') return vote({ request, env, pathname });
     if (pathname === '/api/photos' || pathname.startsWith('/api/photos/')) return photos({ request, env, pathname });
     return env.ASSETS.fetch(request);
   },
