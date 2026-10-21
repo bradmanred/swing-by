@@ -1,0 +1,36 @@
+{
+  "name": "Flamsteadbury Lane Play Area",
+  "region": "herts",
+  "area": "Redbourn",
+  "lat": 51.79658,
+  "lng": -0.40737,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "bs",
+    "sw",
+    "cl",
+    "sl",
+    "rb"
+  ],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "Fenced play area between Flamsteadbury Lane and Stephens Way, with a baby and toddler zone (baby swings, climbing frame with slide, rockers, springer, spinners) and a junior zone (three-tower play structure with fireman's pole and climbing wall, net spinner, swings). Outdoor gym and a grassy area with a goal outside.",
+  "nearby": [],
+  "operator": "Redbourn Parish Council",
+  "sources": [
+    {
+      "label": "Redbourn Parish Council: play areas",
+      "url": "https://www.redbourn-pc.gov.uk/play-areas"
+    }
+  ],
+  "checked": "2026-10-21",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), toilets and parking.",
+  "photo": null
+}
