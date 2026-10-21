@@ -7,10 +7,10 @@ import { AxeBuilder } from '@axe-core/playwright';
 
 const PORT = 4329;
 const BASE = `http://localhost:${PORT}`;
-const PAGES = ['/', '/playgrounds/', '/playgrounds/verulamium/', '/playgrounds/stanborough/', '/road-trips/', '/memberships/', '/my-parks/', '/about/', '/404/'];
+const PAGES = ['/', '/playgrounds/', '/playgrounds/verulamium/', '/playgrounds/stanborough/', '/road-trips/', '/memberships/', '/my-parks/', '/about/', '/search/', '/search/?q=moneyhole', '/404/'];
 
 // A tiny static server for the built site in dist/.
-const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.svg': 'image/svg+xml', '.json': 'application/json', '.yml': 'text/yaml' };
+const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.mjs': 'text/javascript', '.css': 'text/css', '.svg': 'image/svg+xml', '.json': 'application/json', '.yml': 'text/yaml' };
 const server = createServer(async (req, res) => {
   let file = join('dist', normalize(decodeURIComponent(new URL(req.url, BASE).pathname)));
   try {
@@ -77,6 +77,20 @@ try {
   await page.getByRole('radio', { name: 'Essex' }).check();
   await page.getByRole('button', { name: 'Cast my vote' }).click();
   await page.locator('#vote-msg.err').waitFor({ timeout: 5000 }).catch(() => fail('vote failure not reported'));
+
+  // Site search finds a park by name (including a missing space or a slip) and by town.
+  for (const [q, want] of [['moneyhole', 'Moneyhole Lane Playing Fields Playground'], ['money hole lane', 'Moneyhole Lane Playing Fields Playground'], ['digswel', 'Digswell Playing Fields Play Area']]) {
+    await page.goto(BASE + '/search/?q=' + encodeURIComponent(q));
+    await page.locator('#search-results .hit').first().waitFor();
+    const first = await page.locator('#search-results .hit > a').first().textContent();
+    if (first !== want) fail(`search "${q}" put "${first}" first`);
+  }
+  await page.goto(BASE + '/');
+  await page.getByRole('searchbox', { name: 'Search playgrounds and pages' }).fill('Welwyn Garden City');
+  await page.keyboard.press('Enter');
+  await page.waitForURL(/\/search\/\?q=/);
+  await page.locator('#search-results .hit').first().waitFor();
+  if ((await page.locator('#search-results .hit').count()) < 10) fail('header search for Welwyn Garden City found too few');
 
   await page.goto(BASE + '/playgrounds/verulamium/');
   await page.getByLabel('4 out of 5').focus();
