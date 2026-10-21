@@ -1,0 +1,24 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Search" description="Search every playground by name, town, county or equipment, and the rest of the site.">
+  <div>
+    <h1>Search</h1>
+    <p style="margin-top:8px">Find a playground by name, town or county, or search for things like "splash" or "toilets".</p>
+  </div>
+  <form id="search-page-form" class="panel search-page" role="search" action="/search/" method="get">
+    <label for="q">Search Swing By</label>
+    <div class="row">
+      <input id="q" name="q" type="search" autocomplete="off" enterkeyhint="search" />
+      <button class="btn btn-blue" type="submit">Search</button>
+    </div>
+  </form>
+  <p id="search-status" role="status" aria-live="polite"></p>
+  <ol class="hits" id="search-results"></ol>
+  <p><button class="btn" type="button" id="search-more" hidden>Show more results</button></p>
+  <noscript><p>Search needs JavaScript. You can browse the <a href="/playgrounds/">A to Z of playgrounds</a> instead.</p></noscript>
+  <script>
+    import { startSearch } from '../scripts/search';
+    startSearch();
+  </script>
+</Base>
