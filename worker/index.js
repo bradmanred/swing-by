@@ -1,9 +1,11 @@
-// Cloudflare Worker: GitHub sign-in for Decap CMS at /api/auth and /api/callback, the next-area vote at /api/vote;
-// everything else is the static site.
-// Needs GITHUB_CLIENT_ID and GITHUB_CLIENT_SECRET set as variables and secrets on the Worker, and the VOTES D1 binding.
+// Cloudflare Worker: GitHub sign-in for Decap CMS at /api/auth and /api/callback, the next-area vote at /api/vote,
+// parent photos at /api/photos; everything else is the static site.
+// Needs GITHUB_CLIENT_ID and GITHUB_CLIENT_SECRET set as variables and secrets on the Worker, the VOTES and PHOTOS_DB
+// D1 bindings, and a MOD_TOKEN secret for approving photos.
 import { onRequest as auth } from '../functions/api/auth.js';
 import { onRequest as callback } from '../functions/api/callback.js';
 import { vote } from './vote.js';
+import { photos } from './photos.js';
 
 export default {
   async fetch(request, env) {
@@ -11,6 +13,7 @@ export default {
     if (pathname === '/api/auth') return auth({ request, env });
     if (pathname === '/api/callback') return callback({ request, env });
     if (pathname === '/api/vote') return vote({ request, env });
+    if (pathname === '/api/photos' || pathname.startsWith('/api/photos/')) return photos({ request, env, pathname });
     return env.ASSETS.fetch(request);
   },
 };
