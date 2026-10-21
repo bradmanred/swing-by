@@ -1,0 +1,37 @@
+{
+  "name": "East Common Play Area",
+  "region": "herts",
+  "area": "Redbourn",
+  "lat": 51.79414,
+  "lng": -0.40117,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sl",
+    "cl",
+    "bs",
+    "sw",
+    "mb",
+    "zw"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "Play area for children up to 12 on the common between Chequer Lane, East Common and West Common, with a large metal slide, log climbing and scramble nets, a zip wire, monkey bars and a balance trail, a wooden play boat, a toddler multi-play unit, cradle and junior swings, and an accessible swing.",
+  "nearby": [],
+  "operator": "Redbourn Parish Council",
+  "sources": [
+    {
+      "label": "Redbourn Parish Council: play areas",
+      "url": "https://www.redbourn-pc.gov.uk/play-areas"
+    }
+  ],
+  "checked": "2026-10-21",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), toilets and parking.",
+  "photo": null
+}

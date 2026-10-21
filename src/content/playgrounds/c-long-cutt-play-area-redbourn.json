@@ -1,0 +1,32 @@
+{
+  "name": "Long Cutt Play Area",
+  "region": "herts",
+  "area": "Redbourn",
+  "lat": 51.80131,
+  "lng": -0.40581,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "cl",
+    "sl",
+    "ss",
+    "sw"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Play area reached by an alleyway from the Snatchup end of Long Cutt or from Hill Top, with a climbing frame and slide for over-3s, a multi-play structure for over-6s, a springer, a rotating seesaw, a rocking horse, and basket and regular swings. Basketball net and goal posts nearby.",
+  "nearby": [],
+  "operator": "Redbourn Parish Council",
+  "sources": [
+    {
+      "label": "Redbourn Parish Council: play areas",
+      "url": "https://www.redbourn-pc.gov.uk/play-areas"
+    }
+  ],
+  "checked": "2026-10-21",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), toilets and parking.",
+  "photo": null
+}
