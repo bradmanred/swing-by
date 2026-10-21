@@ -28,6 +28,11 @@ const names = Object.fromEntries((await allParks()).map((p) => [p.id, `${p.name}
   </form>
   <p id="mod-msg" role="status"></p>
   <ul class="mod-list" id="mod-list"></ul>
+  <section class="panel" id="vote-suggestions" hidden aria-labelledby="sugg-title" style="max-width:720px">
+    <h2 id="sugg-title" style="font-size:1.5rem">Where else people want us to go</h2>
+    <p class="hint" style="margin-top:6px">What families typed after choosing "Somewhere else" in the vote. Only moderators can see this.</p>
+    <ol id="sugg-list" style="margin-top:10px;padding-left:22px;display:grid;gap:4px"></ol>
+  </section>
   <script type="application/json" id="park-names" set:html={JSON.stringify(names)} />
   <script>
     const names = JSON.parse(document.getElementById('park-names')!.textContent!) as Record<string, string>;
@@ -92,6 +97,17 @@ const names = Object.fromEntries((await allParks()).map((p) => [p.id, `${p.name}
       }
     }
 
+    async function loadSuggestions() {
+      const r = await fetch('/api/vote/suggestions', { headers: { Authorization: `Bearer ${key}` } }).catch(() => null);
+      if (!r?.ok) return;
+      const { suggestions } = (await r.json()) as { suggestions: { name: string; votes: number }[] };
+      const box = document.getElementById('vote-suggestions')!;
+      document.getElementById('sugg-list')!.innerHTML = suggestions.length
+        ? suggestions.map((s) => `<li>${esc(s.name)}: ${s.votes} vote${s.votes === 1 ? '' : 's'}</li>`).join('')
+        : '<li>No suggestions yet.</li>';
+      box.hidden = false;
+    }
+
     keyForm.addEventListener('submit', (e) => {
       e.preventDefault();
       key = keyInput.value.trim();
@@ -99,7 +115,11 @@ const names = Object.fromEntries((await allParks()).map((p) => [p.id, `${p.name}
         sessionStorage.setItem('sb-mod', key);
       } catch {}
       load();
+      loadSuggestions();
     });
-    if (key) load();
+    if (key) {
+      load();
+      loadSuggestions();
+    }
   </script>
 </Base>

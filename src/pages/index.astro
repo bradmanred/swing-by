@@ -130,6 +130,11 @@ const ages = [
           ))}
         </div>
       </fieldset>
+      <div class="vote-other" id="vote-other">
+        <label for="vote-other-text">If somewhere else, where?</label>
+        <input id="vote-other-text" name="other" type="text" maxlength="60" autocomplete="off" placeholder="A county, town or area" aria-describedby="vote-other-hint" />
+        <p class="hint" id="vote-other-hint">We'll only use this to plan where to go next. It isn't shown on the site.</p>
+      </div>
       <div class="row" style="align-items:center">
         <button class="btn btn-blue" type="submit">Cast my vote</button>
         <span class="vote-note">One vote per family. You'll see the results once you've voted.</span>
