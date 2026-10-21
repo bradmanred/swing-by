@@ -1,0 +1,40 @@
+{
+  "name": "Town Centre Gardens Play Area",
+  "region": "herts",
+  "area": "Town centre, Stevenage",
+  "lat": 51.90416,
+  "lng": -0.19786,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "sw",
+    "tp",
+    "rb",
+    "ad"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "Play area for children up to 16 in the Town Centre Gardens, reopened in March 2025 after a £250,000 refurbishment, with a bespoke pirate ship, a group swing, an activity trail, a trampoline and an inclusive roundabout. Local children chose the equipment.",
+  "nearby": [],
+  "operator": "Stevenage Borough Council",
+  "sources": [
+    {
+      "label": "Stevenage Borough Council: new play area set to officially open",
+      "url": "https://www.stevenage.gov.uk/news-and-events/news/new-play-area-set-to-officially-open"
+    },
+    {
+      "label": "Stevenage Borough Council: Town Centre Gardens",
+      "url": "https://www.stevenage.gov.uk/leisure-culture-and-wellbeing/parks-and-open-spaces/town-centre-gardens"
+    }
+  ],
+  "checked": "2026-10-21",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), toilets and parking.",
+  "photo": null
+}

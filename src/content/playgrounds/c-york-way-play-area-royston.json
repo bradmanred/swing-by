@@ -1,0 +1,33 @@
+{
+  "name": "York Way Play Area",
+  "region": "herts",
+  "area": "Royston",
+  "lat": 52.05741,
+  "lng": -0.03223,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "bs",
+    "cl",
+    "sw"
+  ],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "Fenced play area for smaller children with baby swings, an elephant rocker, a climbing frame and a basket swing, plus a ball games area with a basketball net and a wooden agility course.",
+  "nearby": [],
+  "operator": null,
+  "sources": [
+    {
+      "label": "Royston Town Council: parks and recreation grounds",
+      "url": "https://www.roystontown.uk/?p=5196"
+    }
+  ],
+  "checked": "2026-10-21",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), who runs it, toilets and parking.",
+  "photo": null
+}
