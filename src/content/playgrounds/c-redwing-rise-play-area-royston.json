@@ -1,0 +1,31 @@
+{
+  "name": "Redwing Rise Play Area",
+  "region": "herts",
+  "area": "Royston",
+  "lat": 52.05612,
+  "lng": -0.00993,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "Fenced children's play park with activities for all ages, off Fieldfare Way, beside a tarmac path round the estate.",
+  "nearby": [],
+  "operator": null,
+  "sources": [
+    {
+      "label": "Royston Town Council: parks and recreation grounds",
+      "url": "https://www.roystontown.uk/?p=5196"
+    }
+  ],
+  "checked": "2026-10-21",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), equipment, who runs it, toilets and parking.",
+  "photo": null
+}
