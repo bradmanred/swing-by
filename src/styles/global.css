@@ -96,6 +96,9 @@ legend { font-weight: 700; padding: 0; margin-bottom: 8px; }
 .pin { width: 40px; height: 40px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); background: var(--red); border: 3px solid var(--ink); display: grid; place-items: center; cursor: pointer; padding: 0; }
 .pin span { transform: rotate(45deg); color: var(--white); font-family: var(--display); font-weight: 800; font-size: 1.25rem; line-height: 1; }
 .pin.active { background: var(--blue); }
+.pin-dot { width: 20px; height: 20px; border-radius: 50%; background: var(--red); border: 3px solid var(--ink); padding: 0; cursor: pointer; }
+.pin-dot::after { content: ''; position: absolute; inset: -12px; } /* bigger tap area */
+.pin-dot { position: relative; }
 .you { width: 26px; height: 26px; border-radius: 50%; background: var(--blue); border: 5px solid var(--white); box-shadow: 0 0 0 3px var(--ink); }
 .nearlist { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
 .nearlist a { display: grid; grid-template-columns: 40px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 10px 12px; border: 3px solid var(--ink); border-radius: 16px; color: var(--ink); text-decoration: none; font-weight: 700; }

@@ -26,6 +26,8 @@ export function startFinder() {
     sort: 'near',
     limit: PAGE,
     photos: {} as Record<string, CardPhoto>,
+    // Set when someone moves the map themselves: results then centre on the map instead of on them.
+    area: null as null | { lat: number; lng: number; bounds: Bounds },
   };
   const hint = $('#where-hint');
   const where = $<HTMLInputElement>('#where');
@@ -39,7 +41,7 @@ export function startFinder() {
     let rows = parks
       .filter((p) => !st.ages.size || p.ages.some((a) => st.ages.has(a)))
       .filter((p) => [...st.loves].every((k) => p.f.includes(k)))
-      .map((p) => ({ p, d: km(st.origin, p), m: mine[p.id] }));
+      .map((p) => ({ p, d: km(st.area ?? st.origin, p), m: mine[p.id] }));
     if (st.sort === 'new') rows = rows.filter((x) => !x.m?.v);
     rows.sort((a, b) => (st.sort === 'rated' ? (b.m?.r ?? 0) - (a.m?.r ?? 0) || a.d - b.d : a.d - b.d));
     return rows;
@@ -48,7 +50,8 @@ export function startFinder() {
   function render(announce = true) {
     const rows = list();
     const label = st.origin.how === 'gps' ? 'you' : st.origin.name;
-    $('#results-title').textContent = `Playgrounds near ${label}`;
+    $('#results-title').textContent = st.area ? 'Playgrounds in this map area' : `Playgrounds near ${label}`;
+    $('#near-title').textContent = st.area ? 'Parks in this area' : 'Parks near you';
     $('#cards').innerHTML = rows
       .slice(0, st.limit)
       .map((x, i) => cardHTML(x.p, { dist: x.d, num: i < 5 ? i + 1 : undefined, mine: x.m, photo: st.photos[x.p.id] }))
@@ -62,12 +65,29 @@ export function startFinder() {
       .join('') || '<li>No playgrounds match those choices. Try removing a filter.</li>';
     const more = $<HTMLButtonElement>('#more');
     more.hidden = rows.length <= st.limit;
-    if (announce) $('#count').textContent = `${rows.length} playgrounds found, nearest first${st.sort === 'near' ? '' : ' after sorting'}.`;
+    if (announce)
+      $('#count').textContent = st.area
+        ? `${rows.length} playgrounds found, nearest to the middle of the map first.`
+        : `${rows.length} playgrounds found, nearest first${st.sort === 'near' ? '' : ' after sorting'}.`;
     const cap = $('#where-caption');
-    const sure =
-      st.origin.acc <= 150 ? 'The circle shows how sure we are.' : st.origin.acc <= 2500 ? 'The circle shows roughly where we think you are.' : 'This is only a rough guess.';
-    cap.innerHTML = `<strong>We think you're near ${esc(st.origin.name)}.</strong> ${sure}`;
-    map?.update(st.origin, rows.slice(0, 5).map((x) => x.p));
+    if (st.area) {
+      cap.innerHTML = `<strong>Showing playgrounds around the middle of the map.</strong> <button type="button" class="linkbtn" id="back-to-origin">Back to ${esc(st.origin.how === 'gps' ? 'where you are' : st.origin.name)}</button>`;
+    } else {
+      const sure =
+        st.origin.acc <= 150 ? 'The circle shows how sure we are.' : st.origin.acc <= 2500 ? 'The circle shows roughly where we think you are.' : 'This is only a rough guess.';
+      cap.innerHTML = `<strong>We think you're near ${esc(st.origin.name)}.</strong> ${sure}`;
+    }
+    const top = rows.slice(0, 5).map((x) => x.p);
+    // Also mark the other playgrounds in view, so moving the map shows everything there.
+    const b = st.area?.bounds;
+    const inView = b
+      ? rows
+          .slice(5)
+          .filter((x) => x.p.lat <= b.n && x.p.lat >= b.s && x.p.lng <= b.e && x.p.lng >= b.w)
+          .slice(0, 80)
+          .map((x) => x.p)
+      : [];
+    map?.update(st.origin, top, { fit: !st.area, more: inView });
   }
 
   async function resolve(q: string): Promise<Origin | null> {
@@ -97,6 +117,7 @@ export function startFinder() {
 
   function setOrigin(o: Origin) {
     st.origin = o;
+    st.area = null;
     st.limit = PAGE;
     store.set('sb-origin', o);
     render();
@@ -157,6 +178,13 @@ export function startFinder() {
     );
   });
 
+  $('#where-caption').addEventListener('click', (e) => {
+    if (!(e.target as HTMLElement).closest('#back-to-origin')) return;
+    st.area = null;
+    st.limit = PAGE;
+    render();
+  });
+
   $('#change').addEventListener('click', () => {
     where.focus();
     where.select();
@@ -206,11 +234,20 @@ export function startFinder() {
   // The map is an extra; everything above works without it.
   import('./map')
     .then(({ createMap }) => {
-      map = createMap($('#map'), (id) => {
-        const link = document.querySelector<HTMLAnchorElement>(`#card-${CSS.escape(id)} h3 a`);
-        link?.scrollIntoView({ block: 'center' });
-        link?.focus({ preventScroll: true });
-      });
+      map = createMap(
+        $('#map'),
+        (id) => {
+          const link = document.querySelector<HTMLAnchorElement>(`#card-${CSS.escape(id)} h3 a`);
+          link?.scrollIntoView({ block: 'center' });
+          link?.focus({ preventScroll: true });
+        },
+        // Someone moved the map: search that area straight away.
+        (centre, bounds) => {
+          st.area = { ...centre, bounds };
+          st.limit = PAGE;
+          render();
+        },
+      );
       if (map) render(false);
     })
     .catch(() => {
@@ -218,4 +255,7 @@ export function startFinder() {
     });
 }
 
-export type MapView = { update(o: { lat: number; lng: number; acc: number; name: string }, top: ClientPark[]): void };
+export type Bounds = { n: number; s: number; e: number; w: number };
+export type MapView = {
+  update(o: { lat: number; lng: number; acc: number; name: string }, top: ClientPark[], opts?: { fit?: boolean; more?: ClientPark[] }): void;
+};
