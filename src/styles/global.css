@@ -208,3 +208,15 @@ img.art { aspect-ratio: 360 / 170; object-fit: cover; background: var(--blue-sof
 .mod-list .row .btn { flex: 1; }
 .signoff { margin-top: 12px; font-family: var(--display); font-weight: 800; font-size: 1.25rem; }
 #photo-file::file-selector-button { font: inherit; font-weight: 700; min-height: 48px; padding: 0 16px; margin-right: 12px; border: 3px solid var(--ink); border-radius: 14px; background: var(--yellow); color: var(--ink); cursor: pointer; }
+
+/* Playground size */
+.chips .size { background: var(--ink); color: var(--white); }
+.size-dots { letter-spacing: 1px; font-size: 0.75em; }
+.more-filters { margin-top: 16px; }
+.more-filters summary { font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border: 3px solid var(--ink); border-radius: 14px; background: var(--white); list-style: none; }
+.more-filters summary::-webkit-details-marker { display: none; }
+.more-filters summary::before { content: '▸'; }
+.more-filters[open] summary::before { content: '▾'; }
+.more-filters fieldset { margin-top: 8px; }
+.more-filters .hint { margin-top: 8px; }
+.chk:has(input:disabled) { opacity: 0.55; cursor: not-allowed; }

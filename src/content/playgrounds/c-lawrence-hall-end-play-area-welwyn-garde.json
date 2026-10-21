@@ -21,7 +21,6 @@
     "fen"
   ],
   "opens": "",
-  "largePlayArea": true,
   "description": "Enclosed site with junior and toddler swings, two multi-play units, springers, roundabout, see-saw, spinning disc, stepping stones and a springy balancing beam, with benches and a basketball court nearby.",
   "nearby": [],
   "operator": "Welwyn Hatfield Borough Council",
@@ -33,5 +32,6 @@
   ],
   "checked": "2026-10-19",
   "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
-  "photo": null
+  "photo": null,
+  "size": "large"
 }

@@ -12,6 +12,7 @@ export const L = labels as {
   memberships: Record<string, string>;
   nearby: Record<string, string>;
   duskByMonth: string[];
+  sizes: Record<string, string>;
 };
 
 export const regions = regionsFile.regions;
@@ -69,4 +70,5 @@ export const clientPark = (p: Park) => ({
   c: p.checked,
   m: p.membership ?? null,
   d: p.description.slice(0, 140),
+  s: p.size ?? null,
 });
