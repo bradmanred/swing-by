@@ -1,0 +1,27 @@
+{
+  "name": "Flamstead Recreation Ground Play Area",
+  "region": "herts",
+  "area": "Flamstead",
+  "lat": 51.82019,
+  "lng": -0.43922,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "cl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Children's play area at the village recreation ground on Friendless Lane, with swings and climbing equipment.",
+  "nearby": [],
+  "operator": null,
+  "sources": [
+    {
+      "label": "Flamstead Parish Council: the recreation ground",
+      "url": "https://flamsteadparishcouncil.gov.uk/?p=413"
+    }
+  ],
+  "checked": "2026-10-21",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), who runs it, age ranges, toilets and parking.",
+  "photo": null
+}
