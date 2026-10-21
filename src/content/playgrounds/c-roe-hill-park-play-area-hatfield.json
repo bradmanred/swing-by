@@ -1,0 +1,32 @@
+{
+  "name": "Roe Hill Park Play Area",
+  "region": "herts",
+  "area": "Hatfield",
+  "lat": 51.75762,
+  "lng": -0.22904,
+  "ages": [],
+  "equipment": [
+    "sl",
+    "cl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Children's playground in Roe Hill Park, which also has football pitches and large open fields. Roe Hill Hall serves refreshments during events.",
+  "nearby": [],
+  "operator": null,
+  "sources": [
+    {
+      "label": "Geograph: Play area in Roe Hill Park (photo, 2026)",
+      "url": "https://www.geograph.org.uk/photo/8249527"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), who runs it, opening hours, full equipment list, age ranges, toilets and parking. No official page found yet.",
+  "photo": {
+    "src": "https://s0.geograph.org.uk/geophotos/08/24/95/8249527_d1226878.jpg",
+    "alt": "Roe Hill Park play area: climbing frames and a slide on grass, with trees behind",
+    "credit": "Philip Jeffrey via Geograph",
+    "licence": "CC BY-SA 2.0"
+  }
+}
