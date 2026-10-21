@@ -1,0 +1,33 @@
+{
+  "name": "Chells Park Play Area",
+  "region": "herts",
+  "area": "Chells, Stevenage",
+  "lat": 51.89898,
+  "lng": -0.16217,
+  "ages": [
+    "under-3"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fp"
+  ],
+  "opens": "",
+  "description": "Small toddler play area next to the pavilion and near the main car park in Chells Park, which also has football and rugby pitches, basketball hoops and woodland walks in Lanterns Lane and Elm Green Woodlands.",
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "Car park at the main entrance on Gresley Way (no vehicle access from Ferrier Road)"
+    }
+  ],
+  "operator": "Stevenage Borough Council",
+  "sources": [
+    {
+      "label": "Stevenage Borough Council: Chells Park",
+      "url": "https://www.stevenage.gov.uk/leisure-culture-and-wellbeing/parks-and-open-spaces/local-parks/chells-park"
+    }
+  ],
+  "checked": "2026-10-21",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), equipment, toilets.",
+  "photo": null
+}
