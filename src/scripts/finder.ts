@@ -22,6 +22,7 @@ export function startFinder() {
   const st = {
     origin: store.get<Origin>('sb-origin', { name: first.name, lat: first.lat, lng: first.lng, acc: 1500, how: 'town' }),
     ages: new Set<string>(),
+    sizes: new Set<string>(),
     loves: new Set<string>(),
     sort: 'near',
     limit: PAGE,
@@ -41,6 +42,7 @@ export function startFinder() {
     let rows = parks
       .filter((p) => !st.ages.size || p.ages.some((a) => st.ages.has(a)))
       .filter((p) => [...st.loves].every((k) => p.f.includes(k)))
+      .filter((p) => !st.sizes.size || (p.s != null && st.sizes.has(p.s)))
       .map((p) => ({ p, d: km(st.area ?? st.origin, p), m: mine[p.id] }));
     if (st.sort === 'new') rows = rows.filter((x) => !x.m?.v);
     rows.sort((a, b) => (st.sort === 'rated' ? (b.m?.r ?? 0) - (a.m?.r ?? 0) || a.d - b.d : a.d - b.d));
@@ -193,6 +195,13 @@ export function startFinder() {
   document.querySelectorAll<HTMLInputElement>('input[name=age]').forEach((c) =>
     c.addEventListener('change', () => {
       c.checked ? st.ages.add(c.value) : st.ages.delete(c.value);
+      st.limit = PAGE;
+      render();
+    }),
+  );
+  document.querySelectorAll<HTMLInputElement>('input[name=size]').forEach((c) =>
+    c.addEventListener('change', () => {
+      c.checked ? st.sizes.add(c.value) : st.sizes.delete(c.value);
       st.limit = PAGE;
       render();
     }),

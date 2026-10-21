@@ -55,7 +55,8 @@ const dirs = `https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.ln
             {[...eq, ...acc, ...fac].map((f) => <li><span aria-hidden="true">{ICON[f.k]}</span> {f.label}</li>)}
           </ul>
         )}
-        {p.ages.length > 0 && <p style="margin-top:12px">Best for: {p.ages.map((a) => L.ages[a]).join(', ')}{p.largePlayArea && '. Large play area.'}</p>}
+        {p.ages.length > 0 && <p style="margin-top:12px">Best for: {p.ages.map((a) => L.ages[a]).join(', ')}.</p>}
+        {p.size && <p style="margin-top:8px">Size: {L.sizes[p.size]}, as graded by {p.operator ?? 'the council'}.</p>}
       </section>
       <section aria-labelledby="hours">
         <h2 id="hours">Opening times</h2>

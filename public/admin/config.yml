@@ -95,7 +95,15 @@ collections:
       - { label: Opens, name: opens, widget: string, required: false, hint: "HH:MM, or 24h. Leave blank if not confirmed.", pattern: ["^(\\d{2}:\\d{2}|24h)?$", "Use HH:MM or 24h"] }
       - { label: Closes, name: closes, widget: string, required: false, hint: "HH:MM. Leave blank if it locks at dusk.", pattern: ["^(\\d{2}:\\d{2})?$", "Use HH:MM"] }
       - { label: Weekends and school holidays only, name: weekendsOnly, widget: boolean, required: false }
-      - { label: Large play area, name: largePlayArea, widget: boolean, required: false }
+      - label: Play area size
+        name: size
+        widget: select
+        required: false
+        hint: "Only from the council's own grading. LAP = small, LEAP = medium, NEAP = large. Leave blank if it isn't graded."
+        options:
+          - { label: Small, value: small }
+          - { label: Medium, value: medium }
+          - { label: Large, value: large }
       - { label: Description, name: description, widget: text, required: false }
       - { label: Rules, name: rules, widget: string, required: false, hint: "For example: Adults can only go in with a child." }
       - label: Parking, toilets and food

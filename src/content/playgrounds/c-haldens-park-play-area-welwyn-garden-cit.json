@@ -21,7 +21,6 @@
     "fen"
   ],
   "opens": "",
-  "largePlayArea": true,
   "description": "Enclosed play area with junior and toddler swings, three spring animals, a balancing beam and climbing frame with slide, in open space with a basketball court, football, teenage shelter, climbing track and ball wall.",
   "nearby": [],
   "operator": "Welwyn Hatfield Borough Council",
@@ -33,5 +32,6 @@
   ],
   "checked": "2026-10-19",
   "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
-  "photo": null
+  "photo": null,
+  "size": "large"
 }

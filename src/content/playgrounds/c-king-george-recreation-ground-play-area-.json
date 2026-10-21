@@ -28,7 +28,6 @@
     "fp"
   ],
   "opens": "",
-  "largePlayArea": true,
   "description": "Inclusive play destination for ages 2 to 12 with a pyramid net, double cableway, multi-units with slides, swings and a wheelchair-accessible roundabout, teen climbing, and a seasonal tropical island splash park, with toilets and a café.",
   "nearby": [
     {
@@ -58,5 +57,6 @@
   ],
   "checked": "2026-10-20",
   "notConfirmed": "Play area opening hours, splash park season and hours, café hours and baby change.",
-  "photo": null
+  "photo": null,
+  "size": "large"
 }

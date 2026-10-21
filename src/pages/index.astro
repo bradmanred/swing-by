@@ -31,6 +31,7 @@ const loves = [
   ['inc', '♿', 'Inclusive equipment'],
   ['wc', '🚻', 'Toilets'],
 ].filter(([k]) => data.some((p) => p.f.includes(k))); // a filter only shows once a playground has it
+const sizes = (['small', 'medium', 'large'] as const).map((k) => ({ k, label: k[0].toUpperCase() + k.slice(1), n: data.filter((p) => p.s === k).length }));
 const ages = [
   ['under-3', 'Toddlers'],
   ['3-6', '3–6'],
@@ -71,6 +72,18 @@ const ages = [
         <button class="btn" type="button" data-love={k} aria-pressed="false"><span aria-hidden="true">{i}</span> {l}</button>
       ))}
     </div>
+    <details class="more-filters" id="more-filters">
+      <summary>More filters</summary>
+      <fieldset>
+        <legend>Play area size</legend>
+        <div class="row">
+          {sizes.map((z) => (
+            <label class="chk"><input type="checkbox" name="size" value={z.k} disabled={z.n === 0} /> {z.label} <span class="hint">({z.n})</span></label>
+          ))}
+        </div>
+        <p class="hint">Sizes come from each council's own grading, so not every playground has one yet. Choosing a size only shows playgrounds that have been graded.</p>
+      </fieldset>
+    </details>
   </section>
 
   <section class="near" aria-labelledby="near-title">

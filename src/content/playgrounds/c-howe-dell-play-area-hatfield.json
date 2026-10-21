@@ -24,7 +24,6 @@
     "fen"
   ],
   "opens": "",
-  "largePlayArea": true,
   "description": "Enclosed area by the woods with two spinning bowls, springers, a see-saw, trampoline, toddler swings and a climbing frame with slide, plus junior swings, a bench and a teenage shelter outside.",
   "nearby": [],
   "operator": "Welwyn Hatfield Borough Council",
@@ -36,5 +35,6 @@
   ],
   "checked": "2026-10-19",
   "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
-  "photo": null
+  "photo": null,
+  "size": "large"
 }
