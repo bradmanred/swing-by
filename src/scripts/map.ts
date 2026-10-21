@@ -99,6 +99,9 @@ export function createMap(
         pins.push(new maplibregl.Marker({ element: b, anchor: 'center' }).setLngLat([p.lng, p.lat]).addTo(map));
       }
       if (opts.fit === false) return;
+      // The page is about to move the map itself: forget any half-finished drag so this move isn't taken for one.
+      userMove = false;
+      clearTimeout(timer);
       const bounds = new maplibregl.LngLatBounds([o.lng, o.lat], [o.lng, o.lat]);
       top.forEach((p) => bounds.extend([p.lng, p.lat]));
       map.fitBounds(bounds, { padding: 60, maxZoom: 15, duration: matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 600 });
