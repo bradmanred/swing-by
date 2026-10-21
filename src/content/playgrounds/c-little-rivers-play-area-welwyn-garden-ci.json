@@ -21,7 +21,6 @@
     "fen"
   ],
   "opens": "",
-  "largePlayArea": true,
   "description": "Enclosed site with three multi-play units for toddlers and juniors, junior and toddler swings, a spinning bowl, whirling platform, spring animal, see-saw and rocker, with two benches.",
   "nearby": [],
   "operator": "Welwyn Hatfield Borough Council",
@@ -33,5 +32,6 @@
   ],
   "checked": "2026-10-19",
   "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
-  "photo": null
+  "photo": null,
+  "size": "large"
 }

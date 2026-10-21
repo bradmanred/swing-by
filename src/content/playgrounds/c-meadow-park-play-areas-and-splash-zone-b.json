@@ -21,7 +21,6 @@
     "sh"
   ],
   "opens": "",
-  "largePlayArea": true,
   "description": "Two inclusive space- and earth-themed play areas with an 8m tube slide, trampoline mounds and interactive play, a toddler area, and a seasonal splash zone with jets and water columns.",
   "nearby": [
     {
@@ -42,5 +41,6 @@
   ],
   "checked": "2026-10-20",
   "notConfirmed": "Splash park season dates, play area opening hours, toilets, café and age ranges.",
-  "photo": null
+  "photo": null,
+  "size": "large"
 }

@@ -21,7 +21,6 @@
     "fen"
   ],
   "opens": "",
-  "largePlayArea": true,
   "description": "Enclosed play area with toddler and junior swings, a roundabout, see-saw, a new toddler climber and a bench for parents.",
   "nearby": [],
   "operator": "Welwyn Hatfield Borough Council",
@@ -33,5 +32,6 @@
   ],
   "checked": "2026-10-19",
   "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
-  "photo": null
+  "photo": null,
+  "size": "large"
 }

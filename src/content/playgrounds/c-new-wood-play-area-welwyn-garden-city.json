@@ -15,7 +15,6 @@
     "fen"
   ],
   "opens": "",
-  "largePlayArea": true,
   "description": "Enclosed site with two embankment slides, a roundabout, slide and seesaw, two benches and plenty of grass.",
   "nearby": [],
   "operator": "Welwyn Hatfield Borough Council",
@@ -27,5 +26,6 @@
   ],
   "checked": "2026-10-19",
   "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
-  "photo": null
+  "photo": null,
+  "size": "large"
 }
