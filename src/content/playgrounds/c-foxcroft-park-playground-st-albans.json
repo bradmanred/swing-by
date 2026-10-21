@@ -1,0 +1,39 @@
+{
+  "name": "Foxcroft Park Playground",
+  "region": "herts",
+  "area": "St Albans",
+  "lat": 51.742585,
+  "lng": -0.317624,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "cl",
+    "sl",
+    "sw",
+    "bs",
+    "rb",
+    "ss"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "Playground with a multi-play climbing unit with two slides, ramps and bridges, a basket swing, an easy-access roundabout, a seesaw, a springy turtle, a toddler slide, toddler swings and standard swings, inside metal fencing.",
+  "nearby": [],
+  "operator": "St Albans City and District Council",
+  "sources": [
+    {
+      "label": "St Albans City and District Council: Foxcroft Park playground makeover",
+      "url": "https://stalbans.gov.uk/news/ps82000-makeover-foxcroft-park-playground"
+    }
+  ],
+  "checked": "2026-10-21",
+  "notConfirmed": "Exact position (mapped from the postcode, AL1 5SP), toilets and parking.",
+  "photo": null
+}
