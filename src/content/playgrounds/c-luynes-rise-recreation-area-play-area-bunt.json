@@ -1,0 +1,31 @@
+{
+  "name": "Luynes Rise Recreation Area Play Area",
+  "region": "herts",
+  "area": "Buntingford",
+  "lat": 51.94332,
+  "lng": -0.02013,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Small play area for younger children at Luynes Rise, beside the Seth Ward Community Centre.",
+  "nearby": [],
+  "operator": "Buntingford Town Council",
+  "sources": [
+    {
+      "label": "Buntingford Town Council: parks and gardens",
+      "url": "https://www.buntingford-tc.gov.uk/parks-and-gardens"
+    },
+    {
+      "label": "Buntingford Town Council: update on Luynes Rise playground equipment",
+      "url": "https://buntingford-tc.gov.uk/news/2024/10/update-on-luynes-rise-playground-equipment"
+    }
+  ],
+  "checked": "2026-10-21",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), equipment, toilets and parking.",
+  "photo": null
+}

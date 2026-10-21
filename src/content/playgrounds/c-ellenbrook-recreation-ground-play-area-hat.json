@@ -1,0 +1,38 @@
+{
+  "name": "Ellenbrook Recreation Ground Play Area",
+  "region": "herts",
+  "area": "Hatfield",
+  "lat": 51.75632,
+  "lng": -0.24882,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "cl"
+  ],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "Fenced play area with a wooden play train and swings in a corner of Ellenbrook Recreation Ground, by the Alban Way next to the old Nast Hyde Halt on the former Hatfield to St Albans railway.",
+  "nearby": [],
+  "operator": null,
+  "sources": [
+    {
+      "label": "Geograph: Play Train, Ellenbrook Park (photo, 2024)",
+      "url": "https://www.geograph.org.uk/photo/7866012"
+    },
+    {
+      "label": "Geograph: Ellenbrook recreation ground (photo)",
+      "url": "https://www.geograph.org.uk/photo/111453"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), who runs it, opening hours, age ranges, toilets and parking. No official page found yet.",
+  "photo": {
+    "src": "https://s0.geograph.org.uk/geophotos/07/86/60/7866012_cd658fcb.jpg",
+    "alt": "Ellenbrook play area: a wooden play train and swings inside a fenced area",
+    "credit": "Des Blenkinsopp via Geograph",
+    "licence": "CC BY-SA 2.0"
+  }
+}
