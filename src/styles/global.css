@@ -42,6 +42,17 @@ p { margin: 0; }
 .nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .nav a { display: inline-block; padding: 8px 16px; border-radius: 999px; border: 3px solid var(--ink); color: var(--ink); text-decoration: none; font-weight: 700; }
 .nav a[aria-current='page'] { background: var(--ink); color: var(--white); }
+/* Site search in the header: its own full-width row on phones, beside the nav on wider screens. */
+.site-search { display: flex; gap: 6px; order: 3; flex: 1 1 100%; min-width: 0; max-width: 100%; }
+.site-search input[type='search'] { flex: 1 1 auto; width: 0; min-width: 0; min-height: 48px; }
+.site-search .btn { min-width: 48px; padding: 0 12px; }
+@media (min-width: 1100px) { .site-search { order: 0; flex: 0 1 260px; } }
+.search-page { display: grid; gap: 8px; max-width: 720px; }
+.search-page .row input[type='search'] { flex: 1 1 200px; width: 0; min-width: 0; }
+.hits { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; max-width: 760px; }
+.hit { background: var(--white); border: 3px solid var(--ink); border-radius: 16px; padding: 14px 16px; display: grid; gap: 4px; }
+.hit > a { font-family: var(--display); font-weight: 800; font-size: 1.375rem; color: var(--ink); }
+.hit .meta { margin: 0; color: var(--muted); }
 
 main { padding: 32px 0 64px; }
 .stack > * + * { margin-top: 32px; }
