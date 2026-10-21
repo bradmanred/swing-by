@@ -1,0 +1,24 @@
+{
+  "name": "George Street Play Area",
+  "region": "herts",
+  "area": "Berkhamsted",
+  "lat": 51.75859,
+  "lng": -0.55444,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Council play area on George Street.",
+  "nearby": [],
+  "operator": "Dacorum Borough Council",
+  "sources": [
+    {
+      "label": "Dacorum Borough Council: play areas",
+      "url": "https://www.dacorum.gov.uk/home/leisure-culture/parks-play-and-open-spaces/play-areas"
+    }
+  ],
+  "checked": "2026-10-21",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), equipment, age ranges, toilets and parking.",
+  "photo": null
+}
