@@ -1,0 +1,30 @@
+{
+  "name": "Morris Recreation Ground Play Area and Splash Park",
+  "region": "herts",
+  "area": "London Colney",
+  "lat": 51.72486,
+  "lng": -0.29178,
+  "ages": [],
+  "equipment": [
+    "wp"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Playground with standard play equipment and a splash park at the recreation ground, with a car park off White Horse Lane.",
+  "nearby": [],
+  "operator": "London Colney Parish Council",
+  "sources": [
+    {
+      "label": "London Colney Parish Council: play areas",
+      "url": "https://londoncolney-pc.gov.uk/?p=287"
+    },
+    {
+      "label": "London Colney Parish Council: paddling pool",
+      "url": "https://www.londoncolney-pc.gov.uk/paddling-pool"
+    }
+  ],
+  "checked": "2026-10-21",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, toilets and parking.",
+  "photo": null
+}
