@@ -31,6 +31,11 @@ const full = title === 'Swing By' ? title : `${title} | Swing By`;
           <svg width="40" height="40" viewBox="0 0 36 36" aria-hidden="true"><path d="M5 32 L11 6 H25 L31 32" fill="none" stroke="#1E6B4F" stroke-width="3" stroke-linecap="round"/><path d="M15 6 V21 M21 6 V21" stroke="#1B2A22" stroke-width="1.6"/><rect x="13" y="21" width="10" height="3.5" rx="1.5" fill="#B5651D"/></svg>
           <span>Swing By</span>
         </a>
+        <form class="site-search" role="search" action="/search/" method="get">
+          <label for="site-q" class="sr-only">Search playgrounds and pages</label>
+          <input id="site-q" name="q" type="search" placeholder="Search parks, towns…" autocomplete="off" enterkeyhint="search" />
+          <button class="btn" type="submit"><span aria-hidden="true">🔍</span><span class="sr-only">Search</span></button>
+        </form>
         <nav class="nav" aria-label="Main">
           <ul>
             {nav.map(([href, label]) => (
