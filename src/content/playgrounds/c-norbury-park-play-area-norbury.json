@@ -1,0 +1,26 @@
+{
+  "name": "Norbury Park Play Area",
+  "region": "london",
+  "area": "Norbury",
+  "lat": 51.41316,
+  "lng": -0.11842,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "Norbury Park has a children's play area, with toilets, according to GiGL, London's greenspace record.",
+  "nearby": [],
+  "operator": "Croydon Council",
+  "sources": [
+    {
+      "label": "GiGL (Greenspace Information for Greater London): Norbury Park",
+      "url": "https://www.gigl.org.uk/park/OS_Cr_0201/"
+    }
+  ],
+  "checked": "2026-10-22",
+  "notConfirmed": "Exact position (the pin is the centre of the park, from GiGL), play equipment, opening hours and parking.",
+  "photo": null
+}

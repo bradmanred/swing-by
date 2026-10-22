@@ -1,0 +1,31 @@
+{
+  "name": "Kennington Park Playground",
+  "region": "london",
+  "area": "Kennington",
+  "lat": 51.48363,
+  "lng": -0.10785,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "07:30",
+  "description": "Children's playground in Kennington Park, which also has a café, toilets and sports facilities. Open from 7.30am to 15 minutes before sunset.",
+  "nearby": [],
+  "operator": "Lambeth Council",
+  "sources": [
+    {
+      "label": "Lambeth Council: Kennington Park",
+      "url": "https://www.lambeth.gov.uk/parks/kennington-park"
+    },
+    {
+      "label": "Lambeth Council: parks play areas map",
+      "url": "https://gis.lambeth.gov.uk/arcgis/rest/services/LambethParksPlayAreas/MapServer"
+    }
+  ],
+  "checked": "2026-10-22",
+  "notConfirmed": "Play equipment and age ranges, baby change and parking.",
+  "photo": null
+}

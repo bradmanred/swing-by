@@ -1,0 +1,27 @@
+{
+  "name": "Heathbrook Park Play Area",
+  "region": "london",
+  "area": "Wandsworth Road",
+  "lat": 51.47114,
+  "lng": -0.1423,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Heathbrook Park has a play area for under-7s, according to GiGL, London's greenspace record.",
+  "nearby": [],
+  "operator": "Wandsworth Council",
+  "sources": [
+    {
+      "label": "GiGL (Greenspace Information for Greater London): Heathbrook Park",
+      "url": "https://www.gigl.org.uk/park/OS_Wa_0087/"
+    }
+  ],
+  "checked": "2026-10-22",
+  "notConfirmed": "Exact position (the pin is the centre of the park, from GiGL), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

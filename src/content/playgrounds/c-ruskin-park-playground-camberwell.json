@@ -1,0 +1,45 @@
+{
+  "name": "Ruskin Park Playground",
+  "region": "london",
+  "area": "Camberwell",
+  "lat": 51.46611,
+  "lng": -0.09521,
+  "ages": [],
+  "equipment": [
+    "wp"
+  ],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "07:00",
+  "description": "Children's playground in Ruskin Park, with a seasonal paddling pool next to it. The park also has sports pitches, an outdoor gym, toilets and a refreshment kiosk. Open from 7am to 15 minutes before sunset.",
+  "nearby": [
+    {
+      "type": "cafe",
+      "label": "Refreshment kiosk in the park"
+    },
+    {
+      "type": "transport",
+      "label": "Denmark Hill station"
+    },
+    {
+      "type": "parking",
+      "label": "No car park; nearby streets are heavily restricted except for Blue Badge holders"
+    }
+  ],
+  "operator": "Lambeth Council",
+  "sources": [
+    {
+      "label": "Lambeth Council: Ruskin Park",
+      "url": "https://www.lambeth.gov.uk/parks/ruskin-park"
+    },
+    {
+      "label": "Lambeth Council: parks play areas map",
+      "url": "https://gis.lambeth.gov.uk/arcgis/rest/services/LambethParksPlayAreas/MapServer"
+    }
+  ],
+  "checked": "2026-10-22",
+  "notConfirmed": "Play equipment and age ranges, paddling pool season, baby change.",
+  "photo": null
+}

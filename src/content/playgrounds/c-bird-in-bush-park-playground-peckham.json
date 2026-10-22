@@ -1,0 +1,30 @@
+{
+  "name": "Bird in Bush Park Playground",
+  "region": "london",
+  "area": "Peckham",
+  "lat": 51.47984,
+  "lng": -0.06292,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Playground for older children in Bird in Bush Park, which also has an orchard, a sensory garden and a BMX track.",
+  "nearby": [],
+  "operator": "Southwark Council",
+  "sources": [
+    {
+      "label": "Southwark Council: other parks and gardens",
+      "url": "https://www.southwark.gov.uk/culture-and-sport/parks-and-open-spaces/find-park/other-parks-and-gardens"
+    },
+    {
+      "label": "GiGL (Greenspace Information for Greater London): Bird in Bush Park",
+      "url": "https://www.gigl.org.uk/park/OS_So_0014/"
+    }
+  ],
+  "checked": "2026-10-22",
+  "notConfirmed": "Exact position (the pin is the centre of the park, from GiGL), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
