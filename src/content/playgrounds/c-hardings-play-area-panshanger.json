@@ -1,0 +1,29 @@
+{
+  "name": "Hardings Play Area, Panshanger",
+  "region": "herts",
+  "area": "Welwyn Garden City",
+  "lat": 51.80189,
+  "lng": -0.17069,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Play area on the Panshanger estate, between Hardings, Little Hardings and The Meadow, a short walk behind the Moors Walk shops and Panshanger Community Centre. It's mapped on OpenStreetMap but isn't in Welwyn Hatfield Council's play area finder, so we don't yet know who runs it or what equipment it has.",
+  "nearby": [
+    {
+      "type": "other",
+      "label": "Moors Walk shops and Panshanger Community Centre"
+    }
+  ],
+  "operator": null,
+  "sources": [
+    {
+      "label": "OpenStreetMap: playground (way 280994404)",
+      "url": "https://www.openstreetmap.org/way/280994404"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Who runs it, its name, play equipment, age ranges, opening hours, toilets and parking. Exact position (taken from OpenStreetMap).",
+  "photo": null
+}
