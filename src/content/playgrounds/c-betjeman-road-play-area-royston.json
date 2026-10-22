@@ -2,8 +2,8 @@
   "name": "Betjeman Road Play Area",
   "region": "herts",
   "area": "Royston",
-  "lat": 52.0603,
-  "lng": -0.02216,
+  "lat": 52.05971,
+  "lng": -0.02159,
   "ages": [
     "under-3",
     "3-6"
@@ -22,6 +22,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

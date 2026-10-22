@@ -2,8 +2,8 @@
   "name": "Canterbury Way Playing Fields",
   "region": "herts",
   "area": "Stevenage",
-  "lat": 51.92536,
-  "lng": -0.18687,
+  "lat": 51.92482,
+  "lng": -0.18823,
   "ages": [
     "under-3",
     "3-6",
@@ -26,6 +26,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

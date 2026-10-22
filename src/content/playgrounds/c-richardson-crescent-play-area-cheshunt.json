@@ -2,8 +2,8 @@
   "name": "Richardson Crescent Play Area",
   "region": "herts",
   "area": "Cheshunt",
-  "lat": 51.72341,
-  "lng": -0.08974,
+  "lat": 51.7225,
+  "lng": -0.09259,
   "ages": [
     "3-6",
     "7-12"
@@ -23,9 +23,13 @@
     {
       "label": "Borough of Broxbourne Council: Richardson Crescent Play Area",
       "url": "https://www.broxbourne.gov.uk/directory-record/630604/richardson-crescent"
+    },
+    {
+      "label": "Broxbourne Council's what3words location for the play area: ///safe.pitch.homes",
+      "url": "https://what3words.com/safe.pitch.homes"
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Opening hours, toilets and parking.",
   "photo": null
 }

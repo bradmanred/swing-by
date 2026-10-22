@@ -2,8 +2,8 @@
   "name": "Wilbury Recreation Ground Play Area",
   "region": "herts",
   "area": "Letchworth Garden City",
-  "lat": 51.9812,
-  "lng": -0.24119,
+  "lat": 51.97922,
+  "lng": -0.24048,
   "ages": [
     "under-3",
     "3-6",
@@ -23,6 +23,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

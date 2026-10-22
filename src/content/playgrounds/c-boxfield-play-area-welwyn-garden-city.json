@@ -2,8 +2,8 @@
   "name": "Boxfield Play Area",
   "region": "herts",
   "area": "Welwyn Garden City",
-  "lat": 51.78804,
-  "lng": -0.17901,
+  "lat": 51.78762,
+  "lng": -0.17974,
   "ages": [
     "teens"
   ],
@@ -24,7 +24,7 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null,
   "size": "small"
 }

@@ -2,8 +2,8 @@
   "name": "Parsonage Lane Play Area",
   "region": "herts",
   "area": "Bishop's Stortford",
-  "lat": 51.87618,
-  "lng": 0.17167,
+  "lat": 51.8757,
+  "lng": 0.17213,
   "ages": [
     "under-3",
     "7-12",
@@ -30,6 +30,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

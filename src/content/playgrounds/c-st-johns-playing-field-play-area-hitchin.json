@@ -2,8 +2,8 @@
   "name": "St Johns Playing Field Play Area",
   "region": "herts",
   "area": "Hitchin",
-  "lat": 51.94163,
-  "lng": -0.27304,
+  "lat": 51.9421,
+  "lng": -0.27218,
   "ages": [
     "under-3",
     "3-6",
@@ -23,6 +23,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

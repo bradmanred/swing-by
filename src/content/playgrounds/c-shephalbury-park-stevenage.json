@@ -2,8 +2,8 @@
   "name": "Shephalbury Park",
   "region": "herts",
   "area": "Stevenage",
-  "lat": 51.88677,
-  "lng": -0.17898,
+  "lat": 51.8845,
+  "lng": -0.18406,
   "ages": [
     "under-3",
     "3-6",
@@ -24,6 +24,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

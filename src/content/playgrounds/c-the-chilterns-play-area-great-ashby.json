@@ -2,8 +2,8 @@
   "name": "The Chilterns Play Area",
   "region": "herts",
   "area": "Great Ashby",
-  "lat": 51.9314,
-  "lng": -0.17053,
+  "lat": 51.93135,
+  "lng": -0.17211,
   "ages": [
     "under-3",
     "3-6",
@@ -23,6 +23,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

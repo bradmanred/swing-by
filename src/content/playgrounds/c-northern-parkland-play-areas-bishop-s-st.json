@@ -2,8 +2,8 @@
   "name": "Northern Parkland Play Areas",
   "region": "herts",
   "area": "Bishop's Stortford",
-  "lat": 51.86369,
-  "lng": 0.13648,
+  "lat": 51.86255,
+  "lng": 0.13628,
   "ages": [
     "under-3",
     "7-12",
@@ -31,6 +31,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }
