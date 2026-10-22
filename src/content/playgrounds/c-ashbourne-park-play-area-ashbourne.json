@@ -1,0 +1,32 @@
+{
+  "name": "Ashbourne Park Play Area",
+  "region": "derbyshire",
+  "area": "Ashbourne",
+  "lat": 53.01983,
+  "lng": -1.72824,
+  "ages": [],
+  "equipment": [
+    "zw",
+    "rb",
+    "wp"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "The town's main play area, with a zip wire (opened April 2025) and accessible equipment including a ground-level roundabout. The old splash pad has closed; the council says a new one is being built on the same site. Free toilets are in the pavilion on the recreation ground (Tuesday to Sunday from 10am), and there are paid toilets in Shawcroft car park.",
+  "nearby": [],
+  "operator": "Derbyshire Dales District Council",
+  "sources": [
+    {
+      "label": "Derbyshire Dales District Council: Ashbourne Park",
+      "url": "https://www.derbyshiredales.gov.uk/leisure/parks-and-open-spaces/ashbourne-park"
+    }
+  ],
+  "checked": "2026-10-22",
+  "notConfirmed": "Exact position (mapped from the postcode), age ranges, opening hours and parking.",
+  "photo": null
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Ashwood Close Play Area",
+  "region": "derbyshire",
+  "area": "Buxton",
+  "lat": 53.25565,
+  "lng": -1.90595,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Play area looked after by High Peak Borough Council in Buxton, with equipment for children aged 0 to 6.",
+  "nearby": [],
+  "operator": "High Peak Borough Council",
+  "sources": [
+    {
+      "label": "High Peak Borough Council: Buxton play areas",
+      "url": "https://www.highpeak.gov.uk/article/1590/Buxton-play-areas"
+    }
+  ],
+  "checked": "2026-10-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
