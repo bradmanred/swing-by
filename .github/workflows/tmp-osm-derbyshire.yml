@@ -2,7 +2,7 @@ name: Temporary OSM Derbyshire playgrounds
 on:
   push:
     branches: [tmp-osm-derbyshire]
-    paths: ['.github/workflows/tmp-osm-derbyshire.yml', 'tmp/osm.py']
+    paths: ['.github/workflows/tmp-osm-derbyshire.yml', 'tmp/osm.py', 'tmp/crawl.py']
 permissions:
   contents: write
 jobs:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
-      - run: python3 tmp/osm.py
+      - run: python3 tmp/crawl.py
       - run: |
           git config user.name swing-by-bot; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add osm-log.txt derbyshire-osm.csv; git commit -m "OSM Derbyshire result" && git push
+          git add tmp/pages; git commit -m "Council pages" && git push
