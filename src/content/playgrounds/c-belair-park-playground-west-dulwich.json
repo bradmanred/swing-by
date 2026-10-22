@@ -1,0 +1,39 @@
+{
+  "region": "london",
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "cf"
+  ],
+  "opens": "07:30",
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "Parking at the Gallery Road entrance"
+    },
+    {
+      "type": "transport",
+      "label": "West Dulwich station"
+    }
+  ],
+  "operator": "Southwark Council",
+  "checked": "2026-10-22",
+  "photo": null,
+  "name": "Belair Park Playground",
+  "area": "West Dulwich",
+  "lat": 51.44442,
+  "lng": -0.08994,
+  "description": "Children's playground for children up to 14 in Belair Park, with a lake in the centre of the park and the Belair House café and restaurant. Gates open at 7.30am.",
+  "sources": [
+    {
+      "label": "Southwark Council: Belair Park",
+      "url": "https://www.southwark.gov.uk/culture-and-sport/parks-and-open-spaces/find-park/belair-park"
+    },
+    {
+      "label": "GiGL (Greenspace Information for Greater London): Belair Park",
+      "url": "https://www.gigl.org.uk/park/OS_So_0008/"
+    }
+  ],
+  "notConfirmed": "Exact position (the pin is the centre of the park, from GiGL), play equipment, age ranges, toilets and baby change."
+}

@@ -1,0 +1,48 @@
+{
+  "name": "Peckham Rye Park Adventure Playground and Play Areas",
+  "region": "london",
+  "area": "Peckham Rye",
+  "lat": 51.45664,
+  "lng": -0.06034,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "ad"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "bc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "Peckham Rye Park has an adventure playground, and GiGL lists play areas for under-7s and 7 to 13-year-olds. Toilets with baby changing are in the toilet blocks near Strakers Road and near the adventure playground, and the Round Café opens 8am to 6.30pm. The park also has Sexby Gardens, a Japanese garden, an arboretum and a skate park.",
+  "nearby": [
+    {
+      "type": "cafe",
+      "label": "The Round Café, 8am to 6.30pm"
+    },
+    {
+      "type": "transport",
+      "label": "Peckham Rye station"
+    }
+  ],
+  "operator": "Southwark Council",
+  "sources": [
+    {
+      "label": "Southwark Council: Peckham Rye Park and Common",
+      "url": "https://www.southwark.gov.uk/culture-and-sport/parks-and-open-spaces/find-park/peckham-rye-park-and-common"
+    },
+    {
+      "label": "GiGL (Greenspace Information for Greater London): Peckham Rye Park",
+      "url": "https://www.gigl.org.uk/park/OS_So_0116/"
+    }
+  ],
+  "checked": "2026-10-22",
+  "notConfirmed": "Exact position (the pin is the centre of the park, from GiGL), play equipment, park opening hours and parking.",
+  "photo": null,
+  "babyChange": true
+}

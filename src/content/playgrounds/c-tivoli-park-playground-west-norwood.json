@@ -1,0 +1,28 @@
+{
+  "name": "Tivoli Park Playground",
+  "region": "london",
+  "area": "West Norwood",
+  "lat": 51.42487,
+  "lng": -0.10331,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Tivoli Park has play areas for under-7s and for 7 to 13-year-olds, according to GiGL, London's greenspace record.",
+  "nearby": [],
+  "operator": "Lambeth Council",
+  "sources": [
+    {
+      "label": "GiGL (Greenspace Information for Greater London): Tivoli Park",
+      "url": "https://www.gigl.org.uk/park/OS_La_0286/"
+    }
+  ],
+  "checked": "2026-10-22",
+  "notConfirmed": "Exact position (the pin is the centre of the park, from GiGL), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

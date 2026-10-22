@@ -1,0 +1,28 @@
+{
+  "region": "london",
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "nearby": [],
+  "operator": "Southwark Council",
+  "checked": "2026-10-22",
+  "photo": null,
+  "name": "Warwick Gardens Play Area",
+  "area": "Peckham",
+  "lat": 51.46947,
+  "lng": -0.07554,
+  "description": "Play area in Green Flag-winning Warwick Gardens, which also has a five-a-side pitch.",
+  "sources": [
+    {
+      "label": "Southwark Council: other parks and gardens",
+      "url": "https://www.southwark.gov.uk/culture-and-sport/parks-and-open-spaces/find-park/other-parks-and-gardens"
+    },
+    {
+      "label": "GiGL (Greenspace Information for Greater London): Warwick Gardens",
+      "url": "https://www.gigl.org.uk/park/OS_So_0168/"
+    }
+  ],
+  "notConfirmed": "Exact position (the pin is the centre of the park, from GiGL), play equipment, age ranges, opening hours, toilets and parking."
+}
