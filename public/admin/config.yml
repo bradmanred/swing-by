@@ -39,7 +39,7 @@ collections:
           - { label: Derbyshire, value: derbyshire }
           - { label: Devon, value: devon }
       - { label: Town or area, name: area, widget: string }
-      - { label: Latitude, name: lat, widget: number, value_type: float, hint: "For example 51.752. Right-click the spot in Google Maps to copy it." }
+      - { label: Latitude, name: lat, widget: number, value_type: float, hint: "For example 51.752. On openstreetmap.org, right-click the spot and choose Show address to see it. Don't copy positions from Google Maps." }
       - { label: Longitude, name: lng, widget: number, value_type: float, hint: "For example -0.353" }
       - label: Ages
         name: ages
@@ -92,9 +92,26 @@ collections:
           - { label: "Fully fenced", value: "fen" }
           - { label: "Shade", value: "sh" }
           - { label: "Free parking", value: "fp" }
+      - label: Baby change at the toilets
+        name: babyChange
+        widget: select
+        required: false
+        hint: "Only if the toilets are listed above. Yes or No only when an official source says so; otherwise leave blank."
+        options:
+          - { label: "Yes", value: "yes" }
+          - { label: "No", value: "no" }
       - { label: Opens, name: opens, widget: string, required: false, hint: "HH:MM, or 24h. Leave blank if not confirmed.", pattern: ["^(\\d{2}:\\d{2}|24h)?$", "Use HH:MM or 24h"] }
       - { label: Closes, name: closes, widget: string, required: false, hint: "HH:MM. Leave blank if it locks at dusk.", pattern: ["^(\\d{2}:\\d{2})?$", "Use HH:MM"] }
       - { label: Weekends and school holidays only, name: weekendsOnly, widget: boolean, required: false }
+      - label: Open only in some months
+        name: season
+        widget: object
+        required: false
+        collapsed: true
+        hint: "For example a splash pad open April to September. Leave blank if it's open all year."
+        fields:
+          - { label: First month (1-12), name: from, widget: number, value_type: int, min: 1, max: 12 }
+          - { label: Last month (1-12), name: to, widget: number, value_type: int, min: 1, max: 12 }
       - label: Play area size
         name: size
         widget: select

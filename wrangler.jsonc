@@ -3,6 +3,9 @@
   "name": "swing-by",
   "main": "worker/index.js",
   "compatibility_date": "2026-09-01",
+  // Keep variables set in the Cloudflare dashboard (such as GITHUB_CLIENT_ID for the content editor).
+  // Without this, every deploy deletes them and the editor's GitHub sign-in breaks.
+  "keep_vars": true,
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS",
