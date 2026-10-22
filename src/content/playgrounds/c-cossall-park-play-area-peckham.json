@@ -1,0 +1,28 @@
+{
+  "region": "london",
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "nearby": [],
+  "operator": "Southwark Council",
+  "checked": "2026-10-22",
+  "photo": null,
+  "name": "Cossall Park Play Area",
+  "area": "Peckham",
+  "lat": 51.47221,
+  "lng": -0.06264,
+  "description": "Children's play area in Cossall Park.",
+  "sources": [
+    {
+      "label": "Southwark Council: other parks and gardens",
+      "url": "https://www.southwark.gov.uk/culture-and-sport/parks-and-open-spaces/find-park/other-parks-and-gardens"
+    },
+    {
+      "label": "GiGL (Greenspace Information for Greater London): Cossall Park",
+      "url": "https://www.gigl.org.uk/park/OS_So_0078/"
+    }
+  ],
+  "notConfirmed": "Exact position (the pin is the centre of the park, from GiGL), play equipment, age ranges, opening hours, toilets and parking."
+}

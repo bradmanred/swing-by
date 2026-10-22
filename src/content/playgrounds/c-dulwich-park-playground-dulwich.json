@@ -1,0 +1,48 @@
+{
+  "name": "Dulwich Park Playground",
+  "region": "london",
+  "area": "Dulwich",
+  "lat": 51.44571,
+  "lng": -0.07882,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "07:30",
+  "description": "A large children's playground for children up to 14, plus a second playground, in Green Flag-winning Dulwich Park. There are toilets by the main car park, in the Francis Peek building and behind the café; the Dulwich Clock café opens 8am to 5.30pm (6pm on Saturdays). The park also has a boating lake with pedalos and rowing boats and a cycle hire outlet. Gates open at 7.30am.",
+  "nearby": [
+    {
+      "type": "cafe",
+      "label": "Dulwich Clock café, 8am to 5.30pm (6pm Saturdays)"
+    },
+    {
+      "type": "other",
+      "label": "Boating lake with pedalos and rowing boats"
+    },
+    {
+      "type": "parking",
+      "label": "Car park in the park"
+    }
+  ],
+  "operator": "Southwark Council",
+  "sources": [
+    {
+      "label": "Southwark Council: Dulwich Park",
+      "url": "https://www.southwark.gov.uk/culture-and-sport/parks-and-open-spaces/find-park/dulwich-park"
+    },
+    {
+      "label": "GiGL (Greenspace Information for Greater London): Dulwich Park",
+      "url": "https://www.gigl.org.uk/park/OS_So_0049/"
+    }
+  ],
+  "checked": "2026-10-22",
+  "notConfirmed": "Exact position (the pin is the centre of the park, from GiGL), play equipment and baby change.",
+  "photo": null
+}
