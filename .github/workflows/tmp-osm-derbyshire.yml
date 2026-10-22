@@ -2,7 +2,7 @@ name: Temporary OSM Derbyshire playgrounds
 on:
   push:
     branches: [tmp-osm-derbyshire]
-    paths: ['.github/workflows/tmp-osm-derbyshire.yml']
+    paths: ['.github/workflows/tmp-osm-derbyshire.yml', 'tmp/osm.py']
 permissions:
   contents: write
 jobs:
@@ -10,32 +10,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
-      - name: Playgrounds in Derbyshire and Derby, with district
-        run: |
-          Q='[out:json][timeout:300];
-          (area["name"="Derbyshire"]["admin_level"="6"];area["name"="Derby"]["admin_level"~"6|8"];)->.c;
-          (rel(pivot.c);)->.cr;
-          area["admin_level"="8"]["boundary"="administrative"](area.c)->.d;
-          foreach.d->.one(
-            nwr["leisure"="playground"](area.one);
-            convert pg ::id=id(), ::geom=center(geom()), name=t["name"], operator=t["operator"], access=t["access"], district=one.u(t["name"]), etype=type(), extra=t["playground"], minage=t["min_age"], maxage=t["max_age"];
-            out geom;
-          );'
-          ok=no
-          for host in overpass-api.de overpass.private.coffee maps.mail.ru/osm/tools/overpass; do
-            if curl -sS -m 300 --data-urlencode "data=$Q" "https://$host/api/interpreter" -o out.json && python3 -c "import json;assert json.load(open('out.json'))['elements']"; then ok=$host; break; fi
-          done
-          cat > fmt.py <<'PY'
-          import json, csv, sys
-          els = json.load(open('out.json'))['elements']
-          w = csv.writer(open('derbyshire-osm.csv', 'w', newline=''))
-          w.writerow(['osm', 'district', 'lat', 'lng', 'name', 'operator', 'access', 'playground', 'min_age', 'max_age'])
-          for e in els:
-              t = e.get('tags', {}); g = e.get('geometry', {})
-              lat, lng = (g.get('coordinates') or [None, None])[::-1] if g else (None, None)
-              w.writerow([t.get('etype', '')[0:1] + str(t.get('id', '')), t.get('district', ''), lat, lng, t.get('name', ''), t.get('operator', ''), t.get('access', ''), t.get('extra', ''), t.get('minage', ''), t.get('maxage', '')])
-          print(len(els), 'playgrounds')
-          PY
-          { echo "source: $ok"; python3 fmt.py || head -c 800 out.json; } > osm-log.txt
+      - run: python3 tmp/osm.py
+      - run: |
           git config user.name swing-by-bot; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add osm-log.txt derbyshire-osm.csv 2>/dev/null; git commit -m "OSM Derbyshire result" && git push
+          git add osm-log.txt derbyshire-osm.csv; git commit -m "OSM Derbyshire result" && git push
