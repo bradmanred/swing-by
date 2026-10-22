@@ -175,7 +175,7 @@ img.art { aspect-ratio: 360 / 170; object-fit: cover; background: var(--blue-sof
 
 .site-footer { background: var(--ink); color: var(--white); }
 .site-footer .wrap { padding-top: 24px; padding-bottom: 24px; display: grid; gap: 8px; font-size: 1rem; }
-.site-footer a { color: var(--yellow); }
+.site-footer a, .site-footer .linkish { color: var(--yellow); }
 
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; animation: none !important; } }
 @media (forced-colors: active) { .btn, .chk, .card, .panel, .nav a { border-color: CanvasText; } }
@@ -220,3 +220,11 @@ img.art { aspect-ratio: 360 / 170; object-fit: cover; background: var(--blue-sof
 .more-filters fieldset { margin-top: 8px; }
 .more-filters .hint { margin-top: 8px; }
 .chk:has(input:disabled) { opacity: 0.55; cursor: not-allowed; }
+
+/* Cookie consent bar (Google Analytics). Sits above the header in the page flow so it never covers content. */
+.cookie-bar { background: var(--white); border-bottom: var(--line); padding: 14px 0; }
+.cookie-bar .wrap { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; justify-content: space-between; }
+.cookie-bar p { margin: 0; max-width: 70ch; }
+.cookie-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.cookie-bar[hidden] { display: none; }
+.linkish { font: inherit; color: var(--blue); background: none; border: 0; padding: 0; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }

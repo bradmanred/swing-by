@@ -4,7 +4,7 @@ import { allParks } from '../lib/parks';
 
 const names = Object.fromEntries((await allParks()).map((p) => [p.id, `${p.name}, ${p.area}`]));
 ---
-<Base title="Check parent photos" description="Moderation for parent photos.">
+<Base title="Check parent photos" description="Moderation for parent photos." analytics={false}>
   <meta name="robots" content="noindex, nofollow" slot="head" />
   <div>
     <h1>Check parent photos</h1>
