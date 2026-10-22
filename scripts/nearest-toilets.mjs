@@ -60,7 +60,7 @@ const toilets = parseCsv(text)
   .filter((t) => t.active !== 'false')
   .map((t) => ({
     id: t.id,
-    name: (t.name || '').trim() || 'Public toilet',
+    name: (t.name || '').replace(/\s+/g, ' ').trim() || 'Public toilet',
     lat: Number(t.latitude),
     lng: Number(t.longitude),
     babyChange: flag(t.baby_change),
