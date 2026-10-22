@@ -6,11 +6,17 @@
   // Keep variables set in the Cloudflare dashboard (such as GITHUB_CLIENT_ID for the content editor).
   // Without this, every deploy deletes them and the editor's GitHub sign-in breaks.
   "keep_vars": true,
+  // The site's own domain. Cloudflare creates the DNS records and certificates on deploy.
+  // The zone swing-by.co.uk must be in the same Cloudflare account. www redirects to the bare domain (worker/index.js).
+  "routes": [
+    { "pattern": "swing-by.co.uk", "custom_domain": true },
+    { "pattern": "www.swing-by.co.uk", "custom_domain": true }
+  ],
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS",
     "not_found_handling": "404-page",
-    "run_worker_first": ["/api/*"]
+    "run_worker_first": true
   },
   // Votes for the next area to cover. Table: db/votes.sql
   "d1_databases": [
