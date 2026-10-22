@@ -1,0 +1,20 @@
+name: Temporary OSM lookup
+on:
+  push:
+    branches: [tmp-osm-lookup]
+jobs:
+  look:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Playgrounds and parks near 51.806334,-0.172208
+        run: |
+          Q='[out:json][timeout:60];(nwr["leisure"="playground"](around:600,51.806334,-0.172208);nwr["leisure"~"^(park|recreation_ground|pitch)$"](around:400,51.806334,-0.172208););out center tags;'
+          for host in overpass-api.de overpass.private.coffee; do
+            curl -sS -m 90 --data-urlencode "data=$Q" "https://$host/api/interpreter" -o out.json && break
+          done
+          python3 -c "
+          import json
+          for e in json.load(open('out.json'))['elements']:
+              c=e.get('center',e); t=e['tags']
+              print(e['type'][0]+str(e['id']), round(c['lat'],5), round(c['lon'],5), t.get('leisure'), '|', t.get('name',''), '|', t.get('operator',''), '|', t.get('access',''), '|', {k:v for k,v in t.items() if k.startswith(('playground','min_age','max_age','description','note'))})
+          "
