@@ -2,19 +2,28 @@ name: Temporary OSM lookup
 on:
   push:
     branches: [tmp-osm-lookup]
+    paths: ['.github/workflows/tmp-osm-lookup.yml']
+permissions:
+  contents: write
 jobs:
   look:
     runs-on: ubuntu-24.04
     steps:
+      - uses: actions/checkout@v4
       - name: Playgrounds and parks near 51.806334,-0.172208
         run: |
-          Q='[out:json][timeout:60];(nwr["leisure"="playground"](around:600,51.806334,-0.172208);nwr["leisure"~"^(park|recreation_ground|pitch)$"](around:400,51.806334,-0.172208););out center tags;'
-          for host in overpass-api.de overpass.private.coffee; do
-            curl -sS -m 90 --data-urlencode "data=$Q" "https://$host/api/interpreter" -o out.json && break
+          Q='[out:json][timeout:60];(nwr["leisure"="playground"](around:600,51.806334,-0.172208);nwr["leisure"~"^(park|recreation_ground)$"](around:400,51.806334,-0.172208););out center tags;'
+          ok=no
+          for host in overpass-api.de overpass.private.coffee maps.mail.ru/osm/tools/overpass; do
+            if curl -sS -m 90 --data-urlencode "data=$Q" "https://$host/api/interpreter" -o out.json && python3 -c "import json;json.load(open('out.json'))"; then ok=$host; break; fi
           done
-          python3 -c "
+          cat > fmt.py <<'PY'
           import json
           for e in json.load(open('out.json'))['elements']:
-              c=e.get('center',e); t=e['tags']
-              print(e['type'][0]+str(e['id']), round(c['lat'],5), round(c['lon'],5), t.get('leisure'), '|', t.get('name',''), '|', t.get('operator',''), '|', t.get('access',''), '|', {k:v for k,v in t.items() if k.startswith(('playground','min_age','max_age','description','note'))})
-          "
+              c = e.get('center', e); t = e['tags']
+              extra = {k: v for k, v in t.items() if k not in ('leisure', 'name', 'operator', 'access')}
+              print(e['type'][0] + str(e['id']), round(c['lat'], 5), round(c['lon'], 5), t.get('leisure'), '|', t.get('name', ''), '|', t.get('operator', ''), '|', t.get('access', ''), '|', extra)
+          PY
+          { echo "source: $ok"; python3 fmt.py || head -c 500 out.json; } > osm-lookup.txt
+          git config user.name swing-by-bot; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add osm-lookup.txt && git commit -m "OSM lookup result" && git push
