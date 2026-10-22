@@ -49,7 +49,7 @@ Don't use Google Maps or Google Places to find or place playgrounds. Their terms
 
 ## 4. Toilets and baby change
 
-- If an official source lists toilets, add `wc` to `facilities`. Then look for baby change on the same pages: set `"babyChange": true` if they say there is baby change, `false` only if they say there isn't, and leave it out if they don't say.
+- If an official source lists toilets, add `wc` to `facilities`. Then look for baby change on the same pages: set `"babyChange": "yes"` if they say there is baby change, `"no"` only if they say there isn't, and leave it out if they don't say.
 - Nearest toilets for every playground come from the Toilet Map's open data (CC BY 4.0) and live in `src/data/toilets.json`. Don't edit that file by hand. The "Update nearest toilets" workflow reruns `scripts/nearest-toilets.mjs` whenever playground files change on any branch, and commits the result to that branch, so a pull request for a new area picks up its toilets automatically. Check the workflow ran before merging. To run it yourself: `node scripts/nearest-toilets.mjs` (or `--csv <file>` with a CSV downloaded from toiletmap.org.uk/dataset).
 
 ## 5. In the pull request

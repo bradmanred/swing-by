@@ -18,7 +18,8 @@ const playgrounds = defineCollection({
     facilities: z.array(z.string()).default([]),
     // For playgrounds with toilets: true = baby change, false = the source says there's none, leave out = not known yet.
     // true also adds 'bc' to facilities, so the Baby change filter and chip keep working.
-    babyChange: z.boolean().nullish(),
+    // The content editor saves 'yes' or 'no'; files written by hand can use true or false.
+    babyChange: z.preprocess((v) => (v === 'yes' ? true : v === 'no' ? false : v === '' ? null : v), z.boolean().nullish()),
     opens: time.default(''),
     closes: time.nullish(),
     weekendsOnly: z.boolean().nullish(),
