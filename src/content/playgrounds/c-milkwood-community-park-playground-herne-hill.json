@@ -1,0 +1,28 @@
+{
+  "name": "Milkwood Community Park Playground",
+  "region": "london",
+  "area": "Herne Hill",
+  "lat": 51.46062,
+  "lng": -0.10098,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "07:30",
+  "description": "Children's playground in a community park that also has a multi-use games court, table tennis, an outdoor gym and a community garden. Open from 7.30am to 15 minutes before sunset.",
+  "nearby": [],
+  "operator": "Lambeth Council",
+  "sources": [
+    {
+      "label": "Lambeth Council: Milkwood Community Park",
+      "url": "https://www.lambeth.gov.uk/parks/milkwood-community-park"
+    },
+    {
+      "label": "Lambeth Council: parks play areas map",
+      "url": "https://gis.lambeth.gov.uk/arcgis/rest/services/LambethParksPlayAreas/MapServer"
+    }
+  ],
+  "checked": "2026-10-22",
+  "notConfirmed": "Play equipment and age ranges, toilets and parking.",
+  "photo": null
+}

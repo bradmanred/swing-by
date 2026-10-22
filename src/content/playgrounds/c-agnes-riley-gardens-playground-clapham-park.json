@@ -1,0 +1,35 @@
+{
+  "name": "Agnes Riley Gardens Playground",
+  "region": "london",
+  "area": "Clapham Park",
+  "lat": 51.4485,
+  "lng": -0.13873,
+  "ages": [],
+  "equipment": [
+    "wp"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "07:30",
+  "description": "Children's playground with a new wet play facility, in a Green Flag park that also has two multi-use games areas and a community garden. Open from 7.30am to dusk.",
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "Nearby streets are heavily restricted except for Blue Badge holders"
+    }
+  ],
+  "operator": "Lambeth Council",
+  "sources": [
+    {
+      "label": "Lambeth Council: Agnes Riley Gardens",
+      "url": "https://www.lambeth.gov.uk/parks/agnes-riley-gardens"
+    },
+    {
+      "label": "Lambeth Council: parks play areas map",
+      "url": "https://gis.lambeth.gov.uk/arcgis/rest/services/LambethParksPlayAreas/MapServer"
+    }
+  ],
+  "checked": "2026-10-22",
+  "notConfirmed": "Play equipment and age ranges, wet play season, toilets.",
+  "photo": null
+}

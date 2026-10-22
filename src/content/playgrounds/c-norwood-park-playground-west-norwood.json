@@ -1,0 +1,43 @@
+{
+  "name": "Norwood Park Playground",
+  "region": "london",
+  "area": "West Norwood",
+  "lat": 51.42457,
+  "lng": -0.09283,
+  "ages": [],
+  "equipment": [
+    "wp"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "24h",
+  "description": "Children's playground with new play equipment, fencing and surfacing, next to a wet play area with water features. The park also has an outdoor gym, a skateboard park, toilets and a café, and is open 24 hours.",
+  "nearby": [
+    {
+      "type": "transport",
+      "label": "Gipsy Hill station, about 15 minutes' walk"
+    },
+    {
+      "type": "parking",
+      "label": "Free parking on surrounding roads; can be limited at busy times",
+      "free": true
+    }
+  ],
+  "operator": "Lambeth Council",
+  "sources": [
+    {
+      "label": "Lambeth Council: Norwood Park",
+      "url": "https://www.lambeth.gov.uk/parks/norwood-park"
+    },
+    {
+      "label": "Lambeth Council: parks play areas map",
+      "url": "https://gis.lambeth.gov.uk/arcgis/rest/services/LambethParksPlayAreas/MapServer"
+    }
+  ],
+  "checked": "2026-10-22",
+  "notConfirmed": "Play equipment and age ranges, wet play season, baby change.",
+  "photo": null
+}

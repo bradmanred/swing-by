@@ -1,0 +1,28 @@
+{
+  "name": "Windmill Gardens Playground",
+  "region": "london",
+  "area": "Brixton",
+  "lat": 51.45332,
+  "lng": -0.12328,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "07:30",
+  "description": "Children's playground in the gardens around Brixton Windmill. Open from 7.30am until dusk.",
+  "nearby": [],
+  "operator": "Lambeth Council",
+  "sources": [
+    {
+      "label": "Lambeth Council: Windmill Gardens",
+      "url": "https://www.lambeth.gov.uk/parks/windmill-gardens"
+    },
+    {
+      "label": "Lambeth Council: parks play areas map",
+      "url": "https://gis.lambeth.gov.uk/arcgis/rest/services/LambethParksPlayAreas/MapServer"
+    }
+  ],
+  "checked": "2026-10-22",
+  "notConfirmed": "Play equipment and age ranges, toilets and parking.",
+  "photo": null
+}

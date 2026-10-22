@@ -1,0 +1,28 @@
+{
+  "name": "Rush Common Playground",
+  "region": "london",
+  "area": "Brixton Hill",
+  "lat": 51.45611,
+  "lng": -0.11829,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "24h",
+  "description": "Children's playground on Rush Common, along Brixton Hill, with seating and wildlife-friendly planting. Open 24 hours.",
+  "nearby": [],
+  "operator": "Lambeth Council",
+  "sources": [
+    {
+      "label": "Lambeth Council: Rush Common",
+      "url": "https://www.lambeth.gov.uk/parks/rush-common"
+    },
+    {
+      "label": "Lambeth Council: parks play areas map",
+      "url": "https://gis.lambeth.gov.uk/arcgis/rest/services/LambethParksPlayAreas/MapServer"
+    }
+  ],
+  "checked": "2026-10-22",
+  "notConfirmed": "Play equipment and age ranges, toilets and parking.",
+  "photo": null
+}
