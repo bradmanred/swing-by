@@ -52,7 +52,8 @@ The site runs as a Cloudflare Worker that serves the built pages (see `wrangler.
 1. On GitHub, go to Settings > Developer settings > OAuth Apps > New OAuth App.
 2. Set the homepage URL to your site link and the callback URL to `https://<your-site-link>/api/callback`.
 3. Copy the client ID, and generate a client secret.
-4. In the Worker's Settings > Variables and Secrets, add `GITHUB_CLIENT_ID` as a text variable and `GITHUB_CLIENT_SECRET` as a secret. Redeploy.
+4. In the Worker's Settings > Variables and Secrets, add `GITHUB_CLIENT_ID` and `GITHUB_CLIENT_SECRET`. Make the secret a **Secret**; the client ID can be either. `wrangler.jsonc` has `keep_vars: true` so deploys don't delete them. Redeploy.
+   - If signing in sends you to a GitHub page with `client_id=undefined` in the address, the Worker can't see `GITHUB_CLIENT_ID`: add it again.
 5. Open `https://<your-site-link>/admin/` and sign in with GitHub. Edits are saved as pull requests for review before they go live.
 
 ## The next-area vote
