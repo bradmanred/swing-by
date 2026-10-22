@@ -1,0 +1,32 @@
+{
+  "name": "Bakewell Recreation Ground Splash Pad",
+  "region": "derbyshire",
+  "area": "Bakewell",
+  "lat": 53.20922,
+  "lng": -1.67028,
+  "ages": [],
+  "equipment": [
+    "wp"
+  ],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "Children's splash pad on Bakewell Recreation Ground, open daily 10am to 5pm (closed 12.30 to 1.30pm) in the summer season, until late September. Toilets open April to October.",
+  "nearby": [],
+  "operator": "Derbyshire Dales District Council",
+  "sources": [
+    {
+      "label": "Derbyshire Dales District Council: Bakewell Recreation Ground",
+      "url": "https://www.derbyshiredales.gov.uk/leisure/parks-and-open-spaces/bakewell-recreation-ground"
+    }
+  ],
+  "checked": "2026-10-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges and parking.",
+  "photo": null,
+  "season": {
+    "from": 4,
+    "to": 9
+  }
+}
