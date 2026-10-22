@@ -1,0 +1,17 @@
+name: Temporary fetch
+on:
+  push:
+    branches: [tmp-fetch]
+    paths: ['tmp/urls.txt', 'tmp/fetch.py', '.github/workflows/tmp-fetch.yml']
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get install -y -qq poppler-utils >/dev/null
+      - run: python3 tmp/fetch.py
+      - run: |
+          git config user.name swing-by-bot; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tmp/fetched; git commit -m "Fetched pages" && git push
