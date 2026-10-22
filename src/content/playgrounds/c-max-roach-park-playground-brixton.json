@@ -1,0 +1,30 @@
+{
+  "name": "Max Roach Park Playground",
+  "region": "london",
+  "area": "Brixton",
+  "lat": 51.46697,
+  "lng": -0.11215,
+  "ages": [],
+  "equipment": [
+    "ad"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "24h",
+  "description": "Children's playground in Max Roach Park, which also has a children's One O'Clock Club and an adventure playground, plus a nature trail. The park is open 24 hours.",
+  "nearby": [],
+  "operator": "Lambeth Council",
+  "sources": [
+    {
+      "label": "Lambeth Council: Max Roach Park",
+      "url": "https://www.lambeth.gov.uk/parks/max-roach-park"
+    },
+    {
+      "label": "Lambeth Council: parks play areas map",
+      "url": "https://gis.lambeth.gov.uk/arcgis/rest/services/LambethParksPlayAreas/MapServer"
+    }
+  ],
+  "checked": "2026-10-22",
+  "notConfirmed": "Play equipment and age ranges, One O'Clock Club and adventure playground opening times, toilets and parking.",
+  "photo": null
+}

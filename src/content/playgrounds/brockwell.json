@@ -2,8 +2,8 @@
   "name": "Brockwell Park Playground",
   "region": "london",
   "area": "Herne Hill",
-  "lat": 51.453,
-  "lng": -0.106,
+  "lat": 51.45196,
+  "lng": -0.11142,
   "ages": [],
   "equipment": [
     "wp"
@@ -11,7 +11,7 @@
   "access": [],
   "facilities": [],
   "opens": "07:30",
-  "description": "Large children's playground and wet play area in Brockwell Park, run by Lambeth Council. The wet play area usually opens from the last Saturday in May to the last weekend in September, but can close on some days for repairs. The park closes 15 minutes before sunset.",
+  "description": "Large children's playground and wet play area in Brockwell Park, run by Lambeth Council. The wet play area usually opens from the last Saturday in May to the last weekend in September, but can close on some days for repairs. The park is open from 7.30am to 15 minutes before sunset.",
   "nearby": [
     {
       "type": "other",
@@ -30,10 +30,14 @@
     {
       "label": "Lambeth Council: Brockwell Park",
       "url": "https://www.lambeth.gov.uk/parks/brockwell-park"
+    },
+    {
+      "label": "Lambeth Council: parks play areas map",
+      "url": "https://gis.lambeth.gov.uk/arcgis/rest/services/LambethParksPlayAreas/MapServer"
     }
   ],
   "checked": "2026-10-20",
-  "notConfirmed": "Exact position, play equipment and age ranges, toilets, baby change, café and parking.",
+  "notConfirmed": "Play equipment and age ranges, toilets, baby change, café and parking.",
   "photo": null,
   "operator": "Lambeth Council"
 }

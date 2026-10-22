@@ -1,0 +1,24 @@
+{
+  "name": "Mostyn Gardens Playground",
+  "region": "london",
+  "area": "Brixton",
+  "lat": 51.47546,
+  "lng": -0.11015,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Children's playground shown on Lambeth Council's map of play areas in its parks. The council doesn't have a web page for this park yet.",
+  "nearby": [],
+  "operator": "Lambeth Council",
+  "sources": [
+    {
+      "label": "Lambeth Council: parks play areas map",
+      "url": "https://gis.lambeth.gov.uk/arcgis/rest/services/LambethParksPlayAreas/MapServer"
+    }
+  ],
+  "checked": "2026-10-22",
+  "notConfirmed": "That the playground is still there (the council's map is the only source), play equipment, age ranges, opening hours, toilets and parking.",
+  "photo": null
+}

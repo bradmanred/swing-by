@@ -1,0 +1,30 @@
+{
+  "name": "Larkhall Park Playground",
+  "region": "london",
+  "area": "Stockwell",
+  "lat": 51.47448,
+  "lng": -0.13024,
+  "ages": [],
+  "equipment": [
+    "sw"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "24h",
+  "description": "Play equipment in Larkhall Park, with swings and large multi-play pieces on new safety surfacing, according to the council's play area records. The park is open 24 hours.",
+  "nearby": [],
+  "operator": "Lambeth Council",
+  "sources": [
+    {
+      "label": "Lambeth Council: Larkhall Park",
+      "url": "https://www.lambeth.gov.uk/parks/larkhall-park"
+    },
+    {
+      "label": "Lambeth Council: parks play areas map",
+      "url": "https://gis.lambeth.gov.uk/arcgis/rest/services/LambethParksPlayAreas/MapServer"
+    }
+  ],
+  "checked": "2026-10-22",
+  "notConfirmed": "Age ranges, toilets and parking.",
+  "photo": null
+}
