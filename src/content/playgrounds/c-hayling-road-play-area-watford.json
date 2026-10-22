@@ -2,8 +2,8 @@
   "name": "Hayling Road Play Area",
   "region": "herts",
   "area": "Watford",
-  "lat": 51.62928,
-  "lng": -0.39184,
+  "lat": 51.63049,
+  "lng": -0.39242,
   "ages": [
     "under-3"
   ],
@@ -30,6 +30,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

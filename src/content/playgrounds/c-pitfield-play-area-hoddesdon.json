@@ -2,8 +2,8 @@
   "name": "Pitfield Play Area",
   "region": "herts",
   "area": "Hoddesdon",
-  "lat": 51.77725,
-  "lng": -0.00411,
+  "lat": 51.77632,
+  "lng": -0.00438,
   "ages": [
     "3-6",
     "7-12"
@@ -23,9 +23,13 @@
     {
       "label": "Borough of Broxbourne Council: Pitfield Play Area",
       "url": "https://www.broxbourne.gov.uk/directory-record/630602/pitfield"
+    },
+    {
+      "label": "Broxbourne Council's what3words location for the play area: ///dome.inner.towers",
+      "url": "https://what3words.com/dome.inner.towers"
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Opening hours, toilets and parking.",
   "photo": null
 }

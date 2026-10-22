@@ -2,8 +2,8 @@
   "name": "Sewells Play Area",
   "region": "herts",
   "area": "Welwyn Garden City",
-  "lat": 51.81543,
-  "lng": -0.19734,
+  "lat": 51.8157,
+  "lng": -0.19707,
   "ages": [
     "under-3",
     "3-6",
@@ -32,7 +32,7 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null,
   "size": "small"
 }

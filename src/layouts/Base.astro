@@ -1,7 +1,9 @@
 ---
 import '../styles/global.css';
-interface Props { title: string; description?: string; current?: string }
-const { title, description = 'Find a playground worth the trip. Checked against council and operator websites.', current } = Astro.props;
+import Analytics from '../components/Analytics.astro';
+import CookieBar from '../components/CookieBar.astro';
+interface Props { title: string; description?: string; current?: string; analytics?: boolean }
+const { title, description = 'Find a playground worth the trip. Checked against council and operator websites.', current, analytics = true } = Astro.props;
 const nav = [
   ['/', 'Find'],
   ['/road-trips/', 'Road trips'],
@@ -16,6 +18,7 @@ const full = title === 'Swing By' ? title : `${title} | Swing By`;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{full}</title>
+    {analytics && <Analytics />}
     <meta name="description" content={description} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,6 +28,7 @@ const full = title === 'Swing By' ? title : `${title} | Swing By`;
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
+    {analytics && <CookieBar />}
     <header class="site-header">
       <div class="wrap">
         <a class="logo" href="/">
@@ -58,7 +62,7 @@ const full = title === 'Swing By' ? title : `${title} | Swing By`;
       <div class="wrap">
         <p>Always check equipment before children use it. If something is dangerous, report it to the council or operator that runs the playground. In an emergency, call 999.</p>
         <p>Playground details come from council and operator websites. Places marked "Unverified" have not been checked yet. <a href="/about/">About our data</a> · <a href="/playgrounds/">All playgrounds A to Z</a></p>
-        <p>Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>.</p>
+        <p>Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>.{analytics && <> · <button class="linkish" type="button" id="cookie-settings">Cookie settings</button></>}</p>
       </div>
     </footer>
   </body>

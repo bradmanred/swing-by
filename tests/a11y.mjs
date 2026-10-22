@@ -59,6 +59,23 @@ try {
     if ((await page.locator('#loos + [data-baby-change]').getAttribute('data-baby-change')) !== 'yes') fail('Howard Park should show baby change: yes');
     await page.goto(BASE + '/playgrounds/c-gosse-close-play-area-hoddesdon/');
     if ((await page.locator('#loos + [data-baby-change]').getAttribute('data-baby-change')) !== 'nearby') fail('a playground without toilets should show the nearest-toilets block');
+    // Google Analytics must not load until the visitor accepts in the consent bar.
+    const ctx = await browser.newContext();
+    const page = await ctx.newPage();
+    await page.route('https://www.googletagmanager.com/**', (route) => route.fulfill({ status: 200, contentType: 'text/javascript', body: '' }));
+    await page.goto(BASE + '/');
+    const gaTag = () => page.locator('script[src*="googletagmanager.com/gtag/js"]').count();
+    if (!(await page.locator('#cookie-bar').isVisible())) fail('cookie consent bar is not shown on a first visit');
+    if (await gaTag()) fail('Google Analytics loaded before consent');
+    await page.getByRole('button', { name: 'No thanks' }).click();
+    if (await gaTag()) fail('Google Analytics loaded after "No thanks"');
+    await page.getByRole('button', { name: 'Cookie settings' }).click();
+    await page.getByRole('button', { name: 'Accept analytics' }).click();
+    if (!(await gaTag())) fail('Google Analytics did not load after "Accept analytics"');
+    await page.goto(BASE + '/about/');
+    if (await page.locator('#cookie-bar').isVisible()) fail('cookie consent bar shown again after a choice was made');
+    await page.goto(BASE + '/moderate/');
+    if (await page.locator('#cookie-bar').count()) fail('moderation page should not include analytics');
     await ctx.close();
   }
 

@@ -2,8 +2,8 @@
   "name": "Hornhill Play Area",
   "region": "herts",
   "area": "Maple Cross",
-  "lat": 51.62177,
-  "lng": -0.5127,
+  "lat": 51.62287,
+  "lng": -0.51275,
   "ages": [
     "under-3"
   ],
@@ -31,6 +31,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

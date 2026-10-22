@@ -2,8 +2,8 @@
   "name": "Scotsbridge Play Area",
   "region": "herts",
   "area": "Rickmansworth",
-  "lat": 51.64296,
-  "lng": -0.46512,
+  "lat": 51.6448,
+  "lng": -0.46329,
   "ages": [],
   "equipment": [
     "sw",
@@ -29,6 +29,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

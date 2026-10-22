@@ -2,8 +2,8 @@
   "name": "Fishers Close Play Area",
   "region": "herts",
   "area": "Waltham Cross",
-  "lat": 51.68478,
-  "lng": -0.01587,
+  "lat": 51.6841,
+  "lng": -0.01539,
   "ages": [
     "3-6",
     "7-12",
@@ -28,6 +28,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

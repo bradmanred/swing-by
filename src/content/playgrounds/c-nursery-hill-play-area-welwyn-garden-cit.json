@@ -2,8 +2,8 @@
   "name": "Nursery Hill Play Area",
   "region": "herts",
   "area": "Welwyn Garden City",
-  "lat": 51.81471,
-  "lng": -0.19542,
+  "lat": 51.8141,
+  "lng": -0.1962,
   "ages": [],
   "equipment": [
     "sw",
@@ -26,7 +26,7 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null,
   "size": "small"
 }

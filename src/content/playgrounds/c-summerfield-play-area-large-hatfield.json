@@ -2,8 +2,8 @@
   "name": "Summerfield Play Area (large)",
   "region": "herts",
   "area": "Hatfield",
-  "lat": 51.74558,
-  "lng": -0.22818,
+  "lat": 51.74583,
+  "lng": -0.22795,
   "ages": [
     "3-6",
     "7-12"
@@ -28,7 +28,7 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null,
   "size": "large"
 }

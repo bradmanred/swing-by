@@ -2,8 +2,8 @@
   "name": "Wormley Playing Fields Children's Playground",
   "region": "herts",
   "area": "Wormley",
-  "lat": 51.73257,
-  "lng": -0.02617,
+  "lat": 51.73325,
+  "lng": -0.02772,
   "ages": [
     "3-6",
     "7-12"
@@ -27,6 +27,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }
