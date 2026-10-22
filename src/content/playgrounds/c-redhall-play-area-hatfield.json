@@ -2,8 +2,8 @@
   "name": "Redhall Play Area",
   "region": "herts",
   "area": "Hatfield",
-  "lat": 51.74455,
-  "lng": -0.23617,
+  "lat": 51.74405,
+  "lng": -0.23856,
   "ages": [
     "under-3",
     "3-6",
@@ -29,7 +29,7 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null,
   "size": "large"
 }

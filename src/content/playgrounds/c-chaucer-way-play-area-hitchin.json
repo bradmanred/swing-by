@@ -2,8 +2,8 @@
   "name": "Chaucer Way Play Area",
   "region": "herts",
   "area": "Hitchin",
-  "lat": 51.95031,
-  "lng": -0.25379,
+  "lat": 51.95029,
+  "lng": -0.25493,
   "ages": [
     "under-3",
     "3-6"
@@ -22,6 +22,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

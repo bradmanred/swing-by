@@ -2,8 +2,8 @@
   "name": "Penton Drive Play Area",
   "region": "herts",
   "area": "Cheshunt",
-  "lat": 51.70736,
-  "lng": -0.03351,
+  "lat": 51.70808,
+  "lng": -0.03308,
   "ages": [
     "3-6",
     "7-12",
@@ -25,9 +25,13 @@
     {
       "label": "Borough of Broxbourne Council: Penton Drive Play Area",
       "url": "https://www.broxbourne.gov.uk/directory-record/630601/penton-drive"
+    },
+    {
+      "label": "Broxbourne Council's what3words location for the play area: ///legs.allow.verbs",
+      "url": "https://what3words.com/legs.allow.verbs"
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Opening hours, toilets and parking.",
   "photo": null
 }

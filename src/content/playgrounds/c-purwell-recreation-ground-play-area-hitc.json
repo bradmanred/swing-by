@@ -2,8 +2,8 @@
   "name": "Purwell Recreation Ground Play Area",
   "region": "herts",
   "area": "Hitchin",
-  "lat": 51.95196,
-  "lng": -0.2497,
+  "lat": 51.95268,
+  "lng": -0.25403,
   "ages": [
     "under-3",
     "3-6",
@@ -23,6 +23,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

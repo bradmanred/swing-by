@@ -2,8 +2,8 @@
   "name": "Rosedale Way Play Area",
   "region": "herts",
   "area": "Cheshunt",
-  "lat": 51.71398,
-  "lng": -0.05997,
+  "lat": 51.71301,
+  "lng": -0.0608,
   "ages": [
     "3-6",
     "7-12"
@@ -27,6 +27,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

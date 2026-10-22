@@ -2,8 +2,8 @@
   "name": "Edens Mount Play Area",
   "region": "herts",
   "area": "Sawbridgeworth",
-  "lat": 51.81975,
-  "lng": 0.15412,
+  "lat": 51.81941,
+  "lng": 0.154,
   "ages": [
     "7-12"
   ],
@@ -30,6 +30,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

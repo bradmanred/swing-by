@@ -2,8 +2,8 @@
   "name": "Grovehill and Woodhall Farm Adventure Playground",
   "region": "herts",
   "area": "Hemel Hempstead",
-  "lat": 51.77222,
-  "lng": -0.44603,
+  "lat": 51.77433,
+  "lng": -0.44392,
   "ages": [
     "7-12",
     "teens"
@@ -26,6 +26,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

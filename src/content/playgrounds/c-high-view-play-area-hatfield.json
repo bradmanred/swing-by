@@ -2,8 +2,8 @@
   "name": "High View Play Area",
   "region": "herts",
   "area": "Hatfield",
-  "lat": 51.74832,
-  "lng": -0.23343,
+  "lat": 51.74866,
+  "lng": -0.23424,
   "ages": [
     "under-3"
   ],
@@ -21,7 +21,7 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null,
   "size": "small"
 }
