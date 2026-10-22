@@ -1,6 +1,7 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import labels from '../data/labels.json';
 import regionsFile from '../data/regions.json';
+import toiletsFile from '../data/toilets.json';
 
 export type Park = CollectionEntry<'playgrounds'>['data'] & { id: string };
 
@@ -20,7 +21,15 @@ export const regionName = (id: string) => regions.find((r) => r.id === id)?.name
 
 export async function allParks(): Promise<Park[]> {
   const entries = await getCollection('playgrounds');
-  return entries.map((e) => ({ ...e.data, id: e.id })).sort((a, b) => a.name.localeCompare(b.name, 'en-GB'));
+  return entries
+    .map((e) => {
+      const d = { ...e.data, id: e.id };
+      // Keep the baby change flag and the 'bc' facility in step, whichever one the JSON uses.
+      if (d.babyChange === true && !d.facilities.includes('bc')) d.facilities = [...d.facilities, 'bc'];
+      if (d.facilities.includes('bc') && d.babyChange == null) d.babyChange = true;
+      return d;
+    })
+    .sort((a, b) => a.name.localeCompare(b.name, 'en-GB'));
 }
 
 export function km(a: { lat: number; lng: number }, b: { lat: number; lng: number }) {
@@ -49,6 +58,31 @@ export function hoursText(p: Park) {
   if (p.weekendsOnly) bits.push('Weekends and school holidays only.');
   if (p.season) bits.push(`Open ${MONTHS[p.season.from - 1]} to ${MONTHS[p.season.to - 1]}.`);
   return bits.join(' ');
+}
+
+export type Loo = { id: string; name: string; m: number; babyChange: boolean | null; accessible: boolean | null; free: boolean | null };
+export const toiletSource = toiletsFile.source;
+const looFor = (id: string) => (toiletsFile.parks as Record<string, { nearest: Loo | null; nearestBabyChange?: Loo }>)[id];
+export const looUrl = (l: Loo) => `https://www.toiletmap.org.uk/loos/${l.id}`;
+
+/**
+ * Toilets for a playground page.
+ * - onSite: the playground's own sources list toilets. babyChange is from those sources (true, false or null = not known);
+ *   when the sources don't say, a Toilet Map toilet within 250 m can fill it in (mapBabyChange).
+ * - Otherwise: the nearest toilet from the Toilet Map, plus the nearest one with baby change if that isn't the same toilet.
+ */
+export function toiletInfo(p: Park) {
+  const onSite = p.facilities.includes('wc') || p.nearby.some((n) => n.type === 'toilets');
+  const t = looFor(p.id);
+  const close = t?.nearest && t.nearest.m <= 250 ? t.nearest : null;
+  return {
+    onSite,
+    babyChange: p.babyChange ?? null,
+    mapBabyChange: onSite && p.babyChange == null && close?.babyChange != null ? { loo: close, has: close.babyChange } : null,
+    known: !!t,
+    nearest: onSite ? null : (t?.nearest ?? null),
+    nearestBabyChange: onSite ? null : (t?.nearest?.babyChange === true ? null : (t?.nearestBabyChange ?? null)),
+  };
 }
 
 /** Decorative icons; the text label is always shown next to them. */
