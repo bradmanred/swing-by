@@ -1,0 +1,73 @@
+[
+ {
+  "url": "https://www.ambervalley.gov.uk/media/1957/avbc_play_strategy_2026-2031.pdf",
+  "file": "b9381491a6.txt",
+  "ct": "application/pdf",
+  "status": 200,
+  "bytes": 13051512
+ },
+ {
+  "url": "https://democracy.ne-derbyshire.gov.uk/documents/s7806/3.%20Inspection%20Frequencies.pdf",
+  "file": "317747490e.txt",
+  "ct": "application/pdf",
+  "status": 200,
+  "bytes": 391486
+ },
+ {
+  "url": "https://derby.gov.uk/news/2026/may/inclusive-play-areas-unveiled-in-time-for-summer-fun/",
+  "file": "4ded370072.html",
+  "ct": "text/html",
+  "status": 200,
+  "bytes": 51992
+ },
+ {
+  "url": "https://www.inderby.org.uk/parks/derby-parks-management-plans/",
+  "err": "HTTP Error 404: Not Found"
+ },
+ {
+  "url": "https://maps.southderbyshire.gov.uk/iShareLIVE.web/",
+  "file": "cabc134e45.html",
+  "ct": "text/html; charset=utf-8",
+  "status": 200,
+  "bytes": 12649
+ },
+ {
+  "url": "https://maps.southderbyshire.gov.uk/public/addresssearch/addresssearch_sddc.js",
+  "file": "f68479000c.html",
+  "ct": "application/javascript",
+  "status": 200,
+  "bytes": 9572
+ },
+ {
+  "url": "https://maps.southderbyshire.gov.uk/iShareLIVE.web/getdata.aspx?service=MapSource&RequestType=JSON&type=json",
+  "file": "ad95286223.html",
+  "ct": "application/json; charset=utf-8",
+  "status": 200,
+  "bytes": 72
+ },
+ {
+  "url": "https://maps.southderbyshire.gov.uk/iShareLIVE.web/getdata.aspx?RequestType=Mapsource&type=json&ms=Live",
+  "file": "f6a0f31b8e.html",
+  "ct": "text/plain",
+  "status": 200,
+  "bytes": 0
+ },
+ {
+  "url": "https://maps.southderbyshire.gov.uk/ishareLIVE.web/getows.ashx?mapsource=SDDC/AllMaps&service=WFS&request=GetCapabilities",
+  "err": "HTTP Error 500: Error on internal server"
+ },
+ {
+  "url": "https://www.claycross.gov.uk/playgrounds",
+  "file": "e2eb51e377.html",
+  "ct": "text/html; charset=UTF-8",
+  "status": 200,
+  "bytes": 111103
+ },
+ {
+  "url": "https://www.ambervalley.gov.uk/environment/play-in-amber-valley/playgrounds/",
+  "file": "ad4617d98b.html",
+  "ct": "text/html; charset=utf-8",
+  "status": 200,
+  "bytes": 53116
+ }
+]

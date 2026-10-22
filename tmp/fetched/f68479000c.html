@@ -1,0 +1,242 @@
+window.onload = function () {
+                    
+                   
+var s = document.createElement("script");
+s.type = "text/javascript";
+s.src = "//maps.southderbyshire.gov.uk/public/addresssearch/litemap_address.js";
+//jQuery("body")[0].append(s);  
+
+}
+checker = 0;
+
+document.getElementsByClassName('trigger')[1].onclick=function(){
+	if(jQuery("[aria-controls='mobileSearch']").hasClass("active")){
+		document.getElementById('mobileSearch').style.display = 'block';
+		document.getElementById('mobileLocationSearch').style.display = 'none';
+	}else {
+		document.getElementById('mobileSearch').style.display = 'none';
+	}
+}
+document.getElementsByClassName('trigger')[2].onclick=function(){
+	if(jQuery("[aria-controls='mobileLocationSearch']").hasClass("active")){
+		document.getElementById('mobileLocationSearch').style.display = 'block';
+		document.getElementById('mobileSearch').style.display = 'none';
+	}else if(document.getElementById('mobileLocationSearch').style.display == 'block'){
+		document.getElementById('mobileLocationSearch').style.display = 'none';
+	}
+	
+	
+	if(checker == 0){jQuery.getScript('http://maps.southderbyshire.gov.uk/public/addresssearch/litemap_address.js'); checker = checker + 1;}
+}
+
+//jQuery.getScript('http://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.3/jquery.xdomainrequest.min.js');
+jQuery.getScript('//maps.southderbyshire.gov.uk/public/addresssearch/js/xdomainrequest.js');
+
+function addcss(css) {
+
+    var head = document.getElementsByTagName('head')[0], s = document.createElement('link');
+    s.setAttribute('type', 'text/css');
+    s.setAttribute('rel', 'stylesheet');
+    s.setAttribute('href', css);
+
+    head.appendChild(s);
+
+}
+addcss('//maps.southderbyshire.gov.uk/public/addresssearch/js/sddc_autocomplete.css');
+//addcss('https://cdnjs.cloudflare.com/ajax/libs/jquery-autocomplete/1.0.7/jquery.auto-complete.min.css');
+
+var form = document.getElementById('search2');
+    form.onsubmit = function() {
+        return false;
+    } ;
+
+jQuery.getScript('//maps.southderbyshire.gov.uk/public/addresssearch/js/jquery-ui.min.js').done(function() {
+jQuery.getScript('//maps.southderbyshire.gov.uk/public/addresssearch/js/jquery.js').done(function() {
+
+
+    
+
+
+	
+    jQuery('#search2').empty();
+    jQuery('#search2').append('<label class="formLabel" for="addresssearch">Address search:</label>' +
+    '<input type="text" class="FormField" tabindex="104" name="addresssearch" id="addresssearch" title="addresssearch" size="30" maxlength="50" autocomplete="off" placeholder="e.g. DE11 0AH"></div>' +
+    '</li>');
+    jQuery('#search4mobile').empty();
+    jQuery('#search4mobile').append('<input type="text" class="FormField" tabindex="104" name="addresssearch" id="addresssearch" title="addresssearch" size="30" maxlength="50" autocomplete="off" placeholder="e.g. DE11 0AH"></div>' +
+    '</li>');
+    getCookie();
+    
+    mat = document.getElementsByName('postcode');
+    mat.onkeypress = wireupautocomplete();
+
+
+    function wireupautocomplete() {
+
+        jQuery(function () {
+            nlc_wkt = 'ME';
+            jQuery('[name="addresssearch"]').autocomplete({
+		
+		
+                open: function (event, ui) {
+					//jQuery('[name="addresssearch"]').off('menufocus hover mouseover mouseenter');
+					//jQuery('.ui-menu-item').on('touch tap click touchstart',function(){this.click();});
+                    jQuery(this).removeClass("ui-corner-all").addClass("ui-corner-top");
+                    jQuery(this).addClass("multilineitems");
+							 
+    //console.log('123');
+                   
+                   // jQuery(this).children("li.ui-menu-item:odd a").addClass("ui-menu-item-alternate");
+
+                },
+
+                source: function (request, response) {
+                    jQuery.ajax({
+                        url: "//maps.southderbyshire.gov.uk/iShareLive.Web/getdata.aspx?callback=?&type=jsonp&service=LocationSearch&RequestType=LocationSearch&pagesize=100&startnum=1&mapsource=mapsources/MyHouse",
+
+                        dataType: "jsonp",
+                        location: request.term,
+                        data: {
+                            location: request.term
+
+                        },
+                        success: function (data) {
+                            //alert(data.total);
+//console.log(data);
+                            if (data.data.length == 0) {
+
+                                response({label: 'No results found'});
+
+
+                            } else {
+
+
+                                response(jQuery.map(data.data, function (item) {
+                            
+
+                                    uprnlabel = item[0];
+                                    label = item[7];
+                                    street = item[2];
+                                    town = item[3];
+                                    value = "";
+                                    frank = item[7];
+                                    xcoord = item[4];
+									ycoord = item[5];
+
+
+                                    return {
+                                        uprnlabel: item[0],
+                                        label: item[7],
+                                        street: item[2],
+                                        town: item[3],
+                                        value: "",
+                                        frank: item[7],
+										xcoord: item[4],
+										ycoord: item[5],
+
+                                    };
+
+                                }));
+                            }
+                        }
+                    });
+                },
+                minLength: 2,
+                select: function (event, ui) {
+					
+					mat = document.getElementById('mobileLocationSearch');
+					for(var d = 0; d < mat.attributes.length; d++){
+					if(mat.attributes[d].value == "true"){
+						jQuery('[aria-controls = mobileLocationSearch]').click();
+						}
+					}
+		
+                    frank = ui.item.label;
+                    frank1 = ui.item.uprnlabel;
+                    xcoord = ui.item.xcoord;
+                    ycoord = ui.item.ycoord;
+                    
+					jQuery('#addressNav').remove();
+                    var addressNav ='<div id="addressNav" class="breadcrumb clearfix">'
+										+'<div class="row">'
+											+'<nav class="columns small-12">'
+												+'<ul class="inline-list">'
+													+'<li><a href="//maps.southderbyshire.gov.uk/iShareLive.Web/atmyresponsivecouncil.aspx?action=SetAddress&UniqueId='+frank1+'">'
+													+'Your address is set to:  '+ '<strong>' + frank+'</strong><span style="color:#39c!important;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;click to find your local services...</span></a></li>'
+                                                +'</ul>'
+											+'</nav>'        
+										+'</div>'
+									+'</div>';
+					
+
+
+
+			
+                   
+                    jQuery("#breadcrumbNav .row").before(addressNav);
+
+                    jQuery.ajax({
+							url: '//maps.southderbyshire.gov.uk/iShareLIVE.web/getcookie.ashx?callback=?&ref='+ encodeURIComponent(frank) + '||' + frank1 + '||' + xcoord + '||' + ycoord,
+							dataType: 'jsonp',  //use jsonp data type in order to perform cross domain ajax
+							crossDomain: true,
+							success: function (callback) {
+							//if (typeof me.onChange !== "undefined") { 
+							
+								try{
+								getLocalInfo(frank1);
+								}
+								catch(e){
+									window.location = '//maps.southderbyshire.gov.uk/iShareLive.Web/atmyresponsivecouncil.aspx?action=SetAddress&UniqueId='+frank1
+								}
+							//}
+							
+                    },
+                    error: function (callback) {}
+                });
+                    
+                    
+                     this.value = "";
+    return false;
+                },
+                close: function () {
+                    jQuery(this).removeClass("ui-corner-top").addClass("ui-corner-all");
+                }
+            });
+        });
+
+        jQuery.ui.autocomplete.prototype._resizeMenu = function () {
+  var ul = this.menu.element;
+  ul.outerWidth(this.element.outerWidth());
+}
+    }
+})
+})
+
+function getCookie(){
+	jQuery.ajax({
+							url: '//maps.southderbyshire.gov.uk/iShareLIVE.web/getcookie.ashx?callback=?',
+							dataType: 'jsonp',  //use jsonp data type in order to perform cross domain ajax
+							crossDomain: true,
+							success: function (callback) {
+								if(callback.data[0][0] == ""){
+								}else{
+									cookieaddress = callback.data[0][0].split('||');
+									var addressNav ='<div id="addressNav" class="breadcrumb clearfix">'
+										+'<div class="row">'
+											+'<nav class="columns small-12">'
+												+'<ul class="inline-list">'
+													+'<li><a href="//maps.southderbyshire.gov.uk/iShareLive.Web/atmyresponsivecouncil.aspx?action=SetAddress&UniqueId='+cookieaddress[1]+'">'
+													+'Your address is set to:  ' + '<strong>' + cookieaddress[0]+'</strong><span style="color:#39c!important;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;click to find your local services...</span></a></li>'
+                                                +'</ul>'
+											+'</nav>'        
+										+'</div>'
+									+'</div>';
+								jQuery("#breadcrumbNav .row").before(addressNav);
+								}
+							},
+							error: function (callback) {}
+							});
+}
+
+
+
