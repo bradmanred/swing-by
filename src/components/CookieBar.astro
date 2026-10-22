@@ -1,0 +1,49 @@
+---
+// The consent bar for Google Analytics. See Analytics.astro for how consent works.
+---
+<section class="cookie-bar" id="cookie-bar" aria-labelledby="cookie-bar-title" hidden>
+  <div class="wrap">
+    <p><strong id="cookie-bar-title">Can we count your visit?</strong> We'd like to use Google Analytics cookies to see which pages parents find useful, so we can improve Swing By. They're never used for advertising. <a href="/about/#cookies">More about cookies</a></p>
+    <div class="cookie-actions">
+      <button class="btn btn-yellow" type="button" data-consent="granted">Accept analytics</button>
+      <button class="btn" type="button" data-consent="denied">No thanks</button>
+    </div>
+  </div>
+</section>
+<script is:inline>
+  (() => {
+    const KEY = 'sb-consent';
+    const bar = document.getElementById('cookie-bar');
+    const read = () => { try { return localStorage.getItem(KEY); } catch { return null; } };
+    const save = (v) => { try { localStorage.setItem(KEY, v); } catch {} };
+    let loaded = false;
+    const load = () => {
+      if (loaded || !window.__sbGaId) return;
+      loaded = true;
+      const s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.__sbGaId;
+      document.head.appendChild(s);
+    };
+    const apply = (v) => {
+      if (typeof gtag !== 'function') return;
+      gtag('consent', 'update', { analytics_storage: v === 'granted' ? 'granted' : 'denied' });
+      if (v === 'granted') load();
+    };
+    const saved = read();
+    if (saved) apply(saved); else bar.hidden = false;
+    bar.addEventListener('click', (e) => {
+      const v = e.target.closest('[data-consent]')?.dataset.consent;
+      if (!v) return;
+      save(v); apply(v); bar.hidden = true;
+      document.getElementById('main')?.focus({ preventScroll: true });
+    });
+    // The footer button comes later in the page, so listen on the document.
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('#cookie-settings')) return;
+      bar.hidden = false;
+      bar.scrollIntoView({ block: 'nearest' });
+      bar.querySelector('[data-consent="granted"]').focus();
+    });
+  })();
+</script>
