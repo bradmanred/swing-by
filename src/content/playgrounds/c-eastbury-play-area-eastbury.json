@@ -2,8 +2,8 @@
   "name": "Eastbury Play Area",
   "region": "herts",
   "area": "Eastbury",
-  "lat": 51.62427,
-  "lng": -0.41656,
+  "lat": 51.62264,
+  "lng": -0.41753,
   "ages": [],
   "equipment": [
     "sw",
@@ -28,6 +28,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

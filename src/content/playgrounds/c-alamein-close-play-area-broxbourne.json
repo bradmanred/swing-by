@@ -2,8 +2,8 @@
   "name": "Alamein Close Play Area",
   "region": "herts",
   "area": "Broxbourne",
-  "lat": 51.74864,
-  "lng": -0.03145,
+  "lat": 51.74899,
+  "lng": -0.03085,
   "ages": [
     "3-6",
     "7-12"
@@ -24,9 +24,13 @@
     {
       "label": "Borough of Broxbourne Council: Alamein Close Play Area",
       "url": "https://www.broxbourne.gov.uk/directory-record/630572/alamein-close"
+    },
+    {
+      "label": "Broxbourne Council's what3words location for the play area: ///moral.button.kinds",
+      "url": "https://what3words.com/moral.button.kinds"
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Opening hours, toilets and parking.",
   "photo": null
 }

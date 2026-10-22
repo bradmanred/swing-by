@@ -2,8 +2,8 @@
   "name": "Kings Road Play Area",
   "region": "herts",
   "area": "Waltham Cross",
-  "lat": 51.68655,
-  "lng": -0.02958,
+  "lat": 51.68654,
+  "lng": -0.03012,
   "ages": [
     "3-6",
     "7-12"
@@ -24,9 +24,13 @@
     {
       "label": "Borough of Broxbourne Council: Kings Road Play Area",
       "url": "https://www.broxbourne.gov.uk/directory-record/630595/kings-road"
+    },
+    {
+      "label": "Broxbourne Council's what3words location for the play area: ///judge.supporter.hope",
+      "url": "https://what3words.com/judge.supporter.hope"
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Opening hours, toilets and parking.",
   "photo": null
 }

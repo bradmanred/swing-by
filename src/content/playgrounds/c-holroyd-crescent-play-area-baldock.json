@@ -2,8 +2,8 @@
   "name": "Holroyd Crescent Play Area",
   "region": "herts",
   "area": "Baldock",
-  "lat": 51.9847,
-  "lng": -0.18877,
+  "lat": 51.9846,
+  "lng": -0.18937,
   "ages": [
     "under-3",
     "3-6",
@@ -23,6 +23,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

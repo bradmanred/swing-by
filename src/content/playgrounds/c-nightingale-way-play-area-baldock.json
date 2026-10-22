@@ -2,8 +2,8 @@
   "name": "Nightingale Way Play Area",
   "region": "herts",
   "area": "Baldock",
-  "lat": 51.98121,
-  "lng": -0.18808,
+  "lat": 51.98122,
+  "lng": -0.18749,
   "ages": [
     "under-3",
     "3-6"
@@ -22,6 +22,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

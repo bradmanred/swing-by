@@ -2,8 +2,8 @@
   "name": "Howard Park Play Area",
   "region": "herts",
   "area": "Letchworth Garden City",
-  "lat": 51.97976,
-  "lng": -0.22427,
+  "lat": 51.97869,
+  "lng": -0.22322,
   "ages": [],
   "equipment": [
     "wp"
@@ -28,4 +28,6 @@
   "notConfirmed": "Exact position (mapped from the postcode), opening hours and parking.",
   "photo": null,
   "babyChange": true
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
+  "photo": null
 }

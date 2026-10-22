@@ -2,8 +2,8 @@
   "name": "Lincoln Drive Play Area",
   "region": "herts",
   "area": "Watford",
-  "lat": 51.62784,
-  "lng": -0.39393,
+  "lat": 51.62748,
+  "lng": -0.39507,
   "ages": [],
   "equipment": [
     "sl",
@@ -24,6 +24,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

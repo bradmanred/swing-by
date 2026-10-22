@@ -2,8 +2,8 @@
   "name": "Cedars Park Play Area",
   "region": "herts",
   "area": "Waltham Cross",
-  "lat": 51.69447,
-  "lng": -0.04237,
+  "lat": 51.69183,
+  "lng": -0.04143,
   "ages": [
     "under-3"
   ],
@@ -23,9 +23,13 @@
     {
       "label": "Borough of Broxbourne Council: Cedars Park Play Area",
       "url": "https://www.broxbourne.gov.uk/directory-record/630577/cedars-park"
+    },
+    {
+      "label": "Broxbourne Council's what3words location for the play area: ///trains.poems.stews",
+      "url": "https://what3words.com/trains.poems.stews"
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Opening hours, toilets and parking.",
   "photo": null
 }

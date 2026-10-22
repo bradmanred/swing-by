@@ -2,8 +2,8 @@
   "name": "Abbotswood Park Play Area",
   "region": "herts",
   "area": "Abbots Langley",
-  "lat": 51.69624,
-  "lng": -0.41325,
+  "lat": 51.69599,
+  "lng": -0.41453,
   "ages": [
     "7-12"
   ],
@@ -26,6 +26,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

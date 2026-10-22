@@ -2,8 +2,8 @@
   "name": "Appleby Street Play Area",
   "region": "herts",
   "area": "Cheshunt",
-  "lat": 51.72196,
-  "lng": -0.07048,
+  "lat": 51.72259,
+  "lng": -0.07131,
   "ages": [
     "3-6",
     "7-12",
@@ -28,6 +28,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

@@ -2,8 +2,8 @@
   "name": "Hammondstreet Road Play Area",
   "region": "herts",
   "area": "Cheshunt",
-  "lat": 51.7248,
-  "lng": -0.0813,
+  "lat": 51.72557,
+  "lng": -0.08379,
   "ages": [
     "3-6",
     "7-12",
@@ -28,6 +28,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }
