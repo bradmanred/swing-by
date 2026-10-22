@@ -13,7 +13,11 @@ for line in open("tmp/urls.txt"):
         idx.append({"url": u, "err": str(e)[:200]}); continue
     if b[:4] == b"%PDF":
         open(f"/tmp/{h}.pdf", "wb").write(b)
-        subprocess.run(["pdftotext", "-layout", f"/tmp/{h}.pdf", f"tmp/fetched/{h}.txt"])
+        try:
+            subprocess.run(["pdftotext", "-layout", f"/tmp/{h}.pdf", f"tmp/fetched/{h}.txt"], check=True)
+        except Exception:
+            from pdfminer.high_level import extract_text
+            open(f"tmp/fetched/{h}.txt", "w").write(extract_text(f"/tmp/{h}.pdf"))
         f = f"{h}.txt"
     else:
         f = f"{h}.html"; open(f"tmp/fetched/{f}", "wb").write(b)
