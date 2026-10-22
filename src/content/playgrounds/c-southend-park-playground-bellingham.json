@@ -1,0 +1,28 @@
+{
+  "name": "Southend Park Playground",
+  "region": "london",
+  "area": "Bellingham",
+  "lat": 51.42635,
+  "lng": -0.0297,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Southend Park has play areas for under-7s and for 7 to 13-year-olds, according to GiGL, London's greenspace record.",
+  "nearby": [],
+  "operator": "Lewisham Council",
+  "sources": [
+    {
+      "label": "GiGL (Greenspace Information for Greater London): Southend Park",
+      "url": "https://www.gigl.org.uk/park/OS_Le_0239/"
+    }
+  ],
+  "checked": "2026-10-22",
+  "notConfirmed": "Exact position (the pin is the centre of the park, from GiGL), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

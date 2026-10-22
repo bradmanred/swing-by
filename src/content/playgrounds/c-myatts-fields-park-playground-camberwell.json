@@ -1,0 +1,33 @@
+{
+  "name": "Myatt's Fields Park Playground",
+  "region": "london",
+  "area": "Camberwell",
+  "lat": 51.47428,
+  "lng": -0.10255,
+  "ages": [],
+  "equipment": [
+    "wp"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "07:30",
+  "description": "Playground and wet play area in Myatt's Fields Park, which also has a children's One O'Clock nursery building, a café, toilets and a community greenhouse. Open from 7.30am to 15 minutes before sunset.",
+  "nearby": [],
+  "operator": "Lambeth Council",
+  "sources": [
+    {
+      "label": "Lambeth Council: Myatt's Fields Park",
+      "url": "https://www.lambeth.gov.uk/parks/myatts-fields-park"
+    },
+    {
+      "label": "Lambeth Council: parks play areas map",
+      "url": "https://gis.lambeth.gov.uk/arcgis/rest/services/LambethParksPlayAreas/MapServer"
+    }
+  ],
+  "checked": "2026-10-22",
+  "notConfirmed": "Play equipment and age ranges, wet play season, baby change and parking.",
+  "photo": null
+}

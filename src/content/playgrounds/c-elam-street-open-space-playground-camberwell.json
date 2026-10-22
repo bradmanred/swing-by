@@ -1,0 +1,28 @@
+{
+  "name": "Elam Street Open Space Playground",
+  "region": "london",
+  "area": "Camberwell",
+  "lat": 51.46975,
+  "lng": -0.10294,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "07:30",
+  "description": "Children's playground in a small open space built on land once occupied by housing. Open from 7.30am to 15 minutes before sunset.",
+  "nearby": [],
+  "operator": "Lambeth Council",
+  "sources": [
+    {
+      "label": "Lambeth Council: Elam Street Open Space",
+      "url": "https://www.lambeth.gov.uk/parks/elam-street-open-space"
+    },
+    {
+      "label": "Lambeth Council: parks play areas map",
+      "url": "https://gis.lambeth.gov.uk/arcgis/rest/services/LambethParksPlayAreas/MapServer"
+    }
+  ],
+  "checked": "2026-10-22",
+  "notConfirmed": "Play equipment and age ranges, toilets and parking.",
+  "photo": null
+}

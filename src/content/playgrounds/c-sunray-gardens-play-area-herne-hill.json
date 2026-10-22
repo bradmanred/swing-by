@@ -1,0 +1,31 @@
+{
+  "region": "london",
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "nearby": [],
+  "operator": "Southwark Council",
+  "checked": "2026-10-22",
+  "photo": null,
+  "name": "Sunray Gardens Play Area",
+  "area": "Herne Hill",
+  "lat": 51.45663,
+  "lng": -0.09164,
+  "description": "Children's play area by the lake in Sunray Gardens, which also has a multi-use games area. GiGL lists it as play for under-7s.",
+  "sources": [
+    {
+      "label": "Southwark Council: other parks and gardens",
+      "url": "https://www.southwark.gov.uk/culture-and-sport/parks-and-open-spaces/find-park/other-parks-and-gardens"
+    },
+    {
+      "label": "GiGL (Greenspace Information for Greater London): Sunray Gardens",
+      "url": "https://www.gigl.org.uk/park/OS_So_0146/"
+    }
+  ],
+  "notConfirmed": "Exact position (the pin is the centre of the park, from GiGL), play equipment, age ranges, opening hours, toilets and parking."
+}

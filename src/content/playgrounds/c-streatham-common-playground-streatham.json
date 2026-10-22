@@ -1,0 +1,33 @@
+{
+  "name": "Streatham Common Playground",
+  "region": "london",
+  "area": "Streatham",
+  "lat": 51.42144,
+  "lng": -0.1276,
+  "ages": [],
+  "equipment": [
+    "wp"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "24h",
+  "description": "Large children's playground on Streatham Common, with a seasonal paddling pool elsewhere on the common. There's a café and toilets, and the common is open 24 hours.",
+  "nearby": [],
+  "operator": "Lambeth Council",
+  "sources": [
+    {
+      "label": "Lambeth Council: Streatham Common",
+      "url": "https://www.lambeth.gov.uk/parks/streatham-common"
+    },
+    {
+      "label": "Lambeth Council: parks play areas map",
+      "url": "https://gis.lambeth.gov.uk/arcgis/rest/services/LambethParksPlayAreas/MapServer"
+    }
+  ],
+  "checked": "2026-10-22",
+  "notConfirmed": "Play equipment and age ranges, paddling pool season, baby change and parking.",
+  "photo": null
+}

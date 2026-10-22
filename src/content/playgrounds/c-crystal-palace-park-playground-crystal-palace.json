@@ -1,0 +1,44 @@
+{
+  "name": "Crystal Palace Park Dinosaur Playground",
+  "region": "london",
+  "area": "Crystal Palace",
+  "lat": 51.42134,
+  "lng": -0.06948,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "cl",
+    "sw",
+    "sp",
+    "rb",
+    "sl"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "Dinosaur-themed playground that opened in March 2026, with a dinosaur skeleton climbing frame, giant dinosaur egg play features, basket swings and a footprint-shaped sandpit. Accessible features include a wheelchair-accessible roundabout, an accessible slide and swing, and adjustable-height games. There's a Changing Places toilet nearby in the park. GiGL also lists a water play area in the park.",
+  "nearby": [],
+  "operator": "Crystal Palace Park Trust",
+  "sources": [
+    {
+      "label": "Bromley Council: Crystal Palace Park dinosaur playground opens",
+      "url": "https://www.bromley.gov.uk/news/article/960/crystal-palace-park-dinosaur-playground-roars-into-action"
+    },
+    {
+      "label": "Bromley Council: Crystal Palace Park handed to the Crystal Palace Park Trust",
+      "url": "https://www.bromley.gov.uk/news/article/570/crystal-palace-park-set-to-thrive-following-historic-handover"
+    },
+    {
+      "label": "GiGL (Greenspace Information for Greater London): Crystal Palace Park",
+      "url": "https://www.gigl.org.uk/park/OS_By_0216/"
+    }
+  ],
+  "checked": "2026-10-22",
+  "notConfirmed": "Exact position (the pin is the centre of the park, from GiGL), age ranges, opening hours, baby change, café and parking.",
+  "photo": null
+}

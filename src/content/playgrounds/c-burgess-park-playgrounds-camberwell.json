@@ -1,0 +1,38 @@
+{
+  "name": "Burgess Park Playgrounds",
+  "region": "london",
+  "area": "Camberwell",
+  "lat": 51.48333,
+  "lng": -0.08212,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "cl",
+    "wp"
+  ],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "Colourful play and climbing equipment for children up to 14, with separate play areas for under-5s and over-5s, and water play jets at Chumleigh Gardens in summer. Toilets are at Chumleigh Gardens and at the tennis pavilion café near Addington Square.",
+  "nearby": [],
+  "operator": "Southwark Council",
+  "sources": [
+    {
+      "label": "Southwark Council: Burgess Park",
+      "url": "https://www.southwark.gov.uk/culture-and-sport/parks-and-open-spaces/find-park/burgess-park"
+    },
+    {
+      "label": "GiGL (Greenspace Information for Greater London): Burgess Park",
+      "url": "https://www.gigl.org.uk/park/OS_So_0018/"
+    }
+  ],
+  "checked": "2026-10-22",
+  "notConfirmed": "Exact position (the pin is the centre of the park, from GiGL), age ranges for each play area, opening hours, baby change and parking.",
+  "photo": null
+}

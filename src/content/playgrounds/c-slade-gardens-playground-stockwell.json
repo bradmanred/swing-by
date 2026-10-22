@@ -1,0 +1,28 @@
+{
+  "name": "Slade Gardens Playground",
+  "region": "london",
+  "area": "Stockwell",
+  "lat": 51.47141,
+  "lng": -0.11519,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "07:30",
+  "description": "Children's playground with an outdoor gym, a nature conservation area and a dog exercise area. Open from 7.30am to 15 minutes before sunset.",
+  "nearby": [],
+  "operator": "Lambeth Council",
+  "sources": [
+    {
+      "label": "Lambeth Council: Slade Gardens",
+      "url": "https://www.lambeth.gov.uk/parks/slade-gardens"
+    },
+    {
+      "label": "Lambeth Council: parks play areas map",
+      "url": "https://gis.lambeth.gov.uk/arcgis/rest/services/LambethParksPlayAreas/MapServer"
+    }
+  ],
+  "checked": "2026-10-22",
+  "notConfirmed": "Play equipment and age ranges, toilets and parking.",
+  "photo": null
+}

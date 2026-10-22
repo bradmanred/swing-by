@@ -1,0 +1,32 @@
+{
+  "name": "St Matthew's Church Gardens Playground",
+  "region": "london",
+  "area": "Brixton",
+  "lat": 51.45944,
+  "lng": -0.11568,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "St Matthew's Church Gardens has play areas for under-7s and for 7 to 13-year-olds, according to GiGL, London's greenspace record.",
+  "nearby": [],
+  "operator": "Lambeth Council",
+  "sources": [
+    {
+      "label": "GiGL (Greenspace Information for Greater London): St Matthew's Church Gardens",
+      "url": "https://www.gigl.org.uk/park/OS_La_0246/"
+    },
+    {
+      "label": "Lambeth Council: parks play areas map",
+      "url": "https://gis.lambeth.gov.uk/arcgis/rest/services/LambethParksPlayAreas/MapServer"
+    }
+  ],
+  "checked": "2026-10-22",
+  "notConfirmed": "Play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
