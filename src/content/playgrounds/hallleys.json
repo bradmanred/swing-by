@@ -1,5 +1,5 @@
 {
-  "name": "Hall Leys Park Play Area",
+  "name": "Hall Leys Park Play Area and Splash Pad",
   "region": "derbyshire",
   "area": "Matlock",
   "lat": 53.137,
@@ -8,43 +8,27 @@
   "equipment": [
     "wp"
   ],
-  "access": [],
+  "access": [
+    "inc",
+    "sf"
+  ],
   "facilities": [
     "wc",
+    "bc",
     "cf"
   ],
   "opens": "",
-  "description": "Riverside park in Matlock town centre, run by Derbyshire Dales District Council, with a children's play area, a paddling pool (April to the end of September), a boating lake, toilets and a café with indoor and outdoor seating. Some facilities close in winter.",
-  "nearby": [
-    {
-      "type": "other",
-      "label": "Paddling pool, April to end of September"
-    },
-    {
-      "type": "other",
-      "label": "Boating lake"
-    },
-    {
-      "type": "cafe",
-      "label": "Park café"
-    },
-    {
-      "type": "parking",
-      "label": "Town centre car parks; nearest is Olde Englishe, off Dale Road"
-    },
-    {
-      "type": "transport",
-      "label": "Matlock station"
-    }
-  ],
+  "description": "Play area with some accessible play equipment and an interactive splash pad (open daily 10.30am to 5.30pm, April to September), in a town-centre park with wide level paths and a café. The main toilets by the Causeway Lane entrance have a separate accessible toilet and a baby changing toilet (8.30am to 5.30pm); there are more toilets inside the children's play area.",
+  "nearby": [],
   "sources": [
     {
-      "label": "Derbyshire Dales District Council: Hall Leys Park",
-      "url": "https://derbyshiredales.gov.uk/hallleyspark"
+      "label": "Derbyshire Dales District Council: Hall Leys Park, Matlock",
+      "url": "https://www.derbyshiredales.gov.uk/leisure/parks-and-open-spaces/hall-leys-park-matlock"
     }
   ],
-  "checked": "2026-10-20",
-  "notConfirmed": "Exact position, play equipment and age ranges, opening hours, baby change and parking charges.",
+  "checked": "2026-10-22",
+  "notConfirmed": "Exact position, age ranges, play equipment and parking.",
   "photo": null,
-  "operator": "Derbyshire Dales District Council"
+  "operator": "Derbyshire Dales District Council",
+  "babyChange": true
 }

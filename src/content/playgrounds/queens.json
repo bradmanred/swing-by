@@ -1,39 +1,33 @@
 {
-  "name": "Queen's Park Playground",
+  "name": "Queen's Park Junior and Toddler Play Areas",
   "region": "derbyshire",
   "area": "Chesterfield",
   "lat": 53.233,
   "lng": -1.44,
   "ages": [],
-  "equipment": [],
+  "equipment": [
+    "tr"
+  ],
   "access": [],
   "facilities": [
     "cf"
   ],
   "opens": "",
-  "description": "Play area in Chesterfield's main town park, run by Chesterfield Borough Council, with North Lodge café and a miniature train in the park. The play area was closed for repairs after flooding in early 2024, with the decking and sand replaced.",
-  "nearby": [
-    {
-      "type": "cafe",
-      "label": "North Lodge café"
-    },
-    {
-      "type": "other",
-      "label": "Miniature train"
-    }
-  ],
+  "description": "Junior and toddler play areas in Queen's Park, one of Chesterfield's borough parks, which also has a miniature train, a café and a conservatory. The council lists both as locally equipped areas for play.",
+  "nearby": [],
   "sources": [
     {
-      "label": "Chesterfield Borough Council: Queen's Park",
-      "url": "https://chesterfield.gov.uk/explore-chesterfield/parks-and-green-spaces/parks/parks-and-play-areas/queens-park"
+      "label": "Chesterfield Borough Council: parks and play areas",
+      "url": "https://www.chesterfield.gov.uk/explore-chesterfield/parks-and-green-spaces/parks/parks-and-play-areas"
     },
     {
-      "label": "Derbyshire Times: Queen's Park play area damaged by flood (Jan 2024)",
-      "url": "https://derbyshiretimes.co.uk/news/people/play-area-in-chesterfields-queens-park-damaged-by-flood-set-to-be-closed-for-6-weeks-4494339"
+      "label": "Chesterfield Borough Council: Queen's Park play areas",
+      "url": "https://www.chesterfield.gov.uk/explore-chesterfield/parks-and-green-spaces/parks/parks-and-play-areas/queens-park/play-areas/"
     }
   ],
-  "checked": "2026-10-20",
-  "notConfirmed": "Exact position, play equipment and age ranges, opening hours, toilets, train season and parking.",
+  "checked": "2026-10-22",
+  "notConfirmed": "Exact position, age ranges, play equipment, opening hours, toilets and parking.",
   "photo": null,
-  "operator": "Chesterfield Borough Council"
+  "operator": "Chesterfield Borough Council",
+  "size": "medium"
 }
