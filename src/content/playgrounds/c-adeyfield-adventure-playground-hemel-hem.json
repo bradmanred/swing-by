@@ -2,8 +2,8 @@
   "name": "Adeyfield Adventure Playground",
   "region": "herts",
   "area": "Hemel Hempstead",
-  "lat": 51.75075,
-  "lng": -0.46011,
+  "lat": 51.75319,
+  "lng": -0.46239,
   "ages": [
     "7-12",
     "teens"
@@ -29,6 +29,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

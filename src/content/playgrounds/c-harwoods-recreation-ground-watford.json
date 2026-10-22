@@ -2,8 +2,8 @@
   "name": "Harwoods Recreation Ground",
   "region": "herts",
   "area": "Watford",
-  "lat": 51.64806,
-  "lng": -0.40751,
+  "lat": 51.64768,
+  "lng": -0.40814,
   "ages": [],
   "equipment": [
     "ad"
@@ -21,6 +21,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

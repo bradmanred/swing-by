@@ -2,8 +2,8 @@
   "name": "East Drive Recreation Ground",
   "region": "herts",
   "area": "Watford",
-  "lat": 51.68312,
-  "lng": -0.39848,
+  "lat": 51.68311,
+  "lng": -0.3971,
   "ages": [],
   "equipment": [],
   "access": [],
@@ -19,6 +19,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

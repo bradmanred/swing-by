@@ -2,8 +2,8 @@
   "name": "Yukon Close Play Area",
   "region": "herts",
   "area": "Turnford",
-  "lat": 51.72361,
-  "lng": -0.02898,
+  "lat": 51.72411,
+  "lng": -0.0292,
   "ages": [
     "3-6",
     "7-12"
@@ -27,6 +27,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

@@ -2,8 +2,8 @@
   "name": "Goffs Lane Play Area",
   "region": "herts",
   "area": "Cheshunt",
-  "lat": 51.70655,
-  "lng": -0.05087,
+  "lat": 51.70627,
+  "lng": -0.05426,
   "ages": [
     "3-6",
     "7-12",
@@ -25,9 +25,13 @@
     {
       "label": "Borough of Broxbourne Council: Goffs Lane Play Area",
       "url": "https://www.broxbourne.gov.uk/directory-record/630583/goffs-lane"
+    },
+    {
+      "label": "Broxbourne Council's what3words location for the play area: ///oddly.carry.spicy",
+      "url": "https://what3words.com/oddly.carry.spicy"
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Opening hours, toilets and parking.",
   "photo": null
 }

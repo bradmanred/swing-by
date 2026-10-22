@@ -2,8 +2,8 @@
   "name": "Beacon Road Park Play Area",
   "region": "herts",
   "area": "Ware",
-  "lat": 51.8181,
-  "lng": -0.02127,
+  "lat": 51.81798,
+  "lng": -0.02177,
   "ages": [],
   "equipment": [],
   "access": [],
@@ -19,6 +19,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

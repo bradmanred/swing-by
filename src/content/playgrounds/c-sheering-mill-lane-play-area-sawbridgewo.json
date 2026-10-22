@@ -2,8 +2,8 @@
   "name": "Sheering Mill Lane Play Area",
   "region": "herts",
   "area": "Sawbridgeworth",
-  "lat": 51.8118,
-  "lng": 0.15235,
+  "lat": 51.81149,
+  "lng": 0.15331,
   "ages": [
     "under-3",
     "7-12"
@@ -31,6 +31,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

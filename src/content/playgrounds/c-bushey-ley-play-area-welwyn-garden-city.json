@@ -3,7 +3,7 @@
   "region": "herts",
   "area": "Welwyn Garden City",
   "lat": 51.79508,
-  "lng": -0.17805,
+  "lng": -0.177,
   "ages": [
     "under-3"
   ],
@@ -30,7 +30,7 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null,
   "size": "large"
 }

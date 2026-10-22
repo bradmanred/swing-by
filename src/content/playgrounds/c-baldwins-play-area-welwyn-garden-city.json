@@ -2,8 +2,8 @@
   "name": "Baldwins Play Area",
   "region": "herts",
   "area": "Welwyn Garden City",
-  "lat": 51.79948,
-  "lng": -0.1739,
+  "lat": 51.80016,
+  "lng": -0.17147,
   "ages": [
     "under-3"
   ],
@@ -24,7 +24,7 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null,
   "size": "small"
 }

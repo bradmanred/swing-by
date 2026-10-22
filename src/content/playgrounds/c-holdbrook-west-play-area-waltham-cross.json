@@ -2,8 +2,8 @@
   "name": "Holdbrook West Play Area",
   "region": "herts",
   "area": "Waltham Cross",
-  "lat": 51.68367,
-  "lng": -0.01988,
+  "lat": 51.6852,
+  "lng": -0.0209,
   "ages": [
     "under-3"
   ],
@@ -23,9 +23,13 @@
     {
       "label": "Borough of Broxbourne Council: Holdbrook West Play Area",
       "url": "https://www.broxbourne.gov.uk/directory-record/630590/holdbrook-west"
+    },
+    {
+      "label": "Broxbourne Council's what3words location for the play area: ///exist.rounds.full",
+      "url": "https://what3words.com/exist.rounds.full"
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Opening hours, toilets and parking.",
   "photo": null
 }
