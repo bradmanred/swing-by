@@ -47,6 +47,11 @@ Don't use Google Maps or Google Places to find or place playgrounds. Their terms
 - `notConfirmed` lists anything the sources don't say: equipment, ages, toilets, parking, exact position.
 - Don't guess equipment or ages. Leave them empty if the source doesn't say.
 
-## 4. In the pull request
+## 4. Toilets and baby change
+
+- If an official source lists toilets, add `wc` to `facilities`. Then look for baby change on the same pages: set `"babyChange": true` if they say there is baby change, `false` only if they say there isn't, and leave it out if they don't say.
+- Nearest toilets for every playground come from the Toilet Map's open data (CC BY 4.0) and live in `src/data/toilets.json`. Don't edit that file by hand. The "Update nearest toilets" workflow reruns `scripts/nearest-toilets.mjs` whenever playground files change on any branch, and commits the result to that branch, so a pull request for a new area picks up its toilets automatically. Check the workflow ran before merging. To run it yourself: `node scripts/nearest-toilets.mjs` (or `--csv <file>` with a CSV downloaded from toiletmap.org.uk/dataset).
+
+## 5. In the pull request
 
 Say which source types you checked for each district and which you couldn't check, so the next person knows where the gaps might be. The pull request template has a checklist for this.

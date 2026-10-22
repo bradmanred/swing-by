@@ -51,6 +51,17 @@ try {
     await ctx.close();
   }
 
+  {
+    // Every playground page has a Toilets section; ones with toilets say whether there's baby change.
+    const ctx = await browser.newContext();
+    const page = await ctx.newPage();
+    await page.goto(BASE + '/playgrounds/c-howard-park-play-area-letchworth-garden-/');
+    if ((await page.locator('#loos + [data-baby-change]').getAttribute('data-baby-change')) !== 'yes') fail('Howard Park should show baby change: yes');
+    await page.goto(BASE + '/playgrounds/c-gosse-close-play-area-hoddesdon/');
+    if ((await page.locator('#loos + [data-baby-change]').getAttribute('data-baby-change')) !== 'nearby') fail('a playground without toilets should show the nearest-toilets block');
+    await ctx.close();
+  }
+
   const ctx = await browser.newContext();
   const page = await ctx.newPage();
   await page.goto(BASE + '/');

@@ -1,0 +1,35 @@
+# Keeps src/data/toilets.json (nearest public toilets to each playground, from the Toilet Map) up to date.
+# Runs when playgrounds are added or moved, once a month for new or changed toilets, and on demand.
+# On main it commits the refreshed file straight to main (which redeploys the site). On other branches,
+# such as a pull request adding a new area, it commits to that branch so the PR includes the toilets.
+name: Update nearest toilets
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 4 3 * *'
+  push:
+    paths:
+      - 'src/content/playgrounds/**'
+      - 'scripts/nearest-toilets.mjs'
+permissions:
+  contents: write
+concurrency:
+  group: toilets-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  update:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/nearest-toilets.mjs
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- src/data/toilets.json; then echo "No change"; exit 0; fi
+          git config user.name "swing-by-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/toilets.json
+          git commit -m "Update nearest toilets from the Toilet Map"
+          git push
