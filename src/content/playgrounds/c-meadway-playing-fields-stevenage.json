@@ -2,8 +2,8 @@
   "name": "Meadway Playing Fields",
   "region": "herts",
   "area": "Stevenage",
-  "lat": 51.90801,
-  "lng": -0.2231,
+  "lat": 51.9078,
+  "lng": -0.22365,
   "ages": [
     "3-6",
     "7-12"
@@ -22,6 +22,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

@@ -2,8 +2,8 @@
   "name": "Barton Way Play Area",
   "region": "herts",
   "area": "Croxley Green",
-  "lat": 51.64981,
-  "lng": -0.44564,
+  "lat": 51.6489,
+  "lng": -0.44487,
   "ages": [
     "7-12",
     "teens"
@@ -32,6 +32,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

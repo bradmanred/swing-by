@@ -2,8 +2,8 @@
   "name": "Hornsfield Play Area",
   "region": "herts",
   "area": "Welwyn Garden City",
-  "lat": 51.80596,
-  "lng": -0.17258,
+  "lat": 51.80634,
+  "lng": -0.17224,
   "ages": [
     "under-3",
     "3-6",
@@ -30,7 +30,7 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null,
   "size": "large"
 }

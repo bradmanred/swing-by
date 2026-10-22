@@ -2,8 +2,8 @@
   "name": "Waltham Cross Playing Field Play Area and Skate Park",
   "region": "herts",
   "area": "Waltham Cross",
-  "lat": 51.68513,
-  "lng": -0.02659,
+  "lat": 51.68514,
+  "lng": -0.02838,
   "ages": [
     "3-6",
     "7-12",
@@ -26,9 +26,13 @@
     {
       "label": "Borough of Broxbourne Council: Waltham Cross Playing Field Play Area and Skate Park",
       "url": "https://www.broxbourne.gov.uk/directory-record/630607/waltham-cross-skate-park"
+    },
+    {
+      "label": "Broxbourne Council's what3words location for the play area: ///ashes.inform.keen",
+      "url": "https://what3words.com/ashes.inform.keen"
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Opening hours, toilets and parking.",
   "photo": null
 }

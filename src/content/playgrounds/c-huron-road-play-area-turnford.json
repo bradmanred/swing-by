@@ -2,8 +2,8 @@
   "name": "Huron Road Play Area",
   "region": "herts",
   "area": "Turnford",
-  "lat": 51.7224,
-  "lng": -0.03167,
+  "lat": 51.72228,
+  "lng": -0.03041,
   "ages": [
     "under-3"
   ],
@@ -18,9 +18,13 @@
     {
       "label": "Borough of Broxbourne Council: Huron Road Play Area",
       "url": "https://www.broxbourne.gov.uk/directory-record/630592/huron-road"
+    },
+    {
+      "label": "Broxbourne Council's what3words location for the play area: ///gosh.silk.glitz",
+      "url": "https://what3words.com/gosh.silk.glitz"
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Opening hours, toilets and parking.",
   "photo": null
 }

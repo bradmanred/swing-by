@@ -2,8 +2,8 @@
   "name": "Bush Spring Play Area",
   "region": "herts",
   "area": "Baldock",
-  "lat": 51.99105,
-  "lng": -0.17619,
+  "lat": 51.9914,
+  "lng": -0.1754,
   "ages": [
     "under-3",
     "3-6",
@@ -25,6 +25,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

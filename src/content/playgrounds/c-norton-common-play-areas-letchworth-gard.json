@@ -2,8 +2,8 @@
   "name": "Norton Common Play Areas",
   "region": "herts",
   "area": "Letchworth Garden City",
-  "lat": 51.98451,
-  "lng": -0.22435,
+  "lat": 51.9843,
+  "lng": -0.22434,
   "ages": [
     "under-3",
     "3-6",
@@ -27,6 +27,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

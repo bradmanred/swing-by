@@ -2,8 +2,8 @@
   "name": "Drovers Way Play Area",
   "region": "herts",
   "area": "Hatfield",
-  "lat": 51.77221,
-  "lng": -0.22002,
+  "lat": 51.77139,
+  "lng": -0.2212,
   "ages": [
     "under-3"
   ],
@@ -28,6 +28,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

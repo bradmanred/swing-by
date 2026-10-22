@@ -2,8 +2,8 @@
   "name": "Gosse Close Play Area",
   "region": "herts",
   "area": "Hoddesdon",
-  "lat": 51.77613,
-  "lng": -0.0186,
+  "lat": 51.77529,
+  "lng": -0.0195,
   "ages": [
     "3-6",
     "7-12"
@@ -24,9 +24,13 @@
     {
       "label": "Borough of Broxbourne Council: Gosse Close Play Area",
       "url": "https://www.broxbourne.gov.uk/directory-record/630585/gosse-close"
+    },
+    {
+      "label": "Broxbourne Council's what3words location for the play area: ///losses.navy.poetic",
+      "url": "https://what3words.com/losses.navy.poetic"
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Opening hours, toilets and parking.",
   "photo": null
 }

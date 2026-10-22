@@ -2,8 +2,8 @@
   "name": "Quantock Close Play Area",
   "region": "herts",
   "area": "Great Ashby",
-  "lat": 51.92884,
-  "lng": -0.16123,
+  "lat": 51.92952,
+  "lng": -0.16061,
   "ages": [
     "under-3",
     "3-6",
@@ -23,6 +23,6 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }
