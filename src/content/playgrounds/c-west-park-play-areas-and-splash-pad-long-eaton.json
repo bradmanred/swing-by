@@ -1,0 +1,30 @@
+{
+  "name": "West Park Play Areas and Splash Pad",
+  "region": "derbyshire",
+  "area": "Long Eaton",
+  "lat": 52.89696,
+  "lng": -1.2924,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "wp"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "West Park has a junior play area, a toddler play area and a splash pad, plus a skate park, a multi-use games area, outdoor gym equipment and a trials bike area. Postcode NG10 4AA.",
+  "nearby": [],
+  "operator": "Erewash Borough Council",
+  "sources": [
+    {
+      "label": "Erewash Borough Council: play areas",
+      "url": "https://www.erewash.gov.uk/your-borough/play-areas"
+    }
+  ],
+  "checked": "2026-10-22",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}

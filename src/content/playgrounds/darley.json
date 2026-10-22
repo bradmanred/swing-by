@@ -1,29 +1,27 @@
 {
-  "name": "Darley Park Play Area",
+  "name": "Darley Park Playground",
   "region": "derbyshire",
-  "area": "Darley Abbey, Derby",
+  "area": "Derby",
   "lat": 52.9405,
   "lng": -1.48,
   "ages": [],
   "equipment": [],
   "access": [],
-  "facilities": [],
-  "opens": "",
-  "description": "Riverside park in Darley Abbey with a play area run by Derby City Council. In 2025 the council planned to rebuild the play area as a heritage-themed space, subject to a National Lottery bid.",
-  "nearby": [
-    {
-      "type": "other",
-      "label": "Riverside walk"
-    }
+  "facilities": [
+    "wc",
+    "cf"
   ],
+  "opens": "",
+  "description": "Children's playground in Darley Park, which has a café with a level entrance, toilets including an accessible toilet, and paths through part of the park.",
+  "nearby": [],
   "sources": [
     {
-      "label": "Derby City Council: improvement project planned for Darley Park (March 2025)",
-      "url": "https://derby.gov.uk/news/2025/march/improvement-project-planned-for-darley-park"
+      "label": "Derby City Council: Darley Park",
+      "url": "https://www.inderby.org.uk/parks/derbys-parks-and-open-spaces/darley-park/"
     }
   ],
-  "checked": "2026-10-20",
-  "notConfirmed": "Whether the play area rebuild has happened, exact position, equipment, age ranges, opening hours, toilets, café and parking.",
+  "checked": "2026-10-22",
+  "notConfirmed": "Exact position, age ranges, play equipment, opening hours, baby change and parking.",
   "photo": null,
   "operator": "Derby City Council"
 }

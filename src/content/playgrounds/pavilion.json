@@ -9,40 +9,20 @@
     "3-6",
     "7-12"
   ],
-  "equipment": [
-    "sw",
-    "sl",
-    "cl",
-    "tr"
-  ],
+  "equipment": [],
   "access": [],
-  "facilities": [
-    "cf"
-  ],
+  "facilities": [],
   "opens": "",
-  "description": "Two outdoor play spaces in Buxton's Pavilion Gardens, open all year: a children's play area for younger ones with things to climb, hide in, crawl through and slide down, and an activity park for older children with swings, slides and climbing frames, next to a five-piece outdoor gym and a small ball court. There's also toddler soft play in the Pavilion Kitchen from 9.30am daily, and a miniature train.",
-  "nearby": [
-    {
-      "type": "cafe",
-      "label": "Pavilion Kitchen, with toddler soft play"
-    },
-    {
-      "type": "other",
-      "label": "Miniature train"
-    }
-  ],
+  "description": "Play area in the Pavilion Gardens, looked after by High Peak Borough Council, with a range of equipment for children aged 0 to 12.",
+  "nearby": [],
   "sources": [
-    {
-      "label": "Pavilion Gardens: children's activities",
-      "url": "https://paviliongardens.co.uk/visiting-pavilion-gardens-buxton/childrens-activities/"
-    },
     {
       "label": "High Peak Borough Council: Buxton play areas",
       "url": "https://www.highpeak.gov.uk/article/1590/Buxton-play-areas"
     }
   ],
-  "checked": "2026-10-20",
-  "notConfirmed": "Exact position, opening hours, toilets, baby change, train season and prices, and parking charges.",
+  "checked": "2026-10-22",
+  "notConfirmed": "Exact position, play equipment, opening hours, toilets, café and parking.",
   "photo": null,
   "operator": "High Peak Borough Council"
 }

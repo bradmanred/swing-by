@@ -1,0 +1,30 @@
+{
+  "name": "Derby Arboretum Playground",
+  "region": "derbyshire",
+  "area": "Derby",
+  "lat": 52.91071,
+  "lng": -1.47287,
+  "ages": [],
+  "equipment": [
+    "wp",
+    "cl"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "Large play area for all ages in England's first public park, with a big climbing boulder and a water play area.",
+  "nearby": [],
+  "operator": "Derby City Council",
+  "sources": [
+    {
+      "label": "Derby City Council: Derby Arboretum",
+      "url": "https://www.inderby.org.uk/parks/derbys-parks-and-open-spaces/derby-arboretum/"
+    }
+  ],
+  "checked": "2026-10-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, opening hours and parking.",
+  "photo": null
+}
