@@ -45,12 +45,16 @@ The site runs as a Cloudflare Worker that serves the built pages (see `wrangler.
    - Deploy command: `npx wrangler deploy`
    - Root directory: leave blank (`/`)
    - Build variable: `NODE_VERSION` = `22`
-4. Deploy. Your link will be `https://swing-by.<your-subdomain>.workers.dev`. Change `site` in `astro.config.mjs` and `base_url` and `site_url` in `public/admin/config.yml` to match.
+4. Deploy. The site is at https://swing-by.co.uk (and still at `https://swing-by.<your-subdomain>.workers.dev`).
+
+### The swing-by.co.uk domain
+
+The domain's DNS is on Cloudflare, in the same account as the Worker. `routes` in `wrangler.jsonc` attaches `swing-by.co.uk` and `www.swing-by.co.uk` to the Worker as custom domains, so each deploy creates the DNS records and certificates. `worker/index.js` redirects www to the bare domain. If you change the domain, update `routes`, `site` in `astro.config.mjs`, `base_url` and `site_url` in `public/admin/config.yml`, and the GitHub OAuth app's URLs.
 
 ## Turn on the content editor online
 
 1. On GitHub, go to Settings > Developer settings > OAuth Apps > New OAuth App.
-2. Set the homepage URL to your site link and the callback URL to `https://<your-site-link>/api/callback`.
+2. Set the homepage URL to `https://swing-by.co.uk` and the callback URL to `https://swing-by.co.uk/api/callback`.
 3. Copy the client ID, and generate a client secret.
 4. In the Worker's Settings > Variables and Secrets, add `GITHUB_CLIENT_ID` and `GITHUB_CLIENT_SECRET`. Make the secret a **Secret**; the client ID can be either. `wrangler.jsonc` has `keep_vars: true` so deploys don't delete them. Redeploy.
    - If signing in sends you to a GitHub page with `client_id=undefined` in the address, the Worker can't see `GITHUB_CLIENT_ID`: add it again.
