@@ -1,0 +1,28 @@
+name: Temporary OSM lookup
+on:
+  push:
+    branches: [tmp-osm-lookup2]
+    paths: ['.github/workflows/tmp-osm-lookup2.yml']
+permissions:
+  contents: write
+jobs:
+  look:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Surroundings of OSM way 280994404
+        run: |
+          Q='[out:json][timeout:60];way(280994404);out meta tags center;way(around:120,51.80189,-0.17069)["highway"]["name"];out tags center;is_in(51.80189,-0.17069);out tags;nwr(around:150,51.80189,-0.17069)["amenity"];out center tags;nwr(around:300,51.80189,-0.17069)["landuse"]["name"];out center tags;'
+          ok=no
+          for host in overpass-api.de overpass.private.coffee maps.mail.ru/osm/tools/overpass; do
+            if curl -sS -m 90 --data-urlencode "data=$Q" "https://$host/api/interpreter" -o out.json && python3 -c "import json;json.load(open('out.json'))"; then ok=$host; break; fi
+          done
+          cat > fmt.py <<'PY'
+          import json
+          for e in json.load(open('out.json'))['elements']:
+              c = e.get('center', e); t = e.get('tags', {})
+              print(e['type'], e['id'], e.get('timestamp', ''), e.get('user', ''), round(c.get('lat', 0), 5), round(c.get('lon', 0), 5), t)
+          PY
+          { echo "source: $ok"; python3 fmt.py || head -c 500 out.json; } > osm-lookup.txt
+          git config user.name swing-by-bot; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add osm-lookup.txt && git commit -m "OSM lookup result" && git push
