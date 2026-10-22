@@ -5,3 +5,4 @@
 - Run `npm run build` and `npm test` before opening a pull request.
 - House line: "See-saw you there!" Use it sparingly, as a friendly sign-off. It currently appears once, under the directions button on playground pages. Don't add it anywhere else without a good reason.
 - Parent photos are moderated: never show an upload until a moderator approves it at /moderate/, and keep the "no people in photos" guidelines next to the upload form.
+- Toilets: playgrounds with toilets get a baby change flag (`babyChange`, from official sources only). Every playground also shows its nearest public toilets from `src/data/toilets.json`, which the "Update nearest toilets" workflow regenerates. When adding an area, make sure that workflow has run on the branch (see `docs/finding-playgrounds.md`).

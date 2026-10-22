@@ -11,7 +11,8 @@
   "access": [],
   "facilities": [
     "wc",
-    "cf"
+    "cf",
+    "bc"
   ],
   "opens": "",
   "description": "Play areas in a central park with a summer paddling pool and splash fountains, public toilets and a refreshment kiosk.",
@@ -24,6 +25,7 @@
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
-  "photo": null
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours and parking.",
+  "photo": null,
+  "babyChange": true
 }

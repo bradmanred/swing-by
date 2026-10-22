@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { allParks, clientPark, fmtDate, hoursText, km, L, regionName, ICON, type Park } from '../../lib/parks';
+import { allParks, clientPark, looUrl, miles, toiletInfo, toiletSource, fmtDate, hoursText, km, L, regionName, ICON, type Park } from '../../lib/parks';
 import { art, fmtMiles } from '../../lib/card';
 
 export async function getStaticPaths() {
@@ -17,6 +17,9 @@ const feats = (keys: string[], names: Record<string, string>) => keys.filter((k)
 const eq = feats(p.equipment, L.equipment);
 const acc = feats(p.access, L.access);
 const fac = feats(p.facilities, L.facilities);
+const loos = toiletInfo(p);
+const dist = (m: number) => (m < 1000 ? `${Math.round(m / 10) * 10} m` : miles(m / 1000));
+const bcWord = (v: boolean | null) => (v === true ? 'with baby change' : v === false ? 'no baby change' : 'baby change not known');
 const spots = [
   { lat: p.lat, lng: p.lng, label: p.name, kind: 'park' },
   ...p.nearby.filter((n) => n.lat != null && n.lng != null).map((n) => ({ lat: n.lat!, lng: n.lng!, label: `${L.nearby[n.type] ?? 'Nearby'}: ${n.label}`, kind: L.nearby[n.type] ? n.type : 'other' })),
@@ -61,6 +64,33 @@ const dirs = `https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.ln
       <section aria-labelledby="hours">
         <h2 id="hours">Opening times</h2>
         <p style="margin-top:10px">{hoursText(p)} <span data-dusk></span></p>
+      </section>
+      <section aria-labelledby="loos">
+        <h2 id="loos">Toilets</h2>
+        {loos.onSite ? (
+          <div class="facts" style="margin-top:10px" data-baby-change={loos.babyChange === true ? 'yes' : loos.babyChange === false ? 'no' : 'unknown'}>
+            <p><span aria-hidden="true">🚻</span> Toilets here.{' '}
+              {loos.babyChange === true && <><span aria-hidden="true">🍼</span> Baby change: yes.</>}
+              {loos.babyChange === false && <>No baby change.</>}
+              {loos.babyChange == null && (loos.mapBabyChange
+                ? <>Baby change: {loos.mapBabyChange.has ? 'yes' : 'no'}, according to the <a href={looUrl(loos.mapBabyChange.loo)} rel="noopener">Toilet Map</a>.</>
+                : <>Baby change not confirmed yet.</>)}
+            </p>
+          </div>
+        ) : (
+          <div class="facts" style="margin-top:10px" data-baby-change="nearby">
+            <p>No toilets listed at this playground.</p>
+            {loos.nearest ? (
+              <ul>
+                <li>Nearest public toilets: <a href={looUrl(loos.nearest)} rel="noopener">{loos.nearest.name}</a>, {dist(loos.nearest.m)} away ({bcWord(loos.nearest.babyChange)}).</li>
+                {loos.nearestBabyChange && (
+                  <li>Nearest with baby change: <a href={looUrl(loos.nearestBabyChange)} rel="noopener">{loos.nearestBabyChange.name}</a>, {dist(loos.nearestBabyChange.m)} away.</li>
+                )}
+              </ul>
+            ) : loos.known && <p>We don't know of public toilets within 2 miles.</p>}
+            {loos.known && <p class="hint">Straight-line distance. Toilets from the <a href={toiletSource.url} rel="noopener">Toilet Map</a> ({toiletSource.licence}); check opening times there before you rely on them.</p>}
+          </div>
+        )}
       </section>
       {p.nearby.length > 0 && (
         <section aria-labelledby="nearby">

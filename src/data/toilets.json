@@ -1,0 +1,12 @@
+{
+ "source": {
+  "name": "Toilet Map",
+  "url": "https://www.toiletmap.org.uk/dataset",
+  "licence": "CC BY 4.0",
+  "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "note": "Nearest toilets worked out by Swing By from the Toilet Map data.",
+  "export": "not run yet"
+ },
+ "toilets": 0,
+ "parks": {}
+}
