@@ -6,7 +6,10 @@ def get(u):
     with urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=60) as r: return r.read().decode("utf-8", "ignore")
 links = []
 for p in range(1, 12):
-    h = get(B + base + (f"?page={p}" if p > 1 else ""))
+    try:
+        h = get(B + base + (f"?page={p}" if p > 1 else ""))
+    except Exception as e:
+        print("index fail", p, e); json.dump({"index_error": str(e)}, open("tmp/mcr.json", "w")); break
     m = [urllib.parse.urljoin(B, x.split("?")[0]) for x in re.findall(r'href="([^"]*all-parks-playgrounds-and-open-spaces/[a-z0-9][^"]*)"', h)]
     new = [x for x in m if x not in links]
     if not new: break
@@ -17,7 +20,7 @@ for u in links:
     except Exception as e: out.append({"url": u, "err": str(e)}); continue
     s = re.sub(r"(?s)<(script|style|nav|header|footer)[^>]*>.*?</\1>", " ", h)
     t = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", s)))
-    name = html.unescape(re.search(r"<h1[^>]*>(.*?)</h1>", h, re.S).group(1)).strip() if "<h1" in h else ""
+    mm = re.search(r"<h1[^>]*>(.*?)</h1>", h, re.S); name = html.unescape(mm.group(1)).strip() if mm else ""
     addr = (re.search(r"Address (.*?) (Opening times|Facilities|Telephone|Location|Report)", t) or [None, ""])[1]
     age = (re.search(r"Play area \(age group\) (.{0,40}?years)", t) or [None, ""])[1]
     geo = re.search(r"(5[0-9]\.\d{4,})[\"']?\s*,\s*[\"']?(-[0-9]\.\d{4,})", h)

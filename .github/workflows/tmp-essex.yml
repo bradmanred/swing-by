@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils || pip install pdfminer.six
-      - run: python3 tmp/mcr.py
+      - run: python3 tmp/mcr.py || true
       - run: |
           git config user.name swing-by-bot; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add tmp/mcr.json; git commit -m "Fetched" && git push
