@@ -84,8 +84,8 @@ export function createMap(
         const b = document.createElement('button');
         b.type = 'button';
         b.className = 'pin';
-        b.innerHTML = `<span aria-hidden="true">${i + 1}</span>`;
-        b.setAttribute('aria-label', `${i + 1}: ${p.n}. Go to its card.`);
+        b.innerHTML = `<span aria-hidden="true">${i + 1}</span>${p.pay ? '<span class="pin-pay" aria-hidden="true">£</span>' : ''}`;
+        b.setAttribute('aria-label', `${i + 1}: ${p.n}${p.pay ? ', paid entry' : ''}. Go to its card.`);
         b.addEventListener('click', () => onPick(p.id));
         return new maplibregl.Marker({ element: b, anchor: 'bottom' }).setLngLat([p.lng, p.lat]).addTo(map);
       });
@@ -93,8 +93,9 @@ export function createMap(
         const b = document.createElement('button');
         b.type = 'button';
         b.className = 'pin-dot';
-        b.setAttribute('aria-label', `${p.n}. Go to its card.`);
-        b.title = p.n;
+        if (p.pay) b.innerHTML = '<span class="pin-pay" aria-hidden="true">£</span>';
+        b.setAttribute('aria-label', `${p.n}${p.pay ? ', paid entry' : ''}. Go to its card.`);
+        b.title = p.pay ? `${p.n} (paid entry)` : p.n;
         b.addEventListener('click', () => onPick(p.id));
         pins.push(new maplibregl.Marker({ element: b, anchor: 'center' }).setLngLat([p.lng, p.lat]).addTo(map));
       }

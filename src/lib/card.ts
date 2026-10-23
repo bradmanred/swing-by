@@ -3,7 +3,7 @@ import labels from '../data/labels.json';
 
 export type ClientPark = {
   id: string; n: string; a: string; r: string; lat: number; lng: number;
-  ages: string[]; f: string[]; c: string | null; m: string | null; d: string; s?: string | null;
+  ages: string[]; f: string[]; c: string | null; m: string | null; d: string; s?: string | null; pay?: boolean;
 };
 
 const ICON: Record<string, string> = {
@@ -42,6 +42,9 @@ export function art(p: ClientPark) {
   return `<svg class="art" viewBox="0 0 360 170" aria-hidden="true" focusable="false"><rect width="360" height="170" fill="${sky}"/>${scene}</svg>`;
 }
 
+/** The £ marker for playgrounds that charge for entry. Shared with the detail page and lists. */
+export const PAY_CHIP = '<li class="pay"><span class="pound" aria-hidden="true">£</span> Paid entry</li>';
+
 export type CardPhoto = { url: string; credit: string | null };
 
 /** An approved parent photo if there is one, otherwise the illustration. */
@@ -54,6 +57,7 @@ export function cardHTML(p: ClientPark, o: { dist?: number; num?: number; mine?:
     .slice(0, 4)
     .map((k) => `<li><span aria-hidden="true">${ICON[k] ?? ''}</span> ${esc(NAMES[k])}</li>`);
   if (p.s && SIZES[p.s]) chips.unshift(`<li class="size size-${esc(p.s)}"><span class="size-dots" aria-hidden="true">${'●'.repeat(p.s === 'small' ? 1 : p.s === 'medium' ? 2 : 3)}</span> ${esc(SIZES[p.s])}</li>`);
+  if (p.pay) chips.unshift(PAY_CHIP);
   if (p.m) chips.push(`<li class="mem">${esc(MEM[p.m])}</li>`);
   if (o.mine?.r) chips.push(`<li class="rate">Your rating: ${o.mine.r} out of 5</li>`);
   const foot = p.c

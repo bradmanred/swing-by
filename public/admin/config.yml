@@ -151,7 +151,7 @@ collections:
           - { label: "National Trust", value: "nt" }
           - { label: "English Heritage", value: "eh" }
           - { label: "Historic Houses", value: "hh" }
-      - { label: Entry fee for non-members, name: fee, widget: string, required: false }
+      - { label: Entry fee, name: fee, widget: string, required: false, hint: "Fill this in whenever it costs money to get into the playground, or the place it's in (for members of an organisation, say who pays). It shows a £ Paid entry badge and lets people hide it with Free entry only. Leave it empty if entry is free; paid parking alone doesn't count." }
       - label: Sources
         name: sources
         widget: list

@@ -91,6 +91,9 @@ export const ICON: Record<string, string> = {
   inc: '♿', sf: '♿', sen: '✋', wc: '🚻', bc: '🍼', cf: '☕', fen: '🚧', sh: '🌳', fp: '🅿️',
 };
 
+/** Paid entry: the playground costs money to get into (or sits inside somewhere that does). Paid parking alone doesn't count. */
+export const paidEntry = (p: Park) => !!p.fee?.trim();
+
 /** The lightweight record the finder script needs in the browser. */
 export const clientPark = (p: Park) => ({
   id: p.id,
@@ -105,4 +108,5 @@ export const clientPark = (p: Park) => ({
   m: p.membership ?? null,
   d: p.description.slice(0, 140),
   s: p.size ?? null,
+  pay: paidEntry(p),
 });

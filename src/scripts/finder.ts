@@ -24,6 +24,7 @@ export function startFinder() {
     ages: new Set<string>(),
     sizes: new Set<string>(),
     loves: new Set<string>(),
+    freeOnly: store.get<boolean>('sb-free-only', false),
     sort: 'near',
     limit: PAGE,
     photos: {} as Record<string, CardPhoto>,
@@ -43,6 +44,7 @@ export function startFinder() {
       .filter((p) => !st.ages.size || p.ages.some((a) => st.ages.has(a)))
       .filter((p) => [...st.loves].every((k) => p.f.includes(k)))
       .filter((p) => !st.sizes.size || (p.s != null && st.sizes.has(p.s)))
+      .filter((p) => !st.freeOnly || !p.pay)
       .map((p) => ({ p, d: km(st.area ?? st.origin, p), m: mine[p.id] }));
     if (st.sort === 'new') rows = rows.filter((x) => !x.m?.v);
     rows.sort((a, b) => (st.sort === 'rated' ? (b.m?.r ?? 0) - (a.m?.r ?? 0) || a.d - b.d : a.d - b.d));
@@ -62,7 +64,7 @@ export function startFinder() {
       .slice(0, 5)
       .map(
         (x, i) =>
-          `<li><a href="/playgrounds/${esc(x.p.id)}/" data-num="${i + 1}"><span class="num" aria-hidden="true">${i + 1}</span><span>${esc(x.p.n)}</span><span class="dist">${fmtMiles(x.d)}</span></a></li>`,
+          `<li><a href="/playgrounds/${esc(x.p.id)}/" data-num="${i + 1}"><span class="num" aria-hidden="true">${i + 1}</span><span>${esc(x.p.n)}${x.p.pay ? ' <span class="pound" aria-hidden="true">£</span><span class="sr-only">, paid entry</span>' : ''}</span><span class="dist">${fmtMiles(x.d)}</span></a></li>`,
       )
       .join('') || '<li>No playgrounds match those choices. Try removing a filter.</li>';
     const more = $<HTMLButtonElement>('#more');
@@ -206,6 +208,16 @@ export function startFinder() {
       render();
     }),
   );
+  const free = document.querySelector<HTMLInputElement>('#free-only');
+  if (free) {
+    free.checked = st.freeOnly;
+    free.addEventListener('change', () => {
+      st.freeOnly = free.checked;
+      store.set('sb-free-only', st.freeOnly);
+      st.limit = PAGE;
+      render();
+    });
+  }
   document.querySelectorAll<HTMLButtonElement>('[data-love]').forEach((b) =>
     b.addEventListener('click', () => {
       const k = b.dataset.love!;
