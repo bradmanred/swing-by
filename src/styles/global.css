@@ -77,6 +77,10 @@ legend { font-weight: 700; padding: 0; margin-bottom: 8px; }
 .hero { background: var(--blue); color: var(--white); border: var(--line); border-radius: 28px; box-shadow: 8px 8px 0 var(--ink); padding: 24px; display: grid; gap: 24px; }
 @media (min-width: 900px) { .hero { grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); align-items: center; padding: 32px; } }
 .hero .lede { margin-top: 14px; font-size: 1.25rem; max-width: 46ch; }
+.hero .proof { list-style: none; margin: 16px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; font-weight: 700; font-size: 1rem; }
+.hero .proof li { display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border: 3px solid var(--ink); border-radius: 12px; background: var(--white); color: var(--ink); }
+.hero .proof .pound { background: var(--ink); color: var(--white); }
+.search .coverage { margin-top: 0; }
 .search { background: var(--white); color: var(--ink); border: var(--line); border-radius: var(--radius); padding: 20px; display: grid; gap: 16px; }
 .hero .counter { display: inline-flex; align-items: baseline; gap: 8px; margin: 0 0 16px; padding: 4px 16px; border: 3px solid var(--ink); border-radius: 999px; background: var(--yellow); color: var(--ink); font-weight: 700; }
 .hero .counter strong { font-family: var(--display); font-weight: 800; font-size: 1.625rem; line-height: 1.2; font-variant-numeric: tabular-nums; }
@@ -91,6 +95,8 @@ legend { font-weight: 700; padding: 0; margin-bottom: 8px; }
   .hero .counter { margin-bottom: 12px; padding: 2px 12px; font-size: 0.9375rem; white-space: nowrap; }
   .hero .counter strong { font-size: 1.375rem; }
   .hero .lede { margin-top: 10px; font-size: 1.0625rem; }
+  .hero .proof { gap: 6px; margin-top: 12px; font-size: 0.875rem; }
+  .hero .proof li { padding: 4px 10px; border-width: 2px; }
   .search { padding: 16px; gap: 14px; }
   .search .go .btn-red { font-size: 1.25rem; }
 }
