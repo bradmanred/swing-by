@@ -235,3 +235,11 @@ img.art { aspect-ratio: 360 / 170; object-fit: cover; background: var(--blue-sof
 .cookie-actions { display: flex; flex-wrap: wrap; gap: 10px; }
 .cookie-bar[hidden] { display: none; }
 .linkish { font: inherit; color: var(--blue); background: none; border: 0; padding: 0; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+
+/* Road trips: nearest junction finder */
+.junction-finder { display: grid; gap: 14px; margin-top: 20px; }
+.junction-finder label[for='jf-where'] { display: block; margin-bottom: 6px; font-weight: 700; }
+.junction-finder .hint { margin: 0; }
+.jf-best { display: grid; gap: 8px; padding: 14px 16px; border: 3px solid var(--ink); border-radius: 16px; background: var(--yellow-soft); }
+.jf-best h3 { font-size: 1.5rem; }
+#jf-results:empty { display: none; }

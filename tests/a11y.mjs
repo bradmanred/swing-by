@@ -131,6 +131,13 @@ try {
   await page.goto(BASE + '/playgrounds/calke/');
   if (!(await page.getByText('Paid entry.').count())) fail('paid entry note missing on a playground with a fee');
 
+  // Road trips: a town finds its nearest junction and the playgrounds near it.
+  await page.goto(BASE + '/road-trips/');
+  await page.fill('#jf-where', 'St Albans');
+  await page.getByRole('button', { name: 'Find junctions' }).click();
+  await page.locator('#jf-best').waitFor({ timeout: 5000 }).catch(() => fail('road trips: no nearest junction shown'));
+  if (!(await page.locator('#jf-results .jf-best li').count())) fail('road trips: no playgrounds listed for the nearest junction');
+
   // Site search finds a park by name (including a missing space or a slip) and by town.
   for (const [q, want] of [['moneyhole', 'Moneyhole Lane Playing Fields Playground'], ['money hole lane', 'Moneyhole Lane Playing Fields Playground'], ['digswel', 'Digswell Playing Fields Play Area']]) {
     await page.goto(BASE + '/search/?q=' + encodeURIComponent(q));
