@@ -4,17 +4,18 @@ import { allParks } from '../lib/parks';
 
 const names = Object.fromEntries((await allParks()).map((p) => [p.id, `${p.name}, ${p.area}`]));
 ---
-<Base title="Check parent photos" description="Moderation for parent photos." analytics={false}>
+<Base title="Check photos" description="Moderation for parent photos." analytics={false}>
   <meta name="robots" content="noindex, nofollow" slot="head" />
   <div>
-    <h1>Check parent photos</h1>
-    <p style="margin-top:10px;max-width:60ch">Photos stay hidden until they're approved here. Reported photos come back here too.</p>
+    <h1>Check photos</h1>
+    <p style="margin-top:10px;max-width:60ch">Photos from parents, and openly licensed photos the weekly search found on Geograph and Wikimedia Commons, stay hidden until they're approved here. Reported photos come back here too.</p>
   </div>
   <div class="panel" style="max-width:720px">
     <h2 style="font-size:1.5rem">Before approving, check that the photo:</h2>
     <ul style="margin-top:10px;padding-left:20px;display:grid;gap:4px">
       <li>has <strong>no people in it at all</strong>, especially children, including in the background, reflections or at the edges</li>
-      <li>shows this playground (compare with its page if unsure)</li>
+      <li>shows this playground (compare with its page if unsure). Found photos can be of a nearby play area, so check the title and distance, and open the source if in doubt</li>
+      <li>is recent enough to look like the playground does now</li>
       <li>has no readable car number plates, house numbers or signs with personal details</li>
       <li>isn't blurry, rude or an advert</li>
     </ul>
@@ -46,7 +47,11 @@ const names = Object.fromEntries((await allParks()).map((p) => [p.id, `${p.name}
       key = sessionStorage.getItem('sb-mod') ?? '';
     } catch {}
 
-    type Item = { id: string; park: string; status: string; credit: string | null; report_count: number; created_at: string; url: string };
+    type Item = {
+      id: string; park: string; status: string; credit: string | null; report_count: number; created_at: string; url: string;
+      source?: string; source_url?: string | null; licence?: string | null; author?: string | null; title?: string | null; distance_m?: number | null;
+    };
+    const SOURCE: Record<string, string> = { geograph: 'Geograph', commons: 'Wikimedia Commons' };
 
     async function load() {
       msg.textContent = 'Loading…';
@@ -66,7 +71,11 @@ const names = Object.fromEntries((await allParks()).map((p) => [p.id, `${p.name}
         li.className = 'card';
         li.innerHTML = `<img alt="Photo sent for ${esc(names[it.park] ?? it.park)}" />
 <div class="body"><h3><a href="/playgrounds/${esc(it.park)}/" target="_blank" rel="noopener">${esc(names[it.park] ?? it.park)}</a></h3>
-<p class="meta">${it.status === 'reported' ? `<strong>Reported ${it.report_count} time${it.report_count === 1 ? '' : 's'}</strong> · ` : ''}Sent ${esc(it.created_at.slice(0, 16).replace('T', ' '))}${it.credit ? ` · Credit: ${esc(it.credit)}` : ''}</p>
+<p class="meta">${it.status === 'reported' ? `<strong>Reported ${it.report_count} time${it.report_count === 1 ? '' : 's'}</strong> · ` : ''}${
+          it.source && SOURCE[it.source]
+            ? `<strong>Found on ${SOURCE[it.source]}</strong>: "${esc(it.title ?? '')}" by ${esc(it.author ?? 'unknown')}, ${esc(it.licence ?? '')}${it.distance_m != null ? `, taken ${it.distance_m} m from the pin` : ''}. ${it.source_url ? `<a href="${esc(it.source_url)}" target="_blank" rel="noopener">See it at the source</a>` : ''}`
+            : `Sent by a parent ${esc(it.created_at.slice(0, 16).replace('T', ' '))}${it.credit ? ` · Credit: ${esc(it.credit)}` : ''}`
+        }</p>
 <div class="row"><button class="btn btn-blue" type="button" data-d="approve">Approve</button><button class="btn" type="button" data-d="reject">Reject and delete</button></div>
 <p class="hint" role="status"></p></div>`;
         list.append(li);
