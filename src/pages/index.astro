@@ -33,6 +33,7 @@ const loves = [
 ].filter(([k]) => data.some((p) => p.f.includes(k))); // a filter only shows once a playground has it
 const sizes = (['small', 'medium', 'large'] as const).map((k) => ({ k, label: k[0].toUpperCase() + k.slice(1), n: data.filter((p) => p.s === k).length }));
 const paidCount = data.filter((p) => p.pay).length;
+const memberCount = data.filter((p) => p.m).length;
 const ages = [
   ['under-3', 'Toddlers'],
   ['3-6', '3–6'],
@@ -40,18 +41,23 @@ const ages = [
   ['teens', 'Teens'],
 ];
 ---
-<Base title="Swing By" current="/">
+<Base title="Swing By" fullTitle="Swing By: find playgrounds near you, with toilets and baby change" current="/">
   <section class="hero" aria-labelledby="hero-title">
     <div>
       <p class="counter"><strong>{total}</strong> playgrounds and counting</p>
       <h1 id="hero-title">Where shall we play today?</h1>
-      <p class="lede">Playgrounds across {coveredText}, plus <a href="/memberships/" style="color:inherit">National Trust, English Heritage and Historic Houses play areas</a> around the UK, checked against council and operator websites.</p>
+      <p class="lede">Find a playground worth the trip, and know before you go: toilets, baby change, the swings they love, and whether it's free. Every one is checked against the council's or operator's own website.</p>
+      <ul class="proof" aria-label="What you'll know before you go">
+        <li><span aria-hidden="true">🚻</span> Toilets and baby change</li>
+        <li><span class="pound" aria-hidden="true">£</span> Free or paid, at a glance</li>
+        <li><span aria-hidden="true">✓</span> Checked against official sources</li>
+      </ul>
     </div>
     <form class="search" id="search" action="/playgrounds/" role="search" aria-label="Find playgrounds">
       <div>
         <label for="where">Town or postcode</label>
-        <input id="where" name="q" type="text" autocomplete="postal-code" value={start.name} aria-describedby="where-hint" />
-        <p class="hint" id="where-hint" aria-live="polite">Try a town such as Hitchin, or a postcode such as AL1 1BX.</p>
+        <input id="where" name="q" type="text" autocomplete="postal-code" value="" placeholder="Your town or postcode" aria-describedby="where-hint" />
+        <p class="hint" id="where-hint" aria-live="polite">Enter a town or postcode, like Derby or SW1A 1AA.</p>
         <div class="go">
           <button class="btn btn-yellow" type="button" id="locate"><span aria-hidden="true">📍</span> Near me</button>
           <button class="btn btn-red" type="submit">Let's go!</button>
@@ -69,6 +75,7 @@ const ages = [
           <p class="hint" id="free-hint">Hides the {paidCount} places marked <span class="pound" aria-hidden="true">£</span><span class="sr-only">with a pound sign</span>, which charge for entry.</p>
         </div>
       )}
+      <p class="hint coverage">Covering {coveredText}, plus {memberCount} National Trust, English Heritage and Historic Houses play areas across the UK.</p>
     </form>
   </section>
 
@@ -99,7 +106,7 @@ const ages = [
         <p class="nojs">The map needs JavaScript. The list of nearby parks works without it.</p>
       </div>
       <figcaption>
-        <span id="where-caption"><strong>Showing parks near {start.name}.</strong> Use "Near me" or enter a postcode to start from where you are.</span>
+        <span id="where-caption"><strong>Enter your town or postcode, or tap Near me,</strong> to see playgrounds near you. Until then, here's {start.name} as an example.</span>
         <button class="btn btn-yellow" type="button" id="change">Not right? Change</button>
       </figcaption>
     </figure>
@@ -116,7 +123,7 @@ const ages = [
 
   <section aria-labelledby="results-title">
     <div class="results-head">
-      <h2 id="results-title">Playgrounds near {start.name}</h2>
+      <h2 id="results-title">Playgrounds near {start.name}, as an example</h2>
       <label style="display:flex;gap:10px;align-items:center">Sort by
         <select id="sort">
           <option value="near">Closest</option>
@@ -131,15 +138,15 @@ const ages = [
   </section>
 
   <section class="tiles" aria-label="More ways to play">
-    <a class="tile y" href="/road-trips/"><strong><span aria-hidden="true">🚗</span> Long drive?</strong><span>Run-around stops within 5 minutes of a motorway junction.</span></a>
-    <a class="tile" href="/memberships/"><strong><span aria-hidden="true">🏰</span> Got a membership?</strong><span>National Trust, English Heritage and Historic Houses play areas.</span></a>
-    <a class="tile r" href="/my-parks/"><strong><span aria-hidden="true">🏅</span> My parks</strong><span>Tick off where you've been and rate it.</span></a>
+    <a class="tile y" href="/road-trips/"><strong><span aria-hidden="true">🚗</span> Long drive?</strong><span>Stretch their legs within 5 minutes of the motorway, with toilets nearby.</span></a>
+    <a class="tile" href="/memberships/"><strong><span aria-hidden="true">🏰</span> Got a membership?</strong><span>Make it work harder: play areas at {memberCount} places members get into free.</span></a>
+    <a class="tile r" href="/my-parks/"><strong><span aria-hidden="true">🏅</span> My parks</strong><span>Keep score: tick off every park you visit and rate the best.</span></a>
   </section>
 
   <section class="panel vote" aria-labelledby="vote-title">
     <div>
-      <h2 id="vote-title">Where should we go next?</h2>
-      <p>We check every playground against official sources, so we add one area at a time. Vote for yours and we'll start with the most wanted.</p>
+      <h2 id="vote-title">Not near you yet?</h2>
+      <p>We check every playground against official sources, so we add one area at a time. Tell us where to go next and we'll start with the most wanted.</p>
     </div>
     <form id="vote" action="/api/vote" method="post">
       <fieldset>

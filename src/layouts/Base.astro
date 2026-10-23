@@ -2,15 +2,15 @@
 import '../styles/global.css';
 import Analytics from '../components/Analytics.astro';
 import CookieBar from '../components/CookieBar.astro';
-interface Props { title: string; description?: string; current?: string; analytics?: boolean }
-const { title, description = 'Find a playground worth the trip. Checked against council and operator websites.', current, analytics = true } = Astro.props;
+interface Props { title: string; description?: string; current?: string; analytics?: boolean; fullTitle?: string }
+const { title, description = 'Find playgrounds near you, and see the toilets, baby change, equipment and entry costs before you go. Every playground is checked against official council and operator sources.', current, analytics = true, fullTitle } = Astro.props;
 const nav = [
   ['/', 'Find'],
   ['/road-trips/', 'Road trips'],
   ['/memberships/', 'Memberships'],
   ['/my-parks/', 'My parks'],
 ];
-const full = title === 'Swing By' ? title : `${title} | Swing By`;
+const full = fullTitle ?? (title === 'Swing By' ? title : `${title} | Swing By`);
 ---
 <!doctype html>
 <html lang="en-GB">
