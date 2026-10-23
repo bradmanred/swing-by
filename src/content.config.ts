@@ -1,6 +1,10 @@
 import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
+import regionsFile from './data/regions.json';
+
+// Region ids come from src/data/regions.json, so adding a region there is all it takes.
+const regionIds = regionsFile.regions.map((r) => r.id) as [string, ...string[]];
 
 const time = z.string().regex(/^(\d{2}:\d{2}|24h)?$/, 'Use HH:MM, 24h or leave blank');
 
@@ -8,7 +12,7 @@ const playgrounds = defineCollection({
   loader: glob({ pattern: '*.json', base: './src/content/playgrounds' }),
   schema: z.object({
     name: z.string(),
-    region: z.enum(['herts', 'london', 'derbyshire', 'devon']),
+    region: z.enum(regionIds),
     area: z.string(),
     lat: z.number().min(49.8).max(60.9),
     lng: z.number().min(-8.7).max(1.8),

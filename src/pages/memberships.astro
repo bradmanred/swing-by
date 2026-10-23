@@ -1,8 +1,15 @@
 ---
 import Base from '../layouts/Base.astro';
 import { allParks, L, regionName } from '../lib/parks';
+import regionsFile from '../data/regions.json';
 const parks = (await allParks()).filter((p) => p.membership);
-const groups = Object.entries(L.memberships).map(([k, name]) => ({ k, name, list: parks.filter((p) => p.membership === k) }));
+const order = regionsFile.regions.map((r) => r.id);
+const groups = Object.entries(L.memberships).map(([k, name]) => {
+  const list = parks.filter((p) => p.membership === k);
+  // Grouped by region, in the same order as the A to Z.
+  const byRegion = order.map((id) => ({ id, list: list.filter((p) => p.region === id) })).filter((g) => g.list.length);
+  return { k, name, list, byRegion };
+});
 ---
 <Base title="Memberships" current="/memberships/" description="Play areas at National Trust, English Heritage and Historic Houses places.">
   <h1>Use your membership</h1>
@@ -11,9 +18,17 @@ const groups = Object.entries(L.memberships).map(([k, name]) => ({ k, name, list
     <section aria-labelledby={`m-${g.k}`}>
       <h2 id={`m-${g.k}`}>{g.name}</h2>
       {g.list.length ? (
-        <ul class="facts" style="margin-top:10px">
-          {g.list.map((p) => <li><a href={`/playgrounds/${p.id}/`}>{p.name}</a>, {p.area}, {regionName(p.region)}{p.fee && <span class="hint"> · <span class="pound" aria-hidden="true">£</span> {p.fee}</span>}</li>)}
-        </ul>
+        <>
+          <p class="hint" style="margin-top:6px">{g.list.length} play areas.</p>
+          {g.byRegion.map((r) => (
+            <details style="margin-top:10px">
+              <summary><strong>{regionName(r.id)}</strong> <span class="hint">({r.list.length})</span></summary>
+              <ul class="facts" style="margin-top:10px">
+                {r.list.map((p) => <li><a href={`/playgrounds/${p.id}/`}>{p.name}</a>{p.area !== p.name && <>, {p.area}</>}{p.fee ? <span class="hint"> · <span class="pound" aria-hidden="true">£</span> {p.fee}</span> : <span class="hint"> · Free to visit</span>}</li>)}
+              </ul>
+            </details>
+          ))}
+        </>
       ) : <p class="hint" style="margin-top:10px">None listed yet.</p>}
     </section>
   ))}

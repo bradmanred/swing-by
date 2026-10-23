@@ -1,0 +1,28 @@
+{
+  "name": "Knightshayes Adventure Play",
+  "region": "devon",
+  "area": "Knightshayes",
+  "lat": 50.92342,
+  "lng": -3.48618,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "Adventure play at Knightshayes, as the National Trust lists it.",
+  "nearby": [],
+  "operator": "National Trust",
+  "membership": "nt",
+  "fee": "Non-members pay to visit: £18.00 adult, £9.00 child (5–17), under-5s free. National Trust members get in free.",
+  "sources": [
+    {
+      "label": "National Trust: Knightshayes",
+      "url": "https://www.nationaltrust.org.uk/visit/devon/knightshayes"
+    }
+  ],
+  "checked": "2026-10-23",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours and parking.",
+  "photo": null
+}

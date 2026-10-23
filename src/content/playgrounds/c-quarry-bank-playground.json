@@ -1,0 +1,28 @@
+{
+  "name": "Quarry Bank Playground",
+  "region": "north-west",
+  "area": "Quarry Bank",
+  "lat": 53.34811,
+  "lng": -2.24332,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "Playground at Quarry Bank, as the National Trust lists it.",
+  "nearby": [],
+  "operator": "National Trust",
+  "membership": "nt",
+  "fee": "Non-members pay to visit: £24.00 adult, £12.00 child (5–17), under-5s free. National Trust members get in free.",
+  "sources": [
+    {
+      "label": "National Trust: Quarry Bank",
+      "url": "https://www.nationaltrust.org.uk/visit/cheshire-greater-manchester/quarry-bank"
+    }
+  ],
+  "checked": "2026-10-23",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours and parking.",
+  "photo": null
+}
