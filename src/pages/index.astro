@@ -32,6 +32,7 @@ const loves = [
   ['wc', '🚻', 'Toilets'],
 ].filter(([k]) => data.some((p) => p.f.includes(k))); // a filter only shows once a playground has it
 const sizes = (['small', 'medium', 'large'] as const).map((k) => ({ k, label: k[0].toUpperCase() + k.slice(1), n: data.filter((p) => p.s === k).length }));
+const paidCount = data.filter((p) => p.pay).length;
 const ages = [
   ['under-3', 'Toddlers'],
   ['3-6', '3–6'],
@@ -62,6 +63,12 @@ const ages = [
           {ages.map(([v, l]) => <label class="chk"><input type="checkbox" name="age" value={v} /> {l}</label>)}
         </div>
       </fieldset>
+      {paidCount > 0 && (
+        <div class="free-only">
+          <label class="chk"><input type="checkbox" id="free-only" name="free" value="1" aria-describedby="free-hint" /> Free entry only</label>
+          <p class="hint" id="free-hint">Hides the {paidCount} places marked <span class="pound" aria-hidden="true">£</span><span class="sr-only">with a pound sign</span>, which charge for entry.</p>
+        </div>
+      )}
     </form>
   </section>
 
@@ -100,7 +107,7 @@ const ages = [
       <h2 id="near-title">Parks near you</h2>
       <ol class="nearlist" id="nearlist">
         {near.slice(0, 5).map(({ p, d }, i) => (
-          <li><a href={`/playgrounds/${p.id}/`}><span class="num" aria-hidden="true">{i + 1}</span><span>{p.n}</span><span class="dist">{fmtMiles(d)}</span></a></li>
+          <li><a href={`/playgrounds/${p.id}/`}><span class="num" aria-hidden="true">{i + 1}</span><span>{p.n}{p.pay && <> <span class="pound" aria-hidden="true">£</span><span class="sr-only">, paid entry</span></>}</span><span class="dist">{fmtMiles(d)}</span></a></li>
         ))}
       </ol>
       <a href="#results-title" style="margin-top:auto;font-weight:700">See all results</a>

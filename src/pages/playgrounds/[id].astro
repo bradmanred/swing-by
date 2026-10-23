@@ -23,7 +23,7 @@ const bcWord = (v: boolean | null) => (v === true ? 'with baby change' : v === f
 const spots = [
   { lat: p.lat, lng: p.lng, label: p.name, kind: 'park' },
   ...p.nearby.filter((n) => n.lat != null && n.lng != null).map((n) => ({ lat: n.lat!, lng: n.lng!, label: `${L.nearby[n.type] ?? 'Nearby'}: ${n.label}`, kind: L.nearby[n.type] ? n.type : 'other' })),
-  ...others.map(({ x, d }) => ({ lat: x.lat, lng: x.lng, label: `${x.name}, ${fmtMiles(d)}`, kind: 'nearby', href: `/playgrounds/${x.id}/` })),
+  ...others.map(({ x, d }) => ({ lat: x.lat, lng: x.lng, label: `${x.name}, ${fmtMiles(d)}${x.fee ? ', paid entry' : ''}`, kind: 'nearby', href: `/playgrounds/${x.id}/` })),
 ];
 const fms = `https://www.fixmystreet.com/around?latitude=${p.lat}&longitude=${p.lng}`;
 const dirs = `https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.lng}`;
@@ -44,8 +44,10 @@ const dirs = `https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.ln
         )}
       </div>
       {!p.checked && <p class="warn" style="margin-top:20px">Unverified: these details haven't been checked against an official source yet.</p>}
-      {p.membership && (
-        <p class="panel" style="margin-top:20px;box-shadow:none">{L.memberships[p.membership]} property. {p.fee ?? 'Members get in free.'}</p>
+      {p.membership ? (
+        <p class="panel" style="margin-top:20px;box-shadow:none">{p.fee && <><span class="pound" aria-hidden="true">£</span> <strong>Paid entry.</strong> </>}{L.memberships[p.membership]} property. {p.fee ?? 'Members get in free.'}</p>
+      ) : p.fee && (
+        <p class="panel" style="margin-top:20px;box-shadow:none"><span class="pound" aria-hidden="true">£</span> <strong>Paid entry.</strong> {p.fee}</p>
       )}
       <section aria-labelledby="what">
         <h2 id="what" style="margin-top:24px">What's here</h2>
@@ -173,7 +175,7 @@ const dirs = `https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.ln
       <div class="panel">
         <h2 style="font-size:1.75rem">Also nearby</h2>
         <ul class="facts" style="margin-top:10px">
-          {others.map(({ x, d }) => <li><a href={`/playgrounds/${x.id}/`}>{x.name}</a>, {fmtMiles(d)}</li>)}
+          {others.map(({ x, d }) => <li><a href={`/playgrounds/${x.id}/`}>{x.name}</a>, {fmtMiles(d)}{x.fee && <>, <span class="pay-tag"><span class="pound" aria-hidden="true">£</span> paid entry</span></>}</li>)}
         </ul>
       </div>
     </aside>

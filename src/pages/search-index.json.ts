@@ -18,7 +18,7 @@ export async function GET() {
     r: regionName(p.region),
     o: p.operator ?? '',
     f: [...p.equipment, ...p.access, ...p.facilities].map((k) => L.equipment[k] ?? L.access[k] ?? L.facilities[k]).filter(Boolean),
-    m: [p.membership ? L.memberships[p.membership] : '', p.size ? L.sizes[p.size] : ''].filter(Boolean).join(' '),
+    m: [p.membership ? L.memberships[p.membership] : '', p.size ? L.sizes[p.size] : '', p.fee ? 'Paid entry' : ''].filter(Boolean).join(' '),
     d: p.description,
     c: !!p.checked,
   }));
