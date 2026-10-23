@@ -46,6 +46,7 @@ Don't use Google Maps or Google Places to find or place playgrounds. Their terms
 - `size` only when the council grades it: their own small/large categories, or the Fields in Trust grades, where LAP (Local Area for Play) = small, LEAP (Locally Equipped Area for Play) = medium and NEAP (Neighbourhood Equipped Area for Play) = large. Many councils publish these in their play strategy or play area list. Leave it out otherwise.
 - `notConfirmed` lists anything the sources don't say: equipment, ages, toilets, parking, exact position.
 - Don't guess equipment or ages. Leave them empty if the source doesn't say.
+- `fee`: fill it in whenever it costs money to get into the playground, or into the place it's in (a National Trust garden, an estate, an attraction). Say who pays and how much, from the operator's own page, for example "Included with house, garden or farmyard tickets" or "Paid entry for non-members". Any playground with a `fee` gets the £ Paid entry badge and is hidden by the "Free entry only" filter. Leave it out when entry is free; paid parking alone doesn't count (put that under `nearby`).
 
 ## 4. Toilets and baby change
 

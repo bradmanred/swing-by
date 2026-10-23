@@ -110,6 +110,10 @@ legend { font-weight: 700; padding: 0; margin-bottom: 8px; }
 .pin-dot { width: 20px; height: 20px; border-radius: 50%; background: var(--red); border: 3px solid var(--ink); padding: 0; cursor: pointer; }
 .pin-dot::after { content: ''; position: absolute; inset: -12px; } /* bigger tap area */
 .pin-dot { position: relative; }
+/* Paid entry: a £ badge on the pin, so it's clear on the map before anyone opens the card. */
+.pin .pin-pay, .pin-dot .pin-pay { position: absolute; display: grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; background: var(--yellow); color: var(--ink); border: 2px solid var(--ink); font-family: var(--body); font-weight: 800; font-size: 0.75rem; line-height: 1; }
+.pin .pin-pay { top: -8px; right: -8px; transform: rotate(45deg); }
+.pin-dot .pin-pay { top: -12px; right: -12px; width: 16px; height: 16px; font-size: 0.625rem; }
 .you { width: 26px; height: 26px; border-radius: 50%; background: var(--blue); border: 5px solid var(--white); box-shadow: 0 0 0 3px var(--ink); }
 .nearlist { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
 .nearlist a { display: grid; grid-template-columns: 40px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 10px 12px; border: 3px solid var(--ink); border-radius: 16px; color: var(--ink); text-decoration: none; font-weight: 700; }
@@ -130,6 +134,9 @@ img.art { aspect-ratio: 360 / 170; object-fit: cover; background: var(--blue-sof
 .chips li { padding: 4px 12px; border-radius: 10px; background: var(--blue-soft); }
 .chips .rate { background: var(--yellow-soft); }
 .chips .mem { background: #e4f3dc; }
+.chips .pay { background: var(--yellow-soft); }
+.pound { display: inline-grid; place-items: center; width: 1.4em; height: 1.4em; border-radius: 50%; background: var(--ink); color: var(--white); font-size: 0.85em; font-weight: 800; line-height: 1; }
+.pay-tag { white-space: nowrap; font-weight: 700; }
 .chips .unv { background: #ececf2; }
 .warn { padding: 10px 12px; border-radius: 12px; background: var(--red-soft); border: 3px solid var(--red); font-weight: 700; }
 .tiles { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); }
