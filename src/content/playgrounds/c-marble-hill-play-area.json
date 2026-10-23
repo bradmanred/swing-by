@@ -1,0 +1,32 @@
+{
+  "name": "Marble Hill Play Area",
+  "region": "london",
+  "area": "Twickenham",
+  "lat": 51.44708,
+  "lng": -0.31611,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "Play area with a mini trampoline, climbing area and willow tunnel in the park at Marble Hill. The grounds are free to visit.",
+  "nearby": [],
+  "operator": "English Heritage",
+  "membership": "eh",
+  "babyChange": true,
+  "sources": [
+    {
+      "label": "English Heritage: Marble Hill facilities",
+      "url": "https://www.english-heritage.org.uk/visit/places/marble-hill/plan-your-visit/facilities/"
+    },
+    {
+      "label": "English Heritage: the best play areas at English Heritage sites",
+      "url": "https://www.english-heritage.org.uk/visit/familydaysout/english-heritage-play-areas/"
+    }
+  ],
+  "checked": "2026-10-23",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours and parking.",
+  "photo": null
+}

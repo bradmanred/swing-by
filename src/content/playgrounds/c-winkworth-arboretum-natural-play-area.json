@@ -1,0 +1,28 @@
+{
+  "name": "Winkworth Arboretum Natural Play Area",
+  "region": "south-east",
+  "area": "Winkworth Arboretum",
+  "lat": 51.16161,
+  "lng": -0.58227,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "Natural play area at Winkworth Arboretum, as the National Trust lists it.",
+  "nearby": [],
+  "operator": "National Trust",
+  "membership": "nt",
+  "fee": "Non-members pay to visit: £15.00 adult, £7.50 child (5–17), under-5s free. National Trust members get in free.",
+  "sources": [
+    {
+      "label": "National Trust: Winkworth Arboretum",
+      "url": "https://www.nationaltrust.org.uk/visit/surrey/winkworth-arboretum"
+    }
+  ],
+  "checked": "2026-10-23",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours and parking.",
+  "photo": null
+}

@@ -30,7 +30,7 @@ collections:
       - { label: Hertfordshire, field: region, pattern: herts }
     fields:
       - { label: Name, name: name, widget: string }
-      - label: County
+      - label: County or region
         name: region
         widget: select
         options:
@@ -38,6 +38,19 @@ collections:
           - { label: London, value: london }
           - { label: Derbyshire, value: derbyshire }
           - { label: Devon, value: devon }
+          - { label: Essex, value: essex }
+          - { label: East of England, value: east }
+          - { label: South East, value: south-east }
+          - { label: South West, value: south-west }
+          - { label: West Midlands, value: west-midlands }
+          - { label: East Midlands, value: east-midlands }
+          - { label: Yorkshire, value: yorkshire }
+          - { label: North West, value: north-west }
+          - { label: North East, value: north-east }
+          - { label: Wales, value: wales }
+          - { label: Scotland, value: scotland }
+          - { label: Northern Ireland, value: northern-ireland }
+          - { label: Channel Islands, value: channel-islands }
       - { label: Town or area, name: area, widget: string }
       - { label: Latitude, name: lat, widget: number, value_type: float, hint: "For example 51.752. On openstreetmap.org, right-click the spot and choose Show address to see it. Don't copy positions from Google Maps." }
       - { label: Longitude, name: lng, widget: number, value_type: float, hint: "For example -0.353" }

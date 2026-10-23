@@ -1,0 +1,28 @@
+{
+  "name": "Tyntesfield Play Areas",
+  "region": "south-west",
+  "area": "Tyntesfield",
+  "lat": 51.44274,
+  "lng": -2.71851,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "Play areas at Tyntesfield, as the National Trust lists it.",
+  "nearby": [],
+  "operator": "National Trust",
+  "membership": "nt",
+  "fee": "Non-members pay to visit: £21.00 adult, £10.50 child (5–17), under-5s free. National Trust members get in free.",
+  "sources": [
+    {
+      "label": "National Trust: Tyntesfield",
+      "url": "https://www.nationaltrust.org.uk/visit/bath-bristol/tyntesfield"
+    }
+  ],
+  "checked": "2026-10-23",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours and parking.",
+  "photo": null
+}

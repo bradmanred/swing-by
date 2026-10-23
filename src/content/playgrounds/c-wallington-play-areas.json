@@ -1,0 +1,28 @@
+{
+  "name": "Wallington Play Areas",
+  "region": "north-east",
+  "area": "Wallington",
+  "lat": 55.15096,
+  "lng": -1.9584,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "Play areas at Wallington, as the National Trust lists it.",
+  "nearby": [],
+  "operator": "National Trust",
+  "membership": "nt",
+  "fee": "Non-members pay to visit: £22.00 adult, £11.00 child (5–17), under-5s free. National Trust members get in free.",
+  "sources": [
+    {
+      "label": "National Trust: Wallington",
+      "url": "https://www.nationaltrust.org.uk/visit/north-east/wallington"
+    }
+  ],
+  "checked": "2026-10-23",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours and parking.",
+  "photo": null
+}
