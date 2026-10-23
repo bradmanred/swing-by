@@ -2,7 +2,7 @@ name: Temporary fetch
 on:
   push:
     branches: [tmp-fetch]
-    paths: ['tmp/seeds.txt', 'tmp/crawl2.py', 'tmp/urls.txt', 'tmp/fetch.py', '.github/workflows/tmp-fetch.yml']
+    paths: ['tmp/pins2.py', 'tmp/sites2.py', '.github/workflows/tmp-fetch.yml']
 permissions:
   contents: write
 jobs:
@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils || pip install pdfminer.six
-      - run: python3 tmp/fetch.py && python3 tmp/crawl2.py
+      - run: python3 tmp/pins2.py
       - run: |
           git config user.name swing-by-bot; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add tmp/fetched tmp/crawl2; git commit -m "Fetched pages" && git push
+          git add tmp/pins2.json; git commit -m "Fetched pages" && git push
