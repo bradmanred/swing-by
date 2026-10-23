@@ -1,0 +1,32 @@
+{
+  "name": "Chiswick House and Gardens Playground",
+  "region": "london",
+  "area": "Chiswick",
+  "lat": 51.48446,
+  "lng": -0.25692,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "Children's adventure playground for under-7s near the Chiswick House café. The grounds are free to visit.",
+  "nearby": [],
+  "operator": "Chiswick House and Gardens Trust, with English Heritage",
+  "membership": "eh",
+  "babyChange": true,
+  "sources": [
+    {
+      "label": "English Heritage: Chiswick House and Gardens facilities",
+      "url": "https://www.english-heritage.org.uk/visit/places/chiswick-house/plan-your-visit/facilities/"
+    },
+    {
+      "label": "English Heritage: the best play areas at English Heritage sites",
+      "url": "https://www.english-heritage.org.uk/visit/familydaysout/english-heritage-play-areas/"
+    }
+  ],
+  "checked": "2026-10-23",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours and parking.",
+  "photo": null
+}

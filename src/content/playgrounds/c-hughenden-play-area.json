@@ -1,0 +1,28 @@
+{
+  "name": "Hughenden Play Area",
+  "region": "south-east",
+  "area": "Hughenden",
+  "lat": 51.65186,
+  "lng": -0.75736,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "Play area at Hughenden, as the National Trust lists it.",
+  "nearby": [],
+  "operator": "National Trust",
+  "membership": "nt",
+  "fee": "Non-members pay to visit: £18.00 adult, £9.00 child (5–17), under-5s free. National Trust members get in free.",
+  "sources": [
+    {
+      "label": "National Trust: Hughenden",
+      "url": "https://www.nationaltrust.org.uk/visit/oxfordshire-buckinghamshire-berkshire/hughenden"
+    }
+  ],
+  "checked": "2026-10-23",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours and parking.",
+  "photo": null
+}

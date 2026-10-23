@@ -229,6 +229,284 @@
           "lng": -3.239
         }
       ]
+    },
+    {
+      "id": "essex",
+      "name": "Essex",
+      "towns": [
+        {
+          "name": "Chelmsford",
+          "lat": 51.7356,
+          "lng": 0.4685
+        },
+        {
+          "name": "Colchester",
+          "lat": 51.8959,
+          "lng": 0.8919
+        }
+      ]
+    },
+    {
+      "id": "east",
+      "name": "East of England",
+      "towns": [
+        {
+          "name": "Cambridge",
+          "lat": 52.2053,
+          "lng": 0.1218
+        },
+        {
+          "name": "Norwich",
+          "lat": 52.6309,
+          "lng": 1.2974
+        },
+        {
+          "name": "Ipswich",
+          "lat": 52.0567,
+          "lng": 1.1482
+        }
+      ]
+    },
+    {
+      "id": "south-east",
+      "name": "South East",
+      "towns": [
+        {
+          "name": "Oxford",
+          "lat": 51.752,
+          "lng": -1.2577
+        },
+        {
+          "name": "Brighton",
+          "lat": 50.8225,
+          "lng": -0.1372
+        },
+        {
+          "name": "Canterbury",
+          "lat": 51.2802,
+          "lng": 1.0789
+        },
+        {
+          "name": "Guildford",
+          "lat": 51.2362,
+          "lng": -0.5704
+        },
+        {
+          "name": "Reading",
+          "lat": 51.4543,
+          "lng": -0.9781
+        }
+      ]
+    },
+    {
+      "id": "south-west",
+      "name": "South West",
+      "towns": [
+        {
+          "name": "Bristol",
+          "lat": 51.4545,
+          "lng": -2.5879
+        },
+        {
+          "name": "Bath",
+          "lat": 51.3811,
+          "lng": -2.359
+        },
+        {
+          "name": "Salisbury",
+          "lat": 51.0688,
+          "lng": -1.7945
+        },
+        {
+          "name": "Truro",
+          "lat": 50.2632,
+          "lng": -5.051
+        }
+      ]
+    },
+    {
+      "id": "west-midlands",
+      "name": "West Midlands",
+      "towns": [
+        {
+          "name": "Birmingham",
+          "lat": 52.4862,
+          "lng": -1.8904
+        },
+        {
+          "name": "Shrewsbury",
+          "lat": 52.7073,
+          "lng": -2.7553
+        },
+        {
+          "name": "Worcester",
+          "lat": 52.1936,
+          "lng": -2.2216
+        },
+        {
+          "name": "Hereford",
+          "lat": 52.0565,
+          "lng": -2.716
+        }
+      ]
+    },
+    {
+      "id": "east-midlands",
+      "name": "East Midlands",
+      "towns": [
+        {
+          "name": "Nottingham",
+          "lat": 52.9548,
+          "lng": -1.1581
+        },
+        {
+          "name": "Leicester",
+          "lat": 52.6369,
+          "lng": -1.1398
+        },
+        {
+          "name": "Lincoln",
+          "lat": 53.2307,
+          "lng": -0.5406
+        }
+      ]
+    },
+    {
+      "id": "yorkshire",
+      "name": "Yorkshire",
+      "towns": [
+        {
+          "name": "York",
+          "lat": 53.959,
+          "lng": -1.0815
+        },
+        {
+          "name": "Leeds",
+          "lat": 53.8008,
+          "lng": -1.5491
+        },
+        {
+          "name": "Sheffield",
+          "lat": 53.3811,
+          "lng": -1.4701
+        },
+        {
+          "name": "Harrogate",
+          "lat": 53.9921,
+          "lng": -1.5418
+        }
+      ]
+    },
+    {
+      "id": "north-west",
+      "name": "North West",
+      "towns": [
+        {
+          "name": "Manchester",
+          "lat": 53.4808,
+          "lng": -2.2426
+        },
+        {
+          "name": "Liverpool",
+          "lat": 53.4084,
+          "lng": -2.9916
+        },
+        {
+          "name": "Chester",
+          "lat": 53.1934,
+          "lng": -2.8931
+        },
+        {
+          "name": "Kendal",
+          "lat": 54.3281,
+          "lng": -2.7463
+        }
+      ]
+    },
+    {
+      "id": "north-east",
+      "name": "North East",
+      "towns": [
+        {
+          "name": "Newcastle upon Tyne",
+          "lat": 54.9783,
+          "lng": -1.6178
+        },
+        {
+          "name": "Durham",
+          "lat": 54.7753,
+          "lng": -1.5849
+        }
+      ]
+    },
+    {
+      "id": "wales",
+      "name": "Wales",
+      "towns": [
+        {
+          "name": "Cardiff",
+          "lat": 51.4816,
+          "lng": -3.1791
+        },
+        {
+          "name": "Wrexham",
+          "lat": 53.0462,
+          "lng": -2.9931
+        },
+        {
+          "name": "Bangor",
+          "lat": 53.2274,
+          "lng": -4.1293
+        }
+      ]
+    },
+    {
+      "id": "scotland",
+      "name": "Scotland",
+      "towns": [
+        {
+          "name": "Edinburgh",
+          "lat": 55.9533,
+          "lng": -3.1883
+        },
+        {
+          "name": "Glasgow",
+          "lat": 55.8642,
+          "lng": -4.2518
+        },
+        {
+          "name": "Perth",
+          "lat": 56.3952,
+          "lng": -3.4314
+        }
+      ]
+    },
+    {
+      "id": "northern-ireland",
+      "name": "Northern Ireland",
+      "towns": [
+        {
+          "name": "Belfast",
+          "lat": 54.5973,
+          "lng": -5.9301
+        },
+        {
+          "name": "Enniskillen",
+          "lat": 54.3438,
+          "lng": -7.6315
+        }
+      ]
+    },
+    {
+      "id": "channel-islands",
+      "name": "Channel Islands",
+      "towns": [
+        {
+          "name": "St Peter Port",
+          "lat": 49.4542,
+          "lng": -2.5363
+        }
+      ]
     }
   ]
 }

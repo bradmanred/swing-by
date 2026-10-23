@@ -1,0 +1,28 @@
+{
+  "name": "Wentworth Castle Gardens Play Area",
+  "region": "yorkshire",
+  "area": "Wentworth Castle Gardens",
+  "lat": 53.52579,
+  "lng": -1.51803,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "Play area at Wentworth Castle Gardens, as the National Trust lists it.",
+  "nearby": [],
+  "operator": "National Trust",
+  "membership": "nt",
+  "fee": "Non-members pay to visit: £6.50 adult, £3.25 child (5–17), under-5s free. National Trust members get in free.",
+  "sources": [
+    {
+      "label": "National Trust: Wentworth Castle Gardens",
+      "url": "https://www.nationaltrust.org.uk/visit/yorkshire/wentworth-castle-gardens"
+    }
+  ],
+  "checked": "2026-10-23",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours and parking.",
+  "photo": null
+}

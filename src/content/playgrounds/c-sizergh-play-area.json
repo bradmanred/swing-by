@@ -1,0 +1,32 @@
+{
+  "name": "Sizergh Play Area",
+  "region": "north-west",
+  "area": "Sizergh",
+  "lat": 54.28516,
+  "lng": -2.75556,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "Natural play area at Sizergh, one of the National Trust's picks of its best natural play areas.",
+  "nearby": [],
+  "operator": "National Trust",
+  "membership": "nt",
+  "fee": "Non-members pay to visit: £15.00 adult, £7.50 child (5–17), under-5s free. National Trust members get in free.",
+  "sources": [
+    {
+      "label": "National Trust: Sizergh",
+      "url": "https://www.nationaltrust.org.uk/visit/lake-district/sizergh"
+    },
+    {
+      "label": "National Trust: best natural play areas",
+      "url": "https://www.nationaltrust.org.uk/visit/family-friendly/best-natural-play-areas-for-kids"
+    }
+  ],
+  "checked": "2026-10-23",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours and parking.",
+  "photo": null
+}

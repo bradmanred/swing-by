@@ -1,0 +1,26 @@
+{
+  "name": "Newark Park Play Areas",
+  "region": "south-west",
+  "area": "Newark Park",
+  "lat": 51.63503,
+  "lng": -2.32073,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Play areas at Newark Park, as the National Trust lists it.",
+  "nearby": [],
+  "operator": "National Trust",
+  "membership": "nt",
+  "fee": "Non-members pay to visit. National Trust members get in free.",
+  "sources": [
+    {
+      "label": "National Trust: Newark Park",
+      "url": "https://www.nationaltrust.org.uk/visit/gloucestershire-cotswolds/newark-park"
+    }
+  ],
+  "checked": "2026-10-23",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
