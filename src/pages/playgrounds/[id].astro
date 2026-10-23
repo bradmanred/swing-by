@@ -32,6 +32,8 @@ const dirs = `https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.ln
   <div>
     <p class="crumbs"><a href="/">Find</a> › <a href="/playgrounds/">All playgrounds</a> › {regionName(p.region)}</p>
     <h1>{p.name}</h1>
+    <p style="margin-top:12px"><button type="button" class="btn fav-big" data-fav={p.id} data-name={p.name} aria-pressed="false"><span aria-hidden="true">♥</span> <span class="fav-text">Favourite</span></button></p>
+    <p class="hint" id="fav-status" aria-live="polite"></p>
     <p style="margin-top:8px;font-size:1.25rem">{p.area}{p.operator && <> · Run by {p.operator}</>}</p>
   </div>
   <div class="detail">
@@ -181,7 +183,8 @@ const dirs = `https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.ln
     </aside>
   </div>
   <script>
-    import { store, getMine } from '../../scripts/store';
+    import { store, getMine, startFavs } from '../../scripts/store';
+    startFavs();
     import { startPhotos } from '../../scripts/photos';
     startPhotos();
     import('../../scripts/map').then(({ createSpotMap }) => {
@@ -201,7 +204,7 @@ const dirs = `https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.ln
     function save(msg: string) {
       const mine = getMine();
       const r = Number((box.querySelector('input[name=rating]:checked') as HTMLInputElement | null)?.value) || undefined;
-      mine[id] = { v: been.checked || !!r, r, t: new Date().toISOString().slice(0, 10) };
+      mine[id] = { ...mine[id], v: been.checked || !!r, r, t: new Date().toISOString().slice(0, 10) };
       if (r) been.checked = true;
       store.set('sb-mine', mine);
       status.textContent = `${msg} Saved on this device only.`;
