@@ -2,7 +2,7 @@ name: Temporary Essex fetch
 on:
   push:
     branches: [tmp-essex]
-    paths: ['tmp/geo.py', 'tmp/essex-sites.json', '.github/workflows/tmp-essex.yml']
+    paths: ['tmp/mcr.py', '.github/workflows/tmp-essex.yml']
 permissions:
   contents: write
 jobs:
@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils || pip install pdfminer.six
-      - run: python3 tmp/geo.py
+      - run: python3 tmp/mcr.py
       - run: |
           git config user.name swing-by-bot; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add tmp/essex-pc.json; git commit -m "Fetched" && git push
+          git add tmp/mcr.json; git commit -m "Fetched" && git push
