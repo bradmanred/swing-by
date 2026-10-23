@@ -1,5 +1,5 @@
 import { cardHTML, esc, fmtMiles, type CardPhoto, type ClientPark } from '../lib/card';
-import { store, getMine } from './store';
+import { store, getMine, startFavs } from './store';
 
 // 'example' is the starting point before someone tells us where they are.
 type Origin = { name: string; lat: number; lng: number; acc: number; how: 'town' | 'postcode' | 'gps' | 'example' };
@@ -38,6 +38,7 @@ export function startFinder() {
   let map: MapView | null = null;
   // Each lookup gets a number so a slow answer (often "Near me") can't overwrite a newer search.
   let lookup = 0;
+  let syncFavs: ((root?: ParentNode) => void) | undefined;
 
   function list() {
     const mine = getMine();
@@ -48,6 +49,7 @@ export function startFinder() {
       .filter((p) => !st.freeOnly || !p.pay)
       .map((p) => ({ p, d: km(st.area ?? st.origin, p), m: mine[p.id] }));
     if (st.sort === 'new') rows = rows.filter((x) => !x.m?.v);
+    if (st.sort === 'fav') rows = rows.filter((x) => x.m?.fav);
     rows.sort((a, b) => (st.sort === 'rated' ? (b.m?.r ?? 0) - (a.m?.r ?? 0) || a.d - b.d : a.d - b.d));
     return rows;
   }
@@ -61,6 +63,7 @@ export function startFinder() {
       .slice(0, st.limit)
       .map((x, i) => cardHTML(x.p, { dist: x.d, num: i < 5 ? i + 1 : undefined, mine: x.m, photo: st.photos[x.p.id] }))
       .join('');
+    queueMicrotask(() => syncFavs?.());
     $('#nearlist').innerHTML = rows
       .slice(0, 5)
       .map(
@@ -71,7 +74,11 @@ export function startFinder() {
     const more = $<HTMLButtonElement>('#more');
     more.hidden = rows.length <= st.limit;
     if (announce)
-      $('#count').textContent = st.area
+      $('#count').textContent = st.sort === 'fav'
+        ? rows.length
+          ? `${rows.length} of your favourites, nearest first.`
+          : 'No favourites yet. Tap the heart on any playground to save it for next time.'
+        : st.area
         ? `${rows.length} playgrounds found, nearest to the middle of the map first.`
         : `${rows.length} playgrounds found, nearest first${st.sort === 'near' ? '' : ' after sorting'}.`;
     const cap = $('#where-caption');
@@ -239,7 +246,9 @@ export function startFinder() {
   $('#more').addEventListener('click', () => {
     const before = st.limit;
     st.limit += PAGE;
-    render(false);
+    // Hearts on cards: saved on this device. Re-run after each render so new cards show their state.
+  syncFavs = startFavs(() => st.sort === 'fav' && render());
+  render(false);
     document.querySelectorAll<HTMLAnchorElement>('#cards h3 a')[before]?.focus();
   });
 

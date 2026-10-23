@@ -5,7 +5,11 @@ const data = (await allParks()).map(clientPark);
 ---
 <Base title="My parks" current="/my-parks/">
   <h1>My parks</h1>
-  <p>Places you've ticked off and rated. These are saved on this device only for now.</p>
+  <p>Your favourite playgrounds, and the places you've ticked off and rated. These are saved on this device only for now.</p>
+  <h2 id="fav-title" style="margin-top:24px">Favourites</h2>
+  <p class="hint" id="fav-status" aria-live="polite"></p>
+  <ul class="cards" id="fav-cards" aria-labelledby="fav-title"></ul>
+  <p id="fav-empty" hidden>No favourites yet. Tap the <span aria-hidden="true">♥</span> heart on any playground to save it here for next time.</p>
   <div class="results-head">
     <h2 id="mine-title">Where we've been</h2>
     <label style="display:flex;gap:10px;align-items:center">Sort by
@@ -18,11 +22,14 @@ const data = (await allParks()).map(clientPark);
   <script type="application/json" id="parks-data" set:html={JSON.stringify(data)} />
   <script>
     import { cardHTML, type ClientPark } from '../lib/card';
-    import { getMine } from '../scripts/store';
+    import { getMine, startFavs } from '../scripts/store';
     const parks = JSON.parse(document.getElementById('parks-data')!.textContent!) as ClientPark[];
     const sel = document.getElementById('sort') as HTMLSelectElement;
     function render() {
       const mine = getMine();
+      const favs = parks.filter((p) => mine[p.id]?.fav).sort((a, b) => a.n.localeCompare(b.n, 'en-GB'));
+      document.getElementById('fav-cards')!.innerHTML = favs.map((p) => cardHTML(p, { mine: mine[p.id] })).join('');
+      document.getElementById('fav-empty')!.hidden = favs.length > 0;
       const rows = parks.filter((p) => mine[p.id]?.v).map((p) => ({ p, m: mine[p.id] }));
       const by = sel.value;
       rows.sort((a, b) =>
@@ -33,5 +40,10 @@ const data = (await allParks()).map(clientPark);
     }
     sel.addEventListener('change', render);
     render();
+    // Removing a favourite here takes it off the list straight away.
+    const sync = startFavs(() => {
+      render();
+      sync();
+    });
   </script>
 </Base>

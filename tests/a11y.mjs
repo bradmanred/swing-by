@@ -131,6 +131,15 @@ try {
   await page.goto(BASE + '/playgrounds/calke/');
   if (!(await page.getByText('Paid entry.').count())) fail('paid entry note missing on a playground with a fee');
 
+  // Favourites: the heart on a playground page saves it, and My parks lists it.
+  await page.goto(BASE + '/playgrounds/verulamium/');
+  await page.locator('.fav-big').click();
+  if ((await page.locator('.fav-big').getAttribute('aria-pressed')) !== 'true') fail('favourite button did not turn on');
+  await page.goto(BASE + '/my-parks/');
+  if (!(await page.locator('#fav-cards .card').count())) fail('favourite not listed on My parks');
+  await page.locator('#fav-cards .fav-btn').first().click();
+  if (await page.locator('#fav-cards .card').count()) fail('removing a favourite on My parks did not take it off the list');
+
   // Road trips: a town finds its nearest junction and the playgrounds near it.
   await page.goto(BASE + '/road-trips/');
   await page.fill('#jf-where', 'St Albans');
