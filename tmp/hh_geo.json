@@ -1,0 +1,1142 @@
+[
+ {
+  "org": "hh",
+  "path": "cambo-house",
+  "name": "Cambo Country House and Estate",
+  "town": "St Andrews",
+  "county": "Fife",
+  "pc": "KY16 8QD",
+  "m": false,
+  "lat": 56.29303,
+  "lng": -2.65133,
+  "how": "postcode",
+  "osm": []
+ },
+ {
+  "org": "hh",
+  "path": "kelburn-castle-estate",
+  "name": "Kelburn Castle and Estate",
+  "town": "Fairlie",
+  "county": "Ayrshire",
+  "pc": "KA29 0BE",
+  "m": false,
+  "lat": 55.771309,
+  "lng": -4.846243,
+  "how": "postcode",
+  "osm": []
+ },
+ {
+  "org": "hh",
+  "path": "layer-marney-tower",
+  "name": "Layer Marney Tower",
+  "town": "Colchester",
+  "county": "Essex",
+  "pc": "CO5 9US",
+  "m": true,
+  "lat": 51.822646,
+  "lng": 0.796826,
+  "how": "postcode",
+  "hlat": 51.8227188,
+  "hlng": 0.7970269,
+  "hdn": "Layer Marney Tower, Roundbush Road, Smythe's Green, Layer Marney, Colchester, Essex, Engla",
+  "osm": []
+ },
+ {
+  "org": "hh",
+  "path": "chiltern-open-air-museum",
+  "name": "Chiltern Open Air Museum",
+  "town": "Chalfont St Giles",
+  "county": "Buckinghamshire",
+  "pc": "HP8 4AB",
+  "m": true,
+  "lat": 51.629788,
+  "lng": -0.543124,
+  "how": "postcode",
+  "hlat": 51.6354609,
+  "hlng": -0.5420209,
+  "hdn": "Chiltern Open Air Museum, Old Shire Lane, Chalfont St Peter, Denham, Gerrards Cross and Ch",
+  "osm": []
+ },
+ {
+  "org": "hh",
+  "path": "cowden-garden",
+  "name": "The Japanese Garden at Cowden",
+  "town": "Dollar",
+  "county": "Clackmannanshire",
+  "pc": "FK14 7PL",
+  "m": true,
+  "lat": 56.174206,
+  "lng": -3.661293,
+  "how": "postcode",
+  "osm": []
+ },
+ {
+  "org": "hh",
+  "path": "fulham-palace-trust",
+  "name": "Fulham Palace",
+  "town": "Fulham",
+  "county": "London",
+  "pc": "",
+  "m": true,
+  "lat": 51.4703825,
+  "lng": -0.2153747,
+  "how": "name",
+  "dn": "Fulham Palace, Fulham, London Borough of Hammersmith and Fulham, Greater London, England, ",
+  "hlat": 51.4703825,
+  "hlng": -0.2153747,
+  "hdn": "Fulham Palace, Fulham, London Borough of Hammersmith and Fulham, Greater London, England, ",
+  "osm": []
+ },
+ {
+  "org": "hh",
+  "path": "waddesdon-manor",
+  "name": "Waddesdon Manor",
+  "town": "Waddesdon",
+  "county": "Buckinghamshire",
+  "pc": "HP18 0JH",
+  "m": true,
+  "lat": 51.843058,
+  "lng": -0.925894,
+  "how": "postcode",
+  "hlat": 51.8425017,
+  "hlng": -0.9373237,
+  "hdn": "Waddesdon Manor, North Avenue, Aylesbury, Buckinghamshire, England, HP18 0JH, United Kingd",
+  "osm": []
+ },
+ {
+  "org": "hh",
+  "path": "weston-park",
+  "name": "Weston Park",
+  "town": "Shifnal",
+  "county": "Shropshire",
+  "pc": "TF11 8LE",
+  "m": true,
+  "lat": 52.693197,
+  "lng": -2.287953,
+  "how": "postcode",
+  "hlat": 52.6849394,
+  "hlng": -2.2850271,
+  "hdn": "Weston Park, Weston under Lizard, South Staffordshire, Staffordshire, England, United King",
+  "osm": []
+ },
+ {
+  "org": "hh",
+  "path": "mirehouse",
+  "name": "Mirehouse",
+  "town": "Keswick",
+  "county": "Cumbria",
+  "pc": "CA12 4QE",
+  "m": true,
+  "lat": 54.643978,
+  "lng": -3.190366,
+  "how": "postcode",
+  "hlat": 54.6446752,
+  "hlng": -3.1915646,
+  "hdn": "Mirehouse, A591, Little Crosthwaite, Bassenthwaite, Thornthwaite, Cumberland, England, CA1",
+  "osm": []
+ },
+ {
+  "org": "hh",
+  "path": "the-bishops-palace",
+  "name": "The Bishop's Palace and Gardens",
+  "town": "Wells",
+  "county": "Somerset",
+  "pc": "BA5 2PD",
+  "m": true,
+  "lat": 51.209275,
+  "lng": -2.642368,
+  "how": "postcode",
+  "osm": []
+ },
+ {
+  "org": "hh",
+  "path": "temple-newsam-house",
+  "name": "Temple Newsam",
+  "town": "Leeds",
+  "county": "West Yorkshire",
+  "pc": "",
+  "m": true,
+  "lat": 53.781409,
+  "lng": -1.4448235,
+  "how": "name",
+  "dn": "Temple Newsam, Halton, Colton, Leeds, West Yorkshire, England, United Kingdom",
+  "hlat": 53.781409,
+  "hlng": -1.4448235,
+  "hdn": "Temple Newsam, Halton, Colton, Leeds, West Yorkshire, England, United Kingdom",
+  "osm": []
+ },
+ {
+  "org": "hh",
+  "path": "stonor-park",
+  "name": "Stonor Park",
+  "town": "Henley-on-Thames",
+  "county": "Oxfordshire",
+  "pc": "RG9 6HF",
+  "m": true,
+  "lat": 51.596148,
+  "lng": -0.92786,
+  "how": "postcode",
+  "hlat": 51.596321,
+  "hlng": -0.931355,
+  "hdn": "Stonor Park, Pishill with Stonor, South Oxfordshire, Oxfordshire, England, RG9 6HF, United",
+  "osm": []
+ },
+ {
+  "org": "hh",
+  "path": "sausmarez-manor",
+  "name": "Sausmarez Manor",
+  "town": "Guernsey",
+  "county": "Channel Islands",
+  "pc": "GY4 6SG",
+  "m": true,
+  "lat": null,
+  "lng": null,
+  "how": "postcode",
+  "osm": []
+ },
+ {
+  "org": "hh",
+  "path": "sandringham",
+  "name": "Sandringham",
+  "town": "Sandringham",
+  "county": "Norfolk",
+  "pc": "PE35 6EN",
+  "m": true,
+  "lat": 52.826389,
+  "lng": 0.516345,
+  "how": "postcode",
+  "hlat": 52.8294495,
+  "hlng": 0.5156262,
+  "hdn": "Sandringham, King's Lynn and West Norfolk, Norfolk, England, PE35 6EE, United Kingdom",
+  "osm": []
+ },
+ {
+  "org": "hh",
+  "path": "paxton-house",
+  "name": "Paxton House",
+  "town": "Berwick-upon-Tweed",
+  "county": "Berwickshire",
+  "pc": "TD15 1SZ",
+  "m": true,
+  "lat": 55.766019,
+  "lng": -2.10842,
+  "how": "postcode",
+  "hlat": 55.7613198,
+  "hlng": -2.1098656,
+  "hdn": "Paxton House, B6461, Paxton South Mains, Paxton, Scottish Borders, Alba / Scotland, TD15 1",
+  "osm": []
+ },
+ {
+  "org": "hh",
+  "path": "penshurst-place",
+  "name": "Penshurst Place",
+  "town": "Penshurst",
+  "county": "Kent",
+  "pc": "TN11 8DG",
+  "m": true,
+  "lat": 51.174632,
+  "lng": 0.183776,
+  "how": "postcode",
+  "hlat": 51.1746714,
+  "hlng": 0.1836829,
+  "hdn": "Penshurst Place, SR422, Penshurst, Sevenoaks, Kent, England, TN11 8HX, United Kingdom",
+  "osm": []
+ },
+ {
+  "org": "hh",
+  "path": "lowther-castle",
+  "name": "Lowther Castle and Gardens",
+  "town": "Penrith",
+  "county": "Cumbria",
+  "pc": "CA10 2HH",
+  "m": true,
+  "lat": 54.61086,
+  "lng": -2.731925,
+  "how": "postcode",
+  "hlat": 54.6058071,
+  "hlng": -2.7350592,
+  "hdn": "Lowther Castle Park and Gardens, Lowther, Westmorland and Furness, England, United Kingdom",
+  "osm": []
+ },
+ {
+  "org": "hh",
+  "path": "leighton-hall",
+  "name": "Leighton Hall",
+  "town": "Carnforth",
+  "county": "Lancashire",
+  "pc": "LA5 9ST",
+  "m": true,
+  "lat": 54.164328,
+  "lng": -2.777711,
+  "how": "postcode",
+  "hlat": 54.1630302,
+  "hlng": -2.7758193,
+  "hdn": "Leighton Hall, Peter Lane, The Yealands, Yealand Conyers, Lancaster, Lancashire, England, ",
+  "osm": []
+ },
+ {
+  "org": "hh",
+  "path": "borde-hill-garden",
+  "name": "Borde Hill",
+  "town": "Haywards Heath",
+  "county": "West Sussex",
+  "pc": "RH16 1XP",
+  "m": true,
+  "lat": 51.021756,
+  "lng": -0.113393,
+  "how": "postcode",
+  "hlat": 51.019558,
+  "hlng": -0.117784,
+  "hdn": "Borde Hill, Ansty and Staplefield, Cuckfield, Mid Sussex, West Sussex, England, United Kin",
+  "osm": []
+ },
+ {
+  "org": "hh",
+  "path": "holker-hall-gardens",
+  "name": "Holker Hall and Gardens",
+  "town": "Grange-over-Sands",
+  "county": "Cumbria",
+  "pc": "LA11 7PL",
+  "m": true,
+  "lat": 54.188393,
+  "lng": -2.983458,
+  "how": "postcode",
+  "osm": []
+ },
+ {
+  "org": "hh",
+  "path": "kiplin-hall",
+  "name": "Kiplin Hall and Gardens",
+  "town": "Richmond",
+  "county": "North Yorkshire",
+  "pc": "DL10 6AT",
+  "m": true,
+  "lat": 54.372521,
+  "lng": -1.579515,
+  "how": "postcode",
+  "osm": []
+ },
+ {
+  "org": "hh",
+  "path": "eastnor-castle",
+  "name": "Eastnor Castle",
+  "town": "Ledbury",
+  "county": "Herefordshire",
+  "pc": "HR8 1RL",
+  "m": true,
+  "lat": 52.030033,
+  "lng": -2.390615,
+  "how": "postcode",
+  "hlat": 52.0297151,
+  "hlng": -2.3875193,
+  "hdn": "Eastnor Castle, A438, Wayend Street, Eastnor, Herefordshire, England, HR8 1RL, United King",
+  "osm": []
+ },
+ {
+  "org": "hh",
+  "path": "riverhill-house-and-gardens",
+  "name": "Riverhill Himalayan Gardens",
+  "town": "Sevenoaks",
+  "county": "Kent",
+  "pc": "TN15 0RR",
+  "m": true,
+  "lat": 51.246715,
+  "lng": 0.209128,
+  "how": "postcode",
+  "osm": []
+ },
+ {
+  "org": "hh",
+  "path": "blair-castle-gardens",
+  "name": "Blair Castle and Gardens",
+  "town": "Pitlochry",
+  "county": "Perthshire",
+  "pc": "PH18 5TL",
+  "m": true,
+  "lat": 56.77096,
+  "lng": -3.855663,
+  "how": "postcode",
+  "osm": []
+ },
+ {
+  "org": "hh",
+  "path": "mellerstain-house-gardens",
+  "name": "Mellerstain House and Gardens",
+  "town": "Gordon",
+  "county": "Berwickshire",
+  "pc": "TD3 6LG",
+  "m": true,
+  "lat": 55.644898,
+  "lng": -2.560672,
+  "how": "postcode",
+  "osm": []
+ },
+ {
+  "org": "hh",
+  "path": "burton-agnes-hall",
+  "name": "Burton Agnes Hall",
+  "town": "Driffield",
+  "county": "East Yorkshire",
+  "pc": "YO25 4NE",
+  "m": true,
+  "lat": 54.05237,
+  "lng": -0.319571,
+  "how": "postcode",
+  "hlat": 54.0536165,
+  "hlng": -0.3167809,
+  "hdn": "Burton Agnes Hall, Woodland walk, Burton Agnes, East Riding of Yorkshire, Hull and East Yo",
+  "osm": []
+ },
+ {
+  "org": "hh",
+  "path": "grimsthorpe-castle",
+  "name": "Grimsthorpe Castle, Park and Gardens",
+  "town": "Grimsthorpe",
+  "county": "Lincolnshire",
+  "pc": "PE10 0LY",
+  "m": true,
+  "lat": 52.79404,
+  "lng": -0.4478,
+  "how": "postcode",
+  "osm": []
+ },
+ {
+  "org": "hh",
+  "path": "mannington-hall",
+  "name": "Mannington",
+  "town": "Norwich",
+  "county": "Norfolk",
+  "pc": "NR11 7BB",
+  "m": true,
+  "lat": 52.843298,
+  "lng": 1.18075,
+  "how": "postcode",
+  "osm": []
+ },
+ {
+  "org": "hh",
+  "path": "lulworth-castle",
+  "name": "Lulworth Castle and Park",
+  "town": "Wareham",
+  "county": "Dorset",
+  "pc": "BH20 5QS",
+  "m": true,
+  "lat": 50.639095,
+  "lng": -2.208769,
+  "how": "postcode",
+  "hlat": 50.6401136,
+  "hlng": -2.2053137,
+  "hdn": "Lulworth Castle and Park, Cockles, East Lulworth, Dorset, England, BH20 5QN, United Kingdo",
+  "osm": []
+ },
+ {
+  "org": "hh",
+  "path": "holkham-hall",
+  "name": "Holkham Hall",
+  "town": "Wells-next-the-Sea",
+  "county": "Norfolk",
+  "pc": "NR23 1AB",
+  "m": true,
+  "lat": 52.950329,
+  "lng": 0.802454,
+  "how": "postcode",
+  "hlat": 52.9501326,
+  "hlng": 0.8030172,
+  "hdn": "Holkham Hall, Holkham Park, Holkham, North Norfolk, Norfolk, England, NR23 1AB, United Kin",
+  "osm": []
+ },
+ {
+  "org": "hh",
+  "path": "bowhill-house-country-estate",
+  "name": "Bowhill House and Grounds",
+  "town": "Selkirk",
+  "county": "Scottish Borders",
+  "pc": "",
+  "m": true
+ },
+ {
+  "org": "hh",
+  "path": "michelham-priory",
+  "name": "Michelham Priory House and Gardens",
+  "town": "Upper Dicker",
+  "county": "East Sussex",
+  "pc": "BN27 3QS",
+  "m": true,
+  "lat": 50.863547,
+  "lng": 0.212624,
+  "how": "postcode",
+  "osm": [
+   {
+    "osm": "w1501509483",
+    "m": 283,
+    "lat": 50.86181,
+    "lng": 0.2155677,
+    "name": "",
+    "access": ""
+   }
+  ]
+ },
+ {
+  "org": "hh",
+  "path": "muncaster-castle-gardens-hawk-owl-centre",
+  "name": "Muncaster Castle",
+  "town": "Ravenglass",
+  "county": "Cumbria",
+  "pc": "CA18 1RQ",
+  "m": true,
+  "lat": 54.354618,
+  "lng": -3.38085,
+  "how": "postcode",
+  "hlat": 54.3546391,
+  "hlng": -3.3807014,
+  "hdn": "Muncaster Castle, A595, Muncaster, Ravenglass, Cumberland, England, CA18 1RQ, United Kingd",
+  "osm": [
+   {
+    "osm": "w316044607",
+    "m": 1759,
+    "lat": 54.3552782,
+    "lng": -3.407831,
+    "name": "",
+    "access": ""
+   }
+  ]
+ },
+ {
+  "org": "hh",
+  "path": "raby-castle",
+  "name": "Raby Castle, Park and Gardens",
+  "town": "Darlington",
+  "county": "County Durham",
+  "pc": "DL2 3AH",
+  "m": true,
+  "lat": 54.59362,
+  "lng": -1.808536,
+  "how": "postcode",
+  "osm": [
+   {
+    "osm": "n7877925581",
+    "m": 687,
+    "lat": 54.5927778,
+    "lng": -1.7979784,
+    "name": "",
+    "access": ""
+   },
+   {
+    "osm": "w256751758",
+    "m": 1596,
+    "lat": 54.5796232,
+    "lng": -1.8030646,
+    "name": "Staindrop Playground",
+    "access": "yes"
+   },
+   {
+    "osm": "w1011096231",
+    "m": 1941,
+    "lat": 54.6110618,
+    "lng": -1.8072845,
+    "name": "",
+    "access": ""
+   }
+  ]
+ },
+ {
+  "org": "hh",
+  "path": "berkeley-castle",
+  "name": "Berkeley Castle",
+  "town": "Berkeley",
+  "county": "Gloucestershire",
+  "pc": "GL13 9BQ",
+  "m": true,
+  "lat": 51.688607,
+  "lng": -2.457121,
+  "how": "postcode",
+  "hlat": 51.6888596,
+  "hlng": -2.456937,
+  "hdn": "Berkeley Castle, Berkeley, Ham, Stroud, Gloucestershire, England, GL13 9BQ, United Kingdom",
+  "osm": [
+   {
+    "osm": "w449833217",
+    "m": 577,
+    "lat": 51.6904517,
+    "lng": -2.4649009,
+    "name": "",
+    "access": ""
+   },
+   {
+    "osm": "w1360860379",
+    "m": 1250,
+    "lat": 51.6937388,
+    "lng": -2.4405922,
+    "name": "",
+    "access": "customers"
+   }
+  ]
+ },
+ {
+  "org": "hh",
+  "path": "sudeley-castle",
+  "name": "Sudeley Castle",
+  "town": "Winchcombe",
+  "county": "Gloucestershire",
+  "pc": "GL54 5LP",
+  "m": true,
+  "lat": 51.952034,
+  "lng": -1.966333,
+  "how": "postcode",
+  "hlat": 51.9473749,
+  "hlng": -1.9564293,
+  "hdn": "Sudeley Castle, Rushley Lane, Sudeley, Cheltenham, Gloucestershire, England, GL54 5JD, Uni",
+  "osm": [
+   {
+    "osm": "w495525401",
+    "m": 165,
+    "lat": 51.947865,
+    "lng": -1.958695,
+    "name": "",
+    "access": ""
+   },
+   {
+    "osm": "w1157287069",
+    "m": 1104,
+    "lat": 51.9541847,
+    "lng": -1.9681471,
+    "name": "",
+    "access": "customers"
+   },
+   {
+    "osm": "w1193430851",
+    "m": 1125,
+    "lat": 51.9526931,
+    "lng": -1.9703974,
+    "name": "",
+    "access": "yes"
+   }
+  ]
+ },
+ {
+  "org": "hh",
+  "path": "bowood-house-gardens",
+  "name": "Bowood House and Gardens",
+  "town": "Calne",
+  "county": "Wiltshire",
+  "pc": "SN11 0LZ",
+  "m": true,
+  "lat": 51.428808,
+  "lng": -2.038752,
+  "how": "postcode",
+  "osm": [
+   {
+    "osm": "n12092443679",
+    "m": 1573,
+    "lat": 51.4395,
+    "lng": -2.0536056,
+    "name": "",
+    "access": ""
+   }
+  ]
+ },
+ {
+  "org": "hh",
+  "path": "gordon-castle",
+  "name": "Gordon Castle Walled Garden",
+  "town": "Fochabers",
+  "county": "Moray",
+  "pc": "IV32 7PQ",
+  "m": true,
+  "lat": 57.627545,
+  "lng": -3.080894,
+  "how": "postcode",
+  "osm": [
+   {
+    "osm": "w979941681",
+    "m": 1317,
+    "lat": 57.6173155,
+    "lng": -3.0920382,
+    "name": "",
+    "access": ""
+   },
+   {
+    "osm": "w1359276828",
+    "m": 1871,
+    "lat": 57.6112239,
+    "lng": -3.0885616,
+    "name": "",
+    "access": ""
+   },
+   {
+    "osm": "w849105177",
+    "m": 1912,
+    "lat": 57.6118677,
+    "lng": -3.0940829,
+    "name": "",
+    "access": ""
+   }
+  ]
+ },
+ {
+  "org": "hh",
+  "path": "fursdon",
+  "name": "Fursdon House",
+  "town": "Cadbury",
+  "county": "Devon",
+  "pc": "EX5 5JS",
+  "m": true,
+  "lat": 50.83138,
+  "lng": -3.531927,
+  "how": "postcode",
+  "hlat": 50.8312915,
+  "hlng": -3.5328349,
+  "hdn": "Fursdon House, Upcott Lane, Bidwell, Cadbury, Thorverton, Exeter, Devon, Devon and Torbay,",
+  "osm": []
+ },
+ {
+  "org": "hh",
+  "path": "hartlebury-castle",
+  "name": "Hartlebury Castle",
+  "town": "Kidderminster",
+  "county": "Worcestershire",
+  "pc": "DY11 7XZ",
+  "m": true,
+  "lat": 52.339449,
+  "lng": -2.240749,
+  "how": "postcode",
+  "hlat": 52.3390648,
+  "hlng": -2.2420441,
+  "hdn": "Hartlebury Castle, B4193, Charlton, Hartlebury, Wychavon, Worcestershire, England, DY11 7X",
+  "osm": [
+   {
+    "osm": "w442789432",
+    "m": 1194,
+    "lat": 52.3289762,
+    "lng": -2.2360054,
+    "name": "",
+    "access": ""
+   },
+   {
+    "osm": "w1488889215",
+    "m": 1646,
+    "lat": 52.3513852,
+    "lng": -2.2554709,
+    "name": "",
+    "access": ""
+   }
+  ]
+ },
+ {
+  "org": "hh",
+  "path": "elsham-hall-gardens-country-park",
+  "name": "Elsham Hall Gardens and Country Park",
+  "town": "Brigg",
+  "county": "Lincolnshire",
+  "pc": "DN20 0QZ",
+  "m": true,
+  "lat": 53.592135,
+  "lng": -0.444191,
+  "how": "postcode",
+  "osm": [
+   {
+    "osm": "w1156455704",
+    "m": 690,
+    "lat": 53.5981752,
+    "lng": -0.4417857,
+    "name": "",
+    "access": ""
+   }
+  ]
+ },
+ {
+  "org": "hh",
+  "path": "burghley-house",
+  "name": "Burghley House",
+  "town": "Stamford",
+  "county": "Lincolnshire",
+  "pc": "PE9 3JY",
+  "m": true,
+  "lat": 52.642502,
+  "lng": -0.452518,
+  "how": "postcode",
+  "hlat": 52.6425003,
+  "hlng": -0.4522662,
+  "hdn": "Burghley House, Barnack Road, Stamford, Pilsgate, Barnack, City of Peterborough, Cambridge",
+  "osm": []
+ },
+ {
+  "org": "hh",
+  "path": "towneley-hall",
+  "name": "Towneley Hall",
+  "town": "Burnley",
+  "county": "Lancashire",
+  "pc": "BB11 3RQ",
+  "m": true,
+  "lat": 53.774117,
+  "lng": -2.22313,
+  "how": "postcode",
+  "hlat": 53.7739626,
+  "hlng": -2.2226056,
+  "hdn": "Towneley Hall, Holmes Street, Pike Hill, Burnley Wood, Walk Mill, Burnley, Lancashire, Eng",
+  "osm": [
+   {
+    "osm": "w1430000210",
+    "m": 324,
+    "lat": 53.7717348,
+    "lng": -2.2257734,
+    "name": "",
+    "access": ""
+   },
+   {
+    "osm": "w35141368",
+    "m": 474,
+    "lat": 53.7776746,
+    "lng": -2.2190475,
+    "name": "",
+    "access": ""
+   },
+   {
+    "osm": "w946770522",
+    "m": 1258,
+    "lat": 53.7825615,
+    "lng": -2.2350405,
+    "name": "",
+    "access": ""
+   },
+   {
+    "osm": "w168615312",
+    "m": 1291,
+    "lat": 53.785229,
+    "lng": -2.2273415,
+    "name": "",
+    "access": ""
+   },
+   {
+    "osm": "w1347671548",
+    "m": 1312,
+    "lat": 53.7666328,
+    "lng": -2.2069574,
+    "name": "",
+    "access": ""
+   },
+   {
+    "osm": "w585841649",
+    "m": 1472,
+    "lat": 53.7860198,
+    "lng": -2.2133705,
+    "name": "Sheddon Grove Playground",
+    "access": ""
+   }
+  ]
+ },
+ {
+  "org": "hh",
+  "path": "wentworth-woodhouse",
+  "name": "Wentworth Woodhouse",
+  "town": "Wentworth",
+  "county": "South Yorkshire",
+  "pc": "S62 7TQ",
+  "m": true,
+  "lat": 53.474441,
+  "lng": -1.404881,
+  "how": "postcode",
+  "hlat": 53.4742307,
+  "hlng": -1.404912,
+  "hdn": "Wentworth Woodhouse, Cortworth Lane, Wentworth, Thorpe Hesley, Rotherham, South Yorkshire,",
+  "osm": [
+   {
+    "osm": "w1447996904",
+    "m": 576,
+    "lat": 53.4764263,
+    "lng": -1.4127883,
+    "name": "",
+    "access": ""
+   }
+  ]
+ },
+ {
+  "org": "hh",
+  "path": "pencarrow-house-gardens",
+  "name": "Pencarrow House and Gardens",
+  "town": "Bodmin",
+  "county": "Cornwall",
+  "pc": "PL30 3AG",
+  "m": true,
+  "lat": 50.506998,
+  "lng": -4.771207,
+  "how": "postcode",
+  "osm": [
+   {
+    "osm": "w1293836251",
+    "m": 326,
+    "lat": 50.5066877,
+    "lng": -4.7666225,
+    "name": "",
+    "access": "customers"
+   }
+  ]
+ },
+ {
+  "org": "hh",
+  "path": "ballindalloch-castle",
+  "name": "Ballindalloch Castle",
+  "town": "Ballindalloch",
+  "county": "Moray",
+  "pc": "",
+  "m": true,
+  "lat": 57.4118353,
+  "lng": -3.3693027,
+  "how": "name",
+  "dn": "Ballindalloch Castle, Labyrinth, Ballindalloch, Moray, Alba / Scotland, AB37 9AX, United K",
+  "hlat": 57.4118353,
+  "hlng": -3.3693027,
+  "hdn": "Ballindalloch Castle, Labyrinth, Ballindalloch, Moray, Alba / Scotland, AB37 9AX, United K",
+  "osm": [
+   {
+    "osm": "w1444128746",
+    "m": 163,
+    "lat": 57.4132386,
+    "lng": -3.3700897,
+    "name": "",
+    "access": ""
+   }
+  ]
+ },
+ {
+  "org": "hh",
+  "path": "drumlanrig-castle",
+  "name": "Drumlanrig Castle",
+  "town": "Thornhill",
+  "county": "Dumfriesshire",
+  "pc": "DG3 4AQ",
+  "m": true,
+  "lat": 55.273699,
+  "lng": -3.8087,
+  "how": "postcode",
+  "hlat": 55.2740745,
+  "hlng": -3.8083718,
+  "hdn": "Drumlanrig Castle, Red Route, Thornhill, Dumfries and Galloway, Alba / Scotland, DG3 4AQ, ",
+  "osm": [
+   {
+    "osm": "w234923164",
+    "m": 237,
+    "lat": 55.2722665,
+    "lng": -3.8063975,
+    "name": "Adventure Playground",
+    "access": "customers"
+   }
+  ]
+ },
+ {
+  "org": "hh",
+  "path": "belvoir-castle",
+  "name": "Belvoir Castle",
+  "town": "Grantham",
+  "county": "Leicestershire",
+  "pc": "",
+  "m": true,
+  "lat": 52.8945292,
+  "lng": -0.7860946,
+  "how": "name",
+  "dn": "Gift Shop and Ticket Office, Belvoir, Melton, Leicestershire, England, NG32 1PE, United Ki",
+  "hlat": 52.8946925,
+  "hlng": -0.7826892,
+  "hdn": "Belvoir Castle, Spiral Walk, Belvoir, Melton, Leicestershire, England, NG32 1PD, United Ki",
+  "osm": [
+   {
+    "osm": "n13072512567",
+    "m": 214,
+    "lat": 52.8943616,
+    "lng": -0.7858381,
+    "name": "",
+    "access": ""
+   },
+   {
+    "osm": "w1450107180",
+    "m": 1794,
+    "lat": 52.8991178,
+    "lng": -0.7569626,
+    "name": "",
+    "access": ""
+   }
+  ]
+ },
+ {
+  "org": "hh",
+  "path": "glenarm-castle",
+  "name": "Glenarm Castle Gardens",
+  "town": "Glenarm",
+  "county": "County Antrim",
+  "pc": "BT44 0BQ",
+  "m": true,
+  "lat": 54.94602,
+  "lng": -5.971872,
+  "how": "postcode",
+  "hlat": 54.9672235,
+  "hlng": -5.9602976,
+  "hdn": "Glenarm Castle Walled Garden, Glenarm, Mid and East Antrim District, County Antrim, Northe",
+  "osm": [
+   {
+    "osm": "w521105916",
+    "m": 416,
+    "lat": 54.968711,
+    "lng": -5.9543142,
+    "name": "",
+    "access": "yes"
+   }
+  ]
+ },
+ {
+  "org": "hh",
+  "path": "newby-hall-gardens",
+  "name": "Newby Hall and Gardens",
+  "town": "Ripon",
+  "county": "North Yorkshire",
+  "pc": "HG4 5AE",
+  "m": true,
+  "lat": 54.102666,
+  "lng": -1.46946,
+  "how": "postcode",
+  "osm": [
+   {
+    "osm": "w1415452751",
+    "m": 1424,
+    "lat": 54.1096342,
+    "lng": -1.4511292,
+    "name": "",
+    "access": ""
+   }
+  ]
+ },
+ {
+  "org": "hh",
+  "path": "tatton-park",
+  "name": "Tatton Park",
+  "town": "Knutsford",
+  "county": "Cheshire",
+  "pc": "",
+  "m": true,
+  "lat": 53.3247598,
+  "lng": -2.3770745,
+  "how": "name",
+  "dn": "Tatton Park, Knutsford, Cheshire East, England, WA16 6QN, United Kingdom",
+  "hlat": 53.3247598,
+  "hlng": -2.3770745,
+  "hdn": "Tatton Park, Knutsford, Cheshire East, England, WA16 6QN, United Kingdom",
+  "osm": [
+   {
+    "osm": "w1421495839",
+    "m": 1005,
+    "lat": 53.3296921,
+    "lng": -2.3897518,
+    "name": "Adventure Playground",
+    "access": "customers"
+   },
+   {
+    "osm": "w1082779699",
+    "m": 1306,
+    "lat": 53.3204351,
+    "lng": -2.3953532,
+    "name": "",
+    "access": "customers"
+   }
+  ]
+ },
+ {
+  "org": "hh",
+  "path": "sledmere-house-and-gardens",
+  "name": "Sledmere House and Gardens",
+  "town": "Driffield",
+  "county": "East Yorkshire",
+  "pc": "YO25 3XG",
+  "m": true,
+  "lat": 54.069593,
+  "lng": -0.579149,
+  "how": "postcode",
+  "osm": [
+   {
+    "osm": "w1090539558",
+    "m": 132,
+    "lat": 54.0706187,
+    "lng": -0.5781307,
+    "name": "",
+    "access": ""
+   }
+  ]
+ },
+ {
+  "org": "hh",
+  "path": "wilton-house",
+  "name": "Wilton House",
+  "town": "Salisbury",
+  "county": "Wiltshire",
+  "pc": "SP2 0BJ",
+  "m": true,
+  "lat": 51.07964,
+  "lng": -1.856118,
+  "how": "postcode",
+  "hlat": 51.0780362,
+  "hlng": -1.8596268,
+  "hdn": "Wilton House, Palladian Bridge, Fugglestone St Peter, Wilton, Wiltshire, England, SP2 0BZ,",
+  "osm": [
+   {
+    "osm": "n2025602145",
+    "m": 185,
+    "lat": 51.0788793,
+    "lng": -1.857345,
+    "name": "",
+    "access": ""
+   },
+   {
+    "osm": "w237458475",
+    "m": 473,
+    "lat": 51.0820976,
+    "lng": -1.8575915,
+    "name": "",
+    "access": ""
+   },
+   {
+    "osm": "w1322936226",
+    "m": 684,
+    "lat": 51.0816299,
+    "lng": -1.8516748,
+    "name": "",
+    "access": ""
+   },
+   {
+    "osm": "w1312475235",
+    "m": 1750,
+    "lat": 51.0805591,
+    "lng": -1.8349047,
+    "name": "",
+    "access": ""
+   }
+  ]
+ },
+ {
+  "org": "hh",
+  "path": "harewood-house",
+  "name": "Harewood House",
+  "town": "Leeds",
+  "county": "West Yorkshire",
+  "pc": "LS17 9LG",
+  "m": true,
+  "lat": 53.8969,
+  "lng": -1.527279,
+  "how": "postcode",
+  "osm": [
+   {
+    "osm": "w186137580",
+    "m": 217,
+    "lat": 53.895906,
+    "lng": -1.5301295,
+    "name": "Harewood Playground",
+    "access": "customers"
+   },
+   {
+    "osm": "w260109665",
+    "m": 1344,
+    "lat": 53.8863688,
+    "lng": -1.5373509,
+    "name": "",
+    "access": ""
+   }
+  ]
+ }
+]
