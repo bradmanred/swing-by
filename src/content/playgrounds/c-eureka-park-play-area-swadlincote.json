@@ -1,0 +1,31 @@
+{
+  "name": "Eureka Park Play Area",
+  "region": "derbyshire",
+  "area": "Swadlincote",
+  "lat": 52.77774,
+  "lng": -1.55581,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "Children's play area refurbished in 2025, with toddler, junior and youth areas, plus an outdoor gym and public toilets in the supervised park pavilion, as South Derbyshire District Council describes it.",
+  "nearby": [
+    {
+      "type": "toilets",
+      "label": "Public toilets in the park pavilion"
+    }
+  ],
+  "operator": "South Derbyshire District Council",
+  "sources": [
+    {
+      "label": "South Derbyshire District Council: Eureka Park",
+      "url": "https://www.southderbyshire.gov.uk/our-services/things-to-do-and-places-to-visit/parks-and-open-spaces/parklife-and-our-parks/eureka-park"
+    }
+  ],
+  "checked": "2026-10-23",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours and parking.",
+  "photo": null
+}
