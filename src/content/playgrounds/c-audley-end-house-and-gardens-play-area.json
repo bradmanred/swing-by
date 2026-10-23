@@ -1,0 +1,33 @@
+{
+  "name": "Audley End House and Gardens Play Area",
+  "region": "essex",
+  "area": "Saffron Walden",
+  "lat": 52.01833,
+  "lng": 0.21801,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "New play area at the Cart Yard, next to the Cart Yard café, inspired by Audley End's history.",
+  "nearby": [],
+  "operator": "English Heritage",
+  "membership": "eh",
+  "fee": "Non-members pay to visit. English Heritage members get in free.",
+  "babyChange": true,
+  "sources": [
+    {
+      "label": "English Heritage: Audley End House and Gardens facilities",
+      "url": "https://www.english-heritage.org.uk/visit/places/audley-end-house-and-gardens/plan-your-visit/facilities/"
+    },
+    {
+      "label": "English Heritage: the best play areas at English Heritage sites",
+      "url": "https://www.english-heritage.org.uk/visit/familydaysout/english-heritage-play-areas/"
+    }
+  ],
+  "checked": "2026-10-23",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours and parking.",
+  "photo": null
+}

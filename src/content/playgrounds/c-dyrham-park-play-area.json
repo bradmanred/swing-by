@@ -1,0 +1,26 @@
+{
+  "name": "Dyrham Park Play Area",
+  "region": "south-west",
+  "area": "Dyrham Park",
+  "lat": 51.48132,
+  "lng": -2.37021,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Play area at Dyrham Park, as the National Trust lists it.",
+  "nearby": [],
+  "operator": "National Trust",
+  "membership": "nt",
+  "fee": "Non-members pay to visit. National Trust members get in free.",
+  "sources": [
+    {
+      "label": "National Trust: Dyrham Park",
+      "url": "https://www.nationaltrust.org.uk/visit/bath-bristol/dyrham-park"
+    }
+  ],
+  "checked": "2026-10-23",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

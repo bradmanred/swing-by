@@ -1,0 +1,33 @@
+{
+  "name": "Dover Castle Playground",
+  "region": "south-east",
+  "area": "Dover",
+  "lat": 51.13025,
+  "lng": 1.32017,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "Playground inspired by Dover Castle's history.",
+  "nearby": [],
+  "operator": "English Heritage",
+  "membership": "eh",
+  "fee": "Non-members pay to visit. English Heritage members get in free.",
+  "babyChange": true,
+  "sources": [
+    {
+      "label": "English Heritage: Dover Castle facilities",
+      "url": "https://www.english-heritage.org.uk/visit/places/dover-castle/plan-your-visit/facilities/"
+    },
+    {
+      "label": "English Heritage: the best play areas at English Heritage sites",
+      "url": "https://www.english-heritage.org.uk/visit/familydaysout/english-heritage-play-areas/"
+    }
+  ],
+  "checked": "2026-10-23",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours and parking.",
+  "photo": null
+}
