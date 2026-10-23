@@ -17,7 +17,7 @@ way["highway"~"^(motorway|trunk)$"]["ref"](area.gb)->.roads;
 node(w.roads)["highway"="motorway_junction"]->.j;
 .j out tags center;
 way(bn.j)["highway"~"^(motorway|trunk)$"];
-out tags ids;
+out body;
 node(w)->.wn;"""
 j = run(q.replace("node(w)->.wn;", ""))
 json.dump(j, open("tmp/junctions-raw.json", "w"))
