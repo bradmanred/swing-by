@@ -1,0 +1,28 @@
+{
+  "name": "Chatsworth Farmyard and Adventure Playground",
+  "region": "derbyshire",
+  "area": "Chatsworth",
+  "lat": 53.23104,
+  "lng": -1.60657,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "Woodland adventure playground with two towers, rope bridges, four slides (one over 12 metres long), a zip wire, climbing frames, swings, a giant sand area and an Archimedes screw. The towers are designed for children aged 6 to 11. There are toilets, baby change and an accessible toilet at the playground.",
+  "nearby": [],
+  "operator": "Chatsworth House Trust",
+  "sources": [
+    {
+      "label": "Chatsworth: adventure playground",
+      "url": "https://chatsworth.org/farmyard-playground/adventure-playground"
+    }
+  ],
+  "checked": "2026-10-23",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, opening hours and parking.",
+  "photo": null,
+  "babyChange": true,
+  "fee": "Included with Chatsworth house, garden or farmyard tickets"
+}

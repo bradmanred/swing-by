@@ -1,0 +1,28 @@
+{
+  "name": "Norwood Play Area",
+  "region": "derbyshire",
+  "area": "Killamarsh",
+  "lat": 53.32675,
+  "lng": -1.30057,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Play area at Norwood, refurbished by Killamarsh Parish Council in 2023.",
+  "nearby": [],
+  "operator": "Killamarsh Parish Council",
+  "sources": [
+    {
+      "label": "North East Derbyshire District Council: play areas it inspects and maintains (2021 list)",
+      "url": "https://democracy.ne-derbyshire.gov.uk/documents/s7806/3.%20Inspection%20Frequencies.pdf"
+    },
+    {
+      "label": "Killamarsh Parish Council: parks and gardens",
+      "url": "https://www.killamarsh-pc.gov.uk/parks-and-gardens"
+    }
+  ],
+  "checked": "2026-10-23",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking. The council's list dates from January 2021, so check it's still there.",
+  "photo": null
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Carsington Water Play Area",
+  "region": "derbyshire",
+  "area": "Carsington",
+  "lat": 53.05998,
+  "lng": -1.64214,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "Severn Trent's play area at the Carsington Water visitor centre, with accessible play equipment including two basket swings. There are accessible toilets, a Changing Places toilet and baby changing at the visitor centre.",
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "Pay car park (15 minutes free)"
+    },
+    {
+      "type": "toilets",
+      "label": "Accessible toilets and a Changing Places toilet at the visitor centre"
+    }
+  ],
+  "operator": "Severn Trent",
+  "sources": [
+    {
+      "label": "RSPB: facilities at Carsington Water",
+      "url": "https://rspb.org.uk/days-out/reserves/carsington-water/facilities"
+    }
+  ],
+  "checked": "2026-10-23",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, opening hours and parking.",
+  "photo": null,
+  "babyChange": true
+}
