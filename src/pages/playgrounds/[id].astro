@@ -139,6 +139,14 @@ const dirs = `https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.ln
           </div>
         </fieldset>
         <p class="hint" id="mine-status" aria-live="polite" style="margin-top:10px">Saved on this device only.</p>
+        <div class="photo-nudge" id="photo-nudge" hidden>
+          <p><strong>Did you take a photo while you were here?</strong> A picture helps other parents see what it's like before they go.</p>
+          <div class="row">
+            <button class="btn btn-yellow" type="button" id="nudge-add"><span aria-hidden="true">📷</span> Add a photo</button>
+            <button class="linkbtn" type="button" id="nudge-no">Not now</button>
+          </div>
+          <p class="hint">Only photos with no people in them, please.</p>
+        </div>
       </div>
       <div class="panel">
         <h2 style="font-size:1.75rem" id="photo-title">Share a photo</h2>
@@ -209,9 +217,37 @@ const dirs = `https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.ln
       store.set('sb-mine', mine);
       status.textContent = `${msg} Saved on this device only.`;
     }
-    been.addEventListener('change', () => save(been.checked ? 'Ticked off.' : 'Unticked.'));
+    // After ticking "We've been here", ask for a photo, unless they've already said not now for this playground.
+    const nudge = document.getElementById('photo-nudge')!;
+    const nudgeKey = `sb-nudge-${id}`;
+    const showNudge = () => {
+      let dismissed = false;
+      try {
+        dismissed = sessionStorage.getItem(nudgeKey) === 'no';
+      } catch {}
+      nudge.hidden = !been.checked || dismissed;
+    };
+    document.getElementById('nudge-add')!.addEventListener('click', () => {
+      document.getElementById('photo-title')?.scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+      document.getElementById('photo-file')?.focus({ preventScroll: true });
+      nudge.hidden = true;
+    });
+    document.getElementById('nudge-no')!.addEventListener('click', () => {
+      try {
+        sessionStorage.setItem(nudgeKey, 'no');
+      } catch {}
+      nudge.hidden = true;
+      been.focus();
+    });
+    been.addEventListener('change', () => {
+      save(been.checked ? 'Ticked off.' : 'Unticked.');
+      showNudge();
+    });
     box.querySelectorAll('input[name=rating]').forEach((r) =>
-      r.addEventListener('change', () => save(`Rated ${(r as HTMLInputElement).value} out of 5.`)),
+      r.addEventListener('change', () => {
+        save(`Rated ${(r as HTMLInputElement).value} out of 5.`);
+        showNudge();
+      }),
     );
   </script>
 </Base>
