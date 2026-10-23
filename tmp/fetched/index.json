@@ -1,0 +1,81 @@
+[
+ {
+  "url": "https://democracy.thurrock.gov.uk/documents/s12494/Appendix%20B%20-%20Overall%20Assessment%20of%20Need%20and%20Priorities.pdf",
+  "file": "1d6514a7f0.txt",
+  "ct": "application/pdf",
+  "status": 200,
+  "bytes": 1150698
+ },
+ {
+  "url": "https://rochford.gov.uk/sites/default/files/2022-11/policies_strategies_play_strat.pdf",
+  "file": "d2cc8eb125.txt",
+  "ct": "application/pdf",
+  "status": 200,
+  "bytes": 302903
+ },
+ {
+  "url": "https://rochford.moderngov.co.uk/documents/s4233/Appendix%20A%20for%20Rochford%20District%20Play%20Strategy%20-%20Update.pdf",
+  "err": "HTTP Error 403: Forbidden"
+ },
+ {
+  "url": "https://ckan.publishing.service.gov.uk/dataset/rochford-play-spaces",
+  "file": "68ef433c36.html",
+  "ct": "text/html; charset=utf-8",
+  "status": 200,
+  "bytes": 10399
+ },
+ {
+  "url": "https://loveyourchelmsford.co.uk/wp-content/uploads/2020/08/Equipped-Play-Review-July-2019-website.pdf",
+  "file": "475cc0d5a1.txt",
+  "ct": "application/pdf",
+  "status": 200,
+  "bytes": 187030
+ },
+ {
+  "url": "https://southend.moderngov.co.uk/documents/s54695/Appendix%201%20-%20Parks%20Improvement%20Programme.pdf",
+  "err": "HTTP Error 403: Forbidden"
+ },
+ {
+  "url": "http://essex.astuntechnology.com/getows.ashx?mapsource=Essex/Inspire_Brentwood&service=WFS&request=GetCapabilities",
+  "file": "06969677ab.html",
+  "ct": "text/xml; charset=utf-8",
+  "status": 200,
+  "bytes": 32996
+ },
+ {
+  "url": "http://essex.astuntechnology.com/getows.ashx?mapsource=Essex/Inspire_Rochford&service=WFS&request=GetCapabilities",
+  "file": "e4870a3abd.html",
+  "ct": "text/xml; charset=utf-8",
+  "status": 200,
+  "bytes": 33107
+ },
+ {
+  "url": "https://legacy.tendringdc.gov.uk/sites/default/files/documents/leisure/countryside%2C%20parks%20%26%20gardens/play%20areas/PlayAreas_Booklet_WEB_2011_1.pdf",
+  "err": "HTTP Error 404: Not Found"
+ },
+ {
+  "url": "https://www.uttlesford.gov.uk/article/5621/Parks-and-gardens",
+  "err": "HTTP Error 403: Forbidden"
+ },
+ {
+  "url": "https://www.castlepoint.gov.uk/parks",
+  "file": "123b63a98d.html",
+  "ct": "text/html;charset=UTF-8",
+  "status": 200,
+  "bytes": 115005
+ },
+ {
+  "url": "https://www.maldon.gov.uk/info/20066/policies_and_strategies/10215/managing_our_parks_and_open_spaces",
+  "file": "8be5fbd2ac.html",
+  "ct": "text/html; charset=UTF-8",
+  "status": 200,
+  "bytes": 26229
+ },
+ {
+  "url": "https://rds.eppingforestdc.gov.uk/documents/s8952/EFDC%20Play%20Strategy%202007-17%20Rpt.pdf",
+  "file": "e5dae88e05.txt",
+  "ct": "application/pdf",
+  "status": 200,
+  "bytes": 31591
+ }
+]

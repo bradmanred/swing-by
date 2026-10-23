@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<wfs:WFS_Capabilities xmlns:gml="http://www.opengis.net/gml" xmlns:wfs="http://www.opengis.net/wfs" xmlns:ows="http://www.opengis.net/ows" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ogc="http://www.opengis.net/ogc" xmlns="http://www.opengis.net/wfs" version="1.1.0" xsi:schemaLocation="http://www.opengis.net/wfs http://schemas.opengis.net/wfs/1.1.0/wfs.xsd">
+  <ows:ServiceIdentification>
+    <ows:Title/>
+    <!--WARNING: Optional metadata "ows_title" missing for ows:Title-->
+    <ows:Abstract>Brentwood Borough Council OWS</ows:Abstract>
+    <ows:Keywords>
+      <ows:Keyword>Inspire</ows:Keyword>
+    </ows:Keywords>
+    <ows:ServiceType codeSpace="OGC">OGC WFS</ows:ServiceType>
+    <ows:ServiceTypeVersion>1.1.0</ows:ServiceTypeVersion>
+    <ows:Fees/>
+    <!--WARNING: Optional metadata "ows_fees" was missing for ows:Fees-->
+    <ows:AccessConstraints/>
+    <!--WARNING: Optional metadata "ows_accessconstraints" was missing for ows:AccessConstraints-->
+  </ows:ServiceIdentification>
+  <ows:ServiceProvider>
+    <ows:ProviderName>Brentwood Borough Council</ows:ProviderName>
+    <ows:ProviderSite xlink:type="simple" xlink:href=""/>
+    <!--WARNING: Optional metadata "ows_service_onlineresource" was missing for ows:ProviderSite/@xlink:href-->
+    <ows:ServiceContact>
+      <ows:IndividualName>Owen James</ows:IndividualName>
+      <ows:PositionName>GIS Officer</ows:PositionName>
+      <ows:ContactInfo>
+        <ows:Phone>
+          <ows:Voice/>
+          <!--WARNING: Optional metadata "ows_contactvoicetelephone" was missing for ows:Voice-->
+          <ows:Facsimile/>
+          <!--WARNING: Optional metadata "ows_contactfacsimiletelephone" was missing for ows:Facsimile-->
+        </ows:Phone>
+        <ows:Address>
+          <ows:DeliveryPoint>Town Hall</ows:DeliveryPoint>
+          <ows:City>Brentwood</ows:City>
+          <ows:AdministrativeArea>Essex</ows:AdministrativeArea>
+          <ows:PostalCode>CM15 8AY</ows:PostalCode>
+          <ows:Country>United Kingdom</ows:Country>
+          <ows:ElectronicMailAddress>owen.james@brentwood.gov.uk</ows:ElectronicMailAddress>
+        </ows:Address>
+        <ows:OnlineResource xlink:type="simple" xlink:href=""/>
+        <!--WARNING: Optional metadata "ows_service_onlineresource" was missing for ows:OnlineResource/@xlink:href-->
+        <ows:HoursOfService/>
+        <!--WARNING: Optional metadata "ows_hoursofservice" was missing for ows:HoursOfService-->
+        <ows:ContactInstructions/>
+        <!--WARNING: Optional metadata "ows_contactinstructions" was missing for ows:ContactInstructions-->
+      </ows:ContactInfo>
+      <ows:Role/>
+      <!--WARNING: Optional metadata "ows_role" was missing for ows:Role-->
+    </ows:ServiceContact>
+  </ows:ServiceProvider>
+  <ows:OperationsMetadata>
+    <ows:Operation name="GetCapabilities">
+      <ows:DCP>
+        <ows:HTTP>
+          <ows:Get xlink:type="simple" xlink:href="http://essex.astuntechnology.com/getows.ashx?mapsource=Essex/Inspire_Brentwood&amp;service=WFS&amp;version=1.1.0&amp;request=GetCapabilities&amp;"/>
+          <ows:Post xlink:type="simple" xlink:href="http://essex.astuntechnology.com/getows.ashx?mapsource=Essex/Inspire_Brentwood&amp;service=WFS&amp;version=1.1.0&amp;request=GetCapabilities&amp;"/>
+        </ows:HTTP>
+      </ows:DCP>
+      <ows:Parameter name="service">
+        <ows:Value>WFS</ows:Value>
+      </ows:Parameter>
+      <ows:Parameter name="AcceptVersions">
+        <ows:Value>1.0.0</ows:Value>
+        <ows:Value>1.1.0</ows:Value>
+      </ows:Parameter>
+      <ows:Parameter name="AcceptFormats">
+        <ows:Value>text/xml</ows:Value>
+      </ows:Parameter>
+    </ows:Operation>
+    <ows:Operation name="DescribeFeatureType">
+      <ows:DCP>
+        <ows:HTTP>
+          <ows:Get xlink:type="simple" xlink:href="http://essex.astuntechnology.com/getows.ashx?mapsource=Essex/Inspire_Brentwood&amp;service=WFS&amp;version=1.1.0&amp;request=GetCapabilities&amp;"/>
+          <ows:Post xlink:type="simple" xlink:href="http://essex.astuntechnology.com/getows.ashx?mapsource=Essex/Inspire_Brentwood&amp;service=WFS&amp;version=1.1.0&amp;request=GetCapabilities&amp;"/>
+        </ows:HTTP>
+      </ows:DCP>
+      <ows:Parameter name="outputFormat">
+        <ows:Value>XMLSCHEMA</ows:Value>
+        <ows:Value>text/xml; subtype=gml/2.1.2</ows:Value>
+        <ows:Value>text/xml; subtype=gml/3.1.1</ows:Value>
+      </ows:Parameter>
+    </ows:Operation>
+    <ows:Operation name="GetFeature">
+      <ows:DCP>
+        <ows:HTTP>
+          <ows:Get xlink:type="simple" xlink:href="http://essex.astuntechnology.com/getows.ashx?mapsource=Essex/Inspire_Brentwood&amp;service=WFS&amp;version=1.1.0&amp;request=GetCapabilities&amp;"/>
+          <ows:Post xlink:type="simple" xlink:href="http://essex.astuntechnology.com/getows.ashx?mapsource=Essex/Inspire_Brentwood&amp;service=WFS&amp;version=1.1.0&amp;request=GetCapabilities&amp;"/>
+        </ows:HTTP>
+      </ows:DCP>
+      <ows:Parameter name="resultType">
+        <ows:Value>results</ows:Value>
+        <ows:Value>hits</ows:Value>
+      </ows:Parameter>
+      <ows:Parameter name="outputFormat">
+        <ows:Value>text/xml; subtype=gml/3.1.1</ows:Value>
+      </ows:Parameter>
+    </ows:Operation>
+  </ows:OperationsMetadata>
+  <FeatureTypeList>
+    <Operations>
+      <Operation>Query</Operation>
+    </Operations>
+    <FeatureType>
+      <Name>air_quality_management_areas</Name>
+      <Title>air_quality_management_areas</Title>
+      <Abstract>GIS polygon dataset identifying the locations of declared Air Quality Management Areas in the Brentwood Borough. These areas are not likely to achieve the national air quality objectives and European Directive limit and target values for the protection of human health by the relevant deadlines.  The areas are subject to the Local Authority Air Quality Action Plan.  The data includes the area names and descriptions, area in square metres and British National Grid coordinates.  Digitised at 1:1250 scale</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>Air Quality Action Plan Health AQMA</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>article_4_direction</Name>
+      <Title>article_4_direction</Title>
+      <Abstract>GIS polygon dataset identifying the locations of Article 4 Direction areas in the Brentwood Borough. The Local Planning Authority has imposed these areas in the Local Plan to preserve their character and to prevent unsuitable land uses that would be a detriment to wildlife and its habitats.  The dataset is geometry only. Digitised at 1:1250 scale</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>Article 4 four Preserve Preservation Character Conserve Conservation Protect Protection Land Use Plannning Wildlife Habitat Local Plan</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>borough_parking_restrictions</Name>
+      <Title>borough_parking_restrictions</Title>
+      <Abstract>GIS polygon dataset identifying the zones where parking restrictions are imposed in the Brentwood Borough.  The information includes the restriction code and description, length and area. Digitised at 1:1250 scale</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>Parking Restriction Zone Enforcement</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>brentwood_borough_boundary</Name>
+      <Title>brentwood_borough_boundary</Title>
+      <Abstract>GIS polygon dataset of the administrative boundary for the Brentwood Borough.  The information includes the British National Grid coordinates and the borough area in hectares. Digitised at 1:1250 scale</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>Administrative Boundary Council Government Local Authority</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>brentwood_borough_wards</Name>
+      <Title>brentwood_borough_wards</Title>
+      <Abstract>GIS polygon dataset of the electoral district wards for the Brentwood Borough.  The information includes the ward name, British National Grid coordinates and the ward area in hectares. Digitised at 1:1250 scale</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>Electoral Ward Election Government Local Authority</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>brentwood_play_areas</Name>
+      <Title>brentwood_play_areas</Title>
+      <Abstract>GIS polygon dataset identifying the play areas in the Brentwood Borough which have play and sports equipment installations.  The information includes the play area name, area in square metres and type of play area. Digitised at 1:1250 scale</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>Play Sport Recreation Land Use</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>community</Name>
+      <Title>community</Title>
+      <Abstract>GIS polygon dataset identifying institutional, recreational and community land and buildings within the Brentwood Borough. These have been selected by the Local Planning Authority to be subject to Local Plan policy that places restrictions on them to ensure local community needs are continually met if their use changes or they are redeveloped.  The information includes the building name, land area in hectares and British National Grid coordinates. Digitised at 1:1250 scale</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>Community Recreation Restriction Land Use Planning Policy Land Buildings Local Plan</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>community_and_offices</Name>
+      <Title>community_and_offices</Title>
+      <Abstract>GIS polygon dataset identifying institutional, recreational and community offices within the Brentwood Borough. These have been selected by the Local Planning Authority to be subject to Local Plan policy that places restrictions on them to ensure local community needs are continually met if their use changes or they are redeveloped.  The information includes the building name, land area in hectares and British National Grid coordinates. Digitised at 1:1250 scale</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>Community Receation Restriction Land Use Planning Policy Offices Local Plan</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>county_wildlife_sites</Name>
+      <Title>county_wildlife_sites</Title>
+      <Abstract>GIS polygon dataset identifying wildlife sites within the Brentwood Borough that have been selected by Essex County Council. Local Plan policy restrictions are imposed on their development to protect the long term survival of wildlife.  The dataset is geometry only. Digitised at 1:1250 scale</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>Wildlife Restriction Protect Protection Conserve Conservation Preserve Preservation Policy Local Plan Land Use</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>education_institutions</Name>
+      <Title>education_institutions</Title>
+      <Abstract>GIS polygon dataset identifying the land and buildings used for educational purposes at all levels within the Brentwood Borough.  The information includes the institution name, area in hectares and British National Grid coordinates. Digitised at 1:1250 scale</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>Education School College Primary Secondary Junior Land Use</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>employment_general</Name>
+      <Title>employment_general</Title>
+      <Abstract>GIS polygon dataset identifying the areas for general employment uses within the Brentwood Borough. These areas have been chosen by the Local Planning Authority to be subject to Local Plan policy to achieve and retain a wide range of job opportunities. The information includes the area name, area in hectares and British National Grid coordinates. Digitised at 1:1250 scale</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>Employment Planning Policy Opportunities Use Local Plan Job</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>employment_offices</Name>
+      <Title>employment_offices</Title>
+      <Abstract>GIS polygon dataset identifying the areas of office use within the Brentwood Borough. These areas have been chosen by the Local Planning Authority to be subject to Local Plan policy to restrict their use for office purposes. The information includes the area name, area in hectares and British National Grid coordinates. Digitised at 1:1250 scale</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>Employment Planning Policy Offices Land Use Local Plan Job</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>green_belt</Name>
+      <Title>green_belt</Title>
+      <Abstract>GIS polygon dataset identifying the extent of the Green Belt within the Brentwood Borough. The Green Belt is subject to Local Authority Planning Local Plan policy to maintain the extent, character and openness of the Borough's Countryside. The dataset is geometry only. Digitised at 1:1250 scale</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>Green Belt Planning Policy Countryside Protect Protection Conserve Conservation Preserve Preservation Local Plan Land Use</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>hospitals</Name>
+      <Title>hospitals</Title>
+      <Abstract>GIS polygon dataset identifying the location of the hospitals in the Brentwood Borough.  The dataset is geometry only. Digitised at 1:1250 scale</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>Hospital Medical Doctor Nurse Health NHS Emergency Land Use</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>major_housing_sites</Name>
+      <Title>major_housing_sites</Title>
+      <Abstract>GIS polygon dataset identifying the major housing development sites within the Brentwood Borough. These have been chosen by the Local Planning Authority to be subject to Local Plan policy to provide new dwellings between April 1996 and March 2011. The information includes the site name, area in hectares and British National Grid coordinates. Digitised at 1:1250 scale</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>Housing Planning Policy Development Dwellings Local Plan Land Use</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>open_space_study</Name>
+      <Title>open_space_study</Title>
+      <Abstract>GIS polygon dataset identifying the open spaces within the Brentwood Borough.  The open space is categorised according to the UK Government's Planning Policy Guidance 17 (PPG17). The information includes the site name, PPG17 open space category, street, ownership, decription, site assessment values, area in hectares, perimeter in metres and British National Grid coordinates. Digitised at 1:1250 scale</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>Open Space Study PPG17 Land Use</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>parish_boundaries</Name>
+      <Title>parish_boundaries</Title>
+      <Abstract>GIS polygon dataset identifying the parish boundaries within the Brentwood Borough. The information includes the parish name and code, area in hectares and British National Grid coordinates. Digitised at 1:1250 scale</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>Parish Boundary Church Religion Administrative Government</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>parking_restrictions</Name>
+      <Title>parking_restrictions</Title>
+      <Abstract></Abstract>
+      <ows:Keywords>
+        <ows:Keyword></ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>property</Name>
+      <Title>property</Title>
+      <Abstract>GIS polygon dataset identifying the freehold land and properties owned by Brentwood Borough Council. The information includes the property address, Land Registry title number, Brentwood Borough Council deed packet number, date of digitisation and area in hectares. Digitised at 1:1250 scale</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>Freehold Land Registry Title Property Ownership</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>railway_stations</Name>
+      <Title>railway_stations</Title>
+      <Abstract>GIS polygon dataset identifying the location of the railway stations in the Brentwood Borough.  The dataset is geometry only. Digitised at 1:1250 scale</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>Railway Station Transport Land Use</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>residential</Name>
+      <Title>residential</Title>
+      <Abstract>GIS polygon dataset identifying the areas of residential land within the Brentwood Borough. This land has been chosen by the Local Planning Authority to be subject to Local Plan housing provision policy. The information includes the area in hectares and British National Grid coordinates. Digitised at 1:1250 scale</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>Housing Residential Planning Policy Land Use Local Plan</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>residential_shops_and_offices</Name>
+      <Title>residential_shops_and_offices</Title>
+      <Abstract>GIS polygon dataset identifying the areas of residential/retail/office mixed use land within the Brentwood Borough. This land has been chosen by the Local Planning Authority to be subject to Local Plan residential/retail/office mixed use policy. The information includes the area name, area in hectares and British National Grid coordinates. Digitised at 1:1250 scale</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>Residential Housing Shops Retail Office Mixed Land Use Planning Policy Local Plan</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>shops_residential</Name>
+      <Title>shops_residential</Title>
+      <Abstract>GIS polygon dataset identifying the areas of residential/retail mixed use land within the Brentwood Borough. This land has been chosen by the Local Planning Authority to be subject to Local Plan residential/retail mixed use policy. The dataset is geometry only. Digitised at 1:1250 scale</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>Residential Housing Shops Retail Mixed Land Use Planning Policy Local Plan</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>sites_of_special_scientific_interest</Name>
+      <Title>sites_of_special_scientific_interest</Title>
+      <Abstract>GIS polygon dataset identifying the locations of Sites of Special Scientific Interest designated by English Nature in the Brentwood Borough. These are subject to Local Planning Authority Local Plan policy protecting these sites from detrimental development.  The dataset is geometry only. Digitised at 1:1250 scale</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>Sites Scientific SSSI Planning Policy Local Plan Protect Protection Conserve Conservation Preserve Preservation</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>smokeless_zones</Name>
+      <Title>smokeless_zones</Title>
+      <Abstract>GIS polygon dataset identifying the Smoke Control Areas within the Brentwood Borough. These areas have been chosen by the Local  Authority under the Clean Air Act to control smoke emission. The information includes area in square kilometres and British National Grid coordinates. Digitised at 1:1250 scale</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>Smoke Control Clean Air Emission</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>special_landscape_areas</Name>
+      <Title>special_landscape_areas</Title>
+      <Abstract>GIS polygon dataset identifying the Special Landscape Areas within the Brentwood Borough. These areas have been chosen by the Local Planning Authority to be subject to Local Plan policy to conserve or restore the existing character of the landscape. The dataset is geometry only. Digitised at 1:1250 scale</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>Landscape Protect Protection Conserve Conservation Preserve Preservation Restore Restoration Planning Policy Character Local Plan</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+  </FeatureTypeList>
+  <ogc:Filter_Capabilities>
+    <ogc:Spatial_Capabilities>
+      <ogc:GeometryOperands>
+        <ogc:GeometryOperand>gml:Point</ogc:GeometryOperand>
+        <ogc:GeometryOperand>gml:LineString</ogc:GeometryOperand>
+        <ogc:GeometryOperand>gml:Polygon</ogc:GeometryOperand>
+        <ogc:GeometryOperand>gml:Envelope</ogc:GeometryOperand>
+      </ogc:GeometryOperands>
+      <ogc:SpatialOperators>
+        <ogc:SpatialOperator name="Equals"/>
+        <ogc:SpatialOperator name="Disjoint"/>
+        <ogc:SpatialOperator name="Touches"/>
+        <ogc:SpatialOperator name="Within"/>
+        <ogc:SpatialOperator name="Overlaps"/>
+        <ogc:SpatialOperator name="Crosses"/>
+        <ogc:SpatialOperator name="Intersects"/>
+        <ogc:SpatialOperator name="Contains"/>
+        <ogc:SpatialOperator name="DWithin"/>
+        <ogc:SpatialOperator name="Beyond"/>
+        <ogc:SpatialOperator name="BBOX"/>
+      </ogc:SpatialOperators>
+    </ogc:Spatial_Capabilities>
+    <ogc:Scalar_Capabilities>
+      <ogc:LogicalOperators/>
+      <ogc:ComparisonOperators>
+        <ogc:ComparisonOperator>LessThan</ogc:ComparisonOperator>
+        <ogc:ComparisonOperator>GreaterThan</ogc:ComparisonOperator>
+        <ogc:ComparisonOperator>LessThanEqualTo</ogc:ComparisonOperator>
+        <ogc:ComparisonOperator>GreaterThanEqualTo</ogc:ComparisonOperator>
+        <ogc:ComparisonOperator>EqualTo</ogc:ComparisonOperator>
+        <ogc:ComparisonOperator>NotEqualTo</ogc:ComparisonOperator>
+        <ogc:ComparisonOperator>Like</ogc:ComparisonOperator>
+        <ogc:ComparisonOperator>Between</ogc:ComparisonOperator>
+      </ogc:ComparisonOperators>
+    </ogc:Scalar_Capabilities>
+    <ogc:Id_Capabilities>
+      <ogc:EID/>
+      <ogc:FID/>
+    </ogc:Id_Capabilities>
+  </ogc:Filter_Capabilities>
+</wfs:WFS_Capabilities>

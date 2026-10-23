@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<wfs:WFS_Capabilities xmlns:gml="http://www.opengis.net/gml" xmlns:wfs="http://www.opengis.net/wfs" xmlns:ows="http://www.opengis.net/ows" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ogc="http://www.opengis.net/ogc" xmlns="http://www.opengis.net/wfs" version="1.1.0" xsi:schemaLocation="http://www.opengis.net/wfs http://schemas.opengis.net/wfs/1.1.0/wfs.xsd">
+  <ows:ServiceIdentification>
+    <ows:Title/>
+    <!--WARNING: Optional metadata "ows_title" missing for ows:Title-->
+    <ows:Abstract>Rochford District Council OWS</ows:Abstract>
+    <ows:Keywords>
+      <ows:Keyword>Inspire</ows:Keyword>
+    </ows:Keywords>
+    <ows:ServiceType codeSpace="OGC">OGC WFS</ows:ServiceType>
+    <ows:ServiceTypeVersion>1.1.0</ows:ServiceTypeVersion>
+    <ows:Fees/>
+    <!--WARNING: Optional metadata "ows_fees" was missing for ows:Fees-->
+    <ows:AccessConstraints/>
+    <!--WARNING: Optional metadata "ows_accessconstraints" was missing for ows:AccessConstraints-->
+  </ows:ServiceIdentification>
+  <ows:ServiceProvider>
+    <ows:ProviderName>Rochford District Council</ows:ProviderName>
+    <ows:ProviderSite xlink:type="simple" xlink:href=""/>
+    <!--WARNING: Optional metadata "ows_service_onlineresource" was missing for ows:ProviderSite/@xlink:href-->
+    <ows:ServiceContact>
+      <ows:IndividualName>Luke Mackenzie</ows:IndividualName>
+      <ows:PositionName>Online Services Team Leader</ows:PositionName>
+      <ows:ContactInfo>
+        <ows:Phone>
+          <ows:Voice/>
+          <!--WARNING: Optional metadata "ows_contactvoicetelephone" was missing for ows:Voice-->
+          <ows:Facsimile/>
+          <!--WARNING: Optional metadata "ows_contactfacsimiletelephone" was missing for ows:Facsimile-->
+        </ows:Phone>
+        <ows:Address>
+          <ows:DeliveryPoint>Council Offices, South Street</ows:DeliveryPoint>
+          <ows:City>Rochford</ows:City>
+          <ows:AdministrativeArea>Essex</ows:AdministrativeArea>
+          <ows:PostalCode>SS4 1BW</ows:PostalCode>
+          <ows:Country>United Kingdom</ows:Country>
+          <ows:ElectronicMailAddress>gis@rochford.gov.uk</ows:ElectronicMailAddress>
+        </ows:Address>
+        <ows:OnlineResource xlink:type="simple" xlink:href=""/>
+        <!--WARNING: Optional metadata "ows_service_onlineresource" was missing for ows:OnlineResource/@xlink:href-->
+        <ows:HoursOfService/>
+        <!--WARNING: Optional metadata "ows_hoursofservice" was missing for ows:HoursOfService-->
+        <ows:ContactInstructions/>
+        <!--WARNING: Optional metadata "ows_contactinstructions" was missing for ows:ContactInstructions-->
+      </ows:ContactInfo>
+      <ows:Role/>
+      <!--WARNING: Optional metadata "ows_role" was missing for ows:Role-->
+    </ows:ServiceContact>
+  </ows:ServiceProvider>
+  <ows:OperationsMetadata>
+    <ows:Operation name="GetCapabilities">
+      <ows:DCP>
+        <ows:HTTP>
+          <ows:Get xlink:type="simple" xlink:href="http://essex.astuntechnology.com/getows.ashx?mapsource=Essex/Inspire_Rochford&amp;service=WFS&amp;"/>
+          <ows:Post xlink:type="simple" xlink:href="http://essex.astuntechnology.com/getows.ashx?mapsource=Essex/Inspire_Rochford&amp;service=WFS&amp;"/>
+        </ows:HTTP>
+      </ows:DCP>
+      <ows:Parameter name="service">
+        <ows:Value>WFS</ows:Value>
+      </ows:Parameter>
+      <ows:Parameter name="AcceptVersions">
+        <ows:Value>1.0.0</ows:Value>
+        <ows:Value>1.1.0</ows:Value>
+      </ows:Parameter>
+      <ows:Parameter name="AcceptFormats">
+        <ows:Value>text/xml</ows:Value>
+      </ows:Parameter>
+    </ows:Operation>
+    <ows:Operation name="DescribeFeatureType">
+      <ows:DCP>
+        <ows:HTTP>
+          <ows:Get xlink:type="simple" xlink:href="http://essex.astuntechnology.com/getows.ashx?mapsource=Essex/Inspire_Rochford&amp;service=WFS&amp;"/>
+          <ows:Post xlink:type="simple" xlink:href="http://essex.astuntechnology.com/getows.ashx?mapsource=Essex/Inspire_Rochford&amp;service=WFS&amp;"/>
+        </ows:HTTP>
+      </ows:DCP>
+      <ows:Parameter name="outputFormat">
+        <ows:Value>XMLSCHEMA</ows:Value>
+        <ows:Value>text/xml; subtype=gml/2.1.2</ows:Value>
+        <ows:Value>text/xml; subtype=gml/3.1.1</ows:Value>
+      </ows:Parameter>
+    </ows:Operation>
+    <ows:Operation name="GetFeature">
+      <ows:DCP>
+        <ows:HTTP>
+          <ows:Get xlink:type="simple" xlink:href="http://essex.astuntechnology.com/getows.ashx?mapsource=Essex/Inspire_Rochford&amp;service=WFS&amp;"/>
+          <ows:Post xlink:type="simple" xlink:href="http://essex.astuntechnology.com/getows.ashx?mapsource=Essex/Inspire_Rochford&amp;service=WFS&amp;"/>
+        </ows:HTTP>
+      </ows:DCP>
+      <ows:Parameter name="resultType">
+        <ows:Value>results</ows:Value>
+        <ows:Value>hits</ows:Value>
+      </ows:Parameter>
+      <ows:Parameter name="outputFormat">
+        <ows:Value>text/xml; subtype=gml/3.1.1</ows:Value>
+      </ows:Parameter>
+    </ows:Operation>
+  </ows:OperationsMetadata>
+  <FeatureTypeList>
+    <Operations>
+      <Operation>Query</Operation>
+    </Operations>
+    <FeatureType>
+      <Name>rdc_aerodrome_safeguarding_all</Name>
+      <Title>rdc_aerodrome_safeguarding_all</Title>
+      <Abstract>This dataset shows the location of the safeguard zone around London Southend Airport.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>SAFEGUARD ZONE</ows:Keyword>
+        <ows:Keyword> AIRPORT</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>rdc_airport_viewpoints</Name>
+      <Title>rdc_airport_viewpoints</Title>
+      <Abstract>This dataset shows the location of the viewpoints for Londond Southend Airport.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>VIEWPOINTS</ows:Keyword>
+        <ows:Keyword> AIRPORT</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>rdc_allotments</Name>
+      <Title>rdc_allotments</Title>
+      <Abstract>This dataset shows Allotment Sites in the Rochford District.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>ALLOTMENT</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>rdc_article_four</Name>
+      <Title>rdc_article_four</Title>
+      <Abstract>This dataset contains the Article 4 sites within the Rochford District. Article 4 Directions are issued by the Council in circumstances where specific control over development is required, primarily where the character of an area of acknowledged importance would be threatened.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>ARTICLE 4</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>rdc_assets</Name>
+      <Title>rdc_assets</Title>
+      <Abstract>This dataset shows the location of the Council's Assets within the Rochford District.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>ASSET</ows:Keyword>
+        <ows:Keyword> OWNERSHIP</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>rdc_bowling_greens</Name>
+      <Title>rdc_bowling_greens</Title>
+      <Abstract>This dataset shows the location of Bowling Greens within the Rochford District.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>BOWLING GREEN</ows:Keyword>
+        <ows:Keyword> RECREATION</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>rdc_bus_stops</Name>
+      <Title>rdc_bus_stops</Title>
+      <Abstract>This dataset shows the location of Bus Stops within the Rochford District.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>BUS STOP</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>rdc_car_parks</Name>
+      <Title>rdc_car_parks</Title>
+      <Abstract>This dataset shows the location of Car Parks within the Rochford District.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>CAR PARKS</ows:Keyword>
+        <ows:Keyword> PARKING</ows:Keyword>
+        <ows:Keyword> TRANSPORTATION</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>rdc_cemeteries</Name>
+      <Title>rdc_cemeteries</Title>
+      <Abstract>This dataset shows cemeteries in the Rochford District.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>CEMETERY</ows:Keyword>
+        <ows:Keyword> CEMETERIES</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>rdc_cherry_orchard_jubilee_country_park</Name>
+      <Title>rdc_cherry_orchard_jubilee_country_park</Title>
+      <Abstract>This dataset shows the location of Cherry Orchard Jubilee Country Park within the Rochford District.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>PARK</ows:Keyword>
+        <ows:Keyword> OPEN SPACE</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>rdc_conservation_areas</Name>
+      <Title>rdc_conservation_areas</Title>
+      <Abstract></Abstract>
+      <ows:Keywords>
+        <ows:Keyword></ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>rdc_cricket_fields</Name>
+      <Title>rdc_cricket_fields</Title>
+      <Abstract>This dataset shows the location of Cricket Fields within the Rochford District.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>CRICKET FIELD</ows:Keyword>
+        <ows:Keyword> RECREATION</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>rdc_fire_stations</Name>
+      <Title>rdc_fire_stations</Title>
+      <Abstract>This dataset shows the location of Fire Stations within the Rochford District.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>FIRE STATION</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>rdc_football_fields</Name>
+      <Title>rdc_football_fields</Title>
+      <Abstract>This dataset shows the location of Football Fields within the Rochford District.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>FOOTBALL FIELD</ows:Keyword>
+        <ows:Keyword> RECREATION</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>rdc_golf_courses</Name>
+      <Title>rdc_golf_courses</Title>
+      <Abstract>This dataset shows the location of Golf Courses within the Rochford District.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>GOLF COURSES</ows:Keyword>
+        <ows:Keyword> RECREATION</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>rdc_leisure_centres</Name>
+      <Title>rdc_leisure_centres</Title>
+      <Abstract>This dataset shows the location of Leisure Centres within the Rochford District.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>LEISURE CENTRE</ows:Keyword>
+        <ows:Keyword> RECREATION</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>rdc_libraries</Name>
+      <Title>rdc_libraries</Title>
+      <Abstract>This dataset shows the location of Libraries within the Rochford District.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>LIBRARY</ows:Keyword>
+        <ows:Keyword> LIBRARIES</ows:Keyword>
+        <ows:Keyword> RECREATION</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>rdc_listed_buildings</Name>
+      <Title>rdc_listed_buildings</Title>
+      <Abstract>This dataset shows the location of Listed Buildings within the Rochford District.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>LISTED BUILDING</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>rdc_nature_reserves</Name>
+      <Title>rdc_nature_reserves</Title>
+      <Abstract>This dataset shows the location of Nature Reserves within the Rochford District.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>NATURE RESERVE</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>rdc_play_spaces</Name>
+      <Title>rdc_play_spaces</Title>
+      <Abstract>This dataset shows the location of Play Spaces within the Rochford District.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>PLAY SPACE</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>rdc_police_stations</Name>
+      <Title>rdc_police_stations</Title>
+      <Abstract>This dataset shows the location of Police Stations within the Rochford District.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>POLICE STATION</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>rdc_polling_stations</Name>
+      <Title>rdc_polling_stations</Title>
+      <Abstract>This dataset shows the location of Polling Stations within the Rochford District.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>POLLING STATION</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>rdc_ponds</Name>
+      <Title>rdc_ponds</Title>
+      <Abstract>This dataset shows the location of Power Lines within the Rochford District.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>POND</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>rdc_power_lines</Name>
+      <Title>rdc_power_lines</Title>
+      <Abstract>This dataset shows the location of Power Lines within the Rochford District.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>POWER LINE</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>rdc_prow</Name>
+      <Title>rdc_prow</Title>
+      <Abstract>This dataset shows the location of Public Rights of Way within the Rochford District.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>PUBLIC RIGHTS of WAY</ows:Keyword>
+        <ows:Keyword> WALKING</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>rdc_railway_stations</Name>
+      <Title>rdc_railway_stations</Title>
+      <Abstract>This dataset shows the location of Railway Stations within the Rochford District.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>RAILWAY STATION</ows:Keyword>
+        <ows:Keyword> TRANSPORTATION</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>rdc_rugby_fields</Name>
+      <Title>rdc_rugby_fields</Title>
+      <Abstract>This dataset shows the location of Rugby Fields within the Rochford District.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>RUGBY FIELD</ows:Keyword>
+        <ows:Keyword> RECREATION</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>rdc_schools</Name>
+      <Title>rdc_schools</Title>
+      <Abstract>This dataset shows the location of Schools within the Rochford District.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>SCHOOL</ows:Keyword>
+        <ows:Keyword> EDUCATION</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>rdc_skateboard_and_bmx_areas</Name>
+      <Title>rdc_skateboard_and_bmx_areas</Title>
+      <Abstract>This dataset shows the location of Skateboard and BMX Areas within the Rochford District.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>SKATEBOARD</ows:Keyword>
+        <ows:Keyword> BMX</ows:Keyword>
+        <ows:Keyword> RECREATION</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>rdc_sub_stations</Name>
+      <Title>rdc_sub_stations</Title>
+      <Abstract>This dataset shows the location of Sub Stations within the Rochford District.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>SUB STATION</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>rdc_tennis_courts</Name>
+      <Title>rdc_tennis_courts</Title>
+      <Abstract>This dataset shows the location of Tennis Courts within the Rochford District.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>TENNIS COURT</ows:Keyword>
+        <ows:Keyword> RECREATION</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>rdc_towns</Name>
+      <Title>rdc_towns</Title>
+      <Abstract>This dataset shows the location of Towns within the Rochford District.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>TOWN</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>rdc_wildlife_sites</Name>
+      <Title>rdc_wildlife_sites</Title>
+      <Abstract>This dataset shows the location of Wildlife Sites within the Rochford District.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>WILDLIFE SITE</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>rdc_woodland</Name>
+      <Title>rdc_woodland</Title>
+      <Abstract>This dataset shows the location of Woodland within the Rochford District.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword></ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+    <FeatureType>
+      <Name>rdc_yacht_clubs</Name>
+      <Title>rdc_yacht_clubs</Title>
+      <Abstract>This dataset shows the location of Woodland within the Rochford District.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>YACHT CLUB</ows:Keyword>
+        <ows:Keyword> RECREATION</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::27700</DefaultSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox/>
+      <!--WARNING: Optional WGS84BoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wfs_extent metadata. Also check that your data exists in the DATA statement-->
+    </FeatureType>
+  </FeatureTypeList>
+  <ogc:Filter_Capabilities>
+    <ogc:Spatial_Capabilities>
+      <ogc:GeometryOperands>
+        <ogc:GeometryOperand>gml:Point</ogc:GeometryOperand>
+        <ogc:GeometryOperand>gml:LineString</ogc:GeometryOperand>
+        <ogc:GeometryOperand>gml:Polygon</ogc:GeometryOperand>
+        <ogc:GeometryOperand>gml:Envelope</ogc:GeometryOperand>
+      </ogc:GeometryOperands>
+      <ogc:SpatialOperators>
+        <ogc:SpatialOperator name="Equals"/>
+        <ogc:SpatialOperator name="Disjoint"/>
+        <ogc:SpatialOperator name="Touches"/>
+        <ogc:SpatialOperator name="Within"/>
+        <ogc:SpatialOperator name="Overlaps"/>
+        <ogc:SpatialOperator name="Crosses"/>
+        <ogc:SpatialOperator name="Intersects"/>
+        <ogc:SpatialOperator name="Contains"/>
+        <ogc:SpatialOperator name="DWithin"/>
+        <ogc:SpatialOperator name="Beyond"/>
+        <ogc:SpatialOperator name="BBOX"/>
+      </ogc:SpatialOperators>
+    </ogc:Spatial_Capabilities>
+    <ogc:Scalar_Capabilities>
+      <ogc:LogicalOperators/>
+      <ogc:ComparisonOperators>
+        <ogc:ComparisonOperator>LessThan</ogc:ComparisonOperator>
+        <ogc:ComparisonOperator>GreaterThan</ogc:ComparisonOperator>
+        <ogc:ComparisonOperator>LessThanEqualTo</ogc:ComparisonOperator>
+        <ogc:ComparisonOperator>GreaterThanEqualTo</ogc:ComparisonOperator>
+        <ogc:ComparisonOperator>EqualTo</ogc:ComparisonOperator>
+        <ogc:ComparisonOperator>NotEqualTo</ogc:ComparisonOperator>
+        <ogc:ComparisonOperator>Like</ogc:ComparisonOperator>
+        <ogc:ComparisonOperator>Between</ogc:ComparisonOperator>
+      </ogc:ComparisonOperators>
+    </ogc:Scalar_Capabilities>
+    <ogc:Id_Capabilities>
+      <ogc:EID/>
+      <ogc:FID/>
+    </ogc:Id_Capabilities>
+  </ogc:Filter_Capabilities>
+</wfs:WFS_Capabilities>
