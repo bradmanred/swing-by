@@ -24,7 +24,7 @@ for line in open("tmp/seeds.txt"):
     tag, seeds = line.split(" ", 1); seeds = seeds.split()
     host = urllib.parse.urlparse(seeds[0]).netloc
     seen, queue, n = set(), list(seeds), 0
-    while queue and n < 30:
+    while queue and n < 60:
         u = queue.pop(0)
         if u in seen: continue
         seen.add(u); n += 1
