@@ -41,33 +41,10 @@
   }
  ],
  "Dronfield Woodhouse Recreation Ground Play Area|Dronfield Woodhouse": [],
- "Alfreton Welfare Recreation Ground Play Area|Alfreton": [
-  {
-   "q": "Alfreton Welfare",
-   "lat": 53.0507262,
-   "lng": -1.2939518,
-   "t": "club/social",
-   "dn": "Underwood Miners Welfare, Alfreton Road, Friezeland, Selston CP, Underwood, City of Nottingham, Nottinghamshir"
-  },
-  {
-   "q": "recreation ground, Alfreton",
-   "lat": 53.0722534,
-   "lng": -1.321591,
-   "t": "highway/bus_stop",
-   "dn": "Recreation Ground, Alfreton Road, Jubilee, Selston CP, Westwood, Ashfield, Nottinghamshire, East Midlands, Eng"
-  }
- ],
+ "Alfreton Welfare Recreation Ground Play Area|Alfreton": [],
  "Crays Hill QE2 Park Play Area|Leabrooks": [],
  "Brunswood Park Play Area|Spondon": [],
- "Woodlands Park Play Area|Woodville": [
-  {
-   "q": "Woodlands Park, Swadlincote",
-   "lat": 52.7746917,
-   "lng": -1.5455695,
-   "t": "leisure/park",
-   "dn": "Swadlincote Woodlands & Park, Upper Midway, Swadlincote, South Derbyshire, Derbyshire, East Midlands, England,"
-  }
- ],
+ "Woodlands Park Play Area|Woodville": [],
  "Oversetts Recreation Ground Play Area|Newhall": [
   {
    "q": "Oversetts Road",
@@ -210,34 +187,5 @@
    "dn": "Farmers' View, Hazel Grove, Matlock Town, Matlock, Derbyshire Dales, Derbyshire, East Midlands, England, DE4 3"
   }
  ],
- "OLD|Chatsworth Road Play Area|Derbyshire Dales": [
-  {
-   "q": "Chatsworth Road, Rowsley",
-   "lat": 53.1913075,
-   "lng": -1.6131634,
-   "t": "highway/secondary",
-   "dn": "Chatsworth Road, Rowsley CP, Tinkersley, Derbyshire Dales, Derbyshire, East Midlands, England, DE4 2GZ, United"
-  },
-  {
-   "q": "Chatsworth Road, Rowsley",
-   "lat": 53.1934605,
-   "lng": -1.6117663,
-   "t": "highway/secondary",
-   "dn": "Chatsworth Road, Rowsley CP, Tinkersley, Derbyshire Dales, Derbyshire, East Midlands, England, DE4 2EJ, United"
-  },
-  {
-   "q": "Chatsworth Road, Rowsley",
-   "lat": 53.198861,
-   "lng": -1.6090445,
-   "t": "highway/secondary",
-   "dn": "Chatsworth Road, Beeley CP, Tinkersley, Derbyshire Dales, Derbyshire, East Midlands, England, DE4 2NP, United "
-  },
-  {
-   "q": "Chatsworth Road, Rowsley",
-   "lat": 53.1904912,
-   "lng": -1.6141371,
-   "t": "building/train_station",
-   "dn": "Rowsley Old Station, Chatsworth Road, Rowsley CP, Tinkersley, Derbyshire Dales, Derbyshire, East Midlands, Eng"
-  }
- ]
+ "OLD|Chatsworth Road Play Area|Derbyshire Dales": []
 }
