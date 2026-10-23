@@ -8,10 +8,10 @@ permissions:
 jobs:
   get:
     runs-on: ubuntu-24.04
-    timeout-minutes: 60
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - run: python3 tmp/near.py
       - run: |
           git config user.name swing-by-bot; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add tmp/near.json; git commit -m "Candidates near junctions" && git push
+          git add tmp/essex-osm.csv; git commit -m "Candidates near junctions" && git push
