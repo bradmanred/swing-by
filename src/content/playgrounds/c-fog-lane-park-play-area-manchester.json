@@ -1,0 +1,26 @@
+{
+  "name": "Fog Lane Park Play Area",
+  "region": "north-west",
+  "area": "Manchester",
+  "lat": 53.42498,
+  "lng": -2.22018,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "Children's play area at Fog Lane Park, Fog Lane, listed in Manchester City Council's parks and playgrounds directory. Postcode M20 4UP.",
+  "nearby": [],
+  "operator": "Manchester City Council",
+  "sources": [
+    {
+      "label": "Manchester City Council: all parks, playgrounds and open spaces",
+      "url": "https://www.manchester.gov.uk/online-directories/parks-leisure-and-the-arts-directories/parks-playgrounds-allotments-and-open-spaces-directories/parks-and-open-spaces/all-parks-playgrounds-and-open-spaces"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (mapped from the postcode), age ranges, play equipment, opening hours and parking.",
+  "photo": null
+}
