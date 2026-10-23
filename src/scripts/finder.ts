@@ -1,7 +1,8 @@
 import { cardHTML, esc, fmtMiles, type CardPhoto, type ClientPark } from '../lib/card';
 import { store, getMine } from './store';
 
-type Origin = { name: string; lat: number; lng: number; acc: number; how: 'town' | 'postcode' | 'gps' };
+// 'example' is the starting point before someone tells us where they are.
+type Origin = { name: string; lat: number; lng: number; acc: number; how: 'town' | 'postcode' | 'gps' | 'example' };
 type Town = { name: string; lat: number; lng: number; r: string };
 
 const $ = <T extends HTMLElement>(s: string) => document.querySelector(s) as T;
@@ -20,7 +21,7 @@ export function startFinder() {
   const { parks, towns } = JSON.parse($('#parks-data').textContent!) as { parks: ClientPark[]; towns: Town[] };
   const first = towns[0];
   const st = {
-    origin: store.get<Origin>('sb-origin', { name: first.name, lat: first.lat, lng: first.lng, acc: 1500, how: 'town' }),
+    origin: store.get<Origin>('sb-origin', { name: first.name, lat: first.lat, lng: first.lng, acc: 1500, how: 'example' }),
     ages: new Set<string>(),
     sizes: new Set<string>(),
     loves: new Set<string>(),
@@ -33,7 +34,7 @@ export function startFinder() {
   };
   const hint = $('#where-hint');
   const where = $<HTMLInputElement>('#where');
-  where.value = st.origin.how === 'gps' ? '' : st.origin.name;
+  where.value = st.origin.how === 'gps' || st.origin.how === 'example' ? '' : st.origin.name;
   let map: MapView | null = null;
   // Each lookup gets a number so a slow answer (often "Near me") can't overwrite a newer search.
   let lookup = 0;
@@ -54,7 +55,7 @@ export function startFinder() {
   function render(announce = true) {
     const rows = list();
     const label = st.origin.how === 'gps' ? 'you' : st.origin.name;
-    $('#results-title').textContent = st.area ? 'Playgrounds in this map area' : `Playgrounds near ${label}`;
+    $('#results-title').textContent = st.area ? 'Playgrounds in this map area' : st.origin.how === 'example' ? `Playgrounds near ${label}, as an example` : `Playgrounds near ${label}`;
     $('#near-title').textContent = st.area ? 'Parks in this area' : 'Parks near you';
     $('#cards').innerHTML = rows
       .slice(0, st.limit)
@@ -79,7 +80,10 @@ export function startFinder() {
     } else {
       const sure =
         st.origin.acc <= 150 ? 'The circle shows how sure we are.' : st.origin.acc <= 2500 ? 'The circle shows roughly where we think you are.' : 'This is only a rough guess.';
-      cap.innerHTML = `<strong>We think you're near ${esc(st.origin.name)}.</strong> ${sure}`;
+      cap.innerHTML =
+        st.origin.how === 'example'
+          ? `<strong>Enter your town or postcode, or tap Near me,</strong> to see playgrounds near you. Until then, here's ${esc(st.origin.name)} as an example.`
+          : `<strong>We think you're near ${esc(st.origin.name)}.</strong> ${sure}`;
     }
     const top = rows.slice(0, 5).map((x) => x.p);
     // Also mark the other playgrounds in view, so moving the map shows everything there.
