@@ -1,0 +1,17 @@
+name: Temporary junctions
+on:
+  push:
+    branches: [tmp-junctions]
+    paths: ['tmp/junctions.py', '.github/workflows/tmp-junctions.yml']
+permissions:
+  contents: write
+jobs:
+  get:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tmp/junctions.py
+      - run: |
+          git config user.name swing-by-bot; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tmp/junctions-raw.json; git commit -m "Junctions" && git push
