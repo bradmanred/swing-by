@@ -63,8 +63,9 @@ export function cardHTML(p: ClientPark, o: { dist?: number; num?: number; mine?:
   const foot = p.c
     ? `✓ Checked ${fmtDate(p.c)}`
     : '<span class="chips"><span class="unv" style="padding:4px 12px;border-radius:10px">Unverified</span></span> Details not checked yet';
+  const heart = `<button type="button" class="fav-btn" data-fav="${esc(p.id)}" data-name="${esc(p.n)}" aria-pressed="false" aria-label="Save ${esc(p.n)} to favourites"><span aria-hidden="true">♥</span></button>`;
   return `<li class="card" id="card-${esc(p.id)}">${picture(p, o.photo)}<div class="body">
-<h3>${o.num ? `<span class="sr-only">${o.num}. </span>` : ''}<a href="/playgrounds/${esc(p.id)}/">${esc(p.n)}</a></h3>
+${heart}<h3>${o.num ? `<span class="sr-only">${o.num}. </span>` : ''}<a href="/playgrounds/${esc(p.id)}/">${esc(p.n)}</a></h3>
 <p class="meta">${o.dist != null ? `<strong>${fmtMiles(o.dist)}</strong> · ` : ''}${esc(p.a)}${o.mine?.v ? ' · ✓ Been here' : ''}</p>
 ${chips.length ? `<ul class="chips" aria-label="Features">${chips.join('')}</ul>` : ''}
 ${p.d ? `<p>${esc(p.d)}${p.d.length >= 140 ? '…' : ''}</p>` : ''}
