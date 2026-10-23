@@ -118,6 +118,19 @@ try {
   const large = await page.locator('#cards .card .size-large').count();
   if (!(sized > 0 && sized === large)) fail(`size filter: ${sized} cards, ${large} marked large`);
 
+  // Free entry only: hides every playground with a fee, and only those.
+  await page.goto(BASE + '/');
+  const paid = JSON.parse(await page.locator('#parks-data').textContent()).parks.filter((x) => x.pay).length;
+  const countOf = async () => Number((await page.locator('#count').textContent()).match(/\d+/)?.[0]);
+  await page.getByRole('checkbox', { name: 'Free entry only' }).check();
+  const freeCount = await countOf();
+  await page.getByRole('checkbox', { name: 'Free entry only' }).uncheck();
+  const allCount = await countOf();
+  if (!(paid > 0 && allCount - freeCount === paid)) fail(`free entry filter: ${allCount} → ${freeCount}, expected ${paid} fewer`);
+  // A paid playground shows the £ badge on its page.
+  await page.goto(BASE + '/playgrounds/calke/');
+  if (!(await page.getByText('Paid entry.').count())) fail('paid entry note missing on a playground with a fee');
+
   // Site search finds a park by name (including a missing space or a slip) and by town.
   for (const [q, want] of [['moneyhole', 'Moneyhole Lane Playing Fields Playground'], ['money hole lane', 'Moneyhole Lane Playing Fields Playground'], ['digswel', 'Digswell Playing Fields Play Area']]) {
     await page.goto(BASE + '/search/?q=' + encodeURIComponent(q));

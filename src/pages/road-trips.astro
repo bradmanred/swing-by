@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-import { allParks, km, L } from '../lib/parks';
+import { allParks, km, L, paidEntry } from '../lib/parks';
 import { fmtMiles } from '../lib/card';
 import junctionsFile from '../data/junctions.json';
 
@@ -13,12 +13,13 @@ const rows = junctionsFile.junctions.map((j) => ({
     .map((p) => ({ p, d: km(j, p) }))
     .filter((x) => x.d <= RADIUS_KM)
     .sort((a, b) => Number(b.p.facilities.includes('wc')) - Number(a.p.facilities.includes('wc')) || a.d - b.d)
-    .slice(0, 3),
+    .slice(0, 6),
 }));
 ---
 <Base title="Road trips" current="/road-trips/" description="Playgrounds within about 5 minutes of motorway and major road junctions.">
   <h1>Break a long drive</h1>
   <p style="max-width:60ch">Playgrounds within about 5 minutes of a motorway or major road junction, with toilets listed first. Distances are in a straight line from the junction, so check the route before you leave the motorway.</p>
+  <p><label class="chk"><input type="checkbox" id="free-only" /> Free entry only</label> <span class="hint">Hides places marked <span class="pound" aria-hidden="true">£</span> Paid entry.</span></p>
   <ul class="cards">
     {rows.map(({ j, near }) => (
       <li class="card">
@@ -27,13 +28,37 @@ const rows = junctionsFile.junctions.map((j) => ({
           <p>{j.serves}</p>
           {near.length ? (
             <ul class="facts">
-              {near.map(({ p, d }) => (
-                <li><a href={`/playgrounds/${p.id}/`}>{p.name}</a>, {fmtMiles(d)}{p.facilities.includes('wc') && ', toilets'}{!p.checked && ' (Unverified)'}</li>
+              {near.map(({ p, d }, i) => (
+                <li data-pay={paidEntry(p) ? '' : undefined} hidden={i >= 3}><a href={`/playgrounds/${p.id}/`}>{p.name}</a>, {fmtMiles(d)}{p.facilities.includes('wc') && ', toilets'}{paidEntry(p) && <>, <span class="pay-tag"><span class="pound" aria-hidden="true">£</span> paid entry</span></>}{!p.checked && ' (Unverified)'}</li>
               ))}
             </ul>
-          ) : <p class="hint">We haven't found a playground within 5 minutes of this junction yet.</p>}
+          ) : null}
+          <p class="hint none" hidden={near.length > 0}>We haven't found a {near.length ? 'free ' : ''}playground within 5 minutes of this junction yet.</p>
         </div>
       </li>
     ))}
   </ul>
+  <script>
+    import { store } from '../scripts/store';
+    // Show up to three playgrounds per junction, leaving out paid ones when asked.
+    const box = document.querySelector<HTMLInputElement>('#free-only')!;
+    const apply = () => {
+      document.querySelectorAll('.cards > .card').forEach((card) => {
+        let shown = 0;
+        card.querySelectorAll<HTMLLIElement>('.facts > li').forEach((li) => {
+          const ok = !(box.checked && li.hasAttribute('data-pay')) && shown < 3;
+          li.hidden = !ok;
+          if (ok) shown++;
+        });
+        const none = card.querySelector<HTMLElement>('.none');
+        if (none) none.hidden = shown > 0;
+      });
+    };
+    box.checked = store.get<boolean>('sb-free-only', false);
+    box.addEventListener('change', () => {
+      store.set('sb-free-only', box.checked);
+      apply();
+    });
+    apply();
+  </script>
 </Base>
