@@ -2,17 +2,16 @@ name: Temporary junctions
 on:
   push:
     branches: [tmp-junctions]
-    paths: ['tmp/busiest.py', 'tmp/junctions.py', '.github/workflows/tmp-junctions.yml']
+    paths: ['tmp/near.py', 'tmp/todo-junctions.json', '.github/workflows/tmp-junctions.yml']
 permissions:
   contents: write
 jobs:
   get:
     runs-on: ubuntu-24.04
-    timeout-minutes: 40
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
-      - run: python3 tmp/busiest.py || true
-      - run: python3 tmp/junctions.py
+      - run: python3 tmp/near.py
       - run: |
           git config user.name swing-by-bot; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add tmp/junctions-raw.json tmp/busiest.json; git commit -m "Junctions" && git push
+          git add tmp/near.json; git commit -m "Candidates near junctions" && git push
