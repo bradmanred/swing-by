@@ -1,64 +1,86 @@
 ---
 import Base from '../layouts/Base.astro';
-import { allParks, km, L, paidEntry } from '../lib/parks';
+import { allParks, km, paidEntry } from '../lib/parks';
 import { fmtMiles } from '../lib/card';
 import junctionsFile from '../data/junctions.json';
+import regionsFile from '../data/regions.json';
 
+type Junction = { road: string; j: string; name?: string; serves: string; lat: number; lng: number };
+const junctions = junctionsFile.junctions as Junction[];
+const roadOrder: string[] = junctionsFile.roads ?? [];
 const parks = await allParks();
 // About 5 minutes' drive off the junction: 3 miles in a straight line.
 const RADIUS_KM = 4.8;
-const rows = junctionsFile.junctions.map((j) => ({
-  j,
-  near: parks
+// Numbered junctions read "M1 J8"; unnumbered ones on A roads use their name, "A38 Markeaton".
+const label = (j: Junction) => (j.j ? `${j.road} J${j.j}` : `${j.road} ${j.name ?? ''}`.trim());
+const nearOf = (j: Junction) =>
+  parks
     .map((p) => ({ p, d: km(j, p) }))
     .filter((x) => x.d <= RADIUS_KM)
-    .sort((a, b) => Number(b.p.facilities.includes('wc')) - Number(a.p.facilities.includes('wc')) || a.d - b.d)
-    .slice(0, 6),
-}));
+    .sort((a, b) => Number(b.p.facilities.includes('wc')) - Number(a.p.facilities.includes('wc')) || a.d - b.d);
+const roads = [...new Set([...roadOrder, ...junctions.map((j) => j.road)])]
+  .map((road) => ({
+    road,
+    rows: junctions
+      .filter((j) => j.road === road)
+      .map((j) => ({ j, near: nearOf(j) }))
+      .filter((x) => x.near.length > 0),
+  }))
+  .filter((r) => r.rows.length > 0);
+const withPlay = roads.reduce((n, r) => n + r.rows.length, 0);
+// The browser only needs positions to find the nearest junction and playgrounds.
+const data = {
+  junctions: junctions.map((j) => ({ n: label(j), s: j.serves, lat: j.lat, lng: j.lng })),
+  parks: parks.map((p) => ({ id: p.id, n: p.name, a: p.area, lat: p.lat, lng: p.lng, wc: p.facilities.includes('wc'), pay: paidEntry(p), c: !!p.checked })),
+  towns: regionsFile.regions.flatMap((r) => r.towns),
+  radius: RADIUS_KM,
+};
 ---
-<Base title="Road trips" current="/road-trips/" description="Playgrounds within about 5 minutes of motorway and major road junctions.">
+<Base title="Road trips" current="/road-trips/" description="Find your nearest motorway or major road junction and the playgrounds within about 5 minutes of it.">
   <h1>Break a long drive</h1>
-  <p style="max-width:60ch">Playgrounds within about 5 minutes of a motorway or major road junction, with toilets listed first. Distances are in a straight line from the junction, so check the route before you leave the motorway.</p>
-  <p><label class="chk"><input type="checkbox" id="free-only" /> Free entry only</label> <span class="hint">Hides places marked <span class="pound" aria-hidden="true">£</span> Paid entry.</span></p>
-  <ul class="cards">
-    {rows.map(({ j, near }) => (
-      <li class="card">
-        <div class="body">
-          <h2 style="font-size:1.75rem">{j.name}</h2>
-          <p>{j.serves}</p>
-          {near.length ? (
-            <ul class="facts">
+  <p style="max-width:60ch">Playgrounds within about 5 minutes of a motorway or major road junction, with toilets listed first. Distances are in a straight line from the junction, so check the route before you leave the road.</p>
+
+  <section class="panel junction-finder" aria-labelledby="jf-title">
+    <h2 id="jf-title">Find your nearest junction</h2>
+    <form id="jf" class="row" style="align-items:flex-end">
+      <div style="flex:1 1 220px">
+        <label for="jf-where">Where are you?</label>
+        <input id="jf-where" type="text" autocomplete="postal-code" placeholder="A town or postcode" aria-describedby="jf-hint" style="width:100%" />
+      </div>
+      <button class="btn btn-yellow" type="button" id="jf-locate"><span aria-hidden="true">📍</span> Near me</button>
+      <button class="btn btn-red" type="submit">Find junctions</button>
+    </form>
+    <p class="hint" id="jf-hint" aria-live="polite">We'll find the junctions closest to you and the playgrounds near each one.</p>
+    <p><label class="chk"><input type="checkbox" id="free-only" /> Free entry only</label> <span class="hint">Hides places marked <span class="pound" aria-hidden="true">£</span> Paid entry.</span></p>
+    <div id="jf-results" aria-live="polite"></div>
+  </section>
+
+  <h2 style="margin-top:32px">Junctions by road</h2>
+  <p class="hint">{withPlay} junctions on {roads.length} roads have a playground we list within about 5 minutes. Busiest roads first.</p>
+  {roads.map(({ road, rows }) => (
+    <details class="road panel" style="margin-top:12px;box-shadow:none">
+      <summary><strong>{road}</strong> <span class="hint">({rows.length} {rows.length === 1 ? 'junction' : 'junctions'})</span></summary>
+      <ul class="facts" style="margin-top:12px">
+        {rows.map(({ j, near }) => (
+          <li class="jrow">
+            <strong>{label(j)}</strong>{j.serves && <span class="hint"> · {j.serves}</span>}
+            <ul class="facts" style="margin:6px 0 0 16px">
               {near.map(({ p, d }, i) => (
                 <li data-pay={paidEntry(p) ? '' : undefined} hidden={i >= 3}><a href={`/playgrounds/${p.id}/`}>{p.name}</a>, {fmtMiles(d)}{p.facilities.includes('wc') && ', toilets'}{paidEntry(p) && <>, <span class="pay-tag"><span class="pound" aria-hidden="true">£</span> paid entry</span></>}{!p.checked && ' (Unverified)'}</li>
               ))}
             </ul>
-          ) : null}
-          <p class="hint none" hidden={near.length > 0}>We haven't found a {near.length ? 'free ' : ''}playground within 5 minutes of this junction yet.</p>
-        </div>
-      </li>
-    ))}
-  </ul>
+            <p class="hint none" hidden>Only paid-entry playgrounds near this junction.</p>
+          </li>
+        ))}
+      </ul>
+    </details>
+  ))}
+
+  <p class="hint" style="margin-top:24px">Junction positions © OpenStreetMap contributors. Busiest roads ranked using the Department for Transport's road traffic counts (Open Government Licence).</p>
+
+  <script type="application/json" id="rt-data" set:html={JSON.stringify(data)} />
   <script>
-    import { store } from '../scripts/store';
-    // Show up to three playgrounds per junction, leaving out paid ones when asked.
-    const box = document.querySelector<HTMLInputElement>('#free-only')!;
-    const apply = () => {
-      document.querySelectorAll('.cards > .card').forEach((card) => {
-        let shown = 0;
-        card.querySelectorAll<HTMLLIElement>('.facts > li').forEach((li) => {
-          const ok = !(box.checked && li.hasAttribute('data-pay')) && shown < 3;
-          li.hidden = !ok;
-          if (ok) shown++;
-        });
-        const none = card.querySelector<HTMLElement>('.none');
-        if (none) none.hidden = shown > 0;
-      });
-    };
-    box.checked = store.get<boolean>('sb-free-only', false);
-    box.addEventListener('change', () => {
-      store.set('sb-free-only', box.checked);
-      apply();
-    });
-    apply();
+    import { startRoadTrips } from '../scripts/roadtrips';
+    startRoadTrips();
   </script>
 </Base>
