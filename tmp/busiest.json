@@ -1,0 +1,1206 @@
+{
+ "source": "https://storage.googleapis.com/dft-statistics/road-traffic/downloads/data-gov-uk/dft_traffic_counts_aadf.zip",
+ "file": "dft_traffic_counts_aadf.csv",
+ "roads": [
+  {
+   "road": "M25",
+   "mean_aadf": 130264,
+   "points": 54,
+   "vehicle_km_proxy": 7034232
+  },
+  {
+   "road": "M60",
+   "mean_aadf": 123440,
+   "points": 42,
+   "vehicle_km_proxy": 5184459
+  },
+  {
+   "road": "A282",
+   "mean_aadf": 101180,
+   "points": 14,
+   "vehicle_km_proxy": 1416527
+  },
+  {
+   "road": "M27",
+   "mean_aadf": 99301,
+   "points": 25,
+   "vehicle_km_proxy": 2482521
+  },
+  {
+   "road": "M56",
+   "mean_aadf": 94617,
+   "points": 32,
+   "vehicle_km_proxy": 3027737
+  },
+  {
+   "road": "M1",
+   "mean_aadf": 94431,
+   "points": 108,
+   "vehicle_km_proxy": 10198498
+  },
+  {
+   "road": "M62",
+   "mean_aadf": 90418,
+   "points": 63,
+   "vehicle_km_proxy": 5696352
+  },
+  {
+   "road": "M5",
+   "mean_aadf": 89997,
+   "points": 55,
+   "vehicle_km_proxy": 4949838
+  },
+  {
+   "road": "M4",
+   "mean_aadf": 89865,
+   "points": 83,
+   "vehicle_km_proxy": 7458757
+  },
+  {
+   "road": "M6",
+   "mean_aadf": 88603,
+   "points": 117,
+   "vehicle_km_proxy": 10366553
+  },
+  {
+   "road": "M40",
+   "mean_aadf": 85733,
+   "points": 33,
+   "vehicle_km_proxy": 2829178
+  },
+  {
+   "road": "M23",
+   "mean_aadf": 85148,
+   "points": 9,
+   "vehicle_km_proxy": 766329
+  },
+  {
+   "road": "A406",
+   "mean_aadf": 83501,
+   "points": 46,
+   "vehicle_km_proxy": 3841060
+  },
+  {
+   "road": "M3",
+   "mean_aadf": 81412,
+   "points": 26,
+   "vehicle_km_proxy": 2116713
+  },
+  {
+   "road": "M66",
+   "mean_aadf": 80623,
+   "points": 8,
+   "vehicle_km_proxy": 644981
+  },
+  {
+   "road": "M61",
+   "mean_aadf": 78507,
+   "points": 16,
+   "vehicle_km_proxy": 1256112
+  },
+  {
+   "road": "M42",
+   "mean_aadf": 78386,
+   "points": 36,
+   "vehicle_km_proxy": 2821893
+  },
+  {
+   "road": "A38(M)",
+   "mean_aadf": 78128,
+   "points": 6,
+   "vehicle_km_proxy": 468765
+  },
+  {
+   "road": "A167M",
+   "mean_aadf": 71564,
+   "points": 1,
+   "vehicle_km_proxy": 71564
+  },
+  {
+   "road": "M32",
+   "mean_aadf": 68960,
+   "points": 6,
+   "vehicle_km_proxy": 413760
+  },
+  {
+   "road": "M602",
+   "mean_aadf": 68674,
+   "points": 2,
+   "vehicle_km_proxy": 137347
+  },
+  {
+   "road": "A58(M)",
+   "mean_aadf": 66669,
+   "points": 3,
+   "vehicle_km_proxy": 200006
+  },
+  {
+   "road": "A57(M)",
+   "mean_aadf": 66425,
+   "points": 6,
+   "vehicle_km_proxy": 398552
+  },
+  {
+   "road": "A3(M)",
+   "mean_aadf": 65618,
+   "points": 6,
+   "vehicle_km_proxy": 393705
+  },
+  {
+   "road": "M18",
+   "mean_aadf": 65282,
+   "points": 12,
+   "vehicle_km_proxy": 783386
+  },
+  {
+   "road": "M2",
+   "mean_aadf": 64876,
+   "points": 21,
+   "vehicle_km_proxy": 1362402
+  },
+  {
+   "road": "A13",
+   "mean_aadf": 64225,
+   "points": 51,
+   "vehicle_km_proxy": 3275459
+  },
+  {
+   "road": "A720",
+   "mean_aadf": 64106,
+   "points": 12,
+   "vehicle_km_proxy": 769268
+  },
+  {
+   "road": "A167(M)",
+   "mean_aadf": 64100,
+   "points": 6,
+   "vehicle_km_proxy": 384598
+  },
+  {
+   "road": "M8",
+   "mean_aadf": 63410,
+   "points": 73,
+   "vehicle_km_proxy": 4628914
+  },
+  {
+   "road": "A102",
+   "mean_aadf": 63397,
+   "points": 13,
+   "vehicle_km_proxy": 824167
+  },
+  {
+   "road": "M11",
+   "mean_aadf": 62667,
+   "points": 26,
+   "vehicle_km_proxy": 1629338
+  },
+  {
+   "road": "A4202",
+   "mean_aadf": 61058,
+   "points": 1,
+   "vehicle_km_proxy": 61058
+  },
+  {
+   "road": "M275",
+   "mean_aadf": 59442,
+   "points": 6,
+   "vehicle_km_proxy": 356653
+  },
+  {
+   "road": "A500",
+   "mean_aadf": 59266,
+   "points": 24,
+   "vehicle_km_proxy": 1422392
+  },
+  {
+   "road": "M20",
+   "mean_aadf": 59134,
+   "points": 18,
+   "vehicle_km_proxy": 1064414
+  },
+  {
+   "road": "M898",
+   "mean_aadf": 58942,
+   "points": 1,
+   "vehicle_km_proxy": 58942
+  },
+  {
+   "road": "M57",
+   "mean_aadf": 57490,
+   "points": 12,
+   "vehicle_km_proxy": 689875
+  },
+  {
+   "road": "A1(M)",
+   "mean_aadf": 56173,
+   "points": 91,
+   "vehicle_km_proxy": 5111762
+  },
+  {
+   "road": "M621",
+   "mean_aadf": 55945,
+   "points": 23,
+   "vehicle_km_proxy": 1286743
+  },
+  {
+   "road": "A127",
+   "mean_aadf": 55568,
+   "points": 21,
+   "vehicle_km_proxy": 1166935
+  },
+  {
+   "road": "M65",
+   "mean_aadf": 55229,
+   "points": 24,
+   "vehicle_km_proxy": 1325500
+  },
+  {
+   "road": "A404(M)",
+   "mean_aadf": 54779,
+   "points": 3,
+   "vehicle_km_proxy": 164337
+  },
+  {
+   "road": "M73",
+   "mean_aadf": 54722,
+   "points": 14,
+   "vehicle_km_proxy": 766108
+  },
+  {
+   "road": "M53",
+   "mean_aadf": 54712,
+   "points": 19,
+   "vehicle_km_proxy": 1039531
+  },
+  {
+   "road": "M606",
+   "mean_aadf": 52014,
+   "points": 3,
+   "vehicle_km_proxy": 156043
+  },
+  {
+   "road": "A1261",
+   "mean_aadf": 51637,
+   "points": 7,
+   "vehicle_km_proxy": 361459
+  },
+  {
+   "road": "A331",
+   "mean_aadf": 51249,
+   "points": 18,
+   "vehicle_km_proxy": 922477
+  },
+  {
+   "road": "A329(M)",
+   "mean_aadf": 50896,
+   "points": 3,
+   "vehicle_km_proxy": 152687
+  },
+  {
+   "road": "A5300",
+   "mean_aadf": 50678,
+   "points": 5,
+   "vehicle_km_proxy": 253391
+  },
+  {
+   "road": "A48(M)",
+   "mean_aadf": 49616,
+   "points": 2,
+   "vehicle_km_proxy": 99232
+  },
+  {
+   "road": "A289",
+   "mean_aadf": 49063,
+   "points": 5,
+   "vehicle_km_proxy": 245316
+  },
+  {
+   "road": "A898",
+   "mean_aadf": 48110,
+   "points": 2,
+   "vehicle_km_proxy": 96221
+  },
+  {
+   "road": "M26",
+   "mean_aadf": 48080,
+   "points": 2,
+   "vehicle_km_proxy": 96159
+  },
+  {
+   "road": "A1203",
+   "mean_aadf": 47362,
+   "points": 4,
+   "vehicle_km_proxy": 189450
+  },
+  {
+   "road": "A4232",
+   "mean_aadf": 47355,
+   "points": 19,
+   "vehicle_km_proxy": 899739
+  },
+  {
+   "road": "A1058",
+   "mean_aadf": 47336,
+   "points": 11,
+   "vehicle_km_proxy": 520694
+  },
+  {
+   "road": "A1260",
+   "mean_aadf": 47126,
+   "points": 6,
+   "vehicle_km_proxy": 282753
+  },
+  {
+   "road": "M67",
+   "mean_aadf": 47118,
+   "points": 4,
+   "vehicle_km_proxy": 188471
+  },
+  {
+   "road": "M69",
+   "mean_aadf": 47075,
+   "points": 5,
+   "vehicle_km_proxy": 235373
+  },
+  {
+   "road": "A725",
+   "mean_aadf": 45346,
+   "points": 10,
+   "vehicle_km_proxy": 453459
+  },
+  {
+   "road": "A14",
+   "mean_aadf": 44624,
+   "points": 92,
+   "vehicle_km_proxy": 4105389
+  },
+  {
+   "road": "M271",
+   "mean_aadf": 43989,
+   "points": 4,
+   "vehicle_km_proxy": 175955
+  },
+  {
+   "road": "A42",
+   "mean_aadf": 43826,
+   "points": 7,
+   "vehicle_km_proxy": 306780
+  },
+  {
+   "road": "A2",
+   "mean_aadf": 43769,
+   "points": 102,
+   "vehicle_km_proxy": 4464401
+  },
+  {
+   "road": "A12",
+   "mean_aadf": 43759,
+   "points": 84,
+   "vehicle_km_proxy": 3675715
+  },
+  {
+   "road": "A6514",
+   "mean_aadf": 43212,
+   "points": 5,
+   "vehicle_km_proxy": 216062
+  },
+  {
+   "road": "M180",
+   "mean_aadf": 42606,
+   "points": 6,
+   "vehicle_km_proxy": 255633
+  },
+  {
+   "road": "A64(M)",
+   "mean_aadf": 42502,
+   "points": 3,
+   "vehicle_km_proxy": 127506
+  },
+  {
+   "road": "A316",
+   "mean_aadf": 42472,
+   "points": 15,
+   "vehicle_km_proxy": 637081
+  },
+  {
+   "road": "A627(M)",
+   "mean_aadf": 42332,
+   "points": 6,
+   "vehicle_km_proxy": 253991
+  },
+  {
+   "road": "M9",
+   "mean_aadf": 42248,
+   "points": 17,
+   "vehicle_km_proxy": 718210
+  },
+  {
+   "road": "A5103",
+   "mean_aadf": 41052,
+   "points": 12,
+   "vehicle_km_proxy": 492618
+  },
+  {
+   "road": "M41",
+   "mean_aadf": 40987,
+   "points": 3,
+   "vehicle_km_proxy": 122961
+  },
+  {
+   "road": "A4053",
+   "mean_aadf": 40501,
+   "points": 9,
+   "vehicle_km_proxy": 364507
+  },
+  {
+   "road": "M90",
+   "mean_aadf": 40024,
+   "points": 30,
+   "vehicle_km_proxy": 1200730
+  },
+  {
+   "road": "A194(M)",
+   "mean_aadf": 39707,
+   "points": 6,
+   "vehicle_km_proxy": 238244
+  },
+  {
+   "road": "M58",
+   "mean_aadf": 39357,
+   "points": 10,
+   "vehicle_km_proxy": 393568
+  },
+  {
+   "road": "A278",
+   "mean_aadf": 39179,
+   "points": 2,
+   "vehicle_km_proxy": 78358
+  },
+  {
+   "road": "A4540",
+   "mean_aadf": 39038,
+   "points": 15,
+   "vehicle_km_proxy": 585564
+  },
+  {
+   "road": "M55",
+   "mean_aadf": 38571,
+   "points": 14,
+   "vehicle_km_proxy": 539988
+  },
+  {
+   "road": "A1",
+   "mean_aadf": 38248,
+   "points": 238,
+   "vehicle_km_proxy": 9103057
+  },
+  {
+   "road": "M77",
+   "mean_aadf": 38135,
+   "points": 34,
+   "vehicle_km_proxy": 1296583
+  },
+  {
+   "road": "A4142",
+   "mean_aadf": 38060,
+   "points": 4,
+   "vehicle_km_proxy": 152238
+  },
+  {
+   "road": "A3",
+   "mean_aadf": 38031,
+   "points": 113,
+   "vehicle_km_proxy": 4297460
+  },
+  {
+   "road": "A74(M)",
+   "mean_aadf": 37901,
+   "points": 13,
+   "vehicle_km_proxy": 492714
+  },
+  {
+   "road": "A5460",
+   "mean_aadf": 37719,
+   "points": 8,
+   "vehicle_km_proxy": 301755
+  },
+  {
+   "road": "A194",
+   "mean_aadf": 37648,
+   "points": 7,
+   "vehicle_km_proxy": 263536
+  },
+  {
+   "road": "A27",
+   "mean_aadf": 37344,
+   "points": 83,
+   "vehicle_km_proxy": 3099563
+  },
+  {
+   "road": "M74",
+   "mean_aadf": 37297,
+   "points": 61,
+   "vehicle_km_proxy": 2275122
+  },
+  {
+   "road": "A19",
+   "mean_aadf": 36985,
+   "points": 108,
+   "vehicle_km_proxy": 3994394
+  },
+  {
+   "road": "M54",
+   "mean_aadf": 36329,
+   "points": 21,
+   "vehicle_km_proxy": 762904
+  },
+  {
+   "road": "A380",
+   "mean_aadf": 36264,
+   "points": 23,
+   "vehicle_km_proxy": 834073
+  },
+  {
+   "road": "A74M",
+   "mean_aadf": 36156,
+   "points": 2,
+   "vehicle_km_proxy": 72312
+  },
+  {
+   "road": "A555",
+   "mean_aadf": 36011,
+   "points": 13,
+   "vehicle_km_proxy": 468144
+  },
+  {
+   "road": "A3113",
+   "mean_aadf": 35274,
+   "points": 2,
+   "vehicle_km_proxy": 70548
+  },
+  {
+   "road": "A45",
+   "mean_aadf": 35114,
+   "points": 63,
+   "vehicle_km_proxy": 2212205
+  },
+  {
+   "road": "A2011",
+   "mean_aadf": 34631,
+   "points": 2,
+   "vehicle_km_proxy": 69262
+  },
+  {
+   "road": "A66",
+   "mean_aadf": 34607,
+   "points": 50,
+   "vehicle_km_proxy": 1730366
+  },
+  {
+   "road": "A4150",
+   "mean_aadf": 34604,
+   "points": 9,
+   "vehicle_km_proxy": 311438
+  },
+  {
+   "road": "A739",
+   "mean_aadf": 34267,
+   "points": 6,
+   "vehicle_km_proxy": 205602
+  },
+  {
+   "road": "A5758",
+   "mean_aadf": 34203,
+   "points": 1,
+   "vehicle_km_proxy": 34203
+  },
+  {
+   "road": "A1245",
+   "mean_aadf": 33633,
+   "points": 4,
+   "vehicle_km_proxy": 134533
+  },
+  {
+   "road": "A55",
+   "mean_aadf": 33213,
+   "points": 50,
+   "vehicle_km_proxy": 1660630
+  },
+  {
+   "road": "A1139",
+   "mean_aadf": 32819,
+   "points": 23,
+   "vehicle_km_proxy": 754846
+  },
+  {
+   "road": "A312",
+   "mean_aadf": 32773,
+   "points": 22,
+   "vehicle_km_proxy": 721010
+  },
+  {
+   "road": "A180",
+   "mean_aadf": 32744,
+   "points": 9,
+   "vehicle_km_proxy": 294694
+  },
+  {
+   "road": "A31",
+   "mean_aadf": 32687,
+   "points": 41,
+   "vehicle_km_proxy": 1340184
+  },
+  {
+   "road": "A249",
+   "mean_aadf": 32620,
+   "points": 21,
+   "vehicle_km_proxy": 685023
+  },
+  {
+   "road": "A5630",
+   "mean_aadf": 32593,
+   "points": 3,
+   "vehicle_km_proxy": 97778
+  },
+  {
+   "road": "A421",
+   "mean_aadf": 32260,
+   "points": 46,
+   "vehicle_km_proxy": 1483937
+  },
+  {
+   "road": "A4320",
+   "mean_aadf": 32028,
+   "points": 4,
+   "vehicle_km_proxy": 128110
+  },
+  {
+   "road": "A2290",
+   "mean_aadf": 31916,
+   "points": 1,
+   "vehicle_km_proxy": 31916
+  },
+  {
+   "road": "A556",
+   "mean_aadf": 31814,
+   "points": 16,
+   "vehicle_km_proxy": 509016
+  },
+  {
+   "road": "A4174",
+   "mean_aadf": 31719,
+   "points": 18,
+   "vehicle_km_proxy": 570950
+  },
+  {
+   "road": "A4440",
+   "mean_aadf": 31719,
+   "points": 9,
+   "vehicle_km_proxy": 285472
+  },
+  {
+   "road": "A563",
+   "mean_aadf": 31666,
+   "points": 21,
+   "vehicle_km_proxy": 664987
+  },
+  {
+   "road": "A4042",
+   "mean_aadf": 31601,
+   "points": 17,
+   "vehicle_km_proxy": 537214
+  },
+  {
+   "road": "A1054",
+   "mean_aadf": 31547,
+   "points": 1,
+   "vehicle_km_proxy": 31547
+  },
+  {
+   "road": "A2280",
+   "mean_aadf": 31499,
+   "points": 1,
+   "vehicle_km_proxy": 31499
+  },
+  {
+   "road": "A322",
+   "mean_aadf": 31497,
+   "points": 21,
+   "vehicle_km_proxy": 661436
+  },
+  {
+   "road": "A4400",
+   "mean_aadf": 31179,
+   "points": 13,
+   "vehicle_km_proxy": 405325
+  },
+  {
+   "road": "A630",
+   "mean_aadf": 31130,
+   "points": 30,
+   "vehicle_km_proxy": 933904
+  },
+  {
+   "road": "A5111",
+   "mean_aadf": 30893,
+   "points": 11,
+   "vehicle_km_proxy": 339819
+  },
+  {
+   "road": "A5189",
+   "mean_aadf": 30678,
+   "points": 1,
+   "vehicle_km_proxy": 30678
+  },
+  {
+   "road": "A6110",
+   "mean_aadf": 30595,
+   "points": 9,
+   "vehicle_km_proxy": 275358
+  },
+  {
+   "road": "A339",
+   "mean_aadf": 30431,
+   "points": 19,
+   "vehicle_km_proxy": 578187
+  },
+  {
+   "road": "A3049",
+   "mean_aadf": 30374,
+   "points": 8,
+   "vehicle_km_proxy": 242995
+  },
+  {
+   "road": "A419",
+   "mean_aadf": 30108,
+   "points": 25,
+   "vehicle_km_proxy": 752704
+  },
+  {
+   "road": "A101",
+   "mean_aadf": 30066,
+   "points": 2,
+   "vehicle_km_proxy": 60132
+  },
+  {
+   "road": "A376",
+   "mean_aadf": 29970,
+   "points": 6,
+   "vehicle_km_proxy": 179823
+  },
+  {
+   "road": "A414",
+   "mean_aadf": 29764,
+   "points": 43,
+   "vehicle_km_proxy": 1279861
+  },
+  {
+   "road": "A5076",
+   "mean_aadf": 29748,
+   "points": 8,
+   "vehicle_km_proxy": 237982
+  },
+  {
+   "road": "A50",
+   "mean_aadf": 29407,
+   "points": 99,
+   "vehicle_km_proxy": 2911246
+  },
+  {
+   "road": "M80",
+   "mean_aadf": 29402,
+   "points": 41,
+   "vehicle_km_proxy": 1205484
+  },
+  {
+   "road": "A501",
+   "mean_aadf": 29280,
+   "points": 27,
+   "vehicle_km_proxy": 790562
+  },
+  {
+   "road": "A4032",
+   "mean_aadf": 29254,
+   "points": 2,
+   "vehicle_km_proxy": 58508
+  },
+  {
+   "road": "A2500",
+   "mean_aadf": 29253,
+   "points": 1,
+   "vehicle_km_proxy": 29253
+  },
+  {
+   "road": "A4198",
+   "mean_aadf": 29210,
+   "points": 2,
+   "vehicle_km_proxy": 58420
+  },
+  {
+   "road": "M876",
+   "mean_aadf": 29122,
+   "points": 11,
+   "vehicle_km_proxy": 320340
+  },
+  {
+   "road": "A1016",
+   "mean_aadf": 29049,
+   "points": 5,
+   "vehicle_km_proxy": 145243
+  },
+  {
+   "road": "A120",
+   "mean_aadf": 28928,
+   "points": 30,
+   "vehicle_km_proxy": 867835
+  },
+  {
+   "road": "A405",
+   "mean_aadf": 28768,
+   "points": 5,
+   "vehicle_km_proxy": 143839
+  },
+  {
+   "road": "A6027",
+   "mean_aadf": 28683,
+   "points": 3,
+   "vehicle_km_proxy": 86049
+  },
+  {
+   "road": "A174",
+   "mean_aadf": 28657,
+   "points": 23,
+   "vehicle_km_proxy": 659111
+  },
+  {
+   "road": "A4161",
+   "mean_aadf": 28654,
+   "points": 12,
+   "vehicle_km_proxy": 343846
+  },
+  {
+   "road": "A4051",
+   "mean_aadf": 28628,
+   "points": 8,
+   "vehicle_km_proxy": 229024
+  },
+  {
+   "road": "M49",
+   "mean_aadf": 28614,
+   "points": 2,
+   "vehicle_km_proxy": 57228
+  },
+  {
+   "road": "A1235",
+   "mean_aadf": 28607,
+   "points": 1,
+   "vehicle_km_proxy": 28607
+  },
+  {
+   "road": "A4234",
+   "mean_aadf": 28591,
+   "points": 3,
+   "vehicle_km_proxy": 85774
+  },
+  {
+   "road": "A4114",
+   "mean_aadf": 28538,
+   "points": 4,
+   "vehicle_km_proxy": 114153
+  },
+  {
+   "road": "A4044",
+   "mean_aadf": 28350,
+   "points": 6,
+   "vehicle_km_proxy": 170103
+  },
+  {
+   "road": "A1237",
+   "mean_aadf": 28284,
+   "points": 5,
+   "vehicle_km_proxy": 141421
+  },
+  {
+   "road": "A580",
+   "mean_aadf": 28187,
+   "points": 44,
+   "vehicle_km_proxy": 1240209
+  },
+  {
+   "road": "A4023",
+   "mean_aadf": 28172,
+   "points": 5,
+   "vehicle_km_proxy": 140862
+  },
+  {
+   "road": "A38",
+   "mean_aadf": 28017,
+   "points": 251,
+   "vehicle_km_proxy": 7032218
+  },
+  {
+   "road": "A5148",
+   "mean_aadf": 28004,
+   "points": 2,
+   "vehicle_km_proxy": 56008
+  },
+  {
+   "road": "A184",
+   "mean_aadf": 27891,
+   "points": 23,
+   "vehicle_km_proxy": 641500
+  },
+  {
+   "road": "A3029",
+   "mean_aadf": 27796,
+   "points": 14,
+   "vehicle_km_proxy": 389142
+  },
+  {
+   "road": "A43",
+   "mean_aadf": 27755,
+   "points": 33,
+   "vehicle_km_proxy": 915913
+  },
+  {
+   "road": "A594",
+   "mean_aadf": 27691,
+   "points": 15,
+   "vehicle_km_proxy": 415372
+  },
+  {
+   "road": "A130",
+   "mean_aadf": 27638,
+   "points": 17,
+   "vehicle_km_proxy": 469844
+  },
+  {
+   "road": "A5052",
+   "mean_aadf": 27576,
+   "points": 1,
+   "vehicle_km_proxy": 27576
+  },
+  {
+   "road": "A40",
+   "mean_aadf": 27570,
+   "points": 182,
+   "vehicle_km_proxy": 5017818
+  },
+  {
+   "road": "A303",
+   "mean_aadf": 27391,
+   "points": 42,
+   "vehicle_km_proxy": 1150404
+  },
+  {
+   "road": "A34",
+   "mean_aadf": 27307,
+   "points": 146,
+   "vehicle_km_proxy": 3986753
+  },
+  {
+   "road": "A4600",
+   "mean_aadf": 27095,
+   "points": 7,
+   "vehicle_km_proxy": 189667
+  },
+  {
+   "road": "A80",
+   "mean_aadf": 27060,
+   "points": 21,
+   "vehicle_km_proxy": 568254
+  },
+  {
+   "road": "A602",
+   "mean_aadf": 26890,
+   "points": 19,
+   "vehicle_km_proxy": 510911
+  },
+  {
+   "road": "A1400",
+   "mean_aadf": 26883,
+   "points": 1,
+   "vehicle_km_proxy": 26883
+  },
+  {
+   "road": "A46",
+   "mean_aadf": 26855,
+   "points": 123,
+   "vehicle_km_proxy": 3303210
+  },
+  {
+   "road": "A3060",
+   "mean_aadf": 26743,
+   "points": 3,
+   "vehicle_km_proxy": 80228
+  },
+  {
+   "road": "A64",
+   "mean_aadf": 26722,
+   "points": 43,
+   "vehicle_km_proxy": 1149049
+  },
+  {
+   "road": "A1055",
+   "mean_aadf": 26716,
+   "points": 9,
+   "vehicle_km_proxy": 240442
+  },
+  {
+   "road": "A5036",
+   "mean_aadf": 26593,
+   "points": 21,
+   "vehicle_km_proxy": 558459
+  },
+  {
+   "road": "A3290",
+   "mean_aadf": 26589,
+   "points": 3,
+   "vehicle_km_proxy": 79768
+  },
+  {
+   "road": "A4082",
+   "mean_aadf": 26583,
+   "points": 2,
+   "vehicle_km_proxy": 53166
+  },
+  {
+   "road": "A297",
+   "mean_aadf": 26536,
+   "points": 3,
+   "vehicle_km_proxy": 79607
+  },
+  {
+   "road": "A8011",
+   "mean_aadf": 26465,
+   "points": 5,
+   "vehicle_km_proxy": 132325
+  },
+  {
+   "road": "A11",
+   "mean_aadf": 26422,
+   "points": 36,
+   "vehicle_km_proxy": 951198
+  },
+  {
+   "road": "A132",
+   "mean_aadf": 26284,
+   "points": 14,
+   "vehicle_km_proxy": 367970
+  },
+  {
+   "road": "A90",
+   "mean_aadf": 26203,
+   "points": 79,
+   "vehicle_km_proxy": 2070006
+  },
+  {
+   "road": "A1231",
+   "mean_aadf": 26114,
+   "points": 21,
+   "vehicle_km_proxy": 548402
+  },
+  {
+   "road": "A4088",
+   "mean_aadf": 26094,
+   "points": 6,
+   "vehicle_km_proxy": 156562
+  },
+  {
+   "road": "M10",
+   "mean_aadf": 26081,
+   "points": 1,
+   "vehicle_km_proxy": 26081
+  },
+  {
+   "road": "A1262",
+   "mean_aadf": 25893,
+   "points": 2,
+   "vehicle_km_proxy": 51786
+  },
+  {
+   "road": "A653",
+   "mean_aadf": 25891,
+   "points": 20,
+   "vehicle_km_proxy": 517828
+  },
+  {
+   "road": "A4008",
+   "mean_aadf": 25804,
+   "points": 6,
+   "vehicle_km_proxy": 154822
+  },
+  {
+   "road": "A1251",
+   "mean_aadf": 25766,
+   "points": 1,
+   "vehicle_km_proxy": 25766
+  },
+  {
+   "road": "A10",
+   "mean_aadf": 25724,
+   "points": 68,
+   "vehicle_km_proxy": 1749202
+  },
+  {
+   "road": "A6182",
+   "mean_aadf": 25662,
+   "points": 6,
+   "vehicle_km_proxy": 153972
+  },
+  {
+   "road": "A4123",
+   "mean_aadf": 25623,
+   "points": 15,
+   "vehicle_km_proxy": 384350
+  },
+  {
+   "road": "A33",
+   "mean_aadf": 25570,
+   "points": 39,
+   "vehicle_km_proxy": 997214
+  },
+  {
+   "road": "A5065",
+   "mean_aadf": 25529,
+   "points": 3,
+   "vehicle_km_proxy": 76588
+  },
+  {
+   "road": "A6129",
+   "mean_aadf": 25474,
+   "points": 2,
+   "vehicle_km_proxy": 50948
+  },
+  {
+   "road": "A4036",
+   "mean_aadf": 25454,
+   "points": 3,
+   "vehicle_km_proxy": 76361
+  },
+  {
+   "road": "A6185",
+   "mean_aadf": 25441,
+   "points": 2,
+   "vehicle_km_proxy": 50882
+  },
+  {
+   "road": "A650",
+   "mean_aadf": 25427,
+   "points": 33,
+   "vehicle_km_proxy": 839080
+  },
+  {
+   "road": "A176",
+   "mean_aadf": 25348,
+   "points": 12,
+   "vehicle_km_proxy": 304175
+  },
+  {
+   "road": "A229",
+   "mean_aadf": 25333,
+   "points": 26,
+   "vehicle_km_proxy": 658660
+  }
+ ]
+}
