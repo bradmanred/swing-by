@@ -1,0 +1,18 @@
+name: Temporary Essex fetch
+on:
+  push:
+    branches: [tmp-essex]
+    paths: ['tmp/urls.txt', 'tmp/fetch.py', '.github/workflows/tmp-essex.yml']
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils || pip install pdfminer.six
+      - run: python3 tmp/fetch.py
+      - run: |
+          git config user.name swing-by-bot; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tmp/fetched; git commit -m "Fetched" && git push
