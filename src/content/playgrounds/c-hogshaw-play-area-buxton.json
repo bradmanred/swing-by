@@ -1,0 +1,28 @@
+{
+  "name": "Hogshaw Play Area",
+  "region": "derbyshire",
+  "area": "Buxton",
+  "lat": 53.26349,
+  "lng": -1.90725,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Play area looked after by High Peak Borough Council in Buxton, with a range of equipment for children aged 0 to 12.",
+  "nearby": [],
+  "operator": "High Peak Borough Council",
+  "sources": [
+    {
+      "label": "High Peak Borough Council: play areas",
+      "url": "https://www.highpeak.gov.uk/article/1590/Buxton-play-areas"
+    }
+  ],
+  "checked": "2026-10-23",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

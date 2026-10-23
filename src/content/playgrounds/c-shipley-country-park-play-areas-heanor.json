@@ -1,0 +1,43 @@
+{
+  "name": "Shipley Country Park Play Areas",
+  "region": "derbyshire",
+  "area": "Heanor",
+  "lat": 53.00207,
+  "lng": -1.35974,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "Two play areas next to the visitor centre, a toddler play area and an adventure playground for older children, plus a natural play area near the park entrance. Entry to the park is free; parking is pay and display.",
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "Pay and display car park"
+    },
+    {
+      "type": "toilets",
+      "label": "Toilets at the visitor centre"
+    },
+    {
+      "type": "cafe",
+      "label": "Light refreshments"
+    }
+  ],
+  "operator": "Derbyshire County Council",
+  "sources": [
+    {
+      "label": "Derbyshire County Council: things to do at Shipley Country Park",
+      "url": "https://www.derbyshire.gov.uk/leisure/countryside/countryside-sites/country-parks-and-visitor-centres/shipley/things-to-do/"
+    },
+    {
+      "label": "Derbyshire County Council: Shipley Country Park and visitor centre",
+      "url": "https://www.derbyshire.gov.uk/leisure/countryside/countryside-sites/country-parks-and-visitor-centres/shipley-country-park-and-visitor-centre.aspx"
+    }
+  ],
+  "checked": "2026-10-23",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours and parking.",
+  "photo": null
+}
