@@ -2,17 +2,24 @@ name: Temporary Essex fetch
 on:
   push:
     branches: [tmp-essex]
-    paths: ['tmp/seeds.txt', 'tmp/crawl2.py', '.github/workflows/tmp-essex.yml']
+    paths: ['scripts/find-photos.mjs', '.github/workflows/tmp-essex.yml']
 permissions:
   contents: write
 jobs:
   fetch:
     runs-on: ubuntu-24.04
-    timeout-minutes: 60
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
-      - run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils || pip install pdfminer.six
-      - run: python3 tmp/crawl2.py
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: |
+          git fetch -q origin main && git checkout origin/main -- src/content/playgrounds
+          node scripts/find-photos.mjs --dry-run --limit 40 > tmp/photos-dry.txt 2>&1 || true
+          echo "geograph key set: ${{ secrets.GEOGRAPH_KEY != '' }}" >> tmp/photos-dry.txt
+        env:
+          GEOGRAPH_KEY: ${{ secrets.GEOGRAPH_KEY }}
       - run: |
           git config user.name swing-by-bot; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add tmp/crawl2; git commit -m "Fetched" && git push
+          git add tmp/photos-dry.txt; git commit -m "Photo dry run" && git push
