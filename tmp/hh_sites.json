@@ -1,0 +1,488 @@
+[
+{
+"org": "hh",
+"path": "cambo-house",
+"name": "Cambo Country House and Estate",
+"town": "St Andrews",
+"county": "Fife",
+"pc": "KY16 8QD",
+"m": false
+},
+{
+"org": "hh",
+"path": "kelburn-castle-estate",
+"name": "Kelburn Castle and Estate",
+"town": "Fairlie",
+"county": "Ayrshire",
+"pc": "KA29 0BE",
+"m": false
+},
+{
+"org": "hh",
+"path": "layer-marney-tower",
+"name": "Layer Marney Tower",
+"town": "Colchester",
+"county": "Essex",
+"pc": "CO5 9US",
+"m": true
+},
+{
+"org": "hh",
+"path": "chiltern-open-air-museum",
+"name": "Chiltern Open Air Museum",
+"town": "Chalfont St Giles",
+"county": "Buckinghamshire",
+"pc": "HP8 4AB",
+"m": true
+},
+{
+"org": "hh",
+"path": "cowden-garden",
+"name": "The Japanese Garden at Cowden",
+"town": "Dollar",
+"county": "Clackmannanshire",
+"pc": "FK14 7PL",
+"m": true
+},
+{
+"org": "hh",
+"path": "fulham-palace-trust",
+"name": "Fulham Palace",
+"town": "Fulham",
+"county": "London",
+"pc": "",
+"m": true
+},
+{
+"org": "hh",
+"path": "waddesdon-manor",
+"name": "Waddesdon Manor",
+"town": "Waddesdon",
+"county": "Buckinghamshire",
+"pc": "HP18 0JH",
+"m": true
+},
+{
+"org": "hh",
+"path": "weston-park",
+"name": "Weston Park",
+"town": "Shifnal",
+"county": "Shropshire",
+"pc": "TF11 8LE",
+"m": true
+},
+{
+"org": "hh",
+"path": "mirehouse",
+"name": "Mirehouse",
+"town": "Keswick",
+"county": "Cumbria",
+"pc": "CA12 4QE",
+"m": true
+},
+{
+"org": "hh",
+"path": "the-bishops-palace",
+"name": "The Bishop's Palace and Gardens",
+"town": "Wells",
+"county": "Somerset",
+"pc": "BA5 2PD",
+"m": true
+},
+{
+"org": "hh",
+"path": "temple-newsam-house",
+"name": "Temple Newsam",
+"town": "Leeds",
+"county": "West Yorkshire",
+"pc": "",
+"m": true
+},
+{
+"org": "hh",
+"path": "stonor-park",
+"name": "Stonor Park",
+"town": "Henley-on-Thames",
+"county": "Oxfordshire",
+"pc": "RG9 6HF",
+"m": true
+},
+{
+"org": "hh",
+"path": "sausmarez-manor",
+"name": "Sausmarez Manor",
+"town": "Guernsey",
+"county": "Channel Islands",
+"pc": "GY4 6SG",
+"m": true
+},
+{
+"org": "hh",
+"path": "sandringham",
+"name": "Sandringham",
+"town": "Sandringham",
+"county": "Norfolk",
+"pc": "PE35 6EN",
+"m": true
+},
+{
+"org": "hh",
+"path": "paxton-house",
+"name": "Paxton House",
+"town": "Berwick-upon-Tweed",
+"county": "Berwickshire",
+"pc": "TD15 1SZ",
+"m": true
+},
+{
+"org": "hh",
+"path": "penshurst-place",
+"name": "Penshurst Place",
+"town": "Penshurst",
+"county": "Kent",
+"pc": "TN11 8DG",
+"m": true
+},
+{
+"org": "hh",
+"path": "lowther-castle",
+"name": "Lowther Castle and Gardens",
+"town": "Penrith",
+"county": "Cumbria",
+"pc": "CA10 2HH",
+"m": true
+},
+{
+"org": "hh",
+"path": "leighton-hall",
+"name": "Leighton Hall",
+"town": "Carnforth",
+"county": "Lancashire",
+"pc": "LA5 9ST",
+"m": true
+},
+{
+"org": "hh",
+"path": "borde-hill-garden",
+"name": "Borde Hill",
+"town": "Haywards Heath",
+"county": "West Sussex",
+"pc": "RH16 1XP",
+"m": true
+},
+{
+"org": "hh",
+"path": "holker-hall-gardens",
+"name": "Holker Hall and Gardens",
+"town": "Grange-over-Sands",
+"county": "Cumbria",
+"pc": "LA11 7PL",
+"m": true
+},
+{
+"org": "hh",
+"path": "kiplin-hall",
+"name": "Kiplin Hall and Gardens",
+"town": "Richmond",
+"county": "North Yorkshire",
+"pc": "DL10 6AT",
+"m": true
+},
+{
+"org": "hh",
+"path": "eastnor-castle",
+"name": "Eastnor Castle",
+"town": "Ledbury",
+"county": "Herefordshire",
+"pc": "HR8 1RL",
+"m": true
+},
+{
+"org": "hh",
+"path": "riverhill-house-and-gardens",
+"name": "Riverhill Himalayan Gardens",
+"town": "Sevenoaks",
+"county": "Kent",
+"pc": "TN15 0RR",
+"m": true
+},
+{
+"org": "hh",
+"path": "blair-castle-gardens",
+"name": "Blair Castle and Gardens",
+"town": "Pitlochry",
+"county": "Perthshire",
+"pc": "PH18 5TL",
+"m": true
+},
+{
+"org": "hh",
+"path": "mellerstain-house-gardens",
+"name": "Mellerstain House and Gardens",
+"town": "Gordon",
+"county": "Berwickshire",
+"pc": "TD3 6LG",
+"m": true
+},
+{
+"org": "hh",
+"path": "burton-agnes-hall",
+"name": "Burton Agnes Hall",
+"town": "Driffield",
+"county": "East Yorkshire",
+"pc": "YO25 4NE",
+"m": true
+},
+{
+"org": "hh",
+"path": "grimsthorpe-castle",
+"name": "Grimsthorpe Castle, Park and Gardens",
+"town": "Grimsthorpe",
+"county": "Lincolnshire",
+"pc": "PE10 0LY",
+"m": true
+},
+{
+"org": "hh",
+"path": "mannington-hall",
+"name": "Mannington",
+"town": "Norwich",
+"county": "Norfolk",
+"pc": "NR11 7BB",
+"m": true
+},
+{
+"org": "hh",
+"path": "lulworth-castle",
+"name": "Lulworth Castle and Park",
+"town": "Wareham",
+"county": "Dorset",
+"pc": "BH20 5QS",
+"m": true
+},
+{
+"org": "hh",
+"path": "holkham-hall",
+"name": "Holkham Hall",
+"town": "Wells-next-the-Sea",
+"county": "Norfolk",
+"pc": "NR23 1AB",
+"m": true
+},
+{
+"org": "hh",
+"path": "bowhill-house-country-estate",
+"name": "Bowhill House and Grounds",
+"town": "Selkirk",
+"county": "Scottish Borders",
+"pc": "",
+"m": true
+},
+{
+"org": "hh",
+"path": "michelham-priory",
+"name": "Michelham Priory House and Gardens",
+"town": "Upper Dicker",
+"county": "East Sussex",
+"pc": "BN27 3QS",
+"m": true
+},
+{
+"org": "hh",
+"path": "muncaster-castle-gardens-hawk-owl-centre",
+"name": "Muncaster Castle",
+"town": "Ravenglass",
+"county": "Cumbria",
+"pc": "CA18 1RQ",
+"m": true
+},
+{
+"org": "hh",
+"path": "raby-castle",
+"name": "Raby Castle, Park and Gardens",
+"town": "Darlington",
+"county": "County Durham",
+"pc": "DL2 3AH",
+"m": true
+},
+{
+"org": "hh",
+"path": "berkeley-castle",
+"name": "Berkeley Castle",
+"town": "Berkeley",
+"county": "Gloucestershire",
+"pc": "GL13 9BQ",
+"m": true
+},
+{
+"org": "hh",
+"path": "sudeley-castle",
+"name": "Sudeley Castle",
+"town": "Winchcombe",
+"county": "Gloucestershire",
+"pc": "GL54 5LP",
+"m": true
+},
+{
+"org": "hh",
+"path": "bowood-house-gardens",
+"name": "Bowood House and Gardens",
+"town": "Calne",
+"county": "Wiltshire",
+"pc": "SN11 0LZ",
+"m": true
+},
+{
+"org": "hh",
+"path": "gordon-castle",
+"name": "Gordon Castle Walled Garden",
+"town": "Fochabers",
+"county": "Moray",
+"pc": "IV32 7PQ",
+"m": true
+},
+{
+"org": "hh",
+"path": "fursdon",
+"name": "Fursdon House",
+"town": "Cadbury",
+"county": "Devon",
+"pc": "EX5 5JS",
+"m": true
+},
+{
+"org": "hh",
+"path": "hartlebury-castle",
+"name": "Hartlebury Castle",
+"town": "Kidderminster",
+"county": "Worcestershire",
+"pc": "DY11 7XZ",
+"m": true
+},
+{
+"org": "hh",
+"path": "elsham-hall-gardens-country-park",
+"name": "Elsham Hall Gardens and Country Park",
+"town": "Brigg",
+"county": "Lincolnshire",
+"pc": "DN20 0QZ",
+"m": true
+},
+{
+"org": "hh",
+"path": "burghley-house",
+"name": "Burghley House",
+"town": "Stamford",
+"county": "Lincolnshire",
+"pc": "PE9 3JY",
+"m": true
+},
+{
+"org": "hh",
+"path": "towneley-hall",
+"name": "Towneley Hall",
+"town": "Burnley",
+"county": "Lancashire",
+"pc": "BB11 3RQ",
+"m": true
+},
+{
+"org": "hh",
+"path": "wentworth-woodhouse",
+"name": "Wentworth Woodhouse",
+"town": "Wentworth",
+"county": "South Yorkshire",
+"pc": "S62 7TQ",
+"m": true
+},
+{
+"org": "hh",
+"path": "pencarrow-house-gardens",
+"name": "Pencarrow House and Gardens",
+"town": "Bodmin",
+"county": "Cornwall",
+"pc": "PL30 3AG",
+"m": true
+},
+{
+"org": "hh",
+"path": "ballindalloch-castle",
+"name": "Ballindalloch Castle",
+"town": "Ballindalloch",
+"county": "Moray",
+"pc": "",
+"m": true
+},
+{
+"org": "hh",
+"path": "drumlanrig-castle",
+"name": "Drumlanrig Castle",
+"town": "Thornhill",
+"county": "Dumfriesshire",
+"pc": "DG3 4AQ",
+"m": true
+},
+{
+"org": "hh",
+"path": "belvoir-castle",
+"name": "Belvoir Castle",
+"town": "Grantham",
+"county": "Leicestershire",
+"pc": "",
+"m": true
+},
+{
+"org": "hh",
+"path": "glenarm-castle",
+"name": "Glenarm Castle Gardens",
+"town": "Glenarm",
+"county": "County Antrim",
+"pc": "BT44 0BQ",
+"m": true
+},
+{
+"org": "hh",
+"path": "newby-hall-gardens",
+"name": "Newby Hall and Gardens",
+"town": "Ripon",
+"county": "North Yorkshire",
+"pc": "HG4 5AE",
+"m": true
+},
+{
+"org": "hh",
+"path": "tatton-park",
+"name": "Tatton Park",
+"town": "Knutsford",
+"county": "Cheshire",
+"pc": "",
+"m": true
+},
+{
+"org": "hh",
+"path": "sledmere-house-and-gardens",
+"name": "Sledmere House and Gardens",
+"town": "Driffield",
+"county": "East Yorkshire",
+"pc": "YO25 3XG",
+"m": true
+},
+{
+"org": "hh",
+"path": "wilton-house",
+"name": "Wilton House",
+"town": "Salisbury",
+"county": "Wiltshire",
+"pc": "SP2 0BJ",
+"m": true
+},
+{
+"org": "hh",
+"path": "harewood-house",
+"name": "Harewood House",
+"town": "Leeds",
+"county": "West Yorkshire",
+"pc": "LS17 9LG",
+"m": true
+}
+]

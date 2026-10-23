@@ -2,7 +2,7 @@ name: Temporary fetch
 on:
   push:
     branches: [tmp-fetch]
-    paths: ['tmp/memosm.py', 'tmp/mem_sites.json', '.github/workflows/tmp-fetch.yml']
+    paths: ['tmp/hhgeo.py', 'tmp/hh_sites.json', '.github/workflows/tmp-fetch.yml']
 permissions:
   contents: write
 jobs:
@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils || pip install pdfminer.six
-      - run: python3 tmp/memosm.py
+      - run: python3 tmp/hhgeo.py
       - run: |
           git config user.name swing-by-bot; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add tmp/memosm.json; git commit -m "Fetched pages" && git push
+          git add tmp/hh_geo.json; git commit -m "Fetched pages" && git push
