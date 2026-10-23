@@ -7,7 +7,6 @@ import regionsFile from '../data/regions.json';
 
 type Junction = { road: string; j: string; name?: string; serves: string; lat: number; lng: number };
 const junctions = junctionsFile.junctions as Junction[];
-const roadOrder: string[] = junctionsFile.roads ?? [];
 const parks = await allParks();
 // About 5 minutes' drive off the junction: 3 miles in a straight line.
 const RADIUS_KM = 4.8;
@@ -18,7 +17,18 @@ const nearOf = (j: Junction) =>
     .map((p) => ({ p, d: km(j, p) }))
     .filter((x) => x.d <= RADIUS_KM)
     .sort((a, b) => Number(b.p.facilities.includes('wc')) - Number(a.p.facilities.includes('wc')) || a.d - b.d);
-const roads = [...new Set([...roadOrder, ...junctions.map((j) => j.road)])]
+// Listed by road name (A roads, then motorways, in number order: A1(M), A13, M1, M4, M25…).
+// How busy a road is only decides which junctions we scan for playgrounds first.
+const roadKey = (r: string) => {
+  const m = r.match(/^([A-Z]+)(\d+)(.*)$/);
+  return m ? [m[1], Number(m[2]), m[3]] as const : [r, 0, ''] as const;
+};
+const byName = (a: string, b: string) => {
+  const x = roadKey(a), y = roadKey(b);
+  return x[0].localeCompare(y[0]) || x[1] - y[1] || x[2].localeCompare(y[2]);
+};
+const roads = [...new Set(junctions.map((j) => j.road))]
+  .sort(byName)
   .map((road) => ({
     road,
     rows: junctions
@@ -56,7 +66,7 @@ const data = {
   </section>
 
   <h2 style="margin-top:32px">Junctions by road</h2>
-  <p class="hint">{withPlay} junctions on {roads.length} roads have a playground we list within about 5 minutes. Busiest roads first.</p>
+  <p class="hint">{withPlay} junctions on {roads.length} roads have a playground we list within about 5 minutes. Roads are in name order.</p>
   {roads.map(({ road, rows }) => (
     <details class="road panel" style="margin-top:12px;box-shadow:none">
       <summary><strong>{road}</strong> <span class="hint">({rows.length} {rows.length === 1 ? 'junction' : 'junctions'})</span></summary>
