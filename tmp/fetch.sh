@@ -8,5 +8,5 @@ while read -r url; do
   i=$((i+1)); f="tmp/out/$i"
   code=$(curl -sSL -A "$UA" --max-time 60 -o "$f.bin" -w '%{http_code} %{content_type}' "$url" || echo ERR)
   echo "$i $code $url" >> tmp/out/index.txt
-  if file "$f.bin" | grep -q PDF; then pdftotext -layout "$f.bin" "$f.txt"; rm "$f.bin"; else mv "$f.bin" "$f.html"; fi
+  if file "$f.bin" | grep -q PDF; then pdftotext -layout "$f.bin" "$f.txt" && rm "$f.bin"; else mv "$f.bin" "$f.html"; fi
 done < tmp/urls.txt
