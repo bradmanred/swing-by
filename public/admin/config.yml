@@ -84,6 +84,10 @@ collections:
           - { label: "Trampoline", value: "tp" }
           - { label: "See-saw", value: "ss" }
           - { label: "Monkey bars", value: "mb" }
+          - { label: "Springers", value: "spr" }
+          - { label: "Basket swing", value: "bk" }
+          - { label: "Outdoor gym", value: "gym" }
+          - { label: "Ball court", value: "mg" }
       - label: Accessibility
         name: access
         widget: select
