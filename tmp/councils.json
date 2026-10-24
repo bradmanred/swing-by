@@ -1,12 +1,7 @@
 [
-{"tag":"eastdevon","seeds":["https://eastdevon.gov.uk/parks-gardens-and-recreation/parks-gardens-green-spaces/list-of-east-devon-s-main-green-spaces/","https://eastdevon.gov.uk/parks-gardens-and-recreation/","https://eastdevon.gov.uk/news/2020/07/east-devon-district-council-to-re-open-a-further-12-play-areas-from-monday-27-july","https://eastdevon.gov.uk/news/2020/07/east-devon-district-council-to-re-open-12-play-areas-from-monday-13-july"],"follow":"eastdevon\\.gov\\.uk/parks-gardens-and-recreation/(parks-gardens-green-spaces|play)","max":200},
-{"tag":"plymouth","seeds":["https://www.plymouth.gov.uk/find-playground"],"follow":"plymouth\\.gov\\.uk/(find-playground|playgrounds?/|parks/|directory)","max":400},
-{"tag":"torbay","seeds":["https://www.torbay.gov.uk/leisure-sports-and-community/parks/find-a-park/"],"follow":"torbay\\.gov\\.uk/leisure-sports-and-community/parks/find-a-park/","max":250},
-{"tag":"middevon","seeds":["https://www.middevon.gov.uk/residents/parks-and-play-areas"],"follow":"middevon\\.gov\\.uk/residents/parks-and-play-areas","max":150},
-{"tag":"northdevon","seeds":["https://www.northdevon.gov.uk/leisure-and-lifestyle/parks-play-areas-and-allotments"],"follow":"northdevon\\.gov\\.uk/leisure-and-lifestyle/parks-play-areas","max":150},
-{"tag":"torridge","seeds":["https://torridge.gov.uk/article/22487/Play-Areas","https://torridge.gov.uk/parks"],"follow":"torridge\\.gov\\.uk/(article/\\d+/[^/]*(Play|Park|play|park)|parks)","max":120},
-{"tag":"southhams","seeds":["https://southhams.gov.uk/leisure-and-outdoor-spaces"],"follow":"southhams\\.gov\\.uk/(leisure-and-outdoor-spaces|.*play)","max":120},
-{"tag":"exeter","seeds":["https://exeter.gov.uk/leisure-and-culture/parks-and-green-spaces/","https://www.exetertrees.uk/freedom-of-information-requests/list-of-all-of-the-current-ecc-parks-and-green-spaces"],"follow":"(exeter\\.gov\\.uk/leisure-and-culture/parks|exetertrees\\.uk/[a-z0-9-]*play-area)","max":250},
-{"tag":"teignbridge","seeds":["https://www.teignbridge.gov.uk/leisure-and-culture/parks-and-play-areas/"],"follow":"teignbridge\\.gov\\.uk/leisure-and-culture/(parks|play)","max":150},
-{"tag":"westdevon","seeds":["https://westdevon.gov.uk/leisure-and-outdoor-spaces"],"follow":"westdevon\\.gov\\.uk/(leisure-and-outdoor-spaces|.*play)","max":100}
+{"tag":"bucks","seeds":["https://www.buckinghamshire.gov.uk/health-wellbeing-and-sports/parks-and-open-spaces/find-a-park-or-play-area/"],"follow":"buckinghamshire\\.gov\\.uk/(health-wellbeing-and-sports/parks-and-open-spaces|schools-libraries-and-parks/parks-leisure-and-staying-active)/find-a-park-or-play-area/","max":600},
+{"tag":"bromley","seeds":["https://www.bromley.gov.uk/directory/14/parks-and-open-spaces","https://www.bromley.gov.uk/directory-record/973/leamington-avenue-playground"],"follow":"bromley\\.gov\\.uk/(directory-record/\\d+/|directory/\\d+/parks)","max":400},
+{"tag":"salford","seeds":["https://www.salford.gov.uk/parks-and-open-spaces/salford-parks"],"follow":"salford\\.gov\\.uk/parks-and-open-spaces/salford-parks/","max":300},
+{"tag":"bolton","seeds":["https://www.bolton.gov.uk/directory/7/parks/category/20","https://www.bolton.gov.uk/downloads/download/164/playgrounds"],"follow":"bolton\\.gov\\.uk/(directory/7/|directory-record/|downloads/(download|file)/)","max":400},
+{"tag":"trafford","seeds":["https://www.trafford.gov.uk/residents/leisure-and-lifestyle/parks-and-open-spaces/parks-and-open-spaces.aspx"],"follow":"trafford\\.gov\\.uk/residents/leisure-and-lifestyle/parks-and-open-spaces/","max":300}
 ]
