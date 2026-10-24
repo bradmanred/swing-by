@@ -1,0 +1,32 @@
+{
+  "name": "Hilda May Toddler Play Area",
+  "region": "south-east",
+  "area": "Swanley",
+  "lat": 51.40203,
+  "lng": 0.17178,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "rb",
+    "bs"
+  ],
+  "access": [],
+  "facilities": [
+    "fp"
+  ],
+  "opens": "",
+  "description": "A toddler play area with a carousel, a multiplay unit and toddler swings, close to White Oak Leisure Centre. Open during daylight hours, with free on-street parking nearby.",
+  "nearby": [],
+  "operator": "Sevenoaks District Council",
+  "sources": [
+    {
+      "label": "Sevenoaks District Council: playgrounds",
+      "url": "https://www.sevenoaks.gov.uk/playgrounds"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking. The pin is the playground on OpenStreetMap (© OpenStreetMap contributors) nearest the council's postcode.",
+  "photo": null
+}

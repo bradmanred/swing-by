@@ -1,0 +1,32 @@
+{
+  "name": "Central Park Playground (Buccaneer Bay)",
+  "region": "south-east",
+  "area": "Dartford",
+  "lat": 51.4419,
+  "lng": 0.21934,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "zw",
+    "tp"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Major facility within the Town Centre Park with a large range of equipment including zip wire, range of multiplay units, toddler trampoline, Waterplay, bike track, ball court This playground is locked at night. Entrances to the park off Market Street, Lowfield Street, Cranford Road, Princes Road and Darenth Road Dartford.",
+  "nearby": [],
+  "operator": "Dartford Borough Council",
+  "sources": [
+    {
+      "label": "Dartford Borough Council: playgrounds",
+      "url": "https://www.dartford.gov.uk/parks-open-spaces-1/childrens-playgrounds"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking. The pin is the playground on OpenStreetMap (© OpenStreetMap contributors) nearest the council's postcode.",
+  "photo": null
+}
