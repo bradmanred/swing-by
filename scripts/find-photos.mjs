@@ -17,7 +17,7 @@ const RADIUS_M = 200; // how far from the pin a photo can have been taken
 const RESEARCH_DAYS = 60; // look again at playgrounds with nothing found after this long
 const UA = { 'User-Agent': 'SwingBy/1.0 (https://swing-by.co.uk; finds openly licensed playground photos for moderation)' };
 // Words that suggest a photo shows play equipment rather than just the park.
-const PLAY = /\b(play ?(area|ground|park|equipment|space|trail|tower)|playground|swings?|slides?|climbing frame|see-?saw|roundabout|zip ?wire|adventure play|splash ?(pad|park))\b/i;
+const PLAY = /\b(play ?(area|ground|park|equipment|space|trail|tower|structure|frame)|playgrounds?|children's swings|swings and|climbing frame|see-?saw|zip ?wire|adventure play|splash ?(pad|park)|toddler)\b/i;
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 const km = (a, b) => {
@@ -92,7 +92,7 @@ async function commons(p) {
         image_url: ii?.thumburl || ii?.url,
         licence: strip(md.LicenseShortName?.value),
         author: strip(md.Artist?.value).slice(0, 80),
-        title: strip(md.ObjectName?.value || pg.title?.replace(/^File:/, '')),
+        title: strip(pg.title?.replace(/^File:/, '').replace(/\.\w+$/, '') || md.ObjectName?.value),
         distance_m: c ? Math.round(km(p, { lat: c.lat, lng: c.lon }) * 1000) : null,
         mime: ii?.mime,
         text: `${pg.title} ${strip(md.ImageDescription?.value)} ${strip(md.Categories?.value)}`,
@@ -124,7 +124,18 @@ for (const p of todo) {
   const found = [...(await geograph(p)), ...(await commons(p))];
   // Photos that mention play equipment first, then the closest.
   found.sort((a, b) => Number(PLAY.test(b.text)) - Number(PLAY.test(a.text)) || (a.distance_m ?? 999) - (b.distance_m ?? 999));
-  const picks = found.filter((c) => PLAY.test(c.text)).slice(0, 3);
+  // Many Geograph photos are copied to Commons too: keep one copy of each.
+  const seen = new Set();
+  const picks = found
+    .filter((c) => PLAY.test(c.text))
+    .filter((c) => {
+      const g = (c.source === 'geograph' ? c.source_url.match(/\/photo\/(\d+)/) : c.title.match(/geograph\.org\.uk - (\d+)/))?.[1];
+      if (!g) return true;
+      if (seen.has(g)) return false;
+      seen.add(g);
+      return true;
+    })
+    .slice(0, 3);
   if (DRY) {
     if (picks.length) console.log(p.id, picks.map((c) => `${c.source}: ${c.title} (${c.distance_m} m)`).join(' | '));
     continue;
