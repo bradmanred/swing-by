@@ -24,6 +24,7 @@ export function startFinder() {
     origin: store.get<Origin>('sb-origin', { name: first.name, lat: first.lat, lng: first.lng, acc: 1500, how: 'example' }),
     ages: new Set<string>(),
     sizes: new Set<string>(),
+    verified: new Set<string>(),
     loves: new Set<string>(),
     freeOnly: store.get<boolean>('sb-free-only', false),
     sort: 'near',
@@ -46,6 +47,7 @@ export function startFinder() {
       .filter((p) => !st.ages.size || p.ages.some((a) => st.ages.has(a)))
       .filter((p) => [...st.loves].every((k) => p.f.includes(k)))
       .filter((p) => !st.sizes.size || (p.s != null && st.sizes.has(p.s)))
+      .filter((p) => !st.verified.size || st.verified.has(p.c ? 'verified' : 'unverified'))
       .filter((p) => !st.freeOnly || !p.pay)
       .map((p) => ({ p, d: km(st.area ?? st.origin, p), m: mine[p.id] }));
     if (st.sort === 'new') rows = rows.filter((x) => !x.m?.v);
@@ -217,6 +219,13 @@ export function startFinder() {
   document.querySelectorAll<HTMLInputElement>('input[name=size]').forEach((c) =>
     c.addEventListener('change', () => {
       c.checked ? st.sizes.add(c.value) : st.sizes.delete(c.value);
+      st.limit = PAGE;
+      render();
+    }),
+  );
+  document.querySelectorAll<HTMLInputElement>('input[name=verified]').forEach((c) =>
+    c.addEventListener('change', () => {
+      c.checked ? st.verified.add(c.value) : st.verified.delete(c.value);
       st.limit = PAGE;
       render();
     }),

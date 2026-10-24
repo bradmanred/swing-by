@@ -130,6 +130,20 @@ try {
   const large = await page.locator('#cards .card .size-large').count();
   if (!(sized > 0 && sized === large)) fail(`size filter: ${sized} cards, ${large} marked large`);
 
+  // Verified filter, also under "More filters": each choice shows only playgrounds of that kind.
+  await page.goto(BASE + '/');
+  const all = JSON.parse(await page.locator('#parks-data').textContent()).parks;
+  const nVerified = all.filter((x) => x.c).length;
+  const nUnverified = all.length - nVerified;
+  const shownCount = async () => Number((await page.locator('#count').textContent()).match(/\d+/)?.[0]);
+  await page.getByText('More filters').click();
+  await page.getByRole('checkbox', { name: /^Verified/ }).check();
+  if (nVerified > 0 && (await shownCount()) !== nVerified) fail(`verified filter: showed ${await shownCount()}, expected ${nVerified}`);
+  if (await page.locator('#cards .card .unv').count()) fail('verified filter still shows Unverified cards');
+  await page.getByRole('checkbox', { name: /^Verified/ }).uncheck();
+  await page.getByRole('checkbox', { name: /^Unverified/ }).check();
+  if (nUnverified > 0 && (await shownCount()) !== nUnverified) fail(`unverified filter: showed ${await shownCount()}, expected ${nUnverified}`);
+
   // Free entry only: hides every playground with a fee, and only those.
   await page.goto(BASE + '/');
   const paid = JSON.parse(await page.locator('#parks-data').textContent()).parks.filter((x) => x.pay).length;
