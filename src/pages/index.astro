@@ -2,8 +2,6 @@
 import Base from '../layouts/Base.astro';
 import { allParks, clientPark, km, regions } from '../lib/parks';
 import { cardHTML, fmtMiles } from '../lib/card';
-import coverageFile from '../data/coverage.json';
-import regionsFile from '../data/regions.json';
 import nextAreas from '../data/next-areas.json';
 
 const parks = await allParks();
@@ -13,16 +11,8 @@ const start = towns[0]; // St Albans: Hertfordshire is the launch region
 const near = data
   .map((p) => ({ p, d: km(start, p) }))
   .sort((a, b) => a.d - b.d);
-// Both come straight from the playground files, so they stay right as playgrounds and counties are added.
+// Comes straight from the playground files, so it stays right as playgrounds are added.
 const total = data.length;
-const covered = regionsFile.launchOrder
-  .filter((id) => data.some((p) => p.r === id))
-  .map((id) => regions.find((r) => r.id === id)?.name ?? id);
-const coveredText = covered.length > 1 ? `${covered.slice(0, -1).join(', ')} and ${covered.at(-1)}` : covered[0];
-// Counties come from src/data/coverage.json, which the "Update nearest toilets" workflow refreshes whenever playgrounds change.
-const listOf = (xs: string[]) => (xs.length > 1 ? `${xs.slice(0, -1).join(', ')} and ${xs.at(-1)}` : xs[0] ?? '');
-const countyCount = coverageFile.counties.length;
-const nations = listOf(coverageFile.nations.map((n) => n.name));
 const loves = [
   ['bs', '👶', 'Baby swings'],
   ['sw', '🪢', 'Swings'],
@@ -52,11 +42,6 @@ const ages = [
       <p class="counter"><strong>{total}</strong> playgrounds and counting</p>
       <h1 id="hero-title">Where shall we play today?</h1>
       <p class="lede">Find a playground worth the trip, and know before you go: toilets, baby change, the swings they love, and whether it's free. We check playgrounds against the council's or operator's own website, and say clearly when one hasn't been checked yet.</p>
-      <ul class="proof" aria-label="What you'll know before you go">
-        <li><span aria-hidden="true">🚻</span> Toilets and baby change</li>
-        <li><span class="pound" aria-hidden="true">£</span> Free or paid, at a glance</li>
-        <li><span aria-hidden="true">✓</span> Council-checked, or clearly marked</li>
-      </ul>
     </div>
     <form class="search" id="search" action="/playgrounds/" role="search" aria-label="Find playgrounds">
       <div>
@@ -80,9 +65,6 @@ const ages = [
           <p class="hint" id="free-hint">Hides the {paidCount} places marked <span class="pound" aria-hidden="true">£</span><span class="sr-only">with a pound sign</span>, which charge for entry.</p>
         </div>
       )}
-      <p class="hint coverage">{countyCount > 0
-        ? <>Covering {total.toLocaleString('en-GB')} playgrounds in {countyCount} English counties{nations && <>, plus parts of {nations}</>}, and {memberCount} National Trust, English Heritage and Historic Houses play areas across the UK.</>
-        : <>Covering {coveredText}, plus {memberCount} National Trust, English Heritage and Historic Houses play areas across the UK.</>}</p>
     </form>
   </section>
 
