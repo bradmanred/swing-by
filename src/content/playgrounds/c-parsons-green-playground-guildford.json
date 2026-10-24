@@ -1,0 +1,24 @@
+{
+  "name": "Parson's Green Playground",
+  "region": "south-east",
+  "area": "Guildford",
+  "lat": 51.25355,
+  "lng": -0.57024,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "One of Guildford Borough Council's playgrounds. The council says most of its playgrounds are meant for children aged about 4 to 8, so check the signs on site.",
+  "nearby": [],
+  "operator": "Guildford Borough Council",
+  "sources": [
+    {
+      "label": "Guildford Borough Council: playgrounds",
+      "url": "https://www.guildford.gov.uk/playgrounds"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking. The pin is the playground on OpenStreetMap (© OpenStreetMap contributors) nearest the council's postcode.",
+  "photo": null
+}
