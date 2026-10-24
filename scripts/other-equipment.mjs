@@ -27,7 +27,8 @@ const MIN_DESCRIPTIONS = 25;
 
 // Common UK play equipment and the words councils use for it. Matched against playground descriptions.
 const WATCH = {
-  'Springers and rocking horses': ['springer', 'spring rocker', 'rocking horse', 'spring animal', 'spring rider'],
+  'Springers': ['springer', 'spring rocker', 'spring animal', 'spring rider'],
+  'Rocking horse': ['rocking horse'],
   'Basket or nest swing': ['basket swing', 'nest swing', 'group swing', 'bird nest swing'],
   'Tyre swing': ['tyre swing'],
   'Outdoor gym': ['outdoor gym', 'fitness equipment', 'outdoor fitness', 'gym equipment'],
@@ -114,7 +115,7 @@ const head = [
   '',
   suggest.length ? suggest.map((s) => `- ${s}`).join('\n') : '_Nothing new this week: the tick list covers what parents and councils mention most._',
   '',
-  `Rule of thumb: suggest a tick box once something typed in has been seen at ${MIN_PARKS}+ playgrounds by ${MIN_PARENTS}+ households, or appears in ${MIN_DESCRIPTIONS}+ descriptions. Group near-duplicates (a rocking horse is a springer). Don't add toilets or baby change: those only come from official sources.`,
+  `Rule of thumb: suggest a tick box once something typed in has been seen at ${MIN_PARKS}+ playgrounds by ${MIN_PARENTS}+ households, or appears in ${MIN_DESCRIPTIONS}+ descriptions. Group near-duplicates, but only when they really are the same thing: a rocking horse on a rocking base isn't a springer. Don't add toilets or baby change: those only come from official sources.`,
   '',
 ];
 const report = [...head, ...lines].join('\n');
