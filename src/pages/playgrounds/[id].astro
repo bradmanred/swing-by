@@ -25,6 +25,13 @@ const spots = [
   ...p.nearby.filter((n) => n.lat != null && n.lng != null).map((n) => ({ lat: n.lat!, lng: n.lng!, label: `${L.nearby[n.type] ?? 'Nearby'}: ${n.label}`, kind: L.nearby[n.type] ? n.type : 'other' })),
   ...others.map(({ x, d }) => ({ lat: x.lat, lng: x.lng, label: `${x.name}, ${fmtMiles(d)}${x.fee ? ', paid entry' : ''}`, kind: 'nearby', href: `/playgrounds/${x.id}/` })),
 ];
+// What parents can tick, most common across our playgrounds first. Toilets and baby change only come from official sources.
+const pickable = [...Object.entries(L.equipment), ...Object.entries(L.access), ...Object.entries(L.facilities)].filter(([k]) => !['wc', 'bc'].includes(k));
+const seen: Record<string, number> = {};
+for (const x of parks) for (const k of [...x.equipment, ...x.access, ...x.facilities]) seen[k] = (seen[k] ?? 0) + 1;
+pickable.sort((a, b) => (seen[b[0]] ?? 0) - (seen[a[0]] ?? 0) || a[1].localeCompare(b[1]));
+const official = new Set([...p.equipment, ...p.access, ...p.facilities]);
+const needsParents = !p.checked || p.equipment.length === 0;
 const fms = `https://www.fixmystreet.com/around?latitude=${p.lat}&longitude=${p.lng}`;
 const dirs = `https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.lng}`;
 ---
@@ -64,6 +71,33 @@ const dirs = `https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.ln
         )}
         {p.ages.length > 0 && <p style="margin-top:12px">Best for: {p.ages.map((a) => L.ages[a]).join(', ')}.</p>}
         {p.size && <p style="margin-top:8px">Size: {L.sizes[p.size]}, as graded by {p.operator ?? 'the council'}.</p>}
+        <div class="parent-eq" id="parent-eq" data-park={p.id} data-official={JSON.stringify([...official])} data-names={JSON.stringify(Object.fromEntries(pickable.map(([k, v]) => [k, [v, ICON[k] ?? '']])))}>
+          <div id="peq-confirmed" hidden></div>
+          <details id="peq-details" open={needsParents}>
+            <summary>{needsParents ? "Been here? Help confirm what it has" : "Spotted something we've missed?"}</summary>
+            <form id="peq-form" style="margin-top:12px;display:grid;gap:14px">
+              {needsParents && <p>We haven't been able to check this playground's equipment with {p.checked ? 'the people who run it' : 'an official source'}. If you've been, tick what you saw. It shows here once another parent agrees.</p>}
+              <fieldset>
+                <legend>Is there a playground here that anyone can use?</legend>
+                <div class="row" style="gap:16px;margin-top:6px">
+                  <label class="chk"><input type="radio" name="open" value="yes" /> Yes</label>
+                  <label class="chk"><input type="radio" name="open" value="no" /> No, it's gone or it's private</label>
+                  <label class="chk"><input type="radio" name="open" value="" checked /> Not sure</label>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>What did you see? Tick all that apply</legend>
+                <div class="peq-grid">
+                  {pickable.map(([k, v]) => (
+                    <label class="chk"><input type="checkbox" name="item" value={k} /> <span aria-hidden="true">{ICON[k]}</span> {v}{official.has(k) && <span class="sr-only"> (already listed)</span>}</label>
+                  ))}
+                </div>
+              </fieldset>
+              <button class="btn btn-blue" type="submit" style="justify-self:start">Send what I saw</button>
+              <p class="hint" id="peq-msg" role="status">We don't ask who you are. One parent's answers stay hidden until a second parent agrees.</p>
+            </form>
+          </details>
+        </div>
       </section>
       <section aria-labelledby="hours">
         <h2 id="hours">Opening times</h2>
@@ -140,9 +174,10 @@ const dirs = `https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.ln
         </fieldset>
         <p class="hint" id="mine-status" aria-live="polite" style="margin-top:10px">Saved on this device only.</p>
         <div class="photo-nudge" id="photo-nudge" hidden>
-          <p><strong>Did you take a photo while you were here?</strong> A picture helps other parents see what it's like before they go.</p>
+          <p><strong>Did you take a photo while you were here?</strong> A picture helps other parents see what it's like before they go. You can also tick off the equipment you saw.</p>
           <div class="row">
             <button class="btn btn-yellow" type="button" id="nudge-add"><span aria-hidden="true">📷</span> Add a photo</button>
+            <button class="btn" type="button" id="nudge-eq">Tell us what's here</button>
             <button class="linkbtn" type="button" id="nudge-no">Not now</button>
           </div>
           <p class="hint">Only photos with no people in them, please.</p>
@@ -195,6 +230,8 @@ const dirs = `https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.ln
     startFavs();
     import { startPhotos } from '../../scripts/photos';
     startPhotos();
+    import { startEquipment } from '../../scripts/equipment';
+    startEquipment();
     import('../../scripts/map').then(({ createSpotMap }) => {
       const el = document.getElementById('park-map');
       if (el) createSpotMap(el, JSON.parse(el.dataset.spots!));
@@ -230,6 +267,13 @@ const dirs = `https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.ln
     document.getElementById('nudge-add')!.addEventListener('click', () => {
       document.getElementById('photo-title')?.scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
       document.getElementById('photo-file')?.focus({ preventScroll: true });
+      nudge.hidden = true;
+    });
+    document.getElementById('nudge-eq')!.addEventListener('click', () => {
+      const det = document.getElementById('peq-details') as HTMLDetailsElement;
+      det.open = true;
+      det.scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+      det.querySelector<HTMLInputElement>('input[name=open]')?.focus({ preventScroll: true });
       nudge.hidden = true;
     });
     document.getElementById('nudge-no')!.addEventListener('click', () => {

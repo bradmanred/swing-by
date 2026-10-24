@@ -110,6 +110,18 @@ try {
   await page.getByRole('button', { name: 'Cast my vote' }).click();
   await page.locator('#vote-msg.err').waitFor({ timeout: 5000 }).catch(() => fail('vote failure not reported'));
 
+  // Parents' equipment form: open on Unverified playgrounds, folded away on checked ones with equipment listed,
+  // offers the site's equipment list, and says so when it can't send (no /api/equipment on this static server).
+  await page.goto(BASE + '/playgrounds/c-playground-off-tennyson-drive-redhouse-park-newport-pagnell/');
+  if (!(await page.locator('#peq-details').getAttribute('open') !== null)) fail('equipment form should be open on an Unverified playground');
+  if ((await page.locator('#peq-form input[name=item]').count()) < 15) fail('equipment form should offer the equipment list');
+  if (await page.locator('#peq-form input[value=bc]').count()) fail('baby change must not be offered to parents');
+  await page.getByRole('checkbox', { name: /Swings/ }).first().check();
+  await page.getByRole('button', { name: 'Send what I saw' }).click();
+  await page.getByText(/couldn't send|not set up/i).waitFor({ timeout: 5000 }).catch(() => fail('equipment send failure not reported'));
+  await page.goto(BASE + '/playgrounds/verulamium/');
+  if ((await page.locator('#peq-details').getAttribute('open')) !== null) fail('equipment form should be folded away on a checked playground');
+
   // Size filter lives under "More filters" and only shows graded playgrounds of that size.
   await page.goto(BASE + '/');
   await page.getByText('More filters').click();
