@@ -2,6 +2,10 @@
  "updated": "2026-10-24",
  "counties": [
   {
+   "name": "Devon",
+   "playgrounds": 1140
+  },
+  {
    "name": "Hertfordshire",
    "playgrounds": 737
   },
@@ -60,10 +64,6 @@
   {
    "name": "Berkshire",
    "playgrounds": 23
-  },
-  {
-   "name": "Devon",
-   "playgrounds": 19
   },
   {
    "name": "Leicestershire",
