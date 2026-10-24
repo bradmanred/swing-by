@@ -1,0 +1,29 @@
+{
+  "name": "Porters Hill Park Play Area",
+  "region": "herts",
+  "area": "Batford, Harpenden",
+  "lat": 51.82838,
+  "lng": -0.33817,
+  "ages": [],
+  "equipment": [
+    "zw",
+    "sw",
+    "sl",
+    "cl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A natural play area opened in 2010, reached from Pickford Hill, with a zip wire, a basket swing, a slide, a wooden climbing frame, a toddler play area and a floodlit multi-use games area.",
+  "nearby": [],
+  "operator": "Harpenden Town Council",
+  "sources": [
+    {
+      "label": "Harpenden Town Council: Porters Hill Park",
+      "url": "https://www.harpenden.gov.uk/green-spaces/porters-hill-park"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, opening hours, toilets and parking. The pin is the playground on OpenStreetMap (© OpenStreetMap contributors) in the park.",
+  "photo": null
+}

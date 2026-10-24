@@ -1,0 +1,26 @@
+{
+  "name": "Springwood Drive Play Area",
+  "region": "south-east",
+  "area": "Ashford",
+  "lat": 51.15186,
+  "lng": 0.84737,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A fenced, equipped play area for all ages.",
+  "nearby": [],
+  "operator": "Ashford Borough Council",
+  "sources": [
+    {
+      "label": "Ashford Borough Council: parks and play areas",
+      "url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/play-areas/borough-play-areas"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking. The pin is the playground on OpenStreetMap (© OpenStreetMap contributors) at or nearest the place the council names.",
+  "photo": null
+}

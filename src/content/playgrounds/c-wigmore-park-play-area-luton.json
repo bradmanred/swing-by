@@ -1,0 +1,29 @@
+{
+  "name": "Wigmore Park Play Area",
+  "region": "east",
+  "area": "Luton",
+  "lat": 51.88556,
+  "lng": -0.36926,
+  "ages": [],
+  "equipment": [
+    "sk"
+  ],
+  "access": [],
+  "facilities": [
+    "cf",
+    "wc"
+  ],
+  "opens": "",
+  "description": "Wigmore Park is one of Luton Borough Council's parks, and the council lists a children's play area among its facilities.",
+  "nearby": [],
+  "operator": "Luton Borough Council",
+  "sources": [
+    {
+      "label": "Luton Borough Council: Wigmore Park",
+      "url": "https://www.luton.gov.uk/leisure-parks-culture/find-park-open-spaces/wigmore-park"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (from the council's map), age ranges, opening hours and parking.",
+  "photo": null
+}
