@@ -1,0 +1,32 @@
+{
+  "name": "St Michael's Road Play Area",
+  "region": "devon",
+  "area": "Paignton, Torbay",
+  "lat": 50.4299,
+  "lng": -3.57301,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "St Michael's Road in Paignton, run by Torbay Council, has a children's playground with toddler and junior play.",
+  "nearby": [],
+  "operator": "Torbay Council",
+  "sources": [
+    {
+      "label": "Torbay Council: St Michael's Road",
+      "url": "https://www.torbay.gov.uk/leisure-sports-and-community/parks/find-a-park/st-michaels-road/"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/1468013126"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

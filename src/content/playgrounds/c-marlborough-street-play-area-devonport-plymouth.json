@@ -1,0 +1,30 @@
+{
+  "name": "Marlborough Street Play Area",
+  "region": "devon",
+  "area": "Devonport, Plymouth",
+  "lat": 50.37428,
+  "lng": -4.17656,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area at Marlborough Street in the Devonport ward of Plymouth, run by Plymouth City Council. The council lists it as suitable for juniors. It has a safety surface. It doesn't have dog-proof fencing.",
+  "nearby": [],
+  "operator": "Plymouth City Council",
+  "sources": [
+    {
+      "label": "Plymouth City Council: find a playground",
+      "url": "https://www.plymouth.gov.uk/find-playground"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/985365197"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

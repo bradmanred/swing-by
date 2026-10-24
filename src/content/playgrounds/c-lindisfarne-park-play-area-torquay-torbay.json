@@ -1,0 +1,28 @@
+{
+  "name": "Lindisfarne Park Play Area",
+  "region": "devon",
+  "area": "Torquay, Torbay",
+  "lat": 50.49262,
+  "lng": -3.54732,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Lindisfarne Park in Torquay, run by Torbay Council, has a children's playground.",
+  "nearby": [],
+  "operator": "Torbay Council",
+  "sources": [
+    {
+      "label": "Torbay Council: Lindisfarne Park",
+      "url": "https://www.torbay.gov.uk/leisure-sports-and-community/parks/find-a-park/lindisfarne-park/"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/192055328"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

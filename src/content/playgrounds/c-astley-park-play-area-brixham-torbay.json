@@ -1,0 +1,28 @@
+{
+  "name": "Astley Park Play Area",
+  "region": "devon",
+  "area": "Brixham, Torbay",
+  "lat": 50.39148,
+  "lng": -3.50733,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Astley Park in Brixham, run by Torbay Council, has a children's playground.",
+  "nearby": [],
+  "operator": "Torbay Council",
+  "sources": [
+    {
+      "label": "Torbay Council: Astley Park",
+      "url": "https://www.torbay.gov.uk/leisure-sports-and-community/parks/find-a-park/astley-park/"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/1467597107"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

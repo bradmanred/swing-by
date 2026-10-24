@@ -1,0 +1,31 @@
+{
+  "name": "Heavitree Pleasure Ground Play Area",
+  "region": "devon",
+  "area": "Exeter",
+  "lat": 50.72263,
+  "lng": -3.4997,
+  "ages": [],
+  "equipment": [
+    "sk",
+    "wp"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A children's play area at Heavitree Pleasure Ground, listed by Exeter City Council. The site also has: Basketball Court, Bowls Club, Paddling Pool (Seasonal), Skate Ramp, Tennis Courts.",
+  "nearby": [],
+  "operator": "Exeter City Council",
+  "sources": [
+    {
+      "label": "Exeter City Council: find a park or play area",
+      "url": "https://exeter.gov.uk/leisure-and-culture/parks-and-green-spaces/find-a-park-or-play-area/"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/186974743"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

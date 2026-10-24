@@ -1,0 +1,30 @@
+{
+  "name": "Rowan Way Play Area",
+  "region": "devon",
+  "area": "Brixham, Torbay",
+  "lat": 50.38053,
+  "lng": -3.534,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Rowan Way in Brixham, run by Torbay Council, has a children's playground with junior play.",
+  "nearby": [],
+  "operator": "Torbay Council",
+  "sources": [
+    {
+      "label": "Torbay Council: Rowan Way",
+      "url": "https://www.torbay.gov.uk/leisure-sports-and-community/parks/find-a-park/rowan-way/"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/924333576"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Starpitten Green Play Area",
+  "region": "devon",
+  "area": "Torquay, Torbay",
+  "lat": 50.49305,
+  "lng": -3.52981,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Starpitten Green in Torquay, run by Torbay Council, has a children's playground with junior play.",
+  "nearby": [],
+  "operator": "Torbay Council",
+  "sources": [
+    {
+      "label": "Torbay Council: Starpitten Green",
+      "url": "https://www.torbay.gov.uk/leisure-sports-and-community/parks/find-a-park/starpitten-green/"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/204903588"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

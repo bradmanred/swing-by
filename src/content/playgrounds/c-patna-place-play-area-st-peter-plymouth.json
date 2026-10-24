@@ -1,0 +1,28 @@
+{
+  "name": "Patna Place Play Area",
+  "region": "devon",
+  "area": "St Peter, Plymouth",
+  "lat": 50.37555,
+  "lng": -4.14907,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area at Patna Place in the St Peter ward of Plymouth, run by Plymouth City Council. The council lists it as suitable for mixed ages. It has a safety surface. It doesn't have dog-proof fencing.",
+  "nearby": [],
+  "operator": "Plymouth City Council",
+  "sources": [
+    {
+      "label": "Plymouth City Council: find a playground",
+      "url": "https://www.plymouth.gov.uk/find-playground"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/642611632"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

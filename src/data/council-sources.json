@@ -383,6 +383,73 @@
     "https://eastdevon.gov.uk/parks-gardens-and-recreation/parks-gardens-green-spaces/list-of-east-devons-main-green-spaces/"
    ],
    "note": "The council runs 71 play areas but doesn't publish a list; its green spaces guide names some."
+  },
+  {
+   "district": "Plymouth",
+   "council": "Plymouth City Council",
+   "sources": [
+    "https://www.plymouth.gov.uk/find-playground"
+   ]
+  },
+  {
+   "district": "Torbay",
+   "council": "Torbay Council",
+   "sources": [
+    "https://www.torbay.gov.uk/leisure-sports-and-community/parks/find-a-park/"
+   ]
+  },
+  {
+   "district": "Exeter",
+   "council": "Exeter City Council",
+   "sources": [
+    "https://exeter.gov.uk/leisure-and-culture/parks-and-green-spaces/find-a-park-or-play-area/"
+   ]
+  },
+  {
+   "district": "Mid Devon",
+   "council": "Mid Devon District Council",
+   "sources": [
+    "https://www.middevon.gov.uk/residents/parks-and-open-spaces/"
+   ]
+  },
+  {
+   "district": "North Devon",
+   "council": "North Devon Council",
+   "sources": [
+    "https://www.northdevon.gov.uk/leisure-and-lifestyle/parks-play-areas-and-allotments"
+   ]
+  },
+  {
+   "district": "Torridge",
+   "council": "Torridge District Council",
+   "sources": [
+    "https://www.torridge.gov.uk/parks"
+   ],
+   "note": "Play areas are only on an interactive map and in the 2021 play area strategy PDF; town councils own some."
+  },
+  {
+   "district": "South Hams",
+   "council": "South Hams District Council",
+   "sources": [
+    "https://www.southhams.gov.uk/leisure-and-outdoor-spaces"
+   ],
+   "note": "No play area list published."
+  },
+  {
+   "district": "West Devon",
+   "council": "West Devon Borough Council",
+   "sources": [
+    "https://www.westdevon.gov.uk/leisure-and-outdoors"
+   ],
+   "note": "No play area list published; town and parish councils run most play areas."
+  },
+  {
+   "district": "Teignbridge",
+   "council": "Teignbridge District Council",
+   "sources": [
+    "https://www.teignbridge.gov.uk/leisure-and-culture/parks-and-play-areas/"
+   ],
+   "note": "No play area list found; the site blocks automated checks, so look again by hand."
   }
  ]
 }
