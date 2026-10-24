@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-import { allParks } from '../lib/parks';
+import { allParks, L } from '../lib/parks';
 
 const names = Object.fromEntries((await allParks()).map((p) => [p.id, `${p.name}, ${p.area}`]));
 ---
@@ -34,6 +34,12 @@ const names = Object.fromEntries((await allParks()).map((p) => [p.id, `${p.name}
     <p class="hint" style="margin-top:6px">What families typed after choosing "Somewhere else" in the vote. Only moderators can see this.</p>
     <ol id="sugg-list" style="margin-top:10px;padding-left:22px;display:grid;gap:4px"></ol>
   </section>
+  <section class="panel" id="eq-reports" hidden aria-labelledby="eq-title" style="max-width:720px">
+    <h2 id="eq-title" style="font-size:1.5rem">What parents say playgrounds have</h2>
+    <p class="hint" style="margin-top:6px">Answers from the "What's here" form on playground pages. Only items two parents agree on show on the site. To make them permanent, add them to the playground's file. Clear a playground's answers if they look like mischief.</p>
+    <ul id="eq-list" class="facts" style="margin-top:10px"></ul>
+  </section>
+  <script type="application/json" id="park-labels" set:html={JSON.stringify({ ...L.equipment, ...L.access, ...L.facilities })} />
   <script type="application/json" id="park-names" set:html={JSON.stringify(names)} />
   <script>
     const names = JSON.parse(document.getElementById('park-names')!.textContent!) as Record<string, string>;
@@ -117,6 +123,32 @@ const names = Object.fromEntries((await allParks()).map((p) => [p.id, `${p.name}
       box.hidden = false;
     }
 
+    const itemNames = JSON.parse(document.getElementById('park-labels')!.textContent!) as Record<string, string>;
+    async function loadEquipment() {
+      const r = await fetch('/api/equipment/confirmed', { headers: { Authorization: `Bearer ${key}` } }).catch(() => null);
+      if (!r?.ok) return;
+      const { parks } = (await r.json()) as { parks: { park: string; parents: number; confirmed: string[]; open: boolean | null }[] };
+      const ul = document.getElementById('eq-list')!;
+      ul.innerHTML = parks.length
+        ? parks
+            .map(
+              (x) => `<li><a href="/playgrounds/${esc(x.park)}/" target="_blank" rel="noopener">${esc(names[x.park] ?? x.park)}</a>: ${x.parents} parent${x.parents === 1 ? '' : 's'}. ${
+                x.open === false ? '<strong>Parents say there is no public playground.</strong> ' : x.open === true ? 'Confirmed open to everyone. ' : ''
+              }${x.confirmed.length ? `Confirmed: ${x.confirmed.map((k) => esc(itemNames[k] ?? k)).join(', ')}.` : 'Nothing confirmed yet.'} <button class="linkbtn" type="button" data-clear="${esc(x.park)}">Clear answers</button></li>`,
+            )
+            .join('')
+        : '<li>No answers from parents yet.</li>';
+      ul.querySelectorAll<HTMLButtonElement>('[data-clear]').forEach((b) =>
+        b.addEventListener('click', async () => {
+          b.disabled = true;
+          const rr = await fetch('/api/equipment/clear', { method: 'POST', headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' }, body: JSON.stringify({ park: b.dataset.clear }) }).catch(() => null);
+          b.textContent = rr?.ok ? 'Cleared' : "Couldn't clear. Try again.";
+          if (!rr?.ok) b.disabled = false;
+        }),
+      );
+      document.getElementById('eq-reports')!.hidden = false;
+    }
+
     keyForm.addEventListener('submit', (e) => {
       e.preventDefault();
       key = keyInput.value.trim();
@@ -125,10 +157,12 @@ const names = Object.fromEntries((await allParks()).map((p) => [p.id, `${p.name}
       } catch {}
       load();
       loadSuggestions();
+      loadEquipment();
     });
     if (key) {
       load();
       loadSuggestions();
+      loadEquipment();
     }
   </script>
 </Base>
