@@ -1,0 +1,31 @@
+{
+  "name": "Steps Cross Play Area",
+  "region": "devon",
+  "area": "Torquay, Torbay",
+  "lat": 50.49518,
+  "lng": -3.52609,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Steps Cross in Torquay, run by Torbay Council, has a children's playground with toddler play.",
+  "nearby": [],
+  "operator": "Torbay Council",
+  "sources": [
+    {
+      "label": "Torbay Council: Steps Cross",
+      "url": "https://www.torbay.gov.uk/leisure-sports-and-community/parks/find-a-park/steps-cross/"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/204562418"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

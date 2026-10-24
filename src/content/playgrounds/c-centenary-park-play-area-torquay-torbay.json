@@ -1,0 +1,31 @@
+{
+  "name": "Centenary Park Play Area",
+  "region": "devon",
+  "area": "Torquay, Torbay",
+  "lat": 50.49191,
+  "lng": -3.55789,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Centenary Park in Torquay, run by Torbay Council, has a children's playground with toddler play.",
+  "nearby": [],
+  "operator": "Torbay Council",
+  "sources": [
+    {
+      "label": "Torbay Council: Centenary Park",
+      "url": "https://www.torbay.gov.uk/leisure-sports-and-community/parks/find-a-park/centenary-park/"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/191715790"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

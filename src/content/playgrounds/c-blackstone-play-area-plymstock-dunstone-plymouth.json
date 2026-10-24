@@ -1,0 +1,30 @@
+{
+  "name": "Blackstone Play Area",
+  "region": "devon",
+  "area": "Plymstock Dunstone, Plymouth",
+  "lat": 50.35718,
+  "lng": -4.06862,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A play area at Blackstone in the Plymstock Dunstone ward of Plymouth, run by Plymouth City Council. The council lists it as suitable for mixed ages. It has a safety surface. It has dog-proof fencing.",
+  "nearby": [],
+  "operator": "Plymouth City Council",
+  "sources": [
+    {
+      "label": "Plymouth City Council: find a playground",
+      "url": "https://www.plymouth.gov.uk/find-playground"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/677865631"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

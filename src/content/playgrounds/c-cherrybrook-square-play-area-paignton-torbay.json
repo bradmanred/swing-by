@@ -1,0 +1,28 @@
+{
+  "name": "Cherrybrook Square Play Area",
+  "region": "devon",
+  "area": "Paignton, Torbay",
+  "lat": 50.4111,
+  "lng": -3.5659,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Cherrybrook Square in Paignton, run by Torbay Council, has a children's playground.",
+  "nearby": [],
+  "operator": "Torbay Council",
+  "sources": [
+    {
+      "label": "Torbay Council: Cherrybrook Square",
+      "url": "https://www.torbay.gov.uk/leisure-sports-and-community/parks/find-a-park/cherrybrook-square/"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/node/9921593119"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

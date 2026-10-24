@@ -1,0 +1,33 @@
+{
+  "name": "Lipstone Crescent Play Area",
+  "region": "devon",
+  "area": "Mount Gould, Plymouth",
+  "lat": 50.37977,
+  "lng": -4.12087,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A play area at Lipstone Crescent in the Mount Gould ward of Plymouth, run by Plymouth City Council. The council lists it as suitable for toddlers. It has a safety surface. It has dog-proof fencing.",
+  "nearby": [],
+  "operator": "Plymouth City Council",
+  "sources": [
+    {
+      "label": "Plymouth City Council: find a playground",
+      "url": "https://www.plymouth.gov.uk/find-playground"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/1466250131"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

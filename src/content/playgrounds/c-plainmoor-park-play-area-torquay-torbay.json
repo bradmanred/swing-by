@@ -1,0 +1,30 @@
+{
+  "name": "Plainmoor Park Play Area",
+  "region": "devon",
+  "area": "Torquay, Torbay",
+  "lat": 50.47578,
+  "lng": -3.5254,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Plainmoor Park in Torquay, run by Torbay Council, has a children's playground with junior play.",
+  "nearby": [],
+  "operator": "Torbay Council",
+  "sources": [
+    {
+      "label": "Torbay Council: Plainmoor Park",
+      "url": "https://www.torbay.gov.uk/leisure-sports-and-community/parks/find-a-park/plainmoor-park/"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/207053006"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
