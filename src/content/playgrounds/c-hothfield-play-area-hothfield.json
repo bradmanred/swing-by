@@ -1,0 +1,27 @@
+{
+  "name": "Hothfield Play Area",
+  "region": "south-east",
+  "area": "Hothfield",
+  "lat": 51.17295,
+  "lng": 0.81775,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "With a bucket swing, a tractor slide and equipment for young people.",
+  "nearby": [],
+  "operator": "Ashford Borough Council",
+  "sources": [
+    {
+      "label": "Ashford Borough Council: parks and play areas",
+      "url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/play-areas/borough-play-areas"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, opening hours, toilets and parking. The pin is the playground on OpenStreetMap (© OpenStreetMap contributors) at or nearest the place the council names.",
+  "photo": null
+}

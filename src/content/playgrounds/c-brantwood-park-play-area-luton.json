@@ -1,0 +1,24 @@
+{
+  "name": "Brantwood Park Play Area",
+  "region": "east",
+  "area": "Luton",
+  "lat": 51.87947,
+  "lng": -0.42629,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Brantwood Park is one of Luton Borough Council's parks, and the council lists a children's play area among its facilities.",
+  "nearby": [],
+  "operator": "Luton Borough Council",
+  "sources": [
+    {
+      "label": "Luton Borough Council: parks and play areas",
+      "url": "https://www.luton.gov.uk/leisure-parks-culture/find-park-open-space"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking. The pin is the playground on OpenStreetMap (© OpenStreetMap contributors) at or nearest the place the council names.",
+  "photo": null
+}
