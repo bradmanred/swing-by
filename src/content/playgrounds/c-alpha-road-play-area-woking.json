@@ -1,0 +1,24 @@
+{
+  "name": "Alpha Road Play Area",
+  "region": "south-east",
+  "area": "Woking",
+  "lat": 51.32545,
+  "lng": -0.53876,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area listed in Woking Borough Council's green spaces and play areas finder.",
+  "nearby": [],
+  "operator": "Woking Borough Council",
+  "sources": [
+    {
+      "label": "Woking Borough Council: find green spaces and play areas",
+      "url": "https://www.woking.gov.uk/parks-leisure/green-spaces/find-green-spaces-play-areas"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking. The pin is the playground on OpenStreetMap (© OpenStreetMap contributors) nearest the council's postcode.",
+  "photo": null
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Meadowbank Recreation Ground",
+  "region": "south-east",
+  "area": "Dorking",
+  "lat": 51.23546,
+  "lng": -0.33153,
+  "ages": [],
+  "equipment": [
+    "zw",
+    "sk"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "In Dorking town centre, reached from Mill Lane, Ashcombe Road, London Road and Fairfield Drive, with a playground, an aerial swing, a skate and BMX park and a multi-use games area.",
+  "nearby": [],
+  "operator": "Mole Valley District Council",
+  "sources": [
+    {
+      "label": "Mole Valley District Council: parks, recreation and play facilities",
+      "url": "https://www.molevalley.gov.uk/leisure-culture/parks-playgrounds/"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, opening hours, toilets and parking. The pin is the playground on OpenStreetMap (© OpenStreetMap contributors) at the recreation ground.",
+  "photo": null
+}

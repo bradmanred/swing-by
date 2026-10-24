@@ -1,0 +1,30 @@
+{
+  "name": "Sussex Road Recreation Ground",
+  "region": "south-east",
+  "area": "Knaphill",
+  "lat": 51.31635,
+  "lng": -0.62239,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fp"
+  ],
+  "opens": "",
+  "description": "One of Woking Borough Council's green spaces, with play areas for children up to 6, up to 12 years old. Also here: car park.",
+  "nearby": [],
+  "operator": "Woking Borough Council",
+  "sources": [
+    {
+      "label": "Woking Borough Council: find green spaces and play areas",
+      "url": "https://www.woking.gov.uk/parks-leisure/green-spaces/find-green-spaces-play-areas"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking. The pin is the playground on OpenStreetMap (© OpenStreetMap contributors) nearest the council's postcode.",
+  "photo": null
+}
