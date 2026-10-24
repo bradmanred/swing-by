@@ -1,0 +1,34 @@
+{
+  "name": "Kearsney Abbey Play Area",
+  "region": "south-east",
+  "area": "Dover",
+  "lat": 51.14779,
+  "lng": 1.2712,
+  "ages": [],
+  "equipment": [
+    "sl",
+    "cl",
+    "rb",
+    "tp",
+    "ss",
+    "bs"
+  ],
+  "access": [
+    "inc",
+    "sen"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A new inclusive play area opened in July 2026, with a large multi-play unit with slides, tunnels and climbing, a wheelchair-accessible roundabout and trampoline, a basket swing, a multi-user seesaw, sensory play and supported swing seats, for children up to 14.",
+  "nearby": [],
+  "operator": "Dover District Council",
+  "sources": [
+    {
+      "label": "Dover District Council: play areas",
+      "url": "https://www.dover.gov.uk/Leisure-Culture-Tourism/Leisure-Facilities/Play-Areas-MUGAs-Skate-Parks/Play-Areas.aspx"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, opening hours, toilets and parking. The pin is the playground on OpenStreetMap (© OpenStreetMap contributors) at or nearest the place the council names.",
+  "photo": null
+}

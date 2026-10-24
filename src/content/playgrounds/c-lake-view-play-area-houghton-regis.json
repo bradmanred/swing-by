@@ -1,0 +1,28 @@
+{
+  "name": "Lake View Play Area",
+  "region": "east",
+  "area": "Houghton Regis",
+  "lat": 51.8997,
+  "lng": -0.52816,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by Central Bedfordshire Council, for children up to 10.",
+  "nearby": [],
+  "operator": "Central Bedfordshire Council",
+  "sources": [
+    {
+      "label": "Central Bedfordshire Council: play areas",
+      "url": "https://www.centralbedfordshire.gov.uk/directory/play-areas/directory/lake-view"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (from the council's map), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

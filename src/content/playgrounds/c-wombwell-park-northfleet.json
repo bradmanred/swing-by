@@ -1,0 +1,24 @@
+{
+  "name": "Wombwell Park",
+  "region": "south-east",
+  "area": "Northfleet",
+  "lat": 51.43121,
+  "lng": 0.3366,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A park with children's play areas, tennis and multi-sports courts. No dogs, and it's locked half an hour before sunset.",
+  "nearby": [],
+  "operator": "Gravesham Borough Council",
+  "sources": [
+    {
+      "label": "Gravesham Borough Council: parks and play areas",
+      "url": "https://www.gravesham.gov.uk/outdoor-spaces/parks-play-areas"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking. The pin is the playground on OpenStreetMap (© OpenStreetMap contributors) at or nearest the place the council names.",
+  "photo": null
+}
