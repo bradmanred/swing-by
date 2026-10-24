@@ -1,0 +1,329 @@
+{
+ "about": "Councils whose own playground lists have been checked. The coverage check (scripts/find-gaps.mjs) only fills gaps from OpenStreetMap in districts listed here, so council sources always come first. Add a district once you've worked through docs/finding-playgrounds.md for it. 'district' must match the local authority name used by postcodes.io (ONS). 'feed' (optional) lets the coverage check read the council's list itself and add new council-listed playgrounds as verified: type 'directory' (index pages, a regex for record links, and regexes for the name and coordinates on each record page), or 'geojson' / 'csv' (url, name field, and lat/lng fields).",
+ "councils": [
+  {
+   "district": "Chelmsford",
+   "council": "Chelmsford City Council",
+   "sources": [
+    "https://www.loveyourchelmsford.co.uk/"
+   ]
+  },
+  {
+   "district": "Manchester",
+   "council": "Manchester City Council",
+   "sources": [
+    "https://www.manchester.gov.uk/online-directories/parks-leisure-and-the-arts-directories/parks-playgrounds-allotments-and-open-spaces-directories/parks-and-open-spaces/all-parks-playgrounds-and-open-spaces"
+   ]
+  },
+  {
+   "district": "Chesterfield",
+   "council": "Chesterfield Borough Council",
+   "sources": [
+    "https://www.chesterfield.gov.uk/"
+   ]
+  },
+  {
+   "district": "Tendring",
+   "council": "Tendring District Council",
+   "sources": [
+    "https://www.tendringdc.gov.uk/"
+   ]
+  },
+  {
+   "district": "Colchester",
+   "council": "Colchester City Council",
+   "sources": [
+    "https://www.colchester.gov.uk/"
+   ]
+  },
+  {
+   "district": "Thurrock",
+   "council": "Thurrock Council",
+   "sources": [
+    "https://democracy.thurrock.gov.uk/"
+   ]
+  },
+  {
+   "district": "East Hertfordshire",
+   "council": "East Herts Council",
+   "sources": [
+    "https://www.eastherts.gov.uk/"
+   ]
+  },
+  {
+   "district": "Lisburn and Castlereagh",
+   "council": "Lisburn & Castlereagh City Council",
+   "sources": [
+    "https://digitalservices.lisburncastlereagh.gov.uk/-/play-parks-across-lisburn-and-castlereagh"
+   ]
+  },
+  {
+   "district": "Braintree",
+   "council": "Braintree District Council",
+   "sources": [
+    "https://www.braintree.gov.uk/"
+   ]
+  },
+  {
+   "district": "Dacorum",
+   "council": "Dacorum Borough Council",
+   "sources": [
+    "https://www.dacorum.gov.uk/"
+   ]
+  },
+  {
+   "district": "Harlow",
+   "council": "Harlow Council",
+   "sources": [
+    "https://www.harlow.gov.uk/"
+   ]
+  },
+  {
+   "district": "North East Derbyshire",
+   "council": "North East Derbyshire District Council",
+   "sources": [
+    "https://democracy.ne-derbyshire.gov.uk/"
+   ]
+  },
+  {
+   "district": "Erewash",
+   "council": "Erewash Borough Council",
+   "sources": [
+    "https://www.erewash.gov.uk/"
+   ]
+  },
+  {
+   "district": "Newcastle upon Tyne",
+   "council": "Newcastle City Council",
+   "sources": [
+    "https://new.newcastle.gov.uk/parks-and-allotments/play-spaces-0/find-play-space"
+   ]
+  },
+  {
+   "district": "Welwyn Hatfield",
+   "council": "Welwyn Hatfield Borough Council",
+   "sources": [
+    "https://www.welhat.gov.uk/"
+   ]
+  },
+  {
+   "district": "North Hertfordshire",
+   "council": "North Herts Council",
+   "sources": [
+    "https://www.north-herts.gov.uk/"
+   ]
+  },
+  {
+   "district": "Broxbourne",
+   "council": "Borough of Broxbourne Council",
+   "sources": [
+    "https://www.broxbourne.gov.uk/"
+   ]
+  },
+  {
+   "district": "Watford",
+   "council": "Watford Borough Council",
+   "sources": [
+    "https://www.watford.gov.uk/"
+   ]
+  },
+  {
+   "district": "High Peak",
+   "council": "High Peak Borough Council",
+   "sources": [
+    "https://www.highpeak.gov.uk/"
+   ]
+  },
+  {
+   "district": "Rotherham",
+   "council": "Rotherham Metropolitan Borough Council",
+   "sources": [
+    "https://www.rotherham.gov.uk/directory/16/playgrounds"
+   ],
+   "feed": {
+    "type": "directory",
+    "index": [
+     "https://www.rotherham.gov.uk/directory/16/playgrounds/category/33"
+    ],
+    "follow": "/directory-record/\\d+/",
+    "name": "Name\\s*</dt>\\s*<dd[^>]*>([\\s\\S]*?)</dd>",
+    "coords": "map_marker_location_\\d+\" value=\"(-?\\d+\\.\\d+),(-?\\d+\\.\\d+)\""
+   }
+  },
+  {
+   "district": "Three Rivers",
+   "council": "Three Rivers District Council",
+   "sources": [
+    "https://www.threerivers.gov.uk/"
+   ]
+  },
+  {
+   "district": "Lambeth",
+   "council": "Lambeth Council",
+   "sources": [
+    "https://www.lambeth.gov.uk/"
+   ]
+  },
+  {
+   "district": "Hertsmere",
+   "council": "Hertsmere Borough Council",
+   "sources": [
+    "https://www.parksherts.co.uk/"
+   ]
+  },
+  {
+   "district": "Bolsover",
+   "council": "Bolsover District Council",
+   "sources": [
+    "https://committees.bolsover.gov.uk/"
+   ]
+  },
+  {
+   "district": "Gateshead",
+   "council": "Gateshead Council",
+   "sources": [
+    "https://www.gateshead.gov.uk/article/1831/Parks"
+   ]
+  },
+  {
+   "district": "Stevenage",
+   "council": "Stevenage Borough Council",
+   "sources": [
+    "https://www.stevenage.gov.uk/"
+   ]
+  },
+  {
+   "district": "Derby",
+   "council": "Derby City Council",
+   "sources": [
+    "https://www.derby.gov.uk/"
+   ]
+  },
+  {
+   "district": "Wakefield",
+   "council": "Wakefield Council",
+   "sources": [
+    "https://www.wakefield.gov.uk/parks-countryside-and-outdoor-spaces/the-big-parks-and-play-area-project/completed-parks-and-play-areas"
+   ]
+  },
+  {
+   "district": "Southwark",
+   "council": "Southwark Council",
+   "sources": [
+    "https://www.southwark.gov.uk/"
+   ]
+  },
+  {
+   "district": "Amber Valley",
+   "council": "Amber Valley Borough Council",
+   "sources": [
+    "https://www.ambervalley.gov.uk/"
+   ]
+  },
+  {
+   "district": "Leeds",
+   "council": "Leeds City Council",
+   "sources": [
+    "https://www.leeds.gov.uk/parks-and-countryside/your-local-park"
+   ]
+  },
+  {
+   "district": "Derbyshire Dales",
+   "council": "Derbyshire Dales District Council",
+   "sources": [
+    "https://www.derbyshiredales.gov.uk/leisure/parks-and-open-spaces/our-smaller-parks-and-gardens"
+   ]
+  },
+  {
+   "district": "St Albans",
+   "council": "St Albans City and District Council",
+   "sources": [
+    "https://www.stalbans.gov.uk/"
+   ]
+  },
+  {
+   "district": "South Derbyshire",
+   "council": "South Derbyshire District Council",
+   "sources": [
+    "https://www.southderbyshire.gov.uk/"
+   ]
+  },
+  {
+   "district": "Reigate and Banstead",
+   "council": "Reigate and Banstead Borough Council",
+   "sources": [
+    "https://www.reigate-banstead.gov.uk/directory/20/parks_and_recreation_directory"
+   ],
+   "feed": {
+    "type": "directory",
+    "index": [
+     "https://www.reigate-banstead.gov.uk/directory/20/parks_and_recreation_directory/category/180",
+     "https://www.reigate-banstead.gov.uk/directory/20/parks_and_recreation_directory/category/177",
+     "https://www.reigate-banstead.gov.uk/directory/20/parks_and_recreation_directory/category/178"
+    ],
+    "follow": "/directory_record/\\d+/",
+    "name": "<h1[^>]*>([\\s\\S]*?)</h1>",
+    "coords": "map_marker_location_\\d+\" value=\"(-?\\d+\\.\\d+),(-?\\d+\\.\\d+)\""
+   }
+  },
+  {
+   "district": "Elmbridge",
+   "council": "Elmbridge Borough Council",
+   "sources": [
+    "https://www.elmbridge.gov.uk/leisure-and-culture/green-spaces/parks-play-areas-and-green-spaces-directory"
+   ]
+  },
+  {
+   "district": "Dartford",
+   "council": "Dartford Borough Council",
+   "sources": [
+    "https://www.dartford.gov.uk/parks-open-spaces-1/childrens-playgrounds"
+   ]
+  },
+  {
+   "district": "Guildford",
+   "council": "Guildford Borough Council",
+   "sources": [
+    "https://www.guildford.gov.uk/playgrounds"
+   ]
+  },
+  {
+   "district": "Sevenoaks",
+   "council": "Sevenoaks District Council",
+   "sources": [
+    "https://www.sevenoaks.gov.uk/playgrounds"
+   ]
+  },
+  {
+   "district": "Woking",
+   "council": "Woking Borough Council",
+   "sources": [
+    "https://www.woking.gov.uk/parks-leisure/green-spaces/find-green-spaces-play-areas"
+   ]
+  },
+  {
+   "district": "Mole Valley",
+   "council": "Mole Valley District Council",
+   "sources": [
+    "https://www.molevalley.gov.uk/leisure-culture/parks-playgrounds/"
+   ],
+   "note": "Parish councils run more play areas."
+  },
+  {
+   "district": "Havering",
+   "council": "London Borough of Havering",
+   "sources": [
+    "https://www.havering.gov.uk/parks-1/play-areas-outdoor-gyms"
+   ],
+   "note": "The council's play area list is only a Google map, which we can't use, so gaps are filled from OpenStreetMap."
+  },
+  {
+   "district": "Epping Forest",
+   "council": "Epping Forest District Council",
+   "sources": [
+    "https://www.eppingforestdc.gov.uk/leisure/play-in-the-park/"
+   ],
+   "note": "The district council doesn't publish a play area list; town and parish councils run most play areas."
+  }
+ ]
+}

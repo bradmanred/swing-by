@@ -1,0 +1,29 @@
+{
+  "name": "Kingsmoor Park Play Area",
+  "region": "south-east",
+  "area": "Woking",
+  "lat": 51.29777,
+  "lng": -0.55478,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "One of Woking Borough Council's green spaces, with play areas for children up to 6, up to 12, up to 14 years old.",
+  "nearby": [],
+  "operator": "Woking Borough Council",
+  "sources": [
+    {
+      "label": "Woking Borough Council: find green spaces and play areas",
+      "url": "https://www.woking.gov.uk/parks-leisure/green-spaces/find-green-spaces-play-areas"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking. The pin is the playground on OpenStreetMap (© OpenStreetMap contributors) nearest the council's postcode.",
+  "photo": null
+}

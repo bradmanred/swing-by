@@ -1,0 +1,32 @@
+{
+  "name": "Cherry Avenue Play Area",
+  "region": "south-east",
+  "area": "Swanley",
+  "lat": 51.39523,
+  "lng": 0.16462,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "bs",
+    "zw",
+    "cl",
+    "sl"
+  ],
+  "access": [],
+  "facilities": [
+    "fp"
+  ],
+  "opens": "",
+  "description": "A play area with toddler and junior swings, a basket swing, a cableway, climbing poles, a multiplay unit with slide bars, a multi-use games area and a large grassed area. Open during daylight hours, with free on-street parking nearby.",
+  "nearby": [],
+  "operator": "Sevenoaks District Council",
+  "sources": [
+    {
+      "label": "Sevenoaks District Council: playgrounds",
+      "url": "https://www.sevenoaks.gov.uk/playgrounds"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, opening hours, toilets and parking. The pin is the playground on OpenStreetMap (© OpenStreetMap contributors) nearest the council's postcode.",
+  "photo": null
+}

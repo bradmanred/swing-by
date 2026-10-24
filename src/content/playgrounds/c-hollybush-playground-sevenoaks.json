@@ -1,0 +1,35 @@
+{
+  "name": "Hollybush Playground",
+  "region": "south-east",
+  "area": "Sevenoaks",
+  "lat": 51.2783,
+  "lng": 0.19955,
+  "ages": [],
+  "equipment": [
+    "cl",
+    "mb",
+    "sw",
+    "bs",
+    "ss",
+    "sl",
+    "rb"
+  ],
+  "access": [],
+  "facilities": [
+    "cf",
+    "fp"
+  ],
+  "opens": "",
+  "description": "Renovated in 2022, with a climbing frame, monkey bars, a nest swing, an obstacle course, a see-saw, a slide and swings, plus baby swings and a roundabout for younger children. Most equipment suits children aged 3 and up. Next to a café, with free parking nearby.",
+  "nearby": [],
+  "operator": "Sevenoaks District Council",
+  "sources": [
+    {
+      "label": "Sevenoaks District Council: playgrounds",
+      "url": "https://www.sevenoaks.gov.uk/playgrounds"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, opening hours, toilets and parking. The pin is the playground on OpenStreetMap (© OpenStreetMap contributors) nearest the council's postcode.",
+  "photo": null
+}
