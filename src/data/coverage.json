@@ -2,12 +2,12 @@
  "updated": "2026-10-24",
  "counties": [
   {
-   "name": "Essex",
-   "playgrounds": 385
+   "name": "Hertfordshire",
+   "playgrounds": 737
   },
   {
-   "name": "Hertfordshire",
-   "playgrounds": 357
+   "name": "Essex",
+   "playgrounds": 385
   },
   {
    "name": "Derbyshire",
@@ -22,8 +22,16 @@
    "playgrounds": 168
   },
   {
+   "name": "Kent",
+   "playgrounds": 119
+  },
+  {
    "name": "Greater Manchester",
    "playgrounds": 77
+  },
+  {
+   "name": "Bedfordshire",
+   "playgrounds": 61
   },
   {
    "name": "Tyne and Wear",
@@ -42,20 +50,12 @@
    "playgrounds": 43
   },
   {
-   "name": "Kent",
-   "playgrounds": 37
-  },
-  {
    "name": "Cambridgeshire",
    "playgrounds": 27
   },
   {
    "name": "North Yorkshire",
    "playgrounds": 27
-  },
-  {
-   "name": "Bedfordshire",
-   "playgrounds": 25
   },
   {
    "name": "Berkshire",
