@@ -1,0 +1,910 @@
+[
+{
+"url": "https://guildford.gov.uk/playgrounds",
+"final": "https://guildford.gov.uk:443/playgrounds?ccp=true#cookie-consent-prompt",
+"file": "e5aed2a670.html"
+},
+{
+"url": "https://www.guildford.gov.uk/parks",
+"final": "https://www.guildford.gov.uk:443/parks?ccp=true#cookie-consent-prompt",
+"file": "412df8c391.html"
+},
+{
+"url": "https://guildford.gov.uk/parksplaygroundsandgreenspaces",
+"final": "https://guildford.gov.uk:443/parksplaygroundsandgreenspaces?ccp=true#cookie-consent-prompt",
+"file": "c3ed8d9ed5.html"
+},
+{
+"url": "https://www.facebook.com/sharer/sharer.php?u=https://guildford.gov.uk/playgrounds",
+"err": "HTTP Error 400: Bad Request"
+},
+{
+"url": "https://twitter.com/share?url=https://guildford.gov.uk/playgrounds",
+"err": "HTTP Error 403: Forbidden"
+},
+{
+"url": "mailto:?Subject=Playgrounds&Body=I%20thought%20you%20might%20be%20interested%20in%20this%20web%20page%20-%20https://guildford.gov.uk/playgrounds",
+"err": "<urlopen error unknown url type: mailto>"
+},
+{
+"url": "https://guildford.gov.uk/article/26633/Help-us-improve-our-website?page=17163",
+"final": "https://guildford.gov.uk:443/article/26633/Help-us-improve-our-website?page=17163&ccp=true#cookie-consent-prompt",
+"file": "6f1accb517.html"
+},
+{
+"url": "https://guildford.gov.uk/article/26630/Report-a-problem-with-this-page?page=17163",
+"final": "https://guildford.gov.uk:443/article/26630/Report-a-problem-with-this-page?page=17163&ccp=true#cookie-consent-prompt",
+"file": "ab1150a35f.html"
+},
+{
+"url": "https://guildford.gov.uk/article/26288/Work-for-us",
+"final": "https://jobs.guildford.gov.uk:443/home.html?ccp=true",
+"file": "03d543ff0f.html"
+},
+{
+"url": "https://www.guildford.gov.uk/parksplaygroundsandgreenspaces",
+"final": "https://www.guildford.gov.uk:443/parksplaygroundsandgreenspaces?ccp=true#cookie-consent-prompt",
+"file": "a2e4afa7bf.html"
+},
+{
+"url": "https://www.guildford.gov.uk/playgrounds",
+"final": "https://www.guildford.gov.uk:443/playgrounds?ccp=true#cookie-consent-prompt",
+"file": "c3eb18194c.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/25561/Find-outdoor-gyms",
+"final": "https://www.guildford.gov.uk:443/article/25561/Find-outdoor-gyms?ccp=true#cookie-consent-prompt",
+"file": "61dd3cf058.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/25562/Find-multi-use-games-areas-MUGAs",
+"final": "https://www.guildford.gov.uk:443/article/25562/Find-multi-use-games-areas-MUGAs?ccp=true#cookie-consent-prompt",
+"file": "bc07bf72ed.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/27006/Guildford-Castle-Grounds",
+"final": "https://www.guildford.gov.uk:443/article/25594/About-Guildford-Castle?ccp=true#cookie-consent-prompt",
+"file": "c3f7f1968c.html"
+},
+{
+"url": "https://www.facebook.com/sharer/sharer.php?u=https://www.guildford.gov.uk/parks",
+"err": "HTTP Error 400: Bad Request"
+},
+{
+"url": "https://twitter.com/share?url=https://www.guildford.gov.uk/parks",
+"err": "HTTP Error 403: Forbidden"
+},
+{
+"url": "mailto:?Subject=Parks&Body=I%20thought%20you%20might%20be%20interested%20in%20this%20web%20page%20-%20https://www.guildford.gov.uk/parks",
+"err": "<urlopen error unknown url type: mailto>"
+},
+{
+"url": "https://www.guildford.gov.uk/article/26633/Help-us-improve-our-website?page=17151",
+"final": "https://www.guildford.gov.uk:443/article/26633/Help-us-improve-our-website?page=17151&ccp=true#cookie-consent-prompt",
+"file": "edcb24a34a.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/26630/Report-a-problem-with-this-page?page=17151",
+"final": "https://www.guildford.gov.uk:443/article/26630/Report-a-problem-with-this-page?page=17151&ccp=true#cookie-consent-prompt",
+"file": "62a21b69e9.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/26288/Work-for-us",
+"final": "https://jobs.guildford.gov.uk:443/home.html?ccp=true",
+"file": "975cb424bb.html"
+},
+{
+"url": "https://guildford.gov.uk/article/25585/Book-our-parks-for-your-event",
+"final": "https://guildford.gov.uk:443/hirepublicparks?ccp=true",
+"file": "f86ea48b06.html"
+},
+{
+"url": "https://guildford.gov.uk/parks",
+"final": "https://guildford.gov.uk:443/parks?ccp=true#cookie-consent-prompt",
+"file": "51ffa6bb3f.html"
+},
+{
+"url": "https://guildford.gov.uk/article/27006/Guildford-Castle-Grounds",
+"final": "https://guildford.gov.uk:443/article/25594/About-Guildford-Castle?ccp=true#cookie-consent-prompt",
+"file": "68f923e446.html"
+},
+{
+"url": "https://guildford.gov.uk/article/17162/Find-out-about-oak-processionary-moth",
+"final": "https://guildford.gov.uk:443/article/17162/Find-out-about-oak-processionary-moth?ccp=true#cookie-consent-prompt",
+"file": "1dac970a94.html"
+},
+{
+"url": "https://guildford.gov.uk/article/25713/Find-your-local-countryside",
+"final": "https://guildford.gov.uk:443/article/25713/Find-your-local-countryside?ccp=true#cookie-consent-prompt",
+"file": "b46d0f4fd4.html"
+},
+{
+"url": "https://guildford.gov.uk/article/18594/How-we-maintain-our-parks-trees-and-green-spaces",
+"final": "https://guildford.gov.uk:443/article/18594/How-we-maintain-our-parks-trees-and-green-spaces?ccp=true#cookie-consent-prompt",
+"file": "182e0f3ac2.html"
+},
+{
+"url": "https://www.facebook.com/sharer/sharer.php?u=https://guildford.gov.uk/parksplaygroundsandgreenspaces",
+"err": "HTTP Error 400: Bad Request"
+},
+{
+"url": "https://twitter.com/share?url=https://guildford.gov.uk/parksplaygroundsandgreenspaces",
+"err": "HTTP Error 403: Forbidden"
+},
+{
+"url": "mailto:?Subject=Parks,%20playgrounds%20and%20green%20spaces&Body=I%20thought%20you%20might%20be%20interested%20in%20this%20web%20page%20-%20https://guildford.gov.uk/parksplaygroundsandgreenspaces",
+"err": "<urlopen error unknown url type: mailto>"
+},
+{
+"url": "https://guildford.gov.uk/article/26633/Help-us-improve-our-website?page=16698",
+"final": "https://guildford.gov.uk:443/article/26633/Help-us-improve-our-website?page=16698&ccp=true#cookie-consent-prompt",
+"file": "ad9fa8061a.html"
+},
+{
+"url": "https://guildford.gov.uk/article/26630/Report-a-problem-with-this-page?page=16698",
+"final": "https://guildford.gov.uk:443/article/26630/Report-a-problem-with-this-page?page=16698&ccp=true#cookie-consent-prompt",
+"file": "dfb61e3e45.html"
+},
+{
+"url": "https://guildford.gov.uk/article/26633/Help-us-improve-our-website",
+"final": "https://guildford.gov.uk:443/article/26633/Help-us-improve-our-website?ccp=true#cookie-consent-prompt",
+"file": "f2f2673a54.html"
+},
+{
+"url": "https://www.facebook.com/sharer/sharer.php?u=https://guildford.gov.uk/article/26633/Help-us-improve-our-website",
+"err": "HTTP Error 400: Bad Request"
+},
+{
+"url": "https://twitter.com/share?url=https://guildford.gov.uk/article/26633/Help-us-improve-our-website",
+"err": "HTTP Error 403: Forbidden"
+},
+{
+"url": "mailto:?Subject=Help%20us%20improve%20our%20website&Body=I%20thought%20you%20might%20be%20interested%20in%20this%20web%20page%20-%20https://guildford.gov.uk/article/26633/Help-us-improve-our-website",
+"err": "<urlopen error unknown url type: mailto>"
+},
+{
+"url": "https://guildford.gov.uk/article/26630/Report-a-problem-with-this-page",
+"final": "https://guildford.gov.uk:443/article/26630/Report-a-problem-with-this-page?ccp=true#cookie-consent-prompt",
+"file": "6d2a1b7429.html"
+},
+{
+"url": "https://www.facebook.com/sharer/sharer.php?u=https://guildford.gov.uk/article/26630/Report-a-problem-with-this-page",
+"err": "HTTP Error 400: Bad Request"
+},
+{
+"url": "https://twitter.com/share?url=https://guildford.gov.uk/article/26630/Report-a-problem-with-this-page",
+"err": "HTTP Error 403: Forbidden"
+},
+{
+"url": "mailto:?Subject=Report%20a%20problem%20with%20this%20page&Body=I%20thought%20you%20might%20be%20interested%20in%20this%20web%20page%20-%20https://guildford.gov.uk/article/26630/Report-a-problem-with-this-page",
+"err": "<urlopen error unknown url type: mailto>"
+},
+{
+"url": "https://www.guildford.gov.uk/article/21422/Data-protection-and-privacy",
+"final": "https://www.guildford.gov.uk:443/article/21422/Data-protection-and-privacy?ccp=true#cookie-consent-prompt",
+"file": "5607a42c24.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/21403/Staff-benefits-and-pension-scheme",
+"final": "https://www.guildford.gov.uk:443/article/21403/Staff-benefits-and-pension-scheme?ccp=true#cookie-consent-prompt",
+"file": "2e2b41525b.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/25585/Book-our-parks-for-your-event",
+"final": "https://www.guildford.gov.uk:443/hirepublicparks?ccp=true",
+"file": "9da80106a1.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/17162/Find-out-about-oak-processionary-moth",
+"final": "https://www.guildford.gov.uk:443/article/17162/Find-out-about-oak-processionary-moth?ccp=true#cookie-consent-prompt",
+"file": "0eb3b28748.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/25713/Find-your-local-countryside",
+"final": "https://www.guildford.gov.uk:443/article/25713/Find-your-local-countryside?ccp=true#cookie-consent-prompt",
+"file": "012fa7ff70.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/18594/How-we-maintain-our-parks-trees-and-green-spaces",
+"final": "https://www.guildford.gov.uk:443/article/18594/How-we-maintain-our-parks-trees-and-green-spaces?ccp=true#cookie-consent-prompt",
+"file": "0026718fd0.html"
+},
+{
+"url": "https://www.facebook.com/sharer/sharer.php?u=https://www.guildford.gov.uk/parksplaygroundsandgreenspaces",
+"err": "HTTP Error 400: Bad Request"
+},
+{
+"url": "https://twitter.com/share?url=https://www.guildford.gov.uk/parksplaygroundsandgreenspaces",
+"err": "HTTP Error 403: Forbidden"
+},
+{
+"url": "mailto:?Subject=Parks,%20playgrounds%20and%20green%20spaces&Body=I%20thought%20you%20might%20be%20interested%20in%20this%20web%20page%20-%20https://www.guildford.gov.uk/parksplaygroundsandgreenspaces",
+"err": "<urlopen error unknown url type: mailto>"
+},
+{
+"url": "https://www.guildford.gov.uk/article/26633/Help-us-improve-our-website?page=16698",
+"final": "https://www.guildford.gov.uk:443/article/26633/Help-us-improve-our-website?page=16698&ccp=true#cookie-consent-prompt",
+"file": "89dfd9193d.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/26630/Report-a-problem-with-this-page?page=16698",
+"final": "https://www.guildford.gov.uk:443/article/26630/Report-a-problem-with-this-page?page=16698&ccp=true#cookie-consent-prompt",
+"file": "ffefc69035.html"
+},
+{
+"url": "https://www.facebook.com/sharer/sharer.php?u=https://www.guildford.gov.uk/playgrounds",
+"err": "HTTP Error 400: Bad Request"
+},
+{
+"url": "https://twitter.com/share?url=https://www.guildford.gov.uk/playgrounds",
+"err": "HTTP Error 403: Forbidden"
+},
+{
+"url": "mailto:?Subject=Playgrounds&Body=I%20thought%20you%20might%20be%20interested%20in%20this%20web%20page%20-%20https://www.guildford.gov.uk/playgrounds",
+"err": "<urlopen error unknown url type: mailto>"
+},
+{
+"url": "https://www.guildford.gov.uk/article/26633/Help-us-improve-our-website?page=17163",
+"final": "https://www.guildford.gov.uk:443/article/26633/Help-us-improve-our-website?page=17163&ccp=true#cookie-consent-prompt",
+"file": "cd8a6e814f.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/26630/Report-a-problem-with-this-page?page=17163",
+"final": "https://www.guildford.gov.uk:443/article/26630/Report-a-problem-with-this-page?page=17163&ccp=true#cookie-consent-prompt",
+"file": "2fe70159d9.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/25467/Leisure-centres-and-fitness",
+"final": "https://www.guildford.gov.uk:443/article/25467/Leisure-centres-and-fitness?ccp=true#cookie-consent-prompt",
+"file": "724a16f6ff.html"
+},
+{
+"url": "https://www.facebook.com/sharer/sharer.php?u=https://www.guildford.gov.uk/article/25561/Find-outdoor-gyms",
+"err": "HTTP Error 400: Bad Request"
+},
+{
+"url": "https://twitter.com/share?url=https://www.guildford.gov.uk/article/25561/Find-outdoor-gyms",
+"err": "HTTP Error 403: Forbidden"
+},
+{
+"url": "mailto:?Subject=Find%20outdoor%20gyms&Body=I%20thought%20you%20might%20be%20interested%20in%20this%20web%20page%20-%20https://www.guildford.gov.uk/article/25561/Find-outdoor-gyms",
+"err": "<urlopen error unknown url type: mailto>"
+},
+{
+"url": "https://www.guildford.gov.uk/article/26633/Help-us-improve-our-website?page=25561",
+"final": "https://www.guildford.gov.uk:443/article/26633/Help-us-improve-our-website?page=25561&ccp=true#cookie-consent-prompt",
+"file": "14e3623714.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/26630/Report-a-problem-with-this-page?page=25561",
+"final": "https://www.guildford.gov.uk:443/article/26630/Report-a-problem-with-this-page?page=25561&ccp=true#cookie-consent-prompt",
+"file": "7a9df0b9f3.html"
+},
+{
+"url": "https://www.facebook.com/sharer/sharer.php?u=https://www.guildford.gov.uk/article/25562/Find-multi-use-games-areas-MUGAs",
+"err": "HTTP Error 400: Bad Request"
+},
+{
+"url": "https://twitter.com/share?url=https://www.guildford.gov.uk/article/25562/Find-multi-use-games-areas-MUGAs",
+"err": "HTTP Error 403: Forbidden"
+},
+{
+"url": "mailto:?Subject=Find%20multi-use%20games%20areas%20(MUGAs)&Body=I%20thought%20you%20might%20be%20interested%20in%20this%20web%20page%20-%20https://www.guildford.gov.uk/article/25562/Find-multi-use-games-areas-MUGAs",
+"err": "<urlopen error unknown url type: mailto>"
+},
+{
+"url": "https://www.guildford.gov.uk/article/26633/Help-us-improve-our-website?page=25562",
+"final": "https://www.guildford.gov.uk:443/article/26633/Help-us-improve-our-website?page=25562&ccp=true#cookie-consent-prompt",
+"file": "97c84aef88.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/26630/Report-a-problem-with-this-page?page=25562",
+"final": "https://www.guildford.gov.uk:443/article/26630/Report-a-problem-with-this-page?page=25562&ccp=true#cookie-consent-prompt",
+"file": "a41b38b9e8.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/25594/About-Guildford-Castle",
+"final": "https://www.guildford.gov.uk:443/article/25594/About-Guildford-Castle?ccp=true#cookie-consent-prompt",
+"file": "c004cb1f38.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/25590/Visiting-Guildford",
+"final": "https://www.guildford.gov.uk:443/article/25590/Visiting-Guildford?ccp=true#cookie-consent-prompt",
+"file": "298e7f16af.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/25595/Visiting-Guildford-Castle",
+"final": "https://www.guildford.gov.uk:443/article/25595/Visiting-Guildford-Castle?ccp=true#cookie-consent-prompt",
+"file": "3996227f10.html"
+},
+{
+"url": "https://www.facebook.com/sharer/sharer.php?u=https://www.guildford.gov.uk/article/25594/About-Guildford-Castle",
+"err": "HTTP Error 400: Bad Request"
+},
+{
+"url": "https://twitter.com/share?url=https://www.guildford.gov.uk/article/25594/About-Guildford-Castle",
+"err": "HTTP Error 403: Forbidden"
+},
+{
+"url": "mailto:?Subject=About%20Guildford%20Castle&Body=I%20thought%20you%20might%20be%20interested%20in%20this%20web%20page%20-%20https://www.guildford.gov.uk/article/25594/About-Guildford-Castle",
+"err": "<urlopen error unknown url type: mailto>"
+},
+{
+"url": "https://www.guildford.gov.uk/article/26633/Help-us-improve-our-website?page=25594",
+"final": "https://www.guildford.gov.uk:443/article/26633/Help-us-improve-our-website?page=25594&ccp=true#cookie-consent-prompt",
+"file": "fa3d4782b6.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/26630/Report-a-problem-with-this-page?page=25594",
+"final": "https://www.guildford.gov.uk:443/article/26630/Report-a-problem-with-this-page?page=25594&ccp=true#cookie-consent-prompt",
+"file": "7794b04f27.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/26633/Help-us-improve-our-website",
+"final": "https://www.guildford.gov.uk:443/article/26633/Help-us-improve-our-website?ccp=true#cookie-consent-prompt",
+"file": "942b661275.html"
+},
+{
+"url": "https://www.facebook.com/sharer/sharer.php?u=https://www.guildford.gov.uk/article/26633/Help-us-improve-our-website",
+"err": "HTTP Error 400: Bad Request"
+},
+{
+"url": "https://twitter.com/share?url=https://www.guildford.gov.uk/article/26633/Help-us-improve-our-website",
+"err": "HTTP Error 403: Forbidden"
+},
+{
+"url": "mailto:?Subject=Help%20us%20improve%20our%20website&Body=I%20thought%20you%20might%20be%20interested%20in%20this%20web%20page%20-%20https://www.guildford.gov.uk/article/26633/Help-us-improve-our-website",
+"err": "<urlopen error unknown url type: mailto>"
+},
+{
+"url": "https://www.guildford.gov.uk/article/26630/Report-a-problem-with-this-page",
+"final": "https://www.guildford.gov.uk:443/article/26630/Report-a-problem-with-this-page?ccp=true#cookie-consent-prompt",
+"file": "76422d925d.html"
+},
+{
+"url": "https://www.facebook.com/sharer/sharer.php?u=https://www.guildford.gov.uk/article/26630/Report-a-problem-with-this-page",
+"err": "HTTP Error 400: Bad Request"
+},
+{
+"url": "https://twitter.com/share?url=https://www.guildford.gov.uk/article/26630/Report-a-problem-with-this-page",
+"err": "HTTP Error 403: Forbidden"
+},
+{
+"url": "mailto:?Subject=Report%20a%20problem%20with%20this%20page&Body=I%20thought%20you%20might%20be%20interested%20in%20this%20web%20page%20-%20https://www.guildford.gov.uk/article/26630/Report-a-problem-with-this-page",
+"err": "<urlopen error unknown url type: mailto>"
+},
+{
+"url": "https://guildford.gov.uk/article/25469/Organise-an-event",
+"final": "https://guildford.gov.uk:443/article/25469/Organise-an-event?ccp=true#cookie-consent-prompt",
+"file": "3b6064e0b9.html"
+},
+{
+"url": "https://guildford.gov.uk/article/26817/Hire-a-park-for-a-public-event",
+"final": "https://guildford.gov.uk:443/article/26817/Hire-a-park-for-a-public-event?ccp=true#cookie-consent-prompt",
+"file": "750afac399.html"
+},
+{
+"url": "https://guildford.gov.uk/article/26821/Bandstand-concerts-and-outdoor-theatres",
+"final": "https://guildford.gov.uk:443/article/26821/Bandstand-concerts-and-outdoor-theatres?ccp=true#cookie-consent-prompt",
+"file": "b4feccfa63.html"
+},
+{
+"url": "https://guildford.gov.uk/article/22288/Hire-a-park-for-your-outdoor-event-privacy-statement",
+"final": "https://guildford.gov.uk:443/article/22288/Hire-a-park-for-your-outdoor-event-privacy-statement?ccp=true#cookie-consent-prompt",
+"file": "c0b1c03873.html"
+},
+{
+"url": "https://guildford.gov.uk/article/26633/Help-us-improve-our-website?page=17165",
+"final": "https://guildford.gov.uk:443/article/26633/Help-us-improve-our-website?page=17165&ccp=true#cookie-consent-prompt",
+"file": "2ac777fab2.html"
+},
+{
+"url": "https://guildford.gov.uk/article/26630/Report-a-problem-with-this-page?page=17165",
+"final": "https://guildford.gov.uk:443/article/26630/Report-a-problem-with-this-page?page=17165&ccp=true#cookie-consent-prompt",
+"file": "ace9a45079.html"
+},
+{
+"url": "https://guildford.gov.uk/article/25561/Find-outdoor-gyms",
+"final": "https://guildford.gov.uk:443/article/25561/Find-outdoor-gyms?ccp=true#cookie-consent-prompt",
+"file": "11dcef5512.html"
+},
+{
+"url": "https://guildford.gov.uk/article/25562/Find-multi-use-games-areas-MUGAs",
+"final": "https://guildford.gov.uk:443/article/25562/Find-multi-use-games-areas-MUGAs?ccp=true#cookie-consent-prompt",
+"file": "550ce1558a.html"
+},
+{
+"url": "https://www.facebook.com/sharer/sharer.php?u=https://guildford.gov.uk/parks",
+"err": "HTTP Error 400: Bad Request"
+},
+{
+"url": "https://twitter.com/share?url=https://guildford.gov.uk/parks",
+"err": "HTTP Error 403: Forbidden"
+},
+{
+"url": "mailto:?Subject=Parks&Body=I%20thought%20you%20might%20be%20interested%20in%20this%20web%20page%20-%20https://guildford.gov.uk/parks",
+"err": "<urlopen error unknown url type: mailto>"
+},
+{
+"url": "https://guildford.gov.uk/article/26633/Help-us-improve-our-website?page=17151",
+"final": "https://guildford.gov.uk:443/article/26633/Help-us-improve-our-website?page=17151&ccp=true#cookie-consent-prompt",
+"file": "c1a335df8c.html"
+},
+{
+"url": "https://guildford.gov.uk/article/26630/Report-a-problem-with-this-page?page=17151",
+"final": "https://guildford.gov.uk:443/article/26630/Report-a-problem-with-this-page?page=17151&ccp=true#cookie-consent-prompt",
+"file": "8c66050c76.html"
+},
+{
+"url": "https://guildford.gov.uk/article/25594/About-Guildford-Castle",
+"final": "https://guildford.gov.uk:443/article/25594/About-Guildford-Castle?ccp=true#cookie-consent-prompt",
+"file": "36b07d7110.html"
+},
+{
+"url": "https://guildford.gov.uk/article/25590/Visiting-Guildford",
+"final": "https://guildford.gov.uk:443/article/25590/Visiting-Guildford?ccp=true#cookie-consent-prompt",
+"file": "0ba0435eaf.html"
+},
+{
+"url": "https://guildford.gov.uk/article/25595/Visiting-Guildford-Castle",
+"final": "https://guildford.gov.uk:443/article/25595/Visiting-Guildford-Castle?ccp=true#cookie-consent-prompt",
+"file": "a04eb4ce92.html"
+},
+{
+"url": "https://www.facebook.com/sharer/sharer.php?u=https://guildford.gov.uk/article/25594/About-Guildford-Castle",
+"err": "HTTP Error 400: Bad Request"
+},
+{
+"url": "https://twitter.com/share?url=https://guildford.gov.uk/article/25594/About-Guildford-Castle",
+"err": "HTTP Error 403: Forbidden"
+},
+{
+"url": "mailto:?Subject=About%20Guildford%20Castle&Body=I%20thought%20you%20might%20be%20interested%20in%20this%20web%20page%20-%20https://guildford.gov.uk/article/25594/About-Guildford-Castle",
+"err": "<urlopen error unknown url type: mailto>"
+},
+{
+"url": "https://guildford.gov.uk/article/26633/Help-us-improve-our-website?page=25594",
+"final": "https://guildford.gov.uk:443/article/26633/Help-us-improve-our-website?page=25594&ccp=true#cookie-consent-prompt",
+"file": "a80f91c972.html"
+},
+{
+"url": "https://guildford.gov.uk/article/26630/Report-a-problem-with-this-page?page=25594",
+"final": "https://guildford.gov.uk:443/article/26630/Report-a-problem-with-this-page?page=25594&ccp=true#cookie-consent-prompt",
+"file": "7a3b37813b.html"
+},
+{
+"url": "https://www.facebook.com/sharer/sharer.php?u=https://guildford.gov.uk/article/17162/Find-out-about-oak-processionary-moth",
+"err": "HTTP Error 400: Bad Request"
+},
+{
+"url": "https://twitter.com/share?url=https://guildford.gov.uk/article/17162/Find-out-about-oak-processionary-moth",
+"err": "HTTP Error 403: Forbidden"
+},
+{
+"url": "mailto:?Subject=Find%20out%20about%20oak%20processionary%20moth&Body=I%20thought%20you%20might%20be%20interested%20in%20this%20web%20page%20-%20https://guildford.gov.uk/article/17162/Find-out-about-oak-processionary-moth",
+"err": "<urlopen error unknown url type: mailto>"
+},
+{
+"url": "https://guildford.gov.uk/article/26633/Help-us-improve-our-website?page=17162",
+"final": "https://guildford.gov.uk:443/article/26633/Help-us-improve-our-website?page=17162&ccp=true#cookie-consent-prompt",
+"file": "3b50fd0a3f.html"
+},
+{
+"url": "https://guildford.gov.uk/article/26630/Report-a-problem-with-this-page?page=17162",
+"final": "https://guildford.gov.uk:443/article/26630/Report-a-problem-with-this-page?page=17162&ccp=true#cookie-consent-prompt",
+"file": "e1c635de40.html"
+},
+{
+"url": "https://www.facebook.com/sharer/sharer.php?u=https://guildford.gov.uk/article/25713/Find-your-local-countryside",
+"err": "HTTP Error 400: Bad Request"
+},
+{
+"url": "https://twitter.com/share?url=https://guildford.gov.uk/article/25713/Find-your-local-countryside",
+"err": "HTTP Error 403: Forbidden"
+},
+{
+"url": "mailto:?Subject=Find%20your%20local%20countryside&Body=I%20thought%20you%20might%20be%20interested%20in%20this%20web%20page%20-%20https://guildford.gov.uk/article/25713/Find-your-local-countryside",
+"err": "<urlopen error unknown url type: mailto>"
+},
+{
+"url": "https://guildford.gov.uk/article/26633/Help-us-improve-our-website?page=25713",
+"final": "https://guildford.gov.uk:443/article/26633/Help-us-improve-our-website?page=25713&ccp=true#cookie-consent-prompt",
+"file": "0c5c57c716.html"
+},
+{
+"url": "https://guildford.gov.uk/article/26630/Report-a-problem-with-this-page?page=25713",
+"final": "https://guildford.gov.uk:443/article/26630/Report-a-problem-with-this-page?page=25713&ccp=true#cookie-consent-prompt",
+"file": "0d7a1fb381.html"
+},
+{
+"url": "https://www.facebook.com/sharer/sharer.php?u=https://guildford.gov.uk/article/18594/How-we-maintain-our-parks-trees-and-green-spaces",
+"err": "HTTP Error 400: Bad Request"
+},
+{
+"url": "https://twitter.com/share?url=https://guildford.gov.uk/article/18594/How-we-maintain-our-parks-trees-and-green-spaces",
+"err": "HTTP Error 403: Forbidden"
+},
+{
+"url": "mailto:?Subject=How%20we%20maintain%20our%20parks,%20trees%20and%20green%20spaces&Body=I%20thought%20you%20might%20be%20interested%20in%20this%20web%20page%20-%20https://guildford.gov.uk/article/18594/How-we-maintain-our-parks-trees-and-green-spaces",
+"err": "<urlopen error unknown url type: mailto>"
+},
+{
+"url": "https://guildford.gov.uk/article/26633/Help-us-improve-our-website?page=18594",
+"final": "https://guildford.gov.uk:443/article/26633/Help-us-improve-our-website?page=18594&ccp=true#cookie-consent-prompt",
+"file": "752fb52cbb.html"
+},
+{
+"url": "https://guildford.gov.uk/article/26630/Report-a-problem-with-this-page?page=18594",
+"final": "https://guildford.gov.uk:443/article/26630/Report-a-problem-with-this-page?page=18594&ccp=true#cookie-consent-prompt",
+"file": "a0e9b9c2d0.html"
+},
+{
+"url": "https://www.facebook.com/sharer/sharer.php?u=https://www.guildford.gov.uk/article/21422/Data-protection-and-privacy",
+"err": "HTTP Error 400: Bad Request"
+},
+{
+"url": "https://twitter.com/share?url=https://www.guildford.gov.uk/article/21422/Data-protection-and-privacy",
+"err": "HTTP Error 403: Forbidden"
+},
+{
+"url": "mailto:?Subject=Data%20protection%20and%20privacy&Body=I%20thought%20you%20might%20be%20interested%20in%20this%20web%20page%20-%20https://www.guildford.gov.uk/article/21422/Data-protection-and-privacy",
+"err": "<urlopen error unknown url type: mailto>"
+},
+{
+"url": "https://www.guildford.gov.uk/article/26633/Help-us-improve-our-website?page=21422",
+"final": "https://www.guildford.gov.uk:443/article/26633/Help-us-improve-our-website?page=21422&ccp=true#cookie-consent-prompt",
+"file": "1bf986ddaa.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/26630/Report-a-problem-with-this-page?page=21422",
+"final": "https://www.guildford.gov.uk:443/article/26630/Report-a-problem-with-this-page?page=21422&ccp=true#cookie-consent-prompt",
+"file": "c13fb1633c.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/21403/Staff-benefits-and-pension",
+"final": "https://www.guildford.gov.uk:443/article/21403/Staff-benefits-and-pension?ccp=true#cookie-consent-prompt",
+"file": "b692dbc016.html"
+},
+{
+"url": "https://www.facebook.com/sharer/sharer.php?u=https://www.guildford.gov.uk/article/21403/Staff-benefits-and-pension",
+"err": "HTTP Error 400: Bad Request"
+},
+{
+"url": "https://twitter.com/share?url=https://www.guildford.gov.uk/article/21403/Staff-benefits-and-pension",
+"err": "HTTP Error 403: Forbidden"
+},
+{
+"url": "mailto:?Subject=Staff%20benefits%20and%20pension%20&Body=I%20thought%20you%20might%20be%20interested%20in%20this%20web%20page%20-%20https://www.guildford.gov.uk/article/21403/Staff-benefits-and-pension",
+"err": "<urlopen error unknown url type: mailto>"
+},
+{
+"url": "https://www.guildford.gov.uk/article/26633/Help-us-improve-our-website?page=21403",
+"final": "https://www.guildford.gov.uk:443/article/26633/Help-us-improve-our-website?page=21403&ccp=true#cookie-consent-prompt",
+"file": "08ebbbeef4.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/26630/Report-a-problem-with-this-page?page=21403",
+"final": "https://www.guildford.gov.uk:443/article/26630/Report-a-problem-with-this-page?page=21403&ccp=true#cookie-consent-prompt",
+"file": "aae36eceb9.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/25469/Organise-an-event",
+"final": "https://www.guildford.gov.uk:443/article/25469/Organise-an-event?ccp=true#cookie-consent-prompt",
+"file": "851fc32925.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/26817/Hire-a-park-for-a-public-event",
+"final": "https://www.guildford.gov.uk:443/article/26817/Hire-a-park-for-a-public-event?ccp=true#cookie-consent-prompt",
+"file": "e0511749a5.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/26821/Bandstand-concerts-and-outdoor-theatres",
+"final": "https://www.guildford.gov.uk:443/article/26821/Bandstand-concerts-and-outdoor-theatres?ccp=true#cookie-consent-prompt",
+"file": "ded623dd5d.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/22288/Hire-a-park-for-your-outdoor-event-privacy-statement",
+"final": "https://www.guildford.gov.uk:443/article/22288/Hire-a-park-for-your-outdoor-event-privacy-statement?ccp=true#cookie-consent-prompt",
+"file": "0b97df2d01.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/26633/Help-us-improve-our-website?page=17165",
+"final": "https://www.guildford.gov.uk:443/article/26633/Help-us-improve-our-website?page=17165&ccp=true#cookie-consent-prompt",
+"file": "0ec56799ac.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/26630/Report-a-problem-with-this-page?page=17165",
+"final": "https://www.guildford.gov.uk:443/article/26630/Report-a-problem-with-this-page?page=17165&ccp=true#cookie-consent-prompt",
+"file": "3e90e98373.html"
+},
+{
+"url": "https://www.facebook.com/sharer/sharer.php?u=https://www.guildford.gov.uk/article/17162/Find-out-about-oak-processionary-moth",
+"err": "HTTP Error 400: Bad Request"
+},
+{
+"url": "https://twitter.com/share?url=https://www.guildford.gov.uk/article/17162/Find-out-about-oak-processionary-moth",
+"err": "HTTP Error 403: Forbidden"
+},
+{
+"url": "mailto:?Subject=Find%20out%20about%20oak%20processionary%20moth&Body=I%20thought%20you%20might%20be%20interested%20in%20this%20web%20page%20-%20https://www.guildford.gov.uk/article/17162/Find-out-about-oak-processionary-moth",
+"err": "<urlopen error unknown url type: mailto>"
+},
+{
+"url": "https://www.guildford.gov.uk/article/26633/Help-us-improve-our-website?page=17162",
+"final": "https://www.guildford.gov.uk:443/article/26633/Help-us-improve-our-website?page=17162&ccp=true#cookie-consent-prompt",
+"file": "54760931d8.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/26630/Report-a-problem-with-this-page?page=17162",
+"final": "https://www.guildford.gov.uk:443/article/26630/Report-a-problem-with-this-page?page=17162&ccp=true#cookie-consent-prompt",
+"file": "ae0e58da4a.html"
+},
+{
+"url": "https://www.facebook.com/sharer/sharer.php?u=https://www.guildford.gov.uk/article/25713/Find-your-local-countryside",
+"err": "HTTP Error 400: Bad Request"
+},
+{
+"url": "https://twitter.com/share?url=https://www.guildford.gov.uk/article/25713/Find-your-local-countryside",
+"err": "HTTP Error 403: Forbidden"
+},
+{
+"url": "mailto:?Subject=Find%20your%20local%20countryside&Body=I%20thought%20you%20might%20be%20interested%20in%20this%20web%20page%20-%20https://www.guildford.gov.uk/article/25713/Find-your-local-countryside",
+"err": "<urlopen error unknown url type: mailto>"
+},
+{
+"url": "https://www.guildford.gov.uk/article/26633/Help-us-improve-our-website?page=25713",
+"final": "https://www.guildford.gov.uk:443/article/26633/Help-us-improve-our-website?page=25713&ccp=true#cookie-consent-prompt",
+"file": "62d99e7660.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/26630/Report-a-problem-with-this-page?page=25713",
+"final": "https://www.guildford.gov.uk:443/article/26630/Report-a-problem-with-this-page?page=25713&ccp=true#cookie-consent-prompt",
+"file": "77733c3cb0.html"
+},
+{
+"url": "https://www.facebook.com/sharer/sharer.php?u=https://www.guildford.gov.uk/article/18594/How-we-maintain-our-parks-trees-and-green-spaces",
+"err": "HTTP Error 400: Bad Request"
+},
+{
+"url": "https://twitter.com/share?url=https://www.guildford.gov.uk/article/18594/How-we-maintain-our-parks-trees-and-green-spaces",
+"err": "HTTP Error 403: Forbidden"
+},
+{
+"url": "mailto:?Subject=How%20we%20maintain%20our%20parks,%20trees%20and%20green%20spaces&Body=I%20thought%20you%20might%20be%20interested%20in%20this%20web%20page%20-%20https://www.guildford.gov.uk/article/18594/How-we-maintain-our-parks-trees-and-green-spaces",
+"err": "<urlopen error unknown url type: mailto>"
+},
+{
+"url": "https://www.guildford.gov.uk/article/26633/Help-us-improve-our-website?page=18594",
+"final": "https://www.guildford.gov.uk:443/article/26633/Help-us-improve-our-website?page=18594&ccp=true#cookie-consent-prompt",
+"file": "126f475318.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/26630/Report-a-problem-with-this-page?page=18594",
+"final": "https://www.guildford.gov.uk:443/article/26630/Report-a-problem-with-this-page?page=18594&ccp=true#cookie-consent-prompt",
+"file": "15a6205b53.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/19387/Guildford-Spectrum",
+"final": "https://www.guildfordspectrum.co.uk/?ccp=true",
+"file": "a72ad124a6.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/19389/Ash-Manor-Sports-Centre",
+"final": "https://www.freedom-leisure.co.uk:443/centres/ash-manor/?ccp=true",
+"file": "3358f64259.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/19388/Guildford-Lido",
+"final": "https://www.freedom-leisure.co.uk:443/centres/guildford-lido/?ccp=true",
+"file": "567b20e424.html"
+},
+{
+"url": "https://www.facebook.com/sharer/sharer.php?u=https://www.guildford.gov.uk/article/25467/Leisure-centres-and-fitness",
+"err": "HTTP Error 400: Bad Request"
+},
+{
+"url": "https://twitter.com/share?url=https://www.guildford.gov.uk/article/25467/Leisure-centres-and-fitness",
+"err": "HTTP Error 403: Forbidden"
+},
+{
+"url": "mailto:?Subject=Leisure%20centres%20and%20fitness&Body=I%20thought%20you%20might%20be%20interested%20in%20this%20web%20page%20-%20https://www.guildford.gov.uk/article/25467/Leisure-centres-and-fitness",
+"err": "<urlopen error unknown url type: mailto>"
+},
+{
+"url": "https://www.guildford.gov.uk/article/26633/Help-us-improve-our-website?page=25467",
+"final": "https://www.guildford.gov.uk:443/article/26633/Help-us-improve-our-website?page=25467&ccp=true#cookie-consent-prompt",
+"file": "0d981ba91d.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/26630/Report-a-problem-with-this-page?page=25467",
+"final": "https://www.guildford.gov.uk:443/article/26630/Report-a-problem-with-this-page?page=25467&ccp=true#cookie-consent-prompt",
+"file": "919970e7bd.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/17252/Visit-Guildford-tourist-website",
+"final": "https://www.visitsurrey.com/guildford/?ccp=true",
+"file": "525b05a516.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/25591/Theatre-and-entertainment-venues",
+"final": "https://www.guildford.gov.uk:443/article/25591/Theatre-and-entertainment-venues?ccp=true#cookie-consent-prompt",
+"file": "cd210a877a.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/25592/Yvonne-Arnaud-Theatre",
+"final": "https://www.yvonne-arnaud.co.uk:443/?ccp=true",
+"file": "c0f1d9c01a.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/18367/G-Live",
+"final": "https://trafalgartickets.com/g-live-guildford/en-GB",
+"file": "d6c55b5e91.html"
+},
+{
+"url": "https://www.facebook.com/sharer/sharer.php?u=https://www.guildford.gov.uk/article/25590/Visiting-Guildford",
+"err": "HTTP Error 400: Bad Request"
+},
+{
+"url": "https://twitter.com/share?url=https://www.guildford.gov.uk/article/25590/Visiting-Guildford",
+"err": "HTTP Error 403: Forbidden"
+},
+{
+"url": "mailto:?Subject=Visiting%20Guildford%20&Body=I%20thought%20you%20might%20be%20interested%20in%20this%20web%20page%20-%20https://www.guildford.gov.uk/article/25590/Visiting-Guildford",
+"err": "<urlopen error unknown url type: mailto>"
+},
+{
+"url": "https://www.guildford.gov.uk/article/26633/Help-us-improve-our-website?page=25590",
+"final": "https://www.guildford.gov.uk:443/article/26633/Help-us-improve-our-website?page=25590&ccp=true#cookie-consent-prompt",
+"file": "d5b45254b9.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/26630/Report-a-problem-with-this-page?page=25590",
+"final": "https://www.guildford.gov.uk:443/article/26630/Report-a-problem-with-this-page?page=25590&ccp=true#cookie-consent-prompt",
+"file": "9a821fff39.html"
+},
+{
+"url": "https://www.facebook.com/sharer/sharer.php?u=https://www.guildford.gov.uk/article/25595/Visiting-Guildford-Castle",
+"err": "HTTP Error 400: Bad Request"
+},
+{
+"url": "https://twitter.com/share?url=https://www.guildford.gov.uk/article/25595/Visiting-Guildford-Castle",
+"err": "HTTP Error 403: Forbidden"
+},
+{
+"url": "mailto:?Subject=Visiting%20Guildford%20Castle%20&Body=I%20thought%20you%20might%20be%20interested%20in%20this%20web%20page%20-%20https://www.guildford.gov.uk/article/25595/Visiting-Guildford-Castle",
+"err": "<urlopen error unknown url type: mailto>"
+},
+{
+"url": "https://www.guildford.gov.uk/article/26633/Help-us-improve-our-website?page=25595",
+"final": "https://www.guildford.gov.uk:443/article/26633/Help-us-improve-our-website?page=25595&ccp=true#cookie-consent-prompt",
+"file": "03b7d2bd9d.html"
+},
+{
+"url": "https://www.guildford.gov.uk/article/26630/Report-a-problem-with-this-page?page=25595",
+"final": "https://www.guildford.gov.uk:443/article/26630/Report-a-problem-with-this-page?page=25595&ccp=true#cookie-consent-prompt",
+"file": "1d22a179a7.html"
+},
+{
+"url": "https://www.facebook.com/sharer/sharer.php?u=https://guildford.gov.uk/article/25469/Organise-an-event",
+"err": "HTTP Error 400: Bad Request"
+},
+{
+"url": "https://twitter.com/share?url=https://guildford.gov.uk/article/25469/Organise-an-event",
+"err": "HTTP Error 403: Forbidden"
+},
+{
+"url": "mailto:?Subject=Organise%20an%20event&Body=I%20thought%20you%20might%20be%20interested%20in%20this%20web%20page%20-%20https://guildford.gov.uk/article/25469/Organise-an-event",
+"err": "<urlopen error unknown url type: mailto>"
+},
+{
+"url": "https://guildford.gov.uk/article/26633/Help-us-improve-our-website?page=25469",
+"final": "https://guildford.gov.uk:443/article/26633/Help-us-improve-our-website?page=25469&ccp=true#cookie-consent-prompt",
+"file": "f1342a2282.html"
+},
+{
+"url": "https://guildford.gov.uk/article/26630/Report-a-problem-with-this-page?page=25469",
+"final": "https://guildford.gov.uk:443/article/26630/Report-a-problem-with-this-page?page=25469&ccp=true#cookie-consent-prompt",
+"file": "00b4370626.html"
+},
+{
+"url": "https://www.facebook.com/sharer/sharer.php?u=https://guildford.gov.uk/article/26817/Hire-a-park-for-a-public-event",
+"err": "HTTP Error 400: Bad Request"
+},
+{
+"url": "https://twitter.com/share?url=https://guildford.gov.uk/article/26817/Hire-a-park-for-a-public-event",
+"err": "HTTP Error 403: Forbidden"
+},
+{
+"url": "mailto:?Subject=Hire%20a%20park%20for%20a%20public%20event&Body=I%20thought%20you%20might%20be%20interested%20in%20this%20web%20page%20-%20https://guildford.gov.uk/article/26817/Hire-a-park-for-a-public-event",
+"err": "<urlopen error unknown url type: mailto>"
+},
+{
+"url": "https://guildford.gov.uk/article/26633/Help-us-improve-our-website?page=26817",
+"final": "https://guildford.gov.uk:443/article/26633/Help-us-improve-our-website?page=26817&ccp=true#cookie-consent-prompt",
+"file": "7ea8f93a7a.html"
+},
+{
+"url": "https://guildford.gov.uk/article/26630/Report-a-problem-with-this-page?page=26817",
+"final": "https://guildford.gov.uk:443/article/26630/Report-a-problem-with-this-page?page=26817&ccp=true#cookie-consent-prompt",
+"file": "c5dbe54c78.html"
+},
+{
+"url": "https://www.facebook.com/sharer/sharer.php?u=https://guildford.gov.uk/article/26821/Bandstand-concerts-and-outdoor-theatres",
+"err": "HTTP Error 400: Bad Request"
+},
+{
+"url": "https://twitter.com/share?url=https://guildford.gov.uk/article/26821/Bandstand-concerts-and-outdoor-theatres",
+"err": "HTTP Error 403: Forbidden"
+},
+{
+"url": "mailto:?Subject=Bandstand%20concerts%20and%20outdoor%20theatres%20&Body=I%20thought%20you%20might%20be%20interested%20in%20this%20web%20page%20-%20https://guildford.gov.uk/article/26821/Bandstand-concerts-and-outdoor-theatres",
+"err": "<urlopen error unknown url type: mailto>"
+},
+{
+"url": "https://guildford.gov.uk/article/26633/Help-us-improve-our-website?page=26821",
+"final": "https://guildford.gov.uk:443/article/26633/Help-us-improve-our-website?page=26821&ccp=true#cookie-consent-prompt",
+"file": "9adaf8d335.html"
+},
+{
+"url": "https://guildford.gov.uk/article/26630/Report-a-problem-with-this-page?page=26821",
+"final": "https://guildford.gov.uk:443/article/26630/Report-a-problem-with-this-page?page=26821&ccp=true#cookie-consent-prompt",
+"file": "d0776db995.html"
+},
+{
+"url": "https://www.facebook.com/sharer/sharer.php?u=https://guildford.gov.uk/article/22288/Hire-a-park-for-your-outdoor-event-privacy-statement",
+"err": "HTTP Error 400: Bad Request"
+},
+{
+"url": "https://twitter.com/share?url=https://guildford.gov.uk/article/22288/Hire-a-park-for-your-outdoor-event-privacy-statement",
+"err": "HTTP Error 403: Forbidden"
+},
+{
+"url": "mailto:?Subject=Hire%20a%20park%20for%20your%20outdoor%20event%20privacy%20statement&Body=I%20thought%20you%20might%20be%20interested%20in%20this%20web%20page%20-%20https://guildford.gov.uk/article/22288/Hire-a-park-for-your-outdoor-event-privacy-statement",
+"err": "<urlopen error unknown url type: mailto>"
+},
+{
+"url": "https://guildford.gov.uk/article/26633/Help-us-improve-our-website?page=22288",
+"final": "https://guildford.gov.uk:443/article/26633/Help-us-improve-our-website?page=22288&ccp=true#cookie-consent-prompt",
+"file": "ec0fc4a072.html"
+},
+{
+"url": "https://guildford.gov.uk/article/26630/Report-a-problem-with-this-page?page=22288",
+"final": "https://guildford.gov.uk:443/article/26630/Report-a-problem-with-this-page?page=22288&ccp=true#cookie-consent-prompt",
+"file": "f86ace2e3f.html"
+},
+{
+"url": "https://guildford.gov.uk/article/25467/Leisure-centres-and-fitness",
+"final": "https://guildford.gov.uk:443/article/25467/Leisure-centres-and-fitness?ccp=true#cookie-consent-prompt",
+"file": "0210508655.html"
+},
+{
+"url": "https://www.facebook.com/sharer/sharer.php?u=https://guildford.gov.uk/article/25561/Find-outdoor-gyms",
+"err": "HTTP Error 400: Bad Request"
+},
+{
+"url": "https://twitter.com/share?url=https://guildford.gov.uk/article/25561/Find-outdoor-gyms",
+"err": "HTTP Error 403: Forbidden"
+},
+{
+"url": "mailto:?Subject=Find%20outdoor%20gyms&Body=I%20thought%20you%20might%20be%20interested%20in%20this%20web%20page%20-%20https://guildford.gov.uk/article/25561/Find-outdoor-gyms",
+"err": "<urlopen error unknown url type: mailto>"
+},
+{
+"url": "https://guildford.gov.uk/article/26633/Help-us-improve-our-website?page=25561",
+"final": "https://guildford.gov.uk:443/article/26633/Help-us-improve-our-website?page=25561&ccp=true#cookie-consent-prompt",
+"file": "effd3364a9.html"
+},
+{
+"url": "https://guildford.gov.uk/article/26630/Report-a-problem-with-this-page?page=25561",
+"final": "https://guildford.gov.uk:443/article/26630/Report-a-problem-with-this-page?page=25561&ccp=true#cookie-consent-prompt",
+"file": "6c7d6cd5f5.html"
+},
+{
+"url": "https://www.facebook.com/sharer/sharer.php?u=https://guildford.gov.uk/article/25562/Find-multi-use-games-areas-MUGAs",
+"err": "HTTP Error 400: Bad Request"
+},
+{
+"url": "https://twitter.com/share?url=https://guildford.gov.uk/article/25562/Find-multi-use-games-areas-MUGAs",
+"err": "HTTP Error 403: Forbidden"
+}
+]
