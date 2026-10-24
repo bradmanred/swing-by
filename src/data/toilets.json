@@ -6948,6 +6948,28 @@
     "lng": 1.305994391
    }
   },
+  "c-doveridge-playground-doveridge-derbyshire-dales": {
+   "nearest": {
+    "id": "160dbb6cf3253964f70c81d7",
+    "name": "Public toilet",
+    "m": 2508,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 52.907347509,
+    "lng": -1.856383681
+   },
+   "nearestBabyChange": {
+    "id": "f5314abccd813edfe1bca15d",
+    "name": "Cinebowl",
+    "m": 2586,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 52.899680761,
+    "lng": -1.857633591
+   }
+  },
   "c-dowding-way-play-area-leavesden": {
    "nearest": {
     "id": "9bf069253d59277cfb40ec23",
@@ -17773,6 +17795,28 @@
   "c-playground-off-ashvale-road-tuxford": {
    "nearest": null
   },
+  "c-playground-off-aspen-court-woodkirk-morley": {
+   "nearest": {
+    "id": "5e67123ab2dbdd99932804a2",
+    "name": "Village Hotel/Restraunt/Gym",
+    "m": 197,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 53.733132244,
+    "lng": -1.585881563
+   },
+   "nearestBabyChange": {
+    "id": "2513b2f0a72a1d65daa0e88c",
+    "name": "Asda, Morlet",
+    "m": 1478,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 53.735623529,
+    "lng": -1.610524205
+   }
+  },
   "c-playground-off-atkinson-gardens-aycliffe-village": {
    "nearest": null
   },
@@ -19822,6 +19866,28 @@
     "lng": -4.043886065
    }
   },
+  "c-playground-off-hesketh-lane-tingley-morley": {
+   "nearest": {
+    "id": "5e67123ab2dbdd99932804a2",
+    "name": "Village Hotel/Restraunt/Gym",
+    "m": 817,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 53.733132244,
+    "lng": -1.585881563
+   },
+   "nearestBabyChange": {
+    "id": "2513b2f0a72a1d65daa0e88c",
+    "name": "Asda, Morlet",
+    "m": 2212,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 53.735623529,
+    "lng": -1.610524205
+   }
+  },
   "c-playground-off-hicken-road-brixton-london": {
    "nearest": {
     "id": "82c5b2b1ff116284e474ea58",
@@ -20625,6 +20691,9 @@
     "lng": -6.1491774
    }
   },
+  "c-playground-off-main-road-sudbury-cp-derbyshire-dales": {
+   "nearest": null
+  },
   "c-playground-off-main-street-aberford-leeds": {
    "nearest": {
     "id": "507db95990e2def0504e8c22",
@@ -21115,6 +21184,9 @@
    }
   },
   "c-playground-off-old-down-hill-elberton-olveston": {
+   "nearest": null
+  },
+  "c-playground-off-old-hall-lane-church-broughton-cp-south-derby": {
    "nearest": null
   },
   "c-playground-off-old-post-lane-colsterworth-south-kesteven": {
@@ -22078,6 +22150,18 @@
     "lng": -0.105075902
    }
   },
+  "c-playground-off-scropton-road-hatton-cp-south-derbyshire": {
+   "nearest": {
+    "id": "0d41cf05ce1df9a56837705c",
+    "name": "Duke Street car park",
+    "m": 1051,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 52.857224062,
+    "lng": -1.687316895
+   }
+  },
   "c-playground-off-seasons-close-magor": {
    "nearest": {
     "id": "92643748455edda602cbb9e6",
@@ -22175,6 +22259,18 @@
     "free": true,
     "lat": 52.356989346,
     "lng": -1.189087629
+   }
+  },
+  "c-playground-off-smithy-lane-west-ardsley-leeds": {
+   "nearest": {
+    "id": "5e67123ab2dbdd99932804a2",
+    "name": "Village Hotel/Restraunt/Gym",
+    "m": 1570,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 53.733132244,
+    "lng": -1.585881563
    }
   },
   "c-playground-off-sokemans-way-brampton-huntingdonshire": {
