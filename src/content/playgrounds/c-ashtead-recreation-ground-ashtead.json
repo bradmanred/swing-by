@@ -1,0 +1,28 @@
+{
+  "name": "Ashtead Recreation Ground",
+  "region": "south-east",
+  "area": "Ashtead",
+  "lat": 51.31281,
+  "lng": -0.30385,
+  "ages": [],
+  "equipment": [
+    "sk"
+  ],
+  "access": [],
+  "facilities": [
+    "fp"
+  ],
+  "opens": "",
+  "description": "South of Barnett Wood Lane near the village pond, with a playground, skate park and three car parks.",
+  "nearby": [],
+  "operator": "Mole Valley District Council",
+  "sources": [
+    {
+      "label": "Mole Valley District Council: parks, recreation and play facilities",
+      "url": "https://www.molevalley.gov.uk/leisure-culture/parks-playgrounds/"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, opening hours, toilets and parking. The pin is the playground on OpenStreetMap (© OpenStreetMap contributors) at the recreation ground.",
+  "photo": null
+}

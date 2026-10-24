@@ -293,6 +293,37 @@
    "sources": [
     "https://www.sevenoaks.gov.uk/playgrounds"
    ]
+  },
+  {
+   "district": "Woking",
+   "council": "Woking Borough Council",
+   "sources": [
+    "https://www.woking.gov.uk/parks-leisure/green-spaces/find-green-spaces-play-areas"
+   ]
+  },
+  {
+   "district": "Mole Valley",
+   "council": "Mole Valley District Council",
+   "sources": [
+    "https://www.molevalley.gov.uk/leisure-culture/parks-playgrounds/"
+   ],
+   "note": "Parish councils run more play areas."
+  },
+  {
+   "district": "Havering",
+   "council": "London Borough of Havering",
+   "sources": [
+    "https://www.havering.gov.uk/parks-1/play-areas-outdoor-gyms"
+   ],
+   "note": "The council's play area list is only a Google map, which we can't use, so gaps are filled from OpenStreetMap."
+  },
+  {
+   "district": "Epping Forest",
+   "council": "Epping Forest District Council",
+   "sources": [
+    "https://www.eppingforestdc.gov.uk/leisure/play-in-the-park/"
+   ],
+   "note": "The district council doesn't publish a play area list; town and parish councils run most play areas."
   }
  ]
 }
