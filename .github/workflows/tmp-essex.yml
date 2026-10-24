@@ -2,7 +2,7 @@ name: Temporary Essex fetch
 on:
   push:
     branches: [tmp-essex]
-    paths: ['scripts/find-photos.mjs', '.github/workflows/tmp-essex.yml']
+    paths: ['tmp/crawl3.py', 'tmp/councils.json', '.github/workflows/tmp-essex.yml']
 permissions:
   contents: write
 jobs:
@@ -14,14 +14,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: |
-          git fetch -q origin main && git checkout origin/main -- src/content/playgrounds
-          echo "geograph key set: ${{ secrets.GEOGRAPH_KEY != '' }} / mod token set: ${{ secrets.MOD_TOKEN != '' }}" > tmp/photos-dry.txt
-          node --version >> tmp/photos-dry.txt
-          SITE=https://swing-by.co.uk node scripts/find-photos.mjs --limit 3 >> tmp/photos-dry.txt 2>&1 || echo "exit $?" >> tmp/photos-dry.txt
-        env:
-          GEOGRAPH_KEY: ${{ secrets.GEOGRAPH_KEY }}
-          MOD_TOKEN: ${{ secrets.MOD_TOKEN }}
+      - run: python3 tmp/crawl3.py
       - run: |
           git config user.name swing-by-bot; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add tmp/photos-dry.txt; git commit -m "Photo dry run" && git push
+          git add tmp/crawl3; git commit -m "Council crawl" && git push

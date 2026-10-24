@@ -1,0 +1,10 @@
+[
+ {"tag":"leeds","seeds":["https://www.leeds.gov.uk/parks-and-countryside/your-local-park"],"follow":"leeds\\.gov\\.uk/parks-and-countryside/your-local-park(/[a-z0-9-]+)?/?(\\?page=\\d+)?$"},
+ {"tag":"centralbeds","seeds":["https://www.centralbedfordshire.gov.uk/directory/67/play_areas/category/461","https://centralbedfordshire.gov.uk/directory/67/play_areas"],"follow":"centralbedfordshire\\.gov\\.uk/(directory_record/\\d+/|directory/67/play_areas)"},
+ {"tag":"rotherham","seeds":["https://www.rotherham.gov.uk/directory/16/playgrounds/category/33"],"follow":"rotherham\\.gov\\.uk/(directory-record/\\d+/|directory/16/playgrounds)"},
+ {"tag":"harborough","seeds":["https://www.harborough.gov.uk/directory/24/leisure"],"follow":"harborough\\.gov\\.uk/(directory_record/\\d+/|directory/24/)"},
+ {"tag":"westnorthants","seeds":["https://www.westnorthants.gov.uk/parks-and-green-spaces/play-spaces-west-northamptonshire","https://www.westnorthants.gov.uk/local-parks"],"follow":"westnorthants\\.gov\\.uk/(parks-and-green-spaces|local-parks|parks-and-open-spaces)"},
+ {"tag":"barnet","seeds":["https://www.barnet.gov.uk/directories/parks"],"follow":"barnet\\.gov\\.uk/(directories/parks|directory-record|parks-sport-and-leisure/parks)"},
+ {"tag":"rugby","seeds":["https://services.rugby.gov.uk/pl/web/guest/parks-open-spaces-play-areas","https://services.rugby.gov.uk/pl/web/guest/our-parks-and-open-spaces"],"follow":"rugby\\.gov\\.uk/.*(park|play|rec|green|field)"},
+ {"tag":"wakefield","seeds":["https://www.wakefield.gov.uk/parks-countryside-and-outdoor-spaces/the-big-parks-and-play-area-project/completed-parks-and-play-areas","https://www.wakefield.gov.uk/parks-countryside-and-outdoor-spaces/parks"],"follow":"wakefield\\.gov\\.uk/parks-countryside-and-outdoor-spaces/"}
+]
