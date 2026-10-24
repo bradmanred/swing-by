@@ -98,6 +98,12 @@ Every playground page has a "What's here" form where parents tick the equipment 
 
 Moderators see every playground with parent answers at `/moderate/`, can clear a playground's answers, and can copy confirmed items into the playground's file to make them part of the listing (and the search filters).
 
+## Checking coverage
+
+The **Check coverage** workflow (`.github/workflows/coverage.yml`, `scripts/find-gaps.mjs`) compares the playgrounds mapped on OpenStreetMap with the ones we list, county by county, biggest population first: London, Scotland, Wales, the West Midlands, Greater Manchester and so on down to Rutland. A playground counts as covered if we list one within 150 m. Ones tagged private or indoor, and ones at schools, pubs, hotels and holiday parks, are left out.
+
+It runs on the 2nd of each month and writes a table (coverage and the number missing in each county) to the run's summary page, plus a downloadable `coverage-report` with every missing playground. To fill gaps, run it from the Actions tab (Check coverage > Run workflow) with "Add up to this many" set, say, to 200, and optionally one county. It adds the missing playgrounds from the biggest counties first, as Unverified with the OpenStreetMap page as the source, refreshes the nearest toilets, and opens a pull request for you to review. If GitHub doesn't let Actions open pull requests (Settings > Actions > General), it pushes a `coverage/…` branch instead. Pull requests opened by the workflow don't start the build checks by themselves: re-run them from the pull request's Checks tab, or push any commit.
+
 ## Coming next
 
 - Shared parent reports and ratings (Supabase free tier), with reports shown once another parent has confirmed them.

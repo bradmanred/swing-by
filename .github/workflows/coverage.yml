@@ -1,0 +1,60 @@
+# Checks Swing By's coverage county by county, biggest population first, against playgrounds mapped on
+# OpenStreetMap. The report appears on the run's summary page and as a downloadable "coverage-report".
+# Runs on the 2nd of each month (report only) and on demand from the Actions tab, where you can
+# also ask it to add missing playgrounds: it adds them as Unverified, refreshes the nearest toilets, and
+# opens a pull request for you to review.
+name: Check coverage
+on:
+  workflow_dispatch:
+    inputs:
+      add:
+        description: 'Add up to this many missing playgrounds (0 = report only)'
+        default: '0'
+      only:
+        description: 'Check one county only, e.g. Kent (leave blank for all)'
+        default: ''
+  schedule:
+    - cron: '41 3 2 * *'
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: coverage
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Check coverage
+        env:
+          ADD: ${{ inputs.add || '0' }}
+          ONLY: ${{ inputs.only || '' }}
+        run: |
+          if [ -n "$ONLY" ]; then node scripts/find-gaps.mjs --add "$ADD" --only "$ONLY"; else node scripts/find-gaps.mjs --add "$ADD"; fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: reports/
+      - name: Open a pull request with the added playgrounds
+        if: ${{ inputs.add != '' && inputs.add != '0' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -z "$(git status --porcelain -- src/content/playgrounds)" ]; then echo "Nothing to add"; exit 0; fi
+          node scripts/nearest-toilets.mjs
+          branch="coverage/$(date +%Y-%m-%d)-${{ github.run_number }}"
+          git config user.name "swing-by-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add src/content/playgrounds src/data/toilets.json
+          git commit -m "Add Unverified playgrounds from OpenStreetMap (coverage check)"
+          git push -u origin "$branch"
+          tail -n 2 reports/coverage.md > body.md
+          printf '\n\nFound by the "Check coverage" workflow. Each playground is Unverified, with its OpenStreetMap page as the source. The build checks start when you push a commit or re-run them from the Checks tab.\n' >> body.md
+          gh pr create --base main --head "$branch" --title "Coverage check: add Unverified playgrounds from OpenStreetMap" --body-file body.md \
+            || echo "::warning title=Check coverage::Pushed $branch but couldn't open a pull request (Settings > Actions > General > 'Allow GitHub Actions to create pull requests'). Open it from the branch instead."
