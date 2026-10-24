@@ -2,7 +2,7 @@ name: Temporary Essex fetch
 on:
   push:
     branches: [tmp-essex]
-    paths: ['tmp/crawl3.py', 'tmp/councils.json', '.github/workflows/tmp-essex.yml']
+    paths: ['tmp/find-gaps.mjs', '.github/workflows/tmp-essex.yml']
 permissions:
   contents: write
 jobs:
@@ -14,7 +14,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: python3 tmp/crawl3.py
+      - run: git fetch -q origin main && git checkout origin/main -- src/content/playgrounds src/data/council-sources.json && node tmp/find-gaps.mjs --only Hertfordshire --add 1500 && mkdir -p tmp/herts && git status --porcelain -- src/content/playgrounds | awk '{print $2}' | xargs -I{} cp {} tmp/herts/ && cp reports/coverage.md tmp/herts-coverage.md
       - run: |
           git config user.name swing-by-bot; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add tmp/crawl6; git commit -m "Council crawl Beds Kent" && git pull --rebase && git push
+          git add tmp/herts tmp/herts-coverage.md; git commit -m "Herts gaps" && git pull --rebase && git push
