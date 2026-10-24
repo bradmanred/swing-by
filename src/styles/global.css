@@ -260,10 +260,8 @@ img.art { aspect-ratio: 360 / 170; object-fit: cover; background: var(--blue-sof
 .jf-best h3 { font-size: 1.5rem; }
 #jf-results:empty { display: none; }
 /* Parents' equipment answers on playground pages */
-.parent-eq { margin-top: 18px; padding: 14px 16px; border-radius: 12px; background: var(--blue-soft); }
-.parent-eq summary { font-weight: 700; cursor: pointer; }
+.parent-eq summary { font-weight: 700; font-size: 1.35rem; cursor: pointer; }
 .parent-eq fieldset { border: 0; padding: 0; margin: 0; }
 .parent-eq legend { font-weight: 700; padding: 0; }
 .peq-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 6px 14px; margin-top: 8px; }
-#peq-confirmed { margin-bottom: 12px; }
-#peq-confirmed .chips li { background: #fff; }
+#peq-confirmed { margin-top: 14px; }
