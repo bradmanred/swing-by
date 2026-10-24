@@ -1,0 +1,175 @@
+[
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/play-areas/borough-play-areas",
+"final": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/play-areas/borough-play-areas",
+"file": "cb263be1d2.html"
+},
+{
+"url": "https://www.ashford.gov.uk/media/hphl4xqh/appendix-1_open-spaces-in-ashford.pdf",
+"final": "https://www.ashford.gov.uk/media/hphl4xqh/appendix-1_open-spaces-in-ashford.pdf",
+"file": "547df41993.html"
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/play-areas/borough-play-areas/",
+"final": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/play-areas/borough-play-areas/",
+"file": "677b03c5b4.html"
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/play-areas/' + jsonArr[x].link + '",
+"err": "URL can't contain control characters. \"/outdoor-spaces/parks-and-play-areas/play-areas/' + jsonArr[x].link + '\" (found at least ' ')"
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/",
+"final": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/",
+"file": "cd2c0daa84.html"
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/",
+"final": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/",
+"file": "fd1b96c8f0.html"
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/play-areas/",
+"final": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/play-areas/",
+"file": "0dbd21f6bc.html"
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/report-an-issue-with-a-play-area/",
+"final": "https://my.ashford.gov.uk/icustomer/?cuid=CE067FA5341000146CA3EE210531401A8CE0B082&lang=en",
+"file": "7caf1b9220.html"
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/play-areas/apply-for-wheelchair-swing-key/",
+"final": "https://my.ashford.gov.uk/icustomer/?cuid=FADE644FCED36D13169E85053F5A0DA0A8C02CB9&lang=en",
+"file": "71d6e3acc0.html"
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/play-areas/play-area-refurbishments/",
+"final": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/play-areas/play-area-refurbishments/",
+"file": "66025b0921.html"
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/play-areas/borough-play-areas/' + jsonArr[x].link + '",
+"err": "URL can't contain control characters. \"/outdoor-spaces/parks-and-play-areas/play-areas/borough-play-areas/' + jsonArr[x].link + '\" (found at least ' '"
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/' + jsonArr[x].link + '",
+"err": "URL can't contain control characters. \"/outdoor-spaces/parks-and-play-areas/' + jsonArr[x].link + '\" (found at least ' ')"
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/victoria-park/",
+"final": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/victoria-park/",
+"file": "bb3c983a8f.html"
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/ashford-green-corridor/",
+"final": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/ashford-green-corridor/",
+"file": "15a32ee8c9.html"
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/conningbrook-lakes-country-park/",
+"final": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/conningbrook-lakes-country-park/",
+"file": "758a2eab70.html"
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/' + jsonArr[x].link + '",
+"err": "URL can't contain control characters. \"/outdoor-spaces/parks-and-play-areas/parks/' + jsonArr[x].link + '\" (found at least ' ')"
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/victoria-park/park-information/",
+"final": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/victoria-park/park-information/",
+"file": "b9249daf97.html"
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/victoria-park/victoria-park-ecology/",
+"final": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/victoria-park/victoria-park-ecology/",
+"file": "7e85236395.html"
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/victoria-park/victoria-park-heritage/",
+"final": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/victoria-park/victoria-park-heritage/",
+"file": "6a1317c4d1.html"
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/open-space-strategy/",
+"final": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/open-space-strategy/",
+"file": "e22dcce563.html"
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/play-areas/play-area-refurbishments/' + jsonArr[x].link + '",
+"err": "URL can't contain control characters. \"/outdoor-spaces/parks-and-play-areas/play-areas/play-area-refurbishments/' + jsonArr[x].link + '\" (found at lea"
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/victoria-park/' + jsonArr[x].link + '",
+"err": "URL can't contain control characters. \"/outdoor-spaces/parks-and-play-areas/parks/victoria-park/' + jsonArr[x].link + '\" (found at least ' ')"
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/victoria-park/the-victoria-park-project-website/",
+"final": "https://victoriaparkashford.co.uk/",
+"file": "35e8b70f5e.html"
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/victoria-park/frequently-asked-questions/",
+"final": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/victoria-park/frequently-asked-questions/",
+"file": "461bc65c95.html"
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/victoria-park/friends-of-victoria-park/",
+"final": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/victoria-park/friends-of-victoria-park/",
+"file": "fe5938fc34.html"
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/victoria-park/download-the-victoria-park-sketchbook/",
+"final": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/victoria-park/download-the-victoria-park-sketchbook/",
+"file": "9707ce8a7b.html"
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/victoria-park/volunteering-in-our-parks/",
+"final": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/victoria-park/volunteering-in-our-parks/",
+"file": "239e8da599.html"
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/victoria-park/events-and-activities/",
+"err": "<urlopen error [Errno 104] Connection reset by peer>"
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/ashford-green-corridor/' + jsonArr[x].link + '",
+"err": "URL can't contain control characters. \"/outdoor-spaces/parks-and-play-areas/parks/ashford-green-corridor/' + jsonArr[x].link + '\" (found at least ' ')"
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/conningbrook-lakes-country-park/' + jsonArr[x].link + '",
+"err": "URL can't contain control characters. \"/outdoor-spaces/parks-and-play-areas/parks/conningbrook-lakes-country-park/' + jsonArr[x].link + '\" (found at l"
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/victoria-park/park-information/' + jsonArr[x].link + '",
+"err": "URL can't contain control characters. \"/outdoor-spaces/parks-and-play-areas/parks/victoria-park/park-information/' + jsonArr[x].link + '\" (found at le"
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/victoria-park/victoria-park-ecology/' + jsonArr[x].link + '",
+"err": "URL can't contain control characters. \"/outdoor-spaces/parks-and-play-areas/parks/victoria-park/victoria-park-ecology/' + jsonArr[x].link + '\" (found "
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/victoria-park/victoria-park-heritage/' + jsonArr[x].link + '",
+"err": "URL can't contain control characters. \"/outdoor-spaces/parks-and-play-areas/parks/victoria-park/victoria-park-heritage/' + jsonArr[x].link + '\" (found"
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/open-space-strategy/' + jsonArr[x].link + '",
+"err": "URL can't contain control characters. \"/outdoor-spaces/parks-and-play-areas/parks/open-space-strategy/' + jsonArr[x].link + '\" (found at least ' ')"
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/victoria-park/frequently-asked-questions/' + jsonArr[x].link + '",
+"err": "URL can't contain control characters. \"/outdoor-spaces/parks-and-play-areas/parks/victoria-park/frequently-asked-questions/' + jsonArr[x].link + '\" (f"
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/victoria-park/friends-of-victoria-park/' + jsonArr[x].link + '",
+"err": "URL can't contain control characters. \"/outdoor-spaces/parks-and-play-areas/parks/victoria-park/friends-of-victoria-park/' + jsonArr[x].link + '\" (fou"
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/victoria-park/download-the-victoria-park-sketchbook/' + jsonArr[x].link + '",
+"err": "URL can't contain control characters. \"/outdoor-spaces/parks-and-play-areas/parks/victoria-park/download-the-victoria-park-sketchbook/' + jsonArr[x].l"
+},
+{
+"url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/parks/victoria-park/volunteering-in-our-parks/' + jsonArr[x].link + '",
+"err": "URL can't contain control characters. \"/outdoor-spaces/parks-and-play-areas/parks/victoria-park/volunteering-in-our-parks/' + jsonArr[x].link + '\" (fo"
+}
+]
