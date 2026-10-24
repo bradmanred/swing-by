@@ -458,6 +458,30 @@
     "https://www.data.gov.uk/dataset/cb5c2a87-b84d-4f40-9fa9-8500a39f73a2/twbc-open-data-play-areas11"
    ],
    "note": "Play areas from the council's open data set."
+  },
+  {
+   "district": "Buckinghamshire",
+   "council": "Buckinghamshire Council",
+   "sources": [
+    "https://www.buckinghamshire.gov.uk/health-wellbeing-and-sports/parks-and-open-spaces/find-a-park-or-play-area/"
+   ],
+   "note": "Its find-a-park pages give each park's facilities and map position."
+  },
+  {
+   "district": "Salford",
+   "council": "Salford City Council",
+   "sources": [
+    "https://www.salford.gov.uk/parks-and-open-spaces/salford-parks"
+   ],
+   "note": "Its park pages give facilities and map positions; no single list."
+  },
+  {
+   "district": "Bolton",
+   "council": "Bolton Council",
+   "sources": [
+    "https://www.bolton.gov.uk/directory/7/parks/category/20"
+   ],
+   "note": "Its park directory gives facilities and map positions."
   }
  ]
 }
