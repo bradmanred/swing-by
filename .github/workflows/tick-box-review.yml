@@ -29,10 +29,11 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          set -euo pipefail
           title="Weekly tick-box review"
-          n=$(gh issue list --state open --search "\"$title\" in:title" --json number,title --jq ".[] | select(.title == \"$title\") | .number" | head -1)
+          n=$(gh api "repos/$GITHUB_REPOSITORY/issues?state=open&per_page=100" --jq ".[] | select(.title == \"$title\") | .number" | head -1)
           if [ -z "$n" ]; then
-            gh issue create --title "$title" --body "Each week the tick-box review posts what parents typed into \"Something else?\" on playground pages, and how often common equipment comes up in playground descriptions. Things marked ⭐ are worth adding as tick boxes. See scripts/other-equipment.mjs."
-            n=$(gh issue list --state open --search "\"$title\" in:title" --json number,title --jq ".[] | select(.title == \"$title\") | .number" | head -1)
+            n=$(gh api "repos/$GITHUB_REPOSITORY/issues" -f title="$title" \
+              -f body='Each week the tick-box review posts what parents typed into "Something else?" on playground pages, and how often common equipment comes up in playground descriptions. Things marked ⭐ are worth adding as tick boxes. See scripts/other-equipment.mjs.' --jq .number)
           fi
-          gh issue comment "$n" --body-file report.md
+          gh api "repos/$GITHUB_REPOSITORY/issues/$n/comments" -F body=@report.md --jq .html_url
