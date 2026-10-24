@@ -450,6 +450,14 @@
     "https://www.teignbridge.gov.uk/leisure-and-culture/parks-and-play-areas/"
    ],
    "note": "No play area list found; the site blocks automated checks, so look again by hand."
+  },
+  {
+   "district": "Tunbridge Wells",
+   "council": "Tunbridge Wells Borough Council",
+   "sources": [
+    "https://www.data.gov.uk/dataset/cb5c2a87-b84d-4f40-9fa9-8500a39f73a2/twbc-open-data-play-areas11"
+   ],
+   "note": "Play areas from the council's open data set."
   }
  ]
 }
