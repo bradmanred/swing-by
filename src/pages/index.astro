@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import { allParks, clientPark, km, regions } from '../lib/parks';
 import { cardHTML, fmtMiles } from '../lib/card';
+import coverageFile from '../data/coverage.json';
 import regionsFile from '../data/regions.json';
 import nextAreas from '../data/next-areas.json';
 
@@ -18,6 +19,10 @@ const covered = regionsFile.launchOrder
   .filter((id) => data.some((p) => p.r === id))
   .map((id) => regions.find((r) => r.id === id)?.name ?? id);
 const coveredText = covered.length > 1 ? `${covered.slice(0, -1).join(', ')} and ${covered.at(-1)}` : covered[0];
+// Counties come from src/data/coverage.json, which the "Update nearest toilets" workflow refreshes whenever playgrounds change.
+const listOf = (xs: string[]) => (xs.length > 1 ? `${xs.slice(0, -1).join(', ')} and ${xs.at(-1)}` : xs[0] ?? '');
+const countyCount = coverageFile.counties.length;
+const nations = listOf(coverageFile.nations.map((n) => n.name));
 const loves = [
   ['bs', '👶', 'Baby swings'],
   ['sw', '🪢', 'Swings'],
@@ -46,11 +51,11 @@ const ages = [
     <div>
       <p class="counter"><strong>{total}</strong> playgrounds and counting</p>
       <h1 id="hero-title">Where shall we play today?</h1>
-      <p class="lede">Find a playground worth the trip, and know before you go: toilets, baby change, the swings they love, and whether it's free. Every one is checked against the council's or operator's own website.</p>
+      <p class="lede">Find a playground worth the trip, and know before you go: toilets, baby change, the swings they love, and whether it's free. We check playgrounds against the council's or operator's own website, and say clearly when one hasn't been checked yet.</p>
       <ul class="proof" aria-label="What you'll know before you go">
         <li><span aria-hidden="true">🚻</span> Toilets and baby change</li>
         <li><span class="pound" aria-hidden="true">£</span> Free or paid, at a glance</li>
-        <li><span aria-hidden="true">✓</span> Checked against official sources</li>
+        <li><span aria-hidden="true">✓</span> Council-checked, or clearly marked</li>
       </ul>
     </div>
     <form class="search" id="search" action="/playgrounds/" role="search" aria-label="Find playgrounds">
@@ -75,30 +80,12 @@ const ages = [
           <p class="hint" id="free-hint">Hides the {paidCount} places marked <span class="pound" aria-hidden="true">£</span><span class="sr-only">with a pound sign</span>, which charge for entry.</p>
         </div>
       )}
-      <p class="hint coverage">Covering {coveredText}, plus {memberCount} National Trust, English Heritage and Historic Houses play areas across the UK.</p>
+      <p class="hint coverage">{countyCount > 0
+        ? <>Covering {total.toLocaleString('en-GB')} playgrounds in {countyCount} English counties{nations && <>, plus parts of {nations}</>}, and {memberCount} National Trust, English Heritage and Historic Houses play areas across the UK.</>
+        : <>Covering {coveredText}, plus {memberCount} National Trust, English Heritage and Historic Houses play areas across the UK.</>}</p>
     </form>
   </section>
 
-  <section aria-labelledby="loves-title">
-    <h2 id="loves-title" style="margin-bottom:14px">What do they love?</h2>
-    <div class="row" role="group" aria-labelledby="loves-title">
-      {loves.map(([k, i, l]) => (
-        <button class="btn" type="button" data-love={k} aria-pressed="false"><span aria-hidden="true">{i}</span> {l}</button>
-      ))}
-    </div>
-    <details class="more-filters" id="more-filters">
-      <summary>More filters</summary>
-      <fieldset>
-        <legend>Play area size</legend>
-        <div class="row">
-          {sizes.map((z) => (
-            <label class="chk"><input type="checkbox" name="size" value={z.k} disabled={z.n === 0} /> {z.label} <span class="hint">({z.n})</span></label>
-          ))}
-        </div>
-        <p class="hint">Sizes come from each council's own grading, so not every playground has one yet. Choosing a size only shows playgrounds that have been graded.</p>
-      </fieldset>
-    </details>
-  </section>
 
   <section class="near" aria-labelledby="near-title">
     <figure class="panel mapbox">
@@ -119,6 +106,27 @@ const ages = [
       </ol>
       <a href="#results-title" style="margin-top:auto;font-weight:700">See all results</a>
     </div>
+  </section>
+
+  <section aria-labelledby="loves-title" class="loves">
+    <h2 id="loves-title" style="margin-bottom:14px">What do they love?</h2>
+    <div class="row" role="group" aria-labelledby="loves-title">
+      {loves.map(([k, i, l]) => (
+        <button class="btn" type="button" data-love={k} aria-pressed="false"><span aria-hidden="true">{i}</span> {l}</button>
+      ))}
+    </div>
+    <details class="more-filters" id="more-filters">
+      <summary>More filters</summary>
+      <fieldset>
+        <legend>Play area size</legend>
+        <div class="row">
+          {sizes.map((z) => (
+            <label class="chk"><input type="checkbox" name="size" value={z.k} disabled={z.n === 0} /> {z.label} <span class="hint">({z.n})</span></label>
+          ))}
+        </div>
+        <p class="hint">Sizes come from each council's own grading, so not every playground has one yet. Choosing a size only shows playgrounds that have been graded.</p>
+      </fieldset>
+    </details>
   </section>
 
   <section aria-labelledby="results-title">
