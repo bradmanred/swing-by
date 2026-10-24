@@ -84,7 +84,7 @@ collections:
           - { label: "Trampoline", value: "tp" }
           - { label: "See-saw", value: "ss" }
           - { label: "Monkey bars", value: "mb" }
-          - { label: "Springers and rocking horses", value: "rk" }
+          - { label: "Springers", value: "spr" }
           - { label: "Basket swing", value: "bk" }
           - { label: "Outdoor gym", value: "gym" }
           - { label: "Ball court", value: "mg" }
