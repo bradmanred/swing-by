@@ -1,0 +1,33 @@
+{
+  "name": "Sheerwater Recreation Ground",
+  "region": "south-east",
+  "area": "Sheerwater",
+  "lat": 51.33432,
+  "lng": -0.53331,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "sk"
+  ],
+  "access": [],
+  "facilities": [
+    "fp"
+  ],
+  "opens": "",
+  "description": "One of Woking Borough Council's green spaces, with play areas for children up to 6, up to 12, up to 14 years old. Also here: skate park, multi-use games area, football pitch, car park.",
+  "nearby": [],
+  "operator": "Woking Borough Council",
+  "sources": [
+    {
+      "label": "Woking Borough Council: find green spaces and play areas",
+      "url": "https://www.woking.gov.uk/parks-leisure/green-spaces/find-green-spaces-play-areas"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking. The pin is the playground on OpenStreetMap (© OpenStreetMap contributors) nearest the council's postcode.",
+  "photo": null
+}

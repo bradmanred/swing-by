@@ -1,0 +1,31 @@
+{
+  "name": "Lakeview Recreation Ground",
+  "region": "south-east",
+  "area": "Woking",
+  "lat": 51.32252,
+  "lng": -0.58197,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "sk"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "One of Woking Borough Council's green spaces, with play areas for children up to 6, up to 12, up to 14 years old. Also here: skate park, basketball hoop, kick-about area.",
+  "nearby": [],
+  "operator": "Woking Borough Council",
+  "sources": [
+    {
+      "label": "Woking Borough Council: find green spaces and play areas",
+      "url": "https://www.woking.gov.uk/parks-leisure/green-spaces/find-green-spaces-play-areas"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (mapped from the postcode), opening hours, toilets and parking.",
+  "photo": null
+}
