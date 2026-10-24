@@ -1,0 +1,28 @@
+{
+  "name": "Weston Mill Play Area",
+  "region": "devon",
+  "area": "Ham, Plymouth",
+  "lat": 50.40749,
+  "lng": -4.17662,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area at Weston Mill in the Ham ward of Plymouth, run by Plymouth City Council. The council lists it as suitable for mixed ages. It has a safety surface. It doesn't have dog-proof fencing.",
+  "nearby": [],
+  "operator": "Plymouth City Council",
+  "sources": [
+    {
+      "label": "Plymouth City Council: find a playground",
+      "url": "https://www.plymouth.gov.uk/find-playground"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/509262000"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

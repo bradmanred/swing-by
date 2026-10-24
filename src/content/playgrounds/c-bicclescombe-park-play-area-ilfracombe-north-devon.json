@@ -1,0 +1,34 @@
+{
+  "name": "Bicclescombe Park Play Area",
+  "region": "devon",
+  "area": "Ilfracombe, North Devon",
+  "lat": 51.19851,
+  "lng": -4.12285,
+  "ages": [
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A play area at Bicclescombe Park in Ilfracombe, run by North Devon Council, which says it suits 3-13 year olds. Green Flag park with tennis courts, public toilets, model boating lake, Victorian gardens, mill and tea room.",
+  "nearby": [],
+  "operator": "North Devon Council",
+  "sources": [
+    {
+      "label": "North Devon Council: parks, play areas and allotments",
+      "url": "https://www.northdevon.gov.uk/leisure-and-lifestyle/parks-play-areas-and-allotments"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/28070263"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours and parking.",
+  "photo": null
+}

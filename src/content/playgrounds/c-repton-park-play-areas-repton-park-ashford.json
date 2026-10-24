@@ -1,0 +1,24 @@
+{
+  "name": "Repton Park Play Areas",
+  "region": "south-east",
+  "area": "Repton Park, Ashford",
+  "lat": 51.15635,
+  "lng": 0.85233,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Three play areas spread across the Repton Park estate.",
+  "nearby": [],
+  "operator": "Ashford Borough Council",
+  "sources": [
+    {
+      "label": "Ashford Borough Council: parks and play areas",
+      "url": "https://www.ashford.gov.uk/outdoor-spaces/parks-and-play-areas/play-areas/borough-play-areas"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking. The pin is the playground on OpenStreetMap (© OpenStreetMap contributors) at or nearest the place the council names.",
+  "photo": null
+}

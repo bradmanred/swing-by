@@ -1,0 +1,31 @@
+{
+  "name": "Exe Hill Park Play Area",
+  "region": "devon",
+  "area": "Torquay, Torbay",
+  "lat": 50.4791,
+  "lng": -3.57075,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Exe Hill Park in Torquay, run by Torbay Council, has a children's playground with toddler play.",
+  "nearby": [],
+  "operator": "Torbay Council",
+  "sources": [
+    {
+      "label": "Torbay Council: Exe Hill Park",
+      "url": "https://www.torbay.gov.uk/leisure-sports-and-community/parks/find-a-park/exe-hill-park/"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/1469832711"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

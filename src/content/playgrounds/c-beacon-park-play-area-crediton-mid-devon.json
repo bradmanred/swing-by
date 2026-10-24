@@ -1,0 +1,28 @@
+{
+  "name": "Beacon Park Play Area",
+  "region": "devon",
+  "area": "Crediton, Mid Devon",
+  "lat": 50.79557,
+  "lng": -3.67009,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area at Beacon Park, EX17 2HB in Crediton, listed by Mid Devon District Council among the play areas it runs.",
+  "nearby": [],
+  "operator": "Mid Devon District Council",
+  "sources": [
+    {
+      "label": "Mid Devon District Council: parks and play areas",
+      "url": "https://www.middevon.gov.uk/residents/parks-and-open-spaces/"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/542909673"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

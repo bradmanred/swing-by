@@ -1,0 +1,29 @@
+{
+  "name": "Chambers Way Play Area",
+  "region": "east",
+  "area": "Biggleswade",
+  "lat": 52.08059,
+  "lng": -0.24809,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by Central Bedfordshire Council, for children up to 14.",
+  "nearby": [],
+  "operator": "Central Bedfordshire Council",
+  "sources": [
+    {
+      "label": "Central Bedfordshire Council: play areas",
+      "url": "https://www.centralbedfordshire.gov.uk/directory/play-areas/directory/chambers-way"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (from the council's map), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

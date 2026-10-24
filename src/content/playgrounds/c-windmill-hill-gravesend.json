@@ -1,0 +1,26 @@
+{
+  "name": "Windmill Hill",
+  "region": "south-east",
+  "area": "Gravesend",
+  "lat": 51.43457,
+  "lng": 0.37063,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A popular picnic spot on the highest ground near Gravesend town centre, with a children's play area. Toilets are in Windmill Gardens, reached from Clarence Place.",
+  "nearby": [],
+  "operator": "Gravesham Borough Council",
+  "sources": [
+    {
+      "label": "Gravesham Borough Council: parks and play areas",
+      "url": "https://www.gravesham.gov.uk/outdoor-spaces/parks-play-areas"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours and parking. The pin is the playground on OpenStreetMap (© OpenStreetMap contributors) at or nearest the place the council names.",
+  "photo": null
+}

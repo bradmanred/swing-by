@@ -1,0 +1,32 @@
+{
+  "name": "Pill Gardens Play Area",
+  "region": "devon",
+  "area": "Braunton, North Devon",
+  "lat": 51.10173,
+  "lng": -4.16159,
+  "ages": [
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area at Pill Gardens in Braunton, run by North Devon Council, which says it suits 3-13 year olds.",
+  "nearby": [],
+  "operator": "North Devon Council",
+  "sources": [
+    {
+      "label": "North Devon Council: parks, play areas and allotments",
+      "url": "https://www.northdevon.gov.uk/leisure-and-lifestyle/parks-play-areas-and-allotments"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/1464163585"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

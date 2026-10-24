@@ -1,0 +1,32 @@
+{
+  "name": "Boulter Close Play Area",
+  "region": "devon",
+  "area": "Southway, Plymouth",
+  "lat": 50.43957,
+  "lng": -4.11161,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A play area at Boulter Close in the Southway ward of Plymouth, run by Plymouth City Council. The council lists it as suitable for juniors. It has a safety surface. It has dog-proof fencing.",
+  "nearby": [],
+  "operator": "Plymouth City Council",
+  "sources": [
+    {
+      "label": "Plymouth City Council: find a playground",
+      "url": "https://www.plymouth.gov.uk/find-playground"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/1469516965"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

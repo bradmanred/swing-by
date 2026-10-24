@@ -1,0 +1,32 @@
+{
+  "name": "Hookhill Community Centre Play Area",
+  "region": "devon",
+  "area": "Paignton, Torbay",
+  "lat": 50.40883,
+  "lng": -3.56896,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Hookhill Community Centre in Paignton, run by Torbay Council, has a children's playground with toddler and junior play.",
+  "nearby": [],
+  "operator": "Torbay Council",
+  "sources": [
+    {
+      "label": "Torbay Council: Hookhill Community Centre",
+      "url": "https://www.torbay.gov.uk/leisure-sports-and-community/parks/find-a-park/hookhill-community-centre/"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/183272196"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

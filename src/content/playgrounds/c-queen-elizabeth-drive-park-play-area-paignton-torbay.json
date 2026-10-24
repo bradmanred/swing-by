@@ -1,0 +1,28 @@
+{
+  "name": "Queen Elizabeth Drive Park Play Area",
+  "region": "devon",
+  "area": "Paignton, Torbay",
+  "lat": 50.43695,
+  "lng": -3.59313,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Queen Elizabeth Drive Park in Paignton, run by Torbay Council, has a children's playground.",
+  "nearby": [],
+  "operator": "Torbay Council",
+  "sources": [
+    {
+      "label": "Torbay Council: Queen Elizabeth Drive Park",
+      "url": "https://www.torbay.gov.uk/leisure-sports-and-community/parks/find-a-park/qed-park/"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/96699439"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

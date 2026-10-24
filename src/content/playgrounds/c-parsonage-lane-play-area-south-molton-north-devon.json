@@ -1,0 +1,31 @@
+{
+  "name": "Parsonage Lane Play Area",
+  "region": "devon",
+  "area": "South Molton, North Devon",
+  "lat": 51.02215,
+  "lng": -3.83362,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area at Parsonage Lane in South Molton, run by North Devon Council, which says it suits 3-8 year olds.",
+  "nearby": [],
+  "operator": "North Devon Council",
+  "sources": [
+    {
+      "label": "North Devon Council: parks, play areas and allotments",
+      "url": "https://www.northdevon.gov.uk/leisure-and-lifestyle/parks-play-areas-and-allotments"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/1090801185"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

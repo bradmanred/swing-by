@@ -1,0 +1,32 @@
+{
+  "name": "Brimlands Play Area",
+  "region": "devon",
+  "area": "Ilfracombe, North Devon",
+  "lat": 51.20711,
+  "lng": -4.10307,
+  "ages": [
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area at Brimlands, Hillsborough Park Road in Ilfracombe, run by North Devon Council, which says it suits 3-13 year olds. Plenty of room for ball games.",
+  "nearby": [],
+  "operator": "North Devon Council",
+  "sources": [
+    {
+      "label": "North Devon Council: parks, play areas and allotments",
+      "url": "https://www.northdevon.gov.uk/leisure-and-lifestyle/parks-play-areas-and-allotments"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/1464386631"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
