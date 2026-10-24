@@ -2,19 +2,19 @@ name: Temporary Essex fetch
 on:
   push:
     branches: [tmp-essex]
-    paths: ['tmp/crawl3.py', 'tmp/councils.json', '.github/workflows/tmp-essex.yml']
+    paths: ['tmp/osmgaps.py', 'tmp/gaps-rest.json', '.github/workflows/tmp-essex.yml']
 permissions:
   contents: write
 jobs:
   fetch:
     runs-on: ubuntu-24.04
-    timeout-minutes: 30
+    timeout-minutes: 300
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: python3 tmp/crawl3.py
+      - run: python3 tmp/osmgaps.py
       - run: |
           git config user.name swing-by-bot; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add tmp/crawl4; git commit -m "Council crawl" && git push
+          git add tmp/osm-rest.txt; git commit -m "OSM gaps" && git pull --rebase && git push
