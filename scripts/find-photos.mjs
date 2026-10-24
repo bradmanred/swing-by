@@ -107,11 +107,23 @@ for (const f of (await readdir('src/content/playgrounds')).filter((f) => f.endsW
   if (!d.photo) parks.push({ id: f.replace(/\.json$/, ''), name: d.name, lat: d.lat, lng: d.lng });
 }
 
+// Stop with a plain message (shown as an error on the GitHub Actions run) rather than a stack trace.
+const stop = (msg) => {
+  console.log(`::error title=Find playground photos::${msg}`);
+  process.exit(1);
+};
+
 let status = { searched: {}, photos: {} };
 if (!DRY) {
-  if (!TOKEN) throw new Error('Set MOD_TOKEN (the moderator key) so suggestions can be sent to the site.');
-  status = (await getJson(`${SITE}/api/photos/search-status`, { headers: { Authorization: `Bearer ${TOKEN}` } })) ?? status;
+  if (!TOKEN)
+    stop('The MOD_TOKEN secret is missing. Add it under Settings > Secrets and variables > Actions > New repository secret, using the same moderator key as the Worker and /moderate/.');
+  const r = await fetch(`${SITE}/api/photos/search-status`, { headers: { ...UA, Authorization: `Bearer ${TOKEN}` } }).catch(() => null);
+  if (!r) stop(`Couldn't reach ${SITE}. Try again later.`);
+  if (r.status === 401) stop("The site didn't accept MOD_TOKEN. Check the GitHub secret matches the MOD_TOKEN secret on the Worker exactly.");
+  if (!r.ok) stop(`${SITE}/api/photos/search-status answered ${r.status}. Has the latest site been deployed?`);
+  status = await r.json();
 }
+if (!GEOGRAPH_KEY) console.log('::warning title=Find playground photos::No GEOGRAPH_KEY secret, so only Wikimedia Commons was searched.');
 const cutoff = Date.now() - RESEARCH_DAYS * 864e5;
 const todo = parks
   .filter((p) => !(status.photos[p.id]?.approved > 0) && !(status.photos[p.id]?.pending >= 3))
