@@ -1,1 +1,167 @@
-{"updated": null, "counties": [], "nations": []}
+{
+ "updated": "2026-10-24",
+ "counties": [
+  {
+   "name": "Essex",
+   "playgrounds": 379
+  },
+  {
+   "name": "Hertfordshire",
+   "playgrounds": 357
+  },
+  {
+   "name": "Derbyshire",
+   "playgrounds": 322
+  },
+  {
+   "name": "Greater London",
+   "playgrounds": 177
+  },
+  {
+   "name": "Surrey",
+   "playgrounds": 113
+  },
+  {
+   "name": "Greater Manchester",
+   "playgrounds": 77
+  },
+  {
+   "name": "Tyne and Wear",
+   "playgrounds": 61
+  },
+  {
+   "name": "West Yorkshire",
+   "playgrounds": 47
+  },
+  {
+   "name": "Hampshire",
+   "playgrounds": 47
+  },
+  {
+   "name": "South Yorkshire",
+   "playgrounds": 43
+  },
+  {
+   "name": "Kent",
+   "playgrounds": 37
+  },
+  {
+   "name": "Cambridgeshire",
+   "playgrounds": 27
+  },
+  {
+   "name": "North Yorkshire",
+   "playgrounds": 27
+  },
+  {
+   "name": "Bedfordshire",
+   "playgrounds": 25
+  },
+  {
+   "name": "Berkshire",
+   "playgrounds": 23
+  },
+  {
+   "name": "Leicestershire",
+   "playgrounds": 19
+  },
+  {
+   "name": "Devon",
+   "playgrounds": 18
+  },
+  {
+   "name": "Durham",
+   "playgrounds": 17
+  },
+  {
+   "name": "Gloucestershire",
+   "playgrounds": 17
+  },
+  {
+   "name": "Northamptonshire",
+   "playgrounds": 14
+  },
+  {
+   "name": "Wiltshire",
+   "playgrounds": 13
+  },
+  {
+   "name": "Lincolnshire",
+   "playgrounds": 12
+  },
+  {
+   "name": "Nottinghamshire",
+   "playgrounds": 12
+  },
+  {
+   "name": "Buckinghamshire",
+   "playgrounds": 11
+  },
+  {
+   "name": "Northumberland",
+   "playgrounds": 9
+  },
+  {
+   "name": "Somerset",
+   "playgrounds": 8
+  },
+  {
+   "name": "Cumbria",
+   "playgrounds": 6
+  },
+  {
+   "name": "Shropshire",
+   "playgrounds": 4
+  },
+  {
+   "name": "Staffordshire",
+   "playgrounds": 4
+  },
+  {
+   "name": "Cheshire",
+   "playgrounds": 4
+  },
+  {
+   "name": "East Sussex",
+   "playgrounds": 3
+  },
+  {
+   "name": "Herefordshire",
+   "playgrounds": 3
+  },
+  {
+   "name": "West Sussex",
+   "playgrounds": 3
+  },
+  {
+   "name": "Dorset",
+   "playgrounds": 3
+  },
+  {
+   "name": "Lancashire",
+   "playgrounds": 3
+  },
+  {
+   "name": "Worcestershire",
+   "playgrounds": 3
+  },
+  {
+   "name": "Norfolk",
+   "playgrounds": 3
+  }
+ ],
+ "nations": [
+  {
+   "name": "Northern Ireland",
+   "playgrounds": 88
+  },
+  {
+   "name": "Wales",
+   "playgrounds": 84
+  },
+  {
+   "name": "Scotland",
+   "playgrounds": 22
+  }
+ ]
+}
