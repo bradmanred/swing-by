@@ -1,4 +1,5 @@
-# Keeps src/data/toilets.json (nearest public toilets to each playground, from the Toilet Map) up to date.
+# Keeps src/data/toilets.json (nearest public toilets to each playground, from the Toilet Map) up to date,
+# and src/data/coverage.json (the counties the home page says we cover).
 # Runs when playgrounds are added or moved, once a month for new or changed toilets, and on demand.
 # On main it commits the refreshed file straight to main (which redeploys the site). On other branches,
 # such as a pull request adding a new area, it commits to that branch so the PR includes the toilets.
@@ -11,6 +12,7 @@ on:
     paths:
       - 'src/content/playgrounds/**'
       - 'scripts/nearest-toilets.mjs'
+      - 'scripts/coverage-areas.mjs'
 permissions:
   contents: write
 concurrency:
@@ -25,11 +27,12 @@ jobs:
         with:
           node-version: 22
       - run: node scripts/nearest-toilets.mjs
+      - run: node scripts/coverage-areas.mjs
       - name: Commit if changed
         run: |
-          if git diff --quiet -- src/data/toilets.json; then echo "No change"; exit 0; fi
+          if git diff --quiet -- src/data/toilets.json src/data/coverage.json; then echo "No change"; exit 0; fi
           git config user.name "swing-by-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/data/toilets.json
+          git add src/data/toilets.json src/data/coverage.json
           git commit -m "Update nearest toilets from the Toilet Map"
           git push

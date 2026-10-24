@@ -183,6 +183,8 @@ export function startFinder() {
         where.value = '';
         setOrigin(o);
         hint.textContent = `Found you, accurate to about ${Math.max(10, Math.round(o.acc / 10) * 10)} metres.`;
+        // Hop down to the map so the nearest playgrounds are in view.
+        document.querySelector('.mapbox')?.scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
       },
       () => {
         if (mine !== lookup) return;
