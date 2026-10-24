@@ -1,0 +1,28 @@
+{
+  "name": "St Mary's Park Play Area",
+  "region": "devon",
+  "area": "Torquay, Torbay",
+  "lat": 50.38459,
+  "lng": -3.5211,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "St Mary's Park in Torquay, run by Torbay Council, has a children's playground.",
+  "nearby": [],
+  "operator": "Torbay Council",
+  "sources": [
+    {
+      "label": "Torbay Council: St Mary's Park",
+      "url": "https://www.torbay.gov.uk/leisure-sports-and-community/parks/find-a-park/st-marys-park/"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/27418039"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

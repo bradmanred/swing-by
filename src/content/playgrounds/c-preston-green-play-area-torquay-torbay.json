@@ -1,0 +1,30 @@
+{
+  "name": "Preston Green Play Area",
+  "region": "devon",
+  "area": "Torquay, Torbay",
+  "lat": 50.44414,
+  "lng": -3.55709,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Preston Green in Torquay, run by Torbay Council, has a children's playground with junior play.",
+  "nearby": [],
+  "operator": "Torbay Council",
+  "sources": [
+    {
+      "label": "Torbay Council: Preston Green",
+      "url": "https://www.torbay.gov.uk/leisure-sports-and-community/parks/find-a-park/preston-green/"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/626455071"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

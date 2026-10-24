@@ -1,0 +1,31 @@
+{
+  "name": "Silverwood Heights Play Area",
+  "region": "devon",
+  "area": "Barnstaple, North Devon",
+  "lat": 51.08525,
+  "lng": -4.04518,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area at Silverwood Heights in Barnstaple, run by North Devon Council, which says it suits 3-8 year olds.",
+  "nearby": [],
+  "operator": "North Devon Council",
+  "sources": [
+    {
+      "label": "North Devon Council: parks, play areas and allotments",
+      "url": "https://www.northdevon.gov.uk/leisure-and-lifestyle/parks-play-areas-and-allotments"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/1475798810"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

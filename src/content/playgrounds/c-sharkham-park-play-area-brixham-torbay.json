@@ -1,0 +1,32 @@
+{
+  "name": "Sharkham Park Play Area",
+  "region": "devon",
+  "area": "Brixham, Torbay",
+  "lat": 50.38656,
+  "lng": -3.51066,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Sharkham Park in Brixham, run by Torbay Council, has a children's playground with toddler and junior play.",
+  "nearby": [],
+  "operator": "Torbay Council",
+  "sources": [
+    {
+      "label": "Torbay Council: Sharkham Park",
+      "url": "https://www.torbay.gov.uk/leisure-sports-and-community/parks/find-a-park/sharkham-park/"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/1468058304"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Broad Park Play Area",
+  "region": "devon",
+  "area": "Paignton, Torbay",
+  "lat": 50.45442,
+  "lng": -3.55725,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Broad Park in Paignton, run by Torbay Council, has a children's playground with junior play.",
+  "nearby": [],
+  "operator": "Torbay Council",
+  "sources": [
+    {
+      "label": "Torbay Council: Broad Park",
+      "url": "https://www.torbay.gov.uk/leisure-sports-and-community/parks/find-a-park/broad-park/"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/188453662"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

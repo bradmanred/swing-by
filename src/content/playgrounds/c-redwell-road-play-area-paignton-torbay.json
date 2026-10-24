@@ -1,0 +1,30 @@
+{
+  "name": "Redwell Road Play Area",
+  "region": "devon",
+  "area": "Paignton, Torbay",
+  "lat": 50.44472,
+  "lng": -3.58514,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Redwell Road in Paignton, run by Torbay Council, has a children's playground with junior play.",
+  "nearby": [],
+  "operator": "Torbay Council",
+  "sources": [
+    {
+      "label": "Torbay Council: Redwell Road",
+      "url": "https://www.torbay.gov.uk/leisure-sports-and-community/parks/find-a-park/redwell-road-park/"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/472294767"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
