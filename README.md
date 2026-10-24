@@ -17,7 +17,7 @@ Find a playground worth the trip. Swing By lists playgrounds with who runs them,
 
 - When adding a county or district, or checking one for gaps, follow [docs/finding-playgrounds.md](docs/finding-playgrounds.md). It lists every type of source to check: council directories, leisure operators, county park portals, and town and parish councils.
 
-- Playground details are unverified until they are checked against an official source. Leave "Last checked" blank until then, and the site labels the playground "Unverified".
+- Playground details are unverified until they are checked against an official source. Leave "Last checked" blank until then, and the site labels the playground "Unverified". Playgrounds mapped on OpenStreetMap can be listed this way even when no council lists them, with the OpenStreetMap page as the source and the OpenStreetMap credit.
 - Photos must be openly licensed or used with permission, credited, and must not show identifiable children.
 - Don't copy data from Google Maps or Google Places. Their terms don't allow storing it or showing it on a non-Google map.
 
