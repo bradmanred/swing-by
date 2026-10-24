@@ -1,0 +1,28 @@
+{
+  "name": "Chelsea Gardens Play Area",
+  "region": "east",
+  "area": "Houghton Regis",
+  "lat": 51.91042,
+  "lng": -0.50737,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by Central Bedfordshire Council, for children up to 9.",
+  "nearby": [],
+  "operator": "Central Bedfordshire Council",
+  "sources": [
+    {
+      "label": "Central Bedfordshire Council: play areas",
+      "url": "https://www.centralbedfordshire.gov.uk/directory/play-areas/directory/chelsea-gardens"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (from the council's map), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

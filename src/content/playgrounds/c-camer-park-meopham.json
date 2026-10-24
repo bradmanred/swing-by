@@ -1,0 +1,27 @@
+{
+  "name": "Camer Park",
+  "region": "south-east",
+  "area": "Meopham",
+  "lat": 51.37879,
+  "lng": 0.37637,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "cf",
+    "wc"
+  ],
+  "opens": "",
+  "description": "A 45-acre park in the Kent Downs with a children's play area, picnic areas, toilets, a café and a car park.",
+  "nearby": [],
+  "operator": "Gravesham Borough Council",
+  "sources": [
+    {
+      "label": "Gravesham Borough Council: parks and play areas",
+      "url": "https://www.gravesham.gov.uk/outdoor-spaces/parks-play-areas"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (approximate, from the street or place name), age ranges, play equipment, opening hours and parking.",
+  "photo": null
+}

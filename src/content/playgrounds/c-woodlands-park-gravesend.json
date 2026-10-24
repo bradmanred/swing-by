@@ -1,0 +1,26 @@
+{
+  "name": "Woodlands Park",
+  "region": "south-east",
+  "area": "Gravesend",
+  "lat": 51.43194,
+  "lng": 0.36199,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A 15-acre park between Gravesend and Northfleet with a children's play area, outdoor gym, basketball court and a sensory garden. Dogs are not allowed in the play area, and the park is locked in the evening.",
+  "nearby": [],
+  "operator": "Gravesham Borough Council",
+  "sources": [
+    {
+      "label": "Gravesham Borough Council: parks and play areas",
+      "url": "https://www.gravesham.gov.uk/outdoor-spaces/parks-play-areas"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours and parking. The pin is the playground on OpenStreetMap (© OpenStreetMap contributors) at or nearest the place the council names.",
+  "photo": null
+}

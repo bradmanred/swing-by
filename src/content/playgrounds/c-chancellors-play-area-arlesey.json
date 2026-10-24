@@ -1,0 +1,28 @@
+{
+  "name": "Chancellors Play Area",
+  "region": "east",
+  "area": "Arlesey",
+  "lat": 52.02265,
+  "lng": -0.25801,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by Central Bedfordshire Council, for children up to 9.",
+  "nearby": [],
+  "operator": "Central Bedfordshire Council",
+  "sources": [
+    {
+      "label": "Central Bedfordshire Council: play areas",
+      "url": "https://www.centralbedfordshire.gov.uk/directory/play-areas/directory/chancellors"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (from the council's map), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

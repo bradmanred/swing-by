@@ -1,0 +1,29 @@
+{
+  "name": "Meadow Way Play Areas",
+  "region": "east",
+  "area": "Leighton Buzzard",
+  "lat": 51.91786,
+  "lng": -0.63482,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Two play areas run by Central Bedfordshire Council, for children in the enclosed area up to 6; in the open area up to 14.",
+  "nearby": [],
+  "operator": "Central Bedfordshire Council",
+  "sources": [
+    {
+      "label": "Central Bedfordshire Council: play areas",
+      "url": "https://www.centralbedfordshire.gov.uk/directory/play-areas/directory/meadow-way-two-play-areas"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (from the council's map), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

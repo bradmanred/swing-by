@@ -114,7 +114,10 @@ const areas = AREAS.filter((a) => !ONLY || a.name.toLowerCase() === ONLY.toLower
 if (!areas.length) throw new Error(`No county called ${ONLY}. Use one of: ${AREAS.map((a) => a.name).join(', ')}`);
 const results = [];
 for (const a of areas) {
-  const sel = a.iso ? `area["ISO3166-2"="${a.iso}"]` : `area["boundary"="ceremonial"]["name"~"^(County |City of )?${a.name}$"]`;
+  // Ceremonial county where OpenStreetMap has one, otherwise the county council's own boundary (as for Hertfordshire).
+  const sel = a.iso
+    ? `area["ISO3166-2"="${a.iso}"]`
+    : `(area["boundary"="ceremonial"]["name"~"^(County |City of )?${a.name}$"];area["boundary"="administrative"]["admin_level"="6"]["name"~"^(County |City of )?${a.name}$"];)`;
   console.log(`${a.name}…`);
   const els = await overpass(`[out:json][timeout:600][maxsize:1073741824];${sel}->.a;nwr[leisure=playground](area.a);out center tags;`);
   if (!els) {
