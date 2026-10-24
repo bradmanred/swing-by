@@ -1,0 +1,34 @@
+{
+  "name": "Branoc Hall Playpark",
+  "region": "devon",
+  "area": "Branscombe, East Devon",
+  "lat": 50.69290,
+  "lng": -3.13841,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fp"
+  ],
+  "opens": "",
+  "description": "A children's playpark by the playing field behind Branoc Hall, the village hall in the centre of Branscombe. The hall says the playing field is open to the public at all times; on summer cricket match days the team may ask for the field to be cleared. The hall's car park, behind the hall, is free to use, with donations welcome.",
+  "nearby": [],
+  "operator": "Branoc Hall",
+  "sources": [
+    {
+      "label": "Branoc Hall: facilities (playpark, playing field and car park)",
+      "url": "https://www.branochall.org.uk/facilities.html"
+    },
+    {
+      "label": "Branoc Hall: playing field",
+      "url": "https://www.branochall.org.uk/playing-field.html"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/1184170825"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours and toilets.",
+  "photo": null
+}
