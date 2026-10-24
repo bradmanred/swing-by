@@ -11,7 +11,7 @@ def get(u):
 cfg = json.load(open("tmp/councils.json"))
 for c in cfg:
     tag, seeds, pat, maxn = c["tag"], c["seeds"], re.compile(c["follow"]), c.get("max", 400)
-    d = f"tmp/crawl5/{tag}"; os.makedirs(d, exist_ok=True)
+    d = f"tmp/crawl6/{tag}"; os.makedirs(d, exist_ok=True)
     seen, queue, idx = set(), list(seeds), []
     while queue and len(seen) < maxn:
         u = queue.pop(0)

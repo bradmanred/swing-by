@@ -17,4 +17,4 @@ jobs:
       - run: python3 tmp/crawl3.py
       - run: |
           git config user.name swing-by-bot; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add tmp/crawl5; git commit -m "Council crawl M25" && git pull --rebase && git push
+          git add tmp/crawl6; git commit -m "Council crawl Beds Kent" && git pull --rebase && git push
