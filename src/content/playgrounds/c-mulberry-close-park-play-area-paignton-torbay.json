@@ -1,0 +1,30 @@
+{
+  "name": "Mulberry Close Park Play Area",
+  "region": "devon",
+  "area": "Paignton, Torbay",
+  "lat": 50.43837,
+  "lng": -3.58814,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Mulberry Close Park in Paignton, run by Torbay Council, has a children's playground with junior play.",
+  "nearby": [],
+  "operator": "Torbay Council",
+  "sources": [
+    {
+      "label": "Torbay Council: Mulberry Close Park",
+      "url": "https://www.torbay.gov.uk/leisure-sports-and-community/parks/find-a-park/mulberry-close-park/"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/174631469"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

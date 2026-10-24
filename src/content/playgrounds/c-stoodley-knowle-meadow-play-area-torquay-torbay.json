@@ -1,0 +1,31 @@
+{
+  "name": "Stoodley Knowle Meadow Play Area",
+  "region": "devon",
+  "area": "Torquay, Torbay",
+  "lat": 50.46848,
+  "lng": -3.5012,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "Stoodley Knowle Meadow in Torquay, run by Torbay Council, has a children's playground.",
+  "nearby": [],
+  "operator": "Torbay Council",
+  "sources": [
+    {
+      "label": "Torbay Council: Stoodley Knowle Meadow",
+      "url": "https://www.torbay.gov.uk/leisure-sports-and-community/parks/find-a-park/stoodley-knowle/"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/node/4678937875"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours and parking.",
+  "photo": null
+}
