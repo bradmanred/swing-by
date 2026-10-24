@@ -14,7 +14,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: git fetch -q origin main && git checkout origin/main -- src/content/playgrounds src/data/council-sources.json && node tmp/find-gaps.mjs --only Hertfordshire --add 1500 && mkdir -p tmp/herts && git status --porcelain -- src/content/playgrounds | awk '{print $2}' | xargs -I{} cp {} tmp/herts/ && cp reports/coverage.md tmp/herts-coverage.md
+      - run: |
+          git fetch -q origin main && git checkout origin/main -- src/content/playgrounds src/data/council-sources.json
+          ls src/content/playgrounds > /tmp/before.txt
+          node tmp/find-gaps.mjs --only Hertfordshire --add 1500
+          mkdir -p tmp/herts && ls src/content/playgrounds | comm -13 /tmp/before.txt - | xargs -I{} cp src/content/playgrounds/{} tmp/herts/
+          cp reports/coverage.md tmp/herts-coverage.md
       - run: |
           git config user.name swing-by-bot; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add tmp/herts tmp/herts-coverage.md; git commit -m "Herts gaps" && git pull --rebase && git push
