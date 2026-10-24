@@ -13,8 +13,16 @@ CREATE TABLE IF NOT EXISTS photos (
   uploader TEXT NOT NULL, -- one-way hash of IP address and date, only used to limit uploads
   report_count INTEGER NOT NULL DEFAULT 0,
   created_at TEXT NOT NULL DEFAULT (datetime('now')),
-  reviewed_at TEXT
+  reviewed_at TEXT,
+  source TEXT NOT NULL DEFAULT 'parent', -- parent | geograph | commons (see db/photos-sources.sql)
+  source_url TEXT,
+  licence TEXT,
+  author TEXT,
+  title TEXT,
+  distance_m INTEGER
 );
+CREATE UNIQUE INDEX IF NOT EXISTS photos_source_url ON photos (source_url) WHERE source_url IS NOT NULL;
+CREATE TABLE IF NOT EXISTS photo_searches (park TEXT PRIMARY KEY, searched_at TEXT NOT NULL DEFAULT (datetime('now')), found INTEGER NOT NULL DEFAULT 0);
 CREATE INDEX IF NOT EXISTS photos_park ON photos (park, status);
 CREATE INDEX IF NOT EXISTS photos_uploader ON photos (uploader, created_at);
 CREATE INDEX IF NOT EXISTS photos_status ON photos (status, created_at);

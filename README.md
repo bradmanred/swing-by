@@ -78,6 +78,16 @@ Parents can share a photo from any playground page. The page shrinks it to about
 
 To turn on moderation, add a secret called `MOD_TOKEN` to the Worker: Workers & Pages > swing-by > Settings > Variables and Secrets > Add > type Secret. Use a long random value and keep it private. Then open `/moderate/` on the site and enter it to check photos.
 
+After a parent ticks "We've been here" (or rates a playground), the page asks if they took a photo and takes them to the form.
+
+### Photos found on Geograph and Wikimedia Commons
+
+Every Monday, and whenever playgrounds change on main, the **Find playground photos** workflow (`.github/workflows/photos.yml`, `scripts/find-photos.mjs`) looks for openly licensed photos taken within 200 m of each playground that has no photo yet, on Geograph (CC BY-SA 2.0) and Wikimedia Commons (CC BY, CC BY-SA, CC0 or public domain). It only suggests photos whose title or description mentions play equipment, at most three waiting per playground, and up to 150 playgrounds a run (Geograph asks for on-demand use, not bulk downloads). Suggestions land in `/moderate/` with the title, photographer, licence, distance from the pin and a link to the source, and **nothing shows on the site until a moderator approves it**. Rejected suggestions are never suggested again. Approved photos carry their credit, linked to the source, on the playground page and a short credit on result cards.
+
+It needs two repository secrets (Settings > Secrets and variables > Actions): `MOD_TOKEN`, the same moderator key as the Worker, and `GEOGRAPH_KEY`, a free key from geograph.org.uk/get-api-key.php. Without `GEOGRAPH_KEY` it searches Wikimedia Commons only. Run it any time from the Actions tab (Find playground photos > Run workflow). On other branches it only does a dry run.
+
+The extra columns it uses are in `db/photos-sources.sql`.
+
 Uploads are limited to 5 an hour and 20 a day per connection. Photos are stored in D1 while R2 isn't enabled on the account; the free plan holds roughly 1,000 to 1,500 photos per database. Move them to R2 if uploads grow.
 
 ## Coming next

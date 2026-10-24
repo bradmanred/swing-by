@@ -49,7 +49,9 @@ export type CardPhoto = { url: string; credit: string | null };
 
 /** An approved parent photo if there is one, otherwise the illustration. */
 const picture = (p: ClientPark, photo?: CardPhoto) =>
-  photo ? `<img class="art" src="${esc(photo.url)}" alt="" loading="lazy" decoding="async" />` : art(p);
+  photo
+    ? `<figure class="card-photo"><img class="art" src="${esc(photo.url)}" alt="" loading="lazy" decoding="async" />${photo.credit ? `<figcaption>Photo: ${esc(photo.credit)}</figcaption>` : ''}</figure>`
+    : art(p);
 
 export function cardHTML(p: ClientPark, o: { dist?: number; num?: number; mine?: { v?: boolean; r?: number }; photo?: CardPhoto } = {}) {
   const chips = p.f
