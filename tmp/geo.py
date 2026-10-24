@@ -13,7 +13,7 @@ except Exception as e: pc = {}; print("pc", e)
 for x in q:
     o = {}
     if x.get("pc") in pc: o["pc"] = pc[x["pc"]]
-    vb = "&viewbox=-4.25,50.45,-3.95,50.30&bounded=1" if x["k"].startswith("p") else ""
+    vb = "&viewbox=-3.60,50.77,-3.40,50.66&bounded=1" if x["k"].startswith("e") else ""
     for qq in [x["q"], x["q"].replace(" playground", "").replace(" open space", "").replace(" Open Space", "")]:
         try:
             r = get("https://nominatim.openstreetmap.org/search?format=json&limit=3&countrycodes=gb&q=" + urllib.parse.quote(qq) + vb)
@@ -23,3 +23,4 @@ for x in q:
     out[x["k"]] = o; time.sleep(1.1)
 json.dump(out, open("tmp/geo-out.json", "w"), indent=0)
 print(sum(1 for v in out.values() if "n" in v), "of", len(q))
+# r2
