@@ -39,6 +39,11 @@ const names = Object.fromEntries((await allParks()).map((p) => [p.id, `${p.name}
     <p class="hint" style="margin-top:6px">Answers from the "What's here" form on playground pages. Only items two parents agree on show on the site. To make them permanent, add them to the playground's file. Clear a playground's answers if they look like mischief.</p>
     <ul id="eq-list" class="facts" style="margin-top:10px"></ul>
   </section>
+  <section class="panel" id="eq-other" hidden aria-labelledby="other-title" style="max-width:720px">
+    <h2 id="other-title" style="font-size:1.5rem">Things parents saw that aren't tick boxes yet</h2>
+    <p class="hint" style="margin-top:6px">What parents typed into "Something else?". Only moderators can see this. The weekly tick-box review turns things seen at several playgrounds into new tick boxes.</p>
+    <ol id="other-list" style="margin-top:10px;padding-left:22px;display:grid;gap:4px"></ol>
+  </section>
   <script type="application/json" id="park-labels" set:html={JSON.stringify({ ...L.equipment, ...L.access, ...L.facilities })} />
   <script type="application/json" id="park-names" set:html={JSON.stringify(names)} />
   <script>
@@ -149,6 +154,18 @@ const names = Object.fromEntries((await allParks()).map((p) => [p.id, `${p.name}
       document.getElementById('eq-reports')!.hidden = false;
     }
 
+    async function loadOther() {
+      const r = await fetch('/api/equipment/other', { headers: { Authorization: `Bearer ${key}` } }).catch(() => null);
+      if (!r?.ok) return;
+      const { other } = (await r.json()) as { other: { text: string; parents: number; parks: string[] }[] };
+      document.getElementById('other-list')!.innerHTML = other.length
+        ? other
+            .map((o) => `<li>${esc(o.text)}: ${o.parks.length} playground${o.parks.length === 1 ? '' : 's'}, ${o.parents} parent${o.parents === 1 ? '' : 's'} (${o.parks.slice(0, 5).map((p) => `<a href="/playgrounds/${esc(p)}/" target="_blank" rel="noopener">${esc(names[p] ?? p)}</a>`).join(', ')}${o.parks.length > 5 ? ', …' : ''})</li>`)
+            .join('')
+        : '<li>Nothing typed in yet.</li>';
+      document.getElementById('eq-other')!.hidden = false;
+    }
+
     keyForm.addEventListener('submit', (e) => {
       e.preventDefault();
       key = keyInput.value.trim();
@@ -158,11 +175,13 @@ const names = Object.fromEntries((await allParks()).map((p) => [p.id, `${p.name}
       load();
       loadSuggestions();
       loadEquipment();
+      loadOther();
     });
     if (key) {
       load();
       loadSuggestions();
       loadEquipment();
+      loadOther();
     }
   </script>
 </Base>

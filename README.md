@@ -96,6 +96,10 @@ Every playground page has a "What's here" form where parents tick the equipment 
 
 **One parent's answers are never shown on their own.** An item appears on the page, as "Parents confirm it also has", only once two different parents (different browsers and different connections) have ticked it. "There's a playground here" or "it's gone or private" needs two parents agreeing and more saying so than not. Toilets and baby change can't be ticked: they only come from official sources and the Toilet Map. Answers are stored in the photos database (table: `db/equipment.sql`), with a random browser id and a one-way hash of the connection, never a name. One connection can answer for up to 40 playgrounds a day.
 
+Under the tick boxes, **"Something else?"** lets parents type in things that aren't listed, such as a rocking horse (up to three, separated by commas). Anything that matches a tick box counts as that tick box. The rest is stored privately (table `equipment_other` in `db/equipment.sql`), never shown on playground pages, and listed for moderators at `/moderate/`. Clearing a playground's answers clears these too.
+
+Every Sunday the **Tick-box review** workflow (`.github/workflows/tick-box-review.yml`, `scripts/other-equipment.mjs`) counts what parents typed in, and how often common equipment is mentioned in playground descriptions, and posts the result to the "Weekly tick-box review" issue. Things seen at 3+ playgrounds by 3+ households, or mentioned in 25+ descriptions, are marked ⭐ as worth a new tick box. A new tick box needs a code and name in `src/data/labels.json`, an icon in `ICON` in `src/lib/parks.ts` and an option in `public/admin/config.yml`; the picker sorts itself by how often each item is used.
+
 Moderators see every playground with parent answers at `/moderate/`, can clear a playground's answers, and can copy confirmed items into the playground's file to make them part of the listing (and the search filters).
 
 ## Checking coverage

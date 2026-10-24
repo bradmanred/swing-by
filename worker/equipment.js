@@ -5,25 +5,62 @@
 // for "Is this a public playground?": it needs two parents agreeing, and more saying so than saying otherwise.
 //
 // Public:
-//   GET  /api/equipment?park=<id>    { confirmed: [codes], open: true | false | null, parents: n, mine: { items, open } }
-//   POST /api/equipment              JSON { park, items: [codes], open: true | false | null }
-//                                    Replaces this browser's answers for that playground. An empty list and a null
-//                                    "open" withdraws them.
+//   GET  /api/equipment?park=<id>    { confirmed: [codes], open: true | false | null, parents: n, mine: { items, open, other } }
+//   POST /api/equipment              JSON { park, items: [codes], open: true | false | null, other: "rocking horse, ..." }
+//                                    Replaces this browser's answers for that playground. An empty list, a null
+//                                    "open" and no "other" withdraws them.
+//
+// "Other" is what parents type in for things that aren't on the tick list. It's never shown publicly. Anything
+// that matches a tick-box name is counted as that tick box instead. The weekly tick-box review
+// (scripts/other-equipment.mjs) reads the totals and suggests new tick boxes for things many parents mention.
 // Moderators (Authorization: Bearer <MOD_TOKEN>):
 //   GET  /api/equipment/confirmed    every playground with parent-confirmed answers, to fold into the playground files
+//   GET  /api/equipment/other        what parents typed in, grouped: { other: [{ text, parents, parks, examples }] }
 //   POST /api/equipment/clear        JSON { park } removes every parent answer for one playground (for abuse)
-import labels from '../src/data/labels.json';
+import labels from '../src/data/labels.json' with { type: 'json' };
 import { isModerator } from './auth.js';
 
 // What parents can tick: the equipment, access and facility lists used across the site, except toilets and
 // baby change, which only come from official sources and the Toilet Map.
 export const ITEMS = new Set([...Object.keys(labels.equipment), ...Object.keys(labels.access), ...Object.keys(labels.facilities)].filter((k) => !['wc', 'bc'].includes(k)));
+// Tick-box names, lower case, so a typed "zip wire" or "Zip wires" counts as the tick box.
+const BY_NAME = new Map(
+  [...ITEMS].flatMap((k) => {
+    const n = norm(labels.equipment[k] ?? labels.access[k] ?? labels.facilities[k]);
+    return [[n, k], [n.replace(/ /g, ''), k]];
+  }),
+);
+const OTHER_MAX = 3; // typed-in things per parent per playground
+const OTHER_LEN = 40;
 const OPEN = 'open'; // stored like an item: present 1 = a public playground is here, 0 = there isn't
 const NEEDED = 2; // parents who must agree before an answer is shown
 const PARKS_PER_DAY = 40; // per connection, to stop one person filling in the whole map
 const PARK = /^[a-z0-9-]{1,80}$/;
 const COOKIE = 'sb_parent';
 const YEAR = 60 * 60 * 24 * 365;
+
+// Lower case, letters, numbers and spaces only, with a simple plural trimmed, so "Rocking horses!" and
+// "rocking horse" group together.
+export function norm(t) {
+  let s = String(t ?? '').toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9 ]+/g, ' ').replace(/\s+/g, ' ').trim();
+  if (/(?:sh|ch|x|ss)es$/.test(s)) s = s.slice(0, -2);
+  else if (/[a-z]{3}s$/.test(s) && !/(?:ss|us|is)$/.test(s)) s = s.slice(0, -1);
+  return s;
+}
+// Split what a parent typed into up to three tidy things. Returns { items: [tick-box codes], other: [texts] }.
+export function parseOther(raw) {
+  const items = [], other = [], seen = new Set();
+  for (const part of String(raw ?? '').split(/[,;\n/]+/)) {
+    const text = part.replace(/[^\p{L}\p{N} '&-]+/gu, ' ').replace(/\s+/g, ' ').replace(/^(?:an?|some|the)\s+/i, '').trim().slice(0, OTHER_LEN);
+    const key = norm(text);
+    if (key.length < 3 || !/[a-z]/.test(key) || seen.has(key)) continue;
+    seen.add(key);
+    const code = BY_NAME.get(key) ?? BY_NAME.get(key.replace(/ /g, ''));
+    if (code) items.push(code);
+    else if (other.length < OTHER_MAX) other.push(text);
+  }
+  return { items, other };
+}
 
 const json = (body, status = 200, headers = {}) =>
   new Response(JSON.stringify(body), { status, headers: { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store', ...headers } });
@@ -70,7 +107,8 @@ async function forPark(request, env, park) {
   const me = parentFrom(request);
   const mine = results.filter((r) => r.reporter === me);
   const openRow = mine.find((r) => r.item === OPEN);
-  return json({ ...summarise(results), mine: { items: mine.filter((r) => r.item !== OPEN).map((r) => r.item), open: openRow ? !!openRow.present : null } });
+  const other = me ? (await env.PHOTOS_DB.prepare('SELECT text FROM equipment_other WHERE park = ? AND reporter = ? ORDER BY id').bind(park, me).all()).results.map((r) => r.text) : [];
+  return json({ ...summarise(results), mine: { items: mine.filter((r) => r.item !== OPEN).map((r) => r.item), open: openRow ? !!openRow.present : null, other } });
 }
 
 async function submit(request, env) {
@@ -82,7 +120,8 @@ async function submit(request, env) {
     return json({ error: 'Send your answers as JSON.' }, 400);
   }
   const park = String(body.park || '');
-  const items = [...new Set((Array.isArray(body.items) ? body.items : []).map(String))].filter((k) => ITEMS.has(k));
+  const typed = parseOther(Array.isArray(body.other) ? body.other.join(', ') : body.other);
+  const items = [...new Set([...(Array.isArray(body.items) ? body.items : []).map(String), ...typed.items])].filter((k) => ITEMS.has(k));
   const open = body.open === true ? 1 : body.open === false ? 0 : null;
   if (!(await parkExists(request, env, park))) return json({ error: "We couldn't find that playground." }, 400);
 
@@ -104,9 +143,13 @@ async function submit(request, env) {
     ...rows.map(([item, present]) =>
       env.PHOTOS_DB.prepare('INSERT INTO equipment_reports (park, reporter, conn, item, present) VALUES (?, ?, ?, ?, ?)').bind(park, parent, conn, item, present),
     ),
+    env.PHOTOS_DB.prepare('DELETE FROM equipment_other WHERE park = ? AND reporter = ?').bind(park, parent),
+    ...typed.other.map((text) =>
+      env.PHOTOS_DB.prepare('INSERT OR IGNORE INTO equipment_other (park, reporter, conn, text, norm) VALUES (?, ?, ?, ?, ?)').bind(park, parent, conn, text, norm(text)),
+    ),
   ]);
   const { results } = await env.PHOTOS_DB.prepare('SELECT reporter, conn, item, present FROM equipment_reports WHERE park = ?').bind(park).all();
-  return json({ ...summarise(results), mine: { items, open: open == null ? null : !!open }, saved: rows.length }, 200, headers);
+  return json({ ...summarise(results), mine: { items, open: open == null ? null : !!open, other: typed.other }, saved: rows.length + typed.other.length }, 200, headers);
 }
 
 async function confirmedIndex(env) {
@@ -117,6 +160,29 @@ async function confirmedIndex(env) {
   return json({ parks });
 }
 
+// Everything parents have typed in, grouped by what they mean, most widely seen first. Counts each household
+// once, like the tick boxes.
+async function otherIndex(env) {
+  const { results } = await env.PHOTOS_DB.prepare('SELECT park, reporter, conn, text, norm FROM equipment_other').all();
+  const groups = new Map();
+  for (const r of results) {
+    const g = groups.get(r.norm) ?? { texts: new Map(), reporters: new Set(), conns: new Set(), parks: new Set() };
+    g.texts.set(r.text, (g.texts.get(r.text) ?? 0) + 1);
+    g.reporters.add(r.reporter);
+    g.conns.add(r.conn);
+    g.parks.add(r.park);
+    groups.set(r.norm, g);
+  }
+  const other = [...groups].map(([key, g]) => ({
+    key,
+    text: [...g.texts].sort((a, b) => b[1] - a[1])[0][0],
+    parents: Math.min(g.reporters.size, g.conns.size),
+    parks: [...g.parks].sort(),
+  }));
+  other.sort((a, b) => b.parks.length - a.parks.length || b.parents - a.parents || a.key.localeCompare(b.key));
+  return json({ other });
+}
+
 export async function equipment({ request, env, pathname }) {
   if (!env.PHOTOS_DB) return json({ error: 'This is not set up yet.' }, 503);
   const m = request.method;
@@ -125,13 +191,17 @@ export async function equipment({ request, env, pathname }) {
     if (m === 'POST') return submit(request, env);
     return json({ error: 'Use GET or POST.' }, 405, { Allow: 'GET, POST' });
   }
-  if (pathname === '/api/equipment/confirmed' || pathname === '/api/equipment/clear') {
+  if (pathname === '/api/equipment/confirmed' || pathname === '/api/equipment/clear' || pathname === '/api/equipment/other') {
     if (!env.MOD_TOKEN || !isModerator(request, env)) return json({ error: 'Wrong moderator key.' }, 401);
     if (pathname === '/api/equipment/confirmed' && m === 'GET') return confirmedIndex(env);
+    if (pathname === '/api/equipment/other' && m === 'GET') return otherIndex(env);
     if (pathname === '/api/equipment/clear' && m === 'POST') {
       const park = String((await request.json().catch(() => ({}))).park || '');
       if (!PARK.test(park)) return json({ error: 'Which playground?' }, 400);
-      await env.PHOTOS_DB.prepare('DELETE FROM equipment_reports WHERE park = ?').bind(park).run();
+      await env.PHOTOS_DB.batch([
+        env.PHOTOS_DB.prepare('DELETE FROM equipment_reports WHERE park = ?').bind(park),
+        env.PHOTOS_DB.prepare('DELETE FROM equipment_other WHERE park = ?').bind(park),
+      ]);
       return json({ cleared: park });
     }
   }

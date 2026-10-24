@@ -205,6 +205,11 @@ const dirs = `https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.ln
                   <label class="chk"><input type="checkbox" name="item" value={k} /> <span aria-hidden="true">{ICON[k]}</span> {v}{official.has(k) && <span class="sr-only"> (already listed)</span>}</label>
                 ))}
               </div>
+              <div class="peq-other">
+                <label for="peq-other">Something else? <span class="hint">(optional)</span></label>
+                <input id="peq-other" name="other" type="text" maxlength="130" autocomplete="off" aria-describedby="peq-other-hint" placeholder="For example, a rocking horse" />
+                <p class="hint" id="peq-other-hint">Anything we haven't listed. Separate more than one with commas. We use these to add new tick boxes; they aren't shown on the page.</p>
+              </div>
             </fieldset>
             <button class="btn btn-blue" type="submit" style="justify-self:start">Send what I saw</button>
             <p class="hint" id="peq-msg" role="status">We don't ask who you are. One parent's answers stay hidden until a second parent agrees.</p>

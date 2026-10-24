@@ -13,3 +13,19 @@ CREATE TABLE IF NOT EXISTS equipment_reports (
 );
 CREATE INDEX IF NOT EXISTS equipment_reports_park ON equipment_reports (park);
 CREATE INDEX IF NOT EXISTS equipment_reports_conn ON equipment_reports (conn, created_at);
+
+-- Things parents typed into "Something else?" because they weren't on the tick list. Never shown publicly; the
+-- weekly tick-box review (scripts/other-equipment.mjs) uses the totals to suggest new tick boxes.
+-- Added 24 October 2026 and already run on both databases.
+CREATE TABLE IF NOT EXISTS equipment_other (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  park TEXT NOT NULL,
+  reporter TEXT NOT NULL,    -- same sb_parent id as equipment_reports
+  conn TEXT NOT NULL,        -- same connection hash as equipment_reports
+  text TEXT NOT NULL,        -- what they typed, tidied, up to 40 characters
+  norm TEXT NOT NULL,        -- lower-case grouping key, so "Rocking horses" and "rocking horse" count together
+  created_at TEXT NOT NULL DEFAULT (datetime('now')),
+  UNIQUE (park, reporter, norm)
+);
+CREATE INDEX IF NOT EXISTS equipment_other_park ON equipment_other (park, reporter);
+CREATE INDEX IF NOT EXISTS equipment_other_norm ON equipment_other (norm);

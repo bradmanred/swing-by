@@ -1,0 +1,38 @@
+# Weekly tick-box review for the "What did you see?" picker on playground pages. Reads what parents typed into
+# "Something else?" and how often common equipment comes up in playground descriptions, then posts the report as a
+# comment on the "Weekly tick-box review" issue (opening it the first time). The weekly scheduled Claude task reads
+# that issue and adds new tick boxes when something comes up often enough.
+# Needs the MOD_TOKEN repository secret (the same moderator key as the Worker). Runs every Sunday and on demand.
+name: Tick-box review
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '41 5 * * 0'
+permissions:
+  contents: read
+  issues: write
+jobs:
+  review:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Build the report
+        env:
+          SITE: https://swing-by.co.uk
+          MOD_TOKEN: ${{ secrets.MOD_TOKEN }}
+        run: node scripts/other-equipment.mjs --out report.md
+      - name: Post it to the review issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          title="Weekly tick-box review"
+          n=$(gh issue list --state open --search "\"$title\" in:title" --json number,title --jq ".[] | select(.title == \"$title\") | .number" | head -1)
+          if [ -z "$n" ]; then
+            gh issue create --title "$title" --body "Each week the tick-box review posts what parents typed into \"Something else?\" on playground pages, and how often common equipment comes up in playground descriptions. Things marked ⭐ are worth adding as tick boxes. See scripts/other-equipment.mjs."
+            n=$(gh issue list --state open --search "\"$title\" in:title" --json number,title --jq ".[] | select(.title == \"$title\") | .number" | head -1)
+          fi
+          gh issue comment "$n" --body-file report.md
