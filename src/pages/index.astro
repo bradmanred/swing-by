@@ -19,12 +19,21 @@ const loves = [
   ['sl', '🛝', 'Slides'],
   ['wp', '💦', 'Splash play'],
   ['cl', '🧗', 'Climbing'],
+  ['rb', '🎠', 'Roundabouts'],
   ['zw', '🚡', 'Zip wire'],
   ['tp', '🤸', 'Trampolines'],
   ['ss', '⚖️', 'See-saws'],
   ['mb', '🐒', 'Monkey bars'],
+  ['sp', '🏖️', 'Sandpit'],
+  ['ad', '🏴‍☠️', 'Adventure play'],
+  ['sk', '🛹', 'Skate park'],
   ['inc', '♿', 'Inclusive equipment'],
+  ['sf', '♿', 'Step-free access'],
+  ['fen', '🚧', 'Fully fenced'],
   ['wc', '🚻', 'Toilets'],
+  ['bc', '🍼', 'Baby change'],
+  ['cf', '☕', 'Café'],
+  ['fp', '🅿️', 'Free parking'],
 ].filter(([k]) => data.some((p) => p.f.includes(k))); // a filter only shows once a playground has it
 const sizes = (['small', 'medium', 'large'] as const).map((k) => ({ k, label: k[0].toUpperCase() + k.slice(1), n: data.filter((p) => p.s === k).length }));
 const paidCount = data.filter((p) => p.pay).length;
