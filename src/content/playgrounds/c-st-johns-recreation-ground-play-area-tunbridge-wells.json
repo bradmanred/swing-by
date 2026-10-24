@@ -1,0 +1,23 @@
+{
+  "name": "St Johns Recreation Ground Play Area",
+  "region": "south-east",
+  "area": "Tunbridge Wells",
+  "lat": 51.14375,
+  "lng": 0.25632,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area at St Johns Recreation Ground, Beltring Road, Tunbridge Wells, listed in Tunbridge Wells Borough Council's open data on play areas in the borough.",
+  "nearby": [],
+  "sources": [
+    {
+      "label": "Tunbridge Wells Borough Council open data: play areas",
+      "url": "https://www.data.gov.uk/dataset/cb5c2a87-b84d-4f40-9fa9-8500a39f73a2/twbc-open-data-play-areas11"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (from the council's map), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
