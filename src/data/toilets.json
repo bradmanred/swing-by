@@ -5,9 +5,9 @@
   "licence": "CC BY 4.0",
   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
   "note": "Nearest toilets worked out by Swing By from the Toilet Map data.",
-  "export": "toilets-2026-10-23T00%3A00%3A40.888Z-yGgV0HGfAlntqRAaPH89qneav3oazo.csv"
+  "export": "toilets-2026-10-24T00%3A00%3A40.980Z-4xys7qA1TNuZaCBuSujgVlxDjNqmoB.csv"
  },
- "toilets": 15824,
+ "toilets": 15826,
  "parks": {
   "aldenham": {
    "nearest": {
@@ -211,6 +211,18 @@
     "lng": -0.282694101
    }
   },
+  "c-acacia-walk-play-area-knottingley": {
+   "nearest": {
+    "id": "ee31757e29cfef602f11ac4f",
+    "name": "Ferrybridge Services",
+    "m": 803,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 53.6974113,
+    "lng": -1.2666329
+   }
+  },
   "c-acorn-avenue-play-area-braintree": {
    "nearest": {
     "id": "0e34273c690853d6b77df967",
@@ -321,6 +333,28 @@
     "free": true,
     "lat": 51.73638236,
     "lng": 0.468580339
+   }
+  },
+  "c-agbrigg-park-play-area-agbrigg-wakefield": {
+   "nearest": {
+    "id": "916312d7e2c0b7ff4361b273",
+    "name": "petrol station",
+    "m": 825,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 53.672912598,
+    "lng": -1.484244227
+   },
+   "nearestBabyChange": {
+    "id": "7ec98cd2e3e7e3a6b3f039b9",
+    "name": "Hepworth Wakefield gallery",
+    "m": 1341,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 53.675949018,
+    "lng": -1.491115093
    }
   },
   "c-agnes-riley-gardens-playground-clapham-park": {
@@ -493,6 +527,9 @@
     "lng": 0.9045013
    }
   },
+  "c-alexandra-park-play-area-aston": {
+   "nearest": null
+  },
   "c-alexandra-park-play-area-manchester": {
    "nearest": {
     "id": "038a95fd95d38b398ab7634f",
@@ -639,6 +676,18 @@
     "lng": 0.468580339
    }
   },
+  "c-anglers-country-park-wintersett-wakefield": {
+   "nearest": {
+    "id": "97659737c25075ccde1f2281",
+    "name": "Public toilet",
+    "m": 740,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 53.6337303,
+    "lng": -1.4335414
+   }
+  },
   "c-anglesey-abbey-gardens-and-lode-mill-woodland-play-area": {
    "nearest": {
     "id": "ed7326cd9aef3690b5ba5449",
@@ -683,6 +732,18 @@
     "free": true,
     "lat": 53.462357444,
     "lng": -2.17214942
+   }
+  },
+  "c-anston-parish-hall-play-area-north-anston": {
+   "nearest": {
+    "id": "7c9e68d0a7f5b1e2181adbdd",
+    "name": "Burger King, Worksop",
+    "m": 2289,
+    "babyChange": false,
+    "accessible": false,
+    "free": false,
+    "lat": 53.370230176,
+    "lng": -1.202099025
    }
   },
   "c-appleby-street-play-area-cheshunt": {
@@ -766,6 +827,28 @@
     "free": true,
     "lat": 51.14733324,
     "lng": -3.98765564
+   }
+  },
+  "c-armley-park-armley-leeds": {
+   "nearest": {
+    "id": "965f5246bc9163bd14c9fa47",
+    "name": "Public toilet",
+    "m": 238,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 53.7972897,
+    "lng": -1.590855
+   },
+   "nearestBabyChange": {
+    "id": "6d77adc61fce80e2d62e6cd8",
+    "name": "Aldi",
+    "m": 861,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 53.793550274,
+    "lng": -1.601935923
    }
   },
   "c-arthur-street-play-area-castle-gresley": {
@@ -1127,6 +1210,18 @@
     "lng": -3.24432539
    }
   },
+  "c-baker-lane-play-area-stanley-wakefield": {
+   "nearest": {
+    "id": "76e92bafe01a172be4cbd455",
+    "name": "Fieldhead Hospital Volunteer Lounge",
+    "m": 2037,
+    "babyChange": false,
+    "accessible": true,
+    "free": true,
+    "lat": 53.69745445,
+    "lng": -1.490790546
+   }
+  },
   "c-bakewell-recreation-ground-splash-pad-bakewell": {
    "nearest": {
     "id": "de58103428c6b5965b0ea650",
@@ -1297,6 +1392,28 @@
     "lng": -1.965699792
    }
   },
+  "c-banstead-park-harehills-leeds": {
+   "nearest": {
+    "id": "d9b80d25faa7a65fc33ddc9e",
+    "name": "Lidl",
+    "m": 1813,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 53.813632127,
+    "lng": -1.494500041
+   },
+   "nearestBabyChange": {
+    "id": "912ef8041d7dc37da7a888c2",
+    "name": "Leeds Playhouse",
+    "m": 1876,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 53.797191002,
+    "lng": -1.534180641
+   }
+  },
   "c-barbour-gardens-playground-colchester": {
    "nearest": {
     "id": "ba3ed8787e4998e4dec0d59b",
@@ -1447,6 +1564,18 @@
     "lng": 0.1124114
    }
   },
+  "c-barnsley-road-playground-thorpe-hesley": {
+   "nearest": {
+    "id": "837b74a03038aec9b61f7b8c",
+    "name": "Chapel town Park Toilets",
+    "m": 1834,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 53.4609435,
+    "lng": -1.4642393
+   }
+  },
   "c-barnstable-drive-play-area-manchester": {
    "nearest": {
     "id": "0d0660b899ab0c80af30580b",
@@ -1481,6 +1610,18 @@
     "free": true,
     "lat": 51.8708033,
     "lng": 0.1587879
+   }
+  },
+  "c-barrie-grove-playground-hellaby": {
+   "nearest": {
+    "id": "442306232c5d085e95ade998",
+    "name": "Subway",
+    "m": 2691,
+    "babyChange": null,
+    "accessible": true,
+    "free": false,
+    "lat": 53.421380815,
+    "lng": -1.282948852
    }
   },
   "c-barton-close-play-area-south-woodham-ferrers": {
@@ -2034,6 +2175,28 @@
     "lng": -2.160457796
    }
   },
+  "c-bierlow-park-play-area-brampton": {
+   "nearest": {
+    "id": "addba42dd923de3ba87ddbc5",
+    "name": "Costa coffee toilets",
+    "m": 958,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 53.508614497,
+    "lng": -1.386680603
+   },
+   "nearestBabyChange": {
+    "id": "6fb8eeca0709daecb868d40d",
+    "name": "Asda living Toilet",
+    "m": 1021,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 53.507568478,
+    "lng": -1.386358738
+   }
+  },
   "c-billet-recreation-ground-play-area-stanford-le-hope": {
    "nearest": {
     "id": "b1e5f0d1ab669f76fac67a43",
@@ -2585,6 +2748,18 @@
     "free": true,
     "lat": 51.805979885,
     "lng": 0.639143614
+   }
+  },
+  "c-bramley-park-bramley-leeds": {
+   "nearest": {
+    "id": "90646c5eb19dc2b0ac71f618",
+    "name": "Tesco",
+    "m": 519,
+    "babyChange": null,
+    "accessible": true,
+    "free": false,
+    "lat": 53.811326323,
+    "lng": -1.625933647
    }
   },
   "c-brannets-wood-play-area-south-ockendon": {
@@ -3245,6 +3420,18 @@
     "free": true,
     "lat": 51.6795478,
     "lng": -0.390591649
+   }
+  },
+  "c-calverley-victoria-park-calverley-pudsey": {
+   "nearest": {
+    "id": "e4e6003e2e1f203e4f6d576e",
+    "name": "Sainsburys",
+    "m": 1332,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 53.829889509,
+    "lng": -1.711836755
    }
   },
   "c-camellia-court-playground-colchester": {
@@ -4531,6 +4718,18 @@
     "lng": -1.464298368
    }
   },
+  "c-clifton-park-play-area-rotherham": {
+   "nearest": {
+    "id": "0a3f80897afde13bc02fa2de",
+    "name": "Tesco Extra Rotherham",
+    "m": 708,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 53.433975909,
+    "lng": -1.353335381
+   }
+  },
   "c-cliveden-play-area": {
    "nearest": {
     "id": "0a420bdb085c015167d0a762",
@@ -4736,6 +4935,18 @@
     "lng": 0.468580339
    }
   },
+  "c-coppers-lake-park-play-area-crofton-wakefield": {
+   "nearest": {
+    "id": "5ad18993d76cd97ce58b64aa",
+    "name": "Public toilet",
+    "m": 2577,
+    "babyChange": null,
+    "accessible": false,
+    "free": false,
+    "lat": 53.6524027,
+    "lng": -1.390275
+   }
+  },
   "c-copse-hill-playground-harlow": {
    "nearest": {
     "id": "65097209de32cbb124acedc7",
@@ -4757,6 +4968,9 @@
     "lat": 51.7568451,
     "lng": 0.1124114
    }
+  },
+  "c-coral-drive-playground-aughton": {
+   "nearest": null
   },
   "c-cornelius-vale-play-area-chelmsford": {
    "nearest": {
@@ -5921,6 +6135,18 @@
     "lng": -0.078610182
    }
   },
+  "c-dunderdale-recreation-ground-play-area-castleford": {
+   "nearest": {
+    "id": "306bf7120c212ef903b35b96",
+    "name": "Carlton Lanes Shopping Centre",
+    "m": 2670,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 53.726196492,
+    "lng": -1.349979937
+   }
+  },
   "c-dunham-massey-play-area": {
    "nearest": {
     "id": "057983315cedff29f6c10903",
@@ -6486,6 +6712,28 @@
   "c-erle-harvard-playground-west-bergholt": {
    "nearest": null
   },
+  "c-erskine-road-playground-eastwood": {
+   "nearest": {
+    "id": "b10528b432ca4de4ccb121f7",
+    "name": "McDonald’s",
+    "m": 411,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 53.442212317,
+    "lng": -1.348877549
+   },
+   "nearestBabyChange": {
+    "id": "0a3f80897afde13bc02fa2de",
+    "name": "Tesco Extra Rotherham",
+    "m": 571,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 53.433975909,
+    "lng": -1.353335381
+   }
+  },
   "c-estcourt-road-playground-watford": {
    "nearest": {
     "id": "845359b04828ca5f399edb61",
@@ -6520,6 +6768,18 @@
     "lng": -1.558465362
    }
   },
+  "c-falconer-lane-playground-fence": {
+   "nearest": {
+    "id": "93517b272900aaca9ce3b927",
+    "name": "Public toilet",
+    "m": 2598,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 53.3592223,
+    "lng": -1.3783803
+   }
+  },
   "c-farm-close-play-area-welwyn-garden-city": {
    "nearest": {
     "id": "3ab1cd7da9401d2e5865ca50",
@@ -6530,6 +6790,18 @@
     "free": true,
     "lat": 51.801222848,
     "lng": -0.204435825
+   }
+  },
+  "c-farnley-hall-park-farnley-leeds": {
+   "nearest": {
+    "id": "6fecae4f0267b182008db2dd",
+    "name": "Matalan",
+    "m": 1738,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 53.783283798,
+    "lng": -1.600772012
    }
   },
   "c-farrier-court-play-area-royston": {
@@ -6705,6 +6977,28 @@
     "lng": -1.290643264
    }
   },
+  "c-ferrybridge-play-area-ferrybridge-knottingley": {
+   "nearest": {
+    "id": "ee31757e29cfef602f11ac4f",
+    "name": "Ferrybridge Services",
+    "m": 1754,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 53.6974113,
+    "lng": -1.2666329
+   },
+   "nearestBabyChange": {
+    "id": "c316ee7ba44e74f19f8f4a2f",
+    "name": "Pontefract Castle",
+    "m": 2761,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 53.695230427,
+    "lng": -1.303698421
+   }
+  },
   "c-fiddlers-folly-playground-eight-ash-green": {
    "nearest": {
     "id": "e1d50ee6428c4531e4a10c1f",
@@ -6834,6 +7128,18 @@
     "free": false,
     "lat": 51.722711676,
     "lng": -0.531340241
+   }
+  },
+  "c-fleming-way-playground-flanderwell": {
+   "nearest": {
+    "id": "442306232c5d085e95ade998",
+    "name": "Subway",
+    "m": 716,
+    "babyChange": null,
+    "accessible": true,
+    "free": false,
+    "lat": 53.421380815,
+    "lng": -1.282948852
    }
   },
   "c-florence-court-play-area": {
@@ -7324,6 +7630,9 @@
     "lng": 0.287236652
    }
   },
+  "c-gildingwells-road-playground-woodsetts": {
+   "nearest": null
+  },
   "c-gladiator-way-playground-colchester": {
    "nearest": {
     "id": "ba3ed8787e4998e4dec0d59b",
@@ -7510,6 +7819,9 @@
     "lng": -0.390591649
    }
   },
+  "c-goosecarr-lane-playground-todwick": {
+   "nearest": null
+  },
   "c-gordon-castle-walled-garden-play-area": {
    "nearest": {
     "id": "3ef732ef23fce6c0e04936ce",
@@ -7588,6 +7900,18 @@
     "free": true,
     "lat": 53.462357444,
     "lng": -2.17214942
+   }
+  },
+  "c-gorton-street-play-area-kinsley-pontefract": {
+   "nearest": {
+    "id": "afa98ca412dbaa8a0753856b",
+    "name": "Tesco Hemsworth",
+    "m": 1738,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 53.612891782,
+    "lng": -1.352457311
    }
   },
   "c-gosse-close-play-area-hoddesdon": {
@@ -7748,6 +8072,28 @@
     "free": false,
     "lat": 51.477258501,
     "lng": 0.324241519
+   }
+  },
+  "c-greasbrough-park-play-area-greasbrough": {
+   "nearest": {
+    "id": "f225408b3abca88d5e76e0cb",
+    "name": "Burger King",
+    "m": 1651,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 53.443745976,
+    "lng": -1.348303556
+   },
+   "nearestBabyChange": {
+    "id": "e5826b986b3af240525c1c8b",
+    "name": "Asda living",
+    "m": 1761,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 53.445346808,
+    "lng": -1.344757676
    }
   },
   "c-great-ashby-woodland-and-district-park-p": {
@@ -8156,6 +8502,18 @@
     "free": true,
     "lat": 53.0120116,
     "lng": -1.3489445
+   }
+  },
+  "c-hangsman-lane-playground-laughton-common": {
+   "nearest": {
+    "id": "7c9e68d0a7f5b1e2181adbdd",
+    "name": "Burger King, Worksop",
+    "m": 2207,
+    "babyChange": false,
+    "accessible": false,
+    "free": false,
+    "lat": 53.370230176,
+    "lng": -1.202099025
    }
   },
   "c-harcourt-close-play-area-hasland": {
@@ -9315,6 +9673,28 @@
     "lng": -1.424033046
    }
   },
+  "c-hollowgate-playground-rotherham": {
+   "nearest": {
+    "id": "57a8213ec82a7f6e1269e8d5",
+    "name": "Rotherham Minster Public Toilet",
+    "m": 525,
+    "babyChange": null,
+    "accessible": false,
+    "free": false,
+    "lat": 53.431228991,
+    "lng": -1.356425285
+   },
+   "nearestBabyChange": {
+    "id": "016ffc3d5eaf82a88643bac6",
+    "name": "Rotherham Library/ Riverside House",
+    "m": 610,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 53.429052424,
+    "lng": -1.360813379
+   }
+  },
   "c-hollyhedge-park-play-area-manchester": {
    "nearest": {
     "id": "7a25e6b0d5a45d20df3b6f01",
@@ -9601,6 +9981,18 @@
     "free": true,
     "lat": 53.22943964,
     "lng": -1.293083091
+   }
+  },
+  "c-horsforth-hall-park-horsforth-leeds": {
+   "nearest": {
+    "id": "93086dbd0971df402fdb334e",
+    "name": "Horsforth smile clinic",
+    "m": 118,
+    "babyChange": null,
+    "accessible": true,
+    "free": null,
+    "lat": 53.836680022,
+    "lng": -1.642236114
    }
   },
   "c-houfton-road-recreation-ground-bolsover": {
@@ -10235,6 +10627,18 @@
     "free": true,
     "lat": 51.2591109,
     "lng": -0.3742269
+   }
+  },
+  "c-kettlethorpe-park-play-area-kettlethorpe-wakefield": {
+   "nearest": {
+    "id": "e586bba3e691e6189e41b96a",
+    "name": "Public toilet",
+    "m": 1078,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 53.6381205,
+    "lng": -1.4977764
    }
   },
   "c-kier-hardie-house-play-area-little-thurrock": {
@@ -11917,6 +12321,18 @@
     "lng": 1.2493676
    }
   },
+  "c-magna-lane-playground-dalton": {
+   "nearest": {
+    "id": "82b903ee16f55a213cd1bc9a",
+    "name": "Morrisons",
+    "m": 2261,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 53.445868555,
+    "lng": -1.343612143
+   }
+  },
   "c-main-road-play-area-winsick": {
    "nearest": {
     "id": "4bba619d7cf958c8862e4bad",
@@ -12324,6 +12740,28 @@
     "free": true,
     "lat": 51.911729291,
     "lng": -0.207903385
+   }
+  },
+  "c-meanwood-park-meanwood-leeds": {
+   "nearest": {
+    "id": "c9a9b54a57059c4c717a97ae",
+    "name": "Public toilet",
+    "m": 195,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 53.83200126,
+    "lng": -1.57258542
+   },
+   "nearestBabyChange": {
+    "id": "cd1e8bf175c8be49a0868c76",
+    "name": "Three Cottages Cafe Meanwood Park",
+    "m": 236,
+    "babyChange": true,
+    "accessible": null,
+    "free": true,
+    "lat": 53.831592875,
+    "lng": -1.57389611
    }
   },
   "c-medlock-play-area-manchester": {
@@ -14235,6 +14673,28 @@
     "lng": -0.38760066
    }
   },
+  "c-packman-road-playground-brampton": {
+   "nearest": {
+    "id": "875b3e33a70a61d5a1b32462",
+    "name": "KFC Barnsley",
+    "m": 1122,
+    "babyChange": false,
+    "accessible": false,
+    "free": false,
+    "lat": 53.5105097,
+    "lng": -1.358267963
+   },
+   "nearestBabyChange": {
+    "id": "6fb8eeca0709daecb868d40d",
+    "name": "Asda living Toilet",
+    "m": 1268,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 53.507568478,
+    "lng": -1.386358738
+   }
+  },
   "c-painswick-park-play-area-manchester": {
    "nearest": {
     "id": "c64ff527317b6e9e27c4221e",
@@ -14859,6 +15319,18 @@
     "lng": -0.65816313
    }
   },
+  "c-pontefract-park-pontefract": {
+   "nearest": {
+    "id": "26baef1152bd3cd78497c471",
+    "name": "McDonald's",
+    "m": 157,
+    "babyChange": true,
+    "accessible": null,
+    "free": true,
+    "lat": 53.696900558,
+    "lng": -1.321046948
+   }
+  },
   "c-poolsbrook-1-cottage-close": {
    "nearest": {
     "id": "3bdc8507636a76f8e198f505",
@@ -14995,6 +15467,28 @@
     "lng": -0.564975142
    }
   },
+  "c-potternewton-park-chapel-allerton-leeds": {
+   "nearest": {
+    "id": "d9b80d25faa7a65fc33ddc9e",
+    "name": "Lidl",
+    "m": 2175,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 53.813632127,
+    "lng": -1.494500041
+   },
+   "nearestBabyChange": {
+    "id": "0658f648b534546676f248f4",
+    "name": "Tropical World, Roundhay",
+    "m": 2391,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 53.840285671,
+    "lng": -1.505098048
+   }
+  },
   "c-potters-close-play-area-chelmsford": {
    "nearest": {
     "id": "c0917b5664ac5ab8c3b3a6ff",
@@ -15018,6 +15512,9 @@
     "lat": 51.755479492,
     "lng": -0.01375705
    }
+  },
+  "c-poynton-avenue-playground-ulley": {
+   "nearest": null
   },
   "c-presdales-drive-play-area-ware": {
    "nearest": {
@@ -15143,6 +15640,18 @@
     "free": true,
     "lat": 51.989459,
     "lng": -0.1887498
+   }
+  },
+  "c-pugneys-country-park-wakefield": {
+   "nearest": {
+    "id": "95b489d9740aa5b0cbe9224c",
+    "name": "Pugney's Country Park",
+    "m": 178,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 53.657388072,
+    "lng": -1.510723692
    }
   },
   "c-purfleet-garrison-river-court-play-area-west-thurrock": {
@@ -15989,6 +16498,18 @@
     "lng": -0.041240417
    }
   },
+  "c-rosehill-park-play-area-rawmarsh": {
+   "nearest": {
+    "id": "82b903ee16f55a213cd1bc9a",
+    "name": "Morrisons",
+    "m": 2637,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 53.445868555,
+    "lng": -1.343612143
+   }
+  },
   "c-rosehill-play-area-hitchin": {
    "nearest": {
     "id": "f6064161f81946e03c0314c6",
@@ -16021,6 +16542,18 @@
     "free": true,
     "lat": 51.73638236,
     "lng": 0.468580339
+   }
+  },
+  "c-rosemary-road-playground-wickersley": {
+   "nearest": {
+    "id": "0fc690ffdbc3180cbefe7d36",
+    "name": "Tanyard Shopping Centre",
+    "m": 501,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 53.421043553,
+    "lng": -1.284611821
    }
   },
   "c-rosliston-forestry-centre-play-area-rosliston": {
@@ -16056,6 +16589,31 @@
     "lat": 51.814855488,
     "lng": -0.355511053
    }
+  },
+  "c-rotherham-adventure-playground-eastwood-rotherham": {
+   "nearest": {
+    "id": "b10528b432ca4de4ccb121f7",
+    "name": "McDonald’s",
+    "m": 402,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 53.442212317,
+    "lng": -1.348877549
+   },
+   "nearestBabyChange": {
+    "id": "0a3f80897afde13bc02fa2de",
+    "name": "Tesco Extra Rotherham",
+    "m": 569,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 53.433975909,
+    "lng": -1.353335381
+   }
+  },
+  "c-rotherham-road-playground-maltby": {
+   "nearest": null
   },
   "c-roundwood-lane-play-area-harpenden": {
    "nearest": {
@@ -16924,6 +17482,18 @@
     "lng": -0.469912291
    }
   },
+  "c-skipton-road-playground-swallownest": {
+   "nearest": {
+    "id": "b565ff57e564884bf77c60a5",
+    "name": "Rother Valley Public Toilets",
+    "m": 2403,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 53.339880112,
+    "lng": -1.320269108
+   }
+  },
   "c-slade-gardens-playground-stockwell": {
    "nearest": {
     "id": "307e25c5c9fc2e94e320d509",
@@ -17007,6 +17577,18 @@
   },
   "c-sonters-down-play-area-south-woodham-ferrers": {
    "nearest": null
+  },
+  "c-sorby-way-playground-wickersley": {
+   "nearest": {
+    "id": "0fc690ffdbc3180cbefe7d36",
+    "name": "Tanyard Shopping Centre",
+    "m": 602,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 53.421043553,
+    "lng": -1.284611821
+   }
   },
   "c-sough-road-play-area-south-normanton": {
    "nearest": {
@@ -17312,6 +17894,18 @@
     "free": true,
     "lat": 52.922501838,
     "lng": -1.304292976
+   }
+  },
+  "c-springhead-park-rothwell-leeds": {
+   "nearest": {
+    "id": "4c89b52b1741532bfc6d6208",
+    "name": "Leeds Skelton Lake Services M1 J45",
+    "m": 2312,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 53.772427074,
+    "lng": -1.471001208
    }
   },
   "c-st-andrews-close-play-area-alresford": {
@@ -17907,6 +18501,9 @@
     "lng": -1.464298368
    }
   },
+  "c-stoney-bank-playground-kiveton-park": {
+   "nearest": null
+  },
   "c-stonor-park-play-area": {
    "nearest": {
     "id": "5db17b32bbcc316c5f93a654",
@@ -17953,6 +18550,18 @@
     "free": true,
     "lat": 50.700059336,
     "lng": -3.24432539
+   }
+  },
+  "c-strathmore-gardens-playground-wath": {
+   "nearest": {
+    "id": "875b3e33a70a61d5a1b32462",
+    "name": "KFC Barnsley",
+    "m": 1445,
+    "babyChange": false,
+    "accessible": false,
+    "free": false,
+    "lat": 53.5105097,
+    "lng": -1.358267963
    }
   },
   "c-streatham-common-playground-streatham": {
@@ -18801,6 +19410,18 @@
     "lng": -1.464298368
    }
   },
+  "c-thirlmere-drive-playground-north-anston": {
+   "nearest": {
+    "id": "7c9e68d0a7f5b1e2181adbdd",
+    "name": "Burger King, Worksop",
+    "m": 1594,
+    "babyChange": false,
+    "accessible": false,
+    "free": false,
+    "lat": 53.370230176,
+    "lng": -1.202099025
+   }
+  },
   "c-thirlmere-road-play-area-upper-newbold": {
    "nearest": {
     "id": "66bda282e5b70e6555d98428",
@@ -18844,6 +19465,31 @@
     "lat": 51.868409525,
     "lng": 0.160578489
    }
+  },
+  "c-thornes-park-wakefield": {
+   "nearest": {
+    "id": "f3bf71566576cbd679d4c92d",
+    "name": "Wakefield Westgate Platform 1",
+    "m": 905,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 53.682878317,
+    "lng": -1.505773096
+   },
+   "nearestBabyChange": {
+    "id": "564933c46f71a443a7222644",
+    "name": "Ridings Centre",
+    "m": 1500,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 53.682105208,
+    "lng": -1.494521499
+   }
+  },
+  "c-thrybergh-country-park-play-area-thrybergh": {
+   "nearest": null
   },
   "c-tile-house-farm-playground-great-horkesley": {
    "nearest": null
@@ -19147,6 +19793,18 @@
     "lng": 0.2721278
    }
   },
+  "c-vale-head-park-play-area-hemsworth": {
+   "nearest": {
+    "id": "afa98ca412dbaa8a0753856b",
+    "name": "Tesco Hemsworth",
+    "m": 1027,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 53.612891782,
+    "lng": -1.352457311
+   }
+  },
   "c-vale-park-bolsover": {
    "nearest": {
     "id": "7c6441532c3aaf73f1402b0b",
@@ -19157,6 +19815,18 @@
     "free": true,
     "lat": 53.230435,
     "lng": -1.2962615
+   }
+  },
+  "c-valley-gardens-play-area-castleford": {
+   "nearest": {
+    "id": "306bf7120c212ef903b35b96",
+    "name": "Carlton Lanes Shopping Centre",
+    "m": 245,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 53.726196492,
+    "lng": -1.349979937
    }
   },
   "c-vantorts-close-play-area-sawbridgeworth": {
@@ -19499,6 +20169,9 @@
     "lng": -1.308070809
    }
   },
+  "c-washfield-lane-playground-treeton": {
+   "nearest": null
+  },
   "c-wasp-nest-play-area-chesterfield": {
    "nearest": {
     "id": "cd8a3bef4fdd73103b9600c4",
@@ -19681,6 +20354,52 @@
     "free": true,
     "lat": 53.267913017,
     "lng": -1.353967536
+   }
+  },
+  "c-west-end-park-play-area-hemsworth": {
+   "nearest": {
+    "id": "afa98ca412dbaa8a0753856b",
+    "name": "Tesco Hemsworth",
+    "m": 619,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 53.612891782,
+    "lng": -1.352457311
+   }
+  },
+  "c-west-melton-park-play-area-brampton": {
+   "nearest": {
+    "id": "875b3e33a70a61d5a1b32462",
+    "name": "KFC Barnsley",
+    "m": 879,
+    "babyChange": false,
+    "accessible": false,
+    "free": false,
+    "lat": 53.5105097,
+    "lng": -1.358267963
+   },
+   "nearestBabyChange": {
+    "id": "6fb8eeca0709daecb868d40d",
+    "name": "Asda living Toilet",
+    "m": 1177,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 53.507568478,
+    "lng": -1.386358738
+   }
+  },
+  "c-west-park-drive-play-area-swallownest": {
+   "nearest": {
+    "id": "b565ff57e564884bf77c60a5",
+    "name": "Rother Valley Public Toilets",
+    "m": 2564,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 53.339880112,
+    "lng": -1.320269108
    }
   },
   "c-west-park-play-areas-and-splash-pad-long-eaton": {
@@ -20386,6 +21105,18 @@
     "lng": -0.473023653
    }
   },
+  "c-woodall-lane-playground-harthill": {
+   "nearest": {
+    "id": "0e0094fe63c78e9f56d6a001",
+    "name": "Woodall",
+    "m": 1442,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 53.315394,
+    "lng": -1.2827587
+   }
+  },
   "c-woodchester-park-natural-play-trail": {
    "nearest": {
     "id": "37acbe4fda77211deca93ac4",
@@ -20472,6 +21203,28 @@
   "c-wrabness-play-area-wrabness": {
    "nearest": null
   },
+  "c-wrenthorpe-park-wrenthorpe-wakefield": {
+   "nearest": {
+    "id": "352d0237e404768f291a19a7",
+    "name": "Wakefield One (Council Offices and Library)",
+    "m": 2108,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 53.684283775,
+    "lng": -1.503680741
+   },
+   "nearestBabyChange": {
+    "id": "564933c46f71a443a7222644",
+    "name": "Ridings Centre",
+    "m": 2713,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 53.682105208,
+    "lng": -1.494521499
+   }
+  },
   "c-wulfric-road-play-area-eckington": {
    "nearest": {
     "id": "f514cc9a064a4ba512c5ab45",
@@ -20538,6 +21291,18 @@
     "free": true,
     "lat": 53.404687088,
     "lng": -2.27948606
+   }
+  },
+  "c-yeadon-tarnfield-park-yeadon-leeds": {
+   "nearest": {
+    "id": "a5f5d594d503815483a4cf03",
+    "name": "Tarnfield (Yeadon Tarn)",
+    "m": 688,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 53.865153,
+    "lng": -1.684203
    }
   },
   "c-yearlings-close-play-area-great-amwell": {
