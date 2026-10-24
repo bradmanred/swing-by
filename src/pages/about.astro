@@ -1,11 +1,47 @@
 ---
 import Base from '../layouts/Base.astro';
+import { allParks, L } from '../lib/parks';
+import coverageFile from '../data/coverage.json';
+
+// Running counts, worked out from the playground files on every build. Counties come from src/data/coverage.json,
+// which the "Update nearest toilets" workflow refreshes whenever playgrounds change.
+const parks = await allParks();
+const total = parks.length;
+const checked = parks.filter((p) => p.checked).length;
+const counties = coverageFile.counties;
+const nations = coverageFile.nations;
+const list = (xs: string[]) => (xs.length > 1 ? `${xs.slice(0, -1).join(', ')} and ${xs.at(-1)}` : xs[0] ?? '');
+const orgs = Object.entries(L.memberships)
+  .map(([k, name]) => ({ name, n: parks.filter((p) => p.membership === k).length }))
+  .filter((o) => o.n > 0);
+const memberTotal = orgs.reduce((a, o) => a + o.n, 0);
+const n = (x: number) => x.toLocaleString('en-GB');
 ---
 <Base title="About our data">
   <h1>About our data</h1>
+  <section class="panel stats" aria-labelledby="sofar" style="box-shadow:none;max-width:70ch;margin-bottom:20px">
+    <h2 id="sofar">Swing By so far</h2>
+    <ul class="stat-row">
+      <li><strong>{n(total)}</strong> playgrounds</li>
+      <li><strong>{counties.length}</strong> English counties{nations.length > 0 && <>, plus parts of {list(nations.map((x) => x.name))}</>}</li>
+      <li><strong>{orgs.length}</strong> membership organisations</li>
+    </ul>
+    <div class="prose">
+      <p>{n(checked)} of the {n(total)} playgrounds have been checked against the council's or operator's own website. The other {n(total - checked)} are marked "Unverified".</p>
+      {counties.length > 0 && <p>Counties we cover, most playgrounds first: {list(counties.map((c) => `${c.name} (${n(c.playgrounds)})`))}.{nations.length > 0 && <> We also list {list(nations.map((x) => `${n(x.playgrounds)} in ${x.name}`))}.</>} A county counts once we list at least three playgrounds there.</p>}
+      <p>Play areas at {n(memberTotal)} places members get into: {list(orgs.map((o) => `${o.name} (${n(o.n)})`))}. See <a href="/memberships/">Memberships</a>.</p>
+    </div>
+  </section>
   <div class="prose panel" style="box-shadow:none;max-width:70ch">
+    <h2>What you'll know before you go</h2>
+    <ul>
+      <li><strong>Toilets and baby change:</strong> whether a playground has its own toilets, whether they have baby change, and where the nearest public toilets are.</li>
+      <li><strong>Free or paid, at a glance:</strong> places that charge for entry are marked with <span class="pound" aria-hidden="true">£</span>, and you can leave them out.</li>
+      <li><strong>Council-checked, or clearly marked:</strong> each playground says where its details came from and when we last checked them, and anything we haven't checked yet is marked "Unverified".</li>
+    </ul>
+    <h2>Where the details come from</h2>
     <p>Swing By lists playgrounds using information published by councils, park operators and membership organisations. Each playground shows where its details came from and when we last checked them.</p>
-    <p>Places marked "Unverified" have not been checked against an official source yet. Treat their details as a guide only.</p>
+    <p>Places marked "Unverified" have not been checked against an official source yet. Many come from <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, which we use where a council doesn't publish a list we can check. Treat their details as a guide only. Parents can tick off what a playground has on its page; their answers only show once two different parents agree.</p>
     <p>Opening times can change and many parks lock their gates at dusk. Check before a long journey.</p>
     <p>Places marked <span class="pound" aria-hidden="true">£</span> Paid entry charge to get in, or sit inside somewhere that does, such as a National Trust garden or a stately home. Members of the organisation may get in free. Tick "Free entry only" to leave them out. Paid parking alone doesn't count as paid entry.</p>
     <p><strong>Safety:</strong> always check equipment before children use it. If something is broken or dangerous, report it to the council or operator, for example through FixMyStreet. In an emergency, call 999.</p>
@@ -15,6 +51,6 @@ import Base from '../layouts/Base.astro';
     <h2 id="cookies">Cookies and analytics</h2>
     <p>If you say yes, we use Google Analytics to count visits and see which pages are useful. It sets cookies and sends Google your browser details, the pages you look at and an approximate location based on your IP address. We don't use it for advertising. If you say no, Google Analytics isn't loaded at all.</p>
     <p>Your choice is saved in your browser. You can change it at any time with "Cookie settings" at the bottom of every page.</p>
-    <p>Some features use a cookie of their own because they need it to work: the vote for where we go next remembers your vote, and signing in to edit content remembers that you're signing in.</p>
+    <p>Some features use a cookie of their own because they need it to work: the vote for where we go next remembers your vote, telling us what a playground has remembers your answers so you can change them, and signing in to edit content remembers that you're signing in.</p>
   </div>
 </Base>
