@@ -1,0 +1,2607 @@
+{
+"p0": {
+"n": [
+[
+50.4233107,
+-4.1571147,
+"highway/residential",
+"Aylesbury Crescent, Whitleigh, Crownhill, Plymouth, England, PL5 4HX, "
+],
+[
+50.4235991,
+-4.1585709,
+"highway/residential",
+"Aylesbury Crescent, Whitleigh, Crownhill, Plymouth, England, PL5 4HU, "
+],
+[
+50.423238,
+-4.1591584,
+"highway/residential",
+"Aylesbury Crescent, Whitleigh, Crownhill, Plymouth, England, PL5 4EP, "
+]
+]
+},
+"p1": {},
+"p2": {
+"n": [
+[
+50.4117809,
+-4.1383333,
+"highway/residential",
+"Kirkwall Road, Manadon, Crownhill, Plymouth, England, PL5 3TL, United "
+],
+[
+50.4125841,
+-4.1368047,
+"highway/residential",
+"Kirkwall Road, Manadon, Crownhill, Plymouth, England, PL5 3TJ, United "
+],
+[
+50.4143199,
+-4.1363235,
+"highway/residential",
+"Kirkwall Road, Manadon, Crownhill, Plymouth, England, PL5 3TH, United "
+]
+]
+},
+"p3": {
+"n": [
+[
+50.4172954,
+-4.1432679,
+"highway/residential",
+"Lancaster Gardens, Whitleigh, Crownhill, Plymouth, England, PL5 4AD, U"
+],
+[
+50.4161832,
+-4.1383685,
+"highway/residential",
+"Lancaster Gardens, Manadon, Crownhill, Plymouth, England, PL5 4DL, Uni"
+],
+[
+50.4167879,
+-4.1388139,
+"highway/residential",
+"Lancaster Gardens, Manadon, Crownhill, Plymouth, England, PL5 4DJ, Uni"
+]
+]
+},
+"p4": {},
+"p5": {
+"n": [
+[
+50.4209884,
+-4.162468,
+"highway/residential",
+"Norwich Avenue, Badgers Wood, Plymouth, England, PL5 4JH, United Kingd"
+],
+[
+50.4201382,
+-4.1612602,
+"highway/residential",
+"Norwich Avenue, Badgers Wood, Plymouth, England, PL5 4JG, United Kingd"
+],
+[
+50.4216779,
+-4.163535,
+"highway/residential",
+"Norwich Avenue, Badgers Wood, Plymouth, England, PL5 4JQ, United Kingd"
+]
+]
+},
+"p6": {
+"n": [
+[
+50.3924684,
+-4.1287825,
+"leisure/park",
+"Hartley Park, Hartley, Crownhill, Plymouth, England, United Kingdom"
+],
+[
+50.392288,
+-4.130243,
+"amenity/toilets",
+"Hartley Park (Disabled), Mannamead Road, Hartley, Crownhill, Plymouth,"
+]
+]
+},
+"p7": {
+"n": [
+[
+50.3844222,
+-4.1191469,
+"leisure/park",
+"Trefusis Park, Lipson Vale, Plymouth, England, United Kingdom"
+]
+]
+},
+"p8": {
+"n": [
+[
+50.37573,
+-4.1748478,
+"leisure/park",
+"Devonport Park, Devonport, Plymouth, England, United Kingdom"
+],
+[
+50.3736297,
+-4.1710722,
+"highway/bus_stop",
+"Devonport Park, Fore Street, Devonport, Plymouth, England, PL1 4BU, Un"
+]
+]
+},
+"p9": {},
+"p10": {
+"n": [
+[
+50.3815633,
+-4.1772107,
+"highway/residential",
+"Herbert Street, Morice Town, Plymouth, England, PL2 1RX, United Kingdo"
+]
+]
+},
+"p11": {
+"n": [
+[
+50.3696323,
+-4.1278748,
+"highway/residential",
+"St John's Street, Cattedown, Plymouth, England, PL4 0NZ, United Kingdo"
+],
+[
+50.3699227,
+-4.1281436,
+"highway/residential",
+"St John's Street, Greenbank, Plymouth, England, PL4 0NY, United Kingdo"
+]
+]
+},
+"p12": {
+"n": [
+[
+50.3732817,
+-4.1808437,
+"amenity/school",
+"Marlborough Primary Academy, Morice Square, Devonport, Plymouth, Engla"
+]
+]
+},
+"p13": {
+"n": [
+[
+50.3736123,
+-4.1790182,
+"highway/pedestrian",
+"Marlborough Street, Devonport, Plymouth, England, PL1 4AH, United King"
+]
+]
+},
+"p14": {},
+"p15": {},
+"p16": {},
+"p17": {
+"n": [
+[
+50.373628,
+-4.1809902,
+"highway/residential",
+"Ordnance Street, Devonport, Plymouth, England, PL1 4NL, United Kingdom"
+]
+]
+},
+"p18": {
+"n": [
+[
+50.3875628,
+-4.1768218,
+"highway/residential",
+"Parkside, Fleet Accomodation Centre, Keyham, Plymouth, England, PL2 1N"
+],
+[
+50.3878396,
+-4.1744006,
+"highway/residential",
+"Parkside, Keyham, Plymouth, England, PL2 1LX, United Kingdom"
+],
+[
+50.3878458,
+-4.1722992,
+"highway/residential",
+"Parkside, Keyham, Plymouth, England, PL2 1LL, United Kingdom"
+]
+]
+},
+"p19": {},
+"p20": {},
+"p21": {},
+"p22": {
+"n": [
+[
+50.3903026,
+-4.1049292,
+"highway/residential",
+"Douglass Road, Efford, Crownhill, Plymouth, England, PL3 6NP, United K"
+],
+[
+50.3898102,
+-4.1032377,
+"highway/residential",
+"Douglass Road, Efford, Plympton, Plymouth, England, PL3 6HY, United Ki"
+]
+]
+},
+"p23": {
+"n": [
+[
+50.3827554,
+-4.1219191,
+"place/suburb",
+"Lipson Vale, Plymouth, England, PL4 7HQ, United Kingdom"
+],
+[
+50.3814291,
+-4.1225656,
+"highway/residential",
+"Lipson Vale, Plymouth, England, PL4 7HE, United Kingdom"
+],
+[
+50.3820129,
+-4.1206729,
+"highway/secondary",
+"Lipson Vale, Plymouth, England, PL4 7HF, United Kingdom"
+]
+]
+},
+"p24": {
+"n": [
+[
+50.3872165,
+-4.0990796,
+"highway/residential",
+"Manifold Gardens, Efford, Plympton, Plymouth, England, PL3 6DT, United"
+],
+[
+50.3874424,
+-4.0970466,
+"highway/residential",
+"Manifold Gardens, Deer Park, Plympton, Plymouth, England, PL3 6HJ, Uni"
+],
+[
+50.3873516,
+-4.0978205,
+"highway/residential",
+"Manifold Gardens, Deer Park, Plympton, Plymouth, England, PL3 6HL, Uni"
+]
+]
+},
+"p25": {
+"n": [
+[
+50.3868222,
+-4.105475,
+"highway/residential",
+"Severn Place, Efford, Plympton, Plymouth, England, PL3 6JJ, United Kin"
+]
+]
+},
+"p26": {
+"n": [
+[
+50.3892846,
+-4.0970179,
+"highway/residential",
+"Thames Gardens, Deer Park, Plympton, Plymouth, England, PL3 6HE, Unite"
+],
+[
+50.3886632,
+-4.0968361,
+"highway/residential",
+"Thames Gardens, Deer Park, Plympton, Plymouth, England, PL3 6HD, Unite"
+],
+[
+50.3887654,
+-4.0984408,
+"highway/residential",
+"Thames Gardens, Deer Park, Plympton, Plymouth, England, PL3 6HR, Unite"
+]
+]
+},
+"p27": {},
+"p28": {
+"n": [
+[
+50.387638,
+-4.1119436,
+"highway/residential",
+"Yeo Close, Efford, Plympton, Plymouth, England, PL3 6EG, United Kingdo"
+],
+[
+50.3877848,
+-4.1132145,
+"highway/residential",
+"Yeo Close, Efford, Plympton, Plymouth, England, PL3 6RA, United Kingdo"
+],
+[
+50.38854,
+-4.1113983,
+"highway/residential",
+"Yeo Close, Efford, Crownhill, Plymouth, England, PL3 6JT, United Kingd"
+]
+]
+},
+"p29": {
+"n": [
+[
+50.4074432,
+-4.1374879,
+"leisure/park",
+"Bladder Meadow, Manadon, Crownhill, Plymouth, England, United Kingdom"
+]
+]
+},
+"p30": {
+"n": [
+[
+50.4036421,
+-4.1148589,
+"highway/residential",
+"Cameron Way, Eggbuckland, Crownhill, Plymouth, England, PL6 5WB, Unite"
+]
+]
+},
+"p31": {
+"n": [
+[
+50.3981784,
+-4.1040227,
+"highway/footway",
+"Culbin Green, Austin Farm, Crownhill, Plymouth, England, PL6 5UW, Unit"
+]
+]
+},
+"p32": {
+"n": [
+[
+50.4010651,
+-4.1074934,
+"highway/residential",
+"Shallowford Road, Austin Farm, Crownhill, Plymouth, England, PL6 5TD, "
+],
+[
+50.4003969,
+-4.1084882,
+"highway/residential",
+"Shallowford Road, Austin Farm, Crownhill, Plymouth, England, PL6 5TE, "
+],
+[
+50.3984897,
+-4.1073351,
+"highway/residential",
+"Shallowford Close, Austin Farm, Crownhill, Plymouth, England, PL6 5TN,"
+]
+]
+},
+"p33": {},
+"p34": {},
+"p35": {
+"n": [
+[
+50.3921086,
+-4.1701388,
+"highway/residential",
+"Cookworthy Road, North Prospect, Plymouth, England, PL2 2LG, United Ki"
+],
+[
+50.39262,
+-4.1689732,
+"highway/residential",
+"Cookworthy Road, North Prospect, Plymouth, England, PL2 2LH, United Ki"
+],
+[
+50.391409,
+-4.1704598,
+"highway/residential",
+"Cookworthy Road, North Prospect, Plymouth, England, PL2 2AU, United Ki"
+]
+]
+},
+"p36": {
+"n": [
+[
+50.3953893,
+-4.1624582,
+"highway/residential",
+"Dovedale Road, North Prospect, Plymouth, England, PL2 2RN, United King"
+]
+]
+},
+"p37": {},
+"p38": {
+"n": [
+[
+50.3987885,
+-4.1530859,
+"highway/unclassified",
+"Springhill Green, Ham, Crownhill, Plymouth, England, PL2 3RP, United K"
+],
+[
+50.3985388,
+-4.1523069,
+"highway/unclassified",
+"Springhill Green, Ham, Crownhill, Plymouth, England, PL2 3RL, United K"
+]
+]
+},
+"p39": {
+"n": [
+[
+50.3999564,
+-4.1472136,
+"highway/residential",
+"St Pancras Avenue, Pennycross, Crownhill, Plymouth, England, PL2 3RY, "
+],
+[
+50.4006611,
+-4.1436535,
+"highway/residential",
+"St Pancras Avenue, Pennycross, Crownhill, Plymouth, England, PL2 3SF, "
+],
+[
+50.4002809,
+-4.1453192,
+"highway/residential",
+"St Pancras Avenue, Pennycross, Crownhill, Plymouth, England, PL2 3RZ, "
+]
+]
+},
+"p40": {
+"n": [
+[
+50.4066725,
+-4.1756313,
+"amenity/school",
+"Marine Academy Plymouth, Trevithick Road, St Budeaux, Plymouth, Englan"
+],
+[
+50.3964826,
+-4.1802744,
+"shop/car",
+"Rowes Honda Plymouth, 447, Wolseley Road, Weston Mill, Plymouth, Engla"
+],
+[
+50.3962564,
+-4.1858104,
+"landuse/industrial",
+"Plymouth Energy, St Budeaux, Plymouth, England, PL5 1FL, United Kingdo"
+]
+]
+},
+"p41": {
+"n": [
+[
+50.3932887,
+-4.1733366,
+"highway/residential",
+"Wordsworth Road, North Prospect, Plymouth, England, PL2 2FD, United Ki"
+]
+]
+},
+"p42": {
+"n": [
+[
+50.411355,
+-4.149307,
+"highway/residential",
+"Blake Gardens, Honicknowle, Crownhill, Plymouth, England, PL5 3SA, Uni"
+]
+]
+},
+"p43": {
+"n": [
+[
+50.4119267,
+-4.158537,
+"highway/residential",
+"Chard Barton, Honicknowle, Crownhill, Plymouth, England, PL5 3SR, Unit"
+],
+[
+50.4124611,
+-4.1586581,
+"highway/residential",
+"Chard Barton, Honicknowle, Crownhill, Plymouth, England, PL5 3NN, Unit"
+]
+]
+},
+"p44": {
+"n": [
+[
+50.4200169,
+-4.1760767,
+"highway/residential",
+"Ernesettle Green, Ernesettle, Plymouth, England, PL5 2PP, United Kingd"
+],
+[
+50.4192538,
+-4.1782584,
+"highway/residential",
+"Ernesettle Green, Ernesettle, Plymouth, England, PL5 2SY, United Kingd"
+]
+]
+},
+"p45": {},
+"p46": {
+"n": [
+[
+50.418268,
+-4.1817383,
+"highway/residential",
+"Maidstone Place, Ernesettle, Plymouth, England, PL5 2SG, United Kingdo"
+],
+[
+50.4185453,
+-4.181195,
+"highway/bus_stop",
+"Maidstone Place, Uxbridge Drive, Ernesettle, Plymouth, England, PL5 2S"
+]
+]
+},
+"p47": {
+"n": [
+[
+50.4086601,
+-4.1541457,
+"highway/residential",
+"Shakespeare Road, Honicknowle, Crownhill, Plymouth, England, PL5 3LF, "
+],
+[
+50.4092634,
+-4.1475782,
+"highway/residential",
+"Shakespeare Road, Manadon, Crownhill, Plymouth, England, PL5 3JF, Unit"
+],
+[
+50.4088904,
+-4.1488796,
+"highway/residential",
+"Shakespeare Road, Honicknowle, Crownhill, Plymouth, England, PL5 3JE, "
+]
+]
+},
+"p48": {},
+"p49": {},
+"p50": {
+"n": [
+[
+50.4102855,
+-4.1642489,
+"highway/residential",
+"Wanstead Grove, West Park, Plymouth, England, PL5 2LY, United Kingdom"
+]
+]
+},
+"p51": {
+"n": [
+[
+50.4175538,
+-4.151407,
+"highway/residential",
+"Whitleigh Way, Whitleigh, Crownhill, Plymouth, England, PL5 4ED, Unite"
+]
+]
+},
+"p52": {
+"n": [
+[
+50.4148571,
+-4.1046524,
+"highway/residential",
+"Arnside Close, Derriford, Crownhill, Plymouth, England, PL6 8XE, Unite"
+],
+[
+50.4151005,
+-4.1051511,
+"highway/residential",
+"Arnside Close, Derriford, Crownhill, Plymouth, England, PL6 8UU, Unite"
+],
+[
+50.4150512,
+-4.1042625,
+"highway/footway",
+"Arnside Close, Derriford, Crownhill, Plymouth, England, PL6 8XE, Unite"
+]
+]
+},
+"p53": {
+"n": [
+[
+50.4168471,
+-4.1035777,
+"highway/residential",
+"Dockray Close, Derriford, Crownhill, Plymouth, England, PL6 8XD, Unite"
+],
+[
+50.4166023,
+-4.104295,
+"highway/residential",
+"Dockray Close, Derriford, Crownhill, Plymouth, England, PL6 8UT, Unite"
+]
+]
+},
+"p54": {
+"n": [
+[
+50.4269786,
+-4.1054334,
+"place/suburb",
+"Glenholt, Plymouth, England, PL6 7HT, United Kingdom"
+]
+]
+},
+"p55": {
+"n": [
+[
+50.4050869,
+-4.0939624,
+"place/suburb",
+"Leigham, Plympton, Plymouth, England, PL6 8RE, United Kingdom"
+]
+]
+},
+"p56": {
+"n": [
+[
+50.4101076,
+-4.1015703,
+"highway/tertiary",
+"Miller Way, Estover, Plympton, Plymouth, England, PL6 8TL, United King"
+],
+[
+50.4089991,
+-4.1007884,
+"highway/tertiary",
+"Miller Way, Estover, Plympton, Plymouth, England, PL6 8EP, United King"
+],
+[
+50.408436,
+-4.0976117,
+"highway/tertiary",
+"Miller Way, Leigham, Plympton, Plymouth, England, PL6 8TB, United King"
+]
+]
+},
+"p57": {},
+"p58": {},
+"p59": {},
+"p60": {},
+"p61": {},
+"p62": {},
+"p63": {
+"n": [
+[
+50.3776722,
+-4.1267591,
+"leisure/park",
+"Freedom Fields, Lipson, Plymouth, England, PL4 8QN, United Kingdom"
+]
+]
+},
+"p64": {
+"n": [
+[
+50.3795497,
+-4.1202583,
+"highway/residential",
+"Lipstone Crescent, Lipson, Plymouth, England, PL4 7EZ, United Kingdom"
+]
+]
+},
+"p65": {
+"n": [
+[
+50.3861205,
+-4.0914003,
+"highway/primary",
+"Plymouth Road, Deer Park, Plympton, Plymouth, England, PL3 6EQ, United"
+],
+[
+50.3874061,
+-4.089557,
+"highway/primary",
+"Plymouth Road, Deer Park, Plympton, Plymouth, England, PL3 6EL, United"
+],
+[
+50.3858513,
+-4.0926433,
+"highway/primary",
+"Plymouth Road, Deer Park, Plympton, Plymouth, England, PL3 6EN, United"
+]
+]
+},
+"p66": {
+"n": [
+[
+50.394818,
+-4.1400848,
+"highway/residential",
+"Burleigh Manor, Peverell, Crownhill, Plymouth, England, PL3 5TN, Unite"
+],
+[
+50.394324,
+-4.1406577,
+"highway/residential",
+"Burleigh Manor, Peverell, Crownhill, Plymouth, England, PL3 5PS, Unite"
+],
+[
+50.3947176,
+-4.1409641,
+"highway/residential",
+"Burleigh Manor, Peverell, Crownhill, Plymouth, England, PL3 5NT, Unite"
+]
+]
+},
+"p67": {
+"n": [
+[
+50.3863691,
+-4.1494785,
+"leisure/park",
+"Central Park, Pennycross, Crownhill, Plymouth, England, United Kingdom"
+]
+]
+},
+"p68": {},
+"p69": {},
+"p70": {},
+"p71": {},
+"p72": {},
+"p73": {
+"n": [
+[
+50.3844869,
+-4.0278856,
+"highway/residential",
+"Bellingham Crescent, Chaddlewood, Colebrook Village, Plymouth, England"
+],
+[
+50.3841567,
+-4.0270246,
+"highway/residential",
+"Bellingham Crescent, Chaddlewood, Colebrook Village, Plymouth, England"
+],
+[
+50.3861593,
+-4.0251224,
+"highway/residential",
+"Bellingham Crescent, Steer Park, Plympton, Plymouth, England, PL7 2FJ,"
+]
+]
+},
+"p74": {
+"n": [
+[
+50.3890997,
+-4.0340996,
+"place/suburb",
+"Chaddlewood, Colebrook Village, Plymouth, England, PL7 2UP, United Kin"
+]
+]
+},
+"p75": {},
+"p76": {},
+"p77": {
+"n": [
+[
+50.3878928,
+-4.0215079,
+"highway/residential",
+"Summerlands Close, Steer Park, Plympton, Plymouth, England, PL7 2ZJ, U"
+]
+]
+},
+"p78": {
+"n": [
+[
+50.3962311,
+-4.0558622,
+"highway/residential",
+"Boringdon Close, Plympton Central, Colebrook Village, Plymouth, Englan"
+],
+[
+50.3962305,
+-4.0546556,
+"highway/residential",
+"Boringdon Close, Plympton Central, Colebrook Village, Plymouth, Englan"
+]
+]
+},
+"p79": {},
+"p80": {
+"n": [
+[
+50.3965226,
+-4.044487,
+"highway/secondary",
+"Newnham Road, Plympton Central, Colebrook Village, Plymouth, England, "
+],
+[
+50.3973796,
+-4.0391677,
+"highway/secondary",
+"Newnham Road, Chaddlewood, Colebrook Village, Plymouth, England, PL7 5"
+],
+[
+50.396756,
+-4.0344484,
+"highway/residential",
+"Newnham Close, Chaddlewood, Colebrook Village, Plymouth, England, PL7 "
+]
+]
+},
+"p81": {},
+"p82": {
+"n": [
+[
+50.3971065,
+-4.0486442,
+"highway/residential",
+"Rashleigh Avenue, Plympton Central, Colebrook Village, Plymouth, Engla"
+]
+]
+},
+"p83": {},
+"p84": {
+"n": [
+[
+50.3548219,
+-4.070258,
+"highway/living_street",
+"Blackstone Close, Staddiscombe, Elburton Village, Plymouth, England, P"
+],
+[
+50.3563116,
+-4.0686643,
+"highway/living_street",
+"Blackstone Close, Staddiscombe, Elburton Village, Plymouth, England, P"
+],
+[
+50.3564746,
+-4.0683774,
+"highway/residential",
+"Blackstone Close, Staddiscombe, Elburton Village, Plymouth, England, P"
+]
+]
+},
+"p85": {},
+"p86": {
+"n": [
+[
+50.3480143,
+-4.084755,
+"highway/residential",
+"Lower Park Drive, Staddiscombe, Elburton Village, Plymouth, England, P"
+],
+[
+50.347359,
+-4.0868863,
+"highway/residential",
+"Lower Park Drive, Staddiscombe, Elburton Village, Plymouth, England, P"
+],
+[
+50.3477588,
+-4.0858465,
+"highway/residential",
+"Lower Park Drive, Staddiscombe, Elburton Village, Plymouth, England, P"
+]
+]
+},
+"p87": {
+"n": [
+[
+50.3647218,
+-4.0794094,
+"highway/bus_stop",
+"Southern Way, Elburton Road, Plymstock, Elburton Village, Plymouth, En"
+]
+]
+},
+"p88": {
+"n": [
+[
+50.3488444,
+-4.0901551,
+"highway/residential",
+"Southgate Avenue, Staddiscombe, Elburton Village, Plymouth, England, P"
+],
+[
+50.3499125,
+-4.0921783,
+"highway/residential",
+"Southgate Avenue, Goosewell, Elburton Village, Plymouth, England, PL9 "
+],
+[
+50.349372,
+-4.0916815,
+"highway/residential",
+"Southgate Avenue, Goosewell, Elburton Village, Plymouth, England, PL9 "
+]
+]
+},
+"p89": {
+"n": [
+[
+50.3472676,
+-4.0855853,
+"highway/residential",
+"Tilly Close, Staddiscombe, Elburton Village, Plymouth, England, PL9 9D"
+],
+[
+50.3476171,
+-4.0855432,
+"highway/residential",
+"Tilly Close, Staddiscombe, Elburton Village, Plymouth, England, PL9 9R"
+]
+]
+},
+"p90": {
+"n": [
+[
+50.3599341,
+-4.0954002,
+"highway/bus_stop",
+"Dean Cross, Plymstock Road, Plymstock, Elburton Village, Plymouth, Eng"
+],
+[
+50.3598691,
+-4.0949738,
+"highway/bus_stop",
+"Dean Cross, Plymstock Road, Plymstock, Elburton Village, Plymouth, Eng"
+]
+]
+},
+"p91": {},
+"p92": {},
+"p93": {
+"n": [
+[
+50.3596868,
+-4.0924065,
+"highway/bus_stop",
+"Plymstock Broadway West, The Broadway, Plymstock, Elburton Village, Pl"
+],
+[
+50.360544,
+-4.0899726,
+"highway/bus_stop",
+"Plymstock Broadway East, Horn Cross Road, Plymstock, Elburton Village,"
+]
+]
+},
+"p94": {
+"n": [
+[
+50.3514438,
+-4.1088113,
+"highway/residential",
+"South Hill, Hooe, Plymouth, England, PL9 9PU, United Kingdom"
+],
+[
+50.3760914,
+-4.1654716,
+"highway/residential",
+"South Hill, Stoke, Plymouth, England, PL1 5RR, United Kingdom"
+],
+[
+50.3506464,
+-4.1092966,
+"highway/residential",
+"South Hill, Hooe, Plymouth, England, PL9 9PX, United Kingdom"
+]
+]
+},
+"p95": {},
+"p96": {},
+"p97": {},
+"p98": {
+"n": [
+[
+50.4399708,
+-4.1105146,
+"highway/residential",
+"Boulter Close, Belliver, Plymouth, England, PL6 7AY, United Kingdom"
+],
+[
+50.4402339,
+-4.1109413,
+"highway/footway",
+"Boulter Close, Belliver, Plymouth, England, PL6 7AY, United Kingdom"
+]
+]
+},
+"p99": {},
+"p100": {
+"n": [
+[
+50.4284302,
+-4.1453794,
+"highway/tertiary",
+"Dunnet Road, Southway, Plymouth, England, PL6 6NW, United Kingdom"
+],
+[
+50.4297815,
+-4.1351845,
+"highway/tertiary",
+"Dunnet Road, Southway, Plymouth, England, PL6 6HN, United Kingdom"
+],
+[
+50.4265454,
+-4.1445911,
+"highway/tertiary",
+"Dunnet Road, Southway, Plymouth, England, PL6 6NR, United Kingdom"
+]
+]
+},
+"p101": {
+"n": [
+[
+50.4226727,
+-4.1390823,
+"highway/residential",
+"Frontfield Crescent, Whitleigh, Crownhill, Plymouth, England, PL6 6RZ,"
+],
+[
+50.423061,
+-4.1413403,
+"highway/residential",
+"Frontfield Crescent, Whitleigh, Crownhill, Plymouth, England, PL6 6RY,"
+],
+[
+50.4230957,
+-4.1404302,
+"highway/residential",
+"Frontfield Crescent, Whitleigh, Crownhill, Plymouth, England, PL6 6RT,"
+]
+]
+},
+"p102": {},
+"p103": {
+"n": [
+[
+50.4380093,
+-4.1136644,
+"highway/residential",
+"Ingra Walk, Belliver, Plymouth, England, PL6 7DF, United Kingdom"
+],
+[
+50.4377479,
+-4.1136807,
+"highway/footway",
+"Ingra Walk, Belliver, Plymouth, England, PL6 7DE, United Kingdom"
+],
+[
+50.438513,
+-4.1134339,
+"highway/footway",
+"Ingra Walk, Belliver, Plymouth, England, PL6 7DF, United Kingdom"
+]
+]
+},
+"p104": {
+"n": [
+[
+50.4314765,
+-4.1324763,
+"highway/residential",
+"Kinnaird Crescent, Southway, Plymouth, England, PL6 6JB, United Kingdo"
+],
+[
+50.4306851,
+-4.1285209,
+"highway/residential",
+"Kinnaird Crescent, Southway, Plymouth, England, PL6 6JF, United Kingdo"
+]
+]
+},
+"p105": {
+"n": [
+[
+50.4322594,
+-4.1280056,
+"highway/residential",
+"Langley Crescent, Southway, Plymouth, England, PL6 6EP, United Kingdom"
+],
+[
+50.4319609,
+-4.1248579,
+"highway/residential",
+"Langley Crescent, Southway, Plymouth, England, PL6 6HF, United Kingdom"
+],
+[
+50.4338338,
+-4.1263937,
+"highway/residential",
+"Langley Crescent, Southway, Plymouth, England, PL6 6EU, United Kingdom"
+]
+]
+},
+"p106": {},
+"p107": {
+"n": [
+[
+50.4327863,
+-4.1175886,
+"highway/residential",
+"Prestonbury Close, Belliver, Plymouth, England, PL6 7UD, United Kingdo"
+]
+]
+},
+"p108": {
+"n": [
+[
+50.4288045,
+-4.1548883,
+"place/suburb",
+"Tamerton Foliot, Plymouth, England, PL5 4NN, United Kingdom"
+]
+]
+},
+"p109": {
+"n": [
+[
+50.4077292,
+-4.1724181,
+"highway/residential",
+"Cayley Way, Kings Tamerton, Plymouth, England, PL5 2UB, United Kingdom"
+],
+[
+50.4080405,
+-4.1735906,
+"highway/residential",
+"Cayley Way, Kings Tamerton, Plymouth, England, PL5 2UA, United Kingdom"
+],
+[
+50.4085072,
+-4.1735935,
+"highway/residential",
+"Cayley Way, Kings Tamerton, Plymouth, England, PL5 2BS, United Kingdom"
+]
+]
+},
+"p110": {
+"n": [
+[
+50.4014116,
+-4.1972583,
+"highway/residential",
+"Foulston Avenue, Bull Point, Barne Barton, Plymouth, England, PL5 1HY,"
+],
+[
+50.4000669,
+-4.197926,
+"highway/residential",
+"Foulston Avenue, Bull Point, Barne Barton, Plymouth, England, PL5 1HU,"
+]
+]
+},
+"p111": {
+"n": [
+[
+50.4077524,
+-4.1715679,
+"place/suburb",
+"Kings Tamerton, Plymouth, England, PL5 2BP, United Kingdom"
+]
+]
+},
+"p112": {
+"n": [
+[
+50.3998063,
+-4.1926106,
+"highway/residential",
+"Kit Hill Crescent, Bull Point, Barne Barton, Plymouth, England, PL5 1E"
+],
+[
+50.4004534,
+-4.1896829,
+"highway/residential",
+"Kit Hill Crescent, St Budeaux, Plymouth, England, PL5 1EW, United King"
+],
+[
+50.400638,
+-4.1926888,
+"highway/residential",
+"Kit Hill Crescent, Barne Barton, Plymouth, England, PL5 1EL, United Ki"
+]
+]
+},
+"p113": {},
+"p114": {
+"n": [
+[
+50.4077075,
+-4.2001965,
+"highway/bus_stop",
+"Saltash Passage, Wolseley Road, Barne Barton, Plymouth, England, PL5 1"
+]
+]
+},
+"p115": {
+"n": [
+[
+50.4060672,
+-4.1900425,
+"highway/residential",
+"Seacroft Road, St Budeaux, Plymouth, England, PL5 1PQ, United Kingdom"
+],
+[
+50.4052446,
+-4.1894132,
+"highway/residential",
+"Seacroft Road, St Budeaux, Plymouth, England, PL5 1NE, United Kingdom"
+],
+[
+50.4068522,
+-4.190319,
+"highway/residential",
+"Seacroft Road, St Budeaux, Plymouth, England, PL5 1SL, United Kingdom"
+]
+]
+},
+"p116": {},
+"p117": {
+"n": [
+[
+50.3701917,
+-4.1525766,
+"building/residential",
+"Edgcumbe House, Manor Gardens, Millbay, Plymouth, England, PL1 3HD, Un"
+],
+[
+50.3702575,
+-4.1519844,
+"place/house",
+"Edgcumbe House, 1-8, High Street, Stonehouse, Plymouth, England, PL1 3"
+]
+]
+},
+"p118": {
+"n": [
+[
+50.3715677,
+-4.1502962,
+"highway/residential",
+"Flora Court, Millbay, Plymouth, England, PL1 5HX, United Kingdom"
+],
+[
+50.3714753,
+-4.1511931,
+"highway/residential",
+"Flora Court, Millbay, Plymouth, England, PL1 5LB, United Kingdom"
+],
+[
+50.3710646,
+-4.1507426,
+"highway/residential",
+"Flora Court, Millbay, Plymouth, England, PL1 1TF, United Kingdom"
+]
+]
+},
+"p119": {},
+"p120": {
+"n": [
+[
+50.3654107,
+-4.174193,
+"leisure/swimming_pool",
+"Mount Wise, Garrison Close, Devonport, Plymouth, England, PL1 4QE, Uni"
+]
+]
+},
+"p121": {
+"n": [
+[
+50.3727037,
+-4.1515651,
+"highway/residential",
+"Neswick Street, Pennycomequick, Plymouth, England, PL1 5JJ, United Kin"
+],
+[
+50.3723399,
+-4.1529322,
+"highway/pedestrian",
+"Neswick Street, Millbay, Plymouth, England, PL1 5JL, United Kingdom"
+],
+[
+50.3719714,
+-4.1542843,
+"highway/residential",
+"Neswick Street, Stonehouse, Plymouth, England, PL1 5JF, United Kingdom"
+]
+]
+},
+"p122": {},
+"p123": {
+"n": [
+[
+50.3762955,
+-4.1489038,
+"leisure/park",
+"Patna Place, Pennycomequick, Plymouth, England, United Kingdom"
+],
+[
+50.3752213,
+-4.1488267,
+"highway/residential",
+"Patna Place, Pennycomequick, Plymouth, England, PL1 5AZ, United Kingdo"
+],
+[
+50.3756505,
+-4.1485759,
+"highway/residential",
+"Patna Place, Pennycomequick, Plymouth, England, PL1 5AY, United Kingdo"
+]
+]
+},
+"p124": {},
+"p125": {
+"n": [
+[
+50.3652039,
+-4.1630608,
+"highway/residential",
+"Strand Street, Stonehouse, Plymouth, England, PL1 3RL, United Kingdom"
+],
+[
+50.3655786,
+-4.1632381,
+"highway/residential",
+"Strand Street, Stonehouse, Plymouth, England, PL1 3RJ, United Kingdom"
+]
+]
+},
+"p126": {},
+"p127": {
+"n": [
+[
+50.3755037,
+-4.1545857,
+"leisure/park",
+"Victoria Park, Pennycomequick, Plymouth, England, PL1 5NJ, United King"
+]
+]
+},
+"p128": {
+"n": [
+[
+50.381705,
+-4.1684571,
+"leisure/park",
+"Blockhouse Park, Stoke, Plymouth, England, United Kingdom"
+],
+[
+50.3807192,
+-4.1660732,
+"amenity/pub",
+"Blockhouse Inn, Devonport Road, Stoke, Plymouth, England, PL3 4DH, Uni"
+]
+]
+},
+"p129": {},
+"p130": {
+"n": [
+[
+50.3734292,
+-4.1302677,
+"leisure/park",
+"Beaumont Park, Greenbank, Plymouth, England, PL4 9BG, United Kingdom"
+],
+[
+50.373216,
+-4.128562,
+"highway/bus_stop",
+"Beaumont Park, Tothill Avenue, Greenbank, Plymouth, England, PL4 8PH, "
+]
+]
+},
+"p131": {
+"n": [
+[
+50.369347,
+-4.13791,
+"highway/unclassified",
+"Buckwell Street, Barbican, Plymouth, England, PL1 2DA, United Kingdom"
+],
+[
+50.3686727,
+-4.1377752,
+"highway/unclassified",
+"Buckwell Street, Barbican, Plymouth, England, PL1 2DF, United Kingdom"
+],
+[
+50.3698289,
+-4.137671,
+"highway/unclassified",
+"Buckwell Street, Barbican, Plymouth, England, PL1 2DG, United Kingdom"
+]
+]
+},
+"p132": {
+"n": [
+[
+50.3713168,
+-4.1466461,
+"highway/living_street",
+"New George Street, Pennycomequick, Plymouth, England, PL1 1RZ, United "
+],
+[
+50.3713413,
+-4.1451806,
+"highway/living_street",
+"New George Street, Pennycomequick, Plymouth, England, PL1 1RX, United "
+],
+[
+50.3713558,
+-4.1446807,
+"highway/living_street",
+"New George Street, Pennycomequick, Plymouth, England, PL1 1RP, United "
+]
+]
+},
+"p133": {
+"n": [
+[
+50.3638443,
+-4.147218,
+"highway/residential",
+"Pier Street, West Hoe, Plymouth, England, PL1 3DF, United Kingdom"
+],
+[
+50.3644614,
+-4.1483104,
+"highway/residential",
+"Pier Street, West Hoe, Plymouth, England, PL1 3BT, United Kingdom"
+],
+[
+50.3649345,
+-4.1497244,
+"highway/residential",
+"Pier Street, West Hoe, Plymouth, England, PL1 3DU, United Kingdom"
+]
+]
+},
+"p134": {
+"n": [
+[
+50.3703074,
+-4.1165762,
+"highway/residential",
+"Radford Avenue, Cattedown, Plymouth, England, PL4 9NX, United Kingdom"
+],
+[
+50.3702099,
+-4.1149462,
+"highway/residential",
+"Radford Avenue, Mount Gould, Plympton, Plymouth, England, PL4 9NY, Uni"
+],
+[
+50.370346,
+-4.1181713,
+"highway/residential",
+"Radford Avenue, Cattedown, Plymouth, England, PL4 9NJ, United Kingdom"
+]
+]
+},
+"p135": {
+"n": [
+[
+50.3658221,
+-4.1276167,
+"building/apartments",
+"Teats Hill, Commercial Place, Cattedown, Plymouth, England, PL4 0LS, U"
+]
+]
+},
+"p136": {
+"n": [
+[
+50.3738282,
+-4.1169362,
+"leisure/park",
+"Tothill Park, Mount Gould, Plympton, Plymouth, England, United Kingdom"
+]
+]
+},
+"p137": {},
+"p138": {
+"n": [
+[
+50.394818,
+-4.1400848,
+"highway/residential",
+"Burleigh Manor, Peverell, Crownhill, Plymouth, England, PL3 5TN, Unite"
+],
+[
+50.394324,
+-4.1406577,
+"highway/residential",
+"Burleigh Manor, Peverell, Crownhill, Plymouth, England, PL3 5PS, Unite"
+],
+[
+50.3947176,
+-4.1409641,
+"highway/residential",
+"Burleigh Manor, Peverell, Crownhill, Plymouth, England, PL3 5NT, Unite"
+]
+]
+},
+"p139": {
+"n": [
+[
+50.3929829,
+-4.146906,
+"building/government",
+"Pounds House, Outland Road, Pennycross, Crownhill, Plymouth, England, "
+],
+[
+50.3934611,
+-4.1460937,
+"amenity/doctors",
+"Peverell Park Surgery, Pounds House, Outland Road, Pennycross, Crownhi"
+]
+]
+},
+"p140": {
+"n": [
+[
+50.3987885,
+-4.1530859,
+"highway/unclassified",
+"Springhill Green, Ham, Crownhill, Plymouth, England, PL2 3RP, United K"
+],
+[
+50.3985388,
+-4.1523069,
+"highway/unclassified",
+"Springhill Green, Ham, Crownhill, Plymouth, England, PL2 3RL, United K"
+]
+]
+},
+"p141": {
+"n": [
+[
+50.3999564,
+-4.1472136,
+"highway/residential",
+"St Pancras Avenue, Pennycross, Crownhill, Plymouth, England, PL2 3RY, "
+],
+[
+50.4006611,
+-4.1436535,
+"highway/residential",
+"St Pancras Avenue, Pennycross, Crownhill, Plymouth, England, PL2 3SF, "
+],
+[
+50.4017984,
+-4.1435908,
+"highway/residential",
+"St Pancras Avenue, Manadon, Crownhill, Plymouth, England, PL2 3TB, Uni"
+]
+]
+},
+"m0": {
+"pc": [
+50.856671,
+-3.753429
+]
+},
+"m1": {
+"pc": [
+50.794777,
+-3.64866
+],
+"n": [
+[
+50.7945948,
+-3.6489706,
+"highway/residential",
+"Beech Park, Crediton, Sandford, Mid Devon, Devon, Devon and Torbay, En"
+],
+[
+50.7948487,
+-3.64789,
+"highway/residential",
+"Beech Park, Crediton, Sandford, Mid Devon, Devon, Devon and Torbay, En"
+],
+[
+50.7947367,
+-3.6497203,
+"highway/residential",
+"Beech Park, Crediton, Sandford, Mid Devon, Devon, Devon and Torbay, En"
+]
+]
+},
+"m2": {
+"pc": [
+50.791355,
+-3.649632
+]
+},
+"m3": {
+"pc": [
+50.787194,
+-3.657033
+],
+"n": [
+[
+50.7886318,
+-3.6582836,
+"highway/residential",
+"Barnfield, Fordton, Crediton, Mid Devon, Devon, Devon and Torbay, Engl"
+],
+[
+50.7881925,
+-3.6563072,
+"highway/residential",
+"Barnfield, Fordton, Crediton, Mid Devon, Devon, Devon and Torbay, Engl"
+],
+[
+50.7881995,
+-3.6599876,
+"highway/residential",
+"Barnfield, Fordton, Crediton, Mid Devon, Devon, Devon and Torbay, Engl"
+]
+]
+},
+"m4": {
+"pc": [
+50.789449,
+-3.671655
+],
+"n": [
+[
+50.7901118,
+-3.6715941,
+"highway/residential",
+"Tuckers Meadow, Crediton, Mid Devon, Devon, Devon and Torbay, England,"
+],
+[
+50.7897864,
+-3.6718675,
+"highway/residential",
+"Tuckers Meadow, Crediton, Mid Devon, Devon, Devon and Torbay, England,"
+]
+]
+},
+"m5": {
+"pc": [
+50.791332,
+-3.64553
+],
+"n": [
+[
+50.7902965,
+-3.6425594,
+"landuse/industrial",
+"Lords Meadow Industrial Estate, Crediton, Mid Devon, Devon, Devon and "
+],
+[
+50.7926419,
+-3.6418513,
+"leisure/sports_centre",
+"Lords Meadow Leisure Centre, Hawkins Way, Lords Meadow Industrial Esta"
+],
+[
+50.7911619,
+-3.6444769,
+"leisure/sports_centre",
+"Lords Meadow Liesure Centre, Commercial Road, Lords Meadow Industrial "
+]
+]
+},
+"m6": {
+"pc": [
+50.794261,
+-3.64823
+],
+"n": [
+[
+50.7943415,
+-3.6486995,
+"highway/residential",
+"Walnut Drive, Crediton, Sandford, Mid Devon, Devon, Devon and Torbay, "
+],
+[
+50.794154,
+-3.648265,
+"highway/residential",
+"Walnut Drive, Crediton, Sandford, Mid Devon, Devon, Devon and Torbay, "
+]
+]
+},
+"m7": {
+"pc": [
+50.794237,
+-3.673302
+],
+"n": [
+[
+50.7938891,
+-3.6740234,
+"highway/residential",
+"Queen Elizabeth Drive, Crediton, Sandford, Mid Devon, Devon, Devon and"
+],
+[
+50.7954649,
+-3.6721082,
+"highway/residential",
+"Queen Elizabeth Drive, Crediton, Sandford, Mid Devon, Devon, Devon and"
+],
+[
+50.7928126,
+-3.6753648,
+"highway/bus_stop",
+"Queen Elizabeth Drive, Western Road, Crediton, Sandford, Mid Devon, De"
+]
+]
+},
+"m8": {
+"pc": [
+50.795065,
+-3.670139
+],
+"n": [
+[
+50.7959132,
+-3.6699349,
+"landuse/recreation_ground",
+"Beacon Park, Crediton, Sandford, Mid Devon, Devon, Devon and Torbay, E"
+]
+]
+},
+"m9": {
+"pc": [
+50.794797,
+-3.663744
+],
+"n": [
+[
+50.7945692,
+-3.663941,
+"highway/residential",
+"Monks Close, Crediton, Sandford, Mid Devon, Devon, Devon and Torbay, E"
+]
+]
+},
+"m10": {
+"pc": [
+50.7952,
+-3.640984
+],
+"n": [
+[
+50.7956245,
+-3.6417009,
+"highway/residential",
+"Cromwells Meadow, Crediton, Sandford, Mid Devon, Devon, Devon and Torb"
+]
+]
+},
+"m11": {
+"pc": [
+50.785688,
+-3.65156
+]
+},
+"m12": {
+"pc": [
+50.864367,
+-3.389724
+],
+"n": [
+[
+50.8642697,
+-3.3893594,
+"highway/residential",
+"Ash Drive, Cullompton, Mid Devon, Devon, Devon and Torbay, England, EX"
+]
+]
+},
+"m13": {
+"pc": [
+50.857578,
+-3.399383
+],
+"n": [
+[
+50.8581664,
+-3.4024574,
+"highway/residential",
+"Bockland Close, Cullompton, Mid Devon, Devon, Devon and Torbay, Englan"
+]
+]
+},
+"m14": {
+"pc": [
+50.854008,
+-3.404646
+],
+"n": [
+[
+50.8540658,
+-3.4043921,
+"highway/residential",
+"Bullfinch Close, Cullompton, Mid Devon, Devon, Devon and Torbay, Engla"
+],
+[
+50.8541913,
+-3.4045432,
+"highway/residential",
+"Bullfinch Close, Cullompton, Mid Devon, Devon, Devon and Torbay, Engla"
+]
+]
+},
+"m15": {
+"pc": [
+50.851971,
+-3.400493
+],
+"n": [
+[
+50.8518448,
+-3.4005826,
+"highway/residential",
+"Chaffinch Drive, Cullompton, Mid Devon, Devon, Devon and Torbay, Engla"
+],
+[
+50.8516416,
+-3.4000494,
+"highway/residential",
+"Chaffinch Drive, Cullompton, Mid Devon, Devon, Devon and Torbay, Engla"
+],
+[
+50.8522339,
+-3.4003179,
+"highway/residential",
+"Chaffinch Drive, Cullompton, Mid Devon, Devon, Devon and Torbay, Engla"
+]
+]
+},
+"m16": {
+"pc": [
+50.863515,
+-3.390253
+],
+"n": [
+[
+50.8633183,
+-3.3899346,
+"highway/residential",
+"Conifer Close, Cullompton, Mid Devon, Devon, Devon and Torbay, England"
+]
+]
+},
+"m17": {
+"pc": [
+50.853268,
+-3.401072
+],
+"n": [
+[
+50.8535516,
+-3.402061,
+"leisure/playground",
+"Crossparks Play Area, Cross Parks, Cullompton, Mid Devon, Devon, Devon"
+]
+]
+},
+"m18": {
+"pc": [
+50.852198,
+-3.401054
+],
+"n": [
+[
+50.852066,
+-3.4011491,
+"highway/residential",
+"Dove Close, Cullompton, Mid Devon, Devon, Devon and Torbay, England, E"
+]
+]
+},
+"m19": {
+"pc": [
+50.853378,
+-3.397183
+],
+"n": [
+[
+50.8531189,
+-3.3985296,
+"leisure/playground",
+"Haymans Green Play Area, Hayman's Close, Cullompton, Mid Devon, Devon,"
+]
+]
+},
+"m20": {
+"pc": [
+50.853185,
+-3.399024
+],
+"n": [
+[
+50.8531451,
+-3.3988331,
+"highway/residential",
+"Haymans Green, Cullompton, Mid Devon, Devon, Devon and Torbay, England"
+]
+]
+},
+"m21": {
+"pc": [
+50.868452,
+-3.389519
+],
+"n": [
+[
+50.8666511,
+-3.3908453,
+"highway/residential",
+"Hanover Gardens, Cullompton, Mid Devon, Devon, Devon and Torbay, Engla"
+]
+]
+},
+"m22": {
+"pc": [
+50.8498,
+-3.39253
+],
+"n": [
+[
+50.8490764,
+-3.3934315,
+"highway/residential",
+"Knightswood, Cullompton, Mid Devon, Devon, Devon and Torbay, England, "
+],
+[
+50.8497129,
+-3.3935543,
+"highway/residential",
+"Knightswood, Cullompton, Mid Devon, Devon, Devon and Torbay, England, "
+],
+[
+50.8438234,
+-3.3851078,
+"landuse/farmyard",
+"Knightswood Farm, Mutterton, Cullompton, Mid Devon, Devon, Devon and T"
+]
+]
+},
+"m23": {
+"pc": [
+50.862713,
+-3.390428
+],
+"n": [
+[
+50.8627924,
+-3.3901404,
+"highway/residential",
+"Linden Road, Cullompton, Mid Devon, Devon, Devon and Torbay, England, "
+]
+]
+},
+"m24": {
+"pc": [
+50.866619,
+-3.388683
+]
+},
+"m25": {
+"pc": [
+50.851079,
+-3.394685
+],
+"n": [
+[
+50.8507853,
+-3.3947509,
+"highway/residential",
+"Ploudal Road, Cullompton, Mid Devon, Devon, Devon and Torbay, England,"
+]
+]
+},
+"m26": {
+"pc": [
+50.867043,
+-3.393101
+]
+},
+"m27": {
+"pc": [
+50.849654,
+-3.400992
+],
+"n": [
+[
+50.8499473,
+-3.4009099,
+"highway/residential",
+"Spindlebury, Cullompton, Mid Devon, Devon, Devon and Torbay, England, "
+]
+]
+},
+"m28": {
+"pc": [
+50.85134,
+-3.402875
+],
+"n": [
+[
+50.8514689,
+-3.4024156,
+"leisure/playground",
+"Starlings Roost Play Area, Starling's Roost, Cullompton, Mid Devon, De"
+]
+]
+},
+"m29": {
+"pc": [
+50.850414,
+-3.398373
+],
+"n": [
+[
+50.8690677,
+-3.3885636,
+"highway/residential",
+"Windsor Close, Cullompton, Willand, Mid Devon, Devon, Devon and Torbay"
+],
+[
+50.8690716,
+-3.3880138,
+"highway/residential",
+"Windsor Close, Cullompton, Willand, Mid Devon, Devon, Devon and Torbay"
+]
+]
+},
+"m30": {
+"pc": [
+50.890891,
+-3.498475
+],
+"n": [
+[
+50.8906381,
+-3.4981557,
+"highway/residential",
+"Ashley Rise, Tiverton, Mid Devon, Devon, Devon and Torbay, England, EX"
+],
+[
+50.8913132,
+-3.4989728,
+"highway/residential",
+"Ashley Rise, Tiverton, Mid Devon, Devon, Devon and Torbay, England, EX"
+],
+[
+50.8915634,
+-3.4988458,
+"highway/residential",
+"Ashley Rise, Tiverton, Mid Devon, Devon, Devon and Torbay, England, EX"
+]
+]
+},
+"m31": {
+"pc": [
+50.916617,
+-3.476852
+],
+"n": [
+[
+50.9163503,
+-3.4743916,
+"highway/residential",
+"Banksia Close, Tiverton, Chettiscombe, Mid Devon, Devon, Devon and Tor"
+],
+[
+50.9163052,
+-3.4734457,
+"highway/residential",
+"Banksia Close, Tiverton, Chettiscombe, Mid Devon, Devon, Devon and Tor"
+]
+]
+},
+"m32": {
+"pc": [
+50.904298,
+-3.467459
+]
+},
+"m33": {
+"pc": [
+50.902001,
+-3.499614
+],
+"n": [
+[
+50.9012357,
+-3.5007942,
+"landuse/residential",
+"Cotteylands, Tiverton, Mid Devon, Devon, Devon and Torbay, England, Un"
+]
+]
+},
+"m34": {
+"pc": [
+50.898078,
+-3.462983
+],
+"n": [
+[
+50.8982599,
+-3.4629149,
+"highway/residential",
+"Cudmore Park, Tiverton, Mid Devon, Devon, Devon and Torbay, England, E"
+],
+[
+50.8982563,
+-3.463971,
+"highway/residential",
+"Cudmore Park, Tiverton, Mid Devon, Devon, Devon and Torbay, England, E"
+]
+]
+},
+"m35": {
+"pc": [
+50.914433,
+-3.475361
+],
+"n": [
+[
+50.9143857,
+-3.4756041,
+"highway/residential",
+"Everett Place, Tiverton, Chettiscombe, Mid Devon, Devon, Devon and Tor"
+]
+]
+},
+"m36": {
+"pc": [
+50.915396,
+-3.47532
+],
+"n": [
+[
+50.9143857,
+-3.4756041,
+"highway/residential",
+"Everett Place, Tiverton, Chettiscombe, Mid Devon, Devon, Devon and Tor"
+]
+]
+},
+"m37": {
+"pc": [
+50.912425,
+-3.470588
+]
+},
+"m38": {
+"pc": [
+50.913866,
+-3.471103
+]
+},
+"m39": {
+"pc": [
+50.912943,
+-3.468699
+],
+"n": [
+[
+50.9135619,
+-3.4690212,
+"highway/residential",
+"Marguerite Road, Tiverton, Chettiscombe, Mid Devon, Devon, Devon and T"
+],
+[
+50.9148792,
+-3.4691939,
+"highway/residential",
+"Marguerite Road, Tiverton, Chettiscombe, Mid Devon, Devon, Devon and T"
+],
+[
+50.9131785,
+-3.4701463,
+"highway/bus_stop",
+"Marguerite Road, Lea Road, Tiverton, Chettiscombe, Mid Devon, Devon, D"
+]
+]
+},
+"m40": {
+"pc": [
+50.915906,
+-3.48114
+],
+"n": [
+[
+50.9158735,
+-3.4810416,
+"highway/residential",
+"Marley Close, Tiverton, Chettiscombe, Mid Devon, Devon, Devon and Torb"
+]
+]
+},
+"m41": {
+"pc": [
+50.89982,
+-3.492974
+],
+"n": [
+[
+50.8996176,
+-3.4920107,
+"highway/residential",
+"Orchard Leigh, West Exe, Tiverton, Mid Devon, Devon, Devon and Torbay,"
+]
+]
+},
+"m42": {
+"pc": [
+50.894876,
+-3.497651
+],
+"n": [
+[
+50.895577,
+-3.4995567,
+"landuse/residential",
+"Palmerston Park, Tiverton, Mid Devon, Devon, Devon and Torbay, England"
+],
+[
+50.8949434,
+-3.4961226,
+"highway/residential",
+"Palmerston Park, Tiverton, Mid Devon, Devon, Devon and Torbay, England"
+],
+[
+50.894811,
+-3.4965046,
+"highway/residential",
+"Palmerston Park, Tiverton, Mid Devon, Devon, Devon and Torbay, England"
+]
+]
+},
+"m43": {
+"pc": [
+50.906893,
+-3.468537
+],
+"n": [
+[
+50.9068706,
+-3.4691795,
+"highway/residential",
+"Popham Close, Tiverton, Chettiscombe, Mid Devon, Devon, Devon and Torb"
+],
+[
+50.9064919,
+-3.4700566,
+"highway/residential",
+"Popham Close, Tiverton, Chettiscombe, Mid Devon, Devon, Devon and Torb"
+],
+[
+50.907054,
+-3.468374,
+"highway/residential",
+"Popham Close, Tiverton, Chettiscombe, Mid Devon, Devon, Devon and Torb"
+]
+]
+},
+"m44": {
+"pc": [
+50.903411,
+-3.464388
+],
+"n": [
+[
+50.9027426,
+-3.4633002,
+"highway/residential",
+"Starkey Close, Tiverton, Mid Devon, Devon, Devon and Torbay, England, "
+]
+]
+},
+"m45": {
+"pc": [
+50.897526,
+-3.470361
+],
+"n": [
+[
+50.8981551,
+-3.4698854,
+"highway/residential",
+"Spencer Drive, Tiverton, Mid Devon, Devon, Devon and Torbay, England, "
+],
+[
+50.8989492,
+-3.4697288,
+"highway/residential",
+"Spencer Drive, Tiverton, Mid Devon, Devon, Devon and Torbay, England, "
+],
+[
+50.8975439,
+-3.470564,
+"highway/residential",
+"Spencer Drive, Tiverton, Mid Devon, Devon, Devon and Torbay, England, "
+]
+]
+},
+"m46": {
+"pc": [
+50.911295,
+-3.469614
+],
+"n": [
+[
+50.9104477,
+-3.470089,
+"highway/residential",
+"Trickey Close, Tiverton, Chettiscombe, Mid Devon, Devon, Devon and Tor"
+]
+]
+},
+"m47": {
+"pc": [
+50.915887,
+-3.484056
+],
+"n": [
+[
+50.9161048,
+-3.4838165,
+"highway/residential",
+"Waylands Road, Tiverton, Bolham, Mid Devon, Devon, Devon and Torbay, E"
+],
+[
+50.9166437,
+-3.4817603,
+"highway/residential",
+"Waylands Corner, Tiverton, Chettiscombe, Mid Devon, Devon, Devon and T"
+],
+[
+50.9157612,
+-3.4838015,
+"highway/bus_stop",
+"Waylands Road, Lea Road, Tiverton, Bolham, Mid Devon, Devon, Devon and"
+]
+]
+},
+"m48": {
+"pc": [
+50.903017,
+-3.464944
+],
+"n": [
+[
+50.9018404,
+-3.4687839,
+"amenity/school",
+"Wilcombe Primary School, Lazenby Road, Tiverton, Mid Devon, Devon, Dev"
+],
+[
+50.9031945,
+-3.4742176,
+"building/house",
+"Wilcombe House, Lewis Avenue, Tiverton, Mid Devon, Devon, Devon and To"
+],
+[
+50.9032143,
+-3.4712191,
+"shop/convenience",
+"Wilcombe Stores, 42, Halsbury Road, Tiverton, Mid Devon, Devon, Devon "
+]
+]
+},
+"m49": {
+"pc": [
+50.90357,
+-3.497133
+],
+"n": [
+[
+50.9026001,
+-3.4961237,
+"leisure/park",
+"Westexe Recreation Ground, Tiverton, Mid Devon, Devon, Devon and Torba"
+]
+]
+},
+"m50": {
+"pc": [
+50.907657,
+-3.477849
+],
+"n": [
+[
+50.9063595,
+-3.4764864,
+"leisure/park",
+"Amory Park, Tiverton, Chettiscombe, Mid Devon, Devon, Devon and Torbay"
+]
+]
+},
+"m51": {
+"pc": [
+50.907297,
+-3.487723
+]
+},
+"m52": {
+"n": [
+[
+50.7988634,
+-3.8168927,
+"highway/residential",
+"Godfreys Gardens, Nymet Tracey, Bow, Mid Devon, Devon, Devon and Torba"
+],
+[
+50.7986493,
+-3.8177348,
+"highway/residential",
+"Godfreys Gardens, Nymet Tracey, Bow, Mid Devon, Devon, Devon and Torba"
+],
+[
+50.7989562,
+-3.8179024,
+"highway/residential",
+"Godfreys Gardens, Nymet Tracey, Bow, Mid Devon, Devon, Devon and Torba"
+]
+]
+},
+"m53": {
+"n": [
+[
+50.8002267,
+-3.8082007,
+"highway/residential",
+"St Martins Close, Nymet Tracey, Bow, Mid Devon, Devon, Devon and Torba"
+]
+]
+},
+"m54": {
+"n": [
+[
+50.7997679,
+-3.8095529,
+"highway/residential",
+"Iter Park, Nymet Tracey, Bow, Mid Devon, Devon, Devon and Torbay, Engl"
+],
+[
+50.8009556,
+-3.8099407,
+"highway/bus_stop",
+"Iter Park, A3072, Nymet Tracey, Bow, Mid Devon, Devon, Devon and Torba"
+]
+]
+},
+"m55": {},
+"m56": {
+"n": [
+[
+50.8232197,
+-3.4275345,
+"highway/residential",
+"Townlands, Bradninch, Mid Devon, Devon, Devon and Torbay, England, EX5"
+],
+[
+50.8231576,
+-3.4265306,
+"highway/residential",
+"Townlands, Bradninch, Mid Devon, Devon, Devon and Torbay, England, EX5"
+],
+[
+50.8235963,
+-3.4260609,
+"highway/residential",
+"Townlands, Bradninch, Mid Devon, Devon, Devon and Torbay, England, EX5"
+]
+]
+},
+"m57": {},
+"m58": {
+"n": [
+[
+50.8085689,
+-3.454473,
+"highway/residential",
+"Ellerhayes, Silverton, Mid Devon, Devon, Devon and Torbay, England, EX"
+],
+[
+50.8086821,
+-3.4536608,
+"highway/residential",
+"Ellerhayes, Silverton, Mid Devon, Devon, Devon and Torbay, England, EX"
+]
+]
+},
+"m59": {
+"n": [
+[
+50.9151305,
+-3.2259145,
+"highway/residential",
+"Hollingarth Way, Hemyock, Mid Devon, Devon, Devon and Torbay, England,"
+],
+[
+50.9165419,
+-3.2256486,
+"highway/residential",
+"Hollingarth Way, Hemyock, Mid Devon, Devon, Devon and Torbay, England,"
+]
+]
+},
+"m60": {
+"n": [
+[
+50.912687,
+-3.2340148,
+"highway/residential",
+"Logan Way, Whitehall, Hemyock, Mid Devon, Devon, Devon and Torbay, Eng"
+]
+]
+},
+"m61": {
+"n": [
+[
+50.9186801,
+-3.2207298,
+"highway/unclassified",
+"Lower Millhayes, Hemyock, Mid Devon, Devon, Devon and Torbay, England,"
+],
+[
+50.9190872,
+-3.2250003,
+"highway/residential",
+"Higher Millhayes, Hemyock, Mid Devon, Devon, Devon and Torbay, England"
+],
+[
+50.9189851,
+-3.2261919,
+"highway/residential",
+"Millhayes Farm, Hemyock, Mid Devon, Devon, Devon and Torbay, England, "
+]
+]
+},
+"m62": {
+"n": [
+[
+50.8602418,
+-3.8046171,
+"highway/residential",
+"Church Close, Lapford, Mid Devon, Devon, Devon and Torbay, England, EX"
+]
+]
+},
+"m63": {
+"n": [
+[
+50.8565893,
+-3.753544,
+"highway/residential",
+"Greenaway, Frost, Morchard Bishop, Mid Devon, Devon, Devon and Torbay,"
+]
+]
+},
+"m64": {
+"n": [
+[
+50.9232361,
+-3.3788267,
+"highway/residential",
+"Cornlands, Sampford Peverell, Uplowman, Mid Devon, Devon, Devon and To"
+]
+]
+}
+}
