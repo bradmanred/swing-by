@@ -1,7 +1,7 @@
 // Parents tell us what a playground has. Answers only show once two parents agree (see worker/equipment.js).
 import { esc } from '../lib/card';
 
-type Summary = { confirmed: string[]; open: boolean | null; parents: number; mine: { items: string[]; open: boolean | null } };
+type Summary = { confirmed: string[]; open: boolean | null; parents: number; mine: { items: string[]; open: boolean | null; other?: string[] } };
 
 export function startEquipment() {
   const box = document.getElementById('parent-eq');
@@ -13,6 +13,7 @@ export function startEquipment() {
   const msg = document.getElementById('peq-msg')!;
   const shown = document.getElementById('peq-confirmed')!;
   const button = form.querySelector<HTMLButtonElement>('button[type=submit]')!;
+  const other = form.querySelector<HTMLInputElement>('input[name=other]')!;
 
   function render(s: Summary) {
     const extra = s.confirmed.filter((k) => !official.has(k) && names[k]);
@@ -32,7 +33,8 @@ export function startEquipment() {
     const o = s.mine.open === true ? 'yes' : s.mine.open === false ? 'no' : '';
     const r = form.querySelector<HTMLInputElement>(`input[name=open][value="${o}"]`);
     if (r) r.checked = true;
-    if (s.mine.items.length || s.mine.open != null) {
+    other.value = (s.mine.other ?? []).join(', ');
+    if (s.mine.items.length || s.mine.open != null || other.value) {
       button.textContent = 'Update what I saw';
       msg.textContent = 'Thanks for telling us. Your answers show once another parent agrees.';
     }
@@ -47,8 +49,9 @@ export function startEquipment() {
     e.preventDefault();
     const items = [...form.querySelectorAll<HTMLInputElement>('input[name=item]:checked')].map((i) => i.value);
     const o = form.querySelector<HTMLInputElement>('input[name=open]:checked')?.value ?? '';
-    if (!items.length && !o) {
-      msg.textContent = 'Tick what you saw, or say whether there\'s a playground here, then send.';
+    const typed = other.value.trim();
+    if (!items.length && !o && !typed) {
+      msg.textContent = 'Tick what you saw, type in something else, or say whether there\'s a playground here, then send.';
       return;
     }
     button.disabled = true;
@@ -58,7 +61,7 @@ export function startEquipment() {
         method: 'POST',
         credentials: 'same-origin',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ park, items, open: o === 'yes' ? true : o === 'no' ? false : null }),
+        body: JSON.stringify({ park, items, open: o === 'yes' ? true : o === 'no' ? false : null, other: typed }),
       });
       const res = r.headers.get('Content-Type')?.includes('json') ? await r.json() : null;
       if (!r.ok || !res) throw new Error(res?.error ?? '');
