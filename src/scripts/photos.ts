@@ -2,7 +2,7 @@
 // Talks to /api/photos (worker/photos.js). If that isn't available, the illustration simply stays.
 import { esc } from '../lib/card';
 
-type Photo = { id: string; url: string; credit: string | null; added: string };
+type Photo = { id: string; url: string; credit: string | null; credit_line?: string; source?: string; source_url?: string | null; added: string };
 
 const MAX_SIDE = 1600;
 
@@ -39,8 +39,11 @@ export function startPhotos() {
       .then((res: { photos: Photo[] } | null) => {
         const p = res?.photos?.[0];
         if (!p) return;
-        box.innerHTML = `<figure style="margin:0"><img src="${esc(p.url)}" alt="${esc(`Photo of ${name}, shared by a parent`)}" style="display:block;width:100%;height:auto" loading="lazy" />
-<figcaption class="hint photo-cap">Photo shared by ${esc(p.credit || 'a Swing By parent')}, CC BY 4.0. <button type="button" class="linkbtn" data-report="${esc(p.id)}">Report this photo</button></figcaption></figure>`;
+        const found = p.source === 'geograph' || p.source === 'commons';
+        const credit = p.credit_line ?? `Shared by ${p.credit || 'a Swing By parent'}, CC BY 4.0`;
+        const creditHtml = found && p.source_url ? `<a href="${esc(p.source_url)}" rel="noopener">${esc(credit)}</a>` : esc(credit);
+        box.innerHTML = `<figure style="margin:0"><img src="${esc(p.url)}" alt="${esc(found ? `Photo of ${name}` : `Photo of ${name}, shared by a parent`)}" style="display:block;width:100%;height:auto" loading="lazy" />
+<figcaption class="hint photo-cap">Photo: ${creditHtml}. <button type="button" class="linkbtn" data-report="${esc(p.id)}">Report this photo</button></figcaption></figure>`;
         box.querySelector<HTMLButtonElement>('[data-report]')?.addEventListener('click', async (e) => {
           const b = e.currentTarget as HTMLButtonElement;
           b.disabled = true;

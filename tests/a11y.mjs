@@ -140,6 +140,13 @@ try {
   await page.locator('#fav-cards .fav-btn').first().click();
   if (await page.locator('#fav-cards .card').count()) fail('removing a favourite on My parks did not take it off the list');
 
+  // Ticking "We've been here" asks for a photo, and "Add a photo" takes you to the form.
+  await page.goto(BASE + '/playgrounds/verulamium/');
+  await page.getByLabel("We've been here").check();
+  await page.locator('#photo-nudge').waitFor({ state: 'visible', timeout: 3000 }).catch(() => fail('photo nudge did not appear after ticking'));
+  await page.getByRole('button', { name: 'Add a photo' }).click();
+  if (!(await page.evaluate(() => document.activeElement?.id === 'photo-file'))) fail('Add a photo did not move to the photo form');
+
   // Road trips: a town finds its nearest junction and the playgrounds near it.
   await page.goto(BASE + '/road-trips/');
   await page.fill('#jf-where', 'St Albans');

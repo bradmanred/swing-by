@@ -132,6 +132,10 @@ legend { font-weight: 700; padding: 0; margin-bottom: 8px; }
 .card { background: var(--white); border: var(--line); border-radius: 24px; overflow: hidden; box-shadow: var(--shadow); display: flex; flex-direction: column; }
 .art { display: block; width: 100%; height: auto; }
 img.art { aspect-ratio: 360 / 170; object-fit: cover; background: var(--blue-soft); }
+.card-photo { margin: 0; position: relative; }
+.photo-nudge { margin-top: 14px; padding: 14px 16px; border: 3px solid var(--ink); border-radius: 16px; background: var(--yellow-soft); display: grid; gap: 10px; }
+.photo-nudge .hint { margin: 0; }
+.card-photo figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 2px 8px; font-size: 0.75rem; line-height: 1.4; color: var(--white); background: rgba(26, 26, 46, 0.72); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .card .body { padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
 .card h3 a { color: var(--ink); }
 .card .meta { margin: 0; }
