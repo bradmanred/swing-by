@@ -1,0 +1,10 @@
+[
+{
+"url": "https://www.centralbedfordshire.gov.uk/directory/67/play_areas/category/461",
+"err": "HTTP Error 404: Not Found"
+},
+{
+"url": "https://centralbedfordshire.gov.uk/directory/67/play_areas",
+"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)>"
+}
+]
