@@ -71,33 +71,7 @@ const dirs = `https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.ln
         )}
         {p.ages.length > 0 && <p style="margin-top:12px">Best for: {p.ages.map((a) => L.ages[a]).join(', ')}.</p>}
         {p.size && <p style="margin-top:8px">Size: {L.sizes[p.size]}, as graded by {p.operator ?? 'the council'}.</p>}
-        <div class="parent-eq" id="parent-eq" data-park={p.id} data-official={JSON.stringify([...official])} data-names={JSON.stringify(Object.fromEntries(pickable.map(([k, v]) => [k, [v, ICON[k] ?? '']])))}>
-          <div id="peq-confirmed" hidden></div>
-          <details id="peq-details" open={needsParents}>
-            <summary>{needsParents ? "Been here? Help confirm what it has" : "Spotted something we've missed?"}</summary>
-            <form id="peq-form" style="margin-top:12px;display:grid;gap:14px">
-              {needsParents && <p>We haven't been able to check this playground's equipment with {p.checked ? 'the people who run it' : 'an official source'}. If you've been, tick what you saw. It shows here once another parent agrees.</p>}
-              <fieldset>
-                <legend>Is there a playground here that anyone can use?</legend>
-                <div class="row" style="gap:16px;margin-top:6px">
-                  <label class="chk"><input type="radio" name="open" value="yes" /> Yes</label>
-                  <label class="chk"><input type="radio" name="open" value="no" /> No, it's gone or it's private</label>
-                  <label class="chk"><input type="radio" name="open" value="" checked /> Not sure</label>
-                </div>
-              </fieldset>
-              <fieldset>
-                <legend>What did you see? Tick all that apply</legend>
-                <div class="peq-grid">
-                  {pickable.map(([k, v]) => (
-                    <label class="chk"><input type="checkbox" name="item" value={k} /> <span aria-hidden="true">{ICON[k]}</span> {v}{official.has(k) && <span class="sr-only"> (already listed)</span>}</label>
-                  ))}
-                </div>
-              </fieldset>
-              <button class="btn btn-blue" type="submit" style="justify-self:start">Send what I saw</button>
-              <p class="hint" id="peq-msg" role="status">We don't ask who you are. One parent's answers stay hidden until a second parent agrees.</p>
-            </form>
-          </details>
-        </div>
+        <div id="peq-confirmed" hidden></div>
       </section>
       <section aria-labelledby="hours">
         <h2 id="hours">Opening times</h2>
@@ -210,6 +184,32 @@ const dirs = `https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.ln
           <button class="btn btn-blue" type="submit">Send photo for checking</button>
           <p class="hint" id="photo-msg" role="status"></p>
         </form>
+      </div>
+      <div class="panel parent-eq" id="parent-eq" data-park={p.id} data-official={JSON.stringify([...official])} data-names={JSON.stringify(Object.fromEntries(pickable.map(([k, v]) => [k, [v, ICON[k] ?? '']])))}>
+        <details id="peq-details" open={needsParents}>
+          <summary>{needsParents ? "Been here? Help confirm what it has" : "Spotted something we've missed?"}</summary>
+          <form id="peq-form" style="margin-top:12px;display:grid;gap:14px">
+            {needsParents && <p>We haven't been able to check this playground's equipment with {p.checked ? 'the people who run it' : 'an official source'}. If you've been, tick what you saw. It shows here once another parent agrees.</p>}
+            <fieldset>
+              <legend>Is there a playground here that anyone can use?</legend>
+              <div class="row" style="gap:16px;margin-top:6px">
+                <label class="chk"><input type="radio" name="open" value="yes" /> Yes</label>
+                <label class="chk"><input type="radio" name="open" value="no" /> No, it's gone or it's private</label>
+                <label class="chk"><input type="radio" name="open" value="" checked /> Not sure</label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>What did you see? Tick all that apply</legend>
+              <div class="peq-grid">
+                {pickable.map(([k, v]) => (
+                  <label class="chk"><input type="checkbox" name="item" value={k} /> <span aria-hidden="true">{ICON[k]}</span> {v}{official.has(k) && <span class="sr-only"> (already listed)</span>}</label>
+                ))}
+              </div>
+            </fieldset>
+            <button class="btn btn-blue" type="submit" style="justify-self:start">Send what I saw</button>
+            <p class="hint" id="peq-msg" role="status">We don't ask who you are. One parent's answers stay hidden until a second parent agrees.</p>
+          </form>
+        </details>
       </div>
       <div class="panel">
         <h2 style="font-size:1.75rem">Something wrong?</h2>
