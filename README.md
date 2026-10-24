@@ -90,6 +90,14 @@ The extra columns it uses are in `db/photos-sources.sql`.
 
 Uploads are limited to 5 an hour and 20 a day per connection. Photos are stored in D1 while R2 isn't enabled on the account; the free plan holds roughly 1,000 to 1,500 photos per database. Move them to R2 if uploads grow.
 
+## What parents say a playground has
+
+Every playground page has a "What's here" form where parents tick the equipment they saw, from the same list used across the site (most common first), and say whether there's a playground anyone can use. It opens by itself on Unverified playgrounds and ones with no equipment listed, and folds away elsewhere. After "We've been here", the page offers it alongside the photo prompt.
+
+**One parent's answers are never shown on their own.** An item appears on the page, as "Parents confirm it also has", only once two different parents (different browsers and different connections) have ticked it. "There's a playground here" or "it's gone or private" needs two parents agreeing and more saying so than not. Toilets and baby change can't be ticked: they only come from official sources and the Toilet Map. Answers are stored in the photos database (table: `db/equipment.sql`), with a random browser id and a one-way hash of the connection, never a name. One connection can answer for up to 40 playgrounds a day.
+
+Moderators see every playground with parent answers at `/moderate/`, can clear a playground's answers, and can copy confirmed items into the playground's file to make them part of the listing (and the search filters).
+
 ## Coming next
 
 - Shared parent reports and ratings (Supabase free tier), with reports shown once another parent has confirmed them.
