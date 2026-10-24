@@ -14,7 +14,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: rm -rf tmp/out && bash tmp/fetch.sh
+      - run: sudo apt-get install -y -qq poppler-utils >/dev/null && rm -rf tmp/out && bash tmp/fetch.sh
       - run: |
           git config user.name swing-by-bot; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -f tmp/out; git commit -m "Fetch" && git pull --rebase && git push
