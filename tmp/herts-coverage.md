@@ -4,9 +4,9 @@ Checked 2026-10-24 against playgrounds mapped on OpenStreetMap (© OpenStreetMap
 
 | County | Population | On OpenStreetMap | Covered | Missing | Coverage |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Hertfordshire | 1198k | 0 | 0 | 0 | 100% |
+| Hertfordshire | 1198k | 739 | 302 | 437 | 41% |
 
-In all: 0 public playgrounds on OpenStreetMap, 0 not yet on Swing By.
+In all: 739 public playgrounds on OpenStreetMap, 437 not yet on Swing By.
 
 ## Check these councils' own lists first
 
@@ -15,4 +15,4 @@ Gaps here are not filled from OpenStreetMap until the council's own play area li
 | County | Council | Missing | Look for its list |
 | --- | --- | ---: | --- |
 
-Nothing added: no council list had new playgrounds, and the remaining gaps are all in councils whose own lists need checking first.
+Added 0 playgrounds from council lists (verified) and 417 from OpenStreetMap (Unverified, in councils whose own lists have been checked).
