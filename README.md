@@ -100,9 +100,15 @@ Moderators see every playground with parent answers at `/moderate/`, can clear a
 
 ## Checking coverage
 
-The **Check coverage** workflow (`.github/workflows/coverage.yml`, `scripts/find-gaps.mjs`) compares the playgrounds mapped on OpenStreetMap with the ones we list, county by county, biggest population first: London, Scotland, Wales, the West Midlands, Greater Manchester and so on down to Rutland. A playground counts as covered if we list one within 150 m. Ones tagged private or indoor, and ones at schools, pubs, hotels and holiday parks, are left out.
+The **Check coverage** workflow (`.github/workflows/coverage.yml`, `scripts/find-gaps.mjs`) compares the playgrounds mapped on OpenStreetMap with the ones we list, county by county, biggest population first: London, Scotland, Wales, the West Midlands, Greater Manchester and so on down to Rutland. A playground counts as covered if we list one within 150 m. Ones tagged private or indoor, and ones at schools, pubs, hotels and holiday parks, are left out. It works out which council each missing playground is in.
 
-It runs on the 2nd of each month and writes a table (coverage and the number missing in each county) to the run's summary page, plus a downloadable `coverage-report` with every missing playground. To fill gaps, run it from the Actions tab (Check coverage > Run workflow) with "Add up to this many" set, say, to 200, and optionally one county. It adds the missing playgrounds from the biggest counties first, as Unverified with the OpenStreetMap page as the source, refreshes the nearest toilets, and opens a pull request for you to review. If GitHub doesn't let Actions open pull requests (Settings > Actions > General), it pushes a `coverage/…` branch instead. Pull requests opened by the workflow don't start the build checks by themselves: re-run them from the pull request's Checks tab, or push any commit.
+**Council sources come first.** `src/data/council-sources.json` lists the councils whose own play area lists have been checked (by working through `docs/finding-playgrounds.md`). The workflow:
+
+1. reads any council list it can read itself (a council with a `feed`) and adds playgrounds on it that we don't have, as verified, with the council as the source;
+2. fills the remaining gaps from OpenStreetMap, as Unverified, **only in councils listed in that file**;
+3. lists every other council with gaps under "Check these councils' own lists first", biggest counties first, with a search link. Work through the guide for each one, import its list, then add it to `council-sources.json`. Next time, its remaining gaps can be filled from OpenStreetMap.
+
+It runs on the 2nd of each month and writes the report to the run's summary page, plus a downloadable `coverage-report` with every missing playground by council. To add playgrounds, run it from the Actions tab (Check coverage > Run workflow) with "Add up to this many" set, say, to 200, and optionally one county. Tick "Also fill gaps from OpenStreetMap in councils whose own lists haven't been checked yet" only if you want to skip the council-first step. It refreshes the nearest toilets and opens a pull request for you to review. If GitHub doesn't let Actions open pull requests (Settings > Actions > General), it pushes a `coverage/…` branch instead. Pull requests opened by the workflow don't start the build checks by themselves: re-run them from the pull request's Checks tab, or push any commit.
 
 ## Coming next
 
