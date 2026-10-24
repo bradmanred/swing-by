@@ -247,6 +247,52 @@
    "sources": [
     "https://www.southderbyshire.gov.uk/"
    ]
+  },
+  {
+   "district": "Reigate and Banstead",
+   "council": "Reigate and Banstead Borough Council",
+   "sources": [
+    "https://www.reigate-banstead.gov.uk/directory/20/parks_and_recreation_directory"
+   ],
+   "feed": {
+    "type": "directory",
+    "index": [
+     "https://www.reigate-banstead.gov.uk/directory/20/parks_and_recreation_directory/category/180",
+     "https://www.reigate-banstead.gov.uk/directory/20/parks_and_recreation_directory/category/177",
+     "https://www.reigate-banstead.gov.uk/directory/20/parks_and_recreation_directory/category/178"
+    ],
+    "follow": "/directory_record/\\d+/",
+    "name": "<h1[^>]*>([\\s\\S]*?)</h1>",
+    "coords": "map_marker_location_\\d+\" value=\"(-?\\d+\\.\\d+),(-?\\d+\\.\\d+)\""
+   }
+  },
+  {
+   "district": "Elmbridge",
+   "council": "Elmbridge Borough Council",
+   "sources": [
+    "https://www.elmbridge.gov.uk/leisure-and-culture/green-spaces/parks-play-areas-and-green-spaces-directory"
+   ]
+  },
+  {
+   "district": "Dartford",
+   "council": "Dartford Borough Council",
+   "sources": [
+    "https://www.dartford.gov.uk/parks-open-spaces-1/childrens-playgrounds"
+   ]
+  },
+  {
+   "district": "Guildford",
+   "council": "Guildford Borough Council",
+   "sources": [
+    "https://www.guildford.gov.uk/playgrounds"
+   ]
+  },
+  {
+   "district": "Sevenoaks",
+   "council": "Sevenoaks District Council",
+   "sources": [
+    "https://www.sevenoaks.gov.uk/playgrounds"
+   ]
   }
  ]
 }
