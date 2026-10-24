@@ -1,0 +1,31 @@
+{
+  "name": "Wilmot Road Playground",
+  "region": "south-east",
+  "area": "Dartford",
+  "lat": 51.45022,
+  "lng": 0.19485,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "tp"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Large equipped site with several multiplay units, toddler trampoline, ball court, bike track and grass football area adjacent. This playground is locked at night. Entrance off Wilmot Road, Dartford.",
+  "nearby": [],
+  "operator": "Dartford Borough Council",
+  "sources": [
+    {
+      "label": "Dartford Borough Council: playgrounds",
+      "url": "https://www.dartford.gov.uk/parks-open-spaces-1/childrens-playgrounds"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking. The pin is the playground on OpenStreetMap (© OpenStreetMap contributors) nearest the council's postcode.",
+  "photo": null
+}

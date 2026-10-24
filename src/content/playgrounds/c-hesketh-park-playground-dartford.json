@@ -1,0 +1,29 @@
+{
+  "name": "Hesketh Park Playground",
+  "region": "south-east",
+  "area": "Dartford",
+  "lat": 51.44101,
+  "lng": 0.23424,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Major facility within a large open park with a good range of equipment including multiplay climbing units, ball court and teen zone. This playground is locked at night. Entrances to the park off Park Road, Pilgrims Way, Canterbury Close, Watling Street and The Brent.",
+  "nearby": [],
+  "operator": "Dartford Borough Council",
+  "sources": [
+    {
+      "label": "Dartford Borough Council: playgrounds",
+      "url": "https://www.dartford.gov.uk/parks-open-spaces-1/childrens-playgrounds"
+    }
+  ],
+  "checked": "2026-10-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking. The pin is the playground on OpenStreetMap (© OpenStreetMap contributors) nearest the council's postcode.",
+  "photo": null
+}
