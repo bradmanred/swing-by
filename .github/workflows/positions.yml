@@ -1,0 +1,65 @@
+# Checks where playground pins are against playgrounds mapped on OpenStreetMap (scripts/check-positions.mjs).
+# Early pins were placed by hand, from a postcode or from a street name, before positions came from OpenStreetMap;
+# this finds the ones that are off. The report appears on the run's summary page and as a downloadable
+# "positions-report". Run it from the Actions tab: leave "Move the clear ones" unticked to just look, or tick it to
+# move every pin that has one obvious match on OpenStreetMap and open a pull request to review. Pins with several
+# possible matches, or nothing mapped nearby, are only listed in the report.
+name: Check pin positions
+on:
+  workflow_dispatch:
+    inputs:
+      region:
+        description: 'One region only, e.g. derbyshire or essex (leave blank for all)'
+        default: ''
+      fix:
+        description: 'Move the clear ones, and open a pull request'
+        type: boolean
+        default: false
+      include:
+        description: 'Which pins to check, by where their position came from'
+        default: 'unrecorded,approximate,postcode'
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: positions
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Check pin positions
+        env:
+          REGION: ${{ inputs.region || '' }}
+          INCLUDE: ${{ inputs.include || 'unrecorded,approximate,postcode' }}
+          FIX: ${{ inputs.fix && '--fix' || '' }}
+        run: |
+          if [ -n "$REGION" ]; then node scripts/check-positions.mjs --include "$INCLUDE" --region "$REGION" $FIX; else node scripts/check-positions.mjs --include "$INCLUDE" $FIX; fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: positions-report
+          path: reports/
+      - name: Open a pull request with the moved pins
+        if: ${{ inputs.fix }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -z "$(git status --porcelain -- src/content/playgrounds)" ]; then echo "No pins moved"; exit 0; fi
+          node scripts/nearest-toilets.mjs
+          branch="positions/$(date +%Y-%m-%d)-${{ github.run_number }}"
+          git config user.name "swing-by-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add src/content/playgrounds src/data/toilets.json
+          git commit -m "Move playground pins onto their OpenStreetMap positions"
+          git push -u origin "$branch"
+          # The moved pins, capped so the description stays under GitHub's size limit (the whole list is in the report).
+          { grep -E '^Moved ' reports/positions.md || true; echo; awk '/^## Moves/{f=1;next} /^## /{f=0} f' reports/positions.md | head -120; } > body.md
+          printf '\n\nThe full list is in the run'"'"'s "positions-report". Found by the "Check pin positions" workflow. Each moved pin had exactly one mapped playground within reach (and, beyond 250 m, a matching name). Pins with several possible matches are listed in the run summary, not moved: check those by hand. Check a few moved pins on the map before merging. The build checks start when you push a commit or re-run them from the Checks tab.\n' >> body.md
+          gh pr create --base main --head "$branch" --title "Move playground pins onto their OpenStreetMap positions" --body-file body.md \
+            || echo "::warning title=Check pin positions::Pushed $branch but couldn't open a pull request (Settings > Actions > General > 'Allow GitHub Actions to create pull requests'). Open it from the branch instead."
