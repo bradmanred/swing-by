@@ -114,6 +114,18 @@ The **Check coverage** workflow (`.github/workflows/coverage.yml`, `scripts/find
 
 It runs on the 2nd of each month and writes the report to the run's summary page, plus a downloadable `coverage-report` with every missing playground by council. To add playgrounds, run it from the Actions tab (Check coverage > Run workflow) with "Add up to this many" set, say, to 200, and optionally one county. Tick "Also fill gaps from OpenStreetMap in councils whose own lists haven't been checked yet" only if you want to skip the council-first step. It refreshes the nearest toilets and opens a pull request for you to review. If GitHub doesn't let Actions open pull requests (Settings > Actions > General), it pushes a `coverage/…` branch instead. Pull requests opened by the workflow don't start the build checks by themselves: re-run them from the pull request's Checks tab, or push any commit.
 
+## Checking pin positions
+
+Early playgrounds were pinned by hand, from a postcode or from a street name, before positions came from OpenStreetMap, and some of those pins are well off (one in Chesterfield was 400 m outside its park). The **Check pin positions** workflow (`.github/workflows/positions.yml`, `scripts/check-positions.mjs`) finds them. A playground's `notConfirmed` text says where its position came from: "taken from OpenStreetMap" and "from the council's map" are trusted; "mapped from the postcode", "approximate" or nothing at all are checked. For each checked pin it looks for public playgrounds mapped on OpenStreetMap nearby, matches them one to one, and reports:
+
+- **confirmed**: a mapped playground is within 60 m, so the pin is right.
+- **move**: one clear match, within 250 m (or 500 m if the names share a word). The pin is probably wrong.
+- **ambiguous**: several mapped playgrounds could be the one, or the only one is far away and its name says nothing. Choose by hand.
+- **unmatched**: the mapped playgrounds nearby are used by other pins, so this one may be stacked on another.
+- **far**: nothing mapped within 500 m. Either the pin is badly out or the playground isn't on OpenStreetMap yet.
+
+Run it from the Actions tab (Check pin positions > Run workflow), with a region such as `derbyshire` to start small. Leave "Move the clear ones" unticked to just read the report; tick it to move the "move" pins, refresh the nearest toilets and open a pull request. Look at a few moved pins on the map before merging. Pins with several possible matches are never moved automatically. Moved pins say "taken from OpenStreetMap" afterwards, so each is only checked once. `tests/positions.mjs` tests the script on made-up data, and runs with `npm test`.
+
 ## Coming next
 
 - Shared parent reports and ratings (Supabase free tier), with reports shown once another parent has confirmed them.
