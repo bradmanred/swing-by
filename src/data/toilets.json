@@ -5,7 +5,7 @@
   "licence": "CC BY 4.0",
   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
   "note": "Nearest toilets worked out by Swing By from the Toilet Map data.",
-  "export": "toilets-2026-10-24T00%3A00%3A40.980Z-4xys7qA1TNuZaCBuSujgVlxDjNqmoB.csv"
+  "export": "toilets-2026-10-25T00%3A00%3A40.962Z-DivhrtW9fiD2BLYfiXTLR640IucHLt.csv"
  },
  "toilets": 15826,
  "parks": {
@@ -65977,24 +65977,24 @@
   },
   "queens": {
    "nearest": {
-    "id": "fb4ef84e208bb13760dbcf6d",
-    "name": "Lidl",
-    "m": 435,
-    "babyChange": false,
-    "accessible": false,
-    "free": true,
-    "lat": 53.233078197,
-    "lng": -1.446528733
-   },
-   "nearestBabyChange": {
-    "id": "19ad771eed799a7a4eadf95c",
-    "name": "Monkey Park Cafe",
-    "m": 635,
-    "babyChange": true,
+    "id": "2876d7f29fd82a5ef87b5f58",
+    "name": "Public toilet",
+    "m": 115,
+    "babyChange": null,
     "accessible": false,
     "free": false,
-    "lat": 53.238304222,
-    "lng": -1.443530023
+    "lat": 53.2336145,
+    "lng": -1.4327481
+   },
+   "nearestBabyChange": {
+    "id": "668776146b340b131066c553",
+    "name": "Pavements Shopping Centre, Low Pavement",
+    "m": 349,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 53.234603914,
+    "lng": -1.429601312
    }
   },
   "rock": {
