@@ -120,6 +120,12 @@ try {
       if (!pc || pc[2]?.postcode !== 'AL1 3') fail(`postcode search should send the postcode as AL1 3 (last two characters dropped), got ${JSON.stringify(sent)}`);
       if (JSON.stringify(sent).match(/3af/i)) fail('a full postcode was sent to Analytics');
 
+      await page.fill('#where', 'St Albans');
+      await page.getByRole('button', { name: "Let's go!" }).click();
+      await page.waitForFunction(() => document.querySelector('#where-hint')?.textContent === 'Showing playgrounds near St Albans.');
+      const town = (await events(page)).find((e) => e[1] === 'town_search');
+      if (town?.[2]?.town !== 'St Albans') fail(`a town search should send town St Albans, got ${JSON.stringify(await events(page))}`);
+
       await page.goto(BASE + '/search/');
       await page.waitForFunction(() => document.getElementById('search-status')?.textContent !== 'Loading…');
       await page.fill('#q', 'moneyhole');
@@ -133,6 +139,22 @@ try {
       if (JSON.stringify(await events(page)).match(/3af/i)) fail('a full postcode was sent to Analytics');
       await ctx.close();
     }
+  }
+
+  {
+    // Hearts on the home page's cards work straight away, and still work (once, not twice) after "Show more playgrounds".
+    const ctx = await browser.newContext();
+    const page = await ctx.newPage();
+    await page.goto(BASE + '/');
+    const heart = page.locator('#cards [data-fav]').first();
+    await heart.click();
+    if ((await heart.getAttribute('aria-pressed')) !== 'true') fail('the heart on a home page card did nothing before "Show more playgrounds" was used');
+    await heart.click();
+    await page.getByRole('button', { name: 'Show more playgrounds' }).click();
+    await page.getByRole('button', { name: 'Show more playgrounds' }).click();
+    await heart.click();
+    if ((await heart.getAttribute('aria-pressed')) !== 'true') fail('the heart on a home page card did not turn on after "Show more playgrounds" was used twice');
+    await ctx.close();
   }
 
   const ctx = await browser.newContext();
