@@ -83,6 +83,80 @@ try {
     await ctx.close();
   }
 
+  {
+    // Searches go to Analytics as events, but only after consent, and a postcode loses its last two characters first.
+    const open = async () => {
+      const ctx = await browser.newContext();
+      const page = await ctx.newPage();
+      await page.route('https://www.googletagmanager.com/**', (route) => route.fulfill({ status: 200, contentType: 'text/javascript', body: '' }));
+      await page.route('https://api.postcodes.io/**', (route) =>
+        route.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ result: { postcode: 'AL1 3AF', latitude: 51.7527, longitude: -0.3394 } }) }),
+      );
+      return { ctx, page };
+    };
+    const events = (page) => page.evaluate(() => (window.dataLayer || []).map((a) => Array.from(a)).filter((a) => a[0] === 'event'));
+    const postcodeSearch = async (page) => {
+      await page.fill('#where', 'AL1 3AF');
+      await page.getByRole('button', { name: "Let's go!" }).click();
+      await page.waitForFunction(() => document.querySelector('#where-hint')?.textContent?.startsWith('Showing playgrounds near'));
+    };
+
+    {
+      const { ctx, page } = await open();
+      await page.goto(BASE + '/');
+      await page.getByRole('button', { name: 'No thanks' }).click();
+      await postcodeSearch(page);
+      if ((await events(page)).length) fail('a postcode search sent an Analytics event after "No thanks"');
+      await ctx.close();
+    }
+
+    {
+      const { ctx, page } = await open();
+      await page.goto(BASE + '/');
+      await page.getByRole('button', { name: 'Accept analytics' }).click();
+      await postcodeSearch(page);
+      const sent = await events(page);
+      const pc = sent.find((e) => e[1] === 'postcode_search');
+      if (!pc || pc[2]?.postcode !== 'AL1 3') fail(`postcode search should send the postcode as AL1 3 (last two characters dropped), got ${JSON.stringify(sent)}`);
+      if (JSON.stringify(sent).match(/3af/i)) fail('a full postcode was sent to Analytics');
+
+      await page.fill('#where', 'St Albans');
+      await page.getByRole('button', { name: "Let's go!" }).click();
+      await page.waitForFunction(() => document.querySelector('#where-hint')?.textContent === 'Showing playgrounds near St Albans.');
+      const town = (await events(page)).find((e) => e[1] === 'town_search');
+      if (town?.[2]?.town !== 'St Albans') fail(`a town search should send town St Albans, got ${JSON.stringify(await events(page))}`);
+
+      await page.goto(BASE + '/search/');
+      await page.waitForFunction(() => document.getElementById('search-status')?.textContent !== 'Loading…');
+      await page.fill('#q', 'moneyhole');
+      await page.keyboard.press('Enter');
+      await page.fill('#q', 'visit AL1 3AF');
+      await page.keyboard.press('Enter');
+      await page.waitForFunction(() => /result|Nothing found/.test(document.getElementById('search-status')?.textContent ?? ''));
+      const searches = (await events(page)).filter((e) => e[1] === 'advanced_search');
+      if (searches[0]?.[2]?.search_term !== 'moneyhole' || typeof searches[0]?.[2]?.results_count !== 'number') fail(`advanced search should send search_term moneyhole and results_count, got ${JSON.stringify(searches)}`);
+      if (searches[1]?.[2]?.search_term !== 'visit al1 3') fail(`a postcode typed in advanced search should lose its last two characters, got ${JSON.stringify(searches)}`);
+      if (JSON.stringify(await events(page)).match(/3af/i)) fail('a full postcode was sent to Analytics');
+      await ctx.close();
+    }
+  }
+
+  {
+    // Hearts on the home page's cards work straight away, and still work (once, not twice) after "Show more playgrounds".
+    const ctx = await browser.newContext();
+    const page = await ctx.newPage();
+    await page.goto(BASE + '/');
+    const heart = page.locator('#cards [data-fav]').first();
+    await heart.click();
+    if ((await heart.getAttribute('aria-pressed')) !== 'true') fail('the heart on a home page card did nothing before "Show more playgrounds" was used');
+    await heart.click();
+    await page.getByRole('button', { name: 'Show more playgrounds' }).click();
+    await page.getByRole('button', { name: 'Show more playgrounds' }).click();
+    await heart.click();
+    if ((await heart.getAttribute('aria-pressed')) !== 'true') fail('the heart on a home page card did not turn on after "Show more playgrounds" was used twice');
+    await ctx.close();
+  }
+
   const ctx = await browser.newContext();
   const page = await ctx.newPage();
   await page.goto(BASE + '/');
@@ -173,12 +247,16 @@ try {
     const first = await page.locator('#search-results .hit > a').first().textContent();
     if (first !== want) fail(`search "${q}" put "${first}" first`);
   }
+  // The header has no search box: advanced search is linked from the footer, and Find stays in the header.
   await page.goto(BASE + '/');
-  await page.getByRole('searchbox', { name: 'Search playgrounds and pages' }).fill('Welwyn Garden City');
+  if (await page.locator('.site-header [role="search"], .site-header input[type="search"]').count()) fail('the header should not have a search box');
+  if (!(await page.locator('.site-header .nav').getByRole('link', { name: 'Find', exact: true }).count())) fail('the Find link is missing from the header');
+  await page.locator('.site-footer').getByRole('link', { name: 'Advanced search' }).click();
+  await page.waitForURL(/\/search\/$/);
+  await page.getByRole('searchbox', { name: 'Search Swing By' }).fill('Welwyn Garden City');
   await page.keyboard.press('Enter');
-  await page.waitForURL(/\/search\/\?q=/);
   await page.locator('#search-results .hit').first().waitFor();
-  if ((await page.locator('#search-results .hit').count()) < 10) fail('header search for Welwyn Garden City found too few');
+  if ((await page.locator('#search-results .hit').count()) < 10) fail('advanced search for Welwyn Garden City found too few');
 
   await page.goto(BASE + '/playgrounds/verulamium/');
   await page.getByLabel('4 out of 5').focus();

@@ -1,5 +1,6 @@
 import { cardHTML, esc, fmtMiles, type CardPhoto, type ClientPark } from '../lib/card';
 import { store, getMine, startFavs } from './store';
+import { track, postcodeSector } from './track';
 
 // 'example' is the starting point before someone tells us where they are.
 type Origin = { name: string; lat: number; lng: number; acc: number; how: 'town' | 'postcode' | 'gps' | 'example' };
@@ -150,6 +151,11 @@ export function startFinder() {
       if (mine !== lookup) return;
       if (o) {
         setOrigin(o);
+        // The postcode goes to Analytics without its last two characters (see track.ts), and only after consent.
+        // Towns are sent by their proper name (so "st albans" and "St Alban's" count together), never what was typed.
+        const pc = o.how === 'postcode' ? postcodeSector(where.value) : null;
+        if (pc) track('postcode_search', { postcode: pc });
+        else if (o.how === 'town') track('town_search', { town: o.name });
         hint.textContent = `Showing playgrounds near ${o.name}.`;
         $('#near-title').scrollIntoView({ block: 'start' });
       } else hint.textContent = 'Enter a town or postcode first.';
@@ -248,12 +254,12 @@ export function startFinder() {
   $('#more').addEventListener('click', () => {
     const before = st.limit;
     st.limit += PAGE;
-    // Hearts on cards: saved on this device. Re-run after each render so new cards show their state.
-  syncFavs = startFavs(() => st.sort === 'fav' && render());
-  render(false);
+    render(false);
     document.querySelectorAll<HTMLAnchorElement>('#cards h3 a')[before]?.focus();
   });
 
+  // Hearts on cards: saved on this device. Started once, here; render() re-syncs them whenever the cards are redrawn.
+  syncFavs = startFavs(() => st.sort === 'fav' && render());
   render(false);
 
   // Approved parent photos replace the illustrations on cards. Without them the illustrations stay.

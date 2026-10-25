@@ -1,6 +1,7 @@
 // Site search: playgrounds by name, town, county, who runs them, equipment and description, plus the site's pages.
 // Runs in the browser over /search-index.json, which is built with the site.
 import { esc } from '../lib/card';
+import { track, searchTerm } from './track';
 
 export type IndexPark = { id: string; n: string; a: string; r: string; o: string; f: string[]; m: string; d: string; c: boolean };
 export type IndexPage = { url: string; title: string; text: string };
@@ -146,17 +147,32 @@ export function startSearch() {
     if (trimmed) url.searchParams.set('q', trimmed);
     else url.searchParams.delete('q');
     history[push ? 'pushState' : 'replaceState'](null, '', url);
-    document.title = trimmed ? `Search: ${trimmed} | Swing By` : 'Search | Swing By';
+    document.title = trimmed ? `Search: ${trimmed} | Swing By` : 'Advanced search | Swing By';
   }
 
+  // Tell Analytics what was searched for (after consent only, see track.ts). Results appear as you type, so a search
+  // counts when it is submitted or when typing pauses, never for each letter, and the same term isn't counted twice in a row.
+  let reported = '';
+  const report = (q: string) => {
+    const term = searchTerm(q);
+    if (!data || term.length < 2 || term === reported) return;
+    reported = term;
+    track('advanced_search', { search_term: term, results_count: hits.length });
+  };
+
   let t: ReturnType<typeof setTimeout> | undefined;
+  let r: ReturnType<typeof setTimeout> | undefined;
   input.addEventListener('input', () => {
     clearTimeout(t);
+    clearTimeout(r);
     t = setTimeout(() => run(input.value), 150);
+    r = setTimeout(() => report(input.value), 1500);
   });
   form.addEventListener('submit', (e) => {
     e.preventDefault();
+    clearTimeout(r);
     run(input.value, true);
+    report(input.value);
   });
   more.addEventListener('click', () => {
     const before = shown;
