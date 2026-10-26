@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/bradmanred/swing-by#readme",
   "dependencies": {
+    "@astrojs/sitemap": "^3.7.4",
     "astro": "^7.4.1",
     "maplibre-gl": "^6.15.0"
   },

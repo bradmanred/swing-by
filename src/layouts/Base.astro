@@ -2,8 +2,10 @@
 import '../styles/global.css';
 import Analytics from '../components/Analytics.astro';
 import CookieBar from '../components/CookieBar.astro';
-interface Props { title: string; description?: string; current?: string; analytics?: boolean; fullTitle?: string }
-const { title, description = 'Find playgrounds near you, and see the toilets, baby change, equipment and entry costs before you go. Every playground is checked against official council and operator sources.', current, analytics = true, fullTitle } = Astro.props;
+// noindex keeps a page out of search results. image is the picture shown when the page is shared (a path on this site or a full
+// address; defaults to the Swing By card). jsonLd is structured data for search engines, as one object or a list of them.
+interface Props { title: string; description?: string; current?: string; analytics?: boolean; fullTitle?: string; noindex?: boolean; image?: string; jsonLd?: object | object[] }
+const { title, description = 'Find playgrounds near you, and see the toilets, baby change, equipment and entry costs before you go. Every playground is checked against official council and operator sources.', current, analytics = true, fullTitle, noindex = false, image = '/og-default.png', jsonLd } = Astro.props;
 const nav = [
   ['/', 'Find'],
   ['/road-trips/', 'Road trips'],
@@ -11,6 +13,10 @@ const nav = [
   ['/my-parks/', 'My parks'],
 ];
 const full = fullTitle ?? (title === 'Swing By' ? title : `${title} | Swing By`);
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const shareImage = new URL(image, Astro.site).href;
+// "<" is escaped so nothing in the data can end the script tag early.
+const jsonLdText = jsonLd ? JSON.stringify(jsonLd).replace(/</g, '\\u003c') : null;
 ---
 <!doctype html>
 <html lang="en-GB">
@@ -20,6 +26,17 @@ const full = fullTitle ?? (title === 'Swing By' ? title : `${title} | Swing By`)
     <title>{full}</title>
     {analytics && <Analytics />}
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex" />}
+    <meta property="og:site_name" content="Swing By" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={full} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={shareImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    {jsonLdText && <script type="application/ld+json" set:html={jsonLdText} />}
     <link rel="icon" href="/favicon.ico" sizes="32x32" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -57,7 +74,7 @@ const full = fullTitle ?? (title === 'Swing By' ? title : `${title} | Swing By`)
     <footer class="site-footer">
       <div class="wrap">
         <p>Always check equipment before children use it. If something is dangerous, report it to the council or operator that runs the playground. In an emergency, call 999.</p>
-        <p>Playground details come from council and operator websites, and OpenStreetMap. Places marked "Unverified" have not been checked yet. <a href="/about/">About our data</a> · <a href="/playgrounds/">All playgrounds A to Z</a> · <a href="/search/">Advanced search</a></p>
+        <p>Playground details come from council and operator websites, and OpenStreetMap. Places marked "Unverified" have not been checked yet. <a href="/about/">About our data</a> · <a href="/playgrounds/in/">Browse by area</a> · <a href="/playgrounds/">All playgrounds A to Z</a> · <a href="/search/">Advanced search</a></p>
         <p>Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>.{analytics && <> · <button class="linkish" type="button" id="cookie-settings">Cookie settings</button></>}</p>
       </div>
     </footer>
