@@ -120,7 +120,24 @@ if (!DRY) {
   const r = await fetch(`${SITE}/api/photos/search-status`, { headers: { ...UA, Authorization: `Bearer ${TOKEN}` } }).catch(() => null);
   if (!r) stop(`Couldn't reach ${SITE}. Try again later.`);
   if (r.status === 401) stop("The site didn't accept MOD_TOKEN. Check the GitHub secret matches the MOD_TOKEN secret on the Worker exactly.");
-  if (!r.ok) stop(`${SITE}/api/photos/search-status answered ${r.status}. Has the latest site been deployed?`);
+  if (!r.ok) {
+    // Show what came back, so a block in front of the Worker (Cloudflare's firewall or bot protection) can be
+    // told apart from a problem in the Worker itself. The Worker always answers with JSON like {"error": "…"}.
+    const body = strip(await r.text().catch(() => '')).slice(0, 300);
+    const h = (name) => r.headers.get(name) || '-';
+    console.log(`Response: ${r.status} ${r.statusText}. content-type: ${h('content-type')}, server: ${h('server')}, cf-ray: ${h('cf-ray')}, cf-mitigated: ${h('cf-mitigated')}`);
+    console.log(`Body (first 300 characters): ${body || '(empty)'}`);
+    let fromWorker = false;
+    try {
+      fromWorker = typeof JSON.parse(body).error === 'string';
+    } catch {}
+    if (fromWorker)
+      stop(`${SITE}/api/photos/search-status answered ${r.status} from the Worker: ${body}. Has the latest site been deployed?`);
+    stop(
+      `${SITE}/api/photos/search-status answered ${r.status} but not from the Worker's own code, so it was most likely blocked before reaching it. ` +
+        'In Cloudflare, open Security > Events and look for this request to see which rule stopped it, then add an exception for /api/photos/ requests that carry an Authorization header.',
+    );
+  }
   status = await r.json();
 }
 if (!GEOGRAPH_KEY) console.log('::warning title=Find playground photos::No GEOGRAPH_KEY secret, so only Wikimedia Commons was searched.');
