@@ -1,0 +1,54 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import PlaceList from '../../../../components/PlaceList.astro';
+import { areaUrl, breadcrumbLd, inRegionName, places, summaryLines, type Place } from '../../../../lib/places';
+
+export async function getStaticPaths() {
+  const all = await places();
+  return all.map((pl) => ({ params: { region: pl.id }, props: { pl } }));
+}
+const { pl } = Astro.props as { pl: Place };
+const name = inRegionName(pl);
+const lines = summaryLines(pl.parks, name);
+// Playgrounds in places too small for a page of their own are listed here, unless there are too many for one page
+// (then the A to Z list has them).
+const SHOW_REST = 100;
+const restAreas = [...new Set(pl.rest.map((p) => p.area.trim()))].sort((a, b) => a.localeCompare(b, 'en-GB'));
+const crumbs = breadcrumbLd(Astro.site, [['Find', '/'], ['Browse by area', '/playgrounds/in/'], [pl.name, `/playgrounds/in/${pl.id}/`]]);
+---
+<Base
+  title={`Playgrounds in ${name}`}
+  description={`${pl.parks.length.toLocaleString('en-GB')} playgrounds in ${name}. See toilets, baby change, equipment and entry costs before you go.`}
+  jsonLd={crumbs}
+>
+  <div>
+    <p class="crumbs"><a href="/">Find</a> › <a href="/playgrounds/in/">Browse by area</a> › {pl.name}</p>
+    <h1>Playgrounds in {name}</h1>
+    <div class="prose" style="margin-top:12px">
+      {lines.map((l) => <p>{l}</p>)}
+    </div>
+  </div>
+  {pl.areas.length > 0 && (
+    <section aria-labelledby="towns">
+      <h2 id="towns">Towns and areas</h2>
+      <ul class="place-links">
+        {pl.areas.map((a) => <li><a href={areaUrl(pl.id, a)}>{a.name}</a> ({a.parks.length})</li>)}
+      </ul>
+    </section>
+  )}
+  {pl.rest.length > 0 && (
+    <section aria-labelledby="more">
+      <h2 id="more">{pl.areas.length > 0 ? 'Other places' : 'All playgrounds'}</h2>
+      {pl.rest.length <= SHOW_REST ? (
+        restAreas.map((a) => (
+          <div style="margin-top:16px">
+            <h3>{a}</h3>
+            <PlaceList parks={pl.rest.filter((p) => p.area.trim() === a)} />
+          </div>
+        ))
+      ) : (
+        <p style="margin-top:12px">{pl.rest.length.toLocaleString('en-GB')} more playgrounds are in smaller places. You'll find them all in <a href={`/playgrounds/#r-${pl.id}`}>the A to Z list for {pl.name}</a>.</p>
+      )}
+    </section>
+  )}
+</Base>

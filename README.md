@@ -7,6 +7,8 @@ Find a playground worth the trip. Swing By lists playgrounds with who runs them,
 - `src/content/playgrounds/`: one JSON file per playground. This is the content people edit.
 - `src/data/`: counties and towns, motorway junctions, and the labels for equipment and facilities.
 - `src/pages/`: the pages (finder with map, playground pages, road trips, memberships, my parks).
+- `src/pages/playgrounds/in/` and `src/lib/places.ts`: the browse-by-area pages (`/playgrounds/in/`): one for each region, and one for each town or area with at least 5 playgrounds, so people can find "playgrounds in Chelmsford" in a search. They're built from each playground's `region` and `area`, which must match exactly, so "Abbots Langley" and "Abbots Langley, Three Rivers" get separate pages. Use one spelling per place to keep them together.
+- Search engines: `@astrojs/sitemap` writes the sitemap at build time, `public/robots.txt` points to it, and `src/layouts/Base.astro` adds the canonical link, share tags (the picture is `public/og-default.png`) and optional structured data. Pages with `noindex` (moderator, My parks, advanced search) are kept out of both.
 - `public/admin/`: the content editor (Decap CMS).
 - `worker/` and `functions/api/`: GitHub sign-in for the content editor, and the "Where should we go next?" vote (`worker/vote.js`), run on Cloudflare.
 - `src/data/next-areas.json`: the areas people can vote for. Edit this list to change the options.
