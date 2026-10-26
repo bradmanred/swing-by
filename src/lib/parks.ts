@@ -12,7 +12,6 @@ export const L = labels as {
   facilities: Record<string, string>;
   memberships: Record<string, string>;
   nearby: Record<string, string>;
-  duskByMonth: string[];
   sizes: Record<string, string>;
 };
 
