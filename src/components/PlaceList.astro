@@ -1,0 +1,30 @@
+---
+// A list of playgrounds for the place pages: name, what's there at a glance, and the start of the description.
+import { ICON, paidEntry, toiletInfo, type Park } from '../lib/parks';
+import { blurb } from '../lib/places';
+interface Props { parks: Park[]; showArea?: boolean }
+const { parks, showArea = false } = Astro.props;
+const rows = parks.map((p) => {
+  const toilets = toiletInfo(p).onSite;
+  const baby = p.babyChange === true;
+  const pay = paidEntry(p);
+  const unverified = !p.checked;
+  return { p, toilets, baby, pay, unverified, any: toilets || baby || pay || unverified };
+});
+---
+<ul class="place-list">
+  {rows.map(({ p, toilets, baby, pay, unverified, any }) => (
+    <li>
+      <a href={`/playgrounds/${p.id}/`}><strong>{p.name}</strong></a>{showArea && <span class="hint"> · {p.area}</span>}
+      {any && (
+        <ul class="chips" aria-label={`${p.name}: at a glance`}>
+          {toilets && <li><span aria-hidden="true">{ICON.wc}</span> Toilets</li>}
+          {baby && <li><span aria-hidden="true">{ICON.bc}</span> Baby change</li>}
+          {pay && <li class="pay"><span class="pound" aria-hidden="true">£</span> Paid entry</li>}
+          {unverified && <li class="unv">Unverified</li>}
+        </ul>
+      )}
+      {p.description && <p class="hint">{blurb(p.description)}</p>}
+    </li>
+  ))}
+</ul>

@@ -1,0 +1,27 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { areaUrl, breadcrumbLd, inRegionName, places, regionUrl } from '../../../lib/places';
+const all = await places();
+const crumbs = breadcrumbLd(Astro.site, [['Find', '/'], ['Browse by area', '/playgrounds/in/']]);
+---
+<Base
+  title="Browse playgrounds by area"
+  description="Find playgrounds by county, region and town. See which have toilets, baby change and free entry before you go."
+  jsonLd={crumbs}
+>
+  <div>
+    <p class="crumbs"><a href="/">Find</a> › Browse by area</p>
+    <h1>Browse playgrounds by area</h1>
+    <p style="margin-top:12px">Pick a county or region, or one of the towns we have the most playgrounds in. To search by postcode, use <a href="/">Find</a>. For every playground in one list, see <a href="/playgrounds/">All playgrounds A to Z</a>.</p>
+  </div>
+  {all.map((pl) => (
+    <section aria-labelledby={`r-${pl.id}`}>
+      <h2 id={`r-${pl.id}`}><a href={regionUrl(pl.id)}>{pl.name}</a> ({pl.parks.length.toLocaleString('en-GB')})</h2>
+      {pl.areas.length > 0 && (
+        <ul class="place-links" aria-label={`Towns and areas in ${inRegionName(pl)}`}>
+          {pl.areas.map((a) => <li><a href={areaUrl(pl.id, a)}>{a.name}</a> ({a.parks.length})</li>)}
+        </ul>
+      )}
+    </section>
+  ))}
+</Base>
