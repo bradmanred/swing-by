@@ -1,0 +1,53 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import PlaceList from '../../../../components/PlaceList.astro';
+import { areaLabel, areaUrl, breadcrumbLd, inRegionName, places, regionUrl, summaryLines, type Area, type Place } from '../../../../lib/places';
+
+export async function getStaticPaths() {
+  const all = await places();
+  return all.flatMap((pl) => pl.areas.map((area) => ({ params: { region: pl.id, area: area.slug }, props: { pl, area } })));
+}
+const { pl, area } = Astro.props as { pl: Place; area: Area };
+const label = areaLabel(area, pl);
+const lines = summaryLines(area.parks, label);
+// Other big places in the same region, so there's always somewhere else to go.
+const others = pl.areas.filter((a) => a.slug !== area.slug).sort((a, b) => b.parks.length - a.parks.length).slice(0, 12);
+const crumbs = breadcrumbLd(Astro.site, [
+  ['Find', '/'],
+  ['Browse by area', '/playgrounds/in/'],
+  [pl.name, regionUrl(pl.id)],
+  [area.name, areaUrl(pl.id, area)],
+]);
+const list = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: `Playgrounds in ${label}`,
+  numberOfItems: area.parks.length,
+  itemListElement: area.parks.map((p, i) => ({ '@type': 'ListItem', position: i + 1, name: p.name, url: new URL(`/playgrounds/${p.id}/`, Astro.site).href })),
+};
+---
+<Base
+  title={`Playgrounds in ${label}`}
+  description={`${area.parks.length} playgrounds in ${label}. See toilets, baby change, equipment and entry costs before you go.`}
+  jsonLd={[crumbs, list]}
+>
+  <div>
+    <p class="crumbs"><a href="/">Find</a> › <a href="/playgrounds/in/">Browse by area</a> › <a href={regionUrl(pl.id)}>{pl.name}</a> › {area.name}</p>
+    <h1>Playgrounds in {label}</h1>
+    <div class="prose" style="margin-top:12px">
+      {lines.map((l) => <p>{l}</p>)}
+    </div>
+  </div>
+  <section aria-labelledby="list">
+    <h2 id="list">All {area.parks.length} playgrounds</h2>
+    <PlaceList parks={area.parks} />
+  </section>
+  {others.length > 0 && (
+    <section aria-labelledby="elsewhere">
+      <h2 id="elsewhere">Elsewhere in {inRegionName(pl)}</h2>
+      <ul class="place-links">
+        {others.map((a) => <li><a href={areaUrl(pl.id, a)}>{a.name}</a> ({a.parks.length})</li>)}
+      </ul>
+    </section>
+  )}
+</Base>

@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { allParks, clientPark, looUrl, miles, toiletInfo, toiletSource, fmtDate, hoursText, km, L, regionName, ICON, type Park } from '../../lib/parks';
+import { allParks, clientPark, looUrl, miles, paidEntry, toiletInfo, toiletSource, fmtDate, hoursText, km, L, regionName, ICON, type Park } from '../../lib/parks';
+import { areaUrl, breadcrumbLd, locate, regionUrl } from '../../lib/places';
 import { art, fmtMiles } from '../../lib/card';
 
 export async function getStaticPaths() {
@@ -34,10 +35,34 @@ const official = new Set([...p.equipment, ...p.access, ...p.facilities]);
 const needsParents = !p.checked || p.equipment.length === 0;
 const fms = `https://www.fixmystreet.com/around?latitude=${p.lat}&longitude=${p.lng}`;
 const dirs = `https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.lng}`;
+// Where this playground sits in the browse-by-area pages, for the breadcrumbs and for search engines.
+const where = await locate(p.id);
+const trail: [string, string][] = [['Find', '/'], ['All playgrounds', '/playgrounds/']];
+if (where) trail.push([where.place.name, regionUrl(where.place.id)]);
+if (where?.area) trail.push([where.area.name, areaUrl(where.place.id, where.area)]);
+trail.push([p.name, `/playgrounds/${p.id}/`]);
+// Only facts the page itself shows: where it is, whether entry is free, and toilets and baby change where our sources say so.
+const amenities = [
+  loos.onSite && { '@type': 'LocationFeatureSpecification', name: 'Toilets', value: true },
+  p.babyChange === true && { '@type': 'LocationFeatureSpecification', name: 'Baby change', value: true },
+].filter(Boolean);
+const ld = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Playground',
+    name: p.name,
+    url: new URL(`/playgrounds/${p.id}/`, Astro.site).href,
+    description: p.description || undefined,
+    geo: { '@type': 'GeoCoordinates', latitude: p.lat, longitude: p.lng },
+    isAccessibleForFree: !paidEntry(p),
+    amenityFeature: amenities.length ? amenities : undefined,
+  },
+  breadcrumbLd(Astro.site, trail),
+];
 ---
-<Base title={p.name} description={p.description || `${p.name}, ${p.area}`}>
+<Base title={p.name} description={p.description || `${p.name}, ${p.area}`} jsonLd={ld}>
   <div>
-    <p class="crumbs"><a href="/">Find</a> › <a href="/playgrounds/">All playgrounds</a> › {regionName(p.region)}</p>
+    <p class="crumbs"><a href="/">Find</a> › <a href="/playgrounds/">All playgrounds</a> › {where ? <a href={regionUrl(where.place.id)}>{where.place.name}</a> : regionName(p.region)}{where?.area && <> › <a href={areaUrl(where.place.id, where.area)}>{where.area.name}</a></>}</p>
     <h1>{p.name}</h1>
     <p style="margin-top:12px"><button type="button" class="btn fav-big" data-fav={p.id} data-name={p.name} aria-pressed="false"><span aria-hidden="true">♥</span> <span class="fav-text">Favourite</span></button></p>
     <p class="hint" id="fav-status" aria-live="polite"></p>
