@@ -317,6 +317,10 @@ try {
   await page.locator('#search-results .hit').first().waitFor();
   if ((await page.locator('#search-results .hit').count()) < 10) fail('advanced search for Welwyn Garden City found too few');
 
+  // The dusk line is worked out in the browser for the playground's position, in the form "Dusk is around 16:45 today."
+  await page.goto(BASE + '/playgrounds/verulamium/');
+  await page.waitForFunction(() => /^Dusk is around \d\d:\d\d today\.$/.test(document.querySelector('[data-dusk]')?.textContent ?? ''), null, { timeout: 5000 }).catch(() => fail('the dusk line on a playground page is missing or in the wrong form'));
+
   await page.goto(BASE + '/playgrounds/verulamium/');
   await page.getByLabel('4 out of 5').focus();
   await page.keyboard.press('Space');

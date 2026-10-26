@@ -100,7 +100,7 @@ const ld = [
       </section>
       <section aria-labelledby="hours">
         <h2 id="hours">Opening times</h2>
-        <p style="margin-top:10px">{hoursText(p)} <span data-dusk></span></p>
+        <p style="margin-top:10px">{hoursText(p)} <span data-dusk data-lat={p.lat} data-lng={p.lng}></span></p>
       </section>
       <section aria-labelledby="loos">
         <h2 id="loos">Toilets</h2>
@@ -266,9 +266,10 @@ const ld = [
       const el = document.getElementById('park-map');
       if (el) createSpotMap(el, JSON.parse(el.dataset.spots!));
     });
-    const DUSK = ['16:35', '17:25', '18:15', '20:05', '20:50', '21:20', '21:15', '20:25', '19:20', '18:15', '16:25', '15:55'];
-    const d = document.querySelector('[data-dusk]');
-    if (d) d.textContent = `Dusk is around ${DUSK[new Date().getMonth()]} this month.`;
+    // Worked out for this playground's position and today's date, so it follows the clocks changing.
+    import { duskText } from '../../lib/sun';
+    const d = document.querySelector<HTMLElement>('[data-dusk]');
+    if (d) d.textContent = duskText(Number(d.dataset.lat), Number(d.dataset.lng));
     const box = document.getElementById('mine')!;
     const id = box.dataset.id!;
     const been = document.getElementById('been') as HTMLInputElement;
