@@ -2,8 +2,8 @@
   "name": "Sunnydale Park Playground",
   "region": "derbyshire",
   "area": "Derby",
-  "lat": 52.89625,
-  "lng": -1.50192,
+  "lat": 52.89623,
+  "lng": -1.49882,
   "ages": [],
   "equipment": [],
   "access": [],
@@ -19,6 +19,6 @@
     }
   ],
   "checked": "2026-10-22",
-  "notConfirmed": "Exact position (mapped from the postcode), age ranges, play equipment, opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
   "photo": null
 }

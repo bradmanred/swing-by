@@ -2,8 +2,8 @@
   "name": "Ashbourne Park Play Area",
   "region": "derbyshire",
   "area": "Ashbourne",
-  "lat": 53.01983,
-  "lng": -1.72824,
+  "lat": 53.01802,
+  "lng": -1.728,
   "ages": [],
   "equipment": [
     "zw",
@@ -27,6 +27,6 @@
     }
   ],
   "checked": "2026-10-22",
-  "notConfirmed": "Exact position (mapped from the postcode), age ranges, opening hours and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, opening hours and parking.",
   "photo": null
 }
