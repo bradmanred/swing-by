@@ -13,17 +13,23 @@
 //              person has to choose (listed with links, never moved)
 //   unmatched  the mapped playgrounds nearby are already taken by other pins: another pin may be stacked on it
 //   far        nothing mapped within 500 m: check by hand (the playground may simply be missing from OpenStreetMap)
+//   name       on a mapped playground, but that playground's name shares no word with ours: it may be a different one
+//              (Badgers Recreation Ground in Chesterfield was pinned on the wrong playground 360 m away). Never moved
 //
 //   node scripts/check-positions.mjs                          report only (reports/positions.md and positions.json)
 //   node scripts/check-positions.mjs --region derbyshire      one region (the "region" in the playground files)
 //   node scripts/check-positions.mjs --fix                    also move the pins marked "move"
 //   node scripts/check-positions.mjs --include unrecorded,approximate,postcode,council-map   which pins to check
+//   node scripts/check-positions.mjs --include osm            also look again at pins taken from OpenStreetMap
+//
+// Pins someone has placed by hand are listed in src/data/pins-checked.json and are never checked or moved, whatever
+// --include says. Add a pin there whenever you move it by hand, so a later --fix can't move it back.
 //
 // A pin's source is read from its "notConfirmed" text: "taken from OpenStreetMap" (osm, skipped), "from the council's
 // map" (council-map, skipped unless asked for), "mapped from the postcode" (postcode), "approximate" (approximate), or
 // nothing recorded (unrecorded). Moved pins say "taken from OpenStreetMap" afterwards, so they are only checked once.
 // Options for testing: --dir (playground files), --out (report folder), --osm-file (a JSON list of
-// {id, lat, lng, tags} to use instead of asking OpenStreetMap). Run by .github/workflows/positions.yml.
+// {id, lat, lng, tags} to use instead of asking OpenStreetMap), --checked (the list of hand-placed pins). Run by .github/workflows/positions.yml.
 import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
@@ -34,6 +40,7 @@ const REGION = arg('--region', '');
 const OSM_FILE = arg('--osm-file', '');
 const INCLUDE = new Set(arg('--include', 'unrecorded,approximate,postcode').split(',').map((s) => s.trim()));
 const FIX = process.argv.includes('--fix');
+const CHECKED_FILE = arg('--checked', 'src/data/pins-checked.json');
 const ON_M = Number(arg('--on', 60)); // a mapped playground this close means the pin is right
 const MAX_M = Number(arg('--max', 500)); // never look, or move a pin, further than this
 const NAME_BONUS_M = 150; // matching names count as this much closer
@@ -96,7 +103,11 @@ for (const f of (await readdir(DIR)).filter((f) => f.endsWith('.json'))) {
 const count = {};
 all.forEach((p) => (count[p.from] = (count[p.from] ?? 0) + 1));
 console.log(`Pins by source: ${Object.entries(count).map(([k, v]) => `${k} ${v}`).join(', ')}`);
-const pins = all.filter((p) => INCLUDE.has(p.from) && (!REGION || p.region === REGION) && Number.isFinite(p.lat) && Number.isFinite(p.lng));
+const handPlaced = new Set(
+  (await readFile(CHECKED_FILE, 'utf8').then(JSON.parse).catch(() => ({ pins: [] }))).pins.map((p) => p.id),
+);
+if (handPlaced.size) console.log(`Leaving out ${handPlaced.size} pins placed by hand (${CHECKED_FILE})`);
+const pins = all.filter((p) => !handPlaced.has(p.id) && INCLUDE.has(p.from) && (!REGION || p.region === REGION) && Number.isFinite(p.lat) && Number.isFinite(p.lng));
 console.log(`Checking ${pins.length} pins (${[...INCLUDE].join(', ')}${REGION ? `, ${REGION} only` : ''})`);
 
 // 2. Public playgrounds on OpenStreetMap around those pins, asked for in 0.1 degree squares.
@@ -155,7 +166,11 @@ const results = pins.map((p) => {
   const base = { id: p.id, name: p.name, area: p.area, region: p.region, from: p.from, lat: p.lat, lng: p.lng };
   if (!opts.length) return { ...base, status: 'far' };
   if (!m) return { ...base, status: 'unmatched', candidates: opts.slice(0, 3).map((c) => ({ osm: c.o.id, name: c.o.tags.name ?? null, metres: Math.round(c.d) })) };
-  if (m.d <= ON_M) return { ...base, status: 'confirmed', osm: m.o.id, metres: Math.round(m.d) };
+  if (m.d <= ON_M) {
+    // On a mapped playground, but one whose name has nothing in common with ours: a person should look.
+    if (m.o.tags.name && !sharesName(p, m.o)) return { ...base, status: 'name', osm: m.o.id, osmName: m.o.tags.name, metres: Math.round(m.d) };
+    return { ...base, status: 'confirmed', osm: m.o.id, metres: Math.round(m.d) };
+  }
   const others = opts.filter((c) => c.o.id !== m.o.id && c.eff < m.eff + CLEAR_M);
   const unsure = m.d > UNNAMED_M && !sharesName(p, m.o);
   if (others.length || unsure)
@@ -184,7 +199,7 @@ if (FIX) {
 }
 
 // 5. The report.
-const statuses = ['confirmed', 'move', 'ambiguous', 'unmatched', 'far'];
+const statuses = ['confirmed', 'move', 'ambiguous', 'unmatched', 'far', 'name'];
 const regions = [...new Set(results.map((r) => r.region))].sort();
 const link = (id) => `[${id}](https://www.openstreetmap.org/${id})`;
 const lines = [
@@ -218,6 +233,9 @@ section('Unmatched', 'The mapped playgrounds near these pins are already used by
 section('Far from any mapped playground', `Nothing is mapped on OpenStreetMap within ${MAX_M} m. Either the pin is badly out or the playground isn't mapped yet. Check by hand, or add it to OpenStreetMap.`, results.filter((r) => r.status === 'far'),
   ['| Playground | Region | Pin | Source of pin |', '| --- | --- | --- | --- |'],
   (r) => `| ${r.name} (${r.area}) | ${r.region} | ${r.lat}, ${r.lng} | ${r.from} |`);
+section('Name doesn\'t match', "These pins sit on a mapped playground whose name shares no word with ours, so it may be a different playground. Check each by hand; they are never moved automatically. Once a pin is right, add it to src/data/pins-checked.json.", results.filter((r) => r.status === 'name'),
+  ['| Playground | Region | Pin | Mapped playground there | Source of pin |', '| --- | --- | --- | --- | --- |'],
+  (r) => `| ${r.name} (${r.area}) | ${r.region} | ${r.lat}, ${r.lng} | ${link(r.osm)} ${r.osmName} | ${r.from} |`);
 
 await mkdir(OUT, { recursive: true });
 await writeFile(join(OUT, 'positions.md'), lines.join('\n') + '\n');
