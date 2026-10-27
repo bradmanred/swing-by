@@ -165,7 +165,7 @@ const results = pins.map((p) => {
   const m = matched.get(p.id);
   const base = { id: p.id, name: p.name, area: p.area, region: p.region, from: p.from, lat: p.lat, lng: p.lng };
   if (!opts.length) return { ...base, status: 'far' };
-  if (!m) return { ...base, status: 'unmatched', candidates: opts.slice(0, 3).map((c) => ({ osm: c.o.id, name: c.o.tags.name ?? null, metres: Math.round(c.d) })) };
+  if (!m) return { ...base, status: 'unmatched', candidates: opts.slice(0, 3).map((c) => ({ osm: c.o.id, name: c.o.tags.name ?? null, metres: Math.round(c.d), lat: round5(c.o.lat), lng: round5(c.o.lng) })) };
   if (m.d <= ON_M) {
     // On a mapped playground, but one whose name has nothing in common with ours: a person should look.
     if (m.o.tags.name && !sharesName(p, m.o)) return { ...base, status: 'name', osm: m.o.id, osmName: m.o.tags.name, metres: Math.round(m.d) };
@@ -177,6 +177,30 @@ const results = pins.map((p) => {
     return { ...base, status: 'ambiguous', candidates: [m, ...others].slice(0, 4).map((c) => ({ osm: c.o.id, name: c.o.tags.name ?? null, metres: Math.round(c.d), lat: round5(c.o.lat), lng: round5(c.o.lng) })) };
   return { ...base, status: 'move', osm: m.o.id, osmName: m.o.tags.name ?? null, metres: Math.round(m.d), to: { lat: round5(m.o.lat), lng: round5(m.o.lng) } };
 });
+
+// 3b. The nearest named street to each mapped playground a person has to choose between, so it can be matched to
+// council names like "Linacre Road" or "off Storforth Lane". Skipped with --osm-file (tests) or --no-streets.
+const needStreet = results.flatMap((r) => (['ambiguous', 'unmatched'].includes(r.status) ? r.candidates : []).filter((c) => c.lat != null));
+if (!OSM_FILE && !process.argv.includes('--no-streets') && needStreet.length) {
+  const uniq = [...new Map(needStreet.map((c) => [c.osm, c])).values()];
+  const ways = [];
+  for (let i = 0; i < uniq.length; i += 60) {
+    const batch = uniq.slice(i, i + 60);
+    console.log(`  Street names, playgrounds ${i + 1}-${i + batch.length} of ${uniq.length}`);
+    const els = await overpass(`[out:json][timeout:180];(${batch.map((c) => `way(around:120,${c.lat},${c.lng})[highway][name];`).join('')});out tags geom;`);
+    if (els) ways.push(...els.filter((e) => e.geometry));
+    await sleep(2000);
+  }
+  for (const c of needStreet) {
+    let best = null;
+    for (const w of ways)
+      for (const g of w.geometry) {
+        const d = metres(c, { lat: g.lat, lng: g.lon });
+        if (d <= 120 && (!best || d < best.d)) best = { d, name: w.tags.name };
+      }
+    if (best) c.street = best.name;
+  }
+}
 
 // 4. Move the clear ones.
 let moved = 0;
@@ -226,10 +250,10 @@ section('Moves', FIX ? 'These pins were moved.' : 'These pins would be moved.', 
   (r) => `| ${r.name} (${r.area}) | ${r.region} | ${r.lat}, ${r.lng} | ${r.to.lat}, ${r.to.lng} | ${r.metres} | ${link(r.osm)}${r.osmName ? ` ${r.osmName}` : ''} |`);
 section('Ambiguous', 'More than one mapped playground could be this one. Pick the right one by hand; these are never moved automatically.', results.filter((r) => r.status === 'ambiguous'),
   ['| Playground | Region | Pin | Could be |', '| --- | --- | --- | --- |'],
-  (r) => `| ${r.name} (${r.area}) | ${r.region} | ${r.lat}, ${r.lng} | ${r.candidates.map((c) => `${link(c.osm)} ${c.name ?? ''} ${c.metres} m`).join('; ')} |`);
+  (r) => `| ${r.name} (${r.area}) | ${r.region} | ${r.lat}, ${r.lng} | ${r.candidates.map((c) => `${link(c.osm)} ${c.name ?? ''} ${c.metres} m${c.street ? ` (by ${c.street})` : ''}`).join('; ')} |`);
 section('Unmatched', 'The mapped playgrounds near these pins are already used by other pins, so this one may be stacked on another. Look at each by hand.', results.filter((r) => r.status === 'unmatched'),
   ['| Playground | Region | Pin | Nearest mapped, already used |', '| --- | --- | --- | --- |'],
-  (r) => `| ${r.name} (${r.area}) | ${r.region} | ${r.lat}, ${r.lng} | ${r.candidates.map((c) => `${link(c.osm)} ${c.metres} m`).join('; ')} |`);
+  (r) => `| ${r.name} (${r.area}) | ${r.region} | ${r.lat}, ${r.lng} | ${r.candidates.map((c) => `${link(c.osm)} ${c.metres} m${c.street ? ` (by ${c.street})` : ''}`).join('; ')} |`);
 section('Far from any mapped playground', `Nothing is mapped on OpenStreetMap within ${MAX_M} m. Either the pin is badly out or the playground isn't mapped yet. Check by hand, or add it to OpenStreetMap.`, results.filter((r) => r.status === 'far'),
   ['| Playground | Region | Pin | Source of pin |', '| --- | --- | --- | --- |'],
   (r) => `| ${r.name} (${r.area}) | ${r.region} | ${r.lat}, ${r.lng} | ${r.from} |`);

@@ -99,14 +99,14 @@
   },
   "bolsover": {
    "nearest": {
-    "id": "7c6441532c3aaf73f1402b0b",
-    "name": "Public toilet",
-    "m": 90,
+    "id": "12da552845ac2be3c803e77e",
+    "name": "bolsover Castle - rear of cafe & information centre",
+    "m": 28,
     "babyChange": null,
     "accessible": false,
     "free": true,
-    "lat": 53.230435,
-    "lng": -1.2962615
+    "lat": 53.2303005,
+    "lng": -1.2941666
    }
   },
   "brockwell": {
@@ -1394,7 +1394,7 @@
    "nearest": {
     "id": "1517060dae253447f0259bb5",
     "name": "Shawcroft car park",
-    "m": 386,
+    "m": 256,
     "babyChange": true,
     "accessible": true,
     "free": false,
@@ -6887,7 +6887,7 @@
    "nearest": {
     "id": "a78f5f053e9e4a484483e2f2",
     "name": "Chaddesden Park",
-    "m": 227,
+    "m": 38,
     "babyChange": true,
     "accessible": false,
     "free": true,
@@ -8316,7 +8316,7 @@
    "nearest": {
     "id": "f1105cfbdb27585318bcf0b0",
     "name": "Aldi",
-    "m": 593,
+    "m": 763,
     "babyChange": null,
     "accessible": false,
     "free": true,
@@ -8326,7 +8326,7 @@
    "nearestBabyChange": {
     "id": "311459e335e7727146160d9e",
     "name": "Clay Cross Bus Station",
-    "m": 602,
+    "m": 800,
     "babyChange": true,
     "accessible": true,
     "free": true,
@@ -11600,7 +11600,7 @@
    "nearest": {
     "id": "4bba619d7cf958c8862e4bad",
     "name": "McDonalds, Alma Leisure Park",
-    "m": 1085,
+    "m": 884,
     "babyChange": null,
     "accessible": true,
     "free": false,
@@ -11610,7 +11610,7 @@
    "nearestBabyChange": {
     "id": "7f4d2b5b607c2cb0f658b53f",
     "name": "Vicar Lane Shopping Centre",
-    "m": 1707,
+    "m": 1503,
     "babyChange": true,
     "accessible": true,
     "free": true,
@@ -12023,7 +12023,7 @@
    "nearest": {
     "id": "4bba619d7cf958c8862e4bad",
     "name": "McDonalds, Alma Leisure Park",
-    "m": 1191,
+    "m": 1229,
     "babyChange": null,
     "accessible": true,
     "free": false,
@@ -12033,7 +12033,7 @@
    "nearestBabyChange": {
     "id": "7f4d2b5b607c2cb0f658b53f",
     "name": "Vicar Lane Shopping Centre",
-    "m": 1732,
+    "m": 1785,
     "babyChange": true,
     "accessible": true,
     "free": true,
@@ -14564,7 +14564,7 @@
    "nearest": {
     "id": "1f9d6048faaad93244fdd657",
     "name": "Erewash Golf Pavilion, Rutland Sports Park",
-    "m": 1044,
+    "m": 932,
     "babyChange": true,
     "accessible": false,
     "free": true,
@@ -16851,19 +16851,19 @@
   },
   "c-hazel-drive-play-area-walton": {
    "nearest": {
-    "id": "4cb2cff8546dd337bbf75ca2",
-    "name": "Morrisons",
-    "m": 783,
-    "babyChange": null,
-    "accessible": null,
+    "id": "fb4ef84e208bb13760dbcf6d",
+    "name": "Lidl",
+    "m": 837,
+    "babyChange": false,
+    "accessible": false,
     "free": true,
-    "lat": 53.231391907,
-    "lng": -1.452259898
+    "lat": 53.233078197,
+    "lng": -1.446528733
    },
    "nearestBabyChange": {
     "id": "821be2e99e790970dc9623d5",
     "name": "Morrisons",
-    "m": 795,
+    "m": 909,
     "babyChange": true,
     "accessible": false,
     "free": true,
@@ -25441,7 +25441,7 @@
    "nearest": {
     "id": "61245f63c012df74877ce941",
     "name": "Hadfield, Platt Street",
-    "m": 778,
+    "m": 1023,
     "babyChange": true,
     "accessible": true,
     "free": true,
@@ -26210,7 +26210,7 @@
    "nearest": {
     "id": "4bba619d7cf958c8862e4bad",
     "name": "McDonalds, Alma Leisure Park",
-    "m": 1358,
+    "m": 1395,
     "babyChange": null,
     "accessible": true,
     "free": false,
@@ -26220,7 +26220,7 @@
    "nearestBabyChange": {
     "id": "7f4d2b5b607c2cb0f658b53f",
     "name": "Vicar Lane Shopping Centre",
-    "m": 1994,
+    "m": 2029,
     "babyChange": true,
     "accessible": true,
     "free": true,
@@ -26232,7 +26232,7 @@
    "nearest": {
     "id": "4bba619d7cf958c8862e4bad",
     "name": "McDonalds, Alma Leisure Park",
-    "m": 1358,
+    "m": 1350,
     "babyChange": null,
     "accessible": true,
     "free": false,
@@ -26242,7 +26242,7 @@
    "nearestBabyChange": {
     "id": "7f4d2b5b607c2cb0f658b53f",
     "name": "Vicar Lane Shopping Centre",
-    "m": 1994,
+    "m": 1988,
     "babyChange": true,
     "accessible": true,
     "free": true,
@@ -53585,7 +53585,7 @@
    "nearest": {
     "id": "3bdc8507636a76f8e198f505",
     "name": "Poolsbrook Country Park, off Fan Rd",
-    "m": 327,
+    "m": 59,
     "babyChange": false,
     "accessible": false,
     "free": false,
@@ -53595,7 +53595,7 @@
    "nearestBabyChange": {
     "id": "cfc7544c1b9dc5ea4a6a2f08",
     "name": "Morrisons",
-    "m": 1436,
+    "m": 1187,
     "babyChange": true,
     "accessible": false,
     "free": true,
@@ -55208,7 +55208,7 @@
    "nearest": {
     "id": "c214b059092ac0ae2d7e636e",
     "name": "Birley Moor Road Automatic Toilet",
-    "m": 2133,
+    "m": 1941,
     "babyChange": false,
     "accessible": false,
     "free": false,
@@ -57464,19 +57464,19 @@
   },
   "c-somersall-park-somersall-lane": {
    "nearest": {
-    "id": "4cb2cff8546dd337bbf75ca2",
-    "name": "Morrisons",
-    "m": 413,
-    "babyChange": null,
-    "accessible": null,
+    "id": "790d6ec9d4125d84e3d9d6f2",
+    "name": "Somersall Park, off Somersall Lane",
+    "m": 69,
+    "babyChange": false,
+    "accessible": false,
     "free": true,
-    "lat": 53.231391907,
-    "lng": -1.452259898
+    "lat": 53.227676013,
+    "lng": -1.469442844
    },
    "nearestBabyChange": {
     "id": "821be2e99e790970dc9623d5",
     "name": "Morrisons",
-    "m": 416,
+    "m": 1179,
     "babyChange": true,
     "accessible": false,
     "free": true,
@@ -57525,7 +57525,7 @@
    "nearest": {
     "id": "a939b850387c35770c5f7155",
     "name": "Sutton on sea",
-    "m": 1214,
+    "m": 1307,
     "babyChange": null,
     "accessible": false,
     "free": true,
@@ -57535,7 +57535,7 @@
    "nearestBabyChange": {
     "id": "50dd258ea5dd1152c377a26f",
     "name": "Public toilet",
-    "m": 1610,
+    "m": 1804,
     "babyChange": true,
     "accessible": false,
     "free": true,
@@ -59804,7 +59804,7 @@
    "nearest": {
     "id": "50de30c9354a3e802bdd2f71",
     "name": "Public toilet",
-    "m": 1069,
+    "m": 895,
     "babyChange": null,
     "accessible": false,
     "free": true,
@@ -59814,7 +59814,7 @@
    "nearestBabyChange": {
     "id": "9878fe23965bd21a3b76a735",
     "name": "Kings Treatment Centre, Royal Derby Hospital",
-    "m": 1856,
+    "m": 1977,
     "babyChange": true,
     "accessible": true,
     "free": false,
@@ -62709,7 +62709,7 @@
    "nearest": {
     "id": "cd8a3bef4fdd73103b9600c4",
     "name": "Loundsley Green Community Centre",
-    "m": 613,
+    "m": 548,
     "babyChange": true,
     "accessible": true,
     "free": false,
@@ -64552,7 +64552,7 @@
    "nearest": {
     "id": "00adee0cff777d33a1ab518b",
     "name": "Cricket Pavilion, West End Drive, Ilkeston",
-    "m": 1706,
+    "m": 1538,
     "babyChange": false,
     "accessible": false,
     "free": true,
@@ -64562,7 +64562,7 @@
    "nearestBabyChange": {
     "id": "1f9d6048faaad93244fdd657",
     "name": "Erewash Golf Pavilion, Rutland Sports Park",
-    "m": 1802,
+    "m": 1632,
     "babyChange": true,
     "accessible": false,
     "free": true,
@@ -65603,7 +65603,7 @@
    "nearest": {
     "id": "0147ef525903aaa06f316bea",
     "name": "Public toilet",
-    "m": 154,
+    "m": 63,
     "babyChange": null,
     "accessible": false,
     "free": true,

@@ -200,6 +200,11 @@ img.art { aspect-ratio: 360 / 170; object-fit: cover; background: var(--blue-sof
 .spot { min-width: 34px; height: 34px; padding: 0 6px; border-radius: 10px; border: 3px solid var(--ink); background: var(--white); color: var(--ink); display: grid; place-items: center; font-weight: 700; font-size: 0.95rem; text-decoration: none; }
 .spot-park { min-width: 44px; height: 44px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); background: var(--red); }
 .spot-park span { transform: rotate(45deg); font-size: 1.25rem; }
+/* A parent's suggested position, when they say the pin is in the wrong place. Dragged, so it needs to be easy to grab. */
+.spot-suggest { min-width: 44px; height: 44px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); background: var(--blue); color: var(--white); cursor: grab; touch-action: none; }
+.spot-suggest span { transform: rotate(45deg); font-size: 1.2rem; }
+.pin-fix { padding: 10px 16px 14px; border-top: var(--line); }
+.pin-fix summary { cursor: pointer; font-weight: 700; }
 .spot-parking { background: var(--blue); color: var(--white); }
 .spot-nearby { background: var(--yellow); opacity: 0.9; }
 

@@ -159,6 +159,20 @@ const ld = [
           <p class="nojs">The map needs JavaScript. Use the directions link instead.</p>
         </div>
         <figcaption>The red pin is the playground. Car parks (P), toilets and cafés from OpenStreetMap show on the map when you zoom in. Yellow pins are other playgrounds.</figcaption>
+        <details class="pin-fix" id="pin-fix" data-park={p.id} data-lat={p.lat} data-lng={p.lng}>
+          <summary>Is the pin in the wrong place?</summary>
+          <p style="margin-top:8px">If you've been here, show us where the playground really is. We move the pin once another parent agrees.</p>
+          <div class="row" style="margin-top:10px">
+            <button class="btn btn-blue" type="button" id="pinfix-start">Show where it is</button>
+            <button class="btn" type="button" id="pinfix-here">I'm at the playground now</button>
+          </div>
+          <div class="row" id="pinfix-editing" style="margin-top:10px" hidden>
+            <button class="btn btn-blue" type="button" id="pinfix-send">Send this spot</button>
+            <button class="linkbtn" type="button" id="pinfix-cancel">Cancel</button>
+          </div>
+          <p class="hint" id="pinfix-msg" role="status" aria-live="polite" style="margin-top:10px"></p>
+          <p class="hint">We don't ask who you are. <button class="linkbtn" type="button" id="pinfix-withdraw" hidden>Remove my suggestion</button></p>
+        </details>
       </figure>
       <div class="panel" id="mine" data-id={p.id}>
         <h2 style="font-size:1.75rem">Been here?</h2>
@@ -262,10 +276,13 @@ const ld = [
     startPhotos();
     import { startEquipment } from '../../scripts/equipment';
     startEquipment();
-    import('../../scripts/map').then(({ createSpotMap }) => {
-      const el = document.getElementById('park-map');
-      if (el) createSpotMap(el, JSON.parse(el.dataset.spots!));
-    });
+    import { startPins } from '../../scripts/pins';
+    startPins(
+      import('../../scripts/map').then(({ createSpotMap }) => {
+        const el = document.getElementById('park-map');
+        return el ? createSpotMap(el, JSON.parse(el.dataset.spots!)) : null;
+      }),
+    );
     // Worked out for this playground's position and today's date, so it follows the clocks changing.
     import { duskText } from '../../lib/sun';
     const d = document.querySelector<HTMLElement>('[data-dusk]');
