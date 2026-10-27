@@ -1,23 +1,33 @@
 {
-  "name": "Playground off Bedford Road",
+  "name": "Addison Howard Park Play Area",
   "region": "east",
   "area": "Kempston",
   "lat": 52.122,
   "lng": -0.48946,
   "ages": [],
-  "equipment": [],
+  "equipment": [
+    "gym",
+    "mg"
+  ],
   "access": [],
-  "facilities": [],
+  "facilities": [
+    "wc"
+  ],
   "opens": "",
-  "description": "A playground on OpenStreetMap near Bedford Road, Kempston. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "description": "Play area in Addison Howard Park, with toilets on the outer path by the play area, fitness equipment, a ball court and tennis courts.",
   "nearby": [],
   "sources": [
+    {
+      "label": "Bedford Borough Council: Addison Howard Park",
+      "url": "https://www.bedford.gov.uk/node/14565"
+    },
     {
       "label": "OpenStreetMap: playground",
       "url": "https://www.openstreetmap.org/way/131644132"
     }
   ],
-  "checked": null,
-  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
-  "photo": null
+  "checked": "2026-10-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, opening hours and parking.",
+  "photo": null,
+  "operator": "Bedford Borough Council"
 }
