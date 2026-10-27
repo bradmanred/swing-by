@@ -1,5 +1,5 @@
 {
-  "name": "Playground off Orchard Close",
+  "name": "Orchard Close Recreation Ground",
   "region": "east",
   "area": "Woodside Estate, Houghton Regis",
   "lat": 51.89889,
@@ -9,15 +9,20 @@
   "access": [],
   "facilities": [],
   "opens": "",
-  "description": "A playground on OpenStreetMap near Orchard Close, Woodside Estate. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "description": "Recreation ground on the western side of Houghton Regis with a children's play area, run by Houghton Regis Town Council.",
   "nearby": [],
   "sources": [
+    {
+      "label": "Houghton Regis Town Council: Orchard Close Recreation Ground",
+      "url": "https://houghtonregis-tc.gov.uk/environment/orchard-close-recreation-ground"
+    },
     {
       "label": "OpenStreetMap: playground",
       "url": "https://www.openstreetmap.org/way/390848170"
     }
   ],
-  "checked": null,
-  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
-  "photo": null
+  "checked": "2026-10-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null,
+  "operator": "Houghton Regis Town Council"
 }

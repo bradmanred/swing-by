@@ -1,5 +1,5 @@
 {
-  "name": "Playground off Wetlands",
+  "name": "Forest Centre Play Area",
   "region": "east",
   "area": "Marston Moretaine",
   "lat": 52.06481,
@@ -7,17 +7,24 @@
   "ages": [],
   "equipment": [],
   "access": [],
-  "facilities": [],
+  "facilities": [
+    "cf",
+    "wc"
+  ],
   "opens": "",
-  "description": "A playground on OpenStreetMap near Wetlands, Marston Moretaine. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "description": "Children's play area at the Forest Centre in Millennium Country Park, at the heart of the Forest of Marston Vale, with a café and toilets.",
   "nearby": [],
   "sources": [
+    {
+      "label": "Central Bedfordshire Council: The Forest Centre and Millennium Country Park",
+      "url": "https://www.centralbedfordshire.gov.uk/children-and-young-people/forest-centre-and-millennium-country-park-marston-moretaine"
+    },
     {
       "label": "OpenStreetMap: playground",
       "url": "https://www.openstreetmap.org/way/116569042"
     }
   ],
-  "checked": null,
-  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "checked": "2026-10-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours and parking.",
   "photo": null
 }

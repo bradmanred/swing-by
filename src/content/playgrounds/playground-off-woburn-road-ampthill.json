@@ -1,23 +1,33 @@
 {
-  "name": "Playground off Woburn Road",
+  "name": "Ampthill Great Park Play Area",
   "region": "east",
   "area": "Ampthill",
   "lat": 52.03332,
   "lng": -0.50051,
   "ages": [],
-  "equipment": [],
+  "equipment": [
+    "tp"
+  ],
   "access": [],
-  "facilities": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
   "opens": "",
-  "description": "A playground on OpenStreetMap near Woburn Road, Ampthill. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "description": "Play area in Ampthill Great Park with traditional and more challenging equipment, two trampolines, a rotating swing and musical chimes. Toilets and a café are nearby. No dogs. Run by Ampthill Town Council.",
   "nearby": [],
+  "operator": "Ampthill Town Council",
   "sources": [
+    {
+      "label": "Ampthill Town Council: Children's play area",
+      "url": "https://www.ampthill-tc.gov.uk/park/childrens-play-area"
+    },
     {
       "label": "OpenStreetMap: playground",
       "url": "https://www.openstreetmap.org/way/256110964"
     }
   ],
-  "checked": null,
-  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "checked": "2026-10-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, opening hours and parking.",
   "photo": null
 }

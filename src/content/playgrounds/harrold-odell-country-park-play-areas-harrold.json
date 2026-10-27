@@ -1,0 +1,32 @@
+{
+  "name": "Harrold-Odell Country Park Play Areas",
+  "region": "east",
+  "area": "Harrold",
+  "lat": 52.20279,
+  "lng": -0.59639,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "Two play areas in the country park: one for ages 2 to 8 at the Harrold end and one for ages 8 to 12 at the Odell end. The Dragonfly Café, toilets and an outdoor gym are in the park, and the main car park is open 24 hours.",
+  "nearby": [],
+  "operator": "Bedford Borough Council",
+  "sources": [
+    {
+      "label": "Bedford Borough Council: Harrold-Odell Country Park",
+      "url": "https://www.bedford.gov.uk/node/14574"
+    }
+  ],
+  "checked": "2026-10-27",
+  "notConfirmed": "Exact position (approximate: the middle of the country park, not the play areas themselves), play equipment, opening hours and parking.",
+  "photo": null
+}

@@ -1,23 +1,31 @@
 {
-  "name": "Playground off Brunel Drive",
+  "name": "Brunel Drive Play Area",
   "region": "east",
   "area": "Biggleswade",
   "lat": 52.07972,
   "lng": -0.26239,
   "ages": [],
-  "equipment": [],
+  "equipment": [
+    "ss",
+    "sw"
+  ],
   "access": [],
   "facilities": [],
   "opens": "",
-  "description": "A playground on OpenStreetMap near Brunel Drive, Biggleswade. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "description": "Play area with a timber trail, run by Biggleswade Town Council.",
   "nearby": [],
   "sources": [
+    {
+      "label": "Biggleswade Town Council: Recreation facilities (Dec 2019)",
+      "url": "https://biggleswadetowncouncil.gov.uk/wp-content/uploads/2021/02/BTC-recreation-facilities.pdf"
+    },
     {
       "label": "OpenStreetMap: playground",
       "url": "https://www.openstreetmap.org/node/879556816"
     }
   ],
-  "checked": null,
-  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
-  "photo": null
+  "checked": "2026-10-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, opening hours, toilets and parking.",
+  "photo": null,
+  "operator": "Biggleswade Town Council"
 }
