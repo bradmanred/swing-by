@@ -1,23 +1,38 @@
 {
-  "name": "Page's Park Play Area",
+  "name": "Pages Park Play Area",
   "region": "east",
   "area": "Leighton-Linslade, Leighton Buzzard",
   "lat": 51.9093,
   "lng": -0.65296,
   "ages": [],
-  "equipment": [],
+  "equipment": [
+    "bk",
+    "cl",
+    "gym",
+    "mg",
+    "sl",
+    "ss",
+    "sw"
+  ],
   "access": [],
-  "facilities": [],
+  "facilities": [
+    "fen"
+  ],
   "opens": "",
-  "description": "A playground on OpenStreetMap near Billington Road, Leighton-Linslade. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "description": "Fenced play area on the Billington Road side of Pages Park, with two climbing frames with slides, swings, a see-saw and a basket swing. Free tennis and basketball courts, table tennis and a green gym nearby; car parks at each entrance. Green Flag park.",
   "nearby": [],
   "sources": [
+    {
+      "label": "Leighton-Linslade Town Council: Pages Park",
+      "url": "https://www.leightonlinslade-tc.gov.uk/pages-park/"
+    },
     {
       "label": "OpenStreetMap: Page's Park Play Area",
       "url": "https://www.openstreetmap.org/way/362143995"
     }
   ],
-  "checked": null,
-  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
-  "photo": null
+  "checked": "2026-10-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, opening hours, toilets and parking.",
+  "photo": null,
+  "operator": "Leighton-Linslade Town Council"
 }

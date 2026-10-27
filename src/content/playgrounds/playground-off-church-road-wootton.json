@@ -1,23 +1,31 @@
 {
-  "name": "Playground off Church Road",
+  "name": "Wootton Recreation Ground Play Areas",
   "region": "east",
   "area": "Wootton",
   "lat": 52.09485,
   "lng": -0.5318,
   "ages": [],
-  "equipment": [],
+  "equipment": [
+    "mg",
+    "sk"
+  ],
   "access": [],
   "facilities": [],
   "opens": "",
-  "description": "A playground on OpenStreetMap near Church Road, Wootton. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "description": "Play areas on the recreation ground off Church Road, with a skate park, ball court and car park. Run by Wootton Parish Council.",
   "nearby": [],
   "sources": [
+    {
+      "label": "Wootton Parish Council: Land and buildings asset register",
+      "url": "https://wootton-pc.gov.uk/wp-content/uploads/simple-file-list/Finance/Asset-Register/Land-and-Buildings-Asset-Register.pdf"
+    },
     {
       "label": "OpenStreetMap: playground",
       "url": "https://www.openstreetmap.org/way/117182226"
     }
   ],
-  "checked": null,
-  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
-  "photo": null
+  "checked": "2026-10-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, opening hours, toilets and parking.",
+  "photo": null,
+  "operator": "Wootton Parish Council"
 }

@@ -1,23 +1,30 @@
 {
-  "name": "Playground off Drovers Lane",
+  "name": "Riverside Recreation Ground Play Area",
   "region": "east",
   "area": "Stotfold",
   "lat": 52.02176,
   "lng": -0.22135,
   "ages": [],
-  "equipment": [],
+  "equipment": [
+    "mg"
+  ],
   "access": [],
   "facilities": [],
   "opens": "",
-  "description": "A playground on OpenStreetMap near Drovers Lane, Stotfold. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "description": "Large play area on the Riverside Recreation Ground, with a football field and a ball court. Run by Stotfold Town Council.",
   "nearby": [],
   "sources": [
+    {
+      "label": "Stotfold Town Council: Play area locations",
+      "url": "https://www.stotfoldtowncouncil.gov.uk/locations-arlesey-road-hitchin-road-the-green-greenacre-park-riverside-muga"
+    },
     {
       "label": "OpenStreetMap: playground",
       "url": "https://www.openstreetmap.org/way/375100640"
     }
   ],
-  "checked": null,
-  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
-  "photo": null
+  "checked": "2026-10-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, opening hours, toilets and parking.",
+  "photo": null,
+  "operator": "Stotfold Town Council"
 }

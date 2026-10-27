@@ -1,23 +1,30 @@
 {
-  "name": "Playground off Luton Road",
+  "name": "Kingsbury Recreation Ground",
   "region": "east",
   "area": "Dunstable",
   "lat": 51.8876,
   "lng": -0.49904,
   "ages": [],
-  "equipment": [],
+  "equipment": [
+    "mg"
+  ],
   "access": [],
   "facilities": [],
   "opens": "",
-  "description": "A playground on OpenStreetMap near Luton Road, Dunstable. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "description": "Children's play area run by Dunstable Town Council.",
   "nearby": [],
   "sources": [
+    {
+      "label": "Dunstable Town Council: Parks and green spaces",
+      "url": "https://www.dunstable.gov.uk/parks-and-green-spaces/"
+    },
     {
       "label": "OpenStreetMap: playground",
       "url": "https://www.openstreetmap.org/way/1011273301"
     }
   ],
-  "checked": null,
-  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
-  "photo": null
+  "checked": "2026-10-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, opening hours, toilets and parking.",
+  "photo": null,
+  "operator": "Dunstable Town Council"
 }

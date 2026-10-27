@@ -1,23 +1,36 @@
 {
-  "name": "Playground off Kitelands Road",
+  "name": "Kitelands Recreation Ground",
   "region": "east",
   "area": "Biggleswade",
   "lat": 52.07749,
   "lng": -0.25203,
   "ages": [],
-  "equipment": [],
+  "equipment": [
+    "mg",
+    "rb",
+    "sl",
+    "spr",
+    "ss",
+    "sw",
+    "zw"
+  ],
   "access": [],
   "facilities": [],
   "opens": "",
-  "description": "A playground on OpenStreetMap near Kitelands Road, Biggleswade. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "description": "Recreation ground with a large play area, a toddler area and a ball court, run by Biggleswade Town Council.",
   "nearby": [],
   "sources": [
+    {
+      "label": "Biggleswade Town Council: Recreation facilities (Dec 2019)",
+      "url": "https://biggleswadetowncouncil.gov.uk/wp-content/uploads/2021/02/BTC-recreation-facilities.pdf"
+    },
     {
       "label": "OpenStreetMap: playground",
       "url": "https://www.openstreetmap.org/way/387169670"
     }
   ],
-  "checked": null,
-  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
-  "photo": null
+  "checked": "2026-10-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, opening hours, toilets and parking.",
+  "photo": null,
+  "operator": "Biggleswade Town Council"
 }
