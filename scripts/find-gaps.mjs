@@ -264,7 +264,7 @@ if (toAdd.length) {
         photo: null,
       };
     }
-    let id = `c-${slug(`${doc.name}-${doc.area}`).slice(0, 60)}`;
+    let id = slug(`${doc.name}-${doc.area}`).slice(0, 60);
     while (existing.has(`${id}.json`)) id += '-2';
     existing.add(`${id}.json`);
     await writeFile(join(DIR, `${id}.json`), JSON.stringify(doc, null, 2) + '\n');

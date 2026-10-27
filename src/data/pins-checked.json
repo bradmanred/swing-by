@@ -2,47 +2,47 @@
   "about": "Pins placed or checked by hand. scripts/check-positions.mjs never checks or moves these, so add a pin here whenever you move it by hand.",
   "pins": [
     {
-      "id": "c-badgers-recreation-ground-chesterfield",
+      "id": "badgers-recreation-ground-chesterfield",
       "checked": "2026-10-27",
       "note": "Moved by hand into Badgers Recreation Ground off Brockwell Lane; the OpenStreetMap-based pin was about 360 m west."
     },
     {
-      "id": "c-durley-chine-play-area-hasland",
+      "id": "durley-chine-play-area-hasland",
       "checked": "2026-10-27",
       "note": "Moved onto the only play area mapped nearby on OpenStreetMap (way/1489511284), about 200 m from the street-name pin."
     },
     {
-      "id": "c-eastwood-park-toddler-area-hasland",
+      "id": "eastwood-park-toddler-area-hasland",
       "checked": "2026-10-27",
       "note": "Unstacked from the Junior Area onto the other play area in Eastwood Park on OpenStreetMap (way/880993686). Junior and Toddler may be swapped."
     },
     {
-      "id": "c-hazel-drive-play-area-walton",
+      "id": "hazel-drive-play-area-walton",
       "checked": "2026-10-27",
       "note": "Moved onto the play area by Hazel Drive on OpenStreetMap (way/162285074); the street-name pin was about 450 m off."
     },
     {
-      "id": "c-oadby-drive-no-12-play-area-hasland",
+      "id": "oadby-drive-no-12-play-area-hasland",
       "checked": "2026-10-27",
       "note": "Unstacked from No. 9 onto one of the two play areas on Oadby Drive on OpenStreetMap (way/869737840). Which number is which is a guess: they may be swapped."
     },
     {
-      "id": "c-oadby-drive-no-9-play-area-hasland",
+      "id": "oadby-drive-no-9-play-area-hasland",
       "checked": "2026-10-27",
       "note": "Unstacked from No. 12 onto one of the two play areas on Oadby Drive on OpenStreetMap (way/868822142). Which number is which is a guess: they may be swapped."
     },
     {
-      "id": "c-poolsbrook-country-park-chesterfield",
+      "id": "poolsbrook-country-park-chesterfield",
       "checked": "2026-10-27",
       "note": "Moved onto Poolsbrook Country Park Playground on OpenStreetMap (way/967858960), about 350 m from the old pin."
     },
     {
-      "id": "c-somersall-park-somersall-lane",
+      "id": "somersall-park-somersall-lane",
       "checked": "2026-10-27",
       "note": "Placed by hand from a position given by the site owner; the old pin was about 800 m east."
     },
     {
-      "id": "c-wasp-nest-play-area-chesterfield",
+      "id": "wasp-nest-play-area-chesterfield",
       "checked": "2026-10-27",
       "note": "Moved onto Inkerman Playground on OpenStreetMap (way/303690379); the council calls the site Inkerman Rec (Wasps Nest). Old pin was about 100 m off."
     },

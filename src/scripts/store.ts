@@ -17,7 +17,20 @@ export const store = {
 
 // v: been here, r: rating, t: date last changed, fav: saved as a favourite. All kept on this device only.
 export type Mine = Record<string, { v?: boolean; r?: number; t?: string; fav?: boolean }>;
-export const getMine = () => store.get<Mine>('sb-mine', {});
+export const getMine = () => {
+  const mine = store.get<Mine>('sb-mine', {});
+  // Playground ids used to start with "c-". Move anything saved under an old id to the new one, once.
+  const old = Object.keys(mine).filter((k) => k.startsWith('c-'));
+  if (old.length) {
+    for (const k of old) {
+      const id = k.slice(2);
+      mine[id] = { ...mine[k], ...mine[id] };
+      delete mine[k];
+    }
+    store.set('sb-mine', mine);
+  }
+  return mine;
+};
 
 /** Turn a playground's favourite on or off, keeping whatever else is saved for it. */
 export function setFav(id: string, on: boolean) {
