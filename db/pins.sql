@@ -1,7 +1,7 @@
 -- Where parents say a playground really is, when the pin is in the wrong place (worker/pins.js). Lives in the photos
 -- database (PHOTOS_DB).
 --   npx wrangler d1 execute swing-by-photos --remote --file db/pins.sql
--- (and on swing-by-photos-preview for previews). Safe to run more than once.
+-- (and on swing-by-photos-preview for previews). Safe to run more than once. Added 27 October 2026 and already run on both databases.
 CREATE TABLE IF NOT EXISTS pin_reports (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   park TEXT NOT NULL,        -- playground id, as in src/content/playgrounds/<id>.json
