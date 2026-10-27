@@ -1,0 +1,4683 @@
+[
+ {
+  "id": "allestree",
+  "name": "Allestree Park Play Area",
+  "area": "Allestree, Derby",
+  "region": "derbyshire",
+  "from": "unrecorded",
+  "lat": 52.958,
+  "lng": -1.493,
+  "status": "far"
+ },
+ {
+  "id": "bolsover",
+  "name": "Bolsover Castle Play Area",
+  "area": "Bolsover",
+  "region": "derbyshire",
+  "from": "unrecorded",
+  "lat": 53.2312,
+  "lng": -1.2958,
+  "status": "move",
+  "osm": "way/661192513",
+  "osmName": null,
+  "metres": 117,
+  "to": {
+   "lat": 53.23065,
+   "lng": -1.29431
+  }
+ },
+ {
+  "id": "c-acorn-recreation-ground-play-area-belper",
+  "name": "Acorn Recreation Ground Play Area",
+  "area": "Belper",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.029,
+  "lng": -1.48006,
+  "status": "confirmed",
+  "osm": "way/337375795",
+  "metres": 1
+ },
+ {
+  "id": "c-acorn-ridge-play-area-walton",
+  "name": "Acorn Ridge Play Area",
+  "area": "Walton",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.21993,
+  "lng": -1.46377,
+  "status": "confirmed",
+  "osm": "way/1458310138",
+  "metres": 0
+ },
+ {
+  "id": "c-aldercar-recreation-ground-play-area-aldercar",
+  "name": "Aldercar Recreation Ground Play Area",
+  "area": "Aldercar",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.02372,
+  "lng": -1.34023,
+  "status": "confirmed",
+  "osm": "way/113523181",
+  "metres": 0
+ },
+ {
+  "id": "c-alices-view-play-area-north-wingfield",
+  "name": "Alices View Play Area",
+  "area": "North Wingfield",
+  "region": "derbyshire",
+  "from": "postcode",
+  "lat": 53.18511,
+  "lng": -1.38577,
+  "status": "unmatched",
+  "candidates": [
+   {
+    "osm": "way/1470402578",
+    "name": null,
+    "metres": 360
+   }
+  ]
+ },
+ {
+  "id": "c-allpits-road-play-area-calow",
+  "name": "Allpits Road Play Area",
+  "area": "Calow",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.23466,
+  "lng": -1.38683,
+  "status": "confirmed",
+  "osm": "way/1448237022",
+  "metres": 1
+ },
+ {
+  "id": "c-alvaston-park-playground-derby",
+  "name": "Alvaston Park Playground",
+  "area": "Derby",
+  "region": "derbyshire",
+  "from": "postcode",
+  "lat": 52.9026,
+  "lng": -1.43672,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/428094938",
+    "name": null,
+    "metres": 424,
+    "lat": 52.90445,
+    "lng": -1.44225
+   }
+  ]
+ },
+ {
+  "id": "c-arthur-street-play-area-castle-gresley",
+  "name": "Arthur Street Play Area",
+  "area": "Castle Gresley",
+  "region": "derbyshire",
+  "from": "approximate",
+  "lat": 52.75258,
+  "lng": -1.58543,
+  "status": "move",
+  "osm": "way/597921940",
+  "osmName": "Bass's Crescent Playground",
+  "metres": 148,
+  "to": {
+   "lat": 52.75264,
+   "lng": -1.58323
+  }
+ },
+ {
+  "id": "c-artists-corner-play-area-matlock-dale",
+  "name": "Artist's Corner Play Area",
+  "area": "Matlock Dale",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.13116,
+  "lng": -1.55962,
+  "status": "confirmed",
+  "osm": "way/1177682521",
+  "metres": 0
+ },
+ {
+  "id": "c-ash-crescent-play-area-eckington",
+  "name": "Ash Crescent Play Area",
+  "area": "Eckington",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.30151,
+  "lng": -1.37343,
+  "status": "confirmed",
+  "osm": "way/1451105690",
+  "metres": 1
+ },
+ {
+  "id": "c-ashbourne-park-play-area-ashbourne",
+  "name": "Ashbourne Park Play Area",
+  "area": "Ashbourne",
+  "region": "derbyshire",
+  "from": "postcode",
+  "lat": 53.01983,
+  "lng": -1.72824,
+  "status": "move",
+  "osm": "way/1458348934",
+  "osmName": null,
+  "metres": 202,
+  "to": {
+   "lat": 53.01802,
+   "lng": -1.728
+  }
+ },
+ {
+  "id": "c-ashwood-close-play-area-buxton",
+  "name": "Ashwood Close Play Area",
+  "area": "Buxton",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.25565,
+  "lng": -1.90595,
+  "status": "confirmed",
+  "osm": "way/1452376326",
+  "metres": 0
+ },
+ {
+  "id": "c-ashwood-park-buxton",
+  "name": "Ashwood Park",
+  "area": "Buxton",
+  "region": "derbyshire",
+  "from": "approximate",
+  "lat": 53.25694,
+  "lng": -1.90397,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/147596572",
+    "name": null,
+    "metres": 265,
+    "lat": 53.25914,
+    "lng": -1.90547
+   },
+   {
+    "osm": "way/1452376326",
+    "name": null,
+    "metres": 194,
+    "lat": 53.25565,
+    "lng": -1.90595
+   }
+  ]
+ },
+ {
+  "id": "c-bakewell-recreation-ground-splash-pad-bakewell",
+  "name": "Bakewell Recreation Ground Splash Pad",
+  "area": "Bakewell",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.20922,
+  "lng": -1.67028,
+  "status": "confirmed",
+  "osm": "way/930743048",
+  "metres": 0
+ },
+ {
+  "id": "c-bamford-street-play-area-newton",
+  "name": "Bamford Street Play Area",
+  "area": "Newton",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.13063,
+  "lng": -1.34123,
+  "status": "confirmed",
+  "osm": "way/718222962",
+  "metres": 1
+ },
+ {
+  "id": "c-bankswood-park-hadfield",
+  "name": "Bankswood Park",
+  "area": "Hadfield",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.45863,
+  "lng": -1.96619,
+  "status": "confirmed",
+  "osm": "way/1451447400",
+  "metres": 0
+ },
+ {
+  "id": "c-bare-lane-play-area-ockbrook",
+  "name": "Bare Lane Play Area",
+  "area": "Ockbrook",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.9205,
+  "lng": -1.36946,
+  "status": "confirmed",
+  "osm": "way/481894815",
+  "metres": 1
+ },
+ {
+  "id": "c-barling-drive-play-area-ilkeston",
+  "name": "Barling Drive Play Area",
+  "area": "Ilkeston",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.98151,
+  "lng": -1.32662,
+  "status": "confirmed",
+  "osm": "way/73833184",
+  "metres": 0
+ },
+ {
+  "id": "c-barnes-park-play-area-grassmoor",
+  "name": "Barnes Park Play Area",
+  "area": "Grassmoor",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.1977,
+  "lng": -1.3936,
+  "status": "confirmed",
+  "osm": "way/1489513594",
+  "metres": 0
+ },
+ {
+  "id": "c-barnes-road-play-area-hady-lane",
+  "name": "Barnes Road Play Area",
+  "area": "Chesterfield",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.22895,
+  "lng": -1.39845,
+  "status": "confirmed",
+  "osm": "way/491328344",
+  "metres": 0
+ },
+ {
+  "id": "c-beeley-view-play-area-walton",
+  "name": "Beeley View Play Area",
+  "area": "Walton",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.21941,
+  "lng": -1.46241,
+  "status": "confirmed",
+  "osm": "way/1458310331",
+  "metres": 1
+ },
+ {
+  "id": "c-belklane-park-play-area-killamarsh",
+  "name": "Belklane Park Play Area",
+  "area": "Killamarsh",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.32579,
+  "lng": -1.30613,
+  "status": "confirmed",
+  "osm": "way/335040409",
+  "metres": 0
+ },
+ {
+  "id": "c-belmont-road-play-area-staveley",
+  "name": "Belmont Road Play Area",
+  "area": "Staveley",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.26591,
+  "lng": -1.34527,
+  "status": "confirmed",
+  "osm": "way/1450726664",
+  "metres": 0
+ },
+ {
+  "id": "c-bench-road-play-area-buxton",
+  "name": "Bench Road Play Area",
+  "area": "Buxton",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.25793,
+  "lng": -1.89887,
+  "status": "confirmed",
+  "osm": "way/147547652",
+  "metres": 1
+ },
+ {
+  "id": "c-bentinck-park-bolsover",
+  "name": "Bentinck Park",
+  "area": "Bolsover",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.25639,
+  "lng": -1.30276,
+  "status": "confirmed",
+  "osm": "way/286903211",
+  "metres": 0
+ },
+ {
+  "id": "c-bevan-road-play-area-clay-cross",
+  "name": "Bevan Road Play Area",
+  "area": "Clay Cross",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.15981,
+  "lng": -1.40427,
+  "status": "confirmed",
+  "osm": "way/330064344",
+  "metres": 0
+ },
+ {
+  "id": "c-birch-close-play-area-crofters-close-killamarsh",
+  "name": "Birch Close Play Area (Crofters Close)",
+  "area": "Killamarsh",
+  "region": "derbyshire",
+  "from": "postcode",
+  "lat": 53.31432,
+  "lng": -1.32164,
+  "status": "far"
+ },
+ {
+  "id": "c-birches-fold-play-area-coal-aston",
+  "name": "Birches Fold Play Area",
+  "area": "Coal Aston",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.31256,
+  "lng": -1.45571,
+  "status": "confirmed",
+  "osm": "way/32845157",
+  "metres": 0
+ },
+ {
+  "id": "c-blacks-lane-play-area-north-wingfield",
+  "name": "Blacks Lane Play Area",
+  "area": "North Wingfield",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.1833,
+  "lng": -1.39025,
+  "status": "confirmed",
+  "osm": "way/1470402578",
+  "metres": 1
+ },
+ {
+  "id": "c-bolehill-recreation-ground-bolehill-wirksworth",
+  "name": "Bolehill Recreation Ground",
+  "area": "Bolehill, Wirksworth",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.09357,
+  "lng": -1.56814,
+  "status": "confirmed",
+  "osm": "way/1458343082",
+  "metres": 0
+ },
+ {
+  "id": "c-bonsall-recreation-ground-bonsall",
+  "name": "Bonsall Recreation Ground",
+  "area": "Bonsall",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.11854,
+  "lng": -1.58402,
+  "status": "confirmed",
+  "osm": "way/286692580",
+  "metres": 0
+ },
+ {
+  "id": "c-bosworth-way-play-area-long-eaton",
+  "name": "Bosworth Way Play Area",
+  "area": "Long Eaton",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.88369,
+  "lng": -1.27199,
+  "status": "confirmed",
+  "osm": "way/146034167",
+  "metres": 1
+ },
+ {
+  "id": "c-bracken-ridge-play-area-shirebrook",
+  "name": "Bracken Ridge Play Area",
+  "area": "Shirebrook",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.19808,
+  "lng": -1.22984,
+  "status": "confirmed",
+  "osm": "way/1489525907",
+  "metres": 0
+ },
+ {
+  "id": "c-bradgate-croft-play-area-hasland",
+  "name": "Bradgate Croft Play Area",
+  "area": "Hasland",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.21719,
+  "lng": -1.4161,
+  "status": "confirmed",
+  "osm": "way/869111916",
+  "metres": 0
+ },
+ {
+  "id": "c-bramble-brook-recreation-ground-play-area-mickleover",
+  "name": "Bramble Brook Recreation Ground Play Area",
+  "area": "Mickleover",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.91384,
+  "lng": -1.53479,
+  "status": "confirmed",
+  "osm": "way/180476133",
+  "metres": 0
+ },
+ {
+  "id": "c-breadsall-memorial-hall-play-area-breadsall",
+  "name": "Breadsall Memorial Hall Play Area",
+  "area": "Breadsall",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.95322,
+  "lng": -1.44594,
+  "status": "confirmed",
+  "osm": "way/400666371",
+  "metres": 0
+ },
+ {
+  "id": "c-bridgemont-play-area-whaley-bridge",
+  "name": "Bridgemont Play Area",
+  "area": "Whaley Bridge",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.3394,
+  "lng": -1.98342,
+  "status": "confirmed",
+  "osm": "way/1169715965",
+  "metres": 1
+ },
+ {
+  "id": "c-brosscroft-play-area-hadfield",
+  "name": "Brosscroft Play Area",
+  "area": "Hadfield",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.46665,
+  "lng": -1.9646,
+  "status": "confirmed",
+  "osm": "way/204422988",
+  "metres": 0
+ },
+ {
+  "id": "c-brown-edge-road-play-area-buxton",
+  "name": "Brown Edge Road Play Area",
+  "area": "Buxton",
+  "region": "derbyshire",
+  "from": "approximate",
+  "lat": 53.26665,
+  "lng": -1.90872,
+  "status": "unmatched",
+  "candidates": [
+   {
+    "osm": "way/1452376680",
+    "name": null,
+    "metres": 365
+   }
+  ]
+ },
+ {
+  "id": "c-brushfield-recreation-ground-holme-hall",
+  "name": "Brushfield Recreation Ground",
+  "area": "Holme Hall",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.24568,
+  "lng": -1.46665,
+  "status": "unmatched",
+  "candidates": [
+   {
+    "osm": "way/303691423",
+    "name": "Holme Hall Swings",
+    "metres": 166
+   },
+   {
+    "osm": "way/1458309167",
+    "name": null,
+    "metres": 253
+   },
+   {
+    "osm": "way/485340638",
+    "name": null,
+    "metres": 471
+   }
+  ]
+ },
+ {
+  "id": "c-campion-drive-play-area-killamarsh",
+  "name": "Campion Drive Play Area",
+  "area": "Killamarsh",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.3217,
+  "lng": -1.32563,
+  "status": "confirmed",
+  "osm": "way/1450728396",
+  "metres": 0
+ },
+ {
+  "id": "c-canal-wharf-play-area-stonegravels",
+  "name": "Canal Wharf Play Area",
+  "area": "Stonegravels",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.24491,
+  "lng": -1.4226,
+  "status": "confirmed",
+  "osm": "way/1435330532",
+  "metres": 0
+ },
+ {
+  "id": "c-carsington-water-play-area-carsington",
+  "name": "Carsington Water Play Area",
+  "area": "Carsington",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.05998,
+  "lng": -1.64214,
+  "status": "confirmed",
+  "osm": "way/175905613",
+  "metres": 1
+ },
+ {
+  "id": "c-carsington-way-play-area-holme-hall",
+  "name": "Carsington Way Play Area",
+  "area": "Holme Hall",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.24529,
+  "lng": -1.46424,
+  "status": "confirmed",
+  "osm": "way/303691423",
+  "metres": 0
+ },
+ {
+  "id": "c-cavendish-drive-playground-ashbourne",
+  "name": "Cavendish Drive Playground",
+  "area": "Ashbourne",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.0095,
+  "lng": -1.71717,
+  "status": "confirmed",
+  "osm": "way/1458349622",
+  "metres": 0
+ },
+ {
+  "id": "c-cavendish-road-recreation-ground-matlock",
+  "name": "Cavendish Road Recreation Ground",
+  "area": "Matlock",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.14586,
+  "lng": -1.55501,
+  "status": "confirmed",
+  "osm": "way/1452639795",
+  "metres": 0
+ },
+ {
+  "id": "c-cedar-avenue-play-area-ripley",
+  "name": "Cedar Avenue Play Area",
+  "area": "Ripley",
+  "region": "derbyshire",
+  "from": "approximate",
+  "lat": 53.04669,
+  "lng": -1.40785,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/1471452972",
+    "name": null,
+    "metres": 398,
+    "lat": 53.04981,
+    "lng": -1.41078
+   },
+   {
+    "osm": "way/1489844859",
+    "name": null,
+    "metres": 399,
+    "lat": 53.04415,
+    "lng": -1.40364
+   },
+   {
+    "osm": "way/1489821600",
+    "name": null,
+    "metres": 417,
+    "lat": 53.04346,
+    "lng": -1.41103
+   }
+  ]
+ },
+ {
+  "id": "c-cemetery-road-play-area-dronfield",
+  "name": "Cemetery Road Play Area",
+  "area": "Dronfield",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.29732,
+  "lng": -1.46081,
+  "status": "confirmed",
+  "osm": "way/32886705",
+  "metres": 0
+ },
+ {
+  "id": "c-centurion-play-area-gamesley",
+  "name": "Centurion Play Area",
+  "area": "Gamesley",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.44597,
+  "lng": -1.99083,
+  "status": "confirmed",
+  "osm": "way/834719205",
+  "metres": 1
+ },
+ {
+  "id": "c-chaddesden-park-playground-and-water-play-derby",
+  "name": "Chaddesden Park Playground and Water Play",
+  "area": "Derby",
+  "region": "derbyshire",
+  "from": "postcode",
+  "lat": 52.9288,
+  "lng": -1.43264,
+  "status": "move",
+  "osm": "way/224128563",
+  "osmName": "Water Play",
+  "metres": 239,
+  "to": {
+   "lat": 52.92669,
+   "lng": -1.43192
+  }
+ },
+ {
+  "id": "c-chapel-lane-play-area-hadfield",
+  "name": "Chapel Lane Play Area",
+  "area": "Hadfield",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.46092,
+  "lng": -1.97514,
+  "status": "confirmed",
+  "osm": "way/1451442269",
+  "metres": 0
+ },
+ {
+  "id": "c-charnwood-drive-play-area-ripley",
+  "name": "Charnwood Drive Play Area",
+  "area": "Ripley",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.04615,
+  "lng": -1.41838,
+  "status": "confirmed",
+  "osm": "way/1489820685",
+  "metres": 0
+ },
+ {
+  "id": "c-chatsworth-farmyard-and-adventure-playground-chatsworth",
+  "name": "Chatsworth Farmyard and Adventure Playground",
+  "area": "Chatsworth",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.23104,
+  "lng": -1.60657,
+  "status": "far"
+ },
+ {
+  "id": "c-chatsworth-road-play-area-rowsley",
+  "name": "Chatsworth Road Play Area",
+  "area": "Rowsley",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.19245,
+  "lng": -1.61308,
+  "status": "confirmed",
+  "osm": "way/1452637741",
+  "metres": 0
+ },
+ {
+  "id": "c-chaucer-old-park-ilkeston",
+  "name": "Chaucer Old Park",
+  "area": "Ilkeston",
+  "region": "derbyshire",
+  "from": "postcode",
+  "lat": 52.97426,
+  "lng": -1.30333,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/589712747",
+    "name": null,
+    "metres": 251,
+    "lat": 52.97374,
+    "lng": -1.29969
+   },
+   {
+    "osm": "way/352892323",
+    "name": "Chaucer Park Play Area",
+    "metres": 299,
+    "lat": 52.97158,
+    "lng": -1.30365
+   },
+   {
+    "osm": "way/589712752",
+    "name": "Gordon Street Play Area",
+    "metres": 278,
+    "lat": 52.9738,
+    "lng": -1.29925
+   }
+  ]
+ },
+ {
+  "id": "c-chellaston-park-playground-derby",
+  "name": "Chellaston Park Playground",
+  "area": "Derby",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.87586,
+  "lng": -1.42913,
+  "status": "confirmed",
+  "osm": "way/223347446",
+  "metres": 0
+ },
+ {
+  "id": "c-cherrytree-grove-play-area-north-wingfield",
+  "name": "Cherrytree Grove Play Area",
+  "area": "North Wingfield",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.17486,
+  "lng": -1.38955,
+  "status": "confirmed",
+  "osm": "way/1470401146",
+  "metres": 0
+ },
+ {
+  "id": "c-chester-street-play-area-chesterfield",
+  "name": "Chester Street Play Area",
+  "area": "Chesterfield",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.2379,
+  "lng": -1.43962,
+  "status": "confirmed",
+  "osm": "way/1470409848",
+  "metres": 0
+ },
+ {
+  "id": "c-chestnut-drive-play-area-creswell",
+  "name": "Chestnut Drive Play Area",
+  "area": "Creswell",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.26862,
+  "lng": -1.22126,
+  "status": "confirmed",
+  "osm": "way/288801313",
+  "metres": 0
+ },
+ {
+  "id": "c-circular-road-play-area-middlecroft",
+  "name": "Circular Road Play Area",
+  "area": "Middlecroft",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.26158,
+  "lng": -1.36334,
+  "status": "confirmed",
+  "osm": "way/1451108902",
+  "metres": 0
+ },
+ {
+  "id": "c-clay-lane-play-area-clay-cross",
+  "name": "Clay Lane Play Area",
+  "area": "Clay Cross",
+  "region": "derbyshire",
+  "from": "postcode",
+  "lat": 53.16283,
+  "lng": -1.41718,
+  "status": "move",
+  "osm": "way/251792482",
+  "osmName": null,
+  "metres": 219,
+  "to": {
+   "lat": 53.16174,
+   "lng": -1.41991
+  }
+ },
+ {
+  "id": "c-cliffe-park-play-area-dronfield",
+  "name": "Cliffe Park Play Area",
+  "area": "Dronfield",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.30108,
+  "lng": -1.46307,
+  "status": "confirmed",
+  "osm": "way/942345500",
+  "metres": 0
+ },
+ {
+  "id": "c-clune-street-recreation-ground-clowne",
+  "name": "Clune Street Recreation Ground",
+  "area": "Clowne",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.28011,
+  "lng": -1.24971,
+  "status": "confirmed",
+  "osm": "way/1451136939",
+  "metres": 0
+ },
+ {
+  "id": "c-cobden-street-play-area-long-eaton",
+  "name": "Cobden Street Play Area",
+  "area": "Long Eaton",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.89325,
+  "lng": -1.27326,
+  "status": "confirmed",
+  "osm": "way/51847162",
+  "metres": 1
+ },
+ {
+  "id": "c-codnor-market-place-recreation-ground-play-area-codnor",
+  "name": "Codnor Market Place Recreation Ground Play Area",
+  "area": "Codnor",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.04254,
+  "lng": -1.37436,
+  "status": "confirmed",
+  "osm": "way/128787351",
+  "metres": 1
+ },
+ {
+  "id": "c-conduit-street-play-area-tintwistle",
+  "name": "Conduit Street Play Area",
+  "area": "Tintwistle",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.47093,
+  "lng": -1.97315,
+  "status": "confirmed",
+  "osm": "way/1451442957",
+  "metres": 0
+ },
+ {
+  "id": "c-cote-heath-park-buxton",
+  "name": "Cote Heath Park",
+  "area": "Buxton",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.25141,
+  "lng": -1.9108,
+  "status": "confirmed",
+  "osm": "way/1160827923",
+  "metres": 0
+ },
+ {
+  "id": "c-cotmanhay-playing-fields-ilkeston",
+  "name": "Cotmanhay Playing Fields",
+  "area": "Ilkeston",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.99435,
+  "lng": -1.30524,
+  "status": "confirmed",
+  "osm": "way/584486337",
+  "metres": 0
+ },
+ {
+  "id": "c-cottage-lane-play-area-gamesley",
+  "name": "Cottage Lane Play Area",
+  "area": "Gamesley",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.44663,
+  "lng": -1.97924,
+  "status": "confirmed",
+  "osm": "way/1452354510",
+  "metres": 0
+ },
+ {
+  "id": "c-coupland-close-play-area-new-whittington",
+  "name": "Coupland Close Play Area",
+  "area": "New Whittington",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.27693,
+  "lng": -1.41503,
+  "status": "confirmed",
+  "osm": "way/1040652620",
+  "metres": 0
+ },
+ {
+  "id": "c-crich-lane-recreation-ground-play-area-belper",
+  "name": "Crich Lane Recreation Ground Play Area",
+  "area": "Belper",
+  "region": "derbyshire",
+  "from": "approximate",
+  "lat": 53.04199,
+  "lng": -1.47403,
+  "status": "far"
+ },
+ {
+  "id": "c-crich-view-play-area-bolsover",
+  "name": "Crich View Play Area",
+  "area": "Bolsover",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.22251,
+  "lng": -1.28703,
+  "status": "confirmed",
+  "osm": "way/1489515896",
+  "metres": 0
+ },
+ {
+  "id": "c-cromford-play-area-cromford",
+  "name": "Cromford Play Area",
+  "area": "Cromford",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.10756,
+  "lng": -1.5595,
+  "status": "confirmed",
+  "osm": "way/1452648646",
+  "metres": 0
+ },
+ {
+  "id": "c-cropston-close-play-area-chesterfield",
+  "name": "Cropston Close Play Area",
+  "area": "Chesterfield",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.21828,
+  "lng": -1.4123,
+  "status": "confirmed",
+  "osm": "way/451785526",
+  "metres": 0
+ },
+ {
+  "id": "c-curzon-street-moorlands-play-area-long-eaton",
+  "name": "Curzon Street / Moorlands Play Area",
+  "area": "Long Eaton",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.90936,
+  "lng": -1.29137,
+  "status": "confirmed",
+  "osm": "way/49642891",
+  "metres": 0
+ },
+ {
+  "id": "c-dallimore-road-play-area-ilkeston",
+  "name": "Dallimore Road Play Area",
+  "area": "Ilkeston",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.95485,
+  "lng": -1.3182,
+  "status": "confirmed",
+  "osm": "way/397716970",
+  "metres": 0
+ },
+ {
+  "id": "c-damon-drive-play-area-brimington",
+  "name": "Damon Drive Play Area",
+  "area": "Brimington",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.26046,
+  "lng": -1.39446,
+  "status": "confirmed",
+  "osm": "way/1451101871",
+  "metres": 0
+ },
+ {
+  "id": "c-darcy-road-play-area-eckington",
+  "name": "Darcy Road Play Area",
+  "area": "Eckington",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.30774,
+  "lng": -1.3685,
+  "status": "confirmed",
+  "osm": "way/1451106663",
+  "metres": 0
+ },
+ {
+  "id": "c-deans-drive-play-area-borrowash",
+  "name": "Deans Drive Play Area",
+  "area": "Borrowash",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.90909,
+  "lng": -1.37552,
+  "status": "confirmed",
+  "osm": "way/478523699",
+  "metres": 0
+ },
+ {
+  "id": "c-delves-road-play-area-killamarsh",
+  "name": "Delves Road Play Area",
+  "area": "Killamarsh",
+  "region": "derbyshire",
+  "from": "postcode",
+  "lat": 53.31998,
+  "lng": -1.31834,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "node/4053235901",
+    "name": null,
+    "metres": 350,
+    "lat": 53.32281,
+    "lng": -1.32067
+   },
+   {
+    "osm": "way/1450728950",
+    "name": null,
+    "metres": 352,
+    "lat": 53.32312,
+    "lng": -1.31773
+   },
+   {
+    "osm": "way/1450727836",
+    "name": null,
+    "metres": 368,
+    "lat": 53.31833,
+    "lng": -1.31355
+   }
+  ]
+ },
+ {
+  "id": "c-denby-lane-recreation-ground-play-area-loscoe",
+  "name": "Denby Lane Recreation Ground Play Area",
+  "area": "Loscoe",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.02491,
+  "lng": -1.3805,
+  "status": "confirmed",
+  "osm": "way/390657325",
+  "metres": 0
+ },
+ {
+  "id": "c-derby-arboretum-playground-derby",
+  "name": "Derby Arboretum Playground",
+  "area": "Derby",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.91071,
+  "lng": -1.47287,
+  "status": "confirmed",
+  "osm": "way/78330468",
+  "metres": 0
+ },
+ {
+  "id": "c-derby-road-play-area-new-mills",
+  "name": "Derby Road Play Area",
+  "area": "New Mills",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.37389,
+  "lng": -1.98664,
+  "status": "confirmed",
+  "osm": "way/1122037270",
+  "metres": 1
+ },
+ {
+  "id": "c-derwent-drive-play-area-tibshelf",
+  "name": "Derwent Drive Play Area",
+  "area": "Tibshelf",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.14186,
+  "lng": -1.34961,
+  "status": "confirmed",
+  "osm": "way/1234018002",
+  "metres": 0
+ },
+ {
+  "id": "c-devonshire-avenue-play-area-new-whittington",
+  "name": "Devonshire Avenue Play Area",
+  "area": "New Whittington",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.27383,
+  "lng": -1.40067,
+  "status": "confirmed",
+  "osm": "way/1051564924",
+  "metres": 0
+ },
+ {
+  "id": "c-dewley-way-play-area-clay-cross",
+  "name": "Dewley Way Play Area",
+  "area": "Clay Cross",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.17146,
+  "lng": -1.4052,
+  "status": "confirmed",
+  "osm": "way/1017892088",
+  "metres": 0
+ },
+ {
+  "id": "c-doncaster-road-recreation-ground-sandiacre",
+  "name": "Doncaster Road Recreation Ground",
+  "area": "Sandiacre",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.92533,
+  "lng": -1.29172,
+  "status": "confirmed",
+  "osm": "way/840713335",
+  "metres": 0
+ },
+ {
+  "id": "c-doveridge-playground-doveridge-derbyshire-dales",
+  "name": "Doveridge Playground",
+  "area": "Doveridge, Derbyshire Dales",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.90336,
+  "lng": -1.81957,
+  "status": "confirmed",
+  "osm": "way/1524016723",
+  "metres": 0
+ },
+ {
+  "id": "c-draycott-park-draycott",
+  "name": "Draycott Park",
+  "area": "Draycott",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.89644,
+  "lng": -1.3439,
+  "status": "confirmed",
+  "osm": "way/149932180",
+  "metres": 1
+ },
+ {
+  "id": "c-duckmanton-adventure-play-area-chesterfield",
+  "name": "Duckmanton Adventure Play Area",
+  "area": "Chesterfield",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.25775,
+  "lng": -1.34853,
+  "status": "name",
+  "osm": "way/967858960",
+  "osmName": "Poolsbrook Country Park Playground",
+  "metres": 0
+ },
+ {
+  "id": "c-durley-chine-play-area-hasland",
+  "name": "Durley Chine Play Area",
+  "area": "Hasland",
+  "region": "derbyshire",
+  "from": "approximate",
+  "lat": 53.22076,
+  "lng": -1.41434,
+  "status": "move",
+  "osm": "way/1489511284",
+  "osmName": null,
+  "metres": 204,
+  "to": {
+   "lat": 53.22246,
+   "lng": -1.41551
+  }
+ },
+ {
+  "id": "c-east-street-recreation-ground-creswell",
+  "name": "East Street Recreation Ground",
+  "area": "Creswell",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.26308,
+  "lng": -1.22164,
+  "status": "confirmed",
+  "osm": "way/1447101920",
+  "metres": 0
+ },
+ {
+  "id": "c-eastwood-park-junior-area-hasland",
+  "name": "Eastwood Park Junior Area",
+  "area": "Hasland",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.22295,
+  "lng": -1.40825,
+  "status": "confirmed",
+  "osm": "way/880993687",
+  "metres": 1
+ },
+ {
+  "id": "c-eastwood-park-play-area-calow",
+  "name": "Eastwood Park Play Area",
+  "area": "Calow",
+  "region": "derbyshire",
+  "from": "postcode",
+  "lat": 53.2346,
+  "lng": -1.38268,
+  "status": "unmatched",
+  "candidates": [
+   {
+    "osm": "way/1448237022",
+    "name": null,
+    "metres": 276
+   }
+  ]
+ },
+ {
+  "id": "c-eastwood-park-toddler-area-hasland",
+  "name": "Eastwood Park Toddler Area",
+  "area": "Hasland",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.22295,
+  "lng": -1.40825,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/880993686",
+    "name": null,
+    "metres": 86,
+    "lat": 53.22219,
+    "lng": -1.40849
+   },
+   {
+    "osm": "way/880993687",
+    "name": null,
+    "metres": 1,
+    "lat": 53.22295,
+    "lng": -1.40825
+   }
+  ]
+ },
+ {
+  "id": "c-edinburgh-road-play-area-chesterfield",
+  "name": "Edinburgh Road Play Area",
+  "area": "Chesterfield",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.24426,
+  "lng": -1.4377,
+  "status": "confirmed",
+  "osm": "way/1159998233",
+  "metres": 0
+ },
+ {
+  "id": "c-egstow-playing-field-play-area-clay-cross",
+  "name": "Egstow Playing Field Play Area",
+  "area": "Clay Cross",
+  "region": "derbyshire",
+  "from": "postcode",
+  "lat": 53.17022,
+  "lng": -1.4102,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/438308932",
+    "name": null,
+    "metres": 483,
+    "lat": 53.17438,
+    "lng": -1.40811
+   },
+   {
+    "osm": "way/1017892088",
+    "name": null,
+    "metres": 360,
+    "lat": 53.17146,
+    "lng": -1.4052
+   }
+  ]
+ },
+ {
+  "id": "c-elnor-lane-play-area-whaley-bridge",
+  "name": "Elnor Lane Play Area",
+  "area": "Whaley Bridge",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.3137,
+  "lng": -1.97805,
+  "status": "confirmed",
+  "osm": "way/1452369037",
+  "metres": 1
+ },
+ {
+  "id": "c-elvaston-road-play-area-north-wingfield",
+  "name": "Elvaston Road Play Area",
+  "area": "North Wingfield",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.17607,
+  "lng": -1.39237,
+  "status": "confirmed",
+  "osm": "way/1470400786",
+  "metres": 0
+ },
+ {
+  "id": "c-emmett-carr-lane-play-area-renishaw",
+  "name": "Emmett Carr Lane Play Area",
+  "area": "Renishaw",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.29152,
+  "lng": -1.32452,
+  "status": "confirmed",
+  "osm": "way/1450726843",
+  "metres": 0
+ },
+ {
+  "id": "c-erewash-museum-ilkeston",
+  "name": "Erewash Museum",
+  "area": "Ilkeston",
+  "region": "derbyshire",
+  "from": "postcode",
+  "lat": 52.97158,
+  "lng": -1.30715,
+  "status": "move",
+  "osm": "way/352892323",
+  "osmName": "Chaucer Park Play Area",
+  "metres": 234,
+  "to": {
+   "lat": 52.97158,
+   "lng": -1.30365
+  }
+ },
+ {
+  "id": "c-erewash-square-ilkeston",
+  "name": "Erewash Square",
+  "area": "Ilkeston",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.96439,
+  "lng": -1.29263,
+  "status": "confirmed",
+  "osm": "node/811216185",
+  "metres": 2
+ },
+ {
+  "id": "c-eureka-park-play-area-swadlincote",
+  "name": "Eureka Park Play Area",
+  "area": "Swadlincote",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.77774,
+  "lng": -1.55581,
+  "status": "confirmed",
+  "osm": "way/1079195737",
+  "metres": 0
+ },
+ {
+  "id": "c-fanny-shaws-park-wirksworth",
+  "name": "Fanny Shaw's Park",
+  "area": "Wirksworth",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.08619,
+  "lng": -1.57204,
+  "status": "confirmed",
+  "osm": "way/1458345097",
+  "metres": 0
+ },
+ {
+  "id": "c-ferndene-drive-play-area-long-eaton",
+  "name": "Ferndene Drive Play Area",
+  "area": "Long Eaton",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.8937,
+  "lng": -1.29738,
+  "status": "confirmed",
+  "osm": "way/216965163",
+  "metres": 0
+ },
+ {
+  "id": "c-first-avenue-play-area-risley",
+  "name": "First Avenue Play Area",
+  "area": "Risley",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.92002,
+  "lng": -1.3081,
+  "status": "confirmed",
+  "osm": "way/61236879",
+  "metres": 0
+ },
+ {
+  "id": "c-ford-street-play-area-tupton",
+  "name": "Ford Street Play Area",
+  "area": "Tupton",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.18558,
+  "lng": -1.40995,
+  "status": "confirmed",
+  "osm": "way/1467783614",
+  "metres": 0
+ },
+ {
+  "id": "c-foxbrook-court-play-area-walton",
+  "name": "Foxbrook Court Play Area",
+  "area": "Walton",
+  "region": "derbyshire",
+  "from": "approximate",
+  "lat": 53.22507,
+  "lng": -1.4638,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/1001728618",
+    "name": null,
+    "metres": 411,
+    "lat": 53.22731,
+    "lng": -1.46872
+   },
+   {
+    "osm": "way/1458309886",
+    "name": null,
+    "metres": 168,
+    "lat": 53.22638,
+    "lng": -1.46505
+   },
+   {
+    "osm": "way/314609689",
+    "name": null,
+    "metres": 316,
+    "lat": 53.22226,
+    "lng": -1.46455
+   }
+  ]
+ },
+ {
+  "id": "c-foxbrook-drive-play-area-walton",
+  "name": "Foxbrook Drive Play Area",
+  "area": "Walton",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.22638,
+  "lng": -1.46505,
+  "status": "confirmed",
+  "osm": "way/1458309886",
+  "metres": 0
+ },
+ {
+  "id": "c-furness-vale-play-area-furness-vale",
+  "name": "Furness Vale Play Area",
+  "area": "Furness Vale",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.3477,
+  "lng": -1.98912,
+  "status": "confirmed",
+  "osm": "way/549113805",
+  "metres": 0
+ },
+ {
+  "id": "c-gallows-inn-play-area-ilkeston",
+  "name": "Gallows Inn Play Area",
+  "area": "Ilkeston",
+  "region": "derbyshire",
+  "from": "postcode",
+  "lat": 52.97055,
+  "lng": -1.29524,
+  "status": "unmatched",
+  "candidates": [
+   {
+    "osm": "way/67183220",
+    "name": "Larklands Play Area",
+    "metres": 131
+   },
+   {
+    "osm": "way/589712752",
+    "name": "Gordon Street Play Area",
+    "metres": 450
+   },
+   {
+    "osm": "way/589712747",
+    "name": null,
+    "metres": 463
+   }
+  ]
+ },
+ {
+  "id": "c-godfrey-drive-play-area-kirk-hallam",
+  "name": "Godfrey Drive Play Area",
+  "area": "Kirk Hallam",
+  "region": "derbyshire",
+  "from": "postcode",
+  "lat": 52.96124,
+  "lng": -1.32438,
+  "status": "move",
+  "osm": "way/352894147",
+  "osmName": "Godfrey Drive Play Area",
+  "metres": 208,
+  "to": {
+   "lat": 52.96208,
+   "lng": -1.32161
+  }
+ },
+ {
+  "id": "c-golden-ball-play-area-renishaw",
+  "name": "Golden Ball Play Area",
+  "area": "Renishaw",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.29434,
+  "lng": -1.32759,
+  "status": "confirmed",
+  "osm": "way/905428041",
+  "metres": 0
+ },
+ {
+  "id": "c-gordon-street-play-area-ilkeston",
+  "name": "Gordon Street Play Area",
+  "area": "Ilkeston",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.97374,
+  "lng": -1.29969,
+  "status": "confirmed",
+  "osm": "way/589712752",
+  "metres": 30
+ },
+ {
+  "id": "c-gorsey-bank-play-area-wirksworth",
+  "name": "Gorsey Bank Play Area",
+  "area": "Wirksworth",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.07552,
+  "lng": -1.57051,
+  "status": "confirmed",
+  "osm": "way/867473054",
+  "metres": 0
+ },
+ {
+  "id": "c-granby-park-ilkeston",
+  "name": "Granby Park",
+  "area": "Ilkeston",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.9832,
+  "lng": -1.30988,
+  "status": "confirmed",
+  "osm": "way/779728882",
+  "metres": 0
+ },
+ {
+  "id": "c-granby-road-play-area-buxton",
+  "name": "Granby Road Play Area",
+  "area": "Buxton",
+  "region": "derbyshire",
+  "from": "approximate",
+  "lat": 53.25473,
+  "lng": -1.90114,
+  "status": "unmatched",
+  "candidates": [
+   {
+    "osm": "way/1452376326",
+    "name": null,
+    "metres": 336
+   },
+   {
+    "osm": "way/147547652",
+    "name": null,
+    "metres": 387
+   }
+  ]
+ },
+ {
+  "id": "c-grange-park-long-eaton",
+  "name": "Grange Park",
+  "area": "Long Eaton",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.89695,
+  "lng": -1.25761,
+  "status": "confirmed",
+  "osm": "way/145837048",
+  "metres": 0
+ },
+ {
+  "id": "c-green-lane-buxton",
+  "name": "Green Lane",
+  "area": "Buxton",
+  "region": "derbyshire",
+  "from": "approximate",
+  "lat": 53.24983,
+  "lng": -1.91868,
+  "status": "far"
+ },
+ {
+  "id": "c-green-meadow-broadmeadows-lea-vale-south-normanton",
+  "name": "Green Meadow (Broadmeadows), Lea Vale",
+  "area": "South Normanton",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.09738,
+  "lng": -1.3385,
+  "status": "confirmed",
+  "osm": "way/279895698",
+  "metres": 0
+ },
+ {
+  "id": "c-haddon-way-play-area-sawley",
+  "name": "Haddon Way Play Area",
+  "area": "Sawley",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.88233,
+  "lng": -1.30879,
+  "status": "confirmed",
+  "osm": "way/112454479",
+  "metres": 0
+ },
+ {
+  "id": "c-hady-hill-play-area-spital",
+  "name": "Hady Hill Play Area",
+  "area": "Spital",
+  "region": "derbyshire",
+  "from": "approximate",
+  "lat": 53.23363,
+  "lng": -1.41059,
+  "status": "unmatched",
+  "candidates": [
+   {
+    "osm": "way/491328338",
+    "name": null,
+    "metres": 227
+   }
+  ]
+ },
+ {
+  "id": "c-hands-road-play-area-heanor",
+  "name": "Hands Road Play Area",
+  "area": "Heanor",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.01234,
+  "lng": -1.34205,
+  "status": "confirmed",
+  "osm": "way/110969780",
+  "metres": 1
+ },
+ {
+  "id": "c-harcourt-close-play-area-hasland",
+  "name": "Harcourt Close Play Area",
+  "area": "Hasland",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.21758,
+  "lng": -1.41445,
+  "status": "confirmed",
+  "osm": "way/869737840",
+  "metres": 0
+ },
+ {
+  "id": "c-harehill-road-play-area-grangewood",
+  "name": "Harehill Road Play Area",
+  "area": "Grangewood",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.21891,
+  "lng": -1.43871,
+  "status": "confirmed",
+  "osm": "way/146985755",
+  "metres": 0
+ },
+ {
+  "id": "c-harehills-park-glossop",
+  "name": "Harehills Park",
+  "area": "Glossop",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.44207,
+  "lng": -1.95148,
+  "status": "confirmed",
+  "osm": "way/486757879",
+  "metres": 0
+ },
+ {
+  "id": "c-harpur-hill-play-area-buxton",
+  "name": "Harpur Hill Play Area",
+  "area": "Buxton",
+  "region": "derbyshire",
+  "from": "approximate",
+  "lat": 53.24599,
+  "lng": -1.90735,
+  "status": "unmatched",
+  "candidates": [
+   {
+    "osm": "way/1452380336",
+    "name": null,
+    "metres": 273
+   }
+  ]
+ },
+ {
+  "id": "c-harrington-play-area-long-eaton",
+  "name": "Harrington Play Area",
+  "area": "Long Eaton",
+  "region": "derbyshire",
+  "from": "postcode",
+  "lat": 52.89145,
+  "lng": -1.29878,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/216965164",
+    "name": "Harrington Play Area",
+    "metres": 384,
+    "lat": 52.8892,
+    "lng": -1.30313
+   },
+   {
+    "osm": "way/216965163",
+    "name": null,
+    "metres": 267,
+    "lat": 52.8937,
+    "lng": -1.29738
+   }
+  ]
+ },
+ {
+  "id": "c-hartington-road-play-area-staveley",
+  "name": "Hartington Road Play Area",
+  "area": "Staveley",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.23166,
+  "lng": -1.41147,
+  "status": "confirmed",
+  "osm": "way/491328338",
+  "metres": 0
+ },
+ {
+  "id": "c-hassop-road-play-area-staveley",
+  "name": "Hassop Road Play Area",
+  "area": "Staveley",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.27196,
+  "lng": -1.34743,
+  "status": "confirmed",
+  "osm": "way/609580916",
+  "metres": 0
+ },
+ {
+  "id": "c-hayworth-road-park-long-eaton",
+  "name": "Hayworth Road Park",
+  "area": "Long Eaton",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.91968,
+  "lng": -1.29287,
+  "status": "confirmed",
+  "osm": "way/48553314",
+  "metres": 0
+ },
+ {
+  "id": "c-hazel-drive-play-area-walton",
+  "name": "Hazel Drive Play Area",
+  "area": "Walton",
+  "region": "derbyshire",
+  "from": "approximate",
+  "lat": 53.2247,
+  "lng": -1.44861,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/162285074",
+    "name": null,
+    "metres": 453,
+    "lat": 53.22602,
+    "lng": -1.44217
+   },
+   {
+    "osm": "way/312982143",
+    "name": null,
+    "metres": 429,
+    "lat": 53.22401,
+    "lng": -1.45496
+   }
+  ]
+ },
+ {
+  "id": "c-heanor-memorial-park-play-area-heanor",
+  "name": "Heanor Memorial Park Play Area",
+  "area": "Heanor",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.01233,
+  "lng": -1.34918,
+  "status": "confirmed",
+  "osm": "way/111426859",
+  "metres": 0
+ },
+ {
+  "id": "c-heritage-drive-play-area-clowne",
+  "name": "Heritage Drive Play Area",
+  "area": "Clowne",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.27881,
+  "lng": -1.27311,
+  "status": "confirmed",
+  "osm": "way/1293483281",
+  "metres": 0
+ },
+ {
+  "id": "c-heywood-street-play-area-brimington",
+  "name": "Heywood Street Play Area",
+  "area": "Brimington",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.25827,
+  "lng": -1.39911,
+  "status": "confirmed",
+  "osm": "way/598531704",
+  "metres": 0
+ },
+ {
+  "id": "c-high-moor-playground-killamarsh",
+  "name": "High Moor Playground",
+  "area": "Killamarsh",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.31833,
+  "lng": -1.31355,
+  "status": "confirmed",
+  "osm": "way/1450727836",
+  "metres": 0
+ },
+ {
+  "id": "c-highfield-play-area-chesterfield",
+  "name": "Highfield Play Area",
+  "area": "Chesterfield",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.24883,
+  "lng": -1.43758,
+  "status": "confirmed",
+  "osm": "way/1331343468",
+  "metres": 0
+ },
+ {
+  "id": "c-highfield-road-playground-ashbourne",
+  "name": "Highfield Road Playground",
+  "area": "Ashbourne",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.00908,
+  "lng": -1.74138,
+  "status": "confirmed",
+  "osm": "way/1458356638",
+  "metres": 0
+ },
+ {
+  "id": "c-hilltop-park-hilltop-road-pinxton",
+  "name": "Hilltop Park, Hilltop Road",
+  "area": "Pinxton",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.09373,
+  "lng": -1.3228,
+  "status": "confirmed",
+  "osm": "way/367168691",
+  "metres": 0
+ },
+ {
+  "id": "c-hilltop-play-area-dronfield",
+  "name": "Hilltop Play Area",
+  "area": "Dronfield",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.2951,
+  "lng": -1.47362,
+  "status": "confirmed",
+  "osm": "way/1008212394",
+  "metres": 0
+ },
+ {
+  "id": "c-hilltop-play-area-old-whittington",
+  "name": "Hilltop Play Area",
+  "area": "Old Whittington",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.26801,
+  "lng": -1.42438,
+  "status": "confirmed",
+  "osm": "way/1123945916",
+  "metres": 0
+ },
+ {
+  "id": "c-hilltop-playground-ashbourne",
+  "name": "Hilltop Playground",
+  "area": "Ashbourne",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.00834,
+  "lng": -1.72588,
+  "status": "confirmed",
+  "osm": "way/1458350452",
+  "metres": 1
+ },
+ {
+  "id": "c-hogshaw-play-area-buxton",
+  "name": "Hogshaw Play Area",
+  "area": "Buxton",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.26349,
+  "lng": -1.90725,
+  "status": "confirmed",
+  "osm": "way/1452376680",
+  "metres": 0
+ },
+ {
+  "id": "c-holland-road-play-area-whittington-hill",
+  "name": "Holland Road Play Area",
+  "area": "Whittington Hill",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.2675,
+  "lng": -1.43175,
+  "status": "confirmed",
+  "osm": "way/1451100249",
+  "metres": 0
+ },
+ {
+  "id": "c-holmebrook-valley-park-1-chesterfield",
+  "name": "Holmebrook Valley Park 1",
+  "area": "Chesterfield",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.24961,
+  "lng": -1.46399,
+  "status": "confirmed",
+  "osm": "way/485340638",
+  "metres": 0
+ },
+ {
+  "id": "c-holmebrook-valley-park-2-chesterfield",
+  "name": "Holmebrook Valley Park 2",
+  "area": "Chesterfield",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.24961,
+  "lng": -1.46399,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/817275430",
+    "name": null,
+    "metres": 278,
+    "lat": 53.25121,
+    "lng": -1.46077
+   },
+   {
+    "osm": "way/485340638",
+    "name": null,
+    "metres": 0,
+    "lat": 53.24961,
+    "lng": -1.46399
+   },
+   {
+    "osm": "way/817275429",
+    "name": null,
+    "metres": 249,
+    "lat": 53.25177,
+    "lng": -1.46298
+   },
+   {
+    "osm": "way/803516326",
+    "name": "Holmebrook Adventure Playground",
+    "metres": 445,
+    "lat": 53.25272,
+    "lng": -1.4682
+   }
+  ]
+ },
+ {
+  "id": "c-holmebrook-valley-park-linacre-road",
+  "name": "Holmebrook Valley Park",
+  "area": "Chesterfield",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.24961,
+  "lng": -1.46399,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/803516326",
+    "name": "Holmebrook Adventure Playground",
+    "metres": 445,
+    "lat": 53.25272,
+    "lng": -1.4682
+   },
+   {
+    "osm": "way/485340638",
+    "name": null,
+    "metres": 0,
+    "lat": 53.24961,
+    "lng": -1.46399
+   },
+   {
+    "osm": "way/817275429",
+    "name": null,
+    "metres": 249,
+    "lat": 53.25177,
+    "lng": -1.46298
+   },
+   {
+    "osm": "way/817275430",
+    "name": null,
+    "metres": 278,
+    "lat": 53.25121,
+    "lng": -1.46077
+   }
+  ]
+ },
+ {
+  "id": "c-holmebrook-valley-park-pavilion",
+  "name": "Holmebrook Valley Park",
+  "area": "Chesterfield",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.24961,
+  "lng": -1.46399,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/1458308121",
+    "name": null,
+    "metres": 360,
+    "lat": 53.25236,
+    "lng": -1.46112
+   },
+   {
+    "osm": "way/485340638",
+    "name": null,
+    "metres": 0,
+    "lat": 53.24961,
+    "lng": -1.46399
+   },
+   {
+    "osm": "way/817275429",
+    "name": null,
+    "metres": 249,
+    "lat": 53.25177,
+    "lng": -1.46298
+   },
+   {
+    "osm": "way/817275430",
+    "name": null,
+    "metres": 278,
+    "lat": 53.25121,
+    "lng": -1.46077
+   }
+  ]
+ },
+ {
+  "id": "c-hornscroft-park-bolsover",
+  "name": "Hornscroft Park",
+  "area": "Bolsover",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.22696,
+  "lng": -1.29,
+  "status": "confirmed",
+  "osm": "way/419452418",
+  "metres": 0
+ },
+ {
+  "id": "c-horsehead-lane-play-area-bolsover",
+  "name": "Horsehead Lane Play Area",
+  "area": "Bolsover",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.23,
+  "lng": -1.28222,
+  "status": "confirmed",
+  "osm": "way/1489517668",
+  "metres": 0
+ },
+ {
+  "id": "c-houfton-road-recreation-ground-bolsover",
+  "name": "Houfton Road Recreation Ground",
+  "area": "Bolsover",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.23562,
+  "lng": -1.30247,
+  "status": "confirmed",
+  "osm": "way/286901905",
+  "metres": 1
+ },
+ {
+  "id": "c-howard-park-glossop",
+  "name": "Howard Park",
+  "area": "Glossop",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.45125,
+  "lng": -1.95471,
+  "status": "confirmed",
+  "osm": "way/204254075",
+  "metres": 0
+ },
+ {
+  "id": "c-idas-road-play-area-eckington",
+  "name": "Ida's Road Play Area",
+  "area": "Eckington",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.31145,
+  "lng": -1.36088,
+  "status": "confirmed",
+  "osm": "way/34080303",
+  "metres": 0
+ },
+ {
+  "id": "c-inglefield-road-play-area-ilkeston",
+  "name": "Inglefield Road Play Area",
+  "area": "Ilkeston",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.96139,
+  "lng": -1.30296,
+  "status": "confirmed",
+  "osm": "way/777868720",
+  "metres": 0
+ },
+ {
+  "id": "c-inkersall-green-play-area-chesterfield",
+  "name": "Inkersall Green Play Area",
+  "area": "Chesterfield",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.25117,
+  "lng": -1.36752,
+  "status": "confirmed",
+  "osm": "way/375724898",
+  "metres": 0
+ },
+ {
+  "id": "c-jodrell-road-play-area-whaley-bridge",
+  "name": "Jodrell Road Play Area",
+  "area": "Whaley Bridge",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.33297,
+  "lng": -1.98835,
+  "status": "confirmed",
+  "osm": "way/565888781",
+  "metres": 1
+ },
+ {
+  "id": "c-kenning-park-play-areas-clay-cross",
+  "name": "Kenning Park Play Areas",
+  "area": "Clay Cross",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.16725,
+  "lng": -1.42091,
+  "status": "confirmed",
+  "osm": "way/1446362201",
+  "metres": 0
+ },
+ {
+  "id": "c-king-george-play-area-staveley",
+  "name": "King George Play Area",
+  "area": "Staveley",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.26309,
+  "lng": -1.35416,
+  "status": "confirmed",
+  "osm": "way/529083162",
+  "metres": 0
+ },
+ {
+  "id": "c-king-george-v-park-playground-derby",
+  "name": "King George V Park Playground",
+  "area": "Derby",
+  "region": "derbyshire",
+  "from": "approximate",
+  "lat": 53.26289,
+  "lng": -1.35416,
+  "status": "confirmed",
+  "osm": "way/1450725931",
+  "metres": 44
+ },
+ {
+  "id": "c-king-george-v-playing-field-play-area-etwall",
+  "name": "King George V Playing Field Play Area",
+  "area": "Etwall",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.88215,
+  "lng": -1.60168,
+  "status": "confirmed",
+  "osm": "way/471501015",
+  "metres": 0
+ },
+ {
+  "id": "c-king-george-v-playing-field-play-area-north-wingfield",
+  "name": "King George V Playing Field Play Area",
+  "area": "North Wingfield",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.18066,
+  "lng": -1.38118,
+  "status": "confirmed",
+  "osm": "way/1470401625",
+  "metres": 0
+ },
+ {
+  "id": "c-king-street-play-area-hodthorpe",
+  "name": "King Street Play Area",
+  "area": "Hodthorpe",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.28351,
+  "lng": -1.18815,
+  "status": "confirmed",
+  "osm": "way/1340156681",
+  "metres": 0
+ },
+ {
+  "id": "c-kingsfield-playground-wirksworth",
+  "name": "Kingsfield Playground",
+  "area": "Wirksworth",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.07518,
+  "lng": -1.57651,
+  "status": "confirmed",
+  "osm": "way/738212450",
+  "metres": 0
+ },
+ {
+  "id": "c-kirby-close-play-area-hasland",
+  "name": "Kirby Close Play Area",
+  "area": "Hasland",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.21733,
+  "lng": -1.40999,
+  "status": "confirmed",
+  "osm": "way/868822148",
+  "metres": 0
+ },
+ {
+  "id": "c-kirkstone-road-play-area-dunston",
+  "name": "Kirkstone Road Play Area",
+  "area": "Dunston",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.25905,
+  "lng": -1.45596,
+  "status": "confirmed",
+  "osm": "way/1056889238",
+  "metres": 0
+ },
+ {
+  "id": "c-knighton-close-play-area-hasland",
+  "name": "Knighton Close Play Area",
+  "area": "Hasland",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.21925,
+  "lng": -1.41881,
+  "status": "confirmed",
+  "osm": "way/868822151",
+  "metres": 0
+ },
+ {
+  "id": "c-knightsbridge-recreation-ground-play-area-derby",
+  "name": "Knightsbridge Recreation Ground Play Area",
+  "area": "Derby",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.92445,
+  "lng": -1.52079,
+  "status": "confirmed",
+  "osm": "way/294776408",
+  "metres": 1
+ },
+ {
+  "id": "c-laburnum-close-play-area-bolsover",
+  "name": "Laburnum Close Play Area",
+  "area": "Bolsover",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.22807,
+  "lng": -1.28114,
+  "status": "confirmed",
+  "osm": "way/1489519651",
+  "metres": 0
+ },
+ {
+  "id": "c-langer-lane-play-area-birdholme",
+  "name": "Langer Lane Play Area",
+  "area": "Birdholme",
+  "region": "derbyshire",
+  "from": "approximate",
+  "lat": 53.21556,
+  "lng": -1.43573,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/1470404922",
+    "name": null,
+    "metres": 480,
+    "lat": 53.21871,
+    "lng": -1.4308
+   },
+   {
+    "osm": "way/146985755",
+    "name": null,
+    "metres": 422,
+    "lat": 53.21891,
+    "lng": -1.43871
+   },
+   {
+    "osm": "way/847706087",
+    "name": null,
+    "metres": 437,
+    "lat": 53.21597,
+    "lng": -1.42921
+   }
+  ]
+ },
+ {
+  "id": "c-langtree-avenue-play-area-old-whittington",
+  "name": "Langtree Avenue Play Area",
+  "area": "Old Whittington",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.26374,
+  "lng": -1.4233,
+  "status": "confirmed",
+  "osm": "way/900173196",
+  "metres": 0
+ },
+ {
+  "id": "c-lansbury-playing-field-play-area-eckington",
+  "name": "Lansbury Playing Field Play Area",
+  "area": "Eckington",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.30586,
+  "lng": -1.36252,
+  "status": "confirmed",
+  "osm": "way/334908497",
+  "metres": 1
+ },
+ {
+  "id": "c-larklands-play-area-ilkeston",
+  "name": "Larklands Play Area",
+  "area": "Ilkeston",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.97029,
+  "lng": -1.29332,
+  "status": "confirmed",
+  "osm": "way/67183220",
+  "metres": 6
+ },
+ {
+  "id": "c-lee-lane-recreation-ground-play-area-langley-mill",
+  "name": "Lee Lane Recreation Ground Play Area",
+  "area": "Langley Mill",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.01001,
+  "lng": -1.3309,
+  "status": "confirmed",
+  "osm": "way/111026214",
+  "metres": 0
+ },
+ {
+  "id": "c-leigh-way-play-area-hepthorne-lane",
+  "name": "Leigh Way Play Area",
+  "area": "Hepthorne Lane",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.18076,
+  "lng": -1.3942,
+  "status": "confirmed",
+  "osm": "way/1021973771",
+  "metres": 0
+ },
+ {
+  "id": "c-leisure-centre-play-area-killamarsh",
+  "name": "Leisure Centre Play Area",
+  "area": "Killamarsh",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.32488,
+  "lng": -1.3145,
+  "status": "confirmed",
+  "osm": "way/1450729284",
+  "metres": 0
+ },
+ {
+  "id": "c-lincoln-street-play-area-tibshelf",
+  "name": "Lincoln Street Play Area",
+  "area": "Tibshelf",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.14447,
+  "lng": -1.33784,
+  "status": "confirmed",
+  "osm": "way/1080837769",
+  "metres": 0
+ },
+ {
+  "id": "c-lockoford-lane-play-area-tapton",
+  "name": "Lockoford Lane Play Area",
+  "area": "Tapton",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.25133,
+  "lng": -1.41637,
+  "status": "confirmed",
+  "osm": "way/1489507561",
+  "metres": 0
+ },
+ {
+  "id": "c-longcroft-close-play-area-tupton",
+  "name": "Longcroft Close Play Area",
+  "area": "Tupton",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.18747,
+  "lng": -1.40501,
+  "status": "confirmed",
+  "osm": "way/1470402825",
+  "metres": 0
+ },
+ {
+  "id": "c-longmoor-lane-play-area-breaston",
+  "name": "Longmoor Lane Play Area",
+  "area": "Breaston",
+  "region": "derbyshire",
+  "from": "approximate",
+  "lat": 52.90587,
+  "lng": -1.30218,
+  "status": "far"
+ },
+ {
+  "id": "c-lundy-road-play-area-dronfield",
+  "name": "Lundy Road Play Area",
+  "area": "Dronfield",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.29512,
+  "lng": -1.4698,
+  "status": "confirmed",
+  "osm": "way/413928800",
+  "metres": 0
+ },
+ {
+  "id": "c-main-road-play-area-winsick",
+  "name": "Main Road Play Area",
+  "area": "Winsick",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.21472,
+  "lng": -1.39693,
+  "status": "confirmed",
+  "osm": "way/492444664",
+  "metres": 1
+ },
+ {
+  "id": "c-mallory-close-play-area-chesterfield",
+  "name": "Mallory Close Play Area",
+  "area": "Chesterfield",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.27517,
+  "lng": -1.44014,
+  "status": "confirmed",
+  "osm": "way/1451099996",
+  "metres": 0
+ },
+ {
+  "id": "c-manor-park-glossop",
+  "name": "Manor Park",
+  "area": "Glossop",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.44657,
+  "lng": -1.9411,
+  "status": "confirmed",
+  "osm": "way/204254076",
+  "metres": 0
+ },
+ {
+  "id": "c-manor-road-play-area-barlborough",
+  "name": "Manor Road Play Area",
+  "area": "Barlborough",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.28891,
+  "lng": -1.28991,
+  "status": "confirmed",
+  "osm": "node/9382932800",
+  "metres": 1
+ },
+ {
+  "id": "c-manor-road-play-area-brimington",
+  "name": "Manor Road Play Area",
+  "area": "Brimington",
+  "region": "derbyshire",
+  "from": "approximate",
+  "lat": 53.25041,
+  "lng": -1.39136,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/258207269",
+    "name": null,
+    "metres": 494,
+    "lat": 53.24599,
+    "lng": -1.39065
+   }
+  ]
+ },
+ {
+  "id": "c-marsh-avenue-play-area-dronfield",
+  "name": "Marsh Avenue Play Area",
+  "area": "Dronfield",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.30941,
+  "lng": -1.4672,
+  "status": "confirmed",
+  "osm": "way/32862395",
+  "metres": 0
+ },
+ {
+  "id": "c-maurice-lea-memorial-park-play-area-church-gresley",
+  "name": "Maurice Lea Memorial Park Play Area",
+  "area": "Church Gresley",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.76466,
+  "lng": -1.55698,
+  "status": "confirmed",
+  "osm": "way/1294590906",
+  "metres": 0
+ },
+ {
+  "id": "c-memorial-park-whaley-bridge",
+  "name": "Memorial Park",
+  "area": "Whaley Bridge",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.32687,
+  "lng": -1.98797,
+  "status": "confirmed",
+  "osm": "way/1452366592",
+  "metres": 0
+ },
+ {
+  "id": "c-mevril-road-play-area-whaley-bridge",
+  "name": "Mevril Road Play Area",
+  "area": "Whaley Bridge",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.31907,
+  "lng": -1.98445,
+  "status": "confirmed",
+  "osm": "way/1452367982",
+  "metres": 0
+ },
+ {
+  "id": "c-milken-lane-play-area-ashover",
+  "name": "Milken Lane Play Area",
+  "area": "Ashover",
+  "region": "derbyshire",
+  "from": "postcode",
+  "lat": 53.16654,
+  "lng": -1.47106,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/953707048",
+    "name": null,
+    "metres": 489,
+    "lat": 53.16446,
+    "lng": -1.47752
+   }
+  ]
+ },
+ {
+  "id": "c-milton-avenue-play-area-mickley",
+  "name": "Milton Avenue Play Area",
+  "area": "Mickley",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.13442,
+  "lng": -1.41566,
+  "status": "confirmed",
+  "osm": "way/1489553041",
+  "metres": 0
+ },
+ {
+  "id": "c-model-village-junior-play-area-creswell",
+  "name": "Model Village (Junior) Play Area",
+  "area": "Creswell",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.25922,
+  "lng": -1.2221,
+  "status": "confirmed",
+  "osm": "way/402995180",
+  "metres": 0
+ },
+ {
+  "id": "c-model-village-toddler-play-area-creswell",
+  "name": "Model Village (Toddler) Play Area",
+  "area": "Creswell",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.25922,
+  "lng": -1.2221,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/1289361150",
+    "name": null,
+    "metres": 165,
+    "lat": 53.26004,
+    "lng": -1.22004
+   },
+   {
+    "osm": "way/402995180",
+    "name": null,
+    "metres": 0,
+    "lat": 53.25922,
+    "lng": -1.2221
+   }
+  ]
+ },
+ {
+  "id": "c-moonpenny-way-play-area-dronfield",
+  "name": "Moonpenny Way Play Area",
+  "area": "Dronfield",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.2993,
+  "lng": -1.47351,
+  "status": "confirmed",
+  "osm": "way/165841790",
+  "metres": 0
+ },
+ {
+  "id": "c-new-bolsover-model-village-green-new-bolsover",
+  "name": "New Bolsover Model Village Green",
+  "area": "New Bolsover",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.22815,
+  "lng": -1.30457,
+  "status": "confirmed",
+  "osm": "way/900023316",
+  "metres": 0
+ },
+ {
+  "id": "c-newhall-park-playgrounds-newhall",
+  "name": "Newhall Park Playgrounds",
+  "area": "Newhall",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.78374,
+  "lng": -1.57868,
+  "status": "confirmed",
+  "osm": "way/1079229894",
+  "metres": 0
+ },
+ {
+  "id": "c-newshaw-lane-play-area-hadfield",
+  "name": "Newshaw Lane Play Area",
+  "area": "Hadfield",
+  "region": "derbyshire",
+  "from": "approximate",
+  "lat": 53.45681,
+  "lng": -1.97425,
+  "status": "move",
+  "osm": "way/365100708",
+  "osmName": "Newshaw Lane Park",
+  "metres": 258,
+  "to": {
+   "lat": 53.45471,
+   "lng": -1.97591
+  }
+ },
+ {
+  "id": "c-norfolk-road-play-area-long-eaton",
+  "name": "Norfolk Road Play Area",
+  "area": "Long Eaton",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.90376,
+  "lng": -1.26499,
+  "status": "confirmed",
+  "osm": "way/49429111",
+  "metres": 0
+ },
+ {
+  "id": "c-normanton-park-playground-derby",
+  "name": "Normanton Park Playground",
+  "area": "Derby",
+  "region": "derbyshire",
+  "from": "postcode",
+  "lat": 52.90165,
+  "lng": -1.48973,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/34040025",
+    "name": null,
+    "metres": 269,
+    "lat": 52.90406,
+    "lng": -1.48991
+   }
+  ]
+ },
+ {
+  "id": "c-northside-play-area-tupton",
+  "name": "Northside Play Area",
+  "area": "Tupton",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.19225,
+  "lng": -1.41009,
+  "status": "confirmed",
+  "osm": "way/372590540",
+  "metres": 0
+ },
+ {
+  "id": "c-northwood-recreation-ground-northwood-darley-dale",
+  "name": "Northwood Recreation Ground",
+  "area": "Northwood, Darley Dale",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.16715,
+  "lng": -1.59519,
+  "status": "confirmed",
+  "osm": "way/1192346005",
+  "metres": 0
+ },
+ {
+  "id": "c-norwood-play-area-killamarsh",
+  "name": "Norwood Play Area",
+  "area": "Killamarsh",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.32675,
+  "lng": -1.30057,
+  "status": "confirmed",
+  "osm": "way/1123344556",
+  "metres": 1
+ },
+ {
+  "id": "c-noskwith-play-area-ilkeston",
+  "name": "Noskwith Play Area",
+  "area": "Ilkeston",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.95633,
+  "lng": -1.29544,
+  "status": "confirmed",
+  "osm": "way/58664848",
+  "metres": 0
+ },
+ {
+  "id": "c-nuthall-circle-play-area-kirk-hallam",
+  "name": "Nuthall Circle Play Area",
+  "area": "Kirk Hallam",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.95446,
+  "lng": -1.32709,
+  "status": "confirmed",
+  "osm": "way/771159879",
+  "metres": 1
+ },
+ {
+  "id": "c-oadby-drive-no-12-play-area-hasland",
+  "name": "Oadby Drive (No. 12) Play Area",
+  "area": "Hasland",
+  "region": "derbyshire",
+  "from": "approximate",
+  "lat": 53.21768,
+  "lng": -1.4155,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/869111980",
+    "name": null,
+    "metres": 75,
+    "lat": 53.21824,
+    "lng": -1.41613
+   },
+   {
+    "osm": "way/869111916",
+    "name": null,
+    "metres": 68,
+    "lat": 53.21719,
+    "lng": -1.4161
+   },
+   {
+    "osm": "way/869737840",
+    "name": null,
+    "metres": 71,
+    "lat": 53.21758,
+    "lng": -1.41445
+   }
+  ]
+ },
+ {
+  "id": "c-oadby-drive-no-9-play-area-hasland",
+  "name": "Oadby Drive (No. 9) Play Area",
+  "area": "Hasland",
+  "region": "derbyshire",
+  "from": "approximate",
+  "lat": 53.21768,
+  "lng": -1.4155,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/868822142",
+    "name": null,
+    "metres": 168,
+    "lat": 53.21728,
+    "lng": -1.41793
+   },
+   {
+    "osm": "way/869111916",
+    "name": null,
+    "metres": 68,
+    "lat": 53.21719,
+    "lng": -1.4161
+   },
+   {
+    "osm": "way/869737840",
+    "name": null,
+    "metres": 71,
+    "lat": 53.21758,
+    "lng": -1.41445
+   },
+   {
+    "osm": "way/869111980",
+    "name": null,
+    "metres": 75,
+    "lat": 53.21824,
+    "lng": -1.41613
+   }
+  ]
+ },
+ {
+  "id": "c-oak-apple-crescent-play-area-ilkeston",
+  "name": "Oak Apple Crescent Play Area",
+  "area": "Ilkeston",
+  "region": "derbyshire",
+  "from": "postcode",
+  "lat": 52.95865,
+  "lng": -1.32884,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/770931672",
+    "name": "Wirksworth Road Play Area",
+    "metres": 364,
+    "lat": 52.95609,
+    "lng": -1.33225
+   },
+   {
+    "osm": "relation/10696146",
+    "name": "Wirksworth Road Play Area",
+    "metres": 375,
+    "lat": 52.95603,
+    "lng": -1.33237
+   },
+   {
+    "osm": "way/397716968",
+    "name": "Wyndale Drive Play Area",
+    "metres": 398,
+    "lat": 52.96186,
+    "lng": -1.33147
+   }
+  ]
+ },
+ {
+  "id": "c-olive-avenue-play-area-shirebrook",
+  "name": "Olive Avenue Play Area",
+  "area": "Shirebrook",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.21204,
+  "lng": -1.2226,
+  "status": "confirmed",
+  "osm": "way/317246673",
+  "metres": 1
+ },
+ {
+  "id": "c-osmaston-park-playground-derby",
+  "name": "Osmaston Park Playground",
+  "area": "Derby",
+  "region": "derbyshire",
+  "from": "postcode",
+  "lat": 52.89121,
+  "lng": -1.4623,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/114106023",
+    "name": null,
+    "metres": 226,
+    "lat": 52.89323,
+    "lng": -1.46191
+   },
+   {
+    "osm": "way/114106153",
+    "name": null,
+    "metres": 243,
+    "lat": 52.89339,
+    "lng": -1.46233
+   },
+   {
+    "osm": "way/114105671",
+    "name": null,
+    "metres": 257,
+    "lat": 52.89349,
+    "lng": -1.46166
+   },
+   {
+    "osm": "way/114105675",
+    "name": null,
+    "metres": 259,
+    "lat": 52.8935,
+    "lng": -1.46299
+   }
+  ]
+ },
+ {
+  "id": "c-oversetts-recreation-ground-play-area-newhall",
+  "name": "Oversetts Recreation Ground Play Area",
+  "area": "Newhall",
+  "region": "derbyshire",
+  "from": "approximate",
+  "lat": 52.77958,
+  "lng": -1.57961,
+  "status": "unmatched",
+  "candidates": [
+   {
+    "osm": "way/1079229894",
+    "name": null,
+    "metres": 467
+   }
+  ]
+ },
+ {
+  "id": "c-park-street-and-northern-road-recreation-ground-play-area-he",
+  "name": "Park Street and Northern Road Recreation Ground Play Area",
+  "area": "Heanor",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.01205,
+  "lng": -1.35489,
+  "status": "name",
+  "osm": "way/119241902",
+  "osmName": "Wilmot Street Playground",
+  "metres": 0
+ },
+ {
+  "id": "c-parkside-view-upper-newbold",
+  "name": "Parkside View",
+  "area": "Upper Newbold",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.25176,
+  "lng": -1.46298,
+  "status": "confirmed",
+  "osm": "way/817275429",
+  "metres": 1
+ },
+ {
+  "id": "c-peacock-close-play-area-killamarsh",
+  "name": "Peacock Close Play Area",
+  "area": "Killamarsh",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.32312,
+  "lng": -1.31773,
+  "status": "confirmed",
+  "osm": "way/1450728950",
+  "metres": 1
+ },
+ {
+  "id": "c-pearsons-recreation-ground-brampton",
+  "name": "Pearsons Recreation Ground",
+  "area": "Brampton",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.23562,
+  "lng": -1.45129,
+  "status": "confirmed",
+  "osm": "way/519405550",
+  "metres": 0
+ },
+ {
+  "id": "c-pennine-road-play-area-simmondley",
+  "name": "Pennine Road Play Area",
+  "area": "Simmondley",
+  "region": "derbyshire",
+  "from": "approximate",
+  "lat": 53.43902,
+  "lng": -1.96559,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/1051533817",
+    "name": null,
+    "metres": 285,
+    "lat": 53.44003,
+    "lng": -1.96954
+   }
+  ]
+ },
+ {
+  "id": "c-penryn-close-play-area-south-normanton",
+  "name": "Penryn Close Play Area",
+  "area": "South Normanton",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.1057,
+  "lng": -1.32382,
+  "status": "confirmed",
+  "osm": "way/1450701158",
+  "metres": 0
+ },
+ {
+  "id": "c-peveril-meadows-long-eaton",
+  "name": "Peveril Meadows",
+  "area": "Long Eaton",
+  "region": "derbyshire",
+  "from": "postcode",
+  "lat": 52.88051,
+  "lng": -1.29518,
+  "status": "unmatched",
+  "candidates": [
+   {
+    "osm": "way/109827380",
+    "name": "Sawley Park Play Area",
+    "metres": 337
+   }
+  ]
+ },
+ {
+  "id": "c-playground-off-main-road-sudbury-cp-derbyshire-dales",
+  "name": "Playground off Main Road",
+  "area": "Sudbury, Derbyshire Dales",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.88533,
+  "lng": -1.76502,
+  "status": "confirmed",
+  "osm": "way/302293808",
+  "metres": 0
+ },
+ {
+  "id": "c-playground-off-old-hall-lane-church-broughton-cp-south-derby",
+  "name": "Playground off Old Hall Lane",
+  "area": "Church Broughton, South Derbyshire",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.89905,
+  "lng": -1.69441,
+  "status": "confirmed",
+  "osm": "node/9511089075",
+  "metres": 0
+ },
+ {
+  "id": "c-playground-off-scropton-road-hatton-cp-south-derbyshire",
+  "name": "Playground off Scropton Road",
+  "area": "Hatton, South Derbyshire",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.86667,
+  "lng": -1.68669,
+  "status": "confirmed",
+  "osm": "way/1485015750",
+  "metres": 0
+ },
+ {
+  "id": "c-poolsbrook-1-cottage-close",
+  "name": "Poolsbrook 1",
+  "area": "Chesterfield",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.25659,
+  "lng": -1.33875,
+  "status": "confirmed",
+  "osm": "way/257529135",
+  "metres": 1
+ },
+ {
+  "id": "c-poolsbrook-2-cottage-close",
+  "name": "Poolsbrook 2",
+  "area": "Chesterfield",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.25659,
+  "lng": -1.33875,
+  "status": "unmatched",
+  "candidates": [
+   {
+    "osm": "way/257529135",
+    "name": null,
+    "metres": 1
+   }
+  ]
+ },
+ {
+  "id": "c-poolsbrook-country-park-chesterfield",
+  "name": "Poolsbrook Country Park",
+  "area": "Chesterfield",
+  "region": "derbyshire",
+  "from": "approximate",
+  "lat": 53.2551,
+  "lng": -1.35125,
+  "status": "unmatched",
+  "candidates": [
+   {
+    "osm": "way/967858960",
+    "name": "Poolsbrook Country Park Playground",
+    "metres": 346
+   }
+  ]
+ },
+ {
+  "id": "c-poppy-gardens-play-area-tibshelf",
+  "name": "Poppy Gardens Play Area",
+  "area": "Tibshelf",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.14605,
+  "lng": -1.33377,
+  "status": "confirmed",
+  "osm": "way/830410024",
+  "metres": 1
+ },
+ {
+  "id": "c-porterhouse-road-play-area-ripley",
+  "name": "Porterhouse Road Play Area",
+  "area": "Ripley",
+  "region": "derbyshire",
+  "from": "approximate",
+  "lat": 53.04869,
+  "lng": -1.39305,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/1495702141",
+    "name": null,
+    "metres": 276,
+    "lat": 53.04867,
+    "lng": -1.39717
+   },
+   {
+    "osm": "way/1038868354",
+    "name": null,
+    "metres": 330,
+    "lat": 53.0459,
+    "lng": -1.39136
+   }
+  ]
+ },
+ {
+  "id": "c-priestfield-gardens-play-area-upper-newbold",
+  "name": "Priestfield Gardens Play Area",
+  "area": "Upper Newbold",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.25388,
+  "lng": -1.46571,
+  "status": "confirmed",
+  "osm": "way/817275428",
+  "metres": 0
+ },
+ {
+  "id": "c-princess-street-play-area-brimington",
+  "name": "Princess Street Play Area",
+  "area": "Brimington",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.26158,
+  "lng": -1.38992,
+  "status": "confirmed",
+  "osm": "way/1075551458",
+  "metres": 0
+ },
+ {
+  "id": "c-private-drive-play-area-hollingwood",
+  "name": "Private Drive Play Area",
+  "area": "Hollingwood",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.265,
+  "lng": -1.37884,
+  "status": "confirmed",
+  "osm": "way/1159119029",
+  "metres": 0
+ },
+ {
+  "id": "c-pyegrove-play-area-glossop",
+  "name": "Pyegrove Play Area",
+  "area": "Glossop",
+  "region": "derbyshire",
+  "from": "approximate",
+  "lat": 53.44571,
+  "lng": -1.93434,
+  "status": "unmatched",
+  "candidates": [
+   {
+    "osm": "way/204254076",
+    "name": null,
+    "metres": 458
+   }
+  ]
+ },
+ {
+  "id": "c-quarry-road-play-area-killamarsh",
+  "name": "Quarry Road Play Area",
+  "area": "Killamarsh",
+  "region": "derbyshire",
+  "from": "postcode",
+  "lat": 53.32543,
+  "lng": -1.31543,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/335028260",
+    "name": null,
+    "metres": 222,
+    "lat": 53.32711,
+    "lng": -1.31362
+   },
+   {
+    "osm": "way/1450729284",
+    "name": null,
+    "metres": 87,
+    "lat": 53.32488,
+    "lng": -1.3145
+   },
+   {
+    "osm": "way/1450728950",
+    "name": null,
+    "metres": 298,
+    "lat": 53.32312,
+    "lng": -1.31773
+   }
+  ]
+ },
+ {
+  "id": "c-queen-victoria-road-play-area-tupton",
+  "name": "Queen Victoria Road Play Area",
+  "area": "Tupton",
+  "region": "derbyshire",
+  "from": "postcode",
+  "lat": 53.18346,
+  "lng": -1.40137,
+  "status": "far"
+ },
+ {
+  "id": "c-queensferry-gardens-park-play-area-shelton-lock",
+  "name": "Queensferry Gardens Park Play Area",
+  "area": "Shelton Lock",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.88174,
+  "lng": -1.44932,
+  "status": "confirmed",
+  "osm": "way/942964953",
+  "metres": 0
+ },
+ {
+  "id": "c-racecourse-playing-fields-play-area-derby",
+  "name": "Racecourse Playing Fields Play Area",
+  "area": "Derby",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.92977,
+  "lng": -1.46075,
+  "status": "confirmed",
+  "osm": "way/396328820",
+  "metres": 1
+ },
+ {
+  "id": "c-rainbow-park-swanwick-avenue-shirebrook",
+  "name": "Rainbow Park, Swanwick Avenue",
+  "area": "Shirebrook",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.19861,
+  "lng": -1.21534,
+  "status": "confirmed",
+  "osm": "way/317242502",
+  "metres": 0
+ },
+ {
+  "id": "c-rangewood-road-play-area-south-normanton",
+  "name": "Rangewood Road Play Area",
+  "area": "South Normanton",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.09714,
+  "lng": -1.34758,
+  "status": "confirmed",
+  "osm": "way/257039213",
+  "metres": 0
+ },
+ {
+  "id": "c-recreation-ground-belper-road-stanley",
+  "name": "Recreation Ground, Belper Road",
+  "area": "Stanley",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.96254,
+  "lng": -1.37602,
+  "status": "confirmed",
+  "osm": "way/1512280312",
+  "metres": 0
+ },
+ {
+  "id": "c-recreation-ground-coronation-road-stanley",
+  "name": "Recreation Ground, Coronation Road",
+  "area": "Stanley",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.96254,
+  "lng": -1.37602,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/104029376",
+    "name": null,
+    "metres": 86,
+    "lat": 52.9628,
+    "lng": -1.37723
+   },
+   {
+    "osm": "way/1512280312",
+    "name": null,
+    "metres": 0,
+    "lat": 52.96254,
+    "lng": -1.37602
+   }
+  ]
+ },
+ {
+  "id": "c-redwood-avenue-play-area-killamarsh",
+  "name": "Redwood Avenue Play Area",
+  "area": "Killamarsh",
+  "region": "derbyshire",
+  "from": "postcode",
+  "lat": 53.31684,
+  "lng": -1.32315,
+  "status": "far"
+ },
+ {
+  "id": "c-ridgeway-play-area-ridgeway",
+  "name": "Ridgeway Play Area",
+  "area": "Ridgeway",
+  "region": "derbyshire",
+  "from": "postcode",
+  "lat": 53.32993,
+  "lng": -1.39668,
+  "status": "move",
+  "osm": "way/141520158",
+  "osmName": null,
+  "metres": 217,
+  "to": {
+   "lat": 53.33178,
+   "lng": -1.39564
+  }
+ },
+ {
+  "id": "c-rock-crescent-play-area-clay-cross",
+  "name": "Rock Crescent Play Area",
+  "area": "Clay Cross",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.17226,
+  "lng": -1.42845,
+  "status": "confirmed",
+  "osm": "way/1470398661",
+  "metres": 0
+ },
+ {
+  "id": "c-rosedale-view-play-area-walton",
+  "name": "Rosedale View Play Area",
+  "area": "Walton",
+  "region": "derbyshire",
+  "from": "postcode",
+  "lat": 53.21984,
+  "lng": -1.46333,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/1191482492",
+    "name": null,
+    "metres": 164,
+    "lat": 53.2206,
+    "lng": -1.46121
+   },
+   {
+    "osm": "way/1458310138",
+    "name": null,
+    "metres": 31,
+    "lat": 53.21993,
+    "lng": -1.46377
+   },
+   {
+    "osm": "way/1458310331",
+    "name": null,
+    "metres": 77,
+    "lat": 53.21941,
+    "lng": -1.46241
+   }
+  ]
+ },
+ {
+  "id": "c-rosliston-forestry-centre-play-area-rosliston",
+  "name": "Rosliston Forestry Centre Play Area",
+  "area": "Rosliston",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.75499,
+  "lng": -1.63984,
+  "status": "confirmed",
+  "osm": "way/352180444",
+  "metres": 0
+ },
+ {
+  "id": "c-russell-street-play-area-long-eaton",
+  "name": "Russell Street Play Area",
+  "area": "Long Eaton",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.90341,
+  "lng": -1.27893,
+  "status": "confirmed",
+  "osm": "way/1497491263",
+  "metres": 0
+ },
+ {
+  "id": "c-ruthyn-avenue-play-area-barlborough",
+  "name": "Ruthyn Avenue Play Area",
+  "area": "Barlborough",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.2916,
+  "lng": -1.29002,
+  "status": "confirmed",
+  "osm": "way/616666167",
+  "metres": 0
+ },
+ {
+  "id": "c-sawley-new-park-long-eaton",
+  "name": "Sawley New Park",
+  "area": "Long Eaton",
+  "region": "derbyshire",
+  "from": "postcode",
+  "lat": 52.88442,
+  "lng": -1.29888,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/145207816",
+    "name": null,
+    "metres": 496,
+    "lat": 52.88693,
+    "lng": -1.30499
+   },
+   {
+    "osm": "way/109827380",
+    "name": "Sawley Park Play Area",
+    "metres": 181,
+    "lat": 52.88281,
+    "lng": -1.29844
+   }
+  ]
+ },
+ {
+  "id": "c-sawley-park-play-area-long-eaton",
+  "name": "Sawley Park Play Area",
+  "area": "Long Eaton",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.88281,
+  "lng": -1.29844,
+  "status": "confirmed",
+  "osm": "way/109827380",
+  "metres": 0
+ },
+ {
+  "id": "c-school-lane-play-area-arkwright-town",
+  "name": "School Lane Play Area",
+  "area": "Arkwright Town",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.23613,
+  "lng": -1.36285,
+  "status": "confirmed",
+  "osm": "way/238836716",
+  "metres": 0
+ },
+ {
+  "id": "c-setts-way-play-area-wingerworth",
+  "name": "Setts Way Play Area",
+  "area": "Wingerworth",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.20381,
+  "lng": -1.42303,
+  "status": "confirmed",
+  "osm": "way/1470403641",
+  "metres": 0
+ },
+ {
+  "id": "c-sharley-park-play-area-clay-cross",
+  "name": "Sharley Park Play Area",
+  "area": "Clay Cross",
+  "region": "derbyshire",
+  "from": "postcode",
+  "lat": 53.16942,
+  "lng": -1.40601,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/247760044",
+    "name": null,
+    "metres": 320,
+    "lat": 53.16722,
+    "lng": -1.4029
+   },
+   {
+    "osm": "way/1017892088",
+    "name": null,
+    "metres": 233,
+    "lat": 53.17146,
+    "lng": -1.4052
+   }
+  ]
+ },
+ {
+  "id": "c-shaw-street-play-area-ilkeston",
+  "name": "Shaw Street Play Area",
+  "area": "Ilkeston",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.96243,
+  "lng": -1.29662,
+  "status": "confirmed",
+  "osm": "way/590295352",
+  "metres": 0
+ },
+ {
+  "id": "c-sheldon-road-play-area-holme-hall",
+  "name": "Sheldon Road Play Area",
+  "area": "Holme Hall",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.24778,
+  "lng": -1.46812,
+  "status": "confirmed",
+  "osm": "way/1458309167",
+  "metres": 0
+ },
+ {
+  "id": "c-shipley-country-park-play-areas-heanor",
+  "name": "Shipley Country Park Play Areas",
+  "area": "Heanor",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.00207,
+  "lng": -1.35974,
+  "status": "name",
+  "osm": "way/402056157",
+  "osmName": "Toddlers' Playground",
+  "metres": 1
+ },
+ {
+  "id": "c-shirebrook-play-area-glossop",
+  "name": "Shirebrook Play Area",
+  "area": "Glossop",
+  "region": "derbyshire",
+  "from": "approximate",
+  "lat": 53.44268,
+  "lng": -1.93824,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/1233588379",
+    "name": null,
+    "metres": 408,
+    "lat": 53.44026,
+    "lng": -1.93361
+   },
+   {
+    "osm": "way/682384458",
+    "name": null,
+    "metres": 416,
+    "lat": 53.44027,
+    "lng": -1.93343
+   },
+   {
+    "osm": "way/204254076",
+    "name": null,
+    "metres": 472,
+    "lat": 53.44657,
+    "lng": -1.9411
+   }
+  ]
+ },
+ {
+  "id": "c-shuttlewood-play-area-shuttlewood",
+  "name": "Shuttlewood Play Area",
+  "area": "Shuttlewood",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.25225,
+  "lng": -1.30002,
+  "status": "confirmed",
+  "osm": "way/1083887931",
+  "metres": 1
+ },
+ {
+  "id": "c-silverwell-play-area-middlecroft",
+  "name": "Silverwell Play Area",
+  "area": "Middlecroft",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.26066,
+  "lng": -1.35653,
+  "status": "confirmed",
+  "osm": "way/1450723912",
+  "metres": 0
+ },
+ {
+  "id": "c-sindelfingen-park-play-area-dronfield-woodhouse",
+  "name": "Sindelfingen Park Play Area",
+  "area": "Dronfield Woodhouse",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.29862,
+  "lng": -1.49503,
+  "status": "confirmed",
+  "osm": "way/988047958",
+  "metres": 0
+ },
+ {
+  "id": "c-sinfin-moor-park-playground-derby",
+  "name": "Sinfin Moor Park Playground",
+  "area": "Derby",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.87912,
+  "lng": -1.48534,
+  "status": "confirmed",
+  "osm": "way/475512504",
+  "metres": 0
+ },
+ {
+  "id": "c-somersall-park-somersall-lane",
+  "name": "Somersall Park",
+  "area": "Chesterfield",
+  "region": "derbyshire",
+  "from": "approximate",
+  "lat": 53.2292,
+  "lng": -1.45726,
+  "status": "far"
+ },
+ {
+  "id": "c-sough-road-play-area-south-normanton",
+  "name": "Sough Road Play Area",
+  "area": "South Normanton",
+  "region": "derbyshire",
+  "from": "postcode",
+  "lat": 53.11025,
+  "lng": -1.3337,
+  "status": "move",
+  "osm": "way/905423315",
+  "osmName": null,
+  "metres": 205,
+  "to": {
+   "lat": 53.11135,
+   "lng": -1.33617
+  }
+ },
+ {
+  "id": "c-speedway-close-play-area-long-eaton",
+  "name": "Speedway Close Play Area",
+  "area": "Long Eaton",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.89917,
+  "lng": -1.26012,
+  "status": "confirmed",
+  "osm": "way/323552362",
+  "metres": 0
+ },
+ {
+  "id": "c-spital-lane-play-area-chesterfield",
+  "name": "Spital Lane Play Area",
+  "area": "Chesterfield",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.22821,
+  "lng": -1.40431,
+  "status": "confirmed",
+  "osm": "way/965075704",
+  "metres": 0
+ },
+ {
+  "id": "c-springfield-park-sandiacre",
+  "name": "Springfield Park",
+  "area": "Sandiacre",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.91369,
+  "lng": -1.2909,
+  "status": "confirmed",
+  "osm": "way/49011845",
+  "metres": 0
+ },
+ {
+  "id": "c-st-davids-rise-play-area-walton",
+  "name": "St Davids Rise Play Area",
+  "area": "Walton",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.22401,
+  "lng": -1.45496,
+  "status": "confirmed",
+  "osm": "way/312982143",
+  "metres": 0
+ },
+ {
+  "id": "c-st-giles-park-sandiacre",
+  "name": "St Giles Park",
+  "area": "Sandiacre",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.92987,
+  "lng": -1.28975,
+  "status": "confirmed",
+  "osm": "way/48811767",
+  "metres": 0
+ },
+ {
+  "id": "c-st-peters-park-little-eaton",
+  "name": "St Peters Park",
+  "area": "Little Eaton",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.97031,
+  "lng": -1.46583,
+  "status": "confirmed",
+  "osm": "way/105077591",
+  "metres": 0
+ },
+ {
+  "id": "c-staffa-drive-play-area-tibshelf",
+  "name": "Staffa Drive Play Area",
+  "area": "Tibshelf",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.13964,
+  "lng": -1.34408,
+  "status": "confirmed",
+  "osm": "way/495055296",
+  "metres": 0
+ },
+ {
+  "id": "c-stanford-way-play-area-walton",
+  "name": "Stanford Way Play Area",
+  "area": "Walton",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.22226,
+  "lng": -1.46455,
+  "status": "confirmed",
+  "osm": "way/314609689",
+  "metres": 0
+ },
+ {
+  "id": "c-stanfree-play-area-stanfree",
+  "name": "Stanfree Play Area",
+  "area": "Stanfree",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.26217,
+  "lng": -1.29101,
+  "status": "confirmed",
+  "osm": "way/1451109558",
+  "metres": 0
+ },
+ {
+  "id": "c-starkholmes-recreation-ground-starkholmes-matlock",
+  "name": "Starkholmes Recreation Ground",
+  "area": "Starkholmes, Matlock",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.12767,
+  "lng": -1.55102,
+  "status": "confirmed",
+  "osm": "way/1452645369",
+  "metres": 0
+ },
+ {
+  "id": "c-station-road-play-area-barrow-hill",
+  "name": "Station Road Play Area",
+  "area": "Barrow Hill",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.27571,
+  "lng": -1.37108,
+  "status": "confirmed",
+  "osm": "way/1451108624",
+  "metres": 0
+ },
+ {
+  "id": "c-station-road-play-area-brimington",
+  "name": "Station Road Play Area",
+  "area": "Brimington",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.26008,
+  "lng": -1.41124,
+  "status": "confirmed",
+  "osm": "way/1451101273",
+  "metres": 0
+ },
+ {
+  "id": "c-station-road-play-area-hepthorne-lane",
+  "name": "Station Road Play Area",
+  "area": "Hepthorne Lane",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.17878,
+  "lng": -1.39673,
+  "status": "confirmed",
+  "osm": "way/1060645200",
+  "metres": 0
+ },
+ {
+  "id": "c-staunton-close-play-area-chesterfield",
+  "name": "Staunton Close Play Area",
+  "area": "Chesterfield",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.21597,
+  "lng": -1.42921,
+  "status": "confirmed",
+  "osm": "way/847706087",
+  "metres": 0
+ },
+ {
+  "id": "c-stockbrook-park-play-area-derby",
+  "name": "Stockbrook Park Play Area",
+  "area": "Derby",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.91608,
+  "lng": -1.48984,
+  "status": "confirmed",
+  "osm": "way/104448829",
+  "metres": 0
+ },
+ {
+  "id": "c-stonelow-play-area-dronfield",
+  "name": "Stonelow Play Area",
+  "area": "Dronfield",
+  "region": "derbyshire",
+  "from": "approximate",
+  "lat": 53.30532,
+  "lng": -1.45332,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/336059955",
+    "name": null,
+    "metres": 385,
+    "lat": 53.30428,
+    "lng": -1.45885
+   }
+  ]
+ },
+ {
+  "id": "c-stubley-place-play-area-dronfield-woodhouse",
+  "name": "Stubley Place Play Area",
+  "area": "Dronfield Woodhouse",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.30617,
+  "lng": -1.48447,
+  "status": "confirmed",
+  "osm": "way/895337567",
+  "metres": 0
+ },
+ {
+  "id": "c-sunnydale-park-playground-derby",
+  "name": "Sunnydale Park Playground",
+  "area": "Derby",
+  "region": "derbyshire",
+  "from": "postcode",
+  "lat": 52.89625,
+  "lng": -1.50192,
+  "status": "move",
+  "osm": "way/107638459",
+  "osmName": null,
+  "metres": 208,
+  "to": {
+   "lat": 52.89623,
+   "lng": -1.49882
+  }
+ },
+ {
+  "id": "c-tansley-recreation-ground-tansley",
+  "name": "Tansley Recreation Ground",
+  "area": "Tansley",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.13163,
+  "lng": -1.51874,
+  "status": "confirmed",
+  "osm": "way/1452645552",
+  "metres": 0
+ },
+ {
+  "id": "c-tansley-road-play-area-north-wingfield",
+  "name": "Tansley Road Play Area",
+  "area": "North Wingfield",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.17358,
+  "lng": -1.3869,
+  "status": "confirmed",
+  "osm": "way/1470401264",
+  "metres": 0
+ },
+ {
+  "id": "c-tapton-park-chesterfield",
+  "name": "Tapton Park",
+  "area": "Chesterfield",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.24611,
+  "lng": -1.41663,
+  "status": "confirmed",
+  "osm": "way/1489509055",
+  "metres": 0
+ },
+ {
+  "id": "c-temple-street-play-area-padfield",
+  "name": "Temple Street Play Area",
+  "area": "Padfield",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.46159,
+  "lng": -1.95596,
+  "status": "confirmed",
+  "osm": "way/204254077",
+  "metres": 0
+ },
+ {
+  "id": "c-the-arc-play-area-clowne",
+  "name": "The Arc Play Area",
+  "area": "Clowne",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.27208,
+  "lng": -1.26736,
+  "status": "confirmed",
+  "osm": "way/1293483112",
+  "metres": 0
+ },
+ {
+  "id": "c-the-dale-play-area-wirksworth",
+  "name": "The Dale Play Area",
+  "area": "Wirksworth",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.08448,
+  "lng": -1.57614,
+  "status": "confirmed",
+  "osm": "way/1056045110",
+  "metres": 0
+ },
+ {
+  "id": "c-the-edge-play-area-clowne",
+  "name": "The Edge Play Area",
+  "area": "Clowne",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.26895,
+  "lng": -1.27048,
+  "status": "confirmed",
+  "osm": "way/592456994",
+  "metres": 0
+ },
+ {
+  "id": "c-the-orchard-play-area-matlock",
+  "name": "The Orchard Play Area",
+  "area": "Matlock",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.13975,
+  "lng": -1.54262,
+  "status": "confirmed",
+  "osm": "way/229987900",
+  "metres": 0
+ },
+ {
+  "id": "c-thirlmere-drive-play-area-dronfield",
+  "name": "Thirlmere Drive Play Area",
+  "area": "Dronfield",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.30539,
+  "lng": -1.47348,
+  "status": "confirmed",
+  "osm": "way/32844809",
+  "metres": 1
+ },
+ {
+  "id": "c-thirlmere-road-play-area-upper-newbold",
+  "name": "Thirlmere Road Play Area",
+  "area": "Upper Newbold",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.25409,
+  "lng": -1.45201,
+  "status": "confirmed",
+  "osm": "way/486110566",
+  "metres": 1
+ },
+ {
+  "id": "c-trent-avenue-play-area-buxton",
+  "name": "Trent Avenue Play Area",
+  "area": "Buxton",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.24383,
+  "lng": -1.90931,
+  "status": "confirmed",
+  "osm": "way/1452380336",
+  "metres": 1
+ },
+ {
+  "id": "c-trent-meadows-long-eaton",
+  "name": "Trent Meadows",
+  "area": "Long Eaton",
+  "region": "derbyshire",
+  "from": "postcode",
+  "lat": 52.89263,
+  "lng": -1.2604,
+  "status": "far"
+ },
+ {
+  "id": "c-vale-park-bolsover",
+  "name": "Vale Park",
+  "area": "Bolsover",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.22676,
+  "lng": -1.30287,
+  "status": "confirmed",
+  "osm": "node/12714675955",
+  "metres": 0
+ },
+ {
+  "id": "c-victoria-park-ilkeston",
+  "name": "Victoria Park",
+  "area": "Ilkeston",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.97472,
+  "lng": -1.31526,
+  "status": "confirmed",
+  "osm": "way/399140177",
+  "metres": 0
+ },
+ {
+  "id": "c-village-hall-play-area-tennyson-street-mickley",
+  "name": "Village Hall Play Area, Tennyson Street",
+  "area": "Mickley",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.13738,
+  "lng": -1.41461,
+  "status": "confirmed",
+  "osm": "way/1180664725",
+  "metres": 0
+ },
+ {
+  "id": "c-wain-avenue-play-area-chesterfield",
+  "name": "Wain Avenue Play Area",
+  "area": "Chesterfield",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.23601,
+  "lng": -1.41843,
+  "status": "name",
+  "osm": "way/280013727",
+  "osmName": "Riverside Junior Park",
+  "metres": 0
+ },
+ {
+  "id": "c-waingroves-recreation-ground-play-area-waingroves",
+  "name": "Waingroves Recreation Ground Play Area",
+  "area": "Waingroves",
+  "region": "derbyshire",
+  "from": "approximate",
+  "lat": 53.05078,
+  "lng": -1.39158,
+  "status": "unmatched",
+  "candidates": [
+   {
+    "osm": "way/1495702141",
+    "name": null,
+    "metres": 441
+   }
+  ]
+ },
+ {
+  "id": "c-walker-close-play-area-ilkeston",
+  "name": "Walker Close Play Area",
+  "area": "Ilkeston",
+  "region": "derbyshire",
+  "from": "postcode",
+  "lat": 52.95877,
+  "lng": -1.30177,
+  "status": "unmatched",
+  "candidates": [
+   {
+    "osm": "way/777868720",
+    "name": "Inglefield Road Play Area",
+    "metres": 302
+   }
+  ]
+ },
+ {
+  "id": "c-warren-crescent-play-area-marsh-lane",
+  "name": "Warren Crescent Play Area",
+  "area": "Marsh Lane",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.30392,
+  "lng": -1.39681,
+  "status": "confirmed",
+  "osm": "way/1451106113",
+  "metres": 1
+ },
+ {
+  "id": "c-wash-green-playground-wirksworth",
+  "name": "Wash Green Playground",
+  "area": "Wirksworth",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.08262,
+  "lng": -1.5637,
+  "status": "confirmed",
+  "osm": "way/1458344055",
+  "metres": 0
+ },
+ {
+  "id": "c-wash-meadows-ilkeston",
+  "name": "Wash Meadows",
+  "area": "Ilkeston",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.9777,
+  "lng": -1.30313,
+  "status": "confirmed",
+  "osm": "way/204020836",
+  "metres": 0
+ },
+ {
+  "id": "c-wasp-nest-play-area-chesterfield",
+  "name": "Wasp Nest Play Area",
+  "area": "Chesterfield",
+  "region": "derbyshire",
+  "from": "approximate",
+  "lat": 53.23784,
+  "lng": -1.45776,
+  "status": "move",
+  "osm": "way/303690379",
+  "osmName": "Inkerman Playground",
+  "metres": 102,
+  "to": {
+   "lat": 53.23847,
+   "lng": -1.45666
+  }
+ },
+ {
+  "id": "c-wellspring-close-play-area-wingerworth",
+  "name": "Wellspring Close Play Area",
+  "area": "Wingerworth",
+  "region": "derbyshire",
+  "from": "postcode",
+  "lat": 53.20554,
+  "lng": -1.42353,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/1467785825",
+    "name": null,
+    "metres": 312,
+    "lat": 53.20528,
+    "lng": -1.41886
+   },
+   {
+    "osm": "way/1470403641",
+    "name": null,
+    "metres": 196,
+    "lat": 53.20381,
+    "lng": -1.42303
+   }
+  ]
+ },
+ {
+  "id": "c-west-crescent-play-area-duckmanton",
+  "name": "West Crescent Play Area",
+  "area": "Duckmanton",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.24642,
+  "lng": -1.33947,
+  "status": "confirmed",
+  "osm": "way/289165303",
+  "metres": 0
+ },
+ {
+  "id": "c-west-park-play-areas-and-splash-pad-long-eaton",
+  "name": "West Park Play Areas and Splash Pad",
+  "area": "Long Eaton",
+  "region": "derbyshire",
+  "from": "postcode",
+  "lat": 52.89696,
+  "lng": -1.2924,
+  "status": "unmatched",
+  "candidates": [
+   {
+    "osm": "way/216965163",
+    "name": null,
+    "metres": 493
+   }
+  ]
+ },
+ {
+  "id": "c-westwood-play-area-chesterfield",
+  "name": "Westwood Play Area",
+  "area": "Chesterfield",
+  "region": "derbyshire",
+  "from": "approximate",
+  "lat": 53.25949,
+  "lng": -1.36645,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/972235115",
+    "name": null,
+    "metres": 299,
+    "lat": 53.25682,
+    "lng": -1.36589
+   },
+   {
+    "osm": "way/1451108902",
+    "name": null,
+    "metres": 311,
+    "lat": 53.26158,
+    "lng": -1.36334
+   }
+  ]
+ },
+ {
+  "id": "c-whaley-common-play-area-whaley",
+  "name": "Whaley Common Play Area",
+  "area": "Whaley",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.24207,
+  "lng": -1.22684,
+  "status": "confirmed",
+  "osm": "way/1451137453",
+  "metres": 0
+ },
+ {
+  "id": "c-whitwell-common-recreation-ground-worksop-road-whitwell",
+  "name": "Whitwell Common Recreation Ground, Worksop Road",
+  "area": "Whitwell",
+  "region": "derbyshire",
+  "from": "postcode",
+  "lat": 53.29161,
+  "lng": -1.23445,
+  "status": "far"
+ },
+ {
+  "id": "c-whitworth-park-playground-darley-dale",
+  "name": "Whitworth Park Playground",
+  "area": "Darley Dale",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.16223,
+  "lng": -1.59325,
+  "status": "name",
+  "osm": "way/1448247560",
+  "osmName": "Adventure Playground",
+  "metres": 0
+ },
+ {
+  "id": "c-wickins-play-area-mastin",
+  "name": "Wickins Play Area",
+  "area": "Mastin",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.27442,
+  "lng": -1.32681,
+  "status": "confirmed",
+  "osm": "way/829103038",
+  "metres": 0
+ },
+ {
+  "id": "c-willow-way-butts-road-play-area-darley-dale",
+  "name": "Willow Way (Butts Road) Play Area",
+  "area": "Darley Dale",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.16356,
+  "lng": -1.59813,
+  "status": "confirmed",
+  "osm": "way/560742089",
+  "metres": 1
+ },
+ {
+  "id": "c-willowcroft-road-recreation-ground-play-area-spondon",
+  "name": "Willowcroft Road Recreation Ground Play Area",
+  "area": "Spondon",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.91511,
+  "lng": -1.40585,
+  "status": "confirmed",
+  "osm": "way/158448789",
+  "metres": 0
+ },
+ {
+  "id": "c-windsor-crescent-play-area-kirk-hallam",
+  "name": "Windsor Crescent Play Area",
+  "area": "Kirk Hallam",
+  "region": "derbyshire",
+  "from": "postcode",
+  "lat": 52.95461,
+  "lng": -1.31588,
+  "status": "move",
+  "osm": "way/397717023",
+  "osmName": "Windsor Crescent Play Area",
+  "metres": 170,
+  "to": {
+   "lat": 52.95613,
+   "lng": -1.31621
+  }
+ },
+ {
+  "id": "c-wirksworth-road-play-area-kirk-hallam",
+  "name": "Wirksworth Road Play Area",
+  "area": "Kirk Hallam",
+  "region": "derbyshire",
+  "from": "postcode",
+  "lat": 52.95359,
+  "lng": -1.32316,
+  "status": "unmatched",
+  "candidates": [
+   {
+    "osm": "way/771159879",
+    "name": "Nuthall Circle Play Area",
+    "metres": 281
+   },
+   {
+    "osm": "way/397716970",
+    "name": "Dallimore Road Play Area",
+    "metres": 360
+   }
+  ]
+ },
+ {
+  "id": "c-wulfric-road-play-area-eckington",
+  "name": "Wulfric Road Play Area",
+  "area": "Eckington",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 53.3088,
+  "lng": -1.36383,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/396950380",
+    "name": "Stead Street Play Park",
+    "metres": 107,
+    "lat": 53.30975,
+    "lng": -1.36357
+   },
+   {
+    "osm": "way/335012894",
+    "name": "Stead Street Play Park",
+    "metres": 107,
+    "lat": 53.30974,
+    "lng": -1.36417
+   },
+   {
+    "osm": "way/1451106986",
+    "name": null,
+    "metres": 0,
+    "lat": 53.3088,
+    "lng": -1.36382
+   }
+  ]
+ },
+ {
+  "id": "c-wyndale-road-play-area-kirk-hallam",
+  "name": "Wyndale Road Play Area",
+  "area": "Kirk Hallam",
+  "region": "derbyshire",
+  "from": "osm",
+  "lat": 52.96186,
+  "lng": -1.33147,
+  "status": "confirmed",
+  "osm": "way/397716968",
+  "metres": 0
+ },
+ {
+  "id": "calke",
+  "name": "Calke Explore Natural Play, Calke Abbey",
+  "area": "Ticknall",
+  "region": "derbyshire",
+  "from": "unrecorded",
+  "lat": 52.7996,
+  "lng": -1.456,
+  "status": "move",
+  "osm": "way/191588123",
+  "osmName": null,
+  "metres": 217,
+  "to": {
+   "lat": 52.80107,
+   "lng": -1.45812
+  }
+ },
+ {
+  "id": "darley",
+  "name": "Darley Park Playground",
+  "area": "Derby",
+  "region": "derbyshire",
+  "from": "unrecorded",
+  "lat": 52.9405,
+  "lng": -1.48,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/169057709",
+    "name": null,
+    "metres": 197,
+    "lat": 52.94017,
+    "lng": -1.47712
+   },
+   {
+    "osm": "node/6902701319",
+    "name": null,
+    "metres": 198,
+    "lat": 52.93995,
+    "lng": -1.47719
+   },
+   {
+    "osm": "way/169057708",
+    "name": null,
+    "metres": 198,
+    "lat": 52.94007,
+    "lng": -1.47713
+   }
+  ]
+ },
+ {
+  "id": "elvaston",
+  "name": "Elvaston Castle Play Area",
+  "area": "Elvaston",
+  "region": "derbyshire",
+  "from": "unrecorded",
+  "lat": 52.892,
+  "lng": -1.388,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/217598411",
+    "name": null,
+    "metres": 269,
+    "lat": 52.89398,
+    "lng": -1.39029
+   }
+  ]
+ },
+ {
+  "id": "hallleys",
+  "name": "Hall Leys Park Play Area and Splash Pad",
+  "area": "Matlock",
+  "region": "derbyshire",
+  "from": "unrecorded",
+  "lat": 53.137,
+  "lng": -1.556,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/196412448",
+    "name": null,
+    "metres": 327,
+    "lat": 53.13549,
+    "lng": -1.5518
+   }
+  ]
+ },
+ {
+  "id": "markeaton",
+  "name": "Markeaton Park Play Area",
+  "area": "Derby",
+  "region": "derbyshire",
+  "from": "unrecorded",
+  "lat": 52.93,
+  "lng": -1.511,
+  "status": "far"
+ },
+ {
+  "id": "pavilion",
+  "name": "Pavilion Gardens Play Area",
+  "area": "Buxton",
+  "region": "derbyshire",
+  "from": "unrecorded",
+  "lat": 53.259,
+  "lng": -1.918,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/966894909",
+    "name": null,
+    "metres": 303,
+    "lat": 53.25638,
+    "lng": -1.91929
+   },
+   {
+    "osm": "way/1452378971",
+    "name": null,
+    "metres": 352,
+    "lat": 53.25597,
+    "lng": -1.9195
+   },
+   {
+    "osm": "way/1452378970",
+    "name": null,
+    "metres": 363,
+    "lat": 53.25585,
+    "lng": -1.91942
+   },
+   {
+    "osm": "way/966894907",
+    "name": null,
+    "metres": 370,
+    "lat": 53.25585,
+    "lng": -1.9198
+   }
+  ]
+ },
+ {
+  "id": "queens",
+  "name": "Queen's Park Junior and Toddler Play Areas",
+  "area": "Chesterfield",
+  "region": "derbyshire",
+  "from": "approximate",
+  "lat": 53.2329,
+  "lng": -1.434,
+  "status": "ambiguous",
+  "candidates": [
+   {
+    "osm": "way/485340646",
+    "name": null,
+    "metres": 106,
+    "lat": 53.23346,
+    "lng": -1.4327
+   },
+   {
+    "osm": "way/1365066641",
+    "name": null,
+    "metres": 151,
+    "lat": 53.23196,
+    "lng": -1.43563
+   }
+  ]
+ }
+]
