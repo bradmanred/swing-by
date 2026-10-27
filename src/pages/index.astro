@@ -70,6 +70,10 @@ const ages = [
           {ages.map(([v, l]) => <label class="chk"><input type="checkbox" name="age" value={v} /> {l}</label>)}
         </div>
       </fieldset>
+      <div class="free-only">
+        <label class="chk"><input type="checkbox" id="hide-unverified" name="verified" value="1" aria-describedby="unverified-hint" /> Hide unverified places</label>
+        <p class="hint" id="unverified-hint">Only shows playgrounds an official source or two parents have confirmed.</p>
+      </div>
       {paidCount > 0 && (
         <div class="free-only">
           <label class="chk"><input type="checkbox" id="free-only" name="free" value="1" aria-describedby="free-hint" /> Free entry only</label>
@@ -135,6 +139,7 @@ const ages = [
       </label>
     </div>
     <p id="count" class="sr-only" aria-live="polite"></p>
+    <p class="hint" id="unverified-note" hidden></p>
     <ul class="cards" id="cards" set:html={near.slice(0, 12).map(({ p, d }) => cardHTML(p, { dist: d })).join('')} />
     <p style="margin-top:20px"><button class="btn" type="button" id="more">Show more playgrounds</button></p>
   </section>
