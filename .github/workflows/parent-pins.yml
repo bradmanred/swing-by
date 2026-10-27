@@ -1,0 +1,69 @@
+# Moves playground pins that parents agree are in the wrong place (scripts/parent-pins.mjs).
+# Parents show where a playground really is from "Is the pin in the wrong place?" on its page. Once two different
+# households agree on the same spot, and more agree on it than on anywhere else, this moves the pin, updates the
+# nearest toilets, checks the site still builds and passes its tests, and pushes the change to main, which
+# deploys it. If main can't be pushed to directly, it opens a pull request instead.
+# Runs every morning and on demand. Tick "Just look" to see what would move without changing anything.
+# Needs the MOD_TOKEN repository secret (the same moderator key as the Worker).
+name: Move pins parents agree on
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Just look: list what would move, change nothing'
+        type: boolean
+        default: false
+  schedule:
+    - cron: '17 6 * * *'
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: parent-pins
+  cancel-in-progress: false
+jobs:
+  move:
+    runs-on: ubuntu-24.04 # Playwright 1.56 has no browser builds for newer Ubuntu yet
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - name: Move the pins parents agree on
+        env:
+          SITE: https://swing-by.co.uk
+          MOD_TOKEN: ${{ secrets.MOD_TOKEN }}
+        run: node scripts/parent-pins.mjs ${{ inputs.dry_run && '--dry-run' || '' }}
+      - name: See whether anything moved
+        id: changed
+        run: echo "moved=$([ -n "$(git status --porcelain -- src/content/playgrounds)" ] && echo yes || echo no)" >> "$GITHUB_OUTPUT"
+      - name: Check the site with the moved pins
+        if: steps.changed.outputs.moved == 'yes'
+        run: |
+          npm ci
+          node scripts/nearest-toilets.mjs
+          npm run build
+          npx playwright install --with-deps chromium
+          npm test
+      - name: Publish the moved pins
+        if: steps.changed.outputs.moved == 'yes'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "swing-by-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/content/playgrounds src/data/pins-checked.json src/data/toilets.json
+          { echo "Move pins that parents agree are in the wrong place"; echo; grep '^| \[' reports/parent-pins.md || true; } > msg.txt
+          git commit -q -F msg.txt
+          if [ "${{ github.ref }}" = "refs/heads/main" ] && git push origin HEAD:main; then
+            echo "Pushed to main; the site deploys from there."
+            exit 0
+          fi
+          branch="parent-pins/$(date +%Y-%m-%d)-${{ github.run_number }}"
+          git push -u origin "HEAD:refs/heads/$branch"
+          if [ "${{ github.ref }}" = "refs/heads/main" ]; then
+            gh pr create --base main --head "$branch" --title "Move pins that parents agree are in the wrong place" --body-file reports/parent-pins.md \
+              || echo "::warning title=Move pins parents agree on::Pushed $branch but couldn't open a pull request. Open it from the branch."
+          fi

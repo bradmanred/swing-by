@@ -1,5 +1,5 @@
 // Cloudflare Worker: GitHub sign-in for Decap CMS at /api/auth and /api/callback, the next-area vote at /api/vote,
-// parent photos at /api/photos, parents' equipment reports at /api/equipment; everything else is the static site. Also redirects www to the bare domain.
+// parent photos at /api/photos, parents' equipment reports at /api/equipment, parents' pin corrections at /api/pins; everything else is the static site. Also redirects www to the bare domain.
 // Needs GITHUB_CLIENT_ID and GITHUB_CLIENT_SECRET set as variables and secrets on the Worker, the VOTES and PHOTOS_DB
 // D1 bindings, and a MOD_TOKEN secret for approving photos.
 import { onRequest as auth } from '../functions/api/auth.js';
@@ -7,6 +7,7 @@ import { onRequest as callback } from '../functions/api/callback.js';
 import { vote } from './vote.js';
 import { photos } from './photos.js';
 import { equipment } from './equipment.js';
+import { pins } from './pins.js';
 
 export default {
   async fetch(request, env) {
@@ -22,6 +23,7 @@ export default {
     if (pathname === '/api/vote' || pathname === '/api/vote/suggestions') return vote({ request, env, pathname });
     if (pathname === '/api/photos' || pathname.startsWith('/api/photos/')) return photos({ request, env, pathname });
     if (pathname === '/api/equipment' || pathname.startsWith('/api/equipment/')) return equipment({ request, env, pathname });
+    if (pathname === '/api/pins' || pathname.startsWith('/api/pins/')) return pins({ request, env, pathname });
     return env.ASSETS.fetch(request);
   },
 };
