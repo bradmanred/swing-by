@@ -9,7 +9,7 @@ import { readFile, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
 
 const SITE = process.env.SITE || 'https://swing-by.co.uk';
-const TOKEN = process.env.MOD_TOKEN;
+const TOKEN = process.env.MOD_TOKEN?.trim(); // a pasted secret can carry a trailing newline
 const GEOGRAPH_KEY = process.env.GEOGRAPH_KEY;
 const DRY = process.argv.includes('--dry-run');
 const LIMIT = Number(process.argv[process.argv.indexOf('--limit') + 1]) || 150; // playgrounds per run: Geograph asks for on-demand use, not bulk
