@@ -14,13 +14,13 @@
 //   GET  /api/pins/agreed        every playground where parents agree the pin should move at least MOVE_M metres
 //   POST /api/pins/clear         JSON { park } removes every suggestion for one playground (for abuse)
 import { isModerator } from './auth.js';
+import { PARK, canonicalPark, pinOf } from './ids.js';
 
 export const AGREE_M = 40; // suggestions this close together count as the same spot
 export const MOVE_M = 30; // an agreed spot closer than this to the pin means the pin is fine
 export const MAX_M = 1000; // suggestions further than this from the pin are refused: probably a different playground
 const NEEDED = 2; // households who must agree
 const PARKS_PER_DAY = 40; // per connection
-const PARK = /^[a-z0-9-]{1,80}$/;
 const COOKIE = 'sb_pin';
 const YEAR = 60 * 60 * 24 * 365;
 
@@ -72,24 +72,11 @@ async function connectionId(request) {
   return [...new Uint8Array(buf)].slice(0, 12).map((x) => x.toString(16).padStart(2, '0')).join('');
 }
 
-// Where every pin is now, from /pin-positions.json, built with the site. Kept for a few minutes per Worker.
-let positions = null;
-let loaded = 0;
-async function pinOf(request, env, park) {
-  if (!positions || Date.now() - loaded > 5 * 60 * 1000) {
-    const res = await env.ASSETS.fetch(new Request(new URL('/pin-positions.json', request.url), { method: 'GET' }));
-    if (!res.ok) return null;
-    positions = await res.json();
-    loaded = Date.now();
-  }
-  const p = positions[park];
-  return p ? { lat: p[0], lng: p[1] } : null;
-}
-
 const rowsFor = async (env, park) => (await env.PHOTOS_DB.prepare('SELECT reporter, conn, lat, lng FROM pin_reports WHERE park = ?').bind(park).all()).results;
 
-async function forPark(request, env, park) {
-  if (!PARK.test(park)) return json({ error: 'Which playground?' }, 400);
+async function forPark(request, env, given) {
+  const park = await canonicalPark(request, env, given);
+  if (!park) return json({ error: 'Which playground?' }, 400);
   const rows = await rowsFor(env, park);
   const me = parentFrom(request);
   const mine = rows.find((r) => r.reporter === me);
@@ -104,8 +91,8 @@ async function submit(request, env) {
   } catch {
     return json({ error: 'Send the position as JSON.' }, 400);
   }
-  const park = String(body.park || '');
-  if (!PARK.test(park)) return json({ error: 'Which playground?' }, 400);
+  const park = await canonicalPark(request, env, body.park);
+  if (!park) return json({ error: "We couldn't find that playground." }, 400);
   const pin = await pinOf(request, env, park);
   if (!pin) return json({ error: "We couldn't find that playground." }, 400);
   const withdraw = body.lat == null && body.lng == null;
@@ -166,7 +153,8 @@ export async function pins({ request, env, pathname }) {
     if (!env.MOD_TOKEN || !isModerator(request, env)) return json({ error: 'Wrong moderator key.' }, 401);
     if (pathname === '/api/pins/agreed' && m === 'GET') return agreedIndex(request, env);
     if (pathname === '/api/pins/clear' && m === 'POST') {
-      const park = String((await request.json().catch(() => ({}))).park || '');
+      const given = String((await request.json().catch(() => ({}))).park || '');
+      const park = (await canonicalPark(request, env, given)) ?? given;
       if (!PARK.test(park)) return json({ error: 'Which playground?' }, 400);
       await env.PHOTOS_DB.prepare('DELETE FROM pin_reports WHERE park = ?').bind(park).run();
       return json({ cleared: park });

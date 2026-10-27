@@ -19,6 +19,7 @@
 //   POST /api/equipment/clear        JSON { park } removes every parent answer for one playground (for abuse)
 import labels from '../src/data/labels.json' with { type: 'json' };
 import { isModerator } from './auth.js';
+import { PARK, canonicalPark } from './ids.js';
 
 // What parents can tick: the equipment, access and facility lists used across the site, except toilets and
 // baby change, which only come from official sources and the Toilet Map.
@@ -35,7 +36,6 @@ const OTHER_LEN = 40;
 const OPEN = 'open'; // stored like an item: present 1 = a public playground is here, 0 = there isn't
 const NEEDED = 2; // parents who must agree before an answer is shown
 const PARKS_PER_DAY = 40; // per connection, to stop one person filling in the whole map
-const PARK = /^[a-z0-9-]{1,80}$/;
 const COOKIE = 'sb_parent';
 const YEAR = 60 * 60 * 24 * 365;
 
@@ -78,12 +78,6 @@ async function connectionId(request) {
   return [...new Uint8Array(buf)].slice(0, 12).map((x) => x.toString(16).padStart(2, '0')).join('');
 }
 
-async function parkExists(request, env, park) {
-  if (!PARK.test(park)) return false;
-  const res = await env.ASSETS.fetch(new Request(new URL(`/playgrounds/${park}/`, request.url), { method: 'GET' }));
-  return res.status === 200;
-}
-
 // Count each answer once per parent and once per connection, then apply the two-parent rule.
 function summarise(rows) {
   const yes = new Map(), no = new Map();
@@ -101,8 +95,9 @@ function summarise(rows) {
   return { confirmed, open, parents: new Set(rows.map((r) => r.reporter)).size };
 }
 
-async function forPark(request, env, park) {
-  if (!PARK.test(park)) return json({ error: 'Which playground?' }, 400);
+async function forPark(request, env, given) {
+  const park = await canonicalPark(request, env, given);
+  if (!park) return json({ error: 'Which playground?' }, 400);
   const { results } = await env.PHOTOS_DB.prepare('SELECT reporter, conn, item, present FROM equipment_reports WHERE park = ?').bind(park).all();
   const me = parentFrom(request);
   const mine = results.filter((r) => r.reporter === me);
@@ -119,11 +114,11 @@ async function submit(request, env) {
   } catch {
     return json({ error: 'Send your answers as JSON.' }, 400);
   }
-  const park = String(body.park || '');
+  const park = await canonicalPark(request, env, body.park);
   const typed = parseOther(Array.isArray(body.other) ? body.other.join(', ') : body.other);
   const items = [...new Set([...(Array.isArray(body.items) ? body.items : []).map(String), ...typed.items])].filter((k) => ITEMS.has(k));
   const open = body.open === true ? 1 : body.open === false ? 0 : null;
-  if (!(await parkExists(request, env, park))) return json({ error: "We couldn't find that playground." }, 400);
+  if (!park) return json({ error: "We couldn't find that playground." }, 400);
 
   const conn = await connectionId(request);
   let parent = parentFrom(request);
@@ -196,7 +191,8 @@ export async function equipment({ request, env, pathname }) {
     if (pathname === '/api/equipment/confirmed' && m === 'GET') return confirmedIndex(env);
     if (pathname === '/api/equipment/other' && m === 'GET') return otherIndex(env);
     if (pathname === '/api/equipment/clear' && m === 'POST') {
-      const park = String((await request.json().catch(() => ({}))).park || '');
+      const given = String((await request.json().catch(() => ({}))).park || '');
+      const park = (await canonicalPark(request, env, given)) ?? given;
       if (!PARK.test(park)) return json({ error: 'Which playground?' }, 400);
       await env.PHOTOS_DB.batch([
         env.PHOTOS_DB.prepare('DELETE FROM equipment_reports WHERE park = ?').bind(park),

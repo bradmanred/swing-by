@@ -114,9 +114,9 @@ try {
     // Every playground page has a Toilets section; ones with toilets say whether there's baby change.
     const ctx = await browser.newContext();
     const page = await ctx.newPage();
-    await page.goto(BASE + '/playgrounds/c-howard-park-play-area-letchworth-garden-/');
+    await page.goto(BASE + '/playgrounds/howard-park-play-area-letchworth-garden-/');
     if ((await page.locator('#loos + [data-baby-change]').getAttribute('data-baby-change')) !== 'yes') fail('Howard Park should show baby change: yes');
-    await page.goto(BASE + '/playgrounds/c-gosse-close-play-area-hoddesdon/');
+    await page.goto(BASE + '/playgrounds/gosse-close-play-area-hoddesdon/');
     if ((await page.locator('#loos + [data-baby-change]').getAttribute('data-baby-change')) !== 'nearby') fail('a playground without toilets should show the nearest-toilets block');
     await ctx.close();
   }
@@ -245,7 +245,7 @@ try {
 
   // Parents' equipment form: open on Unverified playgrounds, folded away on checked ones with equipment listed,
   // offers the site's equipment list, and says so when it can't send (no /api/equipment on this static server).
-  await page.goto(BASE + '/playgrounds/c-playground-off-tennyson-drive-redhouse-park-newport-pagnell/');
+  await page.goto(BASE + '/playgrounds/playground-off-tennyson-drive-redhouse-park-newport-pagnell/');
   if (!(await page.locator('#peq-details').getAttribute('open') !== null)) fail('equipment form should be open on an Unverified playground');
   if ((await page.locator('#peq-form input[name=item]').count()) < 15) fail('equipment form should offer the equipment list');
   if (await page.locator('#peq-form input[value=bc]').count()) fail('baby change must not be offered to parents');

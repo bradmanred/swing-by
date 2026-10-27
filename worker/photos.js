@@ -19,12 +19,12 @@
 //                                      "pending" like a parent photo, so nothing shows until a moderator approves it.
 
 import { isModerator } from './auth.js';
+import { canonicalPark } from './ids.js';
 
 const MAX_BYTES = 1_500_000; // the page shrinks photos to about 1600px before sending, well under this
 const PER_HOUR = 5;
 const PER_DAY = 20;
 const ID = /^[0-9a-f-]{36}$/;
-const PARK = /^[a-z0-9-]{1,80}$/;
 
 const json = (body, status = 200, headers = {}) =>
   new Response(JSON.stringify(body), {
@@ -71,12 +71,6 @@ const sameOrigin = (request) => {
   return !origin || origin === new URL(request.url).origin;
 };
 
-async function parkExists(request, env, park) {
-  if (!PARK.test(park)) return false;
-  const res = await env.ASSETS.fetch(new Request(new URL(`/playgrounds/${park}/`, request.url), { method: 'GET' }));
-  return res.status === 200;
-}
-
 async function upload(request, env) {
   if (!sameOrigin(request)) return json({ error: 'Not allowed.' }, 403);
   let form;
@@ -85,12 +79,12 @@ async function upload(request, env) {
   } catch {
     return json({ error: 'Send the photo as a form.' }, 400);
   }
-  const park = String(form.get('park') || '');
+  const park = await canonicalPark(request, env, form.get('park'));
   const file = form.get('photo');
   const credit = String(form.get('credit') || '').replace(/\s+/g, ' ').trim().slice(0, 60);
   if (form.get('no_people') !== 'yes' || form.get('own_photo') !== 'yes')
     return json({ error: 'Please confirm there are no people in the photo and that you took it.' }, 400);
-  if (!(await parkExists(request, env, park))) return json({ error: "We couldn't find that playground." }, 400);
+  if (!park) return json({ error: "We couldn't find that playground." }, 400);
   if (!file || typeof file === 'string') return json({ error: 'Choose a photo first.' }, 400);
   if (file.size > MAX_BYTES) return json({ error: 'That photo is too big. Try a smaller one.' }, 413);
   const bytes = new Uint8Array(await file.arrayBuffer());
@@ -117,8 +111,9 @@ async function upload(request, env) {
   return json({ status: 'pending', message: "Thanks! We'll check your photo, and it will appear here once it's approved." }, 202);
 }
 
-async function forPark(env, park) {
-  if (!PARK.test(park)) return json({ error: 'Unknown playground.' }, 400);
+async function forPark(request, env, given) {
+  const park = await canonicalPark(request, env, given);
+  if (!park) return json({ error: 'Unknown playground.' }, 400);
   const { results } = await env.PHOTOS_DB.prepare(
     "SELECT id, credit, width, height, created_at, source, source_url, licence, author FROM photos WHERE park = ? AND status = 'approved' ORDER BY reviewed_at DESC LIMIT 12",
   )
@@ -217,8 +212,8 @@ async function candidates(request, env) {
   } catch {
     return json({ error: 'Send JSON.' }, 400);
   }
-  const park = String(body.park || '');
-  if (!(await parkExists(request, env, park))) return json({ error: "We couldn't find that playground." }, 400);
+  const park = await canonicalPark(request, env, body.park);
+  if (!park) return json({ error: "We couldn't find that playground." }, 400);
   const results = [];
   let pending =
     (await env.PHOTOS_DB.prepare("SELECT COUNT(*) AS n FROM photos WHERE park = ? AND status = 'pending'").bind(park).first())?.n ?? 0;
@@ -275,7 +270,7 @@ export async function photos({ request, env, pathname }) {
   const m = request.method;
 
   if (!a) {
-    if (m === 'GET') return forPark(env, url.searchParams.get('park') || '');
+    if (m === 'GET') return forPark(request, env, url.searchParams.get('park') || '');
     if (m === 'POST') return upload(request, env);
   } else if (a === 'approved' && m === 'GET') return approvedIndex(env);
   else if ((a === 'search-status' && m === 'GET') || (a === 'candidates' && m === 'POST')) {
