@@ -5,8 +5,106 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="noindex" />
   <title>Edit content | Swing By</title>
+  <style>
+    /* Find a playground: a quick search over the site's own index, because Decap's built-in search
+       downloads every playground file from GitHub one at a time and times out with this many. */
+    #sb-find-toggle {
+      position: fixed; right: 16px; bottom: 16px; z-index: 1000;
+      font: 600 14px/1 system-ui, sans-serif; color: #fff; background: #3a69c7;
+      border: 0; border-radius: 999px; padding: 12px 18px; cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, .25);
+    }
+    #sb-find-toggle:focus-visible, #sb-find input:focus-visible, #sb-find a:focus-visible { outline: 3px solid #f5a623; outline-offset: 2px; }
+    #sb-find {
+      position: fixed; right: 16px; bottom: 68px; z-index: 1000;
+      width: min(420px, calc(100vw - 32px)); max-height: min(70vh, 560px);
+      display: flex; flex-direction: column; gap: 8px;
+      background: #fff; color: #313d3e; border-radius: 8px; padding: 14px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, .3); font: 14px/1.4 system-ui, sans-serif;
+    }
+    #sb-find[hidden] { display: none; }
+    #sb-find label { font-weight: 600; }
+    #sb-find input {
+      font: inherit; padding: 8px 10px; border: 2px solid #dfdfe3; border-radius: 5px; width: 100%; box-sizing: border-box;
+    }
+    #sb-find .sb-note { margin: 0; color: #5a6366; font-size: 13px; }
+    #sb-find ul { list-style: none; margin: 0; padding: 0; overflow-y: auto; }
+    #sb-find li a {
+      display: block; padding: 7px 8px; border-radius: 5px; color: inherit; text-decoration: none;
+    }
+    #sb-find li a:hover { background: #e8f5fe; }
+    #sb-find li span { display: block; color: #5a6366; font-size: 12px; }
+  </style>
 </head>
 <body>
+  <button id="sb-find-toggle" type="button" aria-expanded="false" aria-controls="sb-find">Find a playground</button>
+  <div id="sb-find" role="dialog" aria-label="Find a playground" hidden>
+    <label for="sb-find-q">Find a playground</label>
+    <input id="sb-find-q" type="search" autocomplete="off" placeholder="Name, town or county" />
+    <p class="sb-note" id="sb-find-status" aria-live="polite">Searches published playgrounds. New ones still in review are under Workflow.</p>
+    <ul id="sb-find-results"></ul>
+  </div>
+
+  <script>
+    (() => {
+      const toggle = document.getElementById('sb-find-toggle');
+      const panel = document.getElementById('sb-find');
+      const input = document.getElementById('sb-find-q');
+      const status = document.getElementById('sb-find-status');
+      const list = document.getElementById('sb-find-results');
+      const LIMIT = 50;
+      let parks = null;
+      let loading = null;
+
+      // "Queen's Park", "Queens Park" and "queen’s park" all match each other.
+      const norm = (s) => (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+        .replace(/['’‘`]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+
+      const load = () => loading ??= fetch('/search-index.json')
+        .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then((d) => {
+          parks = d.parks.map((p) => ({ ...p, nn: norm(p.n), all: norm(`${p.n} ${p.a} ${p.r}`) }));
+          render();
+        })
+        .catch(() => { loading = null; status.textContent = "Couldn't load the playground list. Try again in a moment."; });
+
+      const render = () => {
+        list.replaceChildren();
+        const q = norm(input.value);
+        if (!q) { status.textContent = 'Searches published playgrounds. New ones still in review are under Workflow.'; return; }
+        if (!parks) { status.textContent = 'Loading playgrounds…'; return; }
+        const words = q.split(' ');
+        const hits = parks.filter((p) => words.every((w) => p.all.includes(w)))
+          .map((p) => ({ p, rank: p.nn === q ? 0 : p.nn.startsWith(q) ? 1 : p.nn.includes(q) ? 2 : 3 }))
+          .sort((a, b) => a.rank - b.rank || a.p.n.localeCompare(b.p.n));
+        for (const { p } of hits.slice(0, LIMIT)) {
+          const li = document.createElement('li');
+          const a = document.createElement('a');
+          a.href = `#/collections/playgrounds/entries/${encodeURIComponent(p.id)}`;
+          a.textContent = p.n;
+          const where = document.createElement('span');
+          where.textContent = [p.a, p.r].filter(Boolean).join(', ') + (p.c ? '' : ' · Unverified');
+          a.append(where);
+          a.addEventListener('click', () => setOpen(false));
+          li.append(a);
+          list.append(li);
+        }
+        status.textContent = hits.length === 0 ? 'No playgrounds match.'
+          : hits.length > LIMIT ? `Showing ${LIMIT} of ${hits.length}. Add a town to narrow it down.`
+          : `${hits.length} ${hits.length === 1 ? 'playground' : 'playgrounds'}`;
+      };
+
+      const setOpen = (open) => {
+        panel.hidden = !open;
+        toggle.setAttribute('aria-expanded', String(open));
+        if (open) { load(); input.focus(); input.select(); } else { toggle.focus(); }
+      };
+
+      toggle.addEventListener('click', () => setOpen(panel.hidden));
+      input.addEventListener('input', render);
+      panel.addEventListener('keydown', (e) => { if (e.key === 'Escape') setOpen(false); });
+    })();
+  </script>
   <script src="https://unpkg.com/decap-cms@3.17.1/dist/decap-cms.js"></script>
 </body>
 </html>
