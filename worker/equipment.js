@@ -6,6 +6,7 @@
 //
 // Public:
 //   GET  /api/equipment?park=<id>    { confirmed: [codes], open: true | false | null, parents: n, mine: { items, open, other } }
+//   GET  /api/equipment/open         { parks: [ids] } playgrounds two parents confirm are there (for "Hide unverified places")
 //   POST /api/equipment              JSON { park, items: [codes], open: true | false | null, other: "rocking horse, ..." }
 //                                    Replaces this browser's answers for that playground. An empty list, a null
 //                                    "open" and no "other" withdraws them.
@@ -147,6 +148,16 @@ async function submit(request, env) {
   return json({ ...summarise(results), mine: { items, open: open == null ? null : !!open, other: typed.other }, saved: rows.length + typed.other.length }, 200, headers);
 }
 
+// Every playground where parents agree there's a public playground, under the same two-parent rule. Public, so the
+// finder can count them as verified; the answer is cached for a few minutes.
+async function openIndex(env) {
+  const { results } = await env.PHOTOS_DB.prepare("SELECT park, reporter, conn, item, present FROM equipment_reports WHERE item = 'open'").all();
+  const byPark = new Map();
+  for (const r of results) byPark.set(r.park, [...(byPark.get(r.park) ?? []), r]);
+  const parks = [...byPark].filter(([, rows]) => summarise(rows).open === true).map(([park]) => park).sort();
+  return json({ parks }, 200, { 'Cache-Control': 'public, max-age=300' });
+}
+
 async function confirmedIndex(env) {
   const { results } = await env.PHOTOS_DB.prepare('SELECT park, reporter, conn, item, present FROM equipment_reports').all();
   const byPark = new Map();
@@ -186,6 +197,7 @@ export async function equipment({ request, env, pathname }) {
     if (m === 'POST') return submit(request, env);
     return json({ error: 'Use GET or POST.' }, 405, { Allow: 'GET, POST' });
   }
+  if (pathname === '/api/equipment/open') return m === 'GET' ? openIndex(env) : json({ error: 'Use GET.' }, 405, { Allow: 'GET' });
   if (pathname === '/api/equipment/confirmed' || pathname === '/api/equipment/clear' || pathname === '/api/equipment/other') {
     if (!env.MOD_TOKEN || !isModerator(request, env)) return json({ error: 'Wrong moderator key.' }, 401);
     if (pathname === '/api/equipment/confirmed' && m === 'GET') return confirmedIndex(env);
