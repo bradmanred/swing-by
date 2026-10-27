@@ -17,6 +17,7 @@ const km = (a: { lat: number; lng: number }, b: { lat: number; lng: number }) =>
 };
 
 const PAGE = 12;
+const HIDDEN_KM = 4.83; // 3 miles: how far to look when saying how many unverified playgrounds are hidden
 
 export function startFinder() {
   const { parks, towns } = JSON.parse($('#parks-data').textContent!) as { parks: ClientPark[]; towns: Town[] };
@@ -27,6 +28,9 @@ export function startFinder() {
     sizes: new Set<string>(),
     loves: new Set<string>(),
     freeOnly: store.get<boolean>('sb-free-only', false),
+    hideUnverified: store.get<boolean>('sb-hide-unverified', false),
+    // Playgrounds two parents confirm are there count as verified (filled in from /api/equipment/open).
+    parentOk: new Set<string>(),
     sort: 'near',
     limit: PAGE,
     photos: {} as Record<string, CardPhoto>,
@@ -41,13 +45,21 @@ export function startFinder() {
   let lookup = 0;
   let syncFavs: ((root?: ParentNode) => void) | undefined;
 
-  function list() {
-    const mine = getMine();
-    let rows = parks
+  const verified = (p: ClientPark) => !!p.c || st.parentOk.has(p.id);
+
+  /** Everything the other filters allow, before "Hide unverified places". */
+  function matching() {
+    return parks
       .filter((p) => !st.ages.size || p.ages.some((a) => st.ages.has(a)))
       .filter((p) => [...st.loves].every((k) => p.f.includes(k)))
       .filter((p) => !st.sizes.size || (p.s != null && st.sizes.has(p.s)))
-      .filter((p) => !st.freeOnly || !p.pay)
+      .filter((p) => !st.freeOnly || !p.pay);
+  }
+
+  function list() {
+    const mine = getMine();
+    let rows = matching()
+      .filter((p) => !st.hideUnverified || verified(p))
       .map((p) => ({ p, d: km(st.area ?? st.origin, p), m: mine[p.id] }));
     if (st.sort === 'new') rows = rows.filter((x) => !x.m?.v);
     if (st.sort === 'fav') rows = rows.filter((x) => x.m?.fav);
@@ -62,7 +74,7 @@ export function startFinder() {
     $('#near-title').textContent = st.area ? 'Parks in this area' : 'Parks near you';
     $('#cards').innerHTML = rows
       .slice(0, st.limit)
-      .map((x, i) => cardHTML(x.p, { dist: x.d, num: i < 5 ? i + 1 : undefined, mine: x.m, photo: st.photos[x.p.id] }))
+      .map((x, i) => cardHTML(x.p, { dist: x.d, num: i < 5 ? i + 1 : undefined, mine: x.m, photo: st.photos[x.p.id], parents: st.parentOk.has(x.p.id) }))
       .join('');
     queueMicrotask(() => syncFavs?.());
     $('#nearlist').innerHTML = rows
@@ -72,6 +84,12 @@ export function startFinder() {
           `<li><a href="/playgrounds/${esc(x.p.id)}/" data-num="${i + 1}"><span class="num" aria-hidden="true">${i + 1}</span><span>${esc(x.p.n)}${x.p.pay ? ' <span class="pound" aria-hidden="true">£</span><span class="sr-only">, paid entry</span>' : ''}</span><span class="dist">${fmtMiles(x.d)}</span></a></li>`,
       )
       .join('') || '<li>No playgrounds match those choices. Try removing a filter.</li>';
+    // Say how many nearby playgrounds the filter is hiding, so an area never looks emptier than it is.
+    const note = $('#unverified-note');
+    const hidden = st.hideUnverified ? matching().filter((p) => !verified(p) && km(st.area ?? st.origin, p) <= HIDDEN_KM).length : 0;
+    note.hidden = !hidden;
+    if (hidden)
+      note.innerHTML = `${hidden} unverified ${hidden === 1 ? 'playground' : 'playgrounds'} within 3 miles ${hidden === 1 ? 'is' : 'are'} hidden. <button type="button" class="linkbtn" id="show-unverified">Show ${hidden === 1 ? 'it' : 'them'}</button>`;
     const more = $<HTMLButtonElement>('#more');
     more.hidden = rows.length <= st.limit;
     if (announce)
@@ -227,6 +245,24 @@ export function startFinder() {
       render();
     }),
   );
+  const unv = document.querySelector<HTMLInputElement>('#hide-unverified');
+  const setHide = (on: boolean) => {
+    st.hideUnverified = on;
+    if (unv) unv.checked = on;
+    store.set('sb-hide-unverified', on);
+    st.limit = PAGE;
+    render();
+  };
+  if (unv) {
+    unv.checked = st.hideUnverified;
+    unv.addEventListener('change', () => setHide(unv.checked));
+  }
+  document.addEventListener('click', (e) => {
+    if ((e.target as HTMLElement).closest('#show-unverified')) {
+      setHide(false);
+      unv?.focus();
+    }
+  });
   const free = document.querySelector<HTMLInputElement>('#free-only');
   if (free) {
     free.checked = st.freeOnly;
@@ -261,6 +297,17 @@ export function startFinder() {
   // Hearts on cards: saved on this device. Started once, here; render() re-syncs them whenever the cards are redrawn.
   syncFavs = startFavs(() => st.sort === 'fav' && render());
   render(false);
+
+  // Playgrounds parents have confirmed count as verified, and say so on their cards.
+  fetch('/api/equipment/open')
+    .then((r) => (r.ok && r.headers.get('Content-Type')?.includes('json') ? r.json() : null))
+    .then((j: { parks: string[] } | null) => {
+      if (j?.parks?.length) {
+        st.parentOk = new Set(j.parks);
+        render(false);
+      }
+    })
+    .catch(() => {});
 
   // Approved parent photos replace the illustrations on cards. Without them the illustrations stay.
   fetch('/api/photos/approved')

@@ -53,7 +53,7 @@ const picture = (p: ClientPark, photo?: CardPhoto) =>
     ? `<figure class="card-photo"><img class="art" src="${esc(photo.url)}" alt="" loading="lazy" decoding="async" />${photo.credit ? `<figcaption>Photo: ${esc(photo.credit)}</figcaption>` : ''}</figure>`
     : art(p);
 
-export function cardHTML(p: ClientPark, o: { dist?: number; num?: number; mine?: { v?: boolean; r?: number }; photo?: CardPhoto } = {}) {
+export function cardHTML(p: ClientPark, o: { dist?: number; num?: number; mine?: { v?: boolean; r?: number }; photo?: CardPhoto; parents?: boolean } = {}) {
   const chips = p.f
     .filter((k) => NAMES[k])
     .slice(0, 4)
@@ -64,6 +64,8 @@ export function cardHTML(p: ClientPark, o: { dist?: number; num?: number; mine?:
   if (o.mine?.r) chips.push(`<li class="rate">Your rating: ${o.mine.r} out of 5</li>`);
   const foot = p.c
     ? `✓ Checked ${fmtDate(p.c)}`
+    : o.parents
+    ? '✓ Confirmed by parents'
     : '<span class="chips"><span class="unv" style="padding:4px 12px;border-radius:10px">Unverified</span></span> Details not checked yet';
   const heart = `<button type="button" class="fav-btn" data-fav="${esc(p.id)}" data-name="${esc(p.n)}" aria-pressed="false" aria-label="Save ${esc(p.n)} to favourites"><span aria-hidden="true">♥</span></button>`;
   return `<li class="card" id="card-${esc(p.id)}">${picture(p, o.photo)}<div class="body">
