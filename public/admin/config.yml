@@ -28,10 +28,9 @@ collections:
     slug: "{{slug}}"
     identifier_field: name
     summary: "{{name}} ({{area}})"
-    sortable_fields: [name, area, checked]
-    view_filters:
-      - { label: Unverified, field: checked, pattern: "^$" }
-      - { label: Hertfordshire, field: region, pattern: herts }
+    # No sortable_fields or view_filters: like search, they download every playground file first and time out.
+    # Sorting and filtering by county or Unverified are in the "Find a playground" panel instead.
+    sortable_fields: []
     fields:
       - { label: Name, name: name, widget: string }
       - label: County or region

@@ -6,34 +6,41 @@
   <meta name="robots" content="noindex" />
   <title>Edit content | Swing By</title>
   <style>
-    /* Find a playground: a quick search over the site's own index, because Decap's built-in search
-       downloads every playground file from GitHub one at a time and times out with this many. */
+    /* Find a playground: search, filter and sort over /admin-index.json, which is built with the site.
+       Decap's own search, sorting and filters download every playground file from GitHub one at a time,
+       which times out with this many, so they're turned off in config.yml and done here instead. */
     #sb-find-toggle {
       position: fixed; right: 16px; bottom: 16px; z-index: 1000;
       font: 600 14px/1 system-ui, sans-serif; color: #fff; background: #3a69c7;
       border: 0; border-radius: 999px; padding: 12px 18px; cursor: pointer;
       box-shadow: 0 2px 8px rgba(0, 0, 0, .25);
     }
-    #sb-find-toggle:focus-visible, #sb-find input:focus-visible, #sb-find a:focus-visible { outline: 3px solid #f5a623; outline-offset: 2px; }
+    #sb-find-toggle:focus-visible, #sb-find :is(input, select, button, a):focus-visible { outline: 3px solid #f5a623; outline-offset: 2px; }
     #sb-find {
       position: fixed; right: 16px; bottom: 68px; z-index: 1000;
-      width: min(420px, calc(100vw - 32px)); max-height: min(70vh, 560px);
-      display: flex; flex-direction: column; gap: 8px;
+      width: min(460px, calc(100vw - 32px)); max-height: min(78vh, 640px);
+      display: flex; flex-direction: column; gap: 8px; box-sizing: border-box;
       background: #fff; color: #313d3e; border-radius: 8px; padding: 14px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, .3); font: 14px/1.4 system-ui, sans-serif;
     }
     #sb-find[hidden] { display: none; }
     #sb-find label { font-weight: 600; }
-    #sb-find input {
-      font: inherit; padding: 8px 10px; border: 2px solid #dfdfe3; border-radius: 5px; width: 100%; box-sizing: border-box;
+    #sb-find input, #sb-find select {
+      font: inherit; padding: 7px 9px; border: 2px solid #dfdfe3; border-radius: 5px; width: 100%; box-sizing: border-box;
+      background: #fff; color: inherit;
     }
+    #sb-find .sb-opts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+    #sb-find .sb-opts label { display: flex; flex-direction: column; gap: 3px; font-size: 12px; min-width: 0; }
+    @media (max-width: 420px) { #sb-find .sb-opts { grid-template-columns: 1fr 1fr; } }
+    #sb-find .sb-row { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
     #sb-find .sb-note { margin: 0; color: #5a6366; font-size: 13px; }
+    #sb-find .sb-link { font: inherit; font-size: 13px; color: #3a69c7; background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; white-space: nowrap; }
     #sb-find ul { list-style: none; margin: 0; padding: 0; overflow-y: auto; }
-    #sb-find li a {
-      display: block; padding: 7px 8px; border-radius: 5px; color: inherit; text-decoration: none;
-    }
+    #sb-find li a { display: block; padding: 7px 8px; border-radius: 5px; color: inherit; text-decoration: none; }
     #sb-find li a:hover { background: #e8f5fe; }
     #sb-find li span { display: block; color: #5a6366; font-size: 12px; }
+    #sb-find .sb-more { align-self: center; font: inherit; padding: 6px 14px; border: 2px solid #3a69c7; color: #3a69c7; background: #fff; border-radius: 999px; cursor: pointer; }
+    #sb-find .sb-more[hidden] { display: none; }
   </style>
 </head>
 <body>
@@ -41,67 +48,136 @@
   <div id="sb-find" role="dialog" aria-label="Find a playground" hidden>
     <label for="sb-find-q">Find a playground</label>
     <input id="sb-find-q" type="search" autocomplete="off" placeholder="Name, town or county" />
-    <p class="sb-note" id="sb-find-status" aria-live="polite">Searches published playgrounds. New ones still in review are under Workflow.</p>
+    <div class="sb-opts">
+      <label>County or region
+        <select id="sb-find-region"><option value="">All</option></select>
+      </label>
+      <label>Show
+        <select id="sb-find-status-filter">
+          <option value="">All</option>
+          <option value="unverified">Unverified</option>
+          <option value="checked">Checked</option>
+        </select>
+      </label>
+      <label>Sort by
+        <select id="sb-find-sort">
+          <option value="best">Best match</option>
+          <option value="name">Name A–Z</option>
+          <option value="area">Town A–Z</option>
+          <option value="oldest">Checked longest ago</option>
+          <option value="newest">Checked most recently</option>
+        </select>
+      </label>
+    </div>
+    <div class="sb-row">
+      <p class="sb-note" id="sb-find-status" aria-live="polite"></p>
+      <button type="button" class="sb-link" id="sb-find-clear" hidden>Clear</button>
+    </div>
     <ul id="sb-find-results"></ul>
+    <button type="button" class="sb-more" id="sb-find-more" hidden>Show more</button>
   </div>
 
   <script>
     (() => {
-      const toggle = document.getElementById('sb-find-toggle');
-      const panel = document.getElementById('sb-find');
-      const input = document.getElementById('sb-find-q');
-      const status = document.getElementById('sb-find-status');
-      const list = document.getElementById('sb-find-results');
-      const LIMIT = 50;
-      let parks = null;
-      let loading = null;
+      const $ = (id) => document.getElementById(id);
+      const toggle = $('sb-find-toggle'), panel = $('sb-find'), input = $('sb-find-q');
+      const regionSel = $('sb-find-region'), statusSel = $('sb-find-status-filter'), sortSel = $('sb-find-sort');
+      const status = $('sb-find-status'), list = $('sb-find-results'), more = $('sb-find-more'), clear = $('sb-find-clear');
+      const PAGE = 50;
+      const HINT = 'Type a name, or pick a county or Unverified. Covers published playgrounds; new ones in review are under Workflow.';
+      const STORE = 'sb-find-options';
+      let parks = null, loading = null, shown = PAGE;
 
       // "Queen's Park", "Queens Park" and "queen’s park" all match each other.
       const norm = (s) => (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
         .replace(/['’‘`]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+      const ukDate = (iso) => { const [y, m, d] = iso.split('-'); return d && m && y ? `${d}/${m}/${y}` : iso; };
 
-      const load = () => loading ??= fetch('/search-index.json')
+      // Remember the county, Show and Sort choices on this device.
+      const saveOpts = () => { try { localStorage.setItem(STORE, JSON.stringify({ r: regionSel.value, s: statusSel.value, o: sortSel.value })); } catch {} };
+      const restoreOpts = () => {
+        try {
+          const o = JSON.parse(localStorage.getItem(STORE) || '{}');
+          if (o.s) statusSel.value = o.s;
+          if (o.o) sortSel.value = o.o;
+          return o.r || '';
+        } catch { return ''; }
+      };
+      const savedRegion = restoreOpts();
+
+      const load = () => loading ??= fetch('/admin-index.json')
         .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
         .then((d) => {
-          parks = d.parks.map((p) => ({ ...p, nn: norm(p.n), all: norm(`${p.n} ${p.a} ${p.r}`) }));
+          parks = d.parks.map((p) => ({ ...p, nn: norm(p.n), all: norm(`${p.n} ${p.a} ${p.rn}`) }));
+          const regions = [...new Map(parks.map((p) => [p.r, p.rn])).entries()].sort((a, b) => a[1].localeCompare(b[1]));
+          for (const [id, name] of regions) regionSel.add(new Option(name, id));
+          if (regions.some(([id]) => id === savedRegion)) regionSel.value = savedRegion;
           render();
         })
         .catch(() => { loading = null; status.textContent = "Couldn't load the playground list. Try again in a moment."; });
 
+      const byText = (key) => (a, b) => (a[key] || '').localeCompare(b[key] || '') || a.n.localeCompare(b.n);
+      // Unverified playgrounds (no date) sort to the end in both date orders.
+      const byDate = (dir) => (a, b) => (!a.k - !b.k) || dir * a.k.localeCompare(b.k) || a.n.localeCompare(b.n);
+
       const render = () => {
         list.replaceChildren();
+        more.hidden = true;
         const q = norm(input.value);
-        if (!q) { status.textContent = 'Searches published playgrounds. New ones still in review are under Workflow.'; return; }
-        if (!parks) { status.textContent = 'Loading playgrounds…'; return; }
-        const words = q.split(' ');
-        const hits = parks.filter((p) => words.every((w) => p.all.includes(w)))
-          .map((p) => ({ p, rank: p.nn === q ? 0 : p.nn.startsWith(q) ? 1 : p.nn.includes(q) ? 2 : 3 }))
-          .sort((a, b) => a.rank - b.rank || a.p.n.localeCompare(b.p.n));
-        for (const { p } of hits.slice(0, LIMIT)) {
+        const filtered = regionSel.value || statusSel.value;
+        clear.hidden = !(q || filtered);
+        if (!parks) { status.textContent = q || filtered ? 'Loading playgrounds…' : HINT; return; }
+        if (!q && !filtered) { status.textContent = HINT; return; }
+
+        const words = q ? q.split(' ') : [];
+        let hits = parks.filter((p) =>
+          (!regionSel.value || p.r === regionSel.value) &&
+          (statusSel.value !== 'unverified' || !p.k) &&
+          (statusSel.value !== 'checked' || p.k) &&
+          words.every((w) => p.all.includes(w)));
+
+        const sort = sortSel.value === 'best' && !q ? 'name' : sortSel.value;
+        if (sort === 'best') {
+          const rank = (p) => p.nn === q ? 0 : p.nn.startsWith(q) ? 1 : p.nn.includes(q) ? 2 : 3;
+          hits = hits.map((p) => [rank(p), p]).sort((a, b) => a[0] - b[0] || a[1].n.localeCompare(b[1].n)).map(([, p]) => p);
+        } else {
+          hits.sort(sort === 'area' ? byText('a') : sort === 'oldest' ? byDate(1) : sort === 'newest' ? byDate(-1) : byText('n'));
+        }
+
+        for (const p of hits.slice(0, shown)) {
           const li = document.createElement('li');
           const a = document.createElement('a');
           a.href = `#/collections/playgrounds/entries/${encodeURIComponent(p.id)}`;
           a.textContent = p.n;
           const where = document.createElement('span');
-          where.textContent = [p.a, p.r].filter(Boolean).join(', ') + (p.c ? '' : ' · Unverified');
+          where.textContent = [p.a, p.rn].filter(Boolean).join(', ') + (p.k ? ` · Checked ${ukDate(p.k)}` : ' · Unverified');
           a.append(where);
           a.addEventListener('click', () => setOpen(false));
           li.append(a);
           list.append(li);
         }
+        more.hidden = hits.length <= shown;
         status.textContent = hits.length === 0 ? 'No playgrounds match.'
-          : hits.length > LIMIT ? `Showing ${LIMIT} of ${hits.length}. Add a town to narrow it down.`
+          : hits.length > shown ? `Showing ${shown} of ${hits.length}`
           : `${hits.length} ${hits.length === 1 ? 'playground' : 'playgrounds'}`;
       };
+
+      const update = () => { shown = PAGE; list.scrollTop = 0; saveOpts(); render(); };
 
       const setOpen = (open) => {
         panel.hidden = !open;
         toggle.setAttribute('aria-expanded', String(open));
-        if (open) { load(); input.focus(); input.select(); } else { toggle.focus(); }
+        if (open) { load(); render(); input.focus(); input.select(); } else { toggle.focus(); }
       };
 
       toggle.addEventListener('click', () => setOpen(panel.hidden));
-      input.addEventListener('input', render);
+      input.addEventListener('input', update);
+      for (const s of [regionSel, statusSel, sortSel]) s.addEventListener('change', update);
+      more.addEventListener('click', () => { shown += PAGE; render(); });
+      clear.addEventListener('click', () => {
+        input.value = ''; regionSel.value = ''; statusSel.value = ''; sortSel.value = 'best';
+        update(); input.focus();
+      });
       panel.addEventListener('keydown', (e) => { if (e.key === 'Escape') setOpen(false); });
     })();
   </script>
