@@ -43,6 +43,7 @@ Don't use Google Maps or Google Places to find or place playgrounds. Their terms
 - `sources` links to the official page or pages you used: the council, operator, parish or ParksHerts page.
 - `checked` is today's date only once an official source confirms the playground exists. Otherwise, including for playgrounds found only on OpenStreetMap, leave it blank, and the site labels it "Unverified".
 - Position: use the site's own postcode, or the car park's postcode, via postcodes.io. If you only have a street, say "approximate" in `notConfirmed`. If you can't place it reasonably, leave it out and list it in the pull request.
+- Moving a pin by hand: add its id to `src/data/pins-checked.json`, so the "Check pin positions" workflow never moves it back.
 - `size` only when the council grades it: their own small/large categories, or the Fields in Trust grades, where LAP (Local Area for Play) = small, LEAP (Locally Equipped Area for Play) = medium and NEAP (Neighbourhood Equipped Area for Play) = large. Many councils publish these in their play strategy or play area list. Leave it out otherwise.
 - `notConfirmed` lists anything the sources don't say: equipment, ages, toilets, parking, exact position.
 - Don't guess equipment or ages. Leave them empty if the source doesn't say.
