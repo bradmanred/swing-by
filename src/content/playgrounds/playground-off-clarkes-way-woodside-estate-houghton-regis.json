@@ -1,23 +1,30 @@
 {
-  "name": "Playground off Clarkes Way",
+  "name": "The Village Green Play Area",
   "region": "east",
   "area": "Woodside Estate, Houghton Regis",
   "lat": 51.90361,
   "lng": -0.51724,
   "ages": [],
-  "equipment": [],
+  "equipment": [
+    "gym"
+  ],
   "access": [],
   "facilities": [],
   "opens": "",
-  "description": "A playground on OpenStreetMap near Clarkes Way, Woodside Estate. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "description": "Children's play area and outdoor gym on the village green, run by Houghton Regis Town Council. No public parking at the green; the nearest is the time-limited church car park.",
   "nearby": [],
   "sources": [
+    {
+      "label": "Houghton Regis Town Council: The Village Green",
+      "url": "https://houghtonregis-tc.gov.uk/environment/the-village-green"
+    },
     {
       "label": "OpenStreetMap: playground",
       "url": "https://www.openstreetmap.org/way/389630528"
     }
   ],
-  "checked": null,
-  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
-  "photo": null
+  "checked": "2026-10-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, opening hours, toilets and parking.",
+  "photo": null,
+  "operator": "Houghton Regis Town Council"
 }

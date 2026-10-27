@@ -1,23 +1,30 @@
 {
-  "name": "Playground off Nightingale Court",
+  "name": "Green Lane Playground",
   "region": "east",
   "area": "Wixams",
   "lat": 52.08769,
   "lng": -0.46543,
-  "ages": [],
+  "ages": [
+    "under-3"
+  ],
   "equipment": [],
   "access": [],
   "facilities": [],
   "opens": "",
-  "description": "A playground on OpenStreetMap near Nightingale Court, Wixams. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "description": "Playground with a transport-themed toddler area, refurbished by Bedford Borough Council in 2023.",
   "nearby": [],
   "sources": [
+    {
+      "label": "Bedford Borough Council: Park refurbishments 2023",
+      "url": "https://www.bedford.gov.uk/ParkRefurbishments2023"
+    },
     {
       "label": "OpenStreetMap: playground",
       "url": "https://www.openstreetmap.org/way/1042451317"
     }
   ],
-  "checked": null,
-  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
-  "photo": null
+  "checked": "2026-10-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null,
+  "operator": "Bedford Borough Council"
 }

@@ -1,23 +1,33 @@
 {
-  "name": "Playground off Luton Road",
+  "name": "Luton Road Recreation Ground Play Area",
   "region": "east",
   "area": "Fancott",
   "lat": 51.94656,
   "lng": -0.53102,
   "ages": [],
-  "equipment": [],
+  "equipment": [
+    "gym",
+    "mg"
+  ],
   "access": [],
-  "facilities": [],
+  "facilities": [
+    "fen"
+  ],
   "opens": "",
-  "description": "A playground on OpenStreetMap near Luton Road, Fancott. No council list we've checked includes it yet, so we can't confirm it's public or what it has. Check before you leave the road.",
+  "description": "Fenced children's play area on the Luton Road Recreation Ground, with tennis, a ball court and fitness equipment. Run by Toddington Parish Council.",
   "nearby": [],
   "sources": [
+    {
+      "label": "Toddington Parish Council: Recreation areas",
+      "url": "https://toddingtonparishcouncil.gov.uk/the-parish/recreation-areas/"
+    },
     {
       "label": "OpenStreetMap: playground",
       "url": "https://www.openstreetmap.org/way/428727686"
     }
   ],
-  "checked": null,
-  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
-  "photo": null
+  "checked": "2026-10-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, opening hours, toilets and parking.",
+  "photo": null,
+  "operator": "Toddington Parish Council"
 }

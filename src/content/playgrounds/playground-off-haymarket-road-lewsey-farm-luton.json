@@ -1,5 +1,5 @@
 {
-  "name": "Playground off Haymarket Road",
+  "name": "Regis Road Recreation Ground",
   "region": "east",
   "area": "Lewsey Farm, Luton",
   "lat": 51.9012,
@@ -9,15 +9,20 @@
   "access": [],
   "facilities": [],
   "opens": "",
-  "description": "A playground on OpenStreetMap near Haymarket Road, Lewsey Farm. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "description": "Play area on Luton Council's map of play facilities, run by Luton Borough Council.",
   "nearby": [],
   "sources": [
+    {
+      "label": "Luton Council: parks and open spaces (map of play facilities)",
+      "url": "https://www.luton.gov.uk/leisure-parks-culture/find-park-open-spaces"
+    },
     {
       "label": "OpenStreetMap: playground",
       "url": "https://www.openstreetmap.org/way/1168136809"
     }
   ],
-  "checked": null,
-  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
-  "photo": null
+  "checked": "2026-10-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null,
+  "operator": "Luton Borough Council"
 }

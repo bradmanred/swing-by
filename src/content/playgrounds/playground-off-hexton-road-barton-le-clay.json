@@ -1,5 +1,5 @@
 {
-  "name": "Playground off Hexton Road",
+  "name": "Arnold Recreation Ground Play Area",
   "region": "east",
   "area": "Barton-le-Clay",
   "lat": 51.96303,
@@ -9,15 +9,20 @@
   "access": [],
   "facilities": [],
   "opens": "",
-  "description": "A playground on OpenStreetMap near Hexton Road, Barton-le-Clay. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "description": "Play area on the Arnold Recreation Ground off Old Road, run by Barton-le-Clay Parish Council.",
   "nearby": [],
   "sources": [
+    {
+      "label": "Barton-le-Clay Parish Council: Arnold Recreation Ground play area notice",
+      "url": "https://bartonleclay-pc.gov.uk/temporary-closure-of-the-play-area-arnold-recreation-ground-old-road"
+    },
     {
       "label": "OpenStreetMap: playground",
       "url": "https://www.openstreetmap.org/way/353650991"
     }
   ],
-  "checked": null,
-  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
-  "photo": null
+  "checked": "2026-10-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null,
+  "operator": "Barton-le-Clay Parish Council"
 }
