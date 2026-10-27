@@ -10,6 +10,10 @@ publish_mode: editorial_workflow
 local_backend: true
 site_url: https://swing-by.co.uk
 locale: en
+# Decap's own search downloads every playground file from GitHub, one request each, before it can match anything.
+# With thousands of playgrounds that times out and uses up the hourly GitHub allowance, so it's turned off.
+# Use the "Find a playground" button on /admin/ instead: it searches the site's own index.
+search: false
 media_folder: public/images/playgrounds
 public_folder: /images/playgrounds
 
