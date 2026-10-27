@@ -5,6 +5,7 @@ import { mkdtemp, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { agree, metres } from '../worker/pins.js';
+import { canonicalPark } from '../worker/ids.js';
 
 let failures = 0;
 const fail = (msg) => {
@@ -37,6 +38,14 @@ if (agree([row('a', '1', at(200, 0)), row('b', '2', at(210, 0)), row('c', '3', a
 // Three say here, one says elsewhere: here wins.
 const three = agree([row('a', '1', at(200, 0)), row('b', '2', at(210, 0)), row('c', '3', at(195, 10)), row('d', '4', at(0, 0))]);
 if (!three || three.parents !== 3 || metres(three, at(200, 3)) > 10) fail(`three agreeing parents should beat one, got ${JSON.stringify(three)}`);
+
+// Old ids started with "c-": they still find the playground, and made-up ids don't.
+const env = { ASSETS: { fetch: async () => new Response(JSON.stringify({ 'garston-park-watford': [51.7, -0.4] })) } };
+const req = new Request('https://swing-by.co.uk/api/pins');
+if ((await canonicalPark(req, env, 'garston-park-watford')) !== 'garston-park-watford') fail('a current id should be accepted as it is');
+if ((await canonicalPark(req, env, 'c-garston-park-watford')) !== 'garston-park-watford') fail('an old c- id should be accepted and mapped to the new one');
+if ((await canonicalPark(req, env, 'c-nowhere')) !== null) fail('an unknown id should be refused');
+if ((await canonicalPark(req, env, '../etc')) !== null) fail('an id with odd characters should be refused');
 
 // The script moves pins parents agree on, and only those.
 const dir = await mkdtemp(join(tmpdir(), 'swing-by-pins-'));

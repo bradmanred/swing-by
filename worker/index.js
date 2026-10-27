@@ -24,6 +24,15 @@ export default {
     if (pathname === '/api/photos' || pathname.startsWith('/api/photos/')) return photos({ request, env, pathname });
     if (pathname === '/api/equipment' || pathname.startsWith('/api/equipment/')) return equipment({ request, env, pathname });
     if (pathname === '/api/pins' || pathname.startsWith('/api/pins/')) return pins({ request, env, pathname });
-    return env.ASSETS.fetch(request);
+    const res = await env.ASSETS.fetch(request);
+    // Playground addresses used to start with "c-" (/playgrounds/c-garston-park-watford/). Send old links, bookmarks
+    // and search results to the same playground's page now.
+    const old = /^\/playgrounds\/c-([a-z0-9-]+)(\/.*)?$/.exec(pathname);
+    if (res.status === 404 && old) {
+      url.pathname = `/playgrounds/${old[1]}${old[2] ?? '/'}`;
+      const now = await env.ASSETS.fetch(new Request(url, { method: 'GET' }));
+      if (now.ok) return Response.redirect(url.toString(), 301);
+    }
+    return res;
   },
 };

@@ -38,7 +38,7 @@ Don't use Google Maps or Google Places to find or place playgrounds. Their terms
 
 ## 3. Adding each playground
 
-- One JSON file per play area in `src/content/playgrounds/`. Name files `c-<name>-<town>.json`.
+- One JSON file per play area in `src/content/playgrounds/`. Name files `<name>-<town>.json` (no `c-` prefix: older files had one, and it was dropped in October 2026).
 - `operator` says who runs it, for example "Welwyn Hatfield Borough Council (run by Better)" or "Welwyn Parish Council".
 - `sources` links to the official page or pages you used: the council, operator, parish or ParksHerts page.
 - `checked` is today's date only once an official source confirms the playground exists. Otherwise, including for playgrounds found only on OpenStreetMap, leave it blank, and the site labels it "Unverified".
