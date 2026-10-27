@@ -44,6 +44,25 @@ jobs:
         with:
           name: positions-report
           path: reports/
+      # Also keeps the latest report for each region on the "reports" branch, so it can be read on GitHub
+      # (positions-derbyshire.md and so on) without downloading anything. Nothing on main changes.
+      - name: Keep the report on the reports branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REGION: ${{ inputs.region || 'all' }}
+        run: |
+          src="$PWD/reports"
+          tmp=$(mktemp -d) && cd "$tmp"
+          git init -q
+          git config user.name "swing-by-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git"
+          if git fetch -q --depth 1 origin reports; then git checkout -q -b reports FETCH_HEAD; else git checkout -q --orphan reports; fi
+          cp "$src/positions.md" "positions-$REGION.md"
+          cp "$src/positions.json" "positions-$REGION.json"
+          git add "positions-$REGION.md" "positions-$REGION.json"
+          git diff --cached --quiet || git commit -q -m "Pin positions report: $REGION ($(date +%Y-%m-%d))"
+          git push -q origin reports
       - name: Open a pull request with the moved pins
         if: ${{ inputs.fix }}
         env:
