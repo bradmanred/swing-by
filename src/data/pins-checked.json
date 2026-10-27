@@ -1,0 +1,6 @@
+{
+  "about": "Pins placed or checked by hand. scripts/check-positions.mjs never checks or moves these, so add a pin here whenever you move it by hand.",
+  "pins": [
+    { "id": "c-badgers-recreation-ground-chesterfield", "checked": "2026-10-27", "note": "Moved by hand into Badgers Recreation Ground off Brockwell Lane; the OpenStreetMap-based pin was about 360 m west." }
+  ]
+}

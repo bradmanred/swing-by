@@ -53,6 +53,11 @@ try {
   await park('unnamed-far', 'Meadow View', at(15000, 0));
   // 150 m from an unnamed mapped playground: close enough to move without a name.
   await park('unnamed-near', 'Brook Side', at(18000, 0));
+  // Placed by hand and listed in pins-checked.json: never checked or moved, though a matching name is 200 m away.
+  await park('by-hand', 'Badgers Rec', at(21000, 0));
+  // Taken from OpenStreetMap, but sitting on a playground with a different name: flagged when osm pins are checked.
+  await park('misnamed', 'Ashgate Play Area', at(24000, 0), 'Exact position (taken from OpenStreetMap), age ranges.');
+  await writeFile(join(dir, 'checked.json'), JSON.stringify({ pins: [{ id: 'by-hand' }] }));
 
   await writeFile(
     join(dir, 'osm.json'),
@@ -67,13 +72,15 @@ try {
       osm('way/8', at(12000, 400)),
       osm('way/9', at(15000, 400)),
       osm('way/10', at(18000, 150)),
+      osm('way/11', at(21000, 200), { name: 'Badgers Recreation Ground' }),
+      osm('way/12', at(24000, 10), { name: 'Hollybank Play Area' }),
     ]),
   );
 
-  const run = (...extra) => execFileSync('node', ['scripts/check-positions.mjs', '--dir', play, '--out', out, '--osm-file', join(dir, 'osm.json'), ...extra], { encoding: 'utf8' });
+  const run = (...extra) => execFileSync('node', ['scripts/check-positions.mjs', '--dir', play, '--out', out, '--osm-file', join(dir, 'osm.json'), '--checked', join(dir, 'checked.json'), ...extra], { encoding: 'utf8' });
   const read = async (id) => JSON.parse(await readFile(join(play, `${id}.json`), 'utf8'));
   const statuses = async () => Object.fromEntries(JSON.parse(await readFile(join(out, 'positions.json'), 'utf8')).map((r) => [r.id, r.status]));
-  const ids = ['right', 'wrong', 'stack-1', 'stack-2', 'lonely', 'already', 'private', 'approx', 'council', 'unnamed-far', 'unnamed-near'];
+  const ids = ['right', 'wrong', 'stack-1', 'stack-2', 'lonely', 'already', 'private', 'approx', 'council', 'unnamed-far', 'unnamed-near', 'by-hand', 'misnamed'];
   const snapshot = async () => JSON.stringify(await Promise.all(ids.map(read)));
 
   // A report-only run changes nothing.
@@ -91,6 +98,7 @@ try {
   if (dry['unnamed-near'] !== 'move') fail(`a pin 150 m from an unnamed mapped playground should move, got ${dry['unnamed-near']}`);
   if ('already' in dry) fail('a pin that already came from OpenStreetMap should not be checked');
   if ('council' in dry) fail("a pin from the council's own map should not be checked unless asked for");
+  if ('by-hand' in dry) fail('a pin placed by hand should never be checked');
 
   // --fix moves only the clear ones, and says where the position now comes from.
   const origin = { right: await read('right'), stack: await read('stack-1') };
@@ -109,6 +117,7 @@ try {
   if (right.lat !== origin.right.lat || right.lng !== origin.right.lng) fail('a confirmed pin must not move');
   const council = await read('council');
   if (council.lat !== at(12000, 0).lat) fail("a pin from the council's own map must not move");
+  if ((await read('by-hand')).lat !== at(21000, 0).lat) fail('a pin placed by hand must never move');
 
   // A second run finds the moved pins already done.
   run();
@@ -118,6 +127,13 @@ try {
   // Asking for the council map pins checks them too.
   run('--include', 'council-map');
   if ((await statuses()).council !== 'ambiguous') fail("--include council-map should check the council-map pin and leave it to a person, as its mapped playground is 400 m away and unnamed");
+
+  // Looking again at OpenStreetMap pins flags one sitting on a differently named playground, and still skips hand-placed ones.
+  run('--include', 'osm', '--fix');
+  const osmRun = await statuses();
+  if (osmRun.misnamed !== 'name') fail(`a pin on a mapped playground with a different name should be flagged, got ${osmRun.misnamed}`);
+  if ('by-hand' in osmRun) fail('a pin placed by hand should never be checked, even with --include osm');
+  if ((await read('misnamed')).lat !== at(24000, 0).lat) fail('a pin flagged for its name must not move');
 } finally {
   await rm(dir, { recursive: true, force: true });
 }
