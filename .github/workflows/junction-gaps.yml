@@ -1,0 +1,60 @@
+# Fills empty motorway and trunk-road junctions (no playground within about 5 minutes) from OpenStreetMap, in road
+# order: M1, A1, A1(M), A303, M4, M3, then the rest busiest first. See scripts/junction-gaps.mjs.
+# Run it from the Actions tab. On main it opens a pull request for you to review; on another branch it commits there.
+name: Fill empty junctions
+on:
+  workflow_dispatch:
+    inputs:
+      add:
+        description: 'Add up to this many playgrounds (0 = report only)'
+        default: '400'
+      roads:
+        description: 'Only these roads, comma-separated, e.g. M6,M5 (leave blank for the usual order)'
+        default: ''
+  push:
+    branches: ['claude/junction-gaps*']
+    paths: ['scripts/junction-gaps.mjs', '.github/workflows/junction-gaps.yml']
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: junction-gaps
+  cancel-in-progress: false
+jobs:
+  fill:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Fill empty junctions
+        env:
+          ADD: ${{ inputs.add || '400' }}
+          ROADS: ${{ inputs.roads || '' }}
+        run: |
+          if [ -n "$ROADS" ]; then node scripts/junction-gaps.mjs --add "$ADD" --roads "$ROADS"; else node scripts/junction-gaps.mjs --add "$ADD"; fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: junction-gaps-report
+          path: reports/
+      - name: Commit the added playgrounds
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -z "$(git status --porcelain -- src/content/playgrounds)" ]; then echo "Nothing to add"; exit 0; fi
+          node scripts/nearest-toilets.mjs
+          node scripts/coverage-areas.mjs
+          git config user.name "swing-by-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          branch="${GITHUB_REF_NAME}"
+          if [ "$branch" = "main" ]; then branch="junction-gaps/$(date +%Y-%m-%d)-${{ github.run_number }}"; git checkout -b "$branch"; fi
+          git add src/content/playgrounds src/data/toilets.json src/data/coverage.json
+          git commit -m "Fill empty junctions with playgrounds from OpenStreetMap"
+          git push -u origin "$branch"
+          if [ "${GITHUB_REF_NAME}" = "main" ]; then
+            grep -vE '^# ' reports/junction-gaps.md > body.md
+            gh pr create --base main --head "$branch" --title "Fill empty junctions with playgrounds" --body-file body.md \
+              || echo "::warning::Pushed $branch but couldn't open a pull request. Open it from the branch instead."
+          fi
