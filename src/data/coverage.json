@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27",
+ "updated": "2026-10-29",
  "counties": [
   {
    "name": "Devon",
@@ -15,7 +15,7 @@
   },
   {
    "name": "Essex",
-   "playgrounds": 385
+   "playgrounds": 395
   },
   {
    "name": "Derbyshire",
@@ -23,23 +23,27 @@
   },
   {
    "name": "Greater London",
-   "playgrounds": 184
-  },
-  {
-   "name": "Surrey",
-   "playgrounds": 168
+   "playgrounds": 193
   },
   {
    "name": "Kent",
-   "playgrounds": 165
+   "playgrounds": 186
+  },
+  {
+   "name": "Surrey",
+   "playgrounds": 171
   },
   {
    "name": "Greater Manchester",
-   "playgrounds": 147
+   "playgrounds": 158
   },
   {
    "name": "Buckinghamshire",
-   "playgrounds": 64
+   "playgrounds": 73
+  },
+  {
+   "name": "Hampshire",
+   "playgrounds": 68
   },
   {
    "name": "Tyne and Wear",
@@ -47,31 +51,63 @@
   },
   {
    "name": "West Yorkshire",
-   "playgrounds": 47
-  },
-  {
-   "name": "Hampshire",
-   "playgrounds": 47
+   "playgrounds": 53
   },
   {
    "name": "South Yorkshire",
-   "playgrounds": 43
+   "playgrounds": 49
   },
   {
    "name": "Cambridgeshire",
-   "playgrounds": 27
+   "playgrounds": 47
+  },
+  {
+   "name": "Cheshire",
+   "playgrounds": 33
   },
   {
    "name": "North Yorkshire",
-   "playgrounds": 27
+   "playgrounds": 30
+  },
+  {
+   "name": "Northamptonshire",
+   "playgrounds": 30
+  },
+  {
+   "name": "Staffordshire",
+   "playgrounds": 29
+  },
+  {
+   "name": "Leicestershire",
+   "playgrounds": 25
+  },
+  {
+   "name": "Lancashire",
+   "playgrounds": 25
+  },
+  {
+   "name": "Cumbria",
+   "playgrounds": 24
   },
   {
    "name": "Berkshire",
    "playgrounds": 23
   },
   {
-   "name": "Leicestershire",
-   "playgrounds": 19
+   "name": "Suffolk",
+   "playgrounds": 22
+  },
+  {
+   "name": "West Midlands",
+   "playgrounds": 22
+  },
+  {
+   "name": "Merseyside",
+   "playgrounds": 21
+  },
+  {
+   "name": "Somerset",
+   "playgrounds": 17
   },
   {
    "name": "Durham",
@@ -82,11 +118,15 @@
    "playgrounds": 17
   },
   {
-   "name": "Northamptonshire",
-   "playgrounds": 14
+   "name": "Wiltshire",
+   "playgrounds": 13
   },
   {
-   "name": "Wiltshire",
+   "name": "Warwickshire",
+   "playgrounds": 13
+  },
+  {
+   "name": "Oxfordshire",
    "playgrounds": 13
   },
   {
@@ -98,27 +138,27 @@
    "playgrounds": 12
   },
   {
+   "name": "East Riding of Yorkshire",
+   "playgrounds": 11
+  },
+  {
+   "name": "Worcestershire",
+   "playgrounds": 9
+  },
+  {
    "name": "Northumberland",
    "playgrounds": 9
   },
   {
-   "name": "Somerset",
-   "playgrounds": 8
+   "name": "West Sussex",
+   "playgrounds": 6
   },
   {
-   "name": "Cumbria",
+   "name": "Blackburn with Darwen",
    "playgrounds": 6
   },
   {
    "name": "Shropshire",
-   "playgrounds": 4
-  },
-  {
-   "name": "Staffordshire",
-   "playgrounds": 4
-  },
-  {
-   "name": "Cheshire",
    "playgrounds": 4
   },
   {
@@ -130,19 +170,11 @@
    "playgrounds": 3
   },
   {
-   "name": "West Sussex",
-   "playgrounds": 3
-  },
-  {
    "name": "Dorset",
    "playgrounds": 3
   },
   {
-   "name": "Lancashire",
-   "playgrounds": 3
-  },
-  {
-   "name": "Worcestershire",
+   "name": "Bristol",
    "playgrounds": 3
   },
   {
@@ -153,7 +185,7 @@
  "nations": [
   {
    "name": "Northern Ireland",
-   "playgrounds": 88
+   "playgrounds": 103
   },
   {
    "name": "Wales",
@@ -161,7 +193,7 @@
   },
   {
    "name": "Scotland",
-   "playgrounds": 22
+   "playgrounds": 52
   }
  ]
 }
