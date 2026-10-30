@@ -482,6 +482,22 @@
     "https://www.bolton.gov.uk/directory/7/parks/category/20"
    ],
    "note": "Its park directory gives facilities and map positions."
+  },
+  {
+   "district": "Brighton and Hove",
+   "council": "Brighton & Hove City Council",
+   "sources": [
+    "https://www.brighton-hove.gov.uk/libraries-leisure-and-arts/parks-and-green-spaces/playgrounds",
+    "https://www.brighton-hove.gov.uk/node/1956171",
+    "https://www.brighton-hove.gov.uk/libraries-leisure-and-arts/parks-and-green-spaces/directories/parks-and-green-spaces-directory"
+   ],
+   "feed": {
+    "type": "geojson",
+    "url": "https://gis.brighton-hove.gov.uk/server/rest/services/City_Parks/CityParks_Playgrounds/FeatureServer/35/query?where=1%3D1&outFields=*&f=geojson&outSR=4326",
+    "nameField": "PLAYGROUND",
+    "page": "https://www.brighton-hove.gov.uk/node/1956171"
+   },
+   "note": "The playgrounds layer of its city parks map gives names and positions for 46 of its 53 playgrounds. Stanmer Park, Wish Park, Middle Park, Ovingdean and a few housing estate play areas aren't on it."
   }
  ]
 }

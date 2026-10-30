@@ -1,0 +1,47 @@
+{
+  "name": "Stoneham Park",
+  "region": "south-east",
+  "area": "Hove",
+  "lat": 50.83397,
+  "lng": -0.18384,
+  "ages": [],
+  "equipment": [
+    "sp",
+    "cl",
+    "sw",
+    "sl",
+    "mg"
+  ],
+  "access": [
+    "sf"
+  ],
+  "facilities": [
+    "cf"
+  ],
+  "opens": "",
+  "description": "Two play areas: one with a sandpit and a mural, best for younger children, and one in the main park with bigger climbing equipment, swings and slides. There's a community café (hours vary) and a ball court, and the park is flat with accessible paths. The nearest accessible toilet is at Hove Museum.",
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "On-street parking only"
+    }
+  ],
+  "operator": "Brighton & Hove City Council (City Parks)",
+  "sources": [
+    {
+      "label": "Brighton & Hove City Council: city parks map (playgrounds layer)",
+      "url": "https://www.brighton-hove.gov.uk/node/1956171"
+    },
+    {
+      "label": "Brighton & Hove City Council: Stoneham Park",
+      "url": "https://www.brighton-hove.gov.uk/libraries-leisure-and-arts/parks-and-green-spaces/stoneham-park"
+    },
+    {
+      "label": "Brighton & Hove City Council: Playground Refurbishment Programme (Appendix 1)",
+      "url": "https://democracy.brighton-hove.gov.uk/documents/s197294/Playground%20Refurbishment%20Programme%20APX.%20n%201.html?CT=2"
+    }
+  ],
+  "checked": "2026-10-30",
+  "notConfirmed": "Exact position (from the council's map, which shows one of the two play areas), age ranges, opening hours and toilets.",
+  "photo": null
+}
