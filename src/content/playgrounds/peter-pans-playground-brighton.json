@@ -1,0 +1,30 @@
+{
+  "name": "Peter Pan's Playground",
+  "region": "south-east",
+  "area": "Brighton",
+  "lat": 50.81621,
+  "lng": -0.12123,
+  "ages": [],
+  "equipment": [
+    "wp"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Seafront play area on Madeira Drive with seasonal water play.",
+  "nearby": [],
+  "operator": "Brighton & Hove City Council (City Parks)",
+  "sources": [
+    {
+      "label": "Brighton & Hove City Council: city parks map (playgrounds layer)",
+      "url": "https://www.brighton-hove.gov.uk/node/1956171"
+    },
+    {
+      "label": "Brighton & Hove City Council: Playgrounds",
+      "url": "https://www.brighton-hove.gov.uk/libraries-leisure-and-arts/parks-and-green-spaces/playgrounds"
+    }
+  ],
+  "checked": "2026-10-30",
+  "notConfirmed": "Exact position (from the council's map), age ranges, other play equipment, when the water play runs, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,44 @@
+{
+  "name": "Queens Park",
+  "region": "south-east",
+  "area": "Brighton",
+  "lat": 50.82373,
+  "lng": -0.12491,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "One of the city's largest play areas, in a sheltered valley park with a wildlife pond. Toilets, including an accessible one, are next to the café facing the play park. The café opens daily in summer, and only when the weather allows in winter.",
+  "nearby": [
+    {
+      "type": "parking",
+      "label": "On-street parking only, with accessible bays near the park"
+    }
+  ],
+  "operator": "Brighton & Hove City Council (City Parks)",
+  "sources": [
+    {
+      "label": "Brighton & Hove City Council: city parks map (playgrounds layer)",
+      "url": "https://www.brighton-hove.gov.uk/node/1956171"
+    },
+    {
+      "label": "Brighton & Hove City Council: Queen's Park",
+      "url": "https://www.brighton-hove.gov.uk/libraries-leisure-and-arts/parks-and-green-spaces/queens-park"
+    },
+    {
+      "label": "Brighton & Hove City Council: Playground Refurbishment Programme (Appendix 1)",
+      "url": "https://democracy.brighton-hove.gov.uk/documents/s197294/Playground%20Refurbishment%20Programme%20APX.%20n%201.html?CT=2"
+    },
+    {
+      "label": "Brighton & Hove City Council: Playgrounds",
+      "url": "https://www.brighton-hove.gov.uk/libraries-leisure-and-arts/parks-and-green-spaces/playgrounds"
+    }
+  ],
+  "checked": "2026-10-30",
+  "notConfirmed": "Exact position (from the council's map), age ranges and play equipment.",
+  "photo": null
+}
