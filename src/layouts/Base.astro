@@ -66,8 +66,8 @@ const jsonLdText = jsonLd ? JSON.stringify(jsonLd).replace(/</g, '\\u003c') : nu
     <main id="main" tabindex="-1">
       <div class="wrap stack"><slot /></div>
     </main>
-    {/* Advert slot: Amazon Associates links (see AffiliateBanner). */}
-    <aside class="ad-slot wrap" aria-label="Advertisement">
+    {/* Partner slot: Amazon Associates links (see AffiliateBanner). */}
+    <aside class="partner-slot wrap" aria-label="Sponsored link">
       <AffiliateBanner />
     </aside>
     <footer class="site-footer">
