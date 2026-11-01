@@ -71,9 +71,9 @@ const ages = [
       </fieldset>
       <fieldset class="which">
         <legend>Which playgrounds?</legend>
-        <div class="row" role="group" aria-label="Play area size" aria-describedby="size-hint">
+        <div class="row sizes" role="group" aria-label="Play area size" aria-describedby="size-hint">
           {sizes.map((z) => (
-            <label class="chk"><input type="checkbox" name="size" value={z.k} disabled={z.n === 0} /> {z.label} <span class="hint">({z.n})</span></label>
+            <label class="chk"><input type="checkbox" name="size" value={z.k} disabled={z.n === 0} /> <span>{z.label}</span> <span class="hint">({z.n})</span></label>
           ))}
         </div>
         <p class="hint" id="size-hint">Sizes come from each council's own grading, so choosing a size only shows playgrounds that have been graded.</p>

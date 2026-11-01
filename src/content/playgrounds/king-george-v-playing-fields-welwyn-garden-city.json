@@ -2,8 +2,8 @@
   "name": "King George V Playing Fields Playground",
   "region": "herts",
   "area": "Welwyn Garden City",
-  "lat": 51.787059,
-  "lng": -0.186912,
+  "lat": 51.78925,
+  "lng": -0.19081,
   "ages": [
     "under-3"
   ],
@@ -35,9 +35,13 @@
     {
       "label": "ParksHerts: King George V Playing Field, Welwyn Garden City",
       "url": "https://www.parksherts.co.uk/parks/king-george-v-playing-field-welwyn-garden-city/"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/177852535"
     }
   ],
   "checked": "2026-10-20",
-  "notConfirmed": "Exact position (mapped from the postcode, AL7 4BP), equipment and age ranges.",
+  "notConfirmed": "Equipment and age ranges.",
   "photo": null
 }

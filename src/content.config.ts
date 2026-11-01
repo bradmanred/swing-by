@@ -41,9 +41,13 @@ const playgrounds = defineCollection({
     sources: z.array(z.object({ label: z.string(), url: z.string().url() })).default([]),
     checked: z.string().nullable().default(null),
     notConfirmed: z.string().default(''),
-    photo: z
-      .object({ src: z.string(), alt: z.string(), credit: z.string(), licence: z.string() })
-      .nullish(),
+    // The CMS image fields are optional, so a saved photo can come back blank: with no image it counts as no photo.
+    photo: z.preprocess(
+      (v) => (v && typeof v === 'object' && (v as { src?: unknown }).src ? v : null),
+      z
+        .object({ src: z.string(), alt: z.string().nullish().transform((x) => x ?? ''), credit: z.string().nullish().transform((x) => x ?? ''), licence: z.string().nullish().transform((x) => x ?? '') })
+        .nullable(),
+    ),
   }),
 });
 
