@@ -2,8 +2,8 @@
   "name": "Elthorne Waterside Playground",
   "region": "london",
   "area": "Hanwell, Ealing",
-  "lat": 51.51,
-  "lng": -0.31,
+  "lat": 51.50145,
+  "lng": -0.33317,
   "ages": [],
   "equipment": [],
   "access": [],
@@ -19,6 +19,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (approximate), age ranges, play equipment and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment and opening hours.",
   "photo": null
 }
