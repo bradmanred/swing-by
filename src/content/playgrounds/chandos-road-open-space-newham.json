@@ -1,0 +1,24 @@
+{
+  "name": "Chandos Road Open Space",
+  "region": "london",
+  "area": "Stratford, Newham",
+  "lat": 51.55063,
+  "lng": -0.00063,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Newham Council park with a play area.",
+  "nearby": [],
+  "operator": "Newham Council",
+  "sources": [
+    {
+      "label": "Newham Council: find your local park",
+      "url": "https://www.newham.gov.uk/localpark"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment and opening hours.",
+  "photo": null
+}

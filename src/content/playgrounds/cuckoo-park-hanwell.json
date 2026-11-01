@@ -1,0 +1,27 @@
+{
+  "name": "Cuckoo Park Playground",
+  "region": "london",
+  "area": "Hanwell, Ealing",
+  "lat": 51.52111,
+  "lng": -0.33467,
+  "ages": [],
+  "equipment": [
+    "tp",
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Ealing Council park with playgrounds, an activity trail, outdoor gym equipment and trampettes. Entrances on Cuckoo Avenue and Little John Road.",
+  "nearby": [],
+  "operator": "Ealing Council",
+  "sources": [
+    {
+      "label": "Ealing Council: Hanwell parks",
+      "url": "https://www.ealing.gov.uk/info/201136/parks_in_the_borough/664/hanwell_parks"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment and opening hours.",
+  "photo": null
+}

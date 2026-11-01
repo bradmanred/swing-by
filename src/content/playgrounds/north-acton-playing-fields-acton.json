@@ -1,0 +1,27 @@
+{
+  "name": "North Acton Playing Fields Playground",
+  "region": "london",
+  "area": "Acton, Ealing",
+  "lat": 51.51945,
+  "lng": -0.27204,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc",
+    "bc"
+  ],
+  "opens": "",
+  "description": "Ealing Council park with a playground next to North Acton Pavilion, which has toilets including accessible toilets and baby changing, and tennis courts. The main entrance is at Noel Road and Eastfields Road.",
+  "nearby": [],
+  "operator": "Ealing Council",
+  "sources": [
+    {
+      "label": "Ealing Council: Acton parks",
+      "url": "https://www.ealing.gov.uk/info/201136/parks_in_the_borough/661/acton_parks"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment and opening hours.",
+  "photo": null
+}

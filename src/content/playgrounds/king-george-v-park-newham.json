@@ -1,0 +1,24 @@
+{
+  "name": "King George V Park",
+  "region": "london",
+  "area": "Custom House, Newham",
+  "lat": 51.51328,
+  "lng": 0.03809,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Newham Council park with a play area.",
+  "nearby": [],
+  "operator": "Newham Council",
+  "sources": [
+    {
+      "label": "Newham Council: find your local park",
+      "url": "https://www.newham.gov.uk/localpark"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment and opening hours.",
+  "photo": null
+}

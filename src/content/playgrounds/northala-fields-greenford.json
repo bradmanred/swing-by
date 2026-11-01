@@ -1,0 +1,26 @@
+{
+  "name": "Northala Fields Playground",
+  "region": "london",
+  "area": "Greenford, Ealing",
+  "lat": 51.53983,
+  "lng": -0.37521,
+  "ages": [],
+  "equipment": [
+    "sl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Ealing Council park with two playgrounds for under-14s: one at Dolphin Road and one in the middle of the park with wooden play equipment and a big slide.",
+  "nearby": [],
+  "operator": "Ealing Council",
+  "sources": [
+    {
+      "label": "Ealing Council: Greenford parks",
+      "url": "https://www.ealing.gov.uk/info/201136/parks_in_the_borough/663/greenford_parks"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment and opening hours.",
+  "photo": null
+}

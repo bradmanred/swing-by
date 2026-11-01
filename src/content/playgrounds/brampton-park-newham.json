@@ -1,0 +1,26 @@
+{
+  "name": "Brampton Park",
+  "region": "london",
+  "area": "East Ham, Newham",
+  "lat": 51.52477,
+  "lng": 0.04589,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Newham Council park with a play area and a ball court. It also has a paddling pool and water pump, which the council's page said were closed in summer 2023.",
+  "nearby": [],
+  "operator": "Newham Council",
+  "sources": [
+    {
+      "label": "Newham Council: find your local park",
+      "url": "https://www.newham.gov.uk/localpark"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (mapped from the postcode), age ranges, play equipment and opening hours.",
+  "photo": null
+}

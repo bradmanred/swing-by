@@ -1,0 +1,27 @@
+{
+  "name": "Star Park",
+  "region": "london",
+  "area": "West Ham, Newham",
+  "lat": 51.5202,
+  "lng": 0.00657,
+  "ages": [],
+  "equipment": [
+    "sp",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Newham Council park with a play area with a sandpit and a floodlit ball court.",
+  "nearby": [],
+  "operator": "Newham Council",
+  "sources": [
+    {
+      "label": "Newham Council: find your local park",
+      "url": "https://www.newham.gov.uk/localpark"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment and opening hours.",
+  "photo": null
+}

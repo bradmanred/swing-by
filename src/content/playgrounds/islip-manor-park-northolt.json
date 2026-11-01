@@ -1,0 +1,26 @@
+{
+  "name": "Islip Manor Park Playground",
+  "region": "london",
+  "area": "Northolt, Ealing",
+  "lat": 51.54736,
+  "lng": -0.37498,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Ealing Council park with a play centre for pre-school children, a playground for older children, a basketball and five-a-side area and a car park at the Eastcote Lane entrance.",
+  "nearby": [],
+  "operator": "Ealing Council",
+  "sources": [
+    {
+      "label": "Ealing Council: Northolt parks",
+      "url": "https://www.ealing.gov.uk/info/201136/parks_in_the_borough/665/northolt_parks"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment and opening hours.",
+  "photo": null
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Valetta Grove Open Space",
+  "region": "london",
+  "area": "Plaistow, Newham",
+  "lat": 51.53196,
+  "lng": 0.01809,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "Newham Council park with a fully accessible play area and a ball court.",
+  "nearby": [],
+  "operator": "Newham Council",
+  "sources": [
+    {
+      "label": "Newham Council: find your local park",
+      "url": "https://www.newham.gov.uk/localpark"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment and opening hours.",
+  "photo": null
+}

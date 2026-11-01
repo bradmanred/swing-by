@@ -1,0 +1,26 @@
+{
+  "name": "New City Green",
+  "region": "london",
+  "area": "Plaistow, Newham",
+  "lat": 51.52753,
+  "lng": 0.0349,
+  "ages": [],
+  "equipment": [],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "Newham Council park with a play area suitable for all abilities.",
+  "nearby": [],
+  "operator": "Newham Council",
+  "sources": [
+    {
+      "label": "Newham Council: find your local park",
+      "url": "https://www.newham.gov.uk/localpark"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment and opening hours.",
+  "photo": null
+}

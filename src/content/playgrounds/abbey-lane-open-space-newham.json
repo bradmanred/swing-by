@@ -1,0 +1,28 @@
+{
+  "name": "Abbey Lane Open Space",
+  "region": "london",
+  "area": "Stratford, Newham",
+  "lat": 51.53301,
+  "lng": -0.00513,
+  "ages": [],
+  "equipment": [
+    "gym"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "Newham Council park with a play area suitable for all abilities and an outdoor gym.",
+  "nearby": [],
+  "operator": "Newham Council",
+  "sources": [
+    {
+      "label": "Newham Council: find your local park",
+      "url": "https://www.newham.gov.uk/localpark"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment and opening hours.",
+  "photo": null
+}
