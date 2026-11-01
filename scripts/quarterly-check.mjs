@@ -18,6 +18,7 @@
 import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { readFeed } from './council-feeds.mjs';
+import { linkStatus } from './link-status.mjs';
 
 const arg = (name, dflt) => (process.argv.includes(name) ? process.argv[process.argv.indexOf(name) + 1] : dflt);
 const DIR = arg('--dir', 'src/content/playgrounds');
@@ -44,6 +45,9 @@ const host = (u) => {
   }
 };
 const OSM_RE = /openstreetmap\.org\/(node|way|relation)\/(\d+)/;
+// Photo sites are credited as sources but aren't official ones, so they don't count for the "not checked" list.
+const PHOTO_RE = /(?:geograph\.org\.uk|commons\.wikimedia\.org)\//;
+const official = (s) => !OSM_RE.test(s.url) && !PHOTO_RE.test(s.url);
 const link = (p) => `[${p.name}](${SITE}${p.id}/)`;
 
 // The playground files.
@@ -126,18 +130,7 @@ if (!SKIP.has('links')) {
   for (const p of parks) for (const s of p.sources) if (!OSM_RE.test(s.url) && /^https?:/.test(s.url)) urls.set(s.url, [...(urls.get(s.url) ?? []), p]);
   console.log(`Official links: ${urls.size}`);
   const list = [...urls.keys()];
-  const status = async (u) => {
-    for (const method of ['HEAD', 'GET']) {
-      try {
-        const r = await fetch(u, { method, headers: UA, redirect: 'follow', signal: AbortSignal.timeout(20000) });
-        if (method === 'HEAD' && [403, 405, 501].includes(r.status)) continue; // some servers only answer GET
-        return r.status;
-      } catch {
-        if (method === 'GET') return 0;
-      }
-    }
-    return 0;
-  };
+  const status = (u) => linkStatus(u, { headers: UA });
   let next = 0;
   await Promise.all(
     Array.from({ length: 8 }, async () => {
@@ -155,7 +148,7 @@ if (!SKIP.has('links')) {
 if (!SKIP.has('stale')) {
   const cutoff = new Date(Date.now() - STALE_DAYS * 864e5).toISOString().slice(0, 10);
   result.stale = parks
-    .filter((p) => !p.membership && p.sources.some((s) => !OSM_RE.test(s.url)) && (!p.checked || p.checked < cutoff))
+    .filter((p) => !p.membership && p.sources.some(official) && (!p.checked || p.checked < cutoff))
     .sort((a, b) => String(a.checked ?? '').localeCompare(String(b.checked ?? '')));
 }
 

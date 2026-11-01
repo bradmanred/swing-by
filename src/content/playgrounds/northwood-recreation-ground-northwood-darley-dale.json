@@ -9,16 +9,20 @@
   "access": [],
   "facilities": [],
   "opens": "",
-  "description": "Derbyshire Dales District Council lists Northwood Recreation Ground among its smaller parks and gardens. OpenStreetMap shows a playground here, but we haven't yet found an official source that confirms the play equipment.",
+  "description": "Derbyshire Dales District Council lists Northwood Recreation Ground among its smaller parks and gardens. Northwood and Tinkersley Parish Council says (August 2026) it is working towards improving the play facilities there with grant funding, after a new wildflower meadow.",
   "nearby": [],
   "operator": "Derbyshire Dales District Council",
   "sources": [
     {
       "label": "Derbyshire Dales District Council: our smaller parks and gardens",
       "url": "https://www.derbyshiredales.gov.uk/leisure/parks-and-open-spaces/our-smaller-parks-and-gardens"
+    },
+    {
+      "label": "Northwood and Tinkersley Parish Council: recreation ground autumn update (2026)",
+      "url": "https://northwoodandtinkersleyparishcouncil.gov.uk/wp-content/uploads/2026/08/Recreation_Ground_Autumn_Update-Mailshot.pdf"
     }
   ],
-  "checked": null,
-  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking. The pin is a playground mapped on OpenStreetMap (© OpenStreetMap contributors) at the site. The council lists this site as a recreation ground, so the play area itself is unverified.",
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking. The pin is a playground mapped on OpenStreetMap (© OpenStreetMap contributors) at the site.",
   "photo": null
 }
