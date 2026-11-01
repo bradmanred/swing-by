@@ -2,8 +2,8 @@
   "name": "Ray Park Playground",
   "region": "london",
   "area": "Woodford Green, Redbridge",
-  "lat": 51.51,
-  "lng": -0.03,
+  "lat": 51.60755,
+  "lng": 0.04304,
   "ages": [],
   "equipment": [
     "gym",
@@ -24,6 +24,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (approximate), age ranges and opening hours.",
+  "notConfirmed": "Exact position (approximate: mapped from the postcode), age ranges and opening hours.",
   "photo": null
 }

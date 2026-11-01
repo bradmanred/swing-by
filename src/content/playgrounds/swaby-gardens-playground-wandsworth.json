@@ -1,9 +1,9 @@
 {
   "name": "Swaby Gardens Playground",
   "region": "london",
-  "area": "Wandsworth",
-  "lat": 51.51,
-  "lng": -0.03,
+  "area": "Wandsworth Common, Wandsworth",
+  "lat": 51.44102,
+  "lng": -0.1831,
   "ages": [],
   "equipment": [],
   "access": [],
@@ -19,6 +19,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (approximate), play equipment and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
   "photo": null
 }
