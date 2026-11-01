@@ -1,9 +1,21 @@
 // Temporary (removed before merge): reads council park records for London part 3 into tmp/records.json.
 import { writeFile } from 'node:fs/promises';
+import { execFileSync } from 'node:child_process';
 
 const UA = { 'User-Agent': 'Mozilla/5.0 (compatible; SwingBy/1.0; +https://swing-by.co.uk)' };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+// curl gets through where Node's fetch is turned away by some councils' firewalls.
 const get = async (u) => {
+  for (let i = 0; i < 3; i++) {
+    try {
+      const body = execFileSync('curl', ['-sSL', '--fail', '--max-time', '40', '-A', UA['User-Agent'], u], { encoding: 'utf8', maxBuffer: 20e6 });
+      if (body) return body;
+    } catch {}
+    await sleep(4000);
+  }
+  return '';
+};
+const getFetch = async (u) => {
   for (let i = 0; i < 3; i++) {
     try {
       const r = await fetch(u, { headers: UA, redirect: 'follow', signal: AbortSignal.timeout(40000) });
@@ -56,14 +68,6 @@ const crawlDir = async (borough, indexes, follow) => {
     await sleep(500);
   }
 }
-// Lewisham: every park page linked from the parks index.
-{
-  const idx = 'https://lewisham.gov.uk/inmyarea/openspaces/parks';
-  for (const u of await crawlDir('Lewisham', [idx], /lewisham\.gov\.uk\/inmyarea\/openspaces\/parks\/[a-z0-9-]+$/)) {
-    rec('Lewisham', u, await get(u));
-    await sleep(500);
-  }
-}
 // Haringey: the parks and facilities directory, every page.
 {
   const idx = 'https://haringey.gov.uk/leisure-parks-culture/parks-greenspaces/parks-facilities-haringey';
@@ -72,36 +76,5 @@ const crawlDir = async (borough, indexes, follow) => {
     await sleep(700);
   }
 }
-// Hounslow: the parks directory (its category 86 and A to Z), every record.
-{
-  const base = 'https://www.hounslow.gov.uk/directory/1010/parks-and-open-spaces-in-hounslow';
-  const idx = [`${base}/category/86`, `${base}/category/86?page=2`, `${base}/category/86?page=3`, base, ...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((L) => `${base}/a-to-z/${L}`)];
-  for (const u of await crawlDir('Hounslow', idx, /hounslow\.gov\.uk\/directory-record\/\d+\//)) {
-    rec('Hounslow', u, await get(u));
-    await sleep(500);
-  }
-}
-// Waltham Forest: the playgrounds page, and the park pages it and the parks pages link to.
-{
-  const base = 'https://www.walthamforest.gov.uk/libraries-arts-parks-and-leisure/parks-and-open-spaces';
-  const pg = await get(`${base}/our-playgrounds`);
-  rec('Waltham Forest', `${base}/our-playgrounds`, pg, { kind: 'list' });
-  const idx = [`${base}/our-playgrounds`, `${base}/our-other-parks`, `${base}/our-open-spaces`, base];
-  for (const u of await crawlDir('Waltham Forest', idx, /parks-and-open-spaces\/(?:our-open-spaces\/|our-other-parks\/)?[a-z0-9-]+$/)) {
-    if (/our-playgrounds$|bee-friendly|parklets|green-schemes|strategies|resident-groups|volunteering|events|enjoying/.test(u)) continue;
-    rec('Waltham Forest', u, await get(u));
-    await sleep(500);
-  }
-}
-// Harrow: the playground and gym equipment page, and each park page.
-{
-  const base = 'https://www.harrow.gov.uk/environment-parks/';
-  rec('Harrow', `${base}playground-gym-equipment`, await get(`${base}playground-gym-equipment`), { kind: 'list' });
-  for (const u of await crawlDir('Harrow', [`${base}commons-greens-open-space`, `${base}playground-gym-equipment`], /harrow\.gov\.uk\/environment-parks\/[a-z0-9-]+(?:\/\d+)?$/)) {
-    if (!/park|recreation|gardens|common|green|field|wood|marsh/.test(u) || /report|host|memorial|protection|commons-greens|playground-gym/.test(u)) continue;
-    rec('Harrow', u, await get(u));
-    await sleep(500);
-  }
-}
-await writeFile('tmp/records.json', JSON.stringify({ extra, out }, null, 1));
+await writeFile('tmp/records-b.json', JSON.stringify({ extra, out }, null, 1));
 console.log(`${out.length} records saved`);
