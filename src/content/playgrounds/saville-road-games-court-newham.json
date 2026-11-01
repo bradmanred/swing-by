@@ -1,0 +1,26 @@
+{
+  "name": "Saville Road Games Court",
+  "region": "london",
+  "area": "Silvertown, Newham",
+  "lat": 51.53,
+  "lng": 0.03,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Newham Council park with a play area and a floodlit games court.",
+  "nearby": [],
+  "operator": "Newham Council",
+  "sources": [
+    {
+      "label": "Newham Council: find your local park",
+      "url": "https://www.newham.gov.uk/localpark"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (mapped from the postcode), age ranges, play equipment and opening hours.",
+  "photo": null
+}
