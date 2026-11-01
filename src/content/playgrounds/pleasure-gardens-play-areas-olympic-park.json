@@ -1,0 +1,29 @@
+{
+  "name": "Pleasure Gardens Play Areas",
+  "region": "london",
+  "area": "Queen Elizabeth Olympic Park, Stratford",
+  "lat": 51.54,
+  "lng": -0.01,
+  "ages": [],
+  "equipment": [
+    "cl",
+    "sl",
+    "sw",
+    "sp"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Play areas in the south of Queen Elizabeth Olympic Park, with big red rock climbing frames, wide slides, oversized swings and a giant sandpit.",
+  "nearby": [],
+  "operator": "London Legacy Development Corporation",
+  "sources": [
+    {
+      "label": "Queen Elizabeth Olympic Park: playgrounds",
+      "url": "https://www.queenelizabetholympicpark.co.uk/explore-park/parklands-and-playgrounds/playgrounds"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (mapped from the postcode), age ranges and opening hours.",
+  "photo": null
+}
