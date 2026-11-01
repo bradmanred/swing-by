@@ -65,7 +65,7 @@ const boroughs = [...new Set(todo.filter((t) => typeof t.src !== 'string').map((
 const parksIn = {};
 for (const b of boroughs) {
   console.log(`Parks in ${b}`);
-  parksIn[b] = (await overpass(`[out:json][timeout:180];area["name"="${b}"]["boundary"="administrative"]->.a;nwr[leisure=park](area.a);out center tags;`)).map((e) => ({ ...centre(e), name: e.tags?.name ?? '' }));
+  parksIn[b] = (await overpass(`[out:json][timeout:180];area["name"="${b}"]["boundary"="administrative"]->.a;(nwr[leisure~"^(park|common|recreation_ground|garden|nature_reserve|playground)$"](area.a);nwr[landuse=recreation_ground](area.a););out center tags;`)).map((e) => ({ ...centre(e), name: e.tags?.name ?? '' }));
 }
 for (const t of todo) {
   if (typeof t.src === 'string') {
@@ -73,7 +73,9 @@ for (const t of todo) {
     if (g) Object.assign(t, { at: { lat: g.latitude, lng: g.longitude }, where: g.admin_district, r: 1500 });
   } else {
     const re = new RegExp(`^(${t.src.park})$`, 'i');
-    const pk = parksIn[t.src.borough].find((p) => p.lat != null && re.test(p.name.trim()));
+    const key = words(t.src.park.split('|')[0])[0];
+    const all = parksIn[t.src.borough].filter((p) => p.lat != null);
+    const pk = all.find((p) => re.test(p.name.trim())) ?? (key ? all.find((p) => words(p.name).includes(key)) : null);
     if (pk) Object.assign(t, { at: pk, where: `park: ${pk.name}`, r: 400 });
   }
 }
@@ -101,7 +103,7 @@ for (const t of todo) {
     lines.push(`| ${t.id} | ${label} | ? | ${typeof t.src === 'string' ? 'POSTCODE NOT FOUND' : 'PARK NOT FOUND'} | | | |`);
     continue;
   }
-  const ours = new Set([...words(t.doc.name), ...words(t.doc.area)]);
+  const ours = new Set(words(t.doc.name));
   const cands = [...play.values()]
     .filter((c) => !used.has(c.id) && c.t.indoor !== 'yes' && c.t.access !== 'private' && (MEMBERS || !['no', 'customers'].includes(c.t.access)))
     .map((c) => {
@@ -111,7 +113,7 @@ for (const t of todo) {
     })
     .filter((c) => c.d <= t.r)
     .sort((a, b) => a.d - b.d);
-  const pick = cands.find((c) => c.strong) ?? (typeof t.src === 'string' ? cands.find((c) => c.d <= 250) : cands[0]);
+  const pick = cands.find((c) => c.strong && (MEMBERS || typeof t.src !== 'string' || c.d <= 600)) ?? (typeof t.src === 'string' ? cands.find((c) => c.d <= 250) : cands[0]);
   const doc = t.doc;
   const to = pick ?? t.at;
   doc.lat = Math.round(to.lat * 1e5) / 1e5;
