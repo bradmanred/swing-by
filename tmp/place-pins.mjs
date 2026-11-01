@@ -54,6 +54,12 @@ for (const f of await readdir('src/content/playgrounds')) {
 const postcodes = [...new Set(todo.filter((t) => t.src.postcode && t.src.lat == null).map((t) => t.src.postcode))];
 const byPc = {};
 for (let i = 0; i < postcodes.length; i += 100) for (const x of (await postJSON('https://api.postcodes.io/postcodes', { postcodes: postcodes.slice(i, i + 100) })).result) byPc[x.query] = x.result;
+// { any, borough }: any named feature (a street, church or pub) inside the borough, then playgrounds within 300 m.
+for (const t of todo.filter((t) => t.src.any)) {
+  const els = await overpass(`[out:json][timeout:120];area["name"="${t.src.borough}"]["boundary"="administrative"]->.a;nwr[name~"^(${t.src.any})$",i](area.a);out center 5;`);
+  const hit = els.map((e) => ({ ...centre(e), name: e.tags?.name ?? '' })).find((e) => e.lat != null);
+  if (hit) Object.assign(t, { at: hit, how: `named ${hit.name}`, r: 300 });
+}
 const boroughs = [...new Set(todo.filter((t) => t.src.park).map((t) => t.src.borough))];
 const parksIn = {};
 for (const b of boroughs) {

@@ -68,7 +68,7 @@
   "borough": "London Borough of Tower Hamlets"
  },
  "masthouse-terrace-playground-tower-hamlets": {
-  "park": "Masthouse.*|St\\.? Andrews?.*Wharf.*|Millwall Outer Dock.*",
+  "any": "Masthouse Terrace",
   "borough": "London Borough of Tower Hamlets"
  },
  "meath-gardens-playground-tower-hamlets": {
@@ -120,7 +120,7 @@
   "borough": "London Borough of Tower Hamlets"
  },
  "ropewalk-gardens-playground-tower-hamlets": {
-  "park": "Rope ?walk.*",
+  "any": "Rope ?walk Gardens?|Golding Street",
   "borough": "London Borough of Tower Hamlets"
  },
  "ropemakers-fields-playground-tower-hamlets": {
@@ -144,7 +144,7 @@
   "borough": "London Borough of Tower Hamlets"
  },
  "st-paul-s-shadwell-playground-tower-hamlets": {
-  "park": "St\\.? Paul'?s.*Shadwell.*|St\\.? Paul'?s.*Garden.*|St\\.? Paul'?s Church.*",
+  "any": "St\\.? Paul'?s.*(Shadwell)?.*",
   "borough": "London Borough of Tower Hamlets"
  },
  "shandy-park-playground-tower-hamlets": {
@@ -930,7 +930,7 @@
   "borough": "London Borough of Brent"
  },
  "granville-road-playground-brent": {
-  "park": "Granville.*",
+  "any": "Granville Road.*",
   "borough": "London Borough of Brent"
  },
  "grove-park-playground-brent": {
@@ -958,7 +958,7 @@
   "borough": "London Borough of Brent"
  },
  "learie-constantine-open-space-playground-brent": {
-  "park": "Learie Constantine.*",
+  "any": "Learie Constantine.*",
   "borough": "London Borough of Brent"
  },
  "lindsay-park-playground-brent": {
@@ -1082,11 +1082,11 @@
   "borough": "London Borough of Redbridge"
  },
  "martley-drive-play-area-redbridge": {
-  "park": "Martley Drive.*",
+  "any": "Martley Drive.*",
   "borough": "London Borough of Redbridge"
  },
  "redhouse-play-area-redbridge": {
-  "park": "Redhouse.*",
+  "any": "(The )?Red ?House.*",
   "borough": "London Borough of Redbridge"
  },
  "churchfields-recreation-ground-playground-redbridge": {
@@ -1098,7 +1098,7 @@
   "borough": "London Borough of Redbridge"
  },
  "lechmere-avenue-play-area-redbridge": {
-  "park": "Lechmere Avenue.*",
+  "any": "Lechmere Avenue.*",
   "borough": "London Borough of Redbridge"
  },
  "onslow-gardens-playground-redbridge": {
@@ -1110,7 +1110,7 @@
   "borough": "London Borough of Redbridge"
  },
  "rose-avenue-play-area-redbridge": {
-  "park": "Rose Avenue.*",
+  "any": "Rose Avenue.*",
   "borough": "London Borough of Redbridge"
  },
  "valentines-park-playgrounds-redbridge": {
