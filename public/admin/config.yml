@@ -195,7 +195,7 @@ collections:
         required: false
         hint: "Only use photos you have permission to use, with no identifiable children."
         fields:
-          - { label: Image, name: src, widget: image }
-          - { label: Description for screen readers, name: alt, widget: string }
-          - { label: Credit, name: credit, widget: string }
-          - { label: Licence, name: licence, widget: string, hint: "For example CC BY-SA 4.0, or Permission from the council" }
+          - { label: Image, name: src, widget: image, required: false, hint: "Leave blank if there's no photo yet." }
+          - { label: Description for screen readers, name: alt, widget: string, required: false }
+          - { label: Credit, name: credit, widget: string, required: false }
+          - { label: Licence, name: licence, widget: string, required: false, hint: "For example CC BY-SA 4.0, or Permission from the council" }
