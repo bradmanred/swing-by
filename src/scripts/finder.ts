@@ -19,13 +19,33 @@ const km = (a: { lat: number; lng: number }, b: { lat: number; lng: number }) =>
 const PAGE = 12;
 const HIDDEN_KM = 4.83; // 3 miles: how far to look when saying how many unverified playgrounds are hidden
 
+/**
+ * While splash parks are switched on, roughly April to September (Stanborough Park's Splashlands opens in early April,
+ * weather permitting, and closes on the last Sunday in September), bring Splash play up from "More filters" into the
+ * main list, in its usual most-common-first place. The least common filter that isn't pinned (Miniature railway is
+ * always shown) moves down to make room.
+ */
+export function summerFilters(today = new Date()) {
+  const m = today.getMonth();
+  if (m < 3 || m > 8) return; // April (3) to September (8)
+  const top = document.querySelector('.loves > .row');
+  const more = document.querySelector('#more-filters .row');
+  const splash = more?.querySelector<HTMLElement>('[data-season=summer]');
+  if (!top || !more || !splash) return;
+  const bump = [...top.querySelectorAll<HTMLElement>('[data-love]:not([data-pin])')].pop();
+  if (bump) more.prepend(bump);
+  const n = Number(splash.dataset.n);
+  const after = [...top.querySelectorAll<HTMLElement>('[data-love]')].find((b) => Number(b.dataset.n) < n) ?? null;
+  top.insertBefore(splash, after);
+  if (!more.children.length) more.closest('details')?.remove();
+}
+
 export function startFinder() {
   const { parks, towns } = JSON.parse($('#parks-data').textContent!) as { parks: ClientPark[]; towns: Town[] };
   const first = towns[0];
   const st = {
     origin: store.get<Origin>('sb-origin', { name: first.name, lat: first.lat, lng: first.lng, acc: 1500, how: 'example' }),
     ages: new Set<string>(),
-    sizes: new Set<string>(),
     loves: new Set<string>(),
     freeOnly: store.get<boolean>('sb-free-only', false),
     hideUnverified: store.get<boolean>('sb-hide-unverified', false),
@@ -52,7 +72,6 @@ export function startFinder() {
     return parks
       .filter((p) => !st.ages.size || p.ages.some((a) => st.ages.has(a)))
       .filter((p) => [...st.loves].every((k) => p.f.includes(k)))
-      .filter((p) => !st.sizes.size || (p.s != null && st.sizes.has(p.s)))
       .filter((p) => !st.freeOnly || !p.pay);
   }
 
@@ -234,13 +253,6 @@ export function startFinder() {
   document.querySelectorAll<HTMLInputElement>('input[name=age]').forEach((c) =>
     c.addEventListener('change', () => {
       c.checked ? st.ages.add(c.value) : st.ages.delete(c.value);
-      st.limit = PAGE;
-      render();
-    }),
-  );
-  document.querySelectorAll<HTMLInputElement>('input[name=size]').forEach((c) =>
-    c.addEventListener('change', () => {
-      c.checked ? st.sizes.add(c.value) : st.sizes.delete(c.value);
       st.limit = PAGE;
       render();
     }),
