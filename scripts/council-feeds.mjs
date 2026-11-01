@@ -1,6 +1,6 @@
 // Reads a council's own playground list, as described by a "feed" in src/data/council-sources.json:
-// type 'directory' (index pages, a regex for record links, and regexes for the name and coordinates on each record
-// page), or 'geojson' / 'csv' (url, name field, and lat/lng fields). Returns [{ name, lat, lng, url }].
+// type 'directory' (index pages, a regex for record links, regexes for the name and coordinates on each record
+// page, and optionally "require", a regex a record page must match, such as a playground in its facilities list), or 'geojson' / 'csv' (url, name field, and lat/lng fields). Returns [{ name, lat, lng, url }].
 // Used by scripts/find-gaps.mjs (adds new council-listed playgrounds) and scripts/quarterly-check.mjs (spots changes).
 const UA = { 'User-Agent': 'SwingBy/1.0 (https://swing-by.co.uk; reads council playground lists)' };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -17,6 +17,7 @@ export async function readFeed(feed) {
         if (seen.has(u)) continue;
         seen.add(u);
         const page = await fetch(u, { headers: UA }).then((r) => (r.ok ? r.text() : '')).catch(() => '');
+        if (feed.require && !new RegExp(feed.require).test(page)) continue; // e.g. only parks whose facilities list a playground
         const c = page.match(new RegExp(feed.coords));
         const n = page.match(new RegExp(feed.name));
         if (c && n) recs.push({ name: strip(n[1]).replace(/\s+[-|]\s.*$/, ''), lat: Number(c[1]), lng: Number(c[2]), url: u });
