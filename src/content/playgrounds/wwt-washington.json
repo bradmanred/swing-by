@@ -1,0 +1,36 @@
+{
+  "name": "WWT Washington Adventure Play Area",
+  "region": "north-east",
+  "area": "Washington",
+  "lat": 54.0,
+  "lng": -2.0,
+  "ages": [],
+  "equipment": [
+    "cl",
+    "sl",
+    "sp",
+    "wp",
+    "ad"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Nature-based adventure play area with timber trails, rope bridges, climbing frames and a giant slide, plus an Archimedes' screw water pump, a splash zone, a nature kitchen and sand play. Not gated, so children need watching. Open 10am to 5.30pm.",
+  "nearby": [],
+  "operator": "Wildfowl & Wetlands Trust",
+  "membership": "wwt",
+  "fee": "Non-members pay to visit; see the centre's tickets page for prices. WWT members get in free at all 10 wetland centres.",
+  "sources": [
+    {
+      "label": "WWT: children's adventure play areas at Washington",
+      "url": "https://www.wwt.org.uk/wetland-centres/washington/experience/adventure-play-areas"
+    },
+    {
+      "label": "WWT: membership",
+      "url": "https://www.wwt.org.uk/join-and-support/join"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (mapped from the postcode), age ranges and opening hours.",
+  "photo": null
+}

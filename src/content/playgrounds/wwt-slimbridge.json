@@ -1,0 +1,37 @@
+{
+  "name": "WWT Slimbridge Play Areas",
+  "region": "south-west",
+  "area": "Slimbridge",
+  "lat": 54.0,
+  "lng": -2.0,
+  "ages": [],
+  "equipment": [
+    "zw",
+    "bk",
+    "tp",
+    "cl",
+    "wp",
+    "ad"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Welly Boot Land water play with climbing trees and basket swings (weather permitting), the Riverlife playground with a zip line and a tower with a wobbly bridge, lily pad trampolines, log tunnels and a Wild Play area for den building. Many areas are gated. Open 9.30am to 5.30pm.",
+  "nearby": [],
+  "operator": "Wildfowl & Wetlands Trust",
+  "membership": "wwt",
+  "fee": "Non-members pay to visit; see the centre's tickets page for prices. WWT members get in free at all 10 wetland centres.",
+  "sources": [
+    {
+      "label": "WWT: adventure play areas at Slimbridge",
+      "url": "https://www.wwt.org.uk/wetland-centres/slimbridge/experience/adventure-play-areas"
+    },
+    {
+      "label": "WWT: membership",
+      "url": "https://www.wwt.org.uk/join-and-support/join"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (mapped from the postcode), age ranges and opening hours.",
+  "photo": null
+}

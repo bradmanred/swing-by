@@ -1,0 +1,26 @@
+# Temporary (removed before merge): places the new membership playground pins on this branch.
+name: tmp place pins
+on:
+  push:
+    branches: ['claude/memberships']
+    paths: ['tmp/new-pins.json', 'tmp/place-pins.mjs', '.github/workflows/tmp-place-pins.yml']
+permissions:
+  contents: write
+jobs:
+  place:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - run: node tmp/place-pins.mjs
+      - run: cat tmp/pins-report.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Commit the pins
+        run: |
+          git config user.name "swing-by-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/content/playgrounds tmp/pins-report.md
+          git commit -m "Place the new membership playground pins"
+          git push
