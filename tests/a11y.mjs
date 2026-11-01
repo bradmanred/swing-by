@@ -255,13 +255,56 @@ try {
   await page.goto(BASE + '/playgrounds/verulamium/');
   if ((await page.locator('#peq-details').getAttribute('open')) !== null) fail('equipment form should be folded away on a checked playground');
 
-  // Size filter lives under "More filters" and only shows graded playgrounds of that size.
+  // Equipment filters: the 20 most common are shown, the next ones sit under "More filters", most common first.
+  // Play area size isn't on the finder any more: it's on Advanced search. Checked on a winter date, so Splash play
+  // sits where its count puts it whenever the tests run.
+  await page.clock.setFixedTime(new Date('2027-01-15T12:00:00'));
   await page.goto(BASE + '/');
+  const shownLoves = await page.locator('.loves > .row [data-love]').count();
+  const moreLoves = await page.locator('#more-filters [data-love]').count();
+  if (shownLoves !== 20) fail(`the finder should show 20 equipment filters, got ${shownLoves}`);
+  if (!(moreLoves > 0 && moreLoves <= 20)) fail(`"More filters" should hold up to 20 more equipment filters, got ${moreLoves}`);
+  if (await page.locator('input[name=size]').count()) fail('play area size should not be on the finder');
+  const parksData = JSON.parse(await page.locator('#parks-data').textContent()).parks;
+  const keys = await page.locator('[data-love]').evaluateAll((els) => els.map((e) => e.dataset.love));
+  const counts = keys.map((k) => parksData.filter((x) => x.f.includes(k)).length);
+  const pinned = await page.locator('[data-love][data-pin]').evaluateAll((els) => els.map((e) => e.dataset.love));
+  const order = keys.map((k, i) => [k, counts[i]]).filter(([k]) => !pinned.includes(k)).map(([, n]) => n);
+  if (order.some((n, i) => i && n > order[i - 1])) fail(`equipment filters should be most common first, got ${keys.map((k, i) => k + ':' + counts[i]).join(' ')}`);
+  // Miniature railway is always in the main list, however few playgrounds have it.
+  if (!(await page.locator('.loves > .row [data-love="tr"]').count())) fail('Miniature railway should always be in the main filter list');
   await page.getByText('More filters').click();
-  await page.getByRole('checkbox', { name: /^Large/ }).check();
-  const sized = await page.locator('#cards .card').count();
-  const large = await page.locator('#cards .card .size-large').count();
-  if (!(sized > 0 && sized === large)) fail(`size filter: ${sized} cards, ${large} marked large`);
+  const lastKey = keys[keys.length - 1];
+  await page.locator(`#more-filters [data-love="${lastKey}"]`).click();
+  const withIt = parksData.filter((x) => x.f.includes(lastKey)).length;
+  const shownCount = Number((await page.locator('#count').textContent()).match(/\d+/)?.[0]);
+  if (!(shownCount > 0 && shownCount <= withIt)) fail(`a filter under "More filters" should narrow the results to ${withIt} or fewer, got ${shownCount}`);
+
+  // From April to September, while splash parks are on, Splash play moves up into the main list (if it isn't there
+  // already), with 20 still shown. In winter it goes back to where its count puts it.
+  for (const [when, inSeason] of [['2027-04-01T12:00:00', true], ['2027-09-30T12:00:00', true], ['2027-07-15T12:00:00', true], ['2027-01-15T12:00:00', false]]) {
+    const p2 = await browser.newPage();
+    await p2.clock.setFixedTime(new Date(when));
+    await p2.goto(BASE + '/');
+    const wpTop = await p2.locator('.loves > .row [data-love="wp"]').count();
+    const wpRanked = keys.indexOf('wp') > -1 && keys.indexOf('wp') < 20;
+    if (inSeason && !wpTop) fail(`Splash play should be in the main filter list on ${when}`);
+    if (!inSeason && !!wpTop !== wpRanked) fail(`Splash play should only be in the main list by count on ${when}`);
+    if ((await p2.locator('.loves > .row [data-love]').count()) !== 20) fail(`the main filter list should have 20 on ${when}`);
+    if (!(await p2.locator('.loves > .row [data-love="tr"]').count())) fail(`Miniature railway should stay in the main list on ${when}`);
+    await p2.close();
+  }
+
+  // Advanced search: ticking a size lists only graded playgrounds of that size, with or without search words.
+  const index = JSON.parse(await readFile(join('dist', 'search-index.json'), 'utf8'));
+  const largeCount = index.parks.filter((x) => x.s === 'large').length;
+  await page.goto(BASE + '/search/?size=large');
+  await page.waitForFunction(() => /playground/.test(document.getElementById('search-status')?.textContent ?? ''));
+  const status = await page.locator('#search-status').textContent();
+  if (!(largeCount > 0 && status.startsWith(`${largeCount} playground`))) fail(`size search: expected ${largeCount} large playgrounds, status was "${status}"`);
+  if (!(await page.getByRole('checkbox', { name: /^Large/ }).isChecked())) fail('size search: the Large box should be ticked from the address');
+  await page.getByRole('checkbox', { name: /^Large/ }).uncheck();
+  if (await page.locator('#search-results .hit').count()) fail('size search: unticking the size with no search words should clear the results');
 
   // Free entry only: hides every playground with a fee, and only those.
   await page.goto(BASE + '/');
