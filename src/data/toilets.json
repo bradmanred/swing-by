@@ -5,9 +5,9 @@
   "licence": "CC BY 4.0",
   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
   "note": "Nearest toilets worked out by Swing By from the Toilet Map data.",
-  "export": "toilets-2026-10-29T00%3A00%3A41.012Z-yz7x7MstBUjpaJFPEMU6HaKZWqkWYh.csv"
+  "export": "toilets-2026-11-01T00%3A00%3A41.010Z-kLNSopYzd0TqFMnROXvXMrIRRtmvID.csv"
  },
- "toilets": 15828,
+ "toilets": 15833,
  "parks": {
   "1066-battle-abbey-natural-play-area": {
    "nearest": {
@@ -591,6 +591,18 @@
     "free": true,
     "lat": 51.9062972,
     "lng": 0.9045013
+   }
+  },
+  "aldrington-recreation-ground-hove": {
+   "nearest": {
+    "id": "8c5b6e2cfc08b32dbe54c7e3",
+    "name": "CLOSED - Aldrington Recreation (Saxon Rd)",
+    "m": 345,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 50.830214652,
+    "lng": -0.197978288
    }
   },
   "alexandra-park-play-area-aston": {
@@ -2045,14 +2057,14 @@
   },
   "baldock-road-recreation-ground-play-area": {
    "nearest": {
-    "id": "f678b8e348380381a276186b",
-    "name": "BP garage",
-    "m": 842,
+    "id": "4c0bdfbc81d1d6edeb767d24",
+    "name": "Letchworth Sainsbury’s",
+    "m": 774,
     "babyChange": null,
-    "accessible": false,
+    "accessible": true,
     "free": true,
-    "lat": 51.969468299,
-    "lng": -0.213830098
+    "lat": 51.981997027,
+    "lng": -0.203486681
    },
    "nearestBabyChange": {
     "id": "14cf3bd826faaecf4a8e091f",
@@ -2492,6 +2504,28 @@
     "free": true,
     "lat": 51.755406522,
     "lng": 0.51933217
+   }
+  },
+  "barn-rise-playground-brighton": {
+   "nearest": {
+    "id": "4110016d67691e3b10e695dd",
+    "name": "Withdean Sports Complex",
+    "m": 576,
+    "babyChange": false,
+    "accessible": true,
+    "free": true,
+    "lat": 50.852848838,
+    "lng": -0.160292578
+   },
+   "nearestBabyChange": {
+    "id": "70bc74d4a6dbbedea176bee6",
+    "name": "Patcham Library - Brighton",
+    "m": 1129,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 50.863174386,
+    "lng": -0.14392395
    }
   },
   "barnacres-play-area-hemel-hempstead": {
@@ -3665,6 +3699,18 @@
     "lng": -1.41308555
    }
   },
+  "bexhill-road-playground-woodingdean": {
+   "nearest": {
+    "id": "2309907e3b85dd650ec28947",
+    "name": "Lawn Memorial Cemetary, Brighton",
+    "m": 1546,
+    "babyChange": false,
+    "accessible": true,
+    "free": true,
+    "lat": 50.834120458,
+    "lng": -0.082856946
+   }
+  },
   "bicclescombe-park-play-area-ilfracombe-north-devon": {
    "nearest": {
     "id": "4cbbb9539946f8a5ab2b4070",
@@ -4072,6 +4118,18 @@
     "free": true,
     "lat": 54.989172226,
     "lng": -1.657937765
+   }
+  },
+  "blakers-park-brighton": {
+   "nearest": {
+    "id": "b5d30eb6a6203be8ea65a051",
+    "name": "Blakers Park - Brighton",
+    "m": 153,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 50.841936957,
+    "lng": -0.137866663
    }
   },
   "blockhouse-play-area-stoke-plymouth": {
@@ -6592,6 +6650,18 @@
     "lng": -1.246701479
    }
   },
+  "carden-park-brighton": {
+   "nearest": {
+    "id": "0a1e4a26a5db9b5c07e82223",
+    "name": "Asda Superstore - Brighton North (Hollingbury)",
+    "m": 420,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 50.868470697,
+    "lng": -0.124091922
+   }
+  },
   "carisbrooke-avenue-play-area-clacton-on-sea": {
    "nearest": {
     "id": "e0e1eb66ffb863b040bdfdbf",
@@ -7274,6 +7344,28 @@
     "free": true,
     "lat": 51.384162621,
     "lng": 0.525820255
+   }
+  },
+  "chalk-pit-playground-portslade": {
+   "nearest": {
+    "id": "6a2498ed1cc2bf27725d3aec",
+    "name": "Greenleas - Portslade",
+    "m": 452,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 50.846445148,
+    "lng": -0.205262129
+   },
+   "nearestBabyChange": {
+    "id": "8058cc9519665ef4e3c67c22",
+    "name": "Easthill Park - Brighton",
+    "m": 558,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 50.842813674,
+    "lng": -0.214885158
    }
   },
   "chalkhill-blue-playground-picket-piece-andover": {
@@ -12040,6 +12132,18 @@
   "dyffryn-gardens-natural-play-areas": {
    "nearest": null
   },
+  "dyke-road-park-hove": {
+   "nearest": {
+    "id": "4ab6cba753d82ea17d038fc5",
+    "name": "Dyke Road Park, Brighton",
+    "m": 225,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 50.836430366,
+    "lng": -0.153043857
+   }
+  },
   "dyrham-park-play-area": {
    "nearest": {
     "id": "457d0fc979f6b6e767684c2b",
@@ -12100,6 +12204,28 @@
   },
   "east-anstey-playground-east-anstey-north-devon": {
    "nearest": null
+  },
+  "east-brighton-park-brighton": {
+   "nearest": {
+    "id": "de0de4212862480e06d32d27",
+    "name": "East Brighton Park",
+    "m": 92,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 50.819033695,
+    "lng": -0.099509954
+   },
+   "nearestBabyChange": {
+    "id": "ad131dd2174052e008d81450",
+    "name": "Asda Superstore - Brighton Marina Village",
+    "m": 566,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 50.813670155,
+    "lng": -0.103468895
+   }
   },
   "east-common-play-area-redbourn": {
    "nearest": {
@@ -12346,6 +12472,18 @@
     "free": true,
     "lat": 55.013432416,
     "lng": -1.661242247
+   }
+  },
+  "easthill-park-portslade": {
+   "nearest": {
+    "id": "8058cc9519665ef4e3c67c22",
+    "name": "Easthill Park - Brighton",
+    "m": 232,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 50.842813674,
+    "lng": -0.214885158
    }
   },
   "eastnor-castle-play-area": {
@@ -13494,6 +13632,28 @@
     "free": true,
     "lat": 51.801222848,
     "lng": -0.204435825
+   }
+  },
+  "farm-green-playground-brighton": {
+   "nearest": {
+    "id": "2309907e3b85dd650ec28947",
+    "name": "Lawn Memorial Cemetary, Brighton",
+    "m": 1308,
+    "babyChange": false,
+    "accessible": true,
+    "free": true,
+    "lat": 50.834120458,
+    "lng": -0.082856946
+   },
+   "nearestBabyChange": {
+    "id": "5a07831a304ced8044ff30f2",
+    "name": "Dobbies Garden Centre - Brighton",
+    "m": 1312,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 50.831351278,
+    "lng": -0.111143978
    }
   },
   "farnley-hall-park-farnley-leeds": {
@@ -16057,6 +16217,28 @@
     "lng": -1.712057823
    }
   },
+  "greenleas-recreation-ground-hove": {
+   "nearest": {
+    "id": "6a2498ed1cc2bf27725d3aec",
+    "name": "Greenleas - Portslade",
+    "m": 144,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 50.846445148,
+    "lng": -0.205262129
+   },
+   "nearestBabyChange": {
+    "id": "2ad9e7dea1fc01f504a768a3",
+    "name": "Hangleton Library - Hove",
+    "m": 569,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 50.845471263,
+    "lng": -0.195710063
+   }
+  },
   "greenstead-field-playground-colchester": {
    "nearest": {
     "id": "23c39bef013157014df79546",
@@ -16476,6 +16658,28 @@
     "lng": -1.420109085
    }
   },
+  "haig-avenue-playground-brighton": {
+   "nearest": {
+    "id": "bd3cd0b3d27ada0c3fd6320d",
+    "name": "Coldean Library (Brighton)",
+    "m": 128,
+    "babyChange": false,
+    "accessible": true,
+    "free": true,
+    "lat": 50.863520831,
+    "lng": -0.113054509
+   },
+   "nearestBabyChange": {
+    "id": "ce48c583ec517f93379c17df",
+    "name": "Public toilet",
+    "m": 737,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 50.869488575,
+    "lng": -0.106022358
+   }
+  },
   "haldens-park-play-area-welwyn-garden-cit": {
    "nearest": {
     "id": "2152913e5bea491bd7292791",
@@ -16691,6 +16895,18 @@
     "lng": -1.3489445
    }
   },
+  "hangleton-park-hove": {
+   "nearest": {
+    "id": "2ad9e7dea1fc01f504a768a3",
+    "name": "Hangleton Library - Hove",
+    "m": 664,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 50.845471263,
+    "lng": -0.195710063
+   }
+  },
   "hangsman-lane-playground-laughton-common": {
    "nearest": {
     "id": "7c9e68d0a7f5b1e2181adbdd",
@@ -16713,6 +16929,28 @@
     "free": true,
     "lat": 50.858967179,
     "lng": -3.39160502
+   }
+  },
+  "happy-valley-woodingdean": {
+   "nearest": {
+    "id": "2309907e3b85dd650ec28947",
+    "name": "Lawn Memorial Cemetary, Brighton",
+    "m": 1257,
+    "babyChange": false,
+    "accessible": true,
+    "free": true,
+    "lat": 50.834120458,
+    "lng": -0.082856946
+   },
+   "nearestBabyChange": {
+    "id": "1de4de983ad52ac922fb3a84",
+    "name": "Stanley Deason Leisure Centre",
+    "m": 2117,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 50.823523972,
+    "lng": -0.099546513
    }
   },
   "harberton-playground-harberton-south-hams": {
@@ -18677,6 +18915,18 @@
     "lng": -1.598992835
    }
   },
+  "hodshrove-road-playground-brighton": {
+   "nearest": {
+    "id": "6e4b0601f94e5532f11a14dc",
+    "name": "Moulescoomb Community Leisure Centre",
+    "m": 349,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 50.850943655,
+    "lng": -0.108214257
+   }
+  },
   "hogden-bottom-play-area-tadworth": {
    "nearest": {
     "id": "073fd619d98c91639e4f269e",
@@ -18830,6 +19080,40 @@
   },
   "hollingarth-way-play-area-hemyock-mid-devon": {
    "nearest": null
+  },
+  "hollingbury-park-brighton": {
+   "nearest": {
+    "id": "7ee11acc9c93637cd1028eee",
+    "name": "Hollingbury Park - Brighton",
+    "m": 223,
+    "babyChange": true,
+    "accessible": false,
+    "free": null,
+    "lat": 50.847749078,
+    "lng": -0.134968758
+   }
+  },
+  "hollingdean-park-brighton": {
+   "nearest": {
+    "id": "8ca24fbac0bb88a7e0e5b08a",
+    "name": "Moulsecoombe Library Brighton",
+    "m": 611,
+    "babyChange": false,
+    "accessible": true,
+    "free": true,
+    "lat": 50.847005625,
+    "lng": -0.115855336
+   },
+   "nearestBabyChange": {
+    "id": "7ee11acc9c93637cd1028eee",
+    "name": "Hollingbury Park - Brighton",
+    "m": 756,
+    "babyChange": true,
+    "accessible": false,
+    "free": null,
+    "lat": 50.847749078,
+    "lng": -0.134968758
+   }
   },
   "hollowgate-playground-rotherham": {
    "nearest": {
@@ -19350,6 +19634,30 @@
     "free": true,
     "lat": 53.230435,
     "lng": -1.2962615
+   }
+  },
+  "hove-lagoon-hove": {
+   "nearest": {
+    "id": "65ef1a373d9046168c05537f",
+    "name": "Lagoon (Kingsway) - Portslade",
+    "m": 105,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 50.826775089,
+    "lng": -0.195976901
+   }
+  },
+  "hove-park-hove": {
+   "nearest": {
+    "id": "e1b63e6e901fb0541f976b6e",
+    "name": "Hove Park, Hove",
+    "m": 212,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 50.840695532,
+    "lng": -0.172606825
    }
   },
   "howard-close-recreation-ground-walton-on-the-hill": {
@@ -20844,14 +21152,14 @@
     "lng": -0.202762021
    },
    "nearestBabyChange": {
-    "id": "5093aec35f03e8aadc39d360",
-    "name": "Town Square",
-    "m": 547,
+    "id": "5cb5679090b644e79968309c",
+    "name": "Stevenage Bus Station",
+    "m": 498,
     "babyChange": true,
     "accessible": true,
     "free": true,
-    "lat": 51.9016689,
-    "lng": -0.2020929
+    "lat": 51.902103229,
+    "lng": -0.205349922
    }
   },
   "king-george-v-playing-fields-watford": {
@@ -21090,6 +21398,18 @@
     "free": true,
     "lat": 51.684576499,
     "lng": -0.033195019
+   }
+  },
+  "kings-road-playground-brighton": {
+   "nearest": {
+    "id": "be90b0d4e500d9a69fb36722",
+    "name": "The Arches, Lower Promenade, West Pier",
+    "m": 56,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 50.821582913,
+    "lng": -0.151416063
    }
   },
   "kings-tamerton-play-area-st-budeaux-plymouth": {
@@ -21623,6 +21943,28 @@
     "lng": -2.196695584
    }
   },
+  "knoll-recreation-ground-hove": {
+   "nearest": {
+    "id": "f48607311aecb513d8945d60",
+    "name": "Hove Cemetary North",
+    "m": 233,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 50.838695284,
+    "lng": -0.197740162
+   },
+   "nearestBabyChange": {
+    "id": "2ad9e7dea1fc01f504a768a3",
+    "name": "Hangleton Library - Hove",
+    "m": 621,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 50.845471263,
+    "lng": -0.195710063
+   }
+  },
   "knowles-road-play-area-reigate-and-banstead": {
    "nearest": {
     "id": "fd32fba6ac4e0c842f89ee49",
@@ -21657,14 +21999,14 @@
     "lng": -0.396519634
    },
    "nearestBabyChange": {
-    "id": "845359b04828ca5f399edb61",
-    "name": "Sainsbury's Superstore - Watford",
-    "m": 1343,
+    "id": "07300d0171f2bf0f65c0bd7c",
+    "name": "Meriden Community Centre",
+    "m": 1290,
     "babyChange": true,
     "accessible": true,
-    "free": false,
-    "lat": 51.658660426,
-    "lng": -0.399270952
+    "free": true,
+    "lat": 51.6782793,
+    "lng": -0.3806952
    }
   },
   "koala-park-play-area-tilbury": {
@@ -23976,6 +24318,18 @@
     "lng": 1.2493676
    }
   },
+  "mackie-park-brighton": {
+   "nearest": {
+    "id": "70bc74d4a6dbbedea176bee6",
+    "name": "Patcham Library - Brighton",
+    "m": 227,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 50.863174386,
+    "lng": -0.14392395
+   }
+  },
   "madams-wood-road-playing-fields-salford": {
    "nearest": {
     "id": "60cd386221674b6ee3322db9",
@@ -24216,6 +24570,18 @@
     "free": true,
     "lat": 52.0645773,
     "lng": -0.535554
+   }
+  },
+  "manor-road-playground-brighton": {
+   "nearest": {
+    "id": "606d8a1277b98a6317947cb9",
+    "name": "Whitehawk Library",
+    "m": 629,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 50.825992669,
+    "lng": -0.107288361
    }
   },
   "manstone-recreation-ground-play-area-sidmouth": {
@@ -25046,14 +25412,14 @@
   },
   "meriden-park-watford": {
    "nearest": {
-    "id": "b550b3c80a033a871c0fce7e",
-    "name": "Sainsbury's Superstore - Garston",
-    "m": 614,
+    "id": "07300d0171f2bf0f65c0bd7c",
+    "name": "Meriden Community Centre",
+    "m": 18,
     "babyChange": true,
     "accessible": true,
     "free": true,
-    "lat": 51.681391851,
-    "lng": -0.388308764
+    "lat": 51.6782793,
+    "lng": -0.3806952
    }
   },
   "merrivale-road-play-area-exeter": {
@@ -25188,6 +25554,18 @@
     "free": true,
     "lat": 51.9062972,
     "lng": 0.9045013
+   }
+  },
+  "mile-oak-recreation-ground-portslade": {
+   "nearest": {
+    "id": "ac6a203598ef1c4443779d2c",
+    "name": "Mile Oak Library",
+    "m": 244,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 50.850877447,
+    "lng": -0.226407189
    }
   },
   "milken-lane-play-area-ashover": {
@@ -26345,6 +26723,18 @@
     "free": false,
     "lat": 52.773297917,
     "lng": -1.564361765
+   }
+  },
+  "newhaven-street-playground-brighton": {
+   "nearest": {
+    "id": "3c2cfd61c73fc2f34111c8bc",
+    "name": "The Level - Brighton",
+    "m": 375,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 50.830629715,
+    "lng": -0.13384223
    }
   },
   "newmarket-road-recreation-ground-play-ar": {
@@ -29447,6 +29837,18 @@
     "free": false,
     "lat": 51.311938167,
     "lng": -0.625469685
+   }
+  },
+  "peter-pans-playground-brighton": {
+   "nearest": {
+    "id": "6b776d2d159760df8835e2c2",
+    "name": "Peter Pans Playground",
+    "m": 85,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 50.816827677,
+    "lng": -0.121936503
    }
   },
   "peterborough-services-playground-peterborough-services-haddo": {
@@ -34393,24 +34795,14 @@
   },
   "playground-off-canter-close-aldenham-hertsmere": {
    "nearest": {
-    "id": "fc1cf7d0e3edb420148aad20",
-    "name": "Bushey Rose Garden",
-    "m": 2414,
-    "babyChange": null,
-    "accessible": null,
-    "free": null,
-    "lat": 51.644002226,
-    "lng": -0.360692776
-   },
-   "nearestBabyChange": {
-    "id": "ce9db1854310c73d5d981099",
-    "name": "The Red Lion PH",
-    "m": 2418,
+    "id": "07300d0171f2bf0f65c0bd7c",
+    "name": "Meriden Community Centre",
+    "m": 2374,
     "babyChange": true,
     "accessible": true,
     "free": true,
-    "lat": 51.645012767,
-    "lng": -0.366282463
+    "lat": 51.6782793,
+    "lng": -0.3806952
    }
   },
   "playground-off-canterbury-way-st-nicholas-stevenage": {
@@ -38474,14 +38866,14 @@
   },
   "playground-off-dunhams-lane-jubilee-industrial-centre-letchw": {
    "nearest": {
-    "id": "86ebfb8f4839697b4f398957",
-    "name": "Public toilet",
-    "m": 862,
+    "id": "4c0bdfbc81d1d6edeb767d24",
+    "name": "Letchworth Sainsbury’s",
+    "m": 561,
     "babyChange": null,
-    "accessible": false,
+    "accessible": true,
     "free": true,
-    "lat": 51.97881438,
-    "lng": -0.22309618
+    "lat": 51.981997027,
+    "lng": -0.203486681
    },
    "nearestBabyChange": {
     "id": "14cf3bd826faaecf4a8e091f",
@@ -41882,21 +42274,11 @@
     "id": "a67b489d54ae2b2c4004c723",
     "name": "Fish Hill / Priory Gardens",
     "m": 1130,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 52.0465775,
-    "lng": -0.0212822
-   },
-   "nearestBabyChange": {
-    "id": "d8194b881cdfd8928ab4ad8d",
-    "name": "The Chalk Hare",
-    "m": 1131,
     "babyChange": true,
     "accessible": true,
     "free": true,
-    "lat": 52.048379993,
-    "lng": -0.021986067
+    "lat": 52.0465775,
+    "lng": -0.0212822
    }
   },
   "playground-off-harrowden-road-kingsbrook-bedford": {
@@ -41923,14 +42305,14 @@
   },
   "playground-off-hartswood-close-otterspool-bushey": {
    "nearest": {
-    "id": "453d55140cf62a4fbb854cca",
-    "name": "Tesco Extra Superstore - Watford",
-    "m": 2119,
+    "id": "07300d0171f2bf0f65c0bd7c",
+    "name": "Meriden Community Centre",
+    "m": 1910,
     "babyChange": true,
     "accessible": true,
-    "free": false,
-    "lat": 51.651631588,
-    "lng": -0.38760066
+    "free": true,
+    "lat": 51.6782793,
+    "lng": -0.3806952
    }
   },
   "playground-off-hatfield-road-fleetville-st-albans": {
@@ -50103,14 +50485,14 @@
   },
   "playground-off-pascal-way-jubilee-industrial-centre-letchwor": {
    "nearest": {
-    "id": "c7829ac598439a1855831220",
-    "name": "Bickerdikes Garden Centre",
-    "m": 1120,
+    "id": "4c0bdfbc81d1d6edeb767d24",
+    "name": "Letchworth Sainsbury’s",
+    "m": 749,
     "babyChange": null,
     "accessible": true,
     "free": true,
-    "lat": 51.996346078,
-    "lng": -0.207286477
+    "lat": 51.981997027,
+    "lng": -0.203486681
    },
    "nearestBabyChange": {
     "id": "14cf3bd826faaecf4a8e091f",
@@ -56054,14 +56436,14 @@
   },
   "playground-off-the-stables-aldenham-hertsmere": {
    "nearest": {
-    "id": "b550b3c80a033a871c0fce7e",
-    "name": "Sainsbury's Superstore - Garston",
-    "m": 2263,
+    "id": "07300d0171f2bf0f65c0bd7c",
+    "name": "Meriden Community Centre",
+    "m": 1781,
     "babyChange": true,
     "accessible": true,
     "free": true,
-    "lat": 51.681391851,
-    "lng": -0.388308764
+    "lat": 51.6782793,
+    "lng": -0.3806952
    }
   },
   "playground-off-the-street-trottiscliffe-tonbridge-and-mallin": {
@@ -56876,14 +57258,14 @@
   },
   "playground-off-tudor-drive-north-watford-watford": {
    "nearest": {
-    "id": "235d5de6876f50930a115a3f",
-    "name": "Asda Watford Supercentre",
-    "m": 778,
+    "id": "07300d0171f2bf0f65c0bd7c",
+    "name": "Meriden Community Centre",
+    "m": 608,
     "babyChange": true,
     "accessible": true,
     "free": true,
-    "lat": 51.6795478,
-    "lng": -0.390591649
+    "lat": 51.6782793,
+    "lng": -0.3806952
    }
   },
   "playground-off-tudor-drive-tawstock-north-devon": {
@@ -57840,14 +58222,14 @@
     "lng": -0.2069622
    },
    "nearestBabyChange": {
-    "id": "5093aec35f03e8aadc39d360",
-    "name": "Town Square",
-    "m": 649,
+    "id": "5cb5679090b644e79968309c",
+    "name": "Stevenage Bus Station",
+    "m": 444,
     "babyChange": true,
     "accessible": true,
     "free": true,
-    "lat": 51.9016689,
-    "lng": -0.2020929
+    "lat": 51.902103229,
+    "lng": -0.205349922
    }
   },
   "playground-off-waywell-close-cinnamon-brow-warrington-2": {
@@ -59659,6 +60041,18 @@
     "lng": -3.5595078
    }
   },
+  "preston-park-brighton": {
+   "nearest": {
+    "id": "e76b92d044d515222ad8e536",
+    "name": "Preston Park Rotunda",
+    "m": 119,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 50.837747878,
+    "lng": -0.143696666
+   }
+  },
   "preston-park-tadworth": {
    "nearest": {
     "id": "b1818c96a67df5dba9815d78",
@@ -59944,21 +60338,11 @@
     "id": "a67b489d54ae2b2c4004c723",
     "name": "Fish Hill / Priory Gardens",
     "m": 28,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 52.0465775,
-    "lng": -0.0212822
-   },
-   "nearestBabyChange": {
-    "id": "603694af5291fac693b5ac48",
-    "name": "The Old Bull Inn",
-    "m": 149,
     "babyChange": true,
     "accessible": true,
     "free": true,
-    "lat": 52.046004581,
-    "lng": -0.02279073
+    "lat": 52.0465775,
+    "lng": -0.0212822
    }
   },
   "priory-park-reigate": {
@@ -60321,6 +60705,18 @@
     "free": true,
     "lat": 53.577483628,
     "lng": -2.443862557
+   }
+  },
+  "queens-park-brighton": {
+   "nearest": {
+    "id": "faae53ae1ad2469b1dc31097",
+    "name": "Queens Park Play Area",
+    "m": 139,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 50.824332471,
+    "lng": -0.126647931
    }
   },
   "queens-park-play-area-manchester": {
@@ -61697,6 +62093,28 @@
   "rothwell-playground-rothwell": {
    "nearest": null
   },
+  "rottingdean-field-playground-rottingdean": {
+   "nearest": {
+    "id": "f4fba669048d826e39da547e",
+    "name": "Rottingdean Recreation Ground",
+    "m": 52,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 50.810004291,
+    "lng": -0.061862469
+   },
+   "nearestBabyChange": {
+    "id": "3406810cd0ffe1a4c422db34",
+    "name": "Rottingdean Library",
+    "m": 525,
+    "babyChange": true,
+    "accessible": true,
+    "free": null,
+    "lat": 50.805865231,
+    "lng": -0.057426095
+   }
+  },
   "roundtable-meet-play-area-exeter": {
    "nearest": {
     "id": "c44c343bde228183ee415ca3",
@@ -62255,6 +62673,28 @@
     "lng": -4.197879732
    }
   },
+  "saltdean-oval-saltdean": {
+   "nearest": {
+    "id": "943f809c3ba0c8a48bd1e128",
+    "name": "Saltdean Oval",
+    "m": 262,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 50.803619728,
+    "lng": -0.042091826
+   },
+   "nearestBabyChange": {
+    "id": "3549dbfc2f544326435c56eb",
+    "name": "Saltdean Undercliff",
+    "m": 382,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 50.800445918,
+    "lng": -0.040781737
+   }
+  },
   "saltwell-park-play-area-saltwell-gateshead": {
    "nearest": {
     "id": "f5f92ae16ed6b2d7786fadb2",
@@ -62409,6 +62849,28 @@
     "free": true,
     "lat": 52.048379993,
     "lng": -0.021986067
+   }
+  },
+  "saunders-park-brighton": {
+   "nearest": {
+    "id": "1d0b9dfd86a1b12d969d174b",
+    "name": "Saunders Park",
+    "m": 146,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 50.838625622,
+    "lng": -0.124413597
+   },
+   "nearestBabyChange": {
+    "id": "e96770ee5c519df59876ed07",
+    "name": "Sainsburys Superstore - Brighton",
+    "m": 266,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 50.836928735,
+    "lng": -0.125773802
    }
   },
   "sawley-new-park-long-eaton": {
@@ -64147,6 +64609,18 @@
     "lng": 0.9045013
    }
   },
+  "st-anns-well-gardens-hove": {
+   "nearest": {
+    "id": "1942cf65816a20c37e8501a3",
+    "name": "St Anns Well Gardens - Hove",
+    "m": 282,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 50.829841352,
+    "lng": -0.156551344
+   }
+  },
   "st-brides-playground-colchester": {
    "nearest": {
     "id": "ae24072234cf55bca078e68f",
@@ -64559,6 +65033,18 @@
     "free": true,
     "lat": 50.43374315,
     "lng": -3.565444032
+   }
+  },
+  "st-nicholas-church-playground-brighton": {
+   "nearest": {
+    "id": "0976c0063b8daa431d6136f4",
+    "name": "Metro Bank",
+    "m": 226,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 50.823666349,
+    "lng": -0.144335032
    }
   },
   "st-nicholas-park-stevenage": {
@@ -65363,6 +65849,28 @@
     "lng": -0.344901933
    }
   },
+  "stoneham-park-hove": {
+   "nearest": {
+    "id": "c3136c87e9aeb31b2ba3b594",
+    "name": "Hove Household Waste Recycling Site",
+    "m": 382,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 50.837278829,
+    "lng": -0.182378491
+   },
+   "nearestBabyChange": {
+    "id": "08e0287127401742ade6af24",
+    "name": "Lidl",
+    "m": 777,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 50.837706465,
+    "lng": -0.174484591
+   }
+  },
   "stonelow-play-area-dronfield": {
    "nearest": {
     "id": "5c604ded89f08335064bcaa7",
@@ -65726,21 +66234,11 @@
     "id": "a67b489d54ae2b2c4004c723",
     "name": "Fish Hill / Priory Gardens",
     "m": 513,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 52.0465775,
-    "lng": -0.0212822
-   },
-   "nearestBabyChange": {
-    "id": "603694af5291fac693b5ac48",
-    "name": "The Old Bull Inn",
-    "m": 597,
     "babyChange": true,
     "accessible": true,
     "free": true,
-    "lat": 52.046004581,
-    "lng": -0.02279073
+    "lat": 52.0465775,
+    "lng": -0.0212822
    }
   },
   "subrosa-drive-play-area-reigate-and-banstead": {
@@ -66075,6 +66573,18 @@
     "lng": -0.45770824
    }
   },
+  "swanborough-drive-playground-brighton": {
+   "nearest": {
+    "id": "5a07831a304ced8044ff30f2",
+    "name": "Dobbies Garden Centre - Brighton",
+    "m": 685,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 50.831351278,
+    "lng": -0.111143978
+   }
+  },
   "swans-length-playground-alvechurch-cp-bromsgrove": {
    "nearest": {
     "id": "448a8988ec78037ed4d6deef",
@@ -66384,6 +66894,18 @@
     "free": true,
     "lat": 53.251932402,
     "lng": -1.421163082
+   }
+  },
+  "tarner-park-brighton": {
+   "nearest": {
+    "id": "faae53ae1ad2469b1dc31097",
+    "name": "Queens Park Play Area",
+    "m": 230,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 50.824332471,
+    "lng": -0.126647931
    }
   },
   "tattenham-way-recreation-ground-tattenham-way": {
@@ -66904,6 +67426,18 @@
     "free": true,
     "lat": 56.16247527,
     "lng": -3.671295047
+   }
+  },
+  "the-level-brighton": {
+   "nearest": {
+    "id": "3c2cfd61c73fc2f34111c8bc",
+    "name": "The Level - Brighton",
+    "m": 171,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 50.830629715,
+    "lng": -0.13384223
    }
   },
   "the-moatfield-play-area-bushey": {
@@ -68188,6 +68722,18 @@
     "lng": 0.2721278
    }
   },
+  "vale-avenue-playground-brighton": {
+   "nearest": {
+    "id": "70bc74d4a6dbbedea176bee6",
+    "name": "Patcham Library - Brighton",
+    "m": 253,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 50.863174386,
+    "lng": -0.14392395
+   }
+  },
   "vale-farm-road-play-area-woking": {
    "nearest": {
     "id": "439c7adc90808b8172705c10",
@@ -68244,6 +68790,28 @@
     "free": true,
     "lat": 53.230435,
     "lng": -1.2962615
+   }
+  },
+  "vale-park-portslade": {
+   "nearest": {
+    "id": "cc80d170e6477c816a41d14d",
+    "name": "Vale Park - Portslade",
+    "m": 138,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 50.833489392,
+    "lng": -0.211298229
+   },
+   "nearestBabyChange": {
+    "id": "8797857524c3704572ae3fad",
+    "name": "Tesco Metro",
+    "m": 256,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 50.834148276,
+    "lng": -0.207093358
    }
   },
   "valley-gardens-play-area-castleford": {
@@ -68506,6 +69074,18 @@
     "free": false,
     "lat": 50.462952683,
     "lng": -3.53819935
+   }
+  },
+  "victoria-park-portslade": {
+   "nearest": {
+    "id": "2c4c0b19bb3e6316fef5d71b",
+    "name": "Portslade Library",
+    "m": 199,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 50.838186393,
+    "lng": -0.211536146
    }
   },
   "victoria-park-salford": {
@@ -70044,6 +70624,30 @@
     "lng": 0.263897181
    }
   },
+  "whitehawk-junior-playground-brighton": {
+   "nearest": {
+    "id": "606d8a1277b98a6317947cb9",
+    "name": "Whitehawk Library",
+    "m": 270,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 50.825992669,
+    "lng": -0.107288361
+   }
+  },
+  "whitehawk-senior-playground-brighton": {
+   "nearest": {
+    "id": "606d8a1277b98a6317947cb9",
+    "name": "Whitehawk Library",
+    "m": 201,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 50.825992669,
+    "lng": -0.107288361
+   }
+  },
   "whitehill-park-and-play-area-aylesbury-buckinghamshire": {
    "nearest": {
     "id": "aeab0e9a99d0005283fb5a81",
@@ -70415,6 +71019,18 @@
     "free": true,
     "lat": 50.903036867,
     "lng": -3.486037699
+   }
+  },
+  "william-clarke-park-brighton": {
+   "nearest": {
+    "id": "e96770ee5c519df59876ed07",
+    "name": "Sainsburys Superstore - Brighton",
+    "m": 442,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 50.836928735,
+    "lng": -0.125773802
    }
   },
   "william-morrison-play-area-hyde-park-antrim-and-newtownabbey": {
@@ -71153,6 +71769,28 @@
     "lng": -0.55698216
    }
   },
+  "wolseley-road-playground-brighton": {
+   "nearest": {
+    "id": "bd3cd0b3d27ada0c3fd6320d",
+    "name": "Coldean Library (Brighton)",
+    "m": 308,
+    "babyChange": false,
+    "accessible": true,
+    "free": true,
+    "lat": 50.863520831,
+    "lng": -0.113054509
+   },
+   "nearestBabyChange": {
+    "id": "69af2279866024f1f056b8b1",
+    "name": "Wild Park - Brighton",
+    "m": 414,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 50.85722762,
+    "lng": -0.111713585
+   }
+  },
   "wombwell-park-northfleet": {
    "nearest": {
     "id": "a740f6d0c45cb6b31b2df5ab",
@@ -71346,6 +71984,28 @@
     "free": false,
     "lat": 53.703804253,
     "lng": -1.776313052
+   }
+  },
+  "woodingdean-central-park-woodingdean": {
+   "nearest": {
+    "id": "2309907e3b85dd650ec28947",
+    "name": "Lawn Memorial Cemetary, Brighton",
+    "m": 1193,
+    "babyChange": false,
+    "accessible": true,
+    "free": true,
+    "lat": 50.834120458,
+    "lng": -0.082856946
+   },
+   "nearestBabyChange": {
+    "id": "1de4de983ad52ac922fb3a84",
+    "name": "Stanley Deason Leisure Centre",
+    "m": 2652,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 50.823523972,
+    "lng": -0.099546513
    }
   },
   "woodland-tree-houses-and-climbing-barbican-plymouth": {
@@ -71543,6 +72203,18 @@
   },
   "woolfardisworthy-playground-woolfardisworthy-torridge": {
    "nearest": null
+  },
+  "woollards-field-brighton": {
+   "nearest": {
+    "id": "6e4b0601f94e5532f11a14dc",
+    "name": "Moulescoomb Community Leisure Centre",
+    "m": 889,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 50.850943655,
+    "lng": -0.108214257
+   }
   },
   "woollens-grove-play-area-hoddesdon": {
    "nearest": {
