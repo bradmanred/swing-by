@@ -211,15 +211,15 @@ img.art { aspect-ratio: 360 / 170; object-fit: cover; background: var(--blue-sof
 .spot-nearby { background: var(--yellow); opacity: 0.9; }
 
 /* Advert banner placeholder: space is reserved so the page doesn't jump when an ad loads. */
-.ad-slot { padding-bottom: 32px; }
-.ad-box { max-width: 728px; min-height: 90px; margin: 0 auto; display: grid; place-items: center; border: 3px dashed var(--muted); border-radius: 12px; background: var(--white); color: var(--muted); font-size: 0.875rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
-@media (max-width: 760px) { .ad-box { max-width: 320px; min-height: 100px; } }
-.ad-affiliate { border-style: solid; border-color: var(--muted); gap: 4px; padding: 12px 16px; text-align: center; text-transform: none; letter-spacing: normal; font-weight: 400; color: var(--ink); }
-.ad-affiliate p { margin: 0; }
-.ad-affiliate .ad-label { color: var(--muted); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
-.ad-affiliate .ad-pick { font-size: 1rem; }
-.ad-affiliate .ad-pick a { font-weight: 700; }
-.ad-affiliate .ad-note { color: var(--muted); font-size: 0.8125rem; }
+.partner-slot { padding-bottom: 32px; }
+.pick-box { max-width: 728px; min-height: 90px; margin: 0 auto; display: grid; place-items: center; border: 3px dashed var(--muted); border-radius: 12px; background: var(--white); color: var(--muted); font-size: 0.875rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
+@media (max-width: 760px) { .pick-box { max-width: 320px; min-height: 100px; } }
+.partner-pick { border-style: solid; border-color: var(--muted); gap: 4px; padding: 12px 16px; text-align: center; text-transform: none; letter-spacing: normal; font-weight: 400; color: var(--ink); }
+.partner-pick p { margin: 0; }
+.partner-pick .pick-label { color: var(--muted); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
+.partner-pick .pick-line { font-size: 1rem; }
+.partner-pick .pick-line a { font-weight: 700; }
+.partner-pick .pick-note { color: var(--muted); font-size: 0.8125rem; }
 
 /* Parent photos */
 .photo-cap { padding: 8px 16px; }
