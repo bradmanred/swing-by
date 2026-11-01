@@ -1,0 +1,22 @@
+# Temporary (removed before merge): reads council park records (tmp/crawl.mjs) into tmp/records.json.
+name: tmp crawl
+on:
+  push:
+    branches: ['claude/london-2']
+    paths: ['tmp/crawl.mjs', '.github/workflows/tmp-crawl.yml']
+permissions:
+  contents: write
+jobs:
+  crawl:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - run: node tmp/crawl.mjs
+      - run: |
+          git config user.name "swing-by-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tmp/records.json && git commit -m "tmp: council records" && git pull --rebase origin claude/london-2 && git push
