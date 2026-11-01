@@ -1,9 +1,9 @@
 {
   "name": "Mapesbury Dell park and garden Playground",
   "region": "london",
-  "area": "Brent",
-  "lat": 51.51,
-  "lng": -0.03,
+  "area": "Cricklewood and Mapesbury, Brent",
+  "lat": 51.55293,
+  "lng": -0.21375,
   "ages": [],
   "equipment": [],
   "access": [],
@@ -19,6 +19,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (approximate), play equipment and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
   "photo": null
 }

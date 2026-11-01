@@ -1,9 +1,9 @@
 {
   "name": "Brondesbury Park Playground",
   "region": "london",
-  "area": "Brent",
-  "lat": 51.51,
-  "lng": -0.03,
+  "area": "Brondesbury Park, Brent",
+  "lat": 51.54606,
+  "lng": -0.22453,
   "ages": [
     "3-6",
     "7-12"
@@ -22,6 +22,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (approximate), play equipment and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
   "photo": null
 }

@@ -1,9 +1,9 @@
 {
   "name": "Queensmead Recreation Ground Playground",
   "region": "london",
-  "area": "Bromley",
-  "lat": 51.51,
-  "lng": -0.03,
+  "area": "Shortlands and Park Langley, Bromley",
+  "lat": 51.40532,
+  "lng": 0.00867,
   "ages": [],
   "equipment": [],
   "access": [],
@@ -19,6 +19,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (approximate), play equipment and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
   "photo": null
 }

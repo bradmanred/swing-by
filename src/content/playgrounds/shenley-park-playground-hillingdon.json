@@ -1,9 +1,9 @@
 {
   "name": "Shenley Park Playground",
   "region": "london",
-  "area": "Hillingdon",
-  "lat": 51.51,
-  "lng": -0.03,
+  "area": "Ruislip Manor, Hillingdon",
+  "lat": 51.57261,
+  "lng": -0.41359,
   "ages": [],
   "equipment": [
     "gym"
@@ -21,6 +21,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (approximate), play equipment and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
   "photo": null
 }

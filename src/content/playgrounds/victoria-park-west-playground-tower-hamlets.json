@@ -2,8 +2,8 @@
   "name": "Victoria Park West Playground",
   "region": "london",
   "area": "Victoria Park, Tower Hamlets",
-  "lat": 51.51,
-  "lng": -0.03,
+  "lat": 51.53558,
+  "lng": -0.04315,
   "ages": [
     "under-3",
     "3-6",
@@ -26,6 +26,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (approximate), play equipment and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
   "photo": null
 }

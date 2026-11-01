@@ -1,9 +1,9 @@
 {
   "name": "Biggin Hill Recreation Ground Playground",
   "region": "london",
-  "area": "Bromley",
-  "lat": 51.51,
-  "lng": -0.03,
+  "area": "Biggin Hill, Bromley",
+  "lat": 51.31313,
+  "lng": 0.03752,
   "ages": [],
   "equipment": [
     "gym",
@@ -23,6 +23,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (approximate), play equipment and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
   "photo": null
 }

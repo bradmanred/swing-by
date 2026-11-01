@@ -1,9 +1,9 @@
 {
   "name": "Gladstone Park Playground",
   "region": "london",
-  "area": "Brent",
-  "lat": 51.51,
-  "lng": -0.03,
+  "area": "Dollis Hill, Brent",
+  "lat": 51.55844,
+  "lng": -0.23136,
   "ages": [],
   "equipment": [
     "gym"
@@ -23,6 +23,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (approximate), play equipment and opening hours.",
+  "notConfirmed": "Exact position (approximate: mapped from the postcode), play equipment and opening hours.",
   "photo": null
 }

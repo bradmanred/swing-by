@@ -1,9 +1,9 @@
 {
   "name": "Swakeleys Park Playground",
   "region": "london",
-  "area": "Hillingdon",
-  "lat": 51.51,
-  "lng": -0.03,
+  "area": "Ickenham and South Harefield, Hillingdon",
+  "lat": 51.56211,
+  "lng": -0.45272,
   "ages": [],
   "equipment": [],
   "access": [],
@@ -19,6 +19,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (approximate), play equipment and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
   "photo": null
 }
