@@ -1,10 +1,10 @@
 # Quarterly check for changes to playgrounds already listed (scripts/quarterly-check.mjs). Runs without Claude: it
 # reads the council lists that have a feed in src/data/council-sources.json, checks playgrounds sourced from
 # OpenStreetMap are still mapped, checks every official source link still works, and lists playgrounds not checked
-# for over a year. It changes no files; it opens a "Quarterly playground check" issue with what it found, and the
-# full lists are in the run's "quarterly-check" artifact. The issue is labelled check-report, so the daily "Fix check
-# reports" Claude task works through it (see docs/fixing-check-reports.md). Runs on the 10th of January, April, July
-# and October, and on demand.
+# for over a year. The check itself changes no files; its full lists are in the run's "quarterly-check" artifact.
+# The "fix" job then hands the report to Claude in the same run (fix-check-report.yml), which fixes what it can and
+# opens a pull request for review. If Claude isn't set up or can't finish, it opens a check-report issue instead, for
+# the daily "Fix check reports" Claude task (see docs/fixing-check-reports.md). Runs on the 10th of January, April, July and October, and on demand.
 name: Quarterly playground check
 on:
   workflow_dispatch:
@@ -16,7 +16,6 @@ on:
     - cron: '23 5 10 1,4,7,10 *'
 permissions:
   contents: read
-  issues: write
 concurrency:
   group: quarterly-check
   cancel-in-progress: false
@@ -37,12 +36,17 @@ jobs:
         with:
           name: quarterly-check
           path: reports/
-      - name: Open the report as an issue
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          set -euo pipefail
-          cat reports/quarterly-check.md >> "$GITHUB_STEP_SUMMARY"
-          { cat reports/quarterly-check.md; echo; echo "Full lists: the quarterly-check artifact on [this run]($GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID)."; } > body.md
-          head -c 60000 body.md > issue.md
-          gh api "repos/$GITHUB_REPOSITORY/issues" -f title="Quarterly playground check, $(date +%Y-%m-%d)" -F body=@issue.md -f "labels[]=check-report" --jq .html_url
+      - name: Show the report
+        run: cat reports/quarterly-check.md >> "$GITHUB_STEP_SUMMARY"
+  fix:
+    needs: check
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+      id-token: write
+    uses: ./.github/workflows/fix-check-report.yml
+    with:
+      artifact: quarterly-check
+      title: Quarterly playground check
+    secrets: inherit
