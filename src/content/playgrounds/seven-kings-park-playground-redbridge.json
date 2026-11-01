@@ -2,8 +2,8 @@
   "name": "Seven Kings Park Playground",
   "region": "london",
   "area": "Seven Kings, Redbridge",
-  "lat": 51.51,
-  "lng": -0.03,
+  "lat": 51.57394,
+  "lng": 0.1002,
   "ages": [],
   "equipment": [
     "sk"
@@ -21,6 +21,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (approximate), age ranges and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges and opening hours.",
   "photo": null
 }

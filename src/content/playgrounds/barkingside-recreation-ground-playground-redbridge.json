@@ -2,8 +2,8 @@
   "name": "Barkingside Recreation Ground Playground",
   "region": "london",
   "area": "Barkingside, Redbridge",
-  "lat": 51.51,
-  "lng": -0.03,
+  "lat": 51.58747,
+  "lng": 0.07637,
   "ages": [],
   "equipment": [
     "sw",
@@ -28,6 +28,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (approximate), age ranges and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges and opening hours.",
   "photo": null
 }
