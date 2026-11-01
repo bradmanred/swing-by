@@ -1,0 +1,145 @@
+# Fixes a check's findings straight away, as part of the check's own run, instead of leaving an issue for later.
+# A check workflow (such as quarterly-check.yml) uploads its report as an artifact, then calls this workflow:
+#
+#   fix:
+#     needs: check
+#     uses: ./.github/workflows/fix-check-report.yml
+#     with: { artifact: quarterly-check, title: Quarterly playground check }
+#     secrets: inherit
+#
+# Claude (the Claude Code GitHub Action) works through the report following docs/fixing-check-reports.md and opens
+# one pull request for the owner to review. Nothing is ever merged automatically.
+#
+# It needs one repository secret (Settings > Secrets and variables > Actions): CLAUDE_CODE_OAUTH_TOKEN (run
+# `claude setup-token` with a Claude subscription) or ANTHROPIC_API_KEY (billed per use). Without either, or if
+# Claude fails or can't finish, it falls back to opening a `check-report` issue as before, so the daily "Fix check
+# reports" Claude task picks up whatever is left. Nothing is lost either way.
+name: Fix check report
+on:
+  workflow_call:
+    inputs:
+      artifact:
+        description: Name of the artifact holding the report (a .md and its full .json)
+        type: string
+        required: true
+      title:
+        description: Report title, used for the issue and the pull request
+        type: string
+        required: true
+    secrets:
+      ANTHROPIC_API_KEY:
+        required: false
+      CLAUDE_CODE_OAUTH_TOKEN:
+        required: false
+jobs:
+  fix:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+      id-token: write
+    env:
+      HAS_CLAUDE: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN != '' || secrets.ANTHROPIC_API_KEY != '' }}
+      BRANCH: claude/fix-${{ inputs.artifact }}-${{ github.run_id }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - uses: actions/download-artifact@v4
+        with:
+          name: ${{ inputs.artifact }}
+          path: check-report/
+      - name: Get ready
+        run: |
+          set -euo pipefail
+          git config user.name "Claude"
+          git config user.email "noreply@anthropic.com"
+          git checkout -b "$BRANCH"
+          echo "check-report/" >> .git/info/exclude
+          echo "dist/" >> .git/info/exclude
+          ls check-report/
+      - name: Install for build and test
+        if: env.HAS_CLAUDE == 'true'
+        run: npm ci && npx playwright install --with-deps chromium
+      - name: Fix the findings with Claude
+        if: env.HAS_CLAUDE == 'true'
+        id: claude
+        continue-on-error: true
+        uses: anthropics/claude-code-action@v1
+        with:
+          github_token: ${{ github.token }}
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          claude_args: >-
+            --max-turns 600
+            --allowedTools "Bash,Read,Write,Edit,MultiEdit,Glob,Grep,WebSearch,WebFetch,TodoWrite"
+          prompt: |
+            You're fixing the findings of an automated check on the Swing By playground site, in the same GitHub
+            Actions run that made the report. Nobody is watching. The owner reviews your pull request afterwards.
+
+            1. Read CLAUDE.md, README.md, docs/finding-playgrounds.md and docs/fixing-check-reports.md. The last one
+               is your playbook: follow it exactly. In particular, confirm every finding on an official source
+               (council, operator or membership body) before editing. Never delete a playground. Never use Google
+               Maps or Places data. Update `checked` only on playgrounds you really re-checked.
+            2. The report is in check-report/ (the .md, plus the .json with the full lists). Work through every
+               finding in the order the report lists them. This runner can reach council sites directly (curl or
+               node fetch) as well as WebSearch and WebFetch. If the checker itself caused false alarms, fix it in
+               scripts/ and add a test in tests/.
+            3. Commit as you go on the current branch (${{ env.BRANCH }}). Don't commit check-report/ or dist/.
+               End every commit message with:
+               Co-Authored-By: Claude <noreply@anthropic.com>
+            4. If any playground files changed, run `node scripts/nearest-toilets.mjs` and commit
+               src/data/toilets.json if it changed. Pull requests opened from Actions don't start other workflows,
+               so "Update nearest toilets" won't run by itself.
+            5. Run `npm run build` and `npm test`. Fix anything you broke.
+            6. Push the branch: `git push -u origin ${{ env.BRANCH }}`. Then open one pull request against main with
+               `gh api repos/${{ github.repository }}/pulls --input <json file>` (title: "Fix findings from the
+               ${{ inputs.title }}"). Don't merge it. The description lists: what changed, findings that were
+               wrong, "For the owner to decide" (possible closures, and playgrounds left without an official
+               source), "Couldn't check", and "Not done yet". Link this run:
+               ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+               End the description with: 🤖 Generated with [Claude Code](https://claude.com/claude-code)
+               If GitHub refuses to open the pull request (Actions may not be allowed to), leave the branch pushed.
+            7. Write the pull request's URL (or nothing, if it couldn't be opened) to check-report/fix-pr.txt.
+               Write any findings you didn't get to, as a Markdown list in the report's own wording, to
+               check-report/remaining.md. Leave it empty if every finding was dealt with (fixed, found wrong,
+               left for the owner, or couldn't be checked). Don't commit either file.
+      - name: Open an issue for anything left
+        if: always()
+        env:
+          TITLE: ${{ inputs.title }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          CLAUDE_OUTCOME: ${{ steps.claude.outcome }}
+        run: |
+          set -euo pipefail
+          report=$(ls check-report/*.md | grep -v remaining.md | head -1)
+          pr=$(cat check-report/fix-pr.txt 2>/dev/null || true)
+          pushed=$(git ls-remote --heads origin "$BRANCH" | wc -l)
+          if [ -n "$pr" ] && [ ! -s check-report/remaining.md ]; then
+            echo "Claude fixed every finding: $pr" | tee -a "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          if [ -n "$pr" ]; then
+            # Part done: list what's left, so the daily Claude task carries on in the same pull request's branch.
+            { echo "# $TITLE: what's left"; echo
+              echo "Claude fixed part of this check in the same run and opened $pr (branch \`$BRANCH\`). These findings are still to do. Carry on in that pull request."; echo
+              cat check-report/remaining.md; echo
+              echo "Full lists: the ${{ inputs.artifact }} artifact on [this run]($RUN_URL)."; } > body.md
+          else
+            if [ "$HAS_CLAUDE" != "true" ]; then
+              why="Claude isn't set up for this repository (add CLAUDE_CODE_OAUTH_TOKEN or ANTHROPIC_API_KEY to fix reports automatically), so the daily Claude task will work through it."
+            elif [ "$pushed" != "0" ]; then
+              why="Claude's fixes are on the branch \`$BRANCH\`, but no pull request could be opened (outcome: ${CLAUDE_OUTCOME:-unknown}). Open one from that branch, or let the daily Claude task carry on from it."
+            else
+              why="Claude tried to fix these in the same run but didn't finish (outcome: ${CLAUDE_OUTCOME:-unknown}), so the daily Claude task will work through it."
+            fi
+            { echo "$why"; echo; cat "$report"; echo
+              echo "Full lists: the ${{ inputs.artifact }} artifact on [this run]($RUN_URL)."; } > body.md
+          fi
+          head -c 60000 body.md > issue.md
+          cat issue.md >> "$GITHUB_STEP_SUMMARY"
+          gh api "repos/$GITHUB_REPOSITORY/issues" -f title="$TITLE, $(date +%Y-%m-%d)" -F body=@issue.md -f "labels[]=check-report" --jq .html_url

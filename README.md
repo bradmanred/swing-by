@@ -130,14 +130,14 @@ Run it from the Actions tab (Check pin positions > Run workflow), with a region 
 
 ## Quarterly check for changes
 
-Four times a year (the 10th of January, April, July and October) the **Quarterly playground check** workflow (`.github/workflows/quarterly-check.yml`, `scripts/quarterly-check.mjs`) looks for changes to playgrounds we already list, without needing Claude. It changes no files. It opens a "Quarterly playground check" issue listing:
+Four times a year (the 10th of January, April, July and October) the **Quarterly playground check** workflow (`.github/workflows/quarterly-check.yml`, `scripts/quarterly-check.mjs`) looks for changes to playgrounds we already list. The check itself doesn't need Claude and changes no files. It reports:
 
 - playgrounds a council with a machine-readable list (a `feed` in `src/data/council-sources.json`) no longer lists, ones that may have been renamed, and new ones on the council's list;
 - playgrounds sourced from OpenStreetMap whose mapped playground has been deleted, retagged or marked private;
 - official source links that now return "not found" (404 or 410), which often means a listing has changed or gone;
 - playgrounds with an official source that haven't been checked for over a year.
 
-Each list is capped in the issue; the full lists are in the run's `quarterly-check` artifact. Check each item against its official source before editing or removing a playground. Run it any time from the Actions tab (Quarterly playground check > Run workflow), optionally leaving out parts such as `links`. The council-list reader is shared with Check coverage (`scripts/council-feeds.mjs`).
+Each list is capped in the report; the full lists are in the run's `quarterly-check` artifact. As soon as the check finishes, the same run hands the report to Claude (`.github/workflows/fix-check-report.yml`), which checks each item against its official source, fixes what it can and opens a pull request for you to review. If Claude isn't set up (it needs a `CLAUDE_CODE_OAUTH_TOKEN` or `ANTHROPIC_API_KEY` repository secret) or doesn't finish, the run opens a `check-report` issue instead, and the daily "Fix check reports" Claude task works through it. See [docs/fixing-check-reports.md](docs/fixing-check-reports.md). Run it any time from the Actions tab (Quarterly playground check > Run workflow), optionally leaving out parts such as `links`. The council-list reader is shared with Check coverage (`scripts/council-feeds.mjs`).
 
 ## Coming next
 
