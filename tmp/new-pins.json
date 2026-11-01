@@ -68,7 +68,7 @@
   "borough": "London Borough of Tower Hamlets"
  },
  "masthouse-terrace-playground-tower-hamlets": {
-  "park": "Masthouse Terrace.*|St Andrews? Wharf.*",
+  "park": "Masthouse.*|St\\.? Andrews?.*Wharf.*|Millwall Outer Dock.*",
   "borough": "London Borough of Tower Hamlets"
  },
  "meath-gardens-playground-tower-hamlets": {
@@ -120,7 +120,7 @@
   "borough": "London Borough of Tower Hamlets"
  },
  "ropewalk-gardens-playground-tower-hamlets": {
-  "park": "Ropewalk Gardens",
+  "park": "Rope ?walk.*",
   "borough": "London Borough of Tower Hamlets"
  },
  "ropemakers-fields-playground-tower-hamlets": {
@@ -144,7 +144,7 @@
   "borough": "London Borough of Tower Hamlets"
  },
  "st-paul-s-shadwell-playground-tower-hamlets": {
-  "park": "St\\.? Paul'?s.*",
+  "park": "St\\.? Paul'?s.*Shadwell.*|St\\.? Paul'?s.*Garden.*|St\\.? Paul'?s Church.*",
   "borough": "London Borough of Tower Hamlets"
  },
  "shandy-park-playground-tower-hamlets": {
@@ -798,11 +798,11 @@
   "borough": "London Borough of Wandsworth"
  },
  "garratt-green-playground-wandsworth": {
-  "postcode": "SW18 0AE",
+  "park": "Garratt Green",
   "borough": "London Borough of Wandsworth"
  },
  "garratt-park-playground-wandsworth": {
-  "postcode": "SW18 0LA",
+  "park": "Garratt Park",
   "borough": "London Borough of Wandsworth"
  },
  "harroway-road-playground-wandsworth": {
@@ -838,11 +838,11 @@
   "borough": "London Borough of Wandsworth"
  },
  "shillington-gardens-playground-wandsworth": {
-  "postcode": "SW11 2TG",
+  "park": "Shillington.*",
   "borough": "London Borough of Wandsworth"
  },
  "swaby-gardens-playground-wandsworth": {
-  "postcode": "SW17 3PX",
+  "park": "Swaby.*",
   "borough": "London Borough of Wandsworth"
  },
  "tooting-common-lakeside-playground-wandsworth": {
@@ -914,7 +914,7 @@
   "borough": "London Borough of Brent"
  },
  "eton-grove-open-space-playground-brent": {
-  "postcode": "NW9 9LD",
+  "park": "Eton Grove.*",
   "borough": "London Borough of Brent"
  },
  "franklyn-road-pocket-park-playground-brent": {
@@ -930,7 +930,7 @@
   "borough": "London Borough of Brent"
  },
  "granville-road-playground-brent": {
-  "park": "Granville\\ Road",
+  "park": "Granville.*",
   "borough": "London Borough of Brent"
  },
  "grove-park-playground-brent": {
@@ -958,7 +958,7 @@
   "borough": "London Borough of Brent"
  },
  "learie-constantine-open-space-playground-brent": {
-  "postcode": "NW2 5QA",
+  "park": "Learie Constantine.*",
   "borough": "London Borough of Brent"
  },
  "lindsay-park-playground-brent": {
@@ -1040,5 +1040,85 @@
  "woodhouse-urban-park-playground-brent": {
   "park": "Woodhouse\\ Urban\\ Park",
   "borough": "London Borough of Brent"
+ },
+ "broomfield-park-adventure-playground-enfield": {
+  "park": "Broomfield Park",
+  "borough": "London Borough of Enfield"
+ },
+ "grovelands-park-playground-enfield": {
+  "park": "Grovelands Park",
+  "borough": "London Borough of Enfield"
+ },
+ "oakwood-park-playground-enfield": {
+  "park": "Oakwood Park",
+  "borough": "London Borough of Enfield"
+ },
+ "crucible-park-playground-redbridge": {
+  "postcode": "RM6 4SN",
+  "borough": "London Borough of Redbridge"
+ },
+ "oaks-lane-recreation-ground-playground-redbridge": {
+  "postcode": "IG2 7QH",
+  "borough": "London Borough of Redbridge"
+ },
+ "loxford-park-playground-redbridge": {
+  "postcode": "IG1 2PL",
+  "borough": "London Borough of Redbridge"
+ },
+ "seven-kings-park-playground-redbridge": {
+  "postcode": "IG3 8QP",
+  "borough": "London Borough of Redbridge"
+ },
+ "uphall-recreation-ground-playground-redbridge": {
+  "park": "Uphall Recreation Ground",
+  "borough": "London Borough of Redbridge"
+ },
+ "barkingside-recreation-ground-playground-redbridge": {
+  "park": "Barkingside Recreation Ground|Queen Elizabeth II Field.*",
+  "borough": "London Borough of Redbridge"
+ },
+ "clayhall-park-playground-redbridge": {
+  "postcode": "IG5 0EB",
+  "borough": "London Borough of Redbridge"
+ },
+ "martley-drive-play-area-redbridge": {
+  "park": "Martley Drive.*",
+  "borough": "London Borough of Redbridge"
+ },
+ "redhouse-play-area-redbridge": {
+  "park": "Redhouse.*",
+  "borough": "London Borough of Redbridge"
+ },
+ "churchfields-recreation-ground-playground-redbridge": {
+  "postcode": "E18 2RB",
+  "borough": "London Borough of Redbridge"
+ },
+ "elmhurst-gardens-playground-redbridge": {
+  "park": "Elmhurst Gardens",
+  "borough": "London Borough of Redbridge"
+ },
+ "lechmere-avenue-play-area-redbridge": {
+  "park": "Lechmere Avenue.*",
+  "borough": "London Borough of Redbridge"
+ },
+ "onslow-gardens-playground-redbridge": {
+  "park": "Onslow Gardens",
+  "borough": "London Borough of Redbridge"
+ },
+ "ray-park-playground-redbridge": {
+  "postcode": "IG8 7JF",
+  "borough": "London Borough of Redbridge"
+ },
+ "rose-avenue-play-area-redbridge": {
+  "park": "Rose Avenue.*",
+  "borough": "London Borough of Redbridge"
+ },
+ "valentines-park-playgrounds-redbridge": {
+  "postcode": "IG1 4TG",
+  "borough": "London Borough of Redbridge"
+ },
+ "hainault-forest-adventure-play-redbridge": {
+  "postcode": "IG7 4QN",
+  "borough": "London Borough of Redbridge"
  }
 }
