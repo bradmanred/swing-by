@@ -1,0 +1,24 @@
+{
+  "name": "Cundy Road Open Space",
+  "region": "london",
+  "area": "Canning Town, Newham",
+  "lat": 51.51029,
+  "lng": 0.03033,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Newham Council park with a play area, off Victoria Dock Road.",
+  "nearby": [],
+  "operator": "Newham Council",
+  "sources": [
+    {
+      "label": "Newham Council: find your local park",
+      "url": "https://www.newham.gov.uk/localpark"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment and opening hours.",
+  "photo": null
+}

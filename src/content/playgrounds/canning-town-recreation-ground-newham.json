@@ -1,0 +1,27 @@
+{
+  "name": "Canning Town Recreation Ground",
+  "region": "london",
+  "area": "Custom House, Newham",
+  "lat": 51.51539,
+  "lng": 0.02608,
+  "ages": [],
+  "equipment": [
+    "sp",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Newham Council park with a play area with sand play and a ball court. Its paddling pool is waiting for repair, the council says.",
+  "nearby": [],
+  "operator": "Newham Council",
+  "sources": [
+    {
+      "label": "Newham Council: find your local park",
+      "url": "https://www.newham.gov.uk/localpark"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment and opening hours.",
+  "photo": null
+}

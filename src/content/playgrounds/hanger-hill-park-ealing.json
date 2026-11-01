@@ -1,0 +1,26 @@
+{
+  "name": "Hanger Hill Park Playground",
+  "region": "london",
+  "area": "Ealing, Ealing",
+  "lat": 51.52482,
+  "lng": -0.29643,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "cf"
+  ],
+  "opens": "",
+  "description": "Ealing Council park with a playground, a pitch and putt course and refreshments. Entrances on Hillcrest Road, Fox Lane and Hanger Lane.",
+  "nearby": [],
+  "operator": "Ealing Council",
+  "sources": [
+    {
+      "label": "Ealing Council: Ealing parks",
+      "url": "https://www.ealing.gov.uk/info/201136/parks_in_the_borough/662/ealing_parks"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment and opening hours.",
+  "photo": null
+}

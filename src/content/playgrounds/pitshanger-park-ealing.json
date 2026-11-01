@@ -1,0 +1,26 @@
+{
+  "name": "Pitshanger Park Playground",
+  "region": "london",
+  "area": "Ealing, Ealing",
+  "lat": 51.52899,
+  "lng": -0.31515,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "Ealing Council park with a playground, a play centre, toilets and a car park, plus tennis, football and bowls.",
+  "nearby": [],
+  "operator": "Ealing Council",
+  "sources": [
+    {
+      "label": "Ealing Council: Ealing parks",
+      "url": "https://www.ealing.gov.uk/info/201136/parks_in_the_borough/662/ealing_parks"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment and opening hours.",
+  "photo": null
+}

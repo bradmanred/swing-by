@@ -1,0 +1,26 @@
+{
+  "name": "Southall Park Playground",
+  "region": "london",
+  "area": "Southall, Ealing",
+  "lat": 51.50897,
+  "lng": -0.36759,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Ealing Council park with a playground, a play centre, a tennis court and a multi-use games area.",
+  "nearby": [],
+  "operator": "Ealing Council",
+  "sources": [
+    {
+      "label": "Ealing Council: Southall parks",
+      "url": "https://www.ealing.gov.uk/info/201136/parks_in_the_borough/667/southall_parks"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment and opening hours.",
+  "photo": null
+}

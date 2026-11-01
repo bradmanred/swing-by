@@ -1,0 +1,29 @@
+{
+  "name": "Plashet Park",
+  "region": "london",
+  "area": "East Ham, Newham",
+  "lat": 51.54106,
+  "lng": 0.04523,
+  "ages": [],
+  "equipment": [
+    "wp",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [
+    "cf"
+  ],
+  "opens": "",
+  "description": "Newham Council park with a play area with water play, a cafeteria, a games court and tennis courts.",
+  "nearby": [],
+  "operator": "Newham Council",
+  "sources": [
+    {
+      "label": "Newham Council: find your local park",
+      "url": "https://www.newham.gov.uk/localpark"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment and opening hours.",
+  "photo": null
+}

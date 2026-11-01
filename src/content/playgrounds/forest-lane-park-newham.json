@@ -1,0 +1,29 @@
+{
+  "name": "Forest Lane Park",
+  "region": "london",
+  "area": "Forest Gate, Newham",
+  "lat": 51.54857,
+  "lng": 0.0173,
+  "ages": [],
+  "equipment": [
+    "sp",
+    "gym"
+  ],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "Newham Council park with a play area with sand play, outdoor fitness equipment, toilets at Forest Lane Lodge and a car park.",
+  "nearby": [],
+  "operator": "Newham Council",
+  "sources": [
+    {
+      "label": "Newham Council: find your local park",
+      "url": "https://www.newham.gov.uk/localpark"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment and opening hours.",
+  "photo": null
+}
