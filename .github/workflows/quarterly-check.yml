@@ -2,8 +2,9 @@
 # reads the council lists that have a feed in src/data/council-sources.json, checks playgrounds sourced from
 # OpenStreetMap are still mapped, checks every official source link still works, and lists playgrounds not checked
 # for over a year. It changes no files; it opens a "Quarterly playground check" issue with what it found, and the
-# full lists are in the run's "quarterly-check" artifact. Runs on the 10th of January, April, July and October
-# (a few days before the quarterly Claude update check on the 15th, which reads the latest issue), and on demand.
+# full lists are in the run's "quarterly-check" artifact. The issue is labelled check-report, so the daily "Fix check
+# reports" Claude task works through it (see docs/fixing-check-reports.md). Runs on the 10th of January, April, July
+# and October, and on demand.
 name: Quarterly playground check
 on:
   workflow_dispatch:
@@ -44,4 +45,4 @@ jobs:
           cat reports/quarterly-check.md >> "$GITHUB_STEP_SUMMARY"
           { cat reports/quarterly-check.md; echo; echo "Full lists: the quarterly-check artifact on [this run]($GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID)."; } > body.md
           head -c 60000 body.md > issue.md
-          gh api "repos/$GITHUB_REPOSITORY/issues" -f title="Quarterly playground check, $(date +%Y-%m-%d)" -F body=@issue.md --jq .html_url
+          gh api "repos/$GITHUB_REPOSITORY/issues" -f title="Quarterly playground check, $(date +%Y-%m-%d)" -F body=@issue.md -f "labels[]=check-report" --jq .html_url
