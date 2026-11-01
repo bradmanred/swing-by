@@ -21,6 +21,7 @@
 // Run by .github/workflows/coverage.yml.
 import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
+import { readFeed } from './council-feeds.mjs';
 
 const DIR = 'src/content/playgrounds';
 const UA = { 'User-Agent': 'SwingBy/1.0 (https://swing-by.co.uk; finds playgrounds missing from the site)' };
@@ -149,42 +150,7 @@ for (const r of done) {
     byCouncil.push({ county: r.name, district, missing: ps, council: councilFor(district) });
 }
 
-// 2. Council feeds: read the council's own list and add anything on it we don't have, as verified.
-async function readFeed(feed) {
-  const recs = [];
-  if (feed.type === 'directory') {
-    const seen = new Set();
-    for (const index of feed.index) {
-      const html = await fetch(index, { headers: UA }).then((r) => (r.ok ? r.text() : '')).catch(() => '');
-      const links = [...html.matchAll(/href="([^"#]+)"/g)].map((m) => new URL(m[1].replace(/&amp;/g, '&'), index).href).filter((u) => new RegExp(feed.follow).test(u));
-      for (const u of links) {
-        if (seen.has(u)) continue;
-        seen.add(u);
-        const page = await fetch(u, { headers: UA }).then((r) => (r.ok ? r.text() : '')).catch(() => '');
-        const c = page.match(new RegExp(feed.coords));
-        const n = page.match(new RegExp(feed.name));
-        if (c && n) recs.push({ name: strip(n[1]).replace(/\s+[-|]\s.*$/, ''), lat: Number(c[1]), lng: Number(c[2]), url: u });
-        await sleep(500);
-      }
-    }
-  } else if (feed.type === 'geojson') {
-    const j = await fetch(feed.url, { headers: UA }).then((r) => r.json()).catch(() => null);
-    for (const f of j?.features ?? []) {
-      const [lng, lat] = f.geometry?.type === 'Point' ? f.geometry.coordinates : [];
-      if (lat != null) recs.push({ name: strip(f.properties?.[feed.nameField]), lat, lng, url: feed.page ?? feed.url });
-    }
-  } else if (feed.type === 'csv') {
-    const text = await fetch(feed.url, { headers: UA }).then((r) => r.text()).catch(() => '');
-    const [head, ...rows] = text.split(/\r?\n/).filter(Boolean).map((l) => l.split(','));
-    const col = (k) => head.findIndex((h) => h.trim().replace(/"/g, '') === k);
-    for (const r of rows) {
-      const lat = Number(r[col(feed.latField)]), lng = Number(r[col(feed.lngField)]);
-      if (Number.isFinite(lat) && Number.isFinite(lng)) recs.push({ name: strip(r[col(feed.nameField)]?.replace(/"/g, '')), lat, lng, url: feed.page ?? feed.url });
-    }
-  }
-  return recs.filter((x) => x.name);
-}
-
+// 2. Council feeds: read the council's own list (scripts/council-feeds.mjs) and add anything on it we don't have, as verified.
 const toAdd = []; // { kind: 'council' | 'osm', ... }
 const feedReport = [];
 if (ADD > 0) {
@@ -245,7 +211,10 @@ if (toAdd.length) {
         nearby: [], operator: p.council.council,
         sources: [{ label: `${p.council.council}: ${p.name}`, url: p.url }],
         checked: TODAY,
-        notConfirmed: "Exact position (from the council's map), age ranges, play equipment, opening hours, toilets and parking.",
+        // "approximate" feeds give the park's point, not the play area's, so the pin check (check-positions.mjs) looks at them.
+        notConfirmed: p.council.feed.approximate
+          ? "Exact position (approximate: the park's point on the council's map, not the play area itself), age ranges, play equipment, opening hours, toilets and parking."
+          : "Exact position (from the council's map), age ranges, play equipment, opening hours, toilets and parking.",
         photo: null,
       };
     } else {
