@@ -2,8 +2,8 @@
   "name": "Croome Play Areas",
   "region": "west-midlands",
   "area": "Croome",
-  "lat": 54.0,
-  "lng": -2.0,
+  "lat": 52.10498,
+  "lng": -2.16687,
   "ages": [],
   "equipment": [
     "sw",
@@ -28,6 +28,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (mapped from the postcode), age ranges and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges and opening hours.",
   "photo": null
 }

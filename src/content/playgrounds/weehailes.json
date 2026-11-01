@@ -2,8 +2,8 @@
   "name": "Weehailes Playpark, Newhailes",
   "region": "scotland",
   "area": "Musselburgh",
-  "lat": 54.0,
-  "lng": -2.0,
+  "lat": 55.94086,
+  "lng": -3.08131,
   "ages": [],
   "equipment": [
     "sl",
@@ -30,6 +30,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (mapped from the postcode), age ranges and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges and opening hours.",
   "photo": null
 }

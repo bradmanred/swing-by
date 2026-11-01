@@ -2,8 +2,8 @@
   "name": "Bowhill Adventure Playground",
   "region": "scotland",
   "area": "Selkirk",
-  "lat": 54.0,
-  "lng": -2.0,
+  "lat": 55.54126,
+  "lng": -2.90829,
   "ages": [],
   "equipment": [
     "zw",
@@ -30,6 +30,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (mapped from the postcode), age ranges and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges and opening hours.",
   "photo": null
 }

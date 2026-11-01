@@ -2,8 +2,8 @@
   "name": "Little Oaks Play Area, Drum Castle",
   "region": "scotland",
   "area": "Drumoak",
-  "lat": 54.0,
-  "lng": -2.0,
+  "lat": 57.09575,
+  "lng": -2.3404,
   "ages": [],
   "equipment": [
     "ad"
@@ -22,6 +22,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (mapped from the postcode), parking charges, age ranges and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), parking charges, age ranges and opening hours.",
   "photo": null
 }

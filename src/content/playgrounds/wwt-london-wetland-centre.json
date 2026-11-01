@@ -2,8 +2,8 @@
   "name": "WWT London Wetland Centre Play Areas",
   "region": "london",
   "area": "Barnes",
-  "lat": 54.0,
-  "lng": -2.0,
+  "lat": 51.47687,
+  "lng": -0.23406,
   "ages": [],
   "equipment": [
     "zw",
@@ -33,6 +33,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (mapped from the postcode), age ranges and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges and opening hours.",
   "photo": null
 }
