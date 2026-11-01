@@ -1,0 +1,24 @@
+{
+  "name": "Grove Park Playground",
+  "region": "london",
+  "area": "Kingsbury, Brent",
+  "lat": 51.59163,
+  "lng": -0.26215,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Brent Council park with a children's play area.",
+  "nearby": [],
+  "operator": "Brent Council",
+  "sources": [
+    {
+      "label": "Brent Council: Grove Park",
+      "url": "https://www.brent.gov.uk/parks-leisure-and-healthy-living/parks-and-open-spaces/park-finder/grove-park"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

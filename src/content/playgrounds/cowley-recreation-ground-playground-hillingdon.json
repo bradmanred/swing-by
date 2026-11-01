@@ -1,0 +1,26 @@
+{
+  "name": "Cowley Recreation Ground Playground",
+  "region": "london",
+  "area": "Colham and Cowley, Hillingdon",
+  "lat": 51.52703,
+  "lng": -0.48496,
+  "ages": [],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Hillingdon Council park with a children's play area. The council also lists bowling green, outdoor gym and cricket facilities.",
+  "nearby": [],
+  "operator": "Hillingdon Council",
+  "sources": [
+    {
+      "label": "Hillingdon Council: Cowley Recreation Ground",
+      "url": "https://pre.hillingdon.gov.uk/directory-record/9/cowley-recreation-ground"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

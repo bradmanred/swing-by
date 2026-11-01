@@ -1,0 +1,26 @@
+{
+  "name": "Rockingham Recreation Ground Playground",
+  "region": "london",
+  "area": "Uxbridge, Hillingdon",
+  "lat": 51.54355,
+  "lng": -0.48408,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Hillingdon Council park with a children's play area. The council also lists playing fields.",
+  "nearby": [],
+  "operator": "Hillingdon Council",
+  "sources": [
+    {
+      "label": "Hillingdon Council: Rockingham Recreation Ground",
+      "url": "https://pre.hillingdon.gov.uk/directory-record/36/rockingham-recreation-ground"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

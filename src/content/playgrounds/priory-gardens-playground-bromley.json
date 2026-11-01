@@ -1,0 +1,26 @@
+{
+  "name": "Priory Gardens Playground",
+  "region": "london",
+  "area": "Orpington, Bromley",
+  "lat": 51.38065,
+  "lng": 0.10529,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "Ornamental gardens with lake and children's play area, run by Bromley Council. The council also lists toilet.",
+  "nearby": [],
+  "operator": "Bromley Council",
+  "sources": [
+    {
+      "label": "Bromley Council: Priory Gardens",
+      "url": "https://www.bromley.gov.uk/directory-record/999/priory-gardens"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

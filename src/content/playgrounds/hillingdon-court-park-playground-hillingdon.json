@@ -1,0 +1,28 @@
+{
+  "name": "Hillingdon Court Park Playground",
+  "region": "london",
+  "area": "Hillingdon West, Hillingdon",
+  "lat": 51.54259,
+  "lng": -0.45368,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Hillingdon Council park with a children's play area. The council also lists bowling green, formal gardens, outdoor gym, sports pavilion and tennis court.",
+  "nearby": [],
+  "operator": "Hillingdon Council",
+  "sources": [
+    {
+      "label": "Hillingdon Council: Hillingdon Court Park",
+      "url": "https://pre.hillingdon.gov.uk/directory-record/19/hillingdon-court-park"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

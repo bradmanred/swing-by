@@ -1,0 +1,31 @@
+{
+  "name": "Gosling Gardens Playground",
+  "region": "london",
+  "area": "Shadwell, Tower Hamlets",
+  "lat": 51.51291,
+  "lng": -0.05834,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "mg",
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Playground on Bigland Street with toddler play (under 5s) and junior play (5 and over), a ball court and an outdoor gym, refurbished in 2024, as Tower Hamlets Council lists it.",
+  "nearby": [],
+  "operator": "Tower Hamlets Council",
+  "sources": [
+    {
+      "label": "Tower Hamlets Council: playgrounds and inclusive play",
+      "url": "https://www.towerhamlets.gov.uk/lgnl/leisure_and_culture/parks_and_open_spaces/Playgrounds-and-Inclusive-Play.aspx"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

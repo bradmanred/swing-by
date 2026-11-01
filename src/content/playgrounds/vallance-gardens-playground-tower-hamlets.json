@@ -1,0 +1,28 @@
+{
+  "name": "Vallance Gardens Playground",
+  "region": "london",
+  "area": "Whitechapel, Tower Hamlets",
+  "lat": 51.52035,
+  "lng": -0.06282,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Playground on Vallance Road with toddler play (under 5s) and junior play (5 and over), with upgraded equipment, as Tower Hamlets Council lists it.",
+  "nearby": [],
+  "operator": "Tower Hamlets Council",
+  "sources": [
+    {
+      "label": "Tower Hamlets Council: playgrounds and inclusive play",
+      "url": "https://www.towerhamlets.gov.uk/lgnl/leisure_and_culture/parks_and_open_spaces/Playgrounds-and-Inclusive-Play.aspx"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

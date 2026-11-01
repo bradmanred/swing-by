@@ -1,0 +1,24 @@
+{
+  "name": "Rainbow Park Playground",
+  "region": "london",
+  "area": "Cricklewood and Mapesbury, Brent",
+  "lat": 51.5606,
+  "lng": -0.22382,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Brent Council park with a children's play area.",
+  "nearby": [],
+  "operator": "Brent Council",
+  "sources": [
+    {
+      "label": "Brent Council: Rainbow Park",
+      "url": "https://www.brent.gov.uk/parks-leisure-and-healthy-living/parks-and-open-spaces/park-finder/rainbow-park"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

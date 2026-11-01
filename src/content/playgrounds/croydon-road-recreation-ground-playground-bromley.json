@@ -1,0 +1,30 @@
+{
+  "name": "Croydon Road Recreation Ground Playground",
+  "region": "london",
+  "area": "Kelsey and Eden Park, Bromley",
+  "lat": 51.40403,
+  "lng": -0.03284,
+  "ages": [],
+  "equipment": [
+    "mg",
+    "wp"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "Park with a children's play area and sports facilities, run by Bromley Council. The council also lists bowie Bandstand, cafe, multi-use court, weather permitting), football, bowling, tennis and toilet.",
+  "nearby": [],
+  "operator": "Bromley Council",
+  "sources": [
+    {
+      "label": "Bromley Council: Croydon Road Recreation Ground",
+      "url": "https://www.bromley.gov.uk/directory-record/934/croydon-road-recreation-ground"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

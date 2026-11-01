@@ -529,6 +529,109 @@
     "https://www.newham.gov.uk/localpark"
    ],
    "note": "One page lists all 34 council parks with facilities; the 30 with play areas are listed (Beckton District Park as north and south)."
+  },
+  {
+   "district": "Tower Hamlets",
+   "council": "Tower Hamlets Council",
+   "sources": [
+    "https://www.towerhamlets.gov.uk/lgnl/leisure_and_culture/parks_and_open_spaces/Playgrounds-and-Inclusive-Play.aspx"
+   ],
+   "note": "One table lists about 55 play spaces; the 49 with play equipment are listed (ball-court-only and skate-only spaces left out)."
+  },
+  {
+   "district": "Bromley",
+   "council": "Bromley Council",
+   "sources": [
+    "https://www.bromley.gov.uk/directory/26/parks-in-bromley"
+   ],
+   "note": "Parks in Bromley directory (128 parks), read from its A to Z pages; parks whose facilities list a children's play area are kept. Positions are the park's map point, so marked approximate for the pin check.",
+   "feed": {
+    "type": "directory",
+    "approximate": true,
+    "index": [
+     "https://www.bromley.gov.uk/directory/26/a-to-z/A",
+     "https://www.bromley.gov.uk/directory/26/a-to-z/B",
+     "https://www.bromley.gov.uk/directory/26/a-to-z/C",
+     "https://www.bromley.gov.uk/directory/26/a-to-z/D",
+     "https://www.bromley.gov.uk/directory/26/a-to-z/E",
+     "https://www.bromley.gov.uk/directory/26/a-to-z/F",
+     "https://www.bromley.gov.uk/directory/26/a-to-z/G",
+     "https://www.bromley.gov.uk/directory/26/a-to-z/H",
+     "https://www.bromley.gov.uk/directory/26/a-to-z/I",
+     "https://www.bromley.gov.uk/directory/26/a-to-z/J",
+     "https://www.bromley.gov.uk/directory/26/a-to-z/K",
+     "https://www.bromley.gov.uk/directory/26/a-to-z/L",
+     "https://www.bromley.gov.uk/directory/26/a-to-z/M",
+     "https://www.bromley.gov.uk/directory/26/a-to-z/N",
+     "https://www.bromley.gov.uk/directory/26/a-to-z/O",
+     "https://www.bromley.gov.uk/directory/26/a-to-z/P",
+     "https://www.bromley.gov.uk/directory/26/a-to-z/Q",
+     "https://www.bromley.gov.uk/directory/26/a-to-z/R",
+     "https://www.bromley.gov.uk/directory/26/a-to-z/S",
+     "https://www.bromley.gov.uk/directory/26/a-to-z/T",
+     "https://www.bromley.gov.uk/directory/26/a-to-z/U",
+     "https://www.bromley.gov.uk/directory/26/a-to-z/V",
+     "https://www.bromley.gov.uk/directory/26/a-to-z/W",
+     "https://www.bromley.gov.uk/directory/26/a-to-z/X",
+     "https://www.bromley.gov.uk/directory/26/a-to-z/Y",
+     "https://www.bromley.gov.uk/directory/26/a-to-z/Z"
+    ],
+    "follow": "bromley\\.gov\\.uk/directory-record/\\d+/",
+    "name": "<h1[^>]*>([\\s\\S]*?)</h1>",
+    "coords": "map_marker_location_\\d+\" value=\"(-?\\d+\\.\\d+),(-?\\d+\\.\\d+)\"",
+    "require": "Facilities\\s*</dt>\\s*<dd[^>]*>[\\s\\S]{0,400}?[Pp]lay ?(?:area|ground)"
+   }
+  },
+  {
+   "district": "Hillingdon",
+   "council": "Hillingdon Council",
+   "sources": [
+    "https://hillingdon.gov.uk/local-parks"
+   ],
+   "note": "The Local parks page links about 50 park records (on pre.hillingdon.gov.uk); parks whose features list a children's playground are kept. The council's list leaves out many small estate play areas.",
+   "feed": {
+    "type": "directory",
+    "approximate": true,
+    "index": [
+     "https://hillingdon.gov.uk/local-parks"
+    ],
+    "follow": "hillingdon\\.gov\\.uk/directory-record/\\d+/",
+    "name": "<h1[^>]*>([\\s\\S]*?)</h1>",
+    "coords": "map_marker_location_\\d+\" value=\"(-?\\d+\\.\\d+),(-?\\d+\\.\\d+)\"",
+    "require": "Features\\s*</dt>[\\s\\S]{0,800}?[Pp]lay ?(?:area|ground)"
+   }
+  },
+  {
+   "district": "Wandsworth",
+   "council": "Wandsworth Council",
+   "sources": [
+    "https://www.wandsworth.gov.uk/leisure-and-culture/parks-and-open-spaces/childrens-playgrounds/"
+   ],
+   "note": "The council's children's playgrounds section (29 pages; Enable Leisure and Culture runs them). Pages give a street and postcode; three show the Town Hall's postcode, so those were placed by park name."
+  },
+  {
+   "district": "Brent",
+   "council": "Brent Council",
+   "sources": [
+    "https://www.brent.gov.uk/parks-leisure-and-healthy-living/parks-and-open-spaces/park-finder"
+   ],
+   "note": "Park finder records (84, found through the site map); parks listing a children's playground or play area are kept. The finder's list loads in the browser, so a feed can't read it."
+  },
+  {
+   "district": "Enfield",
+   "council": "Enfield Council",
+   "sources": [
+    "https://www.enfield.gov.uk/services/leisure-and-culture/green-enfield"
+   ],
+   "note": "Enfield doesn't publish a playground list: its parks page names only Broomfield, Grovelands and Oakwood parks' playgrounds. Other gaps are filled from OpenStreetMap. Its website blocks automated downloads."
+  },
+  {
+   "district": "Redbridge",
+   "council": "Redbridge Council",
+   "sources": [
+    "https://www.redbridge.gov.uk/leisure-sport-and-the-arts/parks/"
+   ],
+   "note": "Parks are run by Vision Redbridge Culture and Leisure. The council's eight area pages describe each park; the 17 with play areas are listed. Vision's own park pages block automated downloads."
   }
  ]
 }

@@ -1,0 +1,27 @@
+{
+  "name": "Brondesbury Park Playground",
+  "region": "london",
+  "area": "Brondesbury Park, Brent",
+  "lat": 51.54606,
+  "lng": -0.22453,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A small local park with a children's playground to cater for four to eight year olds.",
+  "nearby": [],
+  "operator": "Brent Council",
+  "sources": [
+    {
+      "label": "Brent Council: Brondesbury Park",
+      "url": "https://www.brent.gov.uk/parks-leisure-and-healthy-living/parks-and-open-spaces/park-finder/brondesbury-park"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

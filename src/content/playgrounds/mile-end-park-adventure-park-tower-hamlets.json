@@ -1,0 +1,30 @@
+{
+  "name": "Mile End Park Adventure Park",
+  "region": "london",
+  "area": "Mile End, Tower Hamlets",
+  "lat": 51.52072,
+  "lng": -0.03335,
+  "ages": [
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "ad",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Adventure park on Burdett Road for children aged 5 and over, with a BMX track and ball courts, run as the Urban Adventure Base, as Tower Hamlets Council lists it.",
+  "nearby": [],
+  "operator": "Tower Hamlets Council",
+  "sources": [
+    {
+      "label": "Tower Hamlets Council: playgrounds and inclusive play",
+      "url": "https://www.towerhamlets.gov.uk/lgnl/leisure_and_culture/parks_and_open_spaces/Playgrounds-and-Inclusive-Play.aspx"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (approximate: somewhere in Mile End Park; the Adventure Park is off Burdett Road), play equipment and opening hours.",
+  "photo": null
+}

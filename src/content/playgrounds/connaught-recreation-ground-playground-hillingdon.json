@@ -1,0 +1,27 @@
+{
+  "name": "Connaught Recreation Ground Playground",
+  "region": "london",
+  "area": "Colham and Cowley, Hillingdon",
+  "lat": 51.52783,
+  "lng": -0.44334,
+  "ages": [],
+  "equipment": [
+    "gym",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Hillingdon Council park with a children's play area. The council also lists multi-use games area and outdoor gym.",
+  "nearby": [],
+  "operator": "Hillingdon Council",
+  "sources": [
+    {
+      "label": "Hillingdon Council: Connaught Recreation Ground",
+      "url": "https://pre.hillingdon.gov.uk/directory-record/8/connaught-recreation-ground"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}
