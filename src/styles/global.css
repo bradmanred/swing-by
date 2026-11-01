@@ -44,8 +44,6 @@ p { margin: 0; }
 .nav a[aria-current='page'] { background: var(--ink); color: var(--white); }
 .search-page { display: grid; gap: 8px; max-width: 720px; }
 .search-page .row input[type='search'] { flex: 1 1 200px; width: 0; min-width: 0; }
-.search-sizes { margin-top: 10px; }
-.search-sizes .hint { margin-top: 6px; }
 .hits { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; max-width: 760px; }
 .hit { background: var(--white); border: 3px solid var(--ink); border-radius: 16px; padding: 14px 16px; display: grid; gap: 4px; }
 .hit > a { font-family: var(--display); font-weight: 800; font-size: 1.375rem; color: var(--ink); }
@@ -80,6 +78,8 @@ legend { font-weight: 700; padding: 0; margin-bottom: 8px; }
 .search label[for='where'] { display: block; margin-bottom: 6px; }
 .search #where { width: 100%; }
 .search .hint { margin-top: 6px; }
+.search .which { display: grid; gap: 12px; }
+.search .which > .hint { margin-top: -6px; }
 /* "Near me" and "Let's go!" sit side by side under the box, so both are in view on a phone. */
 .search .go { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 12px; }
 .search .go .btn { min-height: 58px; padding: 0 10px; white-space: nowrap; }
