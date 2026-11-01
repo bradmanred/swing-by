@@ -27,7 +27,10 @@
  "royal-victoria-gardens-newham": "E16 2NW",
  "sandal-street-play-area-newham": "E15 3NN",
  "saville-road-games-court-newham": "E16 2DS",
- "star-park-newham": "E16 4HW",
+ "star-park-newham": {
+  "park": "Star Park",
+  "borough": "London Borough of Newham"
+ },
  "stratford-park-newham": "E15 4PT",
  "valetta-grove-open-space-newham": "E13 0JR",
  "tumbling-bay-playground-olympic-park": "E20 2ST",
@@ -50,7 +53,7 @@
   "borough": "London Borough of Ealing"
  },
  "southfields-recreation-ground-acton": {
-  "park": "Southfields Recreation Ground",
+  "park": "Southfields? Recreation Ground",
   "borough": "London Borough of Ealing"
  },
  "springfield-gardens-acton": {
@@ -110,7 +113,7 @@
   "borough": "London Borough of Ealing"
  },
  "brent-lodge-park-hanwell": {
-  "park": "Brent Lodge Park",
+  "park": "Brent Lodge Park|Brent Lodge Park and Churchfields",
   "borough": "London Borough of Ealing"
  },
  "king-george-v-playing-field-hanwell": {
@@ -126,7 +129,7 @@
   "borough": "London Borough of Ealing"
  },
  "elthorne-waterside-hanwell": {
-  "park": "Elthorne Waterside|Lower Well Meadow|Well Meadow",
+  "park": "Elthorne Waterside|Lower Well Meadow|Well Meadow|Elthorne Park Extension",
   "borough": "London Borough of Ealing"
  },
  "islip-manor-park-northolt": {
