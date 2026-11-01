@@ -26,13 +26,26 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: node scripts/nearest-toilets.mjs
-      - run: node scripts/coverage-areas.mjs
-      - name: Commit if changed
+      # If someone pushes to the branch while this runs, the push is rejected as out of date.
+      # Rather than merging (toilets.json would often conflict), start again from the latest
+      # branch, regenerate both files and try once more, up to three attempts in all.
+      - name: Update and commit if changed
+        env:
+          BRANCH: ${{ github.ref_name }}
         run: |
-          if git diff --quiet -- src/data/toilets.json src/data/coverage.json; then echo "No change"; exit 0; fi
           git config user.name "swing-by-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/data/toilets.json src/data/coverage.json
-          git commit -m "Update nearest toilets from the Toilet Map"
-          git push
+          for attempt in 1 2 3; do
+            node scripts/nearest-toilets.mjs
+            node scripts/coverage-areas.mjs
+            if git diff --quiet -- src/data/toilets.json src/data/coverage.json; then echo "No change"; exit 0; fi
+            git add src/data/toilets.json src/data/coverage.json
+            git commit -m "Update nearest toilets from the Toilet Map"
+            if git push origin "HEAD:$BRANCH"; then exit 0; fi
+            echo "Push rejected (attempt $attempt); refreshing from origin/$BRANCH and retrying"
+            git fetch --depth 1 origin "$BRANCH"
+            git reset --hard FETCH_HEAD
+            sleep $((attempt * 10))
+          done
+          echo "::error::Could not push after 3 attempts"
+          exit 1
