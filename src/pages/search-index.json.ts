@@ -5,7 +5,7 @@ const PAGES = [
   { url: '/', title: 'Find a playground', text: 'Search by town or postcode, use Near me, filter by age and equipment, map of nearby parks, vote for where we go next' },
   { url: '/playgrounds/', title: 'All playgrounds A to Z', text: 'Every playground we list, grouped by county and town' },
   { url: '/road-trips/', title: 'Road trips: break a long drive', text: 'Playgrounds about 5 minutes off motorway and major road junctions, with toilets and cafés' },
-  { url: '/memberships/', title: 'Use your membership', text: 'National Trust, English Heritage and Historic Houses play areas, free entry for members' },
+  { url: '/memberships/', title: 'Use your membership', text: 'National Trust, English Heritage, Historic Houses, National Trust for Scotland, RHS gardens, WWT wetland centres, Cadw and Historic Environment Scotland play areas, free entry for members' },
   { url: '/my-parks/', title: 'My parks', text: "Playgrounds you've been to and rated, saved on this device" },
   { url: '/about/', title: 'About our data', text: 'Where playground details come from, how we check them, photos, maps, postcodes and privacy' },
 ];

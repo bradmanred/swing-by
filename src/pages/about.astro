@@ -13,6 +13,7 @@ const nations = coverageFile.nations;
 const list = (xs: string[]) => (xs.length > 1 ? `${xs.slice(0, -1).join(', ')} and ${xs.at(-1)}` : xs[0] ?? '');
 const orgs = Object.entries(L.memberships)
   .map(([k, name]) => ({ name, n: parks.filter((p) => p.membership === k).length }))
+  .filter((o) => o.n > 0)
   .filter((o) => o.n > 0);
 const memberTotal = orgs.reduce((a, o) => a + o.n, 0);
 const n = (x: number) => x.toLocaleString('en-GB');

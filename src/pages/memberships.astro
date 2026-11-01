@@ -4,14 +4,17 @@ import { allParks, L, regionName } from '../lib/parks';
 import regionsFile from '../data/regions.json';
 const parks = (await allParks()).filter((p) => p.membership);
 const order = regionsFile.regions.map((r) => r.id);
-const groups = Object.entries(L.memberships).map(([k, name]) => {
+// The short names (on cards) spelled out for the headings here.
+const FULL: Record<string, string> = { rhs: 'RHS (Royal Horticultural Society)', wwt: 'WWT (Wildfowl & Wetlands Trust)' };
+const groups = Object.entries(L.memberships).map(([k, short]) => {
+  const name = FULL[k] ?? short;
   const list = parks.filter((p) => p.membership === k);
   // Grouped by region, in the same order as the A to Z.
   const byRegion = order.map((id) => ({ id, list: list.filter((p) => p.region === id) })).filter((g) => g.list.length);
   return { k, name, list, byRegion };
-});
+}).filter((g) => g.list.length); // organisations with nothing listed yet stay off the page
 ---
-<Base title="Memberships" current="/memberships/" description="Play areas at National Trust, English Heritage and Historic Houses places.">
+<Base title="Memberships" current="/memberships/" description="Play areas at National Trust, English Heritage, Historic Houses, National Trust for Scotland, RHS, WWT, Cadw and Historic Environment Scotland places.">
   <h1>Use your membership</h1>
   <p style="max-width:60ch">These play areas are at places that charge for entry. Members usually get in free. Check the property's own website before you go, because event days can cost extra.</p>
   {groups.map((g) => (

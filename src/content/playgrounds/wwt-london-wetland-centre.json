@@ -1,0 +1,38 @@
+{
+  "name": "WWT London Wetland Centre Play Areas",
+  "region": "london",
+  "area": "Barnes",
+  "lat": 54.0,
+  "lng": -2.0,
+  "ages": [],
+  "equipment": [
+    "zw",
+    "cl",
+    "tp",
+    "wp",
+    "bb"
+  ],
+  "access": [
+    "sf"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "Explore Adventure Play Area with a zip line, bouncy lily pads, a climbing frame and trail course, plus a Splash Pad with a water tunnel, fountains and puddles (closed in winter), a mud kitchen and the Wild Walk with balance beams and bridges. Gated areas for younger children.",
+  "nearby": [],
+  "operator": "Wildfowl & Wetlands Trust",
+  "membership": "wwt",
+  "fee": "Non-members pay to visit; see the centre's tickets page for prices. WWT members get in free at all 10 wetland centres.",
+  "sources": [
+    {
+      "label": "WWT: adventure play areas at London",
+      "url": "https://www.wwt.org.uk/wetland-centres/london/experience/adventure-play-areas"
+    },
+    {
+      "label": "WWT: membership",
+      "url": "https://www.wwt.org.uk/join-and-support/join"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (mapped from the postcode), age ranges and opening hours.",
+  "photo": null
+}

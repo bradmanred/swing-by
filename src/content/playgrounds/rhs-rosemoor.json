@@ -1,0 +1,29 @@
+{
+  "name": "RHS Garden Rosemoor Play Areas",
+  "region": "devon",
+  "area": "Great Torrington",
+  "lat": 54.0,
+  "lng": -2.0,
+  "ages": [],
+  "equipment": [
+    "cl",
+    "ad"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Natural play areas with climbing frames and shelters at Rosemoor, near Great Torrington.",
+  "nearby": [],
+  "operator": "Royal Horticultural Society",
+  "membership": "rhs",
+  "fee": "Non-members pay to visit: adults from about £14 to £20 depending on garden and day, children 5–16 £5–£6, under-5s free. RHS members get in free (individual members can bring 2 children).",
+  "sources": [
+    {
+      "label": "RHS: the play areas at RHS Garden Rosemoor",
+      "url": "https://www.rhs.org.uk/gardens/rosemoor/garden-highlights/play-areas"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (mapped from the postcode), age ranges and opening hours.",
+  "photo": null
+}

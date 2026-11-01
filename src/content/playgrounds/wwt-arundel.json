@@ -1,0 +1,38 @@
+{
+  "name": "WWT Arundel Adventure Play Area",
+  "region": "south-east",
+  "area": "Arundel",
+  "lat": 54.0,
+  "lng": -2.0,
+  "ages": [],
+  "equipment": [
+    "sl",
+    "ss",
+    "bb",
+    "tp",
+    "ad"
+  ],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "Gated adventure play area for pre-school and primary ages, with lily pad springs, walkways with balancing blocks, bird houses with a rope walk and slide, a scramble net and see-saws, on soft woodchip. Open 10am to 4.30pm.",
+  "nearby": [],
+  "operator": "Wildfowl & Wetlands Trust",
+  "membership": "wwt",
+  "fee": "Non-members pay to visit; see the centre's tickets page for prices. WWT members get in free at all 10 wetland centres.",
+  "sources": [
+    {
+      "label": "WWT: adventure play area at Arundel",
+      "url": "https://www.wwt.org.uk/wetland-centres/arundel/experience/adventure-play-area"
+    },
+    {
+      "label": "WWT: membership",
+      "url": "https://www.wwt.org.uk/join-and-support/join"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (mapped from the postcode), age ranges and opening hours.",
+  "photo": null
+}
