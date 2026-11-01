@@ -1,0 +1,27 @@
+{
+  "name": "The Closes Playground",
+  "region": "london",
+  "area": "West Drayton, Hillingdon",
+  "lat": 51.50278,
+  "lng": -0.47248,
+  "ages": [],
+  "equipment": [
+    "gym",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Hillingdon Council park with a children's play area. The council also lists multi-use ball court and outdoor gym.",
+  "nearby": [],
+  "operator": "Hillingdon Council",
+  "sources": [
+    {
+      "label": "Hillingdon Council: The Closes",
+      "url": "https://pre.hillingdon.gov.uk/directory-record/43/the-closes"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Pinkwell Park Playground",
+  "region": "london",
+  "area": "Pinkwell, Hillingdon",
+  "lat": 51.49884,
+  "lng": -0.43981,
+  "ages": [],
+  "equipment": [
+    "gym",
+    "mg",
+    "sk"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Hillingdon Council park with a children's play area. The council also lists ball court, bowling green, football pitches, outdoor gym, pavilion and skate park.",
+  "nearby": [],
+  "operator": "Hillingdon Council",
+  "sources": [
+    {
+      "label": "Hillingdon Council: Pinkwell Park",
+      "url": "https://pre.hillingdon.gov.uk/directory-record/32/pinkwell-park"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

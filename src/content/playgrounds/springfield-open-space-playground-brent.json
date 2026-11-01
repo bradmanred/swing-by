@@ -1,0 +1,27 @@
+{
+  "name": "Springfield Open Space Playground",
+  "region": "london",
+  "area": "Kingsbury, Brent",
+  "lat": 51.58492,
+  "lng": -0.24931,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A small local park with a children's playground to cater for four to eight year olds.",
+  "nearby": [],
+  "operator": "Brent Council",
+  "sources": [
+    {
+      "label": "Brent Council: Springfield Open Space",
+      "url": "https://www.brent.gov.uk/parks-leisure-and-healthy-living/parks-and-open-spaces/park-finder/springfield-park"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

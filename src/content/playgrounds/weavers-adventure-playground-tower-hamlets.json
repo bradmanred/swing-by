@@ -1,0 +1,31 @@
+{
+  "name": "Weavers Adventure Playground",
+  "region": "london",
+  "area": "Bethnal Green, Tower Hamlets",
+  "lat": 51.52637,
+  "lng": -0.05788,
+  "ages": [
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "ad"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "Fully inclusive adventure playground on Viaduct Street for 8 to 25 year olds, opened in 2021, as Tower Hamlets Council lists it. It's run independently of the council.",
+  "nearby": [],
+  "operator": "Weavers Adventure Playground",
+  "sources": [
+    {
+      "label": "Tower Hamlets Council: playgrounds and inclusive play",
+      "url": "https://www.towerhamlets.gov.uk/lgnl/leisure_and_culture/parks_and_open_spaces/Playgrounds-and-Inclusive-Play.aspx"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

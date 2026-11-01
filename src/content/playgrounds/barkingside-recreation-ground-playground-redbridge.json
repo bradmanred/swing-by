@@ -1,0 +1,33 @@
+{
+  "name": "Barkingside Recreation Ground Playground",
+  "region": "london",
+  "area": "Barkingside, Redbridge",
+  "lat": 51.58747,
+  "lng": 0.07637,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "cl",
+    "bk",
+    "ad"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A fenced traditional playground with swings and climbing frames, and a natural play area with hills, ropes between trees, a tyre swing and a wobble dish for children of different ages and abilities.",
+  "nearby": [],
+  "operator": "Vision Redbridge Culture and Leisure, for Redbridge Council",
+  "sources": [
+    {
+      "label": "Redbridge Council: parks in Wanstead, Barkingside and Clayhall",
+      "url": "https://www.redbridge.gov.uk/leisure-sport-and-the-arts/parks/wanstead-barkingside-and-clayhall/"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges and opening hours.",
+  "photo": null
+}

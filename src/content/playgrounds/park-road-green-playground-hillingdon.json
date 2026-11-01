@@ -1,0 +1,26 @@
+{
+  "name": "Park Road Green Playground",
+  "region": "london",
+  "area": "Wood End, Hillingdon",
+  "lat": 51.52428,
+  "lng": -0.42701,
+  "ages": [],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Hillingdon Council park with a children's play area. The council also lists outdoor gym.",
+  "nearby": [],
+  "operator": "Hillingdon Council",
+  "sources": [
+    {
+      "label": "Hillingdon Council: Park Road Green",
+      "url": "https://pre.hillingdon.gov.uk/directory-record/34/park-road-green"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

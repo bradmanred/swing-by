@@ -1,0 +1,32 @@
+{
+  "name": "Whitehorse Adventure Playground",
+  "region": "london",
+  "area": "Stepney, Tower Hamlets",
+  "lat": 51.51673,
+  "lng": -0.03984,
+  "ages": [
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "ad",
+    "mg"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "Fully inclusive adventure playground on Whitehorse Road for 8 to 25 year olds with ball courts and an indoor community space. It runs sessions from 3pm to 6pm, Tuesday to Thursday in term time, as Tower Hamlets Council lists it.",
+  "nearby": [],
+  "operator": "Tower Hamlets Council",
+  "sources": [
+    {
+      "label": "Tower Hamlets Council: playgrounds and inclusive play",
+      "url": "https://www.towerhamlets.gov.uk/lgnl/leisure_and_culture/parks_and_open_spaces/Playgrounds-and-Inclusive-Play.aspx"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

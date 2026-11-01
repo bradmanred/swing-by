@@ -1,0 +1,26 @@
+{
+  "name": "Harmondsworth Recreation Ground Playground",
+  "region": "london",
+  "area": "Heathrow Villages, Hillingdon",
+  "lat": 51.48688,
+  "lng": -0.47897,
+  "ages": [],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Hillingdon Council park with a children's play area. The council also lists outdoor gym and tennis court.",
+  "nearby": [],
+  "operator": "Hillingdon Council",
+  "sources": [
+    {
+      "label": "Hillingdon Council: Harmondsworth Recreation Ground",
+      "url": "https://pre.hillingdon.gov.uk/directory-record/17/harmondsworth-recreation-ground"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

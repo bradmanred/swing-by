@@ -1,0 +1,32 @@
+{
+  "name": "Hellings Street Playground",
+  "region": "london",
+  "area": "Wapping, Tower Hamlets",
+  "lat": 51.50457,
+  "lng": -0.0655,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "mg"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "Playground on Hellings Street with toddler play (under 5s) and junior play (5 and over), inclusive equipment for 5 to 25 year olds and a ball court, refurbished in 2020, as Tower Hamlets Council lists it.",
+  "nearby": [],
+  "operator": "Tower Hamlets Council",
+  "sources": [
+    {
+      "label": "Tower Hamlets Council: playgrounds and inclusive play",
+      "url": "https://www.towerhamlets.gov.uk/lgnl/leisure_and_culture/parks_and_open_spaces/Playgrounds-and-Inclusive-Play.aspx"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Biggin Hill Recreation Ground Playground",
+  "region": "london",
+  "area": "Biggin Hill, Bromley",
+  "lat": 51.31313,
+  "lng": 0.03752,
+  "ages": [],
+  "equipment": [
+    "gym",
+    "mg",
+    "sk"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Park with a children's play area and sports facilities, run by Bromley Council. The council also lists car park, football, multi-use court, outdoor gym, skateboard park and teenage shelter.",
+  "nearby": [],
+  "operator": "Bromley Council",
+  "sources": [
+    {
+      "label": "Bromley Council: Biggin Hill Recreation Ground",
+      "url": "https://www.bromley.gov.uk/directory-record/917/biggin-hill-recreation-ground"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

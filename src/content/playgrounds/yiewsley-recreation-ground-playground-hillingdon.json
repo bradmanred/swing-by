@@ -1,0 +1,26 @@
+{
+  "name": "Yiewsley Recreation Ground Playground",
+  "region": "london",
+  "area": "Yiewsley, Hillingdon",
+  "lat": 51.51449,
+  "lng": -0.47307,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Hillingdon Council park with a children's play area. The council also lists ball court, bowling green and sensory garden.",
+  "nearby": [],
+  "operator": "Hillingdon Council",
+  "sources": [
+    {
+      "label": "Hillingdon Council: Yiewsley Recreation Ground",
+      "url": "https://pre.hillingdon.gov.uk/directory-record/50/yiewsley-recreation-ground"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

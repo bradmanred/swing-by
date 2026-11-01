@@ -1,0 +1,27 @@
+{
+  "name": "Tiverton Playing Field Playground",
+  "region": "london",
+  "area": "Queens Park, Brent",
+  "lat": 51.53807,
+  "lng": -0.21622,
+  "ages": [],
+  "equipment": [
+    "gym",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Brent Council park with a children's play area. The council also lists sports hall, outdoor gym No, multi Use Games Area No, climbing wall n/a and cycle circuit n/a.",
+  "nearby": [],
+  "operator": "Brent Council",
+  "sources": [
+    {
+      "label": "Brent Council: Tiverton Playing Field",
+      "url": "https://www.brent.gov.uk/parks-leisure-and-healthy-living/parks-and-open-spaces/park-finder/tiverton-playing-field"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

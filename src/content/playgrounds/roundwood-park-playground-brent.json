@@ -1,0 +1,27 @@
+{
+  "name": "Roundwood Park Playground",
+  "region": "london",
+  "area": "Roundwood, Brent",
+  "lat": 51.54056,
+  "lng": -0.24129,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "Brent Council park with a children's play area. The council also lists aviary, café, public toilet, sports hall, sports pitches and courts and wildlife area.",
+  "nearby": [],
+  "operator": "Brent Council",
+  "sources": [
+    {
+      "label": "Brent Council: Roundwood Park",
+      "url": "https://www.brent.gov.uk/parks-leisure-and-healthy-living/parks-and-open-spaces/park-finder/roundwood-park"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

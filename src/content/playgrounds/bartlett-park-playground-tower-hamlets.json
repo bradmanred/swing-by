@@ -1,0 +1,33 @@
+{
+  "name": "Bartlett Park Playground",
+  "region": "london",
+  "area": "Poplar, Tower Hamlets",
+  "lat": 51.51604,
+  "lng": -0.02201,
+  "ages": [
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [],
+  "access": [
+    "inc",
+    "sf"
+  ],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "Fully inclusive playground on Lindfield Street for children and young people with special educational needs and disabilities (5 to 25), with step-free access, level surfaces and an accessible toilet, as Tower Hamlets Council lists it.",
+  "nearby": [],
+  "operator": "Tower Hamlets Council",
+  "sources": [
+    {
+      "label": "Tower Hamlets Council: playgrounds and inclusive play",
+      "url": "https://www.towerhamlets.gov.uk/lgnl/leisure_and_culture/parks_and_open_spaces/Playgrounds-and-Inclusive-Play.aspx"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}
