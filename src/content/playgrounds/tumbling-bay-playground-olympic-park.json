@@ -2,8 +2,8 @@
   "name": "Tumbling Bay Playground",
   "region": "london",
   "area": "Queen Elizabeth Olympic Park, Stratford",
-  "lat": 51.54,
-  "lng": -0.01,
+  "lat": 51.54835,
+  "lng": -0.01517,
   "ages": [],
   "equipment": [
     "sw",
@@ -27,6 +27,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (mapped from the postcode), age ranges and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges and opening hours.",
   "photo": null
 }

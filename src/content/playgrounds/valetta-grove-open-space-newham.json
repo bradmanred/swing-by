@@ -2,8 +2,8 @@
   "name": "Valetta Grove Open Space",
   "region": "london",
   "area": "Plaistow, Newham",
-  "lat": 51.53,
-  "lng": 0.03,
+  "lat": 51.53196,
+  "lng": 0.01809,
   "ages": [],
   "equipment": [
     "mg"
@@ -23,6 +23,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (mapped from the postcode), age ranges, play equipment and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment and opening hours.",
   "photo": null
 }

@@ -2,8 +2,8 @@
   "name": "Abbey Lane Open Space",
   "region": "london",
   "area": "Stratford, Newham",
-  "lat": 51.53,
-  "lng": 0.03,
+  "lat": 51.53301,
+  "lng": -0.00513,
   "ages": [],
   "equipment": [
     "gym"
@@ -23,6 +23,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (mapped from the postcode), age ranges, play equipment and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment and opening hours.",
   "photo": null
 }

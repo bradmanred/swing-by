@@ -2,8 +2,8 @@
   "name": "Hermit Road Recreation Ground",
   "region": "london",
   "area": "Plaistow, Newham",
-  "lat": 51.53,
-  "lng": 0.03,
+  "lat": 51.52346,
+  "lng": 0.01508,
   "ages": [],
   "equipment": [],
   "access": [],
@@ -19,6 +19,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (mapped from the postcode), age ranges, play equipment and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment and opening hours.",
   "photo": null
 }
