@@ -1,8 +1,17 @@
 # Fixing automated check reports
 
-Some GitHub workflows check the site without changing anything and post what they find as an issue labelled
-**`check-report`**. A daily scheduled Claude task ("Fix check reports") reads every open `check-report` issue, fixes
-what it can from official sources, and opens a pull request for the owner to review. This page is its playbook.
+Some GitHub workflows check the site without changing anything. As soon as a check finishes, the same run hands its
+report to Claude (`.github/workflows/fix-check-report.yml`, using the Claude Code GitHub Action), which fixes what it
+can from official sources and opens a pull request for the owner to review. Nothing is merged automatically.
+
+If Claude isn't set up for the repository, fails, or doesn't finish, the run opens an issue labelled
+**`check-report`** instead, with the whole report or just what's left. A daily scheduled Claude task ("Fix check
+reports") reads every open `check-report` issue and carries on from there. This page is the playbook for both.
+
+To turn on fixing in the same run, add one repository secret (Settings > Secrets and variables > Actions):
+`CLAUDE_CODE_OAUTH_TOKEN` (run `claude setup-token` with a Claude subscription) or `ANTHROPIC_API_KEY` (billed per
+use). Pull requests opened from Actions need "Allow GitHub Actions to create and approve pull requests" (Settings >
+Actions > General). Without it, the fixes are left on a pushed `claude/fix-…` branch and the issue says so.
 
 ## Rules for every fix
 
@@ -22,7 +31,11 @@ what it can from official sources, and opens a pull request for the owner to rev
 ## Progress and finishing
 
 - Work on one branch per issue: `claude/fix-check-<issue number>`. If an open PR from that branch already exists,
-  carry on from it (push more commits) rather than starting again.
+  carry on from it (push more commits) rather than starting again. If the issue says the same-run fix already opened
+  a pull request (branch `claude/fix-<check>-<run id>`), carry on in that one instead.
+- In the same-run fix (Actions), there's no 150 limit: work through the whole report, then write what's left, if
+  anything, to `check-report/remaining.md` so the workflow can open an issue for it. Pull requests opened from
+  Actions don't start other workflows, so run `node scripts/nearest-toilets.mjs` yourself.
 - Do up to about 150 findings per run, in the order the report lists them. Then comment on the issue: the PR link,
   what was done, and the first section and item the next run should start from.
 - When every finding is dealt with (fixed, confirmed fine, left for the owner, or couldn't be checked), comment with a
@@ -59,7 +72,8 @@ Full lists are in the `quarterly-check` artifact on the run linked at the bottom
 
 ### Adding a new check
 
-A new workflow that reports problems for fixing should open its issue with the `check-report` label
-(`-f "labels[]=check-report"`), say in the issue body that nothing has been changed, and get a section here
-describing each kind of finding and how to fix it. Reports that already have their own scheduled task (the weekly
+A new workflow that reports problems for fixing should upload its report (a `.md` and the full `.json`) as an
+artifact, then call `fix-check-report.yml` as its last job (see `quarterly-check.yml`), with `secrets: inherit`.
+That fixes the findings in the same run and opens the `check-report` issue only when something is left. Give it a
+section here describing each kind of finding and how to fix it. Reports that already have their own scheduled task (the weekly
 tick-box review) don't use the label.
