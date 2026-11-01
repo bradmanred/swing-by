@@ -2,8 +2,8 @@
   "name": "Greys Court Woodland Play Area",
   "region": "south-east",
   "area": "Rotherfield Greys",
-  "lat": 54.0,
-  "lng": -2.0,
+  "lat": 51.54327,
+  "lng": -0.95756,
   "ages": [],
   "equipment": [
     "ad"
@@ -25,6 +25,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (mapped from the postcode), age ranges and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges and opening hours.",
   "photo": null
 }

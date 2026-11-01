@@ -2,8 +2,8 @@
   "name": "Brodie Castle Adventure Playground and Playful Garden",
   "region": "scotland",
   "area": "Forres",
-  "lat": 54.0,
-  "lng": -2.0,
+  "lat": 57.599,
+  "lng": -3.70969,
   "ages": [],
   "equipment": [
     "cl",
@@ -24,6 +24,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (mapped from the postcode), whether the Playful Garden has a separate charge, age ranges and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), whether the Playful Garden has a separate charge, age ranges and opening hours.",
   "photo": null
 }

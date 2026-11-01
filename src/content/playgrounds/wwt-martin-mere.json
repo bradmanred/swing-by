@@ -2,8 +2,8 @@
   "name": "WWT Martin Mere Play Areas",
   "region": "north-west",
   "area": "Burscough",
-  "lat": 54.0,
-  "lng": -2.0,
+  "lat": 53.62287,
+  "lng": -2.86588,
   "ages": [],
   "equipment": [
     "zw",
@@ -31,6 +31,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (mapped from the postcode), age ranges and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges and opening hours.",
   "photo": null
 }

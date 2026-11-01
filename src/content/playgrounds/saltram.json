@@ -2,8 +2,8 @@
   "name": "Saltram Play Area",
   "region": "devon",
   "area": "Plympton",
-  "lat": 54.0,
-  "lng": -2.0,
+  "lat": 50.38057,
+  "lng": -4.08066,
   "ages": [],
   "equipment": [],
   "access": [],
@@ -23,6 +23,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (mapped from the postcode), play equipment, whether the play area itself is inside the paid area, age ranges and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, whether the play area itself is inside the paid area, age ranges and opening hours.",
   "photo": null
 }
