@@ -624,6 +624,14 @@
     "https://www.enfield.gov.uk/services/leisure-and-culture/green-enfield"
    ],
    "note": "Enfield doesn't publish a playground list: its parks page names only Broomfield, Grovelands and Oakwood parks' playgrounds. Other gaps are filled from OpenStreetMap. Its website blocks automated downloads."
+  },
+  {
+   "district": "Redbridge",
+   "council": "Redbridge Council",
+   "sources": [
+    "https://www.redbridge.gov.uk/leisure-sport-and-the-arts/parks/"
+   ],
+   "note": "Parks are run by Vision Redbridge Culture and Leisure. The council's eight area pages describe each park; the 17 with play areas are listed. Vision's own park pages block automated downloads."
   }
  ]
 }
