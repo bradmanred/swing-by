@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import Analytics from '../components/Analytics.astro';
 import CookieBar from '../components/CookieBar.astro';
+import AffiliateBanner from '../components/AffiliateBanner.astro';
 // noindex keeps a page out of search results. image is the picture shown when the page is shared (a path on this site or a full
 // address; defaults to the Swing By card). jsonLd is structured data for search engines, as one object or a list of them.
 interface Props { title: string; description?: string; current?: string; analytics?: boolean; fullTitle?: string; noindex?: boolean; image?: string; jsonLd?: object | object[] }
@@ -65,11 +66,9 @@ const jsonLdText = jsonLd ? JSON.stringify(jsonLd).replace(/</g, '\\u003c') : nu
     <main id="main" tabindex="-1">
       <div class="wrap stack"><slot /></div>
     </main>
-    {/* Advert slot. Swap the placeholder for the AdSense unit once there's a publisher ID and a cookie consent banner. */}
+    {/* Advert slot: Amazon Associates links (see AffiliateBanner). */}
     <aside class="ad-slot wrap" aria-label="Advertisement">
-      <div class="ad-box" data-ad-slot="banner">
-        <span>Advertisement</span>
-      </div>
+      <AffiliateBanner />
     </aside>
     <footer class="site-footer">
       <div class="wrap">
