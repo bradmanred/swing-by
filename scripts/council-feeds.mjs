@@ -6,6 +6,15 @@ const UA = { 'User-Agent': 'SwingBy/1.0 (https://swing-by.co.uk; reads council p
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 export const strip = (s) => String(s ?? '').replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&').replace(/&#0?39;|&rsquo;/g, "'").replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
 
+// "Church Meadows - Parks and recreation directory" or the other way round: keep the part that isn't the directory.
+export const recordName = (s) => s.split(/\s+[-|]\s+/).find((part) => part && !/\bdirectory\b/i.test(part)) ?? s;
+// "https://…/directory_record/1057478/church_meadows" → "Church Meadows". Empty if the address has no name in it.
+export const slugName = (u) => {
+  const last = decodeURIComponent(new URL(u).pathname.split('/').filter(Boolean).pop() ?? '');
+  if (!/[a-z]/i.test(last) || /^\d+$/.test(last)) return '';
+  return last.replace(/[_-]+/g, ' ').replace(/\b[a-z]/g, (ch) => ch.toUpperCase()).trim();
+};
+
 export async function readFeed(feed) {
   const recs = [];
   if (feed.type === 'directory') {
@@ -20,10 +29,15 @@ export async function readFeed(feed) {
         if (feed.require && !new RegExp(feed.require).test(page)) continue; // e.g. only parks whose facilities list a playground
         const c = page.match(new RegExp(feed.coords));
         const n = page.match(new RegExp(feed.name));
-        if (c && n) recs.push({ name: strip(n[1]).replace(/\s+[-|]\s.*$/, ''), lat: Number(c[1]), lng: Number(c[2]), url: u });
+        if (c && n) recs.push({ name: recordName(strip(n[1])), lat: Number(c[1]), lng: Number(c[2]), url: u });
         await sleep(500);
       }
     }
+    // A name shared by several records is the directory's own heading (e.g. "Parks and recreation directory"), not
+    // the park's: use the name in the record's address instead (".../directory_record/1057478/church_meadows").
+    const counts = new Map();
+    for (const r of recs) counts.set(r.name, (counts.get(r.name) ?? 0) + 1);
+    for (const r of recs) if (counts.get(r.name) > 2 || /\bdirectory\b/i.test(r.name)) r.name = slugName(r.url) || r.name;
   } else if (feed.type === 'geojson') {
     const j = await fetch(feed.url, { headers: UA }).then((r) => r.json()).catch(() => null);
     for (const f of j?.features ?? []) {
