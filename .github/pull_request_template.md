@@ -12,6 +12,7 @@ Delete this section if the pull request doesn't touch playground data. Otherwise
 - [ ] ParksHerts, or the county's park portal, searched town by town
 - [ ] Town councils
 - [ ] Parish councils (all of them in the district)
+- [ ] Unitary, metropolitan or London borough: its country parks and countryside sites, and its housing-estate play areas
 - [ ] Trusts, the county council, National Trust, English Heritage, Historic Houses, private attractions
 - [ ] Cross-checked against OpenStreetMap `leisure=playground` for missing candidates
 

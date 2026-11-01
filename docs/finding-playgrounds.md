@@ -11,7 +11,7 @@ One council list is never the whole picture. Work through every source type belo
 
 ## 1. List who runs playgrounds in the area
 
-For each district or borough, write down every organisation that may run a play area:
+For each district, borough or unitary authority, write down every organisation that may run a play area:
 
 | Who | Where to look | Herts examples |
 | --- | --- | --- |
@@ -23,6 +23,7 @@ For each district or borough, write down every organisation that may run a play 
 | Parish councils | "Our services", "recreation grounds", "play areas" pages, the asset register and the playground inspection reports. Every parish in the district, not only the big ones. | Welwyn, Northaw and Cuffley, North Mymms, Woolmer Green |
 | Trusts and foundations | Their own park pages. | Letchworth Garden City Heritage Foundation |
 | County council | Country parks and countryside sites. | Hertfordshire County Council countryside sites |
+| Unitary authority (also metropolitan and London boroughs) | One council does both the district's and the county's jobs, so check all of its play area and parks pages above, then two places a district list won't prompt for: its own country parks and countryside sites, which are usually on separate pages from the play area list, and play areas on its housing estates, which are listed under housing rather than parks (try "estate play areas", "housing open spaces" or the housing team's pages). | Brighton & Hove City Council: Stanmer Park (country park) and housing-estate play areas; Luton, Bedford and Central Bedfordshire |
 | Charities and membership bodies | Their property pages. | National Trust, English Heritage, Historic Houses |
 | Private attractions and estates | Their own websites (check opening and fees). | Knebworth, Aldenham Country Park |
 
