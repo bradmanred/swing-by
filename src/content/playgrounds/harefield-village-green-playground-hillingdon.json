@@ -1,9 +1,9 @@
 {
   "name": "Harefield Village Green Playground",
   "region": "london",
-  "area": "Hillingdon",
-  "lat": 51.51,
-  "lng": -0.03,
+  "area": "Harefield Village, Hillingdon",
+  "lat": 51.60519,
+  "lng": -0.48106,
   "ages": [],
   "equipment": [
     "gym"
@@ -21,6 +21,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (approximate), play equipment and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
   "photo": null
 }

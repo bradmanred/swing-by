@@ -1,9 +1,9 @@
 {
   "name": "Pole Hill Open Space Playground",
   "region": "london",
-  "area": "Hillingdon",
-  "lat": 51.51,
-  "lng": -0.03,
+  "area": "Hillingdon East, Hillingdon",
+  "lat": 51.54016,
+  "lng": -0.43866,
   "ages": [],
   "equipment": [
     "gym",
@@ -23,6 +23,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (approximate), play equipment and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
   "photo": null
 }
