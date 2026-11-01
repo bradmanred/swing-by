@@ -2,8 +2,8 @@
   "name": "Southall Park Playground",
   "region": "london",
   "area": "Southall, Ealing",
-  "lat": 51.51,
-  "lng": -0.31,
+  "lat": 51.50897,
+  "lng": -0.36759,
   "ages": [],
   "equipment": [
     "mg"
@@ -21,6 +21,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (approximate), age ranges, play equipment and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment and opening hours.",
   "photo": null
 }

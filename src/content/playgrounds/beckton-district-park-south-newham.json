@@ -2,8 +2,8 @@
   "name": "Beckton District Park South",
   "region": "london",
   "area": "Beckton, Newham",
-  "lat": 51.53,
-  "lng": 0.03,
+  "lat": 51.51173,
+  "lng": 0.04679,
   "ages": [],
   "equipment": [],
   "access": [],
@@ -19,6 +19,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (mapped from the postcode), age ranges, play equipment and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment and opening hours.",
   "photo": null
 }

@@ -2,8 +2,8 @@
   "name": "Rectory Fields Playground",
   "region": "london",
   "area": "Northolt, Ealing",
-  "lat": 51.51,
-  "lng": -0.31,
+  "lat": 51.53567,
+  "lng": -0.38426,
   "ages": [],
   "equipment": [],
   "access": [],
@@ -19,6 +19,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (approximate), age ranges, play equipment and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment and opening hours.",
   "photo": null
 }

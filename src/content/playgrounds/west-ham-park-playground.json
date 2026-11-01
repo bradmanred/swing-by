@@ -2,8 +2,8 @@
   "name": "West Ham Park Playground",
   "region": "london",
   "area": "Forest Gate, Newham",
-  "lat": 51.54,
-  "lng": -0.01,
+  "lat": 51.53896,
+  "lng": 0.02129,
   "ages": [],
   "equipment": [
     "wp"
@@ -23,6 +23,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (mapped from the postcode), age ranges and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges and opening hours.",
   "photo": null
 }

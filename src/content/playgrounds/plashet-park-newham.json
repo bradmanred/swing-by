@@ -2,8 +2,8 @@
   "name": "Plashet Park",
   "region": "london",
   "area": "East Ham, Newham",
-  "lat": 51.53,
-  "lng": 0.03,
+  "lat": 51.54106,
+  "lng": 0.04523,
   "ages": [],
   "equipment": [
     "wp",
@@ -24,6 +24,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (mapped from the postcode), age ranges, play equipment and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment and opening hours.",
   "photo": null
 }
