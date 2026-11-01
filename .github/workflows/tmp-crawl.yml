@@ -19,4 +19,4 @@ jobs:
       - run: |
           git config user.name "swing-by-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add tmp/records-b.json && git commit -m "tmp: council records" && git pull --rebase origin claude/london-3 && git push
+          git add tmp/records-c.json && git commit -m "tmp: council records" && git pull --rebase origin claude/london-3 && git push
