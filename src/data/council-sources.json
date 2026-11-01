@@ -498,6 +498,37 @@
     "page": "https://www.brighton-hove.gov.uk/node/1956171"
    },
    "note": "The playgrounds layer of its city parks map gives names and positions for 46 of its 53 playgrounds. Stanmer Park, Wish Park, Middle Park, Ovingdean and a few housing estate play areas aren't on it."
+  },
+  {
+   "district": "Croydon",
+   "council": "Croydon Council",
+   "sources": [
+    "https://www.croydon.gov.uk/libraries-leisure-and-culture/parks-and-open-spaces/parks-and-playgrounds/parks-and-playgrounds-directory"
+   ],
+   "note": "Parks and playgrounds directory: 43 of its 120 parks list a playground (facility filter 152). The feed keeps parks whose facilities list a playground; positions are the park's map point, so they're marked approximate for the pin check.",
+   "feed": {
+    "type": "directory",
+    "approximate": true,
+    "index": [
+     "https://www.croydon.gov.uk/libraries-leisure-and-culture/parks-and-open-spaces/parks-and-playgrounds/parks-and-playgrounds-directory?localgov_directories_facets_proximity_search%5B152%5D=152&page=0",
+     "https://www.croydon.gov.uk/libraries-leisure-and-culture/parks-and-open-spaces/parks-and-playgrounds/parks-and-playgrounds-directory?localgov_directories_facets_proximity_search%5B152%5D=152&page=1",
+     "https://www.croydon.gov.uk/libraries-leisure-and-culture/parks-and-open-spaces/parks-and-playgrounds/parks-and-playgrounds-directory?localgov_directories_facets_proximity_search%5B152%5D=152&page=2",
+     "https://www.croydon.gov.uk/libraries-leisure-and-culture/parks-and-open-spaces/parks-and-playgrounds/parks-and-playgrounds-directory?localgov_directories_facets_proximity_search%5B152%5D=152&page=3",
+     "https://www.croydon.gov.uk/libraries-leisure-and-culture/parks-and-open-spaces/parks-and-playgrounds/parks-and-playgrounds-directory?localgov_directories_facets_proximity_search%5B152%5D=152&page=4"
+    ],
+    "follow": "croydon\\.gov\\.uk/(?:node/3173|libraries-leisure-and-culture/parks-and-open-spaces/parks-and-playgrounds/parks-and-playgrounds-directory)/[a-z0-9-]+$",
+    "name": "<title>([^|<]+?) \\| Croydon Council",
+    "coords": "\"features\":\\[\\{\"type\":\"point\",\"lat\":([-0-9.]+),\"lon\":([-0-9.]+)",
+    "require": "<li>[^<]*(?:[Pp]layground|[Pp]lay area)[^<]*</li>"
+   }
+  },
+  {
+   "district": "Newham",
+   "council": "Newham Council",
+   "sources": [
+    "https://www.newham.gov.uk/localpark"
+   ],
+   "note": "One page lists all 34 council parks with facilities; the 30 with play areas are listed (Beckton District Park as north and south)."
   }
  ]
 }
