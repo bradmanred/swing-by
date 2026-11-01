@@ -1,5 +1,9 @@
 ---
 import Base from '../layouts/Base.astro';
+import { allParks, L } from '../lib/parks';
+
+const parks = await allParks();
+const sizes = (['small', 'medium', 'large'] as const).map((k) => ({ k, label: L.sizes[k], n: parks.filter((p) => p.size === k).length }));
 ---
 <Base title="Advanced search" description="Search every playground by name, town, county or equipment, and the rest of the site." noindex>
   <div>
@@ -13,6 +17,15 @@ import Base from '../layouts/Base.astro';
       <input id="q" name="q" type="search" autocomplete="off" enterkeyhint="search" />
       <button class="btn btn-blue" type="submit">Search</button>
     </div>
+    <fieldset class="search-sizes">
+      <legend>Play area size</legend>
+      <div class="row">
+        {sizes.map((z) => (
+          <label class="chk"><input type="checkbox" name="size" value={z.k} disabled={z.n === 0} /> {z.label} <span class="hint">({z.n})</span></label>
+        ))}
+      </div>
+      <p class="hint">Sizes come from each council's own grading, so not every playground has one yet. Choosing a size only shows playgrounds that have been graded, and you can leave the search box empty to see them all.</p>
+    </fieldset>
   </form>
   <p id="search-status" role="status" aria-live="polite"></p>
   <ol class="hits" id="search-results"></ol>

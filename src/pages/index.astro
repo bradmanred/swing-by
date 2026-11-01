@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-import { allParks, clientPark, km, regions } from '../lib/parks';
+import { allParks, clientPark, ICON, km, L, regions } from '../lib/parks';
 import { cardHTML, fmtMiles } from '../lib/card';
 import nextAreas from '../data/next-areas.json';
 
@@ -13,32 +13,29 @@ const near = data
   .sort((a, b) => a.d - b.d);
 // Comes straight from the playground files, so it stays right as playgrounds are added.
 const total = data.length;
-const loves = [
-  ['bs', '👶', 'Baby swings'],
-  ['sw', '🪢', 'Swings'],
-  ['sl', '🛝', 'Slides'],
-  ['wp', '💦', 'Splash play'],
-  ['cl', '🧗', 'Climbing'],
-  ['rb', '🎠', 'Roundabouts'],
-  ['zw', '🚡', 'Zip wire'],
-  ['tp', '🤸', 'Trampolines'],
-  ['ss', '⚖️', 'See-saws'],
-  ['mb', '🐒', 'Monkey bars'],
-  ['bb', '🪵', 'Balance beams'],
-  ['sp', '🏖️', 'Sandpit'],
-  ['ad', '🏴‍☠️', 'Adventure play'],
-  ['sk', '🛹', 'Skate park'],
-  ['tr', '🚂', 'Miniature railway'],
-  ['inc', '♿', 'Inclusive equipment'],
-  ['sf', '♿', 'Step-free access'],
-  ['fen', '🚧', 'Fully fenced'],
-  ['sh', '🌳', 'Shade'],
-  ['wc', '🚻', 'Toilets'],
-  ['bc', '🍼', 'Baby change'],
-  ['cf', '☕', 'Café'],
-  ['fp', '🅿️', 'Free parking'],
-].filter(([k]) => data.some((p) => p.f.includes(k))); // a filter only shows once a playground has it
-const sizes = (['small', 'medium', 'large'] as const).map((k) => ({ k, label: k[0].toUpperCase() + k.slice(1), n: data.filter((p) => p.s === k).length }));
+// Equipment and facility filters, most common first: the 20 that the most playgrounds have are shown, the next 20
+// go under "More filters". Counted from the playground files, so the order keeps up as playgrounds are added.
+// A filter only shows once a playground has it.
+const FILTER_LABEL: Record<string, string> = {
+  wp: 'Splash play', cl: 'Climbing', rb: 'Roundabouts', tp: 'Trampolines', ss: 'See-saws', bb: 'Balance beams',
+};
+const ranked = Object.keys(ICON)
+  .map((k) => ({ k, i: ICON[k], l: FILTER_LABEL[k] ?? L.equipment[k] ?? L.access[k] ?? L.facilities[k], n: data.filter((p) => p.f.includes(k)).length }))
+  .filter((x) => x.l && x.n > 0)
+  .sort((a, b) => b.n - a.n || a.l.localeCompare(b.l, 'en-GB'));
+// Always in the top 20, however few playgrounds have it (it's what some families travel for).
+const PINNED = ['tr'];
+// Moved into the top 20 from April to September, while splash parks are on, by the page script below (visitor's date).
+const SUMMER = 'wp';
+const loves = ranked.slice(0, 20);
+for (const k of PINNED) {
+  const item = ranked.find((x) => x.k === k);
+  if (!item || loves.includes(item)) continue;
+  const drop = loves.findLastIndex((x) => !PINNED.includes(x.k));
+  if (drop >= 0) loves.splice(drop, 1);
+  loves.push(item);
+}
+const moreLoves = ranked.filter((x) => !loves.includes(x)).slice(0, 20);
 const paidCount = data.filter((p) => p.pay).length;
 const memberCount = data.filter((p) => p.m).length;
 const ages = [
@@ -109,22 +106,20 @@ const ages = [
   <section aria-labelledby="loves-title" class="loves">
     <h2 id="loves-title" style="margin-bottom:14px">What do they love?</h2>
     <div class="row" role="group" aria-labelledby="loves-title">
-      {loves.map(([k, i, l]) => (
-        <button class="btn" type="button" data-love={k} aria-pressed="false"><span aria-hidden="true">{i}</span> {l}</button>
+      {loves.map((x) => (
+        <button class="btn" type="button" data-love={x.k} data-pin={PINNED.includes(x.k) ? '' : undefined} data-season={x.k === SUMMER ? 'summer' : undefined} data-n={x.n} aria-pressed="false"><span aria-hidden="true">{x.i}</span> {x.l}</button>
       ))}
     </div>
-    <details class="more-filters" id="more-filters">
-      <summary>More filters</summary>
-      <fieldset>
-        <legend>Play area size</legend>
-        <div class="row">
-          {sizes.map((z) => (
-            <label class="chk"><input type="checkbox" name="size" value={z.k} disabled={z.n === 0} /> {z.label} <span class="hint">({z.n})</span></label>
+    {moreLoves.length > 0 && (
+      <details class="more-filters" id="more-filters">
+        <summary>More filters</summary>
+        <div class="row" role="group" aria-label="More things they love">
+          {moreLoves.map((x) => (
+            <button class="btn" type="button" data-love={x.k} data-pin={PINNED.includes(x.k) ? '' : undefined} data-season={x.k === SUMMER ? 'summer' : undefined} data-n={x.n} aria-pressed="false"><span aria-hidden="true">{x.i}</span> {x.l}</button>
           ))}
         </div>
-        <p class="hint">Sizes come from each council's own grading, so not every playground has one yet. Choosing a size only shows playgrounds that have been graded.</p>
-      </fieldset>
-    </details>
+      </details>
+    )}
   </section>
 
   <section aria-labelledby="results-title">
@@ -187,6 +182,8 @@ const ages = [
   <script>
     import { startFinder } from '../scripts/finder';
     import { startVote } from '../scripts/vote';
+    import { summerFilters } from '../scripts/finder';
+    summerFilters();
     startFinder();
     startVote();
   </script>

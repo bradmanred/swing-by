@@ -21,6 +21,7 @@ export async function GET() {
     m: [p.membership ? L.memberships[p.membership] : '', p.size ? L.sizes[p.size] : '', p.fee ? 'Paid entry' : ''].filter(Boolean).join(' '),
     d: p.description,
     c: !!p.checked,
+    s: p.size ?? null,
   }));
   return new Response(JSON.stringify({ parks, pages: PAGES }), { headers: { 'Content-Type': 'application/json' } });
 }
