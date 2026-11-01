@@ -92,6 +92,7 @@ collections:
           - { label: "Basket swing", value: "bk" }
           - { label: "Outdoor gym", value: "gym" }
           - { label: "Ball court", value: "mg" }
+          - { label: "Balance beam", value: "bb" }
       - label: Accessibility
         name: access
         widget: select
