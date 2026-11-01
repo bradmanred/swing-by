@@ -1,0 +1,27 @@
+{
+  "name": "Granville Road Playground",
+  "region": "london",
+  "area": "Brent",
+  "lat": 51.51,
+  "lng": -0.03,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Small local park with a children's playground for four to eight year olds.",
+  "nearby": [],
+  "operator": "Brent Council",
+  "sources": [
+    {
+      "label": "Brent Council: Granville Road",
+      "url": "https://www.brent.gov.uk/parks-leisure-and-healthy-living/parks-and-open-spaces/park-finder/granville-road"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (approximate), play equipment and opening hours.",
+  "photo": null
+}

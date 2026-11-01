@@ -1,0 +1,32 @@
+{
+  "name": "Lady Allen Adventure Playground",
+  "region": "london",
+  "area": "Wandsworth",
+  "lat": 51.51,
+  "lng": -0.03,
+  "ages": [
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "ad"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "Specialist inclusive adventure playground run in partnership with Kids, for disabled children and young people aged 6 to 14 and their siblings.",
+  "nearby": [],
+  "operator": "Wandsworth Council",
+  "sources": [
+    {
+      "label": "Wandsworth Council: Lady Allen Adventure Playground",
+      "url": "https://www.wandsworth.gov.uk/leisure-and-culture/parks-and-open-spaces/childrens-playgrounds/lady-allen-adventure-playground/"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (approximate), play equipment and opening hours.",
+  "photo": null
+}

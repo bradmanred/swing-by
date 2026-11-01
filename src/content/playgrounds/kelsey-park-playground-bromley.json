@@ -1,0 +1,27 @@
+{
+  "name": "Kelsey Park Playground",
+  "region": "london",
+  "area": "Bromley",
+  "lat": 51.51,
+  "lng": -0.03,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "Cafe, toilet, children's play area, tennis, mini golf, rose garden, tree trail, run by Bromley Council.",
+  "nearby": [],
+  "operator": "Bromley Council",
+  "sources": [
+    {
+      "label": "Bromley Council: Kelsey Park",
+      "url": "https://www.bromley.gov.uk/directory-record/968/kelsey-park"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (approximate), play equipment and opening hours.",
+  "photo": null
+}

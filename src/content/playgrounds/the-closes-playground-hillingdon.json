@@ -1,0 +1,27 @@
+{
+  "name": "The Closes Playground",
+  "region": "london",
+  "area": "Hillingdon",
+  "lat": 51.51,
+  "lng": -0.03,
+  "ages": [],
+  "equipment": [
+    "gym",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Hillingdon Council park with a children's play area. The council also lists multi-use ball court and outdoor gym.",
+  "nearby": [],
+  "operator": "Hillingdon Council",
+  "sources": [
+    {
+      "label": "Hillingdon Council: The Closes",
+      "url": "https://pre.hillingdon.gov.uk/directory-record/43/the-closes"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (approximate), play equipment and opening hours.",
+  "photo": null
+}
