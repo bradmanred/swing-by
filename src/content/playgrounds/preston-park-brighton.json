@@ -1,0 +1,39 @@
+{
+  "name": "Preston Park",
+  "region": "south-east",
+  "area": "Brighton",
+  "lat": 50.83881,
+  "lng": -0.14345,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "One of the city's largest play areas, in the city's biggest urban park, which is always open. There are two cafés (the Chalet and the Rotunda) with toilets, and a Changing Places toilet in the park.",
+  "nearby": [],
+  "operator": "Brighton & Hove City Council (City Parks)",
+  "sources": [
+    {
+      "label": "Brighton & Hove City Council: city parks map (playgrounds layer)",
+      "url": "https://www.brighton-hove.gov.uk/node/1956171"
+    },
+    {
+      "label": "Brighton & Hove City Council: Preston Park",
+      "url": "https://www.brighton-hove.gov.uk/preston-park-new"
+    },
+    {
+      "label": "Brighton & Hove City Council: Playground Refurbishment Programme (Appendix 1)",
+      "url": "https://democracy.brighton-hove.gov.uk/documents/s197294/Playground%20Refurbishment%20Programme%20APX.%20n%201.html?CT=2"
+    },
+    {
+      "label": "Brighton & Hove City Council: Playgrounds",
+      "url": "https://www.brighton-hove.gov.uk/libraries-leisure-and-arts/parks-and-green-spaces/playgrounds"
+    }
+  ],
+  "checked": "2026-10-30",
+  "notConfirmed": "Exact position (from the council's map), age ranges, play equipment and parking.",
+  "photo": null
+}

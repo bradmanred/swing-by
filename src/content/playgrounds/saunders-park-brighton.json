@@ -1,0 +1,41 @@
+{
+  "name": "Saunders Park",
+  "region": "south-east",
+  "area": "Brighton",
+  "lat": 50.83812,
+  "lng": -0.12249,
+  "ages": [],
+  "equipment": [
+    "wp"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "Refurbished playground set among trees for shelter, with a playing surface designed by local artist Lois O'Hara. A paddling pool next to it opens in the summer (run by Freedom Leisure). Laz' in the Park café has public toilets, including a disabled toilet, open when the café is.",
+  "nearby": [],
+  "operator": "Brighton & Hove City Council (City Parks)",
+  "sources": [
+    {
+      "label": "Brighton & Hove City Council: city parks map (playgrounds layer)",
+      "url": "https://www.brighton-hove.gov.uk/node/1956171"
+    },
+    {
+      "label": "Brighton & Hove City Council: Saunders Park",
+      "url": "https://www.brighton-hove.gov.uk/libraries-leisure-and-arts/parks-and-green-spaces/saunders-park"
+    },
+    {
+      "label": "Freedom Leisure: Saunders Park paddling pool",
+      "url": "https://www.freedom-leisure.co.uk/centres/brighton-and-hove-paddling-pools-and-water-feature/saunders-park-paddling-pool/"
+    },
+    {
+      "label": "Brighton & Hove City Council: Playground Refurbishment Programme (Appendix 1)",
+      "url": "https://democracy.brighton-hove.gov.uk/documents/s197294/Playground%20Refurbishment%20Programme%20APX.%20n%201.html?CT=2"
+    }
+  ],
+  "checked": "2026-10-30",
+  "notConfirmed": "Exact position (from the council's map), age ranges, other play equipment, opening hours and parking.",
+  "photo": null
+}

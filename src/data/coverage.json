@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29",
+ "updated": "2026-11-01",
  "counties": [
   {
    "name": "Devon",
@@ -52,6 +52,10 @@
   {
    "name": "West Yorkshire",
    "playgrounds": 53
+  },
+  {
+   "name": "East Sussex",
+   "playgrounds": 49
   },
   {
    "name": "South Yorkshire",
@@ -160,10 +164,6 @@
   {
    "name": "Shropshire",
    "playgrounds": 4
-  },
-  {
-   "name": "East Sussex",
-   "playgrounds": 3
   },
   {
    "name": "Herefordshire",

@@ -1,0 +1,34 @@
+{
+  "name": "Hove Lagoon",
+  "region": "south-east",
+  "area": "Hove",
+  "lat": 50.82648,
+  "lng": -0.19455,
+  "ages": [],
+  "equipment": [
+    "wp"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Seafront play area at Hove Lagoon with seasonal water play.",
+  "nearby": [],
+  "operator": "Brighton & Hove City Council (City Parks)",
+  "sources": [
+    {
+      "label": "Brighton & Hove City Council: city parks map (playgrounds layer)",
+      "url": "https://www.brighton-hove.gov.uk/node/1956171"
+    },
+    {
+      "label": "Brighton & Hove City Council: Playground Refurbishment Programme (Appendix 1)",
+      "url": "https://democracy.brighton-hove.gov.uk/documents/s197294/Playground%20Refurbishment%20Programme%20APX.%20n%201.html?CT=2"
+    },
+    {
+      "label": "Brighton & Hove City Council: Playgrounds",
+      "url": "https://www.brighton-hove.gov.uk/libraries-leisure-and-arts/parks-and-green-spaces/playgrounds"
+    }
+  ],
+  "checked": "2026-10-30",
+  "notConfirmed": "Exact position (from the council's map), age ranges, other play equipment, when the water play runs, toilets and parking.",
+  "photo": null
+}
