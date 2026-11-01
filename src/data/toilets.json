@@ -6077,6 +6077,18 @@
     "lng": -0.625469685
    }
   },
+  "broomfield-park-adventure-playground-enfield": {
+   "nearest": {
+    "id": "bf5c5f5ecb2fe11d98eb3bca",
+    "name": "Star of the East",
+    "m": 261,
+    "babyChange": true,
+    "accessible": true,
+    "free": null,
+    "lat": 51.512224571,
+    "lng": -0.02880156
+   }
+  },
   "broomhill-park-rochester": {
    "nearest": {
     "id": "1715c300b65e30fd295f13be",
@@ -18093,6 +18105,18 @@
     "free": false,
     "lat": 51.753944525,
     "lng": -0.473023653
+   }
+  },
+  "grovelands-park-playground-enfield": {
+   "nearest": {
+    "id": "bf5c5f5ecb2fe11d98eb3bca",
+    "name": "Star of the East",
+    "m": 261,
+    "babyChange": true,
+    "accessible": true,
+    "free": null,
+    "lat": 51.512224571,
+    "lng": -0.02880156
    }
   },
   "grundy-park-play-area-cheshunt": {
@@ -30874,6 +30898,18 @@
     "free": true,
     "lat": 51.699588726,
     "lng": -0.190216899
+   }
+  },
+  "oakwood-park-playground-enfield": {
+   "nearest": {
+    "id": "bf5c5f5ecb2fe11d98eb3bca",
+    "name": "Star of the East",
+    "m": 261,
+    "babyChange": true,
+    "accessible": true,
+    "free": null,
+    "lat": 51.512224571,
+    "lng": -0.02880156
    }
   },
   "oakwood-park-salford": {
