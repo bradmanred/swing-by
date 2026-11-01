@@ -22,8 +22,8 @@ for (const ch of path) hash = (hash * 31 + ch.charCodeAt(0)) >>> 0;
 const pick = picks[hash % picks.length];
 const href = `https://www.amazon.co.uk/s?k=${encodeURIComponent(pick.search)}&tag=${AMAZON_TAG}`;
 ---
-<div class="ad-box ad-affiliate" data-ad-slot="banner">
-  <p class="ad-label">Advertisement</p>
-  <p class="ad-pick"><a href={href} rel="sponsored nofollow noopener" target="_blank">{pick.title} on Amazon</a> <span>{pick.blurb}</span></p>
-  <p class="ad-note">As an Amazon Associate, Swing By earns from qualifying purchases.</p>
+<div class="pick-box partner-pick">
+  <p class="pick-label">Advertisement</p>
+  <p class="pick-line"><a href={href} rel="sponsored nofollow noopener" target="_blank">{pick.title} on Amazon</a> <span>{pick.blurb}</span></p>
+  <p class="pick-note">As an Amazon Associate, Swing By earns from qualifying purchases.</p>
 </div>
