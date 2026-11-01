@@ -46,6 +46,7 @@ export function startFinder() {
   const st = {
     origin: store.get<Origin>('sb-origin', { name: first.name, lat: first.lat, lng: first.lng, acc: 1500, how: 'example' }),
     ages: new Set<string>(),
+    sizes: new Set<string>(),
     loves: new Set<string>(),
     freeOnly: store.get<boolean>('sb-free-only', false),
     hideUnverified: store.get<boolean>('sb-hide-unverified', false),
@@ -72,6 +73,7 @@ export function startFinder() {
     return parks
       .filter((p) => !st.ages.size || p.ages.some((a) => st.ages.has(a)))
       .filter((p) => [...st.loves].every((k) => p.f.includes(k)))
+      .filter((p) => !st.sizes.size || (p.s != null && st.sizes.has(p.s)))
       .filter((p) => !st.freeOnly || !p.pay);
   }
 
@@ -253,6 +255,13 @@ export function startFinder() {
   document.querySelectorAll<HTMLInputElement>('input[name=age]').forEach((c) =>
     c.addEventListener('change', () => {
       c.checked ? st.ages.add(c.value) : st.ages.delete(c.value);
+      st.limit = PAGE;
+      render();
+    }),
+  );
+  document.querySelectorAll<HTMLInputElement>('input[name=size]').forEach((c) =>
+    c.addEventListener('change', () => {
+      c.checked ? st.sizes.add(c.value) : st.sizes.delete(c.value);
       st.limit = PAGE;
       render();
     }),

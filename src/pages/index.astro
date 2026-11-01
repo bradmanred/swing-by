@@ -38,6 +38,7 @@ for (const k of PINNED) {
 const moreLoves = ranked.filter((x) => !loves.includes(x)).slice(0, 20);
 const paidCount = data.filter((p) => p.pay).length;
 const memberCount = data.filter((p) => p.m).length;
+const sizes = (['small', 'medium', 'large'] as const).map((k) => ({ k, label: k[0].toUpperCase() + k.slice(1), n: data.filter((p) => p.s === k).length }));
 const ages = [
   ['under-3', 'Toddlers'],
   ['3-6', '3–6'],
@@ -68,16 +69,25 @@ const ages = [
           {ages.map(([v, l]) => <label class="chk"><input type="checkbox" name="age" value={v} /> {l}</label>)}
         </div>
       </fieldset>
-      <div class="free-only">
-        <label class="chk"><input type="checkbox" id="hide-unverified" name="verified" value="1" aria-describedby="unverified-hint" /> Hide unverified places</label>
-        <p class="hint" id="unverified-hint">Only shows playgrounds an official source or two parents have confirmed.</p>
-      </div>
-      {paidCount > 0 && (
-        <div class="free-only">
-          <label class="chk"><input type="checkbox" id="free-only" name="free" value="1" aria-describedby="free-hint" /> Free entry only</label>
-          <p class="hint" id="free-hint">Hides the {paidCount} places marked <span class="pound" aria-hidden="true">£</span><span class="sr-only">with a pound sign</span>, which charge for entry.</p>
+      <fieldset class="which">
+        <legend>Which playgrounds?</legend>
+        <div class="row" role="group" aria-label="Play area size" aria-describedby="size-hint">
+          {sizes.map((z) => (
+            <label class="chk"><input type="checkbox" name="size" value={z.k} disabled={z.n === 0} /> {z.label} <span class="hint">({z.n})</span></label>
+          ))}
         </div>
-      )}
+        <p class="hint" id="size-hint">Sizes come from each council's own grading, so choosing a size only shows playgrounds that have been graded.</p>
+        <div class="free-only">
+          <label class="chk"><input type="checkbox" id="hide-unverified" name="verified" value="1" aria-describedby="unverified-hint" /> Hide unverified places</label>
+          <p class="hint" id="unverified-hint">Only shows playgrounds an official source or two parents have confirmed.</p>
+        </div>
+        {paidCount > 0 && (
+          <div class="free-only">
+            <label class="chk"><input type="checkbox" id="free-only" name="free" value="1" aria-describedby="free-hint" /> Free entry only</label>
+            <p class="hint" id="free-hint">Hides the {paidCount} places marked <span class="pound" aria-hidden="true">£</span><span class="sr-only">with a pound sign</span>, which charge for entry.</p>
+          </div>
+        )}
+      </fieldset>
     </form>
   </section>
 
