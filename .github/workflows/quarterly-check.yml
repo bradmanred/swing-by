@@ -1,0 +1,49 @@
+# Quarterly check for changes to playgrounds already listed (scripts/quarterly-check.mjs). Runs without Claude: it
+# reads the council lists that have a feed in src/data/council-sources.json, checks playgrounds sourced from
+# OpenStreetMap are still mapped, checks every official source link still works, and lists playgrounds not checked
+# for over a year. It changes no files; it opens a "Quarterly playground check" issue with what it found, and the
+# full lists are in the run's "quarterly-check" artifact. Runs on the 10th of January, April, July and October
+# (a few days before the quarterly Claude update check on the 15th, which reads the latest issue), and on demand.
+name: Quarterly playground check
+on:
+  workflow_dispatch:
+    inputs:
+      skip:
+        description: 'Leave out parts: councils, osm, links or stale (comma-separated, blank for everything)'
+        default: ''
+  schedule:
+    - cron: '23 5 10 1,4,7,10 *'
+  push: # TEMPORARY: test run on this branch, removed before merge
+    branches: ['claude/quarterly-check']
+permissions:
+  contents: read
+  issues: write
+concurrency:
+  group: quarterly-check
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Check listed playgrounds
+        env:
+          SKIP: ${{ inputs.skip || '' }}
+        run: node scripts/quarterly-check.mjs --skip "$SKIP"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: quarterly-check
+          path: reports/
+      - name: Open the report as an issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          cat reports/quarterly-check.md >> "$GITHUB_STEP_SUMMARY"
+          { cat reports/quarterly-check.md; echo; echo "Full lists: the quarterly-check artifact on [this run]($GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID)."; } > body.md
+          head -c 60000 body.md > issue.md
+          gh api "repos/$GITHUB_REPOSITORY/issues" -f title="Quarterly playground check, $(date +%Y-%m-%d)" -F body=@issue.md --jq .html_url

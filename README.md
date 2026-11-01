@@ -128,6 +128,17 @@ Early playgrounds were pinned by hand, from a postcode or from a street name, be
 
 Run it from the Actions tab (Check pin positions > Run workflow), with a region such as `derbyshire` to start small. Leave "Move the clear ones" unticked to just read the report; tick it to move the "move" pins, refresh the nearest toilets and open a pull request. Look at a few moved pins on the map before merging. Pins with several possible matches are never moved automatically. Moved pins say "taken from OpenStreetMap" afterwards, so each is only checked once. `tests/positions.mjs` tests the script on made-up data, and runs with `npm test`.
 
+## Quarterly check for changes
+
+Four times a year (the 10th of January, April, July and October) the **Quarterly playground check** workflow (`.github/workflows/quarterly-check.yml`, `scripts/quarterly-check.mjs`) looks for changes to playgrounds we already list, without needing Claude. It changes no files. It opens a "Quarterly playground check" issue listing:
+
+- playgrounds a council with a machine-readable list (a `feed` in `src/data/council-sources.json`) no longer lists, ones that may have been renamed, and new ones on the council's list;
+- playgrounds sourced from OpenStreetMap whose mapped playground has been deleted, retagged or marked private;
+- official source links that now return "not found" (404 or 410), which often means a listing has changed or gone;
+- playgrounds with an official source that haven't been checked for over a year.
+
+Each list is capped in the issue; the full lists are in the run's `quarterly-check` artifact. Check each item against its official source before editing or removing a playground. Run it any time from the Actions tab (Quarterly playground check > Run workflow), optionally leaving out parts such as `links`. The council-list reader is shared with Check coverage (`scripts/council-feeds.mjs`).
+
 ## Coming next
 
 - Shared parent reports and ratings (Supabase free tier), with reports shown once another parent has confirmed them.
