@@ -50,6 +50,11 @@
       "id": "queens",
       "checked": "2026-10-27",
       "note": "Moved by hand into the play areas on 2026-10-25 (PR #66)."
+    },
+    {
+      "id": "king-george-v-playing-fields-welwyn-garden-city",
+      "checked": "2026-11-01",
+      "note": "Merged with the OpenStreetMap listing 'Playground off Homestead Lane' (way/177852535) and moved onto its position, which the owner confirmed is right; the old pin was mapped from the postcode, about 370 m away."
     }
   ]
 }

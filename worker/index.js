@@ -9,6 +9,11 @@ import { photos } from './photos.js';
 import { equipment } from './equipment.js';
 import { pins } from './pins.js';
 
+// Old playground address → the listing it was merged into. Add a line whenever two listings are merged.
+const MERGED = {
+  'playground-off-homestead-lane-the-ryde-welwyn-garden-city': 'king-george-v-playing-fields-welwyn-garden-city',
+};
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
@@ -25,6 +30,12 @@ export default {
     if (pathname === '/api/equipment' || pathname.startsWith('/api/equipment/')) return equipment({ request, env, pathname });
     if (pathname === '/api/pins' || pathname.startsWith('/api/pins/')) return pins({ request, env, pathname });
     const res = await env.ASSETS.fetch(request);
+    // Playgrounds merged into another listing: send old links to the one we kept.
+    const gone = /^\/playgrounds\/([a-z0-9-]+)\/?$/.exec(pathname);
+    if (res.status === 404 && gone && MERGED[gone[1]]) {
+      url.pathname = `/playgrounds/${MERGED[gone[1]]}/`;
+      return Response.redirect(url.toString(), 301);
+    }
     // Playground addresses used to start with "c-" (/playgrounds/c-garston-park-watford/). Send old links, bookmarks
     // and search results to the same playground's page now.
     const old = /^\/playgrounds\/c-([a-z0-9-]+)(\/.*)?$/.exec(pathname);

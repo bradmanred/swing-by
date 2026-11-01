@@ -72,7 +72,7 @@ const ld = [
     <div>
       <div class="panel" style="padding:0;overflow:hidden" id="photo-box" data-curated={p.photo ? 'yes' : undefined}>
         {p.photo ? (
-          <figure style="margin:0"><img src={p.photo.src} alt={p.photo.alt} style="display:block;width:100%" /><figcaption class="hint" style="padding:8px 16px">Photo: {p.photo.credit}, {p.photo.licence}</figcaption></figure>
+          <figure style="margin:0"><img src={p.photo.src} alt={p.photo.alt} style="display:block;width:100%" />{(p.photo.credit || p.photo.licence) && <figcaption class="hint" style="padding:8px 16px">Photo: {[p.photo.credit, p.photo.licence].filter(Boolean).join(', ')}</figcaption>}</figure>
         ) : (
           <Fragment set:html={art(clientPark(p))} />
         )}
