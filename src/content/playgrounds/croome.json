@@ -1,0 +1,33 @@
+{
+  "name": "Croome Play Areas",
+  "region": "west-midlands",
+  "area": "Croome",
+  "lat": 52.10498,
+  "lng": -2.16687,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "ad"
+  ],
+  "access": [],
+  "facilities": [
+    "sh"
+  ],
+  "opens": "",
+  "description": "Two play areas a short walk from the RAF museum, visitor centre and café: an RAF-themed playground with a control tower, scramble net, bunker, slides and swings, and a Wild Play Area with a giant bird's nest, mud kitchens, a trim trail and den building, with shade and picnic benches.",
+  "nearby": [],
+  "operator": "National Trust",
+  "membership": "nt",
+  "fee": "Non-members pay to visit; see the National Trust page for prices. National Trust members get in free.",
+  "sources": [
+    {
+      "label": "National Trust: family days out at Croome",
+      "url": "https://www.nationaltrust.org.uk/visit/worcestershire-herefordshire/croome/visiting-croome-with-family"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges and opening hours.",
+  "photo": null
+}

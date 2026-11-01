@@ -173,6 +173,11 @@ collections:
           - { label: "National Trust", value: "nt" }
           - { label: "English Heritage", value: "eh" }
           - { label: "Historic Houses", value: "hh" }
+          - { label: "National Trust for Scotland", value: "nts" }
+          - { label: "RHS (Royal Horticultural Society)", value: "rhs" }
+          - { label: "WWT (Wildfowl & Wetlands Trust)", value: "wwt" }
+          - { label: "Cadw", value: "cadw" }
+          - { label: "Historic Environment Scotland", value: "hes" }
       - { label: Entry fee, name: fee, widget: string, required: false, hint: "Fill this in whenever it costs money to get into the playground, or the place it's in (for members of an organisation, say who pays). It shows a £ Paid entry badge and lets people hide it with Free entry only. Leave it empty if entry is free; paid parking alone doesn't count." }
       - label: Sources
         name: sources

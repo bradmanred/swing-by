@@ -36,7 +36,7 @@ const playgrounds = defineCollection({
       .array(z.object({ type: z.string(), label: z.string(), free: z.boolean().nullish(), lat: z.number().nullish(), lng: z.number().nullish() }))
       .default([]),
     operator: z.string().nullish(),
-    membership: z.enum(['nt', 'eh', 'hh']).nullish(),
+    membership: z.enum(['nt', 'eh', 'hh', 'nts', 'rhs', 'wwt', 'cadw', 'hes']).nullish(),
     fee: z.string().nullish(),
     sources: z.array(z.object({ label: z.string(), url: z.string().url() })).default([]),
     checked: z.string().nullable().default(null),
