@@ -37,19 +37,35 @@ for (const f of await readdir('src/content/playgrounds')) {
   const d = JSON.parse(await readFile(`src/content/playgrounds/${f}`, 'utf8'));
   others.push({ id, name: d.name, lat: d.lat, lng: d.lng });
 }
-const geo = await (await fetch('https://api.postcodes.io/postcodes', { method: 'POST', headers: { ...UA, 'Content-Type': 'application/json' }, body: JSON.stringify({ postcodes: Object.values(pcs) }) })).json();
+const PLACEHOLDER = new Set([51.53, 51.54, 51.51, 54]); // pins not placed yet; anything else was placed by an earlier run
+const geo = await (await fetch('https://api.postcodes.io/postcodes', { method: 'POST', headers: { ...UA, 'Content-Type': 'application/json' }, body: JSON.stringify({ postcodes: Object.values(pcs).filter((v) => typeof v === 'string') }) })).json();
 const byPc = Object.fromEntries(geo.result.map((x) => [x.query, x.result]));
 const lines = ['| id | postcode | district | result | metres | OpenStreetMap | already listed within 150 m |', '|---|---|---|---|---|---|---|'];
 for (const [id, pc] of Object.entries(pcs)) {
   const file = `src/content/playgrounds/${id}.json`;
   const doc = JSON.parse(await readFile(file, 'utf8'));
-  const g = byPc[pc];
-  if (!g) {
-    lines.push(`| ${id} | ${pc} | ? | POSTCODE NOT FOUND | | |`);
-    continue;
+  if (!PLACEHOLDER.has(doc.lat)) continue;
+  let g, at;
+  if (typeof pc === 'string') {
+    g = byPc[pc];
+    if (!g) {
+      lines.push(`| ${id} | ${pc} | ? | POSTCODE NOT FOUND | | | |`);
+      continue;
+    }
+    at = { lat: g.latitude, lng: g.longitude };
+  } else {
+    // No postcode: find the park by name inside the borough, and look for the playground around it.
+    const parks = (await overpass(`[out:json][timeout:90];area["name"="${pc.borough}"]["boundary"="administrative"]->.a;nwr[leisure=park][name~"^(${pc.park})$",i](area.a);out center;`)) ?? [];
+    const pk = parks.map((e) => ({ lat: e.lat ?? e.center?.lat, lng: e.lon ?? e.center?.lon, name: e.tags?.name })).find((e) => e.lat != null);
+    if (!pk) {
+      lines.push(`| ${id} | ${pc.park} | ${pc.borough} | PARK NOT FOUND | | | |`);
+      continue;
+    }
+    g = { admin_district: `park: ${pk.name}` };
+    at = pk;
   }
-  const at = { lat: g.latitude, lng: g.longitude };
-  const els = (await overpass(`[out:json][timeout:60];nwr[leisure=playground](around:1500,${at.lat},${at.lng});out center tags;`)) ?? [];
+  const R = typeof pc === 'string' ? 1500 : 400;
+  const els = (await overpass(`[out:json][timeout:60];nwr[leisure=playground](around:${R},${at.lat},${at.lng});out center tags;`)) ?? [];
   const ours = new Set([...words(doc.name), ...words(doc.area)]);
   const cands = els
     .map((e) => ({ id: `${e.type}/${e.id}`, lat: e.lat ?? e.center?.lat, lng: e.lon ?? e.center?.lon, t: e.tags ?? {} }))
@@ -60,11 +76,11 @@ for (const [id, pc] of Object.entries(pcs)) {
       return { ...c, d: Math.round(metres(at, c)), strong };
     })
     .sort((a, b) => a.d - b.d);
-  const pick = cands.find((c) => c.strong && c.d <= 1500) ?? cands.find((c) => c.d <= 250);
+  const pick = typeof pc === 'string' ? cands.find((c) => c.strong && c.d <= 1500) ?? cands.find((c) => c.d <= 250) : cands.find((c) => c.strong) ?? cands[0];
   if (pick) {
     doc.lat = Math.round(pick.lat * 1e5) / 1e5;
     doc.lng = Math.round(pick.lng * 1e5) / 1e5;
-    doc.notConfirmed = doc.notConfirmed.replace('Exact position (mapped from the postcode)', 'Exact position (taken from OpenStreetMap)');
+    doc.notConfirmed = doc.notConfirmed.replace('Exact position (mapped from the postcode)', 'Exact position (taken from OpenStreetMap)').replace('Exact position (approximate)', 'Exact position (taken from OpenStreetMap)');
   } else {
     doc.lat = Math.round(at.lat * 1e5) / 1e5;
     doc.lng = Math.round(at.lng * 1e5) / 1e5;
@@ -72,7 +88,7 @@ for (const [id, pc] of Object.entries(pcs)) {
   await writeFile(file, JSON.stringify(doc, null, 2) + '\n');
   const dups = others.filter((o) => metres(o, doc) <= 150).map((o) => `${o.id} (${Math.round(metres(o, doc))}m)`);
   const others2 = cands.filter((c) => c !== pick).slice(0, 3).map((c) => `${c.d}m ${c.t.name ?? 'unnamed'}${c.t.access ? ` (${c.t.access})` : ''}`).join('; ');
-  lines.push(`| ${id} | ${pc} | ${g.admin_district} | ${pick ? (pick.strong ? 'moved (match)' : 'moved (near)') : 'postcode'} | ${pick?.d ?? ''} | ${pick ? `${pick.id} ${pick.t.name ?? 'unnamed'} ${pick.t.access ?? ''}` : ''}${others2 ? ` · others: ${others2}` : ''} | ${dups.join(', ')} |`);
+  lines.push(`| ${id} | ${typeof pc === 'string' ? pc : pc.park} | ${g.admin_district} | ${pick ? (pick.strong ? 'moved (match)' : 'moved (near)') : 'postcode'} | ${pick?.d ?? ''} | ${pick ? `${pick.id} ${pick.t.name ?? 'unnamed'} ${pick.t.access ?? ''}` : ''}${others2 ? ` · others: ${others2}` : ''} | ${dups.join(', ')} |`);
   await sleep(1500);
 }
 await writeFile('tmp/pins-report.md', lines.join('\n') + '\n');

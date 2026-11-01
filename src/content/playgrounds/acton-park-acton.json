@@ -1,0 +1,28 @@
+{
+  "name": "Acton Park Playground",
+  "region": "london",
+  "area": "Acton, Ealing",
+  "lat": 51.51,
+  "lng": -0.31,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [
+    "cf"
+  ],
+  "opens": "",
+  "description": "Ealing Council park with a playground, a play centre, a café (10am to 5pm), a multi-use games area and tennis courts.",
+  "nearby": [],
+  "operator": "Ealing Council",
+  "sources": [
+    {
+      "label": "Ealing Council: Acton parks",
+      "url": "https://www.ealing.gov.uk/info/201136/parks_in_the_borough/661/acton_parks"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (approximate), age ranges, play equipment and opening hours.",
+  "photo": null
+}
