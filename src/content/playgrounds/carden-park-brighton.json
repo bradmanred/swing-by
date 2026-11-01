@@ -1,0 +1,42 @@
+{
+  "name": "Carden Park",
+  "region": "south-east",
+  "area": "Hollingbury, Brighton",
+  "lat": 50.86471,
+  "lng": -0.1247,
+  "ages": [
+    "teens"
+  ],
+  "equipment": [
+    "gym",
+    "mg"
+  ],
+  "access": [
+    "sen"
+  ],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "A play area for all ages and abilities, with sensory play, multi-games, a fitness area and a teen zone for older children. The café next to the lower play area is open 7 days a week, and there's a disabled toilet in the Old Boat Corner Community Centre.",
+  "nearby": [],
+  "operator": "Brighton & Hove City Council (City Parks)",
+  "sources": [
+    {
+      "label": "Brighton & Hove City Council: city parks map (playgrounds layer)",
+      "url": "https://www.brighton-hove.gov.uk/node/1956171"
+    },
+    {
+      "label": "Brighton & Hove City Council: Carden Park",
+      "url": "https://www.brighton-hove.gov.uk/libraries-leisure-and-arts/parks-and-green-spaces/carden-park-new"
+    },
+    {
+      "label": "Brighton & Hove City Council: Playground Refurbishment Programme (Appendix 1)",
+      "url": "https://democracy.brighton-hove.gov.uk/documents/s197294/Playground%20Refurbishment%20Programme%20APX.%20n%201.html?CT=2"
+    }
+  ],
+  "checked": "2026-10-30",
+  "notConfirmed": "Exact position (from the council's map), age ranges for younger children, other play equipment and parking.",
+  "photo": null
+}

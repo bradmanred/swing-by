@@ -1,0 +1,34 @@
+{
+  "name": "The Level",
+  "region": "south-east",
+  "area": "Brighton",
+  "lat": 50.82948,
+  "lng": -0.13223,
+  "ages": [],
+  "equipment": [
+    "wp"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "One of the city's largest play areas, with seasonal water play. The council is replacing all of the old equipment with a new inclusive adventure playground for all ages and abilities: the play area was fenced off from 7 September 2026 for around 10 weeks, so check it has reopened before you go. The café kiosk and skatepark stay open.",
+  "nearby": [],
+  "operator": "Brighton & Hove City Council (City Parks)",
+  "sources": [
+    {
+      "label": "Brighton & Hove City Council: city parks map (playgrounds layer)",
+      "url": "https://www.brighton-hove.gov.uk/node/1956171"
+    },
+    {
+      "label": "Brighton & Hove City Council: The Level Playground",
+      "url": "https://www.brighton-hove.gov.uk/libraries-leisure-and-arts/parks-and-green-spaces/level-playground"
+    },
+    {
+      "label": "Brighton & Hove City Council: Playgrounds",
+      "url": "https://www.brighton-hove.gov.uk/libraries-leisure-and-arts/parks-and-green-spaces/playgrounds"
+    }
+  ],
+  "checked": "2026-10-30",
+  "notConfirmed": "Exact position (from the council's map), the reopening date, age ranges, the new play equipment, toilets and parking.",
+  "photo": null
+}
