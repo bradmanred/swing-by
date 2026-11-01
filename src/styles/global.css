@@ -80,6 +80,11 @@ legend { font-weight: 700; padding: 0; margin-bottom: 8px; }
 .search .hint { margin-top: 6px; }
 .search .which { display: grid; gap: 12px; }
 .search .which > .hint { margin-top: -6px; }
+/* Play area size: three equal tiles on one row at every width, checkbox above the name and count. */
+.search .sizes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.search .sizes .chk { flex-direction: column; justify-content: center; gap: 2px; padding: 8px 4px; text-align: center; line-height: 1.2; }
+.search .sizes .chk input { margin-bottom: 4px; }
+.search .sizes .hint { margin: 0; }
 /* "Near me" and "Let's go!" sit side by side under the box, so both are in view on a phone. */
 .search .go { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 12px; }
 .search .go .btn { min-height: 58px; padding: 0 10px; white-space: nowrap; }
