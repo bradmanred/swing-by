@@ -13,13 +13,23 @@ for (const a of ['fairlop-waters-country-park', 'goodmayes-and-chadwell-heath', 
   for (const m of h.matchAll(/href="(https:\/\/visionrcl\.org\.uk\/centre\/[a-z0-9-]+\/?)"/g)) recs.set(m[1], a);
   await sleep(500);
 }
-console.log(`Redbridge: ${recs.size} Vision RCL park pages`);
+console.log(`Redbridge: ${recs.size} parks on the area pages`);
+const areaText = {};
+for (const a of new Set(recs.values())) areaText[a] = strip(await get(`https://www.redbridge.gov.uk/leisure-sport-and-the-arts/parks/${a}/`)).slice(0, 20000);
 for (const [u, area] of recs) {
-  const h = await get(u);
+  const slug = u.replace(/\/$/, '').split('/').pop();
+  let h = '';
+  let used = '';
+  for (const s2 of [slug, `${slug}-park`, slug.replace(/-park$/, ''), slug.replace(/-recreation-ground$/, '-recreation-ground-park')]) {
+    used = `https://www.redbridge.gov.uk/discover/directory/${s2}/`;
+    h = await get(used);
+    if (h && /Facilities|Map/.test(h)) break;
+    h = '';
+    await sleep(300);
+  }
   const t = strip(h);
-  const coords = h.match(/data-lat="(-?\d+\.\d+)"[^>]*data-lng="(-?\d+\.\d+)"/) ?? h.match(/"lat(?:itude)?"\s*:\s*"?(5\d\.\d+)"?\s*,\s*"(?:lng|lon|longitude)"\s*:\s*"?(-?\d+\.\d+)/) ?? h.match(/[?&](?:q|ll|daddr|destination)=(5\d\.\d+),(-?\d+\.\d+)/);
-  out.push({ borough: 'Redbridge', area, url: u, h1: strip(h.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1] ?? ''), lat: coords ? Number(coords[1]) : null, lng: coords ? Number(coords[2]) : null, postcode: t.match(PC)?.[1] ?? null, text: t.slice(0, 7000) });
-  await sleep(600);
+  out.push({ borough: 'Redbridge', area, vision: u, url: h ? used : null, h1: strip(h.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1] ?? ''), postcode: t.match(PC)?.[1] ?? null, text: t.slice(0, 5000) });
+  await sleep(500);
 }
-await writeFile('tmp/records2.json', JSON.stringify(out, null, 1));
-console.log(`${out.length} saved`);
+await writeFile('tmp/records2.json', JSON.stringify({ areaText, out }, null, 1));
+console.log(`${out.length} saved, ${out.filter((x) => x.url).length} with a council record`);
