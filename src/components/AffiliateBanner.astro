@@ -1,0 +1,29 @@
+---
+// Amazon Associates banner for the advert slot above the footer.
+// Plain text links only: no Amazon scripts or images, so nothing loads from Amazon (and no cookies are set)
+// until a parent clicks. Each page shows one pick, chosen from the page address so the static build stays stable.
+// Amazon requires the disclosure line wherever the links appear, and rel="sponsored" marks them as paid links.
+const AMAZON_TAG = 'swingby-21';
+
+const picks = [
+  { search: 'waterproof picnic blanket', title: 'Waterproof picnic blankets', blurb: 'For damp grass and soggy benches.' },
+  { search: 'kids wellies', title: 'Kids’ wellies', blurb: 'Muddy playgrounds are better in boots.' },
+  { search: 'kids sun hat', title: 'Kids’ sun hats', blurb: 'Shade for the long summer swings.' },
+  { search: 'kids puddle suit', title: 'Puddle suits', blurb: 'Keeps clothes clean on wet slides.' },
+  { search: 'insulated kids water bottle', title: 'Kids’ water bottles', blurb: 'Cold drinks for hot climbing frames.' },
+  { search: 'travel potty', title: 'Travel potties', blurb: 'For when the toilets are a long way off.' },
+  { search: 'kids scooter', title: 'Kids’ scooters', blurb: 'Faster to the park, and back again.' },
+  { search: 'picnic cool bag', title: 'Picnic cool bags', blurb: 'Lunch for a day out on the road.' },
+];
+
+const path = Astro.url.pathname;
+let hash = 0;
+for (const ch of path) hash = (hash * 31 + ch.charCodeAt(0)) >>> 0;
+const pick = picks[hash % picks.length];
+const href = `https://www.amazon.co.uk/s?k=${encodeURIComponent(pick.search)}&tag=${AMAZON_TAG}`;
+---
+<div class="ad-box ad-affiliate" data-ad-slot="banner">
+  <p class="ad-label">Advertisement</p>
+  <p class="ad-pick"><a href={href} rel="sponsored nofollow noopener" target="_blank">{pick.title} on Amazon</a> <span>{pick.blurb}</span></p>
+  <p class="ad-note">As an Amazon Associate, Swing By earns from qualifying purchases.</p>
+</div>
