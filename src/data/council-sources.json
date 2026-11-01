@@ -262,7 +262,7 @@
      "https://www.reigate-banstead.gov.uk/directory/20/parks_and_recreation_directory/category/178"
     ],
     "follow": "/directory_record/\\d+/",
-    "name": "<h1[^>]*>([\\s\\S]*?)</h1>",
+    "name": "(?:Name\\s*</(?:dt|th)>\\s*<(?:dd|td)[^>]*>|<h1[^>]*>[^<]*?directory\\s*-\\s*)([\\s\\S]*?)</(?:dd|td|h1)>",
     "coords": "map_marker_location_\\d+\" value=\"(-?\\d+\\.\\d+),(-?\\d+\\.\\d+)\""
    }
   },

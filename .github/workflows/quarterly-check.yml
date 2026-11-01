@@ -13,8 +13,6 @@ on:
         default: ''
   schedule:
     - cron: '23 5 10 1,4,7,10 *'
-  push: # TEMPORARY: test run on this branch, removed before merge
-    branches: ['claude/quarterly-check']
 permissions:
   contents: read
   issues: write
