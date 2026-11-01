@@ -1,0 +1,24 @@
+# Temporary (removed before merge): downloads sample council pages listed in tmp/urls.txt into tmp/pages/.
+name: tmp fetch
+on:
+  push:
+    branches: ['claude/london-boroughs']
+    paths: ['tmp/urls.txt', '.github/workflows/tmp-fetch.yml']
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - run: |
+          mkdir -p tmp/pages
+          while read -r name url; do
+            [ -z "$name" ] && continue
+            curl -sSL -A 'Mozilla/5.0 (compatible; SwingBy/1.0; +https://swing-by.co.uk)' --max-time 30 -o "tmp/pages/$name.html" -w "$name %{http_code} %{size_download}\n" "$url" || echo "$name failed"
+          done < tmp/urls.txt
+      - run: |
+          git config user.name "swing-by-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tmp/pages && git commit -m "tmp: sample pages" && git push
