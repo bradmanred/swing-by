@@ -9,13 +9,15 @@ permissions:
 jobs:
   place:
     runs-on: ubuntu-24.04
-    timeout-minutes: 60
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
         with:
           node-version: 22
       - run: node tmp/place-pins.mjs
+        env:
+          PIN_MODE: members
       - run: cat tmp/pins-report.md >> "$GITHUB_STEP_SUMMARY"
       - name: Commit the pins
         run: |
