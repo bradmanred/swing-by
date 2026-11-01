@@ -6,7 +6,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "test": "node tests/positions.mjs && node tests/pins.mjs && node tests/dusk.mjs && node tests/a11y.mjs",
+    "test": "node tests/links.mjs && node tests/quarterly.mjs && node tests/positions.mjs && node tests/pins.mjs && node tests/dusk.mjs && node tests/a11y.mjs",
     "cms": "npx decap-server"
   },
   "repository": {
