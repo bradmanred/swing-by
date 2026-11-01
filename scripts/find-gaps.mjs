@@ -211,7 +211,10 @@ if (toAdd.length) {
         nearby: [], operator: p.council.council,
         sources: [{ label: `${p.council.council}: ${p.name}`, url: p.url }],
         checked: TODAY,
-        notConfirmed: "Exact position (from the council's map), age ranges, play equipment, opening hours, toilets and parking.",
+        // "approximate" feeds give the park's point, not the play area's, so the pin check (check-positions.mjs) looks at them.
+        notConfirmed: p.council.feed.approximate
+          ? "Exact position (approximate: the park's point on the council's map, not the play area itself), age ranges, play equipment, opening hours, toilets and parking."
+          : "Exact position (from the council's map), age ranges, play equipment, opening hours, toilets and parking.",
         photo: null,
       };
     } else {
