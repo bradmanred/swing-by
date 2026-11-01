@@ -1,0 +1,28 @@
+{
+  "name": "Lanhydrock Play Area",
+  "region": "south-west",
+  "area": "Lanhydrock",
+  "lat": 50.44679,
+  "lng": -4.69576,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "cf"
+  ],
+  "opens": "",
+  "description": "Children's play area at the Hub, next to the Park café on the Lanhydrock estate.",
+  "nearby": [],
+  "operator": "National Trust",
+  "membership": "nt",
+  "fee": "Non-members pay to visit; see the National Trust page for prices. National Trust members get in free.",
+  "sources": [
+    {
+      "label": "National Trust: days out with kids at Lanhydrock",
+      "url": "https://www.nationaltrust.org.uk/visit/cornwall/lanhydrock/visiting-lanhydrock-with-family"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, whether the play area itself is inside the paid area, age ranges and opening hours.",
+  "photo": null
+}

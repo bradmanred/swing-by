@@ -1,0 +1,35 @@
+{
+  "name": "Weehailes Playpark, Newhailes",
+  "region": "scotland",
+  "area": "Musselburgh",
+  "lat": 55.94086,
+  "lng": -3.08131,
+  "ages": [],
+  "equipment": [
+    "sl",
+    "sp",
+    "zw",
+    "ad"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Adventure play park for 3 to 12 year olds themed on Newhailes' library, with turrets, stained glass windows, slides, high walkways, playhouses, a zip line and a big sandpit. Open all year; children must be with an adult.",
+  "nearby": [],
+  "operator": "National Trust for Scotland",
+  "membership": "nts",
+  "fee": "Weehailes: £4 a child, £1 an adult, under-3s free, plus £4 a car to park. National Trust for Scotland members get in free.",
+  "sources": [
+    {
+      "label": "National Trust for Scotland: Weehailes Playpark",
+      "url": "https://www.nts.org.uk/visit/places/newhailes/highlights/weehailes-playpark"
+    },
+    {
+      "label": "National Trust for Scotland: planning your visit to Newhailes",
+      "url": "https://www.nts.org.uk/visit/places/newhailes/planning-your-visit"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges and opening hours.",
+  "photo": null
+}
