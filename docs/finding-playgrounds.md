@@ -27,6 +27,17 @@ For each district, borough or unitary authority, write down every organisation t
 | Charities and membership bodies | Their property pages. | National Trust, English Heritage, Historic Houses |
 | Private attractions and estates | Their own websites (check opening and fees). | Knebworth, Aldenham Country Park |
 
+### Councils on the two common website systems: add a feed, not files
+
+Many councils' park directories run on **Jadu** (addresses like `/directory/26/…` with `/directory-record/123/` park pages) or **LocalGov Drupal** (a list page with `?page=1`, `?page=2`… and one page per park under it). For these, don't write playground files by hand: add a `feed` to the council's entry in `src/data/council-sources.json` and the coverage check imports its playgrounds, verified, with each pin moved onto the play area mapped on OpenStreetMap, and replacing any OpenStreetMap-only listing of the same place. For example:
+
+```json
+"feed": { "type": "jadu", "directory": "https://www.hounslow.gov.uk/directory/1010/parks-and-open-spaces-in-hounslow", "category": 86, "approximate": true }
+"feed": { "type": "localgov", "directory": "https://haringey.gov.uk/leisure-parks-culture/parks-greenspaces/parks-facilities-haringey", "approximate": true }
+```
+
+Only parks whose page mentions a playground or play area are kept; add `"allPlay": true` when the category is the council's own playgrounds list. The other options are described at the top of `scripts/council-readers.mjs`. Before adding a feed, check it with the **Try a council list** workflow (Actions tab, paste the feed line), which lists what it finds without changing anything. Then run **Check coverage** for the county with "Add up to this many" set, rather than waiting for the monthly run. Each council costs about 10 minutes of Actions time this way; councils on other systems still need pages saved with **Fetch pages** and the playgrounds added by hand.
+
 ## 2. Cross-check for gaps
 
 After importing, look for playgrounds you may still have missed:

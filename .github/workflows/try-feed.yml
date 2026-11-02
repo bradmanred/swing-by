@@ -1,0 +1,34 @@
+# Reads councils' playground lists and shows what was found on the run's summary page, without changing anything.
+# Use it to check a new feed entry before adding it to src/data/council-sources.json (see scripts/council-readers.mjs
+# for the "jadu" and "localgov" readers), or to see why a council's list stopped reading. From the Actions tab, or:
+#   gh workflow run try-feed.yml -f feeds='Hounslow
+#   {"type":"localgov","directory":"https://haringey.gov.uk/leisure-parks-culture/parks-greenspaces/parks-facilities-haringey"}'
+name: Try a council list
+on:
+  workflow_dispatch:
+    inputs:
+      feeds:
+        description: 'One per line: a council name from council-sources.json, or a feed entry as JSON'
+        required: true
+permissions:
+  contents: read
+jobs:
+  try:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Read the lists
+        env:
+          FEEDS: ${{ inputs.feeds }}
+        run: |
+          FEEDS=$(printf '%s\n' "$FEEDS" | sed 's/^ *//')
+          status=0
+          while IFS= read -r line; do
+            [ -z "${line// }" ] && continue
+            node scripts/try-feed.mjs "$line" || { status=1; echo "::warning title=Try a council list::Nothing found for: $line"; }
+          done <<< "$FEEDS"
+          exit $status
