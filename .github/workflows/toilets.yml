@@ -20,6 +20,9 @@ concurrency:
   cancel-in-progress: true
 jobs:
   update:
+    # Jobs that already refresh the toilets in the same commit (coverage, junctions, pin moves) tag it [skip toilets],
+    # and so can a person pushing playgrounds whose pins aren't placed yet, to save a run that would be redone.
+    if: ${{ github.event_name != 'push' || !contains(github.event.head_commit.message, '[skip toilets]') }}
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
