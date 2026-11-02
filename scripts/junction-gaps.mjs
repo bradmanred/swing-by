@@ -24,6 +24,11 @@ const arg = (name, dflt) => (process.argv.includes(name) ? process.argv[process.
 const ADD = Number(arg('--add', 0)) || 0;
 const ONLY = arg('--roads', '').split(',').map((s) => s.trim()).filter(Boolean);
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+// The monthly OpenStreetMap snapshot (see .github/workflows/osm-snapshot.yml), when the workflow has fetched it. The
+// playgrounds it suggests are checked against OpenStreetMap live before they're added, in one small query.
+const SNAPSHOT = arg('--osm-file', process.env.OSM_PLAYGROUNDS ?? '');
+const snapshot = SNAPSHOT ? JSON.parse(await (await import('node:fs/promises')).readFile(SNAPSHOT, 'utf8')) : null;
+if (snapshot) console.log(`Using the OpenStreetMap snapshot (${snapshot.length} playgrounds)`);
 const km = (a, b) => {
   const r = Math.PI / 180;
   const h = Math.sin(((b.lat - a.lat) * r) / 2) ** 2 + Math.cos(a.lat * r) * Math.cos(b.lat * r) * Math.sin(((b.lng - a.lng) * r) / 2) ** 2;
@@ -87,7 +92,9 @@ for (const road of order) {
   }
   console.log(`${road}: ${gaps.length} empty junctions`);
   const osm = [];
-  for (let i = 0; i < gaps.length; i += 25) {
+  if (snapshot) {
+    for (const p of snapshot) if (isPublic(p.tags ?? {}) && gaps.some((j) => km(j, p) <= EMPTY_KM)) osm.push({ ...p, tags: p.tags ?? {} });
+  } else for (let i = 0; i < gaps.length; i += 25) {
     const parts = gaps.slice(i, i + 25).map((j) => `nwr[leisure=playground](around:${EMPTY_KM * 1000},${j.lat},${j.lng});`).join('');
     const els = await overpass(`[out:json][timeout:180];(${parts});out center tags;`);
     if (!els) { console.log('  OpenStreetMap could not be reached'); continue; }
@@ -115,6 +122,19 @@ for (const road of order) {
     filled++;
   }
   report.push({ road, gaps: gaps.length, filled });
+}
+
+// Playgrounds suggested by the snapshot: check they're still mapped, and still public, before adding them.
+if (snapshot && toAdd.length) {
+  const ids = (t) => toAdd.filter((p) => p.id.startsWith(`${t}/`)).map((p) => p.id.split('/')[1]);
+  const q = ['node', 'way', 'relation'].filter((t) => ids(t).length).map((t) => `${t}(id:${ids(t).join(',')});`).join('');
+  const live = await overpass(`[out:json][timeout:180];(${q});out tags;`);
+  if (live) {
+    const ok = new Set(live.filter((e) => e.tags?.leisure === 'playground' && isPublic(e.tags)).map((e) => `${e.type}/${e.id}`));
+    const before = toAdd.length;
+    toAdd.splice(0, toAdd.length, ...toAdd.filter((p) => ok.has(p.id)));
+    console.log(`Checked live: ${toAdd.length} of ${before} still mapped and public`);
+  } else console.log('Overpass could not be reached to check the snapshot; using it as it is (under five weeks old)');
 }
 
 // Write the files (same format as scripts/find-gaps.mjs).

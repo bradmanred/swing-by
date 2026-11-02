@@ -139,6 +139,14 @@ Four times a year (the 10th of January, April, July and October) the **Quarterly
 
 Each list is capped in the issue; the full lists are in the run's `quarterly-check` artifact. Check each item against its official source before editing or removing a playground. Run it any time from the Actions tab (Quarterly playground check > Run workflow), optionally leaving out parts such as `links`. The council-list reader is shared with Check coverage (`scripts/council-feeds.mjs`).
 
+## OpenStreetMap snapshot and saving Actions minutes
+
+**Snapshot.** Once a month (the 2nd) the **OpenStreetMap snapshot** workflow (`.github/workflows/osm-snapshot.yml`, `scripts/osm-snapshot.mjs`) downloads Geofabrik's daily extracts of Great Britain and of Ireland and Northern Ireland, keeps only playgrounds, parks, gardens, commons, recreation grounds and nature reserves, and saves two small files to the `osm-data` branch (one commit, replaced each month). Jobs that need mapped playgrounds use the shared step `.github/actions/osm-snapshot` to fetch it, and read it instead of asking the busy Overpass servers, as long as it's under five weeks old; otherwise they ask Overpass as before. The pin check and the junction job use it now. The junction job still checks the playgrounds it picks against OpenStreetMap live, in one small query, before adding them. The coverage check stays fully live, because it decides what to add. Run the snapshot from the Actions tab whenever you want a fresh one.
+
+**Fewer chained runs.** Jobs that already refresh the nearest toilets in their own commit (coverage, junctions, pin moves) put `[skip toilets]` in the commit message, and **Update nearest toilets** doesn't run for those pushes. A person can do the same when pushing new playgrounds whose pins aren't placed yet. **Find playground photos** only starts on pushes to main; on other branches it only ever did a dry run.
+
+**Fetching pages.** Council websites often refuse requests from a Claude session. The **Fetch pages** workflow (`.github/workflows/fetch-pages.yml`) takes a label and a list of names and addresses, fetches them with curl and keeps them on the `fetched-pages` branch under that label, so they can be read with git. Use it when researching a new area, instead of adding a temporary workflow to the area's branch.
+
 ## Coming next
 
 - Shared parent reports and ratings (Supabase free tier), with reports shown once another parent has confirmed them.

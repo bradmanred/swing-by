@@ -1,0 +1,24 @@
+# Fetches the OpenStreetMap snapshot from the osm-data branch (see .github/workflows/osm-snapshot.yml) and, if it is
+# under max-age-days old, sets OSM_PLAYGROUNDS and OSM_PARKS to the unpacked JSON files for later steps. If there's no
+# snapshot, or it's too old, the variables stay empty and scripts ask Overpass as before.
+name: OpenStreetMap snapshot
+description: Use the monthly OpenStreetMap snapshot when it is recent
+inputs:
+  max-age-days:
+    description: Oldest snapshot to use, in days
+    default: '35'
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: |
+        if ! git fetch -q --depth 1 origin osm-data 2>/dev/null; then echo "No OpenStreetMap snapshot yet; asking Overpass instead."; exit 0; fi
+        date=$(git show FETCH_HEAD:meta.json | jq -r .date)
+        age=$(( ( $(date -u +%s) - $(date -u -d "$date" +%s) ) / 86400 ))
+        if [ "$age" -gt "${{ inputs.max-age-days }}" ]; then echo "OpenStreetMap snapshot is $age days old; asking Overpass instead."; exit 0; fi
+        mkdir -p "$RUNNER_TEMP/osm"
+        git show FETCH_HEAD:osm-playgrounds.json.gz | gunzip > "$RUNNER_TEMP/osm/playgrounds.json"
+        git show FETCH_HEAD:osm-parks.json.gz | gunzip > "$RUNNER_TEMP/osm/parks.json"
+        echo "OSM_PLAYGROUNDS=$RUNNER_TEMP/osm/playgrounds.json" >> "$GITHUB_ENV"
+        echo "OSM_PARKS=$RUNNER_TEMP/osm/parks.json" >> "$GITHUB_ENV"
+        echo "Using the OpenStreetMap snapshot from $date ($age days old)."

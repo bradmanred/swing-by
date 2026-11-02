@@ -29,6 +29,7 @@ jobs:
       - uses: actions/setup-node@v5
         with:
           node-version: 22
+      - uses: ./.github/actions/osm-snapshot
       - name: Fill empty junctions
         env:
           ADD: ${{ inputs.add || '400' }}
@@ -51,7 +52,7 @@ jobs:
           branch="${GITHUB_REF_NAME}"
           if [ "$branch" = "main" ]; then branch="junction-gaps/$(date +%Y-%m-%d)-${{ github.run_number }}"; git checkout -b "$branch"; fi
           git add src/content/playgrounds src/data/toilets.json src/data/coverage.json
-          git commit -m "Fill empty junctions with playgrounds from OpenStreetMap"
+          git commit -m "Fill empty junctions with playgrounds from OpenStreetMap [skip toilets]"
           git push -u origin "$branch"
           if [ "${GITHUB_REF_NAME}" = "main" ]; then
             grep -vE '^# ' reports/junction-gaps.md > body.md

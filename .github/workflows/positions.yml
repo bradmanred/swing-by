@@ -33,6 +33,7 @@ jobs:
       - uses: actions/setup-node@v5
         with:
           node-version: 22
+      - uses: ./.github/actions/osm-snapshot
       - name: Check pin positions
         env:
           REGION: ${{ inputs.region || '' }}
@@ -75,7 +76,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -b "$branch"
           git add src/content/playgrounds src/data/toilets.json
-          git commit -m "Move playground pins onto their OpenStreetMap positions"
+          git commit -m "Move playground pins onto their OpenStreetMap positions [skip toilets]"
           git push -u origin "$branch"
           # The moved pins, capped so the description stays under GitHub's size limit (the whole list is in the report).
           { grep -E '^Moved ' reports/positions.md || true; echo; awk '/^## Moves/{f=1;next} /^## /{f=0} f' reports/positions.md | head -120; } > body.md
