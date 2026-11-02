@@ -1,9 +1,9 @@
 {
   "name": "Folly Lane Playground",
   "region": "london",
-  "area": "Waltham Forest",
-  "lat": 51.51,
-  "lng": -0.03,
+  "area": "Higham Hill, Waltham Forest",
+  "lat": 51.60121,
+  "lng": -0.03292,
   "ages": [
     "under-3",
     "3-6",
@@ -23,6 +23,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (approximate), play equipment and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
   "photo": null
 }

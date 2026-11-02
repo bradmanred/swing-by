@@ -1,9 +1,9 @@
 {
   "name": "Brookmill Park Playground",
   "region": "london",
-  "area": "Lewisham",
-  "lat": 51.51,
-  "lng": -0.03,
+  "area": "Greenwich Park, Lewisham",
+  "lat": 51.47003,
+  "lng": -0.01888,
   "ages": [],
   "equipment": [
     "wp"
@@ -21,6 +21,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (approximate), play equipment and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
   "photo": null
 }

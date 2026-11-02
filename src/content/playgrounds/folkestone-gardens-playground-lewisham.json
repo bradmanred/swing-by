@@ -1,9 +1,9 @@
 {
   "name": "Folkestone Gardens Playground",
   "region": "london",
-  "area": "Lewisham",
-  "lat": 51.51,
-  "lng": -0.03,
+  "area": "Evelyn, Lewisham",
+  "lat": 51.48281,
+  "lng": -0.03893,
   "ages": [],
   "equipment": [
     "mg",
@@ -25,6 +25,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (approximate), play equipment and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
   "photo": null
 }

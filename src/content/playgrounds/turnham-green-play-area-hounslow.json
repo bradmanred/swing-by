@@ -1,9 +1,9 @@
 {
   "name": "Turnham Green Play Area",
   "region": "london",
-  "area": "Hounslow",
-  "lat": 51.51,
-  "lng": -0.03,
+  "area": "Chiswick Gunnersbury, Hounslow",
+  "lat": 51.49275,
+  "lng": -0.26501,
   "ages": [],
   "equipment": [
     "ad"
@@ -21,6 +21,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (approximate), play equipment and opening hours.",
+  "notConfirmed": "Exact position (approximate: mapped from the postcode), play equipment and opening hours.",
   "photo": null
 }

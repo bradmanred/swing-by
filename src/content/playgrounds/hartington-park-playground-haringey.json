@@ -1,9 +1,9 @@
 {
   "name": "Hartington Park Playground",
   "region": "london",
-  "area": "Haringey",
-  "lat": 51.51,
-  "lng": -0.03,
+  "area": "Tottenham Hale, Haringey",
+  "lat": 51.59736,
+  "lng": -0.06574,
   "ages": [],
   "equipment": [
     "mg"
@@ -21,6 +21,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (approximate), play equipment and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
   "photo": null
 }

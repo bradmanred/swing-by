@@ -1,9 +1,9 @@
 {
   "name": "Lordship Recreation Ground Playground",
   "region": "london",
-  "area": "Haringey",
-  "lat": 51.51,
-  "lng": -0.03,
+  "area": "West Green, Haringey",
+  "lat": 51.59325,
+  "lng": -0.08769,
   "ages": [
     "under-3",
     "3-6"
@@ -30,6 +30,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (approximate), play equipment and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
   "photo": null
 }

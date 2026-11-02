@@ -1,9 +1,9 @@
 {
   "name": "Chinbrook Meadows Playground",
   "region": "london",
-  "area": "Lewisham",
-  "lat": 51.51,
-  "lng": -0.03,
+  "area": "Grove Park, Lewisham",
+  "lat": 51.42969,
+  "lng": 0.02575,
   "ages": [],
   "equipment": [
     "gym",
@@ -24,6 +24,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (approximate), play equipment and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
   "photo": null
 }
