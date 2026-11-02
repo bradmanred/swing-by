@@ -1,0 +1,53 @@
+# Downloads web pages that can't be read from a Claude session (council websites often block it) and keeps them on
+# the "fetched-pages" branch, in a folder named after the label, so they can be read with git. Used when researching a
+# new area, instead of adding a temporary workflow to each branch. Run it from the Actions tab or with:
+#   gh workflow run fetch-pages.yml -f label=croydon -f urls='index https://example.gov.uk/parks
+#   park-1 https://example.gov.uk/parks/1'
+# Each line of "urls" is a short name and an address. Pages are fetched with curl, which some council firewalls
+# accept when other clients are refused. Nothing on main changes.
+name: Fetch pages
+on:
+  workflow_dispatch:
+    inputs:
+      label:
+        description: 'Folder name for this batch, e.g. greenwich'
+        required: true
+      urls:
+        description: 'One "name address" pair per line (or separated by ;)'
+        required: true
+permissions:
+  contents: write
+concurrency:
+  group: fetch-pages
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - name: Fetch and save
+        env:
+          GH_TOKEN: ${{ github.token }}
+          LABEL: ${{ inputs.label }}
+          URLS: ${{ inputs.urls }}
+        run: |
+          set -uo pipefail
+          label=$(printf '%s' "$LABEL" | tr -c 'a-zA-Z0-9_-' '-')
+          tmp=$(mktemp -d) && cd "$tmp"
+          git init -q
+          git config user.name "swing-by-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git"
+          if git fetch -q --depth 1 origin fetched-pages; then git checkout -q -b fetched-pages FETCH_HEAD; else git checkout -q --orphan fetched-pages; fi
+          rm -rf "$label" && mkdir -p "$label"
+          printf '%s\n' "$URLS" | tr ';' '\n' | while read -r name url; do
+            [ -z "${name:-}" ] || [ -z "${url:-}" ] && continue
+            name=$(printf '%s' "$name" | tr -c 'a-zA-Z0-9_.-' '-')
+            curl -sSL -A 'Mozilla/5.0 (compatible; SwingBy/1.0; +https://swing-by.co.uk)' --max-time 40 -o "$label/$name.html" \
+              -w "$name %{http_code} %{size_download} %{url_effective}\n" "$url" || echo "$name failed $url"
+            sleep 1
+          done | tee "$label/_status.txt"
+          git add -A
+          git commit -q -m "Fetched pages: $label"
+          git push -q origin fetched-pages
+          cat "$label/_status.txt" >> "$GITHUB_STEP_SUMMARY"

@@ -37,7 +37,8 @@ const arg = (name, dflt) => (process.argv.includes(name) ? process.argv[process.
 const DIR = arg('--dir', 'src/content/playgrounds');
 const OUT = arg('--out', 'reports');
 const REGION = arg('--region', '');
-const OSM_FILE = arg('--osm-file', '');
+const OSM_FILE = arg('--osm-file', process.env.OSM_PLAYGROUNDS ?? ''); // the monthly snapshot, when a workflow has fetched it
+const TEST_FILE = process.argv.includes('--osm-file');
 const INCLUDE = new Set(arg('--include', 'unrecorded,approximate,postcode').split(',').map((s) => s.trim()));
 const FIX = process.argv.includes('--fix');
 const CHECKED_FILE = arg('--checked', 'src/data/pins-checked.json');
@@ -179,9 +180,10 @@ const results = pins.map((p) => {
 });
 
 // 3b. The nearest named street to each mapped playground a person has to choose between, so it can be matched to
-// council names like "Linacre Road" or "off Storforth Lane". Skipped with --osm-file (tests) or --no-streets.
+// council names like "Linacre Road" or "off Storforth Lane". Skipped with --osm-file (tests) or --no-streets; still
+// asked live when the playgrounds come from the snapshot, since it's only a few small queries.
 const needStreet = results.flatMap((r) => (['ambiguous', 'unmatched'].includes(r.status) ? r.candidates : []).filter((c) => c.lat != null));
-if (!OSM_FILE && !process.argv.includes('--no-streets') && needStreet.length) {
+if (!TEST_FILE && !process.argv.includes('--no-streets') && needStreet.length) {
   const uniq = [...new Map(needStreet.map((c) => [c.osm, c])).values()];
   const ways = [];
   for (let i = 0; i < uniq.length; i += 60) {
