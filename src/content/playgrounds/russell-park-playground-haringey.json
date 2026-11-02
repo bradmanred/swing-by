@@ -1,0 +1,30 @@
+{
+  "name": "Russell Park Playground",
+  "region": "london",
+  "area": "Haringey",
+  "lat": 51.51,
+  "lng": -0.03,
+  "ages": [],
+  "equipment": [
+    "gym",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "Russell Park is a green space within the Noel Park Estate. The council also lists a basketball court, a kiosk selling light refreshments and snacks, a picnic area and toilets – in the kiosk.",
+  "nearby": [],
+  "operator": "Haringey Council",
+  "sources": [
+    {
+      "label": "Haringey Council: Russell Park",
+      "url": "https://haringey.gov.uk/leisure-parks-culture/parks-greenspaces/parks-facilities-haringey/russell-park"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (approximate), play equipment and opening hours.",
+  "photo": null
+}

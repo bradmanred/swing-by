@@ -1,0 +1,610 @@
+{
+ "richard-macvicar-adventure-playground-lewisham": {
+  "postcode": "SE8 3JB",
+  "borough": "London Borough of Lewisham"
+ },
+ "dumps-adventure-playground-lewisham": {
+  "postcode": "SE6 3QF",
+  "borough": "London Borough of Lewisham"
+ },
+ "home-park-adventure-playground-lewisham": {
+  "postcode": "SE26 5TH",
+  "borough": "London Borough of Lewisham"
+ },
+ "ladywell-fields-adventure-playground-lewisham": {
+  "postcode": "SE13 7XE",
+  "borough": "London Borough of Lewisham"
+ },
+ "abbey-wood-park-playground-royal-greenwich": {
+  "lat": 51.49666780132264,
+  "lng": 0.11316776275634766,
+  "borough": "Royal Borough of Greenwich"
+ },
+ "altash-gardens-playground-royal-greenwich": {
+  "lat": 51.433250104728806,
+  "lng": 0.0604248046875,
+  "borough": "Royal Borough of Greenwich"
+ },
+ "avery-hill-park-playground-royal-greenwich": {
+  "lat": 51.44915290973272,
+  "lng": 0.07572412490844727,
+  "borough": "Royal Borough of Greenwich"
+ },
+ "bostall-gardens-playground-royal-greenwich": {
+  "lat": 51.48632700127055,
+  "lng": 0.1103353500366211,
+  "borough": "Royal Borough of Greenwich"
+ },
+ "briset-road-park-playground-royal-greenwich": {
+  "lat": 51.45789776078027,
+  "lng": 0.04143476486206055,
+  "borough": "Royal Borough of Greenwich"
+ },
+ "charlton-park-playground-royal-greenwich": {
+  "lat": 51.479079,
+  "lng": 0.042909,
+  "borough": "Royal Borough of Greenwich"
+ },
+ "eaglesfield-park-playground-royal-greenwich": {
+  "lat": 51.469264,
+  "lng": 0.070492,
+  "borough": "Royal Borough of Greenwich"
+ },
+ "east-greenwich-pleasaunce-playground-royal-greenwich": {
+  "lat": 51.485652,
+  "lng": 0.014164,
+  "borough": "Royal Borough of Greenwich"
+ },
+ "eltham-park-south-playground-royal-greenwich": {
+  "lat": 51.45754,
+  "lng": 0.06475,
+  "borough": "Royal Borough of Greenwich"
+ },
+ "fairy-hill-park-playground-royal-greenwich": {
+  "lat": 51.43758,
+  "lng": 0.056799,
+  "borough": "Royal Borough of Greenwich"
+ },
+ "gallions-playground-royal-greenwich": {
+  "lat": 51.4998409,
+  "lng": 0.0945989,
+  "borough": "Royal Borough of Greenwich"
+ },
+ "garland-road-playground-royal-greenwich": {
+  "lat": 51.4795059855596,
+  "lng": 0.0862988217567268,
+  "borough": "Royal Borough of Greenwich"
+ },
+ "horn-park-playground-royal-greenwich": {
+  "lat": 51.441954,
+  "lng": 0.025183,
+  "borough": "Royal Borough of Greenwich"
+ },
+ "hornfair-park-playground-royal-greenwich": {
+  "lat": 51.475663100358744,
+  "lng": 0.047249794006347656,
+  "borough": "Royal Borough of Greenwich"
+ },
+ "ingleside-gardens-playground-royal-greenwich": {
+  "lat": 51.48069468761287,
+  "lng": 0.014666318893432615,
+  "borough": "Royal Borough of Greenwich"
+ },
+ "maryon-park-playground-royal-greenwich": {
+  "lat": 51.491353,
+  "lng": 0.043852,
+  "borough": "Royal Borough of Greenwich"
+ },
+ "mycenae-gardens-playground-royal-greenwich": {
+  "lat": 51.479932,
+  "lng": 0.01624,
+  "borough": "Royal Borough of Greenwich"
+ },
+ "plumstead-gardens-playground-royal-greenwich": {
+  "lat": 51.48934665045721,
+  "lng": 0.09823322296142578,
+  "borough": "Royal Borough of Greenwich"
+ },
+ "queenscroft-park-playground-royal-greenwich": {
+  "lat": 51.450139,
+  "lng": 0.04205,
+  "borough": "Royal Borough of Greenwich"
+ },
+ "southwood-park-playground-royal-greenwich": {
+  "lat": 51.43667455743443,
+  "lng": 0.06840705871582031,
+  "borough": "Royal Borough of Greenwich"
+ },
+ "st-alfege-park-next-to-st-alfege-church-playground-royal-gre": {
+  "lat": 51.481684,
+  "lng": -0.012221,
+  "borough": "Royal Borough of Greenwich"
+ },
+ "sunbury-street-playground-royal-greenwich": {
+  "lat": 51.4930769,
+  "lng": 0.057163,
+  "borough": "Royal Borough of Greenwich"
+ },
+ "sutcliffe-park-playground-royal-greenwich": {
+  "lat": 51.45483591636665,
+  "lng": 0.029654502868652344,
+  "borough": "Royal Borough of Greenwich"
+ },
+ "the-course-playground-royal-greenwich": {
+  "lat": 51.43010633816985,
+  "lng": 0.06087541580200196,
+  "borough": "Royal Borough of Greenwich"
+ },
+ "twinkle-park-playground-royal-greenwich": {
+  "lat": 51.484229162655,
+  "lng": -0.024204254150390625,
+  "borough": "Royal Borough of Greenwich"
+ },
+ "villas-road-playground-royal-greenwich": {
+  "lat": 51.487462733498646,
+  "lng": 0.07847070693969727,
+  "borough": "Royal Borough of Greenwich"
+ },
+ "well-hall-pleasaunce-playground-royal-greenwich": {
+  "lat": 51.45626658538872,
+  "lng": 0.0493311882019043,
+  "borough": "Royal Borough of Greenwich"
+ },
+ "winn-s-common-playground-royal-greenwich": {
+  "lat": 51.481973,
+  "lng": 0.093812,
+  "borough": "Royal Borough of Greenwich"
+ },
+ "baxters-field-playground-lewisham": {
+  "park": "Baxters Field",
+  "borough": "London Borough of Lewisham"
+ },
+ "bellingham-play-park-lewisham": {
+  "park": "Bellingham Play Park",
+  "borough": "London Borough of Lewisham"
+ },
+ "brookmill-park-playground-lewisham": {
+  "park": "Brookmill Park",
+  "borough": "London Borough of Lewisham"
+ },
+ "chinbrook-meadows-playground-lewisham": {
+  "park": "Chinbrook Meadows",
+  "borough": "London Borough of Lewisham"
+ },
+ "cornmill-gardens-and-river-mill-park-playground-lewisham": {
+  "park": "Cornmill Gardens and River Mill Park",
+  "borough": "London Borough of Lewisham"
+ },
+ "deptford-park-playground-lewisham": {
+  "park": "Deptford Park",
+  "borough": "London Borough of Lewisham"
+ },
+ "downham-woodland-walk-playground-lewisham": {
+  "park": "Downham Woodland Walk",
+  "borough": "London Borough of Lewisham"
+ },
+ "durham-hill-playground-lewisham": {
+  "park": "Durham Hill",
+  "borough": "London Borough of Lewisham"
+ },
+ "edith-nesbit-gardens-playground-lewisham": {
+  "park": "Edith Nesbit Gardens",
+  "borough": "London Borough of Lewisham"
+ },
+ "ferranti-park-playground-lewisham": {
+  "park": "Ferranti Park",
+  "borough": "London Borough of Lewisham"
+ },
+ "folkestone-gardens-playground-lewisham": {
+  "park": "Folkestone Gardens",
+  "borough": "London Borough of Lewisham"
+ },
+ "fordham-park-playground-lewisham": {
+  "park": "Fordham Park",
+  "borough": "London Borough of Lewisham"
+ },
+ "forster-memorial-park-playground-lewisham": {
+  "park": "Forster Memorial Park",
+  "borough": "London Borough of Lewisham"
+ },
+ "friendly-gardens-playground-lewisham": {
+  "park": "Friendly Gardens",
+  "borough": "London Borough of Lewisham"
+ },
+ "grove-park-library-gardens-playground-lewisham": {
+  "park": "Grove Park Library Gardens",
+  "borough": "London Borough of Lewisham"
+ },
+ "horniman-s-triangle-playground-lewisham": {
+  "park": "Horniman's Triangle",
+  "borough": "London Borough of Lewisham"
+ },
+ "lewisham-park-playground-lewisham": {
+  "park": "Lewisham Park",
+  "borough": "London Borough of Lewisham"
+ },
+ "manor-house-gardens-playground-lewisham": {
+  "park": "Manor House Gardens",
+  "borough": "London Borough of Lewisham"
+ },
+ "manor-park-playground-lewisham": {
+  "park": "Manor Park",
+  "borough": "London Borough of Lewisham"
+ },
+ "margaret-mcmillan-park-playground-lewisham": {
+  "park": "Margaret McMillan Park",
+  "borough": "London Borough of Lewisham"
+ },
+ "mountsfield-park-playground-lewisham": {
+  "park": "Mountsfield Park",
+  "borough": "London Borough of Lewisham"
+ },
+ "northbrook-park-playground-lewisham": {
+  "park": "Northbrook Park",
+  "borough": "London Borough of Lewisham"
+ },
+ "pepys-park-playground-lewisham": {
+  "park": "Pepys Park",
+  "borough": "London Borough of Lewisham"
+ },
+ "sayes-court-playground-lewisham": {
+  "park": "Sayes Court",
+  "borough": "London Borough of Lewisham"
+ },
+ "belmont-recreation-ground-playground-haringey": {
+  "lat": 51.592720666392,
+  "lng": -0.095917213656901,
+  "borough": "London Borough of Haringey"
+ },
+ "bruce-castle-park-playground-haringey": {
+  "lat": 51.60023,
+  "lng": -0.07437,
+  "borough": "London Borough of Haringey"
+ },
+ "brunswick-park-playground-haringey": {
+  "lat": 51.58340991394,
+  "lng": -0.075690454689651,
+  "borough": "London Borough of Haringey"
+ },
+ "chapmans-green-playground-haringey": {
+  "lat": 51.600140247315,
+  "lng": -0.099792967319878,
+  "borough": "London Borough of Haringey"
+ },
+ "chestnuts-park-playground-haringey": {
+  "lat": 51.582441677475,
+  "lng": -0.089957987905045,
+  "borough": "London Borough of Haringey"
+ },
+ "down-lane-park-playground-haringey": {
+  "lat": 51.592115710743,
+  "lng": -0.061848465473795,
+  "borough": "London Borough of Haringey"
+ },
+ "downhills-park-playground-haringey": {
+  "lat": 51.589784914952,
+  "lng": -0.089204675567871,
+  "borough": "London Borough of Haringey"
+ },
+ "ducketts-common-playground-haringey": {
+  "lat": 51.588846294726,
+  "lng": -0.10273929004622,
+  "borough": "London Borough of Haringey"
+ },
+ "fairland-park-playground-haringey": {
+  "lat": 51.585210709699,
+  "lng": -0.10653708820001,
+  "borough": "London Borough of Haringey"
+ },
+ "hartington-park-playground-haringey": {
+  "lat": 51.597714373648,
+  "lng": -0.064391033806302,
+  "borough": "London Borough of Haringey"
+ },
+ "lordship-recreation-ground-playground-haringey": {
+  "lat": 51.594673674317,
+  "lng": -0.087149099847861,
+  "borough": "London Borough of Haringey"
+ },
+ "muswell-hill-playing-fields-playground-haringey": {
+  "lat": 51.601726302806,
+  "lng": -0.15674810169397,
+  "borough": "London Borough of Haringey"
+ },
+ "o-r-tambo-recreation-ground-playground-haringey": {
+  "lat": 51.601910727062,
+  "lng": -0.13385038450691,
+  "borough": "London Borough of Haringey"
+ },
+ "paignton-park-playground-haringey": {
+  "lat": 51.57732250834,
+  "lng": -0.078358617035412,
+  "borough": "London Borough of Haringey"
+ },
+ "priory-park-playground-haringey": {
+  "lat": 51.585117722706,
+  "lng": -0.12510519843032,
+  "borough": "London Borough of Haringey"
+ },
+ "russell-park-playground-haringey": {
+  "lat": 51.594882,
+  "lng": -0.098898,
+  "borough": "London Borough of Haringey"
+ },
+ "springfield-community-park-playground-haringey": {
+  "lat": 51.604954282475,
+  "lng": -0.12562300653047,
+  "borough": "London Borough of Haringey"
+ },
+ "stanley-culross-open-space-playground-haringey": {
+  "lat": 51.586614132568,
+  "lng": -0.096334629010209,
+  "borough": "London Borough of Haringey"
+ },
+ "stationers-park-playground-haringey": {
+  "lat": 51.579972303197,
+  "lng": -0.11293603210025,
+  "borough": "London Borough of Haringey"
+ },
+ "tottenham-green-playground-haringey": {
+  "lat": 51.587576490763,
+  "lng": -0.071533824480009,
+  "borough": "London Borough of Haringey"
+ },
+ "tower-gardens-playground-haringey": {
+  "lat": 51.599083697096,
+  "lng": -0.084080657516398,
+  "borough": "London Borough of Haringey"
+ },
+ "woodside-park-playground-haringey": {
+  "lat": 51.604199742166,
+  "lng": -0.11083705936429,
+  "borough": "London Borough of Haringey"
+ },
+ "finsbury-park-playground-haringey": {
+  "lat": 51.572448033919,
+  "lng": -0.10205090440756,
+  "borough": "London Borough of Haringey"
+ },
+ "avenue-park-playground-hounslow": {
+  "postcode": "TW5 9RG",
+  "borough": "London Borough of Hounslow"
+ },
+ "farnell-field-play-area-hounslow": {
+  "postcode": "TW3 2NX",
+  "borough": "London Borough of Hounslow"
+ },
+ "hawthorn-hatch-playground-hounslow": {
+  "postcode": "TW8 8NX",
+  "borough": "London Borough of Hounslow"
+ },
+ "redlees-park-playground-hounslow": {
+  "postcode": "TW7 6DW",
+  "borough": "London Borough of Hounslow"
+ },
+ "st-pauls-recreation-ground-playground-hounslow": {
+  "park": "St Paul'?s Recreation Ground",
+  "borough": "London Borough of Hounslow"
+ },
+ "turnham-green-play-area-hounslow": {
+  "postcode": "W4 5TF",
+  "borough": "London Borough of Hounslow"
+ },
+ "watermans-park-play-area-hounslow": {
+  "postcode": "TW8 0BJ",
+  "borough": "London Borough of Hounslow"
+ },
+ "canons-park-playground-harrow": {
+  "lat": 51.6131675,
+  "lng": -0.2967099,
+  "borough": "London Borough of Harrow"
+ },
+ "harrow-recreation-ground-playground-harrow": {
+  "lat": 51.585242,
+  "lng": -0.3481445,
+  "borough": "London Borough of Harrow"
+ },
+ "kenton-recreation-ground-playground-harrow": {
+  "lat": 51.5884634,
+  "lng": -0.3163658,
+  "borough": "London Borough of Harrow"
+ },
+ "roxeth-recreation-ground-playground-harrow": {
+  "lat": 51.5624442,
+  "lng": -0.3523918,
+  "borough": "London Borough of Harrow"
+ },
+ "headstone-manor-park-playground-harrow": {
+  "lat": 51.5960172,
+  "lng": -0.3574376,
+  "borough": "London Borough of Harrow"
+ },
+ "pinner-village-gardens-playground-harrow": {
+  "lat": 51.586693,
+  "lng": -0.3809753,
+  "borough": "London Borough of Harrow"
+ },
+ "west-harrow-recreation-ground-playground-harrow": {
+  "lat": 51.575862,
+  "lng": -0.3583142,
+  "borough": "London Borough of Harrow"
+ },
+ "hatch-end-riverside-park-playground-harrow": {
+  "lat": 51.6082857,
+  "lng": -0.3644581,
+  "borough": "London Borough of Harrow"
+ },
+ "chandos-recreation-ground-playground-harrow": {
+  "lat": 51.603601,
+  "lng": -0.2853237,
+  "borough": "London Borough of Harrow"
+ },
+ "acacia-road-playground-waltham-forest": {
+  "any": "Acacia Road Playground|Acacia Road.*",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "arnett-square-playground-waltham-forest": {
+  "any": "Arnett Square Playground|Arnett Square.*",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "artesian-gardens-playground-waltham-forest": {
+  "any": "Artesian Gardens Playground|Artesian Gardens.*",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "bridge-road-playground-waltham-forest": {
+  "any": "Bridge Road Playground|Bridge Road.*",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "brookscroft-road-play-area-waltham-forest": {
+  "any": "Brookscroft Road Play Area|Brookscroft Road.*",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "church-lane-playground-waltham-forest": {
+  "any": "Church Lane Playground|Church Lane.*",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "dames-road-playground-waltham-forest": {
+  "any": "Dames Road Playground|Dames Road.*",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "drapers-field-play-area-waltham-forest": {
+  "any": "Drapers Field Play Area|Drapers Field.*",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "dyers-hall-playground-waltham-forest": {
+  "any": "Dyers Hall Playground|Dyers Hall.*",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "epicentre-playground-waltham-forest": {
+  "any": "EpiCentre Playground|EpiCentre.*",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "folly-lane-playground-waltham-forest": {
+  "any": "Folly Lane Playground|Folly Lane.*",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "greenleaf-road-playground-waltham-forest": {
+  "any": "Greenleaf Road Playground|Greenleaf Road.*",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "harrow-road-playground-waltham-forest": {
+  "any": "Harrow Road Playground|Harrow Road.*",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "leyton-sports-play-area-waltham-forest": {
+  "any": "Leyton Sports Play Area|Leyton Sports.*",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "queens-road-playground-waltham-forest": {
+  "any": "Queens Road Playground|Queens Road.*",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "selborne-walk-playground-waltham-forest": {
+  "any": "Selborne Walk Playground|Selborne Walk.*",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "troubridge-square-playground-waltham-forest": {
+  "any": "Troubridge Square Playground|Troubridge Square.*",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "vincent-road-playground-waltham-forest": {
+  "any": "Vincent Road Playground|Vincent Road.*",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "walnut-road-playground-waltham-forest": {
+  "any": "Walnut Road Playground|Walnut Road.*",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "bisterne-avenue-park-playground-waltham-forest": {
+  "park": "Bisterne Avenue Park",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "cann-hall-park-playground-waltham-forest": {
+  "park": "Cann Hall Park",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "chase-lane-park-playground-waltham-forest": {
+  "park": "Chase Lane Park",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "cheney-row-park-playground-waltham-forest": {
+  "park": "Cheney Row Park",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "coppermill-park-playground-waltham-forest": {
+  "park": "Coppermill Park",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "drysdale-park-playground-waltham-forest": {
+  "park": "Drysdale Park",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "henry-reynolds-gardens-playground-waltham-forest": {
+  "park": "Henry Reynolds Gardens",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "higham-hill-park-playground-waltham-forest": {
+  "park": "Higham Hill Park",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "jack-cornwell-park-playground-waltham-forest": {
+  "park": "Jack Cornwell Park",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "kitchener-road-park-playground-waltham-forest": {
+  "park": "Kitchener Road Park",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "leyton-manor-park-playground-waltham-forest": {
+  "park": "Leyton Manor Park",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "pimp-hall-park-playground-waltham-forest": {
+  "park": "Pimp Hall Park",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "st-james-park-playground-waltham-forest": {
+  "park": "St James Park",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "sidmouth-park-playground-waltham-forest": {
+  "park": "Sidmouth Park",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "stoneydown-park-and-gardens-playground-waltham-forest": {
+  "park": "Stoneydown Park and Gardens",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "the-highams-park-playground-waltham-forest": {
+  "park": "(The )?Highams Park",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "thomas-gamuel-park-playground-waltham-forest": {
+  "park": "Thomas Gamuel Park",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "wingfield-park-playground-waltham-forest": {
+  "park": "Wingfield Park",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "abbotts-park-playground-waltham-forest": {
+  "park": "Abbotts Park",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "leyton-jubilee-park-playground-waltham-forest": {
+  "postcode": "E10 7BL",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "lloyd-park-playground-waltham-forest": {
+  "postcode": "E17 4PP",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "memorial-park-playground-waltham-forest": {
+  "postcode": "E4 8LR",
+  "borough": "London Borough of Waltham Forest"
+ },
+ "ridgeway-park-playground-waltham-forest": {
+  "postcode": "E4 6RS",
+  "borough": "London Borough of Waltham Forest"
+ }
+}
