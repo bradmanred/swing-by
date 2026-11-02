@@ -17,6 +17,10 @@
   "operator": "Lewisham Council",
   "sources": [
     {
+      "label": "Lewisham Council: Baxters Field",
+      "url": "https://lewisham.gov.uk/inmyarea/openspaces/parks/baxters-field"
+    },
+    {
       "label": "GiGL (Greenspace Information for Greater London): Baxter Field",
       "url": "https://www.gigl.org.uk/park/OS_Le_0012/"
     }

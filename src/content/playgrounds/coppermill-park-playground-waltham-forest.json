@@ -2,8 +2,8 @@
   "name": "Coppermill Park Playground",
   "region": "london",
   "area": "St James, Waltham Forest",
-  "lat": 51.57583,
-  "lng": -0.05269,
+  "lat": 51.58067,
+  "lng": -0.03968,
   "ages": [
     "under-3",
     "3-6"
@@ -22,6 +22,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (approximate: the middle of the park), play equipment and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
   "photo": null
 }
