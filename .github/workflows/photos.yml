@@ -1,20 +1,14 @@
 # Finds openly licensed photos (Geograph, Wikimedia Commons) for playgrounds without one, and sends them to
 # the moderation queue at /moderate/. Nothing shows on the site until a moderator approves it.
-# Runs every Monday, after playgrounds are added on main, and on demand from the Actions tab.
+# Runs every Monday (picking up the week's new playgrounds in one go, to save Actions minutes) and on demand from the
+# Actions tab.
 # Needs two repository secrets: MOD_TOKEN (the same moderator key as the Worker) and GEOGRAPH_KEY.
-# Pushes start it on main only. Run it from the Actions tab on another branch for a dry run, which only lists what it
-# would suggest.
+# Run it from the Actions tab on another branch for a dry run, which only lists what it would suggest.
 name: Find playground photos
 on:
   workflow_dispatch:
   schedule:
     - cron: '23 4 * * 1'
-  push:
-    branches: [main] # on other branches it only ever did a dry run, which used up Actions minutes for nothing
-    paths:
-      - 'src/content/playgrounds/**'
-      - 'scripts/find-photos.mjs'
-      - '.github/workflows/photos.yml'
 permissions:
   contents: read
 concurrency:
