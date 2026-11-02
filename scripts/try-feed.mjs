@@ -25,7 +25,7 @@ const by = (k) => recs.filter((r) => r.from === k).length;
 const lines = [
   `## ${title}`,
   '',
-  `${recs.length} playgrounds found${recs.some((r) => r.from) ? ` (${by('map')} with a map point, ${by('postcode')} placed from their postcode)` : ''}.`,
+  `${recs.length} playgrounds found${recs.some((r) => r.from) ? ` (${by('map')} with a map point, ${by('postcode')} placed from their postcode, ${by('park')} from the park's name on OpenStreetMap)` : ''}.`,
   '',
   '| Name | Position | Equipment | Ages | Facilities | Page |',
   '| --- | --- | --- | --- | --- | --- |',

@@ -11,6 +11,7 @@
 // "page" names the council page they came from. Each row is placed from its postcode, then snapped onto the play area.
 // Used by scripts/find-gaps.mjs (adds new council-listed playgrounds) and scripts/quarterly-check.mjs (spots changes).
 import { readFile } from 'node:fs/promises';
+import { gunzipSync } from 'node:zlib';
 import { describe, readJadu, readLocalGov } from './council-readers.mjs';
 
 const UA = { 'User-Agent': 'SwingBy/1.0 (https://swing-by.co.uk; reads council playground lists)' };
@@ -46,6 +47,7 @@ export async function readFeed(feed) {
     for (const r of recs)
       if (r.lat == null && pts[r.postcode]) Object.assign(r, pts[r.postcode], { from: 'postcode' });
       else if (r.lat != null) r.from = 'map';
+    await placeByParkName(recs, feed);
     const placed = recs.filter((r) => r.lat != null);
     if (placed.length < recs.length) console.log(`  ${recs.length - placed.length} left out: no map point or postcode on the page`);
     return placed.map(({ text, ...r }) => r);
@@ -127,4 +129,33 @@ export function parseCsv(src) {
   if (row.some((c) => c.trim())) rows.push(row);
   const [head, ...body] = rows;
   return body.map((r) => Object.fromEntries(head.map((h, i) => [h.trim(), (r[i] ?? '').trim()])));
+}
+
+const normName = (s) => String(s ?? '').toLowerCase().replace(/&/g, 'and').replace(/['’]/g, '').replace(/\b(the|play ?(ground|area)s?)\b/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+
+/**
+ * Parks whose page has neither a map point nor a postcode: find the park by name in the OpenStreetMap snapshot
+ * (OSM_PARKS, set by the osm-snapshot action), near the council's other parks or near feed.near ({ lat, lng }).
+ * Only an exact name match within 12 km counts. The playground pin is then snapped onto the play area as usual.
+ */
+async function placeByParkName(recs, feed) {
+  const todo = recs.filter((r) => r.lat == null);
+  if (!todo.length || !process.env.OSM_PARKS) return;
+  let parks;
+  try {
+    const raw = await readFile(process.env.OSM_PARKS);
+    parks = JSON.parse((raw[0] === 0x1f ? gunzipSync(raw) : raw).toString()); // unpacked by the action, or still gzipped
+  } catch {
+    return;
+  }
+  const placed = recs.filter((r) => r.lat != null);
+  const centre = feed.near ?? (placed.length ? { lat: placed.reduce((a, r) => a + r.lat, 0) / placed.length, lng: placed.reduce((a, r) => a + r.lng, 0) / placed.length } : null);
+  if (!centre) return;
+  const km = (a, b) => Math.hypot((a.lat - b.lat) * 111, (a.lng - b.lng) * 111 * Math.cos((a.lat * Math.PI) / 180));
+  const byName = new Map();
+  for (const p of parks) if (km(p, centre) < 12) byName.set(normName(p.name), [...(byName.get(normName(p.name)) ?? []), p]);
+  for (const r of todo) {
+    const hits = (byName.get(normName(r.name)) ?? []).sort((a, b) => km(a, centre) - km(b, centre));
+    if (hits.length) Object.assign(r, { lat: hits[0].lat, lng: hits[0].lng, from: 'park' });
+  }
 }
