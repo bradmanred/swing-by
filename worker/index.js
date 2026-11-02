@@ -12,6 +12,7 @@ import { pins } from './pins.js';
 // Old playground address → the listing it was merged into. Add a line whenever two listings are merged.
 const MERGED = {
   'playground-off-homestead-lane-the-ryde-welwyn-garden-city': 'king-george-v-playing-fields-welwyn-garden-city',
+  'playground-off-kavan-gardens-cranford-hounslow': 'avenue-park-playground-hounslow',
 };
 
 export default {
