@@ -780,7 +780,12 @@
       "feed": {
         "type": "list",
         "file": "src/data/council-lists/city-of-london.csv",
-        "page": "https://www.fis.cityoflondon.gov.uk/directory/portsoken-street-gardens"
+        "page": "https://www.fis.cityoflondon.gov.uk/directory/portsoken-street-gardens",
+        "near": {
+          "lat": 51.515,
+          "lng": -0.09,
+          "km": 4
+        }
       }
     },
     {
@@ -889,7 +894,7 @@
       "sources": [
         "https://barkinganddagenhamparks.lbbd.gov.uk/urban-parks/"
       ],
-      "note": "The council's parks website (urban parks, about 26 parks); those whose page mentions a playground are imported. The main lbbd.gov.uk site refuses automated downloads.",
+      "note": "The council's parks website (urban parks, about 26 parks); those whose page mentions a playground are imported. The main lbbd.gov.uk site refuses automated downloads. Only parks with a 'Play Areas' section count (every page mentions playgrounds in its dog rules), and parks are placed by name first because many pages repeat Barking Park's postcode.",
       "feed": {
         "type": "pages",
         "index": "https://barkinganddagenhamparks.lbbd.gov.uk/urban-parks/",
@@ -899,7 +904,9 @@
           "lat": 51.545,
           "lng": 0.13,
           "km": 6
-        }
+        },
+        "require": "<h2[^>]*>\\s*Play Areas?\\s*</h2>",
+        "nameFirst": true
       }
     }
   ]

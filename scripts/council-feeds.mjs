@@ -50,6 +50,9 @@ export async function readFeed(feed) {
     for (const r of recs) if (counts.get(r.name) > 2) r.name = slugName(r.url) || r.name;
     // "rename": { "Recreation Grounds": "Benhill Recreation Ground" } for a park whose page gives no usable name.
     for (const r of recs) if (feed.rename?.[r.name]) r.name = feed.rename[r.name];
+    // "nameFirst": the site's postcodes can't be trusted (Barking and Dagenham's pages often repeat Barking Park's), so
+    // look for the park by name on OpenStreetMap first and use the postcode only when that fails.
+    if (feed.nameFirst) await placeByParkName(recs, feed);
     const pts = await postcodePoints(recs.filter((r) => r.lat == null).map((r) => r.postcode));
     for (const r of recs)
       if (r.lat == null && pts[r.postcode]) Object.assign(r, pts[r.postcode], { from: 'postcode' });
