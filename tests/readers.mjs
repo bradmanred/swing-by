@@ -59,4 +59,16 @@ assert.deepEqual(describe('A toilet block with baby changing.').facilities.sort(
 assert.deepEqual(describe('The nearest toilets are in the library.').facilities, []);
 assert.ok(describe('An adventure playground').ages.includes('7-12'));
 
+// A park page with its name only in the title, a "Contact us" link in the menu and the parks office's address at the end
+// (Kensington and Chelsea, Barking and Dagenham).
+const rbkc = `<html><head><title>Avondale Park &#8211; Royal Borough of Kensington and Chelsea</title></head><body>
+<ul><li><a href="/contact">Contact us</a></li></ul>
+<h1><span>Local parks and open spaces</span></h1><p>Avondale Park</p><p>Facilities</p><ul><li>two playgrounds: under fives and ages five to 14 years</li></ul>
+<p>Some more about the park's history, its trees and its wildlife area, long enough to be most of the page.</p>
+<h2>Contact us</h2><p>Parks Service, The Stable Yard, Holland Park, London W8 6LU</p></body></html>`;
+const r = parsePark(rbkc, 'https://www.rbkc.gov.uk/parks/your-local-park/avondale-park', { nameFrom: 'title' });
+assert.equal(r.name, 'Avondale Park');
+assert.equal(r.postcode, null, "the parks office's address is not the park's");
+assert.ok(parsePark(rbkc, 'https://x/avondale-park', {}), 'a "Contact us" menu link does not cut the page');
+
 console.log('readers: ok');
