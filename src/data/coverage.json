@@ -2,16 +2,16 @@
  "updated": "2026-11-02",
  "counties": [
   {
+   "name": "Greater London",
+   "playgrounds": 1219
+  },
+  {
    "name": "Devon",
    "playgrounds": 1141
   },
   {
    "name": "Hertfordshire",
    "playgrounds": 736
-  },
-  {
-   "name": "Greater London",
-   "playgrounds": 623
   },
   {
    "name": "Bedfordshire",
@@ -31,7 +31,7 @@
   },
   {
    "name": "Surrey",
-   "playgrounds": 177
+   "playgrounds": 178
   },
   {
    "name": "Greater Manchester",
