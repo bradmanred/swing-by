@@ -1,0 +1,28 @@
+{
+  "name": "Stevens Park Playground",
+  "region": "london",
+  "area": "East Wickham, Greater London",
+  "lat": 51.46968,
+  "lng": 0.12181,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Bexley Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Bexley Council",
+  "sources": [
+    {
+      "label": "Bexley Council: Stevens Park Playground",
+      "url": "https://www.bexley.gov.uk/services/parks-leisure-and-libraries/parks-and-open-spaces/playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/681604146"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

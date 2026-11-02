@@ -1,0 +1,34 @@
+{
+  "name": "Mellows Park",
+  "region": "london",
+  "area": "South Beddington, Greater London",
+  "lat": 51.3606,
+  "lng": -0.13427,
+  "ages": [],
+  "equipment": [
+    "sk",
+    "gym"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "A playground on London Borough of Sutton's own list of play areas.",
+  "nearby": [],
+  "operator": "London Borough of Sutton",
+  "sources": [
+    {
+      "label": "London Borough of Sutton: Mellows Park",
+      "url": "https://www.sutton.gov.uk/libraries-museums-parks-and-leisure/parks-trees-and-open-spaces/parks-and-facilities/mellows-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/487199377"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

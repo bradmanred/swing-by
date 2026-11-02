@@ -1,0 +1,37 @@
+{
+  "name": "Beverley Park",
+  "region": "london",
+  "area": "Motspur Park, Greater London",
+  "lat": 51.40336,
+  "lng": -0.24515,
+  "ages": [
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "cl",
+    "zw",
+    "sp"
+  ],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A playground on Royal Borough of Kingston upon Thames's own list of play areas.",
+  "nearby": [],
+  "operator": "Royal Borough of Kingston upon Thames",
+  "sources": [
+    {
+      "label": "Royal Borough of Kingston upon Thames: Beverley Park",
+      "url": "https://www.kingston.gov.uk/leisure-and-community/parks-sports-and-activities/recreation-areas-and-playgrounds/beverley-park-completed-community-parks-programme-works"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/813702561"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

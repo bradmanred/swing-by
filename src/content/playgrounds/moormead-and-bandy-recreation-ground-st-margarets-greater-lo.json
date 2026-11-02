@@ -1,0 +1,32 @@
+{
+  "name": "Moormead and Bandy Recreation Ground",
+  "region": "london",
+  "area": "St Margarets, Greater London",
+  "lat": 51.45318,
+  "lng": -0.32627,
+  "ages": [],
+  "equipment": [
+    "rb"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Richmond Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Richmond Council",
+  "sources": [
+    {
+      "label": "Richmond Council: Moormead and Bandy Recreation Ground",
+      "url": "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park/moormead_and_bandy_recreation_ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/28431479"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

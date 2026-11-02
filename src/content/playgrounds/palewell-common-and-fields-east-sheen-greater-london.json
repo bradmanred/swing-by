@@ -1,0 +1,36 @@
+{
+  "name": "Palewell Common and Fields",
+  "region": "london",
+  "area": "East Sheen, Greater London",
+  "lat": 51.45927,
+  "lng": -0.25946,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "wp"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "A playground on Richmond Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Richmond Council",
+  "sources": [
+    {
+      "label": "Richmond Council: Palewell Common and Fields",
+      "url": "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park/palewell_common_and_fields"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/323443476"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

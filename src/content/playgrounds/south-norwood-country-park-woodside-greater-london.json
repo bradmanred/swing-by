@@ -1,0 +1,31 @@
+{
+  "name": "South Norwood Country Park",
+  "region": "london",
+  "area": "Woodside, Greater London",
+  "lat": 51.39632,
+  "lng": -0.06006,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "A playground on Croydon Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Croydon Council",
+  "sources": [
+    {
+      "label": "Croydon Council: South Norwood Country Park",
+      "url": "https://www.croydon.gov.uk/node/3173/south-norwood-country-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/35334192"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours and parking.",
+  "photo": null
+}

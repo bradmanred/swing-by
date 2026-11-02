@@ -1,0 +1,32 @@
+{
+  "name": "Carshalton Park",
+  "region": "london",
+  "area": "Carshalton-on-the-Hill, Greater London",
+  "lat": 51.36145,
+  "lng": -0.16007,
+  "ages": [],
+  "equipment": [
+    "gym"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on London Borough of Sutton's own list of play areas.",
+  "nearby": [],
+  "operator": "London Borough of Sutton",
+  "sources": [
+    {
+      "label": "London Borough of Sutton: Carshalton Park",
+      "url": "https://www.sutton.gov.uk/libraries-museums-parks-and-leisure/parks-trees-and-open-spaces/parks-and-facilities/carshalton-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/4896010"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Wormwood Scrubs Playground",
+  "region": "london",
+  "area": "Shepherd's Bush, Greater London",
+  "lat": 51.5203,
+  "lng": -0.23362,
+  "ages": [
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "Two play areas: one for younger children near the Pony Centre, and one on Braybrook Street for all ages with accessible equipment.",
+  "nearby": [],
+  "operator": "Hammersmith & Fulham Council",
+  "sources": [
+    {
+      "label": "Hammersmith & Fulham Council: Wormwood Scrubs Playground",
+      "url": "https://www.lbhf.gov.uk/sports-and-parks/parks-and-open-spaces/playgrounds-hf-parks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1329466770"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

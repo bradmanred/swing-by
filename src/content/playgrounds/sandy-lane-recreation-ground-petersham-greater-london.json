@@ -1,0 +1,34 @@
+{
+  "name": "Sandy Lane Recreation Ground",
+  "region": "london",
+  "area": "Petersham, Greater London",
+  "lat": 51.44069,
+  "lng": -0.3104,
+  "ages": [],
+  "equipment": [
+    "bk",
+    "sw",
+    "rb"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Richmond Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Richmond Council",
+  "sources": [
+    {
+      "label": "Richmond Council: Sandy Lane Recreation Ground",
+      "url": "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park/sandy_lane_recreation_ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/278910280"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

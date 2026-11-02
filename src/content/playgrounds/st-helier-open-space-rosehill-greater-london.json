@@ -1,0 +1,32 @@
+{
+  "name": "St Helier Open Space",
+  "region": "london",
+  "area": "Rosehill, Greater London",
+  "lat": 51.38462,
+  "lng": -0.18061,
+  "ages": [],
+  "equipment": [
+    "sk",
+    "gym",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on London Borough of Sutton's own list of play areas.",
+  "nearby": [],
+  "operator": "London Borough of Sutton",
+  "sources": [
+    {
+      "label": "London Borough of Sutton: St Helier Open Space",
+      "url": "https://www.sutton.gov.uk/libraries-museums-parks-and-leisure/parks-trees-and-open-spaces/parks-and-facilities/st-helier-open-space"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/25600512"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

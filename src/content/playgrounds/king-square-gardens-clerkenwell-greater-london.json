@@ -1,0 +1,33 @@
+{
+  "name": "King Square Gardens",
+  "region": "london",
+  "area": "Clerkenwell, Greater London",
+  "lat": 51.52734,
+  "lng": -0.09918,
+  "ages": [],
+  "equipment": [
+    "sp",
+    "wp"
+  ],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A playground on Islington Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Islington Council",
+  "sources": [
+    {
+      "label": "Islington Council: King Square Gardens",
+      "url": "https://www.islington.gov.uk/physical-activity-parks-and-trees/parks-and-green-space/your-local-parks/kings-square-gardens"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/89178563"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

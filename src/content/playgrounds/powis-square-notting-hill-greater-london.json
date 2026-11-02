@@ -1,0 +1,31 @@
+{
+  "name": "Powis Square",
+  "region": "london",
+  "area": "Notting Hill, Greater London",
+  "lat": 51.51586,
+  "lng": -0.20135,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Royal Borough of Kensington and Chelsea's own list of play areas.",
+  "nearby": [],
+  "operator": "Royal Borough of Kensington and Chelsea",
+  "sources": [
+    {
+      "label": "Royal Borough of Kensington and Chelsea: Powis Square",
+      "url": "https://www.rbkc.gov.uk/parks-leisure-and-culture/parks/your-local-park/powis-square"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/770788820"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

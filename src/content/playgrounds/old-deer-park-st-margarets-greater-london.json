@@ -1,0 +1,33 @@
+{
+  "name": "Old Deer Park",
+  "region": "london",
+  "area": "St Margarets, Greater London",
+  "lat": 51.46109,
+  "lng": -0.31085,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "rb",
+    "gym"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Richmond Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Richmond Council",
+  "sources": [
+    {
+      "label": "Richmond Council: Old Deer Park",
+      "url": "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park/old_deer_park"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (approximate: mapped from the postcode), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

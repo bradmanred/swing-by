@@ -1,0 +1,31 @@
+{
+  "name": "Lavender Park",
+  "region": "london",
+  "area": "Collier's Wood, Greater London",
+  "lat": 51.41331,
+  "lng": -0.17237,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Merton Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Merton Council",
+  "sources": [
+    {
+      "label": "Merton Council: Lavender Park",
+      "url": "https://www.merton.gov.uk/leisure-recreation-and-culture/parks-and-open-spaces/parks-and-recreation-grounds/mitcham/lavender-park-open-space"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/897799746"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

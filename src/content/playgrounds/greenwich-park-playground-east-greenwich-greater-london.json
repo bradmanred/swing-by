@@ -1,0 +1,32 @@
+{
+  "name": "Greenwich Park Playground",
+  "region": "london",
+  "area": "East Greenwich, Greater London",
+  "lat": 51.47711,
+  "lng": -0.00034,
+  "ages": [],
+  "equipment": [
+    "bk",
+    "wp",
+    "rb"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "bc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "A playground on The Royal Parks's own list of play areas.",
+  "nearby": [],
+  "operator": "The Royal Parks",
+  "sources": [
+    {
+      "label": "The Royal Parks: Greenwich Park Playground",
+      "url": "https://www.royalparks.org.uk/visit/parks/greenwich-park/greenwich-park-playground"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (approximate: the park's point on OpenStreetMap, not the play area itself), age ranges, the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

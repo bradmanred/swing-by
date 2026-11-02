@@ -1,0 +1,30 @@
+{
+  "name": "Edbrooke Road Playground",
+  "region": "london",
+  "area": "Kensal Town, City of Westminster",
+  "lat": 51.52437,
+  "lng": -0.19562,
+  "ages": [
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A small local park with a small play area, mainly for younger children. Step-free access.",
+  "nearby": [],
+  "operator": "Westminster City Council",
+  "sources": [
+    {
+      "label": "Westminster City Council: Edbrooke Road Playground",
+      "url": "https://www.westminster.gov.uk/leisure-libraries-and-community/parks-and-open-spaces/playgrounds-and-green-gyms"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/156708575"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

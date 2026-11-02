@@ -1,0 +1,35 @@
+{
+  "name": "Grange Park",
+  "region": "london",
+  "area": "Kenley, Greater London",
+  "lat": 51.30758,
+  "lng": -0.11965,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [
+    "cf"
+  ],
+  "opens": "",
+  "description": "A playground on Croydon Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Croydon Council",
+  "sources": [
+    {
+      "label": "Croydon Council: Grange Park",
+      "url": "https://www.croydon.gov.uk/libraries-leisure-and-culture/parks-and-open-spaces/parks-and-playgrounds/parks-and-playgrounds-directory/grange-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/181643108"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

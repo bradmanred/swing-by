@@ -1,0 +1,34 @@
+{
+  "name": "Vine Road Recreation Ground",
+  "region": "london",
+  "area": "East Sheen, Greater London",
+  "lat": 51.46831,
+  "lng": -0.2493,
+  "ages": [],
+  "equipment": [
+    "bk",
+    "sw",
+    "wp"
+  ],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A playground on Richmond Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Richmond Council",
+  "sources": [
+    {
+      "label": "Richmond Council: Vine Road Recreation Ground",
+      "url": "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park/vine_road_recreation_ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/338839472"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

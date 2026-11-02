@@ -1,0 +1,31 @@
+{
+  "name": "Rowan Road Recreation Ground",
+  "region": "london",
+  "area": "Mitcham, Greater London",
+  "lat": 51.40662,
+  "lng": -0.14184,
+  "ages": [],
+  "equipment": [
+    "wp",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Merton Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Merton Council",
+  "sources": [
+    {
+      "label": "Merton Council: Rowan Road Recreation Ground",
+      "url": "https://www.merton.gov.uk/leisure-recreation-and-culture/parks-and-open-spaces/parks-and-recreation-grounds/mitcham/rowan-road-recreation-ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/725779196"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

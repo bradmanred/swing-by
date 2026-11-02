@@ -1,0 +1,32 @@
+{
+  "name": "King George's Recreation Ground",
+  "region": "london",
+  "area": "Tolworth, Greater London",
+  "lat": 51.37447,
+  "lng": -0.29057,
+  "ages": [],
+  "equipment": [
+    "cl",
+    "sk",
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Royal Borough of Kingston upon Thames's own list of play areas.",
+  "nearby": [],
+  "operator": "Royal Borough of Kingston upon Thames",
+  "sources": [
+    {
+      "label": "Royal Borough of Kingston upon Thames: King George's Recreation Ground",
+      "url": "https://www.kingston.gov.uk/leisure-and-community/parks-sports-and-activities/recreation-areas-and-playgrounds/king-georges-recreation-ground-completed-community-parks-programme-works"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1070947838"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
