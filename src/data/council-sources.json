@@ -704,6 +704,36 @@
         "directory": "https://www.sutton.gov.uk/libraries-museums-parks-and-leisure/parks-trees-and-open-spaces/parks-and-facilities",
         "approximate": true
       }
+    },
+    {
+      "district": "Westminster",
+      "council": "The Royal Parks",
+      "sources": [
+        "https://www.royalparks.org.uk/visit/things-see-do/playing"
+      ],
+      "note": "The Royal Parks' own playground pages (from its site map, November 2026), covering Hyde Park, Kensington Gardens, The Regent's Park and Primrose Hill, Victoria Tower Gardens, Greenwich Park, Richmond Park and Bushy Park. Listed under Westminster so the coverage check reads it; the parks run across several boroughs.",
+      "feed": {
+        "type": "pages",
+        "pages": [
+          "https://www.royalparks.org.uk/visit/parks/bushy-park/bushy-park-playground",
+          "https://www.royalparks.org.uk/visit/parks/greenwich-park/greenwich-park-playground",
+          "https://www.royalparks.org.uk/visit/parks/hyde-park/hyde-park-playground",
+          "https://www.royalparks.org.uk/visit/parks/kensington-gardens/diana-memorial-playground",
+          "https://www.royalparks.org.uk/visit/parks/regents-park-primrose-hill/gloucester-gate-playground",
+          "https://www.royalparks.org.uk/visit/parks/regents-park-primrose-hill/hanover-gate-playground",
+          "https://www.royalparks.org.uk/visit/parks/regents-park-primrose-hill/marylebone-green-playground",
+          "https://www.royalparks.org.uk/visit/parks/regents-park-primrose-hill/primrose-hill-playground",
+          "https://www.royalparks.org.uk/visit/parks/richmond-park/petersham-gate-playground",
+          "https://www.royalparks.org.uk/visit/parks/victoria-tower-gardens/horseferry-playground"
+        ],
+        "follow": "^$",
+        "allPlay": true,
+        "near": {
+          "lat": 51.49,
+          "lng": -0.2,
+          "km": 25
+        }
+      }
     }
   ]
 }

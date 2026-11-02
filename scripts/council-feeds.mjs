@@ -139,8 +139,8 @@ const normName = (s) => String(s ?? '').toLowerCase().replace(/&/g, 'and').repla
 
 /**
  * Parks whose page has neither a map point nor a postcode: find the park by name in the OpenStreetMap snapshot
- * (OSM_PARKS and OSM_PLAYGROUNDS, set by the osm-snapshot action), near the council's other parks or near feed.near ({ lat, lng }).
- * Only an exact name match within 12 km counts. The playground pin is then snapped onto the play area as usual.
+ * (OSM_PARKS and OSM_PLAYGROUNDS, set by the osm-snapshot action), near the council's other parks or near feed.near ({ lat, lng, km }).
+ * Only an exact name match within 12 km (or near.km) counts. The playground pin is then snapped onto the play area as usual.
  */
 async function placeByParkName(recs, feed) {
   const todo = recs.filter((r) => r.lat == null);
@@ -161,7 +161,8 @@ async function placeByParkName(recs, feed) {
   if (!centre) return;
   const km = (a, b) => Math.hypot((a.lat - b.lat) * 111, (a.lng - b.lng) * 111 * Math.cos((a.lat * Math.PI) / 180));
   const byName = new Map();
-  for (const p of parks) if (km(p, centre) < 12) byName.set(normName(p.name), [...(byName.get(normName(p.name)) ?? []), p]);
+  const within = feed.near?.km ?? 12;
+  for (const p of parks) if (km(p, centre) < within) byName.set(normName(p.name), [...(byName.get(normName(p.name)) ?? []), p]);
   for (const r of todo) {
     const hits = (byName.get(normName(r.name)) ?? []).sort((a, b) => km(a, centre) - km(b, centre));
     if (hits.length) Object.assign(r, { lat: hits[0].lat, lng: hits[0].lng, from: 'park' });
