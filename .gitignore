@@ -5,3 +5,4 @@ test-results/
 .env
 .wrangler/
 .dev.vars
+.coverage-progress.json
