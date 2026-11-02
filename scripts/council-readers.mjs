@@ -56,6 +56,9 @@ export const text = (html) =>
     .replace(/&#0?39;|&rsquo;|&#x27;|&#8217;/g, "'")
     .replace(/&nbsp;|&#160;/g, ' ')
     .replace(/&quot;/g, '"')
+    .replace(/&ndash;/g, '–')
+    .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16)))
     .replace(/\s+/g, ' ')
     .replace(/(;\s*){2,}/g, '; ')
     .trim();
@@ -177,7 +180,10 @@ export function parsePark(html, url, feed, inCategory = false) {
   const own = t.indexOf(name);
   if (own > 0) t = t.slice(own);
   // The council's contact details ("Contact us … Parks Service, The Stable Yard … W8 6LU") aren't the park's address.
-  t = t.replace(/;\s*Contact (?:us|the (?:parks )?team)\b[\s\S]*$/i, '').slice(0, 20000);
+  // Only the last "Contact us", and only past the first third, so a "Contact us" link in the menu doesn't cut the page.
+  const contact = [...t.matchAll(/;\s*Contact (?:us|the (?:parks )?team)\b/gi)].pop();
+  if (contact && contact.index > t.length / 3) t = t.slice(0, contact.index);
+  t = t.slice(0, 20000);
   const need = feed.require ? new RegExp(feed.require, 'i') : PLAY;
   if (!inCategory && !need.test(feed.require ? html : t)) return null;
   const p = point(html);

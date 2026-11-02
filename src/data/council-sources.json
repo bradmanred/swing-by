@@ -882,6 +882,25 @@
           "km": 5
         }
       }
+    },
+    {
+      "district": "Barking and Dagenham",
+      "council": "Barking and Dagenham Council",
+      "sources": [
+        "https://barkinganddagenhamparks.lbbd.gov.uk/urban-parks/"
+      ],
+      "note": "The council's parks website (urban parks, about 26 parks); those whose page mentions a playground are imported. The main lbbd.gov.uk site refuses automated downloads.",
+      "feed": {
+        "type": "pages",
+        "index": "https://barkinganddagenhamparks.lbbd.gov.uk/urban-parks/",
+        "follow": "^https://barkinganddagenhamparks\\.lbbd\\.gov\\.uk/(?!about-us|contact-us|urban-parks|country-parks|feed|comments|wp-|xmlrpc)[a-z0-9-]+/?$",
+        "approximate": true,
+        "near": {
+          "lat": 51.545,
+          "lng": 0.13,
+          "km": 6
+        }
+      }
     }
   ]
 }
