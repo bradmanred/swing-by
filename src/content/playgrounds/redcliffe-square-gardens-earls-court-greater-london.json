@@ -1,0 +1,30 @@
+{
+  "name": "Redcliffe Square Gardens",
+  "region": "london",
+  "area": "Earl's Court, Greater London",
+  "lat": 51.48836,
+  "lng": -0.18838,
+  "ages": [
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Royal Borough of Kensington and Chelsea's own list of play areas.",
+  "nearby": [],
+  "operator": "Royal Borough of Kensington and Chelsea",
+  "sources": [
+    {
+      "label": "Royal Borough of Kensington and Chelsea: Redcliffe Square Gardens",
+      "url": "https://www.rbkc.gov.uk/parks-leisure-and-culture/parks/your-local-park/redcliffe-square-gardens"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/874525844"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

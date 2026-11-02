@@ -1,0 +1,31 @@
+{
+  "name": "Vicarage Road",
+  "region": "london",
+  "area": "Strawberry Hill, Greater London",
+  "lat": 51.4281,
+  "lng": -0.33079,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "rb"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Richmond Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Richmond Council",
+  "sources": [
+    {
+      "label": "Richmond Council: Vicarage Road",
+      "url": "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park/vicarage_road"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/810880844"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

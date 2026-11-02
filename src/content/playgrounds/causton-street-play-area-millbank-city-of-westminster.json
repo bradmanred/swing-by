@@ -1,0 +1,32 @@
+{
+  "name": "Causton Street Play Area",
+  "region": "london",
+  "area": "Millbank, City of Westminster",
+  "lat": 51.49099,
+  "lng": -0.13125,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "On the Millbank Estate behind Tate Britain: a play area for 3 to 7 year olds and a multi-use games area for older children. Step-free access; no dogs.",
+  "nearby": [],
+  "operator": "Westminster City Council",
+  "sources": [
+    {
+      "label": "Westminster City Council: Causton Street Play Area",
+      "url": "https://www.westminster.gov.uk/leisure-libraries-and-community/parks-and-open-spaces/playgrounds-and-green-gyms"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/14138138088"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

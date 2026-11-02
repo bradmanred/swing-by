@@ -1,0 +1,28 @@
+{
+  "name": "St Stephen's Gardens Playground",
+  "region": "london",
+  "area": "Kensal Town, City of Westminster",
+  "lat": 51.51807,
+  "lng": -0.19726,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A small public garden with a play area, seating and a pergola. Step-free access; no dogs.",
+  "nearby": [],
+  "operator": "Westminster City Council",
+  "sources": [
+    {
+      "label": "Westminster City Council: St Stephen's Gardens Playground",
+      "url": "https://www.westminster.gov.uk/leisure-libraries-and-community/parks-and-open-spaces/playgrounds-and-green-gyms"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/758459403"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

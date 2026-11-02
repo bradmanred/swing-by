@@ -1,0 +1,28 @@
+{
+  "name": "Martens Grove Playground",
+  "region": "london",
+  "area": "Barnehurst, Greater London",
+  "lat": 51.45686,
+  "lng": 0.15858,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Bexley Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Bexley Council",
+  "sources": [
+    {
+      "label": "Bexley Council: Martens Grove Playground",
+      "url": "https://www.bexley.gov.uk/services/parks-leisure-and-libraries/parks-and-open-spaces/playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/472153687"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

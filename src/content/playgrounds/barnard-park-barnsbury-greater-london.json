@@ -1,0 +1,33 @@
+{
+  "name": "Barnard Park",
+  "region": "london",
+  "area": "Barnsbury, Greater London",
+  "lat": 51.53644,
+  "lng": -0.11171,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [
+    "wp",
+    "ad"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Islington Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Islington Council",
+  "sources": [
+    {
+      "label": "Islington Council: Barnard Park",
+      "url": "https://www.islington.gov.uk/physical-activity-parks-and-trees/parks-and-green-space/your-local-parks/barnard-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/127315563"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

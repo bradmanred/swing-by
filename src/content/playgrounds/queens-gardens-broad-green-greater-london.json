@@ -1,0 +1,28 @@
+{
+  "name": "Queens Gardens",
+  "region": "london",
+  "area": "Broad Green, Greater London",
+  "lat": 51.37193,
+  "lng": -0.09825,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Croydon Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Croydon Council",
+  "sources": [
+    {
+      "label": "Croydon Council: Queens Gardens",
+      "url": "https://www.croydon.gov.uk/node/3173/queens-gardens"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/13667119101"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

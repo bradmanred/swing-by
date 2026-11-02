@@ -1,0 +1,32 @@
+{
+  "name": "South Park Playground",
+  "region": "london",
+  "area": "Fulham, Greater London",
+  "lat": 51.46925,
+  "lng": -0.1959,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area for all ages with accessible play, next to a multi-use games area.",
+  "nearby": [],
+  "operator": "Hammersmith & Fulham Council",
+  "sources": [
+    {
+      "label": "Hammersmith & Fulham Council: South Park Playground",
+      "url": "https://www.lbhf.gov.uk/sports-and-parks/parks-and-open-spaces/playgrounds-hf-parks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/435504113"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

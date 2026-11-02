@@ -1,0 +1,33 @@
+{
+  "name": "Paradise Park",
+  "region": "london",
+  "area": "Highbury, Greater London",
+  "lat": 51.54839,
+  "lng": -0.11112,
+  "ages": [
+    "teens"
+  ],
+  "equipment": [
+    "wp",
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Islington Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Islington Council",
+  "sources": [
+    {
+      "label": "Islington Council: Paradise Park",
+      "url": "https://www.islington.gov.uk/physical-activity-parks-and-trees/parks-and-green-space/your-local-parks/paradise-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/30844492"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

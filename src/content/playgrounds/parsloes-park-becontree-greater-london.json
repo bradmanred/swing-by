@@ -1,0 +1,34 @@
+{
+  "name": "Parsloes Park",
+  "region": "london",
+  "area": "Becontree, Greater London",
+  "lat": 51.54169,
+  "lng": 0.13327,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "sk",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Barking and Dagenham Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Barking and Dagenham Council",
+  "sources": [
+    {
+      "label": "Barking and Dagenham Council: Parsloes Park",
+      "url": "https://barkinganddagenhamparks.lbbd.gov.uk/parsloes-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/67557212"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Church Road Play Area",
+  "region": "london",
+  "area": "Strawberry Hill, Greater London",
+  "lat": 51.42835,
+  "lng": -0.33855,
+  "ages": [],
+  "equipment": [
+    "bk",
+    "rb"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Richmond Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Richmond Council",
+  "sources": [
+    {
+      "label": "Richmond Council: Church Road Play Area",
+      "url": "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park/church_road_play_area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/29345143"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

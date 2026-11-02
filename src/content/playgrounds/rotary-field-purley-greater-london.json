@@ -1,0 +1,30 @@
+{
+  "name": "Rotary Field",
+  "region": "london",
+  "area": "Purley, Greater London",
+  "lat": 51.34249,
+  "lng": -0.11271,
+  "ages": [],
+  "equipment": [
+    "sk"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Croydon Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Croydon Council",
+  "sources": [
+    {
+      "label": "Croydon Council: Rotary Field",
+      "url": "https://www.croydon.gov.uk/node/3173/rotary-field"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/174128464"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

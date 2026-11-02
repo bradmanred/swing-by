@@ -1,0 +1,28 @@
+{
+  "name": "West Heath Recreation Ground Playground",
+  "region": "london",
+  "area": "West Heath, Greater London",
+  "lat": 51.47846,
+  "lng": 0.12885,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Bexley Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Bexley Council",
+  "sources": [
+    {
+      "label": "Bexley Council: West Heath Recreation Ground Playground",
+      "url": "https://www.bexley.gov.uk/services/parks-leisure-and-libraries/parks-and-open-spaces/playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1159424057"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,39 @@
+{
+  "name": "Victoria Recreation Ground",
+  "region": "south-east",
+  "area": "Long Ditton, Greater London",
+  "lat": 51.38963,
+  "lng": -0.31469,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "sp",
+    "tp"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "A playground on Royal Borough of Kingston upon Thames's own list of play areas.",
+  "nearby": [],
+  "operator": "Royal Borough of Kingston upon Thames",
+  "sources": [
+    {
+      "label": "Royal Borough of Kingston upon Thames: Victoria Recreation Ground",
+      "url": "https://www.kingston.gov.uk/leisure-and-community/parks-sports-and-activities/recreation-areas-and-playgrounds/victoria-recreation-ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/184985110"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

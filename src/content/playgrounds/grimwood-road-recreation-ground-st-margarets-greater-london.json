@@ -1,0 +1,28 @@
+{
+  "name": "Grimwood Road Recreation Ground",
+  "region": "london",
+  "area": "St Margarets, Greater London",
+  "lat": 51.45311,
+  "lng": -0.3315,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Richmond Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Richmond Council",
+  "sources": [
+    {
+      "label": "Richmond Council: Grimwood Road Recreation Ground",
+      "url": "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park/grimwood_road_recreation_ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/528226318"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

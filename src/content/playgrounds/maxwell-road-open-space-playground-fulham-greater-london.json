@@ -1,0 +1,30 @@
+{
+  "name": "Maxwell Road Open Space Playground",
+  "region": "london",
+  "area": "Fulham, Greater London",
+  "lat": 51.47967,
+  "lng": -0.1906,
+  "ages": [
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A small playground best suited to younger children, with accessible items.",
+  "nearby": [],
+  "operator": "Hammersmith & Fulham Council",
+  "sources": [
+    {
+      "label": "Hammersmith & Fulham Council: Maxwell Road Open Space Playground",
+      "url": "https://www.lbhf.gov.uk/sports-and-parks/parks-and-open-spaces/playgrounds-hf-parks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1211104057"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

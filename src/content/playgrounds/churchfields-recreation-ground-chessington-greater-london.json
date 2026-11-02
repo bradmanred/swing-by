@@ -1,0 +1,43 @@
+{
+  "name": "Churchfields Recreation Ground",
+  "region": "london",
+  "area": "Chessington, Greater London",
+  "lat": 51.3596,
+  "lng": -0.30151,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "sw",
+    "cl",
+    "zw",
+    "sp",
+    "rb",
+    "tp",
+    "spr",
+    "gym"
+  ],
+  "access": [
+    "inc",
+    "sen"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Royal Borough of Kingston upon Thames's own list of play areas.",
+  "nearby": [],
+  "operator": "Royal Borough of Kingston upon Thames",
+  "sources": [
+    {
+      "label": "Royal Borough of Kingston upon Thames: Churchfields Recreation Ground",
+      "url": "https://www.kingston.gov.uk/leisure-and-community/parks-sports-and-activities/recreation-areas-and-playgrounds/churchfields-recreation-ground-completed-community-parks-programme-works"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/275570282"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

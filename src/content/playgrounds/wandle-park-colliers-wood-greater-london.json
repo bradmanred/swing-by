@@ -1,0 +1,28 @@
+{
+  "name": "Wandle Park",
+  "region": "london",
+  "area": "Collier's Wood, Greater London",
+  "lat": 51.41992,
+  "lng": -0.1795,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Merton Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Merton Council",
+  "sources": [
+    {
+      "label": "Merton Council: Wandle Park",
+      "url": "https://www.merton.gov.uk/leisure-recreation-and-culture/parks-and-open-spaces/parks-and-recreation-grounds/wimbledon/wandle-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/13869756"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

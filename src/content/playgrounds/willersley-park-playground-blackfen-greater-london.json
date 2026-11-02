@@ -1,0 +1,28 @@
+{
+  "name": "Willersley Park Playground",
+  "region": "london",
+  "area": "Blackfen, Greater London",
+  "lat": 51.44268,
+  "lng": 0.10079,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Bexley Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Bexley Council",
+  "sources": [
+    {
+      "label": "Bexley Council: Willersley Park Playground",
+      "url": "https://www.bexley.gov.uk/services/parks-leisure-and-libraries/parks-and-open-spaces/playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/40298360"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

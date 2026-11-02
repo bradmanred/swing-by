@@ -1,0 +1,32 @@
+{
+  "name": "Lloyd Park",
+  "region": "london",
+  "area": "Addiscombe, Greater London",
+  "lat": 51.36491,
+  "lng": -0.07692,
+  "ages": [],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [
+    "cf"
+  ],
+  "opens": "",
+  "description": "A playground on Croydon Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Croydon Council",
+  "sources": [
+    {
+      "label": "Croydon Council: Lloyd Park",
+      "url": "https://www.croydon.gov.uk/libraries-leisure-and-culture/parks-and-open-spaces/parks-and-playgrounds/parks-and-playgrounds-directory/lloyd-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/169137677"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

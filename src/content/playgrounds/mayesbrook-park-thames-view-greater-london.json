@@ -1,0 +1,37 @@
+{
+  "name": "Mayesbrook Park",
+  "region": "london",
+  "area": "Thames View, Greater London",
+  "lat": 51.54399,
+  "lng": 0.10984,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "ad",
+    "sk",
+    "tp",
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Barking and Dagenham Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Barking and Dagenham Council",
+  "sources": [
+    {
+      "label": "Barking and Dagenham Council: Mayesbrook Park",
+      "url": "https://barkinganddagenhamparks.lbbd.gov.uk/mayesbrook-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/827930236"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

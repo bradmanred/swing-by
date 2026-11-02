@@ -1,0 +1,30 @@
+{
+  "name": "Norbury Park",
+  "region": "london",
+  "area": "Thornton Heath, Greater London",
+  "lat": 51.41275,
+  "lng": -0.11548,
+  "ages": [],
+  "equipment": [
+    "sk"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Croydon Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Croydon Council",
+  "sources": [
+    {
+      "label": "Croydon Council: Norbury Park",
+      "url": "https://www.croydon.gov.uk/node/3173/norbury-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/157943976"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

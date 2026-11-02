@@ -1,0 +1,28 @@
+{
+  "name": "Trumble Gardens",
+  "region": "london",
+  "area": "Thornton Heath, Greater London",
+  "lat": 51.3968,
+  "lng": -0.10344,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Croydon Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Croydon Council",
+  "sources": [
+    {
+      "label": "Croydon Council: Trumble Gardens",
+      "url": "https://www.croydon.gov.uk/libraries-leisure-and-culture/parks-and-open-spaces/parks-and-playgrounds/parks-and-playgrounds-directory/trumble-gardens"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/229615562"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

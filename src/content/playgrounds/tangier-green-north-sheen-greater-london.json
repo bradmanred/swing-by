@@ -1,0 +1,33 @@
+{
+  "name": "Tangier Green",
+  "region": "london",
+  "area": "North Sheen, Greater London",
+  "lat": 51.46606,
+  "lng": -0.27686,
+  "ages": [],
+  "equipment": [
+    "bk",
+    "rb"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Richmond Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Richmond Council",
+  "sources": [
+    {
+      "label": "Richmond Council: Tangier Green",
+      "url": "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park/tangier_green"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/6802562302"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

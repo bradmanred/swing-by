@@ -1,0 +1,33 @@
+{
+  "name": "Cheam Park Recreation Ground",
+  "region": "london",
+  "area": "Worcester Park, Greater London",
+  "lat": 51.36131,
+  "lng": -0.22213,
+  "ages": [],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "A playground on London Borough of Sutton's own list of play areas.",
+  "nearby": [],
+  "operator": "London Borough of Sutton",
+  "sources": [
+    {
+      "label": "London Borough of Sutton: Cheam Park Recreation Ground",
+      "url": "https://www.sutton.gov.uk/libraries-museums-parks-and-leisure/parks-trees-and-open-spaces/parks-and-facilities/cheam-park-recreation-ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/17744593"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Hammersmith Park Playground",
+  "region": "london",
+  "area": "Shepherd's Bush, Greater London",
+  "lat": 51.51032,
+  "lng": -0.2281,
+  "ages": [],
+  "equipment": [],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground for all ages with several accessible play items, next to a basketball court.",
+  "nearby": [],
+  "operator": "Hammersmith & Fulham Council",
+  "sources": [
+    {
+      "label": "Hammersmith & Fulham Council: Hammersmith Park Playground",
+      "url": "https://www.lbhf.gov.uk/sports-and-parks/parks-and-open-spaces/playgrounds-hf-parks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/101711504"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

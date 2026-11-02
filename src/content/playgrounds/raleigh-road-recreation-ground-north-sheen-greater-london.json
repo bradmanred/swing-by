@@ -1,0 +1,34 @@
+{
+  "name": "Raleigh Road Recreation Ground",
+  "region": "london",
+  "area": "North Sheen, Greater London",
+  "lat": 51.4683,
+  "lng": -0.2901,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "rb",
+    "tp"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Richmond Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Richmond Council",
+  "sources": [
+    {
+      "label": "Richmond Council: Raleigh Road Recreation Ground",
+      "url": "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park/raleigh_road_recreation_ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/2112680901"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

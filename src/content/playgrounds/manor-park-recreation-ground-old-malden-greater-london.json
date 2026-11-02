@@ -1,0 +1,32 @@
+{
+  "name": "Manor Park Recreation Ground",
+  "region": "london",
+  "area": "Old Malden, Greater London",
+  "lat": 51.38698,
+  "lng": -0.25468,
+  "ages": [],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A playground on Royal Borough of Kingston upon Thames's own list of play areas.",
+  "nearby": [],
+  "operator": "Royal Borough of Kingston upon Thames",
+  "sources": [
+    {
+      "label": "Royal Borough of Kingston upon Thames: Manor Park Recreation Ground",
+      "url": "https://www.kingston.gov.uk/leisure-and-community/parks-sports-and-activities/recreation-areas-and-playgrounds/manor-park-recreation-ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1478784110"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

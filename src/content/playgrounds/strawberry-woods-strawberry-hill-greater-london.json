@@ -1,0 +1,31 @@
+{
+  "name": "Strawberry Woods",
+  "region": "london",
+  "area": "Strawberry Hill, Greater London",
+  "lat": 51.43566,
+  "lng": -0.34715,
+  "ages": [],
+  "equipment": [
+    "cl",
+    "sp"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Richmond Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Richmond Council",
+  "sources": [
+    {
+      "label": "Richmond Council: Strawberry Woods",
+      "url": "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park/strawberry_woods"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/801367405"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

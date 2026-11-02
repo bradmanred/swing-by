@@ -1,0 +1,31 @@
+{
+  "name": "Latchmere Recreation Ground",
+  "region": "london",
+  "area": "Norbiton, Greater London",
+  "lat": 51.42325,
+  "lng": -0.29422,
+  "ages": [],
+  "equipment": [
+    "cl",
+    "rb"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Royal Borough of Kingston upon Thames's own list of play areas.",
+  "nearby": [],
+  "operator": "Royal Borough of Kingston upon Thames",
+  "sources": [
+    {
+      "label": "Royal Borough of Kingston upon Thames: Latchmere Recreation Ground",
+      "url": "https://www.kingston.gov.uk/leisure-and-community/parks-sports-and-activities/recreation-areas-and-playgrounds/latchmere-recreation-ground-completed-community-parks-programme-works"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/28420306"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
