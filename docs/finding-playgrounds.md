@@ -36,6 +36,13 @@ Many councils' park directories run on **Jadu** (addresses like `/directory/26/â
 "feed": { "type": "localgov", "directory": "https://haringey.gov.uk/leisure-parks-culture/parks-greenspaces/parks-facilities-haringey", "approximate": true }
 ```
 
+Two more feed types cover most other councils:
+
+- **`pages`**, for any other site whose park list links to one page per park (Richmond's A to Z, Kensington and Chelsea, Islington, Merton, Barking and Dagenham's parks site, The Royal Parks): `"feed": { "type": "pages", "index": "https://â€¦/your-local-park", "follow": "/your-local-park/[a-z0-9-]+$" }`. `index` can be a list of pages, and `pages` lists park pages to read directly.
+- **`list`**, for a council whose playgrounds are all on one page (Bexley's table, Westminster's and Hammersmith and Fulham's playground pages) or a site that refuses automated downloads: copy the rows into a CSV in `src/data/council-lists/` with `name`, `postcode`, `url` and, optionally, `text` (a short description in our own words, which becomes the playground's description and from which equipment and facilities are picked out) and `park` (the park's name as mapped on OpenStreetMap, for rows without a postcode). Then add `"feed": { "type": "list", "file": "src/data/council-lists/bexley.csv", "page": "<the council page>" }`.
+
+Parks with no map point or postcode on their page are found by name in the monthly OpenStreetMap snapshot, near the council's other parks or near `"near": { "lat", "lng", "km" }`. Add `"nameFrom": "title"` when every park page has the same heading, `"nameFirst": true` when a site's postcodes can't be trusted, and `"rename"` for a park whose page gives no usable name.
+
 Only parks whose page mentions a playground or play area are kept; add `"allPlay": true` when the category is the council's own playgrounds list. The other options are described at the top of `scripts/council-readers.mjs`. Before adding a feed, check it with the **Try a council list** workflow (Actions tab, paste the feed line), which lists what it finds without changing anything. Then run **Check coverage** for the county with "Add up to this many" set, rather than waiting for the monthly run. Each council costs about 10 minutes of Actions time this way; councils on other systems still need pages saved with **Fetch pages** and the playgrounds added by hand.
 
 ## 2. Cross-check for gaps
