@@ -7,7 +7,7 @@
 // no map point are placed from their postcode; ones with neither are left out.
 // type 'list' is for councils whose playgrounds are all on one page with no machine-readable version (Bexley's table,
 // Westminster's playgrounds page): the rows are copied into a CSV in src/data/council-lists/ (name, postcode, url,
-// and optionally text: the council's own description, used as the playground's description and from which equipment and facilities are picked out), and
+// optionally park, the park's name as mapped on OpenStreetMap, for rows without a postcode, and optionally text: the council's own description, used as the playground's description and from which equipment and facilities are picked out), and
 // "page" names the council page they came from. Each row is placed from its postcode, then snapped onto the play area.
 // Used by scripts/find-gaps.mjs (adds new council-listed playgrounds) and scripts/quarterly-check.mjs (spots changes).
 import { readFile } from 'node:fs/promises';
@@ -64,11 +64,11 @@ export async function readFeed(feed) {
     for (const r of rows) {
       if (!r.name) continue;
       const at = pts[r.postcode?.toUpperCase().trim()];
-      out.push({ name: r.name, lat: null, lng: null, ...(at && { ...at, from: 'postcode' }), postcode: r.postcode, url: r.url || feed.page, description: r.text ?? '', ...describe(r.text ?? '') });
+      out.push({ name: r.name, park: r.park || undefined, lat: null, lng: null, ...(at && { ...at, from: 'postcode' }), postcode: r.postcode, url: r.url || feed.page, description: r.text ?? '', ...describe(r.text ?? '') });
     }
     await placeByParkName(out, feed);
     for (const r of out) if (r.lat == null) console.log(`  left out: ${r.name} (postcode ${r.postcode} not found, nor the park's name on OpenStreetMap)`);
-    return out.filter((r) => r.lat != null);
+    return out.filter((r) => r.lat != null).map(({ park, ...r }) => r);
   }
   const recs = [];
   if (feed.type === 'directory') {
@@ -164,7 +164,7 @@ async function placeByParkName(recs, feed) {
   const within = feed.near?.km ?? 12;
   for (const p of parks) if (km(p, centre) < within) byName.set(normName(p.name), [...(byName.get(normName(p.name)) ?? []), p]);
   for (const r of todo) {
-    const hits = (byName.get(normName(r.name)) ?? []).sort((a, b) => km(a, centre) - km(b, centre));
+    const hits = (byName.get(normName(r.park ?? r.name)) ?? []).sort((a, b) => km(a, centre) - km(b, centre));
     if (hits.length) Object.assign(r, { lat: hits[0].lat, lng: hits[0].lng, from: 'park' });
   }
 }

@@ -734,6 +734,51 @@
           "km": 25
         }
       }
+    },
+    {
+      "district": "Hammersmith and Fulham",
+      "council": "Hammersmith & Fulham Council",
+      "sources": [
+        "https://www.lbhf.gov.uk/sports-and-parks/parks-and-open-spaces/playgrounds-hf-parks"
+      ],
+      "note": "The council's 'Playgrounds in H&F parks' page lists 23 parks' playgrounds with postcodes, copied into src/data/council-lists/hammersmith-and-fulham.csv (checked 2 November 2026). The site refuses automated downloads.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/hammersmith-and-fulham.csv",
+        "page": "https://www.lbhf.gov.uk/sports-and-parks/parks-and-open-spaces/playgrounds-hf-parks"
+      }
+    },
+    {
+      "district": "Camden",
+      "council": "Camden Council",
+      "sources": [
+        "https://www.camden.gov.uk/parks-and-green-spaces-facilities"
+      ],
+      "note": "The parks and green spaces facilities page lists 13 parks with children's playgrounds (no addresses), copied into src/data/council-lists/camden.csv and placed by the park's name on OpenStreetMap (checked 2 November 2026). Polygon Road Open Space isn't named on OpenStreetMap, so it's left out. Regent's Park and Primrose Hill playgrounds come from The Royal Parks. The site refuses automated downloads.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/camden.csv",
+        "page": "https://www.camden.gov.uk/parks-and-green-spaces-facilities",
+        "near": {
+          "lat": 51.545,
+          "lng": -0.165,
+          "km": 8
+        }
+      }
+    },
+    {
+      "district": "City of London",
+      "council": "City of London Corporation",
+      "sources": [
+        "https://www.fis.cityoflondon.gov.uk/directory",
+        "https://www.cityoflondon.gov.uk/things-to-do/city-gardens"
+      ],
+      "note": "The City has no playground list. Its Family Information Service directory describes Portsoken Street Gardens' play areas (src/data/council-lists/city-of-london.csv, checked 2 November 2026); other play areas, such as those on the Golden Lane and Middlesex Street estates, come from OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/city-of-london.csv",
+        "page": "https://www.fis.cityoflondon.gov.uk/directory/portsoken-street-gardens"
+      }
     }
   ]
 }
