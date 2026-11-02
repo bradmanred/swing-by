@@ -1,7 +1,13 @@
 // Reads a council's own playground list, as described by a "feed" in src/data/council-sources.json:
-// type 'directory' (index pages, a regex for record links, regexes for the name and coordinates on each record
-// page, and optionally "require", a regex a record page must match, such as a playground in its facilities list), or 'geojson' / 'csv' (url, name field, and lat/lng fields). Returns [{ name, lat, lng, url }].
+// type 'jadu' or 'localgov' (the two common council website systems: just the directory's address, see
+// scripts/council-readers.mjs), 'directory' (index pages, a regex for record links, regexes for the name and
+// coordinates on each record page, and optionally "require", a regex a record page must match, such as a playground in
+// its facilities list), or 'geojson' / 'csv' (url, name field, and lat/lng fields). Returns [{ name, lat, lng, url }],
+// plus postcode, equipment, ages, access and facilities from the 'jadu' and 'localgov' readers. Parks whose page has
+// no map point are placed from their postcode; ones with neither are left out.
 // Used by scripts/find-gaps.mjs (adds new council-listed playgrounds) and scripts/quarterly-check.mjs (spots changes).
+import { readJadu, readLocalGov } from './council-readers.mjs';
+
 const UA = { 'User-Agent': 'SwingBy/1.0 (https://swing-by.co.uk; reads council playground lists)' };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 export const strip = (s) => String(s ?? '').replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&').replace(/&#0?39;|&rsquo;/g, "'").replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
@@ -15,7 +21,30 @@ export const slugName = (u) => {
   return last.replace(/[_-]+/g, ' ').replace(/\b[a-z]/g, (ch) => ch.toUpperCase()).trim();
 };
 
+/** Map points for postcodes, from postcodes.io (100 at a time). */
+export async function postcodePoints(postcodes) {
+  const out = {};
+  const list = [...new Set(postcodes.filter(Boolean))];
+  for (let i = 0; i < list.length; i += 100) {
+    const res = await fetch('https://api.postcodes.io/postcodes', { method: 'POST', headers: { ...UA, 'Content-Type': 'application/json' }, body: JSON.stringify({ postcodes: list.slice(i, i + 100) }) })
+      .then((r) => (r.ok ? r.json() : null))
+      .catch(() => null);
+    for (const x of res?.result ?? []) if (x.result) out[x.query] = { lat: x.result.latitude, lng: x.result.longitude };
+  }
+  return out;
+}
+
 export async function readFeed(feed) {
+  if (feed.type === 'jadu' || feed.type === 'localgov') {
+    const recs = await (feed.type === 'jadu' ? readJadu(feed) : readLocalGov(feed));
+    const pts = await postcodePoints(recs.filter((r) => r.lat == null).map((r) => r.postcode));
+    for (const r of recs)
+      if (r.lat == null && pts[r.postcode]) Object.assign(r, pts[r.postcode], { from: 'postcode' });
+      else if (r.lat != null) r.from = 'map';
+    const placed = recs.filter((r) => r.lat != null);
+    if (placed.length < recs.length) console.log(`  ${recs.length - placed.length} left out: no map point or postcode on the page`);
+    return placed.map(({ text, ...r }) => r);
+  }
   const recs = [];
   if (feed.type === 'directory') {
     const seen = new Set();
