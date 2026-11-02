@@ -14,7 +14,10 @@
 //     LocalGov Drupal directories (a list page with ?page=0, 1, 2… and one page per park under it), as used by Croydon
 //     and Haringey. "query" is an optional filter (such as a playground facet) added to every list page.
 //
-// Optional for both: "allPlay", "require" (a regex a park's page must match, replacing the playground test), "approximate"
+// { "type": "pages", "index": [list pages], "follow": "regex for park page addresses" } does the same for any other
+// website whose park list links to one page per park (Richmond, Kensington and Chelsea, Islington).
+//
+// Optional for all three: "nameFrom": "title" (the park's name is in the page title, not its heading), "allPlay", "require" (a regex a park's page must match, replacing the playground test), "approximate"
 // (the map point is the park's, not the play area's), "include"/"exclude" (regexes on the park's name).
 //
 // Each record: { name, lat, lng, postcode, url, equipment, ages, access, facilities, text }. lat/lng are null when
@@ -53,6 +56,9 @@ export const text = (html) =>
     .replace(/&#0?39;|&rsquo;|&#x27;|&#8217;/g, "'")
     .replace(/&nbsp;|&#160;/g, ' ')
     .replace(/&quot;/g, '"')
+    .replace(/&ndash;/g, '–')
+    .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16)))
     .replace(/\s+/g, ' ')
     .replace(/(;\s*){2,}/g, '; ')
     .trim();
@@ -159,7 +165,7 @@ export function parsePark(html, url, feed, inCategory = false) {
   const h1 = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i)?.[1];
   const title = html.match(/<title>([^<]+)<\/title>/i)?.[1];
   const named = html.match(/(?:Name|Park name)\s*<\/(?:dt|th)>\s*<(?:dd|td)[^>]*>([\s\S]*?)<\/(?:dd|td)>/i)?.[1];
-  let name = cleanName(named ?? h1 ?? title ?? '');
+  let name = cleanName(named ?? (feed.nameFrom === 'title' ? title : h1) ?? title ?? '');
   if (!name || /\bdirectory\b/i.test(name)) {
     const last = decodeURIComponent(new URL(url).pathname.split('/').filter(Boolean).pop() ?? '');
     name = last.replace(/[_-]+/g, ' ').replace(/\b[a-z]/g, (c) => c.toUpperCase()).trim();
@@ -173,6 +179,10 @@ export function parsePark(html, url, feed, inCategory = false) {
   let t = text(at > 0 ? html.slice(at) : html).replace(/[^;]*\bdirectory\b[^;]*;?/gi, ' ');
   const own = t.indexOf(name);
   if (own > 0) t = t.slice(own);
+  // The council's contact details ("Contact us … Parks Service, The Stable Yard … W8 6LU") aren't the park's address.
+  // Only the last "Contact us", and only past the first third, so a "Contact us" link in the menu doesn't cut the page.
+  const contact = [...t.matchAll(/;\s*Contact (?:us|the (?:parks )?team)\b/gi)].pop();
+  if (contact && contact.index > t.length / 3) t = t.slice(0, contact.index);
   t = t.slice(0, 20000);
   const need = feed.require ? new RegExp(feed.require, 'i') : PLAY;
   if (!inCategory && !need.test(feed.require ? html : t)) return null;
@@ -256,4 +266,16 @@ export async function readLocalGov(feed) {
     }
   }
   return crawl(feed, [list], isRecord, !!feed.allPlay && !feed.require, (u) => u.replace(/\/$/, ''), seed);
+}
+
+/**
+ * Any other website: { "type": "pages", "index": ["https://…/parks?alpha=A", …], "follow": "/find_a_park/[a-z_]+$" }.
+ * Every link on the index pages whose address matches "follow" is a park's page, read like a Jadu or LocalGov one.
+ * "pages" lists park pages to read as well (or instead, for a site with no list page).
+ */
+export async function readPages(feed) {
+  const follow = new RegExp(feed.follow);
+  const isRecord = (u) => follow.test(u.replace(/[?#].*$/, ''));
+  const norm = (u) => u.replace(/[?#].*$/, '').replace(/\/$/, '');
+  return crawl(feed, [].concat(feed.index ?? []).map((u) => (page) => (page ? null : u)), isRecord, !!feed.allPlay && !feed.require, norm, [].concat(feed.pages ?? []));
 }
