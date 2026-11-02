@@ -294,7 +294,7 @@ if (toAdd.length) {
       doc = {
         name: p.name, region: reg, area, lat: Math.round(p.lat * 1e5) / 1e5, lng: Math.round(p.lng * 1e5) / 1e5,
         ages: p.ages ?? [], equipment: p.equipment ?? [], access: p.access ?? [], facilities: p.facilities ?? [], opens: '',
-        description: `A playground on ${p.council.council}'s own list of play areas.`,
+        description: p.description || `A playground on ${p.council.council}'s own list of play areas.`,
         nearby: [], operator: p.council.council,
         sources: [{ label: `${p.council.council}: ${p.name}`, url: p.url }, ...(p.osm ? [{ label: 'OpenStreetMap: play area', url: `https://www.openstreetmap.org/${p.osm}` }] : [])],
         checked: TODAY,
