@@ -5,8 +5,13 @@
 // its facilities list), or 'geojson' / 'csv' (url, name field, and lat/lng fields). Returns [{ name, lat, lng, url }],
 // plus postcode, equipment, ages, access and facilities from the 'jadu' and 'localgov' readers. Parks whose page has
 // no map point are placed from their postcode; ones with neither are left out.
+// type 'list' is for councils whose playgrounds are all on one page with no machine-readable version (Bexley's table,
+// Westminster's playgrounds page): the rows are copied into a CSV in src/data/council-lists/ (name, postcode, url,
+// and optionally text: the council's own description, used as the playground's description and from which equipment and facilities are picked out), and
+// "page" names the council page they came from. Each row is placed from its postcode, then snapped onto the play area.
 // Used by scripts/find-gaps.mjs (adds new council-listed playgrounds) and scripts/quarterly-check.mjs (spots changes).
-import { readJadu, readLocalGov } from './council-readers.mjs';
+import { readFile } from 'node:fs/promises';
+import { describe, readJadu, readLocalGov } from './council-readers.mjs';
 
 const UA = { 'User-Agent': 'SwingBy/1.0 (https://swing-by.co.uk; reads council playground lists)' };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -44,6 +49,20 @@ export async function readFeed(feed) {
     const placed = recs.filter((r) => r.lat != null);
     if (placed.length < recs.length) console.log(`  ${recs.length - placed.length} left out: no map point or postcode on the page`);
     return placed.map(({ text, ...r }) => r);
+  }
+  if (feed.type === 'list') {
+    const rows = parseCsv(await readFile(feed.file, 'utf8'));
+    const pts = await postcodePoints(rows.map((r) => r.postcode?.toUpperCase().trim()));
+    const out = [];
+    for (const r of rows) {
+      const at = pts[r.postcode?.toUpperCase().trim()];
+      if (!r.name || !at) {
+        console.log(`  left out: ${r.name} (postcode ${r.postcode} not found)`);
+        continue;
+      }
+      out.push({ name: r.name, ...at, from: 'postcode', postcode: r.postcode, url: r.url || feed.page, description: r.text ?? '', ...describe(r.text ?? '') });
+    }
+    return out;
   }
   const recs = [];
   if (feed.type === 'directory') {
@@ -83,4 +102,29 @@ export async function readFeed(feed) {
     }
   }
   return recs.filter((x) => x.name);
+}
+
+/** Rows of a small CSV with a header line, as objects. Handles quoted fields with commas and doubled quotes. */
+export function parseCsv(src) {
+  const rows = [];
+  let row = [], cell = '', q = false;
+  for (let i = 0; i < src.length; i++) {
+    const ch = src[i];
+    if (q) {
+      if (ch === '"' && src[i + 1] === '"') (cell += '"'), i++;
+      else if (ch === '"') q = false;
+      else cell += ch;
+    } else if (ch === '"') q = true;
+    else if (ch === ',') row.push(cell), (cell = '');
+    else if (ch === '\n' || ch === '\r') {
+      if (ch === '\r' && src[i + 1] === '\n') i++;
+      row.push(cell), (cell = '');
+      if (row.some((c) => c.trim())) rows.push(row);
+      row = [];
+    } else cell += ch;
+  }
+  row.push(cell);
+  if (row.some((c) => c.trim())) rows.push(row);
+  const [head, ...body] = rows;
+  return body.map((r) => Object.fromEntries(head.map((h, i) => [h.trim(), (r[i] ?? '').trim()])));
 }
