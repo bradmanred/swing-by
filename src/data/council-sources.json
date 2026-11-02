@@ -632,6 +632,69 @@
     "https://www.redbridge.gov.uk/leisure-sport-and-the-arts/parks/"
    ],
    "note": "Parks are run by Vision Redbridge Culture and Leisure. The council's eight area pages describe each park; the 17 with play areas are listed. Vision's own park pages block automated downloads."
+  },
+  {
+   "district": "Greenwich",
+   "council": "Royal Borough of Greenwich",
+   "sources": [
+    "https://www.royalgreenwich.gov.uk/directory/14/parks_gardens_and_open_spaces/category/16"
+   ],
+   "note": "The parks directory's Playgrounds category (about 30 parks; Greenwich Park is the Royal Parks'). Positions are each park's map point, so marked approximate for the pin check.",
+   "feed": {
+    "type": "directory",
+    "approximate": true,
+    "index": [
+     "https://www.royalgreenwich.gov.uk/directory/14/parks_gardens_and_open_spaces/category/16",
+     "https://www.royalgreenwich.gov.uk/directory/14/parks_gardens_and_open_spaces/category/16?page=2",
+     "https://www.royalgreenwich.gov.uk/directory/14/parks_gardens_and_open_spaces/category/16?page=3",
+     "https://www.royalgreenwich.gov.uk/directory/14/parks_gardens_and_open_spaces/category/16?page=4"
+    ],
+    "follow": "royalgreenwich\\.gov\\.uk/directory_record/\\d+/[a-z0-9_]+(?:/category/16/[a-z_]+)?$",
+    "name": "<h1[^>]*>([\\s\\S]*?)</h1>",
+    "coords": "map_marker_location_\\d+\" value=\"(-?\\d+\\.\\d+),(-?\\d+\\.\\d+)\""
+   }
+  },
+  {
+   "district": "Lewisham",
+   "council": "Lewisham Council",
+   "sources": [
+    "https://lewisham.gov.uk/inmyarea/openspaces/parks",
+    "https://www.youth.lewisham.gov.uk/p/what-we-do/clubs-and-playgrounds"
+   ],
+   "note": "47 park pages (Glendale runs them); those whose facilities list a play area are listed, plus the youth service's five adventure playgrounds."
+  },
+  {
+   "district": "Haringey",
+   "council": "Haringey Council",
+   "sources": [
+    "https://haringey.gov.uk/leisure-parks-culture/parks-greenspaces/parks-facilities-haringey"
+   ],
+   "note": "Parks and facilities directory (37 parks); those listing a playground are listed. Its list pages after the first refuse automated requests, so its records were found through the site map."
+  },
+  {
+   "district": "Hounslow",
+   "council": "Hounslow Council",
+   "sources": [
+    "https://www.hounslow.gov.uk/directory/1010/parks-and-open-spaces-in-hounslow"
+   ],
+   "note": "The parks directory (40 parks) rarely lists facilities; the seven whose pages mention a playground or play area are listed. Other gaps are filled from OpenStreetMap."
+  },
+  {
+   "district": "Waltham Forest",
+   "council": "Waltham Forest Council",
+   "sources": [
+    "https://www.walthamforest.gov.uk/libraries-arts-parks-and-leisure/parks-and-open-spaces/our-playgrounds",
+    "https://www.walthamforest.gov.uk/libraries-arts-parks-and-leisure/parks-and-open-spaces/our-other-parks"
+   ],
+   "note": "The 'Our playgrounds' and 'Our other parks' lists, plus the main park pages."
+  },
+  {
+   "district": "Harrow",
+   "council": "Harrow Council",
+   "sources": [
+    "https://www.harrow.gov.uk/environment-parks/commons-greens-open-space"
+   ],
+   "note": "Harrow says it has 40 playgrounds in 44 parks, but only its main parks have pages; those are listed. Other gaps are filled from OpenStreetMap."
   }
  ]
 }
