@@ -1,0 +1,28 @@
+{
+  "name": "Riverside Gardens Playground",
+  "region": "london",
+  "area": "North End, Greater London",
+  "lat": 51.48291,
+  "lng": 0.17842,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Bexley Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Bexley Council",
+  "sources": [
+    {
+      "label": "Bexley Council: Riverside Gardens Playground",
+      "url": "https://www.bexley.gov.uk/services/parks-leisure-and-libraries/parks-and-open-spaces/playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1569503952"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

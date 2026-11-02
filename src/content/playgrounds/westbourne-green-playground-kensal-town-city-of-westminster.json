@@ -1,0 +1,28 @@
+{
+  "name": "Westbourne Green Playground",
+  "region": "london",
+  "area": "Kensal Town, City of Westminster",
+  "lat": 51.5203,
+  "lng": -0.18935,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A large open green space with trees, wildflower areas and a playground.",
+  "nearby": [],
+  "operator": "Westminster City Council",
+  "sources": [
+    {
+      "label": "Westminster City Council: Westbourne Green Playground",
+      "url": "https://www.westminster.gov.uk/leisure-libraries-and-community/parks-and-open-spaces/playgrounds-and-green-gyms"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/74860536"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

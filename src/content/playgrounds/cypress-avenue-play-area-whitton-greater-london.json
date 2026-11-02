@@ -1,0 +1,35 @@
+{
+  "name": "Cypress Avenue Play Area",
+  "region": "london",
+  "area": "Whitton, Greater London",
+  "lat": 51.45305,
+  "lng": -0.3571,
+  "ages": [
+    "3-6"
+  ],
+  "equipment": [
+    "sw",
+    "rb"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Richmond Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Richmond Council",
+  "sources": [
+    {
+      "label": "Richmond Council: Cypress Avenue Play Area",
+      "url": "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park/cypress_avenue_play_area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1466114339"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Hurlingham Park Playground",
+  "region": "london",
+  "area": "Fulham, Greater London",
+  "lat": 51.46919,
+  "lng": -0.20432,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A natural play area and a larger play space with accessible equipment, next to a multi-use games area.",
+  "nearby": [],
+  "operator": "Hammersmith & Fulham Council",
+  "sources": [
+    {
+      "label": "Hammersmith & Fulham Council: Hurlingham Park Playground",
+      "url": "https://www.lbhf.gov.uk/sports-and-parks/parks-and-open-spaces/playgrounds-hf-parks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/44425878"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

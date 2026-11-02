@@ -1,0 +1,30 @@
+{
+  "name": "Queen's Park Gardens Playground",
+  "region": "london",
+  "area": "Kensal Town, City of Westminster",
+  "lat": 51.52867,
+  "lng": -0.2094,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A park with a playground, a free multi-use ball court, a wildlife garden, a dog run and seating. Step-free access.",
+  "nearby": [],
+  "operator": "Westminster City Council",
+  "sources": [
+    {
+      "label": "Westminster City Council: Queen's Park Gardens Playground",
+      "url": "https://www.westminster.gov.uk/leisure-libraries-and-community/parks-and-open-spaces/playgrounds-and-green-gyms"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/368754458"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Valence Park",
+  "region": "london",
+  "area": "Becontree, Greater London",
+  "lat": 51.55788,
+  "lng": 0.13599,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A playground on Barking and Dagenham Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Barking and Dagenham Council",
+  "sources": [
+    {
+      "label": "Barking and Dagenham Council: Valence Park",
+      "url": "https://barkinganddagenhamparks.lbbd.gov.uk/valence-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/288317194"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours and parking.",
+  "photo": null
+}

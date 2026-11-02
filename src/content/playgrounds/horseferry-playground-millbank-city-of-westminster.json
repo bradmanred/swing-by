@@ -1,0 +1,35 @@
+{
+  "name": "Horseferry playground",
+  "region": "london",
+  "area": "Millbank, City of Westminster",
+  "lat": 51.49523,
+  "lng": -0.12494,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl",
+    "sp",
+    "wp"
+  ],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A playground on The Royal Parks's own list of play areas.",
+  "nearby": [],
+  "operator": "The Royal Parks",
+  "sources": [
+    {
+      "label": "The Royal Parks: Horseferry playground",
+      "url": "https://www.royalparks.org.uk/visit/parks/victoria-tower-gardens/horseferry-playground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/654983753"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

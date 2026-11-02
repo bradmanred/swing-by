@@ -1,0 +1,30 @@
+{
+  "name": "St Luke's Gardens",
+  "region": "london",
+  "area": "Chelsea, Greater London",
+  "lat": 51.4901,
+  "lng": -0.16917,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A playground on Royal Borough of Kensington and Chelsea's own list of play areas.",
+  "nearby": [],
+  "operator": "Royal Borough of Kensington and Chelsea",
+  "sources": [
+    {
+      "label": "Royal Borough of Kensington and Chelsea: St Luke's Gardens",
+      "url": "https://www.rbkc.gov.uk/parks-leisure-and-culture/parks/your-local-park/st-lukes-gardens"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/151161666"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours and parking.",
+  "photo": null
+}

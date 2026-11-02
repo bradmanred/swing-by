@@ -1,0 +1,30 @@
+{
+  "name": "Joseph Hood Recreation Ground",
+  "region": "london",
+  "area": "Merton Park, Greater London",
+  "lat": 51.40393,
+  "lng": -0.21631,
+  "ages": [],
+  "equipment": [
+    "wp"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Merton Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Merton Council",
+  "sources": [
+    {
+      "label": "Merton Council: Joseph Hood Recreation Ground",
+      "url": "https://www.merton.gov.uk/leisure-recreation-and-culture/parks-and-open-spaces/parks-and-recreation-grounds/morden/joseph-hood-recreation-ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/33739381"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

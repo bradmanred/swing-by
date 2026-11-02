@@ -1,0 +1,33 @@
+{
+  "name": "Craneford Way",
+  "region": "london",
+  "area": "Strawberry Hill, Greater London",
+  "lat": 51.44948,
+  "lng": -0.34106,
+  "ages": [],
+  "equipment": [
+    "bk",
+    "rb"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Richmond Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Richmond Council",
+  "sources": [
+    {
+      "label": "Richmond Council: Craneford Way",
+      "url": "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park/craneford_way"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/7945973"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

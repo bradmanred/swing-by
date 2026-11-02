@@ -1,0 +1,30 @@
+{
+  "name": "St John's Wood Church Grounds Playground",
+  "region": "london",
+  "area": "St. John's Wood, City of Westminster",
+  "lat": 51.53137,
+  "lng": -0.16984,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "Former church grounds north of Regent's Park with a refurbished playground, formal gardens and a nature reserve area. Step-free access, with an accessible toilet on site.",
+  "nearby": [],
+  "operator": "Westminster City Council",
+  "sources": [
+    {
+      "label": "Westminster City Council: St John's Wood Church Grounds Playground",
+      "url": "https://www.westminster.gov.uk/leisure-libraries-and-community/parks-and-open-spaces/playgrounds-and-green-gyms"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/323257951"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours and parking.",
+  "photo": null
+}

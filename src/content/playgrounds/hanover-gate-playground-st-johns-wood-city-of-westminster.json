@@ -1,0 +1,35 @@
+{
+  "name": "Hanover Gate playground",
+  "region": "london",
+  "area": "St. John's Wood, City of Westminster",
+  "lat": 51.52927,
+  "lng": -0.16241,
+  "ages": [
+    "3-6"
+  ],
+  "equipment": [
+    "sp"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "bc"
+  ],
+  "opens": "",
+  "description": "A playground on The Royal Parks's own list of play areas.",
+  "nearby": [],
+  "operator": "The Royal Parks",
+  "sources": [
+    {
+      "label": "The Royal Parks: Hanover Gate playground",
+      "url": "https://www.royalparks.org.uk/visit/parks/regents-park-primrose-hill/hanover-gate-playground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/95983711"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

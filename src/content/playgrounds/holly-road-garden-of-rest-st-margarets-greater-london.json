@@ -1,0 +1,35 @@
+{
+  "name": "Holly Road Garden of Rest",
+  "region": "london",
+  "area": "St Margarets, Greater London",
+  "lat": 51.44693,
+  "lng": -0.32977,
+  "ages": [
+    "3-6"
+  ],
+  "equipment": [
+    "bk",
+    "rb"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Richmond Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Richmond Council",
+  "sources": [
+    {
+      "label": "Richmond Council: Holly Road Garden of Rest",
+      "url": "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park/holly_road_garden_of_rest"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/2056088626"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

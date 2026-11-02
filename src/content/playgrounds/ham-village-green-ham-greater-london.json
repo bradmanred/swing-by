@@ -1,0 +1,31 @@
+{
+  "name": "Ham Village Green",
+  "region": "london",
+  "area": "Ham, Greater London",
+  "lat": 51.43769,
+  "lng": -0.31739,
+  "ages": [],
+  "equipment": [
+    "bk",
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Richmond Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Richmond Council",
+  "sources": [
+    {
+      "label": "Richmond Council: Ham Village Green",
+      "url": "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park/ham_village_green"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/14245689502"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

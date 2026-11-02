@@ -1,0 +1,33 @@
+{
+  "name": "Grove Park",
+  "region": "london",
+  "area": "The Wrythe, Greater London",
+  "lat": 51.36674,
+  "lng": -0.16181,
+  "ages": [],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "A playground on London Borough of Sutton's own list of play areas.",
+  "nearby": [],
+  "operator": "London Borough of Sutton",
+  "sources": [
+    {
+      "label": "London Borough of Sutton: Grove Park",
+      "url": "https://www.sutton.gov.uk/libraries-museums-parks-and-leisure/parks-trees-and-open-spaces/parks-and-facilities/grove-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/4904172"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

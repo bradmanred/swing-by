@@ -1,0 +1,30 @@
+{
+  "name": "Riverside Drive",
+  "region": "london",
+  "area": "Ham, Greater London",
+  "lat": 51.44172,
+  "lng": -0.31753,
+  "ages": [],
+  "equipment": [
+    "rb"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Richmond Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Richmond Council",
+  "sources": [
+    {
+      "label": "Richmond Council: Riverside Drive",
+      "url": "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park/riverside_drive"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/4786340"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
