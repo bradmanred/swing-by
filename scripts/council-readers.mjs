@@ -265,9 +265,11 @@ export async function readLocalGov(feed) {
 /**
  * Any other website: { "type": "pages", "index": ["https://…/parks?alpha=A", …], "follow": "/find_a_park/[a-z_]+$" }.
  * Every link on the index pages whose address matches "follow" is a park's page, read like a Jadu or LocalGov one.
+ * "pages" lists park pages to read as well (or instead, for a site with no list page).
  */
 export async function readPages(feed) {
   const follow = new RegExp(feed.follow);
   const isRecord = (u) => follow.test(u.replace(/[?#].*$/, ''));
-  return crawl(feed, [].concat(feed.index).map((u) => (page) => (page ? null : u)), isRecord, !!feed.allPlay && !feed.require, (u) => u.replace(/[?#].*$/, '').replace(/\/$/, ''));
+  const norm = (u) => u.replace(/[?#].*$/, '').replace(/\/$/, '');
+  return crawl(feed, [].concat(feed.index ?? []).map((u) => (page) => (page ? null : u)), isRecord, !!feed.allPlay && !feed.require, norm, [].concat(feed.pages ?? []));
 }
