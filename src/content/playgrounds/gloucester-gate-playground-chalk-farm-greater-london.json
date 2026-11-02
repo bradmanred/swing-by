@@ -1,0 +1,38 @@
+{
+  "name": "Gloucester Gate Playground",
+  "region": "london",
+  "area": "Chalk Farm, Greater London",
+  "lat": 51.53493,
+  "lng": -0.14899,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "zw",
+    "sp",
+    "wp"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "bc"
+  ],
+  "opens": "",
+  "description": "A playground on The Royal Parks's own list of play areas.",
+  "nearby": [],
+  "operator": "The Royal Parks",
+  "sources": [
+    {
+      "label": "The Royal Parks: Gloucester Gate Playground",
+      "url": "https://www.royalparks.org.uk/visit/parks/regents-park-primrose-hill/gloucester-gate-playground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/25840834"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

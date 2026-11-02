@@ -1,0 +1,30 @@
+{
+  "name": "Morden Recreation Ground",
+  "region": "london",
+  "area": "Morden, Greater London",
+  "lat": 51.39129,
+  "lng": -0.19576,
+  "ages": [],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Merton Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Merton Council",
+  "sources": [
+    {
+      "label": "Merton Council: Morden Recreation Ground",
+      "url": "https://www.merton.gov.uk/leisure-recreation-and-culture/parks-and-open-spaces/parks-and-recreation-grounds/morden/morden-recreation-ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/521317766"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

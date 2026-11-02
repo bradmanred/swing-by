@@ -1,0 +1,33 @@
+{
+  "name": "Avondale Park",
+  "region": "london",
+  "area": "Notting Hill, Greater London",
+  "lat": 51.51022,
+  "lng": -0.21286,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A playground on Royal Borough of Kensington and Chelsea's own list of play areas.",
+  "nearby": [],
+  "operator": "Royal Borough of Kensington and Chelsea",
+  "sources": [
+    {
+      "label": "Royal Borough of Kensington and Chelsea: Avondale Park",
+      "url": "https://www.rbkc.gov.uk/parks-leisure-and-culture/parks/your-local-park/avondale-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/157724668"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours and parking.",
+  "photo": null
+}

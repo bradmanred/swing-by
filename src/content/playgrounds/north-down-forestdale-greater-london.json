@@ -1,0 +1,28 @@
+{
+  "name": "North Down",
+  "region": "london",
+  "area": "Forestdale, Greater London",
+  "lat": 51.34991,
+  "lng": -0.0222,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Croydon Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Croydon Council",
+  "sources": [
+    {
+      "label": "Croydon Council: North Down",
+      "url": "https://www.croydon.gov.uk/node/3173/north-down"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1181461036"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Normansfield Play Park",
+  "region": "london",
+  "area": "Hampton Wick, Greater London",
+  "lat": 51.41709,
+  "lng": -0.31874,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Richmond Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Richmond Council",
+  "sources": [
+    {
+      "label": "Richmond Council: Normansfield Play Park",
+      "url": "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park/normansfield_play_park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/862955543"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

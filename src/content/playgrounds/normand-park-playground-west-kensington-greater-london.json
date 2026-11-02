@@ -1,0 +1,33 @@
+{
+  "name": "Normand Park Playground",
+  "region": "london",
+  "area": "West Kensington, Greater London",
+  "lat": 51.48478,
+  "lng": -0.20459,
+  "ages": [],
+  "equipment": [
+    "sk",
+    "mg"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A large playground with accessible play, a multi-use games area and a skate park.",
+  "nearby": [],
+  "operator": "Hammersmith & Fulham Council",
+  "sources": [
+    {
+      "label": "Hammersmith & Fulham Council: Normand Park Playground",
+      "url": "https://www.lbhf.gov.uk/sports-and-parks/parks-and-open-spaces/playgrounds-hf-parks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1551624566"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

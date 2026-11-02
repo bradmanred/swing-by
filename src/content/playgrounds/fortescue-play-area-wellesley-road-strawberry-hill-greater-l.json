@@ -1,0 +1,30 @@
+{
+  "name": "Fortescue Play Area (Wellesley road)",
+  "region": "london",
+  "area": "Strawberry Hill, Greater London",
+  "lat": 51.43849,
+  "lng": -0.34358,
+  "ages": [
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Richmond Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Richmond Council",
+  "sources": [
+    {
+      "label": "Richmond Council: Fortescue Play Area (Wellesley road)",
+      "url": "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park/fortescue_play_area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/68455175"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

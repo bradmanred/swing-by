@@ -11,6 +11,9 @@ import { pins } from './pins.js';
 
 // Old playground address → the listing it was merged into. Add a line whenever two listings are merged.
 const MERGED = {
+  'playground-off-rowley-avenue-blendon-greater-london': 'penhill-park-playground-blendon-greater-london',
+  'riverside-walk-playground-albany-park-greater-london': 'riverside-walk-playground-albany-park-greater-london-2',
+  'motspur-park-playground-motspur-park-greater-london': 'blagdon-road-open-space-motspur-park-greater-london',
   'playground-off-homestead-lane-the-ryde-welwyn-garden-city': 'king-george-v-playing-fields-welwyn-garden-city',
   'playground-off-kavan-gardens-cranford-hounslow': 'avenue-park-playground-hounslow',
 };

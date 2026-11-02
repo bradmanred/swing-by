@@ -1,0 +1,28 @@
+{
+  "name": "Waterlow Park Playground",
+  "region": "london",
+  "area": "Highgate, Greater London",
+  "lat": 51.56735,
+  "lng": -0.14452,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A children's playground in Highgate, on Camden Council's list of park facilities.",
+  "nearby": [],
+  "operator": "Camden Council",
+  "sources": [
+    {
+      "label": "Camden Council: Waterlow Park Playground",
+      "url": "https://www.camden.gov.uk/parks-and-green-spaces-facilities"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/1312974190"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

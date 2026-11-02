@@ -1,0 +1,28 @@
+{
+  "name": "Kilburn Grange Playground",
+  "region": "london",
+  "area": "Kilburn, Greater London",
+  "lat": 51.5441,
+  "lng": -0.19715,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A children's playground in Kilburn, on Camden Council's list of park facilities.",
+  "nearby": [],
+  "operator": "Camden Council",
+  "sources": [
+    {
+      "label": "Camden Council: Kilburn Grange Playground",
+      "url": "https://www.camden.gov.uk/parks-and-green-spaces-facilities"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/469520560"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

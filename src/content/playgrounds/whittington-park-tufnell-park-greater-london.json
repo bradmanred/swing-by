@@ -1,0 +1,34 @@
+{
+  "name": "Whittington Park",
+  "region": "london",
+  "area": "Tufnell Park, Greater London",
+  "lat": 51.56181,
+  "lng": -0.1285,
+  "ages": [],
+  "equipment": [
+    "sp",
+    "wp",
+    "gym"
+  ],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A playground on Islington Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Islington Council",
+  "sources": [
+    {
+      "label": "Islington Council: Whittington Park",
+      "url": "https://www.islington.gov.uk/physical-activity-parks-and-trees/parks-and-green-space/your-local-parks/whittington-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/34022674"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

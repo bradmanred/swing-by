@@ -1,0 +1,39 @@
+{
+  "name": "Heathfield Recreation Ground",
+  "region": "london",
+  "area": "Whitton, Greater London",
+  "lat": 51.44729,
+  "lng": -0.37096,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "bk",
+    "rb",
+    "gym"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A playground on Richmond Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Richmond Council",
+  "sources": [
+    {
+      "label": "Richmond Council: Heathfield Recreation Ground",
+      "url": "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park/heathfield_recreation_ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/901576151"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

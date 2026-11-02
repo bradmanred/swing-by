@@ -1,0 +1,28 @@
+{
+  "name": "Lisson Street Gardens Playground",
+  "region": "london",
+  "area": "Paddington, City of Westminster",
+  "lat": 51.52176,
+  "lng": -0.16821,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A sunken community garden with a play area at one end and a small amphitheatre at the other. Step-free access; no dogs.",
+  "nearby": [],
+  "operator": "Westminster City Council",
+  "sources": [
+    {
+      "label": "Westminster City Council: Lisson Street Gardens Playground",
+      "url": "https://www.westminster.gov.uk/leisure-libraries-and-community/parks-and-open-spaces/playgrounds-and-green-gyms"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/200724323"
+    }
+  ],
+  "checked": "2026-11-02",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
