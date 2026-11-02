@@ -1,0 +1,28 @@
+{
+  "name": "Stationers Park Playground",
+  "region": "london",
+  "area": "Stroud Green, Haringey",
+  "lat": 51.57892,
+  "lng": -0.11228,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [
+    "cf"
+  ],
+  "opens": "",
+  "description": "This park sits between Crouch End, Stroud Green, and Harringay and offers a good choice of facilities. It’s built on the site of the former Stationers' Company's School. The council also lists a basketball court, a café, a multi-use games area and a netball court.",
+  "nearby": [],
+  "operator": "Haringey Council",
+  "sources": [
+    {
+      "label": "Haringey Council: Stationers Park",
+      "url": "https://haringey.gov.uk/leisure-parks-culture/parks-greenspaces/parks-facilities-haringey/stationers-park"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

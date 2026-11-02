@@ -1,0 +1,38 @@
+{
+  "name": "Finsbury Park Playground",
+  "region": "london",
+  "area": "Harringay, Haringey",
+  "lat": 51.57406,
+  "lng": -0.10206,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "gym",
+    "mg",
+    "sk",
+    "wp",
+    "zw"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "Haringey's flagship park with something to do for everyone. The council also lists a boating lake, a bowls club – find out more about Finsbury Park Bowls Club, a café, a Changing Places toilet for people with limited mobility, a picnic area, a skatepark and toilets.",
+  "nearby": [],
+  "operator": "Haringey Council",
+  "sources": [
+    {
+      "label": "Haringey Council: Finsbury Park",
+      "url": "https://haringey.gov.uk/leisure-parks-culture/parks-greenspaces/parks-facilities-haringey/finsbury-park"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

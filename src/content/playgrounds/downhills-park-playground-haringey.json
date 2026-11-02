@@ -1,0 +1,30 @@
+{
+  "name": "Downhills Park Playground",
+  "region": "london",
+  "area": "West Green, Haringey",
+  "lat": 51.58898,
+  "lng": -0.08824,
+  "ages": [],
+  "equipment": [
+    "gym",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "A 12 hectare park with lots to do, a recreation space and formal gardens. The council also lists a basketball court, a café, a multi-use games area, a netball court, a picnic area, a rugby pitch and toilets.",
+  "nearby": [],
+  "operator": "Haringey Council",
+  "sources": [
+    {
+      "label": "Haringey Council: Downhills Park",
+      "url": "https://haringey.gov.uk/leisure-parks-culture/parks-greenspaces/parks-facilities-haringey/downhills-park"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

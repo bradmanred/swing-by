@@ -1,0 +1,33 @@
+{
+  "name": "Forster Memorial Park Playground",
+  "region": "london",
+  "area": "Catford South, Lewisham",
+  "lat": 51.43117,
+  "lng": -0.00642,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "gym"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "Lewisham Council park with a play area. The council also lists cycle route, outdoor gym, two full-sized football pitches and a junior pitch, playclub and Toilet, including disabled facilities.",
+  "nearby": [],
+  "operator": "Lewisham Council (run by Glendale)",
+  "sources": [
+    {
+      "label": "Lewisham Council: Forster Memorial Park",
+      "url": "https://lewisham.gov.uk/inmyarea/openspaces/parks/forster-memorial-park"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

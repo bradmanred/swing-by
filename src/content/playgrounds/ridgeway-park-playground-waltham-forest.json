@@ -1,0 +1,28 @@
+{
+  "name": "Ridgeway Park Playground",
+  "region": "london",
+  "area": "Endlebury, Waltham Forest",
+  "lat": 51.62467,
+  "lng": -0.01101,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Waltham Forest Council park with under-7s play area and under-12s play area.",
+  "nearby": [],
+  "operator": "Waltham Forest Council",
+  "sources": [
+    {
+      "label": "Waltham Forest Council: Ridgeway Park",
+      "url": "https://www.walthamforest.gov.uk/libraries-arts-parks-and-leisure/parks-and-open-spaces/ridgeway-park"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

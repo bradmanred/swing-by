@@ -1,0 +1,27 @@
+{
+  "name": "Walnut Road Playground",
+  "region": "london",
+  "area": "Leyton, Waltham Forest",
+  "lat": 51.56187,
+  "lng": -0.01669,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Waltham Forest Council playground, with under 7s play area.",
+  "nearby": [],
+  "operator": "Waltham Forest Council",
+  "sources": [
+    {
+      "label": "Waltham Forest Council: our playgrounds",
+      "url": "https://www.walthamforest.gov.uk/libraries-arts-parks-and-leisure/parks-and-open-spaces/our-playgrounds"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

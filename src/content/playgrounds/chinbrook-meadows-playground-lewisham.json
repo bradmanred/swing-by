@@ -1,0 +1,29 @@
+{
+  "name": "Chinbrook Meadows Playground",
+  "region": "london",
+  "area": "Grove Park, Lewisham",
+  "lat": 51.42969,
+  "lng": 0.02575,
+  "ages": [],
+  "equipment": [
+    "gym",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [
+    "cf"
+  ],
+  "opens": "",
+  "description": "Lewisham Council park with a play area. The council also lists a ball court, a café a cycle route, a football pitch, a river, a tennis court and outdoor gym.",
+  "nearby": [],
+  "operator": "Lewisham Council (run by Glendale)",
+  "sources": [
+    {
+      "label": "Lewisham Council: Chinbrook Meadows",
+      "url": "https://lewisham.gov.uk/inmyarea/openspaces/parks/chinbrook-meadows"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

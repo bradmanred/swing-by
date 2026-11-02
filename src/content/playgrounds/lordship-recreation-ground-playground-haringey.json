@@ -1,0 +1,35 @@
+{
+  "name": "Lordship Recreation Ground Playground",
+  "region": "london",
+  "area": "West Green, Haringey",
+  "lat": 51.59325,
+  "lng": -0.08769,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "gym",
+    "mg",
+    "sk",
+    "wp"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "Lordship Recreation Ground is situated in the heart of Haringey. It was first opened as a public park in 1932. The council also lists a basketball court, a BMX track, a café, a multi-use games area, a picnic area, a skatepark, toilets and football.",
+  "nearby": [],
+  "operator": "Haringey Council",
+  "sources": [
+    {
+      "label": "Haringey Council: Lordship Recreation Ground",
+      "url": "https://haringey.gov.uk/leisure-parks-culture/parks-greenspaces/parks-facilities-haringey/lordship-recreation-ground"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

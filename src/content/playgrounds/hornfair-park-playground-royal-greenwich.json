@@ -1,0 +1,33 @@
+{
+  "name": "Hornfair Park Playground",
+  "region": "london",
+  "area": "Charlton, Greenwich",
+  "lat": 51.47566,
+  "lng": 0.04725,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "mg",
+    "wp"
+  ],
+  "access": [],
+  "facilities": [
+    "cf"
+  ],
+  "opens": "",
+  "description": "A large park, with formal gardens and plenty of areas for different activities. In the park there is a multi-use games area, a children's playground and paddling pool (summer holiday period only).",
+  "nearby": [],
+  "operator": "Royal Borough of Greenwich",
+  "sources": [
+    {
+      "label": "Royal Borough of Greenwich: Hornfair Park",
+      "url": "https://www.royalgreenwich.gov.uk/directory_record/3774/hornfair_park"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (approximate: the park's point on the council's map), play equipment and opening hours.",
+  "photo": null
+}

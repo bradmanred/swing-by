@@ -1,0 +1,30 @@
+{
+  "name": "Henry Reynolds Gardens Playground",
+  "region": "london",
+  "area": "Leytonstone, Waltham Forest",
+  "lat": 51.57017,
+  "lng": 0.01681,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Waltham Forest Council park with under 7s and under 12s play areas, basketball post, ornamental gardens and friends of parks group.",
+  "nearby": [],
+  "operator": "Waltham Forest Council",
+  "sources": [
+    {
+      "label": "Waltham Forest Council: our other parks",
+      "url": "https://www.walthamforest.gov.uk/libraries-arts-parks-and-leisure/parks-and-open-spaces/our-other-parks"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

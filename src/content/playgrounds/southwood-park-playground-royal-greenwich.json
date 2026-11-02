@@ -1,0 +1,26 @@
+{
+  "name": "Southwood Park Playground",
+  "region": "london",
+  "area": "Eltham, Greenwich",
+  "lat": 51.43755,
+  "lng": 0.07047,
+  "ages": [],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A recreational area next to the New Eltham Library, featuring grassland and a children's play area. The Green Chain walk passes through the park.",
+  "nearby": [],
+  "operator": "Royal Borough of Greenwich",
+  "sources": [
+    {
+      "label": "Royal Borough of Greenwich: Southwood Park",
+      "url": "https://www.royalgreenwich.gov.uk/directory_record/3787/southwood_park"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

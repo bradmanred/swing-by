@@ -1,0 +1,31 @@
+{
+  "name": "Chestnuts Park Playground",
+  "region": "london",
+  "area": "St Ann's, Haringey",
+  "lat": 51.58194,
+  "lng": -0.08964,
+  "ages": [],
+  "equipment": [
+    "gym",
+    "mg",
+    "zw"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "A park with lots of facilities, a willow garden and an orchard. The council also lists a café, a multi-use games area, a toilet and a zip wire.",
+  "nearby": [],
+  "operator": "Haringey Council",
+  "sources": [
+    {
+      "label": "Haringey Council: Chestnuts Park",
+      "url": "https://haringey.gov.uk/leisure-parks-culture/parks-greenspaces/parks-facilities-haringey/chestnuts-park"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Charlton Park Playground",
+  "region": "london",
+  "area": "Charlton, Greenwich",
+  "lat": 51.48153,
+  "lng": 0.0436,
+  "ages": [],
+  "equipment": [
+    "gym",
+    "sk",
+    "wp"
+  ],
+  "access": [],
+  "facilities": [
+    "cf",
+    "wc"
+  ],
+  "opens": "",
+  "description": "Charlton Park is one of Greenwich's Green Flag Award-winning sites. There is free to use outdoor gym equipment and table tennis tables, along with a children's playground, skate park and nearby refreshment facilities.",
+  "nearby": [],
+  "operator": "Royal Borough of Greenwich",
+  "sources": [
+    {
+      "label": "Royal Borough of Greenwich: Charlton Park",
+      "url": "https://www.royalgreenwich.gov.uk/directory_record/3763/charlton_park"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

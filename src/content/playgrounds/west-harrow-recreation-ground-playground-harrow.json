@@ -1,0 +1,29 @@
+{
+  "name": "West Harrow Recreation Ground Playground",
+  "region": "london",
+  "area": "West Harrow, Harrow",
+  "lat": 51.5781,
+  "lng": -0.35561,
+  "ages": [],
+  "equipment": [
+    "gym",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [
+    "cf"
+  ],
+  "opens": "",
+  "description": "Harrow Council park with a children's playground. The council also lists bowling green, changing facilities, coffee shop, cricket, football, green gym, multi-use courts, picnic pavilion and tennis.",
+  "nearby": [],
+  "operator": "Harrow Council",
+  "sources": [
+    {
+      "label": "Harrow Council: West Harrow Recreation Ground",
+      "url": "https://www.harrow.gov.uk/environment-parks/west-harrow-recreation-ground"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

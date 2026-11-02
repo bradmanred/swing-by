@@ -1,0 +1,27 @@
+{
+  "name": "Kenton Recreation Ground Playground",
+  "region": "london",
+  "area": "Kenton West, Harrow",
+  "lat": 51.58846,
+  "lng": -0.31637,
+  "ages": [],
+  "equipment": [
+    "gym",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Harrow Council park with a children's playground. The council also lists facilities at kenton recreation ground, basketball, cricket, football, green gym, multi-use courts, tennis and bmx pump track.",
+  "nearby": [],
+  "operator": "Harrow Council",
+  "sources": [
+    {
+      "label": "Harrow Council: Kenton Recreation Ground",
+      "url": "https://www.harrow.gov.uk/environment-parks/kenton-recreation-ground"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (approximate: the park's point on the council's map), play equipment and opening hours.",
+  "photo": null
+}

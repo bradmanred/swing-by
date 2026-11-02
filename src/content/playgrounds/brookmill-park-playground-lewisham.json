@@ -1,0 +1,26 @@
+{
+  "name": "Brookmill Park Playground",
+  "region": "london",
+  "area": "Greenwich Park, Lewisham",
+  "lat": 51.47003,
+  "lng": -0.01888,
+  "ages": [],
+  "equipment": [
+    "wp"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Lewisham Council park with a play area. The council also lists a cycle route, a river and lake, a water feature, an ornamental garden and a nature reserve.",
+  "nearby": [],
+  "operator": "Lewisham Council (run by Glendale)",
+  "sources": [
+    {
+      "label": "Lewisham Council: Brookmill Park",
+      "url": "https://lewisham.gov.uk/inmyarea/openspaces/parks/brookmill-park"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

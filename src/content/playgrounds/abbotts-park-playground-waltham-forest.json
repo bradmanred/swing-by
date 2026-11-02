@@ -1,0 +1,30 @@
+{
+  "name": "Abbotts Park Playground",
+  "region": "london",
+  "area": "Forest, Waltham Forest",
+  "lat": 51.57152,
+  "lng": -0.00627,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "zw"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Waltham Forest Council park with under-7s play area, under-12 play area and zipwire.",
+  "nearby": [],
+  "operator": "Waltham Forest Council",
+  "sources": [
+    {
+      "label": "Waltham Forest Council: Abbotts Park",
+      "url": "https://www.walthamforest.gov.uk/libraries-arts-parks-and-leisure/parks-and-open-spaces/our-open-spaces/abbotts-park"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}
