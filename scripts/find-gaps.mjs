@@ -15,6 +15,10 @@
 //   node scripts/find-gaps.mjs --osm-fallback --add 50   also fill gaps from OpenStreetMap in councils not yet checked
 //   node scripts/find-gaps.mjs --limit 5              only the first 5 counties (for a quick test)
 //
+// With SCAN_MINUTES set, it stops starting new counties after that many minutes and carries on with what it has.
+// The county to start from next time is kept in .coverage-progress.json (the workflow keeps that file between runs),
+// so over a few months every county is reached, biggest first each time round.
+//
 // Playgrounds from OpenStreetMap follow docs/finding-playgrounds.md: Unverified (no "checked" date), the
 // OpenStreetMap page as the source, and the OpenStreetMap credit. Ones tagged private or indoor, or at schools,
 // pubs, hotels and holiday parks, are left out, as are ones within 150 m of a playground we list.
@@ -111,10 +115,21 @@ const listed = (p) => {
 };
 
 // 1. OpenStreetMap, county by county.
-const areas = AREAS.filter((a) => !ONLY || a.name.toLowerCase() === ONLY.toLowerCase()).slice(0, LIMIT);
+const PROGRESS = '.coverage-progress.json';
+const SCAN_MS = Number(process.env.SCAN_MINUTES || 0) * 60000;
+const started = Date.now();
+let startAt = 0;
+if (!ONLY && SCAN_MS) startAt = (JSON.parse(await readFile(PROGRESS, 'utf8').catch(() => '{}')).next ?? 0) % AREAS.length;
+const ordered = [...AREAS.slice(startAt), ...AREAS.slice(0, startAt)];
+const areas = ordered.filter((a) => !ONLY || a.name.toLowerCase() === ONLY.toLowerCase()).slice(0, LIMIT);
+const notReached = [];
 if (!areas.length) throw new Error(`No county called ${ONLY}. Use one of: ${AREAS.map((a) => a.name).join(', ')}`);
 const results = [];
 for (const a of areas) {
+  if (SCAN_MS && Date.now() - started > SCAN_MS) {
+    notReached.push(a.name);
+    continue;
+  }
   // Ceremonial county where OpenStreetMap has one, otherwise the county council's own boundary (as for Hertfordshire).
   const sel = a.iso
     ? `area["ISO3166-2"="${a.iso}"]`
@@ -269,6 +284,9 @@ if (feedReport.length) lines.push('', '## Council lists read', '', ...feedReport
 if (added.council || added.osm)
   lines.push('', `Added ${added.council} playgrounds from council lists (verified) and ${added.osm} from OpenStreetMap (Unverified, in councils whose own lists have been checked${OSM_FALLBACK ? ', plus councils not yet checked' : ''}).`);
 else if (ADD > 0) lines.push('', 'Nothing added: no council list had new playgrounds, and the remaining gaps are all in councils whose own lists need checking first.');
+
+if (notReached.length) lines.push('', `Not reached this time (the time limit saves Actions minutes; the next run starts here): ${notReached.join(', ')}.`);
+if (!ONLY && SCAN_MS) await writeFile(PROGRESS, JSON.stringify({ next: notReached.length ? AREAS.findIndex((a) => a.name === notReached[0]) : 0 }) + '\n');
 
 await mkdir('reports', { recursive: true });
 await writeFile('reports/coverage.md', lines.join('\n') + '\n');
