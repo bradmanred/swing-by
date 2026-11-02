@@ -702,7 +702,10 @@
       "feed": {
         "type": "localgov",
         "directory": "https://www.sutton.gov.uk/libraries-museums-parks-and-leisure/parks-trees-and-open-spaces/parks-and-facilities",
-        "approximate": true
+        "approximate": true,
+        "rename": {
+          "Recreation Grounds": "Benhill Recreation Ground"
+        }
       }
     },
     {
@@ -778,6 +781,106 @@
         "type": "list",
         "file": "src/data/council-lists/city-of-london.csv",
         "page": "https://www.fis.cityoflondon.gov.uk/directory/portsoken-street-gardens"
+      }
+    },
+    {
+      "district": "Richmond upon Thames",
+      "council": "Richmond Council",
+      "sources": [
+        "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park"
+      ],
+      "note": "Find a park (about 140 parks, A to Z); the 41 whose page mentions a playground are imported. Bushy Park and Richmond Park playgrounds come from The Royal Parks' own pages instead.",
+      "feed": {
+        "type": "pages",
+        "index": [
+          "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park?alpha=A",
+          "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park?alpha=B",
+          "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park?alpha=C",
+          "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park?alpha=D",
+          "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park?alpha=E",
+          "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park?alpha=F",
+          "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park?alpha=G",
+          "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park?alpha=H",
+          "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park?alpha=I",
+          "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park?alpha=J",
+          "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park?alpha=K",
+          "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park?alpha=L",
+          "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park?alpha=M",
+          "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park?alpha=N",
+          "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park?alpha=O",
+          "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park?alpha=P",
+          "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park?alpha=Q",
+          "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park?alpha=R",
+          "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park?alpha=S",
+          "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park?alpha=T",
+          "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park?alpha=U",
+          "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park?alpha=V",
+          "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park?alpha=W",
+          "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park?alpha=Y"
+        ],
+        "follow": "/find_a_park/[a-z0-9_]+$",
+        "exclude": "^Bushy Park$",
+        "approximate": true
+      }
+    },
+    {
+      "district": "Merton",
+      "council": "Merton Council",
+      "sources": [
+        "https://www.merton.gov.uk/leisure-recreation-and-culture/parks-and-open-spaces/play-areas/all-play-areas",
+        "https://www.merton.gov.uk/leisure-recreation-and-culture/parks-and-open-spaces/paddling-pools-and-water-play-areas"
+      ],
+      "note": "All play areas page (31 parks). Park pages have no map point and few postcodes, so most are placed by the park's name on OpenStreetMap; 11 that couldn't be placed are left to the OpenStreetMap fill. Paddling pools and splash pads open mid-June or mid-July to the end of August.",
+      "feed": {
+        "type": "pages",
+        "index": "https://www.merton.gov.uk/leisure-recreation-and-culture/parks-and-open-spaces/play-areas/all-play-areas",
+        "follow": "/(play-areas|parks-and-recreation-grounds)/(mitcham|morden|wimbledon)/[a-z0-9-]+$",
+        "approximate": true,
+        "near": {
+          "lat": 51.41,
+          "lng": -0.19,
+          "km": 6
+        }
+      }
+    },
+    {
+      "district": "Kensington and Chelsea",
+      "council": "Royal Borough of Kensington and Chelsea",
+      "sources": [
+        "https://www.rbkc.gov.uk/parks-leisure-and-culture/parks/your-local-park"
+      ],
+      "note": "Explore your local park (26 parks); those whose page mentions a playground are imported, placed by the park's name on OpenStreetMap. Kensington Gardens' Diana Memorial Playground comes from The Royal Parks.",
+      "feed": {
+        "type": "pages",
+        "index": "https://www.rbkc.gov.uk/parks-leisure-and-culture/parks/your-local-park",
+        "follow": "/your-local-park/[a-z0-9-]+$",
+        "nameFrom": "title",
+        "approximate": true,
+        "near": {
+          "lat": 51.5,
+          "lng": -0.195,
+          "km": 6
+        }
+      }
+    },
+    {
+      "district": "Islington",
+      "council": "Islington Council",
+      "sources": [
+        "https://www.islington.gov.uk/physical-activity-parks-and-trees/parks-and-green-space/your-local-parks",
+        "https://www.islington.gov.uk/children-and-families/things-to-do/adventure-playgrounds"
+      ],
+      "note": "Your local parks lists the main 10 parks only, all with play areas, imported and placed by the park's name on OpenStreetMap. Smaller parks and estate play areas come from OpenStreetMap. The 12 adventure playgrounds (run by Awesome CIC and Islington Play Association, registration needed) aren't added yet.",
+      "feed": {
+        "type": "pages",
+        "index": "https://www.islington.gov.uk/physical-activity-parks-and-trees/parks-and-green-space/your-local-parks",
+        "follow": "/your-local-parks/[a-z0-9-]+$",
+        "approximate": true,
+        "near": {
+          "lat": 51.55,
+          "lng": -0.11,
+          "km": 5
+        }
       }
     }
   ]

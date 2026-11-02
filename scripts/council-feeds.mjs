@@ -48,6 +48,8 @@ export async function readFeed(feed) {
     const counts = new Map();
     for (const r of recs) counts.set(r.name, (counts.get(r.name) ?? 0) + 1);
     for (const r of recs) if (counts.get(r.name) > 2) r.name = slugName(r.url) || r.name;
+    // "rename": { "Recreation Grounds": "Benhill Recreation Ground" } for a park whose page gives no usable name.
+    for (const r of recs) if (feed.rename?.[r.name]) r.name = feed.rename[r.name];
     const pts = await postcodePoints(recs.filter((r) => r.lat == null).map((r) => r.postcode));
     for (const r of recs)
       if (r.lat == null && pts[r.postcode]) Object.assign(r, pts[r.postcode], { from: 'postcode' });
