@@ -1,11 +1,22 @@
+# Builds the site and runs the tests on every pull request, and on direct pushes to main.
+# To save Actions minutes (the free 2,000 a month): merges into main and bot commits on main aren't checked again (the
+# pull request already was, and bot commits only refresh data), a newer push to a pull request cancels the run for the
+# older one, and the test browser is kept between runs.
 name: Build and accessibility checks
 on:
   pull_request:
   push:
     branches: [main]
+concurrency:
+  group: ci-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
 jobs:
   check:
+    if: >-
+      github.event_name == 'pull_request' ||
+      (!startsWith(github.event.head_commit.message, 'Merge pull request') && github.event.head_commit.author.name != 'swing-by-bot')
     runs-on: ubuntu-24.04 # Playwright 1.56 has no browser builds for newer Ubuntu yet
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -14,5 +25,9 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ hashFiles('package-lock.json') }}
       - run: npx playwright install --with-deps chromium
       - run: npm test

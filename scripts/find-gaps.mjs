@@ -15,11 +15,15 @@
 //   node scripts/find-gaps.mjs --osm-fallback --add 50   also fill gaps from OpenStreetMap in councils not yet checked
 //   node scripts/find-gaps.mjs --limit 5              only the first 5 counties (for a quick test)
 //
+// With SCAN_MINUTES set, it stops starting new counties after that many minutes and carries on with what it has.
+// The county to start from next time is kept in .coverage-progress.json (the workflow keeps that file between runs),
+// so over a few months every county is reached, biggest first each time round.
+//
 // Playgrounds from OpenStreetMap follow docs/finding-playgrounds.md: Unverified (no "checked" date), the
 // OpenStreetMap page as the source, and the OpenStreetMap credit. Ones tagged private or indoor, or at schools,
 // pubs, hotels and holiday parks, are left out, as are ones within 150 m of a playground we list.
 // Run by .github/workflows/coverage.yml.
-import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, readdir, unlink, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { readFeed } from './council-feeds.mjs';
 
@@ -95,26 +99,80 @@ async function lookup(points) {
 const BAD = /school|nursery|academy|primary|college|\bpub\b|inn\b|hotel|caravan|holiday park|soft play|ikea|mcdonald/i;
 const isPublic = (t) => !['private', 'no', 'customers'].includes(t.access) && t.indoor !== 'yes' && !BAD.test(`${t.name ?? ''} ${t.operator ?? ''}`);
 
-// Everything we list, on a coarse grid so "is there one within 150 m" is quick.
+// Everything we list, on a coarse grid so "is there one within 150 m" is quick. osmOnly marks listings that come from
+// OpenStreetMap alone (Unverified), which a council's own record of the same place replaces.
 const grid = new Map();
 const cellKey = (lat, lng) => `${Math.floor(lat * 100)},${Math.floor(lng * 60)}`;
 const remember = (p) => grid.set(cellKey(p.lat, p.lng), [...(grid.get(cellKey(p.lat, p.lng)) ?? []), p]);
 for (const f of (await readdir(DIR)).filter((f) => f.endsWith('.json'))) {
   const d = JSON.parse(await readFile(join(DIR, f), 'utf8'));
-  remember({ lat: d.lat, lng: d.lng });
+  const osmOnly = !d.checked && (d.sources ?? []).length > 0 && d.sources.every((x) => /openstreetmap\.org\//.test(x.url));
+  remember({ id: f.replace(/\.json$/, ''), lat: d.lat, lng: d.lng, osmOnly });
 }
-const listed = (p) => {
+/** The listing nearest p within 150 m (the grid's own entry, so changes to it stick), or null. */
+const nearestListed = (p) => {
+  let best = null;
   for (let a = -1; a <= 1; a++)
     for (let b = -1; b <= 1; b++)
-      for (const q of grid.get(`${Math.floor(p.lat * 100) + a},${Math.floor(p.lng * 60) + b}`) ?? []) if (km(p, q) * 1000 < SAME_M) return true;
-  return false;
+      for (const q of grid.get(`${Math.floor(p.lat * 100) + a},${Math.floor(p.lng * 60) + b}`) ?? []) {
+        const d = km(p, q) * 1000;
+        if (d < SAME_M && (!best || d < best.d)) best = { q, d };
+      }
+  return best?.q ?? null;
 };
+const listed = (p) => !!nearestListed(p);
+
+// The saved OpenStreetMap snapshot (.github/actions/osm-snapshot sets OSM_PLAYGROUNDS), for moving a council's map
+// point onto the play area itself. Without it, council points are used as given.
+const SNAP = process.env.OSM_PLAYGROUNDS ? JSON.parse(await readFile(process.env.OSM_PLAYGROUNDS, 'utf8')) : [];
+const snapGrid = new Map();
+for (const p of SNAP) {
+  const k = cellKey(p.lat, p.lng);
+  snapGrid.set(k, [...(snapGrid.get(k) ?? []), p]);
+}
+const usedOsm = new Set();
+const NAME_SKIP = new Set('play area areas playground playgrounds park parks the and of gardens garden recreation ground open space common green field fields playing children childrens'.split(' '));
+const nameWords = (s) => String(s ?? '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').split(' ').filter((w) => w.length > 2 && !NAME_SKIP.has(w));
+/**
+ * Moves a council record onto the OpenStreetMap playground it describes: one sharing a word of its name, else the
+ * nearest, within 400 m of a park's point or postcode (60 m of a point the council gives for the play area itself).
+ * Returns how it was placed: 'osm', or the record's own 'map' / 'postcode'.
+ */
+function snap(rec, approximate) {
+  const r = approximate || rec.from === 'postcode' ? 400 : 60;
+  const ours = new Set(nameWords(rec.name));
+  const cands = [];
+  for (let a = -1; a <= 1; a++)
+    for (let b = -1; b <= 1; b++)
+      for (const q of snapGrid.get(`${Math.floor(rec.lat * 100) + a},${Math.floor(rec.lng * 60) + b}`) ?? []) {
+        if (usedOsm.has(q.id) || !isPublic(q.tags ?? {})) continue;
+        const d = km(rec, q) * 1000;
+        if (d <= r) cands.push({ q, d, strong: nameWords(`${q.tags?.name ?? ''}`).some((w) => ours.has(w)) });
+      }
+  cands.sort((x, y) => x.d - y.d);
+  const pick = cands.find((c) => c.strong) ?? cands[0];
+  if (!pick) return rec.from ?? 'map';
+  usedOsm.add(pick.q.id);
+  Object.assign(rec, { lat: pick.q.lat, lng: pick.q.lng, osm: pick.q.id });
+  return 'osm';
+}
 
 // 1. OpenStreetMap, county by county.
-const areas = AREAS.filter((a) => !ONLY || a.name.toLowerCase() === ONLY.toLowerCase()).slice(0, LIMIT);
+const PROGRESS = '.coverage-progress.json';
+const SCAN_MS = Number(process.env.SCAN_MINUTES || 0) * 60000;
+const started = Date.now();
+let startAt = 0;
+if (!ONLY && SCAN_MS) startAt = (JSON.parse(await readFile(PROGRESS, 'utf8').catch(() => '{}')).next ?? 0) % AREAS.length;
+const ordered = [...AREAS.slice(startAt), ...AREAS.slice(0, startAt)];
+const areas = ordered.filter((a) => !ONLY || a.name.toLowerCase() === ONLY.toLowerCase()).slice(0, LIMIT);
+const notReached = [];
 if (!areas.length) throw new Error(`No county called ${ONLY}. Use one of: ${AREAS.map((a) => a.name).join(', ')}`);
 const results = [];
 for (const a of areas) {
+  if (SCAN_MS && Date.now() - started > SCAN_MS) {
+    notReached.push(a.name);
+    continue;
+  }
   // Ceremonial county where OpenStreetMap has one, otherwise the county council's own boundary (as for Hertfordshire).
   const sel = a.iso
     ? `area["ISO3166-2"="${a.iso}"]`
@@ -158,13 +216,27 @@ if (ADD > 0) {
   for (const c of councils.filter((c) => c.feed && [...districts].some((d) => norm(d) === norm(c.district)))) {
     if (toAdd.length >= ADD) break;
     const recs = await readFeed(c.feed);
-    const fresh = recs.filter((x) => !listed(x));
-    feedReport.push(`${c.council}: ${recs.length} on the council's list, ${fresh.length} new`);
-    for (const x of fresh) {
+    let fresh = 0, replacing = 0;
+    for (const x of recs) {
       if (toAdd.length >= ADD) break;
+      const before = { lat: x.lat, lng: x.lng };
+      x.placed = snap(x, c.feed.approximate);
+      // Already listed: skip it, unless what we list is an OpenStreetMap-only copy, which the council's record replaces.
+      const near = nearestListed(x) ?? nearestListed(before);
+      if (near && !near.osmOnly) {
+        if (x.osm) usedOsm.delete(x.osm);
+        continue;
+      }
+      if (near) {
+        x.replaces = near.id;
+        near.osmOnly = false; // only one council record replaces it
+        replacing++;
+      }
+      fresh++;
       toAdd.push({ kind: 'council', ...x, council: c });
-      remember(x); // so OpenStreetMap copies of the same place aren't added too
+      remember({ id: null, lat: x.lat, lng: x.lng, osmOnly: false }); // so OpenStreetMap copies of the same place aren't added too
     }
+    feedReport.push(`${c.council}: ${recs.length} on the council's list, ${fresh} new${replacing ? ` (${replacing} replacing OpenStreetMap-only listings)` : ''}`);
   }
   // 3. OpenStreetMap, only where the council's own list has been checked (unless --osm-fallback).
   for (const g of byCouncil) {
@@ -179,6 +251,7 @@ if (ADD > 0) {
 
 // Write the files.
 let added = { council: 0, osm: 0 };
+const replaced = []; // [old id, new id]: OpenStreetMap-only listings replaced by the council's record
 if (toAdd.length) {
   const existing = new Set(await readdir(DIR));
   const pcs = await lookup(toAdd);
@@ -204,17 +277,28 @@ if (toAdd.length) {
     const area = [...new Set([sub, town].filter(Boolean))].join(', ') || pc.admin_district;
     let doc;
     if (p.kind === 'council') {
+      // Where the pin came from. Approximate ones are looked at by the pin check (check-positions.mjs).
+      const position =
+        p.placed === 'osm' ? 'Exact position (taken from OpenStreetMap)'
+        : p.placed === 'postcode' ? 'Exact position (approximate: mapped from the postcode)'
+        : p.council.feed.approximate ? "Exact position (approximate: the park's point on the council's map, not the play area itself)"
+        : "Exact position (from the council's map)";
+      const has = (k) => (p[k] ?? []).length > 0;
+      const unknown = [
+        has('ages') ? null : 'age ranges',
+        has('equipment') ? 'the full list of play equipment' : 'play equipment',
+        'opening hours',
+        (p.facilities ?? []).includes('wc') ? null : 'toilets',
+        'parking',
+      ].filter(Boolean);
       doc = {
         name: p.name, region: reg, area, lat: Math.round(p.lat * 1e5) / 1e5, lng: Math.round(p.lng * 1e5) / 1e5,
-        ages: [], equipment: [], access: [], facilities: [], opens: '',
+        ages: p.ages ?? [], equipment: p.equipment ?? [], access: p.access ?? [], facilities: p.facilities ?? [], opens: '',
         description: `A playground on ${p.council.council}'s own list of play areas.`,
         nearby: [], operator: p.council.council,
-        sources: [{ label: `${p.council.council}: ${p.name}`, url: p.url }],
+        sources: [{ label: `${p.council.council}: ${p.name}`, url: p.url }, ...(p.osm ? [{ label: 'OpenStreetMap: play area', url: `https://www.openstreetmap.org/${p.osm}` }] : [])],
         checked: TODAY,
-        // "approximate" feeds give the park's point, not the play area's, so the pin check (check-positions.mjs) looks at them.
-        notConfirmed: p.council.feed.approximate
-          ? "Exact position (approximate: the park's point on the council's map, not the play area itself), age ranges, play equipment, opening hours, toilets and parking."
-          : "Exact position (from the council's map), age ranges, play equipment, opening hours, toilets and parking.",
+        notConfirmed: `${position}, ${unknown.slice(0, -1).join(', ')} and ${unknown.at(-1)}.`,
         photo: null,
       };
     } else {
@@ -238,7 +322,18 @@ if (toAdd.length) {
     existing.add(`${id}.json`);
     await writeFile(join(DIR, `${id}.json`), JSON.stringify(doc, null, 2) + '\n');
     added[p.kind]++;
+    if (p.replaces) {
+      await unlink(join(DIR, `${p.replaces}.json`)).catch(() => {});
+      replaced.push([p.replaces, id]);
+    }
   }
+}
+
+// Keep replaced listings' old addresses working (worker/index.js sends them to the new listing).
+if (replaced.length) {
+  const w = await readFile('worker/index.js', 'utf8');
+  const lines = replaced.map(([a, b]) => `  '${a}': '${b}',`).join('\n');
+  await writeFile('worker/index.js', w.replace(/(const MERGED = \{\n)/, `$1${lines}\n`));
 }
 
 // Report.
@@ -267,8 +362,11 @@ const lines = [
 ];
 if (feedReport.length) lines.push('', '## Council lists read', '', ...feedReport.map((l) => `- ${l}`));
 if (added.council || added.osm)
-  lines.push('', `Added ${added.council} playgrounds from council lists (verified) and ${added.osm} from OpenStreetMap (Unverified, in councils whose own lists have been checked${OSM_FALLBACK ? ', plus councils not yet checked' : ''}).`);
+  lines.push('', `Added ${added.council} playgrounds from council lists (verified${replaced.length ? `, ${replaced.length} of them replacing OpenStreetMap-only listings, whose old addresses now redirect` : ''}) and ${added.osm} from OpenStreetMap (Unverified, in councils whose own lists have been checked${OSM_FALLBACK ? ', plus councils not yet checked' : ''}).`);
 else if (ADD > 0) lines.push('', 'Nothing added: no council list had new playgrounds, and the remaining gaps are all in councils whose own lists need checking first.');
+
+if (notReached.length) lines.push('', `Not reached this time (the time limit saves Actions minutes; the next run starts here): ${notReached.join(', ')}.`);
+if (!ONLY && SCAN_MS) await writeFile(PROGRESS, JSON.stringify({ next: notReached.length ? AREAS.findIndex((a) => a.name === notReached[0]) : 0 }) + '\n');
 
 await mkdir('reports', { recursive: true });
 await writeFile('reports/coverage.md', lines.join('\n') + '\n');
