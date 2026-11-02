@@ -56,7 +56,7 @@ export async function readFeed(feed) {
     const pts = await postcodePoints(recs.filter((r) => r.lat == null).map((r) => r.postcode));
     for (const r of recs)
       if (r.lat == null && pts[r.postcode]) Object.assign(r, pts[r.postcode], { from: 'postcode' });
-      else if (r.lat != null) r.from = 'map';
+      else if (r.lat != null && !r.from) r.from = 'map';
     await placeByParkName(recs, feed);
     const placed = recs.filter((r) => r.lat != null);
     if (placed.length < recs.length) console.log(`  ${recs.length - placed.length} left out: no map point or postcode on the page`);
