@@ -1,0 +1,30 @@
+{
+  "name": "Brunswick Park Playground",
+  "region": "london",
+  "area": "Haringey",
+  "lat": 51.51,
+  "lng": -0.03,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "gym",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A small, local park between Seven Sisters Road and West Green Road. It provides welcome green space in a built-up area. The council also lists a multi-use games area.",
+  "nearby": [],
+  "operator": "Haringey Council",
+  "sources": [
+    {
+      "label": "Haringey Council: Brunswick Park",
+      "url": "https://haringey.gov.uk/leisure-parks-culture/parks-greenspaces/parks-facilities-haringey/brunswick-park"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (approximate), play equipment and opening hours.",
+  "photo": null
+}

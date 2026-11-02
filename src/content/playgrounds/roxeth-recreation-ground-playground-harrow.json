@@ -1,0 +1,27 @@
+{
+  "name": "Roxeth Recreation Ground Playground",
+  "region": "london",
+  "area": "Harrow",
+  "lat": 51.51,
+  "lng": -0.03,
+  "ages": [],
+  "equipment": [
+    "gym",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Harrow Council park with a children's playground. The council also lists facilities at roxeth recreation ground, cricket, football, green gym, multi-use court and tennis.",
+  "nearby": [],
+  "operator": "Harrow Council",
+  "sources": [
+    {
+      "label": "Harrow Council: Roxeth Recreation Ground",
+      "url": "https://www.harrow.gov.uk/environment-parks/roxeth-recreation-ground"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (approximate), play equipment and opening hours.",
+  "photo": null
+}
