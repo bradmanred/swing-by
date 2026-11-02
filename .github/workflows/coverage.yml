@@ -4,8 +4,9 @@
 # Runs on the 8th of each month (after the monthly OpenStreetMap snapshot; monthly rather than weekly to save Actions
 # minutes) and adds up to 150 playgrounds (change the number with a repository variable called
 # COVERAGE_WEEKLY_ADD, under Settings > Secrets and variables > Actions > Variables; 0 makes it report only).
-# It works in the same order as before: council lists it can read first (added as verified), then OpenStreetMap
-# ones as Unverified, but only in councils whose own lists have been checked (src/data/council-sources.json).
+# It works in the same order as before: council lists it can read first (added as verified, with each pin moved onto
+# the play area mapped on OpenStreetMap, and replacing any OpenStreetMap-only listing of the same place), then
+# OpenStreetMap ones as Unverified, but only in councils whose own lists have been checked (src/data/council-sources.json).
 # It never fills a council that hasn't been checked, so when it runs out of those, the pull request lists the
 # next councils to research by hand (docs/finding-playgrounds.md). It refreshes the nearest toilets and opens one
 # pull request for you to review, and skips the month if an earlier coverage pull request is still open, so
@@ -65,6 +66,7 @@ jobs:
           path: .coverage-progress.json
           key: coverage-progress-${{ github.run_id }}
           restore-keys: coverage-progress-
+      - uses: ./.github/actions/osm-snapshot
       - name: Check coverage
         env:
           ADD: ${{ steps.plan.outputs.add }}
@@ -94,7 +96,7 @@ jobs:
           git config user.name "swing-by-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -b "$branch"
-          git add src/content/playgrounds src/data/toilets.json
+          git add src/content/playgrounds src/data/toilets.json worker/index.js
           git commit -m "Add playgrounds found by the coverage check [skip toilets]"
           git push -u origin "$branch"
           grep -E '^(Added|Nothing added|- )' reports/coverage.md > body.md || true

@@ -141,13 +141,10 @@
     "https://www.rotherham.gov.uk/directory/16/playgrounds"
    ],
    "feed": {
-    "type": "directory",
-    "index": [
-     "https://www.rotherham.gov.uk/directory/16/playgrounds/category/33"
-    ],
-    "follow": "/directory-record/\\d+/",
-    "name": "Name\\s*</dt>\\s*<dd[^>]*>([\\s\\S]*?)</dd>",
-    "coords": "map_marker_location_\\d+\" value=\"(-?\\d+\\.\\d+),(-?\\d+\\.\\d+)\""
+    "type": "jadu",
+    "directory": "https://www.rotherham.gov.uk/directory/16/playgrounds",
+    "category": 33,
+    "allPlay": true
    }
   },
   {
@@ -507,19 +504,10 @@
    ],
    "note": "Parks and playgrounds directory: 43 of its 120 parks list a playground (facility filter 152). The feed keeps parks whose facilities list a playground; positions are the park's map point, so they're marked approximate for the pin check.",
    "feed": {
-    "type": "directory",
-    "approximate": true,
-    "index": [
-     "https://www.croydon.gov.uk/libraries-leisure-and-culture/parks-and-open-spaces/parks-and-playgrounds/parks-and-playgrounds-directory?localgov_directories_facets_proximity_search%5B152%5D=152&page=0",
-     "https://www.croydon.gov.uk/libraries-leisure-and-culture/parks-and-open-spaces/parks-and-playgrounds/parks-and-playgrounds-directory?localgov_directories_facets_proximity_search%5B152%5D=152&page=1",
-     "https://www.croydon.gov.uk/libraries-leisure-and-culture/parks-and-open-spaces/parks-and-playgrounds/parks-and-playgrounds-directory?localgov_directories_facets_proximity_search%5B152%5D=152&page=2",
-     "https://www.croydon.gov.uk/libraries-leisure-and-culture/parks-and-open-spaces/parks-and-playgrounds/parks-and-playgrounds-directory?localgov_directories_facets_proximity_search%5B152%5D=152&page=3",
-     "https://www.croydon.gov.uk/libraries-leisure-and-culture/parks-and-open-spaces/parks-and-playgrounds/parks-and-playgrounds-directory?localgov_directories_facets_proximity_search%5B152%5D=152&page=4"
-    ],
-    "follow": "croydon\\.gov\\.uk/(?:node/3173|libraries-leisure-and-culture/parks-and-open-spaces/parks-and-playgrounds/parks-and-playgrounds-directory)/[a-z0-9-]+$",
-    "name": "<title>([^|<]+?) \\| Croydon Council",
-    "coords": "\"features\":\\[\\{\"type\":\"point\",\"lat\":([-0-9.]+),\"lon\":([-0-9.]+)",
-    "require": "<li>[^<]*(?:[Pp]layground|[Pp]lay area)[^<]*</li>"
+    "type": "localgov",
+    "directory": "https://www.croydon.gov.uk/libraries-leisure-and-culture/parks-and-open-spaces/parks-and-playgrounds/parks-and-playgrounds-directory",
+    "query": "localgov_directories_facets_proximity_search%5B152%5D=152",
+    "approximate": true
    }
   },
   {
@@ -546,40 +534,9 @@
    ],
    "note": "Parks in Bromley directory (128 parks), read from its A to Z pages; parks whose facilities list a children's play area are kept. Positions are the park's map point, so marked approximate for the pin check.",
    "feed": {
-    "type": "directory",
-    "approximate": true,
-    "index": [
-     "https://www.bromley.gov.uk/directory/26/a-to-z/A",
-     "https://www.bromley.gov.uk/directory/26/a-to-z/B",
-     "https://www.bromley.gov.uk/directory/26/a-to-z/C",
-     "https://www.bromley.gov.uk/directory/26/a-to-z/D",
-     "https://www.bromley.gov.uk/directory/26/a-to-z/E",
-     "https://www.bromley.gov.uk/directory/26/a-to-z/F",
-     "https://www.bromley.gov.uk/directory/26/a-to-z/G",
-     "https://www.bromley.gov.uk/directory/26/a-to-z/H",
-     "https://www.bromley.gov.uk/directory/26/a-to-z/I",
-     "https://www.bromley.gov.uk/directory/26/a-to-z/J",
-     "https://www.bromley.gov.uk/directory/26/a-to-z/K",
-     "https://www.bromley.gov.uk/directory/26/a-to-z/L",
-     "https://www.bromley.gov.uk/directory/26/a-to-z/M",
-     "https://www.bromley.gov.uk/directory/26/a-to-z/N",
-     "https://www.bromley.gov.uk/directory/26/a-to-z/O",
-     "https://www.bromley.gov.uk/directory/26/a-to-z/P",
-     "https://www.bromley.gov.uk/directory/26/a-to-z/Q",
-     "https://www.bromley.gov.uk/directory/26/a-to-z/R",
-     "https://www.bromley.gov.uk/directory/26/a-to-z/S",
-     "https://www.bromley.gov.uk/directory/26/a-to-z/T",
-     "https://www.bromley.gov.uk/directory/26/a-to-z/U",
-     "https://www.bromley.gov.uk/directory/26/a-to-z/V",
-     "https://www.bromley.gov.uk/directory/26/a-to-z/W",
-     "https://www.bromley.gov.uk/directory/26/a-to-z/X",
-     "https://www.bromley.gov.uk/directory/26/a-to-z/Y",
-     "https://www.bromley.gov.uk/directory/26/a-to-z/Z"
-    ],
-    "follow": "bromley\\.gov\\.uk/directory-record/\\d+/",
-    "name": "<h1[^>]*>([\\s\\S]*?)</h1>",
-    "coords": "map_marker_location_\\d+\" value=\"(-?\\d+\\.\\d+),(-?\\d+\\.\\d+)\"",
-    "require": "Facilities\\s*</dt>\\s*<dd[^>]*>[\\s\\S]{0,400}?[Pp]lay ?(?:area|ground)"
+    "type": "jadu",
+    "directory": "https://www.bromley.gov.uk/directory/26",
+    "approximate": true
    }
   },
   {

@@ -65,7 +65,7 @@ if (!SKIP.has('councils')) {
   for (const c of councils.filter((c) => c.feed)) {
     console.log(`Council list: ${c.council}`);
     const recs = await readFeed(c.feed).catch(() => []);
-    const hosts = new Set([...(c.sources ?? []), c.feed.url, c.feed.page, ...(c.feed.index ?? [])].filter(Boolean).map(host));
+    const hosts = new Set([...(c.sources ?? []), c.feed.url, c.feed.page, c.feed.directory, ...(c.feed.index ?? [])].filter(Boolean).map(host));
     const ours = parks.filter((p) => (p.operator ?? '').toLowerCase().includes(c.council.toLowerCase()) || p.sources.some((s) => hosts.has(host(s.url))));
     const r = { council: c.council, listed: recs.length, ours: ours.length, gone: [], renamed: [], fresh: [] };
     if (!recs.length) r.error = "Couldn't read the council's list (it may have moved or changed format): check the feed in council-sources.json.";
