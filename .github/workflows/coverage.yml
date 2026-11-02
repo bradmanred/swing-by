@@ -81,7 +81,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -b "$branch"
           git add src/content/playgrounds src/data/toilets.json
-          git commit -m "Add playgrounds found by the coverage check"
+          git commit -m "Add playgrounds found by the coverage check [skip toilets]"
           git push -u origin "$branch"
           grep -E '^(Added|Nothing added|- )' reports/coverage.md > body.md || true
           # The next councils to research by hand, biggest counties first (the whole list is in the coverage-report).
