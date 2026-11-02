@@ -12,7 +12,7 @@
 // Used by scripts/find-gaps.mjs (adds new council-listed playgrounds) and scripts/quarterly-check.mjs (spots changes).
 import { readFile } from 'node:fs/promises';
 import { gunzipSync } from 'node:zlib';
-import { describe, readJadu, readLocalGov } from './council-readers.mjs';
+import { describe, readJadu, readLocalGov, readPages } from './council-readers.mjs';
 
 const UA = { 'User-Agent': 'SwingBy/1.0 (https://swing-by.co.uk; reads council playground lists)' };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -41,8 +41,13 @@ export async function postcodePoints(postcodes) {
 }
 
 export async function readFeed(feed) {
-  if (feed.type === 'jadu' || feed.type === 'localgov') {
-    const recs = await (feed.type === 'jadu' ? readJadu(feed) : readLocalGov(feed));
+  if (feed.type === 'jadu' || feed.type === 'localgov' || feed.type === 'pages') {
+    const recs = await (feed.type === 'jadu' ? readJadu(feed) : feed.type === 'pages' ? readPages(feed) : readLocalGov(feed));
+    // A name shared by several parks is the directory's own heading (Sutton's "Parks and facilities"): use the name in
+    // the park's address instead.
+    const counts = new Map();
+    for (const r of recs) counts.set(r.name, (counts.get(r.name) ?? 0) + 1);
+    for (const r of recs) if (counts.get(r.name) > 2) r.name = slugName(r.url) || r.name;
     const pts = await postcodePoints(recs.filter((r) => r.lat == null).map((r) => r.postcode));
     for (const r of recs)
       if (r.lat == null && pts[r.postcode]) Object.assign(r, pts[r.postcode], { from: 'postcode' });
@@ -57,14 +62,13 @@ export async function readFeed(feed) {
     const pts = await postcodePoints(rows.map((r) => r.postcode?.toUpperCase().trim()));
     const out = [];
     for (const r of rows) {
+      if (!r.name) continue;
       const at = pts[r.postcode?.toUpperCase().trim()];
-      if (!r.name || !at) {
-        console.log(`  left out: ${r.name} (postcode ${r.postcode} not found)`);
-        continue;
-      }
-      out.push({ name: r.name, ...at, from: 'postcode', postcode: r.postcode, url: r.url || feed.page, description: r.text ?? '', ...describe(r.text ?? '') });
+      out.push({ name: r.name, lat: null, lng: null, ...(at && { ...at, from: 'postcode' }), postcode: r.postcode, url: r.url || feed.page, description: r.text ?? '', ...describe(r.text ?? '') });
     }
-    return out;
+    await placeByParkName(out, feed);
+    for (const r of out) if (r.lat == null) console.log(`  left out: ${r.name} (postcode ${r.postcode} not found, nor the park's name on OpenStreetMap)`);
+    return out.filter((r) => r.lat != null);
   }
   const recs = [];
   if (feed.type === 'directory') {
@@ -135,19 +139,23 @@ const normName = (s) => String(s ?? '').toLowerCase().replace(/&/g, 'and').repla
 
 /**
  * Parks whose page has neither a map point nor a postcode: find the park by name in the OpenStreetMap snapshot
- * (OSM_PARKS, set by the osm-snapshot action), near the council's other parks or near feed.near ({ lat, lng }).
+ * (OSM_PARKS and OSM_PLAYGROUNDS, set by the osm-snapshot action), near the council's other parks or near feed.near ({ lat, lng }).
  * Only an exact name match within 12 km counts. The playground pin is then snapped onto the play area as usual.
  */
 async function placeByParkName(recs, feed) {
   const todo = recs.filter((r) => r.lat == null);
   if (!todo.length || !process.env.OSM_PARKS) return;
-  let parks;
-  try {
-    const raw = await readFile(process.env.OSM_PARKS);
-    parks = JSON.parse((raw[0] === 0x1f ? gunzipSync(raw) : raw).toString()); // unpacked by the action, or still gzipped
-  } catch {
-    return;
-  }
+  const load = async (file) => {
+    try {
+      const raw = await readFile(file);
+      return JSON.parse((raw[0] === 0x1f ? gunzipSync(raw) : raw).toString()); // unpacked by the action, or still gzipped
+    } catch {
+      return [];
+    }
+  };
+  // Named parks, and named playgrounds too ("Ifield Road Playground" is mapped as the playground itself).
+  const parks = [...(await load(process.env.OSM_PARKS)), ...(process.env.OSM_PLAYGROUNDS ? (await load(process.env.OSM_PLAYGROUNDS)).filter((p) => p.tags?.name).map((p) => ({ ...p, name: p.tags.name })) : [])];
+  if (!parks.length) return;
   const placed = recs.filter((r) => r.lat != null);
   const centre = feed.near ?? (placed.length ? { lat: placed.reduce((a, r) => a + r.lat, 0) / placed.length, lng: placed.reduce((a, r) => a + r.lng, 0) / placed.length } : null);
   if (!centre) return;
