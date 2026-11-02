@@ -1,9 +1,9 @@
 {
   "name": "Memorial Park Playground",
   "region": "london",
-  "area": "Waltham Forest",
-  "lat": 51.51,
-  "lng": -0.03,
+  "area": "Valley, Waltham Forest",
+  "lat": 51.61432,
+  "lng": -0.01771,
   "ages": [
     "under-3",
     "3-6",
@@ -23,6 +23,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (approximate), play equipment and opening hours.",
+  "notConfirmed": "Exact position (approximate: mapped from the postcode), play equipment and opening hours.",
   "photo": null
 }

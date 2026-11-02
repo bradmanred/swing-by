@@ -1,9 +1,9 @@
 {
   "name": "The Highams Park Playground",
   "region": "london",
-  "area": "Waltham Forest",
-  "lat": 51.51,
-  "lng": -0.03,
+  "area": "Hatch Lane and Highams Park North, Waltham Forest",
+  "lat": 51.6109,
+  "lng": 0.0129,
   "ages": [
     "under-3",
     "3-6"
@@ -22,6 +22,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (approximate), play equipment and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
   "photo": null
 }

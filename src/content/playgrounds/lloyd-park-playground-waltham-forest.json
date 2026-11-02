@@ -1,9 +1,9 @@
 {
   "name": "Lloyd Park Playground",
   "region": "london",
-  "area": "Waltham Forest",
-  "lat": 51.51,
-  "lng": -0.03,
+  "area": "William Morris, Waltham Forest",
+  "lat": 51.59059,
+  "lng": -0.01852,
   "ages": [],
   "equipment": [
     "sk",
@@ -24,6 +24,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (approximate), play equipment and opening hours.",
+  "notConfirmed": "Exact position (approximate: mapped from the postcode), play equipment and opening hours.",
   "photo": null
 }

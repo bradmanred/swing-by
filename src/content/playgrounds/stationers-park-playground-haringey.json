@@ -1,9 +1,9 @@
 {
   "name": "Stationers Park Playground",
   "region": "london",
-  "area": "Haringey",
-  "lat": 51.51,
-  "lng": -0.03,
+  "area": "Stroud Green, Haringey",
+  "lat": 51.57892,
+  "lng": -0.11228,
   "ages": [],
   "equipment": [
     "mg"
@@ -23,6 +23,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (approximate), play equipment and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
   "photo": null
 }

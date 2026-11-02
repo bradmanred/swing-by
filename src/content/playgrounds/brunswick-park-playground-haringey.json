@@ -1,9 +1,9 @@
 {
   "name": "Brunswick Park Playground",
   "region": "london",
-  "area": "Haringey",
-  "lat": 51.51,
-  "lng": -0.03,
+  "area": "Seven Sisters, Haringey",
+  "lat": 51.58291,
+  "lng": -0.07553,
   "ages": [
     "under-3",
     "3-6"
@@ -25,6 +25,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (approximate), play equipment and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
   "photo": null
 }

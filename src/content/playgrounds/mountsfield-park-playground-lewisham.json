@@ -1,9 +1,9 @@
 {
   "name": "Mountsfield Park Playground",
   "region": "london",
-  "area": "Lewisham",
-  "lat": 51.51,
-  "lng": -0.03,
+  "area": "Rushey Green, Lewisham",
+  "lat": 51.44781,
+  "lng": -0.00866,
   "ages": [],
   "equipment": [
     "gym",
@@ -22,6 +22,6 @@
     }
   ],
   "checked": "2026-11-01",
-  "notConfirmed": "Exact position (approximate), play equipment and opening hours.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
   "photo": null
 }
