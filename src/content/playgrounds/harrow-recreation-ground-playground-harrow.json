@@ -1,0 +1,27 @@
+{
+  "name": "Harrow Recreation Ground Playground",
+  "region": "london",
+  "area": "Marlborough, Harrow",
+  "lat": 51.5834,
+  "lng": -0.34417,
+  "ages": [],
+  "equipment": [
+    "gym",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Harrow Council park with a children's playground. The council also lists basketball, bowling green, cricket, football, gardens, green gym, multi-use courts, rounders and tennis.",
+  "nearby": [],
+  "operator": "Harrow Council",
+  "sources": [
+    {
+      "label": "Harrow Council: Harrow Recreation Ground",
+      "url": "https://www.harrow.gov.uk/environment-parks/harrow-recreation-ground"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

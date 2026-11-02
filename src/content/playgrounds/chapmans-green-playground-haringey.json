@@ -1,0 +1,27 @@
+{
+  "name": "Chapmans Green Playground",
+  "region": "london",
+  "area": "Woodside, Haringey",
+  "lat": 51.60007,
+  "lng": -0.1038,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A well established park with tennis courts and a pavilion.",
+  "nearby": [],
+  "operator": "Haringey Council",
+  "sources": [
+    {
+      "label": "Haringey Council: Chapmans Green",
+      "url": "https://haringey.gov.uk/leisure-parks-culture/parks-greenspaces/parks-facilities-haringey/chapmans-green"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

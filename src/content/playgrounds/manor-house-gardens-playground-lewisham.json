@@ -1,0 +1,32 @@
+{
+  "name": "Manor House Gardens Playground",
+  "region": "london",
+  "area": "Lee Green, Lewisham",
+  "lat": 51.45676,
+  "lng": 0.00528,
+  "ages": [],
+  "equipment": [
+    "gym",
+    "mg"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "Lewisham Council park with a play area. The council also lists multi-sports ball courts, tennis courts, outdoor gym, a cafe, a lake, a fountain, a wild flower area, a walled flower garden, an ice-house, a dog exercise area, Toilets, including disabled facilities and The toilets are open Thursday–Saturday, 11am-4pm.",
+  "nearby": [],
+  "operator": "Lewisham Council (run by Glendale)",
+  "sources": [
+    {
+      "label": "Lewisham Council: Manor House Gardens",
+      "url": "https://lewisham.gov.uk/inmyarea/openspaces/parks/manor-house-gardens"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

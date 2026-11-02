@@ -1,0 +1,26 @@
+{
+  "name": "Leyton Sports Play Area",
+  "region": "london",
+  "area": "Leyton, Waltham Forest",
+  "lat": 51.56857,
+  "lng": -0.00967,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Waltham Forest Council playground at Brewster Road, with mini ball court, basketball goal, table tennis tables, scooter track, children’s food growing.",
+  "nearby": [],
+  "operator": "Waltham Forest Council",
+  "sources": [
+    {
+      "label": "Waltham Forest Council: our playgrounds",
+      "url": "https://www.walthamforest.gov.uk/libraries-arts-parks-and-leisure/parks-and-open-spaces/our-playgrounds"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

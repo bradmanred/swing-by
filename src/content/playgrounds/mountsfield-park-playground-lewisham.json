@@ -1,0 +1,27 @@
+{
+  "name": "Mountsfield Park Playground",
+  "region": "london",
+  "area": "Rushey Green, Lewisham",
+  "lat": 51.44781,
+  "lng": -0.00866,
+  "ages": [],
+  "equipment": [
+    "gym",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Lewisham Council park with a play area. The council also lists ball court, tennis courts, football pitch, outdoor gym, bandstand, meadow and ornamental garden.",
+  "nearby": [],
+  "operator": "Lewisham Council (run by Glendale)",
+  "sources": [
+    {
+      "label": "Lewisham Council: Mountsfield Park",
+      "url": "https://lewisham.gov.uk/inmyarea/openspaces/parks/mountsfield-park"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

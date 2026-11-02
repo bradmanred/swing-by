@@ -1,0 +1,30 @@
+{
+  "name": "Avery Hill Park Playground",
+  "region": "london",
+  "area": "Eltham, Greenwich",
+  "lat": 51.44872,
+  "lng": 0.07534,
+  "ages": [],
+  "equipment": [
+    "gym",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "Avery Hill Park is one of Greenwich's Green Flag Award-winning sites. There is a cafe with public toilets situated in the park, next to the children's playground.",
+  "nearby": [],
+  "operator": "Royal Borough of Greenwich",
+  "sources": [
+    {
+      "label": "Royal Borough of Greenwich: Avery Hill Park",
+      "url": "https://www.royalgreenwich.gov.uk/directory_record/3756/avery_hill_park"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

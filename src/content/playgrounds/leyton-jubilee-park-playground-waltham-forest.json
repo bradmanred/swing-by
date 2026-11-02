@@ -1,0 +1,28 @@
+{
+  "name": "Leyton Jubilee Park Playground",
+  "region": "london",
+  "area": "Leyton, Waltham Forest",
+  "lat": 51.56515,
+  "lng": -0.02483,
+  "ages": [],
+  "equipment": [
+    "cl"
+  ],
+  "access": [],
+  "facilities": [
+    "cf"
+  ],
+  "opens": "",
+  "description": "Waltham Forest Council park with a play area for all ages, including a pirate ship, and the KuKooLaLa café at the Marsh Lane entrance.",
+  "nearby": [],
+  "operator": "Waltham Forest Council",
+  "sources": [
+    {
+      "label": "Waltham Forest Council: Leyton Jubilee Park",
+      "url": "https://www.walthamforest.gov.uk/libraries-arts-parks-and-leisure/parks-and-open-spaces/leyton-jubilee-park"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

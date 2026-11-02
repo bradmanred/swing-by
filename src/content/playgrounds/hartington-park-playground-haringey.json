@@ -1,0 +1,26 @@
+{
+  "name": "Hartington Park Playground",
+  "region": "london",
+  "area": "Tottenham Hale, Haringey",
+  "lat": 51.59736,
+  "lng": -0.06574,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A green space in a very residential area of North Tottenham. The council also lists multi-use games area.",
+  "nearby": [],
+  "operator": "Haringey Council",
+  "sources": [
+    {
+      "label": "Haringey Council: Hartington Park",
+      "url": "https://haringey.gov.uk/leisure-parks-culture/parks-greenspaces/parks-facilities-haringey/hartington-park"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

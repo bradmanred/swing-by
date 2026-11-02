@@ -1,0 +1,31 @@
+{
+  "name": "Fordham Park Playground",
+  "region": "london",
+  "area": "Deptford, Lewisham",
+  "lat": 51.47718,
+  "lng": -0.03737,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "gym",
+    "sp",
+    "cl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Lewisham Council park with a play area and sandpit for children under 6. The council also lists a large climbing frame, a youth shelter, table tennis tables, an area for ball games, a trim trail, an informal football pitch, a cycle route, How to get into Fordham Park, Access to the park is via:, Pagnell Street, Achilles Street, Edward Street, Childeric Road and The park is open 24 hours.",
+  "nearby": [],
+  "operator": "Lewisham Council (run by Glendale)",
+  "sources": [
+    {
+      "label": "Lewisham Council: Fordham Park",
+      "url": "https://lewisham.gov.uk/inmyarea/openspaces/parks/fordham-park"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Stoneydown Park and Gardens Playground",
+  "region": "london",
+  "area": "High Street, Waltham Forest",
+  "lat": 51.58546,
+  "lng": -0.03776,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Waltham Forest Council park with hard court ball area, ornamental gardens, pavilion and under 7s and under 12s play areas.",
+  "nearby": [],
+  "operator": "Waltham Forest Council",
+  "sources": [
+    {
+      "label": "Waltham Forest Council: our other parks",
+      "url": "https://www.walthamforest.gov.uk/libraries-arts-parks-and-leisure/parks-and-open-spaces/our-other-parks"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

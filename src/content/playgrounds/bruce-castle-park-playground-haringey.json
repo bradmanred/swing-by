@@ -1,0 +1,30 @@
+{
+  "name": "Bruce Castle Park Playground",
+  "region": "london",
+  "area": "Bruce Castle, Haringey",
+  "lat": 51.60003,
+  "lng": -0.07555,
+  "ages": [],
+  "equipment": [
+    "mg",
+    "wp"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "Bruce Castle Park covers 8 hectares of parkland. Its rich history dates back to the early 11th century. The council also lists a multi-use games area, a picnic area and toilets – in the museum.",
+  "nearby": [],
+  "operator": "Haringey Council",
+  "sources": [
+    {
+      "label": "Haringey Council: Bruce Castle Park",
+      "url": "https://haringey.gov.uk/leisure-parks-culture/parks-greenspaces/parks-facilities-haringey/bruce-castle-park"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

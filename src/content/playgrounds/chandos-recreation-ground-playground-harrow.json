@@ -1,0 +1,26 @@
+{
+  "name": "Chandos Recreation Ground Playground",
+  "region": "london",
+  "area": "Edgware, Harrow",
+  "lat": 51.60467,
+  "lng": -0.28459,
+  "ages": [],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Harrow Council park with a children's playground. The council also lists changing facilities, cricket, football and green gym.",
+  "nearby": [],
+  "operator": "Harrow Council",
+  "sources": [
+    {
+      "label": "Harrow Council: Chandos Recreation Ground",
+      "url": "https://www.harrow.gov.uk/environment-parks/chandos-recreation-ground"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}

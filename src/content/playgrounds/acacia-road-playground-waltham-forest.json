@@ -1,0 +1,27 @@
+{
+  "name": "Acacia Road Playground",
+  "region": "london",
+  "area": "St James, Waltham Forest",
+  "lat": 51.5735,
+  "lng": -0.0306,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Waltham Forest Council playground, with under 5s play area.",
+  "nearby": [],
+  "operator": "Waltham Forest Council",
+  "sources": [
+    {
+      "label": "Waltham Forest Council: our playgrounds",
+      "url": "https://www.walthamforest.gov.uk/libraries-arts-parks-and-leisure/parks-and-open-spaces/our-playgrounds"
+    }
+  ],
+  "checked": "2026-11-01",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment and opening hours.",
+  "photo": null
+}
