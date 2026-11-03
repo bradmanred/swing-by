@@ -1,0 +1,28 @@
+{
+  "name": "Clissold Park Playground",
+  "region": "london",
+  "area": "Stoke Newington, Greater London",
+  "lat": 51.56611,
+  "lng": -0.09242,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Off Green Lanes.",
+  "nearby": [],
+  "operator": "Hackney Council",
+  "sources": [
+    {
+      "label": "Hackney Council: Clissold Park Playground",
+      "url": "https://www.hackney.gov.uk/libraries-parks-and-leisure/parks-and-green-spaces/parks-list/clissold-park-and-house"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/3811569428"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

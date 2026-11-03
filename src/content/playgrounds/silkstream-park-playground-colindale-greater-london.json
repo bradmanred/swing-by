@@ -1,0 +1,32 @@
+{
+  "name": "Silkstream Park Playground",
+  "region": "london",
+  "area": "Colindale, Greater London",
+  "lat": 51.59998,
+  "lng": -0.26193,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Toddler (2 to 6) and junior (5 to 10) play areas in Burnt Oak, from Barnet Council's parks list.",
+  "nearby": [],
+  "operator": "Barnet Council",
+  "sources": [
+    {
+      "label": "Barnet Council: Silkstream Park Playground",
+      "url": "https://open.barnet.gov.uk/dataset/parks-and-open-spaces-in-barnet-243ne"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/966871706"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
