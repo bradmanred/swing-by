@@ -1,0 +1,28 @@
+{
+  "name": "Hall Lane Play Area",
+  "region": "north-west",
+  "area": "Cronton, Knowsley",
+  "lat": 53.39216,
+  "lng": -2.75873,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "On Knowsley Council's list of children's play areas (Whiston and Cronton ward).",
+  "nearby": [],
+  "operator": "Knowsley Council",
+  "sources": [
+    {
+      "label": "Knowsley Council: Hall Lane Play Area",
+      "url": "https://www.knowsley.gov.uk/sites/default/files/2025-01/Play%20areas%20and%20sports%20facilities.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1313077627"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
