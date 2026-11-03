@@ -11,6 +11,9 @@ import { pins } from './pins.js';
 
 // Old playground address → the listing it was merged into. Add a line whenever two listings are merged.
 const MERGED = {
+  'playground-off-cornwallis-square-tufnell-park-greater-london': 'cornwallis-adventure-playground-holloway-greater-london',
+  'playground-off-packington-square-islington-greater-london': 'waterside-adventure-playground-islington-greater-london',
+  'crumbles-playground-barnsbury-greater-london': 'crumbles-castle-adventure-playground-barnsbury-greater-londo',
   'caledonian-park-barnsbury-greater-london': 'hayward-adventure-playground-barnsbury-greater-london',
   'playground-off-elton-place-highbury-greater-london': 'butterfield-green-playground-shacklewell-greater-london',
   'playground-off-parkview-avenue-brent-cross': 'claremont-park-playground-brent-cross-greater-london',

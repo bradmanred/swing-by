@@ -2,23 +2,31 @@
   "name": "Cape Adventure Playground",
   "region": "london",
   "area": "Crouch End, Greater London",
-  "lat": 51.57402,
-  "lng": -0.1225,
-  "ages": [],
-  "equipment": [],
+  "lat": 51.57404,
+  "lng": -0.12255,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [
+    "ad"
+  ],
   "access": [],
   "facilities": [],
   "opens": "",
-  "description": "A playground on OpenStreetMap near Parkland Walk, Crouch End. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "description": "An adventure playground at 85 Crouch Hill. Run by Awesome Adventure Play for children aged 6 and over who live or go to school in Islington (register with them first). Term time: Monday to Friday 3:15pm to 6:15pm; Saturday Family Play for all ages with a parent or carer, 11:30am to 4:30pm.",
   "nearby": [],
-  "operator": "Islington Council",
+  "operator": "Islington adventure playgrounds",
   "sources": [
     {
-      "label": "OpenStreetMap: Cape Adventure Playground",
+      "label": "Islington adventure playgrounds: Cape Adventure Playground",
+      "url": "https://awesomeadventureplay.org/playgrounds/cape/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
       "url": "https://www.openstreetmap.org/way/264021606"
     }
   ],
-  "checked": null,
-  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
   "photo": null
 }
