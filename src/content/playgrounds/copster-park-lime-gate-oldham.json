@@ -1,0 +1,32 @@
+{
+  "name": "Copster Park",
+  "region": "north-west",
+  "area": "Lime Gate, Oldham",
+  "lat": 53.5218,
+  "lng": -2.13741,
+  "ages": [],
+  "equipment": [
+    "bk",
+    "sw",
+    "sl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Oldham Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Oldham Council",
+  "sources": [
+    {
+      "label": "Oldham Council: Copster Park",
+      "url": "https://www.oldham.gov.uk/info/200275/parks/683/copster_park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1073616870"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

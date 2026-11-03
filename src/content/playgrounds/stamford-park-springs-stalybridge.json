@@ -1,0 +1,37 @@
+{
+  "name": "Stamford Park",
+  "region": "north-west",
+  "area": "Springs, Stalybridge",
+  "lat": 53.48872,
+  "lng": -2.06851,
+  "ages": [],
+  "equipment": [
+    "bs",
+    "bk",
+    "sw",
+    "sl",
+    "cl",
+    "spr"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Tameside Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Tameside Council",
+  "sources": [
+    {
+      "label": "Tameside Council: Stamford Park",
+      "url": "https://www.tameside.gov.uk/parks/playgrounds/StamfordPark"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1361434822"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
