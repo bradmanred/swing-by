@@ -1,0 +1,36 @@
+{
+  "name": "Mossley Park",
+  "region": "north-west",
+  "area": "Micklehurst, Mossley",
+  "lat": 53.51518,
+  "lng": -2.04368,
+  "ages": [],
+  "equipment": [
+    "bk",
+    "sw",
+    "sl",
+    "cl",
+    "rb",
+    "ss",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Tameside Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Tameside Council",
+  "sources": [
+    {
+      "label": "Tameside Council: Mossley Park",
+      "url": "https://www.tameside.gov.uk/parks/playgrounds/MossleyPark"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1451422044"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

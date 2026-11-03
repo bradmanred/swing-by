@@ -1,0 +1,32 @@
+{
+  "name": "Dunwood Park",
+  "region": "north-west",
+  "area": "Wood End, Shaw",
+  "lat": 53.58574,
+  "lng": -2.09091,
+  "ages": [],
+  "equipment": [
+    "cl"
+  ],
+  "access": [],
+  "facilities": [
+    "cf"
+  ],
+  "opens": "",
+  "description": "A playground on Oldham Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Oldham Council",
+  "sources": [
+    {
+      "label": "Oldham Council: Dunwood Park",
+      "url": "https://www.oldham.gov.uk/info/200275/parks/687/dunwood_park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/523000664"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

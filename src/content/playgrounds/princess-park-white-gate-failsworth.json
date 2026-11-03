@@ -1,0 +1,35 @@
+{
+  "name": "Princess Park",
+  "region": "north-west",
+  "area": "White Gate, Failsworth",
+  "lat": 53.52713,
+  "lng": -2.16385,
+  "ages": [],
+  "equipment": [
+    "bk",
+    "sw",
+    "sl",
+    "rb",
+    "gym",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Oldham Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Oldham Council",
+  "sources": [
+    {
+      "label": "Oldham Council: Princess Park",
+      "url": "https://www.oldham.gov.uk/info/200275/parks/701/princess_park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/953991813"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

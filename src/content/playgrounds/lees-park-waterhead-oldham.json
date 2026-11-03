@@ -1,0 +1,31 @@
+{
+  "name": "Lees Park",
+  "region": "north-west",
+  "area": "Waterhead, Oldham",
+  "lat": 53.54482,
+  "lng": -2.06889,
+  "ages": [],
+  "equipment": [
+    "bs",
+    "bk"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Oldham Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Oldham Council",
+  "sources": [
+    {
+      "label": "Oldham Council: Lees Park",
+      "url": "https://www.oldham.gov.uk/info/200275/parks/695/lees_park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/584024209"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

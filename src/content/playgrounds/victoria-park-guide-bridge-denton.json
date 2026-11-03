@@ -1,0 +1,37 @@
+{
+  "name": "Victoria Park",
+  "region": "north-west",
+  "area": "Guide Bridge, Denton",
+  "lat": 53.45436,
+  "lng": -2.11621,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "ss",
+    "mb",
+    "spr"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Tameside Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Tameside Council",
+  "sources": [
+    {
+      "label": "Tameside Council: Victoria Park",
+      "url": "https://www.tameside.gov.uk/parks/playgrounds/victoria"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/258343842"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Stoneleigh Park",
+  "region": "north-west",
+  "area": "Cowlishaw, Oldham",
+  "lat": 53.55409,
+  "lng": -2.09539,
+  "ages": [
+    "teens"
+  ],
+  "equipment": [
+    "bs",
+    "bk",
+    "sw",
+    "sl",
+    "sp",
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Oldham Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Oldham Council",
+  "sources": [
+    {
+      "label": "Oldham Council: Stoneleigh Park",
+      "url": "https://www.oldham.gov.uk/info/200275/parks/706/stoneleigh_park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/909126876"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
