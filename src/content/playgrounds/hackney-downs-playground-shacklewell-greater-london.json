@@ -1,0 +1,30 @@
+{
+  "name": "Hackney Downs Playground",
+  "region": "london",
+  "area": "Shacklewell, Greater London",
+  "lat": 51.55354,
+  "lng": -0.06155,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "Its play area was upgraded with new equipment and landscaping. The park has accessible toilets.",
+  "nearby": [],
+  "operator": "Hackney Council",
+  "sources": [
+    {
+      "label": "Hackney Council: Hackney Downs Playground",
+      "url": "https://www.hackney.gov.uk/libraries-parks-and-leisure/parks-and-green-spaces/parks-list/hackney-downs"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/373404375"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours and parking.",
+  "photo": null
+}

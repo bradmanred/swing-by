@@ -11,6 +11,10 @@ import { pins } from './pins.js';
 
 // Old playground address → the listing it was merged into. Add a line whenever two listings are merged.
 const MERGED = {
+  'playground-off-elton-place-highbury-greater-london': 'butterfield-green-playground-shacklewell-greater-london',
+  'playground-off-parkview-avenue-brent-cross': 'claremont-park-playground-brent-cross-greater-london',
+  'playground-off-prince-charles-drive-hendon-central': 'sturgess-park-playground-hendon-central-greater-london',
+  'playground-off-hilltop-gardens-hendon': 'sunny-hill-park-playground-hendon-greater-london',
   'playground-off-rowley-avenue-blendon-greater-london': 'penhill-park-playground-blendon-greater-london',
   'riverside-walk-playground-albany-park-greater-london': 'riverside-walk-playground-albany-park-greater-london-2',
   'motspur-park-playground-motspur-park-greater-london': 'blagdon-road-open-space-motspur-park-greater-london',

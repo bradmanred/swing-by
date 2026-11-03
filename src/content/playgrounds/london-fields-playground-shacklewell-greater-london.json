@@ -1,0 +1,30 @@
+{
+  "name": "London Fields Playground",
+  "region": "london",
+  "area": "Shacklewell, Greater London",
+  "lat": 51.54271,
+  "lng": -0.06301,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "Two play areas, on the east side by Eleanor Road. The park has accessible toilets.",
+  "nearby": [],
+  "operator": "Hackney Council",
+  "sources": [
+    {
+      "label": "Hackney Council: London Fields Playground",
+      "url": "https://www.hackney.gov.uk/libraries-parks-and-leisure/parks-and-green-spaces/parks-list/london-fields"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/957877949"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours and parking.",
+  "photo": null
+}
