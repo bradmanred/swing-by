@@ -7,7 +7,8 @@
 // no map point are placed from their postcode; ones with neither are left out.
 // type 'list' is for councils whose playgrounds are all on one page with no machine-readable version (Bexley's table,
 // Westminster's playgrounds page): the rows are copied into a CSV in src/data/council-lists/ (name, postcode, url,
-// optionally park, the park's name as mapped on OpenStreetMap, for rows without a postcode, and optionally text: the council's own description, used as the playground's description and from which equipment and facilities are picked out), and
+// optionally park, the park's name as mapped on OpenStreetMap, for rows without a postcode, optionally lat and lng,
+// the park's own point, and optionally text: the council's own description, used as the playground's description and from which equipment and facilities are picked out), and
 // "page" names the council page they came from. Each row is placed from its postcode, then snapped onto the play area.
 // Used by scripts/find-gaps.mjs (adds new council-listed playgrounds) and scripts/quarterly-check.mjs (spots changes).
 import { readFile } from 'node:fs/promises';
@@ -68,8 +69,11 @@ export async function readFeed(feed) {
     const out = [];
     for (const r of rows) {
       if (!r.name) continue;
-      const at = pts[r.postcode?.toUpperCase().trim()];
-      out.push({ name: r.name, park: r.park || undefined, lat: null, lng: null, ...(at && { ...at, from: 'postcode' }), postcode: r.postcode, url: r.url || feed.page, description: r.text ?? '', ...describe(r.text ?? '') });
+      // A park point given in the CSV (lat, lng) wins: for parks that share a name (Sandwell's two Victoria Parks) or
+      // have no postcode that can be looked up. It is the park's point, so the pin is snapped onto its play area.
+      const given = Number(r.lat) && Number(r.lng) ? { lat: Number(r.lat), lng: Number(r.lng), from: 'park' } : null;
+      const at = given ?? pts[r.postcode?.toUpperCase().trim()];
+      out.push({ name: r.name, park: r.park || undefined, lat: null, lng: null, ...(at && { from: 'postcode', ...at }), postcode: r.postcode, url: r.url || feed.page, description: r.text ?? '', ...describe(r.text ?? '') });
     }
     await placeByParkName(out, feed);
     for (const r of out) if (r.lat == null) console.log(`  left out: ${r.name} (postcode ${r.postcode} not found, nor the park's name on OpenStreetMap)`);
