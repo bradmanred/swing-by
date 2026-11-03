@@ -1,10 +1,10 @@
-// Cloudflare Worker: GitHub sign-in for Decap CMS at /api/auth and /api/callback, the next-area vote at /api/vote,
+// Cloudflare Worker: GitHub sign-in for Decap CMS at /api/auth and /api/callback, home page suggestions at /api/feedback,
 // parent photos at /api/photos, parents' equipment reports at /api/equipment, parents' pin corrections at /api/pins; everything else is the static site. Also redirects www to the bare domain.
-// Needs GITHUB_CLIENT_ID and GITHUB_CLIENT_SECRET set as variables and secrets on the Worker, the VOTES and PHOTOS_DB
-// D1 bindings, and a MOD_TOKEN secret for approving photos.
+// Needs GITHUB_CLIENT_ID and GITHUB_CLIENT_SECRET set as variables and secrets on the Worker, the PHOTOS_DB
+// D1 binding, and a MOD_TOKEN secret for approving photos.
 import { onRequest as auth } from '../functions/api/auth.js';
 import { onRequest as callback } from '../functions/api/callback.js';
-import { vote } from './vote.js';
+import { feedback } from './feedback.js';
 import { photos } from './photos.js';
 import { equipment } from './equipment.js';
 import { pins } from './pins.js';
@@ -49,7 +49,7 @@ export default {
     }
     if (pathname === '/api/auth') return auth({ request, env });
     if (pathname === '/api/callback') return callback({ request, env });
-    if (pathname === '/api/vote' || pathname === '/api/vote/suggestions') return vote({ request, env, pathname });
+    if (pathname === '/api/feedback' || pathname === '/api/feedback/latest') return feedback({ request, env, pathname });
     if (pathname === '/api/photos' || pathname.startsWith('/api/photos/')) return photos({ request, env, pathname });
     if (pathname === '/api/equipment' || pathname.startsWith('/api/equipment/')) return equipment({ request, env, pathname });
     if (pathname === '/api/pins' || pathname.startsWith('/api/pins/')) return pins({ request, env, pathname });

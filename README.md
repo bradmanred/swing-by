@@ -10,9 +10,8 @@ Find a playground worth the trip. Swing By lists playgrounds with who runs them,
 - `src/pages/playgrounds/in/` and `src/lib/places.ts`: the browse-by-area pages (`/playgrounds/in/`): one for each region, and one for each town or area with at least 5 playgrounds, so people can find "playgrounds in Chelmsford" in a search. They're built from each playground's `region` and `area`, which must match exactly, so "Abbots Langley" and "Abbots Langley, Three Rivers" get separate pages. Use one spelling per place to keep them together.
 - Search engines: `@astrojs/sitemap` writes the sitemap at build time, `public/robots.txt` points to it, and `src/layouts/Base.astro` adds the canonical link, share tags (the picture is `public/og-default.png`) and optional structured data. Pages with `noindex` (moderator, My parks, advanced search) are kept out of both.
 - `public/admin/`: the content editor (Decap CMS).
-- `worker/` and `functions/api/`: GitHub sign-in for the content editor, and the "Where should we go next?" vote (`worker/vote.js`), run on Cloudflare.
-- `src/data/next-areas.json`: the areas people can vote for. Edit this list to change the options.
-- `db/votes.sql`: the table behind the vote, in the Cloudflare D1 database `swing-by-votes`.
+- `worker/` and `functions/api/`: GitHub sign-in for the content editor, and the home page's feedback form (`worker/feedback.js`), run on Cloudflare.
+- `db/feedback.sql`: the table behind the feedback form, in the Cloudflare D1 database `swing-by-photos`.
 - `tests/a11y.mjs`: automated accessibility (axe, WCAG 2.2 AA) and smoke checks.
 
 ## Rules for content
@@ -62,17 +61,11 @@ The domain's DNS is on Cloudflare, in the same account as the Worker. `routes` i
    - If signing in sends you to a GitHub page with `client_id=undefined` in the address, the Worker can't see `GITHUB_CLIENT_ID`: add it again.
 5. Open `https://<your-site-link>/admin/` and sign in with GitHub. Edits are saved as pull requests for review before they go live.
 
-## The next-area vote
+## Site feedback
 
-Votes are stored in the D1 database `swing-by-votes`, bound to the Worker as `VOTES` in `wrangler.jsonc`. Each browser gets one vote (remembered with a cookie) and can change it. To see the totals, open `/api/vote` on the site, or in the Cloudflare dashboard go to Storage & databases > D1 > swing-by-votes and run:
+The home page asks "How could we make Swing By better?". Suggestions are stored in the `feedback` table (`db/feedback.sql`) of the D1 database `swing-by-photos`, through `worker/feedback.js`, and are never shown on the site. Moderators read the newest 200 at `/moderate/`, below the photos. Previews save to `swing-by-photos-preview`. A hidden field catches most spam bots, and nobody is asked for a name or email address.
 
-```sql
-SELECT area, COUNT(*) AS votes FROM votes GROUP BY area ORDER BY votes DESC;
-```
-
-Branch previews use a separate test database, `swing-by-votes-preview` (the `previews` block in `wrangler.jsonc`), so votes cast while testing a pull request don't count.
-
-To try the vote on your computer: `npx wrangler d1 execute swing-by-votes --local --file db/votes.sql`, then `npm run build` and `npx wrangler dev`.
+The old "Where should we go next?" vote was removed in November 2026. Its votes are still in the D1 database `swing-by-votes`, which nothing uses any more and can be deleted from the Cloudflare dashboard once you don't need them.
 
 ## Parent photos
 

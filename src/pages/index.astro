@@ -2,7 +2,6 @@
 import Base from '../layouts/Base.astro';
 import { allParks, clientPark, ICON, km, L, regions } from '../lib/parks';
 import { cardHTML, fmtMiles } from '../lib/card';
-import nextAreas from '../data/next-areas.json';
 
 const parks = await allParks();
 const data = parks.map(clientPark);
@@ -156,45 +155,31 @@ const ages = [
     <a class="tile r" href="/my-parks/"><strong><span aria-hidden="true">🏅</span> My parks</strong><span>Your favourites, plus every park you've ticked off and rated.</span></a>
   </section>
 
-  <section class="panel vote" aria-labelledby="vote-title">
+  <section class="panel feedback" aria-labelledby="feedback-title">
     <div>
-      <h2 id="vote-title">Not near you yet?</h2>
-      <p>We check every playground against official sources, so we add one area at a time. Tell us where to go next and we'll start with the most wanted.</p>
+      <h2 id="feedback-title">How could we make Swing By better?</h2>
+      <p>Something missing, something annoying, a place we should cover next, or a feature you'd love? Tell us. Every suggestion is read, and it's what decides what we work on.</p>
     </div>
-    <form id="vote" action="/api/vote" method="post">
-      <fieldset>
-        <legend>Pick one area</legend>
-        <div class="vote-options">
-          {nextAreas.areas.map((a) => (
-            <label class="chk"><input type="radio" name="area" value={a.id} required /> {a.name}</label>
-          ))}
-        </div>
-      </fieldset>
-      <div class="vote-other" id="vote-other">
-        <label for="vote-other-text">If somewhere else, where?</label>
-        <input id="vote-other-text" name="other" type="text" maxlength="60" autocomplete="off" placeholder="A county, town or area" aria-describedby="vote-other-hint" />
-        <p class="hint" id="vote-other-hint">We'll only use this to plan where to go next. It isn't shown on the site.</p>
-      </div>
+    <form id="feedback" action="/api/feedback" method="post">
+      <label for="feedback-text">Your suggestion</label>
+      <textarea id="feedback-text" name="message" rows="4" maxlength="1000" required aria-describedby="feedback-hint"></textarea>
+      <p class="hint" id="feedback-hint">Please don't include your name, email or other personal details. Suggestions aren't shown on the site.</p>
+      <div class="hp" aria-hidden="true"><label for="feedback-website">Leave this empty</label><input id="feedback-website" name="website" type="text" tabindex="-1" autocomplete="off" /></div>
       <div class="row" style="align-items:center">
-        <button class="btn btn-blue" type="submit">Cast my vote</button>
-        <span class="vote-note">One vote per family. You'll see the results once you've voted.</span>
+        <button class="btn btn-blue" type="submit">Send suggestion</button>
       </div>
-      <p class="hint" id="vote-msg" role="status"></p>
+      <p class="hint" id="feedback-msg" role="status"></p>
     </form>
-    <div id="vote-results" hidden>
-      <p id="vote-summary" tabindex="-1"></p>
-      <ol class="vote-bars" id="vote-bars"></ol>
-      <button class="btn" type="button" id="vote-change">Change my vote</button>
-    </div>
+    <p id="feedback-thanks" tabindex="-1" hidden><strong>Thank you!</strong> We've got your suggestion.</p>
   </section>
 
   <script type="application/json" id="parks-data" set:html={JSON.stringify({ parks: data, towns })} />
   <script>
     import { startFinder } from '../scripts/finder';
-    import { startVote } from '../scripts/vote';
+    import { startFeedback } from '../scripts/feedback';
     import { summerFilters } from '../scripts/finder';
     summerFilters();
     startFinder();
-    startVote();
+    startFeedback();
   </script>
 </Base>
