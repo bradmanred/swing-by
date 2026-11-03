@@ -1,0 +1,39 @@
+{
+  "name": "Hayward Adventure Playground",
+  "region": "london",
+  "area": "Barnsbury, Greater London",
+  "lat": 51.54625,
+  "lng": -0.11984,
+  "ages": [
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "ad"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "An inclusive adventure playground on Market Road for children and young people with special educational needs and disabilities, run by the charity KIDS. Places are by registration or referral: after-school club Monday to Thursday and Saturday club for ages 6 to 15, with teenage and youth clubs too.",
+  "nearby": [],
+  "operator": "KIDS",
+  "sources": [
+    {
+      "label": "KIDS: Hayward Adventure Playground",
+      "url": "https://www.kids.org.uk/services/hayward-adventure-playground/"
+    },
+    {
+      "label": "Islington Council: adventure playgrounds",
+      "url": "https://islington.gov.uk/children-and-families/things-to-do/adventure-playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: Hayward Adventure Playground",
+      "url": "https://www.openstreetmap.org/way/87685649"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), equipment and session times.",
+  "photo": null
+}

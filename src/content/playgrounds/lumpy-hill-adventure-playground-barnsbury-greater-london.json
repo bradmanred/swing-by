@@ -1,0 +1,37 @@
+{
+  "name": "Lumpy Hill Adventure Playground",
+  "region": "london",
+  "area": "Barnsbury, Greater London",
+  "lat": 51.54615,
+  "lng": -0.12098,
+  "ages": [
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "ad"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "An adventure playground at 15 Market Road. Run by Islington Council for children aged 6 and over while it finds a long-term provider; register with the council first. Summer holidays: weekdays 10:30am to 5:30pm, with a free meal. Term-time sessions not yet confirmed.",
+  "nearby": [],
+  "operator": "Islington Council",
+  "sources": [
+    {
+      "label": "Islington Council: Lumpy Hill Adventure Playground",
+      "url": "https://findyour.islington.gov.uk/kb5/islington/directory/service.page?id=9hCaqHpJiVE"
+    },
+    {
+      "label": "Islington Council: adventure playgrounds",
+      "url": "https://islington.gov.uk/children-and-families/things-to-do/adventure-playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: Lumpy Hill Adventure Playground",
+      "url": "https://www.openstreetmap.org/way/260462113"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), equipment and session times.",
+  "photo": null
+}
