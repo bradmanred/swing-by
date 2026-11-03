@@ -1,0 +1,28 @@
+{
+  "name": "Allens Gardens Playground",
+  "region": "london",
+  "area": "Stamford Hill, Greater London",
+  "lat": 51.56824,
+  "lng": -0.07817,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground in Allens Gardens, on Hackney Council's list of parks with play areas.",
+  "nearby": [],
+  "operator": "Hackney Council",
+  "sources": [
+    {
+      "label": "Hackney Council: Allens Gardens Playground",
+      "url": "https://www.hackney.gov.uk/libraries-parks-and-leisure/parks-and-green-spaces/parks-list/allens-gardens"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/759843357"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Millfields Park Playground",
+  "region": "london",
+  "area": "Homerton, Greater London",
+  "lat": 51.55806,
+  "lng": -0.04422,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "Off Chatsworth Road. The park has accessible toilets.",
+  "nearby": [],
+  "operator": "Hackney Council",
+  "sources": [
+    {
+      "label": "Hackney Council: Millfields Park Playground",
+      "url": "https://www.hackney.gov.uk/libraries-parks-and-leisure/parks-and-green-spaces/parks-list/millfields-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/924399687"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours and parking.",
+  "photo": null
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Basing Hill Park Playground",
+  "region": "london",
+  "area": "Golders Green, Greater London",
+  "lat": 51.56756,
+  "lng": -0.20227,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Junior (5 to 10) and senior (7 to 14) play areas in Childs Hill, from Barnet Council's parks list.",
+  "nearby": [],
+  "operator": "Barnet Council",
+  "sources": [
+    {
+      "label": "Barnet Council: Basing Hill Park Playground",
+      "url": "https://open.barnet.gov.uk/dataset/parks-and-open-spaces-in-barnet-243ne"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1163495088"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
