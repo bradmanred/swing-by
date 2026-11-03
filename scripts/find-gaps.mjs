@@ -23,6 +23,7 @@
 // OpenStreetMap page as the source, and the OpenStreetMap credit. Ones tagged private or indoor, or at schools,
 // pubs, hotels and holiday parks, are left out, as are ones within 150 m of a playground we list.
 // Run by .github/workflows/coverage.yml.
+import { countyOf } from './counties.mjs';
 import { SAME_M, osmIds, samePlace } from './same-place.mjs';
 import { mkdir, readFile, readdir, unlink, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
@@ -166,6 +167,44 @@ function snap(rec, approximate) {
   return 'osm';
 }
 
+// The snapshot's public playgrounds in one county, without Overpass. Each ~5 km grid square is first given a county
+// from one of its playgrounds (one postcodes.io lookup per square, kept for the whole run), then the playgrounds we
+// don't list in that county's squares and their neighbours are looked up one by one, as Overpass's would be. Listed
+// ones are counted by their square's county, which is close enough for the coverage figures.
+const cellCounty = new Map();
+const square = (p) => `${Math.floor(p.lat * 20)},${Math.floor(p.lng * 12)}`;
+async function fromSnapshot(name) {
+  const pub = SNAP.filter((p) => p.lat != null && isPublic(p.tags ?? {}));
+  const bySquare = new Map();
+  for (const p of pub) bySquare.set(square(p), [...(bySquare.get(square(p)) ?? []), p]);
+  const todo = [...bySquare.keys()].filter((k) => !cellCounty.has(k));
+  const where = await lookup(todo.map((k) => bySquare.get(k)[0]));
+  todo.forEach((k, i) => cellCounty.set(k, countyOf(where[i])));
+  const near = (k) => {
+    const [y, x] = k.split(',').map(Number);
+    for (let a = -1; a <= 1; a++) for (let b = -1; b <= 1; b++) if (cellCounty.get(`${y + a},${x + b}`) === name) return true;
+    return false;
+  };
+  const osm = [], missing = [];
+  const maybe = [];
+  for (const [k, ps] of bySquare) {
+    if (!near(k)) continue;
+    for (const p of ps) {
+      if (listed(p)) {
+        if (cellCounty.get(k) === name) osm.push(p);
+      } else maybe.push(p);
+    }
+  }
+  const pcs = await lookup(maybe);
+  maybe.forEach((p, i) => {
+    if (countyOf(pcs[i]) !== name) return;
+    p.pc = pcs[i];
+    osm.push(p);
+    missing.push(p);
+  });
+  return { osm, missing };
+}
+
 // 1. OpenStreetMap, county by county.
 const PROGRESS = '.coverage-progress.json';
 const SCAN_MS = Number(process.env.SCAN_MINUTES || 0) * 60000;
@@ -188,17 +227,23 @@ for (const a of areas) {
     : `(area["boundary"="ceremonial"]["name"~"^(County |City of )?${a.name}$"];area["boundary"="administrative"]["admin_level"="6"]["name"~"^(County |City of )?${a.name}$"];)`;
   console.log(`${a.name}…`);
   const els = await overpass(`[out:json][timeout:600][maxsize:1073741824];${sel}->.a;nwr[leisure=playground](area.a);out center tags;`);
-  if (!els) {
+  let osm, missing;
+  if (els) {
+    osm = els
+      .map((e) => ({ id: `${e.type}/${e.id}`, lat: e.lat ?? e.center?.lat, lng: e.lon ?? e.center?.lon, tags: e.tags ?? {} }))
+      .filter((p) => p.lat != null && isPublic(p.tags));
+    missing = osm.filter((p) => !listed(p));
+    // Which council each missing playground is in.
+    const where = await lookup(missing);
+    missing.forEach((p, i) => (p.pc = where[i]));
+  } else if (SNAP.length) {
+    // Overpass is often overloaded. The saved snapshot has the same playgrounds; sort them into counties instead.
+    console.log(`  Overpass couldn't be reached, so using the saved OpenStreetMap snapshot for ${a.name}`);
+    ({ osm, missing } = await fromSnapshot(a.name));
+  } else {
     results.push({ ...a, error: 'OpenStreetMap could not be reached' });
     continue;
   }
-  const osm = els
-    .map((e) => ({ id: `${e.type}/${e.id}`, lat: e.lat ?? e.center?.lat, lng: e.lon ?? e.center?.lon, tags: e.tags ?? {} }))
-    .filter((p) => p.lat != null && isPublic(p.tags));
-  const missing = osm.filter((p) => !listed(p));
-  // Which council each missing playground is in.
-  const where = await lookup(missing);
-  missing.forEach((p, i) => (p.pc = where[i]));
   results.push({ ...a, osm: osm.length, covered: osm.length - missing.length, missing });
   console.log(`  ${osm.length} public playgrounds on OpenStreetMap, ${missing.length} not on Swing By`);
   await sleep(5000);
