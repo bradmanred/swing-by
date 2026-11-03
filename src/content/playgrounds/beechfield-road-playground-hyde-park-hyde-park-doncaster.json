@@ -1,0 +1,33 @@
+{
+  "name": "Beechfield Road Playground, Hyde Park",
+  "region": "yorkshire",
+  "area": "Hyde Park, Doncaster",
+  "lat": 53.51809,
+  "lng": -1.12945,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Junior play area, multi-use games area, on Doncaster Council's list of local parks and outdoor spaces (Beechfield Road, Hyde Park).",
+  "nearby": [],
+  "operator": "City of Doncaster Council",
+  "sources": [
+    {
+      "label": "City of Doncaster Council: Beechfield Road Playground, Hyde Park",
+      "url": "https://doncaster.gov.uk/services/culture-leisure-tourism/parks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/273312094"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

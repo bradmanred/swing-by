@@ -1,0 +1,35 @@
+{
+  "name": "Edlington Rec Playground",
+  "region": "yorkshire",
+  "area": "New Edlington, Conisbrough",
+  "lat": 53.48494,
+  "lng": -1.19298,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sk",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Toddler and junior play areas, multi-use games area, skate park, BMX track, on Doncaster Council's list of local parks and outdoor spaces (Auburn Road, Edlington).",
+  "nearby": [],
+  "operator": "City of Doncaster Council",
+  "sources": [
+    {
+      "label": "City of Doncaster Council: Edlington Rec Playground",
+      "url": "https://doncaster.gov.uk/services/culture-leisure-tourism/parks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1450960163"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

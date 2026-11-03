@@ -1,0 +1,31 @@
+{
+  "name": "North Street Playground, Hyde Park",
+  "region": "yorkshire",
+  "area": "Hyde Park, Doncaster",
+  "lat": 53.51473,
+  "lng": -1.12609,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Toddler play area, on Doncaster Council's list of local parks and outdoor spaces (North Street, Hyde Park).",
+  "nearby": [],
+  "operator": "City of Doncaster Council",
+  "sources": [
+    {
+      "label": "City of Doncaster Council: North Street Playground, Hyde Park",
+      "url": "https://doncaster.gov.uk/services/culture-leisure-tourism/parks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1040666270"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
