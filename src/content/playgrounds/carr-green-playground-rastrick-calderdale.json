@@ -1,0 +1,30 @@
+{
+  "name": "Carr Green Playground",
+  "region": "yorkshire",
+  "area": "Rastrick, Calderdale",
+  "lat": 53.68627,
+  "lng": -1.79007,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A fenced play area at Carr Green, Carr Green (Brighouse), from Calderdale Council's draft dogs exclusion order (2022).",
+  "nearby": [],
+  "operator": "Calderdale Council",
+  "sources": [
+    {
+      "label": "Calderdale Council: Carr Green Playground",
+      "url": "https://new.calderdale.gov.uk/sites/default/files/2023-05/Draft-Dogs-Exclusion-Schedule-2022.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/421859650"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

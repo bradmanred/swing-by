@@ -1,0 +1,30 @@
+{
+  "name": "Boxhall Road Playground",
+  "region": "yorkshire",
+  "area": "Salterhebble, Elland",
+  "lat": 53.68522,
+  "lng": -1.83894,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A fenced play area at Boxhall Road, Elland (Elland), from Calderdale Council's draft dogs exclusion order (2022).",
+  "nearby": [],
+  "operator": "Calderdale Council",
+  "sources": [
+    {
+      "label": "Calderdale Council: Boxhall Road Playground",
+      "url": "https://new.calderdale.gov.uk/sites/default/files/2023-05/Draft-Dogs-Exclusion-Schedule-2022.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1059593128"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
