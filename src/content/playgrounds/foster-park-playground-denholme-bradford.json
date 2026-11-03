@@ -1,0 +1,28 @@
+{
+  "name": "Foster Park Playground",
+  "region": "yorkshire",
+  "area": "Denholme, Bradford",
+  "lat": 53.80274,
+  "lng": -1.89196,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A children's play area in Foster Park, on Bradford Council's parks site.",
+  "nearby": [],
+  "operator": "City of Bradford Council",
+  "sources": [
+    {
+      "label": "City of Bradford Council: Foster Park Playground",
+      "url": "https://bradforddistrictparks.org/park/foster-park/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/104736018"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
