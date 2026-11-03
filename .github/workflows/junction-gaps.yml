@@ -17,6 +17,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  actions: write # to start the build checks on the branch
 concurrency:
   group: junction-gaps
   cancel-in-progress: false
@@ -54,6 +55,8 @@ jobs:
           git add src/content/playgrounds src/data/toilets.json src/data/coverage.json
           git commit -m "Fill empty junctions with playgrounds from OpenStreetMap [skip toilets]"
           git push -u origin "$branch"
+          # Commits pushed by a workflow don't start other workflows, so start the build and accessibility checks here.
+          gh workflow run ci.yml --ref "$branch" || echo "::warning title=Fill empty junctions::Couldn't start the build checks; re-run them from the pull request."
           if [ "${GITHUB_REF_NAME}" = "main" ]; then
             grep -vE '^# ' reports/junction-gaps.md > body.md
             gh pr create --base main --head "$branch" --title "Fill empty junctions with playgrounds" --body-file body.md \

@@ -23,6 +23,7 @@
 // OpenStreetMap page as the source, and the OpenStreetMap credit. Ones tagged private or indoor, or at schools,
 // pubs, hotels and holiday parks, are left out, as are ones within 150 m of a playground we list.
 // Run by .github/workflows/coverage.yml.
+import { SAME_M, osmIds, samePlace } from './same-place.mjs';
 import { mkdir, readFile, readdir, unlink, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { readFeed } from './council-feeds.mjs';
@@ -30,7 +31,6 @@ import { readFeed } from './council-feeds.mjs';
 const DIR = 'src/content/playgrounds';
 const UA = { 'User-Agent': 'SwingBy/1.0 (https://swing-by.co.uk; finds playgrounds missing from the site)' };
 const OVERPASS = ['https://overpass-api.de/api/interpreter', 'https://overpass.kumi.systems/api/interpreter', 'https://overpass.private.coffee/api/interpreter'];
-const SAME_M = 150; // a playground this close to one we list counts as the same place
 const arg = (name, dflt) => (process.argv.includes(name) ? process.argv[process.argv.indexOf(name) + 1] : dflt);
 const ADD = Number(arg('--add', 0)) || 0;
 const ONLY = arg('--only', '');
@@ -107,7 +107,7 @@ const remember = (p) => grid.set(cellKey(p.lat, p.lng), [...(grid.get(cellKey(p.
 for (const f of (await readdir(DIR)).filter((f) => f.endsWith('.json'))) {
   const d = JSON.parse(await readFile(join(DIR, f), 'utf8'));
   const osmOnly = !d.checked && (d.sources ?? []).length > 0 && d.sources.every((x) => /openstreetmap\.org\//.test(x.url));
-  remember({ id: f.replace(/\.json$/, ''), lat: d.lat, lng: d.lng, osmOnly });
+  remember({ id: f.replace(/\.json$/, ''), lat: d.lat, lng: d.lng, osmOnly, name: d.name, osm: osmIds(d.sources) });
 }
 /** The listing nearest p within 150 m (the grid's own entry, so changes to it stick), or null. */
 const nearestListed = (p) => {
@@ -121,6 +121,15 @@ const nearestListed = (p) => {
   return best?.q ?? null;
 };
 const listed = (p) => !!nearestListed(p);
+/** For a council record: the listing within 150 m that is the same place (see scripts/same-place.mjs), or null. */
+const sameListed = (rec, at = rec) => {
+  const near = [];
+  for (let a = -1; a <= 1; a++)
+    for (let b = -1; b <= 1; b++)
+      for (const q of grid.get(`${Math.floor(at.lat * 100) + a},${Math.floor(at.lng * 60) + b}`) ?? []) near.push({ q, d: km(at, q) * 1000 });
+  near.sort((x, y) => x.d - y.d);
+  return near.find(({ q, d }) => samePlace(rec, q, d))?.q ?? null;
+};
 
 // The saved OpenStreetMap snapshot (.github/actions/osm-snapshot sets OSM_PLAYGROUNDS), for moving a council's map
 // point onto the play area itself. Without it, council points are used as given.
@@ -222,7 +231,7 @@ if (ADD > 0) {
       const before = { lat: x.lat, lng: x.lng };
       x.placed = snap(x, c.feed.approximate);
       // Already listed: skip it, unless what we list is an OpenStreetMap-only copy, which the council's record replaces.
-      const near = nearestListed(x) ?? nearestListed(before);
+      const near = sameListed(x) ?? sameListed(x, before);
       if (near && !near.osmOnly) {
         if (x.osm) usedOsm.delete(x.osm);
         continue;
@@ -234,7 +243,7 @@ if (ADD > 0) {
       }
       fresh++;
       toAdd.push({ kind: 'council', ...x, council: c });
-      remember({ id: null, lat: x.lat, lng: x.lng, osmOnly: false }); // so OpenStreetMap copies of the same place aren't added too
+      remember({ id: null, lat: x.lat, lng: x.lng, osmOnly: false, name: x.name, osm: x.osm ? [x.osm] : [] }); // so OpenStreetMap copies of the same place aren't added too
     }
     feedReport.push(`${c.council}: ${recs.length} on the council's list, ${fresh} new${replacing ? ` (${replacing} replacing OpenStreetMap-only listings)` : ''}`);
   }
