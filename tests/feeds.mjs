@@ -22,4 +22,5 @@ assert.equal(samePlace({ name: 'Cape Adventure Playground' }, park('Playground o
 assert.equal(samePlace({ name: 'Playground' }, park('Paradise Park'), 90), true, 'a record with no distinctive name');
 assert.equal(samePlace({ name: 'Lumpy Hill Adventure Playground' }, park('Caledonian Park'), 150), false, 'beyond 150 m');
 assert.deepEqual(osmIds([{ url: 'https://www.openstreetmap.org/way/87685649' }, { url: 'https://islington.gov.uk/x' }]), ['way/87685649']);
+assert.deepEqual(parseCsv('name,park,postcode,lat,lng\nVictoria Park Tipton Playground,Victoria Park,,52.52491,-2.06243\n')[0], { name: 'Victoria Park Tipton Playground', park: 'Victoria Park', postcode: '', lat: '52.52491', lng: '-2.06243' });
 console.log('feeds: ok');
