@@ -23,6 +23,19 @@ async function shrink(file: File): Promise<{ blob: Blob; width: number; height: 
   throw new Error('too big');
 }
 
+/**
+ * The photo prompts (the "Share a photo" panel and the nudge after "We've been here") ask for a first photo when the
+ * playground has none, and for a better one once a photo shows: curated, approved from a parent, or found on Geograph
+ * or Wikimedia Commons. Each prompt carries both wordings as data-photo-none / data-photo-some.
+ */
+function photoCopy(has: boolean) {
+  for (const el of document.querySelectorAll<HTMLElement>('[data-photo-none][data-photo-some]')) {
+    const html = (has ? el.dataset.photoSome : el.dataset.photoNone) ?? '';
+    if (el.children.length || html.includes('<')) el.innerHTML = html;
+    else el.textContent = html;
+  }
+}
+
 export function startPhotos() {
   const box = document.getElementById('photo-box');
   const form = document.getElementById('photo-form') as HTMLFormElement | null;
@@ -39,6 +52,7 @@ export function startPhotos() {
       .then((res: { photos: Photo[] } | null) => {
         const p = res?.photos?.[0];
         if (!p) return;
+        photoCopy(true);
         const found = p.source === 'geograph' || p.source === 'commons';
         const credit = p.credit_line ?? `Shared by ${p.credit || 'a Swing By parent'}, CC BY 4.0`;
         const creditHtml = found && p.source_url ? `<a href="${esc(p.source_url)}" rel="noopener">${esc(credit)}</a>` : esc(credit);
@@ -52,6 +66,7 @@ export function startPhotos() {
             if (!r.ok) throw new Error();
             b.replaceWith("Thanks. We've hidden this photo until we've checked it.");
             box.querySelector('img')?.remove();
+            photoCopy(false);
           } catch {
             b.disabled = false;
             b.textContent = "Couldn't send. Try again";
