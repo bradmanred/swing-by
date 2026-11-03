@@ -1009,7 +1009,7 @@
         "https://www.dudley.gov.uk/things-to-do/parks-and-open-spaces/play-facilities/",
         "https://dudley.gov.uk/residents/dudley-local-offer/accessible-parks-and-playgrounds-in-dudley"
       ],
-      "note": "The play facilities page lists all 52 of the council's playgrounds with postcodes, copied into src/data/council-lists/dudley.csv (3 November 2026). Sycamore Green Adventure Play Area charges a fee.",
+      "note": "The play facilities page lists all 52 of the council's playgrounds with postcodes, copied into src/data/council-lists/dudley.csv (3 November 2026). Sycamore Green Adventure Play Area (Sycamore Adventure) asks for a suggested donation, so it isn't marked as paid entry.",
       "feed": {
         "type": "list",
         "file": "src/data/council-lists/dudley.csv",
