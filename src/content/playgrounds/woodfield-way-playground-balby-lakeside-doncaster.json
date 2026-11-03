@@ -1,0 +1,36 @@
+{
+  "name": "Woodfield Way Playground, Balby",
+  "region": "yorkshire",
+  "area": "Lakeside, Doncaster",
+  "lat": 53.49312,
+  "lng": -1.13677,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "gym",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Toddler and junior play areas, multi-use games area, outdoor gym equipment, teen sheltered seating, on Doncaster Council's list of local parks and outdoor spaces (Woodfield Way, Balby).",
+  "nearby": [],
+  "operator": "City of Doncaster Council",
+  "sources": [
+    {
+      "label": "City of Doncaster Council: Woodfield Way Playground, Balby",
+      "url": "https://doncaster.gov.uk/services/culture-leisure-tourism/parks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/699980175"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

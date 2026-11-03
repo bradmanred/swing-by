@@ -1,0 +1,32 @@
+{
+  "name": "St Mary's Road Playground, Tickhill",
+  "region": "yorkshire",
+  "area": "Tickhill",
+  "lat": 53.43213,
+  "lng": -1.11118,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Toddler and junior play areas, on Doncaster Council's list of local parks and outdoor spaces (St Mary's Road, Tickhill).",
+  "nearby": [],
+  "operator": "City of Doncaster Council",
+  "sources": [
+    {
+      "label": "City of Doncaster Council: St Mary's Road Playground, Tickhill",
+      "url": "https://doncaster.gov.uk/services/culture-leisure-tourism/parks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/400361474"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
