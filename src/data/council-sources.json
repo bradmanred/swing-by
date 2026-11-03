@@ -971,6 +971,110 @@
         "https://www.ealing.gov.uk/info/201136/parks_in_the_borough"
       ],
       "note": "Parks in the borough: one set of pages per town (Ealing, Acton, Southall, Greenford, Hanwell, Northolt, Perivale), all read in London part 1; their 35 play areas are listed. The pages leave out many small and estate play areas, which are filled from OpenStreetMap. No directory the importer can read."
+    },
+    {
+      "district": "Birmingham",
+      "council": "Birmingham City Council",
+      "sources": [
+        "https://www.birmingham.gov.uk/directory/9/parks_playgrounds_and_open_spaces_in_birmingham/category/77"
+      ],
+      "note": "The parks directory's \"Parks with playgrounds\" category (107 parks, Jadu). Sutton Park and Sutton Coldfield's parks are the city council's, so they're in the directory too. Housing estate play areas aren't listed, so they come from OpenStreetMap.",
+      "feed": {
+        "type": "jadu",
+        "directory": "https://www.birmingham.gov.uk/directory/9/parks_playgrounds_and_open_spaces_in_birmingham",
+        "category": 77,
+        "allPlay": true,
+        "approximate": true
+      }
+    },
+    {
+      "district": "Coventry",
+      "council": "Coventry City Council",
+      "sources": [
+        "https://www.coventry.gov.uk/directory/14/parks-and-open-spaces-in-coventry/category/715"
+      ],
+      "note": "The parks directory's \"Parks and open spaces with play areas\" category (47, Jadu), including Coombe Abbey Park.",
+      "feed": {
+        "type": "jadu",
+        "directory": "https://www.coventry.gov.uk/directory/14/parks-and-open-spaces-in-coventry",
+        "category": 715,
+        "allPlay": true,
+        "approximate": true
+      }
+    },
+    {
+      "district": "Dudley",
+      "council": "Dudley Council",
+      "sources": [
+        "https://www.dudley.gov.uk/things-to-do/parks-and-open-spaces/play-facilities/",
+        "https://dudley.gov.uk/residents/dudley-local-offer/accessible-parks-and-playgrounds-in-dudley"
+      ],
+      "note": "The play facilities page lists all 52 of the council's playgrounds with postcodes, copied into src/data/council-lists/dudley.csv (3 November 2026). Sycamore Green Adventure Play Area charges a fee.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/dudley.csv",
+        "page": "https://www.dudley.gov.uk/things-to-do/parks-and-open-spaces/play-facilities/"
+      }
+    },
+    {
+      "district": "Sandwell",
+      "council": "Sandwell Council",
+      "sources": [
+        "https://www.sandwell.gov.uk/parks-green-spaces/parks-sandwell",
+        "https://www.sandwell.gov.uk/downloads/file/169/appendix-c-green-spaces-planned-programme-of-works-23-24"
+      ],
+      "note": "Sandwell says it has 69 play areas but publishes no list. The parks page (with visitsandwell.com) names 8 parks with play areas, plus Forge Mill Farm's from the 2023–24 programme of works; copied into src/data/council-lists/sandwell.csv (3 November 2026) and placed by park name. Estate play areas (many named in the programme of works) come from OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/sandwell.csv",
+        "page": "https://www.sandwell.gov.uk/parks-green-spaces/parks-sandwell",
+        "near": {
+          "lat": 52.51,
+          "lng": -2,
+          "km": 8
+        }
+      }
+    },
+    {
+      "district": "Walsall",
+      "council": "Walsall Council",
+      "sources": [
+        "https://go.walsall.gov.uk/parks-and-green-spaces/visit-our-parks-and-play-areas"
+      ],
+      "note": "Visit our parks and play areas (about 25 main parks, one page each); those whose page mentions a play area are imported. Smaller play areas come from OpenStreetMap.",
+      "feed": {
+        "type": "pages",
+        "index": "https://go.walsall.gov.uk/parks-and-green-spaces/visit-our-parks-and-play-areas",
+        "follow": "/visit-our-parks-and-play-areas/[a-z0-9-]+$",
+        "approximate": true
+      }
+    },
+    {
+      "district": "Solihull",
+      "council": "Solihull Council",
+      "sources": [
+        "https://www.solihull.gov.uk/parks-and-open-spaces/parks/parks-solihull"
+      ],
+      "note": "Parks in Solihull (about 20 main parks, one page each); those whose page mentions a play area are imported. Smaller play areas, and parish council ones (Hockley Heath, Balsall, Meriden and others publish no lists), come from OpenStreetMap.",
+      "feed": {
+        "type": "pages",
+        "index": "https://www.solihull.gov.uk/parks-and-open-spaces/parks/parks-solihull",
+        "follow": "solihull\\.gov\\.uk/parks-and-open-spaces/[a-z0-9-]+$",
+        "approximate": true
+      }
+    },
+    {
+      "district": "Wolverhampton",
+      "council": "City of Wolverhampton Council",
+      "sources": [
+        "https://www.wolverhampton.gov.uk/visiting/parks-green-spaces-and-nature-reserves/parks"
+      ],
+      "note": "No play area list is published; the parks page describes five parks' play areas (Bantock, East, West, Hickman and Phoenix), copied into src/data/council-lists/wolverhampton.csv (3 November 2026). Other play areas come from OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/wolverhampton.csv",
+        "page": "https://www.wolverhampton.gov.uk/visiting/parks-green-spaces-and-nature-reserves/parks"
+      }
     }
   ]
 }
