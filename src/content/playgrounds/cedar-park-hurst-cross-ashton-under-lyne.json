@@ -1,0 +1,33 @@
+{
+  "name": "Cedar Park",
+  "region": "north-west",
+  "area": "Hurst Cross, Ashton-under-Lyne",
+  "lat": 53.49839,
+  "lng": -2.07984,
+  "ages": [],
+  "equipment": [
+    "sl",
+    "cl",
+    "spr",
+    "bb"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Tameside Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Tameside Council",
+  "sources": [
+    {
+      "label": "Tameside Council: Cedar Park",
+      "url": "https://www.tameside.gov.uk/parks/playgrounds/cedar"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1451426903"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

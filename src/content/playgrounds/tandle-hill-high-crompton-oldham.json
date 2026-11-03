@@ -1,0 +1,30 @@
+{
+  "name": "Tandle Hill",
+  "region": "north-west",
+  "area": "High Crompton, Oldham",
+  "lat": 53.57719,
+  "lng": -2.13824,
+  "ages": [],
+  "equipment": [
+    "bk",
+    "sp"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "A playground on Oldham Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Oldham Council",
+  "sources": [
+    {
+      "label": "Oldham Council: Tandle Hill",
+      "url": "https://www.oldham.gov.uk/info/200275/parks/708/tandle_hill"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (approximate: mapped from the postcode), age ranges, the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

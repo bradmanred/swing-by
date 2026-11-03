@@ -1,0 +1,33 @@
+{
+  "name": "Waterhead Park",
+  "region": "north-west",
+  "area": "Austerlands, Oldham",
+  "lat": 53.55079,
+  "lng": -2.08199,
+  "ages": [],
+  "equipment": [
+    "rb",
+    "sk",
+    "gym",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Oldham Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Oldham Council",
+  "sources": [
+    {
+      "label": "Oldham Council: Waterhead Park",
+      "url": "https://www.oldham.gov.uk/info/200275/parks/709/waterhead_park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/909126957"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Daisy Nook Country Park",
+  "region": "north-west",
+  "area": "Taunton, Ashton-under-Lyne",
+  "lat": 53.50188,
+  "lng": -2.12095,
+  "ages": [],
+  "equipment": [
+    "bk",
+    "sp"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "A playground on Oldham Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Oldham Council",
+  "sources": [
+    {
+      "label": "Oldham Council: Daisy Nook Country Park",
+      "url": "https://www.oldham.gov.uk/info/200275/parks/684/daisy_nook_country_park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/357558533"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

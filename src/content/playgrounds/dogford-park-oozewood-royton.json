@@ -1,0 +1,35 @@
+{
+  "name": "Dogford Park",
+  "region": "north-west",
+  "area": "Oozewood, Royton",
+  "lat": 53.57274,
+  "lng": -2.12612,
+  "ages": [],
+  "equipment": [
+    "bs",
+    "sw",
+    "sl",
+    "cl",
+    "rb",
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Oldham Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Oldham Council",
+  "sources": [
+    {
+      "label": "Oldham Council: Dogford Park",
+      "url": "https://www.oldham.gov.uk/info/200275/parks/685/dogford_park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1443011847"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Platt Lane Play Area",
+  "region": "north-west",
+  "area": "Scholes, Wigan",
+  "lat": 53.54994,
+  "lng": -2.61561,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "On Wigan Council's list of equipped play areas (Aspull).",
+  "nearby": [],
+  "operator": "Wigan Council",
+  "sources": [
+    {
+      "label": "Wigan Council: Platt Lane Play Area",
+      "url": "https://www.wigan.gov.uk/Resident/Leisure/Parks/Childrens-play-area.aspx"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/768638292"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
