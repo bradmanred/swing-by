@@ -7,7 +7,8 @@
 // no map point are placed from their postcode; ones with neither are left out.
 // type 'list' is for councils whose playgrounds are all on one page with no machine-readable version (Bexley's table,
 // Westminster's playgrounds page): the rows are copied into a CSV in src/data/council-lists/ (name, postcode, url,
-// optionally park, the park's name as mapped on OpenStreetMap, for rows without a postcode, optionally lat and lng,
+// optionally park, the park's name as mapped on OpenStreetMap, for rows without a postcode, optionally where, a street
+// and town to look up when nothing else places it, optionally lat and lng,
 // the park's own point, and optionally text: the council's own description, used as the playground's description and from which equipment and facilities are picked out), and
 // "page" names the council page they came from. Each row is placed from its postcode, then snapped onto the play area.
 // Used by scripts/find-gaps.mjs (adds new council-listed playgrounds) and scripts/quarterly-check.mjs (spots changes).
@@ -76,7 +77,11 @@ export async function readFeed(feed) {
       out.push({ name: r.name, park: r.park || undefined, lat: null, lng: null, ...(at && { from: 'postcode', ...at }), postcode: r.postcode, url: r.url || feed.page, description: r.text ?? '', ...describe(r.text ?? '') });
     }
     await placeByParkName(out, feed);
-    for (const r of out) if (r.lat == null) console.log(`  left out: ${r.name} (postcode ${r.postcode} not found, nor the park's name on OpenStreetMap)`);
+    // Rows still unplaced that say where they are ("where": a street and town, such as "Mercel Avenue, Armthorpe,
+    // Doncaster") are looked up on OpenStreetMap's geocoder, then snapped onto the nearest play area as usual.
+    const whereOf = new Map(rows.filter((r) => r.where).map((r) => [r.name, r.where]));
+    for (const r of out) if (r.lat == null && whereOf.has(r.name)) Object.assign(r, (await geocode(whereOf.get(r.name), feed.near)) ?? {});
+    for (const r of out) if (r.lat == null) console.log(`  left out: ${r.name} (no postcode, park name or street that could be found)`);
     return out.filter((r) => r.lat != null).map(({ park, ...r }) => r);
   }
   const recs = [];
@@ -176,4 +181,23 @@ async function placeByParkName(recs, feed) {
     const hits = (byName.get(normName(r.park ?? r.name)) ?? []).sort((a, b) => km(a, centre) - km(b, centre));
     if (hits.length) Object.assign(r, { lat: hits[0].lat, lng: hits[0].lng, from: 'park' });
   }
+}
+
+/**
+ * A street and town on OpenStreetMap's geocoder (Nominatim), within feed.near when given. Nominatim asks for at most
+ * one request a second and a User-Agent naming the app, so lookups are spaced out. Returns { lat, lng, from } or null.
+ */
+let lastGeocode = 0;
+async function geocode(where, near) {
+  const wait = lastGeocode + 1100 - Date.now();
+  if (wait > 0) await sleep(wait);
+  lastGeocode = Date.now();
+  const q = new URLSearchParams({ q: where, format: 'json', limit: '1', countrycodes: 'gb' });
+  if (near) {
+    const d = (near.km ?? 12) / 111, e = d / Math.cos((near.lat * Math.PI) / 180);
+    q.set('viewbox', [near.lng - e, near.lat + d, near.lng + e, near.lat - d].join(','));
+    q.set('bounded', '1');
+  }
+  const hit = await fetch(`https://nominatim.openstreetmap.org/search?${q}`, { headers: UA }).then((r) => (r.ok ? r.json() : [])).catch(() => []);
+  return hit[0] ? { lat: Number(hit[0].lat), lng: Number(hit[0].lon), from: 'street' } : null;
 }

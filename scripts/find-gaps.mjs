@@ -149,7 +149,7 @@ const nameWords = (s) => String(s ?? '').toLowerCase().replace(/[^a-z0-9]+/g, ' 
  * Returns how it was placed: 'osm', or the record's own 'map' / 'postcode'.
  */
 function snap(rec, approximate) {
-  const r = approximate || rec.from === 'postcode' || rec.from === 'park' ? 400 : 60;
+  const r = approximate || ['postcode', 'park', 'street'].includes(rec.from) ? 400 : 60;
   const ours = new Set(nameWords(rec.name));
   const cands = [];
   for (let a = -1; a <= 1; a++)
@@ -336,6 +336,7 @@ if (toAdd.length) {
         p.placed === 'osm' ? 'Exact position (taken from OpenStreetMap)'
         : p.placed === 'postcode' ? 'Exact position (approximate: mapped from the postcode)'
         : p.placed === 'park' ? "Exact position (approximate: the park's point on OpenStreetMap, not the play area itself)"
+        : p.placed === 'street' ? 'Exact position (approximate: the nearest mapped play area to the street the council names)'
         : p.council.feed.approximate ? "Exact position (approximate: the park's point on the council's map, not the play area itself)"
         : "Exact position (from the council's map)";
       const has = (k) => (p[k] ?? []).length > 0;
