@@ -8190,18 +8190,6 @@
     "lng": -0.2867262
    }
   },
-  "caledonian-park-barnsbury-greater-london": {
-   "nearest": {
-    "id": "ebf83609dce0b7f138032333",
-    "name": "Kentish Town Community Centre",
-    "m": 880,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 51.548244886,
-    "lng": -0.132149756
-   }
-  },
   "calke": {
    "nearest": {
     "id": "0147ef525903aaa06f316bea",
@@ -23777,6 +23765,18 @@
     "lng": -3.521236181
    }
   },
+  "hayward-adventure-playground-barnsbury-greater-london": {
+   "nearest": {
+    "id": "ebf83609dce0b7f138032333",
+    "name": "Kentish Town Community Centre",
+    "m": 880,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 51.548244886,
+    "lng": -0.132149756
+   }
+  },
   "hayworth-road-park-long-eaton": {
    "nearest": {
     "id": "c07dad10d8c8edd97adf7135",
@@ -32379,6 +32379,18 @@
   "lulworth-castle-and-park-play-area": {
    "nearest": null
   },
+  "lumpy-hill-adventure-playground-barnsbury-greater-london": {
+   "nearest": {
+    "id": "ebf83609dce0b7f138032333",
+    "name": "Kentish Town Community Centre",
+    "m": 807,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 51.548244886,
+    "lng": -0.132149756
+   }
+  },
   "lundy-road-play-area-dronfield": {
    "nearest": {
     "id": "79ddaf31dcc00bdb7df8a981",
@@ -33359,6 +33371,28 @@
     "free": true,
     "lat": 51.884724748,
     "lng": 0.834676653
+   }
+  },
+  "martin-luther-king-adventure-playground-holloway-greater-london": {
+   "nearest": {
+    "id": "bd2b45fd32fda5cd1f1d52f4",
+    "name": "Islington Central Library",
+    "m": 279,
+    "babyChange": null,
+    "accessible": true,
+    "free": false,
+    "lat": 51.549147236,
+    "lng": -0.107167661
+   },
+   "nearestBabyChange": {
+    "id": "ebf83609dce0b7f138032333",
+    "name": "Kentish Town Community Centre",
+    "m": 1480,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 51.548244886,
+    "lng": -0.132149756
    }
   },
   "martin-road-play-area-aveley": {
@@ -95372,6 +95406,28 @@
     "free": true,
     "lat": 52.397289951,
     "lng": -0.534985363
+   }
+  },
+  "three-corners-adventure-playground-clerkenwell-greater-london": {
+   "nearest": {
+    "id": "51e301edc702ee973fad4606",
+    "name": "City St George’s, University of London reception",
+    "m": 402,
+    "babyChange": null,
+    "accessible": true,
+    "free": null,
+    "lat": 51.527811482,
+    "lng": -0.102235079
+   },
+   "nearestBabyChange": {
+    "id": "ebe69e873325b6e9b0a58f0c",
+    "name": "Charterhouse Museum",
+    "m": 636,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.521384212,
+    "lng": -0.100342512
    }
   },
   "thrybergh-country-park-play-area-thrybergh": {
