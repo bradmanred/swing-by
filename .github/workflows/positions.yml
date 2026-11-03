@@ -21,6 +21,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  actions: write # to start the build checks on the branch
 concurrency:
   group: positions
   cancel-in-progress: false
@@ -78,8 +79,10 @@ jobs:
           git add src/content/playgrounds src/data/toilets.json
           git commit -m "Move playground pins onto their OpenStreetMap positions [skip toilets]"
           git push -u origin "$branch"
+          # Commits pushed by a workflow don't start other workflows, so start the build and accessibility checks here.
+          gh workflow run ci.yml --ref "$branch" || echo "::warning title=Check pin positions::Couldn't start the build checks; re-run them from the pull request."
           # The moved pins, capped so the description stays under GitHub's size limit (the whole list is in the report).
           { grep -E '^Moved ' reports/positions.md || true; echo; awk '/^## Moves/{f=1;next} /^## /{f=0} f' reports/positions.md | head -120; } > body.md
-          printf '\n\nThe full list is in the run'"'"'s "positions-report". Found by the "Check pin positions" workflow. Each moved pin had exactly one mapped playground within reach (and, beyond 250 m, a matching name). Pins with several possible matches are listed in the run summary, not moved: check those by hand. Check a few moved pins on the map before merging. The build checks start when you push a commit or re-run them from the Checks tab.\n' >> body.md
+          printf '\n\nThe full list is in the run'"'"'s "positions-report". Found by the "Check pin positions" workflow. Each moved pin had exactly one mapped playground within reach (and, beyond 250 m, a matching name). Pins with several possible matches are listed in the run summary, not moved: check those by hand. Check a few moved pins on the map before merging. The build and accessibility checks start by themselves once the branch is pushed.\n' >> body.md
           gh pr create --base main --head "$branch" --title "Move playground pins onto their OpenStreetMap positions" --body-file body.md \
             || echo "::warning title=Check pin positions::Pushed $branch but couldn't open a pull request (Settings > Actions > General > 'Allow GitHub Actions to create pull requests'). Open it from the branch instead."

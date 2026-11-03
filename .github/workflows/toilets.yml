@@ -15,6 +15,7 @@ on:
       - 'scripts/coverage-areas.mjs'
 permissions:
   contents: write
+  actions: write # to start the build checks after committing to a pull request branch
 concurrency:
   group: toilets-${{ github.ref }}
   cancel-in-progress: true
@@ -35,6 +36,7 @@ jobs:
       - name: Update and commit if changed
         env:
           BRANCH: ${{ github.ref_name }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "swing-by-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -44,7 +46,12 @@ jobs:
             if git diff --quiet -- src/data/toilets.json src/data/coverage.json; then echo "No change"; exit 0; fi
             git add src/data/toilets.json src/data/coverage.json
             git commit -m "Update nearest toilets from the Toilet Map"
-            if git push origin "HEAD:$BRANCH"; then exit 0; fi
+            if git push origin "HEAD:$BRANCH"; then
+              # A workflow's own commit doesn't start the pull request checks, so start them on this commit. They
+              # replace the run for the commit before, which no longer is the branch's latest.
+              if [ "$BRANCH" != main ]; then gh workflow run ci.yml --ref "$BRANCH" || echo "::warning::Couldn't start the build checks on $BRANCH."; fi
+              exit 0
+            fi
             echo "Push rejected (attempt $attempt); refreshing from origin/$BRANCH and retrying"
             git fetch --depth 1 origin "$BRANCH"
             git reset --hard FETCH_HEAD
