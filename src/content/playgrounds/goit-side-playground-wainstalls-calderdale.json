@@ -1,0 +1,30 @@
+{
+  "name": "Goit Side Playground",
+  "region": "yorkshire",
+  "area": "Wainstalls, Calderdale",
+  "lat": 53.74392,
+  "lng": -1.93734,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A fenced play area at Goit Side, Booth (Sowerby Bridge), from Calderdale Council's draft dogs exclusion order (2022).",
+  "nearby": [],
+  "operator": "Calderdale Council",
+  "sources": [
+    {
+      "label": "Calderdale Council: Goit Side Playground",
+      "url": "https://new.calderdale.gov.uk/sites/default/files/2023-05/Draft-Dogs-Exclusion-Schedule-2022.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/850440041"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

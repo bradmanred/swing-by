@@ -1,0 +1,28 @@
+{
+  "name": "Peel Park Playground",
+  "region": "yorkshire",
+  "area": "Bolton, Bradford",
+  "lat": 53.80928,
+  "lng": -1.74249,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A children's play area in Peel Park, on Bradford Council's parks site.",
+  "nearby": [],
+  "operator": "City of Bradford Council",
+  "sources": [
+    {
+      "label": "City of Bradford Council: Peel Park Playground",
+      "url": "https://bradforddistrictparks.org/park/peel-park/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/730212833"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,30 @@
+{
+  "name": "West View Park Playground",
+  "region": "yorkshire",
+  "area": "Willowfield, Sowerby Bridge",
+  "lat": 53.7198,
+  "lng": -1.89498,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A fenced play area at West View Park, Highroad Well (Halifax), from Calderdale Council's draft dogs exclusion order (2022).",
+  "nearby": [],
+  "operator": "Calderdale Council",
+  "sources": [
+    {
+      "label": "Calderdale Council: West View Park Playground",
+      "url": "https://new.calderdale.gov.uk/sites/default/files/2023-05/Draft-Dogs-Exclusion-Schedule-2022.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/911044649"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
