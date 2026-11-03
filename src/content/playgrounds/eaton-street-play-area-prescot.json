@@ -1,0 +1,28 @@
+{
+  "name": "Eaton Street Play Area",
+  "region": "north-west",
+  "area": "Prescot",
+  "lat": 53.4316,
+  "lng": -2.80641,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "On Knowsley Council's list of children's play areas (Prescot North ward).",
+  "nearby": [],
+  "operator": "Knowsley Council",
+  "sources": [
+    {
+      "label": "Knowsley Council: Eaton Street Play Area",
+      "url": "https://www.knowsley.gov.uk/sites/default/files/2025-01/Play%20areas%20and%20sports%20facilities.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1274170305"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

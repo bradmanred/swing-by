@@ -1,0 +1,28 @@
+{
+  "name": "Sutton Park Playground",
+  "region": "north-west",
+  "area": "Sutton, St Helens",
+  "lat": 53.43475,
+  "lng": -2.72107,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "On St Helens Borough Council's list of play areas.",
+  "nearby": [],
+  "operator": "St Helens Borough Council",
+  "sources": [
+    {
+      "label": "St Helens Borough Council: Sutton Park Playground",
+      "url": "https://www.sthelens.gov.uk/article/5221/Play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/547689844"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

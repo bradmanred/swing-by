@@ -1,0 +1,28 @@
+{
+  "name": "Calderstones Park Playground",
+  "region": "north-west",
+  "area": "Allerton, Liverpool",
+  "lat": 53.38078,
+  "lng": -2.89496,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A children's play area in Calderstones Park, one of Liverpool City Council's parks with play areas.",
+  "nearby": [],
+  "operator": "Liverpool City Council",
+  "sources": [
+    {
+      "label": "Liverpool City Council: Calderstones Park Playground",
+      "url": "https://liverpool.gov.uk/parks-and-greenspaces/playgrounds-and-play-areas/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/22949961"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
