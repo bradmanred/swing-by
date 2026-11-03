@@ -1,0 +1,33 @@
+{
+  "name": "York Park Playground",
+  "region": "london",
+  "area": "West Hendon, Greater London",
+  "lat": 51.57663,
+  "lng": -0.24201,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Toddler (2 to 6), junior (5 to 10) and senior (7 to 14) play areas in York Park off Cool Oak Lane, from Barnet Council's parks list (dated 2015–16).",
+  "nearby": [],
+  "operator": "Barnet Council",
+  "sources": [
+    {
+      "label": "Barnet Council: parks and open spaces (open data)",
+      "url": "https://open.barnet.gov.uk/dataset/parks-and-open-spaces-in-barnet-243ne"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1003487802"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (approximate: the nearest mapped play area to the park's street), play equipment and opening hours.",
+  "photo": null
+}

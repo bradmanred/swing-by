@@ -659,7 +659,7 @@
       "sources": [
         "https://www.bexley.gov.uk/services/parks-leisure-and-libraries/parks-and-open-spaces/playgrounds"
       ],
-      "note": "The council's playgrounds page lists 35 playgrounds with postcodes, copied into src/data/council-lists/bexley.csv (checked 2 November 2026). Golden Acre (Parkhill Road Open Space) is left out: its postcode, DA6 3AP, isn't recognised.",
+      "note": "The council's playgrounds page lists 35 playgrounds with postcodes, copied into src/data/council-lists/bexley.csv (checked 2 November 2026). Golden Acre (Parkhill Road Open Space), whose postcode DA6 3AP isn't recognised, was added by hand at the play area nearest Parkhill Road.",
       "feed": {
         "type": "list",
         "file": "src/data/council-lists/bexley.csv",
@@ -757,7 +757,7 @@
       "sources": [
         "https://www.camden.gov.uk/parks-and-green-spaces-facilities"
       ],
-      "note": "The parks and green spaces facilities page lists 13 parks with children's playgrounds (no addresses), copied into src/data/council-lists/camden.csv and placed by the park's name on OpenStreetMap (checked 2 November 2026). Polygon Road Open Space isn't named on OpenStreetMap, so it's left out. Regent's Park and Primrose Hill playgrounds come from The Royal Parks. The site refuses automated downloads.",
+      "note": "The parks and green spaces facilities page lists 13 parks with children's playgrounds (no addresses), copied into src/data/council-lists/camden.csv and placed by the park's name on OpenStreetMap (checked 2 November 2026). Polygon Road Open Space isn't named on OpenStreetMap, so it was added by hand at the play area 36 m from Polygon Road. Regent's Park and Primrose Hill playgrounds come from The Royal Parks. The site refuses automated downloads.",
       "feed": {
         "type": "list",
         "file": "src/data/council-lists/camden.csv",
@@ -875,7 +875,7 @@
         "https://www.islington.gov.uk/physical-activity-parks-and-trees/parks-and-green-space/your-local-parks",
         "https://www.islington.gov.uk/children-and-families/things-to-do/adventure-playgrounds"
       ],
-      "note": "Your local parks lists the main 10 parks only, all with play areas, imported and placed by the park's name on OpenStreetMap. Smaller parks and estate play areas come from OpenStreetMap. The 12 adventure playgrounds (run by Awesome CIC and Islington Play Association, registration needed) aren't added yet.",
+      "note": "Your local parks lists the main 10 parks only, all with play areas, imported and placed by the park's name on OpenStreetMap. Smaller parks and estate play areas come from OpenStreetMap. Its adventure playgrounds are a separate entry.",
       "feed": {
         "type": "pages",
         "index": "https://www.islington.gov.uk/physical-activity-parks-and-trees/parks-and-green-space/your-local-parks",
@@ -933,7 +933,7 @@
       "sources": [
         "https://open.barnet.gov.uk/dataset/parks-and-open-spaces-in-barnet-243ne"
       ],
-      "note": "Barnet's website refuses automated reading, so this uses the council's open-data parks list (45 parks with toddler, junior or senior play areas; dated 2015–16, so some may have changed). It gives only postcode districts, so parks are placed by name on OpenStreetMap; 8 that couldn't be matched (Barfield Avenue, Brookside Walk, Brunswick Crescent, Deansbrook, The Fairway, Riverside Walk, Tudor Sports Ground, York Park) are left to the OpenStreetMap fill. Copied into src/data/council-lists/barnet.csv on 3 November 2026.",
+      "note": "Barnet's website refuses automated reading, so this uses the council's open-data parks list (45 parks with toddler, junior or senior play areas; dated 2015–16, so some may have changed). It gives only postcode districts, so parks are placed by name on OpenStreetMap; York Park was added by hand at the play area off Cool Oak Lane; 7 that couldn't be matched (Barfield Avenue, Brookside Walk, Brunswick Crescent, Deansbrook, The Fairway, Riverside Walk, Tudor Sports Ground) are left to the OpenStreetMap fill. Copied into src/data/council-lists/barnet.csv on 3 November 2026.",
       "feed": {
         "type": "list",
         "file": "src/data/council-lists/barnet.csv",
@@ -944,6 +944,33 @@
           "km": 9
         }
       }
+    },
+    {
+      "district": "Islington",
+      "council": "Islington adventure playgrounds",
+      "sources": [
+        "https://islington.gov.uk/children-and-families/things-to-do/adventure-playgrounds",
+        "https://www.islington.gov.uk/~/media/sharepoint-lists/public-records/childrenandfamiliesservices/information/leaflets/20202021/20210112islingtonadventureplaygroundsleafletaccessibleupdate2021.pdf"
+      ],
+      "note": "The council's adventure playgrounds page (11, run by Awesome Adventure Play, KIDS and, for now, the council), with addresses from its 2021 leaflet; copied into src/data/council-lists/islington-adventure.csv on 3 November 2026 and placed by their OpenStreetMap names. Barnard Park's was already listed and was updated by hand. Toffee Park, in the leaflet but no longer on the page, is left out.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/islington-adventure.csv",
+        "page": "https://islington.gov.uk/children-and-families/things-to-do/adventure-playgrounds",
+        "near": {
+          "lat": 51.55,
+          "lng": -0.11,
+          "km": 5
+        }
+      }
+    },
+    {
+      "district": "Ealing",
+      "council": "Ealing Council",
+      "sources": [
+        "https://www.ealing.gov.uk/info/201136/parks_in_the_borough"
+      ],
+      "note": "Parks in the borough: one set of pages per town (Ealing, Acton, Southall, Greenford, Hanwell, Northolt, Perivale), all read in London part 1; their 35 play areas are listed. The pages leave out many small and estate play areas, which are filled from OpenStreetMap. No directory the importer can read."
     }
   ]
 }

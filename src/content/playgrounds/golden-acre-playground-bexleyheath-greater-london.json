@@ -1,0 +1,28 @@
+{
+  "name": "Golden Acre Playground",
+  "region": "london",
+  "area": "Bexleyheath, Greater London",
+  "lat": 51.44201,
+  "lng": 0.14448,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground at Golden Acre (Parkhill Road Open Space), on Bexley Council's list of playgrounds.",
+  "nearby": [],
+  "operator": "Bexley Council",
+  "sources": [
+    {
+      "label": "Bexley Council: playgrounds",
+      "url": "https://www.bexley.gov.uk/services/parks-leisure-and-libraries/parks-and-open-spaces/playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/361405495"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (approximate: the nearest mapped play area to the park's street), play equipment and opening hours.",
+  "photo": null
+}
