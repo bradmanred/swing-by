@@ -11,6 +11,12 @@ import { pins } from './pins.js';
 
 // Old playground address → the listing it was merged into. Add a line whenever two listings are merged.
 const MERGED = {
+  'cape-adventure-playground-crouch-end-greater-london': 'cape-adventure-playground-crouch-end-greater-london-2',
+  'playground-off-cornwallis-square-tufnell-park-greater-london': 'cornwallis-adventure-playground-holloway-greater-london',
+  'king-henrys-walk-adventure-playground-islington-greater-lond': 'king-henrys-walk-adventure-playground-islington-greater-lond-2',
+  'playground-off-packington-square-islington-greater-london': 'waterside-adventure-playground-islington-greater-london',
+  'crumbles-playground-barnsbury-greater-london': 'crumbles-castle-adventure-playground-barnsbury-greater-londo',
+  'timbuktu-adventure-playground-finsbury-park-greater-london': 'timbuktu-adventure-playground-finsbury-park-greater-london-2',
   'playground-off-elton-place-highbury-greater-london': 'butterfield-green-playground-shacklewell-greater-london',
   'playground-off-parkview-avenue-brent-cross': 'claremont-park-playground-brent-cross-greater-london',
   'playground-off-prince-charles-drive-hendon-central': 'sturgess-park-playground-hendon-central-greater-london',
