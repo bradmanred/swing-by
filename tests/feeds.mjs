@@ -1,5 +1,6 @@
 // Council feed names: a directory's own heading must never be read as a park's name.
 import assert from 'node:assert/strict';
+import { osmIds, samePlace } from '../scripts/same-place.mjs';
 import { parseCsv, recordName, slugName } from '../scripts/council-feeds.mjs';
 
 assert.equal(recordName('Church Meadows - Parks and recreation directory'), 'Church Meadows');
@@ -10,4 +11,15 @@ assert.equal(slugName('https://www.reigate-banstead.gov.uk/directory_record/1057
 assert.equal(slugName('https://www.braintree.gov.uk/directory-record/100/'), '');
 // Council lists copied into src/data/council-lists/ (the "list" feed).
 assert.deepEqual(parseCsv('name,postcode,text\nDanson Park Playground,DA6 8HL,"Splash park, open ""May to September"""\n'), [{ name: 'Danson Park Playground', postcode: 'DA6 8HL', text: 'Splash park, open "May to September"' }]);
+// Same place or a separate one close by (scripts/same-place.mjs), from Islington's adventure playgrounds.
+const park = (name, osm = [], osmOnly = false) => ({ name, osm, osmOnly });
+assert.equal(samePlace({ name: 'Lumpy Hill Adventure Playground', osm: 'way/260462113' }, park('Caledonian Park', ['way/87685649']), 80), false, 'differently named site 80 m away is separate');
+assert.equal(samePlace({ name: 'Martin Luther King Adventure Playground' }, park('Paradise Park'), 51), false);
+assert.equal(samePlace({ name: 'Hayward Adventure Playground', osm: 'way/87685649' }, park('Caledonian Park', ['way/87685649']), 0), true, 'same OpenStreetMap play area');
+assert.equal(samePlace({ name: 'Barnard Park Adventure Playground' }, park('Barnard Park'), 90), true, 'shared name word');
+assert.equal(samePlace({ name: 'Spa Fields Playground' }, park('Three Corners Adventure Playground'), 30), true, 'within 40 m');
+assert.equal(samePlace({ name: 'Cape Adventure Playground' }, park('Playground off Crouch Hill', [], true), 120), true, 'OpenStreetMap-only listing is replaced');
+assert.equal(samePlace({ name: 'Playground' }, park('Paradise Park'), 90), true, 'a record with no distinctive name');
+assert.equal(samePlace({ name: 'Lumpy Hill Adventure Playground' }, park('Caledonian Park'), 150), false, 'beyond 150 m');
+assert.deepEqual(osmIds([{ url: 'https://www.openstreetmap.org/way/87685649' }, { url: 'https://islington.gov.uk/x' }]), ['way/87685649']);
 console.log('feeds: ok');

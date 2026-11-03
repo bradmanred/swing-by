@@ -31,6 +31,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  actions: write # to start the build checks on the branch
 concurrency:
   group: coverage
   cancel-in-progress: false
@@ -92,16 +93,19 @@ jobs:
         run: |
           if [ -z "$(git status --porcelain -- src/content/playgrounds)" ]; then echo "Nothing to add"; exit 0; fi
           node scripts/nearest-toilets.mjs
+          node scripts/coverage-areas.mjs
           branch="coverage/$(date +%Y-%m-%d)-${{ github.run_number }}"
           git config user.name "swing-by-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -b "$branch"
-          git add src/content/playgrounds src/data/toilets.json worker/index.js
+          git add src/content/playgrounds src/data/toilets.json src/data/coverage.json worker/index.js
           git commit -m "Add playgrounds found by the coverage check [skip toilets]"
           git push -u origin "$branch"
+          # Commits pushed by a workflow don't start other workflows, so start the build and accessibility checks here.
+          gh workflow run ci.yml --ref "$branch" || echo "::warning title=Check coverage::Couldn't start the build checks; re-run them from the pull request."
           grep -E '^(Added|Nothing added|- )' reports/coverage.md > body.md || true
           # The next councils to research by hand, biggest counties first (the whole list is in the coverage-report).
           { printf '\n## Next councils to check by hand\n\nThese have gaps on OpenStreetMap but their own play area lists haven'"'"'t been checked yet (docs/finding-playgrounds.md). Once one is done, add it to src/data/council-sources.json and the next monthly run can fill its remaining gaps.\n\n'; awk '/^\| County \| Council \| Missing/{f=1} f&&/^\|/{print; n++} n>=14{exit}' reports/coverage.md; } >> body.md
-          printf '\n\nFound by the "Check coverage" workflow. Council-listed playgrounds are verified, with the council as source; OpenStreetMap ones are Unverified, with their OpenStreetMap page as source. The build checks start when you push a commit or re-run them from the Checks tab.\n' >> body.md
+          printf '\n\nFound by the "Check coverage" workflow. Council-listed playgrounds are verified, with the council as source; OpenStreetMap ones are Unverified, with their OpenStreetMap page as source. The build and accessibility checks start by themselves once the branch is pushed.\n' >> body.md
           gh pr create --base main --head "$branch" --title "Coverage check: add missing playgrounds" --body-file body.md \
             || echo "::warning title=Check coverage::Pushed $branch but couldn't open a pull request (Settings > Actions > General > 'Allow GitHub Actions to create pull requests'). Open it from the branch instead."
