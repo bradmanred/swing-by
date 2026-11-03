@@ -1,0 +1,28 @@
+{
+  "name": "The Duckeries Playground",
+  "region": "north-west",
+  "area": "New Bold, St Helens",
+  "lat": 53.45044,
+  "lng": -2.6923,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "On St Helens Borough Council's list of play areas.",
+  "nearby": [],
+  "operator": "St Helens Borough Council",
+  "sources": [
+    {
+      "label": "St Helens Borough Council: The Duckeries Playground",
+      "url": "https://www.sthelens.gov.uk/article/5221/Play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/906621441"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

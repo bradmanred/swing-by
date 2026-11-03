@@ -1,0 +1,30 @@
+{
+  "name": "Queens Park Playground",
+  "region": "north-west",
+  "area": "Meols, Hoylake",
+  "lat": 53.39928,
+  "lng": -3.1698,
+  "ages": [],
+  "equipment": [
+    "sw"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "On Wirral Council's list of playgrounds: Birkenhead Road, Hoylake. Closed until end September 2026 due to new swings installation.",
+  "nearby": [],
+  "operator": "Wirral Council",
+  "sources": [
+    {
+      "label": "Wirral Council: Queens Park Playground",
+      "url": "https://www.wirral.gov.uk/leisure-parks-and-events/outdoor-activities/playgrounds-wheelparks-and-multi-use-games-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/143173596"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

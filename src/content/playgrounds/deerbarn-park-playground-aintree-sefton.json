@@ -1,0 +1,28 @@
+{
+  "name": "Deerbarn Park Playground",
+  "region": "north-west",
+  "area": "Aintree, Sefton",
+  "lat": 53.48952,
+  "lng": -2.95425,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A small neighbourhood park situated next to the play area at Ollery Green. On Sefton Council's park finder: Deerbarn Park, Deerbarn Drive L30 8SA.",
+  "nearby": [],
+  "operator": "Sefton Council",
+  "sources": [
+    {
+      "label": "Sefton Council: Deerbarn Park Playground",
+      "url": "https://www.sefton.gov.uk/around-sefton/parks-and-greenspaces/find-a-park/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/313309353"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

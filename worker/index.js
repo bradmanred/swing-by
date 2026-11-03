@@ -11,6 +11,8 @@ import { pins } from './pins.js';
 
 // Old playground address → the listing it was merged into. Add a line whenever two listings are merged.
 const MERGED = {
+  'playground-off-liverpool-loop-line-knotty-ash-liverpool': 'springfield-park-playground-knotty-ash-liverpool',
+  'playground-off-foxshaw-close-whiston-lane-ends-whiston': 'fox-shaw-close-play-area-whiston-lane-ends-whiston',
   'playground-off-winstanley-road-orrell-post-wigan': 'orrell-water-park-playground-higher-end-wigan',
   'playground-off-bankes-avenue-orrell-wigan': 'redwood-park-playground-orrell-wigan',
   'balderstone-park-buersil-rochdale': 'balderstone-park-playground-buersil-rochdale',
