@@ -1,0 +1,37 @@
+{
+  "name": "Three Corners Adventure Playground",
+  "region": "london",
+  "area": "Clerkenwell, Greater London",
+  "lat": 51.52551,
+  "lng": -0.10671,
+  "ages": [
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "ad"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "An adventure playground on Northampton Road. Run by Awesome Adventure Play for children aged 6 and over who live or go to school in Islington (register with them first). Term time: Tuesday to Friday 3:30pm to 6:30pm; Saturday Family Play for all ages with a parent or carer, 11:30am to 4:30pm.",
+  "nearby": [],
+  "operator": "Awesome Adventure Play",
+  "sources": [
+    {
+      "label": "Awesome Adventure Play: Three Corners Adventure Playground",
+      "url": "https://awesomeadventureplay.org/playgrounds/three-corners/"
+    },
+    {
+      "label": "Islington Council: adventure playgrounds",
+      "url": "https://islington.gov.uk/children-and-families/things-to-do/adventure-playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: Three Corners Adventure Playground",
+      "url": "https://www.openstreetmap.org/way/70850687"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), equipment and session times.",
+  "photo": null
+}
