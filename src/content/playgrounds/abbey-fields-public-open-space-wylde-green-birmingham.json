@@ -1,0 +1,30 @@
+{
+  "name": "Abbey Fields Public Open Space",
+  "region": "west-midlands",
+  "area": "Wylde Green, Birmingham",
+  "lat": 52.53248,
+  "lng": -1.83381,
+  "ages": [],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Birmingham City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Birmingham City Council",
+  "sources": [
+    {
+      "label": "Birmingham City Council: Abbey Fields Public Open Space",
+      "url": "https://www.birmingham.gov.uk/directory_record/364816/abbey_fields_public_open_space"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/900142677"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

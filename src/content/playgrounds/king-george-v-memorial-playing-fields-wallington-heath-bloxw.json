@@ -1,0 +1,38 @@
+{
+  "name": "King George V Memorial playing fields",
+  "region": "west-midlands",
+  "area": "Wallington Heath, Bloxwich",
+  "lat": 52.62452,
+  "lng": -2.00729,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sk",
+    "gym",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "A playground on Walsall Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Walsall Council",
+  "sources": [
+    {
+      "label": "Walsall Council: King George V Memorial playing fields",
+      "url": "https://go.walsall.gov.uk/parks-and-green-spaces/visit-our-parks-and-play-areas/king-george-v-memorial-playing-fields"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1016229651"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

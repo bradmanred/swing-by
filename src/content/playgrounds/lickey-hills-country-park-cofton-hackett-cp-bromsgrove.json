@@ -1,0 +1,35 @@
+{
+  "name": "Lickey Hills Country Park",
+  "region": "west-midlands",
+  "area": "Cofton Hackett CP, Bromsgrove",
+  "lat": 52.3752,
+  "lng": -2.00485,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [
+    "ad"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "bc"
+  ],
+  "opens": "",
+  "description": "A playground on Birmingham City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Birmingham City Council",
+  "sources": [
+    {
+      "label": "Birmingham City Council: Lickey Hills Country Park",
+      "url": "https://www.birmingham.gov.uk/directory_record/9128/lickey_hills_country_park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/221518380"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Hickman Park Playground",
+  "region": "west-midlands",
+  "area": "The Lunt, Bilston",
+  "lat": 52.56666,
+  "lng": -2.08321,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc",
+    "bc"
+  ],
+  "opens": "",
+  "description": "A toddler and children's play area in Hickman Park, Bilston, with mini football pitches, an urban sports court and a ranger building with a toilet and baby changing.",
+  "nearby": [],
+  "operator": "City of Wolverhampton Council",
+  "sources": [
+    {
+      "label": "City of Wolverhampton Council: Hickman Park Playground",
+      "url": "https://www.wolverhampton.gov.uk/visiting/parks-green-spaces-and-nature-reserves/parks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/569772923"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours and parking.",
+  "photo": null
+}

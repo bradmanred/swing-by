@@ -1,0 +1,30 @@
+{
+  "name": "Selly Oak Park",
+  "region": "west-midlands",
+  "area": "Selly Oak, Birmingham",
+  "lat": 52.44182,
+  "lng": -1.94758,
+  "ages": [],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Birmingham City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Birmingham City Council",
+  "sources": [
+    {
+      "label": "Birmingham City Council: Selly Oak Park",
+      "url": "https://www.birmingham.gov.uk/directory_record/9152/selly_oak_park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/549824768"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

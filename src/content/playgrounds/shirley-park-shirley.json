@@ -1,0 +1,35 @@
+{
+  "name": "Shirley Park",
+  "region": "west-midlands",
+  "area": "Shirley",
+  "lat": 52.41058,
+  "lng": -1.82851,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl",
+    "rb",
+    "sk",
+    "spr",
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Solihull Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Solihull Council",
+  "sources": [
+    {
+      "label": "Solihull Council: Shirley Park",
+      "url": "https://www.solihull.gov.uk/parks-and-open-spaces/shirley-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/9107270910"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

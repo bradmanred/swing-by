@@ -1,0 +1,38 @@
+{
+  "name": "Georges Park",
+  "region": "west-midlands",
+  "area": "Lozells, Birmingham",
+  "lat": 52.50021,
+  "lng": -1.91413,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "sl",
+    "cl",
+    "rb",
+    "sk"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Birmingham City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Birmingham City Council",
+  "sources": [
+    {
+      "label": "Birmingham City Council: Georges Park",
+      "url": "https://www.birmingham.gov.uk/directory_record/9116/georges_park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/132922484"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

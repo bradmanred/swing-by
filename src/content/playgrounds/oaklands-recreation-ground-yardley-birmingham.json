@@ -1,0 +1,32 @@
+{
+  "name": "Oaklands Recreation Ground",
+  "region": "west-midlands",
+  "area": "Yardley, Birmingham",
+  "lat": 52.46739,
+  "lng": -1.81574,
+  "ages": [],
+  "equipment": [
+    "cl",
+    "sk",
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Birmingham City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Birmingham City Council",
+  "sources": [
+    {
+      "label": "Birmingham City Council: Oaklands Recreation Ground",
+      "url": "https://www.birmingham.gov.uk/directory_record/9139/oaklands_recreation_ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/236553441"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

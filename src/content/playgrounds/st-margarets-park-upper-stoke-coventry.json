@@ -1,0 +1,30 @@
+{
+  "name": "St. Margaret's Park",
+  "region": "west-midlands",
+  "area": "Upper Stoke, Coventry",
+  "lat": 52.41494,
+  "lng": -1.46909,
+  "ages": [],
+  "equipment": [
+    "sk"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Coventry City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Coventry City Council",
+  "sources": [
+    {
+      "label": "Coventry City Council: St. Margaret's Park",
+      "url": "https://www.coventry.gov.uk/directory-record/57133/st-margaret-s-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/494251349"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

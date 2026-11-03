@@ -1,0 +1,30 @@
+{
+  "name": "Coundon Hall Park",
+  "region": "west-midlands",
+  "area": "Brownshill Green, Coventry",
+  "lat": 52.43799,
+  "lng": -1.53681,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Coventry City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Coventry City Council",
+  "sources": [
+    {
+      "label": "Coventry City Council: Coundon Hall Park",
+      "url": "https://www.coventry.gov.uk/directory-record/57117/coundon-hall-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/187397876"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

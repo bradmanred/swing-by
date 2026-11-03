@@ -1,0 +1,38 @@
+{
+  "name": "Willenhall Memorial Park",
+  "region": "west-midlands",
+  "area": "Summerford Place, Willenhall",
+  "lat": 52.58624,
+  "lng": -2.06374,
+  "ages": [],
+  "equipment": [
+    "wp",
+    "rb",
+    "sk",
+    "gym",
+    "mg"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A playground on Walsall Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Walsall Council",
+  "sources": [
+    {
+      "label": "Walsall Council: Willenhall Memorial Park",
+      "url": "https://go.walsall.gov.uk/parks-and-green-spaces/visit-our-parks-and-play-areas/willenhall-memorial-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/548097437"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

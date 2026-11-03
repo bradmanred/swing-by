@@ -1,0 +1,42 @@
+{
+  "name": "Walsall Arboretum",
+  "region": "west-midlands",
+  "area": "Coal Pool, Bloxwich",
+  "lat": 52.58777,
+  "lng": -1.96624,
+  "ages": [],
+  "equipment": [
+    "bk",
+    "sl",
+    "wp",
+    "rb",
+    "sk",
+    "mg"
+  ],
+  "access": [
+    "inc",
+    "sen"
+  ],
+  "facilities": [
+    "wc",
+    "bc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "A playground on Walsall Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Walsall Council",
+  "sources": [
+    {
+      "label": "Walsall Council: Walsall Arboretum",
+      "url": "https://go.walsall.gov.uk/parks-and-green-spaces/visit-our-parks-and-play-areas/walsall-arboretum"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/209356997"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

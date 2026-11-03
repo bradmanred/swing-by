@@ -1,0 +1,33 @@
+{
+  "name": "Bantock Park Playground",
+  "region": "west-midlands",
+  "area": "Penn, Wolverhampton",
+  "lat": 52.5794,
+  "lng": -2.15619,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "mb"
+  ],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A children's play area with monkey bars, swings and multi-play units in Bantock Park, which has a tea room (with toilets) and Bantock House Museum.",
+  "nearby": [],
+  "operator": "City of Wolverhampton Council",
+  "sources": [
+    {
+      "label": "City of Wolverhampton Council: Bantock Park Playground",
+      "url": "https://www.wolverhampton.gov.uk/visiting/parks-green-spaces-and-nature-reserves/parks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/317369298"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

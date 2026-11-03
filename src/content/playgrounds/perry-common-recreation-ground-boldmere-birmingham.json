@@ -1,0 +1,30 @@
+{
+  "name": "Perry Common Recreation Ground",
+  "region": "west-midlands",
+  "area": "Boldmere, Birmingham",
+  "lat": 52.53291,
+  "lng": -1.86284,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Birmingham City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Birmingham City Council",
+  "sources": [
+    {
+      "label": "Birmingham City Council: Perry Common Recreation Ground",
+      "url": "https://www.birmingham.gov.uk/directory_record/78284/perry_common_recreation_ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/913107811"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

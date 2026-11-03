@@ -1,0 +1,33 @@
+{
+  "name": "Victoria Common",
+  "region": "west-midlands",
+  "area": "Northfield, Birmingham",
+  "lat": 52.4154,
+  "lng": -1.9661,
+  "ages": [],
+  "equipment": [
+    "gym",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A playground on Birmingham City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Birmingham City Council",
+  "sources": [
+    {
+      "label": "Birmingham City Council: Victoria Common",
+      "url": "https://www.birmingham.gov.uk/directory_record/9176/victoria_common"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/135665181"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Houldsworth Crescent",
+  "region": "west-midlands",
+  "area": "Holbrooks, Coventry",
+  "lat": 52.45191,
+  "lng": -1.51704,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A playground on Coventry City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Coventry City Council",
+  "sources": [
+    {
+      "label": "Coventry City Council: Houldsworth Crescent",
+      "url": "https://www.coventry.gov.uk/directory-record/57171/houldsworth-crescent"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/189087813"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

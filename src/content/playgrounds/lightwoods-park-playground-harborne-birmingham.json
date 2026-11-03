@@ -1,0 +1,30 @@
+{
+  "name": "Lightwoods Park Playground",
+  "region": "west-midlands",
+  "area": "Harborne, Birmingham",
+  "lat": 52.47112,
+  "lng": -1.97263,
+  "ages": [],
+  "equipment": [
+    "sk"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A children's play area in Lightwoods Park, Smethwick, with a skate park, Shakespeare Gardens, a bandstand and Lightwoods House.",
+  "nearby": [],
+  "operator": "Sandwell Council",
+  "sources": [
+    {
+      "label": "Sandwell Council: Lightwoods Park Playground",
+      "url": "https://www.visitsandwell.com/things-to-see-and-do/lightwoods-park-and-house-p1414681"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/949766451"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,41 @@
+{
+  "name": "East Park Playground",
+  "region": "west-midlands",
+  "area": "Old Heath, Wolverhampton",
+  "lat": 52.57914,
+  "lng": -2.09949,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "bs",
+    "sw",
+    "sl",
+    "cl",
+    "wp",
+    "rb",
+    "tp",
+    "ss"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A large play area for toddlers, juniors and older children, with cradle swings, a small trampoline, see-saws, a roundabout, climbing walls, giant slides and pendulum swings, and a splash pad (currently closed).",
+  "nearby": [],
+  "operator": "City of Wolverhampton Council",
+  "sources": [
+    {
+      "label": "City of Wolverhampton Council: East Park Playground",
+      "url": "https://www.wolverhampton.gov.uk/visiting/parks-green-spaces-and-nature-reserves/parks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/878784208"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
