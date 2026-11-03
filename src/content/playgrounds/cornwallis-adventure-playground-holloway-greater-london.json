@@ -1,0 +1,32 @@
+{
+  "name": "Cornwallis Adventure Playground",
+  "region": "london",
+  "area": "Holloway, Greater London",
+  "lat": 51.56479,
+  "lng": -0.12414,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [
+    "ad"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "An adventure playground on Cornwallis Road. Run by Awesome Adventure Play for children aged 6 and over who live or go to school in Islington (register with them first). Term time: Tuesday to Friday 3:30pm to 6:30pm; Saturday Family Play for all ages with a parent or carer, 11:30am to 4:30pm.",
+  "nearby": [],
+  "operator": "Islington adventure playgrounds",
+  "sources": [
+    {
+      "label": "Islington adventure playgrounds: Cornwallis Adventure Playground",
+      "url": "https://awesomeadventureplay.org/playgrounds/cornwallis/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1026666688"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
