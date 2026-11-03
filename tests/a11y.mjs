@@ -333,6 +333,11 @@ try {
   await page.locator('#photo-nudge').waitFor({ state: 'visible', timeout: 3000 }).catch(() => fail('photo nudge did not appear after ticking'));
   await page.getByRole('button', { name: 'Add a photo' }).click();
   if (!(await page.evaluate(() => document.activeElement?.id === 'photo-file'))) fail('Add a photo did not move to the photo form');
+  // A playground that already has a photo asks for a better one, not a first one.
+  await page.goto(BASE + '/playgrounds/northaw-playground-northaw/');
+  if (!(await page.getByRole('heading', { name: 'Share a better photo' }).count())) fail('playground with a photo should ask for a better photo');
+  await page.getByLabel("We've been here").check();
+  if (!(await page.getByRole('button', { name: 'Share a better photo' }).count())) fail('photo nudge should ask for a better photo when there is one');
 
   // Road trips: a town finds its nearest junction and the playgrounds near it.
   await page.goto(BASE + '/road-trips/');

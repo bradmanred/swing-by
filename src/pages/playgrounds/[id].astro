@@ -187,9 +187,9 @@ const ld = [
         </fieldset>
         <p class="hint" id="mine-status" aria-live="polite" style="margin-top:10px">Saved on this device only.</p>
         <div class="photo-nudge" id="photo-nudge" hidden>
-          <p><strong>Did you take a photo while you were here?</strong> A picture helps other parents see what it's like before they go. You can also tick off the equipment you saw.</p>
+          <p data-photo-none={"<strong>Did you take a photo while you were here?</strong> A picture helps other parents see what it's like before they go. You can also tick off the equipment you saw."} data-photo-some={"<strong>Did you get a better photo while you were here?</strong> A clearer or more recent picture helps other parents see what it's like now. You can also tick off the equipment you saw."} set:html={p.photo ? "<strong>Did you get a better photo while you were here?</strong> A clearer or more recent picture helps other parents see what it's like now. You can also tick off the equipment you saw." : "<strong>Did you take a photo while you were here?</strong> A picture helps other parents see what it's like before they go. You can also tick off the equipment you saw."} />
           <div class="row">
-            <button class="btn btn-yellow" type="button" id="nudge-add"><span aria-hidden="true">📷</span> Add a photo</button>
+            <button class="btn btn-yellow" type="button" id="nudge-add"><span aria-hidden="true">📷</span> <span data-photo-none="Add a photo" data-photo-some="Share a better photo">{p.photo ? 'Share a better photo' : 'Add a photo'}</span></button>
             <button class="btn" type="button" id="nudge-eq">Tell us what's here</button>
             <button class="linkbtn" type="button" id="nudge-no">Not now</button>
           </div>
@@ -197,8 +197,8 @@ const ld = [
         </div>
       </div>
       <div class="panel">
-        <h2 style="font-size:1.75rem" id="photo-title">Share a photo</h2>
-        <p style="margin-top:10px">{p.photo ? 'Been recently? Help other parents see what it\'s like now.' : "We don't have a photo of this playground yet. If you've been, you can add one."}</p>
+        <h2 style="font-size:1.75rem" id="photo-title" data-photo-none="Share a photo" data-photo-some="Share a better photo">{p.photo ? 'Share a better photo' : 'Share a photo'}</h2>
+        <p style="margin-top:10px" data-photo-none="We don't have a photo of this playground yet. If you've been, you can add one." data-photo-some="Got a better photo? A clearer, more recent picture, or one that shows more of the equipment, helps other parents see what it's like now.">{p.photo ? "Got a better photo? A clearer, more recent picture, or one that shows more of the equipment, helps other parents see what it's like now." : "We don't have a photo of this playground yet. If you've been, you can add one."}</p>
         <details class="photo-rules" style="margin-top:12px" open>
           <summary>Photo guidelines</summary>
           <ul>
