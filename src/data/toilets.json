@@ -8190,18 +8190,6 @@
     "lng": -0.2867262
    }
   },
-  "caledonian-park-barnsbury-greater-london": {
-   "nearest": {
-    "id": "ebf83609dce0b7f138032333",
-    "name": "Kentish Town Community Centre",
-    "m": 880,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 51.548244886,
-    "lng": -0.132149756
-   }
-  },
   "calke": {
    "nearest": {
     "id": "0147ef525903aaa06f316bea",
@@ -20453,6 +20441,28 @@
     "lng": -0.2867262
    }
   },
+  "golden-acre-playground-bexleyheath-greater-london": {
+   "nearest": {
+    "id": "37a9f8608269d4a1636f493d",
+    "name": "Bexley Community Library",
+    "m": 447,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.442782087,
+    "lng": 0.15080452
+   },
+   "nearestBabyChange": {
+    "id": "6561451fe9010c1c88a4684c",
+    "name": "Broadway Shopping Centre",
+    "m": 1570,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.456108046,
+    "lng": 0.145611763
+   }
+  },
   "golden-acres-play-area-chelmsford": {
    "nearest": {
     "id": "cb2027b91377bb9851feb625",
@@ -23753,6 +23763,18 @@
     "free": false,
     "lat": 50.481392843,
     "lng": -3.521236181
+   }
+  },
+  "hayward-adventure-playground-barnsbury-greater-london": {
+   "nearest": {
+    "id": "ebf83609dce0b7f138032333",
+    "name": "Kentish Town Community Centre",
+    "m": 880,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 51.548244886,
+    "lng": -0.132149756
    }
   },
   "hayworth-road-park-long-eaton": {
@@ -32357,6 +32379,18 @@
   "lulworth-castle-and-park-play-area": {
    "nearest": null
   },
+  "lumpy-hill-adventure-playground-barnsbury-greater-london": {
+   "nearest": {
+    "id": "ebf83609dce0b7f138032333",
+    "name": "Kentish Town Community Centre",
+    "m": 807,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 51.548244886,
+    "lng": -0.132149756
+   }
+  },
   "lundy-road-play-area-dronfield": {
    "nearest": {
     "id": "79ddaf31dcc00bdb7df8a981",
@@ -33337,6 +33371,28 @@
     "free": true,
     "lat": 51.884724748,
     "lng": 0.834676653
+   }
+  },
+  "martin-luther-king-adventure-playground-holloway-greater-london": {
+   "nearest": {
+    "id": "bd2b45fd32fda5cd1f1d52f4",
+    "name": "Islington Central Library",
+    "m": 279,
+    "babyChange": null,
+    "accessible": true,
+    "free": false,
+    "lat": 51.549147236,
+    "lng": -0.107167661
+   },
+   "nearestBabyChange": {
+    "id": "ebf83609dce0b7f138032333",
+    "name": "Kentish Town Community Centre",
+    "m": 1480,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 51.548244886,
+    "lng": -0.132149756
    }
   },
   "martin-road-play-area-aveley": {
@@ -83478,6 +83534,28 @@
     "lng": 0.468580339
    }
   },
+  "polygon-road-open-space-playground-somers-town-greater-london": {
+   "nearest": {
+    "id": "0d309eb2236d972e9a7aa64a",
+    "name": "FRANCIS CRICK small MUSEUM cafe",
+    "m": 267,
+    "babyChange": null,
+    "accessible": false,
+    "free": false,
+    "lat": 51.531947802,
+    "lng": -0.128391981
+   },
+   "nearestBabyChange": {
+    "id": "5fe7062c8a7696fadb01ca4f",
+    "name": "St Pancras International Station",
+    "m": 346,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.532640395,
+    "lng": -0.12732178
+   }
+  },
   "pond-close-play-area-tring": {
    "nearest": {
     "id": "8294d87de2d9294f34a6eb81",
@@ -95330,6 +95408,28 @@
     "lng": -0.534985363
    }
   },
+  "three-corners-adventure-playground-clerkenwell-greater-london": {
+   "nearest": {
+    "id": "51e301edc702ee973fad4606",
+    "name": "City St George’s, University of London reception",
+    "m": 402,
+    "babyChange": null,
+    "accessible": true,
+    "free": null,
+    "lat": 51.527811482,
+    "lng": -0.102235079
+   },
+   "nearestBabyChange": {
+    "id": "ebe69e873325b6e9b0a58f0c",
+    "name": "Charterhouse Museum",
+    "m": 636,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.521384212,
+    "lng": -0.100342512
+   }
+  },
   "thrybergh-country-park-play-area-thrybergh": {
    "nearest": null
   },
@@ -102157,6 +102257,28 @@
     "free": true,
     "lat": 51.662374088,
     "lng": -3.925160766
+   }
+  },
+  "york-park-playground-west-hendon-greater-london": {
+   "nearest": {
+    "id": "a98905220bde4637a98fccc8",
+    "name": "Sainsbury's, Hyde Estate Rd, NW9 6jX",
+    "m": 626,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.58207993,
+    "lng": -0.244258046
+   },
+   "nearestBabyChange": {
+    "id": "ee176bc470b00593a7424df1",
+    "name": "Brent Cross West Station",
+    "m": 1516,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.568367542,
+    "lng": -0.224554539
    }
   },
   "york-way-play-area-royston": {
