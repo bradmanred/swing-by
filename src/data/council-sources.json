@@ -1075,6 +1075,201 @@
         "file": "src/data/council-lists/wolverhampton.csv",
         "page": "https://www.wolverhampton.gov.uk/visiting/parks-green-spaces-and-nature-reserves/parks"
       }
+    },
+    {
+      "district": "Wigan",
+      "council": "Wigan Council",
+      "sources": [
+        "https://www.wigan.gov.uk/Resident/Leisure/Parks/Childrens-play-area.aspx"
+      ],
+      "note": "\"Find a play area\": equipped play areas (ball courts, skate areas and teen shelters left out), copied into src/data/council-lists/wigan.csv (3 November 2026). No addresses, so placed by park name on OpenStreetMap where it matches; others are filled from OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/wigan.csv",
+        "page": "https://www.wigan.gov.uk/Resident/Leisure/Parks/Childrens-play-area.aspx",
+        "near": {
+          "lat": 53.53,
+          "lng": -2.6,
+          "km": 12
+        }
+      }
+    },
+    {
+      "district": "Stockport",
+      "council": "Stockport Council",
+      "sources": [
+        "https://www.stockport.gov.uk/topic/parks"
+      ],
+      "note": "Checked 3 November 2026: the council publishes no play area list (its parks pages and the \"Stockport play areas\" entry on data.gov.uk have none), so play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Oldham",
+      "council": "Oldham Council",
+      "sources": [
+        "https://www.oldham.gov.uk/info/200275/parks_and_green_spaces"
+      ],
+      "note": "Parks and green spaces (one page per park); those listing a children's play area are imported, placed by park name. Smaller play areas come from OpenStreetMap.",
+      "feed": {
+        "type": "pages",
+        "index": "https://www.oldham.gov.uk/info/200275/parks_and_green_spaces",
+        "follow": "/info/200275/parks/\\d+/[a-z0-9_]+$",
+        "approximate": true,
+        "near": {
+          "lat": 53.54,
+          "lng": -2.11,
+          "km": 10
+        }
+      }
+    },
+    {
+      "district": "Rochdale",
+      "council": "Rochdale Borough Council",
+      "sources": [
+        "https://www.rochdale.gov.uk/sports-leisure/playgrounds"
+      ],
+      "note": "The playgrounds pages list every council playground by ward (Rochdale, Heywood, Middleton, Pennines), some with postcodes; copied into src/data/council-lists/rochdale.csv (3 November 2026). Others are placed by name where they match OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/rochdale.csv",
+        "page": "https://www.rochdale.gov.uk/sports-leisure/playgrounds",
+        "near": {
+          "lat": 53.6,
+          "lng": -2.16,
+          "km": 10
+        }
+      }
+    },
+    {
+      "district": "Tameside",
+      "council": "Tameside Council",
+      "sources": [
+        "https://www.tameside.gov.uk/parks/playgrounds"
+      ],
+      "note": "Playgrounds in Tameside: one page per playground (36), with its equipment; placed by name on OpenStreetMap.",
+      "feed": {
+        "type": "pages",
+        "index": "https://www.tameside.gov.uk/parks/playgrounds",
+        "follow": "/parks/playgrounds/[A-Za-z]+$",
+        "allPlay": true,
+        "approximate": true,
+        "near": {
+          "lat": 53.48,
+          "lng": -2.08,
+          "km": 10
+        }
+      }
+    },
+    {
+      "district": "Bury",
+      "council": "Bury Council",
+      "sources": [
+        "https://www.bury.gov.uk/local-leisure-events/outdoor-play-sports/outdoor-play-areas"
+      ],
+      "note": "Outdoor play areas: the 61 sites listed with a play area, copied into src/data/council-lists/bury.csv (3 November 2026); placed by name where they match OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/bury.csv",
+        "page": "https://www.bury.gov.uk/local-leisure-events/outdoor-play-sports/outdoor-play-areas",
+        "near": {
+          "lat": 53.59,
+          "lng": -2.3,
+          "km": 10
+        }
+      }
+    },
+    {
+      "district": "Trafford",
+      "council": "Trafford Council",
+      "sources": [
+        "https://www.trafford.gov.uk/residents/leisure-and-lifestyle/parks-and-open-spaces/parks-and-open-spaces.aspx"
+      ],
+      "note": "Checked 3 November 2026: the council publishes no play area list and its site refuses automated downloads, so play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Liverpool",
+      "council": "Liverpool City Council",
+      "sources": [
+        "https://liverpool.gov.uk/parks-and-greenspaces/playgrounds-and-play-areas/"
+      ],
+      "note": "Playgrounds and play areas: 14 parks and 30 open spaces and recreation grounds with play areas, copied into src/data/council-lists/liverpool.csv (3 November 2026); placed by name on OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/liverpool.csv",
+        "page": "https://liverpool.gov.uk/parks-and-greenspaces/playgrounds-and-play-areas/",
+        "near": {
+          "lat": 53.41,
+          "lng": -2.93,
+          "km": 10
+        }
+      }
+    },
+    {
+      "district": "Wirral",
+      "council": "Wirral Council",
+      "sources": [
+        "https://www.wirral.gov.uk/leisure-parks-and-events/outdoor-activities/playgrounds-wheelparks-and-multi-use-games-areas"
+      ],
+      "note": "The council's list of its 74 playgrounds by district, copied into src/data/council-lists/wirral.csv (3 November 2026). Parks are placed by name; street-named playgrounds are filled from OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/wirral.csv",
+        "page": "https://www.wirral.gov.uk/leisure-parks-and-events/outdoor-activities/playgrounds-wheelparks-and-multi-use-games-areas",
+        "near": {
+          "lat": 53.37,
+          "lng": -3.07,
+          "km": 14
+        }
+      }
+    },
+    {
+      "district": "Sefton",
+      "council": "Sefton Council",
+      "sources": [
+        "https://www.sefton.gov.uk/around-sefton/parks-and-greenspaces/find-a-park/"
+      ],
+      "note": "Find a park gives each park's address and map point; the 14 whose description mentions play are in src/data/council-lists/sefton.csv (3 November 2026). Sefton says it has 100 play spaces; the rest come from OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/sefton.csv",
+        "page": "https://www.sefton.gov.uk/around-sefton/parks-and-greenspaces/find-a-park/"
+      }
+    },
+    {
+      "district": "St Helens",
+      "council": "St Helens Borough Council",
+      "sources": [
+        "https://www.sthelens.gov.uk/article/5221/Play-areas"
+      ],
+      "note": "Play areas: the council's list of names (it says 67), copied into src/data/council-lists/st-helens.csv (3 November 2026); placed by name where they match OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/st-helens.csv",
+        "page": "https://www.sthelens.gov.uk/article/5221/Play-areas",
+        "near": {
+          "lat": 53.45,
+          "lng": -2.73,
+          "km": 10
+        }
+      }
+    },
+    {
+      "district": "Knowsley",
+      "council": "Knowsley Council",
+      "sources": [
+        "https://www.knowsley.gov.uk/sites/default/files/2025-01/Play%20areas%20and%20sports%20facilities.pdf",
+        "https://www.knowsley.gov.uk/libraries-leisure-and-culture/parks-and-green-spaces/parks-and-playgrounds-directory"
+      ],
+      "note": "The council's list of children's play areas with postcodes (January 2025), copied into src/data/council-lists/knowsley.csv (3 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/knowsley.csv",
+        "page": "https://www.knowsley.gov.uk/sites/default/files/2025-01/Play%20areas%20and%20sports%20facilities.pdf",
+        "near": {
+          "lat": 53.43,
+          "lng": -2.85,
+          "km": 10
+        }
+      }
     }
   ]
 }
