@@ -5,9 +5,9 @@
   "licence": "CC BY 4.0",
   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
   "note": "Nearest toilets worked out by Swing By from the Toilet Map data.",
-  "export": "toilets-2026-11-02T00%3A00%3A41.275Z-ME4HCqVhK8h3vc1q0LZuNsmZXYOl3k.csv"
+  "export": "toilets-2026-11-03T00%3A00%3A40.415Z-L819EdCunA6j83Ywb7tmOpbEl3pF44.csv"
  },
- "toilets": 15835,
+ "toilets": 15839,
  "parks": {
   "1066-battle-abbey-natural-play-area": {
    "nearest": {
@@ -40740,14 +40740,14 @@
   },
   "playground-off-anson-road-bentley-darlaston": {
    "nearest": {
-    "id": "a6bc33bc5dbc7ddd825272ed",
-    "name": "Walsall Station",
-    "m": 2839,
-    "babyChange": false,
-    "accessible": true,
+    "id": "6e3108a36444dc428cd0282a",
+    "name": "KFC J9",
+    "m": 2545,
+    "babyChange": null,
+    "accessible": null,
     "free": true,
-    "lat": 52.58441036,
-    "lng": -1.984753459
+    "lat": 52.565045036,
+    "lng": -2.004804611
    },
    "nearestBabyChange": {
     "id": "9f782222d2b088f097dd609a",
