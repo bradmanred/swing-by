@@ -1,0 +1,28 @@
+{
+  "name": "Manor Farm Park",
+  "region": "west-midlands",
+  "area": "Northfield, Birmingham",
+  "lat": 52.42435,
+  "lng": -1.9599,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Birmingham City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Birmingham City Council",
+  "sources": [
+    {
+      "label": "Birmingham City Council: Manor Farm Park",
+      "url": "https://www.birmingham.gov.uk/directory_record/9131/manor_farm_park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/324565589"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

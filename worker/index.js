@@ -11,6 +11,18 @@ import { pins } from './pins.js';
 
 // Old playground address → the listing it was merged into. Add a line whenever two listings are merged.
 const MERGED = {
+  'playground-off-park-road-stockland-green-birmingham': 'brookvale-park-stockland-green-birmingham',
+  'playground-off-blenheim-way-castle-vale-birmingham': 'cadbury-drive-public-open-space-castle-vale-birmingham',
+  'playground-off-upper-highgate-street-digbeth-birmingham': 'conybere-street-public-open-space-digbeth-birmingham',
+  'playground-off-eliot-street-aston-birmingham': 'eliot-street-public-open-space-aston-birmingham',
+  'playground-off-spitfire-way-castle-vale-birmingham': 'spitfire-way-play-area-castle-vale-birmingham',
+  'playground-off-jasper-close-eastern-green-coventry': 'bannerbrook-park-eastern-green-coventry',
+  'playground-off-strathmore-avenue-lower-stoke-coventry': 'charterhouse-fields-lower-stoke-coventry',
+  'juniper-drive-play-park-brownshill-green-coventry': 'park-hill-open-space-brownshill-green-coventry',
+  'playground-off-starley-road-spon-end-coventry': 'spon-end-open-space-spon-end-coventry',
+  'playground-off-athol-road-walsgrave-coventry': 'walsgrave-village-green-walsgrave-coventry',
+  'playground-off-minton-road-potters-green-coventry': 'woodway-walk-potters-green-coventry',
+  'playground-off-lodge-road-knowle-solihull': 'knowle-park-knowle-solihull',
   'playground-off-cornwallis-square-tufnell-park-greater-london': 'cornwallis-adventure-playground-holloway-greater-london',
   'playground-off-packington-square-islington-greater-london': 'waterside-adventure-playground-islington-greater-london',
   'crumbles-playground-barnsbury-greater-london': 'crumbles-castle-adventure-playground-barnsbury-greater-londo',

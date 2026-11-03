@@ -1,0 +1,30 @@
+{
+  "name": "Short Heath Recreation Ground",
+  "region": "west-midlands",
+  "area": "Wylde Green, Birmingham",
+  "lat": 52.53544,
+  "lng": -1.84792,
+  "ages": [],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Birmingham City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Birmingham City Council",
+  "sources": [
+    {
+      "label": "Birmingham City Council: Short Heath Recreation Ground",
+      "url": "https://www.birmingham.gov.uk/directory_record/78612/short_heath_recreation_ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/155990828"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

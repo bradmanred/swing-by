@@ -1,0 +1,28 @@
+{
+  "name": "Knowle Park",
+  "region": "west-midlands",
+  "area": "Knowle, Solihull",
+  "lat": 52.38791,
+  "lng": -1.73994,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Solihull Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Solihull Council",
+  "sources": [
+    {
+      "label": "Solihull Council: Knowle Park",
+      "url": "https://www.solihull.gov.uk/parks-and-open-spaces/knowle-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/9120568494"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

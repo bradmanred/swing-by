@@ -1,0 +1,30 @@
+{
+  "name": "Billesley Common",
+  "region": "west-midlands",
+  "area": "Billesley, Birmingham",
+  "lat": 52.42567,
+  "lng": -1.87317,
+  "ages": [],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Birmingham City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Birmingham City Council",
+  "sources": [
+    {
+      "label": "Birmingham City Council: Billesley Common",
+      "url": "https://www.birmingham.gov.uk/directory_record/9076/billesley_common"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/78045833"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

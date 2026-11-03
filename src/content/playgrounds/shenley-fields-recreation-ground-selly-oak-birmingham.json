@@ -1,0 +1,30 @@
+{
+  "name": "Shenley Fields Recreation Ground",
+  "region": "west-midlands",
+  "area": "Selly Oak, Birmingham",
+  "lat": 52.43634,
+  "lng": -1.95963,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Birmingham City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Birmingham City Council",
+  "sources": [
+    {
+      "label": "Birmingham City Council: Shenley Fields Recreation Ground",
+      "url": "https://www.birmingham.gov.uk/directory_record/9155/shenley_fields_recreation_ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1212905418"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

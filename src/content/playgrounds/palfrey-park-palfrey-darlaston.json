@@ -1,0 +1,33 @@
+{
+  "name": "Palfrey Park",
+  "region": "west-midlands",
+  "area": "Palfrey, Darlaston",
+  "lat": 52.57036,
+  "lng": -1.98476,
+  "ages": [],
+  "equipment": [
+    "gym",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A playground on Walsall Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Walsall Council",
+  "sources": [
+    {
+      "label": "Walsall Council: Palfrey Park",
+      "url": "https://go.walsall.gov.uk/parks-and-green-spaces/visit-our-parks-and-play-areas/palfrey-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/371732312"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

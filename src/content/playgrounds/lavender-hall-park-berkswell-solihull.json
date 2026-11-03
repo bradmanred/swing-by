@@ -1,0 +1,30 @@
+{
+  "name": "Lavender Hall Park",
+  "region": "west-midlands",
+  "area": "Berkswell, Solihull",
+  "lat": 52.39779,
+  "lng": -1.65241,
+  "ages": [],
+  "equipment": [
+    "sk"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Solihull Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Solihull Council",
+  "sources": [
+    {
+      "label": "Solihull Council: Lavender Hall Park",
+      "url": "https://www.solihull.gov.uk/parks-and-open-spaces/lavender-hall-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/9227470447"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

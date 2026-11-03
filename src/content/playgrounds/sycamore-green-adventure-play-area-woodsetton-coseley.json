@@ -1,0 +1,35 @@
+{
+  "name": "Sycamore Adventure Playground",
+  "region": "west-midlands",
+  "area": "Woodsetton, Coseley",
+  "lat": 52.52817,
+  "lng": -2.10545,
+  "ages": [],
+  "equipment": [
+    "sp",
+    "wp",
+    "tp",
+    "ad"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A staffed, fully accessible adventure playground on the Old Park Farm estate, with water play, sand play, trampolines, a cycle path and woodland. Public sessions run through the week for different ages; check the session times and booking before visiting. There's a suggested donation of £2.50 per child in term time and £4 in school holidays and at events.",
+  "nearby": [],
+  "operator": "Sycamore Adventure (Dudley Council site)",
+  "sources": [
+    {
+      "label": "Dudley Council: Sycamore Green Adventure Play Area",
+      "url": "https://www.dudley.gov.uk/things-to-do/parks-and-open-spaces/play-facilities/"
+    },
+    {
+      "label": "Dudley Community Information: Sycamore Adventure",
+      "url": "https://dudleyci.co.uk/services/sycamore-adventure"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (approximate: mapped from the postcode), session times and ages.",
+  "photo": null
+}

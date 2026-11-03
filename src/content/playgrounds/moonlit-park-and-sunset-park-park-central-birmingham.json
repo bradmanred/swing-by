@@ -1,0 +1,30 @@
+{
+  "name": "Moonlit Park and Sunset Park",
+  "region": "west-midlands",
+  "area": "Park Central, Birmingham",
+  "lat": 52.4691,
+  "lng": -1.90352,
+  "ages": [],
+  "equipment": [
+    "cl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Birmingham City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Birmingham City Council",
+  "sources": [
+    {
+      "label": "Birmingham City Council: Moonlit Park and Sunset Park",
+      "url": "https://www.birmingham.gov.uk/directory_record/9133/moonlit_park_and_sunset_park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/148114378"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

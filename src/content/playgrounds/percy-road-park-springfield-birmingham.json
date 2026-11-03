@@ -1,0 +1,28 @@
+{
+  "name": "Percy Road Park",
+  "region": "west-midlands",
+  "area": "Springfield, Birmingham",
+  "lat": 52.45101,
+  "lng": -1.85793,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Birmingham City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Birmingham City Council",
+  "sources": [
+    {
+      "label": "Birmingham City Council: Percy Road Park",
+      "url": "https://www.birmingham.gov.uk/directory_record/9140/percy_road_park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/900514637"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

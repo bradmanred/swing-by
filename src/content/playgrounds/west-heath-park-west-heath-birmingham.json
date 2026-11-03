@@ -1,0 +1,30 @@
+{
+  "name": "West Heath Park",
+  "region": "west-midlands",
+  "area": "West Heath, Birmingham",
+  "lat": 52.40481,
+  "lng": -1.95236,
+  "ages": [],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Birmingham City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Birmingham City Council",
+  "sources": [
+    {
+      "label": "Birmingham City Council: West Heath Park",
+      "url": "https://www.birmingham.gov.uk/directory_record/520271/west_heath_park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/533913564"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

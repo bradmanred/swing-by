@@ -1,0 +1,30 @@
+{
+  "name": "Clayhanger Park",
+  "region": "west-midlands",
+  "area": "Shire Oak, Walsall",
+  "lat": 52.63953,
+  "lng": -1.94254,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Walsall Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Walsall Council",
+  "sources": [
+    {
+      "label": "Walsall Council: Clayhanger Park",
+      "url": "https://go.walsall.gov.uk/parks-and-green-spaces/visit-our-parks-and-play-areas/clayhanger-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/12115334029"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Grove Park (Harborne)",
+  "region": "west-midlands",
+  "area": "Harborne, Birmingham",
+  "lat": 52.45096,
+  "lng": -1.95277,
+  "ages": [],
+  "equipment": [
+    "cl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Birmingham City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Birmingham City Council",
+  "sources": [
+    {
+      "label": "Birmingham City Council: Grove Park (Harborne)",
+      "url": "https://www.birmingham.gov.uk/directory_record/518216/grove_park_harborne"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/346987909"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Babbs Mill Local Nature Reserve",
+  "region": "west-midlands",
+  "area": "Kingshurst, Solihull",
+  "lat": 52.49317,
+  "lng": -1.74995,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [
+    "sk"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Solihull Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Solihull Council",
+  "sources": [
+    {
+      "label": "Solihull Council: Babbs Mill Local Nature Reserve",
+      "url": "https://www.solihull.gov.uk/parks-and-open-spaces/babbs-mill-local-nature-reserve"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/191358229"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

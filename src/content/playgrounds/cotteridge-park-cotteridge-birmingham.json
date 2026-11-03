@@ -1,0 +1,32 @@
+{
+  "name": "Cotteridge Park",
+  "region": "west-midlands",
+  "area": "Cotteridge, Birmingham",
+  "lat": 52.42166,
+  "lng": -1.92787,
+  "ages": [],
+  "equipment": [
+    "sk"
+  ],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A playground on Birmingham City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Birmingham City Council",
+  "sources": [
+    {
+      "label": "Birmingham City Council: Cotteridge Park",
+      "url": "https://www.birmingham.gov.uk/directory_record/9101/cotteridge_park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/382499706"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

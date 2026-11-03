@@ -1,0 +1,30 @@
+{
+  "name": "Primrose Hill Park",
+  "region": "west-midlands",
+  "area": "Hillfields, Coventry",
+  "lat": 52.41257,
+  "lng": -1.4926,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Coventry City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Coventry City Council",
+  "sources": [
+    {
+      "label": "Coventry City Council: Primrose Hill Park",
+      "url": "https://www.coventry.gov.uk/directory-record/57128/primrose-hill-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/184574791"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

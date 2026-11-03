@@ -1,0 +1,33 @@
+{
+  "name": "Kings Norton Park",
+  "region": "west-midlands",
+  "area": "Kings Norton, Birmingham",
+  "lat": 52.4107,
+  "lng": -1.93326,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "sk"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Birmingham City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Birmingham City Council",
+  "sources": [
+    {
+      "label": "Birmingham City Council: Kings Norton Park",
+      "url": "https://www.birmingham.gov.uk/directory_record/9126/kings_norton_park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/598251274"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
