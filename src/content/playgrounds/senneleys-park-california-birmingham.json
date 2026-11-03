@@ -1,0 +1,32 @@
+{
+  "name": "Senneleys Park",
+  "region": "west-midlands",
+  "area": "California, Birmingham",
+  "lat": 52.43743,
+  "lng": -1.98504,
+  "ages": [
+    "3-6"
+  ],
+  "equipment": [
+    "sk"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Birmingham City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Birmingham City Council",
+  "sources": [
+    {
+      "label": "Birmingham City Council: Senneleys Park",
+      "url": "https://www.birmingham.gov.uk/directory_record/9153/senneleys_park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1007054968"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

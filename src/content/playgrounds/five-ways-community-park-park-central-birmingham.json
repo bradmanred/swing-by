@@ -1,0 +1,30 @@
+{
+  "name": "Five Ways Community Park",
+  "region": "west-midlands",
+  "area": "Park Central, Birmingham",
+  "lat": 52.4724,
+  "lng": -1.91366,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Birmingham City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Birmingham City Council",
+  "sources": [
+    {
+      "label": "Birmingham City Council: Five Ways Community Park",
+      "url": "https://www.birmingham.gov.uk/directory_record/355792/five_ways_community_park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1446977162"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

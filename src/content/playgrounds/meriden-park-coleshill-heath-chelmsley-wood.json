@@ -1,0 +1,35 @@
+{
+  "name": "Meriden Park",
+  "region": "west-midlands",
+  "area": "Coleshill Heath, Chelmsley Wood",
+  "lat": 52.48293,
+  "lng": -1.73595,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "ad",
+    "rb",
+    "sk"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Solihull Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Solihull Council",
+  "sources": [
+    {
+      "label": "Solihull Council: Meriden Park",
+      "url": "https://www.solihull.gov.uk/parks-and-open-spaces/meriden-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/382674478"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

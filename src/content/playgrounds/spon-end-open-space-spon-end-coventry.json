@@ -1,0 +1,30 @@
+{
+  "name": "Spon End open space",
+  "region": "west-midlands",
+  "area": "Spon End, Coventry",
+  "lat": 52.40605,
+  "lng": -1.51731,
+  "ages": [],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Coventry City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Coventry City Council",
+  "sources": [
+    {
+      "label": "Coventry City Council: Spon End open space",
+      "url": "https://www.coventry.gov.uk/directory-record/57168/spon-end-open-space"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1461501411"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

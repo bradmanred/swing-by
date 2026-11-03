@@ -1,0 +1,34 @@
+{
+  "name": "Phoenix Park Playground",
+  "region": "west-midlands",
+  "area": "Old Heath, Wolverhampton",
+  "lat": 52.56854,
+  "lng": -2.12254,
+  "ages": [],
+  "equipment": [
+    "sk",
+    "gym",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A children's play area with play for all ages in Phoenix Park, Blakenhall, with outdoor fitness equipment, ball courts, a BMX track, a car park and a toilet.",
+  "nearby": [],
+  "operator": "City of Wolverhampton Council",
+  "sources": [
+    {
+      "label": "City of Wolverhampton Council: Phoenix Park Playground",
+      "url": "https://www.wolverhampton.gov.uk/visiting/parks-green-spaces-and-nature-reserves/parks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/875357487"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

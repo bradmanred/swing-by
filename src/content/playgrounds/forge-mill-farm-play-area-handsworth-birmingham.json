@@ -1,0 +1,28 @@
+{
+  "name": "Forge Mill Farm Play Area",
+  "region": "west-midlands",
+  "area": "Handsworth, Birmingham",
+  "lat": 52.53237,
+  "lng": -1.95909,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area by the entrance to Forge Mill Farm, the council's farm in Sandwell Valley Country Park.",
+  "nearby": [],
+  "operator": "Sandwell Council",
+  "sources": [
+    {
+      "label": "Sandwell Council: Forge Mill Farm Play Area",
+      "url": "https://www.sandwell.gov.uk/downloads/file/169/appendix-c-green-spaces-planned-programme-of-works-23-24"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/899440315"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

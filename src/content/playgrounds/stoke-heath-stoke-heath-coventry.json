@@ -1,0 +1,31 @@
+{
+  "name": "Stoke Heath",
+  "region": "west-midlands",
+  "area": "Stoke Heath, Coventry",
+  "lat": 52.42291,
+  "lng": -1.48362,
+  "ages": [],
+  "equipment": [
+    "gym",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Coventry City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Coventry City Council",
+  "sources": [
+    {
+      "label": "Coventry City Council: Stoke Heath",
+      "url": "https://www.coventry.gov.uk/directory-record/57134/stoke-heath"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1461506978"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Small Heath Park",
+  "region": "west-midlands",
+  "area": "Small Heath, Birmingham",
+  "lat": 52.46663,
+  "lng": -1.85471,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Birmingham City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Birmingham City Council",
+  "sources": [
+    {
+      "label": "Birmingham City Council: Small Heath Park",
+      "url": "https://www.birmingham.gov.uk/directory_record/9156/small_heath_park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/79861659"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

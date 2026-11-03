@@ -1,0 +1,28 @@
+{
+  "name": "Highgate Park",
+  "region": "west-midlands",
+  "area": "Digbeth, Birmingham",
+  "lat": 52.46956,
+  "lng": -1.88456,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Birmingham City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Birmingham City Council",
+  "sources": [
+    {
+      "label": "Birmingham City Council: Highgate Park",
+      "url": "https://www.birmingham.gov.uk/directory_record/9122/highgate_park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/74719103"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

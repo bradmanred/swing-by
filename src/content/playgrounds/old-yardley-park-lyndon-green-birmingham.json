@@ -1,0 +1,31 @@
+{
+  "name": "Old Yardley Park",
+  "region": "west-midlands",
+  "area": "Lyndon Green, Birmingham",
+  "lat": 52.47367,
+  "lng": -1.80097,
+  "ages": [],
+  "equipment": [
+    "sl",
+    "cl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Birmingham City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Birmingham City Council",
+  "sources": [
+    {
+      "label": "Birmingham City Council: Old Yardley Park",
+      "url": "https://www.birmingham.gov.uk/directory_record/9186/old_yardley_park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/900139926"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

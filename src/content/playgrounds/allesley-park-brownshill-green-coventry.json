@@ -1,0 +1,35 @@
+{
+  "name": "Allesley Park",
+  "region": "west-midlands",
+  "area": "Brownshill Green, Coventry",
+  "lat": 52.42062,
+  "lng": -1.56019,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "wp"
+  ],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A playground on Coventry City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Coventry City Council",
+  "sources": [
+    {
+      "label": "Coventry City Council: Allesley Park",
+      "url": "https://www.coventry.gov.uk/directory-record/57112/allesley-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/191211716"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours and parking.",
+  "photo": null
+}
