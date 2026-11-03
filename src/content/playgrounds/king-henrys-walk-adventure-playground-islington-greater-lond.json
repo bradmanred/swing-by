@@ -2,22 +2,31 @@
   "name": "King Henry's Walk Adventure Playground",
   "region": "london",
   "area": "Islington, Greater London",
-  "lat": 51.5476,
-  "lng": -0.08208,
-  "ages": [],
-  "equipment": [],
+  "lat": 51.54771,
+  "lng": -0.08209,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [
+    "ad"
+  ],
   "access": [],
   "facilities": [],
   "opens": "",
-  "description": "A playground on OpenStreetMap near King Henry's Walk, Islington. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "description": "An adventure playground and youth project at 11 King Henry's Walk. Run by Awesome Adventure Play for children aged 6 and over who live or go to school in Islington (register with them first). Term time: Tuesday to Friday 3:30pm to 6:30pm; Saturday Family Play for all ages with a parent or carer, 11:30am to 4:30pm.",
   "nearby": [],
+  "operator": "Islington adventure playgrounds",
   "sources": [
     {
-      "label": "OpenStreetMap: King Henry's Walk Adventure Playground",
+      "label": "Islington adventure playgrounds: King Henry's Walk Adventure Playground",
+      "url": "https://awesomeadventureplay.org/playgrounds/king-henrys-walk/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
       "url": "https://www.openstreetmap.org/way/188443383"
     }
   ],
-  "checked": null,
-  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
   "photo": null
 }
