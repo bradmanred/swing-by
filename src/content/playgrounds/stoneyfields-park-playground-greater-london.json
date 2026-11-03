@@ -1,0 +1,32 @@
+{
+  "name": "Stoneyfields Park Playground",
+  "region": "london",
+  "area": "Greater London",
+  "lat": 51.62461,
+  "lng": -0.26295,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Toddler (2 to 6), junior (5 to 10) and senior (7 to 14) play areas in Edgware, from Barnet Council's parks list.",
+  "nearby": [],
+  "operator": "Barnet Council",
+  "sources": [
+    {
+      "label": "Barnet Council: Stoneyfields Park Playground",
+      "url": "https://open.barnet.gov.uk/dataset/parks-and-open-spaces-in-barnet-243ne"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/410715464"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
