@@ -157,25 +157,15 @@ img.art { aspect-ratio: 360 / 170; object-fit: cover; background: var(--blue-sof
 .tile.y { background: var(--yellow); }
 .tile.r { background: var(--red); color: var(--white); }
 
-/* Next-area vote */
-.vote { display: grid; gap: 20px 36px; padding: 24px; }
-@media (min-width: 900px) { .vote { grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); align-items: start; } }
-.vote h2 + p { margin-top: 10px; max-width: 42ch; }
-.vote form { display: grid; gap: 14px; }
-.vote form[hidden], .vote [hidden] { display: none; }
-.vote-options { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr)); }
-.vote-note { color: var(--muted); }
-.vote-other { display: grid; gap: 6px; max-width: 420px; }
-.vote-other[hidden] { display: none; }
-.vote-other input { width: 100%; }
-#vote-summary { font-weight: 700; margin: 0 0 12px; }
-#vote-summary:focus { outline: none; }
-.vote-bars { list-style: none; margin: 0 0 16px; padding: 0; display: grid; gap: 12px; }
-.vote-bars li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; }
-.vote-bars .n { font-variant-numeric: tabular-nums; }
-.vote-bars .bar { grid-column: 1 / -1; height: 14px; border: 2px solid var(--ink); border-radius: 999px; background: var(--white); overflow: hidden; }
-.vote-bars .bar span { display: block; height: 100%; background: var(--blue); }
-.vote-bars .mine { display: inline-block; margin-left: 6px; padding: 1px 8px; border-radius: 8px; background: var(--yellow); font-size: 0.875rem; white-space: nowrap; }
+/* Home page feedback */
+.feedback { display: grid; gap: 20px 36px; padding: 24px; }
+@media (min-width: 900px) { .feedback { grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); align-items: start; } }
+.feedback h2 + p { margin-top: 10px; max-width: 42ch; }
+.feedback form { display: grid; gap: 8px; }
+.feedback [hidden] { display: none; }
+.feedback textarea { width: 100%; font: inherit; }
+.feedback .hp { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+#feedback-thanks:focus { outline: none; }
 .results-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 16px; }
 
 /* Detail */

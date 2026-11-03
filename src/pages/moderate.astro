@@ -29,10 +29,10 @@ const names = Object.fromEntries((await allParks()).map((p) => [p.id, `${p.name}
   </form>
   <p id="mod-msg" role="status"></p>
   <ul class="mod-list" id="mod-list"></ul>
-  <section class="panel" id="vote-suggestions" hidden aria-labelledby="sugg-title" style="max-width:720px">
-    <h2 id="sugg-title" style="font-size:1.5rem">Where else people want us to go</h2>
-    <p class="hint" style="margin-top:6px">What families typed after choosing "Somewhere else" in the vote. Only moderators can see this.</p>
-    <ol id="sugg-list" style="margin-top:10px;padding-left:22px;display:grid;gap:4px"></ol>
+  <section class="panel" id="feedback-box" hidden aria-labelledby="fb-title" style="max-width:720px">
+    <h2 id="fb-title" style="font-size:1.5rem">Suggestions for the site</h2>
+    <p class="hint" style="margin-top:6px">What families sent from "How could we make Swing By better?" on the home page, newest first. Only moderators can see this.</p>
+    <ol id="fb-list" style="margin-top:10px;padding-left:22px;display:grid;gap:8px"></ol>
   </section>
   <section class="panel" id="eq-reports" hidden aria-labelledby="eq-title" style="max-width:720px">
     <h2 id="eq-title" style="font-size:1.5rem">What parents say playgrounds have</h2>
@@ -117,15 +117,14 @@ const names = Object.fromEntries((await allParks()).map((p) => [p.id, `${p.name}
       }
     }
 
-    async function loadSuggestions() {
-      const r = await fetch('/api/vote/suggestions', { headers: { Authorization: `Bearer ${key}` } }).catch(() => null);
+    async function loadFeedback() {
+      const r = await fetch('/api/feedback/latest', { headers: { Authorization: `Bearer ${key}` } }).catch(() => null);
       if (!r?.ok) return;
-      const { suggestions } = (await r.json()) as { suggestions: { name: string; votes: number }[] };
-      const box = document.getElementById('vote-suggestions')!;
-      document.getElementById('sugg-list')!.innerHTML = suggestions.length
-        ? suggestions.map((s) => `<li>${esc(s.name)}: ${s.votes} vote${s.votes === 1 ? '' : 's'}</li>`).join('')
+      const { feedback } = (await r.json()) as { feedback: { message: string; created_at: string }[] };
+      document.getElementById('fb-list')!.innerHTML = feedback.length
+        ? feedback.map((f) => `<li><span class="hint">${esc(f.created_at.slice(0, 10))}</span><br />${esc(f.message).replace(/\n/g, '<br />')}</li>`).join('')
         : '<li>No suggestions yet.</li>';
-      box.hidden = false;
+      document.getElementById('feedback-box')!.hidden = false;
     }
 
     const itemNames = JSON.parse(document.getElementById('park-labels')!.textContent!) as Record<string, string>;
@@ -173,13 +172,13 @@ const names = Object.fromEntries((await allParks()).map((p) => [p.id, `${p.name}
         sessionStorage.setItem('sb-mod', key);
       } catch {}
       load();
-      loadSuggestions();
+      loadFeedback();
       loadEquipment();
       loadOther();
     });
     if (key) {
       load();
-      loadSuggestions();
+      loadFeedback();
       loadEquipment();
       loadOther();
     }

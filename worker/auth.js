@@ -1,4 +1,4 @@
-// Moderator check shared by photos and the vote: Authorization: Bearer <MOD_TOKEN>, a secret set on the Worker.
+// Moderator check shared by photos, parents' reports and site feedback: Authorization: Bearer <MOD_TOKEN>, a secret set on the Worker.
 export function isModerator(request, env) {
   // Trimmed on both sides: a key pasted with a stray space or newline would otherwise never match.
   const token = (env.MOD_TOKEN || '').trim();

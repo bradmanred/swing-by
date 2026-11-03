@@ -238,10 +238,10 @@ try {
   const go = await page.getByRole('button', { name: "Let's go!" }).boundingBox();
   if (Math.abs(near.y - go.y) > 2) fail('"Let\'s go!" is not next to "Near me"');
 
-  // Vote: with no /api/vote (this static server), voting says so instead of failing silently.
-  await page.getByRole('radio', { name: 'Essex' }).check();
-  await page.getByRole('button', { name: 'Cast my vote' }).click();
-  await page.locator('#vote-msg.err').waitFor({ timeout: 5000 }).catch(() => fail('vote failure not reported'));
+  // Feedback: with no /api/feedback (this static server), sending says so instead of failing silently.
+  await page.getByLabel('Your suggestion').fill('A filter for playgrounds with shade, please');
+  await page.getByRole('button', { name: 'Send suggestion' }).click();
+  await page.locator('#feedback-msg.err').waitFor({ timeout: 5000 }).catch(() => fail('feedback failure not reported'));
 
   // Parents' equipment form: open on Unverified playgrounds, folded away on checked ones with equipment listed,
   // offers the site's equipment list, and says so when it can't send (no /api/equipment on this static server).
