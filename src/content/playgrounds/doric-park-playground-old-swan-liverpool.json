@@ -1,0 +1,28 @@
+{
+  "name": "Doric Park Playground",
+  "region": "north-west",
+  "area": "Old Swan, Liverpool",
+  "lat": 53.41766,
+  "lng": -2.91174,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A children's play area in Doric Park, one of Liverpool City Council's parks with play areas.",
+  "nearby": [],
+  "operator": "Liverpool City Council",
+  "sources": [
+    {
+      "label": "Liverpool City Council: Doric Park Playground",
+      "url": "https://liverpool.gov.uk/parks-and-greenspaces/playgrounds-and-play-areas/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1100947126"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
