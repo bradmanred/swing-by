@@ -1270,6 +1270,105 @@
           "km": 10
         }
       }
+    },
+    {
+      "district": "Bradford",
+      "council": "City of Bradford Council",
+      "sources": [
+        "https://bradforddistrictparks.org/facility/childrens-play-area/"
+      ],
+      "note": "Bradford District Parks (the council's parks site), parks with a children's play area: 44 with addresses and postcodes, copied into src/data/council-lists/bradford.csv (3 November 2026). Smaller play areas come from OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/bradford.csv",
+        "page": "https://bradforddistrictparks.org/facility/childrens-play-area/",
+        "near": {
+          "lat": 53.8,
+          "lng": -1.8,
+          "km": 15
+        }
+      }
+    },
+    {
+      "district": "Kirklees",
+      "council": "Kirklees Council",
+      "sources": [
+        "https://www.kirklees.gov.uk/beta/countryside-parks-and-open-spaces/playable-spaces.aspx"
+      ],
+      "note": "No full play area list is published. The Playable Spaces programme page names 77 sites being or already improved; the play areas among them are in src/data/council-lists/kirklees.csv (3 November 2026), placed by name. Other play areas come from OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/kirklees.csv",
+        "page": "https://www.kirklees.gov.uk/beta/countryside-parks-and-open-spaces/playable-spaces.aspx",
+        "near": {
+          "lat": 53.65,
+          "lng": -1.75,
+          "km": 14
+        }
+      }
+    },
+    {
+      "district": "Calderdale",
+      "council": "Calderdale Council",
+      "sources": [
+        "https://new.calderdale.gov.uk/leisure/parks-and-open-spaces/play-areas",
+        "https://new.calderdale.gov.uk/sites/default/files/2023-05/Draft-Dogs-Exclusion-Schedule-2022.pdf"
+      ],
+      "note": "The play areas page only points to a map (\"over 100 play areas\"). The draft dogs exclusion order (2022) names every fenced play area by site and area: 49, in src/data/council-lists/calderdale.csv (3 November 2026), placed by name. Others come from OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/calderdale.csv",
+        "page": "https://new.calderdale.gov.uk/leisure/parks-and-open-spaces/play-areas",
+        "near": {
+          "lat": 53.72,
+          "lng": -1.92,
+          "km": 14
+        }
+      }
+    },
+    {
+      "district": "Sheffield",
+      "council": "Sheffield City Council",
+      "sources": [
+        "https://www.sheffield.gov.uk/parks-sport-recreation/parks-green-spaces"
+      ],
+      "note": "Checked 3 November 2026: the parks page lists city, district and local parks without saying which have play areas, and the open data (parks and countryside sites) has no play areas, so play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Doncaster",
+      "council": "City of Doncaster Council",
+      "sources": [
+        "https://doncaster.gov.uk/services/culture-leisure-tourism/parks"
+      ],
+      "note": "The parks page lists local parks and outdoor spaces by area with their play equipment; the 114 with play equipment (two not run by the council left out) are in src/data/council-lists/doncaster.csv (3 November 2026). Most are named after their street, so only parks matched by name on OpenStreetMap are placed; the rest come from OpenStreetMap. The site refuses automated downloads.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/doncaster.csv",
+        "page": "https://doncaster.gov.uk/services/culture-leisure-tourism/parks",
+        "near": {
+          "lat": 53.52,
+          "lng": -1.13,
+          "km": 16
+        }
+      }
+    },
+    {
+      "district": "Barnsley",
+      "council": "Barnsley Council",
+      "sources": [
+        "https://www.barnsley.gov.uk/services/parks-and-green-spaces/outdoor-activities/"
+      ],
+      "note": "Play areas and recreation facilities: all 124 children's play areas by village with their age range, copied into src/data/council-lists/barnsley.csv (3 November 2026); placed by name where they match OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/barnsley.csv",
+        "page": "https://www.barnsley.gov.uk/services/parks-and-green-spaces/outdoor-activities/",
+        "near": {
+          "lat": 53.55,
+          "lng": -1.48,
+          "km": 14
+        }
+      }
     }
   ]
 }
