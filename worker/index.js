@@ -11,6 +11,12 @@ import { pins } from './pins.js';
 
 // Old playground address → the listing it was merged into. Add a line whenever two listings are merged.
 const MERGED = {
+  'playground-off-winstanley-road-orrell-post-wigan': 'orrell-water-park-playground-higher-end-wigan',
+  'playground-off-bankes-avenue-orrell-wigan': 'redwood-park-playground-orrell-wigan',
+  'balderstone-park-buersil-rochdale': 'balderstone-park-playground-buersil-rochdale',
+  'playground-off-lyndhurst-avenue-trub-rochdale': 'chesham-avenue-playground-trub-rochdale',
+  'playground-off-rakewood-road-rakewood-littleborough': 'hollingworth-lake-playground-rakewood-littleborough',
+  'playground-off-school-street-gigg-bury': 'openshaw-park-playground-gigg-bury',
   'playground-off-park-road-stockland-green-birmingham': 'brookvale-park-stockland-green-birmingham',
   'playground-off-blenheim-way-castle-vale-birmingham': 'cadbury-drive-public-open-space-castle-vale-birmingham',
   'playground-off-upper-highgate-street-digbeth-birmingham': 'conybere-street-public-open-space-digbeth-birmingham',

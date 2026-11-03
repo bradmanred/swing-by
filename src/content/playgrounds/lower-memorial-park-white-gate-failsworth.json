@@ -1,0 +1,33 @@
+{
+  "name": "Lower Memorial Park",
+  "region": "north-west",
+  "area": "White Gate, Failsworth",
+  "lat": 53.51189,
+  "lng": -2.17147,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sp",
+    "rb",
+    "ss"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Oldham Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Oldham Council",
+  "sources": [
+    {
+      "label": "Oldham Council: Lower Memorial Park",
+      "url": "https://www.oldham.gov.uk/info/200275/parks/698/lower_memorial_park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1451167422"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Whitehead Park Playground",
+  "region": "north-west",
+  "area": "Elton, Bury",
+  "lat": 53.59345,
+  "lng": -2.31729,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "On Bury Council's list of outdoor play areas.",
+  "nearby": [],
+  "operator": "Bury Council",
+  "sources": [
+    {
+      "label": "Bury Council: Whitehead Park Playground",
+      "url": "https://www.bury.gov.uk/local-leisure-events/outdoor-play-sports/outdoor-play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/277507256"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

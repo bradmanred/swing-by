@@ -1,0 +1,30 @@
+{
+  "name": "Werneth Park",
+  "region": "north-west",
+  "area": "Copster Hill, Chadderton",
+  "lat": 53.53407,
+  "lng": -2.13066,
+  "ages": [],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Oldham Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Oldham Council",
+  "sources": [
+    {
+      "label": "Oldham Council: Werneth Park",
+      "url": "https://www.oldham.gov.uk/info/200275/parks/710/werneth_park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1307530037"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
