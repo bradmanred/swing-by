@@ -908,6 +908,42 @@
         "require": "<h2[^>]*>\\s*Play Areas?\\s*</h2>",
         "nameFirst": true
       }
+    },
+    {
+      "district": "Hackney",
+      "council": "Hackney Council",
+      "sources": [
+        "https://hackney.gov.uk/playgrounds"
+      ],
+      "note": "The council's playgrounds page lists 25 parks with play areas (some with two or three), copied into src/data/council-lists/hackney.csv (checked 3 November 2026). Rowley Gardens and Woodberry Down Park have no full postcode, so they're placed by the park's name on OpenStreetMap. Hackney's adventure playgrounds aren't on the list.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/hackney.csv",
+        "page": "https://hackney.gov.uk/playgrounds",
+        "near": {
+          "lat": 51.55,
+          "lng": -0.06,
+          "km": 5
+        }
+      }
+    },
+    {
+      "district": "Barnet",
+      "council": "Barnet Council",
+      "sources": [
+        "https://open.barnet.gov.uk/dataset/parks-and-open-spaces-in-barnet-243ne"
+      ],
+      "note": "Barnet's website refuses automated reading, so this uses the council's open-data parks list (45 parks with toddler, junior or senior play areas; dated 2015–16, so some may have changed). It gives only postcode districts, so parks are placed by name on OpenStreetMap; 8 that couldn't be matched (Barfield Avenue, Brookside Walk, Brunswick Crescent, Deansbrook, The Fairway, Riverside Walk, Tudor Sports Ground, York Park) are left to the OpenStreetMap fill. Copied into src/data/council-lists/barnet.csv on 3 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/barnet.csv",
+        "page": "https://open.barnet.gov.uk/dataset/parks-and-open-spaces-in-barnet-243ne",
+        "near": {
+          "lat": 51.61,
+          "lng": -0.2,
+          "km": 9
+        }
+      }
     }
   ]
 }
