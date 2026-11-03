@@ -18,6 +18,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  actions: write # to start the build checks on the branch
 concurrency:
   group: parent-pins
   cancel-in-progress: false
@@ -63,6 +64,8 @@ jobs:
           fi
           branch="parent-pins/$(date +%Y-%m-%d)-${{ github.run_number }}"
           git push -u origin "HEAD:refs/heads/$branch"
+          # Commits pushed by a workflow don't start other workflows, so start the build and accessibility checks here.
+          gh workflow run ci.yml --ref "$branch" || echo "::warning title=Move pins parents agree on::Couldn't start the build checks; re-run them from the pull request."
           if [ "${{ github.ref }}" = "refs/heads/main" ]; then
             gh pr create --base main --head "$branch" --title "Move pins that parents agree are in the wrong place" --body-file reports/parent-pins.md \
               || echo "::warning title=Move pins parents agree on::Pushed $branch but couldn't open a pull request. Open it from the branch."
