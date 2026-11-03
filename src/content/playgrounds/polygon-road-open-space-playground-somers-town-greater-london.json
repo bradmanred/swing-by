@@ -1,0 +1,28 @@
+{
+  "name": "Polygon Road Open Space Playground",
+  "region": "london",
+  "area": "Somers Town, Greater London",
+  "lat": 51.53211,
+  "lng": -0.13225,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A children's playground in Polygon Road Open Space, Somers Town, on Camden Council's list of park facilities.",
+  "nearby": [],
+  "operator": "Camden Council",
+  "sources": [
+    {
+      "label": "Camden Council: parks and green spaces facilities",
+      "url": "https://www.camden.gov.uk/parks-and-green-spaces-facilities"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/132317719"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (approximate: the nearest mapped play area to the park's street), play equipment and opening hours.",
+  "photo": null
+}

@@ -1,11 +1,12 @@
 {
-  "name": "Barnard Park",
+  "name": "Barnard Park Adventure Playground",
   "region": "london",
   "area": "Barnsbury, Greater London",
   "lat": 51.53644,
   "lng": -0.11171,
   "ages": [
-    "7-12"
+    "7-12",
+    "teens"
   ],
   "equipment": [
     "wp",
@@ -14,10 +15,18 @@
   "access": [],
   "facilities": [],
   "opens": "",
-  "description": "A playground on Islington Council's own list of play areas.",
+  "description": "An adventure playground on Copenhagen Street in Barnard Park. Run by Awesome Adventure Play for children aged 6 and over who live or go to school in Islington (register with them first). Term time: Tuesday to Friday 3:30pm to 6:30pm; Saturday Family Play for all ages with a parent or carer, 11:30am to 4:30pm.",
   "nearby": [],
-  "operator": "Islington Council",
+  "operator": "Awesome Adventure Play",
   "sources": [
+    {
+      "label": "Awesome Adventure Play: Barnard Park",
+      "url": "https://awesomeadventureplay.org/playgrounds/barnard/"
+    },
+    {
+      "label": "Islington Council: adventure playgrounds",
+      "url": "https://islington.gov.uk/children-and-families/things-to-do/adventure-playgrounds"
+    },
     {
       "label": "Islington Council: Barnard Park",
       "url": "https://www.islington.gov.uk/physical-activity-parks-and-trees/parks-and-green-space/your-local-parks/barnard-park"
@@ -27,7 +36,7 @@
       "url": "https://www.openstreetmap.org/way/127315563"
     }
   ],
-  "checked": "2026-11-02",
+  "checked": "2026-11-03",
   "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
   "photo": null
 }
