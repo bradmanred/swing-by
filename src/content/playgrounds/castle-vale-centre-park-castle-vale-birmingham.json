@@ -1,0 +1,33 @@
+{
+  "name": "Castle Vale Centre Park",
+  "region": "west-midlands",
+  "area": "Castle Vale, Birmingham",
+  "lat": 52.52,
+  "lng": -1.78964,
+  "ages": [
+    "3-6"
+  ],
+  "equipment": [
+    "rb",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Birmingham City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Birmingham City Council",
+  "sources": [
+    {
+      "label": "Birmingham City Council: Castle Vale Centre Park",
+      "url": "https://www.birmingham.gov.uk/directory_record/9093/castle_vale_centre_park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/310094491"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

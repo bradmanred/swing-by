@@ -1,0 +1,30 @@
+{
+  "name": "Arden Road Public Open Space",
+  "region": "west-midlands",
+  "area": "Lozells, Birmingham",
+  "lat": 52.50601,
+  "lng": -1.89893,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Birmingham City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Birmingham City Council",
+  "sources": [
+    {
+      "label": "Birmingham City Council: Arden Road Public Open Space",
+      "url": "https://www.birmingham.gov.uk/directory_record/9070/arden_road_public_open_space"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/133002381"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

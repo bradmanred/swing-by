@@ -1,0 +1,32 @@
+{
+  "name": "Holland Park",
+  "region": "west-midlands",
+  "area": "Catshill, Walsall",
+  "lat": 52.65012,
+  "lng": -1.93457,
+  "ages": [],
+  "equipment": [
+    "sk",
+    "gym",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Walsall Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Walsall Council",
+  "sources": [
+    {
+      "label": "Walsall Council: Holland Park",
+      "url": "https://go.walsall.gov.uk/parks-and-green-spaces/visit-our-parks-and-play-areas/holland-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/957556212"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

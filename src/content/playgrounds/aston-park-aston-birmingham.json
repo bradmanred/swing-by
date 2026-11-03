@@ -1,0 +1,35 @@
+{
+  "name": "Aston Park",
+  "region": "west-midlands",
+  "area": "Aston, Birmingham",
+  "lat": 52.50398,
+  "lng": -1.88673,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A playground on Birmingham City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Birmingham City Council",
+  "sources": [
+    {
+      "label": "Birmingham City Council: Aston Park",
+      "url": "https://www.birmingham.gov.uk/directory_record/9071/aston_park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/528535881"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

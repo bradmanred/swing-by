@@ -1,0 +1,28 @@
+{
+  "name": "Ward End Park",
+  "region": "west-midlands",
+  "area": "Alum Rock, Birmingham",
+  "lat": 52.49337,
+  "lng": -1.83962,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Birmingham City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Birmingham City Council",
+  "sources": [
+    {
+      "label": "Birmingham City Council: Ward End Park",
+      "url": "https://www.birmingham.gov.uk/directory_record/9178/ward_end_park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/774600562"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

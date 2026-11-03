@@ -1,0 +1,34 @@
+{
+  "name": "Bentley Heath Recreational Ground",
+  "region": "west-midlands",
+  "area": "Bentley Heath, Solihull",
+  "lat": 52.38474,
+  "lng": -1.75939,
+  "ages": [
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "sk"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Solihull Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Solihull Council",
+  "sources": [
+    {
+      "label": "Solihull Council: Bentley Heath Recreational Ground",
+      "url": "https://www.solihull.gov.uk/parks-and-open-spaces/bentley-heath-recreational-ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/9111295217"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

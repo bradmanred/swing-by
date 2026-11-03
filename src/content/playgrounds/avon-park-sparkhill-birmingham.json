@@ -1,0 +1,28 @@
+{
+  "name": "Avon Park",
+  "region": "west-midlands",
+  "area": "Sparkhill, Birmingham",
+  "lat": 52.45513,
+  "lng": -1.86441,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Birmingham City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Birmingham City Council",
+  "sources": [
+    {
+      "label": "Birmingham City Council: Avon Park",
+      "url": "https://www.birmingham.gov.uk/directory_record/9072/avon_park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/184905898"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

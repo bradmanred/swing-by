@@ -1,0 +1,34 @@
+{
+  "name": "West Park Playground",
+  "region": "west-midlands",
+  "area": "Tettenhall, Wolverhampton",
+  "lat": 52.58932,
+  "lng": -2.14267,
+  "ages": [],
+  "equipment": [
+    "rb"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A children's play area in West Park, a Victorian park near the city centre, with an inclusive roundabout, tearooms, picnic areas and coin-operated toilets.",
+  "nearby": [],
+  "operator": "City of Wolverhampton Council",
+  "sources": [
+    {
+      "label": "City of Wolverhampton Council: West Park Playground",
+      "url": "https://www.wolverhampton.gov.uk/visiting/parks-green-spaces-and-nature-reserves/parks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/156363620"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

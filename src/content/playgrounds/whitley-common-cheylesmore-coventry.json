@@ -1,0 +1,28 @@
+{
+  "name": "Whitley Common",
+  "region": "west-midlands",
+  "area": "Cheylesmore, Coventry",
+  "lat": 52.38933,
+  "lng": -1.49457,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Coventry City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Coventry City Council",
+  "sources": [
+    {
+      "label": "Coventry City Council: Whitley Common",
+      "url": "https://www.coventry.gov.uk/directory-record/57158/whitley-common"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/177962609"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

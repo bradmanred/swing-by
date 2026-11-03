@@ -1,0 +1,30 @@
+{
+  "name": "Heybarnes Recreation Ground",
+  "region": "west-midlands",
+  "area": "Small Heath, Birmingham",
+  "lat": 52.46349,
+  "lng": -1.83739,
+  "ages": [],
+  "equipment": [
+    "cl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Birmingham City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Birmingham City Council",
+  "sources": [
+    {
+      "label": "Birmingham City Council: Heybarnes Recreation Ground",
+      "url": "https://www.birmingham.gov.uk/directory_record/520278/heybarnes_recreation_ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/900136371"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

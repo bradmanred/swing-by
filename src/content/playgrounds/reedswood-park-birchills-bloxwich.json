@@ -1,0 +1,31 @@
+{
+  "name": "Reedswood Park",
+  "region": "west-midlands",
+  "area": "Birchills, Bloxwich",
+  "lat": 52.59257,
+  "lng": -2.00189,
+  "ages": [],
+  "equipment": [
+    "sk",
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Walsall Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Walsall Council",
+  "sources": [
+    {
+      "label": "Walsall Council: Reedswood Park",
+      "url": "https://go.walsall.gov.uk/parks-and-green-spaces/visit-our-parks-and-play-areas/reedswood-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/475819778"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
