@@ -1,0 +1,30 @@
+{
+  "name": "Archery Rec",
+  "region": "south-east",
+  "area": "Woolston, Southampton",
+  "lat": 50.892,
+  "lng": -1.37415,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A playground on Southampton City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Southampton City Council",
+  "sources": [
+    {
+      "label": "Southampton City Council: Archery Rec",
+      "url": "https://www.southampton.gov.uk/culture-leisure-tourism/parks-open-spaces/find-a-park/by-area/peartree-woolston/archery-rec"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/87177353"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Calton Gardens Play Area",
+  "region": "south-east",
+  "area": "North Town, Aldershot",
+  "lat": 51.23555,
+  "lng": -0.75136,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Multi-play equipment, swings and slide, on Rushmoor Borough Council's list of local playgrounds (Off Bryce Gardens, Pool Road, Aldershot).",
+  "nearby": [],
+  "operator": "Rushmoor Borough Council",
+  "sources": [
+    {
+      "label": "Rushmoor Borough Council: Calton Gardens Play Area",
+      "url": "https://www.rushmoor.gov.uk/hidden/revised-parks-and-playground-pages/playgrounds-and-play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1080715179"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

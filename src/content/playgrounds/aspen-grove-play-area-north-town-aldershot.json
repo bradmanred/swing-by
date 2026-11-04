@@ -1,0 +1,31 @@
+{
+  "name": "Aspen Grove Play Area",
+  "region": "south-east",
+  "area": "North Town, Aldershot",
+  "lat": 51.24034,
+  "lng": -0.73948,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Swings, slide and rockers, on Rushmoor Borough Council's list of local playgrounds (Off Blackwater Way, Aldershot).",
+  "nearby": [],
+  "operator": "Rushmoor Borough Council",
+  "sources": [
+    {
+      "label": "Rushmoor Borough Council: Aspen Grove Play Area",
+      "url": "https://www.rushmoor.gov.uk/hidden/revised-parks-and-playground-pages/playgrounds-and-play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/973983045"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

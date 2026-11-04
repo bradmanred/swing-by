@@ -1,0 +1,30 @@
+{
+  "name": "Townhill Green",
+  "region": "south-east",
+  "area": "Townhill Park, Southampton",
+  "lat": 50.92924,
+  "lng": -1.35903,
+  "ages": [],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Southampton City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Southampton City Council",
+  "sources": [
+    {
+      "label": "Southampton City Council: Townhill Green",
+      "url": "https://www.southampton.gov.uk/culture-leisure-tourism/parks-open-spaces/find-a-park/by-area/bitterne-park-harefield/townhill-green"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/175719405"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

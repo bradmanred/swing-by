@@ -1,0 +1,28 @@
+{
+  "name": "Weyhill Playground",
+  "region": "south-east",
+  "area": "Penton Grafton, Test Valley",
+  "lat": 51.22013,
+  "lng": -1.54991,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "On Test Valley Borough Council's list of its playgrounds (Casterbridge Lane, Weyhill).",
+  "nearby": [],
+  "operator": "Test Valley Borough Council",
+  "sources": [
+    {
+      "label": "Test Valley Borough Council: Weyhill Playground",
+      "url": "https://testvalley.gov.uk/communityandleisure/parksandgreenspaces/playgrounds/playgrounds-andover"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/904409036"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

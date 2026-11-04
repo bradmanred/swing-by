@@ -1,0 +1,40 @@
+{
+  "name": "Fareham Park Play Area",
+  "region": "south-east",
+  "area": "Hill Park, Fareham",
+  "lat": 50.86314,
+  "lng": -1.21848,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "bk",
+    "sw",
+    "rb",
+    "ss",
+    "gym",
+    "mg"
+  ],
+  "access": [
+    "sen"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "Snake and carousel swings, wheelchair-accessible multi-unit, inclusive see-saw and roundabout, sensory play den, toddler unit, hammock and basket swings, multi-use games area, outdoor gym and table tennis.",
+  "nearby": [],
+  "operator": "Fareham Borough Council",
+  "sources": [
+    {
+      "label": "Fareham Borough Council: Fareham Park Play Area",
+      "url": "https://www.fareham.gov.uk/leisure/out_and_about_in_fareham/play_areas/farehamplayareas.aspx"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/832873282"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
