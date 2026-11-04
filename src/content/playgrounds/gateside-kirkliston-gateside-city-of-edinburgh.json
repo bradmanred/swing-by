@@ -1,0 +1,36 @@
+{
+  "name": "Gateside, Kirkliston Play Area",
+  "region": "scotland",
+  "area": "Gateside, City of Edinburgh",
+  "lat": 55.95116,
+  "lng": -3.4099,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "bs",
+    "sl",
+    "cl",
+    "rb"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on City of Edinburgh Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of Edinburgh Council",
+  "sources": [
+    {
+      "label": "City of Edinburgh Council: Gateside, Kirkliston",
+      "url": "https://www.edinburgh.gov.uk/directory-record/1099153/gateside-kirkliston"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/864828657"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Peffermill Court Play Area",
+  "region": "scotland",
+  "area": "Bingham, City of Edinburgh",
+  "lat": 55.93074,
+  "lng": -3.14621,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on City of Edinburgh Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of Edinburgh Council",
+  "sources": [
+    {
+      "label": "City of Edinburgh Council: Peffermill Court Playarea",
+      "url": "https://www.edinburgh.gov.uk/directory-record/1099214/peffermill-court-playarea-"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/799111375"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

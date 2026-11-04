@@ -1,0 +1,33 @@
+{
+  "name": "Magnet Play Area (East Meadows)",
+  "region": "scotland",
+  "area": "Southside, City of Edinburgh",
+  "lat": 55.94077,
+  "lng": -3.1848,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl",
+    "wp",
+    "rb"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on City of Edinburgh Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of Edinburgh Council",
+  "sources": [
+    {
+      "label": "City of Edinburgh Council: Magnet Playarea (East Meadows)",
+      "url": "https://www.edinburgh.gov.uk/directory-record/1099187/magnet-playarea-east-meadows-"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/158076230"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

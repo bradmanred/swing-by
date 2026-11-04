@@ -1,0 +1,32 @@
+{
+  "name": "Redbraes Park",
+  "region": "scotland",
+  "area": "Leith, City of Edinburgh",
+  "lat": 55.96767,
+  "lng": -3.18782,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on City of Edinburgh Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of Edinburgh Council",
+  "sources": [
+    {
+      "label": "City of Edinburgh Council: Redbraes Park",
+      "url": "https://www.edinburgh.gov.uk/directory-record/1099226/redbraes-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/39960663"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

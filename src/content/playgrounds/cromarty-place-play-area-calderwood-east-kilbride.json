@@ -1,0 +1,31 @@
+{
+  "name": "Cromarty Place Play Area",
+  "region": "scotland",
+  "area": "Calderwood, East Kilbride",
+  "lat": 55.77231,
+  "lng": -4.14631,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Cromarty Place play area",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656792/cromarty-place-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/942876125"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

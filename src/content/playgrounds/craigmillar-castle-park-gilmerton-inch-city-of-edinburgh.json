@@ -1,0 +1,30 @@
+{
+  "name": "Craigmillar Castle Park",
+  "region": "scotland",
+  "area": "Gilmerton/Inch, City of Edinburgh",
+  "lat": 55.92436,
+  "lng": -3.15807,
+  "ages": [],
+  "equipment": [
+    "sl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on City of Edinburgh Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of Edinburgh Council",
+  "sources": [
+    {
+      "label": "City of Edinburgh Council: Craigmillar Castle Park",
+      "url": "https://www.edinburgh.gov.uk/directory-record/1099128/craigmillar-castle-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/29593370"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

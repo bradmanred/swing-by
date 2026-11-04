@@ -1,0 +1,35 @@
+{
+  "name": "Muirhouse Linear Park",
+  "region": "scotland",
+  "area": "Muirhouse, City of Edinburgh",
+  "lat": 55.97035,
+  "lng": -3.26299,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sk",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on City of Edinburgh Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of Edinburgh Council",
+  "sources": [
+    {
+      "label": "City of Edinburgh Council: Muirhouse Linear Park",
+      "url": "https://www.edinburgh.gov.uk/directory-record/1099201/muirhouse-linear-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/124861437"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

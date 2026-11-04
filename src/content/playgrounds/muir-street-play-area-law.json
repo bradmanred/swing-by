@@ -1,0 +1,32 @@
+{
+  "name": "Muir Street Play Area",
+  "region": "scotland",
+  "area": "Law",
+  "lat": 55.75232,
+  "lng": -3.88189,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Muir Street play area",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656700/muir-street-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1121788496"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

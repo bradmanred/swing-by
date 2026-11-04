@@ -1,0 +1,34 @@
+{
+  "name": "Westend Play Area",
+  "region": "scotland",
+  "area": "West End",
+  "lat": 55.70069,
+  "lng": -3.64993,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "rb"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Westend play area",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656638/westend-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1063755263"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Strathaven Park",
+  "region": "scotland",
+  "area": "Strathaven",
+  "lat": 55.67993,
+  "lng": -4.06963,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Strathaven Park",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656658/strathaven-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1544920678"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours and parking.",
+  "photo": null
+}

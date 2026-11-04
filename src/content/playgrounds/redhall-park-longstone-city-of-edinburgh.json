@@ -1,0 +1,32 @@
+{
+  "name": "Redhall Park",
+  "region": "scotland",
+  "area": "Longstone, City of Edinburgh",
+  "lat": 55.92093,
+  "lng": -3.25742,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on City of Edinburgh Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of Edinburgh Council",
+  "sources": [
+    {
+      "label": "City of Edinburgh Council: Redhall Park",
+      "url": "https://www.edinburgh.gov.uk/directory-record/1099227/redhall-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/291994171"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

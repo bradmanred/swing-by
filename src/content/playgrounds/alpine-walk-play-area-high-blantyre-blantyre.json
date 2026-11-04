@@ -1,0 +1,31 @@
+{
+  "name": "Alpine Walk Play Area",
+  "region": "scotland",
+  "area": "High Blantyre, Blantyre",
+  "lat": 55.78998,
+  "lng": -4.08659,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Alpine Walk play area",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656855/alpine-walk-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1118716863"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

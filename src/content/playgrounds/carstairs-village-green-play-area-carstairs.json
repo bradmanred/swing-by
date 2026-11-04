@@ -1,0 +1,34 @@
+{
+  "name": "Carstairs Village Green Play Area",
+  "region": "scotland",
+  "area": "Carstairs",
+  "lat": 55.69605,
+  "lng": -3.69068,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Carstairs Village Green play area",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656810/carstairs-village-green-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/483821856"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
