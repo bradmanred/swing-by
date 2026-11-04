@@ -12,7 +12,11 @@ Find a playground worth the trip. Swing By lists playgrounds with who runs them,
 - `public/admin/`: the content editor (Decap CMS).
 - `worker/` and `functions/api/`: GitHub sign-in for the content editor, and the home page's feedback form (`worker/feedback.js`), run on Cloudflare.
 - `db/feedback.sql`: the table behind the feedback form, in the Cloudflare D1 database `swing-by-photos`.
-- `tests/a11y.mjs`: automated accessibility (axe, WCAG 2.2 AA) and smoke checks.
+- `tests/a11y.mjs`: automated accessibility (axe, WCAG 2.2 AA) and smoke checks in a browser, on a fixed set of pages.
+  Pull requests that only change data run it on just a few of the new playground pages (`scripts/ci-scope.mjs`).
+- `tests/site.mjs`: the checks that need no browser: sitemap, share tags, structured data and links on every page.
+- `tests/a11y-full.mjs`: the yearly full scan of every page (`.github/workflows/a11y-full.yml`, 20 January), reported
+  as a `check-report` issue.
 
 ## Rules for content
 
