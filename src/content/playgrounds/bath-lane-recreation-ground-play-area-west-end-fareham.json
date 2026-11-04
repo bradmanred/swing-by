@@ -1,0 +1,39 @@
+{
+  "name": "Bath Lane Recreation Ground Play Area",
+  "region": "south-east",
+  "area": "West End, Fareham",
+  "lat": 50.84998,
+  "lng": -1.17527,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "bs",
+    "bk",
+    "cl",
+    "rb"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "Roundabout, junior and toddler climbing units, flat and cradle swings, floor games, and inclusive play panel and basket swing.",
+  "nearby": [],
+  "operator": "Fareham Borough Council",
+  "sources": [
+    {
+      "label": "Fareham Borough Council: Bath Lane Recreation Ground Play Area",
+      "url": "https://www.fareham.gov.uk/leisure/out_and_about_in_fareham/play_areas/farehamplayareas.aspx"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/92481981"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

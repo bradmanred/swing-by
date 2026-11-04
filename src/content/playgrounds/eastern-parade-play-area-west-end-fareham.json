@@ -1,0 +1,36 @@
+{
+  "name": "Eastern Parade Play Area",
+  "region": "south-east",
+  "area": "West End, Fareham",
+  "lat": 50.84529,
+  "lng": -1.17752,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "sw",
+    "rb",
+    "ss",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Castle-themed multi-play unit, toddler unit, cradle and flat swings, see-saw, roundabout, springer and football goals.",
+  "nearby": [],
+  "operator": "Fareham Borough Council",
+  "sources": [
+    {
+      "label": "Fareham Borough Council: Eastern Parade Play Area",
+      "url": "https://www.fareham.gov.uk/leisure/out_and_about_in_fareham/play_areas/farehamplayareas.aspx"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/147562347"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

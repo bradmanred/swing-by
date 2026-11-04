@@ -1,0 +1,31 @@
+{
+  "name": "Weston Shore",
+  "region": "south-east",
+  "area": "Woolston, Southampton",
+  "lat": 50.88799,
+  "lng": -1.37548,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "A playground on Southampton City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Southampton City Council",
+  "sources": [
+    {
+      "label": "Southampton City Council: Weston Shore",
+      "url": "https://www.southampton.gov.uk/culture-leisure-tourism/parks-open-spaces/find-a-park/by-area/peartree-woolston/weston-shore"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/89968517"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours and parking.",
+  "photo": null
+}

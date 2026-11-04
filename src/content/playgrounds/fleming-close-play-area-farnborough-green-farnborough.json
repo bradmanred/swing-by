@@ -1,0 +1,31 @@
+{
+  "name": "Fleming Close Play Area",
+  "region": "south-east",
+  "area": "Farnborough Green, Farnborough",
+  "lat": 51.30245,
+  "lng": -0.74526,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Swings, springer and multi-play equipment, on Rushmoor Borough Council's list of local playgrounds (Fleming Close, off Ship Lane, Farnborough).",
+  "nearby": [],
+  "operator": "Rushmoor Borough Council",
+  "sources": [
+    {
+      "label": "Rushmoor Borough Council: Fleming Close Play Area",
+      "url": "https://www.rushmoor.gov.uk/hidden/revised-parks-and-playground-pages/playgrounds-and-play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/77617636"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

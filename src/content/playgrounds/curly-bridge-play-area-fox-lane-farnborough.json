@@ -1,0 +1,31 @@
+{
+  "name": "Curly Bridge Play Area",
+  "region": "south-east",
+  "area": "Fox Lane, Farnborough",
+  "lat": 51.31236,
+  "lng": -0.76926,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Multi-play equipment, slide and swings, on Rushmoor Borough Council's list of local playgrounds (Curly Bridge Close, Farnborough).",
+  "nearby": [],
+  "operator": "Rushmoor Borough Council",
+  "sources": [
+    {
+      "label": "Rushmoor Borough Council: Curly Bridge Play Area",
+      "url": "https://www.rushmoor.gov.uk/hidden/revised-parks-and-playground-pages/playgrounds-and-play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1046818653"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

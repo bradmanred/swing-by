@@ -1,0 +1,32 @@
+{
+  "name": "Northumberland Adventure Playground (The Venny)",
+  "region": "south-east",
+  "area": "Newtown, Southampton",
+  "lat": 50.9136,
+  "lng": -1.39225,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [
+    "ad"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Southampton City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Southampton City Council",
+  "sources": [
+    {
+      "label": "Southampton City Council: Northumberland Adventure Playground (The Venny)",
+      "url": "https://www.southampton.gov.uk/culture-leisure-tourism/parks-open-spaces/find-a-park/by-area/bannister-polygon-bevois/northumberland-adventure-playground-the-venny"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/100025254"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

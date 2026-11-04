@@ -1,0 +1,31 @@
+{
+  "name": "Irvine Drive Play Area",
+  "region": "south-east",
+  "area": "Farnborough",
+  "lat": 51.31114,
+  "lng": -0.77961,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Swings, multi-play equipment and springer, on Rushmoor Borough Council's list of local playgrounds (Irvine Drive, Farnborough).",
+  "nearby": [],
+  "operator": "Rushmoor Borough Council",
+  "sources": [
+    {
+      "label": "Rushmoor Borough Council: Irvine Drive Play Area",
+      "url": "https://www.rushmoor.gov.uk/hidden/revised-parks-and-playground-pages/playgrounds-and-play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/545443774"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,38 @@
+{
+  "name": "Blackbrook Park Play Area",
+  "region": "south-east",
+  "area": "Heathfield, Fareham",
+  "lat": 50.85431,
+  "lng": -1.21336,
+  "ages": [
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "sw",
+    "rb",
+    "tp"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "Junior multi-play unit, cradle and flat swings, space climber, trim trail, inclusive roundabout and trampoline, maze, picnic benches and a teen shelter.",
+  "nearby": [],
+  "operator": "Fareham Borough Council",
+  "sources": [
+    {
+      "label": "Fareham Borough Council: Blackbrook Park Play Area",
+      "url": "https://www.fareham.gov.uk/leisure/out_and_about_in_fareham/play_areas/farehamplayareas.aspx"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/321740930"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
