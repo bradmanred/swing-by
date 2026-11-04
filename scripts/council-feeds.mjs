@@ -2,7 +2,8 @@
 // type 'jadu' or 'localgov' (the two common council website systems: just the directory's address, see
 // scripts/council-readers.mjs), 'directory' (index pages, a regex for record links, regexes for the name and
 // coordinates on each record page, and optionally "require", a regex a record page must match, such as a playground in
-// its facilities list), or 'geojson' / 'csv' (url, name field, and lat/lng fields). Returns [{ name, lat, lng, url }],
+// its facilities list), or 'geojson' / 'csv' (url, name field, and lat/lng fields; a geojson feed can give "nameFormat", such as
+// "{Street} Play Park, {Town}", to build names from several fields). Returns [{ name, lat, lng, url }],
 // plus postcode, equipment, ages, access and facilities from the 'jadu' and 'localgov' readers. Parks whose page has
 // no map point are placed from their postcode; ones with neither are left out.
 // type 'list' is for councils whose playgrounds are all on one page with no machine-readable version (Bexley's table,
@@ -19,6 +20,19 @@ import { describe, readJadu, readLocalGov, readPages } from './council-readers.m
 const UA = { 'User-Agent': 'SwingBy/1.0 (https://swing-by.co.uk; reads council playground lists)' };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 export const strip = (s) => String(s ?? '').replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&').replace(/&#0?39;|&rsquo;/g, "'").replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
+
+/** A geojson feature's name: its nameField, or with "nameFormat" ("{Street} Play Park, {Town}") several fields at once.
+ * A format whose fields are all empty gives ''. */
+export function geoName(props, feed) {
+  if (!feed.nameFormat) return strip(props[feed.nameField]);
+  let filled = false;
+  const name = feed.nameFormat.replace(/\{(\w+)\}/g, (_, k) => {
+    const v = strip(props[k]);
+    if (v) filled = true;
+    return v;
+  });
+  return filled ? name.replace(/\s*,\s*$/, '').replace(/^\s*,\s*/, '').replace(/\s+/g, ' ').trim() : '';
+}
 
 // "Church Meadows - Parks and recreation directory" or the other way round: keep the part that isn't the directory.
 export const recordName = (s) => s.split(/\s+[-|]\s+/).find((part) => part && !/\bdirectory\b/i.test(part)) ?? s;
@@ -109,8 +123,10 @@ export async function readFeed(feed) {
   } else if (feed.type === 'geojson') {
     const j = await fetch(feed.url, { headers: UA }).then((r) => r.json()).catch(() => null);
     for (const f of j?.features ?? []) {
-      const [lng, lat] = f.geometry?.type === 'Point' ? f.geometry.coordinates : [];
-      if (lat != null) recs.push({ name: strip(f.properties?.[feed.nameField]), lat, lng, url: feed.page ?? feed.url });
+      // A point, or the first point of a multipoint (Aberdeen's play areas layer stores each one as a multipoint).
+      const g = f.geometry;
+      const [lng, lat] = g?.type === 'Point' ? g.coordinates : g?.type === 'MultiPoint' ? g.coordinates?.[0] ?? [] : [];
+      if (lat != null) recs.push({ name: geoName(f.properties ?? {}, feed), lat, lng, url: feed.page ?? feed.url });
     }
   } else if (feed.type === 'csv') {
     const text = await fetch(feed.url, { headers: UA }).then((r) => r.text()).catch(() => '');
