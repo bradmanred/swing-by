@@ -3,6 +3,10 @@
 # pull request already was, and bot commits only refresh data), a newer push to a pull request cancels the run for the
 # older one, and the test browser is kept between runs. Bot workflows that push to a pull request branch (coverage,
 # pin moves, junctions, toilets) start this themselves, since a workflow's own commits don't start other workflows.
+# Pull requests that only change data (new playgrounds, pins, toilets, council lists) skip the full browser test: the
+# page templates haven't changed, so axe checks just a few of the new playground pages (scripts/ci-scope.mjs). The
+# checks that need no browser (tests/site.mjs and the rest) always run, and the yearly full scan
+# (.github/workflows/a11y-full.yml) checks every page.
 name: Build and accessibility checks
 on:
   pull_request:
@@ -19,6 +23,9 @@ jobs:
       (!startsWith(github.event.head_commit.message, 'Merge pull request') && github.event.head_commit.author.name != 'swing-by-bot')
     runs-on: ubuntu-24.04 # Playwright 1.56 has no browser builds for newer Ubuntu yet
     timeout-minutes: 20
+    permissions:
+      contents: read
+      pull-requests: read
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -26,10 +33,35 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - name: Decide how much browser testing this needs
+        id: scope
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          # Direct pushes to main, and anything we can't read, get the full test.
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -z "$PR" ]; then
+            PR=$(gh api "repos/$GITHUB_REPOSITORY/pulls?state=open&head=${GITHUB_REPOSITORY_OWNER}:${BRANCH}" --jq '.[0].number // empty' || true)
+          fi
+          if [ -n "$PR" ] && gh api --paginate "repos/$GITHUB_REPOSITORY/pulls/$PR/files?per_page=100" --jq '.[] | "\(.status)\t\(.filename)"' > files.txt \
+            && [ "$(wc -l < files.txt)" -lt 3000 ]; then # the files API stops at 3,000
+            node scripts/ci-scope.mjs < files.txt >> "$GITHUB_OUTPUT"
+          else
+            echo "mode=full" >> "$GITHUB_OUTPUT"
+          fi
+          cat "$GITHUB_OUTPUT"
       - run: npm run build
+      - run: npm run test:quick
       - uses: actions/cache@v4
+        if: steps.scope.outputs.mode != 'none'
         with:
           path: ~/.cache/ms-playwright
           key: playwright-${{ hashFiles('package-lock.json') }}
-      - run: npx playwright install --with-deps chromium
-      - run: npm test
+      - if: steps.scope.outputs.mode != 'none'
+        run: npx playwright install --with-deps chromium
+      - name: Accessibility and smoke tests (${{ steps.scope.outputs.mode }})
+        if: steps.scope.outputs.mode != 'none'
+        env:
+          A11Y_ONLY: ${{ steps.scope.outputs.mode == 'light' && steps.scope.outputs.pages || '' }}
+        run: node tests/a11y.mjs

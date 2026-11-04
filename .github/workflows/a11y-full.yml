@@ -1,0 +1,88 @@
+# Yearly full accessibility scan: every page of the site, at desktop and phone widths, checked with axe against WCAG 2.2
+# AA (tests/a11y-full.mjs), plus sideways scrolling and script errors. The checks on each pull request test a fixed set
+# of pages (and data-only pull requests just a few new playground pages), so this catches anything they miss, such as
+# a problem that only shows with one playground's data. It changes nothing: problems are posted as an issue labelled
+# check-report, which the daily "Fix check reports" Claude task works through (docs/fixing-check-reports.md).
+# The pages are split across 10 jobs of about 50 minutes each. axe takes about a second a page, so with ~12,000 pages
+# at two widths it costs roughly 500 Actions minutes, once a year on 20 January (run it from the Actions tab at any
+# other time). The cost grows with the site: at around 50,000 pages, consider checking playground pages at one width.
+name: Yearly full accessibility scan
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 4 20 1 *'
+permissions:
+  contents: read
+concurrency:
+  group: a11y-full
+  cancel-in-progress: false
+jobs:
+  scan:
+    runs-on: ubuntu-24.04 # Playwright 1.56 has no browser builds for newer Ubuntu yet
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ hashFiles('package-lock.json') }}
+      - run: npx playwright install --with-deps chromium
+      - name: Scan this job's share of the pages
+        env:
+          SHARD: ${{ matrix.shard }}
+          SHARDS: 10
+        run: node tests/a11y-full.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: a11y-full-${{ matrix.shard }}
+          path: reports/a11y-full-${{ matrix.shard }}.json
+  report:
+    needs: scan
+    if: always()
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: scripts
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: a11y-full-*
+          path: reports
+          merge-multiple: true
+      - name: Combine the results
+        id: sum
+        run: node scripts/a11y-report.mjs | tee -a "$GITHUB_OUTPUT"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: a11y-full
+          path: reports/
+      - name: Open the report as an issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          cat reports/a11y-full.md >> "$GITHUB_STEP_SUMMARY"
+          if [ "${{ steps.sum.outputs.problems }}" = "0" ] && [ "${{ steps.sum.outputs.scanned }}" = "${{ steps.sum.outputs.total }}" ]; then
+            echo "No problems found, so no issue opened."
+            exit 0
+          fi
+          { cat reports/a11y-full.md; echo; echo "Every page and finding: the a11y-full artifact on [this run]($GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID)."; } > body.md
+          head -c 60000 body.md > issue.md
+          gh api "repos/$GITHUB_REPOSITORY/issues" -f title="Yearly full accessibility scan, $(date +%Y-%m-%d)" -F body=@issue.md -f "labels[]=check-report" --jq .html_url
