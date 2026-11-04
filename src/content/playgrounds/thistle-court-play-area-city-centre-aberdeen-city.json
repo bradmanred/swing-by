@@ -1,0 +1,28 @@
+{
+  "name": "Thistle Court Play Area",
+  "region": "scotland",
+  "area": "City Centre, Aberdeen City",
+  "lat": 57.14577,
+  "lng": -2.11135,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Aberdeen City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Aberdeen City Council",
+  "sources": [
+    {
+      "label": "Aberdeen City Council: Thistle Court Play Area",
+      "url": "https://www.aberdeencity.gov.uk/services/leisure-culture-and-parks/playparks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/976757632"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

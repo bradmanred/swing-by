@@ -1,0 +1,28 @@
+{
+  "name": "Central Park, Dyce Play Area",
+  "region": "scotland",
+  "area": "Dyce, Aberdeen City",
+  "lat": 57.20689,
+  "lng": -2.18028,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Aberdeen City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Aberdeen City Council",
+  "sources": [
+    {
+      "label": "Aberdeen City Council: Central Park, Dyce Play Area",
+      "url": "https://www.aberdeencity.gov.uk/services/leisure-culture-and-parks/playparks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/951423438"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

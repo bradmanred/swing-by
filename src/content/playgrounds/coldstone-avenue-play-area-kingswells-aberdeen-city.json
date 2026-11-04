@@ -1,0 +1,28 @@
+{
+  "name": "Coldstone Avenue Play Area",
+  "region": "scotland",
+  "area": "Kingswells, Aberdeen City",
+  "lat": 57.15513,
+  "lng": -2.22847,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Aberdeen City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Aberdeen City Council",
+  "sources": [
+    {
+      "label": "Aberdeen City Council: Coldstone Avenue Play Area",
+      "url": "https://www.aberdeencity.gov.uk/services/leisure-culture-and-parks/playparks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/942694201"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
