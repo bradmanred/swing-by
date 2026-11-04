@@ -1,0 +1,32 @@
+{
+  "name": "Woodean Park",
+  "region": "scotland",
+  "area": "Kirkfield, Bothwell",
+  "lat": 55.80124,
+  "lng": -4.07498,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Woodean Park",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656626/woodean-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/178856583"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Ramillies Court Play Area",
+  "region": "scotland",
+  "area": "Crawforddyke, Carluke",
+  "lat": 55.73281,
+  "lng": -3.82542,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Ramillies Court play area",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656684/ramillies-court-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/407716015"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

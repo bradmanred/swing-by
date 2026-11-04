@@ -1,0 +1,32 @@
+{
+  "name": "Donaldson Street Play Area",
+  "region": "scotland",
+  "area": "Burnbank, Bothwell",
+  "lat": 55.78246,
+  "lng": -4.07107,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Donaldson Street play area",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656783/donaldson-street-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/620184291"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

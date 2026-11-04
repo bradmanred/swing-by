@@ -1,0 +1,34 @@
+{
+  "name": "Broomhouse Grove Play Area",
+  "region": "scotland",
+  "area": "Sighthill, Broomhouse and Parkhead, City of Edinburgh",
+  "lat": 55.92755,
+  "lng": -3.27963,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A playground on City of Edinburgh Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of Edinburgh Council",
+  "sources": [
+    {
+      "label": "City of Edinburgh Council: Broomhouse Grove",
+      "url": "https://www.edinburgh.gov.uk/directory-record/1099113/broomhouse-grove"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/383258181"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

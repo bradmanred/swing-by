@@ -1,0 +1,34 @@
+{
+  "name": "Dalrymple Drive Play Area",
+  "region": "scotland",
+  "area": "The Village, East Kilbride",
+  "lat": 55.76978,
+  "lng": -4.18125,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "bs"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Dalrymple Drive play area",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656790/dalrymple-drive-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/966642850"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

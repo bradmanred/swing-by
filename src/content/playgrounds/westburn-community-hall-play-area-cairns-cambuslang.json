@@ -1,0 +1,34 @@
+{
+  "name": "Westburn Community Hall Play Area",
+  "region": "scotland",
+  "area": "Cairns, Cambuslang",
+  "lat": 55.81968,
+  "lng": -4.15413,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sk"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Westburn Community Hall play area",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656639/westburn-community-hall-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1116345537"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

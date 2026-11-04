@@ -1,0 +1,27 @@
+{
+  "name": "Stenhouse Play Area",
+  "region": "scotland",
+  "area": "Stenhouse, City of Edinburgh",
+  "lat": 55.93275,
+  "lng": -3.25732,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on City of Edinburgh Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of Edinburgh Council",
+  "sources": [
+    {
+      "label": "City of Edinburgh Council: Stenhouse Playarea",
+      "url": "https://www.edinburgh.gov.uk/directory-record/1099241/stenhouse-playarea-"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (approximate: mapped from the postcode), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

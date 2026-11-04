@@ -1,0 +1,39 @@
+{
+  "name": "Fairmilehead Park",
+  "region": "scotland",
+  "area": "Fairmilehead, City of Edinburgh",
+  "lat": 55.90681,
+  "lng": -3.21411,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "bk",
+    "sw",
+    "sl",
+    "zw",
+    "rb"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on City of Edinburgh Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of Edinburgh Council",
+  "sources": [
+    {
+      "label": "City of Edinburgh Council: Fairmilehead Park",
+      "url": "https://www.edinburgh.gov.uk/directory-record/1099147/fairmilehead-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/162801101"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

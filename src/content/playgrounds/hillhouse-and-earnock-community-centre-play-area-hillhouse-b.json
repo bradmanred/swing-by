@@ -1,0 +1,32 @@
+{
+  "name": "Hillhouse and Earnock Community Centre Play Area",
+  "region": "scotland",
+  "area": "Hillhouse, Blantyre",
+  "lat": 55.77664,
+  "lng": -4.08344,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Hillhouse and Earnock Community Centre play area",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656739/hillhouse-and-earnock-community-centre-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/221436292"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

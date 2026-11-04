@@ -1,0 +1,30 @@
+{
+  "name": "Westburn Grove Play Area",
+  "region": "scotland",
+  "area": "Wester Hailes, City of Edinburgh",
+  "lat": 55.91433,
+  "lng": -3.28874,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A playground on City of Edinburgh Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of Edinburgh Council",
+  "sources": [
+    {
+      "label": "City of Edinburgh Council: Westburn Grove",
+      "url": "https://www.edinburgh.gov.uk/directory-record/1099250/westburn-grove"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/496034114"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

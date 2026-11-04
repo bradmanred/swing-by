@@ -1,0 +1,31 @@
+{
+  "name": "Ferniegair Play Area",
+  "region": "scotland",
+  "area": "Silvertonhill, Allanton",
+  "lat": 55.76529,
+  "lng": -4.00406,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Ferniegair play area",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656767/ferniegair-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1121868667"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

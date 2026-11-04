@@ -1,0 +1,31 @@
+{
+  "name": "Northview Court Play Area",
+  "region": "scotland",
+  "area": "Pilton, City of Edinburgh",
+  "lat": 55.97281,
+  "lng": -3.25253,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on City of Edinburgh Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of Edinburgh Council",
+  "sources": [
+    {
+      "label": "City of Edinburgh Council: Northview Court",
+      "url": "https://www.edinburgh.gov.uk/directory-record/1099211/northview-court"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/888271231"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

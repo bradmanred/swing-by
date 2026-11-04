@@ -1,0 +1,32 @@
+{
+  "name": "Donaldson Road Play Area",
+  "region": "scotland",
+  "area": "Shawsburn",
+  "lat": 55.72902,
+  "lng": -3.95596,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Donaldson Road play area",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656784/donaldson-road-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1121891967"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

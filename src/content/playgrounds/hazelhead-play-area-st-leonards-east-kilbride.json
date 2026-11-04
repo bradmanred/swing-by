@@ -1,0 +1,34 @@
+{
+  "name": "Hazelhead Play Area",
+  "region": "scotland",
+  "area": "St Leonards, East Kilbride",
+  "lat": 55.76681,
+  "lng": -4.15595,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Hazelhead play area",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656742/hazelhead-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/476315720"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
