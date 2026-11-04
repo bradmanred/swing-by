@@ -1369,6 +1369,242 @@
           "km": 14
         }
       }
+    },
+    {
+      "district": "Southampton",
+      "council": "Southampton City Council",
+      "sources": [
+        "https://www.southampton.gov.uk/culture-leisure-tourism/parks-open-spaces/find-a-park/by-area/"
+      ],
+      "note": "Find a park by area: nine area pages, each linking to one page per park with its facilities and postcode; parks whose page mentions a play area are imported (4 November 2026). Housing-estate play areas aren't listed, so those come from OpenStreetMap.",
+      "feed": {
+        "type": "pages",
+        "index": [
+          "https://www.southampton.gov.uk/culture-leisure-tourism/parks-open-spaces/find-a-park/by-area/bannister-polygon-bevois/",
+          "https://www.southampton.gov.uk/culture-leisure-tourism/parks-open-spaces/find-a-park/by-area/bargate/",
+          "https://www.southampton.gov.uk/culture-leisure-tourism/parks-open-spaces/find-a-park/by-area/bassett-coxford/",
+          "https://www.southampton.gov.uk/culture-leisure-tourism/parks-open-spaces/find-a-park/by-area/bitterne-park-harefield/",
+          "https://www.southampton.gov.uk/culture-leisure-tourism/parks-open-spaces/find-a-park/by-area/freemantle-shirley/",
+          "https://www.southampton.gov.uk/culture-leisure-tourism/parks-open-spaces/find-a-park/by-area/millbrook-redbridge/",
+          "https://www.southampton.gov.uk/culture-leisure-tourism/parks-open-spaces/find-a-park/by-area/peartree-woolston/",
+          "https://www.southampton.gov.uk/culture-leisure-tourism/parks-open-spaces/find-a-park/by-area/portswood-swaythling/",
+          "https://www.southampton.gov.uk/culture-leisure-tourism/parks-open-spaces/find-a-park/by-area/sholing-thornhill/"
+        ],
+        "follow": "/find-a-park/by-area/[a-z-]+/[a-z0-9-]+/?$",
+        "approximate": true
+      }
+    },
+    {
+      "district": "Portsmouth",
+      "council": "Portsmouth City Council",
+      "sources": [
+        "https://www.portsmouth.gov.uk/services/leisure/sports-and-activities/playgrounds-and-skate-parks",
+        "https://www.portsmouth.gov.uk/services/leisure/sports-and-activities/playgrounds-and-skate-parks/adventure-playgrounds"
+      ],
+      "note": "Checked 4 November 2026: the council says it has almost 100 play areas but only publishes them on a PDF map, and its parks pages don't say which have play areas. The six PYC adventure playgrounds are in src/data/council-lists/portsmouth-adventure.csv, placed by name; other play areas come from OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/portsmouth-adventure.csv",
+        "page": "https://www.portsmouth.gov.uk/services/leisure/sports-and-activities/playgrounds-and-skate-parks/adventure-playgrounds",
+        "near": {
+          "lat": 50.82,
+          "lng": -1.07,
+          "km": 7
+        }
+      }
+    },
+    {
+      "district": "Basingstoke and Deane",
+      "council": "Basingstoke and Deane Borough Council",
+      "sources": [
+        "https://www.basingstoke.gov.uk/playareas",
+        "https://www.basingstoke.gov.uk/content/doclib/4713.pdf"
+      ],
+      "note": "The play area listing (PDF) gives every site with a location and postcode; the 148 play areas (skate parks, games areas and the fitness trail left out) are in src/data/council-lists/basingstoke-and-deane.csv (4 November 2026). Parish play areas come from OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/basingstoke-and-deane.csv",
+        "page": "https://www.basingstoke.gov.uk/playareas",
+        "near": {
+          "lat": 51.27,
+          "lng": -1.12,
+          "km": 18
+        }
+      }
+    },
+    {
+      "district": "Winchester",
+      "council": "Winchester City Council",
+      "sources": [
+        "https://www.winchester.gov.uk/natural-environment/location-of-our-play-gym-and-skate-sites"
+      ],
+      "note": "Location of play, gym and skate sites: its 25 play areas with postcodes, in src/data/council-lists/winchester.csv (4 November 2026). Most villages' play areas are run by parish councils (Bishop's Waltham, Alresford and others) and come from OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/winchester.csv",
+        "page": "https://www.winchester.gov.uk/natural-environment/location-of-our-play-gym-and-skate-sites",
+        "near": {
+          "lat": 51.03,
+          "lng": -1.25,
+          "km": 22
+        }
+      }
+    },
+    {
+      "district": "Test Valley",
+      "council": "Test Valley Borough Council",
+      "sources": [
+        "https://testvalley.gov.uk/communityandleisure/parksandgreenspaces/playgrounds"
+      ],
+      "note": "Playgrounds by area (Andover, Romsey, North Baddesley, Valley Park) with postcodes: 67, in src/data/council-lists/test-valley.csv (4 November 2026). Parish council play areas come from OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/test-valley.csv",
+        "page": "https://testvalley.gov.uk/communityandleisure/parksandgreenspaces/playgrounds",
+        "near": {
+          "lat": 51.1,
+          "lng": -1.45,
+          "km": 28
+        }
+      }
+    },
+    {
+      "district": "Eastleigh",
+      "council": "Eastleigh Borough Council",
+      "sources": [
+        "https://www.eastleigh.gov.uk/parks-leisure-and-culture/play-areas-and-paddling-pools/play-areas"
+      ],
+      "note": "Play areas in the borough, by who runs them (the borough, the country park, and every town and parish council): 55, in src/data/council-lists/eastleigh.csv (4 November 2026). No addresses, so placed by name; the rest come from OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/eastleigh.csv",
+        "page": "https://www.eastleigh.gov.uk/parks-leisure-and-culture/play-areas-and-paddling-pools/play-areas",
+        "near": {
+          "lat": 50.95,
+          "lng": -1.33,
+          "km": 10
+        }
+      }
+    },
+    {
+      "district": "Fareham",
+      "council": "Fareham Borough Council",
+      "sources": [
+        "https://www.fareham.gov.uk/leisure/out_and_about_in_fareham/play_areas/farehamplayareas.aspx"
+      ],
+      "note": "Play areas in Fareham: nine major play areas with postcodes and equipment, in src/data/council-lists/fareham.csv (4 November 2026). Smaller ones are only on the council's map, so they come from OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/fareham.csv",
+        "page": "https://www.fareham.gov.uk/leisure/out_and_about_in_fareham/play_areas/farehamplayareas.aspx",
+        "near": {
+          "lat": 50.85,
+          "lng": -1.2,
+          "km": 9
+        }
+      }
+    },
+    {
+      "district": "Gosport",
+      "council": "Gosport Borough Council",
+      "sources": [
+        "https://www.gosport.gov.uk/playareas"
+      ],
+      "note": "Checked 4 November 2026: the play areas page only has an interactive map, with no list, so play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Havant",
+      "council": "Havant Borough Council",
+      "sources": [
+        "https://www.havant.gov.uk/community-and-living/play-parks-and-open-spaces/play-parks-and-open-spaces-overview",
+        "https://www.havant.gov.uk/media/7895/download?inline"
+      ],
+      "note": "The parks and open spaces brochure clearly names three playgrounds, in src/data/council-lists/havant.csv (4 November 2026); the council's other play parks aren't listed, so they come from OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/havant.csv",
+        "page": "https://www.havant.gov.uk/community-and-living/play-parks-and-open-spaces/play-parks-and-open-spaces-overview",
+        "near": {
+          "lat": 50.86,
+          "lng": -0.98,
+          "km": 9
+        }
+      }
+    },
+    {
+      "district": "Rushmoor",
+      "council": "Rushmoor Borough Council",
+      "sources": [
+        "https://www.rushmoor.gov.uk/hidden/revised-parks-and-playground-pages/playgrounds-and-play-areas",
+        "https://www.rushmoor.gov.uk/community-parks-and-leisure/parks-and-outdoors/parks-and-playgrounds"
+      ],
+      "note": "Playgrounds and play areas (24 with postcodes and equipment) plus the parks and recreation grounds with play areas (15, placed by name), in src/data/council-lists/rushmoor.csv (4 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/rushmoor.csv",
+        "page": "https://www.rushmoor.gov.uk/community-parks-and-leisure/parks-and-outdoors/parks-and-playgrounds",
+        "near": {
+          "lat": 51.27,
+          "lng": -0.76,
+          "km": 7
+        }
+      }
+    },
+    {
+      "district": "East Hampshire",
+      "council": "East Hampshire District Council",
+      "sources": [
+        "https://www.easthants.gov.uk/community-and-living/physical-activity-and-sport/play-areas"
+      ],
+      "note": "The council's own 11 play areas, by street and village, in src/data/council-lists/east-hampshire.csv (4 November 2026). Most play areas are run by town and parish councils (Petersfield, Alton, Whitehill and others) and come from OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/east-hampshire.csv",
+        "page": "https://www.easthants.gov.uk/community-and-living/physical-activity-and-sport/play-areas",
+        "near": {
+          "lat": 51.05,
+          "lng": -0.93,
+          "km": 22
+        }
+      }
+    },
+    {
+      "district": "New Forest",
+      "council": "New Forest District Council",
+      "sources": [
+        "https://newforest.govocal.com/en-GB/projects/play-spaces-survey",
+        "https://lymingtonandpennington-tc.gov.uk/play-areas-1"
+      ],
+      "note": "Checked 4 November 2026: the district council publishes no list of play areas, and most are run by town and parish councils. Lymington and Pennington Town Council's seven are in src/data/council-lists/lymington-and-pennington.csv; others come from OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/lymington-and-pennington.csv",
+        "page": "https://lymingtonandpennington-tc.gov.uk/play-areas-1",
+        "near": {
+          "lat": 50.75,
+          "lng": -1.56,
+          "km": 5
+        }
+      }
+    },
+    {
+      "district": "Hart",
+      "council": "Hart District Council",
+      "sources": [
+        "https://www.hart.gov.uk/countryside-and-leisure",
+        "https://www.hart.gov.uk/news/come-and-play-whitewater-meadows"
+      ],
+      "note": "Checked 4 November 2026: the district council runs countryside sites rather than a play area list (Whitewater Meadows' new play area is in src/data/council-lists/hart.csv); Fleet Town Council's asset list wouldn't download, so other play areas come from OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/hart.csv",
+        "page": "https://www.hart.gov.uk/news/come-and-play-whitewater-meadows",
+        "near": {
+          "lat": 51.27,
+          "lng": -0.95,
+          "km": 5
+        }
+      }
     }
   ]
 }
