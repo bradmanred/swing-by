@@ -1,0 +1,32 @@
+{
+  "name": "Riverside Park Playground, Auckley",
+  "region": "yorkshire",
+  "area": "Auckley, Doncaster",
+  "lat": 53.50685,
+  "lng": -1.02026,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Toddler and junior play areas, basketball post, on Doncaster Council's list of local parks and outdoor spaces (Ravenswood Drive, Auckley).",
+  "nearby": [],
+  "operator": "City of Doncaster Council",
+  "sources": [
+    {
+      "label": "City of Doncaster Council: Riverside Park Playground, Auckley",
+      "url": "https://doncaster.gov.uk/services/culture-leisure-tourism/parks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1449691731"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Wadworth Hall Lane Playground",
+  "region": "yorkshire",
+  "area": "Wadworth, Doncaster",
+  "lat": 53.46817,
+  "lng": -1.14746,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Toddler and junior play area, on Doncaster Council's list of local parks and outdoor spaces (Wadworth Hall Lane, Wadworth).",
+  "nearby": [],
+  "operator": "City of Doncaster Council",
+  "sources": [
+    {
+      "label": "City of Doncaster Council: Wadworth Hall Lane Playground",
+      "url": "https://doncaster.gov.uk/services/culture-leisure-tourism/parks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1375193739"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

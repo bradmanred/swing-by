@@ -1,0 +1,32 @@
+{
+  "name": "Belle Vue Avenue Playground, Hyde Park",
+  "region": "yorkshire",
+  "area": "Lakeside, Doncaster",
+  "lat": 53.51834,
+  "lng": -1.10795,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Toddler and junior play areas, on Doncaster Council's list of local parks and outdoor spaces (Belle Vue Avenue, Hyde Park).",
+  "nearby": [],
+  "operator": "City of Doncaster Council",
+  "sources": [
+    {
+      "label": "City of Doncaster Council: Belle Vue Avenue Playground, Hyde Park",
+      "url": "https://doncaster.gov.uk/services/culture-leisure-tourism/parks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1317981098"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
