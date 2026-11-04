@@ -1686,6 +1686,26 @@
         "http://gisdata-nlcmaps.opendata.arcgis.com/"
       ],
       "note": "Checked 4 November 2026: no published list of play parks on the website or open data portal, so play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Isle of Wight",
+      "council": "Isle of Wight Council",
+      "sources": [
+        "https://www.iow.gov.uk/libraries-leisure-and-heritage/recreation-and-lesiure/parks-and-public-spaces/playgrounds-and-recreational-grounds",
+        "https://iwc.iow.gov.uk/documentlibrary/download/playgrounds-070417",
+        "https://iow.gov.uk/libraries-leisure-and-heritage/recreation-and-lesiure/parks-and-public-spaces/public-open-spaces"
+      ],
+      "note": "The council's list of the Island's public playgrounds (2017), which also names those run by town and parish councils (East Cowes, Newport and Carisbrooke, Sandown, Freshwater, Totland): 33 play areas (paddling pools left out) in src/data/council-lists/isle-of-wight.csv (4 November 2026), placed by name or street. Some may since have moved to town and parish councils; others come from OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/isle-of-wight.csv",
+        "page": "https://www.iow.gov.uk/libraries-leisure-and-heritage/recreation-and-lesiure/parks-and-public-spaces/playgrounds-and-recreational-grounds",
+        "near": {
+          "lat": 50.67,
+          "lng": -1.3,
+          "km": 20
+        }
+      }
     }
   ]
 }
