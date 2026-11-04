@@ -1,0 +1,28 @@
+{
+  "name": "Barrack Hill Play Area",
+  "region": "wales",
+  "area": "Crindau, Newport",
+  "lat": 51.5972,
+  "lng": -3.00472,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Play area at Barrack Hill, on Newport City Council's list of play areas.",
+  "nearby": [],
+  "operator": "Newport City Council",
+  "sources": [
+    {
+      "label": "Newport City Council: Barrack Hill Play Area",
+      "url": "https://www.newport.gov.uk/our-city/see-and-do/green-spaces/play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1182137910"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

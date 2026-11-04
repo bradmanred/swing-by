@@ -1,0 +1,30 @@
+{
+  "name": "Gwynant Play Area, Plas Madoc",
+  "region": "wales",
+  "area": "Cefn, Plas Madoc",
+  "lat": 52.98168,
+  "lng": -3.06154,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Play area with a multi-use games area, run by Wrexham Council, on Wrexham Council's playgrounds list.",
+  "nearby": [],
+  "operator": "Wrexham County Borough Council",
+  "sources": [
+    {
+      "label": "Wrexham County Borough Council: Gwynant Play Area, Plas Madoc",
+      "url": "https://www.wrexham.gov.uk/service/playgrounds/playgrounds-plas-madoc"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1029408117"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
