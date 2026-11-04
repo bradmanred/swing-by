@@ -57,6 +57,24 @@ Full lists are in the `quarterly-check` artifact on the run linked at the bottom
   under "For the owner to decide".
 - **Not checked for over a year:** re-check against the official source and update details and `checked`.
 
+### Yearly full accessibility scan (`tests/a11y-full.mjs`)
+
+Every page is checked at 1280px and 375px wide against WCAG 2.2 AA with axe. The issue groups each problem once, with
+how many pages it affects and up to 10 examples; every finding is in the `a11y-full` artifact on the run linked at the
+bottom of the issue.
+
+- **Start with the most widespread problems.** A problem on hundreds of pages is almost always one template or style
+  (`src/pages/`, `src/components/`, `src/layouts/`, `src/styles/`), so fix it there once, not page by page.
+- **Problems on a few pages only** usually come from one playground's data (a very long name, a description with odd
+  characters, a photo without a screen-reader description). Fix the playground file, or make the template cope with
+  that kind of data so it can't happen again.
+- **Reproduce before fixing:** build, then run axe on the example pages with `A11Y_ONLY="/playgrounds/x/" node
+  tests/a11y.mjs`. After the fix, run it again, and add a page that had the problem to `PAGES` in `tests/a11y.mjs` when
+  it shows a kind of page the pull request checks don't cover yet.
+- **"Couldn't be checked"** means the page didn't load within 30 seconds in the scan: open it, and if it loads fine,
+  note it in the PR rather than changing anything.
+- Don't change colours, fonts or layout beyond what the fix needs, and say in the PR which pages you checked.
+
 ### Adding a new check
 
 A new workflow that reports problems for fixing should open its issue with the `check-report` label

@@ -1,28 +1,18 @@
-// Accessibility and smoke tests: run with `npm test` after `npm run build`.
-import { createServer } from 'node:http';
-import { readFile, readdir, stat } from 'node:fs/promises';
-import { extname, join, normalize } from 'node:path';
+// Accessibility and smoke tests in a browser: run with `npm test` after `npm run build`. The checks that need no browser
+// (sitemap, share tags, structured data, links) are in tests/site.mjs.
+//
+// Light mode, for pull requests that only change data (new playgrounds, pins, toilets): A11Y_ONLY="/playgrounds/a/,/playgrounds/b/"
+// checks just those pages with axe at both widths, and skips the full page set and the smoke tests, since the page
+// templates haven't changed. The yearly full scan (tests/a11y-full.mjs) checks every page.
+import { readdir } from 'node:fs/promises';
 import { chromium } from 'playwright';
 import { AxeBuilder } from '@axe-core/playwright';
+import { serve, WCAG } from './serve.mjs';
 
-const PORT = 4329;
-const BASE = `http://localhost:${PORT}`;
+const ONLY = (process.env.A11Y_ONLY ?? '').split(',').map((s) => s.trim()).filter(Boolean);
 const PAGES = ['/', '/playgrounds/', '/playgrounds/verulamium/', '/playgrounds/stanborough/', '/road-trips/', '/memberships/', '/my-parks/', '/about/', '/search/', '/search/?q=moneyhole', '/404/', '/playgrounds/in/', '/playgrounds/in/herts/', '/playgrounds/in/herts/st-albans/', '/playgrounds/in/devon/', '/playgrounds/in/essex/chelmsford/'];
 
-// A tiny static server for the built site in dist/.
-const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.mjs': 'text/javascript', '.css': 'text/css', '.svg': 'image/svg+xml', '.json': 'application/json', '.yml': 'text/yaml' };
-const server = createServer(async (req, res) => {
-  let file = join('dist', normalize(decodeURIComponent(new URL(req.url, BASE).pathname)));
-  try {
-    if ((await stat(file)).isDirectory()) file = join(file, 'index.html');
-    res.writeHead(200, { 'Content-Type': TYPES[extname(file)] ?? 'application/octet-stream' });
-    res.end(await readFile(file));
-  } catch {
-    res.writeHead(404, { 'Content-Type': 'text/html' });
-    res.end(await readFile('dist/404.html'));
-  }
-});
-await new Promise((ok) => server.listen(PORT, ok));
+const { server, base: BASE } = await serve(4329);
 
 const browser = await chromium.launch(process.env.CHROMIUM ? { executablePath: process.env.CHROMIUM } : {});
 let failures = 0;
@@ -31,67 +21,6 @@ const fail = (msg) => {
   console.error('✗', msg);
 };
 
-// MapLibre loads its worker from a separate file; without it the map stays blank.
-if (!(await readdir('dist/_astro')).some((f) => f.startsWith('maplibre-gl-worker'))) fail('map worker file missing from the build');
-
-// Search engine basics: sitemap, robots.txt, the share image, and the tags and structured data on every page that has them.
-{
-  const read = (path) => readFile(join('dist', path), 'utf8').catch(() => null);
-  const robots = await read('robots.txt');
-  if (!robots?.includes('Sitemap: https://swing-by.co.uk/sitemap-index.xml')) fail('robots.txt should point to the sitemap');
-  const sitemap = await read('sitemap-0.xml');
-  if (!sitemap) fail('sitemap-0.xml is missing from the build');
-  else {
-    for (const hidden of ['/moderate/', '/my-parks/', '/search/', '/admin/']) if (sitemap.includes(`https://swing-by.co.uk${hidden}<`)) fail(`${hidden} should not be in the sitemap`);
-    for (const wanted of ['/', '/playgrounds/verulamium/', '/playgrounds/in/', '/playgrounds/in/herts/']) if (!sitemap.includes(`https://swing-by.co.uk${wanted}<`)) fail(`${wanted} should be in the sitemap`);
-  }
-  if (!(await stat('dist/og-default.png').catch(() => null))) fail('the share image (og-default.png) is missing');
-  for (const path of ['/moderate/', '/my-parks/', '/search/']) if (!(await read(`${path}index.html`))?.includes('name="robots" content="noindex"')) fail(`${path} should have a noindex tag`);
-  if ((await read('index.html'))?.includes('noindex')) fail('the home page must not be noindex');
-
-  const jsonLd = (html) => [...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)].flatMap((m) => [JSON.parse(m[1])].flat());
-  const checkHead = (path, html) => {
-    if (!html.includes(`<link rel="canonical" href="https://swing-by.co.uk${path}">`)) fail(`${path}: canonical link missing or wrong`);
-    for (const t of ['og:title', 'og:description', 'og:url', 'og:image']) if (!html.includes(`property="${t}"`)) fail(`${path}: ${t} missing`);
-  };
-
-  // Every playground page: canonical link, share tags, and a Playground with a position.
-  const dirs = (await readdir('dist/playgrounds', { withFileTypes: true })).filter((d) => d.isDirectory() && d.name !== 'in').map((d) => d.name);
-  let badLd = 0;
-  for (const id of dirs) {
-    const path = `/playgrounds/${id}/`;
-    const html = await read(`playgrounds/${id}/index.html`);
-    if (!html) { fail(`${path}: page missing`); continue; }
-    checkHead(path, html);
-    try {
-      const g = jsonLd(html).find((x) => x['@type'] === 'Playground');
-      if (!g?.name || typeof g.geo?.latitude !== 'number' || typeof g.geo?.longitude !== 'number' || typeof g.isAccessibleForFree !== 'boolean') throw new Error('incomplete');
-    } catch { if (++badLd <= 5) fail(`${path}: structured data is missing or incomplete`); }
-  }
-  if (badLd > 5) fail(`...and ${badLd - 5} more playground pages with bad structured data`);
-
-  // Every place page: tags, a heading, valid structured data, and every playground it lists is a real page.
-  const placeFiles = [];
-  const walk = async (dir) => {
-    for (const e of await readdir(join('dist', dir), { withFileTypes: true })) {
-      if (e.isDirectory()) await walk(`${dir}/${e.name}`);
-      else if (e.name === 'index.html') placeFiles.push(dir);
-    }
-  };
-  await walk('playgrounds/in');
-  if (placeFiles.length < 50) fail(`expected plenty of place pages, found ${placeFiles.length}`);
-  const built = new Set(dirs);
-  let badLinks = 0;
-  for (const dir of placeFiles) {
-    const path = `/${dir}/`;
-    const html = await read(`${dir}/index.html`);
-    checkHead(path, html);
-    if (!/<h1[ >]/.test(html)) fail(`${path}: no heading`);
-    try { if (!jsonLd(html).some((x) => x['@type'] === 'BreadcrumbList')) throw new Error('none'); } catch { fail(`${path}: breadcrumb structured data missing`); }
-    for (const [, id] of html.matchAll(/href="\/playgrounds\/([^/"#]+)\/"/g)) if (id !== 'in' && !built.has(id) && ++badLinks <= 5) fail(`${path}: links to a playground page that doesn't exist (${id})`);
-    for (const [, target] of html.matchAll(/href="(\/playgrounds\/in\/[^"#]*)"/g)) if (!placeFiles.includes(target.slice(1, -1)) && ++badLinks <= 5) fail(`${path}: links to a place page that doesn't exist (${target})`);
-  }
-}
 
 try {
   for (const width of [1280, 375]) {
@@ -99,15 +28,19 @@ try {
     const page = await ctx.newPage();
     const errors = [];
     page.on('pageerror', (e) => errors.push(e.message));
-    for (const path of PAGES) {
+    for (const path of ONLY.length ? ONLY : PAGES) {
       await page.goto(BASE + path);
-      const res = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa']).analyze();
+      const res = await new AxeBuilder({ page }).withTags(WCAG).analyze();
       for (const v of res.violations) fail(`${path} @${width}px: ${v.id} (${v.nodes.length}) ${v.help}`);
       const overflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
       if (overflow) fail(`${path} @${width}px scrolls sideways`);
     }
     if (errors.length) fail(`page errors @${width}px: ${errors.join(' | ')}`);
     await ctx.close();
+  }
+  if (ONLY.length) {
+    console.log(`Light check: ${ONLY.length} page(s) at both widths: ${ONLY.join(', ')}`);
+    throw 'light';
   }
 
   {
@@ -375,6 +308,8 @@ try {
   await page.goto(BASE + '/my-parks/');
   if (!(await page.getByRole('link', { name: 'Verulamium Park Playground' }).count())) fail('my parks does not list the rated park');
   await ctx.close();
+} catch (e) {
+  if (e !== 'light') throw e;
 } finally {
   await browser.close();
   server.close();
