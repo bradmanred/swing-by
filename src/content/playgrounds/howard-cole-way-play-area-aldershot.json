@@ -1,0 +1,31 @@
+{
+  "name": "Howard Cole Way Play Area",
+  "region": "south-east",
+  "area": "Aldershot",
+  "lat": 51.24751,
+  "lng": -0.78085,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Swings, multi-play equipment and springers, on Rushmoor Borough Council's list of local playgrounds (Howard Cole Way, Aldershot).",
+  "nearby": [],
+  "operator": "Rushmoor Borough Council",
+  "sources": [
+    {
+      "label": "Rushmoor Borough Council: Howard Cole Way Play Area",
+      "url": "https://www.rushmoor.gov.uk/hidden/revised-parks-and-playground-pages/playgrounds-and-play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/459107428"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Abbey Gardens",
+  "region": "south-east",
+  "area": "The Close, Winchester",
+  "lat": 51.06043,
+  "lng": -1.30956,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "On Winchester City Council's list of its play areas (The Broadway, Town Centre).",
+  "nearby": [],
+  "operator": "Winchester City Council",
+  "sources": [
+    {
+      "label": "Winchester City Council: Abbey Gardens",
+      "url": "https://www.winchester.gov.uk/natural-environment/location-of-our-play-gym-and-skate-sites"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/98672925"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

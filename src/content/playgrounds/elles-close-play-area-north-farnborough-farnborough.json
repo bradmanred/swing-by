@@ -1,0 +1,31 @@
+{
+  "name": "Elles Close Play Area",
+  "region": "south-east",
+  "area": "North Farnborough, Farnborough",
+  "lat": 51.28826,
+  "lng": -0.75741,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "rb"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Multi-play equipment, swings, roundabout and grassed area, on Rushmoor Borough Council's list of local playgrounds (Elles Close, Farnborough).",
+  "nearby": [],
+  "operator": "Rushmoor Borough Council",
+  "sources": [
+    {
+      "label": "Rushmoor Borough Council: Elles Close Play Area",
+      "url": "https://www.rushmoor.gov.uk/hidden/revised-parks-and-playground-pages/playgrounds-and-play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/552900566"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
