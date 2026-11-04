@@ -1,0 +1,3 @@
+abdn-play 200 155 https://services5.arcgis.com/0sktPVp3t1LvXc9z/arcgis/rest/services/Play_Areas/FeatureServer/0?f=pjson
+abdn-play-sample 400 11 https://services5.arcgis.com/0sktPVp3t1LvXc9z/arcgis/rest/services/Play_Areas/FeatureServer/0/query?where=1%3D1&outFields=*&f=geojson&resultRecordCount=3
+abdn-play-count 200 72 https://services5.arcgis.com/0sktPVp3t1LvXc9z/arcgis/rest/services/Play_Areas/FeatureServer/0/query?where=1%3D1&returnCountOnly=true&f=json
