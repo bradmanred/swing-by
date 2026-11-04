@@ -5,9 +5,9 @@
   "licence": "CC BY 4.0",
   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
   "note": "Nearest toilets worked out by Swing By from the Toilet Map data.",
-  "export": "toilets-2026-11-03T00%3A00%3A40.415Z-L819EdCunA6j83Ywb7tmOpbEl3pF44.csv"
+  "export": "toilets-2026-11-04T00%3A00%3A41.021Z-A2eAf18sMcdWrt3kz93gHTtAlW3SUM.csv"
  },
- "toilets": 15839,
+ "toilets": 15850,
  "parks": {
   "1066-battle-abbey-natural-play-area": {
    "nearest": {
@@ -9052,11 +9052,11 @@
   "brook-meadow-play-area-sible-hedingham": {
    "nearest": {
     "id": "1e803aa084ea61c00ead9b50",
-    "name": "Public toilet",
+    "name": "Public loos, probably locked at night",
     "m": 495,
     "babyChange": null,
-    "accessible": false,
-    "free": false,
+    "accessible": null,
+    "free": true,
     "lat": 51.9746369,
     "lng": 0.5912681
    }
@@ -24727,14 +24727,14 @@
     "lng": -2.004804611
    },
    "nearestBabyChange": {
-    "id": "132ababc6b039592487cfa2b",
-    "name": "Wednesbury Library",
-    "m": 2039,
+    "id": "c00d141976db315968d34dcd",
+    "name": "Nando’s",
+    "m": 1558,
     "babyChange": true,
-    "accessible": false,
-    "free": null,
-    "lat": 52.553789596,
-    "lng": -2.016829441
+    "accessible": true,
+    "free": true,
+    "lat": 52.566186114,
+    "lng": -2.008109093
    }
   },
   "friary-park-playground-whetstone-greater-london": {
@@ -25402,6 +25402,16 @@
   },
   "george-rose-park-catherine-cross-darlaston": {
    "nearest": {
+    "id": "42ded7871dd451c60a380ace",
+    "name": "Lidl",
+    "m": 1941,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 52.571695026,
+    "lng": -2.018859386
+   },
+   "nearestBabyChange": {
     "id": "bb5f1a4f270b335cbf858efe",
     "name": "Bilston Market, Wood Street",
     "m": 1976,
@@ -36146,14 +36156,14 @@
   },
   "kings-hill-park-woods-bank-darlaston": {
    "nearest": {
-    "id": "bf54097ae30c0e059d3e81c8",
-    "name": "Wednesbury Bus Station",
-    "m": 1295,
-    "babyChange": false,
-    "accessible": false,
+    "id": "0a3eaba08e467b72f19cab71",
+    "name": "B&Q",
+    "m": 1190,
+    "babyChange": null,
+    "accessible": null,
     "free": true,
-    "lat": 52.551823166,
-    "lng": -2.023109794
+    "lat": 52.567805327,
+    "lng": -2.013498545
    },
    "nearestBabyChange": {
     "id": "132ababc6b039592487cfa2b",
@@ -48515,11 +48525,11 @@
   "oxford-meadow-play-area-sible-hedingham": {
    "nearest": {
     "id": "1e803aa084ea61c00ead9b50",
-    "name": "Public toilet",
+    "name": "Public loos, probably locked at night",
     "m": 883,
     "babyChange": null,
-    "accessible": false,
-    "free": false,
+    "accessible": null,
+    "free": true,
     "lat": 51.9746369,
     "lng": 0.5912681
    }
@@ -48840,14 +48850,14 @@
     "lng": -1.9863667
    },
    "nearestBabyChange": {
-    "id": "9f782222d2b088f097dd609a",
-    "name": "Walsall Coach Station",
-    "m": 1657,
+    "id": "c00d141976db315968d34dcd",
+    "name": "Nando’s",
+    "m": 1645,
     "babyChange": true,
     "accessible": true,
-    "free": false,
-    "lat": 52.585202,
-    "lng": -1.9825723
+    "free": true,
+    "lat": 52.566186114,
+    "lng": -2.008109093
    }
   },
   "palmerston-gardens-play-area-west-thurrock": {
@@ -53011,24 +53021,24 @@
   },
   "playground-off-anson-road-bentley-darlaston": {
    "nearest": {
-    "id": "6e3108a36444dc428cd0282a",
-    "name": "KFC J9",
-    "m": 2545,
+    "id": "de55b10694634dfac9fcfe59",
+    "name": "KFC",
+    "m": 1003,
     "babyChange": null,
     "accessible": null,
     "free": true,
-    "lat": 52.565045036,
-    "lng": -2.004804611
+    "lat": 52.584332061,
+    "lng": -2.01194644
    },
    "nearestBabyChange": {
-    "id": "9f782222d2b088f097dd609a",
-    "name": "Walsall Coach Station",
-    "m": 2990,
+    "id": "c00d141976db315968d34dcd",
+    "name": "Nando’s",
+    "m": 2315,
     "babyChange": true,
     "accessible": true,
-    "free": false,
-    "lat": 52.585202,
-    "lng": -1.9825723
+    "free": true,
+    "lat": 52.566186114,
+    "lng": -2.008109093
    }
   },
   "playground-off-anthems-way-stratford-greater-london": {
@@ -71460,12 +71470,12 @@
    "nearestBabyChange": {
     "id": "d4e4e565676a9bd8b71d0bad",
     "name": "Ipswich Station",
-    "m": 2232,
+    "m": 2278,
     "babyChange": true,
     "accessible": false,
     "free": true,
-    "lat": 52.049785385,
-    "lng": 1.145539284
+    "lat": 52.050318675,
+    "lng": 1.145387743
    }
   },
   "playground-off-downside-goldington-bedford": {
@@ -76479,14 +76489,14 @@
     "lng": -2.004804611
    },
    "nearestBabyChange": {
-    "id": "132ababc6b039592487cfa2b",
-    "name": "Wednesbury Library",
-    "m": 2023,
+    "id": "c00d141976db315968d34dcd",
+    "name": "Nando’s",
+    "m": 1966,
     "babyChange": true,
-    "accessible": false,
-    "free": null,
-    "lat": 52.553789596,
-    "lng": -2.016829441
+    "accessible": true,
+    "free": true,
+    "lat": 52.566186114,
+    "lng": -2.008109093
    }
   },
   "playground-off-friars-road-braughing-east-hertfordshire": {
@@ -90486,6 +90496,16 @@
     "free": true,
     "lat": 52.036871584,
     "lng": 1.206436157
+   },
+   "nearestBabyChange": {
+    "id": "abc9afc3765f5196ef4616e1",
+    "name": "Hollywells Park Stable Block",
+    "m": 2719,
+    "babyChange": true,
+    "accessible": null,
+    "free": true,
+    "lat": 52.046253995,
+    "lng": 1.172230923
    }
   },
   "playground-off-lollard-street-lambeth-greater-london": {
@@ -103246,24 +103266,24 @@
   },
   "playground-off-primley-avenue-pleck-darlaston": {
    "nearest": {
-    "id": "a6bc33bc5dbc7ddd825272ed",
-    "name": "Walsall Station",
-    "m": 1749,
-    "babyChange": false,
-    "accessible": true,
+    "id": "de55b10694634dfac9fcfe59",
+    "name": "KFC",
+    "m": 387,
+    "babyChange": null,
+    "accessible": null,
     "free": true,
-    "lat": 52.58441036,
-    "lng": -1.984753459
+    "lat": 52.584332061,
+    "lng": -2.01194644
    },
    "nearestBabyChange": {
-    "id": "9f782222d2b088f097dd609a",
-    "name": "Walsall Coach Station",
-    "m": 1912,
+    "id": "c00d141976db315968d34dcd",
+    "name": "Nando’s",
+    "m": 1658,
     "babyChange": true,
     "accessible": true,
-    "free": false,
-    "lat": 52.585202,
-    "lng": -1.9825723
+    "free": true,
+    "lat": 52.566186114,
+    "lng": -2.008109093
    }
   },
   "playground-off-primrose-drive-st-leonards-newton-abbot": {
@@ -106715,24 +106735,14 @@
   },
   "playground-off-rowlands-close-bentley-darlaston": {
    "nearest": {
-    "id": "7bf32b7090100becea07f531",
-    "name": "Public toilet",
-    "m": 2380,
+    "id": "de55b10694634dfac9fcfe59",
+    "name": "KFC",
+    "m": 1325,
     "babyChange": null,
-    "accessible": false,
+    "accessible": null,
     "free": true,
-    "lat": 52.615201,
-    "lng": -2.0216399
-   },
-   "nearestBabyChange": {
-    "id": "9f782222d2b088f097dd609a",
-    "name": "Walsall Coach Station",
-    "m": 2945,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 52.585202,
-    "lng": -1.9825723
+    "lat": 52.584332061,
+    "lng": -2.01194644
    }
   },
   "playground-off-rowley-hill-view-haden-hill-old-hill": {
@@ -111909,14 +111919,14 @@
   },
   "playground-off-stapleton-close-wash-common-newbury": {
    "nearest": {
-    "id": "241d96d6ffbb1a1a5286040a",
-    "name": "Tesco Extra Newbury",
-    "m": 2250,
+    "id": "bd8737f360dfbff52a9e2459",
+    "name": "3 Salcombe Road Public Toilet",
+    "m": 1708,
     "babyChange": true,
     "accessible": true,
-    "free": false,
-    "lat": 51.382828459,
-    "lng": -1.317908764
+    "free": true,
+    "lat": 51.39435404,
+    "lng": -1.338736117
    }
   },
   "playground-off-stapleton-road-warmsworth-doncaster": {
@@ -123369,24 +123379,24 @@
   },
   "pleck-park-bescot-darlaston": {
    "nearest": {
-    "id": "6e3108a36444dc428cd0282a",
-    "name": "KFC J9",
-    "m": 466,
+    "id": "6e5e0f1ae4133310b5e12dda",
+    "name": "Smashburger",
+    "m": 261,
     "babyChange": null,
     "accessible": null,
     "free": true,
-    "lat": 52.565045036,
-    "lng": -2.004804611
+    "lat": 52.566742412,
+    "lng": -2.009375095
    },
    "nearestBabyChange": {
-    "id": "132ababc6b039592487cfa2b",
-    "name": "Wednesbury Library",
-    "m": 1785,
+    "id": "c00d141976db315968d34dcd",
+    "name": "Nando’s",
+    "m": 298,
     "babyChange": true,
-    "accessible": false,
-    "free": null,
-    "lat": 52.553789596,
-    "lng": -2.016829441
+    "accessible": true,
+    "free": true,
+    "lat": 52.566186114,
+    "lng": -2.008109093
    }
   },
   "plomer-hill-play-area-high-wycombe-buckinghamshire": {
@@ -126553,14 +126563,14 @@
   },
   "reedswood-park-birchills-bloxwich": {
    "nearest": {
-    "id": "a6bc33bc5dbc7ddd825272ed",
-    "name": "Walsall Station",
-    "m": 1471,
-    "babyChange": false,
-    "accessible": true,
+    "id": "de55b10694634dfac9fcfe59",
+    "name": "KFC",
+    "m": 1140,
+    "babyChange": null,
+    "accessible": null,
     "free": true,
-    "lat": 52.58441036,
-    "lng": -1.984753459
+    "lat": 52.584332061,
+    "lng": -2.01194644
    },
    "nearestBabyChange": {
     "id": "9f782222d2b088f097dd609a",
