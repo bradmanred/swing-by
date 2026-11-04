@@ -1,0 +1,35 @@
+{
+  "name": "Blackford Pond",
+  "region": "scotland",
+  "area": "Blackford, City of Edinburgh",
+  "lat": 55.92583,
+  "lng": -3.19416,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "sw",
+    "cl",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on City of Edinburgh Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of Edinburgh Council",
+  "sources": [
+    {
+      "label": "City of Edinburgh Council: Blackford Pond",
+      "url": "https://www.edinburgh.gov.uk/directory-record/1099109/blackford-pond"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/30414592"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

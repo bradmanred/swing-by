@@ -1,0 +1,31 @@
+{
+  "name": "Devonburn Road play area",
+  "region": "scotland",
+  "area": "Devonburn",
+  "lat": 55.63136,
+  "lng": -3.85981,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Devonburn Road play area",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656787/devonburn-road-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1122416762"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

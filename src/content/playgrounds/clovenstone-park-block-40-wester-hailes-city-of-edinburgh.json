@@ -1,0 +1,32 @@
+{
+  "name": "Clovenstone Park (Block 40)",
+  "region": "scotland",
+  "area": "Wester Hailes, City of Edinburgh",
+  "lat": 55.91168,
+  "lng": -3.27002,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on City of Edinburgh Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of Edinburgh Council",
+  "sources": [
+    {
+      "label": "City of Edinburgh Council: Clovenstone Park (Block 40)",
+      "url": "https://www.edinburgh.gov.uk/directory-record/1099124/clovenstone-park-block-40-"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/298354289"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Chapelton Park",
+  "region": "scotland",
+  "area": "Chapelton",
+  "lat": 55.71177,
+  "lng": -4.09134,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Chapelton Park",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656805/chapelton-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1121895814"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

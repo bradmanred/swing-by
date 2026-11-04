@@ -1,0 +1,32 @@
+{
+  "name": "White Park",
+  "region": "scotland",
+  "area": "Gorgie/Dalry, City of Edinburgh",
+  "lat": 55.93759,
+  "lng": -3.23174,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on City of Edinburgh Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of Edinburgh Council",
+  "sources": [
+    {
+      "label": "City of Edinburgh Council: White Park",
+      "url": "https://www.edinburgh.gov.uk/directory-record/1099256/white-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/51297117"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

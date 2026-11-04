@@ -1,0 +1,35 @@
+{
+  "name": "King George V Park (Eyre Place)",
+  "region": "scotland",
+  "area": "Canonmills, City of Edinburgh",
+  "lat": 55.96064,
+  "lng": -3.19586,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A playground on City of Edinburgh Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of Edinburgh Council",
+  "sources": [
+    {
+      "label": "City of Edinburgh Council: King George V Park (Eyre Place)",
+      "url": "https://www.edinburgh.gov.uk/directory-record/1099178/king-george-v-park-eyre-place-"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/37995892"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

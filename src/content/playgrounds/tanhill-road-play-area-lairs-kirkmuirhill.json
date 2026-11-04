@@ -1,0 +1,34 @@
+{
+  "name": "Tanhill Road play area",
+  "region": "scotland",
+  "area": "Lairs, Kirkmuirhill",
+  "lat": 55.6795,
+  "lng": -3.9357,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "bs"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Tanhill Road play area",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656653/tanhill-road-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1121853071"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,35 @@
+{
+  "name": "Kirktonholme Park",
+  "region": "scotland",
+  "area": "West Mains, East Kilbride",
+  "lat": 55.76752,
+  "lng": -4.18592,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "bs",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Kirktonholme Park",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656725/kirktonholme-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/986277178"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

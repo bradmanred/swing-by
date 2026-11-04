@@ -1,0 +1,33 @@
+{
+  "name": "Henderson Gardens",
+  "region": "scotland",
+  "area": "Leith Harbour & Newhaven, City of Edinburgh",
+  "lat": 55.97296,
+  "lng": -3.17366,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A playground on City of Edinburgh Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of Edinburgh Council",
+  "sources": [
+    {
+      "label": "City of Edinburgh Council: Henderson Gardens",
+      "url": "https://www.edinburgh.gov.uk/directory-record/1099168/henderson-gardens"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/46114050"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

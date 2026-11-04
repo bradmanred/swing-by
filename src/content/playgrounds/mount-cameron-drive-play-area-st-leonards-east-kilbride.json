@@ -1,0 +1,34 @@
+{
+  "name": "Mount Cameron Drive play area",
+  "region": "scotland",
+  "area": "St Leonards, East Kilbride",
+  "lat": 55.76029,
+  "lng": -4.16216,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Mount Cameron Drive play area",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656702/mount-cameron-drive-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1157254128"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

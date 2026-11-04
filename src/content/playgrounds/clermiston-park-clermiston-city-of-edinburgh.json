@@ -1,0 +1,34 @@
+{
+  "name": "Clermiston Park",
+  "region": "scotland",
+  "area": "Clermiston, City of Edinburgh",
+  "lat": 55.95767,
+  "lng": -3.28614,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A playground on City of Edinburgh Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of Edinburgh Council",
+  "sources": [
+    {
+      "label": "City of Edinburgh Council: Clermiston Park",
+      "url": "https://www.edinburgh.gov.uk/directory-record/1099122/clermiston-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/778720160"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Victoria Park",
+  "region": "scotland",
+  "area": "Leith Harbour & Newhaven, City of Edinburgh",
+  "lat": 55.97431,
+  "lng": -3.17719,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A playground on City of Edinburgh Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of Edinburgh Council",
+  "sources": [
+    {
+      "label": "City of Edinburgh Council: Victoria Park",
+      "url": "https://www.edinburgh.gov.uk/directory-record/1099248/victoria-park-"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/100007413"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

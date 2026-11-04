@@ -1,0 +1,32 @@
+{
+  "name": "Dean Park Play area",
+  "region": "scotland",
+  "area": "Balerno",
+  "lat": 55.87943,
+  "lng": -3.34446,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on City of Edinburgh Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of Edinburgh Council",
+  "sources": [
+    {
+      "label": "City of Edinburgh Council: Dean Park Play area",
+      "url": "https://www.edinburgh.gov.uk/directory-record/1099133/dean-park-play-area-"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/188281016"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

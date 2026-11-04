@@ -1,0 +1,32 @@
+{
+  "name": "Crawfordjohn play area",
+  "region": "scotland",
+  "area": "Crawfordjohn",
+  "lat": 55.49564,
+  "lng": -3.77495,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Crawfordjohn play area",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656794/crawfordjohn-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/8712858974"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

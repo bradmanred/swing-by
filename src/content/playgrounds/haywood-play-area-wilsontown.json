@@ -1,0 +1,31 @@
+{
+  "name": "Haywood play area",
+  "region": "scotland",
+  "area": "Wilsontown",
+  "lat": 55.77806,
+  "lng": -3.64383,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Haywood play area",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656744/haywood-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1157254412"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

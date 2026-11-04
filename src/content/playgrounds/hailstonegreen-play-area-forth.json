@@ -1,0 +1,32 @@
+{
+  "name": "Hailstonegreen play area",
+  "region": "scotland",
+  "area": "Forth",
+  "lat": 55.7664,
+  "lng": -3.69062,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Hailstonegreen play area",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656750/hailstonegreen-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1010169292"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

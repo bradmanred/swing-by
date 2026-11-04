@@ -1,0 +1,32 @@
+{
+  "name": "Hazelbank Public Park",
+  "region": "scotland",
+  "area": "Hazelbank",
+  "lat": 55.68598,
+  "lng": -3.85387,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Hazelbank Public Park",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656743/hazelbank-public-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1122415800"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

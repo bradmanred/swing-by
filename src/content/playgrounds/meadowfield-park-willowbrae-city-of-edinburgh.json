@@ -1,0 +1,31 @@
+{
+  "name": "Meadowfield Park",
+  "region": "scotland",
+  "area": "Willowbrae, City of Edinburgh",
+  "lat": 55.9482,
+  "lng": -3.14549,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on City of Edinburgh Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of Edinburgh Council",
+  "sources": [
+    {
+      "label": "City of Edinburgh Council: Meadowfield Park",
+      "url": "https://www.edinburgh.gov.uk/directory-record/1099190/meadowfield-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/398948395"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
