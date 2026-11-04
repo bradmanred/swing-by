@@ -1,0 +1,28 @@
+{
+  "name": "Marchbank Park Play Area",
+  "region": "scotland",
+  "area": "Heathryfold, Aberdeen City",
+  "lat": 57.169,
+  "lng": -2.16499,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Aberdeen City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Aberdeen City Council",
+  "sources": [
+    {
+      "label": "Aberdeen City Council: Marchbank Park Play Area",
+      "url": "https://www.aberdeencity.gov.uk/services/leisure-culture-and-parks/playparks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/953160387"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
