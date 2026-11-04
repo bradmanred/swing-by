@@ -1,0 +1,30 @@
+{
+  "name": "Lea Road Play Area",
+  "region": "south-east",
+  "area": "Lake",
+  "lat": 50.64984,
+  "lng": -1.17288,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "Fenced play area with self-closing gates and safety surfacing, on the Isle of Wight Council's list of the Island's public playgrounds.",
+  "nearby": [],
+  "operator": "Isle of Wight Council",
+  "sources": [
+    {
+      "label": "Isle of Wight Council: Lea Road Play Area",
+      "url": "https://iwc.iow.gov.uk/documentlibrary/download/playgrounds-070417"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/382427072"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
