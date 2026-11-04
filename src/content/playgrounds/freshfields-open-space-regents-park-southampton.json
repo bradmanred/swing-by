@@ -1,0 +1,28 @@
+{
+  "name": "Freshfields Open Space",
+  "region": "south-east",
+  "area": "Regents Park, Southampton",
+  "lat": 50.91608,
+  "lng": -1.43511,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Southampton City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Southampton City Council",
+  "sources": [
+    {
+      "label": "Southampton City Council: Freshfields Open Space",
+      "url": "https://www.southampton.gov.uk/culture-leisure-tourism/parks-open-spaces/find-a-park/by-area/freemantle-shirley/freshfields"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/274169277"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

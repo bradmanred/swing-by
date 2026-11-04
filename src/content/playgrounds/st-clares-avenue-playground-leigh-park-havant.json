@@ -1,0 +1,32 @@
+{
+  "name": "St Clares Avenue Playground",
+  "region": "south-east",
+  "area": "Leigh Park, Havant",
+  "lat": 50.87549,
+  "lng": -0.99834,
+  "ages": [],
+  "equipment": [
+    "sk",
+    "gym",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Children's playground with a multi-use games area, BMX dirt jumps and outdoor gym, in Havant Borough Council's parks and open spaces brochure.",
+  "nearby": [],
+  "operator": "Havant Borough Council",
+  "sources": [
+    {
+      "label": "Havant Borough Council: St Clares Avenue Playground",
+      "url": "https://www.havant.gov.uk/community-and-living/play-parks-and-open-spaces/play-parks-and-open-spaces-overview"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1058106309"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

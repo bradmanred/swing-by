@@ -1,0 +1,28 @@
+{
+  "name": "Station Road Recreation Ground Play Area",
+  "region": "south-east",
+  "area": "Netley, Eastleigh",
+  "lat": 50.87567,
+  "lng": -1.34806,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "On Eastleigh Borough Council's list of play areas in the borough, run by Hound Parish Council.",
+  "nearby": [],
+  "operator": "Eastleigh Borough Council",
+  "sources": [
+    {
+      "label": "Eastleigh Borough Council: Station Road Recreation Ground Play Area",
+      "url": "https://www.eastleigh.gov.uk/parks-leisure-and-culture/play-areas-and-paddling-pools/play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/237044117"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

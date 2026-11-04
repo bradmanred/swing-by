@@ -1,0 +1,41 @@
+{
+  "name": "Park Lane Play Area",
+  "region": "south-east",
+  "area": "West End, Fareham",
+  "lat": 50.85697,
+  "lng": -1.18693,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "bk",
+    "cl",
+    "rb",
+    "tp",
+    "ss",
+    "spr"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "For toddlers (2 to 5) and juniors (6 to 12): inclusive roundabout, cradle, flat, high-back and basket swings, toddler and junior climbing units, springer, trampoline, see-saw, trim trail and picnic area.",
+  "nearby": [],
+  "operator": "Fareham Borough Council",
+  "sources": [
+    {
+      "label": "Fareham Borough Council: Park Lane Play Area",
+      "url": "https://www.fareham.gov.uk/leisure/out_and_about_in_fareham/play_areas/farehamplayareas.aspx"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/378175744"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

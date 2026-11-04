@@ -1,0 +1,30 @@
+{
+  "name": "Portsea Adventure Playground",
+  "region": "south-east",
+  "area": "Portsea, Portsmouth",
+  "lat": 50.79708,
+  "lng": -1.10193,
+  "ages": [
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "One of Portsmouth's six free, supervised adventure playgrounds, run by PYC Portsmouth for the city council. Open in term time and school holidays; mainly for ages 6 to 13, younger children welcome with an adult. Check opening times with PYC before you go.",
+  "nearby": [],
+  "operator": "Portsmouth City Council",
+  "sources": [
+    {
+      "label": "Portsmouth City Council: Portsea Adventure Playground",
+      "url": "https://www.portsmouth.gov.uk/services/leisure/sports-and-activities/playgrounds-and-skate-parks/adventure-playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/3521371774"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

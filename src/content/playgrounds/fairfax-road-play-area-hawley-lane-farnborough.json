@@ -1,0 +1,30 @@
+{
+  "name": "Fairfax Road Play Area",
+  "region": "south-east",
+  "area": "Hawley Lane, Farnborough",
+  "lat": 51.30762,
+  "lng": -0.75266,
+  "ages": [],
+  "equipment": [
+    "sw"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Swings, multi-play equipment and grassed area, on Rushmoor Borough Council's list of local playgrounds (Fairfax Road, Farnborough).",
+  "nearby": [],
+  "operator": "Rushmoor Borough Council",
+  "sources": [
+    {
+      "label": "Rushmoor Borough Council: Fairfax Road Play Area",
+      "url": "https://www.rushmoor.gov.uk/hidden/revised-parks-and-playground-pages/playgrounds-and-play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1324212431"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
