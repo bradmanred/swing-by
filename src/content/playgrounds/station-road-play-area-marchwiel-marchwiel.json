@@ -1,0 +1,31 @@
+{
+  "name": "Station Road Play Area, Marchwiel",
+  "region": "wales",
+  "area": "Marchwiel",
+  "lat": 53.02408,
+  "lng": -2.9577,
+  "ages": [],
+  "equipment": [
+    "sk",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Play area with a multi-use games area and a skate park, run by Wrexham Council, on Wrexham Council's playgrounds list.",
+  "nearby": [],
+  "operator": "Wrexham County Borough Council",
+  "sources": [
+    {
+      "label": "Wrexham County Borough Council: Station Road Play Area, Marchwiel",
+      "url": "https://www.wrexham.gov.uk/service/playgrounds/playgrounds-marchwiel"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/979906833"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

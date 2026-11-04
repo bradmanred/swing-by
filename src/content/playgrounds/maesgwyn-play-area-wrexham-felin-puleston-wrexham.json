@@ -1,0 +1,30 @@
+{
+  "name": "Maesgwyn Play Area, Wrexham",
+  "region": "wales",
+  "area": "Felin Puleston, Wrexham",
+  "lat": 53.04969,
+  "lng": -3.00671,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Play area with a multi-use games area, run by Wrexham Council, on Wrexham Council's playgrounds list.",
+  "nearby": [],
+  "operator": "Wrexham County Borough Council",
+  "sources": [
+    {
+      "label": "Wrexham County Borough Council: Maesgwyn Play Area, Wrexham",
+      "url": "https://www.wrexham.gov.uk/service/playgrounds/playgrounds-wrexham-central"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/413006706"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
