@@ -1,0 +1,28 @@
+{
+  "name": "Lowtherville Play Area",
+  "region": "south-east",
+  "area": "Lowtherville, Ventnor",
+  "lat": 50.6005,
+  "lng": -1.21897,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Small play area with safety surfacing, on the Isle of Wight Council's list of the Island's public playgrounds.",
+  "nearby": [],
+  "operator": "Isle of Wight Council",
+  "sources": [
+    {
+      "label": "Isle of Wight Council: Lowtherville Play Area",
+      "url": "https://iwc.iow.gov.uk/documentlibrary/download/playgrounds-070417"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/897316803"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

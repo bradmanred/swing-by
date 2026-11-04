@@ -1,0 +1,30 @@
+{
+  "name": "Simeon Street Recreation Ground Playground",
+  "region": "south-east",
+  "area": "Oakfield, Ryde",
+  "lat": 50.72738,
+  "lng": -1.15219,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "Large fenced play area with self-closing gates, safety surfacing and picnic tables, on the Isle of Wight Council's list of the Island's public playgrounds.",
+  "nearby": [],
+  "operator": "Isle of Wight Council",
+  "sources": [
+    {
+      "label": "Isle of Wight Council: Simeon Street Recreation Ground Playground",
+      "url": "https://iwc.iow.gov.uk/documentlibrary/download/playgrounds-070417"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/382487771"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
