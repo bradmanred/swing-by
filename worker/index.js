@@ -11,6 +11,14 @@ import { pins } from './pins.js';
 
 // Old playground address → the listing it was merged into. Add a line whenever two listings are merged.
 const MERGED = {
+  'playground-off-rands-lane-armthorpe-doncaster': 'mercel-avenue-playground-armthorpe-armthorpe-doncaster',
+  'playground-off-wickett-hern-road-armthorpe-doncaster': 'wickett-hern-road-playground-armthorpe-armthorpe-doncaster',
+  'playground-off-grange-lane-burghwallis-doncaster': 'grange-lane-playground-burghwallis-burghwallis-doncaster',
+  'playground-off-springfield-avenue-dunscroft-hatfield': 'station-road-playground-hatfield-dunscroft-hatfield',
+  'playground-off-wadworth-hall-lane-wadworth-doncaster': 'wadworth-hall-lane-playground-wadworth-doncaster',
+  'playground-off-ratten-row-wadworth-doncaster': 'osberton-street-playground-wadworth-wadworth-doncaster',
+  'playground-off-tenter-lane-warmsworth-doncaster': 'guest-lane-playground-warmsworth-warmsworth-doncaster',
+  'playground-off-the-grange-woolley-wakefield': 'bluebell-road-playground-woolley-woolley-wakefield',
   'playground-off-liverpool-loop-line-knotty-ash-liverpool': 'springfield-park-playground-knotty-ash-liverpool',
   'playground-off-foxshaw-close-whiston-lane-ends-whiston': 'fox-shaw-close-play-area-whiston-lane-ends-whiston',
   'playground-off-winstanley-road-orrell-post-wigan': 'orrell-water-park-playground-higher-end-wigan',

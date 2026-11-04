@@ -1,0 +1,32 @@
+{
+  "name": "The Avenue Playground, Bentley",
+  "region": "yorkshire",
+  "area": "Wheatley, Doncaster",
+  "lat": 53.5525,
+  "lng": -1.14087,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Toddler and junior play areas, basketball post, on Doncaster Council's list of local parks and outdoor spaces (The Avenue, Bentley).",
+  "nearby": [],
+  "operator": "City of Doncaster Council",
+  "sources": [
+    {
+      "label": "City of Doncaster Council: The Avenue Playground, Bentley",
+      "url": "https://doncaster.gov.uk/services/culture-leisure-tourism/parks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/306086888"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Urban Road Playground, Hexthorpe",
+  "region": "yorkshire",
+  "area": "Hexthorpe, Doncaster",
+  "lat": 53.51669,
+  "lng": -1.14811,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "gym",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Toddler play area, multi-use games area, outdoor gym equipment, on Doncaster Council's list of local parks and outdoor spaces (Urban Road, Hexthorpe).",
+  "nearby": [],
+  "operator": "City of Doncaster Council",
+  "sources": [
+    {
+      "label": "City of Doncaster Council: Urban Road Playground, Hexthorpe",
+      "url": "https://doncaster.gov.uk/services/culture-leisure-tourism/parks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1084034627"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

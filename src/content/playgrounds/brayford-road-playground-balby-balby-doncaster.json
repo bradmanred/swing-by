@@ -1,0 +1,32 @@
+{
+  "name": "Brayford Road Playground, Balby",
+  "region": "yorkshire",
+  "area": "Balby, Doncaster",
+  "lat": 53.49203,
+  "lng": -1.14281,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Toddler and junior play areas, on Doncaster Council's list of local parks and outdoor spaces (Brayford Road, Balby).",
+  "nearby": [],
+  "operator": "City of Doncaster Council",
+  "sources": [
+    {
+      "label": "City of Doncaster Council: Brayford Road Playground, Balby",
+      "url": "https://doncaster.gov.uk/services/culture-leisure-tourism/parks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/700667304"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

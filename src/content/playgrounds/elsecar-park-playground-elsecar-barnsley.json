@@ -1,0 +1,28 @@
+{
+  "name": "Elsecar Park Playground",
+  "region": "yorkshire",
+  "area": "Elsecar, Barnsley",
+  "lat": 53.49227,
+  "lng": -1.4253,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A children's play area for ages up to 14 years, on Barnsley Council's list (Elsecar).",
+  "nearby": [],
+  "operator": "Barnsley Council",
+  "sources": [
+    {
+      "label": "Barnsley Council: Elsecar Park Playground",
+      "url": "https://www.barnsley.gov.uk/services/parks-and-green-spaces/outdoor-activities/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/778501853"
+    }
+  ],
+  "checked": "2026-11-03",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
