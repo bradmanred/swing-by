@@ -1813,6 +1813,62 @@
         "https://www.torfaen.gov.uk/en/LeisureParksEvents/ParksandOpenSpaces/Play-areas/Play-areas.aspx"
       ],
       "note": "Checked 4 November 2026: the council's play areas are only shown on its interactive map (69 across the borough, run by the council, Bron Afon or community councils), with no list or open data, so play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Rhondda Cynon Taf",
+      "council": "Rhondda Cynon Taf County Borough Council",
+      "sources": [
+        "https://www.rctcbc.gov.uk/playareas",
+        "https://www.rctcbc.gov.uk/EN/Resident/SportsandLeisure/Parks.aspx"
+      ],
+      "note": "Checked 4 November 2026: the council publishes no full list or map of its play areas; its play area investment page names 46 play areas, of which 44 still have play equipment (Trehafod Playing Fields and Heol Celyn were cleared), in src/data/council-lists/rhondda-cynon-taf.csv, placed by park name or street. Others come from OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/rhondda-cynon-taf.csv",
+        "page": "https://www.rctcbc.gov.uk/playareas",
+        "near": {
+          "lat": 51.63,
+          "lng": -3.4,
+          "km": 18
+        }
+      }
+    },
+    {
+      "district": "Carmarthenshire",
+      "council": "Carmarthenshire County Council",
+      "sources": [
+        "https://newsroom.carmarthenshire.gov.wales/2024/08/visit-carmarthenshire-s-play-parks-this-summer",
+        "https://www.llanellitowncouncil.gov.uk/index.php?id=63",
+        "https://www.llanelli-rural.gov.uk/childrens-play-areas"
+      ],
+      "note": "Checked 4 November 2026: the county council publishes no list of play areas, and many have moved to town and community councils. Llanelli Town Council's eight parks with play areas are in src/data/council-lists/llanelli-town.csv; Llanelli Rural Council and the others publish no lists. Other play areas come from OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/llanelli-town.csv",
+        "page": "https://www.llanellitowncouncil.gov.uk/index.php?id=63",
+        "near": {
+          "lat": 51.68,
+          "lng": -4.16,
+          "km": 5
+        }
+      }
+    },
+    {
+      "district": "Vale of Glamorgan",
+      "council": "Vale of Glamorgan Council",
+      "sources": [
+        "https://www.valeofglamorgan.gov.uk/en/our_council/consultation/Play-Area-Improvements.aspx"
+      ],
+      "note": "Checked 4 November 2026: the council publishes no list or map of its play areas (a 2022 information request for one went unanswered on its public record), and Penarth, Barry and the community councils publish none either, so play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Flintshire",
+      "council": "Flintshire County Council",
+      "sources": [
+        "https://www.flintshire.gov.uk/en/LeisureAndTourism/Leisure-Services/Related/Play-Areas-Improvement-Scheme.aspx",
+        "https://www.penyfforddcouncil.org/children-play-area"
+      ],
+      "note": "Checked 4 November 2026: the council publishes no current list of play areas: its improvement scheme page only names 36 refurbished between 2010 and 2013, too old to rely on, and its committee papers can't be downloaded automatically. Play areas come from OpenStreetMap."
     }
   ]
 }
