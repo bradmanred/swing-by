@@ -1,0 +1,5 @@
+gla-services 200 3089 https://www.mapping.glasgow.gov.uk/arcgis_web/rest/services/OPEN_DATA?f=pjson
+stir-search 200 10127 https://data.stirling.gov.uk/api/search/v1?q=play
+stir-search2 200 10127 https://data.stirling.gov.uk/api/search/v1?q=playpark
+abdn-ago 200 27422 https://services5.arcgis.com/0sktPVp3t1LvXc9z/arcgis/rest/services?f=pjson
+abdn-hub 200 12973 https://spatialdata-accabdn.opendata.arcgis.com/api/search/v1/collections/dataset/items?q=play
