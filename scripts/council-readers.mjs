@@ -217,6 +217,10 @@ async function crawl(feed, listPages, isRecord, inCategory, normalise = (u) => u
   return out;
 }
 
+/** A Jadu directory's A to Z address. It hangs off the directory's number, not its name: Edinburgh's
+ * /directory/10216/play-areas has its A to Z at /directory/10216/a-to-z/A, not /directory/10216/play-areas/a-to-z/A. */
+export const jaduAZ = (dir) => `${dir.replace(/\/$/, '').replace(/(\/directory\/\d+)\/[^/]+$/, '$1')}/a-to-z`;
+
 export async function readJadu(feed) {
   const dir = feed.directory.replace(/\/$/, '');
   const host = new URL(dir).host.replace(/^www\./, '');
@@ -233,7 +237,7 @@ export async function readJadu(feed) {
   const cats = [].concat(feed.category ?? []);
   const lists = cats.length
     ? cats.map((c) => (page) => `${dir}/category/${c}${page ? `?page=${page + 1}` : ''}`)
-    : 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((L) => (page) => `${dir}/a-to-z/${L}${page ? `?page=${page + 1}` : ''}`);
+    : 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((L) => (page) => `${jaduAZ(dir)}/${L}${page ? `?page=${page + 1}` : ''}`);
   return crawl(feed, lists, isRecord, !!feed.allPlay && !feed.require, normalise);
 }
 

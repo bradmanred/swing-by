@@ -1605,6 +1605,87 @@
           "km": 5
         }
       }
+    },
+    {
+      "district": "City of Edinburgh",
+      "council": "City of Edinburgh Council",
+      "sources": [
+        "https://www.edinburgh.gov.uk/directory/10216/play-areas"
+      ],
+      "note": "Play areas directory (A to Z), one record per play area with its postcode, map point and play facilities; imported as a feed (4 November 2026).",
+      "feed": {
+        "type": "jadu",
+        "directory": "https://www.edinburgh.gov.uk/directory/10216/play-areas",
+        "allPlay": true
+      }
+    },
+    {
+      "district": "South Lanarkshire",
+      "council": "South Lanarkshire Council",
+      "sources": [
+        "https://www.southlanarkshire.gov.uk/directory/150/parks_and_play_areas"
+      ],
+      "note": "Parks and play areas directory (A to Z), one record per park or play area; those mentioning a play area are imported as a feed (4 November 2026).",
+      "feed": {
+        "type": "jadu",
+        "directory": "https://www.southlanarkshire.gov.uk/directory/150/parks_and_play_areas"
+      }
+    },
+    {
+      "district": "Fife",
+      "council": "Fife Council",
+      "sources": [
+        "https://services-eu1.arcgis.com/PDjKizfiWWTgpUeI/ArcGIS/rest/services/Play_Park_Provision_Locations_PSA_2023/FeatureServer/49"
+      ],
+      "note": "Play Park Provision locations (2023, completed by AECOM for Fife Council's play spaces strategy): 544 play parks, each named by street and settlement (4 November 2026). The strategy proposed removing some, so pins are moved onto play areas mapped on OpenStreetMap where they exist.",
+      "feed": {
+        "type": "geojson",
+        "url": "https://services-eu1.arcgis.com/PDjKizfiWWTgpUeI/ArcGIS/rest/services/Play_Park_Provision_Locations_PSA_2023/FeatureServer/49/query?where=1%3D1&outFields=Street,Town&f=geojson&outSR=4326",
+        "nameFormat": "{Street} Play Park, {Town}",
+        "page": "https://www.fife.gov.uk/kb/docs/articles/community-life2/parks,-allotments,-core-paths"
+      }
+    },
+    {
+      "district": "Aberdeen City",
+      "council": "Aberdeen City Council",
+      "sources": [
+        "https://www.data.gov.uk/dataset/aberdeen-play-areas-playparks",
+        "https://www.aberdeencity.gov.uk/services/leisure-culture-and-parks/playparks"
+      ],
+      "note": "Aberdeen Play Areas (Playparks) open data: 151 named play areas with positions (4 November 2026).",
+      "feed": {
+        "type": "geojson",
+        "url": "https://services5.arcgis.com/0sktPVp3t1LvXc9z/arcgis/rest/services/Play_Areas/FeatureServer/13/query?where=1%3D1&outFields=SITE_NAME,SITE_ADD&f=geojson&outSR=4326",
+        "nameField": "SITE_NAME",
+        "page": "https://www.aberdeencity.gov.uk/services/leisure-culture-and-parks/playparks"
+      }
+    },
+    {
+      "district": "Stirling",
+      "council": "Stirling Council",
+      "sources": [
+        "https://www.stirling.gov.uk/community-life-and-leisure/parks-walking-trails-and-cycle-paths/parks-in-stirling/parks-in-stirling",
+        "https://data.stirling.gov.uk/"
+      ],
+      "note": "Checked 4 November 2026: the parks pages describe a handful of main parks and refuse automated downloads, and the open data portal has no play park locations (only a 2024 survey), so play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Glasgow City",
+      "council": "Glasgow City Council",
+      "sources": [
+        "https://www.glasgow.gov.uk/parks",
+        "https://www.mapping.glasgow.gov.uk/arcgis_web/rest/services/OPEN_DATA"
+      ],
+      "note": "Checked 4 November 2026: no published list of play parks, and none in the council's open data services; the website refuses automated downloads. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "North Lanarkshire",
+      "council": "North Lanarkshire Council",
+      "sources": [
+        "https://www.northlanarkshire.gov.uk/",
+        "http://gisdata-nlcmaps.opendata.arcgis.com/"
+      ],
+      "note": "Checked 4 November 2026: no published list of play parks on the website or open data portal, so play areas come from OpenStreetMap."
     }
   ]
 }

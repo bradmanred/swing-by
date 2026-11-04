@@ -1,6 +1,6 @@
 // Checks the council website readers (scripts/council-readers.mjs) on small pages shaped like the real ones.
 import assert from 'node:assert/strict';
-import { describe, parsePark, point } from '../scripts/council-readers.mjs';
+import { describe, parsePark, point, jaduAZ } from '../scripts/council-readers.mjs';
 
 // A Jadu directory record (Bromley, Hounslow, Greenwich, Rotherham…).
 const jadu = `<html><head><title>Alexandra Recreation Ground - Parks in Bromley | London Borough of Bromley</title></head><body>
@@ -71,4 +71,8 @@ assert.equal(r.name, 'Avondale Park');
 assert.equal(r.postcode, null, "the parks office's address is not the park's");
 assert.ok(parsePark(rbkc, 'https://x/avondale-park', {}), 'a "Contact us" menu link does not cut the page');
 
+// A Jadu directory's A to Z hangs off its number, with or without the directory's name in the address.
+assert.equal(jaduAZ('https://www.edinburgh.gov.uk/directory/10216/play-areas'), 'https://www.edinburgh.gov.uk/directory/10216/a-to-z');
+assert.equal(jaduAZ('https://www.bromley.gov.uk/directory/26'), 'https://www.bromley.gov.uk/directory/26/a-to-z');
+assert.equal(jaduAZ('https://www.southlanarkshire.gov.uk/directory/150/parks_and_play_areas/'), 'https://www.southlanarkshire.gov.uk/directory/150/a-to-z');
 console.log('readers: ok');

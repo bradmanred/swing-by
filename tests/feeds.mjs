@@ -1,7 +1,7 @@
 // Council feed names: a directory's own heading must never be read as a park's name.
 import assert from 'node:assert/strict';
 import { osmIds, samePlace } from '../scripts/same-place.mjs';
-import { parseCsv, recordName, slugName } from '../scripts/council-feeds.mjs';
+import { geoName, parseCsv, recordName, slugName } from '../scripts/council-feeds.mjs';
 
 assert.equal(recordName('Church Meadows - Parks and recreation directory'), 'Church Meadows');
 assert.equal(recordName('Parks and recreation directory - Church Meadows'), 'Church Meadows');
@@ -23,4 +23,10 @@ assert.equal(samePlace({ name: 'Playground' }, park('Paradise Park'), 90), true,
 assert.equal(samePlace({ name: 'Lumpy Hill Adventure Playground' }, park('Caledonian Park'), 150), false, 'beyond 150 m');
 assert.deepEqual(osmIds([{ url: 'https://www.openstreetmap.org/way/87685649' }, { url: 'https://islington.gov.uk/x' }]), ['way/87685649']);
 assert.deepEqual(parseCsv('name,park,postcode,lat,lng\nVictoria Park Tipton Playground,Victoria Park,,52.52491,-2.06243\n')[0], { name: 'Victoria Park Tipton Playground', park: 'Victoria Park', postcode: '', lat: '52.52491', lng: '-2.06243' });
+// geojson names from several fields (Fife's play park layer has a street and a town, but no name).
+const fife = { nameFormat: '{Street} Play Park, {Town}' };
+assert.equal(geoName({ Street: 'Forth Street', Town: 'Kincardine' }, fife), 'Forth Street Play Park, Kincardine');
+assert.equal(geoName({ Street: 'Forth Street', Town: null }, fife), 'Forth Street Play Park');
+assert.equal(geoName({ Street: null, Town: null }, fife), '');
+assert.equal(geoName({ PLAYGROUND: 'Hove Park' }, { nameField: 'PLAYGROUND' }), 'Hove Park');
 console.log('feeds: ok');
