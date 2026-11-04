@@ -1,0 +1,132 @@
+$(document).ready(function() {
+<!--When page is ready set the div to hide-->
+<!--$('div.showhide,playground').hide();-->
+if ($('#playground').attr('checked')) {
+  $('div.showhide,playground').show();
+}
+
+else{
+$('div.showhide,playground').hide();
+}
+
+<!--When checkbox is clicked then aply the following statements-->
+$('#playground').click(function(){
+
+<!--When checkbox is checked show the div-->
+if ($('#playground').attr('checked')) {
+  $('div.showhide,playground').show();
+}
+
+<!--When checkbox is not checked hide the div-->
+else{
+$('div.showhide,playground').hide();
+}
+
+});
+
+<!--START all facilities checked-->
+$('#allfacilities').click(function(){
+
+if ($('#allfacilities').attr('checked')) {
+<!--alert("aaaa")-->
+UncheckAll();
+}
+
+
+
+})
+
+<!--If playground is clicked and checked then check the all checkbox-->
+$('#playground').click(function(){
+
+if ($('#playground').attr('checked')) {
+<!--alert("aaaa")-->
+$('#all').attr('checked',true);
+}
+
+
+
+})
+
+<!--If any of the top checkboxes are checked uncheck allfacilities-->
+$('#playground').click(function(){
+UncheckSelectAll();
+})
+$('#footballpitch').click(function(){
+UncheckSelectAll();
+})
+$('#toilets').click(function(){
+UncheckSelectAll();
+})
+$('#skatepark').click(function(){
+UncheckSelectAll();
+})
+$('#babychangingfacilities').click(function(){
+UncheckSelectAll();
+})
+$('#snackbar').click(function(){
+UncheckSelectAll();
+})
+$('#informationcentre').click(function(){
+UncheckSelectAll();
+})
+$('#fitness_equipment').click(function(){
+UncheckSelectAll();
+})
+$('#bmx').click(function(){
+UncheckSelectAll();
+})
+
+$('#all').click(function(){
+UncheckSelectAll();
+})
+$('#age_range_1').click(function(){
+UncheckSelectAll();
+})
+$('#age_range_2').click(function(){
+UncheckSelectAll();
+})
+$('#age_range_3').click(function(){
+UncheckSelectAll();
+})
+
+
+function UncheckAll() {
+<!--alert("bbbb")-->
+<!--Variable referes to the id of an element not the name-->
+$('#playground').attr('checked',false);
+$('#toilets').attr('checked',false);
+$('#footballpitch').attr('checked',false);
+$('#skatepark').attr('checked',false);
+$('#babychangingfacilities').attr('checked',false);
+$('#snackbar').attr('checked',false);
+$('#informationcentre').attr('checked',false);
+$('#fitness_equipment').attr('checked',false);
+$('#bmx').attr('checked',false);
+
+$('#all').attr('checked',false);
+$('#age_range_1').attr('checked',false);
+$('#age_range_2').attr('checked',false);
+$('#age_range_3').attr('checked',false);
+
+}
+
+function UncheckSelectAll() {
+
+$('#allfacilities').attr('checked',false);
+
+}
+
+
+
+});
+
+
+function removePostcode( postcode ) {
+
+  if ( postcode == 'Postcode' ) {
+     document.getElementById('postcode').value = '';
+  }
+
+
+}
