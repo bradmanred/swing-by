@@ -138,6 +138,8 @@ Each list is capped in the issue; the full lists are in the run's `quarterly-che
 
 ## OpenStreetMap snapshot and saving Actions minutes
 
+**Cloudflare file limit.** Every page is a file, and Cloudflare's free plan allows 20,000 files per deploy. The build checks count them (`scripts/count-assets.mjs`), warn from 19,000 and fail at 20,000. Wrangler's "Read N files" message also counts folders, so it shows about twice the real number.
+
 **Budget.** The repository runs on GitHub's free 2,000 Actions minutes a month. Aim for about 600 on the regular jobs, about 1,000 on adding new areas and about 400 spare. Before adding an area, test readers and parsers on pages saved with **Fetch pages** (run locally, free) rather than with repeated workflow runs, and never add temporary workflows to an area's branch.
 
 **Snapshot.** Once a month (the 2nd) the **OpenStreetMap snapshot** workflow (`.github/workflows/osm-snapshot.yml`, `scripts/osm-snapshot.mjs`) downloads Geofabrik's daily extracts of Great Britain and of Ireland and Northern Ireland, keeps only playgrounds, parks, gardens, commons, recreation grounds and nature reserves, and saves two small files to the `osm-data` branch (one commit, replaced each month). Jobs that need mapped playgrounds use the shared step `.github/actions/osm-snapshot` to fetch it, and read it instead of asking the busy Overpass servers, as long as it's under five weeks old; otherwise they ask Overpass as before. The pin check and the junction job use it now. The junction job still checks the playgrounds it picks against OpenStreetMap live, in one small query, before adding them. The coverage check stays fully live, because it decides what to add. Run the snapshot from the Actions tab whenever you want a fresh one.
