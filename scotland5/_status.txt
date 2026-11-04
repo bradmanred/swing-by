@@ -1,0 +1,4 @@
+abdn13 200 10618 https://services5.arcgis.com/0sktPVp3t1LvXc9z/arcgis/rest/services/Play_Areas/FeatureServer/13?f=pjson
+abdn13-sample 200 757 https://services5.arcgis.com/0sktPVp3t1LvXc9z/arcgis/rest/services/Play_Areas/FeatureServer/13/query?where=1%3D1&outFields=*&f=geojson&resultRecordCount=3
+abdn13-count 200 13 https://services5.arcgis.com/0sktPVp3t1LvXc9z/arcgis/rest/services/Play_Areas/FeatureServer/13/query?where=1%3D1&returnCountOnly=true&f=json
+stir-items2 200 51494 https://data.stirling.gov.uk/api/search/v1/collections/dataset/items?q=play%20park&limit=50
