@@ -1706,6 +1706,113 @@
           "km": 20
         }
       }
+    },
+    {
+      "district": "Newport",
+      "council": "Newport City Council",
+      "sources": [
+        "https://www.newport.gov.uk/our-city/see-and-do/green-spaces/play-areas"
+      ],
+      "note": "Checked 4 November 2026: the council's table of 63 play areas, with addresses and postcodes, copied to src/data/council-lists/newport.csv. Town and community councils (Caerleon, Langstone, Marshfield and others) publish no lists of their own; other play areas come from OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/newport.csv",
+        "page": "https://www.newport.gov.uk/our-city/see-and-do/green-spaces/play-areas",
+        "near": {
+          "lat": 51.58,
+          "lng": -2.99,
+          "km": 15
+        }
+      }
+    },
+    {
+      "district": "Wrexham",
+      "council": "Wrexham County Borough Council",
+      "sources": [
+        "https://www.wrexham.gov.uk/service/playgrounds"
+      ],
+      "note": "Checked 4 November 2026: the council's playgrounds pages, one per area, which give each site's grid reference, postcode and who runs it (the council or a community council): 91 play areas (skate parks, games areas and youth shelters without a play area left out), copied to src/data/council-lists/wrexham.csv with each grid reference as the park point. Pages saved with Fetch pages (label wales-1).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/wrexham.csv",
+        "page": "https://www.wrexham.gov.uk/service/playgrounds",
+        "near": {
+          "lat": 53.03,
+          "lng": -2.99,
+          "km": 20
+        }
+      }
+    },
+    {
+      "district": "Bridgend",
+      "council": "Bridgend County Borough Council",
+      "sources": [
+        "https://www.bridgend.gov.uk/residents/leisure-culture-and-libraries/playgrounds",
+        "https://www.bridgend.gov.uk/residents/leisure-culture-and-libraries/parks-and-playing-fields"
+      ],
+      "note": "Checked 4 November 2026: the council's list of 98 playgrounds by area, with street and village but no postcodes, copied to src/data/council-lists/bridgend.csv and placed by street. Town and community councils (Porthcawl, Pencoed, Maesteg and others) publish no lists; other play areas come from OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/bridgend.csv",
+        "page": "https://www.bridgend.gov.uk/residents/leisure-culture-and-libraries/playgrounds",
+        "near": {
+          "lat": 51.56,
+          "lng": -3.6,
+          "km": 18
+        }
+      }
+    },
+    {
+      "district": "Neath Port Talbot",
+      "council": "Neath Port Talbot Council",
+      "sources": [
+        "https://www.npt.gov.uk/parks-sport-and-leisure/parks-and-outdoor-spaces/playgrounds/"
+      ],
+      "note": "Checked 4 November 2026: the council's list of 52 play areas, all run by the council, with village but no postcodes: 50 copied to src/data/council-lists/neath-port-talbot.csv (the Aberavon seafront outdoor gym and skate park left out), placed by park name or street. Margam and Gnoll country parks each have two play areas.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/neath-port-talbot.csv",
+        "page": "https://www.npt.gov.uk/parks-sport-and-leisure/parks-and-outdoor-spaces/playgrounds/",
+        "near": {
+          "lat": 51.66,
+          "lng": -3.75,
+          "km": 20
+        }
+      }
+    },
+    {
+      "district": "Swansea",
+      "council": "Swansea Council",
+      "sources": [
+        "https://www.swansea.gov.uk/playgrounds"
+      ],
+      "note": "Checked 4 November 2026: the council's directory of 94 playgrounds with addresses and postcodes: 93 copied to src/data/council-lists/swansea.csv (the playground on the Travellers' site left out). The site refuses automated downloads, so the list was copied by hand. Community councils on Gower publish no lists; other play areas come from OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/swansea.csv",
+        "page": "https://www.swansea.gov.uk/playgrounds",
+        "near": {
+          "lat": 51.63,
+          "lng": -3.97,
+          "km": 20
+        }
+      }
+    },
+    {
+      "district": "Merthyr Tydfil",
+      "council": "Merthyr Tydfil County Borough Council",
+      "sources": [
+        "https://www.merthyr.gov.uk/resident/leisure-parks-culture/playgrounds/"
+      ],
+      "note": "Checked 4 November 2026: the council's Playgrounds page has no list of play areas, and none is published elsewhere on its site, so play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Torfaen",
+      "council": "Torfaen County Borough Council",
+      "sources": [
+        "https://www.torfaen.gov.uk/en/LeisureParksEvents/ParksandOpenSpaces/Play-areas/Play-areas.aspx"
+      ],
+      "note": "Checked 4 November 2026: the council's play areas are only shown on its interactive map (69 across the borough, run by the council, Bron Afon or community councils), with no list or open data, so play areas come from OpenStreetMap."
     }
   ]
 }
