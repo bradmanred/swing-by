@@ -1,0 +1,30 @@
+{
+  "name": "Northwood Park Playground",
+  "region": "south-east",
+  "area": "Cowes",
+  "lat": 50.76341,
+  "lng": -1.30116,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "Large fenced play area with self-closing gates and safety surfacing, in the grounds of Northwood House, on the Isle of Wight Council's list of the Island's public playgrounds.",
+  "nearby": [],
+  "operator": "Isle of Wight Council",
+  "sources": [
+    {
+      "label": "Isle of Wight Council: Northwood Park Playground",
+      "url": "https://iwc.iow.gov.uk/documentlibrary/download/playgrounds-070417"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/228351280"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
