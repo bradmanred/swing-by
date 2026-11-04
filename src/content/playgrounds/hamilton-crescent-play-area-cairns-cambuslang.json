@@ -1,0 +1,35 @@
+{
+  "name": "Hamilton Crescent play area",
+  "region": "scotland",
+  "area": "Cairns, Cambuslang",
+  "lat": 55.81349,
+  "lng": -4.15359,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "rb"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Hamilton Crescent play area",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656746/hamilton-crescent-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1116345767"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,35 @@
+{
+  "name": "James Hamilton Heritage Park",
+  "region": "scotland",
+  "area": "Nerston, East Kilbride",
+  "lat": 55.77737,
+  "lng": -4.18441,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: James Hamilton Heritage Park",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656738/james-hamilton-heritage-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/38689149"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours and parking.",
+  "photo": null
+}

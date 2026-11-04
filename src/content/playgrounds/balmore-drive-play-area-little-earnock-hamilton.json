@@ -1,0 +1,31 @@
+{
+  "name": "Balmore Drive play area",
+  "region": "scotland",
+  "area": "Little Earnock, Hamilton",
+  "lat": 55.75858,
+  "lng": -4.06606,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Balmore Drive play area",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656845/balmore-drive-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1118718679"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

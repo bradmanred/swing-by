@@ -1,0 +1,32 @@
+{
+  "name": "Braxfield Terrace play area",
+  "region": "scotland",
+  "area": "New Lanark",
+  "lat": 55.66583,
+  "lng": -3.78121,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Braxfield Terrace play area",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656827/braxfield-terrace-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/153760034"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

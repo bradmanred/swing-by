@@ -1,0 +1,31 @@
+{
+  "name": "Kilncadzow play area",
+  "region": "scotland",
+  "area": "Roadmeetings, Kilncadzow",
+  "lat": 55.71882,
+  "lng": -3.77768,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Kilncadzow play area",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656730/kilncadzow-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/331662391"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

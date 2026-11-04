@@ -1,0 +1,33 @@
+{
+  "name": "Braeside Place play area",
+  "region": "scotland",
+  "area": "Kirkhill, Cambuslang",
+  "lat": 55.81333,
+  "lng": -4.16026,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Braeside Place play area",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656829/braeside-place-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1116346121"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

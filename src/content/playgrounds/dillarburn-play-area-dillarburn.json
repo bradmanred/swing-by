@@ -1,0 +1,31 @@
+{
+  "name": "Dillarburn play area",
+  "region": "scotland",
+  "area": "Dillarburn",
+  "lat": 55.65264,
+  "lng": -3.8699,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Dillarburn play area",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656786/dillarburn-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/292625857"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Thankerton Park",
+  "region": "scotland",
+  "area": "Thankerton",
+  "lat": 55.62571,
+  "lng": -3.63673,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Thankerton Park",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656650/thankerton-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1156994337"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

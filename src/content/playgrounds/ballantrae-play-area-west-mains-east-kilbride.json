@@ -1,0 +1,32 @@
+{
+  "name": "Ballantrae play area",
+  "region": "scotland",
+  "area": "West Mains, East Kilbride",
+  "lat": 55.76891,
+  "lng": -4.19184,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Ballantrae play area",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656846/ballantrae-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/712138256"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

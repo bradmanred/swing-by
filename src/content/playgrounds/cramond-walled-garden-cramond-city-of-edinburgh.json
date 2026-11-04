@@ -1,0 +1,33 @@
+{
+  "name": "Cramond Walled Garden",
+  "region": "scotland",
+  "area": "Cramond, City of Edinburgh",
+  "lat": 55.9772,
+  "lng": -3.29829,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on City of Edinburgh Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of Edinburgh Council",
+  "sources": [
+    {
+      "label": "City of Edinburgh Council: Cramond Walled Garden",
+      "url": "https://www.edinburgh.gov.uk/directory-record/1099130/cramond-walled-garden"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/377776541"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Gorgie/Dalry Community Park",
+  "region": "scotland",
+  "area": "Dalry, City of Edinburgh",
+  "lat": 55.94091,
+  "lng": -3.22132,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A playground on City of Edinburgh Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of Edinburgh Council",
+  "sources": [
+    {
+      "label": "City of Edinburgh Council: Gorgie/Dalry Community Park",
+      "url": "https://www.edinburgh.gov.uk/directory-record/1099156/gorgie-dalry-community-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1343821239"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

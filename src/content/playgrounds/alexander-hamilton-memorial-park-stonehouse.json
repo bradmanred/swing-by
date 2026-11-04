@@ -1,0 +1,34 @@
+{
+  "name": "Alexander Hamilton Memorial Park",
+  "region": "scotland",
+  "area": "Stonehouse",
+  "lat": 55.70168,
+  "lng": -3.98619,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Alexander Hamilton Memorial Park",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656857/alexander-hamilton-memorial-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1121893433"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

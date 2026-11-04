@@ -1,0 +1,31 @@
+{
+  "name": "Lochranza Lane play area",
+  "region": "scotland",
+  "area": "Lindsayfield, East Kilbride",
+  "lat": 55.73969,
+  "lng": -4.19545,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Lochranza Lane play area",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656712/lochranza-lane-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/697905495"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

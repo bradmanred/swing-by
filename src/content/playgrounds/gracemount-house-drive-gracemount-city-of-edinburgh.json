@@ -1,0 +1,36 @@
+{
+  "name": "Gracemount House Drive",
+  "region": "scotland",
+  "area": "Gracemount, City of Edinburgh",
+  "lat": 55.90533,
+  "lng": -3.15567,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "tp",
+    "ss"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on City of Edinburgh Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of Edinburgh Council",
+  "sources": [
+    {
+      "label": "City of Edinburgh Council: Gracemount House Drive",
+      "url": "https://www.edinburgh.gov.uk/directory-record/1099157/gracemount-house-drive"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/225250578"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

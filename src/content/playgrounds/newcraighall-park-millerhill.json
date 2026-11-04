@@ -1,0 +1,32 @@
+{
+  "name": "Newcraighall Park",
+  "region": "scotland",
+  "area": "Millerhill",
+  "lat": 55.92218,
+  "lng": -3.0677,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on City of Edinburgh Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of Edinburgh Council",
+  "sources": [
+    {
+      "label": "City of Edinburgh Council: Newcraighall Park",
+      "url": "https://www.edinburgh.gov.uk/directory-record/1099206/newcraighall-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/273061504"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

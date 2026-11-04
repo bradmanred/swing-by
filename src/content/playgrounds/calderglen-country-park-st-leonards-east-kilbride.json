@@ -1,0 +1,35 @@
+{
+  "name": "Calderglen Country Park",
+  "region": "scotland",
+  "area": "St Leonards, East Kilbride",
+  "lat": 55.74831,
+  "lng": -4.14755,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Calderglen Country Park",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656819/calderglen-country-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1118715449"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours and parking.",
+  "photo": null
+}

@@ -1,0 +1,39 @@
+{
+  "name": "East Pilton Park",
+  "region": "scotland",
+  "area": "Granton and District, City of Edinburgh",
+  "lat": 55.97381,
+  "lng": -3.22706,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "bs",
+    "bk",
+    "sl",
+    "cl",
+    "rb",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on City of Edinburgh Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of Edinburgh Council",
+  "sources": [
+    {
+      "label": "City of Edinburgh Council: East Pilton Park",
+      "url": "https://www.edinburgh.gov.uk/directory-record/1099144/east-pilton-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/128496034"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

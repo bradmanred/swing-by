@@ -1,0 +1,32 @@
+{
+  "name": "Castle Wynd play area",
+  "region": "scotland",
+  "area": "Kirkfield, Bothwell",
+  "lat": 55.80643,
+  "lng": -4.06769,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Castle Wynd play area",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656808/castle-wynd-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/274107873"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

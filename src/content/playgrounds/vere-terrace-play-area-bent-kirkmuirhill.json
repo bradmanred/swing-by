@@ -1,0 +1,34 @@
+{
+  "name": "Vere Terrace play area",
+  "region": "scotland",
+  "area": "Bent, Kirkmuirhill",
+  "lat": 55.66374,
+  "lng": -3.92131,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "bs"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Vere Terrace play area",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656643/vere-terrace-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1121912658"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

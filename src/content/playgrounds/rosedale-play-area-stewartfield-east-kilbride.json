@@ -1,0 +1,32 @@
+{
+  "name": "Rosedale play area",
+  "region": "scotland",
+  "area": "Stewartfield, East Kilbride",
+  "lat": 55.77017,
+  "lng": -4.19776,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Rosedale play area",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656676/rosedale-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/964058867"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

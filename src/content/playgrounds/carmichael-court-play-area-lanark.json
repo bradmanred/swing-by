@@ -1,0 +1,31 @@
+{
+  "name": "Carmichael Court play area",
+  "region": "scotland",
+  "area": "Lanark",
+  "lat": 55.67498,
+  "lng": -3.75941,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Lanarkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Lanarkshire Council",
+  "sources": [
+    {
+      "label": "South Lanarkshire Council: Carmichael Court play area",
+      "url": "https://www.southlanarkshire.gov.uk/directory-record/656815/carmichael-court-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1156990801"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

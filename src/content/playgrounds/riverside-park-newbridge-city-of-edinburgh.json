@@ -1,0 +1,33 @@
+{
+  "name": "Riverside Park",
+  "region": "scotland",
+  "area": "Newbridge, City of Edinburgh",
+  "lat": 55.93901,
+  "lng": -3.41248,
+  "ages": [
+    "teens"
+  ],
+  "equipment": [
+    "sw",
+    "sk"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on City of Edinburgh Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of Edinburgh Council",
+  "sources": [
+    {
+      "label": "City of Edinburgh Council: Riverside Park",
+      "url": "https://www.edinburgh.gov.uk/directory-record/1099228/riverside-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/537842937"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
