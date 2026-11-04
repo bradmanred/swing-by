@@ -147,3 +147,4 @@ Each list is capped in the issue; the full lists are in the run's `quarterly-che
 - Shared parent reports and ratings (Supabase free tier), with reports shown once another parent has confirmed them.
 - Postcode positions for the 96 council playgrounds that aren't mapped yet.
 - More counties, following the UK-wide data plan in the project brief.
+- When each playground is busiest. Google's "Popular times" can't be used: there's no API for it, and Google Maps data isn't allowed here (see the content rules). Possible routes: a quick "How busy was it?" question for parents on playground pages (time of day and day of week, shown once enough answers agree, like the equipment checks), plus general patterns such as school holidays and after-school hours.
