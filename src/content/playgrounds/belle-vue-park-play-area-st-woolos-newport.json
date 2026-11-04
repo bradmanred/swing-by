@@ -1,0 +1,28 @@
+{
+  "name": "Belle Vue Park Play Area",
+  "region": "wales",
+  "area": "St. Woolos, Newport",
+  "lat": 51.58392,
+  "lng": -2.9983,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Play area at Belle Vue Park, on Newport City Council's list of play areas.",
+  "nearby": [],
+  "operator": "Newport City Council",
+  "sources": [
+    {
+      "label": "Newport City Council: Belle Vue Park Play Area",
+      "url": "https://www.newport.gov.uk/our-city/see-and-do/green-spaces/play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/992919176"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

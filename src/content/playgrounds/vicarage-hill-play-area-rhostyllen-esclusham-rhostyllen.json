@@ -1,0 +1,30 @@
+{
+  "name": "Vicarage Hill Play Area, Rhostyllen",
+  "region": "wales",
+  "area": "Esclusham, Rhostyllen",
+  "lat": 53.0325,
+  "lng": -3.02923,
+  "ages": [],
+  "equipment": [
+    "sk"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Play area with a skate park, run by Wrexham Council, on Wrexham Council's playgrounds list.",
+  "nearby": [],
+  "operator": "Wrexham County Borough Council",
+  "sources": [
+    {
+      "label": "Wrexham County Borough Council: Vicarage Hill Play Area, Rhostyllen",
+      "url": "https://www.wrexham.gov.uk/service/playgrounds/playgrounds-rhostyllen"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/59462487"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

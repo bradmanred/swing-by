@@ -1,0 +1,28 @@
+{
+  "name": "Blackpill Playground",
+  "region": "wales",
+  "area": "Blackpill, Swansea",
+  "lat": 51.59713,
+  "lng": -3.9944,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Playground at Blackpill Lido, on Swansea Council's list of playgrounds.",
+  "nearby": [],
+  "operator": "Swansea Council",
+  "sources": [
+    {
+      "label": "Swansea Council: Blackpill Playground",
+      "url": "https://www.swansea.gov.uk/playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1463996524"
+    }
+  ],
+  "checked": "2026-11-04",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
