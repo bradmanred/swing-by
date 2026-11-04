@@ -1,0 +1,160 @@
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css"  rel="stylesheet" type="text/css" />
+<style>
+html { border: none; }
+body { border: none; }
+</style>
+<script src="jquery/jquery-1.4.2.js" type="text/javascript"></script>
+<script src="j_a_v/parksearch.js" type="text/javascript"></script>
+<title>Cardiff Council - Parks Search</title>
+</head>
+<body>
+<noscript>
+  <div id="nojscript"><p class="red bold size2"><br />WARNING: This site requires javascript. It has been detected that you do not have javascript enabled. Please use the <a href="basicindex.php" class="uline bold teal">Basic Information Page</a> or enable Javascript in your browser<br /><br /></p></div>
+</noscript>
+<div class="outerwrapper"><div class="top_title">I'm looking for a park with:</div>
+<!--START Form-->
+<form name="multiplequeryform" id="multiplequeryform" action="javascript:void(null);" method="POST">
+<table>
+<tr>
+   <td><input type="checkbox" name="playground" id="playground" value="1" id="playground" /></td>
+   <td>Playground</td>
+   <td><input type="checkbox" name="footballpitch" id="footballpitch" value="1" /></td>
+   <td>Football / Basketball Court</td>
+</tr>
+<tr>
+   <td><input type="checkbox" name="toilets" id="toilets" value="1" /></td>
+   <td>Toilets</td>
+   <td><input type="checkbox" name="skatepark" id="skatepark" value="1" /></td>
+   <td>Skatepark</td>
+</tr>
+<tr>
+   <td><input type="checkbox" name="babychangingfacilities" id="babychangingfacilities" value="1" /></td>
+   <td>Baby Changing Facilities</td>
+   <td><input type="checkbox" name="snackbar" id="snackbar" value="1" /></td>
+   <td>Snack Bar</td>
+</tr>
+<tr>
+   <td><input type="checkbox" name="informationcentre" id="informationcentre" value="1" /></td>
+   <td>Information Centre</td>
+   <td><input type="checkbox" name="bmx" id="bmx" value="1" /></td>
+   <td>BMX</td>
+</tr>
+<tr>
+   <td><input type="checkbox" name="fitness_equipment" id="fitness_equipment" value="1" /></td>
+   <td>Fitness Equipment / Trim Trail</td>
+   <td colspan="2">&nbsp;</td>
+</tr>
+</table>
+
+<!--START All Facilities Option-->
+<div class="allfacilities_space" style="display:none;">
+<table>
+<tr>
+   <td><input type="checkbox" name="allfacilities" value="1" id="allfacilities" /></td>
+   <td>Show me all parks and open spaces</td>
+</tr>
+</table>
+</div>
+<!--END All Facilities Option-->
+
+<!--START hidden div-->
+<div class="showhide">
+<table>
+<tr>
+   <td><input type="checkbox" name="all" value="1" id="all" />All&nbsp;</td>
+   <td><input type="checkbox" name="age_range_toddler" value="1" id="age_range_1" />Toddler (0-5)&nbsp;</td>
+   <td><input type="checkbox" name="age_range_junior" value="1" id="age_range_2" />Junior (6-10)&nbsp;</td>
+   <td><input type="checkbox" name="age_range_senior" value="1" id="age_range_3" />Senior (11-14)&nbsp;</td>
+</tr>
+</table>
+
+</div>
+<!--END hidden div-->
+
+<!--START Space DIV-->
+<div class="space_div"></div>
+<!--END Space DIV-->
+
+<!--START Postcode Search-->
+
+<!--
+<table>
+<tr>
+   <td>&nbsp;</td>
+   <td><input type="text" name="postcode" value="Postcode" id="postcode" size="11" maxlength="11" onfocus="removePostcode(this.value)" /></td>
+   <td>&nbsp;()</td>
+</tr>
+<tr>
+   <td>&nbsp;</td>
+   <td><input type="checkbox" name="sortbynearest" value="Y" /></td>
+   <td>&nbsp;()</td>
+</tr>
+</table>
+-->
+<!--END Postcode Search-->
+
+<!--CSS Submit Button-->
+<div class="submit_button">
+<!--Use a hidden field to check form post-->
+<input type="hidden" name="_submit_check" value="1"/>
+<input type="submit" value="Find a Park" class="btn" onclick="jaxon_execute_search(jaxon.getFormValues('multiplequeryform')); return false;" />
+</div>
+
+</form>
+<!--END Form-->
+<div id="content"></div><script type="text/javascript" src="https://apps8.cardiff.gov.uk/jaxonjs/V4/jaxon.core.js"  charset="UTF-8"></script>
+
+
+
+<script type="text/javascript"  charset="UTF-8">
+/* <![CDATA[ */
+try {
+    if(typeof jaxon.config == undefined)
+        jaxon.config = {};
+}
+catch(e) {
+    jaxon = {};
+    jaxon.config = {};
+};
+
+jaxon.config.requestURI = "https://apps8.cardiff.gov.uk/parks_search/";
+jaxon.config.statusMessages = false;
+jaxon.config.waitCursor = true;
+jaxon.config.version = "Jaxon 4.x";
+jaxon.config.defaultMode = "asynchronous";
+jaxon.config.defaultMethod = "POST";
+jaxon.config.responseType = "JSON";
+
+jaxon_execute_search = function() {
+    return jaxon.request({ jxnfun: 'execute_search' }, { parameters: arguments });
+};
+
+jaxon.dialogs = {};
+
+jaxon.dom.ready(function() {
+jaxon.command.handler.register("jquery", (args) => jaxon.cmd.script.execute(args));
+
+jaxon.command.handler.register("bags.set", (args) => {
+        for (const bag in args.data) {
+            jaxon.ajax.parameters.bags[bag] = args.data[bag];
+        }
+    });
+});
+
+    jaxon.command.handler.register("rd", (command) => {
+        const { data: sUrl, delay: nDelay } = command;
+        if (nDelay <= 0) {
+            window.location = sUrl;
+            return true;
+        }
+        window.setTimeout(() => window.location = sUrl, nDelay * 1000);
+        return true;
+    });
+
+/* ]]> */
+</script>
+</div></body></html>
