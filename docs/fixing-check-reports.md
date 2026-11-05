@@ -75,6 +75,21 @@ bottom of the issue.
   note it in the PR rather than changing anything.
 - Don't change colours, fonts or layout beyond what the fix needs, and say in the PR which pages you checked.
 
+### Cloudflare file count (`scripts/count-assets.mjs`)
+
+The build checks count the built site's files against Cloudflare's limit per deploy (20,000 on the free Workers plan;
+every playground page is one file). From 19,000 they warn and open one issue, "Site nearing Cloudflare's 20,000-file
+limit"; at 20,000 they fail, because Cloudflare would refuse the deploy.
+
+**This isn't fixed by editing playgrounds.** Never delete or merge playgrounds to get under the limit. Instead,
+comment on the issue with the current count and how many files are left, and list the owner's options:
+
+1. Upgrade to Workers Paid ($5 a month): the limit becomes 100,000. Then set `ASSET_LIMIT: 100000` in
+   `.github/workflows/ci.yml` and close the issue.
+2. Render playground pages in the Worker from one template and the playground data, so they stop being files at all.
+
+Leave the issue open until the owner has decided. New-area imports can carry on until the check fails.
+
 ### Adding a new check
 
 A new workflow that reports problems for fixing should open its issue with the `check-report` label
