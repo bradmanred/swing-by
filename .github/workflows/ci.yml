@@ -26,6 +26,7 @@ jobs:
     permissions:
       contents: read
       pull-requests: read
+      issues: write # to open a check-report issue when the site nears Cloudflare's file limit
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -52,6 +53,22 @@ jobs:
           fi
           cat "$GITHUB_OUTPUT"
       - run: npm run build
+      - name: Count files against Cloudflare's limit
+        id: assets
+        env:
+          ASSET_LIMIT: 20000 # Workers Free; 100000 on Workers Paid
+        run: node scripts/count-assets.mjs dist
+      - name: Report nearing the file limit (once)
+        if: steps.assets.outputs.near == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          COUNT: ${{ steps.assets.outputs.count }}
+          LEFT: ${{ steps.assets.outputs.left }}
+        run: |
+          title="Site nearing Cloudflare's 20,000-file limit"
+          if [ "$(gh api "repos/$GITHUB_REPOSITORY/issues?state=open&labels=check-report&per_page=100" --jq "[.[]|select(.title==\"$title\")]|length")" != 0 ]; then exit 0; fi
+          printf '%s\n' "The build on \`${GITHUB_HEAD_REF:-$GITHUB_REF_NAME}\` has $COUNT files, with $LEFT left before Cloudflare's free plan refuses deploys (every playground page is a file)." "" "Nothing has been changed. This needs a decision from the owner: see \"Cloudflare file count\" in docs/fixing-check-reports.md." > issue.md
+          gh api "repos/$GITHUB_REPOSITORY/issues" -f title="$title" -F body=@issue.md -f "labels[]=check-report" --jq .html_url || echo "::warning::Couldn't open the file-limit issue."
       - run: npm run test:quick
       - uses: actions/cache@v4
         if: steps.scope.outputs.mode != 'none'
