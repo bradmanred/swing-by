@@ -108,7 +108,9 @@ for await (const f of features(inputs.places)) {
 // Outlines of mapped places and civil parishes (admin_level 10), simplified to about 20 m, so imports can tell which
 // suburb, village or parish a playground is inside, as Nominatim does.
 const areas = [];
-for await (const f of features(inputs.areas)) {
+// Ireland's admin_level 10 is townlands (tens of thousands of them, field-sized), not parishes, so those are skipped.
+for (const file of inputs.areas) for await (const f of features([file])) {
+  if (/ireland/.test(file) && f.properties?.boundary) continue;
   const p = f.properties ?? {};
   const kind = PLACE_KM[p.place] ? p.place : p.boundary === 'administrative' && String(p.admin_level) === '10' ? 'parish' : null;
   if (!p.name || !kind) continue;
