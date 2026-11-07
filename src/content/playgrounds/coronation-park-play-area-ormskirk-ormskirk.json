@@ -1,0 +1,33 @@
+{
+  "name": "Coronation Park Play Area, Ormskirk",
+  "region": "north-west",
+  "area": "Ormskirk",
+  "lat": 53.5666,
+  "lng": -2.88986,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "On West Lancashire Borough Council's list of play areas (Ormskirk), toddler, junior and teen equipment.",
+  "nearby": [],
+  "operator": "West Lancashire Borough Council",
+  "sources": [
+    {
+      "label": "West Lancashire Borough Council: Coronation Park Play Area, Ormskirk",
+      "url": "https://www.westlancs.gov.uk/leisure-recreation/parks-and-countryside/play-areas.aspx"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/166697119"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
