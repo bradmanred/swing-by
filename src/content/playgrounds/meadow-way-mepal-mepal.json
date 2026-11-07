@@ -1,0 +1,32 @@
+{
+  "name": "Meadow Way, Mepal",
+  "region": "east",
+  "area": "Mepal",
+  "lat": 52.40567,
+  "lng": 0.11525,
+  "ages": [],
+  "equipment": [
+    "bs",
+    "sl",
+    "rb"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on East Cambridgeshire District Council's own list of play areas.",
+  "nearby": [],
+  "operator": "East Cambridgeshire District Council",
+  "sources": [
+    {
+      "label": "East Cambridgeshire District Council: Meadow Way, Mepal",
+      "url": "https://eastcambs.gov.uk/services/parking-open-spaces-and-toilets/parks-and-open-spaces/play-areas/meadow-way-mepal"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1276010959"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

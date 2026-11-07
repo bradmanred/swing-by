@@ -20,7 +20,7 @@ on:
         description: 'Add up to this many missing playgrounds (0 = report only)'
         default: '0'
       only:
-        description: 'Check one county only, e.g. Kent (leave blank for all)'
+        description: 'Check one county only, e.g. Kent, or several separated by commas (leave blank for all)'
         default: ''
       osm_fallback:
         description: "Also fill gaps from OpenStreetMap in councils whose own lists haven't been checked yet"

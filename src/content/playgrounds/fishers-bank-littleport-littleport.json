@@ -1,0 +1,30 @@
+{
+  "name": "Fishers Bank, Littleport",
+  "region": "east",
+  "area": "Littleport",
+  "lat": 52.45105,
+  "lng": 0.31637,
+  "ages": [],
+  "equipment": [
+    "sw"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on East Cambridgeshire District Council's own list of play areas.",
+  "nearby": [],
+  "operator": "East Cambridgeshire District Council",
+  "sources": [
+    {
+      "label": "East Cambridgeshire District Council: Fishers Bank, Littleport",
+      "url": "https://eastcambs.gov.uk/services/parking-open-spaces-and-toilets/parks-and-open-spaces/play-areas/fishers-bank-littleport"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1549479015"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

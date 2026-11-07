@@ -1,0 +1,28 @@
+{
+  "name": "West Somerton Play Area",
+  "region": "east",
+  "area": "West Somerton",
+  "lat": 52.71822,
+  "lng": 1.65307,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "On Great Yarmouth Borough Council's list of parks and playgrounds (West Somerton).",
+  "nearby": [],
+  "operator": "Great Yarmouth Borough Council",
+  "sources": [
+    {
+      "label": "Great Yarmouth Borough Council: West Somerton Play Area",
+      "url": "https://www.great-yarmouth.gov.uk/article/16899/Parks-and-playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/318360045"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
