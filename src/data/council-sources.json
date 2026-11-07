@@ -1869,6 +1869,195 @@
         "https://www.penyfforddcouncil.org/children-play-area"
       ],
       "note": "Checked 4 November 2026: the council publishes no current list of play areas: its improvement scheme page only names 36 refurbished between 2010 and 2013, too old to rely on, and its committee papers can't be downloaded automatically. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Lancaster",
+      "council": "Lancaster City Council",
+      "sources": [
+        "https://www.lancaster.gov.uk/parks-and-open-spaces/play-areas"
+      ],
+      "note": "The play areas page's map is an ArcGIS layer of the district's 117 child play spaces (an open space audit, 2024, with council playground data); read as a geojson feed (7 November 2026). Two are paid entry and a few were being renovated at the time of the audit.",
+      "feed": {
+        "type": "geojson",
+        "url": "https://services8.arcgis.com/BIbIT39XnVeg2ywe/arcgis/rest/services/ChildPlayAreas_Points_141125/FeatureServer/0/query?where=1%3D1&outFields=SiteName&outSR=4326&f=geojson",
+        "nameField": "SiteName",
+        "page": "https://www.lancaster.gov.uk/parks-and-open-spaces/play-areas"
+      }
+    },
+    {
+      "district": "South Ribble",
+      "council": "South Ribble Borough Council",
+      "sources": [
+        "https://southribble.gov.uk/playgrounds"
+      ],
+      "note": "The playgrounds page links to the council's map; its play area points layer (41 sites, named by location) is read as a geojson feed (7 November 2026).",
+      "feed": {
+        "type": "geojson",
+        "url": "https://services-eu1.arcgis.com/TGqCzJFR5VZgfRJG/arcgis/rest/services/SRBC%20Play%20Area%20Centroids/FeatureServer/0/query?where=1%3D1&outFields=Location&outSR=4326&f=geojson",
+        "nameFormat": "{Location} Play Area",
+        "page": "https://southribble.gov.uk/playgrounds"
+      }
+    },
+    {
+      "district": "Pendle",
+      "council": "Pendle Borough Council",
+      "sources": [
+        "https://www.pendle.gov.uk/directory/11/play_facilities/category/25"
+      ],
+      "note": "Play facilities directory (Jadu), Play Area category (7 November 2026). Town and parish councils run some village play areas; those come from OpenStreetMap.",
+      "feed": {
+        "type": "jadu",
+        "directory": "https://www.pendle.gov.uk/directory/11/play_facilities",
+        "category": 25,
+        "allPlay": true
+      }
+    },
+    {
+      "district": "Blackpool",
+      "council": "Blackpool Council",
+      "sources": [
+        "https://www.blackpool.gov.uk/Residents/Parks-and-community-facilities/Parks,-playgrounds-and-community-facilities/parks-and-sites.aspx"
+      ],
+      "note": "Parks and sites: one page per park; parks whose page mentions a playground or play area are read as a pages feed (7 November 2026). Smaller neighbourhood play areas aren't listed and come from OpenStreetMap.",
+      "feed": {
+        "type": "pages",
+        "index": "https://www.blackpool.gov.uk/Residents/Parks-and-community-facilities/Parks,-playgrounds-and-community-facilities/parks-and-sites.aspx",
+        "follow": "/parks-and-sites/[a-z0-9-]+\\.aspx$",
+        "approximate": true
+      }
+    },
+    {
+      "district": "West Lancashire",
+      "council": "West Lancashire Borough Council",
+      "sources": [
+        "https://www.westlancs.gov.uk/leisure-recreation/parks-and-countryside/play-areas.aspx",
+        "https://www.westlancs.gov.uk/media/547062/list-of-wlbc-play-areas.pdf"
+      ],
+      "note": "List of the council's play areas (PDF): 57 with postcodes and age ranges (a kick-about area and the outdoor gyms left out), in src/data/council-lists/west-lancashire.csv (7 November 2026). Parish council play areas come from OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/west-lancashire.csv",
+        "page": "https://www.westlancs.gov.uk/leisure-recreation/parks-and-countryside/play-areas.aspx",
+        "near": {
+          "lat": 53.57,
+          "lng": -2.85,
+          "km": 16
+        }
+      }
+    },
+    {
+      "district": "Rossendale",
+      "council": "Rossendale Borough Council",
+      "sources": [
+        "https://www.rossendale.gov.uk/parks-open-spaces-1/playgrounds/2"
+      ],
+      "note": "List of all playgrounds: the council's 42, with addresses and postcodes, in src/data/council-lists/rossendale.csv (7 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/rossendale.csv",
+        "page": "https://www.rossendale.gov.uk/parks-open-spaces-1/playgrounds/2",
+        "near": {
+          "lat": 53.69,
+          "lng": -2.25,
+          "km": 12
+        }
+      }
+    },
+    {
+      "district": "Hyndburn",
+      "council": "Hyndburn Borough Council",
+      "sources": [
+        "https://www.hyndburnbc.gov.uk/playgrounds-in-hyndburn/"
+      ],
+      "note": "Playgrounds in Hyndburn (three pages by area): 21 playgrounds with postcodes (multi-use games areas and a skate park left out), in src/data/council-lists/hyndburn.csv (7 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/hyndburn.csv",
+        "page": "https://www.hyndburnbc.gov.uk/playgrounds-in-hyndburn/",
+        "near": {
+          "lat": 53.75,
+          "lng": -2.37,
+          "km": 8
+        }
+      }
+    },
+    {
+      "district": "Wyre",
+      "council": "Wyre Council",
+      "sources": [
+        "https://www.wyre.gov.uk/parks",
+        "https://www.wyre.gov.uk/garstang-rural-wyre-parks/additional-facilities"
+      ],
+      "note": "The parks pages' facilities lists name nine children's playgrounds with postcodes, in src/data/council-lists/wyre.csv (7 November 2026). The main parks' own pages don't say which have play areas, so those come from OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/wyre.csv",
+        "page": "https://www.wyre.gov.uk/parks",
+        "near": {
+          "lat": 53.88,
+          "lng": -2.92,
+          "km": 20
+        }
+      }
+    },
+    {
+      "district": "Preston",
+      "council": "Preston City Council",
+      "sources": [
+        "https://www.preston.gov.uk/article/1138/Play-areas",
+        "https://preston.gov.uk/article/2702/Preston-play-areas-re-opening-safely"
+      ],
+      "note": "No full list: the play areas pages name the main park play areas (Avenham, Moor, Ashton, Ribbleton, Haslam and Grange Parks, Smith's Recreation Ground and Conway Park), placed by park name, in src/data/council-lists/preston.csv (7 November 2026). The rest come from OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/preston.csv",
+        "page": "https://www.preston.gov.uk/article/1138/Play-areas",
+        "near": {
+          "lat": 53.77,
+          "lng": -2.7,
+          "km": 7
+        }
+      }
+    },
+    {
+      "district": "Burnley",
+      "council": "Burnley Borough Council",
+      "sources": [
+        "https://burnley.moderngov.co.uk/documents/s3297/Play%20Provision%20Strategy%202017%20-%202026%20APPX.pdf"
+      ],
+      "note": "Checked 7 November 2026: no play area list on the council's website; the play strategy's appendix (2017) is the only list and the committee papers site refuses automated downloads. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Chorley",
+      "council": "Chorley Council",
+      "sources": [
+        "https://democracy.chorley.gov.uk/documents/s63050/Play%20Area%20Improvement%20Strategy%20MASTER.pdf"
+      ],
+      "note": "Checked 7 November 2026: no play area list on the council's website; the list in the play area improvement strategy is in committee papers that refuse automated downloads. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Fylde",
+      "council": "Fylde Council",
+      "sources": [
+        "https://new.fylde.gov.uk/wp-content/uploads/2019/11/ED071-Fylde-Open-Space-Sport-and-Recreation-Study.pdf"
+      ],
+      "note": "Checked 7 November 2026: no play area list on the council's website (only news of individual refurbishments); the 2019 open space study is too old to rely on. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Ribble Valley",
+      "council": "Ribble Valley Borough Council",
+      "sources": [
+        "https://ribblevalley.moderngov.co.uk/documents/s12158/Community%20Cmmttee%20Aug%2026%20Play%20Areas.pdf"
+      ],
+      "note": "Checked 7 November 2026: no list on the council's website; an August 2026 committee report says it runs 18 play areas but names only eight, and many village play areas are run by parish councils. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Blackburn with Darwen",
+      "council": "Blackburn with Darwen Borough Council",
+      "sources": [
+        "https://www.blackburn.gov.uk"
+      ],
+      "note": "Checked 7 November 2026: no play area list or parks directory found on the council's website (only news of individual playgrounds). Play areas, including those in Witton Country Park and Corporation Park, come from OpenStreetMap."
     }
   ]
 }
