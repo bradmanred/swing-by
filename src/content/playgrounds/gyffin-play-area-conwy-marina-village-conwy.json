@@ -1,0 +1,37 @@
+{
+  "name": "Gyffin Play Area",
+  "region": "wales",
+  "area": "Conwy Marina Village, Conwy",
+  "lat": 53.27559,
+  "lng": -3.83419,
+  "ages": [],
+  "equipment": [
+    "bs",
+    "bk",
+    "sw",
+    "sl",
+    "rb",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [
+    "cf"
+  ],
+  "opens": "",
+  "description": "A playground on Conwy County Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Conwy County Borough Council",
+  "sources": [
+    {
+      "label": "Conwy County Borough Council: Gyffin Play Area",
+      "url": "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Coastal-Play-Areas/Conwy/Gyffin-Play-Area.aspx"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/467583316"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

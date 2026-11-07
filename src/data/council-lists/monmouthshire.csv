@@ -1,6 +1,6 @@
-name,postcode,url,text,where
-"King George V Playfield, Caldicot",NP26 4XB,https://www.visitmonmouthshire.com/plan-your-visit/family-friendly-monmouthshire/play-parks,"A play park listed by Visit Monmouthshire (Monmouthshire County Council), on King George's Field, Jubilee Way.",
-Usk Playpark,NP15 1AD,https://www.visitmonmouthshire.com/plan-your-visit/family-friendly-monmouthshire/play-parks,"A play park listed by Visit Monmouthshire, next to the Memorial Hall on Maryport Street.",
-"Chippenham Play Area, Monmouth",NP25 3UZ,https://www.visitmonmouthshire.com/plan-your-visit/family-friendly-monmouthshire/play-parks,"A play park listed by Visit Monmouthshire, on Chippenham Village Green, Blestium Street.",
-"Bailey Park Play Area, Abergavenny",NP7 5SS,https://www.visitmonmouthshire.com/plan-your-visit/family-friendly-monmouthshire/play-parks,"A play park listed by Visit Monmouthshire, in Bailey Park.",
-"Castle Park Playground, Caldicot",,https://www.monlife.co.uk/wp-content/uploads/2026/02/PSA-summery-report.pdf,"A destination playground in Castle Park (Castroggi), named in MonLife's 2026 play sufficiency summary.","Castle Park, Caldicot"
+name,postcode,url,text,where,lat,lng,placed
+"King George V Playfield, Caldicot",NP26 4XB,https://www.visitmonmouthshire.com/plan-your-visit/family-friendly-monmouthshire/play-parks,"A play park listed by Visit Monmouthshire (Monmouthshire County Council), on King George's Field, Jubilee Way.",,,,
+Usk Playpark,NP15 1AD,https://www.visitmonmouthshire.com/plan-your-visit/family-friendly-monmouthshire/play-parks,"A play park listed by Visit Monmouthshire, next to the Memorial Hall on Maryport Street.",,,,
+"Chippenham Play Area, Monmouth",NP25 3UZ,https://www.visitmonmouthshire.com/plan-your-visit/family-friendly-monmouthshire/play-parks,"A play park listed by Visit Monmouthshire, on Chippenham Village Green, Blestium Street.",,,,
+"Bailey Park Play Area, Abergavenny",NP7 5SS,https://www.visitmonmouthshire.com/plan-your-visit/family-friendly-monmouthshire/play-parks,"A play park listed by Visit Monmouthshire, in Bailey Park.",,,,
+"Castle Park Playground, Caldicot",,https://www.monlife.co.uk/wp-content/uploads/2026/02/PSA-summery-report.pdf,"A destination playground in Castle Park (Castroggi), named in MonLife's 2026 play sufficiency summary.","Castle Park, Caldicot",51.59266,-2.74103,street

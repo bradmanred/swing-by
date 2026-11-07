@@ -1,0 +1,34 @@
+{
+  "name": "Parc Peulwys Play Area",
+  "region": "wales",
+  "area": "Llysfaen",
+  "lat": 53.2872,
+  "lng": -3.67765,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [
+    "bk",
+    "sw",
+    "sl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Conwy County Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Conwy County Borough Council",
+  "sources": [
+    {
+      "label": "Conwy County Borough Council: Parc Peulwys Play Area",
+      "url": "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Coastal-Play-Areas/Old-Colwyn/Parc-Peulwys-Play-Area.aspx"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/262208124"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

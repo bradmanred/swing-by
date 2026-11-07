@@ -1,0 +1,37 @@
+{
+  "name": "Kendal Road Play Area",
+  "region": "wales",
+  "area": "Kinmel Bay",
+  "lat": 53.31009,
+  "lng": -3.51754,
+  "ages": [],
+  "equipment": [
+    "bs",
+    "bk",
+    "sw",
+    "sl",
+    "ss"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "fen"
+  ],
+  "opens": "",
+  "description": "A playground on Conwy County Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Conwy County Borough Council",
+  "sources": [
+    {
+      "label": "Conwy County Borough Council: Kendal Road Play Area",
+      "url": "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Coastal-Play-Areas/Kinmel-Bay/Kendal-Road-Play-Area.aspx"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/511589382"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

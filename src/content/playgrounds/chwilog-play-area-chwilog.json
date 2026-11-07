@@ -1,0 +1,28 @@
+{
+  "name": "Chwilog Play Area",
+  "region": "wales",
+  "area": "Chwilog",
+  "lat": 52.92098,
+  "lng": -4.3313,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "On Cyngor Gwynedd's list of play fields and open spaces (Chwilog).",
+  "nearby": [],
+  "operator": "Cyngor Gwynedd",
+  "sources": [
+    {
+      "label": "Cyngor Gwynedd: Chwilog Play Area",
+      "url": "https://gwynedd.llyw.cymru/playfields"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/970573333"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

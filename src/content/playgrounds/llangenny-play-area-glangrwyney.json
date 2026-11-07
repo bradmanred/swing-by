@@ -1,0 +1,28 @@
+{
+  "name": "Llangenny Play Area",
+  "region": "wales",
+  "area": "Glangrwyney",
+  "lat": 51.85627,
+  "lng": -3.10482,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "On Powys County Council's list of parks and play areas (Llangenny).",
+  "nearby": [],
+  "operator": "Powys County Council",
+  "sources": [
+    {
+      "label": "Powys County Council: Llangenny Play Area",
+      "url": "https://en.powys.gov.uk/article/16759/Find-parks-and-play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1089845335"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

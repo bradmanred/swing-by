@@ -1,0 +1,28 @@
+{
+  "name": "Glasinfryn Play Area",
+  "region": "wales",
+  "area": "Glasinfryn",
+  "lat": 53.19525,
+  "lng": -4.11558,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "On Cyngor Gwynedd's list of play fields and open spaces (Glasinfryn).",
+  "nearby": [],
+  "operator": "Cyngor Gwynedd",
+  "sources": [
+    {
+      "label": "Cyngor Gwynedd: Glasinfryn Play Area",
+      "url": "https://gwynedd.llyw.cymru/playfields"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/326449264"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
