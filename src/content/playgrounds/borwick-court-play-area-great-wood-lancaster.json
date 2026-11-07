@@ -1,0 +1,28 @@
+{
+  "name": "Borwick Court Play Area",
+  "region": "north-west",
+  "area": "Great Wood, Lancaster",
+  "lat": 54.06125,
+  "lng": -2.86423,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Lancaster City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Lancaster City Council",
+  "sources": [
+    {
+      "label": "Lancaster City Council: Borwick Court Play Area",
+      "url": "https://www.lancaster.gov.uk/parks-and-open-spaces/play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1162041985"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

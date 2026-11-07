@@ -1,0 +1,28 @@
+{
+  "name": "Smiths Recreation Ground Play Area",
+  "region": "north-west",
+  "area": "Avenham, Preston",
+  "lat": 53.75205,
+  "lng": -2.69406,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by Preston City Council (Selborne Street).",
+  "nearby": [],
+  "operator": "Preston City Council",
+  "sources": [
+    {
+      "label": "Preston City Council: Smiths Recreation Ground Play Area",
+      "url": "https://www.preston.gov.uk/article/1138/Play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/180217826"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

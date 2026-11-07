@@ -1,0 +1,28 @@
+{
+  "name": "Withy Grove Play Area",
+  "region": "north-west",
+  "area": "Bamber Bridge",
+  "lat": 53.72902,
+  "lng": -2.65209,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Ribble Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Ribble Borough Council",
+  "sources": [
+    {
+      "label": "South Ribble Borough Council: Withy Grove Play Area",
+      "url": "https://southribble.gov.uk/playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/251678458"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

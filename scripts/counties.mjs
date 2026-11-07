@@ -31,6 +31,7 @@ export const COUNTY = {
   Herefordshire: ['Herefordshire, County of', 'Herefordshire'],
   'Isle of Wight': ['Isle of Wight'],
   Kent: ['Medway'],
+  Lancashire: ['Blackburn with Darwen', 'Blackpool'],
   Leicestershire: ['Leicester'],
   Lincolnshire: ['North East Lincolnshire', 'North Lincolnshire'],
   Northamptonshire: ['North Northamptonshire', 'West Northamptonshire'],

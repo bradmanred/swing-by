@@ -2,7 +2,7 @@
 # OpenStreetMap, and says which councils' own play area lists to check first. The report appears on the run's
 # summary page and as a downloadable "coverage-report".
 # Runs on the 8th of each month (after the monthly OpenStreetMap snapshot; monthly rather than weekly to save Actions
-# minutes) and adds up to 150 playgrounds (change the number with a repository variable called
+# minutes) and adds up to 1,000 playgrounds (change the number with a repository variable called
 # COVERAGE_WEEKLY_ADD, under Settings > Secrets and variables > Actions > Variables; 0 makes it report only).
 # It works in the same order as before: council lists it can read first (added as verified, with each pin moved onto
 # the play area mapped on OpenStreetMap, and replacing any OpenStreetMap-only listing of the same place), then
@@ -46,7 +46,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           MANUAL_ADD: ${{ inputs.add || '0' }}
-          WEEKLY_ADD: ${{ vars.COVERAGE_WEEKLY_ADD || '150' }}
+          WEEKLY_ADD: ${{ vars.COVERAGE_WEEKLY_ADD || '1000' }}
         run: |
           if [ "${{ github.event_name }}" = "schedule" ]; then add="$WEEKLY_ADD"; else add="$MANUAL_ADD"; fi
           case "$add" in ''|*[!0-9]*) echo "::error title=Check coverage::'$add' isn't a number of playgrounds."; exit 1;; esac
@@ -73,6 +73,8 @@ jobs:
           ADD: ${{ steps.plan.outputs.add }}
           ONLY: ${{ inputs.only || '' }}
           FALLBACK: ${{ inputs.osm_fallback && '--osm-fallback' || '' }}
+          # Street lookups for council-list rows are saved into their CSVs, so they're only done once.
+          SAVE_COUNCIL_PLACES: '1'
         run: |
           # Counties are scanned for up to 35 minutes; the next month carries on from where this one stopped.
           export SCAN_MINUTES=35
@@ -98,7 +100,7 @@ jobs:
           git config user.name "swing-by-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -b "$branch"
-          git add src/content/playgrounds src/data/toilets.json src/data/coverage.json worker/index.js
+          git add src/content/playgrounds src/data/toilets.json src/data/coverage.json src/data/council-lists worker/index.js
           git commit -m "Add playgrounds found by the coverage check [skip toilets]"
           git push -u origin "$branch"
           # Commits pushed by a workflow don't start other workflows, so start the build and accessibility checks here.

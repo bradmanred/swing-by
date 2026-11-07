@@ -1,0 +1,28 @@
+{
+  "name": "Royal Albert Play Space (North)",
+  "region": "north-west",
+  "area": "Scotforth, Lancaster",
+  "lat": 54.03108,
+  "lng": -2.79951,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Lancaster City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Lancaster City Council",
+  "sources": [
+    {
+      "label": "Lancaster City Council: Royal Albert Play Space (North)",
+      "url": "https://www.lancaster.gov.uk/parks-and-open-spaces/play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/560203319"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

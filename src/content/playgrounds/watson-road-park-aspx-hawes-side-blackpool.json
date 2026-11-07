@@ -1,0 +1,30 @@
+{
+  "name": "Watson Road Park.Aspx",
+  "region": "north-west",
+  "area": "Hawes Side, Blackpool",
+  "lat": 53.79317,
+  "lng": -3.04201,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Blackpool Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Blackpool Council",
+  "sources": [
+    {
+      "label": "Blackpool Council: Watson Road Park.Aspx",
+      "url": "https://www.blackpool.gov.uk/Residents/Parks-and-community-facilities/Parks,-playgrounds-and-community-facilities/parks-and-sites/watson-road-park.aspx"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/102951240"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
