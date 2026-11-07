@@ -105,7 +105,9 @@ export function placeNames(index, p, pc = null) {
   let townHit = own ?? near.filter((c) => c.q.k === 'town' || c.q.k === 'city').sort((m, n) => m.w - n.w)[0];
   // A village nearer than any town is its own place, not part of the town (Nominatim: town ?? city ?? village).
   const village = nearest('village');
-  if (!own && village && (!townHit || village.d < townHit.d)) townHit = village;
+  // Not when the point is in a suburb, which belongs to a town (Haldens is Welwyn Garden City, not nearby Digswell).
+  const inSuburb = subHit && ['suburb', 'quarter'].includes(subHit.q.k);
+  if (!own && !inSuburb && village && (!townHit || village.d < townHit.d)) townHit = village;
   const town = pc?.region === 'London' ? 'Greater London' : townHit?.q.n ?? '';
   return { sub: subHit?.q.n ?? '', town };
 }
