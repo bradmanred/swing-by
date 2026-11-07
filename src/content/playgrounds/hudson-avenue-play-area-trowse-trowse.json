@@ -1,0 +1,28 @@
+{
+  "name": "Hudson Avenue Play Area, Trowse",
+  "region": "east",
+  "area": "Trowse",
+  "lat": 52.6099,
+  "lng": 1.32082,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "An equipped play area run by South Norfolk Council (Trowse).",
+  "nearby": [],
+  "operator": "South Norfolk Council",
+  "sources": [
+    {
+      "label": "South Norfolk Council: Hudson Avenue Play Area, Trowse",
+      "url": "https://www.southnorfolkandbroadland.gov.uk/leisure/play-areas-open-spaces-public-assets/equipped-play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/549927971"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,28 @@
+{
+  "name": "West Stow Country Park Play Area",
+  "region": "east",
+  "area": "West Suffolk",
+  "lat": 52.31156,
+  "lng": 0.64028,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area at West Stow Country Park, listed by West Suffolk Council.",
+  "nearby": [],
+  "operator": "West Suffolk Council",
+  "sources": [
+    {
+      "label": "West Suffolk Council: West Stow Country Park Play Area",
+      "url": "https://www.westsuffolk.gov.uk/leisure/Parks/play-areas.cfm"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/837628139"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

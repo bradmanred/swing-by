@@ -1,0 +1,30 @@
+{
+  "name": "Sandpits Play Area, Lakenheath",
+  "region": "east",
+  "area": "Lakenheath",
+  "lat": 52.42311,
+  "lng": 0.51874,
+  "ages": [],
+  "equipment": [
+    "sp"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A rural play area listed by West Suffolk Council (Sandpits, Briscoe Way).",
+  "nearby": [],
+  "operator": "West Suffolk Council",
+  "sources": [
+    {
+      "label": "West Suffolk Council: Sandpits Play Area, Lakenheath",
+      "url": "https://www.westsuffolk.gov.uk/leisure/Parks/play-areas.cfm"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/237278709"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
