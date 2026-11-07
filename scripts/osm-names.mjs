@@ -17,6 +17,7 @@ export const ROAD_M = 250;
 export const ROAD_KINDS = new Set(['trunk', 'trunk_link', 'primary', 'primary_link', 'secondary', 'secondary_link', 'tertiary', 'tertiary_link', 'unclassified', 'residential', 'living_street', 'service', 'road', 'pedestrian', 'footway']);
 // How far each kind of place reaches, in km, roughly the size of the area it names.
 // Tuned against the ~6,000 playgrounds Nominatim named (scripts/osm-names-check.mjs, November 2026).
+export const VILLAGE_NEARER = 0.4;
 export const PLACE_KM = { suburb: 1.6, quarter: 1.2, neighbourhood: 0.7, village: 1.1, hamlet: 0.8, town: 4, city: 9 };
 
 const R = Math.PI / 180;
@@ -100,7 +101,10 @@ export function placeNames(index, p, pc = null) {
         else if (q.k === 'city' && pc?.admin_district && q.n === pc.admin_district) near.push({ q, d, w: 0, own: true });
       }
   const nearest = (...kinds) => near.filter((c) => kinds.includes(c.q.k) && !c.own).sort((m, n) => m.d - n.d)[0];
-  const subHit = nearest('suburb', 'quarter') ?? nearest('village') ?? nearest('neighbourhood') ?? nearest('hamlet');
+  let subHit = nearest('suburb', 'quarter') ?? nearest('village') ?? nearest('neighbourhood') ?? nearest('hamlet');
+  // A village right beside the point beats a suburb further off (Stanborough, between Welwyn Garden City and Hatfield).
+  const closeVillage = nearest('village');
+  if (subHit && closeVillage && subHit.q.k !== 'village' && closeVillage.d < subHit.d * VILLAGE_NEARER) subHit = closeVillage;
   const own = near.find((c) => c.q.k === 'city' && pc?.admin_district && c.q.n === pc.admin_district);
   let townHit = own ?? near.filter((c) => c.q.k === 'town' || c.q.k === 'city').sort((m, n) => m.w - n.w)[0];
   // A village nearer than any town is its own place, not part of the town (Nominatim: town ?? city ?? village).
