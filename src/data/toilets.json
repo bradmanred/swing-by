@@ -4830,6 +4830,9 @@
     "lng": -1.358267963
    }
   },
+  "ball-court-st-athan-flemingston": {
+   "nearest": null
+  },
   "ball-field-play-area-cranbrook-tunbridge-wells": {
    "nearest": {
     "id": "594ca44201c5e747832ca37f",
@@ -14493,6 +14496,28 @@
   "cadishead-recreation-ground-salford": {
    "nearest": null
   },
+  "cadoxton-playground-cadoxton-barry": {
+   "nearest": {
+    "id": "0f8d386d70ab7c585e4c9b16",
+    "name": "Town Centre",
+    "m": 1640,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.407032618,
+    "lng": -3.267019093
+   },
+   "nearestBabyChange": {
+    "id": "ac09a4862a5b32d864f4d90c",
+    "name": "Public toilet",
+    "m": 2501,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.390454817,
+    "lng": -3.27743605
+   }
+  },
   "cae-merfyn-play-area-tanyfron-brymbo-summerhill": {
    "nearest": {
     "id": "cc82f66ab1f745176683068f",
@@ -17987,6 +18012,28 @@
     "lng": -0.221164226
    }
   },
+  "cheeky-monkeys-coed-eva-cwmbr-n": {
+   "nearest": {
+    "id": "9cb3304a83febf4ce7c3df91",
+    "name": "Next upstairs toilet",
+    "m": 1794,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.653185667,
+    "lng": -3.028303124
+   },
+   "nearestBabyChange": {
+    "id": "a3c135325d79081bb565d01d",
+    "name": "ASDA Cwmbran",
+    "m": 2104,
+    "babyChange": true,
+    "accessible": null,
+    "free": true,
+    "lat": 51.654450576,
+    "lng": -3.024163842
+   }
+  },
   "cheetham-park-castle-hall-stalybridge": {
    "nearest": {
     "id": "f81602548a5be098f08ba9e9",
@@ -18537,6 +18584,18 @@
     "free": false,
     "lat": 51.449092733,
     "lng": -1.311020851
+   }
+  },
+  "childrend-play-ground-oakfield-cwmbr-n": {
+   "nearest": {
+    "id": "c9f3255d82e6d2c07984c26e",
+    "name": "Monmouth Square underground",
+    "m": 1346,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.652425371,
+    "lng": -3.021087351
    }
   },
   "childrens-corner-playground-kingsbridge-kingsbridge-gorseino": {
@@ -19776,6 +19835,18 @@
     "lng": -0.0544657
    }
   },
+  "clare-garden-childrens-park-phase-1-llanblethian-cowbridge": {
+   "nearest": {
+    "id": "423d99ad89065bbf75eae3ea",
+    "name": "Waitrose",
+    "m": 1164,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.461159974,
+    "lng": -3.448079492
+   }
+  },
   "clare-road-play-area-braintree": {
    "nearest": {
     "id": "0e34273c690853d6b77df967",
@@ -20557,6 +20628,18 @@
     "lng": -1.280883551
    }
   },
+  "clwydyfagwyr-playground-clwydyfagwyr-merthyr-tydfil": {
+   "nearest": {
+    "id": "ca036e363fc13263dca90d5a",
+    "name": "Cyfarthfa Park Canolfan",
+    "m": 2072,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 51.756445009,
+    "lng": -3.387823105
+   }
+  },
   "clydach-park-play-area-ynysybwl-ynysybwl-and-coed-y-cwm-ynys": {
    "nearest": {
     "id": "14bfef3d3c035da5f5961044",
@@ -21116,6 +21199,9 @@
     "lat": 51.5158995,
     "lng": -0.2047463
    }
+  },
+  "colwinston-playground-colwinston": {
+   "nearest": null
   },
   "colyers-reach-play-area-chelmsford": {
    "nearest": {
@@ -29603,6 +29689,18 @@
     "lng": -2.945373952
    }
   },
+  "edwardsvile-park-treharris-edwardsville": {
+   "nearest": {
+    "id": "004e35af3d8a069edf32b3df",
+    "name": "Taff Bargoed Park",
+    "m": 1615,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.6702978,
+    "lng": -3.3003431
+   }
+  },
   "eelbrook-common-playground-fulham-greater-london": {
    "nearest": {
     "id": "7d70d0983fff5c1def15e0ed",
@@ -30997,6 +31095,9 @@
     "lat": 53.375309283,
     "lng": -1.473439336
    }
+  },
+  "explorers-park-st-athan-flemingston": {
+   "nearest": null
   },
   "exwick-station-road-play-area-exeter": {
    "nearest": {
@@ -32814,6 +32915,15 @@
     "lng": -0.0212103
    }
   },
+  "font-y-gary-playground-font-y-gary-east-aberthaw-2": {
+   "nearest": null
+  },
+  "font-y-gary-playground-font-y-gary-east-aberthaw": {
+   "nearest": null
+  },
+  "font-y-gary-playground-font-y-gary-rhoose": {
+   "nearest": null
+  },
   "football-park-play-park-colinsburgh-colinsburgh": {
    "nearest": null
   },
@@ -33020,6 +33130,18 @@
     "free": false,
     "lat": 52.5388449,
     "lng": -1.9497753
+   }
+  },
+  "forge-side-playground-forge-side-garn-yr-erw": {
+   "nearest": {
+    "id": "e5242bfceaa5da15647c5e0d",
+    "name": "Public toilet",
+    "m": 2194,
+    "babyChange": null,
+    "accessible": false,
+    "free": false,
+    "lat": 51.77622304,
+    "lng": -3.08962902
    }
   },
   "formartine-road-opp-193-200-play-area-tillydrone-aberdeen-ci": {
@@ -34551,6 +34673,12 @@
     "lat": 51.49000724,
     "lng": 0.069774985
    }
+  },
+  "garndiffaith-playground-garndiffaith-abersychan-2": {
+   "nearest": null
+  },
+  "garndiffaith-playground-garndiffaith-abersychan": {
+   "nearest": null
   },
   "garnswllt-playground-mawr-garnswllt": {
    "nearest": {
@@ -36127,6 +36255,18 @@
     "free": true,
     "lat": 56.069343636,
     "lng": -3.468815088
+   }
+  },
+  "golwg-y-mor-play-area-font-y-gary-rhoose": {
+   "nearest": {
+    "id": "c983dc6c88c6808e783397b6",
+    "name": "Public toilet",
+    "m": 1988,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.39416226,
+    "lng": -3.31510584
    }
   },
   "gooderham-house-play-area-chadwell-st-mary": {
@@ -41983,6 +42123,28 @@
     "free": true,
     "lat": 51.6089827,
     "lng": -3.6580567
+   }
+  },
+  "heolgerrig-park-cyfarthfa-merthyr-tydfil": {
+   "nearest": {
+    "id": "aa8bd8554da1542f0a39a9e2",
+    "name": "Civic Centre",
+    "m": 2112,
+    "babyChange": false,
+    "accessible": false,
+    "free": false,
+    "lat": 51.747133074,
+    "lng": -3.381326795
+   },
+   "nearestBabyChange": {
+    "id": "ca036e363fc13263dca90d5a",
+    "name": "Cyfarthfa Park Canolfan",
+    "m": 2235,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 51.756445009,
+    "lng": -3.387823105
    }
   },
   "herbert-street-play-area-devonport-plymouth": {
@@ -54242,6 +54404,30 @@
     "lng": -2.883472059
    }
   },
+  "llan-maes-playground-llan-maes-llanmaes-2": {
+   "nearest": {
+    "id": "780547196bdbbe46b03bc392",
+    "name": "Public toilet",
+    "m": 1204,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.4081804,
+    "lng": -3.4803414
+   }
+  },
+  "llan-maes-playground-llan-maes-llanmaes": {
+   "nearest": {
+    "id": "780547196bdbbe46b03bc392",
+    "name": "Public toilet",
+    "m": 1138,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.4081804,
+    "lng": -3.4803414
+   }
+  },
   "llanarthney-playground-llanarthney-llanarthne": {
    "nearest": {
     "id": "4d14c393d83aca825e306be7",
@@ -54262,6 +54448,18 @@
   },
   "llanasa-playground-llanasa-gwespyr": {
    "nearest": null
+  },
+  "llanblethian-playground-llanblethian-cowbridge": {
+   "nearest": {
+    "id": "423d99ad89065bbf75eae3ea",
+    "name": "Waitrose",
+    "m": 1356,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.461159974,
+    "lng": -3.448079492
+   }
   },
   "llanboidy-playground-llanboidy-llanglydwen": {
    "nearest": null
@@ -54297,6 +54495,9 @@
    }
   },
   "llanddowror-playground-llanddowror-llanmiloe": {
+   "nearest": null
+  },
+  "llandow-playground-llandow": {
    "nearest": null
   },
   "llandybie-playground-llandybie-capel-hendre": {
@@ -54526,6 +54727,18 @@
     "free": true,
     "lat": 51.565843319,
     "lng": -3.317688704
+   }
+  },
+  "llantwit-major-playground-llantwit-major": {
+   "nearest": {
+    "id": "780547196bdbbe46b03bc392",
+    "name": "Public toilet",
+    "m": 557,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.4081804,
+    "lng": -3.4803414
    }
   },
   "llanybydder-playground-llanybydder": {
@@ -56335,6 +56548,28 @@
     "free": true,
     "lat": 53.52611911,
     "lng": -2.401070595
+   }
+  },
+  "maerdy-play-park-twynyrodyn-merthyr-tydfil": {
+   "nearest": {
+    "id": "689a4ed99dc90c333cce05e3",
+    "name": "Thomastown Park (below flat)",
+    "m": 861,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.746968669,
+    "lng": -3.371880054
+   },
+   "nearestBabyChange": {
+    "id": "ca036e363fc13263dca90d5a",
+    "name": "Cyfarthfa Park Canolfan",
+    "m": 2282,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 51.756445009,
+    "lng": -3.387823105
    }
   },
   "maes-brenin-play-area-pentre-maelor-abenbury-pentre-maelor": {
@@ -59442,6 +59677,30 @@
     "lng": -0.144710839
    }
   },
+  "merthyr-vale-playground-merthyr-vale-aberfan": {
+   "nearest": {
+    "id": "1a86e4c764431857e3c7b599",
+    "name": "Public toilet",
+    "m": 2555,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.681872,
+    "lng": -3.3781024
+   }
+  },
+  "merthyr-vale-playground-merthyr-vale": {
+   "nearest": {
+    "id": "1a86e4c764431857e3c7b599",
+    "name": "Public toilet",
+    "m": 2905,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.681872,
+    "lng": -3.3781024
+   }
+  },
   "merton-playground-merton-torridge": {
    "nearest": null
   },
@@ -60059,6 +60318,18 @@
     "lng": -0.992503166
    }
   },
+  "millennium-park-treharris-trelewis": {
+   "nearest": {
+    "id": "004e35af3d8a069edf32b3df",
+    "name": "Taff Bargoed Park",
+    "m": 115,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.6702978,
+    "lng": -3.3003431
+   }
+  },
   "miller-way-play-area-moorview-plymouth": {
    "nearest": {
     "id": "583b27afb5aa482417c8551f",
@@ -60406,6 +60677,15 @@
    }
   },
   "moat-park-play-park-dundonald": {
+   "nearest": null
+  },
+  "mod-park-st-athan-flemingston-2": {
+   "nearest": null
+  },
+  "mod-park-st-athan-flemingston": {
+   "nearest": null
+  },
+  "mod-playground-st-athan-flemingston": {
    "nearest": null
   },
   "model-village-junior-play-area-creswell": {
@@ -67681,6 +67961,9 @@
     "lng": -4.043886065
    }
   },
+  "parc-seymour-playground-parc-seymour-newport": {
+   "nearest": null
+  },
   "parc-williams-playground-llwchwr-loughor": {
    "nearest": {
     "id": "21ee52057a97ba68a90f0c48",
@@ -69368,6 +69651,21 @@
     "free": true,
     "lat": 51.667965637,
     "lng": -4.041906595
+   }
+  },
+  "penllyn-playground-penllyn-graig-penllyn": {
+   "nearest": null
+  },
+  "penllyn-playground-penllyn-trerhingyll": {
+   "nearest": {
+    "id": "834008cd0f9c186c09f87440",
+    "name": "Cowbridge",
+    "m": 2635,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.462081245,
+    "lng": -3.446624701
    }
   },
   "penmaenmawr-playground-penmaenmawr-dwygyfylchi": {
@@ -72372,6 +72670,28 @@
     "lng": -1.84243083
    }
   },
+  "playground-off-alexandra-crescent-cwm-talwg-barry": {
+   "nearest": {
+    "id": "f0f9dee10914b34dabf20375",
+    "name": "Public toilet",
+    "m": 596,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.400724414,
+    "lng": -3.2878977
+   },
+   "nearestBabyChange": {
+    "id": "ac09a4862a5b32d864f4d90c",
+    "name": "Public toilet",
+    "m": 1639,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.390454817,
+    "lng": -3.27743605
+   }
+  },
   "playground-off-alexandra-road-heeley-sheffield": {
    "nearest": {
     "id": "92ee43a7dc44de79346fea38",
@@ -72907,6 +73227,28 @@
     "lng": -0.097085238
    }
   },
+  "playground-off-amherst-crescent-barry-island-barry": {
+   "nearest": {
+    "id": "20d1e6e0f8d82146d78188a5",
+    "name": "Harbour Road Car Park",
+    "m": 542,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 51.392707654,
+    "lng": -3.278603554
+   },
+   "nearestBabyChange": {
+    "id": "ac09a4862a5b32d864f4d90c",
+    "name": "Public toilet",
+    "m": 627,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.390454817,
+    "lng": -3.27743605
+   }
+  },
   "playground-off-amman-valley-cycleway-cwmamman-glanamman-2": {
    "nearest": null
   },
@@ -73269,6 +73611,53 @@
     "lng": -0.265713036
    }
   },
+  "playground-off-aran-court-thornhill-cwmbr-n-2": {
+   "nearest": {
+    "id": "9cb3304a83febf4ce7c3df91",
+    "name": "Next upstairs toilet",
+    "m": 1351,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.653185667,
+    "lng": -3.028303124
+   },
+   "nearestBabyChange": {
+    "id": "a3c135325d79081bb565d01d",
+    "name": "ASDA Cwmbran",
+    "m": 1506,
+    "babyChange": true,
+    "accessible": null,
+    "free": true,
+    "lat": 51.654450576,
+    "lng": -3.024163842
+   }
+  },
+  "playground-off-aran-court-thornhill-cwmbr-n": {
+   "nearest": {
+    "id": "9cb3304a83febf4ce7c3df91",
+    "name": "Next upstairs toilet",
+    "m": 1442,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.653185667,
+    "lng": -3.028303124
+   },
+   "nearestBabyChange": {
+    "id": "a3c135325d79081bb565d01d",
+    "name": "ASDA Cwmbran",
+    "m": 1602,
+    "babyChange": true,
+    "accessible": null,
+    "free": true,
+    "lat": 51.654450576,
+    "lng": -3.024163842
+   }
+  },
+  "playground-off-archer-street-troed-y-rhiw": {
+   "nearest": null
+  },
   "playground-off-archie-street-old-kent-road-greater-london": {
    "nearest": {
     "id": "ac632e6a5d9524d50785d9b8",
@@ -73337,6 +73726,18 @@
     "free": false,
     "lat": 54.502447461,
     "lng": -6.769026518
+   }
+  },
+  "playground-off-argae-lane-st-andrews-major-dinas-powys": {
+   "nearest": {
+    "id": "0f8d386d70ab7c585e4c9b16",
+    "name": "Town Centre",
+    "m": 2650,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.407032618,
+    "lng": -3.267019093
    }
   },
   "playground-off-argus-gardens-maylands-hemel-hempstead": {
@@ -74881,6 +75282,18 @@
   "playground-off-b4242-pontwalby-glynneath": {
    "nearest": null
   },
+  "playground-off-b4285-merthyr-vale-aberfan": {
+   "nearest": {
+    "id": "1a86e4c764431857e3c7b599",
+    "name": "Public toilet",
+    "m": 2963,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.681872,
+    "lng": -3.3781024
+   }
+  },
   "playground-off-b430-stoke-lyne-cherwell": {
    "nearest": {
     "id": "a06c19e476572e34c9470964",
@@ -74938,6 +75351,28 @@
   },
   "playground-off-b4317-llangyndeyrn-carway": {
    "nearest": null
+  },
+  "playground-off-b4333-newcastle-emlyn": {
+   "nearest": {
+    "id": "9f586d8f7d3c99b055e0e8a5",
+    "name": "Public toilet",
+    "m": 491,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 52.0389743,
+    "lng": -4.4669341
+   },
+   "nearestBabyChange": {
+    "id": "11e13e82b119da3323ef48c6",
+    "name": "New Road Public Toilets",
+    "m": 564,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 52.037338208,
+    "lng": -4.470217824
+   }
   },
   "playground-off-b4335-llangeler-saron": {
    "nearest": null
@@ -75192,6 +75627,9 @@
     "lng": -3.295911
    }
   },
+  "playground-off-badgers-brook-drive-penllyn-ystradowen": {
+   "nearest": null
+  },
   "playground-off-badsworth-road-warmsworth-doncaster": {
    "nearest": null
   },
@@ -75217,6 +75655,28 @@
     "free": true,
     "lat": 51.605890911,
     "lng": -3.810077906
+   }
+  },
+  "playground-off-bagley-court-thornhill-cwmbr-n": {
+   "nearest": {
+    "id": "9cb3304a83febf4ce7c3df91",
+    "name": "Next upstairs toilet",
+    "m": 1554,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.653185667,
+    "lng": -3.028303124
+   },
+   "nearestBabyChange": {
+    "id": "a3c135325d79081bb565d01d",
+    "name": "ASDA Cwmbran",
+    "m": 1738,
+    "babyChange": true,
+    "accessible": null,
+    "free": true,
+    "lat": 51.654450576,
+    "lng": -3.024163842
    }
   },
   "playground-off-baguley-lane-sale-moor-sale": {
@@ -75348,6 +75808,28 @@
   },
   "playground-off-bakery-way-landkey-north-devon": {
    "nearest": null
+  },
+  "playground-off-balaclava-road-pen-y-wern-pant": {
+   "nearest": {
+    "id": "689a4ed99dc90c333cce05e3",
+    "name": "Thomastown Park (below flat)",
+    "m": 1926,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.746968669,
+    "lng": -3.371880054
+   },
+   "nearestBabyChange": {
+    "id": "ca036e363fc13263dca90d5a",
+    "name": "Cyfarthfa Park Canolfan",
+    "m": 1964,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 51.756445009,
+    "lng": -3.387823105
+   }
   },
   "playground-off-balby-road-hexthorpe-doncaster": {
    "nearest": {
@@ -76149,6 +76631,18 @@
     "lng": -2.324244082
    }
   },
+  "playground-off-barnfield-ponthir": {
+   "nearest": {
+    "id": "8465b850e7d7eca605cb5f76",
+    "name": "Caerleon - The Pavilion, Broadway",
+    "m": 2258,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.608239673,
+    "lng": -2.958589196
+   }
+  },
   "playground-off-barnfield-road-shooters-hill-greater-london": {
    "nearest": {
     "id": "03cfb5de567032503390da01",
@@ -76490,6 +76984,18 @@
     "free": true,
     "lat": 51.4461876,
     "lng": -0.163383008
+   }
+  },
+  "playground-off-bassett-street-gibbonsdown-barry": {
+   "nearest": {
+    "id": "0f8d386d70ab7c585e4c9b16",
+    "name": "Town Centre",
+    "m": 616,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.407032618,
+    "lng": -3.267019093
    }
   },
   "playground-off-batchwood-gardens-townsend-st-albans": {
@@ -77581,6 +78087,40 @@
     "lng": -4.106048942
    }
   },
+  "playground-off-belle-vue-road-old-cwmbran-cwmbr-n": {
+   "nearest": {
+    "id": "9cb3304a83febf4ce7c3df91",
+    "name": "Next upstairs toilet",
+    "m": 921,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.653185667,
+    "lng": -3.028303124
+   },
+   "nearestBabyChange": {
+    "id": "c9f3255d82e6d2c07984c26e",
+    "name": "Monmouth Square underground",
+    "m": 929,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.652425371,
+    "lng": -3.021087351
+   }
+  },
+  "playground-off-belle-vue-terrace-penarth-marina-penarth": {
+   "nearest": {
+    "id": "8d18fdfe7102dcbd74999d52",
+    "name": "Penarth town centre",
+    "m": 269,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 51.439062907,
+    "lng": -3.173265124
+   }
+  },
   "playground-off-bellfield-street-gallowgate-glasgow": {
    "nearest": {
     "id": "adf5b3d40e265cc49972d9e5",
@@ -77681,6 +78221,28 @@
     "free": false,
     "lat": 51.54690217,
     "lng": -0.05263567
+   }
+  },
+  "playground-off-belvedere-crescent-gibbonsdown-barry": {
+   "nearest": {
+    "id": "0f8d386d70ab7c585e4c9b16",
+    "name": "Town Centre",
+    "m": 256,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.407032618,
+    "lng": -3.267019093
+   },
+   "nearestBabyChange": {
+    "id": "ac09a4862a5b32d864f4d90c",
+    "name": "Public toilet",
+    "m": 1745,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.390454817,
+    "lng": -3.27743605
    }
   },
   "playground-off-belvidere-avenue-newbank-glasgow": {
@@ -78680,6 +79242,9 @@
   "playground-off-bishop-road-cwmamman-garnant": {
    "nearest": null
   },
+  "playground-off-bishton-road-bishton": {
+   "nearest": null
+  },
   "playground-off-bittern-street-the-borough-greater-london": {
    "nearest": {
     "id": "9375e8003a55161c7a698fe7",
@@ -79010,6 +79575,18 @@
   },
   "playground-off-blaencaerau-estate-maesteg-caerau": {
    "nearest": null
+  },
+  "playground-off-blaendare-road-pontymoile-pontypool": {
+   "nearest": {
+    "id": "9dcf500ea232ce496b245429",
+    "name": "Richatdettes Cottage",
+    "m": 788,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.701415658,
+    "lng": -3.039414883
+   }
   },
   "playground-off-blaennantygroes-road-cwmbach": {
    "nearest": {
@@ -80453,6 +81030,18 @@
     "lng": -0.447228849
    }
   },
+  "playground-off-brecon-road-georgetown-merthyr-tydfil": {
+   "nearest": {
+    "id": "ca036e363fc13263dca90d5a",
+    "name": "Cyfarthfa Park Canolfan",
+    "m": 31,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 51.756445009,
+    "lng": -3.387823105
+   }
+  },
   "playground-off-bredisholm-road-baillieston-glasgow": {
    "nearest": {
     "id": "5140299383f45cc3aec9d018",
@@ -81687,6 +82276,18 @@
     "lng": -4.217408895
    }
   },
+  "playground-off-brookfield-park-road-llanblethian-cowbridge": {
+   "nearest": {
+    "id": "423d99ad89065bbf75eae3ea",
+    "name": "Waitrose",
+    "m": 495,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.461159974,
+    "lng": -3.448079492
+   }
+  },
   "playground-off-brookfield-road-maerdy-gelli": {
    "nearest": {
     "id": "2b433cf54acb041320cbf0c1",
@@ -81719,6 +82320,18 @@
     "free": true,
     "lat": 50.757660329,
     "lng": -1.550561212
+   }
+  },
+  "playground-off-brookland-terrace-pontrhydyrun-cwmbr-n": {
+   "nearest": {
+    "id": "69f99fe25bdea2c475e64540",
+    "name": "Cwmbran Station",
+    "m": 883,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.656901655,
+    "lng": -3.015993834
    }
   },
   "playground-off-brooklands-avenue-wixams-2": {
@@ -82368,6 +82981,18 @@
     "free": false,
     "lat": 51.662259235,
     "lng": -3.807012141
+   }
+  },
+  "playground-off-bryn-welon-close-forge-side-blaenavon": {
+   "nearest": {
+    "id": "9ec9b3bbf1cc21b5f4116770",
+    "name": "Lion Street",
+    "m": 728,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 51.774284671,
+    "lng": -3.084197044
    }
   },
   "playground-off-brynamlwg-pont-y-clun-pontyclun": {
@@ -83477,6 +84102,12 @@
     "lng": -3.06936166
    }
   },
+  "playground-off-cae-newydd-st-nicholas-and-bonvilston-st-nich-2": {
+   "nearest": null
+  },
+  "playground-off-cae-newydd-st-nicholas-and-bonvilston-st-nich": {
+   "nearest": null
+  },
   "playground-off-cae-rhug-lane-gwernaffield-and-pantymwyn-gwer": {
    "nearest": {
     "id": "4bf16aa3b305959b348c527c",
@@ -83501,8 +84132,66 @@
     "lng": -3.786072135
    }
   },
+  "playground-off-caer-wern-ynysfach-merthyr-tydfil": {
+   "nearest": {
+    "id": "954f0a9946395ac4f7c189fa",
+    "name": "Merthyr Bus Station",
+    "m": 433,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.74430493,
+    "lng": -3.379537761
+   },
+   "nearestBabyChange": {
+    "id": "ca036e363fc13263dca90d5a",
+    "name": "Cyfarthfa Park Canolfan",
+    "m": 1695,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 51.756445009,
+    "lng": -3.387823105
+   }
+  },
+  "playground-off-caer-worgan-llantwit-major": {
+   "nearest": {
+    "id": "9406a07265f495bf7288d1db",
+    "name": "Town Hall Toilets",
+    "m": 793,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.407912054,
+    "lng": -3.485996451
+   }
+  },
   "playground-off-caerbryn-road-llandybie-caerbryn": {
    "nearest": null
+  },
+  "playground-off-caerleon-road-ponthir": {
+   "nearest": {
+    "id": "0340a17d1d7b97e1b14563b4",
+    "name": "Public toilet",
+    "m": 2245,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 51.619064065,
+    "lng": -3.002201915
+   }
+  },
+  "playground-off-caerphilly-road-treharris-quakers-yard": {
+   "nearest": {
+    "id": "004e35af3d8a069edf32b3df",
+    "name": "Taff Bargoed Park",
+    "m": 1652,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.6702978,
+    "lng": -3.3003431
+   }
   },
   "playground-off-caesars-road-wheathampstead-st-albans": {
    "nearest": {
@@ -84392,6 +85081,30 @@
     "free": false,
     "lat": 53.524192964,
     "lng": -2.493113279
+   }
+  },
+  "playground-off-car-pwll-murch-dinas-powys": {
+   "nearest": {
+    "id": "d6b069c4f85918554cd070ad",
+    "name": "Hafan y coed toilet",
+    "m": 2631,
+    "babyChange": false,
+    "accessible": true,
+    "free": true,
+    "lat": 51.448504364,
+    "lng": -3.202059605
+   }
+  },
+  "playground-off-caradoc-place-dowlais-top-pant": {
+   "nearest": {
+    "id": "689a4ed99dc90c333cce05e3",
+    "name": "Thomastown Park (below flat)",
+    "m": 2759,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.746968669,
+    "lng": -3.371880054
    }
   },
   "playground-off-carbone-hill-northaw-and-cuffley-welwyn-hatfi": {
@@ -85500,6 +86213,18 @@
     "lng": -4.25430268
    }
   },
+  "playground-off-cawnpore-street-cogan-penarth": {
+   "nearest": {
+    "id": "3135f2468b84fe4af4633bed",
+    "name": "Tesco",
+    "m": 499,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 51.445722912,
+    "lng": -3.185884953
+   }
+  },
   "playground-off-cawston-lane-cawston-rugby": {
    "nearest": {
     "id": "e1777370e4207a693c497b5a",
@@ -85698,6 +86423,9 @@
     "lng": -0.060408711
    }
   },
+  "playground-off-celtic-way-font-y-gary-rhoose": {
+   "nearest": null
+  },
   "playground-off-cemetery-road-cwmgors": {
    "nearest": null
   },
@@ -85733,6 +86461,18 @@
     "free": false,
     "lat": 53.524192964,
     "lng": -2.493113279
+   }
+  },
+  "playground-off-central-drive-charlesville-pontypool": {
+   "nearest": {
+    "id": "9dcf500ea232ce496b245429",
+    "name": "Richatdettes Cottage",
+    "m": 1812,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.701415658,
+    "lng": -3.039414883
    }
   },
   "playground-off-central-street-finsbury-greater-london-2": {
@@ -85799,6 +86539,18 @@
     "free": true,
     "lat": 55.868424735,
     "lng": -4.290977636
+   }
+  },
+  "playground-off-ceri-road-rhoose": {
+   "nearest": {
+    "id": "c983dc6c88c6808e783397b6",
+    "name": "Public toilet",
+    "m": 1854,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.39416226,
+    "lng": -3.31510584
    }
   },
   "playground-off-chadwick-crescent-boothroyd-dewsbury": {
@@ -86098,6 +86850,18 @@
     "lng": -0.30622178
    }
   },
+  "playground-off-channel-view-st-brides-major-ogmore-by-sea": {
+   "nearest": {
+    "id": "c9cae4347fc5eda8c71b95ae",
+    "name": "Ogmore Beach",
+    "m": 976,
+    "babyChange": null,
+    "accessible": true,
+    "free": false,
+    "lat": 51.466275,
+    "lng": -3.639698625
+   }
+  },
   "playground-off-chantry-road-kempston": {
    "nearest": {
     "id": "2c6b82f9db37059e6c3a7833",
@@ -86170,6 +86934,9 @@
     "lat": 53.50280511,
     "lng": -1.472409368
    }
+  },
+  "playground-off-chapel-road-wick": {
+   "nearest": null
   },
   "playground-off-chapel-row-kirkburton-kirklees": {
    "nearest": null
@@ -86748,6 +87515,18 @@
     "free": true,
     "lat": 51.030396858,
     "lng": -2.572689056
+   }
+  },
+  "playground-off-cherry-grove-gurnos-merthyr-tydfil": {
+   "nearest": {
+    "id": "ca036e363fc13263dca90d5a",
+    "name": "Cyfarthfa Park Canolfan",
+    "m": 931,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 51.756445009,
+    "lng": -3.387823105
    }
   },
   "playground-off-cherry-grove-rumsam-barnstaple": {
@@ -88064,6 +88843,28 @@
     "lng": -0.0544657
    }
   },
+  "playground-off-churchwood-sebastopol-pontypool": {
+   "nearest": {
+    "id": "ee46e648197ff8a608fc0e4e",
+    "name": "Ashbridge toilets",
+    "m": 1351,
+    "babyChange": null,
+    "accessible": false,
+    "free": false,
+    "lat": 51.670591483,
+    "lng": -3.017347078
+   },
+   "nearestBabyChange": {
+    "id": "9dcf500ea232ce496b245429",
+    "name": "Richatdettes Cottage",
+    "m": 2483,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.701415658,
+    "lng": -3.039414883
+   }
+  },
   "playground-off-churchyard-row-elephant-and-castle-greater-lo": {
    "nearest": {
     "id": "fcc2d18378307376cc0e0561",
@@ -88754,6 +89555,18 @@
   "playground-off-cleverhayes-lane-cotleigh-east-devon": {
    "nearest": null
   },
+  "playground-off-cliff-parade-lower-penarth-penarth": {
+   "nearest": {
+    "id": "dfc34c72eb905dda9d35d0c7",
+    "name": "Penarth pier",
+    "m": 983,
+    "babyChange": false,
+    "accessible": true,
+    "free": true,
+    "lat": 51.435071136,
+    "lng": -3.166192174
+   }
+  },
   "playground-off-cliffe-hill-bradfield-sheffield": {
    "nearest": {
     "id": "2261390310d2c4ce8909caca",
@@ -89004,8 +89817,42 @@
     "lng": -4.1337709
    }
   },
+  "playground-off-clos-cymmer-barry-island-barry": {
+   "nearest": {
+    "id": "20d1e6e0f8d82146d78188a5",
+    "name": "Harbour Road Car Park",
+    "m": 624,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 51.392707654,
+    "lng": -3.278603554
+   },
+   "nearestBabyChange": {
+    "id": "ac09a4862a5b32d864f4d90c",
+    "name": "Public toilet",
+    "m": 788,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.390454817,
+    "lng": -3.27743605
+   }
+  },
   "playground-off-clos-deganwy-bodelwyddan": {
    "nearest": null
+  },
+  "playground-off-clos-derwen-murch-dinas-powys": {
+   "nearest": {
+    "id": "d6b069c4f85918554cd070ad",
+    "name": "Hafan y coed toilet",
+    "m": 2592,
+    "babyChange": false,
+    "accessible": true,
+    "free": true,
+    "lat": 51.448504364,
+    "lng": -3.202059605
+   }
   },
   "playground-off-clos-joslin-parc-derwen-bridgend": {
    "nearest": {
@@ -89027,6 +89874,50 @@
     "free": true,
     "lat": 51.506976427,
     "lng": -3.575296481
+   }
+  },
+  "playground-off-clos-pentre-barry-island-barry": {
+   "nearest": {
+    "id": "8da2eaac47996c3d48cd9b9e",
+    "name": "Whitmore Bay",
+    "m": 740,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.389387013,
+    "lng": -3.269585967
+   },
+   "nearestBabyChange": {
+    "id": "ac09a4862a5b32d864f4d90c",
+    "name": "Public toilet",
+    "m": 844,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.390454817,
+    "lng": -3.27743605
+   }
+  },
+  "playground-off-clos-tyniad-glo-barry-island-barry": {
+   "nearest": {
+    "id": "0f8d386d70ab7c585e4c9b16",
+    "name": "Town Centre",
+    "m": 604,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.407032618,
+    "lng": -3.267019093
+   },
+   "nearestBabyChange": {
+    "id": "ac09a4862a5b32d864f4d90c",
+    "name": "Public toilet",
+    "m": 1450,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.390454817,
+    "lng": -3.27743605
    }
   },
   "playground-off-clos-y-gelli-pemberton-dafen": {
@@ -89427,6 +90318,30 @@
     "lng": 1.0614678
    }
   },
+  "playground-off-coed-camlas-lower-new-inn-pontypool": {
+   "nearest": {
+    "id": "9dcf500ea232ce496b245429",
+    "name": "Richatdettes Cottage",
+    "m": 1411,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.701415658,
+    "lng": -3.039414883
+   }
+  },
+  "playground-off-coed-criafol-cadoxton-barry": {
+   "nearest": {
+    "id": "0f8d386d70ab7c585e4c9b16",
+    "name": "Town Centre",
+    "m": 1980,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.407032618,
+    "lng": -3.267019093
+   }
+  },
   "playground-off-coed-dowlais-llantwit-fardre-church-village": {
    "nearest": {
     "id": "1d5b3acc3d7430aa10f7f24b",
@@ -89439,6 +90354,18 @@
     "lng": -3.317688704
    }
   },
+  "playground-off-coed-llwyd-close-forge-side-blaenavon": {
+   "nearest": {
+    "id": "9ec9b3bbf1cc21b5f4116770",
+    "name": "Lion Street",
+    "m": 672,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 51.774284671,
+    "lng": -3.084197044
+   }
+  },
   "playground-off-coed-onn-road-flint": {
    "nearest": {
     "id": "3570a33384e74557217b7984",
@@ -89449,6 +90376,30 @@
     "free": true,
     "lat": 53.249703333,
     "lng": -3.132530451
+   }
+  },
+  "playground-off-coedcae-row-dowlais-top-pant": {
+   "nearest": {
+    "id": "689a4ed99dc90c333cce05e3",
+    "name": "Thomastown Park (below flat)",
+    "m": 2929,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.746968669,
+    "lng": -3.371880054
+   }
+  },
+  "playground-off-coity-terrace-forge-side-blaenavon": {
+   "nearest": {
+    "id": "8f566438758a7622fb8bcad5",
+    "name": "Blaenavon World Heritage Centre and Library",
+    "m": 701,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 51.773125575,
+    "lng": -3.087673185
    }
   },
   "playground-off-col-184-70-marsden-kirklees": {
@@ -89578,6 +90529,30 @@
   "playground-off-colemans-close-pirton-hitchin": {
    "nearest": null
   },
+  "playground-off-coleridge-avenue-cogan-penarth-2": {
+   "nearest": {
+    "id": "8d18fdfe7102dcbd74999d52",
+    "name": "Penarth town centre",
+    "m": 867,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 51.439062907,
+    "lng": -3.173265124
+   }
+  },
+  "playground-off-coleridge-avenue-cogan-penarth": {
+   "nearest": {
+    "id": "8d18fdfe7102dcbd74999d52",
+    "name": "Penarth town centre",
+    "m": 645,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 51.439062907,
+    "lng": -3.173265124
+   }
+  },
   "playground-off-coles-close-twyford": {
    "nearest": {
     "id": "01ae439336ae408805dfce50",
@@ -89678,6 +90653,18 @@
     "free": true,
     "lat": 53.552749277,
     "lng": -1.479517221
+   }
+  },
+  "playground-off-college-road-christchurch-caerleon": {
+   "nearest": {
+    "id": "8465b850e7d7eca605cb5f76",
+    "name": "Caerleon - The Pavilion, Broadway",
+    "m": 820,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.608239673,
+    "lng": -2.958589196
    }
   },
   "playground-off-collerne-street-harold-hill": {
@@ -90154,6 +91141,9 @@
     "lng": -2.977496357
    }
   },
+  "playground-off-commercial-road-talywain-abersychan": {
+   "nearest": null
+  },
   "playground-off-commercial-street-ogmore-valley-nant-y-moel": {
    "nearest": null
   },
@@ -90364,6 +91354,28 @@
     "free": false,
     "lat": 53.177254044,
     "lng": -2.906237841
+   }
+  },
+  "playground-off-conway-drive-cwm-talwg-barry": {
+   "nearest": {
+    "id": "f0f9dee10914b34dabf20375",
+    "name": "Public toilet",
+    "m": 1204,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.400724414,
+    "lng": -3.2878977
+   },
+   "nearestBabyChange": {
+    "id": "ac09a4862a5b32d864f4d90c",
+    "name": "Public toilet",
+    "m": 2510,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.390454817,
+    "lng": -3.27743605
    }
   },
   "playground-off-conway-drive-thrapston": {
@@ -90869,6 +91881,28 @@
     "lng": -0.11490047
    }
   },
+  "playground-off-cory-park-llantarnam-cwmbr-n": {
+   "nearest": {
+    "id": "0340a17d1d7b97e1b14563b4",
+    "name": "Public toilet",
+    "m": 1249,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 51.619064065,
+    "lng": -3.002201915
+   },
+   "nearestBabyChange": {
+    "id": "c9f3255d82e6d2c07984c26e",
+    "name": "Monmouth Square underground",
+    "m": 2702,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.652425371,
+    "lng": -3.021087351
+   }
+  },
   "playground-off-costa-drive-through-chebsey-stafford": {
    "nearest": {
     "id": "7f53d7f1db242a6e1bf40417",
@@ -91100,6 +92134,9 @@
     "lng": -0.128188133
    }
   },
+  "playground-off-court-close-st-nicholas-and-bonvilston-bonvil": {
+   "nearest": null
+  },
   "playground-off-court-drive-dunstable": {
    "nearest": {
     "id": "696c15d3eb75a0c9de01168a",
@@ -91192,6 +92229,18 @@
     "free": true,
     "lat": 51.523323951,
     "lng": -3.39030683
+   }
+  },
+  "playground-off-cowbridge-street-cadoxton-barry": {
+   "nearest": {
+    "id": "0f8d386d70ab7c585e4c9b16",
+    "name": "Town Centre",
+    "m": 1286,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.407032618,
+    "lng": -3.267019093
    }
   },
   "playground-off-cowcliffe-hill-road-cowcliffe-huddersfield": {
@@ -91321,6 +92370,9 @@
     "lat": 55.873630041,
     "lng": -4.072569609
    }
+  },
+  "playground-off-craigddu-view-garndiffaith-abersychan": {
+   "nearest": null
   },
   "playground-off-craigforth-crescent-raploch-stirling": {
    "nearest": {
@@ -91918,6 +92970,18 @@
   },
   "playground-off-crompton-close-higher-kinnerton": {
    "nearest": null
+  },
+  "playground-off-crompton-way-st-brides-major-ogmore-by-sea": {
+   "nearest": {
+    "id": "c9cae4347fc5eda8c71b95ae",
+    "name": "Ogmore Beach",
+    "m": 770,
+    "babyChange": null,
+    "accessible": true,
+    "free": false,
+    "lat": 51.466275,
+    "lng": -3.639698625
+   }
   },
   "playground-off-cromwell-avenue-cherry-tree-marple": {
    "nearest": {
@@ -92675,6 +93739,28 @@
     "lng": 0.002596378
    }
   },
+  "playground-off-cwm-parc-cwm-talwg-barry": {
+   "nearest": {
+    "id": "f0f9dee10914b34dabf20375",
+    "name": "Public toilet",
+    "m": 818,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.400724414,
+    "lng": -3.2878977
+   },
+   "nearestBabyChange": {
+    "id": "ac09a4862a5b32d864f4d90c",
+    "name": "Public toilet",
+    "m": 2141,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.390454817,
+    "lng": -3.27743605
+   }
+  },
   "playground-off-cwmaman-road-aberaman-north-godreaman": {
    "nearest": {
     "id": "0310937948d1cbfc3c4aec9b",
@@ -92722,6 +93808,18 @@
     "free": false,
     "lat": 51.581493246,
     "lng": -3.015714884
+   }
+  },
+  "playground-off-cwrt-dochdwy-llandough": {
+   "nearest": {
+    "id": "d6b069c4f85918554cd070ad",
+    "name": "Hafan y coed toilet",
+    "m": 432,
+    "babyChange": false,
+    "accessible": true,
+    "free": true,
+    "lat": 51.448504364,
+    "lng": -3.202059605
    }
   },
   "playground-off-cwrt-y-cadno-newcastle-higher-pen-y-fai": {
@@ -95328,6 +96426,18 @@
     "lng": -0.0544657
    }
   },
+  "playground-off-downs-view-cowbridge-with-llanblethian-aberth": {
+   "nearest": {
+    "id": "834008cd0f9c186c09f87440",
+    "name": "Cowbridge",
+    "m": 1548,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.462081245,
+    "lng": -3.446624701
+   }
+  },
   "playground-off-downside-close-stoke-park-ipswich": {
    "nearest": {
     "id": "279ed77c42113da848a2a54b",
@@ -95637,6 +96747,18 @@
     "lng": -3.514723778
    }
   },
+  "playground-off-dryden-terrace-merthyr-dyfan-barry": {
+   "nearest": {
+    "id": "0f8d386d70ab7c585e4c9b16",
+    "name": "Town Centre",
+    "m": 1582,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.407032618,
+    "lng": -3.267019093
+   }
+  },
   "playground-off-drydens-close-titchmarsh": {
    "nearest": {
     "id": "8c598efe3b3337d6ab61c395",
@@ -95750,6 +96872,9 @@
     "lat": 53.41288905,
     "lng": -2.837028747
    }
+  },
+  "playground-off-duffryn-lane-wenvoe-st-nicholas": {
+   "nearest": null
   },
   "playground-off-dujardin-mews-ponders-end-greater-london": {
    "nearest": {
@@ -96283,6 +97408,18 @@
     "lng": -3.987979871
    }
   },
+  "playground-off-dyffryn-road-troed-y-rhiw-pentrebach": {
+   "nearest": {
+    "id": "954f0a9946395ac4f7c189fa",
+    "name": "Merthyr Bus Station",
+    "m": 2679,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.74430493,
+    "lng": -3.379537761
+   }
+  },
   "playground-off-dykemuir-place-germiston-glasgow": {
    "nearest": {
     "id": "f034c2cee3009fbddd057e2f",
@@ -96461,6 +97598,18 @@
     "free": true,
     "lat": 53.368135385,
     "lng": -1.447971761
+   }
+  },
+  "playground-off-east-drive-st-donats-st-donats": {
+   "nearest": {
+    "id": "1c285d42a5e8e801db38c011",
+    "name": "Col-huw",
+    "m": 2047,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.3969946,
+    "lng": -3.5020884
    }
   },
   "playground-off-east-glade-way-frecheville-sheffield": {
@@ -97433,6 +98582,18 @@
     "lng": -1.824637055
    }
   },
+  "playground-off-elm-tree-grove-penyrheol-merthyr-tydfil": {
+   "nearest": {
+    "id": "689a4ed99dc90c333cce05e3",
+    "name": "Thomastown Park (below flat)",
+    "m": 668,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.746968669,
+    "lng": -3.371880054
+   }
+  },
   "playground-off-elm-walk-berry-pomeroy-south-hams": {
    "nearest": {
     "id": "b7be856b47c0d14629eff98f",
@@ -98154,6 +99315,18 @@
     "lng": 0.010439157
    }
   },
+  "playground-off-evelyn-street-gibbonsdown-barry": {
+   "nearest": {
+    "id": "0f8d386d70ab7c585e4c9b16",
+    "name": "Town Centre",
+    "m": 125,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.407032618,
+    "lng": -3.267019093
+   }
+  },
   "playground-off-evergreen-road-kings-hill-ware": {
    "nearest": {
     "id": "e46c74415125955267c64ec5",
@@ -98499,6 +99672,18 @@
     "lng": -1.4642393
    }
   },
+  "playground-off-fairfield-rise-llantwit-major": {
+   "nearest": {
+    "id": "780547196bdbbe46b03bc392",
+    "name": "Public toilet",
+    "m": 360,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.4081804,
+    "lng": -3.4803414
+   }
+  },
   "playground-off-fairfield-road-biggleswade": {
    "nearest": {
     "id": "7b160d732f0a0ba6b031a4dd",
@@ -98635,6 +99820,18 @@
     "lng": 0.031446218
    }
   },
+  "playground-off-fairview-terrace-treharris-quakers-yard": {
+   "nearest": {
+    "id": "004e35af3d8a069edf32b3df",
+    "name": "Taff Bargoed Park",
+    "m": 1284,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.6702978,
+    "lng": -3.3003431
+   }
+  },
   "playground-off-fairwood-drive-summerhill": {
    "nearest": {
     "id": "ec512cb039faa2f5d996f34d",
@@ -98740,6 +99937,18 @@
     "free": false,
     "lat": 50.92256549,
     "lng": -1.522282362
+   }
+  },
+  "playground-off-farm-hill-charlesville-pontypool": {
+   "nearest": {
+    "id": "9dcf500ea232ce496b245429",
+    "name": "Richatdettes Cottage",
+    "m": 1399,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.701415658,
+    "lng": -3.039414883
    }
   },
   "playground-off-farm-road-sealand-garden-city": {
@@ -99271,6 +100480,50 @@
   "playground-off-ffordd-owen-northop": {
    "nearest": null
   },
+  "playground-off-ffordd-penrhyn-barry-island-barry": {
+   "nearest": {
+    "id": "20d1e6e0f8d82146d78188a5",
+    "name": "Harbour Road Car Park",
+    "m": 484,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 51.392707654,
+    "lng": -3.278603554
+   },
+   "nearestBabyChange": {
+    "id": "ac09a4862a5b32d864f4d90c",
+    "name": "Public toilet",
+    "m": 678,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.390454817,
+    "lng": -3.27743605
+   }
+  },
+  "playground-off-ffordd-pentre-barry-island-barry": {
+   "nearest": {
+    "id": "20d1e6e0f8d82146d78188a5",
+    "name": "Harbour Road Car Park",
+    "m": 822,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 51.392707654,
+    "lng": -3.278603554
+   },
+   "nearestBabyChange": {
+    "id": "ac09a4862a5b32d864f4d90c",
+    "name": "Public toilet",
+    "m": 928,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.390454817,
+    "lng": -3.27743605
+   }
+  },
   "playground-off-ffordd-pentre-whitford-carmel": {
    "nearest": {
     "id": "0686a43d443d1c0cb37d4e96",
@@ -99348,6 +100601,28 @@
   "playground-off-ffordd-y-glo-leeswood-and-pontblyddyn-leeswoo": {
    "nearest": null
   },
+  "playground-off-ffordd-y-mileniwm-barry-island-barry": {
+   "nearest": {
+    "id": "20d1e6e0f8d82146d78188a5",
+    "name": "Harbour Road Car Park",
+    "m": 179,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 51.392707654,
+    "lng": -3.278603554
+   },
+   "nearestBabyChange": {
+    "id": "ac09a4862a5b32d864f4d90c",
+    "name": "Public toilet",
+    "m": 437,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.390454817,
+    "lng": -3.27743605
+   }
+  },
   "playground-off-ffordd-y-pentre-nercwys": {
    "nearest": {
     "id": "3b06d396f4c823ede02fb177",
@@ -99371,6 +100646,9 @@
     "lat": 51.515916949,
     "lng": -3.727599978
    }
+  },
+  "playground-off-ffordd-yr-eglwys-peterston-super-ely": {
+   "nearest": null
   },
   "playground-off-ffynnon-las-tir-y-dail-ammanford": {
    "nearest": {
@@ -100191,6 +101469,18 @@
     "lng": -0.3389028
    }
   },
+  "playground-off-folly-view-penygarn-pontypool": {
+   "nearest": {
+    "id": "9dcf500ea232ce496b245429",
+    "name": "Richatdettes Cottage",
+    "m": 798,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.701415658,
+    "lng": -3.039414883
+   }
+  },
   "playground-off-ford-rise-east-the-water-bideford": {
    "nearest": {
     "id": "ef4dede7c2e23d63bc75bc7f",
@@ -100574,6 +101864,28 @@
     "free": true,
     "lat": 52.136115624,
     "lng": -0.469276607
+   }
+  },
+  "playground-off-fothergill-street-penyard-merthyr-tydfil": {
+   "nearest": {
+    "id": "689a4ed99dc90c333cce05e3",
+    "name": "Thomastown Park (below flat)",
+    "m": 449,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.746968669,
+    "lng": -3.371880054
+   },
+   "nearestBabyChange": {
+    "id": "ca036e363fc13263dca90d5a",
+    "name": "Cyfarthfa Park Canolfan",
+    "m": 1469,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 51.756445009,
+    "lng": -3.387823105
    }
   },
   "playground-off-foundry-road-upper-clatford-test-valley": {
@@ -102388,6 +103700,18 @@
     "lng": -0.132149756
    }
   },
+  "playground-off-georges-row-eastbrook-dinas-powys": {
+   "nearest": {
+    "id": "d6b069c4f85918554cd070ad",
+    "name": "Hafan y coed toilet",
+    "m": 1117,
+    "babyChange": false,
+    "accessible": true,
+    "free": true,
+    "lat": 51.448504364,
+    "lng": -3.202059605
+   }
+  },
   "playground-off-ger-y-castell-kidwelly": {
    "nearest": {
     "id": "e99f4165fb932050b3af40a7",
@@ -102661,6 +103985,9 @@
   "playground-off-glanaman-road-aberaman-south-cwmaman": {
    "nearest": null
   },
+  "playground-off-glantaff-road-troed-y-rhiw": {
+   "nearest": null
+  },
   "playground-off-glebe-close-hounsome-fields-basingstoke": {
    "nearest": {
     "id": "e61d9dd4e157380ebe032327",
@@ -102675,6 +104002,18 @@
   },
   "playground-off-glebe-court-melsonby": {
    "nearest": null
+  },
+  "playground-off-glebe-street-gibbonsdown-barry": {
+   "nearest": {
+    "id": "0f8d386d70ab7c585e4c9b16",
+    "name": "Town Centre",
+    "m": 896,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.407032618,
+    "lng": -3.267019093
+   }
   },
   "playground-off-glebe-street-sighthill-glasgow": {
    "nearest": {
@@ -103156,6 +104495,18 @@
     "lng": -3.9825638
    }
   },
+  "playground-off-goitre-lane-gurnos-merthyr-tydfil": {
+   "nearest": {
+    "id": "ca036e363fc13263dca90d5a",
+    "name": "Cyfarthfa Park Canolfan",
+    "m": 1082,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 51.756445009,
+    "lng": -3.387823105
+   }
+  },
   "playground-off-golborne-road-town-green-wigan": {
    "nearest": {
     "id": "4b83f0496ec568fadc8a3999",
@@ -103292,6 +104643,18 @@
     "free": true,
     "lat": 51.040609663,
     "lng": -4.238004677
+   }
+  },
+  "playground-off-golwg-y-coed-gibbonsdown-barry": {
+   "nearest": {
+    "id": "0f8d386d70ab7c585e4c9b16",
+    "name": "Town Centre",
+    "m": 2292,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.407032618,
+    "lng": -3.267019093
    }
   },
   "playground-off-gomm-road-rotherhithe-greater-london": {
@@ -104455,6 +105818,18 @@
     "lng": -0.495414867
    }
   },
+  "playground-off-greenfield-terrace-penybryn-merthyr-tydfil": {
+   "nearest": {
+    "id": "ca036e363fc13263dca90d5a",
+    "name": "Cyfarthfa Park Canolfan",
+    "m": 1748,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 51.756445009,
+    "lng": -3.387823105
+   }
+  },
   "playground-off-greenfield-view-carlinghow-birstall": {
    "nearest": {
     "id": "c4ed3cad4185fe8377f5049b",
@@ -105023,6 +106398,18 @@
     "lng": -1.4642393
    }
   },
+  "playground-off-grimson-close-sully-and-lavernock-sully": {
+   "nearest": {
+    "id": "8ec9bf8346b208074daed639",
+    "name": "Public toilet",
+    "m": 2242,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.416043014,
+    "lng": -3.182791186
+   }
+  },
   "playground-off-grindon-lane-grindon-sunderland-2": {
    "nearest": {
     "id": "eb131f9f54ab7d939e929d7a",
@@ -105192,6 +106579,9 @@
     "lat": 53.398626356,
     "lng": -2.351549507
    }
+  },
+  "playground-off-grove-road-llandow": {
+   "nearest": null
   },
   "playground-off-grove-road-old-milton-new-milton": {
    "nearest": {
@@ -105396,6 +106786,18 @@
     "free": true,
     "lat": 51.534686356,
     "lng": -3.377923965
+   }
+  },
+  "playground-off-gwaunfarren-road-galon-uchaf-merthyr-tydfil": {
+   "nearest": {
+    "id": "ca036e363fc13263dca90d5a",
+    "name": "Cyfarthfa Park Canolfan",
+    "m": 1177,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 51.756445009,
+    "lng": -3.387823105
    }
   },
   "playground-off-gwenffrwd-road-holywell": {
@@ -105926,6 +107328,18 @@
     "lng": -1.630068286
    }
   },
+  "playground-off-hanbury-grove-trosnant-pontypool": {
+   "nearest": {
+    "id": "9dcf500ea232ce496b245429",
+    "name": "Richatdettes Cottage",
+    "m": 522,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.701415658,
+    "lng": -3.039414883
+   }
+  },
   "playground-off-hanbury-street-whitechapel-greater-london": {
    "nearest": {
     "id": "34034ed6c15fda6342b68fec",
@@ -106117,6 +107531,18 @@
   "playground-off-harbors-lake-lane-winford": {
    "nearest": null
   },
+  "playground-off-harbour-view-road-penarth-marina-penarth": {
+   "nearest": {
+    "id": "3135f2468b84fe4af4633bed",
+    "name": "Tesco",
+    "m": 544,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 51.445722912,
+    "lng": -3.185884953
+   }
+  },
   "playground-off-hardman-street-heaton-norris-stockport": {
    "nearest": {
     "id": "c85c47fa3e7f22160d93fc66",
@@ -106257,6 +107683,18 @@
     "free": true,
     "lat": 53.3427283,
     "lng": -2.8423769
+   }
+  },
+  "playground-off-harlech-drive-clwydyfagwyr-merthyr-tydfil": {
+   "nearest": {
+    "id": "ca036e363fc13263dca90d5a",
+    "name": "Cyfarthfa Park Canolfan",
+    "m": 2384,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 51.756445009,
+    "lng": -3.387823105
    }
   },
   "playground-off-harlech-gardens-heston-hounslow": {
@@ -107122,6 +108560,28 @@
   "playground-off-hawthorn-rise-tibberton-wychavon": {
    "nearest": null
   },
+  "playground-off-hawthorn-road-sebastopol-cwmbr-n": {
+   "nearest": {
+    "id": "ee46e648197ff8a608fc0e4e",
+    "name": "Ashbridge toilets",
+    "m": 1070,
+    "babyChange": null,
+    "accessible": false,
+    "free": false,
+    "lat": 51.670591483,
+    "lng": -3.017347078
+   },
+   "nearestBabyChange": {
+    "id": "69f99fe25bdea2c475e64540",
+    "name": "Cwmbran Station",
+    "m": 2456,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.656901655,
+    "lng": -3.015993834
+   }
+  },
   "playground-off-hawthorn-walk-dromore": {
    "nearest": {
     "id": "0eef2e32036db06035ae7bcd",
@@ -107276,6 +108736,28 @@
     "free": true,
     "lat": 51.460582219,
     "lng": -0.071673989
+   }
+  },
+  "playground-off-hayes-road-palmerstown-barry": {
+   "nearest": {
+    "id": "0f8d386d70ab7c585e4c9b16",
+    "name": "Town Centre",
+    "m": 1702,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.407032618,
+    "lng": -3.267019093
+   },
+   "nearestBabyChange": {
+    "id": "ac09a4862a5b32d864f4d90c",
+    "name": "Public toilet",
+    "m": 2576,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.390454817,
+    "lng": -3.27743605
    }
   },
   "playground-off-hayes-square-cranbrook": {
@@ -107551,6 +109033,18 @@
     "free": true,
     "lat": 51.521100976,
     "lng": -0.058547258
+   }
+  },
+  "playground-off-heads-of-the-valleys-road-pen-y-wern-pant": {
+   "nearest": {
+    "id": "ca036e363fc13263dca90d5a",
+    "name": "Cyfarthfa Park Canolfan",
+    "m": 2387,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 51.756445009,
+    "lng": -3.387823105
    }
   },
   "playground-off-healy-place-morice-town-plymouth": {
@@ -107915,6 +109409,30 @@
     "lng": 0.012230873
    }
   },
+  "playground-off-henllys-village-road-henllys-cwmbr-n": {
+   "nearest": {
+    "id": "9cb3304a83febf4ce7c3df91",
+    "name": "Next upstairs toilet",
+    "m": 2733,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.653185667,
+    "lng": -3.028303124
+   }
+  },
+  "playground-off-henllys-way-henllys-cwmbr-n": {
+   "nearest": {
+    "id": "9cb3304a83febf4ce7c3df91",
+    "name": "Next upstairs toilet",
+    "m": 2799,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.653185667,
+    "lng": -3.028303124
+   }
+  },
   "playground-off-henry-gardens-ottery-st-mary-ottery-st-mary": {
    "nearest": {
     "id": "3680da074999627ca89e1631",
@@ -107990,6 +109508,18 @@
     "lng": -3.987979871
    }
   },
+  "playground-off-heol-bryn-y-gwyddyl-gellideg-merthyr-tydfil": {
+   "nearest": {
+    "id": "ca036e363fc13263dca90d5a",
+    "name": "Cyfarthfa Park Canolfan",
+    "m": 1217,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 51.756445009,
+    "lng": -3.387823105
+   }
+  },
   "playground-off-heol-cadifor-tirdeunaw-swansea": {
    "nearest": {
     "id": "1d16b03563d68fcfd1cb4505",
@@ -108019,6 +109549,18 @@
   },
   "playground-off-heol-cefn-ydfa-llangynwyd-lower-coytrahen": {
    "nearest": null
+  },
+  "playground-off-heol-collen-wenvoe": {
+   "nearest": {
+    "id": "e8996417a8c6c43a3b500190",
+    "name": "Public toilet",
+    "m": 2805,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.48867226,
+    "lng": -3.27812326
+   }
   },
   "playground-off-heol-coroniad-llantrisant-beddau": {
    "nearest": {
@@ -108114,6 +109656,28 @@
     "lng": -3.971064091
    }
   },
+  "playground-off-heol-gwendoline-barry-island-barry": {
+   "nearest": {
+    "id": "822fdb95de8d5e5d260387cd",
+    "name": "Barry Station",
+    "m": 822,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.396781807,
+    "lng": -3.284997567
+   },
+   "nearestBabyChange": {
+    "id": "ac09a4862a5b32d864f4d90c",
+    "name": "Public toilet",
+    "m": 1248,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.390454817,
+    "lng": -3.27743605
+   }
+  },
   "playground-off-heol-heddwch-seven-sisters": {
    "nearest": null
   },
@@ -108142,6 +109706,18 @@
     "free": true,
     "lat": 51.714389167,
     "lng": -3.852345943
+   }
+  },
+  "playground-off-heol-leubren-gibbonsdown-barry": {
+   "nearest": {
+    "id": "0f8d386d70ab7c585e4c9b16",
+    "name": "Town Centre",
+    "m": 1979,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.407032618,
+    "lng": -3.267019093
    }
   },
   "playground-off-heol-llanelli-trimsaran": {
@@ -108199,6 +109775,12 @@
    }
   },
   "playground-off-heol-plas-isaf-bryn-llangennech": {
+   "nearest": null
+  },
+  "playground-off-heol-sant-bridget-st-brides-major-st-brides-m": {
+   "nearest": null
+  },
+  "playground-off-heol-st-cattwg-pendoylan": {
    "nearest": null
   },
   "playground-off-heol-swatridge-st-edeyrns-village-cardiff": {
@@ -108488,6 +110070,18 @@
     "free": true,
     "lat": 53.1671645,
     "lng": -3.0795114
+   }
+  },
+  "playground-off-heritage-view-llantwit-major": {
+   "nearest": {
+    "id": "9406a07265f495bf7288d1db",
+    "name": "Town Hall Toilets",
+    "m": 795,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.407912054,
+    "lng": -3.485996451
    }
   },
   "playground-off-hermitage-grove-ford-litherland": {
@@ -108949,6 +110543,28 @@
   "playground-off-high-street-dean-and-shelton-upper-dean": {
    "nearest": null
   },
+  "playground-off-high-street-dowlais-top-pant": {
+   "nearest": {
+    "id": "689a4ed99dc90c333cce05e3",
+    "name": "Thomastown Park (below flat)",
+    "m": 2458,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.746968669,
+    "lng": -3.371880054
+   },
+   "nearestBabyChange": {
+    "id": "ca036e363fc13263dca90d5a",
+    "name": "Cyfarthfa Park Canolfan",
+    "m": 2918,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 51.756445009,
+    "lng": -3.387823105
+   }
+  },
   "playground-off-high-street-east-budleigh-east-devon": {
    "nearest": {
     "id": "7952074566ba3b3f89e33265",
@@ -108960,6 +110576,9 @@
     "lat": 50.6559817,
     "lng": -3.3233124
    }
+  },
+  "playground-off-high-street-fairfield-abersychan": {
+   "nearest": null
   },
   "playground-off-high-street-gilfach-goch": {
    "nearest": {
@@ -110315,6 +111934,28 @@
   "playground-off-holly-wood-way-westby-with-plumptons-fylde": {
    "nearest": null
   },
+  "playground-off-hollybush-way-hollybush-cwmbr-n": {
+   "nearest": {
+    "id": "9cb3304a83febf4ce7c3df91",
+    "name": "Next upstairs toilet",
+    "m": 2017,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.653185667,
+    "lng": -3.028303124
+   },
+   "nearestBabyChange": {
+    "id": "c9f3255d82e6d2c07984c26e",
+    "name": "Monmouth Square underground",
+    "m": 2215,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.652425371,
+    "lng": -3.021087351
+   }
+  },
   "playground-off-hollyhock-way-roselands-paignton": {
    "nearest": {
     "id": "e62ae9bed3acc81e800ab130",
@@ -110435,6 +112076,18 @@
     "free": true,
     "lat": 52.2562194,
     "lng": -0.8346074
+   }
+  },
+  "playground-off-holton-road-cadoxton-barry": {
+   "nearest": {
+    "id": "0f8d386d70ab7c585e4c9b16",
+    "name": "Town Centre",
+    "m": 923,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.407032618,
+    "lng": -3.267019093
    }
   },
   "playground-off-holybourne-avenue-roehampton-greater-london": {
@@ -110595,6 +112248,18 @@
     "free": true,
     "lat": 53.648590357,
     "lng": -1.784704328
+   }
+  },
+  "playground-off-honeysuckle-close-gurnos-merthyr-tydfil": {
+   "nearest": {
+    "id": "ca036e363fc13263dca90d5a",
+    "name": "Cyfarthfa Park Canolfan",
+    "m": 713,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 51.756445009,
+    "lng": -3.387823105
    }
   },
   "playground-off-honeywell-lane-ilsington-teignbridge": {
@@ -113100,6 +114765,18 @@
     "lng": -0.146247
    }
   },
+  "playground-off-juniper-crescent-henllys-cwmbr-n": {
+   "nearest": {
+    "id": "9cb3304a83febf4ce7c3df91",
+    "name": "Next upstairs toilet",
+    "m": 2728,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.653185667,
+    "lng": -3.028303124
+   }
+  },
   "playground-off-juniper-gate-moneyhill-rickmansworth": {
    "nearest": {
     "id": "25e11c7dd9a516feee7dc9ec",
@@ -115321,6 +116998,28 @@
     "lng": -2.634404387
    }
   },
+  "playground-off-lancaster-road-lower-new-inn-cwmbr-n": {
+   "nearest": {
+    "id": "ee46e648197ff8a608fc0e4e",
+    "name": "Ashbridge toilets",
+    "m": 1844,
+    "babyChange": null,
+    "accessible": false,
+    "free": false,
+    "lat": 51.670591483,
+    "lng": -3.017347078
+   },
+   "nearestBabyChange": {
+    "id": "9dcf500ea232ce496b245429",
+    "name": "Richatdettes Cottage",
+    "m": 2782,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.701415658,
+    "lng": -3.039414883
+   }
+  },
   "playground-off-lancaster-street-elephant-and-castle-greater-": {
    "nearest": {
     "id": "d8497f1e64ad0a3b518019b7",
@@ -115613,6 +117312,18 @@
     "free": true,
     "lat": 52.396162788,
     "lng": -1.982898116
+   }
+  },
+  "playground-off-lansdowne-gardens-llantarnam-cwmbr-n": {
+   "nearest": {
+    "id": "0340a17d1d7b97e1b14563b4",
+    "name": "Public toilet",
+    "m": 754,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 51.619064065,
+    "lng": -3.002201915
    }
   },
   "playground-off-lanwood-road-graigwen-pontypridd": {
@@ -117028,6 +118739,21 @@
     "lng": -1.363101804
    }
   },
+  "playground-off-lewis-road-llandough": {
+   "nearest": {
+    "id": "c5e7f255e51fa0cd43da33dc",
+    "name": "Llandough hospital",
+    "m": 265,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.449249484,
+    "lng": -3.202858398
+   }
+  },
+  "playground-off-lewis-street-bedlinog": {
+   "nearest": null
+  },
   "playground-off-lexington-way-cranham": {
    "nearest": {
     "id": "a3c1a962bc5d253a06ee1fc5",
@@ -117904,6 +119630,9 @@
     "lng": -3.377923965
    }
   },
+  "playground-off-llanvaches-lane-llanvaches": {
+   "nearest": null
+  },
   "playground-off-llewellyn-street-gilfach-goch-hendreforgan": {
    "nearest": {
     "id": "76613596a9fb25fac59510a4",
@@ -118095,6 +119824,18 @@
     "free": true,
     "lat": 53.166909762,
     "lng": -3.137253821
+   }
+  },
+  "playground-off-llys-steffan-llantwit-major": {
+   "nearest": {
+    "id": "9406a07265f495bf7288d1db",
+    "name": "Town Hall Toilets",
+    "m": 826,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.407912054,
+    "lng": -3.485996451
    }
   },
   "playground-off-llys-y-dderwen-llanelli-rural-pont-henri": {
@@ -118375,6 +120116,28 @@
     "free": true,
     "lat": 51.506976427,
     "lng": -3.575296481
+   }
+  },
+  "playground-off-lon-y-rheilffordd-barry-island-barry": {
+   "nearest": {
+    "id": "20d1e6e0f8d82146d78188a5",
+    "name": "Harbour Road Car Park",
+    "m": 312,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 51.392707654,
+    "lng": -3.278603554
+   },
+   "nearestBabyChange": {
+    "id": "ac09a4862a5b32d864f4d90c",
+    "name": "Public toilet",
+    "m": 557,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.390454817,
+    "lng": -3.27743605
    }
   },
   "playground-off-lon-yr-orsaf-mold": {
@@ -118975,6 +120738,9 @@
     "lng": -0.105215013
    }
   },
+  "playground-off-lougher-place-st-athan": {
+   "nearest": null
+  },
   "playground-off-lovat-walk-kempston": {
    "nearest": {
     "id": "2c6b82f9db37059e6c3a7833",
@@ -119079,6 +120845,18 @@
     "lng": -4.055569768
    }
   },
+  "playground-off-lower-garn-terrace-forge-side-garn-yr-erw": {
+   "nearest": {
+    "id": "e5242bfceaa5da15647c5e0d",
+    "name": "Public toilet",
+    "m": 1634,
+    "babyChange": null,
+    "accessible": false,
+    "free": false,
+    "lat": 51.77622304,
+    "lng": -3.08962902
+   }
+  },
   "playground-off-lower-greenfield-hemyock-mid-devon": {
    "nearest": null
   },
@@ -119132,6 +120910,18 @@
     "free": true,
     "lat": 53.646895888,
     "lng": -3.004124172
+   }
+  },
+  "playground-off-lower-pyke-street-gibbonsdown-barry": {
+   "nearest": {
+    "id": "0f8d386d70ab7c585e4c9b16",
+    "name": "Town Centre",
+    "m": 400,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.407032618,
+    "lng": -3.267019093
    }
   },
   "playground-off-lower-town-sampford-peverell-mid-devon": {
@@ -119901,6 +121691,18 @@
   "playground-off-maes-glyndwr-hope": {
    "nearest": null
   },
+  "playground-off-maes-lindys-rhoose": {
+   "nearest": {
+    "id": "c983dc6c88c6808e783397b6",
+    "name": "Public toilet",
+    "m": 2105,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.39416226,
+    "lng": -3.31510584
+   }
+  },
   "playground-off-maes-meurig-trewalchmai-bodwrog": {
    "nearest": null
   },
@@ -120200,6 +122002,18 @@
     "free": true,
     "lat": 50.733134595,
     "lng": -3.479702175
+   }
+  },
+  "playground-off-main-road-st-brides-major-ogmore-by-sea": {
+   "nearest": {
+    "id": "c9cae4347fc5eda8c71b95ae",
+    "name": "Ogmore Beach",
+    "m": 818,
+    "babyChange": null,
+    "accessible": true,
+    "free": false,
+    "lat": 51.466275,
+    "lng": -3.639698625
    }
   },
   "playground-off-main-road-sudbury-cp-derbyshire-dales": {
@@ -121050,6 +122864,18 @@
   "playground-off-maple-close-willand-mid-devon": {
    "nearest": null
   },
+  "playground-off-maple-crescent-cefn-coed-y-cymmer-trefechan": {
+   "nearest": {
+    "id": "ca036e363fc13263dca90d5a",
+    "name": "Cyfarthfa Park Canolfan",
+    "m": 1582,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 51.756445009,
+    "lng": -3.387823105
+   }
+  },
   "playground-off-maple-grove-ugborough-south-hams": {
    "nearest": {
     "id": "bdae073ba2631ff8e9cf1222",
@@ -121172,6 +122998,18 @@
     "free": true,
     "lat": 50.703367,
     "lng": -3.072288
+   }
+  },
+  "playground-off-margaret-avenue-merthyr-dyfan-barry": {
+   "nearest": {
+    "id": "0f8d386d70ab7c585e4c9b16",
+    "name": "Town Centre",
+    "m": 1771,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.407032618,
+    "lng": -3.267019093
    }
   },
   "playground-off-margaret-street-gidlow-wigan": {
@@ -121550,6 +123388,18 @@
     "free": true,
     "lat": 53.381830768,
     "lng": -1.481901741
+   }
+  },
+  "playground-off-martin-terrace-forge-side-blaenavon": {
+   "nearest": {
+    "id": "8f566438758a7622fb8bcad5",
+    "name": "Blaenavon World Heritage Centre and Library",
+    "m": 655,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 51.773125575,
+    "lng": -3.087673185
    }
   },
   "playground-off-martineau-street-shadwell-greater-london": {
@@ -122094,6 +123944,18 @@
     "lng": -3.941576226
    }
   },
+  "playground-off-mayors-close-cyfarthfa-merthyr-tydfil": {
+   "nearest": {
+    "id": "ca036e363fc13263dca90d5a",
+    "name": "Cyfarthfa Park Canolfan",
+    "m": 2150,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 51.756445009,
+    "lng": -3.387823105
+   }
+  },
   "playground-off-mcauley-close-lambeth-greater-london": {
    "nearest": {
     "id": "2f5907aec7f53f62ffbb5c85",
@@ -122385,6 +124247,18 @@
     "free": true,
     "lat": 50.858967179,
     "lng": -3.39160502
+   }
+  },
+  "playground-off-meadow-lane-lower-penarth-penarth": {
+   "nearest": {
+    "id": "8ec9bf8346b208074daed639",
+    "name": "Public toilet",
+    "m": 1181,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.416043014,
+    "lng": -3.182791186
    }
   },
   "playground-off-meadow-lane-west-derby-liverpool": {
@@ -122709,6 +124583,18 @@
     "free": true,
     "lat": 51.0128816,
     "lng": -1.4654521
+   }
+  },
+  "playground-off-meggitt-road-merthyr-dyfan-barry": {
+   "nearest": {
+    "id": "0f8d386d70ab7c585e4c9b16",
+    "name": "Town Centre",
+    "m": 1787,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.407032618,
+    "lng": -3.267019093
    }
   },
   "playground-off-meiros-lane-llangeler": {
@@ -123285,6 +125171,18 @@
     "lng": -3.6622923
    }
   },
+  "playground-off-mill-lane-west-camp-boverton": {
+   "nearest": {
+    "id": "780547196bdbbe46b03bc392",
+    "name": "Public toilet",
+    "m": 1164,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.4081804,
+    "lng": -3.4803414
+   }
+  },
   "playground-off-mill-road-batley-carr-dewsbury": {
    "nearest": {
     "id": "fee7ad037b7f5469d7590d7c",
@@ -123599,6 +125497,18 @@
     "free": false,
     "lat": 53.454606471,
     "lng": -2.74481982
+   }
+  },
+  "playground-off-millfield-drive-llanblethian-cowbridge": {
+   "nearest": {
+    "id": "834008cd0f9c186c09f87440",
+    "name": "Cowbridge",
+    "m": 306,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.462081245,
+    "lng": -3.446624701
    }
   },
   "playground-off-millfield-gardens-chestnut-hill-keswick": {
@@ -124357,6 +126267,50 @@
     "lng": -0.4677724
    }
   },
+  "playground-off-monnow-court-greenmeadow-cwmbr-n-2": {
+   "nearest": {
+    "id": "9cb3304a83febf4ce7c3df91",
+    "name": "Next upstairs toilet",
+    "m": 1773,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.653185667,
+    "lng": -3.028303124
+   },
+   "nearestBabyChange": {
+    "id": "a3c135325d79081bb565d01d",
+    "name": "ASDA Cwmbran",
+    "m": 2048,
+    "babyChange": true,
+    "accessible": null,
+    "free": true,
+    "lat": 51.654450576,
+    "lng": -3.024163842
+   }
+  },
+  "playground-off-monnow-court-greenmeadow-cwmbr-n": {
+   "nearest": {
+    "id": "9cb3304a83febf4ce7c3df91",
+    "name": "Next upstairs toilet",
+    "m": 1782,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.653185667,
+    "lng": -3.028303124
+   },
+   "nearestBabyChange": {
+    "id": "a3c135325d79081bb565d01d",
+    "name": "ASDA Cwmbran",
+    "m": 2038,
+    "babyChange": true,
+    "accessible": null,
+    "free": true,
+    "lat": 51.654450576,
+    "lng": -3.024163842
+   }
+  },
   "playground-off-montagu-drive-kennessee-green-maghull": {
    "nearest": {
     "id": "9e710aa1aa9f8f5c98c8c6dd",
@@ -124756,6 +126710,18 @@
     "lng": -0.451233805
    }
   },
+  "playground-off-morgan-street-cadoxton-barry": {
+   "nearest": {
+    "id": "0f8d386d70ab7c585e4c9b16",
+    "name": "Town Centre",
+    "m": 601,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.407032618,
+    "lng": -3.267019093
+   }
+  },
   "playground-off-moriatry-close-holloway-greater-london": {
    "nearest": {
     "id": "0fb60b55ffc69a227881d0ff",
@@ -125012,6 +126978,18 @@
     "lng": -0.4677724
    }
   },
+  "playground-off-mount-pleasant-close-lowlands-cwmbr-n": {
+   "nearest": {
+    "id": "a3c135325d79081bb565d01d",
+    "name": "ASDA Cwmbran",
+    "m": 984,
+    "babyChange": true,
+    "accessible": null,
+    "free": true,
+    "lat": 51.654450576,
+    "lng": -3.024163842
+   }
+  },
   "playground-off-mount-pleasant-lane-clapton-greater-london": {
    "nearest": {
     "id": "d8eacfc55052ba8870507387",
@@ -125126,6 +127104,18 @@
     "free": true,
     "lat": 53.6007792,
     "lng": -1.9264191
+   }
+  },
+  "playground-off-mount-road-penygarn-pontypool": {
+   "nearest": {
+    "id": "9dcf500ea232ce496b245429",
+    "name": "Richatdettes Cottage",
+    "m": 1484,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.701415658,
+    "lng": -3.039414883
    }
   },
   "playground-off-mount-street-highfield-sheffield": {
@@ -125260,6 +127250,18 @@
     "free": true,
     "lat": 52.160693129,
     "lng": -0.447228849
+   }
+  },
+  "playground-off-moy-road-merthyr-vale-aberfan": {
+   "nearest": {
+    "id": "1a86e4c764431857e3c7b599",
+    "name": "Public toilet",
+    "m": 2612,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.681872,
+    "lng": -3.3781024
    }
   },
   "playground-off-moye-close-haggerston-greater-london": {
@@ -125793,6 +127795,18 @@
     "free": true,
     "lat": 51.0175439,
     "lng": -3.8345138
+   }
+  },
+  "playground-off-nant-canna-llangan-treoes": {
+   "nearest": {
+    "id": "1bf3a16ff1816db511c3c928",
+    "name": "Dunelm",
+    "m": 2773,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.494636303,
+    "lng": -3.561726298
    }
   },
   "playground-off-nant-dyfed-llantrisant-beddau": {
@@ -126707,6 +128721,28 @@
     "lng": -1.251330972
    }
   },
+  "playground-off-newport-road-llantarnam-cwmbr-n": {
+   "nearest": {
+    "id": "0340a17d1d7b97e1b14563b4",
+    "name": "Public toilet",
+    "m": 1437,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 51.619064065,
+    "lng": -3.002201915
+   },
+   "nearestBabyChange": {
+    "id": "c9f3255d82e6d2c07984c26e",
+    "name": "Monmouth Square underground",
+    "m": 2555,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.652425371,
+    "lng": -3.021087351
+   }
+  },
   "playground-off-newquay-close-harrowgate-hill-darlington": {
    "nearest": null
   },
@@ -126798,6 +128834,18 @@
     "free": false,
     "lat": 50.462952683,
     "lng": -3.53819935
+   }
+  },
+  "playground-off-newton-street-troed-y-rhiw-abercanaid": {
+   "nearest": {
+    "id": "954f0a9946395ac4f7c189fa",
+    "name": "Merthyr Bus Station",
+    "m": 2737,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.74430493,
+    "lng": -3.379537761
    }
   },
   "playground-off-nexa-meadows-pilton-exeter": {
@@ -127446,6 +129494,28 @@
     "lng": -3.723733482
    }
   },
+  "playground-off-north-walk-merthyr-dyfan-barry": {
+   "nearest": {
+    "id": "0f8d386d70ab7c585e4c9b16",
+    "name": "Town Centre",
+    "m": 1062,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.407032618,
+    "lng": -3.267019093
+   },
+   "nearestBabyChange": {
+    "id": "ac09a4862a5b32d864f4d90c",
+    "name": "Public toilet",
+    "m": 2227,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.390454817,
+    "lng": -3.27743605
+   }
+  },
   "playground-off-north-west-road-woodhouse-leeds": {
    "nearest": {
     "id": "90264f0170ee34d32eb96baf",
@@ -127738,6 +129808,9 @@
     "lng": -0.11490047
    }
   },
+  "playground-off-nurston-close-font-y-gary-rhoose": {
+   "nearest": null
+  },
   "playground-off-nutcroft-datchworth-east-hertfordshire": {
    "nearest": {
     "id": "57e756cd9bd90188477a5d8c",
@@ -127828,6 +129901,18 @@
     "free": true,
     "lat": 51.415437132,
     "lng": -0.179042872
+   }
+  },
+  "playground-off-nyth-y-dryw-font-y-gary-rhoose": {
+   "nearest": {
+    "id": "c983dc6c88c6808e783397b6",
+    "name": "Public toilet",
+    "m": 2245,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.39416226,
+    "lng": -3.31510584
    }
   },
   "playground-off-nythbran-terrace-porth-pontypridd": {
@@ -128034,6 +130119,9 @@
     "lng": -3.341235316
    }
   },
+  "playground-off-oakland-street-bedlinog": {
+   "nearest": null
+  },
   "playground-off-oaklands-drive-soothill-batley": {
    "nearest": {
     "id": "6dfbf83afadb5eaff8481ec8",
@@ -128182,6 +130270,18 @@
     "free": true,
     "lat": 52.160693129,
     "lng": -0.447228849
+   }
+  },
+  "playground-off-odonnell-road-gibbonsdown-barry": {
+   "nearest": {
+    "id": "0f8d386d70ab7c585e4c9b16",
+    "name": "Town Centre",
+    "m": 1226,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.407032618,
+    "lng": -3.267019093
    }
   },
   "playground-off-offa-road-cauldwell-bedford": {
@@ -128462,6 +130562,9 @@
     "lng": -1.7441279
    }
   },
+  "playground-off-old-port-road-wenvoe": {
+   "nearest": null
+  },
   "playground-off-old-post-lane-colsterworth-south-kesteven": {
    "nearest": {
     "id": "bdbfe5d033b26954018b5f38",
@@ -128578,6 +130681,18 @@
   },
   "playground-off-old-tramway-pembrey-and-burry-port-town-burry": {
    "nearest": null
+  },
+  "playground-off-old-winch-fawr-road-twyncarmel-clwydyfagwyr-m": {
+   "nearest": {
+    "id": "ca036e363fc13263dca90d5a",
+    "name": "Cyfarthfa Park Canolfan",
+    "m": 1915,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 51.756445009,
+    "lng": -3.387823105
+   }
   },
   "playground-off-oldfield-crescent-lache-chester": {
    "nearest": {
@@ -128920,6 +131035,9 @@
    }
   },
   "playground-off-orchard-road-pulloxhill": {
+   "nearest": null
+  },
+  "playground-off-orchard-walk-st-athan": {
    "nearest": null
   },
   "playground-off-orchard-way-camberley": {
@@ -129694,6 +131812,18 @@
     "lng": -1.4985007
    }
   },
+  "playground-off-oyster-bend-sully-and-lavernock-sully": {
+   "nearest": {
+    "id": "8ec9bf8346b208074daed639",
+    "name": "Public toilet",
+    "m": 2574,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.416043014,
+    "lng": -3.182791186
+   }
+  },
   "playground-off-pack-horse-lane-high-green-sheffield": {
    "nearest": {
     "id": "05ab156ed2d3ddad4d047e83",
@@ -129748,6 +131878,18 @@
     "free": true,
     "lat": 53.41288905,
     "lng": -2.837028747
+   }
+  },
+  "playground-off-paget-road-penarth-marina-penarth": {
+   "nearest": {
+    "id": "8d18fdfe7102dcbd74999d52",
+    "name": "Penarth town centre",
+    "m": 539,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 51.439062907,
+    "lng": -3.173265124
    }
   },
   "playground-off-paisley-road-west-craigton-glasgow-2": {
@@ -130120,6 +132262,18 @@
     "lng": -3.137253821
    }
   },
+  "playground-off-parc-brychan-penybryn-pant": {
+   "nearest": {
+    "id": "ca036e363fc13263dca90d5a",
+    "name": "Cyfarthfa Park Canolfan",
+    "m": 1813,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 51.756445009,
+    "lng": -3.387823105
+   }
+  },
   "playground-off-parc-bryn-rhos-cwmamman-glanamman": {
    "nearest": null
   },
@@ -130133,6 +132287,30 @@
     "free": true,
     "lat": 53.057177843,
     "lng": -3.008229733
+   }
+  },
+  "playground-off-parc-panteg-sebastopol-cwmbr-n-2": {
+   "nearest": {
+    "id": "ee46e648197ff8a608fc0e4e",
+    "name": "Ashbridge toilets",
+    "m": 758,
+    "babyChange": null,
+    "accessible": false,
+    "free": false,
+    "lat": 51.670591483,
+    "lng": -3.017347078
+   }
+  },
+  "playground-off-parc-panteg-sebastopol-cwmbr-n": {
+   "nearest": {
+    "id": "ee46e648197ff8a608fc0e4e",
+    "name": "Ashbridge toilets",
+    "m": 560,
+    "babyChange": null,
+    "accessible": false,
+    "free": false,
+    "lat": 51.670591483,
+    "lng": -3.017347078
    }
   },
   "playground-off-parc-rhosyn-maesteg-cwmfelin": {
@@ -131375,6 +133553,30 @@
     "lng": -3.377923965
    }
   },
+  "playground-off-pembroke-terrace-penarth-marina-penarth": {
+   "nearest": {
+    "id": "8d18fdfe7102dcbd74999d52",
+    "name": "Penarth town centre",
+    "m": 399,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 51.439062907,
+    "lng": -3.173265124
+   }
+  },
+  "playground-off-pen-y-bryn-palmerstown-barry": {
+   "nearest": {
+    "id": "0f8d386d70ab7c585e4c9b16",
+    "name": "Town Centre",
+    "m": 2089,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.407032618,
+    "lng": -3.267019093
+   }
+  },
   "playground-off-pen-y-garreg-close-argoed-mynydd-isa": {
    "nearest": {
     "id": "c183b851a34ae79d9f19db01",
@@ -131878,6 +134080,9 @@
     "lng": -0.099155903
    }
   },
+  "playground-off-perry-lane-nash": {
+   "nearest": null
+  },
   "playground-off-perry-place-hill-top-sandwell": {
    "nearest": {
     "id": "dfba8e8cee2d7f5fcd797e12",
@@ -131948,6 +134153,28 @@
     "lng": 0.397567749
    }
   },
+  "playground-off-perthy-close-henllys-cwmbr-n": {
+   "nearest": {
+    "id": "9cb3304a83febf4ce7c3df91",
+    "name": "Next upstairs toilet",
+    "m": 2178,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.653185667,
+    "lng": -3.028303124
+   },
+   "nearestBabyChange": {
+    "id": "c9f3255d82e6d2c07984c26e",
+    "name": "Monmouth Square underground",
+    "m": 2383,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.652425371,
+    "lng": -3.021087351
+   }
+  },
   "playground-off-peter-gate-wetheral-cumwhinton": {
    "nearest": null
   },
@@ -131976,6 +134203,28 @@
     "free": true,
     "lat": 50.400479891,
     "lng": -4.184913028
+   }
+  },
+  "playground-off-peterswell-road-cwm-talwg-barry": {
+   "nearest": {
+    "id": "f0f9dee10914b34dabf20375",
+    "name": "Public toilet",
+    "m": 716,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.400724414,
+    "lng": -3.2878977
+   },
+   "nearestBabyChange": {
+    "id": "ac09a4862a5b32d864f4d90c",
+    "name": "Public toilet",
+    "m": 2017,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.390454817,
+    "lng": -3.27743605
    }
   },
   "playground-off-pheasant-grove-wixams": {
@@ -132032,6 +134281,21 @@
     "free": true,
     "lat": 51.516022008,
     "lng": -0.070212185
+   }
+  },
+  "playground-off-picca-close-wenvoe": {
+   "nearest": null
+  },
+  "playground-off-piccadilly-llanblethian-cowbridge": {
+   "nearest": {
+    "id": "423d99ad89065bbf75eae3ea",
+    "name": "Waitrose",
+    "m": 979,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.461159974,
+    "lng": -3.448079492
    }
   },
   "playground-off-pickard-street-clerkenwell-greater-london": {
@@ -132169,6 +134433,9 @@
     "lat": 51.751615892,
     "lng": -0.311543941
    }
+  },
+  "playground-off-pinewood-square-st-athan-eglwys-brewis": {
+   "nearest": null
   },
   "playground-off-pinfold-lane-ainsdale-sefton": {
    "nearest": {
@@ -132441,6 +134708,18 @@
     "lng": -3.06936166
    }
   },
+  "playground-off-plas-twyn-southville-cwmbr-n": {
+   "nearest": {
+    "id": "69f99fe25bdea2c475e64540",
+    "name": "Cwmbran Station",
+    "m": 354,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.656901655,
+    "lng": -3.015993834
+   }
+  },
   "playground-off-platt-lane-hindley-green-hindley": {
    "nearest": null
   },
@@ -132598,6 +134877,28 @@
     "free": true,
     "lat": 53.325090098,
     "lng": -1.343502402
+   }
+  },
+  "playground-off-plymouth-road-barry-island-barry": {
+   "nearest": {
+    "id": "20d1e6e0f8d82146d78188a5",
+    "name": "Harbour Road Car Park",
+    "m": 469,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 51.392707654,
+    "lng": -3.278603554
+   },
+   "nearestBabyChange": {
+    "id": "ac09a4862a5b32d864f4d90c",
+    "name": "Public toilet",
+    "m": 509,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.390454817,
+    "lng": -3.27743605
    }
   },
   "playground-off-poets-close-rhydyfelin-pontypridd": {
@@ -132851,6 +135152,30 @@
     "lng": -1.540818214
    }
   },
+  "playground-off-poplar-way-gurnos-merthyr-tydfil": {
+   "nearest": {
+    "id": "ca036e363fc13263dca90d5a",
+    "name": "Cyfarthfa Park Canolfan",
+    "m": 1018,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 51.756445009,
+    "lng": -3.387823105
+   }
+  },
+  "playground-off-poppy-field-avenue-oakfield-cwmbr-n": {
+   "nearest": {
+    "id": "c9f3255d82e6d2c07984c26e",
+    "name": "Monmouth Square underground",
+    "m": 1457,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.652425371,
+    "lng": -3.021087351
+   }
+  },
   "playground-off-poppy-field-biggleswade": {
    "nearest": {
     "id": "8e3dc1c4ba3681dc259c7035",
@@ -132883,6 +135208,52 @@
     "free": true,
     "lat": 53.3492693,
     "lng": -2.99803707
+   }
+  },
+  "playground-off-porthkerry-leisure-park-rhoose": {
+   "nearest": {
+    "id": "c983dc6c88c6808e783397b6",
+    "name": "Public toilet",
+    "m": 1076,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.39416226,
+    "lng": -3.31510584
+   }
+  },
+  "playground-off-porthkerry-park-the-knap-barry": {
+   "nearest": {
+    "id": "c983dc6c88c6808e783397b6",
+    "name": "Public toilet",
+    "m": 82,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.39416226,
+    "lng": -3.31510584
+   }
+  },
+  "playground-off-porthkerry-road-cwm-talwg-barry": {
+   "nearest": {
+    "id": "f0f9dee10914b34dabf20375",
+    "name": "Public toilet",
+    "m": 148,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.400724414,
+    "lng": -3.2878977
+   },
+   "nearestBabyChange": {
+    "id": "ac09a4862a5b32d864f4d90c",
+    "name": "Public toilet",
+    "m": 1235,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.390454817,
+    "lng": -3.27743605
    }
   },
   "playground-off-portia-way-cawston-rugby": {
@@ -133073,6 +135444,18 @@
     "free": true,
     "lat": 52.531280727,
     "lng": -2.054279745
+   }
+  },
+  "playground-off-powys-drive-eastbrook-dinas-powys": {
+   "nearest": {
+    "id": "d6b069c4f85918554cd070ad",
+    "name": "Hafan y coed toilet",
+    "m": 1176,
+    "babyChange": false,
+    "accessible": true,
+    "free": true,
+    "lat": 51.448504364,
+    "lng": -3.202059605
    }
   },
   "playground-off-poynders-road-clapham-greater-london": {
@@ -133963,6 +136346,18 @@
     "lng": -0.290193558
    }
   },
+  "playground-off-purcell-road-lower-penarth-penarth": {
+   "nearest": {
+    "id": "8ec9bf8346b208074daed639",
+    "name": "Public toilet",
+    "m": 1188,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.416043014,
+    "lng": -3.182791186
+   }
+  },
   "playground-off-purcell-street-hoxton-greater-london-2": {
    "nearest": {
     "id": "aaf6c31a78105b12414ab732",
@@ -134143,6 +136538,18 @@
   },
   "playground-off-queen-street-audley-rural-newcastle-under-lym": {
    "nearest": null
+  },
+  "playground-off-queen-street-forge-side-blaenavon": {
+   "nearest": {
+    "id": "9ec9b3bbf1cc21b5f4116770",
+    "name": "Lion Street",
+    "m": 205,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 51.774284671,
+    "lng": -3.084197044
+   }
   },
   "playground-off-queens-drive-stoneycroft-liverpool": {
    "nearest": {
@@ -134526,6 +136933,21 @@
     "lng": -4.342702929
    }
   },
+  "playground-off-raglan-close-waterloo-abersychan": {
+   "nearest": null
+  },
+  "playground-off-railway-road-rhoose": {
+   "nearest": {
+    "id": "c983dc6c88c6808e783397b6",
+    "name": "Public toilet",
+    "m": 2049,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.39416226,
+    "lng": -3.31510584
+   }
+  },
   "playground-off-railway-terrace-dyffryn-cennen-ffairfach": {
    "nearest": {
     "id": "be5dfbae16037d2eceaef6c0",
@@ -134536,6 +136958,28 @@
     "free": false,
     "lat": 51.8834161,
     "lng": -3.9919241
+   }
+  },
+  "playground-off-railway-terrace-twynyrodyn-merthyr-tydfil": {
+   "nearest": {
+    "id": "954f0a9946395ac4f7c189fa",
+    "name": "Merthyr Bus Station",
+    "m": 912,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.74430493,
+    "lng": -3.379537761
+   },
+   "nearestBabyChange": {
+    "id": "ca036e363fc13263dca90d5a",
+    "name": "Cyfarthfa Park Canolfan",
+    "m": 2366,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 51.756445009,
+    "lng": -3.387823105
    }
   },
   "playground-off-railway-terrace-west-ardsley-leeds": {
@@ -134584,6 +137028,18 @@
   },
   "playground-off-rainford-linear-park-rainford-st-helens": {
    "nearest": null
+  },
+  "playground-off-raldan-close-gibbonsdown-barry": {
+   "nearest": {
+    "id": "0f8d386d70ab7c585e4c9b16",
+    "name": "Town Centre",
+    "m": 1461,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.407032618,
+    "lng": -3.267019093
+   }
   },
   "playground-off-raleigh-drive-three-beaches-paignton": {
    "nearest": {
@@ -135552,6 +138008,40 @@
     "lng": -2.906237841
    }
   },
+  "playground-off-rhodfar-eos-nyth-y-dryw-cwmbr-n": {
+   "nearest": {
+    "id": "ee46e648197ff8a608fc0e4e",
+    "name": "Ashbridge toilets",
+    "m": 592,
+    "babyChange": null,
+    "accessible": false,
+    "free": false,
+    "lat": 51.670591483,
+    "lng": -3.017347078
+   },
+   "nearestBabyChange": {
+    "id": "69f99fe25bdea2c475e64540",
+    "name": "Cwmbran Station",
+    "m": 1563,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.656901655,
+    "lng": -3.015993834
+   }
+  },
+  "playground-off-rhodfar-m-r-font-y-gary-rhoose": {
+   "nearest": {
+    "id": "c983dc6c88c6808e783397b6",
+    "name": "Public toilet",
+    "m": 1785,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.39416226,
+    "lng": -3.31510584
+   }
+  },
   "playground-off-rhondda-fawr-community-route-ystrad-2": {
    "nearest": {
     "id": "8a5c5e3780b62222b71dddfe",
@@ -135574,6 +138064,18 @@
     "free": false,
     "lat": 51.645002781,
     "lng": -3.466331363
+   }
+  },
+  "playground-off-rhoose-way-rhoose": {
+   "nearest": {
+    "id": "c983dc6c88c6808e783397b6",
+    "name": "Public toilet",
+    "m": 1856,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.39416226,
+    "lng": -3.31510584
    }
   },
   "playground-off-rhuddlan-court-prestatyn": {
@@ -137070,6 +139572,28 @@
     "lng": -2.563051879
    }
   },
+  "playground-off-rosemead-ty-canol-cwmbr-n": {
+   "nearest": {
+    "id": "9cb3304a83febf4ce7c3df91",
+    "name": "Next upstairs toilet",
+    "m": 2087,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.653185667,
+    "lng": -3.028303124
+   },
+   "nearestBabyChange": {
+    "id": "a3c135325d79081bb565d01d",
+    "name": "ASDA Cwmbran",
+    "m": 2395,
+    "babyChange": true,
+    "accessible": null,
+    "free": true,
+    "lat": 51.654450576,
+    "lng": -3.024163842
+   }
+  },
   "playground-off-rosemount-street-garngad-glasgow": {
    "nearest": {
     "id": "640b056d3b51881bbf6cca8f",
@@ -137659,6 +140183,9 @@
     "lng": -3.573313951
    }
   },
+  "playground-off-ruthin-road-llangan-penllyn": {
+   "nearest": null
+  },
   "playground-off-ryder-drive-bermondsey-greater-london": {
    "nearest": {
     "id": "c32a0abc02cb9a913b7295f4",
@@ -137958,6 +140485,28 @@
   },
   "playground-off-salisbury-lane-over-wallop-test-valley": {
    "nearest": null
+  },
+  "playground-off-salisbury-road-cwm-talwg-barry": {
+   "nearest": {
+    "id": "f0f9dee10914b34dabf20375",
+    "name": "Public toilet",
+    "m": 288,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.400724414,
+    "lng": -3.2878977
+   },
+   "nearestBabyChange": {
+    "id": "ac09a4862a5b32d864f4d90c",
+    "name": "Public toilet",
+    "m": 1550,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.390454817,
+    "lng": -3.27743605
+   }
   },
   "playground-off-salisbury-street-blowick-southport": {
    "nearest": {
@@ -139062,6 +141611,18 @@
     "lng": -2.309751939
    }
   },
+  "playground-off-school-road-pen-tranch-abersychan": {
+   "nearest": {
+    "id": "9dcf500ea232ce496b245429",
+    "name": "Richatdettes Cottage",
+    "m": 2838,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.701415658,
+    "lng": -3.039414883
+   }
+  },
   "playground-off-school-road-tonna": {
    "nearest": {
     "id": "cd9941d5caf97787f0632d6e",
@@ -139375,6 +141936,9 @@
     "lng": -2.8364933
    }
   },
+  "playground-off-seaview-terrace-wenvoe": {
+   "nearest": null
+  },
   "playground-off-sedan-way-walworth-greater-london": {
    "nearest": {
     "id": "860d60252cb308bab95f6641",
@@ -139494,6 +142058,18 @@
     "free": true,
     "lat": 53.5156803,
     "lng": -2.931918
+   }
+  },
+  "playground-off-seys-court-llantwit-major": {
+   "nearest": {
+    "id": "780547196bdbbe46b03bc392",
+    "name": "Public toilet",
+    "m": 639,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.4081804,
+    "lng": -3.4803414
    }
   },
   "playground-off-sgubor-goch-llanharry": {
@@ -141278,6 +143854,18 @@
   "playground-off-south-view-road-willand-mid-devon": {
    "nearest": null
   },
+  "playground-off-south-view-west-camp-boverton": {
+   "nearest": {
+    "id": "780547196bdbbe46b03bc392",
+    "name": "Public toilet",
+    "m": 1654,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.4081804,
+    "lng": -3.4803414
+   }
+  },
   "playground-off-south-view-woodley-stockport": {
    "nearest": {
     "id": "5edbe7cb3d9383ed8fabcac9",
@@ -141430,6 +144018,18 @@
     "free": true,
     "lat": 51.0175439,
     "lng": -3.8345138
+   }
+  },
+  "playground-off-southra-murch-dinas-powys": {
+   "nearest": {
+    "id": "d6b069c4f85918554cd070ad",
+    "name": "Hafan y coed toilet",
+    "m": 2297,
+    "babyChange": false,
+    "accessible": true,
+    "free": true,
+    "lat": 51.448504364,
+    "lng": -3.202059605
    }
   },
   "playground-off-southview-road-loughton": {
@@ -142168,6 +144768,30 @@
     "lng": -0.094186702
    }
   },
+  "playground-off-st-brides-road-wentlooge-newport": {
+   "nearest": {
+    "id": "faaa29f2799d89dbfc77b087",
+    "name": "Asda",
+    "m": 2401,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 51.556573517,
+    "lng": -3.021621108
+   }
+  },
+  "playground-off-st-cadocs-avenue-murch-dinas-powys": {
+   "nearest": {
+    "id": "d6b069c4f85918554cd070ad",
+    "name": "Hafan y coed toilet",
+    "m": 2001,
+    "babyChange": false,
+    "accessible": true,
+    "free": true,
+    "lat": 51.448504364,
+    "lng": -3.202059605
+   }
+  },
   "playground-off-st-columba-close-kingsteignton": {
    "nearest": {
     "id": "fbb816f5ce2369b7d9cc7b55",
@@ -142192,6 +144816,18 @@
     "lng": -0.1650324
    }
   },
+  "playground-off-st-davids-crescent-morristown-penarth": {
+   "nearest": {
+    "id": "3135f2468b84fe4af4633bed",
+    "name": "Tesco",
+    "m": 1343,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 51.445722912,
+    "lng": -3.185884953
+   }
+  },
   "playground-off-st-davids-drive-kelsterton-connahs-quay": {
    "nearest": {
     "id": "d97a5148343509973554b176",
@@ -142212,6 +144848,28 @@
     "free": true,
     "lat": 53.204624662,
     "lng": -3.029372692
+   }
+  },
+  "playground-off-st-dials-road-st-dials-cwmbr-n": {
+   "nearest": {
+    "id": "9cb3304a83febf4ce7c3df91",
+    "name": "Next upstairs toilet",
+    "m": 383,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.653185667,
+    "lng": -3.028303124
+   },
+   "nearestBabyChange": {
+    "id": "a3c135325d79081bb565d01d",
+    "name": "ASDA Cwmbran",
+    "m": 697,
+    "babyChange": true,
+    "accessible": null,
+    "free": true,
+    "lat": 51.654450576,
+    "lng": -3.024163842
    }
   },
   "playground-off-st-etheldredas-drive-old-hatfield-hatfield": {
@@ -142361,6 +145019,9 @@
     "lat": 51.565843319,
     "lng": -3.317688704
    }
+  },
+  "playground-off-st-james-road-wick": {
+   "nearest": null
   },
   "playground-off-st-jamess-road-bermondsey-greater-london": {
    "nearest": {
@@ -143230,6 +145891,18 @@
     "lng": -4.0968436
    }
   },
+  "playground-off-starling-road-west-camp-boverton": {
+   "nearest": {
+    "id": "780547196bdbbe46b03bc392",
+    "name": "Public toilet",
+    "m": 1872,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.4081804,
+    "lng": -3.4803414
+   }
+  },
   "playground-off-station-approach-leighton-linslade-linslade": {
    "nearest": {
     "id": "297d99da9b058e14d133e6df",
@@ -143421,6 +146094,28 @@
     "free": true,
     "lat": 51.1707789,
     "lng": -4.2080266
+   }
+  },
+  "playground-off-station-road-pen-y-wern-pant": {
+   "nearest": {
+    "id": "689a4ed99dc90c333cce05e3",
+    "name": "Thomastown Park (below flat)",
+    "m": 2130,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.746968669,
+    "lng": -3.371880054
+   },
+   "nearestBabyChange": {
+    "id": "ca036e363fc13263dca90d5a",
+    "name": "Cyfarthfa Park Canolfan",
+    "m": 2335,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 51.756445009,
+    "lng": -3.387823105
    }
   },
   "playground-off-station-road-queensferry-sandycroft": {
@@ -143721,6 +146416,18 @@
     "lng": -0.0637157
    }
   },
+  "playground-off-stewart-road-font-y-gary-rhoose": {
+   "nearest": {
+    "id": "c983dc6c88c6808e783397b6",
+    "name": "Public toilet",
+    "m": 2492,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.39416226,
+    "lng": -3.31510584
+   }
+  },
   "playground-off-stewartby-way-stewartby": {
    "nearest": {
     "id": "9d0f36e2ce1a601b00e89412",
@@ -143779,6 +146486,28 @@
     "free": true,
     "lat": 51.8658688,
     "lng": -0.1821671
+   }
+  },
+  "playground-off-stirling-road-colcot-barry": {
+   "nearest": {
+    "id": "f0f9dee10914b34dabf20375",
+    "name": "Public toilet",
+    "m": 1701,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.400724414,
+    "lng": -3.2878977
+   },
+   "nearestBabyChange": {
+    "id": "ac09a4862a5b32d864f4d90c",
+    "name": "Public toilet",
+    "m": 2989,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.390454817,
+    "lng": -3.27743605
    }
   },
   "playground-off-stirling-road-shortstown": {
@@ -144578,6 +147307,18 @@
   },
   "playground-off-sunnybank-denby-dale-kirklees": {
    "nearest": null
+  },
+  "playground-off-sunnybank-road-sebastopol-pontypool": {
+   "nearest": {
+    "id": "9dcf500ea232ce496b245429",
+    "name": "Richatdettes Cottage",
+    "m": 1697,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.701415658,
+    "lng": -3.039414883
+   }
   },
   "playground-off-sunnyhill-road-streatham-greater-london": {
    "nearest": {
@@ -145740,6 +148481,28 @@
     "lng": -0.092297494
    }
   },
+  "playground-off-tennyson-avenue-glan-llyn-llanwern": {
+   "nearest": {
+    "id": "e3d830c709e5194941fe1028",
+    "name": "Newport RSPCA Animal Centre",
+    "m": 1398,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.583724939,
+    "lng": -2.936098874
+   },
+   "nearestBabyChange": {
+    "id": "962f015cb1e2e186c17e2939",
+    "name": "Alway Community Centre",
+    "m": 2052,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.585833196,
+    "lng": -2.945373952
+   }
+  },
   "playground-off-tennyson-avenue-westleigh-leigh": {
    "nearest": {
     "id": "9e0eccd84e877ff35b4ebba3",
@@ -145806,6 +148569,18 @@
     "free": false,
     "lat": 52.083175187,
     "lng": -0.749044418
+   }
+  },
+  "playground-off-tennyson-road-merthyr-dyfan-barry": {
+   "nearest": {
+    "id": "0f8d386d70ab7c585e4c9b16",
+    "name": "Town Centre",
+    "m": 1336,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.407032618,
+    "lng": -3.267019093
    }
   },
   "playground-off-teras-brynhyfryd-seven-sisters": {
@@ -146412,6 +149187,18 @@
     "free": true,
     "lat": 52.994764616,
     "lng": -2.210274339
+   }
+  },
+  "playground-off-the-glades-penarth-marina-penarth": {
+   "nearest": {
+    "id": "625aa05907ca19612904438d",
+    "name": "Public toilet",
+    "m": 212,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.4377466,
+    "lng": -3.1677672
    }
   },
   "playground-off-the-glebe-bratton-fleming-north-devon": {
@@ -147209,6 +149996,28 @@
     "free": true,
     "lat": 53.368135385,
     "lng": -1.447971761
+   }
+  },
+  "playground-off-the-twinings-coed-eva-cwmbr-n": {
+   "nearest": {
+    "id": "9cb3304a83febf4ce7c3df91",
+    "name": "Next upstairs toilet",
+    "m": 1464,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.653185667,
+    "lng": -3.028303124
+   },
+   "nearestBabyChange": {
+    "id": "a3c135325d79081bb565d01d",
+    "name": "ASDA Cwmbran",
+    "m": 1779,
+    "babyChange": true,
+    "accessible": null,
+    "free": true,
+    "lat": 51.654450576,
+    "lng": -3.024163842
    }
   },
   "playground-off-the-underfleet-beer-seaton": {
@@ -148785,8 +151594,58 @@
     "lng": -1.90131256
    }
   },
+  "playground-off-tramroad-lane-morgantown-merthyr-tydfil": {
+   "nearest": {
+    "id": "689a4ed99dc90c333cce05e3",
+    "name": "Thomastown Park (below flat)",
+    "m": 844,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.746968669,
+    "lng": -3.371880054
+   },
+   "nearestBabyChange": {
+    "id": "ca036e363fc13263dca90d5a",
+    "name": "Cyfarthfa Park Canolfan",
+    "m": 1110,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 51.756445009,
+    "lng": -3.387823105
+   }
+  },
   "playground-off-tramway-hirwaun": {
    "nearest": null
+  },
+  "playground-off-tranch-road-pantygasseg-pontypool-2": {
+   "nearest": null
+  },
+  "playground-off-tranch-road-pantygasseg-pontypool": {
+   "nearest": null
+  },
+  "playground-off-trannon-court-thornhill-cwmbr-n": {
+   "nearest": {
+    "id": "9cb3304a83febf4ce7c3df91",
+    "name": "Next upstairs toilet",
+    "m": 1439,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.653185667,
+    "lng": -3.028303124
+   },
+   "nearestBabyChange": {
+    "id": "a3c135325d79081bb565d01d",
+    "name": "ASDA Cwmbran",
+    "m": 1700,
+    "babyChange": true,
+    "accessible": null,
+    "free": true,
+    "lat": 51.654450576,
+    "lng": -3.024163842
+   }
   },
   "playground-off-trans-pennine-trail-dunham-massey-trafford": {
    "nearest": {
@@ -148882,6 +151741,30 @@
     "lng": -3.987979871
    }
   },
+  "playground-off-treharris-park-lower-walk-treharris": {
+   "nearest": {
+    "id": "004e35af3d8a069edf32b3df",
+    "name": "Taff Bargoed Park",
+    "m": 1036,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.6702978,
+    "lng": -3.3003431
+   }
+  },
+  "playground-off-trem-echni-rhoose": {
+   "nearest": {
+    "id": "c983dc6c88c6808e783397b6",
+    "name": "Public toilet",
+    "m": 1931,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.39416226,
+    "lng": -3.31510584
+   }
+  },
   "playground-off-trem-y-mor-llanrhidian-higher-llanmorlais": {
    "nearest": {
     "id": "6c8a3e0d7d2411b8685fcea8",
@@ -148953,6 +151836,30 @@
     "lng": -1.4985007
    }
   },
+  "playground-off-trevithick-trail-merthyr-vale": {
+   "nearest": {
+    "id": "004e35af3d8a069edf32b3df",
+    "name": "Taff Bargoed Park",
+    "m": 2414,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.6702978,
+    "lng": -3.3003431
+   }
+  },
+  "playground-off-trevor-close-pant": {
+   "nearest": {
+    "id": "ca036e363fc13263dca90d5a",
+    "name": "Cyfarthfa Park Canolfan",
+    "m": 2926,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 51.756445009,
+    "lng": -3.387823105
+   }
+  },
   "playground-off-trewithy-drive-hartley-plymouth": {
    "nearest": {
     "id": "fa3def6648c8971137cb4d82",
@@ -149021,6 +151928,28 @@
     "lng": -0.072151423
    }
   },
+  "playground-off-trinity-road-lowlands-cwmbr-n": {
+   "nearest": {
+    "id": "9cb3304a83febf4ce7c3df91",
+    "name": "Next upstairs toilet",
+    "m": 727,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.653185667,
+    "lng": -3.028303124
+   },
+   "nearestBabyChange": {
+    "id": "a3c135325d79081bb565d01d",
+    "name": "ASDA Cwmbran",
+    "m": 731,
+    "babyChange": true,
+    "accessible": null,
+    "free": true,
+    "lat": 51.654450576,
+    "lng": -3.024163842
+   }
+  },
   "playground-off-tristford-road-harberton-south-hams": {
    "nearest": {
     "id": "5f712ae78c192a99299b4cdc",
@@ -149041,6 +151970,18 @@
     "free": true,
     "lat": 50.431103258,
     "lng": -3.689188063
+   }
+  },
+  "playground-off-trosnant-street-trosnant-pontypool": {
+   "nearest": {
+    "id": "9dcf500ea232ce496b245429",
+    "name": "Richatdettes Cottage",
+    "m": 294,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.701415658,
+    "lng": -3.039414883
    }
   },
   "playground-off-trunk-furlong-aspley-guise": {
@@ -149447,6 +152388,18 @@
     "lng": -0.447228849
    }
   },
+  "playground-off-tydvil-close-bedlinog-treharris": {
+   "nearest": {
+    "id": "004e35af3d8a069edf32b3df",
+    "name": "Taff Bargoed Park",
+    "m": 1255,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.6702978,
+    "lng": -3.3003431
+   }
+  },
   "playground-off-tyle-teg-pembrey-and-burry-port-town-burry-po": {
    "nearest": null
   },
@@ -149470,6 +152423,28 @@
     "free": true,
     "lat": 51.534686356,
     "lng": -3.377923965
+   }
+  },
+  "playground-off-tyllwyd-street-penybryn-merthyr-tydfil": {
+   "nearest": {
+    "id": "689a4ed99dc90c333cce05e3",
+    "name": "Thomastown Park (below flat)",
+    "m": 1043,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.746968669,
+    "lng": -3.371880054
+   },
+   "nearestBabyChange": {
+    "id": "ca036e363fc13263dca90d5a",
+    "name": "Cyfarthfa Park Canolfan",
+    "m": 1267,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 51.756445009,
+    "lng": -3.387823105
    }
   },
   "playground-off-tynybryn-road-tonyrefail": {
@@ -149863,6 +152838,28 @@
     "lng": -4.055569768
    }
   },
+  "playground-off-upper-row-guest-cottages-pen-y-wern-pant": {
+   "nearest": {
+    "id": "689a4ed99dc90c333cce05e3",
+    "name": "Thomastown Park (below flat)",
+    "m": 2598,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.746968669,
+    "lng": -3.371880054
+   },
+   "nearestBabyChange": {
+    "id": "ca036e363fc13263dca90d5a",
+    "name": "Cyfarthfa Park Canolfan",
+    "m": 2808,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 51.756445009,
+    "lng": -3.387823105
+   }
+  },
   "playground-off-upper-shelton-road-marston-moretaine-wootton": {
    "nearest": {
     "id": "9d0f36e2ce1a601b00e89412",
@@ -150208,6 +153205,18 @@
     "lng": -0.477315187
    }
   },
+  "playground-off-vere-street-cadoxton-barry": {
+   "nearest": {
+    "id": "0f8d386d70ab7c585e4c9b16",
+    "name": "Town Centre",
+    "m": 1144,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.407032618,
+    "lng": -3.267019093
+   }
+  },
   "playground-off-verney-road-bermondsey-greater-london": {
    "nearest": {
     "id": "d53be76b412c7168ac66b027",
@@ -150479,6 +153488,18 @@
     "lng": -3.465330899
    }
   },
+  "playground-off-victoria-park-road-cadoxton-barry": {
+   "nearest": {
+    "id": "0f8d386d70ab7c585e4c9b16",
+    "name": "Town Centre",
+    "m": 1275,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.407032618,
+    "lng": -3.267019093
+   }
+  },
   "playground-off-victoria-passage-holywell-estate-watford": {
    "nearest": {
     "id": "5de9b831a36ef53b633b0e57",
@@ -150622,6 +153643,18 @@
   },
   "playground-off-victoria-street-garw-valley-pontycymer": {
    "nearest": null
+  },
+  "playground-off-victoria-street-old-cwmbran-cwmbr-n": {
+   "nearest": {
+    "id": "c9f3255d82e6d2c07984c26e",
+    "name": "Monmouth Square underground",
+    "m": 363,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.652425371,
+    "lng": -3.021087351
+   }
   },
   "playground-off-victoria-street-spring-view-wigan": {
    "nearest": null
@@ -150857,6 +153890,18 @@
     "free": true,
     "lat": 51.479838722,
     "lng": -0.142478943
+   }
+  },
+  "playground-off-wagtail-road-west-camp-eglwys-brewis": {
+   "nearest": {
+    "id": "780547196bdbbe46b03bc392",
+    "name": "Public toilet",
+    "m": 2029,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.4081804,
+    "lng": -3.4803414
    }
   },
   "playground-off-wain-park-berry-brow-kirklees": {
@@ -152073,8 +155118,42 @@
   "playground-off-waun-fach-terrace-ogmore-valley-price-town": {
    "nearest": null
   },
+  "playground-off-waun-road-st-dials-cwmbr-n": {
+   "nearest": {
+    "id": "9cb3304a83febf4ce7c3df91",
+    "name": "Next upstairs toilet",
+    "m": 1213,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.653185667,
+    "lng": -3.028303124
+   },
+   "nearestBabyChange": {
+    "id": "c9f3255d82e6d2c07984c26e",
+    "name": "Monmouth Square underground",
+    "m": 1464,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.652425371,
+    "lng": -3.021087351
+   }
+  },
   "playground-off-waunbant-road-pyle-kenfig-hill": {
    "nearest": null
+  },
+  "playground-off-waunddu-cwm-ffrwd-oer-pontypool": {
+   "nearest": {
+    "id": "9dcf500ea232ce496b245429",
+    "name": "Richatdettes Cottage",
+    "m": 2035,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.701415658,
+    "lng": -3.039414883
+   }
   },
   "playground-off-waunrhydd-road-tonyrefail": {
    "nearest": {
@@ -152263,6 +155342,18 @@
   "playground-off-welfare-avenue-barwick-in-elmet-and-scholes-l": {
    "nearest": null
   },
+  "playground-off-well-street-cefn-coed-y-cymmer-trefechan": {
+   "nearest": {
+    "id": "ca036e363fc13263dca90d5a",
+    "name": "Cyfarthfa Park Canolfan",
+    "m": 1036,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 51.756445009,
+    "lng": -3.387823105
+   }
+  },
   "playground-off-well-street-hackney-greater-london-2-2": {
    "nearest": {
     "id": "e8dd56125bccfed314da2cdf",
@@ -152397,6 +155488,18 @@
     "free": false,
     "lat": 53.387388533,
     "lng": -2.319252491
+   }
+  },
+  "playground-off-wellfield-road-marshfield": {
+   "nearest": {
+    "id": "7f403397fa040689ebdc813b",
+    "name": "Tesco",
+    "m": 2426,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.524563648,
+    "lng": -3.102834374
    }
   },
   "playground-off-wellhouse-crescent-wellhouse-glasgow-2": {
@@ -152677,6 +155780,18 @@
     "free": true,
     "lat": 53.249703333,
     "lng": -3.132530451
+   }
+  },
+  "playground-off-wern-road-sebastopol-cwmbr-n": {
+   "nearest": {
+    "id": "ee46e648197ff8a608fc0e4e",
+    "name": "Ashbridge toilets",
+    "m": 993,
+    "babyChange": null,
+    "accessible": false,
+    "free": false,
+    "lat": 51.670591483,
+    "lng": -3.017347078
    }
   },
   "playground-off-west-auckland-road-faverdale-darlington": {
@@ -154018,6 +157133,28 @@
     "lng": -0.15076617
    }
   },
+  "playground-off-wick-road-ewenny": {
+   "nearest": {
+    "id": "1bf3a16ff1816db511c3c928",
+    "name": "Dunelm",
+    "m": 1659,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.494636303,
+    "lng": -3.561726298
+   },
+   "nearestBabyChange": {
+    "id": "ecde530f8b5719522117f9e7",
+    "name": "Asda cheapside",
+    "m": 2537,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.504044383,
+    "lng": -3.573313951
+   }
+  },
   "playground-off-wickersley-road-clapham-junction-greater-lond-2": {
    "nearest": {
     "id": "40b9d6fb88364ddd10d87c99",
@@ -154485,6 +157622,28 @@
     "lng": -0.179042872
    }
   },
+  "playground-off-wimborne-rise-west-pontnewydd-cwmbr-n": {
+   "nearest": {
+    "id": "9cb3304a83febf4ce7c3df91",
+    "name": "Next upstairs toilet",
+    "m": 1012,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.653185667,
+    "lng": -3.028303124
+   },
+   "nearestBabyChange": {
+    "id": "a3c135325d79081bb565d01d",
+    "name": "ASDA Cwmbran",
+    "m": 1173,
+    "babyChange": true,
+    "accessible": null,
+    "free": true,
+    "lat": 51.654450576,
+    "lng": -3.024163842
+   }
+  },
   "playground-off-wimbourne-road-winson-green-birmingham": {
    "nearest": {
     "id": "1428e40be774dc130fff85aa",
@@ -154912,6 +158071,18 @@
     "lng": -2.016829441
    }
   },
+  "playground-off-wolfe-close-palmerstown-barry": {
+   "nearest": {
+    "id": "0f8d386d70ab7c585e4c9b16",
+    "name": "Town Centre",
+    "m": 1762,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.407032618,
+    "lng": -3.267019093
+   }
+  },
   "playground-off-wolfson-drive-houndmills-basingstoke": {
    "nearest": {
     "id": "de586e3f59c7e6713a92e22f",
@@ -155233,6 +158404,28 @@
     "lng": -3.987656817
    }
   },
+  "playground-off-woodfield-road-lower-new-inn-pontypool": {
+   "nearest": {
+    "id": "ee46e648197ff8a608fc0e4e",
+    "name": "Ashbridge toilets",
+    "m": 2322,
+    "babyChange": null,
+    "accessible": false,
+    "free": false,
+    "lat": 51.670591483,
+    "lng": -3.017347078
+   },
+   "nearestBabyChange": {
+    "id": "9dcf500ea232ce496b245429",
+    "name": "Richatdettes Cottage",
+    "m": 2364,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.701415658,
+    "lng": -3.039414883
+   }
+  },
   "playground-off-woodfield-way-theale": {
    "nearest": {
     "id": "11d8fa6507ebf5a84d361915",
@@ -155428,6 +158621,18 @@
     "lng": -0.33741653
    }
   },
+  "playground-off-woodland-road-croesyceiliog-cwmbr-n": {
+   "nearest": {
+    "id": "69f99fe25bdea2c475e64540",
+    "name": "Cwmbran Station",
+    "m": 366,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.656901655,
+    "lng": -3.015993834
+   }
+  },
   "playground-off-woodland-road-crynant": {
    "nearest": null
   },
@@ -155489,6 +158694,28 @@
     "lng": -0.330190659
    }
   },
+  "playground-off-woodlands-court-merthyr-dyfan-barry": {
+   "nearest": {
+    "id": "0f8d386d70ab7c585e4c9b16",
+    "name": "Town Centre",
+    "m": 443,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.407032618,
+    "lng": -3.267019093
+   },
+   "nearestBabyChange": {
+    "id": "ac09a4862a5b32d864f4d90c",
+    "name": "Public toilet",
+    "m": 1768,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.390454817,
+    "lng": -3.27743605
+   }
+  },
   "playground-off-woodlands-drive-offerton-hazel-grove": {
    "nearest": {
     "id": "fdd65cb59955f8a3f6157633",
@@ -155533,6 +158760,18 @@
     "free": true,
     "lat": 52.106510133,
     "lng": -0.477315187
+   }
+  },
+  "playground-off-woodpecker-square-west-camp-boverton": {
+   "nearest": {
+    "id": "780547196bdbbe46b03bc392",
+    "name": "Public toilet",
+    "m": 1847,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.4081804,
+    "lng": -3.4803414
    }
   },
   "playground-off-woodpecker-way-andover-down-andover": {
@@ -155690,6 +158929,28 @@
     "lng": -2.113687992
    }
   },
+  "playground-off-woolpitch-coed-eva-cwmbr-n": {
+   "nearest": {
+    "id": "9cb3304a83febf4ce7c3df91",
+    "name": "Next upstairs toilet",
+    "m": 1179,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.653185667,
+    "lng": -3.028303124
+   },
+   "nearestBabyChange": {
+    "id": "a3c135325d79081bb565d01d",
+    "name": "ASDA Cwmbran",
+    "m": 1472,
+    "babyChange": true,
+    "accessible": null,
+    "free": true,
+    "lat": 51.654450576,
+    "lng": -3.024163842
+   }
+  },
   "playground-off-woolsthorpe-road-colsterworth-south-kesteven": {
    "nearest": {
     "id": "bdbfe5d033b26954018b5f38",
@@ -155804,6 +159065,18 @@
   },
   "playground-off-worcester-crescent-willand-mid-devon": {
    "nearest": null
+  },
+  "playground-off-wordsworth-avenue-cogan-penarth": {
+   "nearest": {
+    "id": "3135f2468b84fe4af4633bed",
+    "name": "Tesco",
+    "m": 813,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 51.445722912,
+    "lng": -3.185884953
+   }
   },
   "playground-off-wordsworth-avenue-laleston-cefn-glas": {
    "nearest": {
@@ -156035,6 +159308,9 @@
     "lng": -4.402980208
    }
   },
+  "playground-off-wrinstone-drive-wenvoe": {
+   "nearest": null
+  },
   "playground-off-wroe-street-northorpe-heckmondwike": {
    "nearest": {
     "id": "946e6067139bce300229213f",
@@ -156143,6 +159419,28 @@
     "free": true,
     "lat": 51.679302999,
     "lng": -3.995450735
+   }
+  },
+  "playground-off-y-rhodfa-barry-island-barry": {
+   "nearest": {
+    "id": "0f8d386d70ab7c585e4c9b16",
+    "name": "Town Centre",
+    "m": 849,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.407032618,
+    "lng": -3.267019093
+   },
+   "nearestBabyChange": {
+    "id": "ac09a4862a5b32d864f4d90c",
+    "name": "Public toilet",
+    "m": 1131,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.390454817,
+    "lng": -3.27743605
    }
   },
   "playground-off-y-rhodfa-dyffryn-clydach-neath-abbey": {
@@ -162117,6 +165415,28 @@
     "lng": -1.473787329
    }
   },
+  "romily-playground-the-knap-barry": {
+   "nearest": {
+    "id": "822fdb95de8d5e5d260387cd",
+    "name": "Barry Station",
+    "m": 623,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.396781807,
+    "lng": -3.284997567
+   },
+   "nearestBabyChange": {
+    "id": "ac09a4862a5b32d864f4d90c",
+    "name": "Public toilet",
+    "m": 1209,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.390454817,
+    "lng": -3.27743605
+   }
+  },
   "romsey-sports-centre-playground-tadburn-romsey": {
    "nearest": {
     "id": "6ddbf6e0baa37f0846287f81",
@@ -162978,6 +166298,18 @@
     "free": true,
     "lat": 51.429291544,
     "lng": -0.322414935
+   }
+  },
+  "royal-park-treharris": {
+   "nearest": {
+    "id": "004e35af3d8a069edf32b3df",
+    "name": "Taff Bargoed Park",
+    "m": 917,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.6702978,
+    "lng": -3.3003431
    }
   },
   "royal-victoria-gardens-newham": {
@@ -169151,6 +172483,18 @@
     "lng": -1.448478699
    }
   },
+  "st-brides-major-playground-st-brides-major-ogmore-by-sea": {
+   "nearest": {
+    "id": "c9cae4347fc5eda8c71b95ae",
+    "name": "Ogmore Beach",
+    "m": 985,
+    "babyChange": null,
+    "accessible": true,
+    "free": false,
+    "lat": 51.466275,
+    "lng": -3.639698625
+   }
+  },
   "st-brides-playground-colchester": {
    "nearest": {
     "id": "ae24072234cf55bca078e68f",
@@ -170131,6 +173475,9 @@
     "lat": 50.43374315,
     "lng": -3.565444032
    }
+  },
+  "st-nicholas-and-bonvilston-playground-st-nicholas-and-bonvil": {
+   "nearest": null
   },
   "st-nicholas-church-playground-brighton": {
    "nearest": {
@@ -172640,6 +175987,18 @@
     "free": false,
     "lat": 50.901346381,
     "lng": -1.331920624
+   }
+  },
+  "sully-and-lavernock-playground-sully-and-lavernock-vale-of-g": {
+   "nearest": {
+    "id": "8ec9bf8346b208074daed639",
+    "name": "Public toilet",
+    "m": 377,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.416043014,
+    "lng": -3.182791186
    }
   },
   "sumatra-road-open-space-playground-west-hampstead-greater-lo": {
@@ -175549,6 +178908,28 @@
     "lng": -2.254337668
    }
   },
+  "the-meadows-play-area-ewenny-corntown": {
+   "nearest": {
+    "id": "1bf3a16ff1816db511c3c928",
+    "name": "Dunelm",
+    "m": 994,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.494636303,
+    "lng": -3.561726298
+   },
+   "nearestBabyChange": {
+    "id": "ecde530f8b5719522117f9e7",
+    "name": "Asda cheapside",
+    "m": 2221,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.504044383,
+    "lng": -3.573313951
+   }
+  },
   "the-moatfield-play-area-bushey": {
    "nearest": {
     "id": "fc1cf7d0e3edb420148aad20",
@@ -176077,6 +179458,28 @@
     "lng": -3.008229733
    }
   },
+  "therapy-play-southville-cwmbr-n": {
+   "nearest": {
+    "id": "2aaacd8fe96a649cd3e13f29",
+    "name": "Cwmbran Bus Station",
+    "m": 131,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.654134405,
+    "lng": -3.020231724
+   },
+   "nearestBabyChange": {
+    "id": "6c973d49a3a6f88e2e41d840",
+    "name": "Greggs",
+    "m": 141,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.654553738,
+    "lng": -3.020510674
+   }
+  },
   "thirlmere-drive-play-area-dronfield": {
    "nearest": {
     "id": "ada698a7107cad2d582a74cf",
@@ -176189,6 +179592,18 @@
     "free": true,
     "lat": 51.576102731,
     "lng": -0.014942586
+   }
+  },
+  "thomas-town-playground-thomas-town-merthyr-tydfil": {
+   "nearest": {
+    "id": "689a4ed99dc90c333cce05e3",
+    "name": "Thomastown Park (below flat)",
+    "m": 27,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.746968669,
+    "lng": -3.371880054
    }
   },
   "thomasson-park-bolton": {
@@ -178352,6 +181767,18 @@
     "lng": -1.263481379
    }
   },
+  "twt-park-llanblethian-cowbridge": {
+   "nearest": {
+    "id": "423d99ad89065bbf75eae3ea",
+    "name": "Waitrose",
+    "m": 118,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.461159974,
+    "lng": -3.448079492
+   }
+  },
   "twyning-playground-twyning-tewkesbury": {
    "nearest": {
     "id": "45a692c345d0cf1cfcb7d43f",
@@ -179175,6 +182602,12 @@
     "lat": 51.487364019,
     "lng": -0.119001567
    }
+  },
+  "vaynor-playground-vaynor-pontsticill-2": {
+   "nearest": null
+  },
+  "vaynor-playground-vaynor-pontsticill": {
+   "nearest": null
   },
   "velvet-lawn-play-area-berkhamsted": {
    "nearest": {
@@ -182287,6 +185720,30 @@
     "lng": -0.505671501
    }
   },
+  "west-camp-playground-west-camp-llantwit-major-2": {
+   "nearest": {
+    "id": "780547196bdbbe46b03bc392",
+    "name": "Public toilet",
+    "m": 965,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.4081804,
+    "lng": -3.4803414
+   }
+  },
+  "west-camp-playground-west-camp-llantwit-major": {
+   "nearest": {
+    "id": "780547196bdbbe46b03bc392",
+    "name": "Public toilet",
+    "m": 142,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.4081804,
+    "lng": -3.4803414
+   }
+  },
   "west-crescent-play-area-duckmanton": {
    "nearest": {
     "id": "6ccb78f9deffcb2821056fae",
@@ -184286,6 +187743,12 @@
     "lat": 51.20174387,
     "lng": -0.162487674
    }
+  },
+  "wick-playground-wick-2": {
+   "nearest": null
+  },
+  "wick-playground-wick": {
+   "nearest": null
   },
   "wicken-fen-national-nature-reserve-adventurers-fen": {
    "nearest": {
@@ -186495,6 +189958,28 @@
     "lng": -4.14219396
    }
   },
+  "woodland-walk-play-area-ynysfach-merthyr-tydfil": {
+   "nearest": {
+    "id": "aa8bd8554da1542f0a39a9e2",
+    "name": "Civic Centre",
+    "m": 328,
+    "babyChange": false,
+    "accessible": false,
+    "free": false,
+    "lat": 51.747133074,
+    "lng": -3.381326795
+   },
+   "nearestBabyChange": {
+    "id": "ca036e363fc13263dca90d5a",
+    "name": "Cyfarthfa Park Canolfan",
+    "m": 1157,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 51.756445009,
+    "lng": -3.387823105
+   }
+  },
   "woodlands-avenue-playground-lydgate-todmorden": {
    "nearest": {
     "id": "37a24c6afeef7e1a904ff48d",
@@ -187940,6 +191425,9 @@
     "lat": 53.424139558,
     "lng": -2.324244082
    }
+  },
+  "young-explorers-park-st-athan-flemingston": {
+   "nearest": null
   },
   "younger-childrens-play-area-dyserth": {
    "nearest": null
