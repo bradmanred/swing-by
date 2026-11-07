@@ -25,4 +25,8 @@ runs:
         if git show FETCH_HEAD:osm-places.json.gz 2>/dev/null | gunzip > "$RUNNER_TEMP/osm/places.json"; then
           echo "OSM_PLACES=$RUNNER_TEMP/osm/places.json" >> "$GITHUB_ENV"
         fi
+        # Outlines of places and parishes, in snapshots made since 7 November 2026.
+        if git show FETCH_HEAD:osm-areas.json.gz 2>/dev/null | gunzip > "$RUNNER_TEMP/osm/areas.json"; then
+          echo "OSM_AREAS=$RUNNER_TEMP/osm/areas.json" >> "$GITHUB_ENV"
+        fi
         echo "Using the OpenStreetMap snapshot from $date ($age days old)."

@@ -12,22 +12,24 @@
 //                            a council's park by name: [{ id, lat, lng, name, kind }]
 //   osm-places.json.gz       with --places: named cities, towns, villages, suburbs, neighbourhoods and hamlets,
 //                            [{ n: name, k: kind, lat, lng }]
-//   meta.json                { date, playgrounds, parks, places, named, source }
+//   osm-areas.json.gz        with --areas: outlines of mapped places and civil parishes,
+//                            [{ n: name, k: kind or 'parish', bb: [west, south, east, north], r: [[lng, lat, ...], ...] }]
+//   meta.json                { date, playgrounds, parks, places, areas, named, source }
 // A point stands for each feature: the node itself, or the middle of a way or area's outline.
 //
-//   node scripts/osm-snapshot.mjs out-folder play1.geojsonseq [...] [--roads roads1.geojsonseq ...] [--places places1.geojsonseq ...]
+//   node scripts/osm-snapshot.mjs out-folder play1.geojsonseq [...] [--roads roads1.geojsonseq ...] [--places places1.geojsonseq ...] [--areas areas1.geojsonseq ...]
 import { createReadStream } from 'node:fs';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { createInterface } from 'node:readline';
 import { gzipSync } from 'node:zlib';
-import { PLACE_KM, ROAD_KINDS, roadFinder } from './osm-names.mjs';
+import { PLACE_KM, ROAD_KINDS, roadFinder, simplifyRing } from './osm-names.mjs';
 
 const [out, ...rest] = process.argv.slice(2);
-const inputs = { play: [], roads: [], places: [] };
+const inputs = { play: [], roads: [], places: [], areas: [] };
 let into = 'play';
 for (const a of rest) {
-  if (a === '--roads' || a === '--places') into = a.slice(2);
+  if (a === '--roads' || a === '--places' || a === '--areas') into = a.slice(2);
   else inputs[into].push(a);
 }
 if (!out || !inputs.play.length) throw new Error('Usage: node scripts/osm-snapshot.mjs out-folder play.geojsonseq ... [--roads roads.geojsonseq ...] [--places places.geojsonseq ...]');
@@ -103,14 +105,32 @@ for await (const f of features(inputs.places)) {
   places.push({ n: String(p.name), k: p.place, lat: round(lat), lng: round(lng) });
 }
 
+// Outlines of mapped places and civil parishes (admin_level 10), simplified to about 20 m, so imports can tell which
+// suburb, village or parish a playground is inside, as Nominatim does.
+const areas = [];
+for await (const f of features(inputs.areas)) {
+  const p = f.properties ?? {};
+  const kind = PLACE_KM[p.place] ? p.place : p.boundary === 'administrative' && String(p.admin_level) === '10' ? 'parish' : null;
+  if (!p.name || !kind) continue;
+  const g = f.geometry;
+  const polys = g.type === 'Polygon' ? [g.coordinates] : g.type === 'MultiPolygon' ? g.coordinates : [];
+  const r = polys.flat().map((ring) => simplifyRing(ring)).filter((ring) => ring.length);
+  if (!r.length) continue;
+  let w = Infinity, s = Infinity, e = -Infinity, n = -Infinity;
+  for (const ring of r)
+    for (let i = 0; i < ring.length; i += 2) (w = Math.min(w, ring[i])), (e = Math.max(e, ring[i])), (s = Math.min(s, ring[i + 1])), (n = Math.max(n, ring[i + 1]));
+  areas.push({ n: String(p.name), k: kind, bb: [w, s, e, n], r });
+}
+
 await mkdir(out, { recursive: true });
+if (inputs.areas.length) await writeFile(join(out, 'osm-areas.json.gz'), gzipSync(JSON.stringify(areas)));
 await writeFile(join(out, 'osm-playgrounds.json.gz'), gzipSync(JSON.stringify(list)));
 await writeFile(join(out, 'osm-parks.json.gz'), gzipSync(JSON.stringify([...parks.values()])));
 if (inputs.places.length) await writeFile(join(out, 'osm-places.json.gz'), gzipSync(JSON.stringify(places)));
 const meta = {
   date: new Date().toISOString().slice(0, 10), playgrounds: playgrounds.size, parks: parks.size,
-  ...(inputs.roads.length && { named }), ...(inputs.places.length && { places: places.length }),
+  ...(inputs.roads.length && { named }), ...(inputs.places.length && { places: places.length }), ...(inputs.areas.length && { areas: areas.length }),
   source: 'Geofabrik extracts of OpenStreetMap (© OpenStreetMap contributors, ODbL)',
 };
 await writeFile(join(out, 'meta.json'), JSON.stringify(meta, null, 1) + '\n');
-console.log(`${meta.playgrounds} playgrounds (${named} with a street name within 250 m), ${meta.parks} named parks and open spaces, ${places.length} named places`);
+console.log(`${meta.playgrounds} playgrounds (${named} with a street name within 250 m), ${meta.parks} named parks and open spaces, ${places.length} named places, ${areas.length} place and parish outlines`);
