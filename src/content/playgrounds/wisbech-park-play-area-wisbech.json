@@ -1,0 +1,28 @@
+{
+  "name": "Wisbech Park Play Area",
+  "region": "east",
+  "area": "Wisbech",
+  "lat": 52.66686,
+  "lng": 0.16647,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "On Fenland District Council's list of play areas (Wisbech).",
+  "nearby": [],
+  "operator": "Fenland District Council",
+  "sources": [
+    {
+      "label": "Fenland District Council: Wisbech Park Play Area",
+      "url": "https://fenland.gov.uk/playareas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/413046423"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

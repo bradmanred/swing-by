@@ -11,6 +11,11 @@ import { pins } from './pins.js';
 
 // Old playground address → the listing it was merged into. Add a line whenever two listings are merged.
 const MERGED = {
+  'playground-off-loganberry-road-ravenswood-ipswich': 'bilberry-road-play-area-ipswich-ravenswood-ipswich',
+  'playground-off-havergate-road-ravenswood-ipswich-2': 'breydon-way-play-area-ipswich-ravenswood-ipswich',
+  'playground-off-havergate-road-ravenswood-ipswich': 'havergate-road-play-area-ipswich-ravenswood-ipswich',
+  'playground-off-saturn-road-westbourne-ipswich': 'saturn-road-play-area-ipswich-westbourne-ipswich',
+  'playground-off-downside-close-stoke-park-ipswich': 'whitland-close-play-area-ipswich-thorington-park-ipswich',
   'playground-off-longlands-road-berwick-hills-middlesbrough': 'henry-street-recreation-ground-playground-north-ormesby-midd',
   'trimdon-avenue-play-area-acklam-middlesbrough': 'kader-avenue-playground-acklam-middlesbrough',
   'playground-off-lytton-street-north-ormesby-middlesbrough': 'saltwells-road-playground-north-ormesby-middlesbrough',

@@ -1,0 +1,30 @@
+{
+  "name": "Heigham Park",
+  "region": "east",
+  "area": "Earlham Rise, Norwich",
+  "lat": 52.62584,
+  "lng": 1.26915,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A playground on Norwich City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Norwich City Council",
+  "sources": [
+    {
+      "label": "Norwich City Council: Heigham Park",
+      "url": "https://www.norwich.gov.uk/sports-and-leisure/find-outdoor-sports-and-activity-facilities/heigham-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/48547974"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours and parking.",
+  "photo": null
+}

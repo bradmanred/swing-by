@@ -18,6 +18,10 @@
    "playgrounds": 949
   },
   {
+   "name": "Norfolk",
+   "playgrounds": 809
+  },
+  {
    "name": "Hertfordshire",
    "playgrounds": 736
   },
@@ -62,8 +66,16 @@
    "playgrounds": 193
   },
   {
+   "name": "Cambridgeshire",
+   "playgrounds": 178
+  },
+  {
    "name": "Surrey",
    "playgrounds": 178
+  },
+  {
+   "name": "Suffolk",
+   "playgrounds": 106
   },
   {
    "name": "Isle of Wight",
@@ -78,16 +90,8 @@
    "playgrounds": 65
   },
   {
-   "name": "Cambridgeshire",
-   "playgrounds": 53
-  },
-  {
    "name": "East Sussex",
    "playgrounds": 49
-  },
-  {
-   "name": "Suffolk",
-   "playgrounds": 42
   },
   {
    "name": "Staffordshire",
@@ -179,10 +183,6 @@
   },
   {
    "name": "Herefordshire",
-   "playgrounds": 3
-  },
-  {
-   "name": "Norfolk",
    "playgrounds": 3
   }
  ],
