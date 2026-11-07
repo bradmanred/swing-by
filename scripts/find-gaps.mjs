@@ -37,7 +37,9 @@ const UA = { 'User-Agent': 'SwingBy/1.0 (https://swing-by.co.uk; finds playgroun
 const OVERPASS = ['https://overpass-api.de/api/interpreter', 'https://overpass.kumi.systems/api/interpreter', 'https://overpass.private.coffee/api/interpreter'];
 const arg = (name, dflt) => (process.argv.includes(name) ? process.argv[process.argv.indexOf(name) + 1] : dflt);
 const ADD = Number(arg('--add', 0)) || 0;
+// One county, or several separated by commas ("Norfolk, Suffolk, Cambridgeshire").
 const ONLY = arg('--only', '');
+const ONLY_SET = new Set(ONLY.split(',').map((x) => x.trim().toLowerCase()).filter(Boolean));
 const LIMIT = Number(arg('--limit', 0)) || Infinity;
 const OSM_FALLBACK = process.argv.includes('--osm-fallback');
 const TODAY = new Date().toISOString().slice(0, 10);
@@ -216,9 +218,9 @@ const started = Date.now();
 let startAt = 0;
 if (!ONLY && SCAN_MS) startAt = (JSON.parse(await readFile(PROGRESS, 'utf8').catch(() => '{}')).next ?? 0) % AREAS.length;
 const ordered = [...AREAS.slice(startAt), ...AREAS.slice(0, startAt)];
-const areas = ordered.filter((a) => !ONLY || a.name.toLowerCase() === ONLY.toLowerCase()).slice(0, LIMIT);
+const areas = ordered.filter((a) => !ONLY || ONLY_SET.has(a.name.toLowerCase())).slice(0, LIMIT);
 const notReached = [];
-if (!areas.length) throw new Error(`No county called ${ONLY}. Use one of: ${AREAS.map((a) => a.name).join(', ')}`);
+if (areas.length < ONLY_SET.size || !areas.length) throw new Error(`No county called ${ONLY}. Use one of: ${AREAS.map((a) => a.name).join(', ')}`);
 const results = [];
 for (const a of areas) {
   if (SCAN_MS && Date.now() - started > SCAN_MS) {
