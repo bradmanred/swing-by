@@ -32,6 +32,7 @@ jobs:
           mkdir -p work && cd work
           # Only the tags the snapshot reads, so the street files stay small.
           echo '{"attributes":{"type":true,"id":true},"include_tags":["name","highway","place"]}' > names.json
+          echo '{"attributes":{"type":true,"id":true},"include_tags":["name","place","boundary","admin_level"]}' > areas.json
           for area in europe/great-britain europe/ireland-and-northern-ireland; do
             name=$(basename "$area")
             curl -sSfL --retry 3 -o "$name.osm.pbf" "https://download.geofabrik.de/$area-latest.osm.pbf"
@@ -45,11 +46,14 @@ jobs:
             osmium export -O -f geojsonseq -c names.json --geometry-types=linestring,polygon -o "$name.roads.geojsonseq" "$name-named.osm.pbf"
             osmium tags-filter -O -o "$name-places.osm.pbf" "$name.osm.pbf" n/place=city,town,village,hamlet,suburb,quarter,neighbourhood
             osmium export -O -f geojsonseq -c names.json --geometry-types=point -o "$name.places.geojsonseq" "$name-places.osm.pbf"
-            rm "$name.osm.pbf" "$name-streets.osm.pbf" "$name-named.osm.pbf"
+            # Outlines of places and civil parishes (scripts/osm-names.mjs places playgrounds inside them).
+            osmium tags-filter -O -o "$name-areas.osm.pbf" "$name.osm.pbf" a/place=city,town,village,hamlet,suburb,quarter,neighbourhood r/admin_level=10
+            osmium export -O -f geojsonseq -c areas.json --geometry-types=polygon -o "$name.areas.geojsonseq" "$name-areas.osm.pbf"
+            rm "$name.osm.pbf" "$name-streets.osm.pbf" "$name-named.osm.pbf" "$name-areas.osm.pbf"
           done
           ls -la
       - name: Build the snapshot
-        run: node scripts/osm-snapshot.mjs snapshot work/*.play.geojsonseq --roads work/*.roads.geojsonseq --places work/*.places.geojsonseq
+        run: node scripts/osm-snapshot.mjs snapshot work/*.play.geojsonseq --roads work/*.roads.geojsonseq --places work/*.places.geojsonseq --areas work/*.areas.geojsonseq
       - name: Save it to the osm-data branch
         env:
           GH_TOKEN: ${{ github.token }}

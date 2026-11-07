@@ -6,7 +6,7 @@ import { mkdtempSync, readFileSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { gunzipSync } from 'node:zlib';
-import { addressFor, placeIndex, placeNames, roadFinder, toSegment } from '../scripts/osm-names.mjs';
+import { addressFor, inside, placeIndex, placeNames, roadFinder, simplifyRing, toSegment } from '../scripts/osm-names.mjs';
 import { parseCsv, savePlaces } from '../scripts/council-feeds.mjs';
 
 // Distance to a street: perpendicular in the middle, to the end beyond it.
@@ -53,6 +53,32 @@ const herts = placeIndex([
 assert.deepEqual(placeNames(herts, { lat: 51.8, lng: -0.2358 }), { sub: 'Lemsford', town: 'Lemsford' });
 assert.deepEqual(placeNames(herts, { lat: 51.8135, lng: -0.19 }), { sub: 'Haldens', town: 'Welwyn Garden City' });
 
+// Outlines: inside, holes, simplifying.
+const square = (w, s, e, n) => [w, s, e, s, e, n, w, n, w, s];
+const box = { bb: [0, 0, 10, 10], r: [square(0, 0, 10, 10), square(4, 4, 6, 6)] };
+assert.equal(inside({ lng: 2, lat: 2 }, box), true);
+assert.equal(inside({ lng: 5, lat: 5 }, box), false, 'in the hole');
+assert.equal(inside({ lng: 11, lat: 5 }, box), false);
+assert.deepEqual(simplifyRing([[0, 0], [0.5, 0.00001], [1, 0], [1, 1], [0, 1], [0, 0]]), [0, 0, 1, 0, 1, 1, 0, 1, 0, 0], 'a wobble under 20 m goes');
+assert.deepEqual(simplifyRing([[0, 0], [0.00001, 0], [0, 0.00001], [0, 0]]), [], 'too small');
+
+// Birchwood Playground: Stanborough's point is nearer, but the playground is inside Hatfield parish, as Birchwood is,
+// and Stanborough is outside it. Hatfield is the parish's name; Welwyn Garden City's point is nearer but outside.
+const hatfield = { n: 'Hatfield', k: 'parish', bb: [-0.3, 51.7, -0.2234, 51.79], r: [square(-0.3, 51.7, -0.2234, 51.79)] };
+const wgc = placeIndex([
+  { n: 'Stanborough', k: 'village', lat: 51.7884, lng: -0.2172 },
+  { n: 'Birchwood', k: 'suburb', lat: 51.7712, lng: -0.2263 },
+  { n: 'Welwyn Garden City', k: 'town', lat: 51.8, lng: -0.2 },
+  { n: 'Hatfield', k: 'town', lat: 51.7634, lng: -0.2246 },
+], [hatfield]);
+assert.deepEqual(placeNames(wgc, { lat: 51.7884, lng: -0.2237 }), { sub: 'Birchwood', town: 'Hatfield' });
+// Just outside the parish, the nearest places win as before.
+assert.equal(placeNames(wgc, { lat: 51.7884, lng: -0.2200 }).sub, 'Stanborough');
+// A mapped suburb outline beats any point.
+const outlined = placeIndex([{ n: 'Handside', k: 'suburb', lat: 51.8, lng: -0.215 }, { n: 'Welwyn Garden City', k: 'town', lat: 51.8, lng: -0.2 }],
+  [{ n: 'Peartree', k: 'suburb', bb: [-0.22, 51.79, -0.21, 51.81], r: [square(-0.22, 51.79, -0.21, 51.81)] }]);
+assert.deepEqual(placeNames(outlined, { lat: 51.8, lng: -0.2149 }), { sub: 'Peartree', town: 'Welwyn Garden City' });
+
 // addressFor reads the snapshot for playgrounds it has, without any network.
 const address = addressFor([{ id: 'way/1', ...p, road: 'Park Road' }], [{ n: 'Leeds', k: 'city', ...north(4000) }]);
 assert.deepEqual(await address(p, 'way/1'), { road: 'Park Road', sub: '', town: 'Leeds', from: 'snapshot' });
@@ -69,8 +95,14 @@ const roads = seq('a.roads.geojsonseq', [
   { type: 'Feature', properties: { '@type': 'way', '@id': 3, highway: 'residential', name: 'Park Road' }, geometry: { type: 'LineString', coordinates: [[-0.11, north(60).lat], [-0.09, north(60).lat]] } },
   { type: 'Feature', properties: { '@type': 'way', '@id': 4, highway: 'motorway', name: 'M1' }, geometry: { type: 'LineString', coordinates: [[-0.11, north(10).lat], [-0.09, north(10).lat]] } },
 ]);
+const areasF = seq('a.areas.geojsonseq', [
+  { type: 'Feature', properties: { '@type': 'relation', '@id': 6, boundary: 'administrative', admin_level: '10', name: 'Hatfield' }, geometry: { type: 'Polygon', coordinates: [[[-0.3, 51.4], [0, 51.4], [0, 51.6], [-0.3, 51.6], [-0.3, 51.4]]] } },
+  { type: 'Feature', properties: { '@type': 'relation', '@id': 7, boundary: 'administrative', admin_level: '8', name: 'Welwyn Hatfield' }, geometry: { type: 'Polygon', coordinates: [[[-0.3, 51.4], [0, 51.4], [0, 51.6], [-0.3, 51.4]]] } },
+]);
 const plc = seq('a.places.geojsonseq', [{ type: 'Feature', properties: { '@type': 'node', '@id': 5, place: 'city', name: 'Leeds' }, geometry: { type: 'Point', coordinates: [p.lng, north(4000).lat] } }]);
-execFileSync('node', ['scripts/osm-snapshot.mjs', join(dir, 'out'), play, '--roads', roads, '--places', plc], { stdio: 'pipe' });
+execFileSync('node', ['scripts/osm-snapshot.mjs', join(dir, 'out'), play, '--roads', roads, '--places', plc, '--areas', areasF], { stdio: 'pipe' });
+const savedAreas = JSON.parse(gunzipSync(readFileSync(join(dir, 'out/osm-areas.json.gz'))));
+assert.deepEqual(savedAreas.map((a) => [a.n, a.k]), [['Hatfield', 'parish']], 'only parishes, not districts');
 const pg = JSON.parse(gunzipSync(readFileSync(join(dir, 'out/osm-playgrounds.json.gz'))));
 assert.equal(pg[0].road, 'Park Road', 'motorways are not street names');
 assert.equal(JSON.parse(gunzipSync(readFileSync(join(dir, 'out/osm-places.json.gz'))))[0].n, 'Leeds');
