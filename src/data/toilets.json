@@ -5,9 +5,9 @@
   "licence": "CC BY 4.0",
   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
   "note": "Nearest toilets worked out by Swing By from the Toilet Map data.",
-  "export": "toilets-2026-11-05T00%3A00%3A41.033Z-j24EOQmeoWg5BPNKVzx1gOZg5Xr057.csv"
+  "export": "toilets-2026-11-07T00%3A00%3A40.930Z-Sq0hJW6TS1qKxs1a8WY6PDmPuwQTuK.csv"
  },
- "toilets": 15851,
+ "toilets": 15853,
  "parks": {
   "1066-battle-abbey-natural-play-area": {
    "nearest": {
@@ -24320,13 +24320,13 @@
   "curzon-street-moorlands-play-area-long-eaton": {
    "nearest": {
     "id": "9b2c63afd1adb0a974a65975",
-    "name": "West Park Development, Wlsthorpe Road",
-    "m": 1603,
+    "name": "West Park Public Toilets",
+    "m": 1620,
     "babyChange": true,
     "accessible": false,
     "free": true,
-    "lat": 52.896277671,
-    "lng": -1.281330058
+    "lat": 52.896237644,
+    "lng": -1.280891597
    }
   },
   "cuxton-road-play-area-rochester": {
@@ -148318,7 +148318,7 @@
     "m": 259,
     "babyChange": true,
     "accessible": true,
-    "free": false,
+    "free": true,
     "lat": 53.905011309,
     "lng": -1.691446602
    }
@@ -164331,19 +164331,19 @@
     "m": 578,
     "babyChange": null,
     "accessible": true,
-    "free": false,
+    "free": true,
     "lat": 53.455502461,
     "lng": -2.968561649
    },
    "nearestBabyChange": {
-    "id": "eba499492009d7f12edd7a82",
-    "name": "Sainsbury's",
-    "m": 748,
+    "id": "711cea4dcc978872a2806f6a",
+    "name": "Aldi Rice Lane",
+    "m": 735,
     "babyChange": true,
-    "accessible": false,
+    "accessible": null,
     "free": true,
-    "lat": 53.451100589,
-    "lng": -2.962081432
+    "lat": 53.452073371,
+    "lng": -2.966318023
    }
   },
   "richard-macvicar-adventure-playground-lewisham": {
