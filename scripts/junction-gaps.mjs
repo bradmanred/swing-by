@@ -156,7 +156,7 @@ if (toAdd.length) {
     const reg = region(pc);
     if (!reg) continue;
     // Street and place names from the snapshot when it has them (scripts/osm-names.mjs), otherwise Nominatim.
-    const a = await address(p, p.id);
+    const a = await address(p, p.id, pc);
     let road = a.road;
     if (BIG_ROAD.test(road)) road = '';
     const sub = a.sub;

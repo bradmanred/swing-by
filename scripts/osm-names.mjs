@@ -16,7 +16,8 @@ export const ROAD_M = 250;
 // names a playground after one); scripts drop A-road numbers and bypasses as before.
 export const ROAD_KINDS = new Set(['trunk', 'trunk_link', 'primary', 'primary_link', 'secondary', 'secondary_link', 'tertiary', 'tertiary_link', 'unclassified', 'residential', 'living_street', 'service', 'road', 'pedestrian', 'footway']);
 // How far each kind of place reaches, in km, roughly the size of the area it names.
-export const PLACE_KM = { suburb: 1.6, quarter: 1.2, neighbourhood: 0.7, village: 1.8, hamlet: 0.8, town: 4, city: 9 };
+// Tuned against the ~6,000 playgrounds Nominatim named (scripts/osm-names-check.mjs, November 2026).
+export const PLACE_KM = { suburb: 1.6, quarter: 1.2, neighbourhood: 0.7, village: 1.1, hamlet: 0.8, town: 4, city: 9 };
 
 const R = Math.PI / 180;
 /** Metres per degree of longitude and latitude near a latitude. */
@@ -82,26 +83,31 @@ export function placeIndex(places) {
 /**
  * The suburb (or village, neighbourhood or hamlet) and the town (or city, or village) a point is in, the way
  * Nominatim's address gives them: "sub" is the first of suburb, village, neighbourhood and hamlet that reaches it, and
- * "town" the town or city that reaches it most strongly, or the village when that's nearer.
+ * "town" the town or city that reaches it most strongly, or the village when that's nearer. pc (the point's
+ * postcodes.io details, optional) settles two cases Nominatim decides by boundaries rather than distance: anywhere in
+ * London is "Greater London", and a city council's own area (Liverpool, Sheffield, Birmingham) takes the city's name
+ * even far from its centre.
  */
-export function placeNames(index, p) {
+export function placeNames(index, p, pc = null) {
   const near = [];
   const y = Math.floor(p.lat / 0.1), x = Math.floor(p.lng / 0.15);
   for (let a = -1; a <= 1; a++)
     for (let b = -1; b <= 1; b++)
       for (const q of index.get(`${y + a},${x + b}`) ?? []) {
-        const reach = PLACE_KM[q.k];
-        if (!reach) continue;
         const d = metres(p, q) / 1000;
-        if (d <= reach) near.push({ q, d, w: d / reach });
+        const reach = PLACE_KM[q.k];
+        if (reach && d <= reach) near.push({ q, d, w: d / reach });
+        else if (q.k === 'city' && pc?.admin_district && q.n === pc.admin_district) near.push({ q, d, w: 0, own: true });
       }
-  const nearest = (...kinds) => near.filter((c) => kinds.includes(c.q.k)).sort((m, n) => m.d - n.d)[0];
+  const nearest = (...kinds) => near.filter((c) => kinds.includes(c.q.k) && !c.own).sort((m, n) => m.d - n.d)[0];
   const subHit = nearest('suburb', 'quarter') ?? nearest('village') ?? nearest('neighbourhood') ?? nearest('hamlet');
-  let townHit = near.filter((c) => c.q.k === 'town' || c.q.k === 'city').sort((m, n) => m.w - n.w)[0];
+  const own = near.find((c) => c.q.k === 'city' && pc?.admin_district && c.q.n === pc.admin_district);
+  let townHit = own ?? near.filter((c) => c.q.k === 'town' || c.q.k === 'city').sort((m, n) => m.w - n.w)[0];
   // A village nearer than any town is its own place, not part of the town (Nominatim: town ?? city ?? village).
   const village = nearest('village');
-  if (village && (!townHit || village.d < townHit.d)) townHit = village;
-  return { sub: subHit?.q.n ?? '', town: townHit?.q.n ?? '' };
+  if (!own && village && (!townHit || village.d < townHit.d)) townHit = village;
+  const town = pc?.region === 'London' ? 'Greater London' : townHit?.q.n ?? '';
+  return { sub: subHit?.q.n ?? '', town };
 }
 
 /** Reads a JSON file, gzipped or not. */
@@ -116,18 +122,18 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 /**
  * Names for writing new playground files. snapshot: the playgrounds in the snapshot (OSM_PLAYGROUNDS); places: the
  * named places (OSM_PLACES). Both are optional: without the new snapshot format, every lookup goes to Nominatim.
- * address(p, osmId) returns { road, sub, town, from: 'snapshot' | 'nominatim' }.
+ * address(p, osmId, pc) (pc: the point's postcodes.io details, optional) returns { road, sub, town, from: 'snapshot' | 'nominatim' }.
  */
 export function addressFor(snapshot = [], places = null) {
   const byId = new Map(snapshot.map((p) => [p.id, p]));
   const index = places ? placeIndex(places) : null;
   let last = 0;
   const counts = { snapshot: 0, nominatim: 0 };
-  const address = async (p, osmId) => {
+  const address = async (p, osmId, pc = null) => {
     const s = osmId ? byId.get(osmId) : null;
     if (index && s) {
       counts.snapshot++;
-      return { road: s.road ?? '', ...placeNames(index, s), from: 'snapshot' };
+      return { road: s.road ?? '', ...placeNames(index, s, pc), from: 'snapshot' };
     }
     const wait = last + 1100 - Date.now();
     if (wait > 0) await sleep(wait);

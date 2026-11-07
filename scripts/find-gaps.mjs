@@ -326,7 +326,7 @@ if (toAdd.length) {
     const reg = region(pc);
     if (!reg) continue;
     // Street and place names from the snapshot (scripts/osm-names.mjs); Nominatim only for council pins it didn't place.
-    const a = await address(p, p.kind === 'osm' ? p.id : p.osm);
+    const a = await address(p, p.kind === 'osm' ? p.id : p.osm, pc);
     let road = a.road;
     if (BIG_ROAD.test(road)) road = '';
     const sub = a.sub;
