@@ -45,11 +45,21 @@ Parks with no map point or postcode on their page are found by name in the month
 
 Only parks whose page mentions a playground or play area are kept; add `"allPlay": true` when the category is the council's own playgrounds list. The other options are described at the top of `scripts/council-readers.mjs`. Before adding a feed, check it with the **Try a council list** workflow (Actions tab, paste the feed line), which lists what it finds without changing anything. Then run **Check coverage** for the county with "Add up to this many" set, rather than waiting for the monthly run. Each council costs about 10 minutes of Actions time this way; councils on other systems still need pages saved with **Fetch pages** and the playgrounds added by hand.
 
+### Town and parish councils: register them too
+
+A district council's list never covers the play areas its town and parish councils run, and in many rural districts (most of Norfolk, Suffolk and Cambridgeshire, North Yorkshire) that's nearly all of them. Each town or parish council you check gets its own entry in `src/data/council-sources.json`, with its district and its `parish` exactly as postcodes.io names it (the parish shown for any postcode in it, such as "Knaresborough" or "Northaw and Cuffley"):
+
+```json
+{ "district": "North Yorkshire", "parish": "Knaresborough", "council": "Knaresborough Town Council", "sources": ["https://…/play-areas"], "note": "…", "feed": { "type": "list", "file": "src/data/council-lists/knaresborough.csv", "page": "https://…/play-areas" } }
+```
+
+Give it a `feed` (usually a small `list`) when it names its play areas; with no list, register it anyway with a `note` saying what you found, so it drops off the to-do table. Its feed is read whenever its district is checked, and its records replace any OpenStreetMap-only copies of the same play areas. Until a town or parish council is checked, its district's gaps there are still filled from OpenStreetMap as Unverified, and the coverage report lists it under "Then their town and parish councils".
+
 ## 2. Cross-check for gaps
 
 After importing, look for playgrounds you may still have missed:
 
-- **OpenStreetMap.** Compare against places tagged `leisure=playground` in the district (for example with overpass-turbo.eu). OpenStreetMap is a strong source: a playground mapped there can go in even when no council lists it. Use the OpenStreetMap page for the playground (for example `https://www.openstreetmap.org/way/123`) as its source, leave `checked` blank so the site labels it "Unverified" until an official source or a parent confirms it, and keep the OpenStreetMap credit. Check the council's own sources (section 1) first, and only fill the remaining gaps from OpenStreetMap: a council list usually gives a name, more detail and a verified listing. Once a district's council sources have been worked through, add it to `src/data/council-sources.json` so the monthly coverage check knows it can fill that district's remaining gaps from OpenStreetMap.
+- **OpenStreetMap.** Compare against places tagged `leisure=playground` in the district (for example with overpass-turbo.eu). OpenStreetMap is a strong source: a playground mapped there can go in even when no council lists it. Use the OpenStreetMap page for the playground (for example `https://www.openstreetmap.org/way/123`) as its source, leave `checked` blank so the site labels it "Unverified" until an official source or a parent confirms it, and keep the OpenStreetMap credit. Check the council's own sources (section 1) first, and only fill the remaining gaps from OpenStreetMap: a council list usually gives a name, more detail and a verified listing. Once a district's council sources have been worked through, add it to `src/data/council-sources.json` so the monthly coverage check knows it can fill that district's remaining gaps from OpenStreetMap. Then do the same for its town and parish councils: the coverage report's "Then their town and parish councils" table lists those with the most playgrounds still missing, biggest first.
 - **Playing fields and recreation grounds.** Search the council and ParksHerts for "playing field" and "recreation ground" in each town. Many have a play area that isn't listed separately.
 - **Local knowledge.** Reports from parents (the Suggest form, or comments like "why isn't X listed?") often point straight at a missing source type. Add that source type here.
 
