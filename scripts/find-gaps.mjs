@@ -22,12 +22,15 @@
 // Playgrounds from OpenStreetMap follow docs/finding-playgrounds.md: Unverified (no "checked" date), the
 // OpenStreetMap page as the source, and the OpenStreetMap credit. Ones tagged private or indoor, or at schools,
 // pubs, hotels and holiday parks, are left out, as are ones within 150 m of a playground we list.
+// OpenStreetMap's playgrounds come from the monthly snapshot (.github/actions/osm-snapshot) when there is a recent one,
+// and from Overpass only when there isn't; new playgrounds are named from it too (scripts/osm-names.mjs).
 // Run by .github/workflows/coverage.yml.
 import { countyOf } from './counties.mjs';
 import { SAME_M, osmIds, samePlace } from './same-place.mjs';
 import { mkdir, readFile, readdir, unlink, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { readFeed } from './council-feeds.mjs';
+import { snapshotNames } from './osm-names.mjs';
 
 const DIR = 'src/content/playgrounds';
 const UA = { 'User-Agent': 'SwingBy/1.0 (https://swing-by.co.uk; finds playgrounds missing from the site)' };
@@ -141,6 +144,7 @@ for (const p of SNAP) {
   snapGrid.set(k, [...(snapGrid.get(k) ?? []), p]);
 }
 const usedOsm = new Set();
+const address = await snapshotNames();
 const NAME_SKIP = new Set('play area areas playground playgrounds park parks the and of gardens garden recreation ground open space common green field fields playing children childrens'.split(' '));
 const nameWords = (s) => String(s ?? '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').split(' ').filter((w) => w.length > 2 && !NAME_SKIP.has(w));
 /**
@@ -226,9 +230,17 @@ for (const a of areas) {
     ? `area["ISO3166-2"="${a.iso}"]`
     : `(area["boundary"="ceremonial"]["name"~"^(County |City of )?${a.name}$"];area["boundary"="administrative"]["admin_level"="6"]["name"~"^(County |City of )?${a.name}$"];)`;
   console.log(`${a.name}…`);
-  const els = await overpass(`[out:json][timeout:600][maxsize:1073741824];${sel}->.a;nwr[leisure=playground](area.a);out center tags;`);
   let osm, missing;
-  if (els) {
+  if (SNAP.length) {
+    // The saved monthly snapshot has the same playgrounds as Overpass, without the wait: Overpass is often overloaded,
+    // and runs used to spend up to 17 minutes waiting on it before falling back to the snapshot anyway.
+    ({ osm, missing } = await fromSnapshot(a.name));
+  } else {
+    const els = await overpass(`[out:json][timeout:600][maxsize:1073741824];${sel}->.a;nwr[leisure=playground](area.a);out center tags;`);
+    if (!els) {
+      results.push({ ...a, error: 'OpenStreetMap could not be reached' });
+      continue;
+    }
     osm = els
       .map((e) => ({ id: `${e.type}/${e.id}`, lat: e.lat ?? e.center?.lat, lng: e.lon ?? e.center?.lon, tags: e.tags ?? {} }))
       .filter((p) => p.lat != null && isPublic(p.tags));
@@ -236,17 +248,10 @@ for (const a of areas) {
     // Which council each missing playground is in.
     const where = await lookup(missing);
     missing.forEach((p, i) => (p.pc = where[i]));
-  } else if (SNAP.length) {
-    // Overpass is often overloaded. The saved snapshot has the same playgrounds; sort them into counties instead.
-    console.log(`  Overpass couldn't be reached, so using the saved OpenStreetMap snapshot for ${a.name}`);
-    ({ osm, missing } = await fromSnapshot(a.name));
-  } else {
-    results.push({ ...a, error: 'OpenStreetMap could not be reached' });
-    continue;
+    await sleep(5000);
   }
   results.push({ ...a, osm: osm.length, covered: osm.length - missing.length, missing });
   console.log(`  ${osm.length} public playgrounds on OpenStreetMap, ${missing.length} not on Swing By`);
-  await sleep(5000);
 }
 const done = results.filter((r) => !r.error);
 
@@ -320,13 +325,12 @@ if (toAdd.length) {
     const pc = pcs[i];
     const reg = region(pc);
     if (!reg) continue;
-    const a = await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&zoom=17&addressdetails=1&lat=${p.lat}&lon=${p.lng}`, { headers: UA })
-      .then((r) => r.json()).then((j) => j.address ?? {}).catch(() => ({}));
-    await sleep(1100);
-    let road = a.road ?? a.pedestrian ?? a.footway ?? '';
+    // Street and place names from the snapshot (scripts/osm-names.mjs); Nominatim only for council pins it didn't place.
+    const a = await address(p, p.kind === 'osm' ? p.id : p.osm);
+    let road = a.road;
     if (BIG_ROAD.test(road)) road = '';
-    const sub = a.suburb ?? a.village ?? a.neighbourhood ?? a.hamlet ?? '';
-    const town = a.town ?? a.city ?? a.village ?? pc.admin_district ?? '';
+    const sub = a.sub;
+    const town = a.town || (pc.admin_district ?? '');
     const place = sub || town;
     const area = [...new Set([sub, town].filter(Boolean))].join(', ') || pc.admin_district;
     let doc;
@@ -421,6 +425,8 @@ if (added.council || added.osm)
   lines.push('', `Added ${added.council} playgrounds from council lists (verified${replaced.length ? `, ${replaced.length} of them replacing OpenStreetMap-only listings, whose old addresses now redirect` : ''}) and ${added.osm} from OpenStreetMap (Unverified, in councils whose own lists have been checked${OSM_FALLBACK ? ', plus councils not yet checked' : ''}).`);
 else if (ADD > 0) lines.push('', 'Nothing added: no council list had new playgrounds, and the remaining gaps are all in councils whose own lists need checking first.');
 
+if (address.counts.snapshot + address.counts.nominatim)
+  lines.push('', `Street and place names: ${address.counts.snapshot} from the OpenStreetMap snapshot, ${address.counts.nominatim} looked up on Nominatim.`);
 if (notReached.length) lines.push('', `Not reached this time (the time limit saves Actions minutes; the next run starts here): ${notReached.join(', ')}.`);
 if (!ONLY && SCAN_MS) await writeFile(PROGRESS, JSON.stringify({ next: notReached.length ? AREAS.findIndex((a) => a.name === notReached[0]) : 0 }) + '\n');
 

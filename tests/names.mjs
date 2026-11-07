@@ -1,0 +1,71 @@
+// Street and place names from the OpenStreetMap snapshot (scripts/osm-names.mjs, scripts/osm-snapshot.mjs), and saving
+// street lookups back into council-list CSVs (scripts/council-feeds.mjs).
+import assert from 'node:assert/strict';
+import { execFileSync } from 'node:child_process';
+import { mkdtempSync, readFileSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
+import { gunzipSync } from 'node:zlib';
+import { addressFor, placeIndex, placeNames, roadFinder, toSegment } from '../scripts/osm-names.mjs';
+import { parseCsv, savePlaces } from '../scripts/council-feeds.mjs';
+
+// Distance to a street: perpendicular in the middle, to the end beyond it.
+const p = { lat: 51.5, lng: -0.1 };
+const east = (m) => ({ lat: 51.5, lng: -0.1 + m / 69400 });
+const north = (m) => ({ lat: 51.5 + m / 111200, lng: -0.1 });
+assert.ok(Math.abs(toSegment(p, { ...north(100), lng: -0.11 }, { ...north(100), lng: -0.09 }) - 100) < 2);
+assert.ok(Math.abs(toSegment(p, east(50), east(300)) - 50) < 2);
+
+// Nearest named street within 250 m, fed one street at a time.
+const finder = roadFinder([p, north(5000)]);
+finder.add('Far Lane', [[-0.11, north(240).lat], [-0.09, north(240).lat]]);
+finder.add('Park Road', [[-0.11, north(60).lat], [-0.09, north(60).lat]]);
+finder.add('Over The Hill', [[-0.11, north(400).lat], [-0.09, north(400).lat]]);
+assert.equal(finder.best(0), 'Park Road');
+assert.equal(finder.best(1), '', 'nothing within 250 m');
+
+// Suburb and town, the way Nominatim's address gives them.
+const places = placeIndex([
+  { n: 'Leeds', k: 'city', ...north(4000) },
+  { n: 'Headingley', k: 'suburb', ...north(800) },
+  { n: 'Little Holt', k: 'hamlet', ...east(300) },
+  { n: 'Bramwell', k: 'village', lat: 52.5, lng: -1.5 },
+  { n: 'Market Ford', k: 'town', lat: 52.5, lng: -1.45 },
+]);
+assert.deepEqual(placeNames(places, p), { sub: 'Headingley', town: 'Leeds' }, 'a suburb beats a nearer hamlet');
+assert.deepEqual(placeNames(places, { lat: 52.501, lng: -1.501 }), { sub: 'Bramwell', town: 'Bramwell' }, 'a village nearer than the town is its own place');
+assert.deepEqual(placeNames(places, { lat: 52.501, lng: -1.452 }), { sub: '', town: 'Market Ford' }, 'in the town, beyond the village');
+assert.deepEqual(placeNames(places, { lat: 57, lng: -4 }), { sub: '', town: '' });
+
+// addressFor reads the snapshot for playgrounds it has, without any network.
+const address = addressFor([{ id: 'way/1', ...p, road: 'Park Road' }], [{ n: 'Leeds', k: 'city', ...north(4000) }]);
+assert.deepEqual(await address(p, 'way/1'), { road: 'Park Road', sub: '', town: 'Leeds', from: 'snapshot' });
+assert.equal(address.counts.snapshot, 1);
+
+// The snapshot builder, end to end on a tiny extract.
+const dir = mkdtempSync(join(tmpdir(), 'osm-'));
+const seq = (name, fs) => (writeFileSync(join(dir, name), fs.map((f) => '\x1e' + JSON.stringify(f)).join('\n') + '\n'), join(dir, name));
+const play = seq('a.play.geojsonseq', [
+  { type: 'Feature', properties: { '@type': 'node', '@id': 1, leisure: 'playground' }, geometry: { type: 'Point', coordinates: [p.lng, p.lat] } },
+  { type: 'Feature', properties: { '@type': 'way', '@id': 2, leisure: 'park', name: 'Victoria Park' }, geometry: { type: 'Point', coordinates: [-0.1, 51.6] } },
+]);
+const roads = seq('a.roads.geojsonseq', [
+  { type: 'Feature', properties: { '@type': 'way', '@id': 3, highway: 'residential', name: 'Park Road' }, geometry: { type: 'LineString', coordinates: [[-0.11, north(60).lat], [-0.09, north(60).lat]] } },
+  { type: 'Feature', properties: { '@type': 'way', '@id': 4, highway: 'motorway', name: 'M1' }, geometry: { type: 'LineString', coordinates: [[-0.11, north(10).lat], [-0.09, north(10).lat]] } },
+]);
+const plc = seq('a.places.geojsonseq', [{ type: 'Feature', properties: { '@type': 'node', '@id': 5, place: 'city', name: 'Leeds' }, geometry: { type: 'Point', coordinates: [p.lng, north(4000).lat] } }]);
+execFileSync('node', ['scripts/osm-snapshot.mjs', join(dir, 'out'), play, '--roads', roads, '--places', plc], { stdio: 'pipe' });
+const pg = JSON.parse(gunzipSync(readFileSync(join(dir, 'out/osm-playgrounds.json.gz'))));
+assert.equal(pg[0].road, 'Park Road', 'motorways are not street names');
+assert.equal(JSON.parse(gunzipSync(readFileSync(join(dir, 'out/osm-places.json.gz'))))[0].n, 'Leeds');
+assert.equal(JSON.parse(readFileSync(join(dir, 'out/meta.json'), 'utf8')).named, 1);
+// Without --roads and --places it makes the old two files, as before.
+execFileSync('node', ['scripts/osm-snapshot.mjs', join(dir, 'old'), play], { stdio: 'pipe' });
+assert.equal(JSON.parse(gunzipSync(readFileSync(join(dir, 'old/osm-playgrounds.json.gz'))))[0].road, undefined);
+
+// Street lookups saved back into a council-list CSV, other rows unchanged.
+const rows = parseCsv('name,postcode,where\n"Mercel Avenue Playground, Armthorpe",,"Mercel Avenue, Armthorpe, Doncaster"\nTown Park,DN1 2AB,\n');
+const saved = savePlaces(rows, new Map([['Mercel Avenue Playground, Armthorpe', { lat: 53.536541, lng: -1.05 }]]));
+assert.equal(saved, 'name,postcode,where,lat,lng,placed\n"Mercel Avenue Playground, Armthorpe",,"Mercel Avenue, Armthorpe, Doncaster",53.53654,-1.05,street\nTown Park,DN1 2AB,,,,\n');
+assert.deepEqual(parseCsv(saved)[0].placed, 'street');
+console.log('names: ok');
