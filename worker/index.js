@@ -11,6 +11,9 @@ import { pins } from './pins.js';
 
 // Old playground address → the listing it was merged into. Add a line whenever two listings are merged.
 const MERGED = {
+  'playground-off-longlands-road-berwick-hills-middlesbrough': 'henry-street-recreation-ground-playground-north-ormesby-midd',
+  'trimdon-avenue-play-area-acklam-middlesbrough': 'kader-avenue-playground-acklam-middlesbrough',
+  'playground-off-lytton-street-north-ormesby-middlesbrough': 'saltwells-road-playground-north-ormesby-middlesbrough',
   'playground-off-hafod-y-m-r-abergele': 'maes-canol-play-area-pensarn',
   'playground-off-rhodfa-cilmael-abergele': 'pentre-mawr-park-play-area-pensarn-abergele',
   'playground-off-the-dingle-colwyn-bay': 'eirias-park-play-area-colwyn-bay',

@@ -1,0 +1,34 @@
+{
+  "name": "Tang Hall Community Centre play area",
+  "region": "yorkshire",
+  "area": "Tang Hall, York",
+  "lat": 53.96022,
+  "lng": -1.05799,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc",
+    "fen"
+  ],
+  "opens": "",
+  "description": "A playground on City of York Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of York Council",
+  "sources": [
+    {
+      "label": "City of York Council: Tang Hall Community Centre play area",
+      "url": "https://www.york.gov.uk/directory-record/2830/tang-hall-community-centre-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/222766289"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours and parking.",
+  "photo": null
+}

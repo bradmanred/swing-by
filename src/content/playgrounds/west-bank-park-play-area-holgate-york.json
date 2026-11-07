@@ -1,0 +1,31 @@
+{
+  "name": "West Bank Park play area",
+  "region": "yorkshire",
+  "area": "Holgate, York",
+  "lat": 53.95227,
+  "lng": -1.11231,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on City of York Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of York Council",
+  "sources": [
+    {
+      "label": "City of York Council: West Bank Park play area",
+      "url": "https://www.york.gov.uk/directory-record/2840/west-bank-park-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1108396909"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
