@@ -36,6 +36,11 @@ assert.deepEqual(placeNames(places, p), { sub: 'Headingley', town: 'Leeds' }, 'a
 assert.deepEqual(placeNames(places, { lat: 52.501, lng: -1.501 }), { sub: 'Bramwell', town: 'Bramwell' }, 'a village nearer than the town is its own place');
 assert.deepEqual(placeNames(places, { lat: 52.501, lng: -1.452 }), { sub: '', town: 'Market Ford' }, 'in the town, beyond the village');
 assert.deepEqual(placeNames(places, { lat: 57, lng: -4 }), { sub: '', town: '' });
+// Boundaries Nominatim uses: London, and a city council's own area beyond the city's usual reach.
+assert.deepEqual(placeNames(places, p, { region: 'London', admin_district: 'Islington' }), { sub: 'Headingley', town: 'Greater London' });
+const farOut = { lat: 51.5 + 16000 / 111200, lng: -0.1 }; // 12 km from Leeds's point, past its reach
+assert.equal(placeNames(places, farOut).town, '');
+assert.equal(placeNames(places, farOut, { admin_district: 'Leeds' }).town, 'Leeds');
 
 // addressFor reads the snapshot for playgrounds it has, without any network.
 const address = addressFor([{ id: 'way/1', ...p, road: 'Park Road' }], [{ n: 'Leeds', k: 'city', ...north(4000) }]);
