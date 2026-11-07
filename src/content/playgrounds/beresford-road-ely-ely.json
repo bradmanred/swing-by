@@ -1,0 +1,34 @@
+{
+  "name": "Beresford Road, Ely",
+  "region": "east",
+  "area": "Ely",
+  "lat": 52.40238,
+  "lng": 0.24867,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "bs",
+    "sl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on East Cambridgeshire District Council's own list of play areas.",
+  "nearby": [],
+  "operator": "East Cambridgeshire District Council",
+  "sources": [
+    {
+      "label": "East Cambridgeshire District Council: Beresford Road, Ely",
+      "url": "https://eastcambs.gov.uk/services/parking-open-spaces-and-toilets/parks-and-open-spaces/play-areas/beresford-road-ely"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/489782577"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Morley Drive, Ely",
+  "region": "east",
+  "area": "Ely",
+  "lat": 52.3969,
+  "lng": 0.24146,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "bs"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on East Cambridgeshire District Council's own list of play areas.",
+  "nearby": [],
+  "operator": "East Cambridgeshire District Council",
+  "sources": [
+    {
+      "label": "East Cambridgeshire District Council: Morley Drive, Ely",
+      "url": "https://eastcambs.gov.uk/services/parking-open-spaces-and-toilets/parks-and-open-spaces/play-areas/morley-drive-ely"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/489782560"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

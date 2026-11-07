@@ -1,0 +1,28 @@
+{
+  "name": "Runham Play Area",
+  "region": "east",
+  "area": "Runham",
+  "lat": 52.6423,
+  "lng": 1.64294,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "On Great Yarmouth Borough Council's list of parks and playgrounds (Runham).",
+  "nearby": [],
+  "operator": "Great Yarmouth Borough Council",
+  "sources": [
+    {
+      "label": "Great Yarmouth Borough Council: Runham Play Area",
+      "url": "https://www.great-yarmouth.gov.uk/article/16899/Parks-and-playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/48760717"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,38 @@
+{
+  "name": "Rayners Green, Fordham",
+  "region": "east",
+  "area": "Fordham",
+  "lat": 52.30972,
+  "lng": 0.38119,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "bs",
+    "bk",
+    "sw",
+    "ss",
+    "bb"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on East Cambridgeshire District Council's own list of play areas.",
+  "nearby": [],
+  "operator": "East Cambridgeshire District Council",
+  "sources": [
+    {
+      "label": "East Cambridgeshire District Council: Rayners Green, Fordham",
+      "url": "https://eastcambs.gov.uk/services/parking-open-spaces-and-toilets/parks-and-open-spaces/play-areas/rayners-green-fordham"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1253663680"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

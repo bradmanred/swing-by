@@ -1,0 +1,31 @@
+{
+  "name": "Eaton Park activities",
+  "region": "east",
+  "area": "Eaton, Norwich",
+  "lat": 52.62089,
+  "lng": 1.26271,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sk"
+  ],
+  "access": [],
+  "facilities": [
+    "cf"
+  ],
+  "opens": "",
+  "description": "A playground on Norwich City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Norwich City Council",
+  "sources": [
+    {
+      "label": "Norwich City Council: Eaton Park activities",
+      "url": "https://www.norwich.gov.uk/sports-and-leisure/find-outdoor-sports-and-activity-facilities/eaton-park-activities"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (from the council's map), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
