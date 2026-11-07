@@ -1,0 +1,28 @@
+{
+  "name": "Tremadog Play Area",
+  "region": "wales",
+  "area": "Tremadog",
+  "lat": 52.93811,
+  "lng": -4.14224,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "On Cyngor Gwynedd's list of play fields and open spaces (Tremadog).",
+  "nearby": [],
+  "operator": "Cyngor Gwynedd",
+  "sources": [
+    {
+      "label": "Cyngor Gwynedd: Tremadog Play Area",
+      "url": "https://gwynedd.llyw.cymru/playfields"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/327476894"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

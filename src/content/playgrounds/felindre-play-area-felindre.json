@@ -1,0 +1,28 @@
+{
+  "name": "Felindre Play Area",
+  "region": "wales",
+  "area": "Felindre",
+  "lat": 52.02238,
+  "lng": -3.18962,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "On Powys County Council's list of parks and play areas (Felindre).",
+  "nearby": [],
+  "operator": "Powys County Council",
+  "sources": [
+    {
+      "label": "Powys County Council: Felindre Play Area",
+      "url": "https://en.powys.gov.uk/article/16759/Find-parks-and-play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1462085481"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
