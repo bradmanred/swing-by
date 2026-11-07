@@ -1902,12 +1902,14 @@
       "district": "Pendle",
       "council": "Pendle Borough Council",
       "sources": [
-        "https://www.pendle.gov.uk/directory/11/play_facilities"
+        "https://www.pendle.gov.uk/directory/11/play_facilities/category/58"
       ],
-      "note": "Play facilities directory (Jadu): its whole A to Z, keeping records that mention a playground or play area (7 November 2026; the Play Area category alone had only five). Town and parish councils run some village play areas; those come from OpenStreetMap.",
+      "note": "Play facilities directory (Jadu), Play Area category (7 November 2026). Town and parish councils run some village play areas; those come from OpenStreetMap.",
       "feed": {
         "type": "jadu",
-        "directory": "https://www.pendle.gov.uk/directory/11/play_facilities"
+        "directory": "https://www.pendle.gov.uk/directory/11/play_facilities",
+        "category": 58,
+        "allPlay": true
       }
     },
     {
