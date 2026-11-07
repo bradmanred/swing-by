@@ -61,7 +61,13 @@ const AREAS = [
 
 const councils = JSON.parse(await readFile('src/data/council-sources.json', 'utf8')).councils;
 const norm = (s) => String(s ?? '').toLowerCase().replace(/&/g, 'and').replace(/\b(city of|county of|borough of|council|district|borough|metropolitan|city|county|royal)\b/g, '').replace(/[^a-z]+/g, ' ').trim();
-const councilFor = (district) => councils.find((c) => norm(c.district) === norm(district));
+// District, borough and unitary councils. Town and parish councils are entries with a "parish" (its name as postcodes.io
+// gives it, such as "Knaresborough"): their feeds are read with their district's, and they drop off the list of town and
+// parish councils still to check.
+const councilFor = (district) => councils.find((c) => !c.parish && norm(c.district) === norm(district));
+const parishFor = (district, parish) => councils.find((c) => c.parish && norm(c.district) === norm(district) && norm(c.parish) === norm(parish));
+// postcodes.io's parish for a point, or '' for an unparished area (no town or parish council to check).
+const parishOf = (pc) => (pc?.parish && !/unparished/i.test(pc.parish) ? pc.parish : '');
 
 const km = (a, b) => {
   const r = Math.PI / 180;
@@ -422,6 +428,31 @@ const lines = [
   ...todo.slice(0, 60).map((g) => `| ${g.county} | ${g.district} | ${g.missing.length} | [search](${search(g.district)}) |`),
   ...(todo.length > 60 ? [``, `…and ${todo.length - 60} more councils.`] : []),
 ];
+// Town and parish councils in districts already checked, with the most playgrounds still missing: their own lists are
+// the next to check (docs/finding-playgrounds.md), since the district council's list doesn't cover them.
+const parishTodo = [];
+for (const g of byCouncil.filter((g) => g.council)) {
+  const by = new Map();
+  for (const p of g.missing) {
+    const name = parishOf(p.pc);
+    if (name && !parishFor(g.district, name)) by.set(name, (by.get(name) ?? 0) + 1);
+  }
+  for (const [parish, n] of by) parishTodo.push({ county: g.county, district: g.district, parish, missing: n });
+}
+parishTodo.sort((a, b) => b.missing - a.missing);
+const parishSearch = (t) => `https://duckduckgo.com/?q=${encodeURIComponent(`${t.parish} town OR parish council play areas`)}`;
+if (parishTodo.length)
+  lines.push(
+    '',
+    '## Then their town and parish councils',
+    '',
+    'In councils already checked, these town and parish councils have the most playgrounds still missing (filled from OpenStreetMap as Unverified meanwhile). Check each one\'s play area or recreation ground pages and add it to src/data/council-sources.json with its "parish", and a feed or list if it has one.',
+    '',
+    '| County | Council | Town or parish | Missing | Look for its list |',
+    '| --- | --- | --- | ---: | --- |',
+    ...parishTodo.slice(0, 40).map((t) => `| ${t.county} | ${t.district} | ${t.parish} | ${t.missing} | [search](${parishSearch(t)}) |`),
+    ...(parishTodo.length > 40 ? [``, `…and ${parishTodo.length - 40} more.`] : []),
+  );
 if (feedReport.length) lines.push('', '## Council lists read', '', ...feedReport.map((l) => `- ${l}`));
 if (added.council || added.osm)
   lines.push('', `Added ${added.council} playgrounds from council lists (verified${replaced.length ? `, ${replaced.length} of them replacing OpenStreetMap-only listings, whose old addresses now redirect` : ''}) and ${added.osm} from OpenStreetMap (Unverified, in councils whose own lists have been checked${OSM_FALLBACK ? ', plus councils not yet checked' : ''}).`);
@@ -434,6 +465,6 @@ if (!ONLY && SCAN_MS) await writeFile(PROGRESS, JSON.stringify({ next: notReache
 
 await mkdir('reports', { recursive: true });
 await writeFile('reports/coverage.md', lines.join('\n') + '\n');
-await writeFile('reports/gaps.json', JSON.stringify(byCouncil.map((g) => ({ county: g.county, council: g.district, checked: !!g.council, missing: g.missing.map((p) => ({ id: p.id, lat: p.lat, lng: p.lng, name: p.tags.name ?? null })) })), null, 1));
+await writeFile('reports/gaps.json', JSON.stringify(byCouncil.map((g) => ({ county: g.county, council: g.district, checked: !!g.council, missing: g.missing.map((p) => ({ id: p.id, lat: p.lat, lng: p.lng, name: p.tags.name ?? null, parish: parishOf(p.pc) || null, parishChecked: !!parishFor(g.district, parishOf(p.pc)) })) })), null, 1));
 if (process.env.GITHUB_STEP_SUMMARY) await writeFile(process.env.GITHUB_STEP_SUMMARY, lines.join('\n') + '\n', { flag: 'a' });
 console.log(lines.join('\n'));
