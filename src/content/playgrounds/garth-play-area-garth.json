@@ -1,0 +1,28 @@
+{
+  "name": "Garth Play Area",
+  "region": "wales",
+  "area": "Garth",
+  "lat": 52.1342,
+  "lng": -3.53279,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "On Powys County Council's list of parks and play areas (Garth).",
+  "nearby": [],
+  "operator": "Powys County Council",
+  "sources": [
+    {
+      "label": "Powys County Council: Garth Play Area",
+      "url": "https://en.powys.gov.uk/article/16759/Find-parks-and-play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1002952849"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

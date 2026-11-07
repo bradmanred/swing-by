@@ -1,0 +1,36 @@
+{
+  "name": "Mostyn Play Area",
+  "region": "wales",
+  "area": "Craig-y-don, Llandudno",
+  "lat": 53.31858,
+  "lng": -3.8327,
+  "ages": [],
+  "equipment": [
+    "bs",
+    "sw",
+    "sl",
+    "wp",
+    "rb",
+    "spr",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Conwy County Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Conwy County Borough Council",
+  "sources": [
+    {
+      "label": "Conwy County Borough Council: Mostyn Play Area",
+      "url": "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Coastal-Play-Areas/Llandudno/Mostyn-Play-Area.aspx"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/608618307"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

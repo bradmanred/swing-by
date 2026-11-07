@@ -1,0 +1,37 @@
+{
+  "name": "Cae Derw Play Area",
+  "region": "wales",
+  "area": "Esgyryn, Llandudno Junction",
+  "lat": 53.28548,
+  "lng": -3.79977,
+  "ages": [],
+  "equipment": [
+    "bs",
+    "bk",
+    "sw",
+    "zw",
+    "rb",
+    "ss"
+  ],
+  "access": [
+    "sen"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Conwy County Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Conwy County Borough Council",
+  "sources": [
+    {
+      "label": "Conwy County Borough Council: Cae Derw Play Area",
+      "url": "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Coastal-Play-Areas/Llandudno-Junction/Cae-Derw-Play-Area.aspx"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/392378169"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

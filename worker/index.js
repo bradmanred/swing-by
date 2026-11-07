@@ -11,6 +11,14 @@ import { pins } from './pins.js';
 
 // Old playground address → the listing it was merged into. Add a line whenever two listings are merged.
 const MERGED = {
+  'playground-off-hafod-y-m-r-abergele': 'maes-canol-play-area-pensarn',
+  'playground-off-rhodfa-cilmael-abergele': 'pentre-mawr-park-play-area-pensarn-abergele',
+  'playground-off-the-dingle-colwyn-bay': 'eirias-park-play-area-colwyn-bay',
+  'playground-off-north-wales-expressway-colwyn-bay': 'porth-eirias-play-area-colwyn-bay',
+  'penmaenmawr-playground-penmaenmawr-dwygyfylchi': 'maes-y-llan-play-area-dwygyfylchi',
+  'playground-off-cae-derw-esgyryn-llandudno-junction': 'cae-derw-play-area-esgyryn-llandudno-junction',
+  'playground-off-ferndale-road-llandudno-junction': 'victoria-park-play-area-llandudno-junction',
+  'playground-off-valley-road-llanfairfechan': 'nant-y-berllan-play-area-llanfairfechan',
   'playground-off-wharfedale-ellel-lancaster': 'galgate-wharfedale-play-area-galgate-lancaster',
   'playground-off-st-wilfrids-park-halton-with-aughton-lancaste': 'halton-st-wilfreds-park-play-area-halton-lancaster',
   'playground-off-thirlmere-road-bulk-lancaster': 'thiremere-road-play-space-bulk-lancaster',
