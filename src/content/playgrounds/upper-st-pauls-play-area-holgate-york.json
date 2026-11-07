@@ -1,0 +1,33 @@
+{
+  "name": "Upper St Paul's play area",
+  "region": "yorkshire",
+  "area": "Holgate, York",
+  "lat": 53.95709,
+  "lng": -1.10182,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "bk"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on City of York Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of York Council",
+  "sources": [
+    {
+      "label": "City of York Council: Upper St Paul's play area",
+      "url": "https://www.york.gov.uk/directory-record/2833/upper-st-paul-s-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1418695579"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

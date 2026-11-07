@@ -1,0 +1,31 @@
+{
+  "name": "Badger Wood Walk play area",
+  "region": "yorkshire",
+  "area": "Badger Hill, York",
+  "lat": 53.95118,
+  "lng": -1.03575,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on City of York Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of York Council",
+  "sources": [
+    {
+      "label": "City of York Council: Badger Wood Walk play area",
+      "url": "https://www.york.gov.uk/directory-record/2748/badger-wood-walk-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/147384949"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

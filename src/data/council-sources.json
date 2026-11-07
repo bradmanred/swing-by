@@ -2240,6 +2240,75 @@
         "https://www.anglesey.gov.wales/en/Residents/social-care-and-wellbeing/Children-and-families/Play/Play-and-activities.aspx"
       ],
       "note": "Checked 7 November 2026: no play area list on the council's website. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "North Yorkshire",
+      "council": "North Yorkshire Council",
+      "sources": [
+        "https://www.northyorks.gov.uk/leisure-tourism-and-culture/parks-play-areas-and-woodlands?f%5B0%5D=localgov_directories_facets%3A95"
+      ],
+      "note": "Parks, play areas and woodlands directory, Play area filter: one page per play area, read as a pages feed (7 November 2026). It mostly covers the former Harrogate, Selby and Craven districts' sites; many village play areas are run by town and parish councils (including the new Harrogate and Scarborough town councils) and come from OpenStreetMap.",
+      "feed": {
+        "type": "pages",
+        "index": [
+          "https://www.northyorks.gov.uk/leisure-tourism-and-culture/parks-play-areas-and-woodlands?f%5B0%5D=localgov_directories_facets%3A95",
+          "https://www.northyorks.gov.uk/leisure-tourism-and-culture/parks-play-areas-and-woodlands?f%5B0%5D=localgov_directories_facets%3A95&page=1",
+          "https://www.northyorks.gov.uk/leisure-tourism-and-culture/parks-play-areas-and-woodlands?f%5B0%5D=localgov_directories_facets%3A95&page=2",
+          "https://www.northyorks.gov.uk/leisure-tourism-and-culture/parks-play-areas-and-woodlands?f%5B0%5D=localgov_directories_facets%3A95&page=3",
+          "https://www.northyorks.gov.uk/leisure-tourism-and-culture/parks-play-areas-and-woodlands?f%5B0%5D=localgov_directories_facets%3A95&page=4",
+          "https://www.northyorks.gov.uk/leisure-tourism-and-culture/parks-play-areas-and-woodlands?f%5B0%5D=localgov_directories_facets%3A95&page=5",
+          "https://www.northyorks.gov.uk/leisure-tourism-and-culture/parks-play-areas-and-woodlands?f%5B0%5D=localgov_directories_facets%3A95&page=6",
+          "https://www.northyorks.gov.uk/leisure-tourism-and-culture/parks-play-areas-and-woodlands?f%5B0%5D=localgov_directories_facets%3A95&page=7",
+          "https://www.northyorks.gov.uk/leisure-tourism-and-culture/parks-play-areas-and-woodlands?f%5B0%5D=localgov_directories_facets%3A95&page=8",
+          "https://www.northyorks.gov.uk/leisure-tourism-and-culture/parks-play-areas-and-woodlands?f%5B0%5D=localgov_directories_facets%3A95&page=9"
+        ],
+        "follow": "/parks-play-areas-and-woodlands/parks-play-areas-and-woodlands/[a-z0-9-]+$",
+        "allPlay": true
+      }
+    },
+    {
+      "district": "York",
+      "council": "City of York Council",
+      "sources": [
+        "https://www.york.gov.uk/directory/12/parks-and-open-spaces-directory/category/39"
+      ],
+      "note": "Parks and open spaces directory (Jadu), Play areas category over two pages, read as a pages feed (7 November 2026). Parish council play areas come from OpenStreetMap.",
+      "feed": {
+        "type": "pages",
+        "index": [
+          "https://www.york.gov.uk/directory/12/parks-and-open-spaces-directory/category/39",
+          "https://www.york.gov.uk/directory/12/parks-and-open-spaces-directory/category/39/2",
+          "https://www.york.gov.uk/directory/12/parks-and-open-spaces-directory/category/39/3"
+        ],
+        "follow": "/directory-record/\\d+/[a-z0-9-]+$",
+        "allPlay": true
+      }
+    },
+    {
+      "district": "Middlesbrough",
+      "council": "Middlesbrough Council",
+      "sources": [
+        "https://middlesbrough.gov.uk/leisure-culture-and-parks/playgrounds"
+      ],
+      "note": "Playgrounds page: the council's 30 playgrounds (postcodes for the main parks only), in src/data/council-lists/middlesbrough.csv, placed by park name, postcode or street (7 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/middlesbrough.csv",
+        "page": "https://middlesbrough.gov.uk/leisure-culture-and-parks/playgrounds",
+        "near": {
+          "lat": 54.55,
+          "lng": -1.23,
+          "km": 8
+        }
+      }
+    },
+    {
+      "district": "Redcar and Cleveland",
+      "council": "Redcar and Cleveland Borough Council",
+      "sources": [
+        "https://www.data.gov.uk/dataset/redcar-and-cleveland-borough-council-recreation-areas"
+      ],
+      "note": "Checked 7 November 2026: no play area list on the council's website; its recreation areas dataset on data.gov.uk has no downloadable data. Play areas come from OpenStreetMap."
     }
   ]
 }

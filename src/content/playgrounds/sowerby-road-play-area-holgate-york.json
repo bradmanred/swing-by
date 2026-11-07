@@ -1,0 +1,35 @@
+{
+  "name": "Sowerby Road play area",
+  "region": "yorkshire",
+  "area": "Holgate, York",
+  "lat": 53.95757,
+  "lng": -1.11784,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "zw"
+  ],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A playground on City of York Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of York Council",
+  "sources": [
+    {
+      "label": "City of York Council: Sowerby Road play area",
+      "url": "https://www.york.gov.uk/directory-record/2825/sowerby-road-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1041492515"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
