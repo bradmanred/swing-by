@@ -1,0 +1,28 @@
+{
+  "name": "Moss side Play Area",
+  "region": "north-west",
+  "area": "Moss Side, Leyland",
+  "lat": 53.69187,
+  "lng": -2.73075,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Ribble Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Ribble Borough Council",
+  "sources": [
+    {
+      "label": "South Ribble Borough Council: Moss side Play Area",
+      "url": "https://southribble.gov.uk/playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/155995171"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

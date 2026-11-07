@@ -1,0 +1,28 @@
+{
+  "name": "Gregson Road Play Space",
+  "region": "north-west",
+  "area": "Moorlands, Lancaster",
+  "lat": 54.04678,
+  "lng": -2.78938,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Lancaster City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Lancaster City Council",
+  "sources": [
+    {
+      "label": "Lancaster City Council: Gregson Road Play Space",
+      "url": "https://www.lancaster.gov.uk/parks-and-open-spaces/play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/164223844"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

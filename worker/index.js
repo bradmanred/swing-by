@@ -11,6 +11,20 @@ import { pins } from './pins.js';
 
 // Old playground address → the listing it was merged into. Add a line whenever two listings are merged.
 const MERGED = {
+  'playground-off-wharfedale-ellel-lancaster': 'galgate-wharfedale-play-area-galgate-lancaster',
+  'playground-off-st-wilfrids-park-halton-with-aughton-lancaste': 'halton-st-wilfreds-park-play-area-halton-lancaster',
+  'playground-off-thirlmere-road-bulk-lancaster': 'thiremere-road-play-space-bulk-lancaster',
+  'playground-off-vernon-crescent-ellel-lancaster': 'ellel-village-hall-playground-galgate-lancaster',
+  'playground-off-mill-lane-halton-with-aughton-lancaster': 'mill-lane-play-area-halton-lancaster',
+  'playground-off-armitage-way-ellel-lancaster': 'armitage-way-play-area-galgate-lancaster',
+  'playground-off-wrights-fold-turpin-green-leyland': 'bent-lane-rec-play-area-farington-clayton-le-woods',
+  'playground-off-albert-road-buckshaw-village-south-ribble': 'ryden-ave-play-area-farington-clayton-le-woods',
+  'playground-off-higher-walton-road-higher-walton-south-ribble': 'walton-le-dale-play-area-higher-walton',
+  'playground-off-higher-walton-road-higher-walton-south-ribble-2-2': 'walton-le-dale-activity-area-play-area-higher-walton',
+  'playground-off-white-moss-road-pennylands-skelmersdale': 'whitemoss-road-play-area-old-skelmersdale-pennylands-skelmer',
+  'playground-off-exchange-street-edenfield-rossendale': 'edenfield-play-area-edenfield',
+  'playground-off-chatterton-road-stubbins-rossendale': 'chatterton-recreation-ground-ramsbottom-stubbins',
+  'playground-off-hygiene-oakenshaw-clayton-le-moors': 'mercer-park-playground-clayton-le-moors-oakenshaw-clayton-le',
   'playground-off-barrack-hill-crindau-newport': 'barrack-hill-play-area-crindau-newport',
   'playground-off-ebenezer-drive-pye-corner-newport': 'cefn-wood-play-area-pye-corner-newport',
   'playground-off-blaen-y-pant-crescent-crindau-newport': 'crindau-play-area-crindau-newport',

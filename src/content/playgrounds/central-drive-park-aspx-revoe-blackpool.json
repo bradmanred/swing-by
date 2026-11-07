@@ -1,0 +1,30 @@
+{
+  "name": "Central Drive Park.Aspx",
+  "region": "north-west",
+  "area": "Revoe, Blackpool",
+  "lat": 53.80613,
+  "lng": -3.04435,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Blackpool Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Blackpool Council",
+  "sources": [
+    {
+      "label": "Blackpool Council: Central Drive Park.Aspx",
+      "url": "https://www.blackpool.gov.uk/Residents/Parks-and-community-facilities/Parks,-playgrounds-and-community-facilities/parks-and-sites/central-drive-park.aspx"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/107809385"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
