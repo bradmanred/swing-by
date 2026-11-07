@@ -1,0 +1,28 @@
+{
+  "name": "Manor Lane Play Area",
+  "region": "north-west",
+  "area": "Slyne, Lancaster",
+  "lat": 54.08749,
+  "lng": -2.80317,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Lancaster City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Lancaster City Council",
+  "sources": [
+    {
+      "label": "Lancaster City Council: Manor Lane Play Area",
+      "url": "https://www.lancaster.gov.uk/parks-and-open-spaces/play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/24904794"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

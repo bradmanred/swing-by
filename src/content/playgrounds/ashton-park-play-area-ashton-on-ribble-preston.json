@@ -1,0 +1,28 @@
+{
+  "name": "Ashton Park Play Area",
+  "region": "north-west",
+  "area": "Ashton-on-Ribble, Preston",
+  "lat": 53.76837,
+  "lng": -2.74202,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "One of Preston City Council's main park play areas.",
+  "nearby": [],
+  "operator": "Preston City Council",
+  "sources": [
+    {
+      "label": "Preston City Council: Ashton Park Play Area",
+      "url": "https://preston.gov.uk/article/2702/Preston-play-areas-re-opening-safely"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/141787132"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

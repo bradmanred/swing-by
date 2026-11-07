@@ -1,0 +1,31 @@
+{
+  "name": "Solaris Park.Aspx",
+  "region": "north-west",
+  "area": "Squires Gate, Blackpool",
+  "lat": 53.78306,
+  "lng": -3.05698,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "A playground on Blackpool Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Blackpool Council",
+  "sources": [
+    {
+      "label": "Blackpool Council: Solaris Park.Aspx",
+      "url": "https://www.blackpool.gov.uk/Residents/Parks-and-community-facilities/Parks,-playgrounds-and-community-facilities/parks-and-sites/solaris-park.aspx"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1102588619"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours and parking.",
+  "photo": null
+}
