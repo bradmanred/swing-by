@@ -2058,6 +2058,188 @@
         "https://www.blackburn.gov.uk"
       ],
       "note": "Checked 7 November 2026: no play area list or parks directory found on the council's website (only news of individual playgrounds). Play areas, including those in Witton Country Park and Corporation Park, come from OpenStreetMap."
+    },
+    {
+      "district": "Conwy",
+      "council": "Conwy County Borough Council",
+      "sources": [
+        "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Play-areas-and-playgrounds.aspx"
+      ],
+      "note": "Play areas and playgrounds: one page per play area (with postcode, equipment and facilities) under 19 coastal and 37 rural town and village pages, read as a pages feed (7 November 2026).",
+      "feed": {
+        "type": "pages",
+        "index": [
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Coastal-Play-Areas/Abergele/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Coastal-Play-Areas/Colwyn-Bay/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Coastal-Play-Areas/Conwy/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Coastal-Play-Areas/Deganwy/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Coastal-Play-Areas/Dwygyfylchi/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Coastal-Play-Areas/Kinmel-Bay/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Coastal-Play-Areas/Llanddulas/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Coastal-Play-Areas/Llandudno/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Coastal-Play-Areas/Llandudno-Junction/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Coastal-Play-Areas/Llanfairfechan/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Coastal-Play-Areas/Llanrhos/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Coastal-Play-Areas/Llysfaen/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Coastal-Play-Areas/Mochdre/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Coastal-Play-Areas/Old-Colwyn/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Coastal-Play-Areas/Penmaenmawr/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Coastal-Play-Areas/Penrhyn-Bay/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Coastal-Play-Areas/Pydew/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Coastal-Play-Areas/Rhos-on-Sea/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Coastal-Play-Areas/Towyn/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Betws-y-Coed/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Betws-yn-Rhos/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Bylchau/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Cae-Llwyd/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Capel-Curig/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Capel-Garmon/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Cerrigydrudion/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Cwm-Penmachno/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Dinmael/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Dolgarrog/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Dolwyddelan/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Eglwysbach/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Glan-Conwy/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Glasfryn/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Groes/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Groesffordd/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Gwytherin/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Henryd/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Llanddoged/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Llanelian-yn-Rhos/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Llanfair-Talhaiarn/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Llanfihangel/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Llangernwy/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Llangwm/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Llannefydd/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Llanrwst/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Llansannan/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Maenan/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Pandy-Tudur/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Penmachno/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Pentrefoelas/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Rhyd-y-Foel/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Rowen/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Tal-y-Bont/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Trefriw/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Tyn-y-Groes/",
+          "https://www.conwy.gov.uk/en/Resident/Leisure-sport-and-health/Play-Areas-and-Green-Spaces/Play-Areas/Rural-Play-Areas/Ysbyty-Ifan/"
+        ],
+        "follow": "/Play-Areas/(Coastal|Rural)-Play-Areas/[^/]+/[^/]+-Play-Area\\.aspx$",
+        "allPlay": true
+      }
+    },
+    {
+      "district": "Gwynedd",
+      "council": "Cyngor Gwynedd",
+      "sources": [
+        "https://gwynedd.llyw.cymru/playfields"
+      ],
+      "note": "Play fields and open spaces (meysydd chwarae): the council's play areas by area with postcodes, in src/data/council-lists/gwynedd.csv; multi-use games areas, the skate park, the trim trail and goal-post-only fields left out (7 November 2026). Three rows whose postcodes belong elsewhere are placed by street instead. Many village play areas are run by community councils; those come from OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/gwynedd.csv",
+        "page": "https://gwynedd.llyw.cymru/playfields",
+        "near": {
+          "lat": 52.9,
+          "lng": -4.0,
+          "km": 60
+        }
+      }
+    },
+    {
+      "district": "Powys",
+      "council": "Powys County Council",
+      "sources": [
+        "https://en.powys.gov.uk/article/16759/Find-parks-and-play-areas"
+      ],
+      "note": "Find parks and play areas: a list of 487 sites by town with no addresses; its 148 playgrounds and play areas (school grounds left out) are in src/data/council-lists/powys.csv, placed by street or village and moved onto mapped playgrounds nearby (7 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/powys.csv",
+        "page": "https://en.powys.gov.uk/article/16759/Find-parks-and-play-areas",
+        "near": {
+          "lat": 52.3,
+          "lng": -3.4,
+          "km": 80
+        }
+      }
+    },
+    {
+      "district": "Monmouthshire",
+      "council": "Monmouthshire County Council",
+      "sources": [
+        "https://www.visitmonmouthshire.com/plan-your-visit/family-friendly-monmouthshire/play-parks",
+        "https://www.monlife.co.uk/wp-content/uploads/2026/02/PSA-summery-report.pdf"
+      ],
+      "note": "No full list: Visit Monmouthshire's play parks (four destination play areas with postcodes) and Castle Park, Caldicot (MonLife's 2026 play sufficiency summary), in src/data/council-lists/monmouthshire.csv (7 November 2026). Town and community council play areas come from OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/monmouthshire.csv",
+        "page": "https://www.visitmonmouthshire.com/plan-your-visit/family-friendly-monmouthshire/play-parks",
+        "near": {
+          "lat": 51.75,
+          "lng": -2.85,
+          "km": 30
+        }
+      }
+    },
+    {
+      "district": "Cardiff",
+      "council": "Cardiff Council",
+      "sources": [
+        "https://apps8.cardiff.gov.uk/parks_search/index.php?lang=eng"
+      ],
+      "note": "Checked 7 November 2026: the parks search (Outdoor Cardiff) can filter by playground but only works in a browser with JavaScript, and its basic page no longer exists; no published list. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Caerphilly",
+      "council": "Caerphilly County Borough Council",
+      "sources": [
+        "https://www.caerphilly.gov.uk/Things-To-Do/Play-areas-facilities"
+      ],
+      "note": "Checked 7 November 2026: the play areas page says the council runs 177 and links a downloadable list, but the site refuses automated downloads. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Blaenau Gwent",
+      "council": "Blaenau Gwent County Borough Council",
+      "sources": [
+        "https://blaenau-gwent.gov.uk/en/visitors/sports-grounds-play-areas/"
+      ],
+      "note": "Checked 7 November 2026: the sports grounds and play areas page gives totals (60 play areas) but no list. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Pembrokeshire",
+      "council": "Pembrokeshire County Council",
+      "sources": [
+        "https://www.pembrokeshire.gov.uk"
+      ],
+      "note": "Checked 7 November 2026: no play area list on the council's website (most village play areas are run by community councils). Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Denbighshire",
+      "council": "Denbighshire County Council",
+      "sources": [
+        "https://www.denbighshire.gov.uk"
+      ],
+      "note": "Checked 7 November 2026: no play area list on the council's website. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Ceredigion",
+      "council": "Ceredigion County Council",
+      "sources": [
+        "https://www.ceredigion.gov.uk"
+      ],
+      "note": "Checked 7 November 2026: no play area list on the council's website (many are run by town and community councils). Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Isle of Anglesey",
+      "council": "Isle of Anglesey County Council",
+      "sources": [
+        "https://www.anglesey.gov.wales/en/Residents/social-care-and-wellbeing/Children-and-families/Play/Play-and-activities.aspx"
+      ],
+      "note": "Checked 7 November 2026: no play area list on the council's website. Play areas come from OpenStreetMap."
     }
   ]
 }
