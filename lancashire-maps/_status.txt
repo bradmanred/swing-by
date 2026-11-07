@@ -1,0 +1,3 @@
+sribble-centroids.json 200 8035 https://services-eu1.arcgis.com/TGqCzJFR5VZgfRJG/arcgis/rest/services/SRBC%20Play%20Area%20Centroids/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson
+sribble-playview.json 200 1104 https://services-eu1.arcgis.com/TGqCzJFR5VZgfRJG/arcgis/rest/services/Play_Area_view/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&returnGeometry=false&resultRecordCount=5&f=json
+lancaster-item.json 200 21986 https://www.arcgis.com/sharing/rest/content/items/eac208b126cb47ca9bcb6d9f30078383/data?f=json
