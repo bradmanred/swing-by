@@ -2309,6 +2309,247 @@
         "https://www.data.gov.uk/dataset/redcar-and-cleveland-borough-council-recreation-areas"
       ],
       "note": "Checked 7 November 2026: no play area list on the council's website; its recreation areas dataset on data.gov.uk has no downloadable data. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Norwich",
+      "council": "Norwich City Council",
+      "sources": [
+        "https://www.norwich.gov.uk/sports-and-leisure/find-outdoor-sports-and-activity-facilities?f%5B0%5D=localgov_directories_facets%3A35"
+      ],
+      "note": "Outdoor sports and activity facilities directory, Playground filter: one page per site, read as a pages feed (7 November 2026).",
+      "feed": {
+        "type": "pages",
+        "index": [
+          "https://www.norwich.gov.uk/sports-and-leisure/find-outdoor-sports-and-activity-facilities?f%5B0%5D=localgov_directories_facets%3A35",
+          "https://www.norwich.gov.uk/sports-and-leisure/find-outdoor-sports-and-activity-facilities?f%5B0%5D=localgov_directories_facets%3A35&page=1",
+          "https://www.norwich.gov.uk/sports-and-leisure/find-outdoor-sports-and-activity-facilities?f%5B0%5D=localgov_directories_facets%3A35&page=2",
+          "https://www.norwich.gov.uk/sports-and-leisure/find-outdoor-sports-and-activity-facilities?f%5B0%5D=localgov_directories_facets%3A35&page=3",
+          "https://www.norwich.gov.uk/sports-and-leisure/find-outdoor-sports-and-activity-facilities?f%5B0%5D=localgov_directories_facets%3A35&page=4",
+          "https://www.norwich.gov.uk/sports-and-leisure/find-outdoor-sports-and-activity-facilities?f%5B0%5D=localgov_directories_facets%3A35&page=5",
+          "https://www.norwich.gov.uk/sports-and-leisure/find-outdoor-sports-and-activity-facilities?f%5B0%5D=localgov_directories_facets%3A35&page=6",
+          "https://www.norwich.gov.uk/sports-and-leisure/find-outdoor-sports-and-activity-facilities?f%5B0%5D=localgov_directories_facets%3A35&page=7",
+          "https://www.norwich.gov.uk/sports-and-leisure/find-outdoor-sports-and-activity-facilities?f%5B0%5D=localgov_directories_facets%3A35&page=8",
+          "https://www.norwich.gov.uk/sports-and-leisure/find-outdoor-sports-and-activity-facilities?f%5B0%5D=localgov_directories_facets%3A35&page=9"
+        ],
+        "follow": "/find-outdoor-sports-and-activity-facilities/[a-z0-9-]+$",
+        "allPlay": true
+      }
+    },
+    {
+      "district": "Great Yarmouth",
+      "council": "Great Yarmouth Borough Council",
+      "sources": [
+        "https://www.great-yarmouth.gov.uk/article/16899/Parks-and-playgrounds"
+      ],
+      "note": "Parks and playgrounds: 62 play areas with postcodes (skate parks, MUGAs and courts on their own left out), in src/data/council-lists/great-yarmouth.csv (7 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/great-yarmouth.csv",
+        "page": "https://www.great-yarmouth.gov.uk/article/16899/Parks-and-playgrounds",
+        "near": {
+          "lat": 52.62,
+          "lng": 1.7,
+          "km": 16
+        }
+      }
+    },
+    {
+      "district": "Broadland",
+      "council": "Broadland District Council",
+      "sources": [
+        "https://www.southnorfolkandbroadland.gov.uk/leisure/play-areas-open-spaces-public-assets/equipped-play-areas"
+      ],
+      "note": "Equipped play areas (shared South Norfolk and Broadland page): Broadland's 15, by village and street, in src/data/council-lists/broadland.csv (7 November 2026). Most village play areas are run by parish councils and come from OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/broadland.csv",
+        "page": "https://www.southnorfolkandbroadland.gov.uk/leisure/play-areas-open-spaces-public-assets/equipped-play-areas",
+        "near": {
+          "lat": 52.7,
+          "lng": 1.3,
+          "km": 20
+        }
+      }
+    },
+    {
+      "district": "South Norfolk",
+      "council": "South Norfolk Council",
+      "sources": [
+        "https://www.southnorfolkandbroadland.gov.uk/leisure/play-areas-open-spaces-public-assets/equipped-play-areas"
+      ],
+      "note": "Equipped play areas (shared South Norfolk and Broadland page): South Norfolk's 52 with postcodes, in src/data/council-lists/south-norfolk.csv (7 November 2026). Two postcodes on the page are incomplete, so those rows are placed by street. Parish council play areas come from OpenStreetMap.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/south-norfolk.csv",
+        "page": "https://www.southnorfolkandbroadland.gov.uk/leisure/play-areas-open-spaces-public-assets/equipped-play-areas",
+        "near": {
+          "lat": 52.53,
+          "lng": 1.2,
+          "km": 30
+        }
+      }
+    },
+    {
+      "district": "Breckland",
+      "council": "Breckland Council",
+      "sources": [
+        "https://www.breckland.gov.uk"
+      ],
+      "note": "Checked 7 November 2026: no play area list on the council's website (many play areas have moved to town and parish councils). Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "King's Lynn and West Norfolk",
+      "council": "Borough Council of King's Lynn and West Norfolk",
+      "sources": [
+        "https://www.west-norfolk.gov.uk"
+      ],
+      "note": "Checked 7 November 2026: no play area list on the council's website; its 2021 play area review is in committee papers only. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "North Norfolk",
+      "council": "North Norfolk District Council",
+      "sources": [
+        "https://ckan.publishing.service.gov.uk/dataset/north-norfolk-district-council-playgrounds"
+      ],
+      "note": "Checked 7 November 2026: no play area list on the council's website; its playgrounds dataset on data.gov.uk (2016) has no downloadable files. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Ipswich",
+      "council": "Ipswich Borough Council",
+      "sources": [
+        "https://www.ipswich.gov.uk/leisure/parks-and-open-spaces/play-areas"
+      ],
+      "note": "Play areas: 93 with addresses and postcodes; the 88 play areas among them (skate park, BMX track and trim trails left out) are in src/data/council-lists/ipswich.csv (7 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/ipswich.csv",
+        "page": "https://www.ipswich.gov.uk/leisure/parks-and-open-spaces/play-areas",
+        "near": {
+          "lat": 52.06,
+          "lng": 1.16,
+          "km": 8
+        }
+      }
+    },
+    {
+      "district": "West Suffolk",
+      "council": "West Suffolk Council",
+      "sources": [
+        "https://www.westsuffolk.gov.uk/leisure/Parks/play-areas.cfm"
+      ],
+      "note": "Play areas page: four rural play areas with postcodes, in src/data/council-lists/west-suffolk.csv; the town play areas are only on the council's map, so they come from OpenStreetMap (7 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/west-suffolk.csv",
+        "page": "https://www.westsuffolk.gov.uk/leisure/Parks/play-areas.cfm",
+        "near": {
+          "lat": 52.3,
+          "lng": 0.6,
+          "km": 30
+        }
+      }
+    },
+    {
+      "district": "East Suffolk",
+      "council": "East Suffolk Council",
+      "sources": [
+        "https://www.eastsuffolk.gov.uk/parks-grounds-facilities-and-waterfronts/parks-and-open-spaces/play-spaces"
+      ],
+      "note": "Checked 7 November 2026: the play spaces page names only Martello Park and Royal Green; most play areas are run by town and parish councils. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Babergh",
+      "council": "Babergh District Council",
+      "sources": [
+        "https://www.babergh.gov.uk"
+      ],
+      "note": "Checked 7 November 2026: no play area list on the council's website (most are run by town and parish councils). Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Mid Suffolk",
+      "council": "Mid Suffolk District Council",
+      "sources": [
+        "https://www.midsuffolk.gov.uk"
+      ],
+      "note": "Checked 7 November 2026: no play area list on the council's website (most are run by town and parish councils). Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Cambridge",
+      "council": "Cambridge City Council",
+      "sources": [
+        "https://www.cambridge.gov.uk/parks-and-playgrounds/playgrounds"
+      ],
+      "note": "Playgrounds page: 72 by park or street name with no addresses, in src/data/council-lists/cambridge.csv, placed by park name or street (7 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/cambridge.csv",
+        "page": "https://www.cambridge.gov.uk/parks-and-playgrounds/playgrounds",
+        "near": {
+          "lat": 52.205,
+          "lng": 0.125,
+          "km": 7
+        }
+      }
+    },
+    {
+      "district": "East Cambridgeshire",
+      "council": "East Cambridgeshire District Council",
+      "sources": [
+        "https://eastcambs.gov.uk/parking-open-spaces-and-toilets/parks-and-open-spaces/play-areas"
+      ],
+      "note": "Play areas directory (LocalGov): one page per play area over two list pages, read as a pages feed (7 November 2026). Parish council play areas come from OpenStreetMap.",
+      "feed": {
+        "type": "pages",
+        "index": [
+          "https://eastcambs.gov.uk/parking-open-spaces-and-toilets/parks-and-open-spaces/play-areas",
+          "https://eastcambs.gov.uk/parking-open-spaces-and-toilets/parks-and-open-spaces/play-areas?page=1",
+          "https://eastcambs.gov.uk/parking-open-spaces-and-toilets/parks-and-open-spaces/play-areas?page=2"
+        ],
+        "follow": "/parks-and-open-spaces/play-areas/[a-z0-9-]+$",
+        "allPlay": true
+      }
+    },
+    {
+      "district": "Fenland",
+      "council": "Fenland District Council",
+      "sources": [
+        "https://fenland.gov.uk/playareas"
+      ],
+      "note": "Play areas page: 45 by street and town with no postcodes, in src/data/council-lists/fenland.csv, placed by street (7 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/fenland.csv",
+        "page": "https://fenland.gov.uk/playareas",
+        "near": {
+          "lat": 52.55,
+          "lng": 0.05,
+          "km": 25
+        }
+      }
+    },
+    {
+      "district": "Huntingdonshire",
+      "council": "Huntingdonshire District Council",
+      "sources": [
+        "https://huntingdonshire.gov.uk"
+      ],
+      "note": "Checked 7 November 2026: no play area list on the council's website; lists are only in committee papers. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "South Cambridgeshire",
+      "council": "South Cambridgeshire District Council",
+      "sources": [
+        "https://www.scambs.gov.uk"
+      ],
+      "note": "Checked 7 November 2026: no play area list on the council's website (play areas are run by parish councils). Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Peterborough",
+      "council": "Peterborough City Council",
+      "sources": [
+        "https://www.peterborough.gov.uk/libraries-leisure-culture-facilities/parks-and-open-spaces"
+      ],
+      "note": "Checked 7 November 2026: no play area list on the council's website; older lists are only in committee papers. Play areas come from OpenStreetMap."
     }
   ]
 }
