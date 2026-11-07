@@ -1,0 +1,31 @@
+{
+  "name": "Leeside play area",
+  "region": "yorkshire",
+  "area": "Dringhouses, York",
+  "lat": 53.94037,
+  "lng": -1.11834,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on City of York Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of York Council",
+  "sources": [
+    {
+      "label": "City of York Council: Leeside play area",
+      "url": "https://www.york.gov.uk/directory-record/2798/leeside-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1443883884"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

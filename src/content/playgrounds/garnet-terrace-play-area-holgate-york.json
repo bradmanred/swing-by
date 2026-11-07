@@ -1,0 +1,32 @@
+{
+  "name": "Garnet Terrace play area",
+  "region": "yorkshire",
+  "area": "Holgate, York",
+  "lat": 53.96425,
+  "lng": -1.11037,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [
+    "zw"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on City of York Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of York Council",
+  "sources": [
+    {
+      "label": "City of York Council: Garnet Terrace play area",
+      "url": "https://www.york.gov.uk/directory-record/2777/garnet-terrace-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/128136289"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
