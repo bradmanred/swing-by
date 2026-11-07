@@ -1,0 +1,30 @@
+{
+  "name": "Airy Hill play park",
+  "region": "yorkshire",
+  "area": "Ruswarp, Whitby",
+  "lat": 54.48025,
+  "lng": -0.61711,
+  "ages": [],
+  "equipment": [],
+  "access": [
+    "sen"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on North Yorkshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "North Yorkshire Council",
+  "sources": [
+    {
+      "label": "North Yorkshire Council: Airy Hill play park",
+      "url": "https://www.northyorks.gov.uk/leisure-tourism-and-culture/parks-play-areas-and-woodlands/parks-play-areas-and-woodlands/airy-hill-play-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/937400579"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

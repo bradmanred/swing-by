@@ -1,0 +1,34 @@
+{
+  "name": "Church Field play area",
+  "region": "yorkshire",
+  "area": "Wigginton, York",
+  "lat": 54.01758,
+  "lng": -1.08387,
+  "ages": [],
+  "equipment": [
+    "rb",
+    "gym",
+    "mg"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on City of York Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of York Council",
+  "sources": [
+    {
+      "label": "City of York Council: Church Field play area",
+      "url": "https://www.york.gov.uk/directory-record/2761/church-field-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/175392992"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

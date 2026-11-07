@@ -1,0 +1,30 @@
+{
+  "name": "Back Park play area",
+  "region": "yorkshire",
+  "area": "Clifton, York",
+  "lat": 53.96482,
+  "lng": -1.1058,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on City of York Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of York Council",
+  "sources": [
+    {
+      "label": "City of York Council: Back Park play area",
+      "url": "https://www.york.gov.uk/directory-record/2747/back-park-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1418698873"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

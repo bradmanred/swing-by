@@ -1,0 +1,31 @@
+{
+  "name": "Ashton Avenue play area",
+  "region": "yorkshire",
+  "area": "Clifton Without, York",
+  "lat": 53.97629,
+  "lng": -1.08706,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on City of York Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of York Council",
+  "sources": [
+    {
+      "label": "City of York Council: Ashton Avenue play area",
+      "url": "https://www.york.gov.uk/directory-record/2742/ashton-avenue-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/985287600"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
