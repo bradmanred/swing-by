@@ -73,6 +73,8 @@ jobs:
           ADD: ${{ steps.plan.outputs.add }}
           ONLY: ${{ inputs.only || '' }}
           FALLBACK: ${{ inputs.osm_fallback && '--osm-fallback' || '' }}
+          # Street lookups for council-list rows are saved into their CSVs, so they're only done once.
+          SAVE_COUNCIL_PLACES: '1'
         run: |
           # Counties are scanned for up to 35 minutes; the next month carries on from where this one stopped.
           export SCAN_MINUTES=35
@@ -98,7 +100,7 @@ jobs:
           git config user.name "swing-by-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -b "$branch"
-          git add src/content/playgrounds src/data/toilets.json src/data/coverage.json worker/index.js
+          git add src/content/playgrounds src/data/toilets.json src/data/coverage.json src/data/council-lists worker/index.js
           git commit -m "Add playgrounds found by the coverage check [skip toilets]"
           git push -u origin "$branch"
           # Commits pushed by a workflow don't start other workflows, so start the build and accessibility checks here.

@@ -3,7 +3,8 @@
 # parks, gardens, commons, recreation grounds and nature reserves, and saves a small file to the "osm-data" branch.
 # The pin check, the junction job and new-area pin placement read it instead of asking the busy Overpass servers,
 # which turns 30-40 minute runs into a minute or two. They only use it when it's under five weeks old, and fall back
-# to asking Overpass otherwise. Runs on the 2nd of each month and on demand. Nothing on main changes.
+# to asking Overpass otherwise. It also keeps each playground's nearest named street and a list of named places, so
+# the coverage and junction jobs can name new playgrounds without one Nominatim lookup per playground. Runs on the 2nd of each month and on demand. Nothing on main changes.
 name: OpenStreetMap snapshot
 on:
   workflow_dispatch:
@@ -29,17 +30,26 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p work && cd work
+          # Only the tags the snapshot reads, so the street files stay small.
+          echo '{"attributes":{"type":true,"id":true},"include_tags":["name","highway","place"]}' > names.json
           for area in europe/great-britain europe/ireland-and-northern-ireland; do
             name=$(basename "$area")
             curl -sSfL --retry 3 -o "$name.osm.pbf" "https://download.geofabrik.de/$area-latest.osm.pbf"
             osmium tags-filter -O -o "$name-play.osm.pbf" "$name.osm.pbf" \
               nwr/leisure=playground,park,garden,common,recreation_ground,nature_reserve nwr/landuse=recreation_ground
-            osmium export -O -f geojsonseq -a type,id -o "$name.geojsonseq" "$name-play.osm.pbf"
-            rm "$name.osm.pbf"
+            osmium export -O -f geojsonseq -a type,id -o "$name.play.geojsonseq" "$name-play.osm.pbf"
+            # Named streets and places, for naming new playgrounds without asking Nominatim (scripts/osm-names.mjs).
+            osmium tags-filter -O -o "$name-streets.osm.pbf" "$name.osm.pbf" \
+              w/highway=trunk,trunk_link,primary,primary_link,secondary,secondary_link,tertiary,tertiary_link,unclassified,residential,living_street,service,road,pedestrian,footway
+            osmium tags-filter -O -o "$name-named.osm.pbf" "$name-streets.osm.pbf" w/name
+            osmium export -O -f geojsonseq -c names.json --geometry-types=linestring,polygon -o "$name.roads.geojsonseq" "$name-named.osm.pbf"
+            osmium tags-filter -O -o "$name-places.osm.pbf" "$name.osm.pbf" n/place=city,town,village,hamlet,suburb,quarter,neighbourhood
+            osmium export -O -f geojsonseq -c names.json --geometry-types=point -o "$name.places.geojsonseq" "$name-places.osm.pbf"
+            rm "$name.osm.pbf" "$name-streets.osm.pbf" "$name-named.osm.pbf"
           done
           ls -la
       - name: Build the snapshot
-        run: node scripts/osm-snapshot.mjs snapshot work/*.geojsonseq
+        run: node scripts/osm-snapshot.mjs snapshot work/*.play.geojsonseq --roads work/*.roads.geojsonseq --places work/*.places.geojsonseq
       - name: Save it to the osm-data branch
         env:
           GH_TOKEN: ${{ github.token }}
