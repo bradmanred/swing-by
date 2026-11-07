@@ -1,0 +1,28 @@
+{
+  "name": "Hamilton Drive Play Area",
+  "region": "north-west",
+  "area": "Torrisholme, Lancaster",
+  "lat": 54.06233,
+  "lng": -2.82443,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Lancaster City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Lancaster City Council",
+  "sources": [
+    {
+      "label": "Lancaster City Council: Hamilton Drive Play Area",
+      "url": "https://www.lancaster.gov.uk/parks-and-open-spaces/play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/48820402"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
