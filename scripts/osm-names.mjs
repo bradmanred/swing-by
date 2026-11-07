@@ -114,7 +114,7 @@ const areaOf = (a) => (a.bb[2] - a.bb[0]) * (a.bb[3] - a.bb[1]);
 // Within a parish, places are looked for only inside it, and further out: Nominatim keeps an address's places inside
 // the boundary it's in, which is how it knows Birchwood Playground is in Birchwood, Hatfield, though Stanborough's
 // point is nearer.
-export const PARISH_REACH = Number(process.env.PARISH_REACH ?? 1.6);
+export const PARISH_REACH = 1.6;
 const SUBS = ['suburb', 'quarter', 'village', 'neighbourhood', 'hamlet'];
 
 /**
@@ -122,8 +122,8 @@ const SUBS = ['suburb', 'quarter', 'village', 'neighbourhood', 'hamlet'];
  * Nominatim's address gives them. A mapped outline the point is inside wins: a suburb or village outline for "sub", a
  * town or city outline for "town". Otherwise places' points are used: "sub" is the first of suburb, village,
  * neighbourhood and hamlet that reaches it, and "town" the town or city that reaches it most strongly, or the village
- * when that's nearer. Inside a civil parish only places in that parish count, and the parish's own name is the town
- * when no town reaches. pc (the point's postcodes.io details, optional) settles two more boundary cases: anywhere in
+ * when that's nearer. Inside a civil parish only places in that parish count (they may be a little further off).
+ * Parish names themselves are never used: Nominatim's matched less often with them. pc (the point's postcodes.io details, optional) settles two more boundary cases: anywhere in
  * London is "Greater London", and a city council's own area (Liverpool, Sheffield, Birmingham) takes the city's name.
  */
 export function placeNames(index, p, pc = null) {
@@ -165,12 +165,10 @@ export function placeNames(index, p, pc = null) {
   const inSuburb = ['suburb', 'quarter'].includes(subKind);
   if (!own && !inSuburb && village && (!townHit || village.d < townHit.d)) townHit = village;
   let town = own?.q.n ?? areaTown?.n ?? townHit?.q.n ?? '';
-  if (!own && !areaTown && parish && (!townHit || townHit.outside)) town = PARISH_TOWN ? parish.n : town;
   if (!town && subKind === 'village') town = sub;
   if (pc?.region === 'London') town = 'Greater London';
   return { sub, town };
 }
-export const PARISH_TOWN = (process.env.PARISH_TOWN ?? '1') === '1';
 
 /**
  * An outline ring ([[lng, lat], ...]) simplified to within tol degrees (Douglas-Peucker) and flattened to

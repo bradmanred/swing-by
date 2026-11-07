@@ -3,16 +3,16 @@
 // Only listings imported from OpenStreetMap are compared (their descriptions say "A playground on OpenStreetMap
 // near <street>, <place>"), since hand-written ones use their own wording.
 //
-//   node scripts/osm-names-check.mjs osm-playgrounds.json(.gz) osm-places.json(.gz) [--show 20]
+//   node scripts/osm-names-check.mjs osm-playgrounds.json(.gz) osm-places.json(.gz) [osm-areas.json(.gz)] [--show 20]
 import { readFile, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
 import { addressFor, loadJson } from './osm-names.mjs';
 import { osmIds } from './same-place.mjs';
 
-const [snapFile, placesFile] = process.argv.slice(2);
+const [snapFile, placesFile, areasFile] = process.argv.slice(2).filter((a, i, all) => a !== '--show' && all[i - 1] !== '--show');
 const SHOW = Number(process.argv.includes('--show') ? process.argv[process.argv.indexOf('--show') + 1] : 15);
 if (!snapFile || !placesFile) throw new Error('Usage: node scripts/osm-names-check.mjs osm-playgrounds.json.gz osm-places.json.gz');
-const address = addressFor(await loadJson(snapFile), await loadJson(placesFile));
+const address = addressFor(await loadJson(snapFile), await loadJson(placesFile), areasFile ? await loadJson(areasFile) : []);
 const BIG_ROAD = /^(M\d+|A\d+(\(M\))?|.*Bypass)$/;
 const DIR = 'src/content/playgrounds';
 const norm = (s) => String(s ?? '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
