@@ -42,6 +42,17 @@ const farOut = { lat: 51.5 + 16000 / 111200, lng: -0.1 }; // 12 km from Leeds's 
 assert.equal(placeNames(places, farOut).town, '');
 assert.equal(placeNames(places, farOut, { admin_district: 'Leeds' }).town, 'Leeds');
 
+// A village right beside the point beats a suburb further off; a suburb keeps its town over a nearer village.
+const herts = placeIndex([
+  { n: 'Welwyn Garden City', k: 'town', lat: 51.8, lng: -0.2 },
+  { n: 'Handside', k: 'suburb', lat: 51.8, lng: -0.215 },
+  { n: 'Lemsford', k: 'village', lat: 51.8, lng: -0.2333 },
+  { n: 'Haldens', k: 'suburb', lat: 51.812, lng: -0.19 },
+  { n: 'Digswell', k: 'village', lat: 51.817, lng: -0.19 },
+]);
+assert.deepEqual(placeNames(herts, { lat: 51.8, lng: -0.2358 }), { sub: 'Lemsford', town: 'Lemsford' });
+assert.deepEqual(placeNames(herts, { lat: 51.8135, lng: -0.19 }), { sub: 'Haldens', town: 'Welwyn Garden City' });
+
 // addressFor reads the snapshot for playgrounds it has, without any network.
 const address = addressFor([{ id: 'way/1', ...p, road: 'Park Road' }], [{ n: 'Leeds', k: 'city', ...north(4000) }]);
 assert.deepEqual(await address(p, 'way/1'), { road: 'Park Road', sub: '', town: 'Leeds', from: 'snapshot' });
