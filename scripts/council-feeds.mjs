@@ -10,10 +10,10 @@
 // Westminster's playgrounds page): the rows are copied into a CSV in src/data/council-lists/ (name, postcode, url,
 // optionally park, the park's name as mapped on OpenStreetMap, for rows without a postcode, optionally where, a street
 // and town to look up when nothing else places it, optionally lat and lng,
-// the park's own point, and optionally text: the council's own description, used as the playground's description and from which equipment and facilities are picked out), and
+// the park's own point (or, with placed=street, the point an earlier run found for "where"), and optionally text: the council's own description, used as the playground's description and from which equipment and facilities are picked out), and
 // "page" names the council page they came from. Each row is placed from its postcode, then snapped onto the play area.
 // Used by scripts/find-gaps.mjs (adds new council-listed playgrounds) and scripts/quarterly-check.mjs (spots changes).
-import { readFile } from 'node:fs/promises';
+import { readFile, writeFile } from 'node:fs/promises';
 import { gunzipSync } from 'node:zlib';
 import { describe, readJadu, readLocalGov, readPages } from './council-readers.mjs';
 
@@ -86,7 +86,8 @@ export async function readFeed(feed) {
       if (!r.name) continue;
       // A park point given in the CSV (lat, lng) wins: for parks that share a name (Sandwell's two Victoria Parks) or
       // have no postcode that can be looked up. It is the park's point, so the pin is snapped onto its play area.
-      const given = Number(r.lat) && Number(r.lng) ? { lat: Number(r.lat), lng: Number(r.lng), from: 'park' } : null;
+      // "placed" says where a saved point came from: 'street' for one an earlier run looked up from "where" (below).
+      const given = Number(r.lat) && Number(r.lng) ? { lat: Number(r.lat), lng: Number(r.lng), from: r.placed === 'street' ? 'street' : 'park' } : null;
       const at = given ?? pts[r.postcode?.toUpperCase().trim()];
       out.push({ name: r.name, park: r.park || undefined, lat: null, lng: null, ...(at && { from: 'postcode', ...at }), postcode: r.postcode, url: r.url || feed.page, description: r.text ?? '', ...describe(r.text ?? '') });
     }
@@ -94,7 +95,15 @@ export async function readFeed(feed) {
     // Rows still unplaced that say where they are ("where": a street and town, such as "Mercel Avenue, Armthorpe,
     // Doncaster") are looked up on OpenStreetMap's geocoder, then snapped onto the nearest play area as usual.
     const whereOf = new Map(rows.filter((r) => r.where).map((r) => [r.name, r.where]));
-    for (const r of out) if (r.lat == null && whereOf.has(r.name)) Object.assign(r, (await geocode(whereOf.get(r.name), feed.near)) ?? {});
+    const found = new Map();
+    for (const r of out)
+      if (r.lat == null && whereOf.has(r.name)) {
+        const at = await geocode(whereOf.get(r.name), feed.near);
+        if (at) Object.assign(r, at), found.set(r.name, at);
+      }
+    // With SAVE_COUNCIL_PLACES set (the coverage check sets it), the points found are written back into the CSV as
+    // lat, lng and placed=street, so later runs and the quarterly check don't look the same streets up again.
+    if (found.size && process.env.SAVE_COUNCIL_PLACES) await writeFile(feed.file, savePlaces(rows, found));
     for (const r of out) if (r.lat == null) console.log(`  left out: ${r.name} (no postcode, park name or street that could be found)`);
     return out.filter((r) => r.lat != null).map(({ park, ...r }) => r);
   }
@@ -138,6 +147,20 @@ export async function readFeed(feed) {
     }
   }
   return recs.filter((x) => x.name);
+}
+
+const cell = (v) => (/[",\r\n]/.test(v) ? `"${v.replace(/"/g, '""')}"` : v);
+/** A council-list CSV again, with the points in found (name → { lat, lng }) saved as lat, lng and placed=street. */
+export function savePlaces(rows, found) {
+  const head = Object.keys(rows[0] ?? {});
+  for (const k of ['lat', 'lng', 'placed']) if (!head.includes(k)) head.push(k);
+  const round = (n) => String(Math.round(n * 1e5) / 1e5);
+  const body = rows.map((r) => {
+    const at = found.get(r.name);
+    const row = at ? { ...r, lat: round(at.lat), lng: round(at.lng), placed: 'street' } : r;
+    return head.map((k) => cell(row[k] ?? '')).join(',');
+  });
+  return [head.join(','), ...body].join('\n') + '\n';
 }
 
 /** Rows of a small CSV with a header line, as objects. Handles quoted fields with commas and doubled quotes. */

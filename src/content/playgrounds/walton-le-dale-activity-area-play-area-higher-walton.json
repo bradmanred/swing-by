@@ -1,0 +1,28 @@
+{
+  "name": "Walton le dale activity area Play Area",
+  "region": "north-west",
+  "area": "Higher Walton",
+  "lat": 53.74442,
+  "lng": -2.64437,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Ribble Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Ribble Borough Council",
+  "sources": [
+    {
+      "label": "South Ribble Borough Council: Walton le dale activity area Play Area",
+      "url": "https://southribble.gov.uk/playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/917938402"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

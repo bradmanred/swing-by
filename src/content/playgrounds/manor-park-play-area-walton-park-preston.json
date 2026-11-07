@@ -1,0 +1,28 @@
+{
+  "name": "Manor park Play Area",
+  "region": "north-west",
+  "area": "Walton Park, Preston",
+  "lat": 53.73752,
+  "lng": -2.68614,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on South Ribble Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "South Ribble Borough Council",
+  "sources": [
+    {
+      "label": "South Ribble Borough Council: Manor park Play Area",
+      "url": "https://southribble.gov.uk/playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/895744130"
+    }
+  ],
+  "checked": "2026-11-07",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

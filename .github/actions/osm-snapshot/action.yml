@@ -1,5 +1,5 @@
 # Fetches the OpenStreetMap snapshot from the osm-data branch (see .github/workflows/osm-snapshot.yml) and, if it is
-# under max-age-days old, sets OSM_PLAYGROUNDS and OSM_PARKS to the unpacked JSON files for later steps. If there's no
+# under max-age-days old, sets OSM_PLAYGROUNDS, OSM_PARKS and (when it has one) OSM_PLACES to the unpacked JSON files for later steps. If there's no
 # snapshot, or it's too old, the variables stay empty and scripts ask Overpass as before.
 name: OpenStreetMap snapshot
 description: Use the monthly OpenStreetMap snapshot when it is recent
@@ -21,4 +21,12 @@ runs:
         git show FETCH_HEAD:osm-parks.json.gz | gunzip > "$RUNNER_TEMP/osm/parks.json"
         echo "OSM_PLAYGROUNDS=$RUNNER_TEMP/osm/playgrounds.json" >> "$GITHUB_ENV"
         echo "OSM_PARKS=$RUNNER_TEMP/osm/parks.json" >> "$GITHUB_ENV"
+        # Named places, in snapshots made since November 2026 (scripts/osm-names.mjs names new playgrounds from them).
+        if git show FETCH_HEAD:osm-places.json.gz 2>/dev/null | gunzip > "$RUNNER_TEMP/osm/places.json"; then
+          echo "OSM_PLACES=$RUNNER_TEMP/osm/places.json" >> "$GITHUB_ENV"
+        fi
+        # Outlines of places and parishes, in snapshots made since 7 November 2026.
+        if git show FETCH_HEAD:osm-areas.json.gz 2>/dev/null | gunzip > "$RUNNER_TEMP/osm/areas.json"; then
+          echo "OSM_AREAS=$RUNNER_TEMP/osm/areas.json" >> "$GITHUB_ENV"
+        fi
         echo "Using the OpenStreetMap snapshot from $date ($age days old)."

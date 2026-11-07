@@ -12,6 +12,7 @@
 // Run by .github/workflows/junction-gaps.yml.
 import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
+import { snapshotNames } from './osm-names.mjs';
 
 const DIR = 'src/content/playgrounds';
 const UA = { 'User-Agent': 'SwingBy/1.0 (https://swing-by.co.uk; finds playgrounds near motorway junctions)' };
@@ -142,6 +143,7 @@ let added = 0;
 if (toAdd.length) {
   const existing = new Set(await readdir(DIR));
   const pcs = await lookup(toAdd);
+  const address = await snapshotNames();
   const REG = { 'North East': 'north-east', 'North West': 'north-west', 'Yorkshire and The Humber': 'yorkshire', 'East Midlands': 'east-midlands', 'West Midlands': 'west-midlands', 'East of England': 'east', London: 'london', 'South East': 'south-east', 'South West': 'south-west' };
   const CTY = { Hertfordshire: 'herts', Essex: 'essex', Derbyshire: 'derbyshire', Devon: 'devon' };
   const DIST = { Derby: 'derbyshire', Plymouth: 'devon', Torbay: 'devon', 'Southend-on-Sea': 'essex', Thurrock: 'essex' };
@@ -153,13 +155,12 @@ if (toAdd.length) {
     const pc = pcs[i];
     const reg = region(pc);
     if (!reg) continue;
-    const a = await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&zoom=17&addressdetails=1&lat=${p.lat}&lon=${p.lng}`, { headers: UA })
-      .then((r) => r.json()).then((j) => j.address ?? {}).catch(() => ({}));
-    await sleep(1100);
-    let road = a.road ?? a.pedestrian ?? a.footway ?? '';
+    // Street and place names from the snapshot when it has them (scripts/osm-names.mjs), otherwise Nominatim.
+    const a = await address(p, p.id, pc);
+    let road = a.road;
     if (BIG_ROAD.test(road)) road = '';
-    const sub = a.suburb ?? a.village ?? a.neighbourhood ?? a.hamlet ?? '';
-    const town = a.town ?? a.city ?? a.village ?? pc.admin_district ?? '';
+    const sub = a.sub;
+    const town = a.town || (pc.admin_district ?? '');
     const place = sub || town;
     const area = [...new Set([sub, town].filter(Boolean))].join(', ') || pc.admin_district;
     const tagName = (p.tags.name ?? '').trim();
