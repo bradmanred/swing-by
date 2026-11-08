@@ -1,0 +1,30 @@
+{
+  "name": "Portsoken Street Gardens Playground",
+  "region": "london",
+  "area": "Aldgate, Greater London",
+  "lat": 51.51247,
+  "lng": -0.07396,
+  "ages": [],
+  "equipment": [
+    "sp"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A garden with accessible children's play areas: jumping discs, balancing steps and a sandpit, as well as lawns, wildlife ponds and benches. No smoking anywhere in the garden.",
+  "nearby": [],
+  "operator": "City of London Corporation",
+  "sources": [
+    {
+      "label": "City of London Corporation: Portsoken Street Gardens Playground",
+      "url": "https://www.fis.cityoflondon.gov.uk/directory/portsoken-street-gardens"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/9524822925"
+    }
+  ],
+  "checked": "2026-11-08",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

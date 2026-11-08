@@ -11,6 +11,9 @@ import { pins } from './pins.js';
 
 // Old playground address → the listing it was merged into. Add a line whenever two listings are merged.
 const MERGED = {
+  'playground-off-goldfinch-drive-fairfield-bury': 'goldfinch-drive-playground-fairfield-bury',
+  'playground-off-leah-gardens-boyatt-wood-eastleigh': 'causton-gardens-play-area-newtown-eastleigh-2',
+  'playground-off-macmillan-way-great-plumstead': 'macmillan-way-play-area-great-and-little-plumstead-great-plu',
   'playground-off-loganberry-road-ravenswood-ipswich': 'bilberry-road-play-area-ipswich-ravenswood-ipswich',
   'playground-off-havergate-road-ravenswood-ipswich-2': 'breydon-way-play-area-ipswich-ravenswood-ipswich',
   'playground-off-havergate-road-ravenswood-ipswich': 'havergate-road-play-area-ipswich-ravenswood-ipswich',
