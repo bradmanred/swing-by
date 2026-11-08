@@ -87,8 +87,8 @@ export function toiletInfo(p: Park) {
 /** Decorative icons; the text label is always shown next to them. */
 export const ICON: Record<string, string> = {
   sw: '🪢', bs: '👶', sl: '🛝', tp: '🤸', ss: '⚖️', mb: '🐒', cl: '🧗', zw: '🚡', sp: '🏖️', wp: '💦', ad: '🏴‍☠️', rb: '🎠', tr: '🚂', sk: '🛹',
-  spr: '🐴', bk: '🧺', gym: '🏋️', mg: '🏀', bb: '🪵',
-  inc: '♿', sf: '♿', sen: '✋', wc: '🚻', bc: '🍼', cf: '☕', fen: '🚧', sh: '🌳', fp: '🅿️',
+  spr: '🐴', bk: '🧺', gym: '🏋️', mg: '🏀', bb: '🪵', bt: '🚲',
+  inc: '♿', sf: '♿', sen: '✋', wc: '🚻', bc: '🍼', cf: '☕', fen: '🚧', sh: '🌳', fp: '🅿️', pic: '🥪', tsh: '🛖',
 };
 
 /** Paid entry: the playground costs money to get into (or sits inside somewhere that does). Paid parking alone doesn't count. */
