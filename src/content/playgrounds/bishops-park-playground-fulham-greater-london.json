@@ -1,0 +1,36 @@
+{
+  "name": "Bishops Park Playground",
+  "region": "london",
+  "area": "Fulham, Greater London",
+  "lat": 51.47106,
+  "lng": -0.21819,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sp",
+    "wp"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "Three play areas: one for under-8s with accessible equipment, one for over-8s, and a sand play area with a splash pad.",
+  "nearby": [],
+  "operator": "Hammersmith & Fulham Council",
+  "sources": [
+    {
+      "label": "Hammersmith & Fulham Council: Bishops Park Playground",
+      "url": "https://www.lbhf.gov.uk/sports-and-parks/parks-and-open-spaces/playgrounds-hf-parks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/320517362"
+    }
+  ],
+  "checked": "2026-11-08",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
