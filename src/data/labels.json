@@ -24,7 +24,8 @@
     "bk": "Basket swing",
     "gym": "Outdoor gym",
     "mg": "Ball court",
-    "bb": "Balance beam"
+    "bb": "Balance beam",
+    "bt": "Bike track"
   },
   "access": {
     "inc": "Inclusive equipment",
@@ -37,7 +38,9 @@
     "cf": "Café",
     "fen": "Fully fenced",
     "sh": "Shade",
-    "fp": "Free parking"
+    "fp": "Free parking",
+    "pic": "Picnic tables",
+    "tsh": "Teen shelter"
   },
   "memberships": {
     "nt": "National Trust",
