@@ -218,7 +218,7 @@ const ld = [
           <label class="chk"><input type="checkbox" name="own_photo" required /> I took this photo and agree it can be shared under CC BY 4.0</label>
           <div>
             <label for="photo-credit">Name to credit <span class="hint">(optional)</span></label>
-            <input id="photo-credit" name="credit" type="text" maxlength="60" autocomplete="nickname" placeholder="For example, Sam from Hatfield" style="display:block;width:100%;margin-top:6px" />
+            <input id="photo-credit" data-clarity-mask="true" name="credit" type="text" maxlength="60" autocomplete="nickname" placeholder="For example, Sam from Hatfield" style="display:block;width:100%;margin-top:6px" />
           </div>
           <button class="btn btn-blue" type="submit">Send photo for checking</button>
           <p class="hint" id="photo-msg" role="status"></p>
@@ -246,7 +246,7 @@ const ld = [
               </div>
               <div class="peq-other">
                 <label for="peq-other">Something else? <span class="hint">(optional)</span></label>
-                <input id="peq-other" name="other" type="text" maxlength="130" autocomplete="off" aria-describedby="peq-other-hint" placeholder="For example, a rocking horse" />
+                <input id="peq-other" data-clarity-mask="true" name="other" type="text" maxlength="130" autocomplete="off" aria-describedby="peq-other-hint" placeholder="For example, a rocking horse" />
                 <p class="hint" id="peq-other-hint">Anything we haven't listed. Separate more than one with commas. We use these to add new tick boxes; they aren't shown on the page.</p>
               </div>
             </fieldset>
