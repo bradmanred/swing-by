@@ -5,9 +5,9 @@
   "licence": "CC BY 4.0",
   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
   "note": "Nearest toilets worked out by Swing By from the Toilet Map data.",
-  "export": "toilets-2026-11-08T00%3A00%3A40.886Z-Jo3ODjg7Mord4zHFqFnAKF7IFE2GPr.csv"
+  "export": "toilets-2026-11-09T00%3A00%3A40.726Z-3kKxR9XHCSpFhIW49htxl9nu5H8cQs.csv"
  },
- "toilets": 15852,
+ "toilets": 15853,
  "parks": {
   "1066-battle-abbey-natural-play-area": {
    "nearest": {
@@ -4828,7 +4828,16 @@
    }
   },
   "aspen-grove-play-area-fremington-north-devon": {
-   "nearest": null
+   "nearest": {
+    "id": "9864e4d59af80dfd93e57bad",
+    "name": "urinal",
+    "m": 2924,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.093504343,
+    "lng": -4.136874959
+   }
   },
   "aspen-grove-play-area-north-town-aldershot": {
    "nearest": {
@@ -50432,14 +50441,14 @@
   },
   "heanton-punchardon-playground-heanton-punchardon-north-devon": {
    "nearest": {
-    "id": "34c012f0f339ec5d26baa295",
-    "name": "Braunton carpark.",
-    "m": 2630,
+    "id": "9864e4d59af80dfd93e57bad",
+    "name": "urinal",
+    "m": 364,
     "babyChange": null,
-    "accessible": false,
+    "accessible": true,
     "free": true,
-    "lat": 51.108286298,
-    "lng": -4.162487984
+    "lat": 51.093504343,
+    "lng": -4.136874959
    }
   },
   "heartlands-park-and-play-area-buckingham-buckinghamshire": {
@@ -96315,7 +96324,16 @@
    }
   },
   "playground-off-beechfield-road-fremington-north-devon": {
-   "nearest": null
+   "nearest": {
+    "id": "9864e4d59af80dfd93e57bad",
+    "name": "urinal",
+    "m": 2632,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.093504343,
+    "lng": -4.136874959
+   }
   },
   "playground-off-beechlea-stannington": {
    "nearest": {
@@ -141528,14 +141546,14 @@
   },
   "playground-off-hawkridge-road-heanton-punchardon-north-devon": {
    "nearest": {
-    "id": "34c012f0f339ec5d26baa295",
-    "name": "Braunton carpark.",
-    "m": 2692,
+    "id": "9864e4d59af80dfd93e57bad",
+    "name": "urinal",
+    "m": 321,
     "babyChange": null,
-    "accessible": false,
+    "accessible": true,
     "free": true,
-    "lat": 51.108286298,
-    "lng": -4.162487984
+    "lat": 51.093504343,
+    "lng": -4.136874959
    }
   },
   "playground-off-hawkroyd-bank-road-berry-brow-kirklees": {
@@ -189865,7 +189883,16 @@
    }
   },
   "playground-off-sampsons-plantation-fremington-north-devon": {
-   "nearest": null
+   "nearest": {
+    "id": "9864e4d59af80dfd93e57bad",
+    "name": "urinal",
+    "m": 2911,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.093504343,
+    "lng": -4.136874959
+   }
   },
   "playground-off-samuel-fox-avenue-stubbin-stocksbridge-2": {
    "nearest": {
@@ -201578,14 +201605,14 @@
   },
   "playground-off-tamar-road-heanton-punchardon-north-devon": {
    "nearest": {
-    "id": "34c012f0f339ec5d26baa295",
-    "name": "Braunton carpark.",
-    "m": 2769,
+    "id": "9864e4d59af80dfd93e57bad",
+    "name": "urinal",
+    "m": 340,
     "babyChange": null,
-    "accessible": false,
+    "accessible": true,
     "free": true,
-    "lat": 51.108286298,
-    "lng": -4.162487984
+    "lat": 51.093504343,
+    "lng": -4.136874959
    }
   },
   "playground-off-tan-bank-withybush-haverfordwest": {
@@ -201824,14 +201851,14 @@
   },
   "playground-off-tarka-trail-fremington-north-devon": {
    "nearest": {
-    "id": "52c7b0f1bded951ebb67327f",
-    "name": "Sainsburys",
-    "m": 2943,
+    "id": "9864e4d59af80dfd93e57bad",
+    "name": "urinal",
+    "m": 1882,
     "babyChange": null,
-    "accessible": null,
+    "accessible": true,
     "free": true,
-    "lat": 51.066935636,
-    "lng": -4.083269834
+    "lat": 51.093504343,
+    "lng": -4.136874959
    }
   },
   "playground-off-tarnbeck-drive-mawdesley": {
