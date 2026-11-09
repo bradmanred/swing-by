@@ -55,7 +55,7 @@ const data = {
     <form id="jf" class="row" style="align-items:flex-end">
       <div style="flex:1 1 220px">
         <label for="jf-where">Where are you?</label>
-        <input id="jf-where" type="text" autocomplete="postal-code" placeholder="A town or postcode" aria-describedby="jf-hint" style="width:100%" />
+        <input id="jf-where" data-clarity-mask="true" type="text" autocomplete="postal-code" placeholder="A town or postcode" aria-describedby="jf-hint" style="width:100%" />
       </div>
       <button class="btn btn-yellow" type="button" id="jf-locate"><span aria-hidden="true">📍</span> Near me</button>
       <button class="btn btn-red" type="submit">Find junctions</button>

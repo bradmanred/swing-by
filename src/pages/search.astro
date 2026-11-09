@@ -10,7 +10,7 @@ import Base from '../layouts/Base.astro';
   <form id="search-page-form" class="panel search-page" role="search" action="/search/" method="get">
     <label for="q">Search Swing By</label>
     <div class="row">
-      <input id="q" name="q" type="search" autocomplete="off" enterkeyhint="search" />
+      <input id="q" data-clarity-mask="true" name="q" type="search" autocomplete="off" enterkeyhint="search" />
       <button class="btn btn-blue" type="submit">Search</button>
     </div>
   </form>

@@ -1,13 +1,15 @@
 ---
-// Google Analytics (GA4, G-MMRTRL8PPL) with cookie consent.
+// Google Analytics (GA4, G-MMRTRL8PPL) and Microsoft Clarity (zb5bd0ztat) with cookie consent.
 // UK law (PECR / UK GDPR) needs a visitor's consent before analytics cookies are set, so:
 // - every page starts with analytics storage denied (Google consent mode), and gtag.js is not fetched at all;
-// - the consent bar asks once; "Accept" loads gtag.js, "No thanks" keeps it off; the choice is remembered on the device;
+// - Clarity's script is not fetched either until consent (the consent bar loads it);
+// - the consent bar asks once; "Accept" loads gtag.js and Clarity, "No thanks" keeps them off; the choice is remembered on the device;
 // - "Cookie settings" in the footer reopens the bar.
 // Pages pass analytics={false} to Base to leave tracking off (the moderation page does).
 export const GA_ID = 'G-MMRTRL8PPL';
+export const CLARITY_ID = 'zb5bd0ztat';
 ---
-<script is:inline define:vars={{ GA_ID }}>
+<script is:inline define:vars={{ GA_ID, CLARITY_ID }}>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   window.gtag = gtag; // define:vars wraps this script in a function, so make gtag global for the consent bar
@@ -15,4 +17,5 @@ export const GA_ID = 'G-MMRTRL8PPL';
   gtag('js', new Date());
   gtag('config', GA_ID);
   window.__sbGaId = GA_ID;
+  window.__sbClarityId = CLARITY_ID;
 </script>
