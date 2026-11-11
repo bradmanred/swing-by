@@ -1,0 +1,28 @@
+{
+  "name": "Football pitch play area",
+  "region": "scotland",
+  "area": "Cromarty",
+  "lat": 57.68034,
+  "lng": -4.03646,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on The Highland Council's own list of play areas.",
+  "nearby": [],
+  "operator": "The Highland Council",
+  "sources": [
+    {
+      "label": "The Highland Council: Football pitch play area",
+      "url": "https://www.highland.gov.uk/directory-record/4438/football-park-play-area-cromarty"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/768201933"
+    }
+  ],
+  "checked": "2026-11-11",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

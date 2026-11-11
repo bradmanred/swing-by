@@ -1,0 +1,28 @@
+{
+  "name": "Seaside Play Area",
+  "region": "scotland",
+  "area": "Hilton of Cadboll",
+  "lat": 57.75909,
+  "lng": -3.90255,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on The Highland Council's own list of play areas.",
+  "nearby": [],
+  "operator": "The Highland Council",
+  "sources": [
+    {
+      "label": "The Highland Council: Seaside Play Area",
+      "url": "https://www.highland.gov.uk/directory-record/4338/seaside-play-area-balintore"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/904493727"
+    }
+  ],
+  "checked": "2026-11-11",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

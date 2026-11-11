@@ -1,0 +1,28 @@
+{
+  "name": "Football Field",
+  "region": "scotland",
+  "area": "Nethy Bridge",
+  "lat": 57.26354,
+  "lng": -3.65734,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on The Highland Council's own list of play areas.",
+  "nearby": [],
+  "operator": "The Highland Council",
+  "sources": [
+    {
+      "label": "The Highland Council: Football Field",
+      "url": "https://www.highland.gov.uk/directory-record/4407/nethy-bridge-football-field-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/766012002"
+    }
+  ],
+  "checked": "2026-11-11",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Kirkside",
+  "region": "scotland",
+  "area": "Alness",
+  "lat": 57.69571,
+  "lng": -4.26881,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on The Highland Council's own list of play areas.",
+  "nearby": [],
+  "operator": "The Highland Council",
+  "sources": [
+    {
+      "label": "The Highland Council: Kirkside",
+      "url": "https://www.highland.gov.uk/directory-record/4431/kirkside-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/905984583"
+    }
+  ],
+  "checked": "2026-11-11",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

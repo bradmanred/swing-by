@@ -1,0 +1,28 @@
+{
+  "name": "Marybank play area",
+  "region": "scotland",
+  "area": "Marybank",
+  "lat": 57.54767,
+  "lng": -4.54217,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on The Highland Council's own list of play areas.",
+  "nearby": [],
+  "operator": "The Highland Council",
+  "sources": [
+    {
+      "label": "The Highland Council: Marybank play area",
+      "url": "https://www.highland.gov.uk/directory-record/4367/marybank-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/356112238"
+    }
+  ],
+  "checked": "2026-11-11",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Clephanton Village",
+  "region": "scotland",
+  "area": "Clephanton, Highland",
+  "lat": 57.53012,
+  "lng": -3.97744,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on The Highland Council's own list of play areas.",
+  "nearby": [],
+  "operator": "The Highland Council",
+  "sources": [
+    {
+      "label": "The Highland Council: Clephanton Village",
+      "url": "https://www.highland.gov.uk/directory-record/4385/clephanton-village-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/922265931"
+    }
+  ],
+  "checked": "2026-11-11",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
