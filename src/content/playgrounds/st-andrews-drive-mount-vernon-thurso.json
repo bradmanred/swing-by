@@ -1,0 +1,28 @@
+{
+  "name": "St Andrews Drive",
+  "region": "scotland",
+  "area": "Mount Vernon, Thurso",
+  "lat": 58.58615,
+  "lng": -3.52213,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on The Highland Council's own list of play areas.",
+  "nearby": [],
+  "operator": "The Highland Council",
+  "sources": [
+    {
+      "label": "The Highland Council: St Andrews Drive",
+      "url": "https://www.highland.gov.uk/directory-record/4351/st-andrews-drive-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/508698163"
+    }
+  ],
+  "checked": "2026-11-11",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

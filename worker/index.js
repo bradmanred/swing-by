@@ -11,6 +11,14 @@ import { pins } from './pins.js';
 
 // Old playground address → the listing it was merged into. Add a line whenever two listings are merged.
 const MERGED = {
+  'playground-off-artillery-park-nungate-haddington': 'artillary-park-nungate-haddington',
+  'playground-off-brierbush-road-macmerry': 'brierbush-road-macmerry',
+  'playground-off-gateside-avenue-west-letham-haddington-2': 'gateside-haddington',
+  'playground-off-gateside-avenue-west-letham-haddington': 'gateside-toddler-haddington',
+  'gladsmuir-playground-gladsmuir': 'gladsmuir-gladsmuir',
+  'playground-off-mucklets-crescent-stoneybank-musselburgh': 'mayfield-park-stoneybank-musselburgh',
+  'playground-off-riverside-drive-nungate-haddington-2': 'riverside-drive-1-nungate-haddington',
+  'playground-off-riverside-drive-nungate-haddington': 'riverside-drive-2-nungate-haddington',
   'playground-off-goldfinch-drive-fairfield-bury': 'goldfinch-drive-playground-fairfield-bury',
   'playground-off-leah-gardens-boyatt-wood-eastleigh': 'causton-gardens-play-area-newtown-eastleigh-2',
   'playground-off-macmillan-way-great-plumstead': 'macmillan-way-play-area-great-and-little-plumstead-great-plu',

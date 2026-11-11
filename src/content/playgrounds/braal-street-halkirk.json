@@ -1,0 +1,28 @@
+{
+  "name": "Braal Street",
+  "region": "scotland",
+  "area": "Halkirk",
+  "lat": 58.51727,
+  "lng": -3.49461,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on The Highland Council's own list of play areas.",
+  "nearby": [],
+  "operator": "The Highland Council",
+  "sources": [
+    {
+      "label": "The Highland Council: Braal Street",
+      "url": "https://www.highland.gov.uk/directory-record/4550/halkirk-recreation-park-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/897300355"
+    }
+  ],
+  "checked": "2026-11-11",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
