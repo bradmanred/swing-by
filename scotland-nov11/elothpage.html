@@ -1,0 +1,316 @@
+
+
+
+
+<!DOCTYPE html>
+<html 
+      lang="en">
+  <head>
+    <title>
+      
+  East Lothian Play Areas - uMap - Online map creator
+
+    </title>
+    <meta charset="utf-8">
+    <meta name="description"
+          content="uMap lets you create maps with OpenStreetMap layers in a minute and embed them in your site.">
+    <meta name="keywords" content="map, umap">
+    
+  
+    
+      <link rel="preconnect" href="//tile.openstreetmap.org" />
+    
+  
+  
+
+
+
+<link rel="stylesheet"
+      href="/static/umap/vendors/leaflet/leaflet.f18ae622e307.css" />
+<link rel="stylesheet"
+      href="/static/umap/vendors/minimap/Control.MiniMap.min.f5616cda6e8e.css" />
+<link rel="stylesheet"
+      href="/static/umap/vendors/measurable/Leaflet.Measurable.e0d4c475cd42.css" />
+<link rel="stylesheet"
+      href="/static/umap/vendors/fullscreen/leaflet.fullscreen.6dd7f1493d15.css" />
+<link rel="stylesheet" href="/static/umap/vars.2d0384e3de9c.css" />
+<link rel="stylesheet" href="/static/umap/font.abdc7e1f8eb9.css" />
+<link rel="stylesheet" href="/static/umap/base.c47aabe104a4.css" />
+<link rel="stylesheet" href="/static/umap/css/popup.4abfa93c1b72.css" />
+<link rel="stylesheet" href="/static/umap/css/form.b2747bb2fadd.css" />
+<link rel="stylesheet" href="/static/umap/css/icon.9dccf8f5fa62.css" />
+<link rel="stylesheet" href="/static/umap/content.a405f3b19a48.css" />
+<link rel="stylesheet" href="/static/umap/nav.6694118cd97a.css" />
+<link rel="stylesheet" href="/static/umap/map.c06df761ec4c.css" />
+<link rel="stylesheet" href="/static/umap/css/slideshow.da8522a97215.css" />
+<link rel="stylesheet" href="/static/umap/css/contextmenu.8dd5a47e9b7c.css" />
+<link rel="stylesheet" href="/static/umap/css/panel.6386113b8369.css" />
+<link rel="stylesheet" href="/static/umap/css/window.14807e0243cf.css" />
+<link rel="stylesheet" href="/static/umap/css/tooltip.a36b731ab511.css" />
+<link rel="stylesheet" href="/static/umap/css/dialog.1584daef35ed.css" />
+<link rel="stylesheet" href="/static/umap/css/importers.eede1d0d52fc.css" />
+<link rel="stylesheet" href="/static/umap/css/tableeditor.e51ce47ee59d.css" />
+<link rel="stylesheet" href="/static/umap/css/bar.ef4307d7b637.css" />
+<link rel="stylesheet" href="/static/umap/css/browser.be94a512cfdb.css" />
+<link rel="stylesheet" href="/static/umap/theme.6d28e9fc6acb.css" />
+
+
+  
+      <script
+  src="https://js.sentry-cdn.com/7be080984d5b415b88b2628181dbac2a.min.js"
+  crossorigin="anonymous"
+></script>
+<style type="text/css">
+  /* REMOVEME when 3805d7f30851fb39d36119971a3ad54b9579f2ec is released (==2.4.2) */
+  .importers ul [type=button] {
+      line-height: 1rem;
+  }
+  .importers ul [type=button]:before {
+      margin-bottom: var(--gutter);
+  }
+</style>
+
+    
+  
+
+
+<script type="importmap">
+  {
+    "imports": {
+      "@turf/meta": "/static/umap/vendors/turf/meta/index.018aa83fbe3a.js",
+      "@turf/helpers": "/static/umap/vendors/turf/helpers/index.67f292f2a2bb.js",
+      "@turf/flatten": "/static/umap/vendors/turf/flatten/index.880908746691.js",
+      "@turf/invariant": "/static/umap/vendors/turf/invariant/index.81ead8dc1a3b.js",
+      "@turf/distance": "/static/umap/vendors/turf/distance/index.69084e3905ec.js",
+      "@turf/clean-coords": "/static/umap/vendors/turf/clean-coords/index.338d18c7278e.js",
+      "@turf/boolean-point-on-line": "/static/umap/vendors/turf/boolean-point-on-line/index.24acf7733c3a.js",
+      "@turf/boolean-point-in-polygon": "/static/umap/vendors/turf/boolean-point-in-polygon/index.ac13e977adad.js",
+      "@turf/point-to-line-distance": "/static/umap/vendors/turf/point-to-line-distance/index.5ba68ba2a2b8.js",
+      "@turf/nearest-point-on-line": "/static/umap/vendors/turf/nearest-point-on-line/index.d0026dcaeecd.js",
+      "@turf/rhumb-distance": "/static/umap/vendors/turf/rhumb-distance/index.42970f7003bf.js",
+      "point-in-polygon-hao": "/static/umap/vendors/point-in-polygon-hao/index.08c460cda201.js",
+      "robust-predicates": "/static/umap/vendors/robust-predicates/index.605ad297b46f.js",
+      "@turf/flip": "/static/umap/vendors/turf/flip/index.1be4995d8cb7.js",
+      "@turf/clone": "/static/umap/vendors/turf/clone/index.6f06593f436b.js",
+      "@turf/area": "/static/umap/vendors/turf/area/index.a126a2ee58ad.js",
+      "@turf/centroid": "/static/umap/vendors/turf/centroid/index.4953ca750ff1.js",
+      "@turf/length": "/static/umap/vendors/turf/length/index.3d820ef79cbc.js",
+      "@turf/bbox": "/static/umap/vendors/turf/bbox/index.44b7f48ef92a.js",
+      "leaflet": "/static/umap/vendors/leaflet/leaflet-src.esm.0e703c906b6c.js",
+      "ol/": "/static/umap/vendors/ol/",
+      "rbush": "/static/umap/vendors/rbush/index.4d640c6d5a5c.js",
+      "quickselect": "/static/umap/vendors/quickselect/index.1bb301aad985.js",
+      "osm2geojson": "/static/umap/vendors/osm2geojson/index.9e9f388cd926.mjs",
+      "colorbrewer": "/static/umap/vendors/colorbrewer/colorbrewer.f1daa1b2ade1.js",
+      "simple-statistics/": "/static/umap/vendors/simple-statistics/"
+    }
+  }
+</script>
+<script type="module"
+        src="/static/umap/vendors/leaflet/leaflet-src.esm.0e703c906b6c.js"
+        defer></script>
+<script type="module"
+        src="/static/umap/js/modules/leaflet-configure.b0145d0d7af2.js"
+        defer></script>
+<script src="/static/umap/vendors/heat/leaflet-heat.7c49f3d195e1.js" defer></script>
+
+  
+    <script src="/static/umap/locale/en.fd55b4364bf4.js" defer></script>
+  
+
+<script src="/static/umap/vendors/editable/Path.Drag.a0809fcb697e.js" defer></script>
+<script src="/static/umap/vendors/editable/Leaflet.Editable.7ba08dd861fd.js" defer></script>
+<script type="module" src="/static/umap/js/modules/global.dbfe361fa2c9.js" defer></script>
+<script src="/static/umap/vendors/minimap/Control.MiniMap.min.4c4b8e7e5ebf.js"
+        defer></script>
+<script src="/static/umap/vendors/csv2geojson/csv2geojson.56594ce16722.js" defer></script>
+<script src="/static/umap/vendors/fullscreen/Leaflet.fullscreen.min.17ff40b18ca8.js"
+        defer></script>
+<script src="/static/umap/vendors/measurable/Leaflet.Measurable.4c788e494421.js"
+        defer></script>
+<script src="/static/umap/vendors/textpath/leaflet.textpath.66511c23e1b2.js"
+        defer></script>
+<script src="/static/umap/js/umap.controls.f338f148bb55.js" defer></script>
+<script type="module" src="/static/umap/js/components/fragment.ed8b45e42041.js" defer></script>
+<script type="module" src="/static/umap/js/components/modal.7f98b8989e86.js" defer></script>
+<script type="module" src="/static/umap/js/components/copiable.ed04e9617914.js" defer></script>
+
+
+  
+  <link rel="alternate"
+        type="application/json+oembed"
+        href="http://umap.openstreetmap.fr/map/oembed/?url=http%3A%2F%2Fumap.openstreetmap.fr%2Fen%2Fmap%2Feast-lothian-play-areas_1186344&format=json"
+        title="East Lothian Play Areas oEmbed URL" />
+  <meta property="og:url" content="https://umap.openstreetmap.fr/en/map/east-lothian-play-areas_1186344" />
+  <meta property="og:title" content="East Lothian Play Areas" />
+  <meta property="og:description" content="Play areas maintained by East Lothian Council" />
+  <meta property="og:site_name" content="uMap" />
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    
+    
+    <link rel="icon"
+          href="/static/umap/favicons/favicon.d00639428e40.ico"
+          sizes="32x32">
+    <link rel="icon"
+          href="/static/umap/favicons/icon.a93d14e37669.svg"
+          type="image/svg+xml">
+    <link rel="apple-touch-icon"
+          href="/static/umap/favicons/apple-touch-icon.02fdccd547b9.png">
+    <!-- 180×180 -->
+    <link rel="manifest" href="/manifest.webmanifest">
+    
+  </head>
+  <body class="
+  map_detail
+">
+    
+    
+    
+  
+    
+
+
+
+
+
+
+<style type="text/css">
+    @import "/static/umap/js/components/alerts/alert.eee42bd76843.css";
+</style>
+
+<template id="umap-alert-template">
+  <div role="dialog" class="dark window umap-alert">
+    <div>
+      <p role="alert">
+      </p>
+    </div>
+    <ul class="buttons">
+      <li>
+        <button class="icon icon-16 icon-close"
+                aria-label="Close"
+                data-close>
+        </button>
+      </li>
+    </ul>
+  </div>
+</template>
+<umap-alert></umap-alert>
+<template id="umap-alert-creation-template">
+  <div role="dialog" class="dark window umap-alert">
+    <div>
+      <h3 role="alert">
+      </h3>
+      <p class="aplat">
+        Oops, I didn't mean it, I want to <a href="/en/login/" class="login">create an account</a> or <a href="/en/login/" class="login">log in</a> (no worry, we'll attach the map to your account).
+      </p>
+      <div class="anonymous soft-rounded aplat">
+        <h4><i class="icon icon-16 icon-anonymous"></i> Yes, I want to continue editing anonymously, I will save the secret edit link to be able to edit this map later or on another device</h4>
+        <div id="link-wrapper">
+          <form>
+            <label for="url">
+              Here is your secret link to edit the map, please keep it safe:
+            </label>
+            <fieldset role="group">
+              <input type="url" name="url" id="url">
+              <input type="button" value="Copy link">
+            </fieldset>
+          </form>
+        </div>
+        <div id="form-wrapper" hidden>
+          <form>
+            <label for="email">
+              Enter your email address to receive the secret link:
+            </label>
+            <fieldset role="group">
+              <input type="email"
+                     name="email"
+                     id="email"
+                     placeholder="Email"
+                     required>
+              <input type="submit"
+                     value="Send me the link"
+                     class="umap-action">
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+    <ul class="buttons">
+      <li>
+        <button class="icon icon-16 icon-close"
+                aria-label="Close"
+                data-close>
+        </button>
+      </li>
+    </ul>
+  </div>
+</template>
+<umap-alert-creation></umap-alert-creation>
+<template id="umap-alert-conflict-template">
+  <div role="dialog" class="dark window umap-alert">
+    <div>
+      <p role="alert">
+      </p>
+      <div id="conflict-wrapper">
+        <form>
+          <a href="#" onclick="document.url" target="_blank">See their edits in another tab</a>
+          <input id="your-changes"
+                 type="submit"
+                 value="Keep your changes and loose theirs">
+          <input id="their-changes"
+                 type="submit"
+                 value="Keep their changes and loose yours">
+        </form>
+      </div>
+    </div>
+    <ul class="buttons">
+      <li>
+        <button class="icon icon-16 icon-close"
+                aria-label="Close"
+                data-close>
+        </button>
+      </li>
+    </ul>
+  </div>
+</template>
+<umap-alert-conflict></umap-alert-conflict>
+
+<script type="module">
+  import { register } from '/static/umap/js/components/base.2dd4a3c5a47e.js'
+  import {
+    Alert,
+    AlertCreation,
+    AlertConflict
+  } from '/static/umap/js/components/alerts/alert.d10f407b9915.js'
+  register(Alert, 'umap-alert')
+  register(AlertCreation, 'umap-alert-creation')
+  register(AlertConflict, 'umap-alert-conflict')
+</script>
+
+
+
+
+<div id="map">
+</div>
+<!-- djlint:off -->
+<script id="map-settings" data-settings="{&quot;type&quot;: &quot;Feature&quot;, &quot;geometry&quot;: {&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [-2.794647216796875, 55.97821656989672]}, &quot;properties&quot;: {&quot;name&quot;: &quot;East Lothian Play Areas&quot;, &quot;zoom&quot;: 12, &quot;rules&quot;: [], &quot;tilelayer&quot;: {&quot;tms&quot;: false, &quot;name&quot;: &quot;OpenStreetMap&quot;, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;attribution&quot;: &quot;map data \u00a9 [[http://osm.org/copyright|OpenStreetMap contributors]] under ODbL&quot;, &quot;url_template&quot;: &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;}, &quot;description&quot;: &quot;Play areas maintained by East Lothian Council&quot;, &quot;limitBounds&quot;: {}, &quot;zoomControl&quot;: true, &quot;fullscreenControl&quot;: true, &quot;is_template&quot;: false, &quot;permissions&quot;: {&quot;edit_status&quot;: 2, &quot;share_status&quot;: 1, &quot;owner&quot;: {&quot;id&quot;: 129963, &quot;name&quot;: &quot;EastLothianCouncil&quot;, &quot;url&quot;: &quot;/en/user/EastLothianCouncil/&quot;}, &quot;editors&quot;: []}, &quot;author&quot;: {&quot;name&quot;: &quot;EastLothianCouncil&quot;, &quot;url&quot;: &quot;/en/user/EastLothianCouncil/&quot;}, &quot;urls&quot;: {&quot;agnocomplete&quot;: &quot;/agnocomplete/AutocompleteUser/?q={q}&quot;, &quot;map_short_url&quot;: &quot;/m/{pk}/&quot;, &quot;ajax-proxy&quot;: &quot;/ajax-proxy/{ttl}/&quot;, &quot;password_change&quot;: &quot;/change-password/&quot;, &quot;password_change_done&quot;: &quot;/change-password-done/&quot;, &quot;set_language&quot;: &quot;/i18n/setlang/&quot;, &quot;map_oembed&quot;: &quot;/map/oembed/&quot;, &quot;map_download&quot;: &quot;/map/{map_id}/download/&quot;, &quot;home&quot;: &quot;/en/&quot;, &quot;search&quot;: &quot;https://photon.komoot.io/api/?&quot;, &quot;about&quot;: &quot;/en/about/&quot;, &quot;user_stars&quot;: &quot;/en/user/{identifier}/stars/&quot;, &quot;user_maps&quot;: &quot;/en/user/{identifier}/&quot;, &quot;team_maps&quot;: &quot;/en/team/{pk}/&quot;, &quot;login&quot;: &quot;/en/login/&quot;, &quot;login_popup_end&quot;: &quot;/en/login/popup/end/&quot;, &quot;logout&quot;: &quot;/en/logout/&quot;, &quot;map_anonymous_edit_url&quot;: &quot;/en/map/anonymous-edit/{signature}&quot;, &quot;pictogram_list_json&quot;: &quot;/en/pictogram/json/&quot;, &quot;template_list&quot;: &quot;/en/templates/json/&quot;, &quot;map_geojson&quot;: &quot;/en/map/{map_id}/geojson/&quot;, &quot;datalayer_view&quot;: &quot;/en/datalayer/{map_id}/{pk}/&quot;, &quot;datalayer_versions&quot;: &quot;/en/datalayer/{map_id}/{pk}/versions/&quot;, &quot;datalayer_version&quot;: &quot;/en/datalayer/{map_id}/{pk}/{ref}&quot;, &quot;map&quot;: &quot;/en/map/{slug}_{map_id}&quot;, &quot;map_preview&quot;: &quot;/en/map/&quot;, &quot;map_new&quot;: &quot;/en/map/new/&quot;, &quot;map_create&quot;: &quot;/en/map/create/&quot;, &quot;map_star&quot;: &quot;/en/map/{map_id}/star/&quot;, &quot;user_dashboard&quot;: &quot;/en/me&quot;, &quot;user_download&quot;: &quot;/en/me/download&quot;, &quot;user_teams&quot;: &quot;/en/me/teams&quot;, &quot;user_templates&quot;: &quot;/en/me/templates&quot;, &quot;team_new&quot;: &quot;/en/team/create/&quot;, &quot;whoami&quot;: &quot;/en/whoami&quot;, &quot;user_profile&quot;: &quot;/en/me/profile&quot;, &quot;team_update&quot;: &quot;/en/team/{pk}/edit/&quot;, &quot;team_delete&quot;: &quot;/en/team/{pk}/delete/&quot;, &quot;map_update&quot;: &quot;/en/map/{map_id}/update/settings/&quot;, &quot;map_update_permissions&quot;: &quot;/en/map/{map_id}/update/permissions/&quot;, &quot;map_delete&quot;: &quot;/en/map/{map_id}/update/delete/&quot;, &quot;map_clone&quot;: &quot;/en/map/{map_id}/update/clone/&quot;, &quot;datalayer_create&quot;: &quot;/en/map/{map_id}/datalayer/create/{pk}/&quot;, &quot;map_websocket_auth_token&quot;: &quot;/en/map/{map_id}/ws-token/&quot;, &quot;datalayer_delete&quot;: &quot;/en/map/{map_id}/datalayer/delete/{pk}/&quot;, &quot;datalayer_permissions&quot;: &quot;/en/map/{map_id}/datalayer/permissions/{pk}/&quot;, &quot;datalayer_update&quot;: &quot;/en/map/{map_id}/datalayer/update/{pk}/&quot;, &quot;map_attach_owner&quot;: &quot;/en/map/{map_id}/update/owner/&quot;, &quot;map_send_edit_link&quot;: &quot;/en/map/{map_id}/send-edit-link/&quot;, &quot;stats&quot;: &quot;/stats/&quot;, &quot;design_system&quot;: &quot;/design_system/&quot;, &quot;routing&quot;: &quot;http://www.openstreetmap.org/directions?engine=osrm_car&amp;route={lat},{lng}&amp;locale={locale}#map={zoom}/{lat}/{lng}&quot;, &quot;ajax_proxy&quot;: &quot;/ajax-proxy/{ttl}/?url={url}&quot;, &quot;edit_in_osm&quot;: &quot;https://www.openstreetmap.org/edit#map={zoom}/{lat}/{lng}&quot;}, &quot;tilelayers&quot;: [{&quot;id&quot;: 10, &quot;name&quot;: &quot;OSM-Fr&quot;, &quot;url_template&quot;: &quot;//{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png&quot;, &quot;minZoom&quot;: 0, &quot;maxZoom&quot;: 20, &quot;attribution&quot;: &quot;map data \u00a9 [[http://osm.org/copyright|OpenStreetMap contributors]] under ODbL&quot;, &quot;rank&quot;: 1, &quot;tms&quot;: false, &quot;selected&quot;: true}, {&quot;id&quot;: 1, &quot;name&quot;: &quot;OpenStreetMap&quot;, &quot;url_template&quot;: &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;, &quot;minZoom&quot;: 0, &quot;maxZoom&quot;: 19, &quot;attribution&quot;: &quot;map data \u00a9 [[http://osm.org/copyright|OpenStreetMap contributors]] under ODbL&quot;, &quot;rank&quot;: 2, &quot;tms&quot;: false}, {&quot;id&quot;: 20, &quot;name&quot;: &quot;OSM Positron (Carto)&quot;, &quot;url_template&quot;: &quot;https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png&quot;, &quot;minZoom&quot;: 0, &quot;maxZoom&quot;: 20, &quot;attribution&quot;: &quot;Map tiles by [[http://cartodb.com/attributions#basemaps|CartoDB]], under [[https://creativecommons.org/licenses/by/3.0/|CC BY 3.0]]. map data \u00a9 [[http://osm.org/copyright|OpenStreetMap contributors]] under ODbL &quot;, &quot;rank&quot;: 10, &quot;tms&quot;: false}, {&quot;id&quot;: 21, &quot;name&quot;: &quot;OSM Dark Matter (Carto)&quot;, &quot;url_template&quot;: &quot;https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png&quot;, &quot;minZoom&quot;: 0, &quot;maxZoom&quot;: 20, &quot;attribution&quot;: &quot;Map tiles by [[http://cartodb.com/attributions#basemaps|CartoDB]], under [[https://creativecommons.org/licenses/by/3.0/|CC BY 3.0]]. Data by [[http://www.openstreetmap.org/|OpenStreetMap]], under ODbL.&quot;, &quot;rank&quot;: 11, &quot;tms&quot;: false}, {&quot;id&quot;: 38, &quot;name&quot;: &quot;CyclOSM&quot;, &quot;url_template&quot;: &quot;//{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png&quot;, &quot;minZoom&quot;: 0, &quot;maxZoom&quot;: 20, &quot;attribution&quot;: &quot;map data \u00a9 [[http://osm.org/copyright|OpenStreetMap contributors]] under ODbL&quot;, &quot;rank&quot;: 13, &quot;tms&quot;: false}, {&quot;id&quot;: 15, &quot;name&quot;: &quot;OSM Humanitarian (OSM-FR)&quot;, &quot;url_template&quot;: &quot;//{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png&quot;, &quot;minZoom&quot;: 0, &quot;maxZoom&quot;: 20, &quot;attribution&quot;: &quot;map data \u00a9 [[https://osm.org/copyright|OpenStreetMap contributors]] under ODbL  - Tiles \u00a9 HOT&quot;, &quot;rank&quot;: 14, &quot;tms&quot;: false}, {&quot;id&quot;: 19, &quot;name&quot;: &quot;OSM Deutschland (OSM-DE)&quot;, &quot;url_template&quot;: &quot;https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png&quot;, &quot;minZoom&quot;: 0, &quot;maxZoom&quot;: 18, &quot;attribution&quot;: &quot;Karte hergestellt aus [[http://osm.org|OpenStreetMap-Daten]] | Lizenz: [[http://opendatacommons.org/licenses/odbl/|Open Database License (ODbL)]] | Courtesy of [[http://openstreetmap.de|OpenStreetMap.de]]&quot;, &quot;rank&quot;: 17, &quot;tms&quot;: false}, {&quot;id&quot;: 17, &quot;name&quot;: &quot;OSM OpenTopoMap&quot;, &quot;url_template&quot;: &quot;https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png&quot;, &quot;minZoom&quot;: 1, &quot;maxZoom&quot;: 16, &quot;attribution&quot;: &quot;Kartendaten: \u00a9 [[https://openstreetmap.org/copyright|OpenStreetMap]]-Mitwirkende, [[http://viewfinderpanoramas.org/|SRTM]] | Kartendarstellung: \u00a9 [[https://opentopomap.org/|OpenTopoMap]] ([[https://creativecommons.org/licenses/by-sa/3.0/|CC-BY-SA]])&quot;, &quot;rank&quot;: 18, &quot;tms&quot;: false}, {&quot;id&quot;: 44, &quot;name&quot;: &quot;Jawg Terrain&quot;, &quot;url_template&quot;: &quot;https://tile.jawg.io/jawg-terrain/{z}/{x}/{y}.png?api-key=community&quot;, &quot;minZoom&quot;: 0, &quot;maxZoom&quot;: 18, &quot;attribution&quot;: &quot;Tiles courtesy of [[https://www.jawg.io/|jawgmaps]] - Map data [[http://osm.org/copyright/|&amp;copy; OpenStreetMap contributors]], under ODbL.&quot;, &quot;rank&quot;: 19, &quot;tms&quot;: false}, {&quot;id&quot;: 25, &quot;name&quot;: &quot;Jawg Street&quot;, &quot;url_template&quot;: &quot;https://tile.jawg.io/{z}/{x}/{y}.png?api-key=community&quot;, &quot;minZoom&quot;: 0, &quot;maxZoom&quot;: 18, &quot;attribution&quot;: &quot;Tiles courtesy of [[https://www.jawg.io/|jawgmaps]] - Map data [[http://osm.org/copyright/|&amp;copy; OpenStreetMap contributors]], under ODbL.&quot;, &quot;rank&quot;: 20, &quot;tms&quot;: false}, {&quot;id&quot;: 28, &quot;name&quot;: &quot;Jawg Sunny&quot;, &quot;url_template&quot;: &quot;https://tile.jawg.io/jawg-sunny/{z}/{x}/{y}.png?api-key=community&quot;, &quot;minZoom&quot;: 0, &quot;maxZoom&quot;: 18, &quot;attribution&quot;: &quot;Tiles courtesy of [[https://www.jawg.io/|jawgmaps]] - Map data [[http://osm.org/copyright/|&amp;copy; OpenStreetMap contributors]], under ODbL.&quot;, &quot;rank&quot;: 21, &quot;tms&quot;: false}, {&quot;id&quot;: 26, &quot;name&quot;: &quot;Jawg Light&quot;, &quot;url_template&quot;: &quot;https://tile.jawg.io/jawg-light/{z}/{x}/{y}.png?api-key=community&quot;, &quot;minZoom&quot;: 0, &quot;maxZoom&quot;: 18, &quot;attribution&quot;: &quot;Tiles courtesy of [[https://www.jawg.io/|jawgmaps]] - Map data [[http://osm.org/copyright/|&amp;copy; OpenStreetMap contributors]], under ODbL.&quot;, &quot;rank&quot;: 22, &quot;tms&quot;: false}, {&quot;id&quot;: 27, &quot;name&quot;: &quot;Jawg Dark&quot;, &quot;url_template&quot;: &quot;https://tile.jawg.io/jawg-dark/{z}/{x}/{y}.png?api-key=community&quot;, &quot;minZoom&quot;: 0, &quot;maxZoom&quot;: 18, &quot;attribution&quot;: &quot;Tiles courtesy of [[https://www.jawg.io/|jawgmaps]] - Map data [[http://osm.org/copyright/|&amp;copy; OpenStreetMap contributors]], under ODbL.&quot;, &quot;rank&quot;: 23, &quot;tms&quot;: false}, {&quot;id&quot;: 43, &quot;name&quot;: &quot;Jawg Lagoon&quot;, &quot;url_template&quot;: &quot;https://tile.jawg.io/jawg-lagoon/{z}/{x}/{y}.png?api-key=community&quot;, &quot;minZoom&quot;: 0, &quot;maxZoom&quot;: 18, &quot;attribution&quot;: &quot;Tiles courtesy of [[https://www.jawg.io/|jawgmaps]] - Map data [[http://osm.org/copyright/|&amp;copy; OpenStreetMap contributors]], under ODbL.&quot;, &quot;rank&quot;: 24, &quot;tms&quot;: false}, {&quot;id&quot;: 4, &quot;name&quot;: &quot;OSM OpenRiverboatMap&quot;, &quot;url_template&quot;: &quot;//{s}.tile.openstreetmap.fr/openriverboatmap/{z}/{x}/{y}.png&quot;, &quot;minZoom&quot;: 0, &quot;maxZoom&quot;: 18, &quot;attribution&quot;: &quot;map data \u00a9 [[http://osm.org/copyright|OpenStreetMap contributors]] under ODbL  - tiles OpenRiverboatMap&quot;, &quot;rank&quot;: 26, &quot;tms&quot;: false}, {&quot;id&quot;: 5, &quot;name&quot;: &quot;OSM OpenCycleMap&quot;, &quot;url_template&quot;: &quot;https://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=e6b144cfc47a48fd928dad578eb026a6&quot;, &quot;minZoom&quot;: 0, &quot;maxZoom&quot;: 18, &quot;attribution&quot;: &quot;\u201cOpenCycleMap\u201d - map data \u00a9 [[http://osm.org/copyright|OpenStreetMap contributors]] under ODbL&quot;, &quot;rank&quot;: 27, &quot;tms&quot;: false}, {&quot;id&quot;: 14, &quot;name&quot;: &quot;OSM Outdoors (Thunderforest)&quot;, &quot;url_template&quot;: &quot;https://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png?apikey=e6b144cfc47a48fd928dad578eb026a6&quot;, &quot;minZoom&quot;: 0, &quot;maxZoom&quot;: 18, &quot;attribution&quot;: &quot;Tiles \u00a9 [[http://www.thunderforest.com/outdoors/|Thunderforest]] / map data \u00a9 [[http://osm.org/copyright|OpenStreetMap contributors]] under ODbL&quot;, &quot;rank&quot;: 30, &quot;tms&quot;: false}, {&quot;id&quot;: 6, &quot;name&quot;: &quot;OSM Landscape (Thunderforest)&quot;, &quot;url_template&quot;: &quot;https://{s}.tile.thunderforest.com/landscape/{z}/{x}/{y}.png?apikey=e6b144cfc47a48fd928dad578eb026a6&quot;, &quot;minZoom&quot;: 0, &quot;maxZoom&quot;: 18, &quot;attribution&quot;: &quot;Tiles \u00a9 [[http://www.thunderforest.com/outdoors/|Thunderforest]] / map data \u00a9 [[http://osm.org/copyright|OpenStreetMap contributors]] under ODbL&quot;, &quot;rank&quot;: 31, &quot;tms&quot;: false}, {&quot;id&quot;: 3, &quot;name&quot;: &quot;OSM Transport (Thunderforest)&quot;, &quot;url_template&quot;: &quot;https://{s}.tile.thunderforest.com/transport/{z}/{x}/{y}.png?apikey=e6b144cfc47a48fd928dad578eb026a6&quot;, &quot;minZoom&quot;: 0, &quot;maxZoom&quot;: 18, &quot;attribution&quot;: &quot;Tiles \u00a9 [[http://www.thunderforest.com/outdoors/|Thunderforest]] / map data \u00a9 [[http://osm.org/copyright|OpenStreetMap contributors]] under ODbL&quot;, &quot;rank&quot;: 32, &quot;tms&quot;: false}, {&quot;id&quot;: 29, &quot;name&quot;: &quot;OSM Piano FR&quot;, &quot;url_template&quot;: &quot;https://a.piano.tiles.quaidorsay.fr/fr{r}/{z}/{x}/{y}.png&quot;, &quot;minZoom&quot;: 0, &quot;maxZoom&quot;: 20, &quot;attribution&quot;: &quot;map data \u00a9 [[http://osm.org/copyright|OpenStreetMap contributors]] under ODbL - tiles \u00a9 [[https://github.com/tilery/pianoforte|Min. Aff. \u00c9trang\u00e8res]]&quot;, &quot;rank&quot;: 50, &quot;tms&quot;: false}, {&quot;id&quot;: 30, &quot;name&quot;: &quot;OSM Piano EN&quot;, &quot;url_template&quot;: &quot;https://{s}.piano.tiles.quaidorsay.fr/en/{z}/{x}/{y}.png&quot;, &quot;minZoom&quot;: 0, &quot;maxZoom&quot;: 20, &quot;attribution&quot;: &quot;map data \u00a9 [[http://osm.org/copyright|OpenStreetMap contributors]] under ODbL - tiles \u00a9 [[https://github.com/tilery/pianoforte|Min. Aff. \u00c9trang\u00e8res]]&quot;, &quot;rank&quot;: 51, &quot;tms&quot;: false}, {&quot;id&quot;: 31, &quot;name&quot;: &quot;OSM Piano AR&quot;, &quot;url_template&quot;: &quot;https://{s}.piano.tiles.quaidorsay.fr/ar/{z}/{x}/{y}.png&quot;, &quot;minZoom&quot;: 0, &quot;maxZoom&quot;: 20, &quot;attribution&quot;: &quot;map data \u00a9 [[http://osm.org/copyright|OpenStreetMap contributors]] under ODbL - tiles \u00a9 [[https://github.com/tilery/pianoforte|Min. Aff. \u00c9trang\u00e8res]]&quot;, &quot;rank&quot;: 52, &quot;tms&quot;: false}, {&quot;id&quot;: 32, &quot;name&quot;: &quot;OSM Forte FR&quot;, &quot;url_template&quot;: &quot;https://a.forte.tiles.quaidorsay.fr/fr{r}/{z}/{x}/{y}.png&quot;, &quot;minZoom&quot;: 0, &quot;maxZoom&quot;: 20, &quot;attribution&quot;: &quot;map data \u00a9 [[http://osm.org/copyright|OpenStreetMap contributors]] under ODbL - tiles \u00a9 [[https://github.com/tilery/pianoforte|Min. Aff. \u00c9trang\u00e8res]]&quot;, &quot;rank&quot;: 53, &quot;tms&quot;: false}, {&quot;id&quot;: 33, &quot;name&quot;: &quot;OSM Forte EN&quot;, &quot;url_template&quot;: &quot;https://{s}.forte.tiles.quaidorsay.fr/en/{z}/{x}/{y}.png&quot;, &quot;minZoom&quot;: 0, &quot;maxZoom&quot;: 20, &quot;attribution&quot;: &quot;map data \u00a9 [[http://osm.org/copyright|OpenStreetMap contributors]] under ODbL - tiles \u00a9 [[https://github.com/tilery/pianoforte|Min. Aff. \u00c9trang\u00e8res]]&quot;, &quot;rank&quot;: 54, &quot;tms&quot;: false}, {&quot;id&quot;: 34, &quot;name&quot;: &quot;OSM Forte AR&quot;, &quot;url_template&quot;: &quot;https://{s}.forte.tiles.quaidorsay.fr/ar/{z}/{x}/{y}.png&quot;, &quot;minZoom&quot;: 0, &quot;maxZoom&quot;: 20, &quot;attribution&quot;: &quot;map data \u00a9 [[http://osm.org/copyright|OpenStreetMap contributors]] under ODbL - tiles \u00a9 [[https://github.com/tilery/pianoforte|Min. Aff. \u00c9trang\u00e8res]]&quot;, &quot;rank&quot;: 55, &quot;tms&quot;: false}, {&quot;id&quot;: 35, &quot;name&quot;: &quot;OSM-br&quot;, &quot;url_template&quot;: &quot;https://tile.openstreetmap.bzh/br/{z}/{x}/{y}.png&quot;, &quot;minZoom&quot;: 0, &quot;maxZoom&quot;: 18, &quot;attribution&quot;: &quot;Map data ODbL &amp;copy; OSM contributors / tiles CC-by-SA &amp;copy; OSM-FR&quot;, &quot;rank&quot;: 60, &quot;tms&quot;: false}, {&quot;id&quot;: 36, &quot;name&quot;: &quot;OSM-oc&quot;, &quot;url_template&quot;: &quot;https://tile.openstreetmap.bzh/oc/{z}/{x}/{y}.png&quot;, &quot;minZoom&quot;: 0, &quot;maxZoom&quot;: 18, &quot;attribution&quot;: &quot;Map data ODbL &amp;copy; OSM contributors / tiles CC-by-SA &amp;copy; OSM-FR&quot;, &quot;rank&quot;: 61, &quot;tms&quot;: false}, {&quot;id&quot;: 37, &quot;name&quot;: &quot;OSM-eu&quot;, &quot;url_template&quot;: &quot;https://tile.openstreetmap.bzh/eu/{z}/{x}/{y}.png&quot;, &quot;minZoom&quot;: 0, &quot;maxZoom&quot;: 18, &quot;attribution&quot;: &quot;Map data ODbL &amp;copy; OSM contributors / tiles CC-by-SA &amp;copy; OSM-FR&quot;, &quot;rank&quot;: 62, &quot;tms&quot;: false}, {&quot;id&quot;: 39, &quot;name&quot;: &quot;OpenOrthos&quot;, &quot;url_template&quot;: &quot;//wms.openstreetmap.fr/tms/1.0.0/tous_fr/{z}/{x}/{y}&quot;, &quot;minZoom&quot;: 4, &quot;maxZoom&quot;: 20, &quot;attribution&quot;: &quot;[[https://wiki.openstreetmap.org/wiki/FR:Serveurs/wms.openstreetmap.fr|Orthophotos Opendata]]&quot;, &quot;rank&quot;: 79, &quot;tms&quot;: false}, {&quot;id&quot;: 23, &quot;name&quot;: &quot;IGN Image a\u00e9rienne (France)&quot;, &quot;url_template&quot;: &quot;https://data.geopf.fr/wmts?SERVICE=WMTS&amp;REQUEST=GetTile&amp;VERSION=1.0.0&amp;LAYER=ORTHOIMAGERY.ORTHOPHOTOS&amp;STYLE=normal&amp;TILEMATRIXSET=PM&amp;TILEMATRIX={z}&amp;TILEROW={y}&amp;TILECOL={x}&amp;FORMAT=image%2Fjpeg&quot;, &quot;minZoom&quot;: 0, &quot;maxZoom&quot;: 19, &quot;attribution&quot;: &quot;[[https://geoservices.ign.fr/cgu-licences|IGN]]&quot;, &quot;rank&quot;: 80, &quot;tms&quot;: false}, {&quot;id&quot;: 42, &quot;name&quot;: &quot;Plan IGN&quot;, &quot;url_template&quot;: &quot;https://data.geopf.fr/wmts?SERVICE=WMTS&amp;REQUEST=GetTile&amp;VERSION=1.0.0&amp;LAYER=GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2&amp;STYLE=normal&amp;TILEMATRIXSET=PM&amp;TILEMATRIX={z}&amp;TILEROW={y}&amp;TILECOL={x}&amp;FORMAT=image%2Fpng&quot;, &quot;minZoom&quot;: 0, &quot;maxZoom&quot;: 19, &quot;attribution&quot;: &quot;[[https://geoservices.ign.fr/cgu-licences|IGN]]&quot;, &quot;rank&quot;: 81, &quot;tms&quot;: false}, {&quot;id&quot;: 41, &quot;name&quot;: &quot;NASA Blue Marble&quot;, &quot;url_template&quot;: &quot;//wms.openstreetmap.fr/tms/1.0.0/nasa_blue_marble/{z}/{x}/{y}&quot;, &quot;minZoom&quot;: 0, &quot;maxZoom&quot;: 10, &quot;attribution&quot;: &quot;[[https://earthobservatory.nasa.gov/|NASA 2016]]&quot;, &quot;rank&quot;: 85, &quot;tms&quot;: false}, {&quot;id&quot;: 40, &quot;name&quot;: &quot;NASA Black Marble&quot;, &quot;url_template&quot;: &quot;//wms.openstreetmap.fr/tms/1.0.0/nasa_black_marble/{z}/{x}/{y}&quot;, &quot;minZoom&quot;: 0, &quot;maxZoom&quot;: 9, &quot;attribution&quot;: &quot;[[https://earthobservatory.nasa.gov/features/NightLights|NASA 2012]]&quot;, &quot;rank&quot;: 86, &quot;tms&quot;: false}, {&quot;id&quot;: 11, &quot;name&quot;: &quot;OSM-monochrome&quot;, &quot;url_template&quot;: &quot;http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png&quot;, &quot;minZoom&quot;: 1, &quot;maxZoom&quot;: 18, &quot;attribution&quot;: &quot;map data \u00a9 [[http://osm.org/copyright|OpenStreetMap]] contributors&quot;, &quot;rank&quot;: 98, &quot;tms&quot;: false}], &quot;editMode&quot;: &quot;disabled&quot;, &quot;schema&quot;: {&quot;iconUrl&quot;: {&quot;default&quot;: &quot;/static/umap/img/marker.svg&quot;}, &quot;tags&quot;: {&quot;choices&quot;: [[&quot;arts&quot;, &quot;Art and Culture&quot;], [&quot;business&quot;, &quot;Business&quot;], [&quot;cycling&quot;, &quot;Cycling&quot;], [&quot;education&quot;, &quot;Education&quot;], [&quot;environment&quot;, &quot;Environment&quot;], [&quot;food&quot;, &quot;Food and Agriculture&quot;], [&quot;geopolitics&quot;, &quot;Geopolitics&quot;], [&quot;health&quot;, &quot;Health&quot;], [&quot;hiking&quot;, &quot;Hiking&quot;], [&quot;history&quot;, &quot;History&quot;], [&quot;public&quot;, &quot;Public sector&quot;], [&quot;science&quot;, &quot;Science&quot;], [&quot;shopping&quot;, &quot;Shopping&quot;], [&quot;sport&quot;, &quot;Sport and Leisure&quot;], [&quot;tourism&quot;, &quot;Tourism&quot;], [&quot;transports&quot;, &quot;Transports&quot;], [&quot;travel&quot;, &quot;Travel&quot;]]}}, &quot;id&quot;: 1186344, &quot;starred&quot;: false, &quot;stars&quot;: 0, &quot;licences&quot;: {&quot;Aucune licence&quot;: {&quot;name&quot;: &quot;Aucune licence&quot;, &quot;url&quot;: &quot;&quot;}, &quot;B\u1ea3n quy\u1ec1n kh\u00f4ng \u0111\u01b0\u1ee3c \u0111\u1eb7t&quot;: {&quot;name&quot;: &quot;B\u1ea3n quy\u1ec1n kh\u00f4ng \u0111\u01b0\u1ee3c \u0111\u1eb7t&quot;, &quot;url&quot;: &quot;&quot;}, &quot;Ingen licens angivet&quot;: {&quot;name&quot;: &quot;Ingen licens angivet&quot;, &quot;url&quot;: &quot;&quot;}, &quot;Keine Lizenz ausgew\u00e4hlt&quot;: {&quot;name&quot;: &quot;Keine Lizenz ausgew\u00e4hlt&quot;, &quot;url&quot;: &quot;&quot;}, &quot;Licence nenastavena.&quot;: {&quot;name&quot;: &quot;Licence nenastavena.&quot;, &quot;url&quot;: &quot;&quot;}, &quot;Licence ouverte/Open Licence&quot;: {&quot;name&quot;: &quot;Licence ouverte/Open Licence&quot;, &quot;url&quot;: &quot;http://www.data.gouv.fr/Licence-Ouverte-Open-Licence&quot;}, &quot;M\u00e4\u00e4ritt\u00e4m\u00e4t\u00f6n lisenssi&quot;: {&quot;name&quot;: &quot;M\u00e4\u00e4ritt\u00e4m\u00e4t\u00f6n lisenssi&quot;, &quot;url&quot;: &quot;&quot;}, &quot;Nenhuma licen\u00e7a definida&quot;: {&quot;name&quot;: &quot;Nenhuma licen\u00e7a definida&quot;, &quot;url&quot;: &quot;&quot;}, &quot;Nenustatyta licenzija&quot;: {&quot;name&quot;: &quot;Nenustatyta licenzija&quot;, &quot;url&quot;: &quot;&quot;}, &quot;Nessuna licenza definita&quot;: {&quot;name&quot;: &quot;Nessuna licenza definita&quot;, &quot;url&quot;: &quot;&quot;}, &quot;Nessuna licenza impostata&quot;: {&quot;name&quot;: &quot;Nessuna licenza impostata&quot;, &quot;url&quot;: &quot;&quot;}, &quot;Ning\u00fan conjunto de licencias&quot;: {&quot;name&quot;: &quot;Ning\u00fan conjunto de licencias&quot;, &quot;url&quot;: &quot;&quot;}, &quot;No licence set&quot;: {&quot;name&quot;: &quot;No licence set&quot;, &quot;url&quot;: &quot;&quot;}, &quot;No se ha especificado la licencia&quot;: {&quot;name&quot;: &quot;No se ha especificado la licencia&quot;, &quot;url&quot;: &quot;&quot;}, &quot;No s&#x27;ha indicat llic\u00e8ncia&quot;: {&quot;name&quot;: &quot;No s&#x27;ha indicat llic\u00e8ncia&quot;, &quot;url&quot;: &quot;&quot;}, &quot;ODbl&quot;: {&quot;name&quot;: &quot;ODbl&quot;, &quot;url&quot;: &quot;http://opendatacommons.org/licenses/odbl/&quot;}, &quot;WTFPL&quot;: {&quot;name&quot;: &quot;WTFPL&quot;, &quot;url&quot;: &quot;http://www.wtfpl.net/&quot;}, &quot;\u041b\u0438\u0446\u0435\u043d\u0437\u0438\u044f \u043d\u0435 \u0437\u0430\u0434\u0430\u043d\u0430&quot;: {&quot;name&quot;: &quot;\u041b\u0438\u0446\u0435\u043d\u0437\u0438\u044f \u043d\u0435 \u0437\u0430\u0434\u0430\u043d\u0430&quot;, &quot;url&quot;: &quot;&quot;}, &quot;\u041b\u0456\u0446\u0435\u043d\u0437\u0456\u044f \u043d\u0435 \u0437\u0430\u0434\u0430\u043d\u0430&quot;: {&quot;name&quot;: &quot;\u041b\u0456\u0446\u0435\u043d\u0437\u0456\u044f \u043d\u0435 \u0437\u0430\u0434\u0430\u043d\u0430&quot;, &quot;url&quot;: &quot;&quot;}, &quot;\u041d\u044f\u043c\u0430 \u0438\u0437\u0431\u0440\u0430\u043d \u043b\u0438\u0446\u0435\u043d\u0437&quot;: {&quot;name&quot;: &quot;\u041d\u044f\u043c\u0430 \u0438\u0437\u0431\u0440\u0430\u043d \u043b\u0438\u0446\u0435\u043d\u0437&quot;, &quot;url&quot;: &quot;&quot;}, &quot;\u30e9\u30a4\u30bb\u30f3\u30b9\u672a\u8a2d\u5b9a&quot;: {&quot;name&quot;: &quot;\u30e9\u30a4\u30bb\u30f3\u30b9\u672a\u8a2d\u5b9a&quot;, &quot;url&quot;: &quot;&quot;}, &quot;\u672a\u6307\u5b9a\u6388\u6b0a\u689d\u6b3e&quot;: {&quot;name&quot;: &quot;\u672a\u6307\u5b9a\u6388\u6b0a\u689d\u6b3e&quot;, &quot;url&quot;: &quot;&quot;}}, &quot;umap_version&quot;: &quot;3.8.1&quot;, &quot;featuresHaveOwner&quot;: false, &quot;websocketEnabled&quot;: false, &quot;importers&quot;: {&quot;opendata&quot;: {}, &quot;geodatamine&quot;: {&quot;name&quot;: &quot;G\u00e9oDataMine (th\u00e8mes OSM)&quot;}, &quot;overpass&quot;: {&quot;url&quot;: &quot;https://overpass-api.de/api/interpreter&quot;}, &quot;communesfr&quot;: {&quot;name&quot;: &quot;Communes France&quot;}, &quot;datasets&quot;: {&quot;name&quot;: &quot;Contours nationaux&quot;, &quot;choices&quot;: [{&quot;label&quot;: &quot;R\u00e9gions&quot;, &quot;url&quot;: &quot;https://data-interne.ademe.fr/data-fair/api/v1/datasets/regions/data-files/Regions.geojson&quot;, &quot;format&quot;: &quot;geojson&quot;}, {&quot;label&quot;: &quot;D\u00e9partements&quot;, &quot;url&quot;: &quot;https://data-interne.ademe.fr/data-fair/api/v1/datasets/departements/data-files/Departements.geojson&quot;, &quot;format&quot;: &quot;geojson&quot;}, {&quot;label&quot;: &quot;Arrondissements de Paris&quot;, &quot;url&quot;: &quot;https://geo.api.gouv.fr/communes?codeParent=75056&amp;type=arrondissement-municipal&amp;format=geojson&amp;geometry=contour&quot;, &quot;format&quot;: &quot;geojson&quot;}, {&quot;label&quot;: &quot;Arrondissements de Marseille&quot;, &quot;url&quot;: &quot;https://geo.api.gouv.fr/communes?codeParent=13055&amp;type=arrondissement-municipal&amp;format=geojson&amp;geometry=contour&quot;, &quot;format&quot;: &quot;geojson&quot;}, {&quot;label&quot;: &quot;Arrondissements de Lyon&quot;, &quot;url&quot;: &quot;https://geo.api.gouv.fr/communes?codeParent=69123&amp;type=arrondissement-municipal&amp;format=geojson&amp;geometry=contour&quot;, &quot;format&quot;: &quot;geojson&quot;}]}}, &quot;defaultLabelKeys&quot;: [&quot;name&quot;, &quot;title&quot;, &quot;nom&quot;], &quot;help_links&quot;: [{&quot;label&quot;: &quot;uMap user documentation&quot;, &quot;url&quot;: &quot;https://discover.umap-project.org/&quot;, &quot;lang&quot;: &quot;en/fr&quot;}, {&quot;label&quot;: &quot;Video tutorials&quot;, &quot;url&quot;: &quot;https://discover.umap-project.org/videos/&quot;, &quot;lang&quot;: &quot;en/fr&quot;}, {&quot;label&quot;: &quot;OpenStreetMap.org forum&quot;, &quot;url&quot;: &quot;https://community.openstreetmap.org/tag/umap&quot;, &quot;lang&quot;: &quot;en/de&quot;}, {&quot;label&quot;: &quot;OpenStreetMap France forum&quot;, &quot;url&quot;: &quot;https://forum.openstreetmap.fr/c/utiliser/umap/29&quot;, &quot;lang&quot;: &quot;fr&quot;}], &quot;ttl&quot;: {&quot;300&quot;: &quot;5 min&quot;, &quot;3600&quot;: &quot;1 hour&quot;, &quot;86400&quot;: &quot;1 day&quot;}, &quot;default_ttl&quot;: 300, &quot;ORSAPIKey&quot;: &quot;eyJvcmciOiI1YjNjZTM1OTc4NTExMTAwMDFjZjYyNDgiLCJpZCI6IjU3Mzg3MzQ4YjA2NDQ4ZWFhMmJjNTdiNzQwNmJkYTgwIiwiaCI6Im11cm11cjY0In0=&quot;, &quot;ORSHost&quot;: &quot;https://api.heigit.org/openrouteservice&quot;, &quot;created_at&quot;: &quot;2025-03-05T16:30:00.207Z&quot;, &quot;modified_at&quot;: &quot;2026-03-11T15:41:23.188Z&quot;, &quot;edit_statuses&quot;: [[1, &quot;Everyone&quot;], [2, &quot;Editors and team only&quot;], [3, &quot;Owner only&quot;]], &quot;datalayer_edit_statuses&quot;: [[0, &quot;Inherit&quot;], [1, &quot;Everyone&quot;], [2, &quot;Editors and team only&quot;], [3, &quot;Owner only&quot;]], &quot;share_statuses&quot;: [[0, &quot;Draft (private)&quot;], [1, &quot;Everyone (public)&quot;], [2, &quot;Anyone with link&quot;], [3, &quot;Editors and team only&quot;]], &quot;shortUrl&quot;: &quot;http://u.osmfr.org/m/1186344/&quot;, &quot;user&quot;: {&quot;is_owner&quot;: false}, &quot;lang&quot;: &quot;en&quot;, &quot;locale&quot;: &quot;en&quot;, &quot;datalayers&quot;: [{&quot;properties&quot;: {&quot;id&quot;: &quot;ca7dc677-06d7-4161-a7f4-03c2d25354f5&quot;, &quot;name&quot;: &quot;Layer 1&quot;, &quot;rank&quot;: 0, &quot;color&quot;: &quot;Crimson&quot;, &quot;fields&quot;: [{&quot;key&quot;: &quot;name&quot;, &quot;type&quot;: &quot;String&quot;}, {&quot;key&quot;: &quot;description&quot;, &quot;type&quot;: &quot;Text&quot;}, {&quot;key&quot;: &quot;styleUrl&quot;, &quot;type&quot;: &quot;String&quot;}, {&quot;key&quot;: &quot;label-scale&quot;, &quot;type&quot;: &quot;String&quot;}, {&quot;key&quot;: &quot;icon-opacity&quot;, &quot;type&quot;: &quot;String&quot;}, {&quot;key&quot;: &quot;icon-color&quot;, &quot;type&quot;: &quot;String&quot;}, {&quot;key&quot;: &quot;icon-scale&quot;, &quot;type&quot;: &quot;String&quot;}, {&quot;key&quot;: &quot;icon&quot;, &quot;type&quot;: &quot;String&quot;}, {&quot;key&quot;: &quot;Community Council Area&quot;, &quot;type&quot;: &quot;String&quot;}, {&quot;key&quot;: &quot;Designation&quot;, &quot;type&quot;: &quot;String&quot;}, {&quot;key&quot;: &quot;Number of pieces of equipment&quot;, &quot;type&quot;: &quot;String&quot;}], &quot;iconUrl&quot;: &quot;/uploads/pictogram/star.svg&quot;, &quot;editMode&quot;: &quot;advanced&quot;, &quot;browsable&quot;: true, &quot;iconClass&quot;: &quot;Drop&quot;, &quot;inCaption&quot;: true, &quot;remoteData&quot;: {}, &quot;displayOnLoad&quot;: true}, &quot;id&quot;: &quot;ca7dc677-06d7-4161-a7f4-03c2d25354f5&quot;, &quot;rank&quot;: 0, &quot;permissions&quot;: {&quot;edit_status&quot;: 2}, &quot;editMode&quot;: &quot;disabled&quot;, &quot;referenceVersion&quot;: &quot;1773243683178&quot;}]}}"></script>
+<script defer type="module">
+    
+    import App from '/static/umap/js/modules/app.395ccf268de3.js'
+    
+    U.SETTINGS = JSON.parse(document.getElementById('map-settings').dataset.settings)
+    U.MAP = new App("map", U.SETTINGS)
+</script>
+<!-- djlint:on -->
+
+  
+
+    
+    
+    
+      
+    
+  </body>
+</html>
