@@ -1,0 +1,28 @@
+{
+  "name": "School Road",
+  "region": "scotland",
+  "area": "Durness",
+  "lat": 58.56676,
+  "lng": -4.74626,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on The Highland Council's own list of play areas.",
+  "nearby": [],
+  "operator": "The Highland Council",
+  "sources": [
+    {
+      "label": "The Highland Council: School Road",
+      "url": "https://www.highland.gov.uk/directory-record/4348/school-road-play-area-durness"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/901638988"
+    }
+  ],
+  "checked": "2026-11-11",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

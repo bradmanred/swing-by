@@ -1,0 +1,28 @@
+{
+  "name": "Lochside Play Area",
+  "region": "scotland",
+  "area": "Dunvegan",
+  "lat": 57.43755,
+  "lng": -6.5833,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on The Highland Council's own list of play areas.",
+  "nearby": [],
+  "operator": "The Highland Council",
+  "sources": [
+    {
+      "label": "The Highland Council: Lochside Play Area",
+      "url": "https://www.highland.gov.uk/directory-record/4383/lochside-play-area-dunvegan"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/362748458"
+    }
+  ],
+  "checked": "2026-11-11",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

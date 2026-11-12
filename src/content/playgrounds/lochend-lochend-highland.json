@@ -1,0 +1,28 @@
+{
+  "name": "Lochend",
+  "region": "scotland",
+  "area": "Lochend, Highland",
+  "lat": 57.40931,
+  "lng": -4.33811,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on The Highland Council's own list of play areas.",
+  "nearby": [],
+  "operator": "The Highland Council",
+  "sources": [
+    {
+      "label": "The Highland Council: Lochend",
+      "url": "https://www.highland.gov.uk/directory-record/4392/lochend-housing-road-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/2996969442"
+    }
+  ],
+  "checked": "2026-11-11",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -2143,7 +2143,7 @@
         "page": "https://gwynedd.llyw.cymru/playfields",
         "near": {
           "lat": 52.9,
-          "lng": -4.0,
+          "lng": -4,
           "km": 60
         }
       }
@@ -2550,6 +2550,83 @@
         "https://www.peterborough.gov.uk/libraries-leisure-culture-facilities/parks-and-open-spaces"
       ],
       "note": "Checked 7 November 2026: no play area list on the council's website; older lists are only in committee papers. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Highland",
+      "council": "The Highland Council",
+      "sources": [
+        "https://www.highland.gov.uk/directory/17/play-parks-in-the-highlands"
+      ],
+      "note": "Play parks in the Highlands directory (A to Z, by area committee), one record per play park with its map point and whether it is open; imported as a feed (11 November 2026).",
+      "feed": {
+        "type": "jadu",
+        "directory": "https://www.highland.gov.uk/directory/17/play-parks-in-the-highlands",
+        "allPlay": true
+      }
+    },
+    {
+      "district": "Aberdeenshire",
+      "council": "Aberdeenshire Council",
+      "sources": [
+        "https://engage.aberdeenshire.gov.uk/ldp-evidence-report-play-recreation-and-sport"
+      ],
+      "note": "Checked 11 November 2026: no published list of play areas on the website; play provision is only summarised in local development plan settlement papers. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Dumfries and Galloway",
+      "council": "Dumfries and Galloway Council",
+      "sources": [
+        "https://www.dumfriesandgalloway.gov.uk/leisure-sport-culture/parks-outdoor-spaces/parks-directory",
+        "https://www.dumfriesandgalloway.gov.uk/sites/default/files/2025-05/Play-Sufficiency-Assessment-August-2024.pdf"
+      ],
+      "note": "Checked 11 November 2026: the parks directory lists only a couple of main parks, and the 2024 play sufficiency assessment has no list of sites. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Scottish Borders",
+      "council": "Scottish Borders Council",
+      "sources": [
+        "https://www.scotborders.gov.uk/environment/play-parks"
+      ],
+      "note": "Checked 11 November 2026: the play parks page says the council runs 145 play parks but names only those in its investment programme, with no full list or map. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "West Lothian",
+      "council": "West Lothian Council",
+      "sources": [
+        "https://www.westlothian.gov.uk/article/34132/Children-s-Play-Areas"
+      ],
+      "note": "Checked 11 November 2026: the children’s play areas page lists only its inclusive play areas and this year’s improved sites, not every play area. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Falkirk",
+      "council": "Falkirk Council",
+      "sources": [
+        "https://maps.falkirk.gov.uk/map/16"
+      ],
+      "note": "Checked 11 November 2026: play parks are only shown on the council’s interactive parks map, with no list or open data download. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Perth and Kinross",
+      "council": "Perth and Kinross Council",
+      "sources": [
+        "https://www.pkc.gov.uk/playareas"
+      ],
+      "note": "Checked 11 November 2026: the council runs 147 equipped play areas, shown only on an interactive map with no list or download. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "East Lothian",
+      "council": "East Lothian Council",
+      "sources": [
+        "https://www.eastlothian.gov.uk/safety-and-community/your-community/play-areas",
+        "https://umap.openstreetmap.fr/en/map/east-lothian-play-areas_1186344"
+      ],
+      "note": "The council’s play areas map (uMap) marks each of the 121 outdoor play areas it looks after, with its community council area and designation; imported as a feed (11 November 2026).",
+      "feed": {
+        "type": "geojson",
+        "url": "https://umap.openstreetmap.fr/en/datalayer/1186344/ca7dc677-06d7-4161-a7f4-03c2d25354f5/",
+        "nameField": "name",
+        "page": "https://www.eastlothian.gov.uk/safety-and-community/your-community/play-areas"
+      }
     }
   ]
 }

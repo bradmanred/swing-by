@@ -1,0 +1,28 @@
+{
+  "name": "Kirkhill",
+  "region": "scotland",
+  "area": "Kirkhill",
+  "lat": 57.47758,
+  "lng": -4.41219,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on The Highland Council's own list of play areas.",
+  "nearby": [],
+  "operator": "The Highland Council",
+  "sources": [
+    {
+      "label": "The Highland Council: Kirkhill",
+      "url": "https://www.highland.gov.uk/directory-record/4475/kirkhill-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/125824018"
+    }
+  ],
+  "checked": "2026-11-11",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
