@@ -1,0 +1,62 @@
+<!DOCTYPE html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Page not found | Swing By</title><script>(function(){const GA_ID = "G-MMRTRL8PPL";
+const CLARITY_ID = "zb5bd0ztat";
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag; // define:vars wraps this script in a function, so make gtag global for the consent bar
+  gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied' });
+  gtag('js', new Date());
+  gtag('config', GA_ID);
+  window.__sbGaId = GA_ID;
+  window.__sbClarityId = CLARITY_ID;
+})();</script><meta name="description" content="Find playgrounds near you, and see the toilets, baby change, equipment and entry costs before you go. Every playground is checked against official council and operator sources."><link rel="canonical" href="https://swing-by.co.uk/404/"><meta property="og:site_name" content="Swing By"><meta property="og:locale" content="en_GB"><meta property="og:type" content="website"><meta property="og:title" content="Page not found | Swing By"><meta property="og:description" content="Find playgrounds near you, and see the toilets, baby change, equipment and entry costs before you go. Every playground is checked against official council and operator sources."><meta property="og:url" content="https://swing-by.co.uk/404/"><meta property="og:image" content="https://swing-by.co.uk/og-default.png"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Baloo+2:wght@700;800&family=Bricolage+Grotesque:opsz,wght@12..96,800&display=swap"><link rel="stylesheet" href="/_astro/Base.86VeVH3g.css"></head><body><a class="skip" href="#main">Skip to content</a><section class="cookie-bar" id="cookie-bar" aria-labelledby="cookie-bar-title" hidden><div class="wrap"><p><strong id="cookie-bar-title">Can we count your visit?</strong> We'd like to use Google Analytics and Microsoft Clarity cookies to see which pages parents find useful and how they use them, so we can improve Swing By. They're never used for advertising. <a href="/about/#cookies">More about cookies</a></p><div class="cookie-actions"><button class="btn btn-yellow" type="button" data-consent="granted">Accept analytics</button><button class="btn" type="button" data-consent="denied">No thanks</button></div></div></section><script>
+  (() => {
+    const KEY = 'sb-consent';
+    const bar = document.getElementById('cookie-bar');
+    const read = () => { try { return localStorage.getItem(KEY); } catch { return null; } };
+    const save = (v) => { try { localStorage.setItem(KEY, v); } catch {} };
+    let loaded = false;
+    const load = () => {
+      if (loaded || !window.__sbGaId) return;
+      loaded = true;
+      const s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.__sbGaId;
+      document.head.appendChild(s);
+    };
+    // Microsoft Clarity: Microsoft's own snippet, run only after consent.
+    let clarityLoaded = false;
+    const loadClarity = () => {
+      if (clarityLoaded || !window.__sbClarityId) return;
+      clarityLoaded = true;
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", window.__sbClarityId);
+      window.clarity('consentv2', { ad_Storage: 'denied', analytics_Storage: 'granted' });
+    };
+    const apply = (v) => {
+      if (typeof gtag !== 'function') return;
+      gtag('consent', 'update', { analytics_storage: v === 'granted' ? 'granted' : 'denied' });
+      if (v === 'granted') { load(); loadClarity(); }
+      // Changed to "No thanks" after accepting: Clarity stops and clears its cookies.
+      else if (clarityLoaded && typeof window.clarity === 'function') window.clarity('consent', false);
+    };
+    const saved = read();
+    if (saved) apply(saved); else bar.hidden = false;
+    bar.addEventListener('click', (e) => {
+      const v = e.target.closest('[data-consent]')?.dataset.consent;
+      if (!v) return;
+      save(v); apply(v); bar.hidden = true;
+      document.getElementById('main')?.focus({ preventScroll: true });
+    });
+    // The footer button comes later in the page, so listen on the document.
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('#cookie-settings')) return;
+      bar.hidden = false;
+      bar.scrollIntoView({ block: 'nearest' });
+      bar.querySelector('[data-consent="granted"]').focus();
+    });
+  })();
+</script><header class="site-header"><div class="wrap"><a class="logo" href="/"><svg width="40" height="40" viewBox="0 0 36 36" aria-hidden="true"><path d="M5 32 L11 6 H25 L31 32" fill="none" stroke="#1E6B4F" stroke-width="3" stroke-linecap="round"></path><path d="M15 6 V21 M21 6 V21" stroke="#1B2A22" stroke-width="1.6"></path><rect x="13" y="21" width="10" height="3.5" rx="1.5" fill="#B5651D"></rect></svg><span>Swing By</span></a><nav class="nav" aria-label="Main"><ul><li><a href="/">Find</a></li><li><a href="/road-trips/">Road trips</a></li><li><a href="/memberships/">Memberships</a></li><li><a href="/my-parks/">My parks</a></li></ul></nav></div></header><main id="main" tabindex="-1"><div class="wrap stack"><h1>We can't find that page</h1><p><a href="/">Find a playground</a> or browse <a href="/playgrounds/">all playgrounds A to Z</a>.</p></div></main><aside class="partner-slot wrap" aria-label="Sponsored link"><div class="pick-box partner-pick"><p class="pick-label">Advertisement</p><p class="pick-line"><a href="https://www.amazon.co.uk/s?k=kids%20scooter&amp;tag=swingby-21" rel="sponsored nofollow noopener" target="_blank">Kids’ scooters on Amazon</a> <span>Faster to the park, and back again.</span></p><p class="pick-note">As an Amazon Associate, Swing By earns from qualifying purchases.</p></div></aside><footer class="site-footer"><div class="wrap"><p>Always check equipment before children use it. If something is dangerous, report it to the council or operator that runs the playground. In an emergency, call 999.</p><p>Playground details come from council and operator websites, and OpenStreetMap. Places marked "Unverified" have not been checked yet. <a href="/about/">About our data</a> · <a href="/playgrounds/in/">Browse by area</a> · <a href="/playgrounds/">All playgrounds A to Z</a> · <a href="/search/">Advanced search</a></p><p>Swing By is free and has no paywall. If it's helped your family, you can <a href="https://paypal.me/bradsmithpaypal" rel="noopener" target="_blank">chip in towards running costs<span class="sr-only"> (opens PayPal in a new tab)</span></a>. Entirely optional, and thank you.</p><p>Map data ©<a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>. · <button class="linkish" type="button" id="cookie-settings">Cookie settings</button></p></div></footer><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a593fdeb3dc94cb8',t:'MTc5NDQ3MDMwOQ=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a593fdeb3dc94cb8',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body></html>
