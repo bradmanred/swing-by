@@ -77,8 +77,9 @@ bottom of the issue.
 
 ### Cloudflare file count (`scripts/count-assets.mjs`)
 
-The build checks count the built site's files against Cloudflare's limit per deploy (20,000 on the free Workers plan;
-every playground page is one file). From 19,000 they warn and open one issue, "Site nearing Cloudflare's 20,000-file
+The build checks count the built site's files against Cloudflare's limit per deploy (20,000 on the free Workers plan).
+Playground pages are packed into 1,000 files (`scripts/pack-pages.mjs`, `worker/packs.js`), so the count is mostly
+place pages, scripts and images, and growing past the limit should take a very large jump. From 19,000 they warn and open one issue, "Site nearing Cloudflare's 20,000-file
 limit"; at 20,000 they fail, because Cloudflare would refuse the deploy.
 
 **This isn't fixed by editing playgrounds.** Never delete or merge playgrounds to get under the limit. Instead,
@@ -86,7 +87,7 @@ comment on the issue with the current count and how many files are left, and lis
 
 1. Upgrade to Workers Paid ($5 a month): the limit becomes 100,000. Then set `ASSET_LIMIT: 100000` in
    `.github/workflows/ci.yml` and close the issue.
-2. Render playground pages in the Worker from one template and the playground data, so they stop being files at all.
+2. Pack more pages the same way: place pages under `/playgrounds/in/` could be packed like playground pages.
 
 Leave the issue open until the owner has decided. New-area imports can carry on until the check fails.
 
