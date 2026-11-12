@@ -1,0 +1,28 @@
+{
+  "name": "Fraser Road",
+  "region": "scotland",
+  "area": "Dingwall",
+  "lat": 57.60305,
+  "lng": -4.43688,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on The Highland Council's own list of play areas.",
+  "nearby": [],
+  "operator": "The Highland Council",
+  "sources": [
+    {
+      "label": "The Highland Council: Fraser Road",
+      "url": "https://www.highland.gov.uk/directory-record/4306/fraser-road-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/908538021"
+    }
+  ],
+  "checked": "2026-11-11",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

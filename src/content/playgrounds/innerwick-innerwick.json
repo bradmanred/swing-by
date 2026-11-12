@@ -1,0 +1,28 @@
+{
+  "name": "Innerwick",
+  "region": "scotland",
+  "area": "Innerwick",
+  "lat": 55.95889,
+  "lng": -2.4465,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on East Lothian Council's own list of play areas.",
+  "nearby": [],
+  "operator": "East Lothian Council",
+  "sources": [
+    {
+      "label": "East Lothian Council: Innerwick",
+      "url": "https://www.eastlothian.gov.uk/safety-and-community/your-community/play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/96808826"
+    }
+  ],
+  "checked": "2026-11-11",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

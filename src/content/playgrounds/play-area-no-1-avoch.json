@@ -1,0 +1,28 @@
+{
+  "name": "Play Area No.1",
+  "region": "scotland",
+  "area": "Avoch",
+  "lat": 57.56987,
+  "lng": -4.17675,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on The Highland Council's own list of play areas.",
+  "nearby": [],
+  "operator": "The Highland Council",
+  "sources": [
+    {
+      "label": "The Highland Council: Play Area No.1",
+      "url": "https://www.highland.gov.uk/directory-record/4353/avoch-play-area-no-1-upper-"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/918931344"
+    }
+  ],
+  "checked": "2026-11-11",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
