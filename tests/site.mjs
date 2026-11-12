@@ -3,6 +3,7 @@
 // every pull request, including data-only ones).
 import { readFile, readdir, stat } from 'node:fs/promises';
 import { join } from 'node:path';
+import { packedIds, readPacked } from './serve.mjs';
 
 let failures = 0;
 const fail = (msg) => {
@@ -35,11 +36,17 @@ if (!(await readdir('dist/_astro')).some((f) => f.startsWith('maplibre-gl-worker
   };
 
   // Every playground page: canonical link, share tags, and a Playground with a position.
-  const dirs = (await readdir('dist/playgrounds', { withFileTypes: true })).filter((d) => d.isDirectory() && d.name !== 'in').map((d) => d.name);
+  // Most are packed (worker/packs.js); any left as their own folder are checked too.
+  const folders = (await readdir('dist/playgrounds', { withFileTypes: true })).filter((d) => d.isDirectory() && d.name !== 'in').map((d) => d.name);
+  const packed = await packedIds();
+  const dirs = [...packed, ...folders];
+  if (new Set(dirs).size !== dirs.length) fail('some playground pages are both packed and left as folders');
+  if (dirs.length < 1000) fail(`expected thousands of playground pages, found ${dirs.length}`);
+  const packedSet = new Set(packed);
   let badLd = 0;
   for (const id of dirs) {
     const path = `/playgrounds/${id}/`;
-    const html = await read(`playgrounds/${id}/index.html`);
+    const html = packedSet.has(id) ? (await readPacked(id))?.toString('utf8') : await read(`playgrounds/${id}/index.html`);
     if (!html) { fail(`${path}: page missing`); continue; }
     checkHead(path, html);
     try {

@@ -1,7 +1,7 @@
 // How close the built site is to Cloudflare's limit on static files per deploy.
 //
-// Every page is its own file in dist/ (each playground is /playgrounds/<id>/index.html), and Cloudflare's free
-// Workers plan allows 20,000 files per deploy. Wrangler's "Read N files" message counts folders as well, so it reads
+// Cloudflare's free Workers plan allows 20,000 files per deploy. Playground pages are packed into 1,000 files
+// (scripts/pack-pages.mjs, worker/packs.js), so the count is mostly place pages, scripts and images. Wrangler's "Read N files" message counts folders as well, so it reads
 // about twice the real number; the limit only counts files, which is what this counts (files only, no folders or
 // symbolic links, the same as Wrangler's upload manifest).
 //
