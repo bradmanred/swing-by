@@ -43,6 +43,8 @@ To use the content editor locally, run `npm run cms` in one terminal and `npm ru
 
 The site runs as a Cloudflare Worker that serves the built pages (see `wrangler.jsonc`), with `worker/index.js` handling sign-in for the content editor.
 
+To stay under Cloudflare's 20,000 files per deploy on the free plan, `npm run build` packs every playground page into 1,000 files after Astro builds them (`scripts/pack-pages.mjs`), and the Worker cuts each page back out when it's asked for (`worker/packs.js`). Addresses and HTML are exactly as Astro built them. The build command must stay `npm run build` so the packing runs.
+
 1. Sign up at https://dash.cloudflare.com (free).
 2. Go to Workers & Pages, create an application, choose to import a repository and pick this one.
 3. Use these build settings:

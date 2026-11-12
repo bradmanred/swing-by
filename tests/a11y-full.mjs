@@ -8,7 +8,7 @@ import { mkdir, readdir, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { chromium } from 'playwright';
 import { AxeBuilder } from '@axe-core/playwright';
-import { serve, WCAG } from './serve.mjs';
+import { packedIds, serve, WCAG } from './serve.mjs';
 
 const SHARD = Number(process.env.SHARD ?? 0);
 const SHARDS = Number(process.env.SHARDS ?? 1);
@@ -16,7 +16,7 @@ const LIMIT = Number(process.env.LIMIT ?? Infinity);
 const WIDTHS = [1280, 375];
 const SKIP = /^\/(admin|moderate)\//; // the content editor and the photo moderation page sit behind a sign-in
 
-/** Every page in dist/ as a site path, e.g. /playgrounds/verulamium/. */
+/** Every page in dist/ as a site path, e.g. /playgrounds/verulamium/ (packed playground pages are added below). */
 async function pages(dir = '') {
   const out = [];
   for (const e of await readdir(join('dist', dir), { withFileTypes: true })) {
@@ -26,7 +26,7 @@ async function pages(dir = '') {
   return out;
 }
 
-const all = (await pages()).filter((p) => !SKIP.test(p)).sort();
+const all = [...(await pages()), ...(await packedIds()).map((id) => `/playgrounds/${id}/`)].filter((p) => !SKIP.test(p)).sort();
 const mine = all.filter((_, i) => i % SHARDS === SHARD).slice(0, LIMIT);
 console.log(`Shard ${SHARD + 1} of ${SHARDS}: ${mine.length} of ${all.length} pages, at ${WIDTHS.join(' and ')}px`);
 

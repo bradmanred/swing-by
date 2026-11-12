@@ -1,5 +1,7 @@
 // Cloudflare Worker: GitHub sign-in for Decap CMS at /api/auth and /api/callback, home page suggestions at /api/feedback,
-// parent photos at /api/photos, parents' equipment reports at /api/equipment, parents' pin corrections at /api/pins; everything else is the static site. Also redirects www to the bare domain.
+// parent photos at /api/photos, parents' equipment reports at /api/equipment, parents' pin corrections at /api/pins;
+// playground pages from their pack files (worker/packs.js); everything else is the static site. Also redirects www to
+// the bare domain.
 // Needs GITHUB_CLIENT_ID and GITHUB_CLIENT_SECRET set as variables and secrets on the Worker, the PHOTOS_DB
 // D1 binding, and a MOD_TOKEN secret for approving photos.
 import { onRequest as auth } from '../functions/api/auth.js';
@@ -8,6 +10,7 @@ import { feedback } from './feedback.js';
 import { photos } from './photos.js';
 import { equipment } from './equipment.js';
 import { pins } from './pins.js';
+import { servePacked } from './packs.js';
 
 // Old playground address → the listing it was merged into. Add a line whenever two listings are merged.
 const MERGED = {
@@ -195,6 +198,14 @@ export default {
     if (pathname === '/api/photos' || pathname.startsWith('/api/photos/')) return photos({ request, env, pathname });
     if (pathname === '/api/equipment' || pathname.startsWith('/api/equipment/')) return equipment({ request, env, pathname });
     if (pathname === '/api/pins' || pathname.startsWith('/api/pins/')) return pins({ request, env, pathname });
+    // The pack files are only for the Worker to read; don't serve them as pages.
+    if (pathname.startsWith('/_pages/')) {
+      const missing = await env.ASSETS.fetch(new Request(new URL('/404.html', url)));
+      return new Response(missing.body, { status: 404, headers: missing.headers });
+    }
+    // Playground pages are packed into a few hundred files (worker/packs.js); serve them from there.
+    const packed = await servePacked(request, env.ASSETS);
+    if (packed) return packed;
     const res = await env.ASSETS.fetch(request);
     // Playgrounds merged into another listing: send old links to the one we kept.
     const gone = /^\/playgrounds\/([a-z0-9-]+)\/?$/.exec(pathname);
@@ -207,8 +218,8 @@ export default {
     const old = /^\/playgrounds\/c-([a-z0-9-]+)(\/.*)?$/.exec(pathname);
     if (res.status === 404 && old) {
       url.pathname = `/playgrounds/${old[1]}${old[2] ?? '/'}`;
-      const now = await env.ASSETS.fetch(new Request(url, { method: 'GET' }));
-      if (now.ok) return Response.redirect(url.toString(), 301);
+      const now = (await servePacked(new Request(url), env.ASSETS)) ?? (await env.ASSETS.fetch(new Request(url, { method: 'GET' })));
+      if (now.ok || now.status === 307) return Response.redirect(url.toString(), 301);
     }
     return res;
   },
