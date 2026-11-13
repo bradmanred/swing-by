@@ -1,9 +1,13 @@
 {
- "updated": "2026-11-11",
+ "updated": "2026-11-13",
  "counties": [
   {
    "name": "Greater London",
    "playgrounds": 2953
+  },
+  {
+   "name": "Kent",
+   "playgrounds": 1178
   },
   {
    "name": "Devon",
@@ -60,10 +64,6 @@
   {
    "name": "Derbyshire",
    "playgrounds": 320
-  },
-  {
-   "name": "Kent",
-   "playgrounds": 193
   },
   {
    "name": "Surrey",

@@ -1,0 +1,28 @@
+{
+  "name": "St Stephen's Church Field Play Area",
+  "region": "south-east",
+  "area": "St. Stephen's, Canterbury",
+  "lat": 51.2905,
+  "lng": 1.07998,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A children's play area in Canterbury, on Canterbury City Council's list of play areas where dogs aren't allowed.",
+  "nearby": [],
+  "operator": "Canterbury City Council",
+  "sources": [
+    {
+      "label": "Canterbury City Council: St Stephen's Church Field Play Area",
+      "url": "https://www.canterbury.gov.uk/sites/default/files/2022-10/Dog%20control%20orders%20PSPO%20schedule%202.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/118631817"
+    }
+  ],
+  "checked": "2026-11-13",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
