@@ -14,6 +14,7 @@ import { servePacked } from './packs.js';
 
 // Old playground address → the listing it was merged into. Add a line whenever two listings are merged.
 const MERGED = {
+  'playground-off-sandling-road-saltwood-folkestone-and-hythe': 'brockhill-country-park-play-area-saltwood',
   'playground-off-artillery-park-nungate-haddington': 'artillary-park-nungate-haddington',
   'playground-off-brierbush-road-macmerry': 'brierbush-road-macmerry',
   'playground-off-gateside-avenue-west-letham-haddington-2': 'gateside-haddington',

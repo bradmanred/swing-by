@@ -2627,6 +2627,88 @@
         "nameField": "name",
         "page": "https://www.eastlothian.gov.uk/safety-and-community/your-community/play-areas"
       }
+    },
+    {
+      "district": "Canterbury",
+      "council": "Canterbury City Council",
+      "sources": [
+        "https://www.canterbury.gov.uk/sites/default/files/2022-10/Dog%20control%20orders%20PSPO%20schedule%202.pdf",
+        "https://www.canterbury.gov.uk/sites/default/files/2024-04/Open%20spaces%20strategy.pdf"
+      ],
+      "note": "No play area directory; the dog control order (schedule 2) names the council’s children’s play areas, copied into src/data/council-lists/canterbury.csv (48 rows; The Red House, Derringstone left out as Derringstone has two unnamed playgrounds) (13 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/canterbury.csv",
+        "page": "https://www.canterbury.gov.uk/sites/default/files/2022-10/Dog%20control%20orders%20PSPO%20schedule%202.pdf",
+        "near": {
+          "lat": 51.3,
+          "lng": 1.1,
+          "km": 14
+        }
+      }
+    },
+    {
+      "district": "Maidstone",
+      "council": "Maidstone Borough Council",
+      "sources": [
+        "https://maidstone.gov.uk/home/other-services/parks-and-play-areas"
+      ],
+      "note": "Checked 13 November 2026: play areas are only behind a postcode search on the council’s website, which refuses automated requests (also from GitHub). Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Maidstone",
+      "parish": "Kent Country Parks",
+      "council": "Kent County Council",
+      "sources": [
+        "https://www.kent.gov.uk/leisure-and-community/kent-country-parks",
+        "https://www.kentonline.co.uk/maidstone/news/amp/1-1m-to-improve-play-areas-263131/"
+      ],
+      "note": "Kent County Council’s eight country parks with play areas (renewed in its £1.1m play programme), across Kent; listed here so they’re read with Kent’s councils (13 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/kent-country-parks.csv",
+        "page": "https://www.kent.gov.uk/leisure-and-community/kent-country-parks",
+        "near": {
+          "lat": 51.28,
+          "lng": 0.75,
+          "km": 60
+        }
+      }
+    },
+    {
+      "district": "Swale",
+      "council": "Swale Borough Council",
+      "sources": [
+        "https://services.swale.gov.uk/meetings/documents/s24873/Appendix%20II%20Play%20Area%20Refurbishment-Improvement%20Plan%202021-25.pdf",
+        "https://democracy.swale.gov.uk/documents/s32812/Appendix%201%20-%20Play%20Site%20Review%20-%20Knight%20Kavanagh%20Page%20Ltd.pdf"
+      ],
+      "note": "Checked 13 November 2026: the play site lists are only in committee papers, which refuse automated requests (also from GitHub). Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Thanet",
+      "council": "Thanet District Council",
+      "sources": [
+        "https://www.thanet.gov.uk/info-pages/parks-and-open-spaces",
+        "https://www.thanet.gov.uk/new-spaces-to-protect-thanets-children-from-secondhand-smoke/"
+      ],
+      "note": "Checked 13 November 2026: the council says it runs over 30 play areas but names only a handful, with no list or map. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Tonbridge and Malling",
+      "council": "Tonbridge and Malling Borough Council",
+      "sources": [
+        "https://www.tmbc.gov.uk/leisure-parks",
+        "https://kingshillparish.gov.uk/community-facilities/play-areas/"
+      ],
+      "note": "Checked 13 November 2026: no play area list on the council’s website (many play areas are run by parish councils, such as Kings Hill), and its open space study refuses automated downloads. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Folkestone and Hythe",
+      "council": "Folkestone and Hythe District Council",
+      "sources": [
+        "https://www.folkestone-hythe.gov.uk/downloads/file/898/play-area-strategy-2021"
+      ],
+      "note": "Checked 13 November 2026: the 2021 play area strategy counts 85 play areas but its site list (appendix 2) isn’t published with it. Play areas come from OpenStreetMap."
     }
   ]
 }
