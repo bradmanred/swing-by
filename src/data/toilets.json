@@ -5,9 +5,9 @@
   "licence": "CC BY 4.0",
   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
   "note": "Nearest toilets worked out by Swing By from the Toilet Map data.",
-  "export": "toilets-2026-11-13T00%3A00%3A40.943Z-BoJtqSmRC6UtjXC7CBKRPsvOZBeWjB.csv"
+  "export": "toilets-2026-11-14T00%3A00%3A40.759Z-cX8pz6UQn7VV28pWrM9YfyBvvNEbYp.csv"
  },
- "toilets": 15854,
+ "toilets": 15855,
  "parks": {
   "1066-battle-abbey-natural-play-area": {
    "nearest": {
@@ -72174,14 +72174,14 @@
   },
   "lordship-recreation-ground-playground-haringey": {
    "nearest": {
-    "id": "fd83a87fa4acc5f1915ecad9",
-    "name": "Turnpike Lane Bus Station",
-    "m": 1063,
+    "id": "140a2e54c7d00c9873cba674",
+    "name": "Tower Gardens Community Corner",
+    "m": 692,
     "babyChange": false,
     "accessible": false,
-    "free": null,
-    "lat": 51.590322168,
-    "lng": -0.102331638
+    "free": true,
+    "lat": 51.599187324,
+    "lng": -0.084682102
    },
    "nearestBabyChange": {
     "id": "aa3c3472650826b8888f347a",
@@ -134673,14 +134673,14 @@
   },
   "playground-off-downhills-way-west-green-greater-london": {
    "nearest": {
-    "id": "fd83a87fa4acc5f1915ecad9",
-    "name": "Turnpike Lane Bus Station",
-    "m": 888,
+    "id": "140a2e54c7d00c9873cba674",
+    "name": "Tower Gardens Community Corner",
+    "m": 708,
     "babyChange": false,
     "accessible": false,
-    "free": null,
-    "lat": 51.590322168,
-    "lng": -0.102331638
+    "free": true,
+    "lat": 51.599187324,
+    "lng": -0.084682102
    },
    "nearestBabyChange": {
     "id": "cffaea995324580153e9c0f4",
@@ -148024,14 +148024,14 @@
   },
   "playground-off-gloucester-road-west-green-greater-london": {
    "nearest": {
-    "id": "10c29fc18441c37efdbc34e1",
-    "name": "Cafe La City",
-    "m": 1230,
-    "babyChange": null,
+    "id": "140a2e54c7d00c9873cba674",
+    "name": "Tower Gardens Community Corner",
+    "m": 611,
+    "babyChange": false,
     "accessible": false,
     "free": true,
-    "lat": 51.585419885,
-    "lng": -0.071609616
+    "lat": 51.599187324,
+    "lng": -0.084682102
    },
    "nearestBabyChange": {
     "id": "aa3c3472650826b8888f347a",
@@ -151323,14 +151323,14 @@
   },
   "playground-off-griffin-road-west-green-greater-london": {
    "nearest": {
-    "id": "021d840f452f2bff2f683a53",
-    "name": "Coombes Croft",
-    "m": 1160,
+    "id": "140a2e54c7d00c9873cba674",
+    "name": "Tower Gardens Community Corner",
+    "m": 545,
     "babyChange": false,
     "accessible": false,
     "free": true,
-    "lat": 51.602185949,
-    "lng": -0.067441463
+    "lat": 51.599187324,
+    "lng": -0.084682102
    },
    "nearestBabyChange": {
     "id": "aa3c3472650826b8888f347a",
@@ -198157,14 +198157,14 @@
   },
   "playground-off-peregrine-road-bowes-greater-london": {
    "nearest": {
-    "id": "df93df11ab13592cd8454eef",
-    "name": "Boundary Playing Fields, Tottenhall Rd",
-    "m": 723,
-    "babyChange": null,
-    "accessible": true,
+    "id": "140a2e54c7d00c9873cba674",
+    "name": "Tower Gardens Community Corner",
+    "m": 719,
+    "babyChange": false,
+    "accessible": false,
     "free": true,
-    "lat": 51.609744,
-    "lng": -0.0957504
+    "lat": 51.599187324,
+    "lng": -0.084682102
    },
    "nearestBabyChange": {
     "id": "cffaea995324580153e9c0f4",
@@ -239858,14 +239858,14 @@
   },
   "playground-off-willan-road-west-green-greater-london": {
    "nearest": {
-    "id": "10c29fc18441c37efdbc34e1",
-    "name": "Cafe La City",
-    "m": 1167,
-    "babyChange": null,
+    "id": "140a2e54c7d00c9873cba674",
+    "name": "Tower Gardens Community Corner",
+    "m": 614,
+    "babyChange": false,
     "accessible": false,
     "free": true,
-    "lat": 51.585419885,
-    "lng": -0.071609616
+    "lat": 51.599187324,
+    "lng": -0.084682102
    },
    "nearestBabyChange": {
     "id": "aa3c3472650826b8888f347a",
@@ -270367,24 +270367,14 @@
   },
   "tower-gardens-playground-haringey": {
    "nearest": {
-    "id": "021d840f452f2bff2f683a53",
-    "name": "Coombes Croft",
-    "m": 1230,
+    "id": "140a2e54c7d00c9873cba674",
+    "name": "Tower Gardens Community Corner",
+    "m": 20,
     "babyChange": false,
     "accessible": false,
     "free": true,
-    "lat": 51.602185949,
-    "lng": -0.067441463
-   },
-   "nearestBabyChange": {
-    "id": "cffaea995324580153e9c0f4",
-    "name": "Wood Green Shopping City",
-    "m": 1743,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.595358299,
-    "lng": -0.10904789
+    "lat": 51.599187324,
+    "lng": -0.084682102
    }
   },
   "tower-grounds-playground-new-brighton-wallasey": {
