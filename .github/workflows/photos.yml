@@ -30,7 +30,7 @@ jobs:
           GEOGRAPH_KEY: ${{ secrets.GEOGRAPH_KEY }}
         run: |
           if [ "${{ github.ref }}" = "refs/heads/main" ]; then
-            node scripts/find-photos.mjs --limit 150
+            node scripts/find-photos.mjs --limit 250
           else
             node scripts/find-photos.mjs --dry-run --limit 25
           fi

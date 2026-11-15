@@ -2,7 +2,7 @@
 // Wikimedia Commons (CC BY, CC BY-SA, CC0 or public domain), and sends them to the site's moderation queue.
 // Nothing appears on the site until a moderator approves it at /moderate/.
 //
-//   SITE=https://swing-by.co.uk MOD_TOKEN=… GEOGRAPH_KEY=… node scripts/find-photos.mjs [--limit 150] [--dry-run]
+//   SITE=https://swing-by.co.uk MOD_TOKEN=… GEOGRAPH_KEY=… node scripts/find-photos.mjs [--limit 250] [--dry-run]
 //
 // Run weekly by .github/workflows/photos.yml. Without GEOGRAPH_KEY it searches Wikimedia Commons only.
 import { readFile, readdir } from 'node:fs/promises';
@@ -12,7 +12,7 @@ const SITE = process.env.SITE || 'https://swing-by.co.uk';
 const TOKEN = process.env.MOD_TOKEN?.trim(); // a pasted secret can carry a trailing newline
 const GEOGRAPH_KEY = process.env.GEOGRAPH_KEY;
 const DRY = process.argv.includes('--dry-run');
-const LIMIT = Number(process.argv[process.argv.indexOf('--limit') + 1]) || 150; // playgrounds per run: Geograph asks for on-demand use, not bulk
+const LIMIT = Number(process.argv[process.argv.indexOf('--limit') + 1]) || 250; // playgrounds per run: Geograph asks for on-demand use, not bulk
 const RADIUS_M = 200; // how far from the pin a photo can have been taken
 const RESEARCH_DAYS = 60; // look again at playgrounds with nothing found after this long
 const UA = { 'User-Agent': 'SwingBy/1.0 (https://swing-by.co.uk; finds openly licensed playground photos for moderation)' };
