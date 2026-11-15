@@ -87,7 +87,7 @@ export function toiletInfo(p: Park) {
 /** Decorative icons; the text label is always shown next to them. */
 export const ICON: Record<string, string> = {
   sw: '🪢', bs: '👶', sl: '🛝', tp: '🤸', ss: '⚖️', mb: '🐒', cl: '🧗', zw: '🚡', sp: '🏖️', wp: '💦', ad: '🏴‍☠️', rb: '🎠', tr: '🚂', sk: '🛹',
-  spr: '🐴', bk: '🧺', gym: '🏋️', mg: '🏀', bb: '🪵', bt: '🚲',
+  spr: '🐴', bk: '🧺', gym: '🏋️', mg: '🏀', bb: '🪵', bt: '🚲', tt: '🏓',
   inc: '♿', sf: '♿', sen: '✋', wc: '🚻', bc: '🍼', cf: '☕', fen: '🚧', sh: '🌳', fp: '🅿️', pic: '🥪', tsh: '🛖',
 };
 
