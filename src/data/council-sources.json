@@ -2709,6 +2709,136 @@
         "https://www.folkestone-hythe.gov.uk/downloads/file/898/play-area-strategy-2021"
       ],
       "note": "Checked 13 November 2026: the 2021 play area strategy counts 85 play areas but its site list (appendix 2) isn’t published with it. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Brentwood",
+      "council": "Brentwood Borough Council",
+      "sources": [
+        "https://brentwood.gov.uk/parks-and-playing-fields",
+        "https://www.brentwood.gov.uk/countryside-sites-and-parks"
+      ],
+      "note": "The parks pages list 17 council play areas (copied into src/data/council-lists/brentwood.csv). The same page names parish play areas in Blackmore, Doddinghurst, Ingatestone and Fryerning, Kelvedon Hatch, Mountnessing, Navestock and Stondon Massey; those parish councils aren't registered yet, so they come from OpenStreetMap (16 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/brentwood.csv",
+        "page": "https://brentwood.gov.uk/parks-and-playing-fields",
+        "near": {
+          "lat": 51.62,
+          "lng": 0.31,
+          "km": 10
+        }
+      }
+    },
+    {
+      "district": "Rochford",
+      "council": "Rochford District Council",
+      "sources": [
+        "https://www.rochford.gov.uk/woodlands-parks-and-open-spaces"
+      ],
+      "note": "The parks page's status table lists 20 parks and play spaces; the 18 shown open are in src/data/council-lists/rochford.csv (Betts Woods/Westminster Drive and Causton Way were closed) (16 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/rochford.csv",
+        "page": "https://www.rochford.gov.uk/woodlands-parks-and-open-spaces",
+        "near": {
+          "lat": 51.59,
+          "lng": 0.68,
+          "km": 12
+        }
+      }
+    },
+    {
+      "district": "Southend-on-Sea",
+      "council": "Southend-on-Sea City Council",
+      "sources": [
+        "https://southend.gov.uk/news/article/3112/have-your-say-on-playground-improvements-in-southend-s-parks",
+        "https://yoursay.southend.gov.uk/play-area-improvement-consultation"
+      ],
+      "note": "No play area list on the council website; the eight playgrounds named in its play area refurbishment programme and news are in src/data/council-lists/southend.csv. Other play areas come from OpenStreetMap (16 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/southend.csv",
+        "page": "https://southend.gov.uk/news/article/3112/have-your-say-on-playground-improvements-in-southend-s-parks",
+        "near": {
+          "lat": 51.55,
+          "lng": 0.71,
+          "km": 8
+        }
+      }
+    },
+    {
+      "district": "Castle Point",
+      "council": "Castle Point Borough Council",
+      "sources": [
+        "https://www.castlepoint.gov.uk/parks/",
+        "https://www.castlepoint.gov.uk/w/-1-million-project-transforming-play-areas-in-local-parks-to-begin"
+      ],
+      "note": "The parks page lists 34 parks without saying which have play areas; the four playgrounds the council names (parks page and play investment news) are in src/data/council-lists/castle-point.csv. Other play areas come from OpenStreetMap (16 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/castle-point.csv",
+        "page": "https://www.castlepoint.gov.uk/parks/",
+        "near": {
+          "lat": 51.55,
+          "lng": 0.58,
+          "km": 8
+        }
+      }
+    },
+    {
+      "district": "Maldon",
+      "council": "Maldon District Council",
+      "sources": [
+        "https://www.maldon.gov.uk/homepage/7061/parks_and_open_spaces",
+        "https://www.visitmaldondistrict.co.uk/things-to-do/outdoor/parks-and-recs"
+      ],
+      "note": "The district council runs Promenade Park and Riverside Park and a few play sites (src/data/council-lists/maldon.csv); most village play areas belong to town and parish councils. Visit Maldon District's parks list has no names that can be read automatically, so those come from OpenStreetMap until the parishes are registered (16 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/maldon.csv",
+        "page": "https://www.maldon.gov.uk/homepage/7061/parks_and_open_spaces",
+        "near": {
+          "lat": 51.7,
+          "lng": 0.75,
+          "km": 16
+        }
+      }
+    },
+    {
+      "district": "Basildon",
+      "council": "Basildon Borough Council",
+      "sources": [
+        "https://basildon.gov.uk/article/5215/All-Outdoor-Play-Areas"
+      ],
+      "note": "Checked 16 November 2026: the council's 143 play areas are only on a map on its website, which refuses automated requests (also from GitHub). Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Uttlesford",
+      "council": "Uttlesford District Council",
+      "sources": [
+        "https://uttlesford.moderngov.co.uk/Data/Council/201004201930/Agenda/Document 9.pdf"
+      ],
+      "note": "Checked 16 November 2026: the district council doesn't run play areas; they belong to town and parish councils (Saffron Walden, Great Dunmow, Stansted Mountfitchet and others), which aren't registered yet. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Braintree",
+      "parish": "Essex Country Parks",
+      "council": "Essex County Council",
+      "sources": [
+        "https://www.explore-essex.com/places-to-go/kids-play-and-trails",
+        "https://www.explore-essex.com/blog/kids-play-upgrades"
+      ],
+      "note": "Essex County Council's country parks with play areas (Great Notley, Cudmore Grove, Belhus Woods, Weald and Hadleigh), across Essex; listed here so they're read with Essex's councils (16 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/essex-country-parks.csv",
+        "page": "https://www.explore-essex.com/places-to-go/kids-play-and-trails",
+        "near": {
+          "lat": 51.75,
+          "lng": 0.6,
+          "km": 45
+        }
+      }
     }
   ]
 }
