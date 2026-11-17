@@ -88,7 +88,7 @@ const ld = [
       <section aria-labelledby="what">
         <h2 id="what" style="margin-top:24px">What's here</h2>
         <div class="prose" style="margin-top:10px">
-          {copy.intro.map((t) => <p>{t}</p>)}
+          {copy.intro.map((para) => <p>{para.map((s) => (typeof s === 'string' ? s : <a href={s.href}>{s.text}</a>))}</p>)}
           {copy.ask && <p><strong>Been here?</strong> <a href="#parent-eq">Tick what you saw</a>. It takes about 30 seconds and helps the next family decide whether it’s worth stopping.</p>}
           {p.rules && <p><strong>{p.rules}</strong></p>}
         </div>
