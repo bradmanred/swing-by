@@ -3578,6 +3578,109 @@
         "https://www.sholland.gov.uk/article/13061/Parks-and-open-spaces"
       ],
       "note": "Checked 17 November 2026: the council's play parks are on a map; its list of locations isn't linked. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Cheshire East",
+      "council": "Cheshire East Council",
+      "sources": [
+        "https://cheshireeast.gov.uk/leisure,_culture_and_tourism/parks_and_gardens/play-areas.aspx"
+      ],
+      "note": "The play areas page lists the council's play areas by town (src/data/council-lists/cheshire-east.csv, about 170; postcodes where given, otherwise street and town). Town and parish councils such as Poynton run some more (17 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/cheshire-east.csv",
+        "page": "https://cheshireeast.gov.uk/leisure,_culture_and_tourism/parks_and_gardens/play-areas.aspx",
+        "near": {
+          "lat": 53.17,
+          "lng": -2.3,
+          "km": 30
+        }
+      }
+    },
+    {
+      "district": "Cheshire West and Chester",
+      "council": "Cheshire West and Chester Council",
+      "sources": [
+        "https://www.cheshirewestandchester.gov.uk/playstrategy"
+      ],
+      "note": "Checked 17 November 2026: 108 council play areas, shown only on an interactive map; the play strategy's locality frameworks list them but are long PDFs. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Warrington",
+      "council": "Warrington Borough Council",
+      "sources": [
+        "https://www.warrington.gov.uk/parks"
+      ],
+      "note": "Checked 17 November 2026: no play area list on the parks pages. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Halton",
+      "council": "Halton Borough Council",
+      "sources": [
+        "https://www.halton.gov.uk/libraries-parks-community-leisure/parks-allotments-bowling-greens"
+      ],
+      "note": "Checked 17 November 2026: parks pages without a play area list. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Somerset",
+      "council": "Somerset Council",
+      "sources": [
+        "https://www.somerset.gov.uk/tables/mendip-play-areas-kickabouts-netball-and-skate-parks",
+        "https://www.somerset.gov.uk/children-families-and-education/the-local-offer/parks-and-play-areas"
+      ],
+      "note": "Somerset Council looks after about 307 play areas. Its table for the former Mendip district gives locations and postcodes (src/data/council-lists/somerset-mendip.csv); the other former districts' play areas are only in the Local Offer map directory, a next step. Taunton's play areas moved to Taunton Town Council (17 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/somerset-mendip.csv",
+        "page": "https://www.somerset.gov.uk/tables/mendip-play-areas-kickabouts-netball-and-skate-parks",
+        "near": {
+          "lat": 51.18,
+          "lng": -2.6,
+          "km": 25
+        }
+      }
+    },
+    {
+      "district": "North Somerset",
+      "council": "North Somerset Council",
+      "sources": [
+        "https://n-somerset.gov.uk/my-services/libraries-leisure-open-spaces/parks-countryside/parks-open-spaces/play-areas"
+      ],
+      "note": "The play areas page lists the council's 47 sites (src/data/council-lists/north-somerset.csv; skate parks, gyms, games areas and the bike track left out). Weston, Portishead and other town and parish councils run more (17 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/north-somerset.csv",
+        "page": "https://n-somerset.gov.uk/my-services/libraries-leisure-open-spaces/parks-countryside/parks-open-spaces/play-areas",
+        "near": {
+          "lat": 51.4,
+          "lng": -2.85,
+          "km": 18
+        }
+      }
+    },
+    {
+      "district": "Bath and North East Somerset",
+      "council": "Bath and North East Somerset Council",
+      "sources": [
+        "https://www.bathnes.gov.uk/taxonomy/term/1533",
+        "https://www.bathnes.gov.uk/find-play-areas-outside-bath"
+      ],
+      "note": "Pages for each of the council's 60 play areas ('Widcombe Play Area, Bath', 'Calton Road Play Area, Bath') linked from its find-a-play-area pages. Feed set up 17 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "pages",
+        "index": [
+          "https://www.bathnes.gov.uk/find-play-areas-outside-bath",
+          "https://www.bathnes.gov.uk/taxonomy/term/1533"
+        ],
+        "follow": "bathnes\\.gov\\.uk/[a-z0-9-]*play-area[a-z0-9-]*$",
+        "allPlay": true,
+        "exclude": "review|Find",
+        "near": {
+          "lat": 51.36,
+          "lng": -2.45,
+          "km": 18
+        }
+      }
     }
   ]
 }
