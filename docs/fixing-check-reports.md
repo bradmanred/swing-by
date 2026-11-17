@@ -56,6 +56,18 @@ Full lists are in the `quarterly-check` artifact on the run linked at the bottom
   A playground left with no official source becomes Unverified if it has an OpenStreetMap source; otherwise list it
   under "For the owner to decide".
 - **Not checked for over a year:** re-check against the official source and update details and `checked`.
+- **Names that may be "village + street":** search the council's site and the area's streets (OpenStreetMap) for what
+  the rest of the name means. If it's a street or a place in the village (East Lothian's "Aberlady Pleasance" is the
+  play area on The Pleasance), rename it as in `docs/finding-playgrounds.md` ("The Pleasance play area"), keeping a
+  word of the council's name so the council-list check still matches it. Don't rename the file. If it's already a
+  proper name ("Hove Lagoon"), leave it and note it in the PR.
+- **Only the stock description:** work through up to 20 a run, from the top of the list. Look in the council's own
+  sources: news releases about the play area opening or being refurbished, and play strategy or play sufficiency
+  documents, which often give equipment, a theme and an age range. Write the description in our own words (what's
+  there, anything notable, the council's age range), fill in `equipment` and `ages` only where the source says so,
+  add each source, update `notConfirmed`, and set `checked` to today. Say in the description, or in `notConfirmed`,
+  if the source only describes planned work. Nothing found: leave it; the page already makes a friendly paragraph
+  from the stock line.
 
 ### Yearly full accessibility scan (`tests/a11y-full.mjs`)
 
