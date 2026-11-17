@@ -3089,6 +3089,113 @@
         "https://www.epsom-ewell.gov.uk/node/98"
       ],
       "note": "Checked 17 November 2026: no play area list; each park's accessibility leaflet (PDF) says whether it has a playground. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Nottingham",
+      "council": "Nottingham City Council",
+      "sources": [
+        "https://nottinghamcity.gov.uk/media/r1jdart4/outdoor-play-facilities.pdf"
+      ],
+      "note": "The council's 'Outdoor play facilities' list gives each site's street and postcode; the 97 with a playground are in src/data/council-lists/nottingham.csv (17 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/nottingham.csv",
+        "page": "https://nottinghamcity.gov.uk/media/r1jdart4/outdoor-play-facilities.pdf",
+        "near": {
+          "lat": 52.95,
+          "lng": -1.16,
+          "km": 10
+        }
+      }
+    },
+    {
+      "district": "Gedling",
+      "council": "Gedling Borough Council",
+      "sources": [
+        "https://www.gedling.gov.uk/resident/parksandgreenspaces/findapark"
+      ],
+      "note": "The find-a-park tables say which parks have a play area, with postcodes; the 30 that do are in src/data/council-lists/gedling.csv (17 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/gedling.csv",
+        "page": "https://www.gedling.gov.uk/resident/parksandgreenspaces/findapark",
+        "near": {
+          "lat": 53.0,
+          "lng": -1.1,
+          "km": 10
+        }
+      }
+    },
+    {
+      "district": "Bassetlaw",
+      "council": "Bassetlaw District Council",
+      "sources": [
+        "https://bassetlaw.gov.uk/parks-and-open-spaces/play-areas/play-area-locations"
+      ],
+      "note": "The play area locations page lists the council's 37 playgrounds with postcodes (src/data/council-lists/bassetlaw.csv). Rural play areas are mostly run by parish councils (17 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/bassetlaw.csv",
+        "page": "https://bassetlaw.gov.uk/parks-and-open-spaces/play-areas/play-area-locations",
+        "near": {
+          "lat": 53.33,
+          "lng": -1.0,
+          "km": 20
+        }
+      }
+    },
+    {
+      "district": "Rushcliffe",
+      "council": "Rushcliffe Borough Council",
+      "sources": [
+        "https://www.rushcliffe.gov.uk/leisure-and-culture/parks-and-play-areas",
+        "https://www.rushcliffe.gov.uk/about-us/about-the-council/policies-strategies-and-other-documents/accessible-documents/play-strategy"
+      ],
+      "note": "The borough council runs only about 12 of Rushcliffe's 69 play areas, mostly in West Bridgford; the seven it names are in src/data/council-lists/rushcliffe.csv. The play strategy's site list covers all owners without saying who runs each, so parish play areas come from OpenStreetMap (17 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/rushcliffe.csv",
+        "page": "https://www.rushcliffe.gov.uk/leisure-and-culture/parks-and-play-areas",
+        "near": {
+          "lat": 52.92,
+          "lng": -1.13,
+          "km": 8
+        }
+      }
+    },
+    {
+      "district": "Ashfield",
+      "council": "Ashfield District Council",
+      "sources": [
+        "https://www.ashfield.gov.uk/leisure/outdoor-recreation-and-sports-facilities"
+      ],
+      "note": "Checked 17 November 2026: no play area list (only a facilities map and park management plans). Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Broxtowe",
+      "council": "Broxtowe Borough Council",
+      "sources": [
+        "https://www.broxtowe.gov.uk/prideinparks",
+        "https://www.broxtowe.gov.uk/media/4327/broxtowe-borough-council-play-strategy-2017-2025.pdf"
+      ],
+      "note": "Checked 17 November 2026: 37 borough play areas, but the only list is inside the play strategy PDF (and a 2026 draft). Town and parish councils (Stapleford, Eastwood, Kimberley and others) run more. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Mansfield",
+      "council": "Mansfield District Council",
+      "sources": [
+        "https://www.mansfield.gov.uk/downloads/file/6557/parks-strategy-2023-2028-appendices"
+      ],
+      "note": "Checked 17 November 2026: the parks strategy appendix lists every council park with a column for children's play, but couldn't be read from here; turning it into a list is a next step. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Newark and Sherwood",
+      "council": "Newark and Sherwood District Council",
+      "sources": [
+        "https://www.newark-sherwooddc.gov.uk/parksandopenspacesplan",
+        "https://newark-sherwooddc.gov.uk/publicspaceprotectionorders/"
+      ],
+      "note": "Checked 17 November 2026: 30 district play parks, with no list beyond the dog-exclusion orders; Newark Town Council and parishes run many more. Play areas come from OpenStreetMap."
     }
   ]
 }
