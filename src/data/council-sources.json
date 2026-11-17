@@ -3466,6 +3466,118 @@
         "https://www.blaby.gov.uk/leisure-health-and-community/parks-and-green-spaces/parks-and-open-spaces"
       ],
       "note": "Checked 17 November 2026: most play areas are run by parish councils (Braunstone Town, Glenfield, Countesthorpe and others); the district lists none. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Lincoln",
+      "council": "City of Lincoln Council",
+      "sources": [
+        "https://www.lincoln.gov.uk/parks-open-spaces/open-spaces-lincoln"
+      ],
+      "note": "Jadu 'Open spaces in Lincoln' directory; each record says whether the site has a play area. Feed set up 17 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "pages",
+        "index": "https://www.lincoln.gov.uk/parks-open-spaces/open-spaces-lincoln",
+        "follow": "/directory-record/\\d+/[a-z0-9-]+$",
+        "require": "Play Area\\s*(?:<[^>]+>\\s*)*Yes",
+        "near": {
+          "lat": 53.23,
+          "lng": -0.54,
+          "km": 6
+        }
+      }
+    },
+    {
+      "district": "Boston",
+      "council": "Boston Borough Council",
+      "sources": [
+        "https://www.boston.gov.uk/article/21256/Play-Areas"
+      ],
+      "note": "The play areas page names the 14 playgrounds the council looks after (src/data/council-lists/boston.csv); other play areas belong to parish councils (17 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/boston.csv",
+        "page": "https://www.boston.gov.uk/article/21256/Play-Areas",
+        "near": {
+          "lat": 52.98,
+          "lng": -0.03,
+          "km": 8
+        }
+      }
+    },
+    {
+      "district": "West Lindsey",
+      "council": "West Lindsey District Council",
+      "sources": [
+        "https://democracy.west-lindsey.gov.uk/documents/s32390/Levelling Up Parks Fund.pdf"
+      ],
+      "note": "Checked 17 November 2026: the district council lists no play areas; Gainsborough's are run by the town council (registered separately) and village ones by parishes. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "West Lindsey",
+      "parish": "Gainsborough",
+      "council": "Gainsborough Town Council",
+      "sources": [
+        "https://gainsborough-tc.gov.uk/council-services/"
+      ],
+      "note": "The town council lists its five play areas (src/data/council-lists/gainsborough-town.csv) (17 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/gainsborough-town.csv",
+        "page": "https://gainsborough-tc.gov.uk/council-services/",
+        "near": {
+          "lat": 53.4,
+          "lng": -0.77,
+          "km": 4
+        }
+      }
+    },
+    {
+      "district": "North Lincolnshire",
+      "council": "North Lincolnshire Council",
+      "sources": [
+        "https://www.northlincs.gov.uk/planning-and-environment/parks-playgrounds-and-open-spaces"
+      ],
+      "note": "Checked 17 November 2026: 63 council playgrounds, listed in a small 'Children's playgrounds list' PDF that couldn't be opened from here; save it with Fetch pages and turn it into a list. Play areas come from OpenStreetMap until then."
+    },
+    {
+      "district": "North East Lincolnshire",
+      "council": "North East Lincolnshire Council",
+      "sources": [
+        "https://www.nelincs.gov.uk/parks-and-open-spaces"
+      ],
+      "note": "Checked 17 November 2026: 53 council play areas, with no list beyond the main parks. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "South Kesteven",
+      "council": "South Kesteven District Council",
+      "sources": [
+        "https://moderngov.southkesteven.gov.uk/documents/s42714/Appendix 1 for Play Area Strategy.pdf"
+      ],
+      "note": "Checked 17 November 2026: 38 council play areas, listed only in the play area strategy (Appendix 1); turning it into a list is a next step. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "East Lindsey",
+      "council": "East Lindsey District Council",
+      "sources": [
+        "https://www.e-lindsey.gov.uk/parks"
+      ],
+      "note": "Checked 17 November 2026: the parks page describes only the main sites (Skegness, Mablethorpe, Louth, Horncastle); others are on a map. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "North Kesteven",
+      "council": "North Kesteven District Council",
+      "sources": [
+        "https://www.n-kesteven.gov.uk/visitors-leisure/sports-leisure-culture-arts/countryside-open-spaces"
+      ],
+      "note": "Checked 17 November 2026: no play area list; play areas are mostly run by town and parish councils (Sleaford and others). Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "South Holland",
+      "council": "South Holland District Council",
+      "sources": [
+        "https://www.sholland.gov.uk/article/13061/Parks-and-open-spaces"
+      ],
+      "note": "Checked 17 November 2026: the council's play parks are on a map; its list of locations isn't linked. Play areas come from OpenStreetMap."
     }
   ]
 }
