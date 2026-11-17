@@ -68,6 +68,8 @@ Don't use Google Maps or Google Places to find or place playgrounds. Their terms
 ## 3. Adding each playground
 
 - One JSON file per play area in `src/content/playgrounds/`. Name files `<name>-<town>.json` (no `c-` prefix: older files had one, and it was dropped in October 2026).
+- `name`: check what the council's name actually refers to. Many lists name a site "Village Street" or "Village, Street" (East Lothian's "Aberlady Pleasance" is the play area on The Pleasance, a street in Aberlady), so call it "The Pleasance play area" and leave the village to `area`. Keep a word of the council's name in it, so the quarterly check can still match it.
+- `description`: write it in our own words from the sources: what's there, anything notable (a theme, who chose the design) and the age range the council gives. Leave out who runs it (the page shows that) and the nearest playgrounds and toilets: the page adds those itself (`src/lib/whats-here.ts`). With no detail to go on, keep the stock line the coverage check writes; the page turns it into a friendlier paragraph and asks parents what's there.
 - `operator` says who runs it, for example "Welwyn Hatfield Borough Council (run by Better)" or "Welwyn Parish Council".
 - `sources` links to the official page or pages you used: the council, operator, parish or ParksHerts page.
 - `checked` is today's date only once an official source confirms the playground exists. Otherwise, including for playgrounds found only on OpenStreetMap, leave it blank, and the site labels it "Unverified".

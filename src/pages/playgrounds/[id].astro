@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import { allParks, clientPark, looUrl, miles, paidEntry, toiletInfo, toiletSource, fmtDate, hoursText, km, L, regionName, ICON, type Park } from '../../lib/parks';
 import { areaUrl, breadcrumbLd, locate, regionUrl } from '../../lib/places';
 import { art, fmtMiles } from '../../lib/card';
+import { whatsHere } from '../../lib/whats-here';
 
 export async function getStaticPaths() {
   const parks = await allParks();
@@ -19,6 +20,7 @@ const eq = feats(p.equipment, L.equipment);
 const acc = feats(p.access, L.access);
 const fac = feats(p.facilities, L.facilities);
 const loos = toiletInfo(p);
+const copy = whatsHere(p, others, loos);
 const dist = (m: number) => (m < 1000 ? `${Math.round(m / 10) * 10} m` : miles(m / 1000));
 const bcWord = (v: boolean | null) => (v === true ? 'with baby change' : v === false ? 'no baby change' : 'baby change not known');
 const spots = [
@@ -52,7 +54,7 @@ const ld = [
     '@type': 'Playground',
     name: p.name,
     url: new URL(`/playgrounds/${p.id}/`, Astro.site).href,
-    description: p.description || undefined,
+    description: copy.summary,
     geo: { '@type': 'GeoCoordinates', latitude: p.lat, longitude: p.lng },
     isAccessibleForFree: !paidEntry(p),
     amenityFeature: amenities.length ? amenities : undefined,
@@ -60,7 +62,7 @@ const ld = [
   breadcrumbLd(Astro.site, trail),
 ];
 ---
-<Base title={p.name} description={p.description || `${p.name}, ${p.area}`} jsonLd={ld}>
+<Base title={p.name} description={copy.summary} jsonLd={ld}>
   <div>
     <p class="crumbs"><a href="/">Find</a> › <a href="/playgrounds/">All playgrounds</a> › {where ? <a href={regionUrl(where.place.id)}>{where.place.name}</a> : regionName(p.region)}{where?.area && <> › <a href={areaUrl(where.place.id, where.area)}>{where.area.name}</a></>}</p>
     <h1>{p.name}</h1>
@@ -86,7 +88,8 @@ const ld = [
       <section aria-labelledby="what">
         <h2 id="what" style="margin-top:24px">What's here</h2>
         <div class="prose" style="margin-top:10px">
-          {p.description && <p>{p.description}</p>}
+          {copy.intro.map((t) => <p>{t}</p>)}
+          {copy.ask && <p><strong>Been here?</strong> <a href="#parent-eq">Tick what you saw</a>. It takes about 30 seconds and helps the next family decide whether it’s worth stopping.</p>}
           {p.rules && <p><strong>{p.rules}</strong></p>}
         </div>
         {(eq.length > 0 || acc.length > 0 || fac.length > 0) && (

@@ -1,28 +1,45 @@
 {
-  "name": "Aberlady, Pleasance",
+  "name": "The Pleasance play area",
   "region": "scotland",
   "area": "Aberlady",
   "lat": 56.00738,
   "lng": -2.86549,
-  "ages": [],
-  "equipment": [],
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "cl",
+    "sl",
+    "sw",
+    "spr"
+  ],
   "access": [],
   "facilities": [],
   "opens": "",
-  "description": "A playground on East Lothian Council's own list of play areas.",
+  "description": "The play area on The Pleasance is Aberlady's village play park. Its centrepiece is a pirate ship with a cargo net, wobble bridge and slide, chosen by pupils at Aberlady Primary School, and there's also a spinner, springers and swings. The council rates it for children up to about 11.",
   "nearby": [],
   "operator": "East Lothian Council",
   "sources": [
     {
-      "label": "East Lothian Council: Aberlady, Pleasance",
+      "label": "East Lothian Council: Aberlady Pleasance",
       "url": "https://www.eastlothian.gov.uk/safety-and-community/your-community/play-areas"
+    },
+    {
+      "label": "East Lothian Council: Updated play area opens in Aberlady",
+      "url": "https://www.eastlothian.gov.uk/news/article/14161/updated_play_area_opens_in_aberlady"
+    },
+    {
+      "label": "East Lothian Play Sufficiency Assessment: play space scores",
+      "url": "https://eastlothian.gov.uk/download/downloads/id/34203/psa_appendix_4_-_play_space_assessment_scores.pdf"
     },
     {
       "label": "OpenStreetMap: play area",
       "url": "https://www.openstreetmap.org/way/1076157490"
     }
   ],
-  "checked": "2026-11-11",
-  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "checked": "2026-11-17",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), whether the planned bins, picnic bench and fencing have been added, opening hours, toilets and parking.",
   "photo": null
 }
