@@ -5,9 +5,9 @@
   "licence": "CC BY 4.0",
   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
   "note": "Nearest toilets worked out by Swing By from the Toilet Map data.",
-  "export": "toilets-2026-11-14T00%3A00%3A40.759Z-cX8pz6UQn7VV28pWrM9YfyBvvNEbYp.csv"
+  "export": "toilets-2026-11-17T00%3A00%3A40.684Z-JFrv616ju0t1FOiMpPv9mRwfIWlVRu.csv"
  },
- "toilets": 15855,
+ "toilets": 15862,
  "parks": {
   "1066-battle-abbey-natural-play-area": {
    "nearest": {
@@ -2298,14 +2298,14 @@
     "lng": -0.2902561
    },
    "nearestBabyChange": {
-    "id": "29254d422c109d91ea21b639",
-    "name": "Surbiton Station",
-    "m": 1135,
+    "id": "fa4aa279ead62bc79d2e920e",
+    "name": "Surbiton Library",
+    "m": 830,
     "babyChange": true,
     "accessible": true,
     "free": true,
-    "lat": 51.392321,
-    "lng": -0.304565
+    "lat": 51.39274676,
+    "lng": -0.297995591
    }
   },
   "alexandra-recreation-ground-playground-sydenham": {
@@ -219490,14 +219490,14 @@
   },
   "playground-off-stapleton-close-wash-common-newbury": {
    "nearest": {
-    "id": "bd8737f360dfbff52a9e2459",
-    "name": "3 Salcombe Road Public Toilet",
-    "m": 1708,
+    "id": "241d96d6ffbb1a1a5286040a",
+    "name": "Tesco Extra Newbury",
+    "m": 2250,
     "babyChange": true,
     "accessible": true,
-    "free": true,
-    "lat": 51.39435404,
-    "lng": -1.338736117
+    "free": false,
+    "lat": 51.382828459,
+    "lng": -1.317908764
    }
   },
   "playground-off-stapleton-road-warmsworth-doncaster": {
