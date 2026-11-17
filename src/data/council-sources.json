@@ -3096,7 +3096,7 @@
       "sources": [
         "https://nottinghamcity.gov.uk/media/r1jdart4/outdoor-play-facilities.pdf"
       ],
-      "note": "The council's 'Outdoor play facilities' list gives each site's street and postcode; the 97 with a playground are in src/data/council-lists/nottingham.csv (17 November 2026).",
+      "note": "The council's 'Outdoor play facilities' list gives each site's street and postcode; the 94 with a playground are in src/data/council-lists/nottingham.csv (17 November 2026).",
       "feed": {
         "type": "list",
         "file": "src/data/council-lists/nottingham.csv",
