@@ -11,6 +11,7 @@ import { photos } from './photos.js';
 import { equipment } from './equipment.js';
 import { pins } from './pins.js';
 import { servePacked } from './packs.js';
+import { AREA_MOVES } from './area-moves.js';
 
 // Old playground address → the listing it was merged into. Add a line whenever two listings are merged.
 const MERGED = {
@@ -212,6 +213,12 @@ export default {
     const gone = /^\/playgrounds\/([a-z0-9-]+)\/?$/.exec(pathname);
     if (res.status === 404 && gone && MERGED[gone[1]]) {
       url.pathname = `/playgrounds/${MERGED[gone[1]]}/`;
+      return Response.redirect(url.toString(), 301);
+    }
+    // Browse-by-area pages whose area was renamed (worker/area-moves.js).
+    const area = /^\/playgrounds\/in\/([a-z0-9-]+\/[a-z0-9-]+)\/?$/.exec(pathname);
+    if (res.status === 404 && area && AREA_MOVES[area[1]]) {
+      url.pathname = `/playgrounds/in/${AREA_MOVES[area[1]]}/`;
       return Response.redirect(url.toString(), 301);
     }
     // Playground addresses used to start with "c-" (/playgrounds/c-garston-park-watford/). Send old links, bookmarks
