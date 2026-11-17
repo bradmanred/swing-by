@@ -3311,6 +3311,161 @@
         "https://www.sstaffs.gov.uk/sites/default/files/2023-11/Our%20local%20government%20partners%20and%20who%20does%20what.pdf"
       ],
       "note": "Checked 17 November 2026: play areas belong to the 27 parish councils, not the district (apart from Baggeridge Country Park). Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "South Tyneside",
+      "council": "South Tyneside Council",
+      "sources": [
+        "https://www.southtyneside.gov.uk/article/11040/Play-areas"
+      ],
+      "note": "The play areas list (five pages, about 41 play areas) links to one page per play area with its address and postcode. Feed set up 17 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "pages",
+        "index": [
+          "https://www.southtyneside.gov.uk/article/11040/Play-areas",
+          "https://southtyneside.gov.uk/article/11040/Play-areas?p=2&q=%2A",
+          "https://southtyneside.gov.uk/article/11040/Play-areas?p=3&q=%2A",
+          "https://www.southtyneside.gov.uk/article/11040/Play-areas?p=4&q=%2A",
+          "https://southtyneside.gov.uk/article/11040/Play-areas?p=5&q=%2A"
+        ],
+        "follow": "/article/(?!11040)\\d+/[A-Za-z0-9-]+$",
+        "allPlay": true,
+        "near": {
+          "lat": 54.97,
+          "lng": -1.44,
+          "km": 8
+        }
+      }
+    },
+    {
+      "district": "North Tyneside",
+      "council": "North Tyneside Council",
+      "sources": [
+        "https://northtyneside.gov.uk/category/263/find-your-nearest-park-or-play-facility"
+      ],
+      "note": "Checked 17 November 2026: about 55 council play sites, found only through a postcode search; the dog-exclusion schedule that lists them couldn't be opened. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Sunderland",
+      "council": "Sunderland City Council",
+      "sources": [
+        "https://www.data.gov.uk/dataset/sunderland-play-areas"
+      ],
+      "note": "Checked 17 November 2026: the only list is a 2010 open-data file of 118 play areas, too old to rely on. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Leicester",
+      "council": "Leicester City Council",
+      "sources": [
+        "https://leicester.gov.uk/leisure-and-culture/parks-and-open-spaces/our-parks/local-parks"
+      ],
+      "note": "Checked 17 November 2026: about 180 council playgrounds, but the parks lists don't say which parks have one. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Charnwood",
+      "council": "Charnwood Borough Council",
+      "sources": [
+        "https://www.charnwood.gov.uk/pages/play_areas"
+      ],
+      "note": "The play areas table lists sites by parish; the 27 Loughborough play areas (unparished, so run by the borough) are in src/data/council-lists/charnwood.csv, leaving out games areas, gyms and skate parks. Sites in Shepshed, Syston, Sileby and Hathern and other parish play areas come from OpenStreetMap (17 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/charnwood.csv",
+        "page": "https://www.charnwood.gov.uk/pages/play_areas",
+        "near": {
+          "lat": 52.77,
+          "lng": -1.21,
+          "km": 6
+        }
+      }
+    },
+    {
+      "district": "North West Leicestershire",
+      "council": "North West Leicestershire District Council",
+      "sources": [
+        "https://www.nwleics.gov.uk/pages/play_areas"
+      ],
+      "note": "The play areas page describes the district's play areas by street and town (src/data/council-lists/north-west-leicestershire.csv); Whitwick's parish-owned play areas and sites without equipment are left out (17 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/north-west-leicestershire.csv",
+        "page": "https://www.nwleics.gov.uk/pages/play_areas",
+        "near": {
+          "lat": 52.72,
+          "lng": -1.37,
+          "km": 12
+        }
+      }
+    },
+    {
+      "district": "Melton",
+      "council": "Melton Borough Council",
+      "sources": [
+        "https://www.melton.gov.uk/leisure-health-and-community/parks-and-green-spaces/play-areas-and-parks"
+      ],
+      "note": "The play areas page gives addresses and postcodes (src/data/council-lists/melton.csv; the skate park, dog agility and trim trails left out). The town's main parks belong to Melton Mowbray Town Estate (17 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/melton.csv",
+        "page": "https://www.melton.gov.uk/leisure-health-and-community/parks-and-green-spaces/play-areas-and-parks",
+        "near": {
+          "lat": 52.76,
+          "lng": -0.88,
+          "km": 6
+        }
+      }
+    },
+    {
+      "district": "Oadby and Wigston",
+      "council": "Oadby and Wigston Borough Council",
+      "sources": [
+        "https://www.oadby-wigston.gov.uk/pages/parks"
+      ],
+      "note": "The parks page lists each council park and how many play areas it has (src/data/council-lists/oadby-and-wigston.csv) (17 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/oadby-and-wigston.csv",
+        "page": "https://www.oadby-wigston.gov.uk/pages/parks",
+        "near": {
+          "lat": 52.59,
+          "lng": -1.1,
+          "km": 5
+        }
+      }
+    },
+    {
+      "district": "Harborough",
+      "council": "Harborough District Council",
+      "sources": [
+        "https://www.harborough.gov.uk/directory/14/play_areas_in_harborough"
+      ],
+      "note": "Jadu directory 'Play areas in Harborough' with the 28 play areas the council looks after. Feed set up 17 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "jadu",
+        "directory": "https://www.harborough.gov.uk/directory/14/play_areas_in_harborough",
+        "allPlay": true,
+        "near": {
+          "lat": 52.5,
+          "lng": -0.95,
+          "km": 20
+        }
+      }
+    },
+    {
+      "district": "Hinckley and Bosworth",
+      "council": "Hinckley and Bosworth Borough Council",
+      "sources": [
+        "https://hinckley-bosworth.gov.uk/info/200073/parks_and_open_spaces/1831/play_areas"
+      ],
+      "note": "Checked 17 November 2026: the borough runs play areas only in Hinckley's parks and lists none by name; elsewhere town and parish councils run them. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Blaby",
+      "council": "Blaby District Council",
+      "sources": [
+        "https://www.blaby.gov.uk/leisure-health-and-community/parks-and-green-spaces/parks-and-open-spaces"
+      ],
+      "note": "Checked 17 November 2026: most play areas are run by parish councils (Braunstone Town, Glenfield, Countesthorpe and others); the district lists none. Play areas come from OpenStreetMap."
     }
   ]
 }
