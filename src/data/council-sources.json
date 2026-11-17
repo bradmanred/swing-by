@@ -2999,6 +2999,96 @@
         "https://www.wokingham.gov.uk/countryside-parks-and-conservation/play-areas"
       ],
       "note": "Checked 17 November 2026: play areas are only shown on the council's map (about 99 council play areas, plus town and parish ones such as Woodley and Wokingham Town). Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Runnymede",
+      "council": "Runnymede Borough Council",
+      "sources": [
+        "https://www.runnymede.gov.uk/directory/2/find-a-park-or-open-space/category/4"
+      ],
+      "note": "Jadu park directory with a 'Play area' category (the council has 43 play areas); records give address and postcode. Feed set up 17 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "jadu",
+        "directory": "https://www.runnymede.gov.uk/directory/2/find-a-park-or-open-space",
+        "category": 4,
+        "allPlay": true,
+        "near": {
+          "lat": 51.39,
+          "lng": -0.53,
+          "km": 8
+        }
+      }
+    },
+    {
+      "district": "Surrey Heath",
+      "council": "Surrey Heath Borough Council",
+      "sources": [
+        "https://www.surreyheath.gov.uk/parks-and-play-areas/parks-greenspaces-and-play-areas"
+      ],
+      "note": "LocalGov Drupal directory of parks, green spaces and play areas (five pages); only entries mentioning a play area are kept. Windlesham Parish Council runs some Bagshot play areas. Feed set up 17 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "localgov",
+        "directory": "https://www.surreyheath.gov.uk/parks-and-play-areas/parks-greenspaces-and-play-areas",
+        "near": {
+          "lat": 51.33,
+          "lng": -0.7,
+          "km": 9
+        }
+      }
+    },
+    {
+      "district": "Spelthorne",
+      "council": "Spelthorne Borough Council",
+      "sources": [
+        "https://www.spelthorne.gov.uk/resident-services/parks-and-open-spaces"
+      ],
+      "note": "Parks list with one page per park (LocalGov Drupal); only pages mentioning a play area are kept. Spelthorne has no parish councils. Feed set up 17 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "pages",
+        "index": "https://www.spelthorne.gov.uk/resident-services/parks-and-open-spaces",
+        "follow": "(/page/\\d+/[a-z0-9-]+|/resident-services/parks-and-open-spaces/[a-z0-9-]+)$",
+        "exclude": "^(Grazing|Skate|Biodiversity|Use of drones|Letting)",
+        "near": {
+          "lat": 51.42,
+          "lng": -0.47,
+          "km": 8
+        }
+      }
+    },
+    {
+      "district": "Tandridge",
+      "council": "Tandridge District Council",
+      "sources": [
+        "https://tandridge.gov.uk/Parks-play-and-things-to-do/Childrens-play-areas"
+      ],
+      "note": "The play areas page names 37 play areas by street and village; the 35 the council runs are in src/data/council-lists/tandridge.csv (Stychens Lane and Limpsfield Chart are run by community groups) (17 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/tandridge.csv",
+        "page": "https://tandridge.gov.uk/Parks-play-and-things-to-do/Childrens-play-areas",
+        "near": {
+          "lat": 51.24,
+          "lng": -0.03,
+          "km": 14
+        }
+      }
+    },
+    {
+      "district": "Waverley",
+      "council": "Waverley Borough Council",
+      "sources": [
+        "https://modgov.waverley.gov.uk/documents/s5977/Play Area Strategy 2015-2024.pdf",
+        "https://godalming-tc.gov.uk/wbc-play-area-strategy-appendix_a___waverley_playgrounds___areas_and_types___march_2014"
+      ],
+      "note": "Checked 17 November 2026: no current play area list on the council website; the play area strategy's 2014 site list (appendix A) is out of date. Town and parish councils (Farnham, Godalming, Haslemere, Cranleigh) run many play areas. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Epsom and Ewell",
+      "council": "Epsom and Ewell Borough Council",
+      "sources": [
+        "https://www.epsom-ewell.gov.uk/node/98"
+      ],
+      "note": "Checked 17 November 2026: no play area list; each park's accessibility leaflet (PDF) says whether it has a playground. Play areas come from OpenStreetMap."
     }
   ]
 }
