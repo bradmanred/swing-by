@@ -3196,6 +3196,121 @@
         "https://newark-sherwooddc.gov.uk/publicspaceprotectionorders/"
       ],
       "note": "Checked 17 November 2026: 30 district play parks, with no list beyond the dog-exclusion orders; Newark Town Council and parishes run many more. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Stoke-on-Trent",
+      "council": "Stoke-on-Trent City Council",
+      "sources": [
+        "https://www.stoke.gov.uk/playgrounds"
+      ],
+      "note": "Parks directory (Jadu, /directory_record/ pages) giving each park's address and postcode and whether it has children's play equipment. Feed set up 17 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "pages",
+        "index": "https://www.stoke.gov.uk/playgrounds",
+        "follow": "/directory_record/\\d+/[a-z0-9_]+$",
+        "require": "Children.s play equipment",
+        "near": {
+          "lat": 53.01,
+          "lng": -2.18,
+          "km": 10
+        }
+      }
+    },
+    {
+      "district": "Cannock Chase",
+      "council": "Cannock Chase Council",
+      "sources": [
+        "https://cannockchasedc.gov.uk/node/1475"
+      ],
+      "note": "The parks page lists the 40 play areas the council runs by street and town; 38 are in src/data/council-lists/cannock-chase.csv (Laburnum Avenue and Flaxley Road were closed) (17 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/cannock-chase.csv",
+        "page": "https://cannockchasedc.gov.uk/node/1475",
+        "near": {
+          "lat": 52.71,
+          "lng": -1.98,
+          "km": 10
+        }
+      }
+    },
+    {
+      "district": "Stafford",
+      "council": "Stafford Borough Council",
+      "sources": [
+        "https://staffordbc.gov.uk/Stafford-Play-Areas",
+        "https://staffordbc.gov.uk/node/162493",
+        "https://www.staffordbc.gov.uk/play-areas"
+      ],
+      "note": "The Stafford and Stone play area pages give each site's address, postcode and equipment (src/data/council-lists/stafford.csv; sites with only a sports wall or games area left out). The rural play areas page and parish play areas are still to do (17 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/stafford.csv",
+        "page": "https://staffordbc.gov.uk/Stafford-Play-Areas",
+        "near": {
+          "lat": 52.85,
+          "lng": -2.12,
+          "km": 14
+        }
+      }
+    },
+    {
+      "district": "Tamworth",
+      "council": "Tamworth Borough Council",
+      "sources": [
+        "https://tamworth.gov.uk/leisure/sports-and-activities/play-areas"
+      ],
+      "note": "The play areas page gives each site's address, postcode, ages and equipment; the 17 with play equipment are in src/data/council-lists/tamworth.csv (ball courts, gyms and the skate park left out) (17 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/tamworth.csv",
+        "page": "https://tamworth.gov.uk/leisure/sports-and-activities/play-areas",
+        "near": {
+          "lat": 52.63,
+          "lng": -1.69,
+          "km": 7
+        }
+      }
+    },
+    {
+      "district": "East Staffordshire",
+      "council": "East Staffordshire Borough Council",
+      "sources": [
+        "https://www.data.gov.uk/dataset/childrens-play-areas"
+      ],
+      "note": "Checked 17 November 2026: 42 council play areas, but no list on the website (only a map dataset). Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Lichfield",
+      "council": "Lichfield District Council",
+      "sources": [
+        "https://www.lichfielddc.gov.uk/directory-record/5659/burntwood-park"
+      ],
+      "note": "Checked 17 November 2026: 16 council parks with equipped play areas, in a park directory not yet set up as a feed; most village play areas are parish-run. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Newcastle-under-Lyme",
+      "council": "Newcastle-under-Lyme Borough Council",
+      "sources": [
+        "https://www.newcastle-staffs.gov.uk/borough-maintenance/playground-facilities/2"
+      ],
+      "note": "Checked 17 November 2026: more than 60 council playgrounds, but no list on the website. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Staffordshire Moorlands",
+      "council": "Staffordshire Moorlands District Council",
+      "sources": [
+        "https://www.staffsmoorlands.gov.uk/article/1990/Play-areas"
+      ],
+      "note": "Checked 17 November 2026: the play areas page shows them only on a map. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "South Staffordshire",
+      "council": "South Staffordshire District Council",
+      "sources": [
+        "https://www.sstaffs.gov.uk/sites/default/files/2023-11/Our%20local%20government%20partners%20and%20who%20does%20what.pdf"
+      ],
+      "note": "Checked 17 November 2026: play areas belong to the 27 parish councils, not the district (apart from Baggeridge Country Park). Play areas come from OpenStreetMap."
     }
   ]
 }
