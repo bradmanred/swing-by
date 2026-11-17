@@ -460,9 +460,19 @@
       "district": "Buckinghamshire",
       "council": "Buckinghamshire Council",
       "sources": [
-        "https://www.buckinghamshire.gov.uk/health-wellbeing-and-sports/parks-and-open-spaces/find-a-park-or-play-area/"
+        "https://www.buckinghamshire.gov.uk/schools-libraries-and-parks/parks-leisure-and-staying-active/find-a-park-or-play-area/"
       ],
-      "note": "Its find-a-park pages give each park's facilities and map position."
+      "note": "Its find-a-park pages give each park's address, postcode and play facilities (for example Calvert Green, Bedgrove, Whitehill). Parks in the former Chiltern area are mostly run by parish councils. Feed set up 17 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "pages",
+        "index": "https://www.buckinghamshire.gov.uk/schools-libraries-and-parks/parks-leisure-and-staying-active/find-a-park-or-play-area/",
+        "follow": "/find-a-park-or-play-area/[a-z0-9-]+/?$",
+        "near": {
+          "lat": 51.75,
+          "lng": -0.8,
+          "km": 35
+        }
+      }
     },
     {
       "district": "Salford",
@@ -2839,6 +2849,156 @@
           "km": 45
         }
       }
+    },
+    {
+      "district": "Milton Keynes",
+      "council": "Milton Keynes City Council",
+      "sources": [
+        "https://www.milton-keynes.gov.uk/environment-parks-and-open-spaces/play-areas",
+        "https://mapping.milton-keynes.gov.uk"
+      ],
+      "note": "Checked 17 November 2026: the city council's 466 play areas are only on its My Milton Keynes map; no list to read yet. The Parks Trust's play areas are registered separately. Others come from OpenStreetMap."
+    },
+    {
+      "district": "Milton Keynes",
+      "parish": "The Parks Trust",
+      "council": "The Parks Trust",
+      "sources": [
+        "https://theparkstrust.com/activities/play-areas",
+        "https://www.theparkstrust.com/playarea"
+      ],
+      "note": "The charity that runs Milton Keynes's main parks looks after 30-plus play areas, each with its own page under /activities/play-areas/. Feed set up 17 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "pages",
+        "index": [
+          "https://www.theparkstrust.com/playarea",
+          "https://theparkstrust.com/activities/play-areas"
+        ],
+        "follow": "/activities/play-areas/[a-z0-9-]+/?$",
+        "allPlay": true,
+        "near": {
+          "lat": 52.04,
+          "lng": -0.76,
+          "km": 12
+        }
+      }
+    },
+    {
+      "district": "Bracknell Forest",
+      "council": "Bracknell Forest Council",
+      "sources": [
+        "https://www.bracknell-forest.gov.uk/parks-and-countryside/playground-directory"
+      ],
+      "note": "LocalGov Drupal playground directory (about 40 playgrounds, each with its location and postcode). Bracknell Town Council runs 35 more play areas, registered separately. Feed set up 17 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "localgov",
+        "directory": "https://www.bracknell-forest.gov.uk/parks-and-countryside/playground-directory",
+        "allPlay": true,
+        "near": {
+          "lat": 51.41,
+          "lng": -0.75,
+          "km": 10
+        }
+      }
+    },
+    {
+      "district": "Bracknell Forest",
+      "parish": "Bracknell",
+      "council": "Bracknell Town Council",
+      "sources": [
+        "https://bracknelltowncouncil.gov.uk/recreation-facilities/council-sites/listing/jocks-lane-recreation-ground"
+      ],
+      "note": "Runs 35 children's play areas, two with splash pads, with one page per site under /recreation-facilities/council-sites/listing/. Feed set up 17 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "pages",
+        "index": "https://bracknelltowncouncil.gov.uk/recreation-facilities/council-sites",
+        "follow": "/recreation-facilities/council-sites/listing/[a-z0-9-]+/?$",
+        "near": {
+          "lat": 51.41,
+          "lng": -0.75,
+          "km": 6
+        }
+      }
+    },
+    {
+      "district": "Reading",
+      "council": "Reading Borough Council",
+      "sources": [
+        "https://www.reading.gov.uk/leisure/outdoors/parks-outdoor-facilities-open-spaces/"
+      ],
+      "note": "82 park and play area pages, one per site; only those mentioning a play area are kept. St John's School Play Area is school-only in school hours. Feed set up 17 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "pages",
+        "index": "https://www.reading.gov.uk/leisure/outdoors/parks-outdoor-facilities-open-spaces/",
+        "follow": "/parks-outdoor-facilities-open-spaces/[a-z0-9-]+/?$",
+        "exclude": "^St John",
+        "near": {
+          "lat": 51.45,
+          "lng": -0.97,
+          "km": 8
+        }
+      }
+    },
+    {
+      "district": "Slough",
+      "council": "Slough Borough Council",
+      "sources": [
+        "https://www.slough.gov.uk/directory/7/parks-and-green-spaces/category/21",
+        "https://www.slough.gov.uk/directory/7/parks-and-green-spaces/category/22"
+      ],
+      "note": "Jadu directory: 'Parks with play areas' (category 21) and 'Play areas in recreation grounds and open spaces' (category 22); the council manages 76 play areas. Feed set up 17 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "jadu",
+        "directory": "https://www.slough.gov.uk/directory/7/parks-and-green-spaces",
+        "category": [
+          21,
+          22
+        ],
+        "allPlay": true,
+        "near": {
+          "lat": 51.51,
+          "lng": -0.59,
+          "km": 7
+        }
+      }
+    },
+    {
+      "district": "Windsor and Maidenhead",
+      "council": "Royal Borough of Windsor and Maidenhead",
+      "sources": [
+        "https://www.rbwm.gov.uk/leisure-and-culture/parks-and-open-spaces/parks-windsor",
+        "https://rbwm.gov.uk/leisure-and-culture/parks-and-open-spaces/parks-maidenhead"
+      ],
+      "note": "Windsor and Maidenhead park directories with one page per park listing its play area and ages (Oaken Grove, Grenfell Park, Kidwells Park, Clewer Memorial). Datchet and other parish play areas aren't registered yet. Feed set up 17 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "pages",
+        "index": [
+          "https://www.rbwm.gov.uk/leisure-and-culture/parks-and-open-spaces/parks-windsor",
+          "https://rbwm.gov.uk/leisure-and-culture/parks-and-open-spaces/parks-maidenhead"
+        ],
+        "follow": "/leisure-and-culture/parks-and-open-spaces/(?!parks-windsor|parks-maidenhead|skate-parks)[a-z0-9-]+/?$",
+        "near": {
+          "lat": 51.49,
+          "lng": -0.68,
+          "km": 10
+        }
+      }
+    },
+    {
+      "district": "West Berkshire",
+      "council": "West Berkshire Council",
+      "sources": [
+        "https://westberks.gov.uk/parks"
+      ],
+      "note": "Checked 17 November 2026: the council's play areas are on an online map and in a Word list ('List of Children's Play Areas in West Berkshire', 2021-22) that couldn't be read from here; save it with Fetch pages and turn it into a list. Most play areas in Newbury and Thatcham belong to the town councils. Until then play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Wokingham",
+      "council": "Wokingham Borough Council",
+      "sources": [
+        "https://www.wokingham.gov.uk/countryside-parks-and-conservation/play-areas"
+      ],
+      "note": "Checked 17 November 2026: play areas are only shown on the council's map (about 99 council play areas, plus town and parish ones such as Woodley and Wokingham Town). Play areas come from OpenStreetMap."
     }
   ]
 }
