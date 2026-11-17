@@ -3681,6 +3681,101 @@
           "km": 18
         }
       }
+    },
+    {
+      "district": "Gloucester",
+      "council": "Gloucester City Council",
+      "sources": [
+        "https://gloucester.gov.uk/culture-leisure/parks-open-spaces/play-areas-in-gloucester/"
+      ],
+      "note": "The play areas page lists the city's 45 play areas with their nearest postcodes (src/data/council-lists/gloucester.csv). Quedgeley Town Council runs three more (17 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/gloucester.csv",
+        "page": "https://gloucester.gov.uk/culture-leisure/parks-open-spaces/play-areas-in-gloucester/",
+        "near": {
+          "lat": 51.85,
+          "lng": -2.24,
+          "km": 7
+        }
+      }
+    },
+    {
+      "district": "South Gloucestershire",
+      "council": "South Gloucestershire Council",
+      "sources": [
+        "https://www.southglos.gov.uk/leisure-and-culture/parks-and-open-spaces/find-a-park-with-a-play-area/"
+      ],
+      "note": "The find-a-park page lists the council's parks with play areas, by area, with postcodes (src/data/council-lists/south-gloucestershire.csv; the page may list a few more Yate sites than were read). Town and parish play areas (Bradley Stoke, Thornbury, Yate and others) aren't included (17 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/south-gloucestershire.csv",
+        "page": "https://www.southglos.gov.uk/leisure-and-culture/parks-and-open-spaces/find-a-park-with-a-play-area/",
+        "near": {
+          "lat": 51.52,
+          "lng": -2.47,
+          "km": 18
+        }
+      }
+    },
+    {
+      "district": "Cheltenham",
+      "council": "Cheltenham Borough Council",
+      "sources": [
+        "https://cheltenham.gov.uk/communities-and-leisure/parks-and-open-spaces/sports-and-play-facilities/"
+      ],
+      "note": "Checked 17 November 2026: over 50 play areas, shown only on the council's interactive map. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Stroud",
+      "council": "Stroud District Council",
+      "sources": [
+        "https://stroud.moderngov.co.uk/documents/s4338/Appendix D- List of SDC owned play areas map.pdf"
+      ],
+      "note": "Checked 17 November 2026: the district runs about 21 play areas (listed in a 2022 committee appendix that couldn't be opened from here); most are run by town and parish councils. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Tewkesbury",
+      "council": "Tewkesbury Borough Council",
+      "sources": [
+        "https://tewkesbury.gov.uk/loveparksweek/"
+      ],
+      "note": "Checked 17 November 2026: the borough looks after about 41 play spaces (its own and some for parishes) but publishes no list. Tewkesbury Town Council's three play areas are registered separately. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Tewkesbury",
+      "parish": "Tewkesbury",
+      "council": "Tewkesbury Town Council",
+      "sources": [
+        "https://tewkesburytowncouncil.gov.uk/play-parks"
+      ],
+      "note": "The town council's three play parks (src/data/council-lists/tewkesbury-town.csv) (17 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/tewkesbury-town.csv",
+        "page": "https://tewkesburytowncouncil.gov.uk/play-parks",
+        "near": {
+          "lat": 51.99,
+          "lng": -2.16,
+          "km": 4
+        }
+      }
+    },
+    {
+      "district": "Cotswold",
+      "council": "Cotswold District Council",
+      "sources": [
+        "https://cotswold.gov.uk/media/tnegerid/5406-green-infrastructure-open-space-and-play-space-strategy-part-1-aug-2017.pdf"
+      ],
+      "note": "Checked 17 November 2026: play areas belong to town and parish councils (Cirencester, Tetbury, Northleach and others); the district lists none. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Forest of Dean",
+      "council": "Forest of Dean District Council",
+      "sources": [
+        "https://www.fdean.gov.uk/"
+      ],
+      "note": "Checked 17 November 2026: no play area list; play areas are mostly run by town and parish councils. Play areas come from OpenStreetMap."
     }
   ]
 }
