@@ -10,9 +10,12 @@
 //      means the council or operator has changed or removed the listing. Sites that block robots are ignored.
 //   4. Not checked for a long time: playgrounds with an official source whose "checked" date is over a year old, or
 //      missing.
+//   5. Names and descriptions to improve: council playgrounds named "Village, Street" or "Village Street" (the
+//      council's name is often the village plus a street, as with East Lothian's "Aberlady Pleasance", the play area
+//      on The Pleasance), and council playgrounds with only the stock description and no equipment.
 //
 //   node scripts/quarterly-check.mjs                 everything (reports/quarterly-check.md and .json)
-//   node scripts/quarterly-check.mjs --skip links    leave out a part: councils, osm, links or stale (comma-separated)
+//   node scripts/quarterly-check.mjs --skip links    leave out a part: councils, osm, links, stale or names (comma-separated)
 //
 // Run by .github/workflows/quarterly-check.yml, which posts the report as a GitHub issue.
 import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
@@ -57,7 +60,7 @@ for (const f of (await readdir(DIR)).filter((f) => f.endsWith('.json'))) {
   parks.push({ id: f.replace(/\.json$/, ''), ...d, sources: d.sources ?? [] });
 }
 console.log(`${parks.length} playgrounds`);
-const result = { councils: [], osm: { gone: [], retagged: [], private: [], checked: 0 }, links: { broken: [], checked: 0 }, stale: [] };
+const result = { councils: [], osm: { gone: [], retagged: [], private: [], checked: 0 }, links: { broken: [], checked: 0 }, stale: [], names: [], thin: [] };
 
 // 1. Council lists.
 if (!SKIP.has('councils')) {
@@ -152,6 +155,21 @@ if (!SKIP.has('stale')) {
     .sort((a, b) => String(a.checked ?? '').localeCompare(String(b.checked ?? '')));
 }
 
+// 5. Names and descriptions to improve (no network needed).
+if (!SKIP.has('names')) {
+  const STOCK = /^A playground on .+'s own list of play areas\.$/;
+  // The rest of the name already says what kind of place it is ("Park Playground", "Road Play Area", "No.2"): leave it.
+  const TYPED = /\b(play\w*|parks?|grounds?|rec\w*|fields?|greens?|gardens?|commons?|centre|school|college|hall|road|lane|street|avenue|drive|close|way|wood|vale|lock|springs?|north|south|east|west|upper|lower|no\.?\s*\d+|\d+|splash|skate|mua|muga|estate)\b/i;
+  for (const p of parks) {
+    if (!p.checked || p.membership || !p.sources.some(official)) continue;
+    const town = String(p.area ?? '').split(',')[0].trim();
+    const rest = town && p.name.toLowerCase().startsWith(town.toLowerCase()) ? p.name.slice(town.length).replace(/^[,\s]+/, '') : '';
+    if (rest && /^[A-Z]/.test(rest) && rest.split(/\s+/).length <= 2 && !TYPED.test(rest)) result.names.push({ p, rest });
+    if (STOCK.test(p.description ?? '') && !(p.equipment ?? []).length) result.thin.push(p);
+  }
+  result.thin.sort((a, b) => String(a.area).localeCompare(String(b.area)) || a.name.localeCompare(b.name));
+}
+
 // The report.
 const MAX = 40; // per list, so the issue stays within GitHub's size limit (the full lists are in the .json)
 const more = (n) => (n > MAX ? [`- …and ${n - MAX} more (see quarterly-check.json in the run's artifacts)`] : []);
@@ -163,6 +181,7 @@ if (!SKIP.has('councils')) L.push(`- **Council lists:** ${c.length} read; ${c.re
 if (!SKIP.has('osm')) L.push(`- **OpenStreetMap:** ${result.osm.checked} checked; ${result.osm.gone.length} deleted, ${result.osm.retagged.length} no longer tagged as a playground, ${result.osm.private.length} now private`);
 if (!SKIP.has('links')) L.push(`- **Official links:** ${result.links.checked} checked; ${result.links.broken.length} broken`);
 if (!SKIP.has('stale')) L.push(`- **Not checked for over a year (or never):** ${result.stale.length} playgrounds with an official source`);
+if (!SKIP.has('names')) L.push(`- **Names and descriptions:** ${result.names.length} names that may be "village + street", ${result.thin.length} council playgrounds with only the stock description`);
 if (!SKIP.has('councils')) {
   L.push('', '## 1. Council lists', '');
   if (!c.length) L.push('No councils have a machine-readable list yet.');
@@ -190,6 +209,13 @@ if (!SKIP.has('stale')) {
   L.push('', '## 4. Not checked for over a year', '', 'Oldest first. The quarterly Claude task works through these; membership playgrounds have their own check.', '');
   L.push(...(result.stale.length ? result.stale.slice(0, MAX).map((p) => `- ${link(p)}: ${p.checked ? `checked ${p.checked}` : 'never checked'}`) : ['None.']), ...more(result.stale.length));
 }
+if (!SKIP.has('names')) {
+  L.push('', '## 5. Names and descriptions to improve', '');
+  L.push('Names that start with their village or town. Check what the rest refers to: often a street, so "Aberlady, Pleasance" becomes "The Pleasance play area".', '');
+  L.push(...(result.names.length ? result.names.slice(0, MAX).map((x) => `- ${link(x.p)}: "${x.rest}" in ${x.p.area}`) : ['None.']), ...more(result.names.length));
+  L.push('', 'Council playgrounds with only the stock description and no equipment. Look for details in the council\'s own sources (news releases, play strategy or play sufficiency documents).', '');
+  L.push(...(result.thin.length ? result.thin.slice(0, MAX).map((p) => `- ${link(p)}`) : ['None.']), ...more(result.thin.length));
+}
 await mkdir(OUT, { recursive: true });
 await writeFile(join(OUT, 'quarterly-check.md'), L.join('\n') + '\n');
 const slim = (p) => ({ id: p.id, name: p.name, checked: p.checked ?? null });
@@ -201,6 +227,8 @@ await writeFile(
       osm: { ...result.osm, gone: result.osm.gone.map((x) => ({ ...slim(x.p), osm: `${x.type}/${x.id}` })), retagged: result.osm.retagged.map((x) => ({ ...slim(x.p), osm: `${x.type}/${x.id}`, now: x.now })), private: result.osm.private.map((x) => ({ ...slim(x.p), osm: `${x.type}/${x.id}` })) },
       links: { ...result.links, broken: result.links.broken.map((b) => ({ ...b, parks: b.parks.map(slim) })) },
       stale: result.stale.map(slim),
+      names: result.names.map((x) => ({ ...slim(x.p), rest: x.rest })),
+      thin: result.thin.map(slim),
     },
     null,
     1,
