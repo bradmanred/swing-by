@@ -1,4 +1,5 @@
 ---
+import MembershipPick from '../../components/MembershipPick.astro';
 import Base from '../../layouts/Base.astro';
 import { allParks, clientPark, looUrl, miles, paidEntry, toiletInfo, toiletSource, fmtDate, hoursText, km, L, regionName, ICON, type Park } from '../../lib/parks';
 import { areaUrl, breadcrumbLd, locate, regionUrl } from '../../lib/places';
@@ -80,9 +81,10 @@ const ld = [
         )}
       </div>
       {!p.checked && <p class="warn" style="margin-top:20px">Unverified: these details haven't been checked against an official source yet.</p>}
-      {p.membership ? (
+      {p.membership ? (<>
         <p class="panel" style="margin-top:20px;box-shadow:none">{p.fee && <><span class="pound" aria-hidden="true">£</span> <strong>Paid entry.</strong> </>}{L.memberships[p.membership]} property. {p.fee ?? 'Members get in free.'}</p>
-      ) : p.fee && (
+        <MembershipPick membership={p.membership} place={p.id} />
+      </>) : p.fee && (
         <p class="panel" style="margin-top:20px;box-shadow:none"><span class="pound" aria-hidden="true">£</span> <strong>Paid entry.</strong> {p.fee}</p>
       )}
       <section aria-labelledby="what">
