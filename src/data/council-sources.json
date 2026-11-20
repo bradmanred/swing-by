@@ -3776,6 +3776,108 @@
         "https://www.fdean.gov.uk/"
       ],
       "note": "Checked 17 November 2026: no play area list; play areas are mostly run by town and parish councils. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Horsham",
+      "council": "Horsham District Council",
+      "sources": [
+        "https://horsham.gov.uk/playareas"
+      ],
+      "note": "The play areas page lists the district council's play areas with postcodes (src/data/council-lists/horsham.csv, 43 read of the 52 it says it runs, 20 November 2026). Parish councils run many more, such as Storrington, Steyning, Henfield and Billingshurst. Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/horsham.csv",
+        "page": "https://horsham.gov.uk/playareas",
+        "near": {
+          "lat": 51.0,
+          "lng": -0.35,
+          "km": 25
+        }
+      }
+    },
+    {
+      "district": "Worthing",
+      "council": "Worthing Borough Council",
+      "sources": [
+        "https://www.adur-worthing.gov.uk/playgrounds/find/worthing"
+      ],
+      "note": "Adur & Worthing Councils' find-a-playground pages link a page for each of Worthing's 28 playgrounds, with address, postcode and facilities. Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "pages",
+        "index": [
+          "https://www.adur-worthing.gov.uk/playgrounds/find/worthing"
+        ],
+        "follow": "/parks/find/worthing/[a-z0-9-]+/?$",
+        "near": {
+          "lat": 50.83,
+          "lng": -0.39,
+          "km": 8
+        }
+      }
+    },
+    {
+      "district": "Adur",
+      "council": "Adur District Council",
+      "sources": [
+        "https://www.adur-worthing.gov.uk/playgrounds/find"
+      ],
+      "note": "Adur & Worthing Councils' find-a-playground pages link a page for each playground in Lancing and Sompting, Shoreham-by-Sea, and Southwick and Fishersgate (about 23; some Lancing ones are Lancing Parish Council's), with address, postcode and facilities. Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "pages",
+        "index": [
+          "https://www.adur-worthing.gov.uk/playgrounds/find/lancing-and-sompting",
+          "https://www.adur-worthing.gov.uk/playgrounds/find/shoreham-by-sea",
+          "https://www.adur-worthing.gov.uk/playgrounds/find/southwick-and-fishersgate"
+        ],
+        "follow": "/parks/find/(?:lancing-and-sompting|shoreham-by-sea|southwick-and-fishersgate)/[a-z0-9-]+/?$",
+        "near": {
+          "lat": 50.84,
+          "lng": -0.29,
+          "km": 8
+        }
+      }
+    },
+    {
+      "district": "Crawley",
+      "council": "Crawley Borough Council",
+      "sources": [
+        "https://crawley.gov.uk/culture/play-and-young-people/unsupervised-play"
+      ],
+      "note": "Checked 20 November 2026: the council runs over 70 unsupervised playgrounds but publishes no list. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Arun",
+      "council": "Arun District Council",
+      "sources": [
+        "https://www.arun.gov.uk/play-areas-skate-parks"
+      ],
+      "note": "Checked 20 November 2026: the council runs over 90 play areas but publishes no list; town and parish councils run about 10 more. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Mid Sussex",
+      "council": "Mid Sussex District Council",
+      "sources": [
+        "https://midsussex.gov.uk/leisure-sport/playgrounds"
+      ],
+      "note": "Checked 20 November 2026: the council says it runs 122 playgrounds but publishes no list; town councils in Burgess Hill, East Grinstead and Haywards Heath run more. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Chichester",
+      "council": "Chichester District Council",
+      "sources": [
+        "https://www.chichester.gov.uk/article/23999/Childrens-play-areas"
+      ],
+      "note": "The district council runs six play areas, all in Chichester city: Parklands (Sherborne Road), Whyke Oval, the Amphitheatre, Priory Park, Florence Park and Oaklands Park, placed by park name (src/data/council-lists/chichester.csv, 20 November 2026). Town and parish councils (Selsey, Midhurst, Petworth and others) run the rest, which come from OpenStreetMap. Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/chichester.csv",
+        "page": "https://www.chichester.gov.uk/article/23999/Childrens-play-areas",
+        "near": {
+          "lat": 50.836,
+          "lng": -0.78,
+          "km": 4
+        }
+      }
     }
   ]
 }
