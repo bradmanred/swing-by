@@ -2,8 +2,8 @@
   "name": "Digswell Playing Fields Play Area",
   "region": "herts",
   "area": "Digswell, Welwyn",
-  "lat": 51.818385,
-  "lng": -0.189675,
+  "lat": 51.81946,
+  "lng": -0.19197,
   "ages": [
     "under-3"
   ],
@@ -38,9 +38,13 @@
     {
       "label": "ParksHerts: Digswell Playing Fields",
       "url": "https://www.parksherts.co.uk/parks/digswell-playing-fields/"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/85693330"
     }
   ],
   "checked": "2026-10-20",
-  "notConfirmed": "Exact position (mapped from the postcode, AL6 0BX), equipment, age ranges and toilets.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), equipment, age ranges and toilets.",
   "photo": null
 }
