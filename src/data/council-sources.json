@@ -4472,6 +4472,208 @@
         "https://www.scilly.gov.uk/"
       ],
       "note": "Checked 20 November 2026: no play area list. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "East Ayrshire",
+      "council": "East Ayrshire Council",
+      "sources": [
+        "https://www.east-ayrshire.gov.uk/community/ParksGardensAndOpenSpaces/Playparks.aspx"
+      ],
+      "note": "The play parks page lists the council's play parks by town (src/data/council-lists/east-ayrshire.csv, 84 play parks placed by park or street name; ball courts and sports walls left out), 20 November 2026. Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/east-ayrshire.csv",
+        "page": "https://www.east-ayrshire.gov.uk/community/ParksGardensAndOpenSpaces/Playparks.aspx",
+        "near": {
+          "lat": 55.5,
+          "lng": -4.35,
+          "km": 30
+        }
+      }
+    },
+    {
+      "district": "East Renfrewshire",
+      "council": "East Renfrewshire Council",
+      "sources": [
+        "https://eastrenfrewshire.gov.uk/playgrounds-and-parks-list"
+      ],
+      "note": "The list of playgrounds and parks names the council's play areas by town (src/data/council-lists/east-renfrewshire.csv, placed by park or street name), 20 November 2026. Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/east-renfrewshire.csv",
+        "page": "https://eastrenfrewshire.gov.uk/playgrounds-and-parks-list",
+        "near": {
+          "lat": 55.78,
+          "lng": -4.35,
+          "km": 12
+        }
+      }
+    },
+    {
+      "district": "Orkney Islands",
+      "council": "Orkney Islands Council",
+      "sources": [
+        "https://www.orkney.gov.uk/our-services/leisure-and-culture/sport-and-leisure/play-areas/isles"
+      ],
+      "note": "The play areas pages name play areas in Kirkwall, Stromness, the Mainland and the isles (src/data/council-lists/orkney.csv, placed by name; school play areas and the skate park left out), 20 November 2026. Some are run by community associations. Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/orkney.csv",
+        "page": "https://www.orkney.gov.uk/our-services/leisure-and-culture/sport-and-leisure/play-areas/isles",
+        "near": {
+          "lat": 59.0,
+          "lng": -3.0,
+          "km": 60
+        }
+      }
+    },
+    {
+      "district": "Shetland Islands",
+      "council": "Shetland Islands Council",
+      "sources": [
+        "https://www.shetland.gov.uk/sport-leisure/play-areas-multi-courts"
+      ],
+      "note": "The play areas page lists the council's play areas by area (src/data/council-lists/shetland.csv, placed by name); those at schools, open only outside school hours, were left out (20 November 2026). Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/shetland.csv",
+        "page": "https://www.shetland.gov.uk/sport-leisure/play-areas-multi-courts",
+        "near": {
+          "lat": 60.3,
+          "lng": -1.3,
+          "km": 90
+        }
+      }
+    },
+    {
+      "district": "Midlothian",
+      "council": "Midlothian Council",
+      "sources": [
+        "https://www.midlothian.gov.uk/directory/7/parks/category/18"
+      ],
+      "note": "The parks directory's Play areas category (Jadu) has a page for each play area with nearest postcode, grid reference and facilities. Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "jadu",
+        "directory": "https://www.midlothian.gov.uk/directory/7/parks",
+        "category": 18,
+        "allPlay": true
+      }
+    },
+    {
+      "district": "North Ayrshire",
+      "council": "North Ayrshire Council",
+      "sources": [
+        "https://www.north-ayrshire.gov.uk/libraries-parks-leisure/play-parks",
+        "https://www.maps.north-ayrshire.gov.uk/arcgis/rest/services/AGOL/Open_Data_Portal2/FeatureServer/44?f=pjson"
+      ],
+      "note": "The open data portal's Play Parks layer gives the location of the 95 play parks maintained by the council's Streetscene team, with street and town (named here as '<street> Play Park, <town>'; the field names come from the layer's template and haven't been seen filled in). Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "geojson",
+        "url": "https://www.maps.north-ayrshire.gov.uk/arcgis/rest/services/AGOL/Open_Data_Portal2/FeatureServer/44/query?where=1%3D1&outFields=*&f=geojson&outSR=4326",
+        "nameFormat": "{ASSET_STREET} Play Park, {ASSET_TOWN}",
+        "page": "https://www.north-ayrshire.gov.uk/libraries-parks-leisure/play-parks"
+      }
+    },
+    {
+      "district": "Moray",
+      "council": "The Moray Council",
+      "sources": [
+        "https://www.moray.gov.uk/community-life-sports-and-leisure/lands-parks-and-countryside/parks-gardens-and-playing-fields/find-a-play-park/"
+      ],
+      "note": "The find-a-play-park pages give each of the council's 120 or so play parks a page with its equipment (for example Tinniver Park, Station Park, Hopeman Playing Field), linked from a map; the feed reads any the index page links to. Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "pages",
+        "index": [
+          "https://www.moray.gov.uk/community-life-sports-and-leisure/lands-parks-and-countryside/parks-gardens-and-playing-fields/find-a-play-park/"
+        ],
+        "follow": "/find-a-play-park/[a-z0-9-]+/?$",
+        "allPlay": true,
+        "near": {
+          "lat": 57.55,
+          "lng": -3.2,
+          "km": 45
+        }
+      }
+    },
+    {
+      "district": "Dundee City",
+      "council": "Dundee City Council",
+      "sources": [
+        "https://www.dundeecity.gov.uk/service-area/neighbourhood-services/environment/childrens-playparks"
+      ],
+      "note": "Checked 20 November 2026: play parks are only shown on an embedded map, with no list. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Renfrewshire",
+      "council": "Renfrewshire Council",
+      "sources": [
+        "https://www.renfrewshire.gov.uk/planning-and-land/renfrewshires-play-park-investment-programme"
+      ],
+      "note": "Checked 20 November 2026: the council has about 97 play parks but publishes no list, only investment programme updates. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Angus",
+      "council": "Angus Council",
+      "sources": [
+        "https://www.angus.gov.uk/leisure_tourism_and_the_outdoors/playparks"
+      ],
+      "note": "Checked 20 November 2026: the council manages 96 play areas but publishes no list. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "East Dunbartonshire",
+      "council": "East Dunbartonshire Council",
+      "sources": [
+        "https://www.eastdunbarton.gov.uk/media/w2jby1w0/play-area-audit-and-action-plan.pdf"
+      ],
+      "note": "Checked 20 November 2026: the council has 67 play areas; they're described only in a 2020 audit PDF with site maps, not a list a feed can read. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "West Dunbartonshire",
+      "council": "West Dunbartonshire Council",
+      "sources": [
+        "https://www.west-dunbarton.gov.uk/leisure-parks-events/parks-and-greenspaces/parks/playgrounds"
+      ],
+      "note": "Checked 20 November 2026: the council manages 84 play parks but names none of them. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Inverclyde",
+      "council": "Inverclyde Council",
+      "sources": [
+        "https://www.inverclyde.gov.uk/environment/grounds-services/play-areas"
+      ],
+      "note": "Checked 20 November 2026: the council's 53 play areas are only on a Google map, which we can't use. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "South Ayrshire",
+      "council": "South Ayrshire Council",
+      "sources": [
+        "https://south-ayrshire.gov.uk/parks"
+      ],
+      "note": "Checked 20 November 2026: the parks list couldn't be read from here and names few play areas. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Clackmannanshire",
+      "council": "Clackmannanshire Council",
+      "sources": [
+        "https://www.clacks.gov.uk/culture/parks/"
+      ],
+      "note": "Checked 20 November 2026: the parks pages describe the main parks (most with play areas, such as Johnstone and Cochrane Parks and Greenfield Park) but there is no play area list. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Argyll and Bute",
+      "council": "Argyll and Bute Council",
+      "sources": [
+        "https://www.argyll-bute.gov.uk/my-community/you-said-we-did/play-parks-consultation-24-may-2023-14-jul-2023"
+      ],
+      "note": "Checked 20 November 2026: the council manages about 30 play parks, named only in committee reports; community groups run many others. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Na h-Eileanan Siar",
+      "council": "Comhairle nan Eilean Siar",
+      "sources": [
+        "https://www.cne-siar.gov.uk/hebplay-play-sufficiency-assessment/appendices"
+      ],
+      "note": "Checked 20 November 2026: the 2025 play sufficiency assessment covers 54 sites, some due to be dismantled, but there's no current list. Play areas come from OpenStreetMap."
     }
   ]
 }
