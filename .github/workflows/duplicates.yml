@@ -1,0 +1,49 @@
+# Possible duplicate playgrounds (scripts/check-duplicates.mjs): pairs of listings that may be the same place, such as
+# an OpenStreetMap-only listing beside a council's listing whose pin came from a postcode. Runs without Claude and in
+# under a minute: it reads the playground files only, changes nothing, and opens a "Possible duplicate playgrounds"
+# issue labelled check-report, which the daily "Fix check reports" Claude task works through (merging with
+# scripts/merge-playgrounds.mjs or recording separate places in src/data/not-duplicates.json; see
+# docs/fixing-check-reports.md). Every pair is in the run's "duplicates" artifact. Runs on the 16th of each month and
+# on demand, and skips opening an issue while the last one is still open.
+name: Check for duplicate playgrounds
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '41 5 16 * *'
+permissions:
+  contents: read
+  issues: write
+concurrency:
+  group: duplicates
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Look for duplicates
+        run: node scripts/check-duplicates.mjs --out reports
+      - uses: actions/upload-artifact@v4
+        with:
+          name: duplicates
+          path: reports/
+      - name: Open the report as an issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          cat reports/duplicates.md >> "$GITHUB_STEP_SUMMARY"
+          if [ "$(node -e 'console.log(require("./reports/duplicates.json").length)')" = "0" ]; then
+            echo "No possible duplicates."; exit 0
+          fi
+          open=$(gh api "repos/$GITHUB_REPOSITORY/issues?state=open&labels=check-report&per_page=100" --jq '[.[] | select(.title | startswith("Possible duplicate playgrounds"))] | length')
+          if [ "$open" != "0" ]; then
+            echo "The last duplicates issue is still open; not opening another."; exit 0
+          fi
+          { cat reports/duplicates.md; echo; echo "Every pair: the duplicates artifact on [this run]($GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID)."; } > body.md
+          head -c 60000 body.md > issue.md
+          gh api "repos/$GITHUB_REPOSITORY/issues" -f title="Possible duplicate playgrounds, $(date +%Y-%m-%d)" -F body=@issue.md -f "labels[]=check-report" --jq .html_url
