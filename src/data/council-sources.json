@@ -4063,6 +4063,50 @@
         "include": "play ?(?:area|ground)|playground|adventure",
         "allPlay": true
       }
+    },
+    {
+      "district": "Bristol, City of",
+      "council": "Bristol City Council",
+      "sources": [
+        "https://www.bristol.gov.uk/residents/museums-parks-sports-and-culture/parks-and-open-spaces/parks-with-play-equipment/park-finder"
+      ],
+      "note": "The park finder lists the 72 parks with play equipment, by area (src/data/council-lists/bristol.csv, placed by park or street name; the parks' own pages are at park?id=1 to 72), 20 November 2026. Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/bristol.csv",
+        "page": "https://www.bristol.gov.uk/residents/museums-parks-sports-and-culture/parks-and-open-spaces/parks-with-play-equipment/park-finder",
+        "near": {
+          "lat": 51.46,
+          "lng": -2.59,
+          "km": 10
+        }
+      }
+    },
+    {
+      "district": "Westmorland and Furness",
+      "council": "Westmorland and Furness Council",
+      "sources": [
+        "https://westmorlandandfurness.gov.uk/parks-culture-and-leisure/find-playground-near-you"
+      ],
+      "note": "The find-a-playground directory (LocalGov Drupal, about 12 list pages) has a page for every council playground with its facilities and postcode; town and parish councils run others. Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "localgov",
+        "directory": "https://westmorlandandfurness.gov.uk/parks-culture-and-leisure/find-playground-near-you",
+        "allPlay": true,
+        "exclude": "skate ?park$"
+      }
+    },
+    {
+      "district": "Cumberland",
+      "council": "Cumberland Council",
+      "sources": [
+        "https://www.cumberland.gov.uk/parks-culture-and-leisure/find-parks-and-public-gardens-near-you"
+      ],
+      "note": "The find-parks-and-public-gardens directory (LocalGov Drupal, 7 list pages) has a page for each park and playground, many named '... Playground', with postcodes; those whose page mentions a playground or play area are kept. Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "localgov",
+        "directory": "https://www.cumberland.gov.uk/parks-culture-and-leisure/find-parks-and-public-gardens-near-you"
+      }
     }
   ]
 }
