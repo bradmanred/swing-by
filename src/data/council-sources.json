@@ -2207,9 +2207,20 @@
       "district": "Caerphilly",
       "council": "Caerphilly County Borough Council",
       "sources": [
-        "https://www.caerphilly.gov.uk/Things-To-Do/Play-areas-facilities"
+        "https://www.caerphilly.gov.uk/Things-To-Do/Play-areas-facilities",
+        "https://caerffili.gov.uk/CaerphillyDocs/Environmental-health/appendix-2-eng.aspx"
       ],
-      "note": "Checked 7 November 2026: the play areas page says the council runs 177 and links a downloadable list, but the site refuses automated downloads. Play areas come from OpenStreetMap."
+      "note": "The council's play areas page links a download the site refuses to automated requests, but its environmental health appendix lists the enclosed play areas (src/data/council-lists/caerphilly.csv, 105 play areas placed by street or park name; skate parks, outdoor gyms, youth shelters, kick walls and MUGAs left out), 20 November 2026. The council says it runs 177, so OpenStreetMap fills the rest. Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/caerphilly.csv",
+        "page": "https://caerffili.gov.uk/CaerphillyDocs/Environmental-health/appendix-2-eng.aspx",
+        "near": {
+          "lat": 51.62,
+          "lng": -3.2,
+          "km": 20
+        }
+      }
     },
     {
       "district": "Blaenau Gwent",
