@@ -4377,6 +4377,101 @@
         "https://www.northumberland.gov.uk/ParksandGardens.aspx"
       ],
       "note": "Checked 20 November 2026: play areas in Northumberland are generally run by town and parish councils or housing associations, and the county publishes no list. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Vale of White Horse",
+      "council": "Vale of White Horse District Council",
+      "sources": [
+        "https://www.whitehorsedc.gov.uk/vale-of-white-horse-district-council/sports-and-activities/getting-out-and-about/parks-open-spaces-and-play-areas/play-areas-in-the-vale"
+      ],
+      "note": "The play areas page lists 13 of the 37 play areas the council manages, with postcodes (src/data/council-lists/vale-of-white-horse.csv); the rest are only on its interactive map, so they come from OpenStreetMap, as do town and parish council play areas (20 November 2026). Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/vale-of-white-horse.csv",
+        "page": "https://www.whitehorsedc.gov.uk/vale-of-white-horse-district-council/sports-and-activities/getting-out-and-about/parks-open-spaces-and-play-areas/play-areas-in-the-vale",
+        "near": {
+          "lat": 51.65,
+          "lng": -1.4,
+          "km": 20
+        }
+      }
+    },
+    {
+      "district": "North Warwickshire",
+      "council": "North Warwickshire Borough Council",
+      "sources": [
+        "https://www.northwarks.gov.uk/news/article/176/new-smoke-free-play-area-signs-revealed-for-parks-in-north-warwickshire",
+        "https://www.northwarks.gov.uk/parks-playgrounds-pitches/parks-play-areas-nature-reserves"
+      ],
+      "note": "The council's 2025 smoke-free signs news names its enclosed play areas, and its parks pages (one per village) add Bretts Hall Estate Recreation Ground (src/data/council-lists/north-warwickshire.csv, placed by park or street name), 20 November 2026. Parish councils run the rest. Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/north-warwickshire.csv",
+        "page": "https://www.northwarks.gov.uk/news/article/176/new-smoke-free-play-area-signs-revealed-for-parks-in-north-warwickshire",
+        "near": {
+          "lat": 52.58,
+          "lng": -1.6,
+          "km": 15
+        }
+      }
+    },
+    {
+      "district": "Malvern Hills",
+      "council": "Malvern Hills District Council",
+      "sources": [
+        "https://www.malvernhills.gov.uk/parks-and-open-spaces/our-play-areas"
+      ],
+      "note": "The council runs only four play areas (src/data/council-lists/malvern-hills.csv), 20 November 2026; Malvern Town Council, Upton upon Severn Town Council and parish councils run the rest, which come from OpenStreetMap. Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/malvern-hills.csv",
+        "page": "https://www.malvernhills.gov.uk/parks-and-open-spaces/our-play-areas",
+        "near": {
+          "lat": 52.1,
+          "lng": -2.27,
+          "km": 15
+        }
+      }
+    },
+    {
+      "district": "Rutland",
+      "council": "Rutland County Council",
+      "sources": [
+        "https://www.rutland.gov.uk/"
+      ],
+      "note": "Checked 20 November 2026: no play area list; Oakham Town Council, Uppingham and the parish councils run the play areas. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "West Oxfordshire",
+      "council": "West Oxfordshire District Council",
+      "sources": [
+        "https://westoxon.gov.uk/communities-and-leisure/leisure-centres-and-playing-areas"
+      ],
+      "note": "Checked 20 November 2026: the district says there are more than 80 play areas, mostly run by town and parish councils (Witney Town Council publishes its own list), and it publishes no list. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "South Oxfordshire",
+      "council": "South Oxfordshire District Council",
+      "sources": [
+        "https://southoxon.gov.uk/south-oxfordshire-district-council/sports-and-activities/out-and-about"
+      ],
+      "note": "Checked 20 November 2026: no play area list found; town and parish councils (Didcot, Thame, Henley, Wallingford and others) run most play areas. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Wychavon",
+      "council": "Wychavon District Council",
+      "sources": [
+        "https://wychavon.gov.uk/park-and-open-spaces/parks"
+      ],
+      "note": "Checked 20 November 2026: the council runs parks and play areas in Evesham, Pershore and Droitwich, and its park pages list play facilities (for example Jubilee Gardens), but there is no list of them; town and parish councils run others. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Isles of Scilly",
+      "council": "Council of the Isles of Scilly",
+      "sources": [
+        "https://www.scilly.gov.uk/"
+      ],
+      "note": "Checked 20 November 2026: no play area list. Play areas come from OpenStreetMap."
     }
   ]
 }
