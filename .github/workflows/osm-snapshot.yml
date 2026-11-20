@@ -1,6 +1,7 @@
 # Monthly snapshot of the playgrounds and parks mapped on OpenStreetMap across the UK (scripts/osm-snapshot.mjs).
 # Downloads Geofabrik's daily extracts of Great Britain and of Ireland and Northern Ireland, keeps only playgrounds,
-# parks, gardens, commons, recreation grounds and nature reserves, and saves a small file to the "osm-data" branch.
+# the play equipment mapped in them, parks, gardens, commons, recreation grounds and nature reserves, and the grounds
+# of schools, pubs, hotels and holiday parks (whose playgrounds aren't public), and saves a small file to the "osm-data" branch.
 # The pin check, the junction job and new-area pin placement read it instead of asking the busy Overpass servers,
 # which turns 30-40 minute runs into a minute or two. They only use it when it's under five weeks old, and fall back
 # to asking Overpass otherwise. It also keeps each playground's nearest named street and a list of named places, so
@@ -37,7 +38,10 @@ jobs:
             name=$(basename "$area")
             curl -sSfL --retry 3 -o "$name.osm.pbf" "https://download.geofabrik.de/$area-latest.osm.pbf"
             osmium tags-filter -O -o "$name-play.osm.pbf" "$name.osm.pbf" \
-              nwr/leisure=playground,park,garden,common,recreation_ground,nature_reserve nwr/landuse=recreation_ground
+              nwr/leisure=playground,park,garden,common,recreation_ground,nature_reserve nwr/landuse=recreation_ground \
+              n/playground \
+              a/amenity=school,kindergarten,college,university,pub a/landuse=education \
+              a/tourism=hotel,motel,caravan_site,camp_site,holiday_village a/leisure=resort
             osmium export -O -f geojsonseq -a type,id -o "$name.play.geojsonseq" "$name-play.osm.pbf"
             # Named streets and places, for naming new playgrounds without asking Nominatim (scripts/osm-names.mjs).
             osmium tags-filter -O -o "$name-streets.osm.pbf" "$name.osm.pbf" \
