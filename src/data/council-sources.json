@@ -4002,6 +4002,32 @@
         "https://www.wealden.gov.uk/?p=87"
       ],
       "note": "Checked 20 November 2026: town and parish councils run the equipped play areas in Wealden (Hailsham Town Council publishes its own list). Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "North Northamptonshire",
+      "council": "North Northamptonshire Council",
+      "sources": [
+        "https://www.northnorthants.gov.uk/parks-sports-and-leisure/local-parks-and-pocket-parks"
+      ],
+      "note": "The local parks page lists parks and play areas with addresses and postcodes for the Corby, East Northamptonshire, Kettering and Wellingborough areas; the 70 that are play areas (by name or listed play equipment) are in src/data/council-lists/north-northamptonshire.csv, with East Northamptonshire's mostly run by Rushden and other town councils (20 November 2026). Parks with no play equipment listed, skate parks and ball courts were left out. Wicksteed Park is a charity's. Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/north-northamptonshire.csv",
+        "page": "https://www.northnorthants.gov.uk/parks-sports-and-leisure/local-parks-and-pocket-parks",
+        "near": {
+          "lat": 52.38,
+          "lng": -0.65,
+          "km": 30
+        }
+      }
+    },
+    {
+      "district": "West Northamptonshire",
+      "council": "West Northamptonshire Council",
+      "sources": [
+        "https://www.westnorthants.gov.uk/parks-and-green-spaces/play-spaces-west-northamptonshire"
+      ],
+      "note": "Checked 20 November 2026: the council manages 116 play spaces (play areas, outdoor gyms and ball courts), shown only on its interactive map; Daventry Town Council and other town and parish councils run more. Play areas come from OpenStreetMap."
     }
   ]
 }
