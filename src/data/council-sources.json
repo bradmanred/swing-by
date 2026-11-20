@@ -4028,6 +4028,41 @@
         "https://www.westnorthants.gov.uk/parks-and-green-spaces/play-spaces-west-northamptonshire"
       ],
       "note": "Checked 20 November 2026: the council manages 116 play spaces (play areas, outdoor gyms and ball courts), shown only on its interactive map; Daventry Town Council and other town and parish councils run more. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Dorset",
+      "council": "Dorset Council",
+      "sources": [
+        "https://www.dorsetcouncil.gov.uk/countryside-coast-parks/childrens-play-areas",
+        "https://www.dorsetcouncil.gov.uk/w/purbeck-play-areas",
+        "https://dorsetcouncil.gov.uk/w/north-dorset-play-areas",
+        "https://www.dorsetcouncil.gov.uk/countryside-coast-parks/childrens-play-areas/east-dorset-play-areas"
+      ],
+      "note": "Dorset Council's children's play areas pages cover the former East Dorset, North Dorset and Purbeck areas, listing play areas run by the council and by town and parish councils, with postcodes; 60 are in src/data/council-lists/dorset.csv (Purbeck in full; Ferndown, Verwood, Wimborne, Corfe Mullen, Colehill and Sturminster Marshall from East Dorset; Cranborne, St Leonards, Sixpenny Handley and Potterne Park pages not read yet), 20 November 2026. West Dorset and Weymouth and Portland have no list: town councils such as Dorchester, Bridport and Weymouth run most play areas there, and those come from OpenStreetMap. Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/dorset.csv",
+        "page": "https://www.dorsetcouncil.gov.uk/countryside-coast-parks/childrens-play-areas",
+        "near": {
+          "lat": 50.8,
+          "lng": -2.2,
+          "km": 45
+        }
+      }
+    },
+    {
+      "district": "Bournemouth, Christchurch and Poole",
+      "council": "BCP Council",
+      "sources": [
+        "https://www.bcpcouncil.gov.uk/parks-nature-and-green-spaces/find-a-park-play-area-or-green-space"
+      ],
+      "note": "The find-a-park directory (172 parks, play areas and green spaces) has a page for each play area, named '... play area', with its address and postcode; the feed keeps records named as play areas or playgrounds. Christchurch Town Council and Highcliffe and Walkford Parish Council run a few more. Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import (its list pages may need the site map if paging doesn't work).",
+      "feed": {
+        "type": "localgov",
+        "directory": "https://www.bcpcouncil.gov.uk/parks-nature-and-green-spaces/find-a-park-play-area-or-green-space",
+        "include": "play ?(?:area|ground)|playground|adventure",
+        "allPlay": true
+      }
     }
   ]
 }
