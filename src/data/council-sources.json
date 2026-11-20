@@ -3941,6 +3941,67 @@
         "https://durham.gov.uk/dogcontrol"
       ],
       "note": "Checked 20 November 2026: the council runs about 175 play areas but publishes no list; its dog control order lists fenced play areas in a table the page loads in the browser, which couldn't be read from here. Town and parish councils (Great Aycliffe, Chilton, Shildon, Monk Hesleden and others) run many more. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Hastings",
+      "council": "Hastings Borough Council",
+      "sources": [
+        "https://www.hastings.gov.uk/parks_gardens_allotments/playgrounds/playgrounds/"
+      ],
+      "note": "The playgrounds page lists the council's play spaces with postcodes; the 33 with play equipment are in src/data/council-lists/hastings.csv (kick-about area and seafront trail pieces left out, 20 November 2026). Housing association play areas (Orbit and others) aren't on it. Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/hastings.csv",
+        "page": "https://www.hastings.gov.uk/parks_gardens_allotments/playgrounds/playgrounds/",
+        "near": {
+          "lat": 50.86,
+          "lng": 0.56,
+          "km": 7
+        }
+      }
+    },
+    {
+      "district": "Rother",
+      "council": "Rother District Council",
+      "sources": [
+        "https://www.rother.gov.uk/leisure-and-events/play-in-rother/play-facilities/childrens-play-areas-in-bexhill",
+        "https://www.rother.gov.uk/leisure-and-events/play-in-rother/"
+      ],
+      "note": "The children's play areas in Bexhill page lists the council's Bexhill play areas with postcodes (src/data/council-lists/rother.csv, 20 November 2026). Its other play areas in Battle and Rye (such as Rye Salts) have no list, and town and parish councils run most outside Bexhill; those come from OpenStreetMap. Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/rother.csv",
+        "page": "https://www.rother.gov.uk/leisure-and-events/play-in-rother/play-facilities/childrens-play-areas-in-bexhill",
+        "near": {
+          "lat": 50.85,
+          "lng": 0.47,
+          "km": 6
+        }
+      }
+    },
+    {
+      "district": "Eastbourne",
+      "council": "Eastbourne Borough Council",
+      "sources": [
+        "https://www.lewes-eastbourne.gov.uk/article/1471/Playgrounds"
+      ],
+      "note": "Checked 20 November 2026: the council owns 45 play areas, shown only on the playgrounds page's map. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Lewes",
+      "council": "Lewes District Council",
+      "sources": [
+        "https://www.lewes-eastbourne.gov.uk/article/1471/Playgrounds"
+      ],
+      "note": "Checked 20 November 2026: the council runs 34 play areas, shown only on the playgrounds page's map; town and parish councils (Seaford, Newhaven, Peacehaven and others) run about as many again. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Wealden",
+      "council": "Wealden District Council",
+      "sources": [
+        "https://www.wealden.gov.uk/?p=87"
+      ],
+      "note": "Checked 20 November 2026: town and parish councils run the equipped play areas in Wealden (Hailsham Town Council publishes its own list). Play areas come from OpenStreetMap."
     }
   ]
 }
