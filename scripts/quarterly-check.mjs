@@ -4,6 +4,8 @@
 //   1. Council lists: for councils with a machine-readable "feed" in src/data/council-sources.json, compares the
 //      council's own list with the playgrounds we list for that council. Flags ones the council no longer lists,
 //      ones whose name may have changed, and new ones on the council's list (the weekly coverage job adds those).
+//      Also flags Unverified playgrounds listed from OpenStreetMap alone that are on the council's list, so they can
+//      be verified with the council as source without waiting for the county's next coverage import.
 //   2. OpenStreetMap: for playgrounds whose source is an OpenStreetMap page, checks the mapped playground is still
 //      there, still tagged as a playground, and not now marked private.
 //   3. Broken official links: checks each official source link still works. A page that's gone (404 or 410) often
@@ -60,17 +62,18 @@ for (const f of (await readdir(DIR)).filter((f) => f.endsWith('.json'))) {
   parks.push({ id: f.replace(/\.json$/, ''), ...d, sources: d.sources ?? [] });
 }
 console.log(`${parks.length} playgrounds`);
+const osmOnly = parks.filter((p) => !p.checked && p.sources.length && p.sources.every((s) => OSM_RE.test(s.url)));
 const result = { councils: [], osm: { gone: [], retagged: [], private: [], checked: 0 }, links: { broken: [], checked: 0 }, stale: [], names: [], thin: [] };
 
 // 1. Council lists.
 if (!SKIP.has('councils')) {
-  const { councils } = JSON.parse(await readFile('src/data/council-sources.json', 'utf8'));
+  const { councils } = JSON.parse(await readFile(arg('--councils', 'src/data/council-sources.json'), 'utf8'));
   for (const c of councils.filter((c) => c.feed)) {
     console.log(`Council list: ${c.council}`);
     const recs = await readFeed(c.feed).catch(() => []);
     const hosts = new Set([...(c.sources ?? []), c.feed.url, c.feed.page, c.feed.directory, ...(c.feed.index ?? [])].filter(Boolean).map(host));
     const ours = parks.filter((p) => (p.operator ?? '').toLowerCase().includes(c.council.toLowerCase()) || p.sources.some((s) => hosts.has(host(s.url))));
-    const r = { council: c.council, listed: recs.length, ours: ours.length, gone: [], renamed: [], fresh: [] };
+    const r = { council: c.council, listed: recs.length, ours: ours.length, gone: [], renamed: [], fresh: [], verify: [] };
     if (!recs.length) r.error = "Couldn't read the council's list (it may have moved or changed format): check the feed in council-sources.json.";
     else {
       for (const p of ours) {
@@ -79,7 +82,14 @@ if (!SKIP.has('councils')) {
         if (!near || (near.d > 150 && !byName)) r.gone.push(p);
         else if (near.d <= 60 && !sharesWord(near.x.name, p.name) && !byName) r.renamed.push({ p, now: near.x.name });
       }
-      for (const x of recs) if (!ours.some((p) => metres(p, x) <= 150 || sharesWord(x.name, p.name))) r.fresh.push(x);
+      for (const x of recs) {
+        if (ours.some((p) => metres(p, x) <= 150 || sharesWord(x.name, p.name))) continue;
+        // An Unverified OpenStreetMap-only listing of the same place: the nearest within 150 m, or one sharing a word
+        // of the council's name within 400 m.
+        const near = osmOnly.map((p) => ({ p, d: metres(p, x) })).filter(({ p, d }) => d <= 150 || (d <= 400 && sharesWord(x.name, p.name))).sort((a, b) => a.d - b.d)[0];
+        if (near && !r.verify.some((v) => v.p.id === near.p.id)) r.verify.push({ p: near.p, x, d: Math.round(near.d) });
+        else r.fresh.push(x);
+      }
     }
     result.councils.push(r);
   }
@@ -177,7 +187,7 @@ const L = [`# Quarterly playground check, ${new Date().toISOString().slice(0, 10
 L.push('Things to look at. Nothing has been changed: check each against its official source before editing or removing a playground.', '');
 L.push('## Summary', '');
 const c = result.councils;
-if (!SKIP.has('councils')) L.push(`- **Council lists:** ${c.length} read; ${c.reduce((a, r) => a + r.gone.length, 0)} playgrounds no longer on the council's list, ${c.reduce((a, r) => a + r.renamed.length, 0)} possibly renamed, ${c.reduce((a, r) => a + r.fresh.length, 0)} new on the council's list`);
+if (!SKIP.has('councils')) L.push(`- **Council lists:** ${c.length} read; ${c.reduce((a, r) => a + r.gone.length, 0)} playgrounds no longer on the council's list, ${c.reduce((a, r) => a + r.renamed.length, 0)} possibly renamed, ${c.reduce((a, r) => a + r.fresh.length, 0)} new on the council's list, ${c.reduce((a, r) => a + r.verify.length, 0)} Unverified playgrounds now on a council's list`);
 if (!SKIP.has('osm')) L.push(`- **OpenStreetMap:** ${result.osm.checked} checked; ${result.osm.gone.length} deleted, ${result.osm.retagged.length} no longer tagged as a playground, ${result.osm.private.length} now private`);
 if (!SKIP.has('links')) L.push(`- **Official links:** ${result.links.checked} checked; ${result.links.broken.length} broken`);
 if (!SKIP.has('stale')) L.push(`- **Not checked for over a year (or never):** ${result.stale.length} playgrounds with an official source`);
@@ -189,6 +199,7 @@ if (!SKIP.has('councils')) {
     L.push(`### ${r.council}`, '', r.error ?? `${r.listed} on the council's list, ${r.ours} listed by us.`, '');
     if (r.gone.length) L.push('No longer on the council\'s list (closed, removed or moved?):', ...r.gone.slice(0, MAX).map((p) => `- ${link(p)}`), ...more(r.gone.length), '');
     if (r.renamed.length) L.push('Possibly renamed:', ...r.renamed.slice(0, MAX).map((x) => `- ${link(x.p)}: the council now says "${x.now}"`), ...more(r.renamed.length), '');
+    if (r.verify.length) L.push("Unverified (listed from OpenStreetMap only) but on the council's list: add the council as source and a checked date:", ...r.verify.slice(0, MAX).map((v) => `- ${link(v.p)}: the council lists [${v.x.name}](${v.x.url}) ${v.d} m away`), ...more(r.verify.length), '');
     if (r.fresh.length) L.push("New on the council's list (the weekly coverage job adds these):", ...r.fresh.slice(0, MAX).map((x) => `- [${x.name}](${x.url})`), ...more(r.fresh.length), '');
   }
 }
@@ -223,7 +234,7 @@ await writeFile(
   join(OUT, 'quarterly-check.json'),
   JSON.stringify(
     {
-      councils: result.councils.map((r) => ({ ...r, gone: r.gone.map(slim), renamed: r.renamed.map((x) => ({ ...slim(x.p), now: x.now })) })),
+      councils: result.councils.map((r) => ({ ...r, gone: r.gone.map(slim), renamed: r.renamed.map((x) => ({ ...slim(x.p), now: x.now })), verify: r.verify.map((v) => ({ ...slim(v.p), council: v.x.name, url: v.x.url, metres: v.d })) })),
       osm: { ...result.osm, gone: result.osm.gone.map((x) => ({ ...slim(x.p), osm: `${x.type}/${x.id}` })), retagged: result.osm.retagged.map((x) => ({ ...slim(x.p), osm: `${x.type}/${x.id}`, now: x.now })), private: result.osm.private.map((x) => ({ ...slim(x.p), osm: `${x.type}/${x.id}` })) },
       links: { ...result.links, broken: result.links.broken.map((b) => ({ ...b, parks: b.parks.map(slim) })) },
       stale: result.stale.map(slim),

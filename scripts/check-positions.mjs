@@ -32,6 +32,7 @@
 // {id, lat, lng, tags} to use instead of asking OpenStreetMap), --checked (the list of hand-placed pins). Run by .github/workflows/positions.yml.
 import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
+import { isPublic, isPublicPlay } from './osm-details.mjs';
 
 const arg = (name, dflt) => (process.argv.includes(name) ? process.argv[process.argv.indexOf(name) + 1] : dflt);
 const DIR = arg('--dir', 'src/content/playgrounds');
@@ -71,8 +72,6 @@ function provenance(p) {
 }
 
 // The same test as the coverage check: leave out private and indoor ones, and ones at schools, pubs, hotels and so on.
-const BAD = /school|nursery|academy|primary|college|\bpub\b|inn\b|hotel|caravan|holiday park|soft play|ikea|mcdonald/i;
-const isPublic = (t) => !['private', 'no', 'customers'].includes(t.access) && t.indoor !== 'yes' && !BAD.test(`${t.name ?? ''} ${t.operator ?? ''}`);
 
 const GENERIC = new Set(['play', 'area', 'areas', 'playground', 'playgrounds', 'park', 'parks', 'recreation', 'rec', 'ground', 'grounds', 'playing', 'field', 'fields', 'junior', 'toddler', 'toddlers', 'infant', 'the', 'and', 'of', 'off', 'road', 'street', 'close', 'avenue', 'lane', 'drive', 'way', 'gardens', 'green', 'common', 'country', 'natural', 'adventure', 'splash', 'pad']);
 const words = (s) => String(s ?? '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').split(' ').filter((w) => w.length > 2 && !GENERIC.has(w) && !/^\d+$/.test(w));
@@ -114,7 +113,7 @@ console.log(`Checking ${pins.length} pins (${[...INCLUDE].join(', ')}${REGION ? 
 // 2. Public playgrounds on OpenStreetMap around those pins, asked for in 0.1 degree squares.
 let osm = [];
 if (OSM_FILE) {
-  osm = JSON.parse(await readFile(OSM_FILE, 'utf8')).filter((e) => isPublic(e.tags ?? {})).map((e) => ({ ...e, tags: e.tags ?? {} }));
+  osm = JSON.parse(await readFile(OSM_FILE, 'utf8')).filter((e) => isPublicPlay(e)).map((e) => ({ ...e, tags: e.tags ?? {} }));
 } else {
   const pad = 0.007; // a little over MAX_M, in degrees
   const cells = new Map();
