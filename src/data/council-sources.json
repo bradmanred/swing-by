@@ -3878,6 +3878,69 @@
           "km": 4
         }
       }
+    },
+    {
+      "district": "Stockton-on-Tees",
+      "council": "Stockton-on-Tees Borough Council",
+      "sources": [
+        "https://stockton.gov.uk/play-areas",
+        "https://moderngov.stockton.gov.uk/documents/s5866/SBC%20-%20Play%20Areas%20List%20Dec%2023.pdf"
+      ],
+      "note": "The play areas page names only the five biggest; the December 2023 committee list of play areas (with postcodes, src/data/council-lists/stockton-on-tees.csv; planned sites left out) covers about 50, a few run by parish and town councils. Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/stockton-on-tees.csv",
+        "page": "https://stockton.gov.uk/play-areas",
+        "near": {
+          "lat": 54.55,
+          "lng": -1.32,
+          "km": 14
+        }
+      }
+    },
+    {
+      "district": "Hartlepool",
+      "council": "Hartlepool Borough Council",
+      "sources": [
+        "https://www.hartlepool.gov.uk/parks-green-spaces/play-areas-hartlepool"
+      ],
+      "note": "The play areas page lists the council's play areas by ward with no addresses; the 24 that aren't skate parks are in src/data/council-lists/hartlepool.csv, placed by park or street name (20 November 2026). Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/hartlepool.csv",
+        "page": "https://www.hartlepool.gov.uk/parks-green-spaces/play-areas-hartlepool",
+        "near": {
+          "lat": 54.68,
+          "lng": -1.23,
+          "km": 8
+        }
+      }
+    },
+    {
+      "district": "Darlington",
+      "council": "Darlington Borough Council",
+      "sources": [
+        "https://new.darlington.gov.uk/environment/parks-and-green-spaces"
+      ],
+      "note": "The parks page describes 16 parks and 10 nature reserves; the seven parks it says have play areas are in src/data/council-lists/darlington.csv, placed by park name. The council's estate and village play areas (26 or so in the town) aren't listed, so they come from OpenStreetMap (20 November 2026). Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/darlington.csv",
+        "page": "https://new.darlington.gov.uk/environment/parks-and-green-spaces",
+        "near": {
+          "lat": 54.53,
+          "lng": -1.55,
+          "km": 6
+        }
+      }
+    },
+    {
+      "district": "County Durham",
+      "council": "Durham County Council",
+      "sources": [
+        "https://durham.gov.uk/dogcontrol"
+      ],
+      "note": "Checked 20 November 2026: the council runs about 175 play areas but publishes no list; its dog control order lists fenced play areas in a table the page loads in the browser, which couldn't be read from here. Town and parish councils (Great Aycliffe, Chilton, Shildon, Monk Hesleden and others) run many more. Play areas come from OpenStreetMap."
     }
   ]
 }
