@@ -214366,28 +214366,6 @@
     "lng": -0.125157237
    }
   },
-  "playground-off-sinfield-close-bedwell-stevenage": {
-   "nearest": {
-    "id": "b360f0ae0b3c3d257fae4706",
-    "name": "Public toilet",
-    "m": 33,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.9035562,
-    "lng": -0.1803977
-   },
-   "nearestBabyChange": {
-    "id": "3923101fc6db84232c7e238f",
-    "name": "Stevenage Indoor Market",
-    "m": 1323,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.901838557,
-    "lng": -0.199819207
-   }
-  },
   "playground-off-singleton-road-llannon-y-tymbl-tumble": {
    "nearest": null
   },

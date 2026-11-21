@@ -2,8 +2,8 @@
   "name": "Fairlands Valley Park Play Areas",
   "region": "herts",
   "area": "Stevenage",
-  "lat": 51.897,
-  "lng": -0.187,
+  "lat": 51.90373,
+  "lng": -0.18078,
   "ages": [
     "under-3",
     "3-6",
@@ -52,9 +52,13 @@
     {
       "label": "ParksHerts: Fairlands Valley Park",
       "url": "https://www.parksherts.co.uk/parks/fairlands-valley-park/"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/136311678"
     }
   ],
   "checked": "2026-10-19",
-  "notConfirmed": "Exact equipment and opening hours. The council has posted that the splash park was temporarily closed, so check before a summer visit.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), equipment and opening hours. The council has posted that the splash park was temporarily closed, so check before a summer visit.",
   "photo": null
 }
