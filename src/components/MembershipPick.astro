@@ -1,0 +1,29 @@
+---
+// Membership partner link, shown on playgrounds at a member organisation's property and on the Memberships page.
+// English Heritage only for now (Awin programme 5928). Nothing renders until the Awin publisher ID is set in
+// src/data/partners.json, so the link can't go live before the programme approves Swing By.
+// Like the Amazon banner it is a plain link: no partner scripts, images or cookies until a parent clicks.
+import partners from '../data/partners.json';
+
+interface Props { membership?: string; place?: string }
+const { membership, place = 'playground' } = Astro.props;
+
+const eh = partners.englishHeritage;
+const show = membership === 'eh' && eh.awinPublisherId.trim() !== '';
+const href = show
+  ? `https://www.awin1.com/cread.php?awinmid=${eh.awinMerchantId}&awinaffid=${encodeURIComponent(eh.awinPublisherId.trim())}&clickref=${encodeURIComponent(place)}&ued=${encodeURIComponent(eh.landing)}`
+  : '';
+---
+{show && (
+  <div class="panel member-pick" style="margin-top:12px;box-shadow:none">
+    <p><strong>Visiting more than once a year?</strong> English Heritage membership gets you into over 400 historic places, and up to six children in your group go free. <a href={href} rel="sponsored nofollow noopener" target="_blank" data-partner="english-heritage" data-place={place}>Join English Heritage<span class="sr-only"> (opens in a new tab)</span></a></p>
+    <p class="hint" style="margin-top:6px">Advertisement. Swing By earns a commission if you join through this link, at no extra cost to you.</p>
+  </div>
+)}
+
+<script>
+  import { track } from '../scripts/track';
+  document.querySelectorAll<HTMLAnchorElement>('a[data-partner]').forEach((a) => {
+    a.addEventListener('click', () => track('partner_click', { partner: a.dataset.partner ?? '', place: a.dataset.place ?? '' }));
+  });
+</script>

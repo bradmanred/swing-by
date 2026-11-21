@@ -1,0 +1,10 @@
+{
+  "about": "Pairs of playgrounds near each other that someone has checked and found to be separate places. scripts/check-duplicates.mjs never reports these again. Add a pair with a short note saying how you know.",
+  "pairs": [
+    {
+      "a": "mile-end-park-adventure-park-tower-hamlets",
+      "b": "mile-end-park-children-s-pavilion-tower-hamlets",
+      "note": "Two sites in Mile End Park: the Adventure Park and the Children's Pavilion play area."
+    }
+  ]
+}

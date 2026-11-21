@@ -184,6 +184,7 @@ const MERGED = {
   'playground-off-homestead-lane-the-ryde-welwyn-garden-city': 'king-george-v-playing-fields-welwyn-garden-city',
   'playground-off-kavan-gardens-cranford-hounslow': 'avenue-park-playground-hounslow',
   'playground-off-hertford-road-welwyn-welwyn-hatfield': 'digswell-playing-fields-play-area-digswell',
+  'playground-off-sinfield-close-bedwell-stevenage': 'fairlands',
 };
 
 export default {
