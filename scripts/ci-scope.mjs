@@ -15,7 +15,7 @@ import { pathToFileURL } from 'node:url';
 
 const DATA = [
   /^src\/content\/playgrounds\/[^/]+\.json$/,
-  /^src\/data\/(toilets|coverage|council-sources|pins-checked|junctions)\.json$/,
+  /^src\/data\/(toilets|coverage|council-sources|pins-checked|junctions|not-duplicates)\.json$/,
   /^src\/data\/council-lists\/[^/]+\.csv$/,
   /^worker\/index\.js$/, // only its redirect list changes in data pull requests, and the browser test doesn't use the worker
   /^reports\//,
