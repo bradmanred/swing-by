@@ -1,6 +1,6 @@
 // Council feed names: a directory's own heading must never be read as a park's name.
 import assert from 'node:assert/strict';
-import { osmIds, samePlace } from '../scripts/same-place.mjs';
+import { namesAgree, osmIds, roughPin, samePlace } from '../scripts/same-place.mjs';
 import { geoName, parseCsv, recordName, slugName } from '../scripts/council-feeds.mjs';
 
 assert.equal(recordName('Church Meadows - Parks and recreation directory'), 'Church Meadows');
@@ -21,6 +21,20 @@ assert.equal(samePlace({ name: 'Spa Fields Playground' }, park('Three Corners Ad
 assert.equal(samePlace({ name: 'Cape Adventure Playground' }, park('Playground off Crouch Hill', [], true), 120), true, 'OpenStreetMap-only listing is replaced');
 assert.equal(samePlace({ name: 'Playground' }, park('Paradise Park'), 90), true, 'a record with no distinctive name');
 assert.equal(samePlace({ name: 'Lumpy Hill Adventure Playground' }, park('Caledonian Park'), 150), false, 'beyond 150 m');
+// Rough pins (from a postcode, street or park's middle) reach 300 m, but only when the names agree.
+assert.equal(roughPin('Exact position (mapped from the postcode, AL6 0BX), equipment.'), true);
+assert.equal(roughPin("Exact position (approximate: the park's point on the council's map, not the play area itself)."), true);
+assert.equal(roughPin('Exact position (taken from OpenStreetMap), age ranges.'), false);
+assert.equal(roughPin("Exact position (from the council's map), age ranges."), false);
+assert.equal(roughPin('Age ranges and toilets.'), false);
+const rough = (name, osmOnly = false) => ({ name, osm: [], osmOnly, rough: true });
+assert.equal(samePlace({ name: 'Playground off Hertford Road' }, rough('Digswell Playing Fields Play Area'), 198), true, 'Digswell: postcode pin 200 m off');
+assert.equal(samePlace({ name: 'Baker Close Play Area' }, rough('Manstone Recreation Ground Play Area'), 220), false, 'rough pin, different names');
+assert.equal(samePlace({ name: 'Playground' }, rough('Digswell Playing Fields'), 310), false, 'beyond 300 m');
+assert.equal(samePlace({ name: 'Playground', rough: true }, park('Playground off Hertford Road', [], true), 250), true, 'rough council record replaces an OpenStreetMap-only listing');
+assert.equal(samePlace({ name: 'Playground' }, park('Digswell Playing Fields'), 200), false, 'neither pin rough: 150 m as before');
+assert.equal(namesAgree('Digswell Play Area', 'Digswell Playing Fields'), true);
+assert.equal(namesAgree('Lumpy Hill', 'Caledonian Park'), false);
 assert.deepEqual(osmIds([{ url: 'https://www.openstreetmap.org/way/87685649' }, { url: 'https://islington.gov.uk/x' }]), ['way/87685649']);
 assert.deepEqual(parseCsv('name,park,postcode,lat,lng\nVictoria Park Tipton Playground,Victoria Park,,52.52491,-2.06243\n')[0], { name: 'Victoria Park Tipton Playground', park: 'Victoria Park', postcode: '', lat: '52.52491', lng: '-2.06243' });
 // geojson names from several fields (Fife's play park layer has a street and a town, but no name).

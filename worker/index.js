@@ -183,6 +183,7 @@ const MERGED = {
   'motspur-park-playground-motspur-park-greater-london': 'blagdon-road-open-space-motspur-park-greater-london',
   'playground-off-homestead-lane-the-ryde-welwyn-garden-city': 'king-george-v-playing-fields-welwyn-garden-city',
   'playground-off-kavan-gardens-cranford-hounslow': 'avenue-park-playground-hounslow',
+  'playground-off-sinfield-close-bedwell-stevenage': 'fairlands',
 };
 
 export default {

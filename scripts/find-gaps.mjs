@@ -28,7 +28,7 @@
 // and from Overpass only when there isn't; new playgrounds are named from it too (scripts/osm-names.mjs).
 // Run by .github/workflows/coverage.yml.
 import { countyOf } from './counties.mjs';
-import { SAME_M, osmIds, samePlace } from './same-place.mjs';
+import { SAME_M, ROUGH_M, namesAgree, osmIds, roughPin, samePlace } from './same-place.mjs';
 import { mkdir, readFile, readdir, unlink, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { readFeed } from './council-feeds.mjs';
@@ -113,27 +113,52 @@ async function lookup(points) {
 
 
 // Everything we list, on a coarse grid so "is there one within 150 m" is quick. osmOnly marks listings that come from
-// OpenStreetMap alone (Unverified), which a council's own record of the same place replaces.
+// OpenStreetMap alone (Unverified), which a council's own record of the same place replaces. rough marks listings whose
+// pin is only approximate (from a postcode, street or park's middle), which count as covering a mapped playground up to
+// 300 m away when the names agree (scripts/same-place.mjs).
 const grid = new Map();
 const cellKey = (lat, lng) => `${Math.floor(lat * 100)},${Math.floor(lng * 60)}`;
 const remember = (p) => grid.set(cellKey(p.lat, p.lng), [...(grid.get(cellKey(p.lat, p.lng)) ?? []), p]);
 for (const f of (await readdir(DIR)).filter((f) => f.endsWith('.json'))) {
   const d = JSON.parse(await readFile(join(DIR, f), 'utf8'));
   const osmOnly = !d.checked && (d.sources ?? []).length > 0 && d.sources.every((x) => /openstreetmap\.org\//.test(x.url));
-  remember({ id: f.replace(/\.json$/, ''), lat: d.lat, lng: d.lng, osmOnly, name: d.name, osm: osmIds(d.sources) });
+  remember({ id: f.replace(/\.json$/, ''), lat: d.lat, lng: d.lng, osmOnly, name: d.name, osm: osmIds(d.sources), rough: roughPin(d.notConfirmed) });
 }
-/** The listing nearest p within 150 m (the grid's own entry, so changes to it stick), or null. */
+/**
+ * The listing nearest p within 150 m, or within 300 m if its pin is rough and the names agree (the grid's own entry,
+ * so changes to it stick), or null. p is a mapped playground ({ lat, lng, tags }).
+ */
 const nearestListed = (p) => {
   let best = null;
   for (let a = -1; a <= 1; a++)
     for (let b = -1; b <= 1; b++)
       for (const q of grid.get(`${Math.floor(p.lat * 100) + a},${Math.floor(p.lng * 60) + b}`) ?? []) {
         const d = km(p, q) * 1000;
-        if (d < SAME_M && (!best || d < best.d)) best = { q, d };
+        const covers = d < SAME_M || (q.rough && d < ROUGH_M && namesAgree(p.tags?.name ?? p.name, q.name) && roughMatch(q, p));
+        if (covers && (!best || d < best.d)) best = { q, d };
       }
   return best?.q ?? null;
 };
 const listed = (p) => !!nearestListed(p);
+/**
+ * A rough pin stands for one playground, so it only covers one mapped playground beyond 150 m: the nearest public one
+ * in the snapshot whose name agrees. (Several unnamed playgrounds can be within 300 m of a park's postcode pin.)
+ * Without the snapshot, the first one asked about claims it.
+ */
+function roughMatch(q, p) {
+  if (q.match === undefined) {
+    q.match = null;
+    let best = Infinity;
+    for (let a = -1; a <= 1; a++)
+      for (let b = -1; b <= 1; b++)
+        for (const s of snapGrid.get(`${Math.floor(q.lat * 100) + a},${Math.floor(q.lng * 60) + b}`) ?? []) {
+          const d = km(q, s) * 1000;
+          if (d < ROUGH_M && d < best && isPublicPlay(s) && namesAgree(s.tags?.name, q.name)) [best, q.match] = [d, s.id];
+        }
+    if (!SNAP.length) q.match = p.id;
+  }
+  return q.match === p.id;
+}
 /** For a council record: the listing within 150 m that is the same place (see scripts/same-place.mjs), or null. */
 const sameListed = (rec, at = rec) => {
   const near = [];
@@ -289,6 +314,7 @@ if (ADD > 0) {
       if (toAdd.length >= ADD) break;
       const before = { lat: x.lat, lng: x.lng };
       x.placed = snap(x, c.feed.approximate);
+      x.rough = x.placed !== 'osm' && (x.placed !== 'map' || !!c.feed.approximate);
       // Already listed: skip it, unless what we list is an OpenStreetMap-only copy, which the council's record replaces.
       const near = sameListed(x) ?? sameListed(x, before);
       if (near && !near.osmOnly) {
@@ -297,12 +323,14 @@ if (ADD > 0) {
       }
       if (near) {
         x.replaces = near.id;
+        // The OpenStreetMap listing's pin is on the play area; a postcode or park pin isn't.
+        if (x.rough) Object.assign(x, { lat: near.lat, lng: near.lng, placed: 'osm', osm: x.osm ?? near.osm[0] });
         near.osmOnly = false; // only one council record replaces it
         replacing++;
       }
       fresh++;
       toAdd.push({ kind: 'council', ...x, council: c });
-      remember({ id: null, lat: x.lat, lng: x.lng, osmOnly: false, name: x.name, osm: x.osm ? [x.osm] : [] }); // so OpenStreetMap copies of the same place aren't added too
+      remember({ id: null, lat: x.lat, lng: x.lng, osmOnly: false, name: x.name, osm: x.osm ? [x.osm] : [], rough: x.placed !== 'osm' && x.rough }); // so OpenStreetMap copies of the same place aren't added too
     }
     feedReport.push(`${c.council}: ${recs.length} on the council's list, ${fresh} new${replacing ? ` (${replacing} replacing OpenStreetMap-only listings)` : ''}`);
   }

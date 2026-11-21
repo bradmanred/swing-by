@@ -96,6 +96,46 @@ bottom of the issue.
   note it in the PR rather than changing anything.
 - Don't change colours, fonts or layout beyond what the fix needs, and say in the PR which pages you checked.
 
+### Possible duplicate playgrounds (`scripts/check-duplicates.mjs`)
+
+Every pair is in the `duplicates` artifact on the run linked at the bottom of the issue (the issue shows at most 40 per
+section). This is the one finding type where removing a listing is right: a merge keeps the playground and sends the
+duplicate's old address to it, so it isn't a deletion under the never-delete rule.
+
+For each pair, open both files and their sources (council page, OpenStreetMap entry), and decide:
+
+- **Same playground:** merge with `node scripts/merge-playgrounds.mjs <keep> <drop>` (`--dry` to preview first).
+  Keep the official listing (the script refuses to keep an OpenStreetMap-only one); between two official ones, keep
+  the one with more detail or a council source. The script takes the other's pin when the kept one's is only
+  approximate; pass `--pin keep` or `--pin drop` if you know better. Then read the merged file: fix the description if
+  it no longer fits, and update `checked` only if you re-checked it against an official source.
+- **Separate places:** record them with `node scripts/merge-playgrounds.mjs --separate <a> <b> --note "…"`, saying
+  how you know (different parks on the council's list, two play areas mapped separately on OpenStreetMap with
+  different equipment, and so on).
+- **Can't tell** (no source says either way): leave it and list it in the PR under "For the owner to decide".
+
+By kind:
+
+- **Both cite the same OpenStreetMap playground:** almost always the same place. Check the names against the council
+  list first: a council sometimes lists a park's junior and toddler areas separately and both got the same pin; then
+  they're separate, and one pin wants moving (list it for the pin check).
+- **OpenStreetMap-only listing beside an official one:** the usual case is an official listing pinned from a postcode
+  and the OpenStreetMap playground is the real spot, as with Digswell Playing Fields and "Playground off Hertford
+  Road". Merge when the OpenStreetMap playground is in the park or site the council names (look at the map). If one
+  official listing is paired with several OpenStreetMap ones, merge only the one in its park and record the others as
+  separate.
+- **Similar names close together:** often a park listed by two sources ("Ardal Chwarae Mochdre" and "Mochdre Play
+  Area"), or one playground mapped twice on OpenStreetMap. Different play areas in one park are separate.
+- **Under 40 m apart, different names:** usually two sites side by side (an adventure playground beside a park's
+  playground). Record them as separate unless a source shows they're one.
+- **Different playgrounds on one pin:** not duplicates. Don't merge: move each pin onto its own play area if
+  OpenStreetMap or the council's map clearly shows it (and add it to `src/data/pins-checked.json`), otherwise list
+  them in the PR for the pin check. Then record the pair as separate.
+
+Before merging, open the dropped listing's live page: parent photos, pin reports and equipment confirmations are stored
+against its address and don't move with it, so list any in the PR under "For the owner to decide" instead of merging.
+Up to about 50 pairs a run.
+
 ### Cloudflare file count (`scripts/count-assets.mjs`)
 
 The build checks count the built site's files against Cloudflare's limit per deploy (20,000 on the free Workers plan).
