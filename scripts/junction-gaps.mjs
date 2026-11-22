@@ -163,7 +163,7 @@ if (toAdd.length) {
     const area = [...new Set([sub, town].filter(Boolean))].join(', ') || pc.admin_district;
     const doc = osmPlaygroundDoc(p, { road, place, area, region: reg });
     let id = slug(`${doc.name}-${doc.area}`).slice(0, 60);
-    while (existing.has(`${id}.json`)) id += '-2';
+    for (let n = 2, base = id; existing.has(`${id}.json`); n++) id = `${base}-${n}`;
     existing.add(`${id}.json`);
     await writeFile(join(DIR, `${id}.json`), JSON.stringify(doc, null, 2) + '\n');
     added++;

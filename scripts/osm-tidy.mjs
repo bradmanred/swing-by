@@ -83,7 +83,8 @@ for (const f of files) {
       d.description = osmDescription({ where, near, fee: det.fee });
     }
     newId = slug(`${d.name}-${d.area}`).slice(0, 60);
-    while (existing.has(`${newId}.json`) && newId !== id) newId += '-2';
+    // Same name twice in one place: -2, -3, -4 (not -2-2).
+    for (let n = 2, base = newId; existing.has(`${newId}.json`) && newId !== id; n++) newId = `${base}-${n}`;
     existing.add(`${newId}.json`);
     renamed.push({ from: id, to: newId, old, name: d.name });
     changed = true;
