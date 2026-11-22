@@ -1,0 +1,10 @@
+{
+  "about": "Councils checked for play area sizes (docs/finding-playgrounds.md, 'size'). 'district' must match the local authority name used by postcodes.io (ONS), as in council-sources.json. 'grading' is 'fit' (Fields in Trust LAP / LEAP / NEAP), 'own' (the council's own small / medium / large) or 'none' (looked, and the council doesn't publish sizes: don't check again until 'checked' is over two years old). 'sources' are the pages or documents the sizes came from. The weekly 'Check sizes' workflow (scripts/size-gaps.mjs) lists councils not here yet, biggest first.",
+  "councils": [
+    { "district": "Chelmsford", "council": "Chelmsford City Council", "grading": "own", "sources": ["https://loveyourchelmsford.co.uk/green-spaces/play-areas/"], "checked": "2026-11-22" },
+    { "district": "Chesterfield", "council": "Chesterfield Borough Council", "grading": "fit", "sources": ["https://www.chesterfield.gov.uk/explore-chesterfield/parks-and-green-spaces/parks/parks-and-play-areas"], "checked": "2026-11-22" },
+    { "district": "Tendring", "council": "Tendring District Council", "grading": "own", "sources": ["https://www.tendringdc.gov.uk/playparks"], "checked": "2026-11-22" },
+    { "district": "Welwyn Hatfield", "council": "Welwyn Hatfield Borough Council", "grading": "own", "sources": ["https://www.welhat.gov.uk/directory-record/26967/bushey-ley-play-area"], "checked": "2026-11-22" },
+    { "district": "Ipswich", "council": "Ipswich Borough Council", "grading": "fit", "sources": ["https://www.ipswich.gov.uk/leisure/parks-and-open-spaces/play-areas"], "checked": "2026-11-22" }
+  ]
+}

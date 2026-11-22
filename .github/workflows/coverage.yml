@@ -79,6 +79,8 @@ jobs:
           # Counties are scanned for up to 35 minutes; the next month carries on from where this one stopped.
           export SCAN_MINUTES=35
           if [ -n "$ONLY" ]; then node scripts/find-gaps.mjs --add "$ADD" --only "$ONLY" $FALLBACK; else node scripts/find-gaps.mjs --add "$ADD" $FALLBACK; fi
+          # Sizes from council grades held in descriptions and council lists (scripts/apply-sizes.mjs).
+          node scripts/apply-sizes.mjs
       - uses: actions/cache/save@v4
         if: always()
         with:
