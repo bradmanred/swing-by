@@ -21,7 +21,9 @@
 //
 // Playgrounds from OpenStreetMap follow docs/finding-playgrounds.md: Unverified (no "checked" date), the
 // OpenStreetMap page as the source, and the OpenStreetMap credit. Ones tagged private or indoor, or at schools,
-// pubs, hotels and holiday parks, are left out, as are ones within 150 m of a playground we list.
+// pubs, hotels and holiday parks (by name, or inside their grounds), are left out, as are ones within 150 m of a
+// playground we list. Each is named after the park it's in when it has no name of its own, with the equipment, ages
+// and step-free access mapped on OpenStreetMap (scripts/osm-details.mjs).
 // OpenStreetMap's playgrounds come from the monthly snapshot (.github/actions/osm-snapshot) when there is a recent one,
 // and from Overpass only when there isn't; new playgrounds are named from it too (scripts/osm-names.mjs).
 // Run by .github/workflows/coverage.yml.
@@ -31,6 +33,7 @@ import { mkdir, readFile, readdir, unlink, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { readFeed } from './council-feeds.mjs';
 import { snapshotNames } from './osm-names.mjs';
+import { isPublic, isPublicPlay, osmPlaygroundDoc } from './osm-details.mjs';
 
 const DIR = 'src/content/playgrounds';
 const UA = { 'User-Agent': 'SwingBy/1.0 (https://swing-by.co.uk; finds playgrounds missing from the site)' };
@@ -108,8 +111,6 @@ async function lookup(points) {
   return out;
 }
 
-const BAD = /school|nursery|academy|primary|college|\bpub\b|inn\b|hotel|caravan|holiday park|soft play|ikea|mcdonald/i;
-const isPublic = (t) => !['private', 'no', 'customers'].includes(t.access) && t.indoor !== 'yes' && !BAD.test(`${t.name ?? ''} ${t.operator ?? ''}`);
 
 // Everything we list, on a coarse grid so "is there one within 150 m" is quick. osmOnly marks listings that come from
 // OpenStreetMap alone (Unverified), which a council's own record of the same place replaces. rough marks listings whose
@@ -152,7 +153,7 @@ function roughMatch(q, p) {
       for (let b = -1; b <= 1; b++)
         for (const s of snapGrid.get(`${Math.floor(q.lat * 100) + a},${Math.floor(q.lng * 60) + b}`) ?? []) {
           const d = km(q, s) * 1000;
-          if (d < ROUGH_M && d < best && isPublic(s.tags ?? {}) && namesAgree(s.tags?.name, q.name)) [best, q.match] = [d, s.id];
+          if (d < ROUGH_M && d < best && isPublicPlay(s) && namesAgree(s.tags?.name, q.name)) [best, q.match] = [d, s.id];
         }
     if (!SNAP.length) q.match = p.id;
   }
@@ -192,7 +193,7 @@ function snap(rec, approximate) {
   for (let a = -1; a <= 1; a++)
     for (let b = -1; b <= 1; b++)
       for (const q of snapGrid.get(`${Math.floor(rec.lat * 100) + a},${Math.floor(rec.lng * 60) + b}`) ?? []) {
-        if (usedOsm.has(q.id) || !isPublic(q.tags ?? {})) continue;
+        if (usedOsm.has(q.id) || !isPublicPlay(q)) continue;
         const d = km(rec, q) * 1000;
         if (d <= r) cands.push({ q, d, strong: nameWords(`${q.tags?.name ?? ''}`).some((w) => ours.has(w)) });
       }
@@ -211,7 +212,7 @@ function snap(rec, approximate) {
 const cellCounty = new Map();
 const square = (p) => `${Math.floor(p.lat * 20)},${Math.floor(p.lng * 12)}`;
 async function fromSnapshot(name) {
-  const pub = SNAP.filter((p) => p.lat != null && isPublic(p.tags ?? {}));
+  const pub = SNAP.filter((p) => p.lat != null && isPublicPlay(p));
   const bySquare = new Map();
   for (const p of pub) bySquare.set(square(p), [...(bySquare.get(square(p)) ?? []), p]);
   const todo = [...bySquare.keys()].filter((k) => !cellCounty.has(k));
@@ -355,7 +356,6 @@ if (toAdd.length) {
   const DIST = { Derby: 'derbyshire', Plymouth: 'devon', Torbay: 'devon', 'Southend-on-Sea': 'essex', Thurrock: 'essex' };
   const region = (p) => (!p ? null : { Wales: 'wales', Scotland: 'scotland', 'Northern Ireland': 'northern-ireland' }[p.country] ?? CTY[p.admin_county] ?? DIST[p.admin_district] ?? REG[p.region]);
   const slug = (s) => s.toLowerCase().replace(/'/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-  const GENERIC = /^(play(ground| area| park|park| space)?s?|children'?s play( area)?)$/i;
   const BIG_ROAD = /^(M\d+|A\d+(\(M\))?|.*Bypass)$/;
   for (const [i, p] of toAdd.entries()) {
     const pc = pcs[i];
@@ -398,20 +398,7 @@ if (toAdd.length) {
         photo: null,
       };
     } else {
-      const tagName = (p.tags.name ?? '').trim();
-      const name = tagName && !GENERIC.test(tagName) ? tagName : road ? `Playground off ${road}` : `${place} Playground`;
-      const near = [road, place].filter(Boolean).join(', ');
-      doc = {
-        name, region: reg, area, lat: Math.round(p.lat * 1e5) / 1e5, lng: Math.round(p.lng * 1e5) / 1e5,
-        ages: [], equipment: [], access: [], facilities: [], opens: '',
-        description: `A playground on OpenStreetMap${near ? ` near ${near}` : ''}. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.`,
-        nearby: [],
-        ...(p.tags.operator ? { operator: p.tags.operator } : {}),
-        sources: [{ label: `OpenStreetMap: ${tagName || 'playground'}`, url: `https://www.openstreetmap.org/${p.id}` }],
-        checked: null,
-        notConfirmed: 'Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.',
-        photo: null,
-      };
+      doc = osmPlaygroundDoc(p, { road, place, area, region: reg });
     }
     let id = slug(`${doc.name}-${doc.area}`).slice(0, 60);
     while (existing.has(`${id}.json`)) id += '-2';
