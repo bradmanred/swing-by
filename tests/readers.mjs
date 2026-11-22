@@ -76,3 +76,10 @@ assert.equal(jaduAZ('https://www.edinburgh.gov.uk/directory/10216/play-areas'), 
 assert.equal(jaduAZ('https://www.bromley.gov.uk/directory/26'), 'https://www.bromley.gov.uk/directory/26/a-to-z');
 assert.equal(jaduAZ('https://www.southlanarkshire.gov.uk/directory/150/parks_and_play_areas/'), 'https://www.southlanarkshire.gov.uk/directory/150/a-to-z');
 console.log('readers: ok');
+
+// "address": a page with no map point or postcode gives its street for the geocoder (Telford & Wrekin).
+const telford = `<h1>Arleston - Windsor Road</h1><table><tr><th>Address</th><td>Adjacent 27 Windsor Road, Arleston</td></tr>
+<tr><th>Telephone</th><td>01952 384384</td></tr><tr><th>Overview</th><td>Junior play area<br>Ball court</td></tr></table>`;
+const tw = parsePark(telford, 'https://www.telford.gov.uk/online-directories/sports-and-leisure/find-a-playground/arleston-windsor-road/', { allPlay: true, address: 'Address[;:\\s]+([^;]{4,120})' }, true);
+assert.equal(tw.where, 'Adjacent 27 Windsor Road, Arleston');
+assert.equal(parsePark(telford, 'https://example.gov.uk/x/', {}, true).where, null);

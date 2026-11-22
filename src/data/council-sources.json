@@ -2946,18 +2946,19 @@
       "parish": "The Parks Trust",
       "council": "The Parks Trust",
       "sources": [
-        "https://theparkstrust.com/activities/play-areas",
-        "https://www.theparkstrust.com/playarea"
+        "https://www.theparkstrust.com/activities/play-areas/",
+        "https://www.theparkstrust.com/find-a-park/?Great%2Bfor...=Play%2BAreas"
       ],
-      "note": "The charity that runs Milton Keynes's main parks looks after 30-plus play areas, each with its own page under /activities/play-areas/. Feed set up 17 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "note": "The charity that runs Milton Keynes's main parks looks after 30-plus play areas. Its play areas now sit on each park's page under /find-a-park/ (the old /activities/play-areas/ pages went in 2026), and the find-a-park list filtered to play areas links the parks that have them. Try a council list found 10 parks on 22 November 2026; their points are the park's, not the play area's, so the coverage check snaps them onto the nearest mapped playground.",
       "feed": {
         "type": "pages",
         "index": [
-          "https://www.theparkstrust.com/playarea",
-          "https://theparkstrust.com/activities/play-areas"
+          "https://www.theparkstrust.com/find-a-park/?Great%2Bfor...=Play%2BAreas",
+          "https://www.theparkstrust.com/activities/play-areas/"
         ],
-        "follow": "/activities/play-areas/[a-z0-9-]+/?$",
+        "follow": "/find-a-park/[a-z0-9-]+/?$",
         "allPlay": true,
+        "approximate": true,
         "near": {
           "lat": 52.04,
           "lng": -0.76,
@@ -2988,13 +2989,14 @@
       "parish": "Bracknell",
       "council": "Bracknell Town Council",
       "sources": [
-        "https://bracknelltowncouncil.gov.uk/recreation-facilities/council-sites/listing/jocks-lane-recreation-ground"
+        "https://www.bracknelltowncouncil.gov.uk/council-services/play-areas-and-green-spaces/"
       ],
-      "note": "Runs 35 children's play areas, two with splash pads, with one page per site under /recreation-facilities/council-sites/listing/. Feed set up 17 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "note": "Runs 35-plus children's play areas, one page each under /council-services/play-areas-and-green-spaces/ (moved there from /recreation-facilities/council-sites/ in 2026). The pages list equipment but give no address or map, so each is placed by its park's name on OpenStreetMap or, failing that, by its name as a street in Bracknell (22 November 2026).",
       "feed": {
         "type": "pages",
-        "index": "https://bracknelltowncouncil.gov.uk/recreation-facilities/council-sites",
-        "follow": "/recreation-facilities/council-sites/listing/[a-z0-9-]+/?$",
+        "index": "https://www.bracknelltowncouncil.gov.uk/council-services/play-areas-and-green-spaces/",
+        "follow": "/council-services/play-areas-and-green-spaces/[a-z0-9-]+/?$",
+        "town": "Bracknell",
         "near": {
           "lat": 51.41,
           "lng": -0.75,
@@ -3051,7 +3053,7 @@
         "https://www.rbwm.gov.uk/leisure-and-culture/parks-and-open-spaces/parks-windsor",
         "https://rbwm.gov.uk/leisure-and-culture/parks-and-open-spaces/parks-maidenhead"
       ],
-      "note": "Windsor and Maidenhead park directories with one page per park listing its play area and ages (Oaken Grove, Grenfell Park, Kidwells Park, Clewer Memorial). Datchet and other parish play areas aren't registered yet. Feed set up 17 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "note": "Windsor and Maidenhead park directories with one page per park listing its play area and ages (Oaken Grove, Grenfell Park, Kidwells Park, Clewer Memorial). Datchet and other parish play areas aren't registered yet. Try a council list found 37 on 22 November 2026.",
       "feed": {
         "type": "pages",
         "index": [
@@ -3285,12 +3287,38 @@
       "sources": [
         "https://www.stoke.gov.uk/playgrounds"
       ],
-      "note": "Parks directory (Jadu, /directory_record/ pages) giving each park's address and postcode and whether it has children's play equipment. Feed set up 17 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "note": "Parks directory (Jadu, /directory_record/ pages) giving each park's address, postcode and map point, and 'Children's play equipment: Yes/No'. The /playgrounds page only shows the first 20, so the feed reads the directory's A to Z, and only keeps records saying Yes (22 November 2026).",
       "feed": {
         "type": "pages",
-        "index": "https://www.stoke.gov.uk/playgrounds",
+        "index": [
+          "https://www.stoke.gov.uk/directory/13/a_to_z",
+          "https://www.stoke.gov.uk/directory/13/a_to_z/B",
+          "https://www.stoke.gov.uk/directory/13/a_to_z/C",
+          "https://www.stoke.gov.uk/directory/13/a_to_z/D",
+          "https://www.stoke.gov.uk/directory/13/a_to_z/E",
+          "https://www.stoke.gov.uk/directory/13/a_to_z/F",
+          "https://www.stoke.gov.uk/directory/13/a_to_z/G",
+          "https://www.stoke.gov.uk/directory/13/a_to_z/H",
+          "https://www.stoke.gov.uk/directory/13/a_to_z/I",
+          "https://www.stoke.gov.uk/directory/13/a_to_z/J",
+          "https://www.stoke.gov.uk/directory/13/a_to_z/K",
+          "https://www.stoke.gov.uk/directory/13/a_to_z/L",
+          "https://www.stoke.gov.uk/directory/13/a_to_z/M",
+          "https://www.stoke.gov.uk/directory/13/a_to_z/N",
+          "https://www.stoke.gov.uk/directory/13/a_to_z/O",
+          "https://www.stoke.gov.uk/directory/13/a_to_z/P",
+          "https://www.stoke.gov.uk/directory/13/a_to_z/Q",
+          "https://www.stoke.gov.uk/directory/13/a_to_z/R",
+          "https://www.stoke.gov.uk/directory/13/a_to_z/S",
+          "https://www.stoke.gov.uk/directory/13/a_to_z/T",
+          "https://www.stoke.gov.uk/directory/13/a_to_z/U",
+          "https://www.stoke.gov.uk/directory/13/a_to_z/V",
+          "https://www.stoke.gov.uk/directory/13/a_to_z/W",
+          "https://www.stoke.gov.uk/directory/13/a_to_z/Y",
+          "https://www.stoke.gov.uk/directory/13/a_to_z/Z"
+        ],
         "follow": "/directory_record/\\d+/[a-z0-9_]+$",
-        "require": "Children.s play equipment",
+        "require": "Children(?:&#0?39;|.)s play equipment\\s*(?:<[^>]+>\\s*)*Yes",
         "near": {
           "lat": 53.01,
           "lng": -2.18,
@@ -3400,18 +3428,11 @@
       "sources": [
         "https://www.southtyneside.gov.uk/article/11040/Play-areas"
       ],
-      "note": "The play areas list (five pages, about 41 play areas) links to one page per play area with its address and postcode, but the site refuses requests from GitHub's servers (HTTP 403 to Fetch pages and Try a council list, 22 November 2026), so the feed reads nothing. Its gaps are filled from OpenStreetMap until the list is copied into a CSV by hand.",
+      "note": "The play areas list (five pages, about 41 play areas) gives each one's street and postcode, but the site sits behind a Cloudflare check that refuses GitHub's servers, so the list was copied into a CSV by hand on 22 November 2026 (37 of them; five on page 1 couldn't be read). Names are the council's where its page was readable, otherwise the street.",
       "feed": {
-        "type": "pages",
-        "index": [
-          "https://www.southtyneside.gov.uk/article/11040/Play-areas",
-          "https://southtyneside.gov.uk/article/11040/Play-areas?p=2&q=%2A",
-          "https://southtyneside.gov.uk/article/11040/Play-areas?p=3&q=%2A",
-          "https://www.southtyneside.gov.uk/article/11040/Play-areas?p=4&q=%2A",
-          "https://southtyneside.gov.uk/article/11040/Play-areas?p=5&q=%2A"
-        ],
-        "follow": "/article/(?!11040)\\d+/[A-Za-z0-9-]+$",
-        "allPlay": true,
+        "type": "list",
+        "file": "src/data/council-lists/south-tyneside.csv",
+        "page": "https://www.southtyneside.gov.uk/article/11040/Play-areas",
         "near": {
           "lat": 54.97,
           "lng": -1.44,
@@ -4173,12 +4194,12 @@
       "district": "Westmorland and Furness",
       "council": "Westmorland and Furness Council",
       "sources": [
-        "https://westmorlandandfurness.gov.uk/parks-culture-and-leisure/find-playground-near-you"
+        "https://www.westmorlandandfurness.gov.uk/parks-culture-and-leisure/parks-and-open-spaces/find-playground-near-you"
       ],
-      "note": "The find-a-playground directory (LocalGov Drupal, about 12 list pages) has a page for every council playground with its facilities and postcode; town and parish councils run others. Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "note": "The find-a-playground directory (LocalGov Drupal) moved under /parks-and-open-spaces/ in 2026, and its list page now fails with a server error, but the site map lists about 120 playground pages, each with facilities and postcode, which the reader picks up (22 November 2026). Town and parish councils run others.",
       "feed": {
         "type": "localgov",
-        "directory": "https://westmorlandandfurness.gov.uk/parks-culture-and-leisure/find-playground-near-you",
+        "directory": "https://www.westmorlandandfurness.gov.uk/parks-culture-and-leisure/parks-and-open-spaces/find-playground-near-you",
         "allPlay": true,
         "exclude": "skate ?park$"
       }
@@ -4218,15 +4239,21 @@
       "district": "Telford and Wrekin",
       "council": "Telford & Wrekin Council",
       "sources": [
-        "https://www.telford.gov.uk/directory/23/find_a_playground",
-        "https://www.telford.gov.uk/online-directories/sports-and-leisure/find-a-playground"
+        "https://www.telford.gov.uk/online-directories/sports-and-leisure/find-a-playground/"
       ],
-      "note": "The find-a-playground directory (Jadu, records by area) has a page for each of the council's playgrounds (about 118), with facilities and address. The site has been moving to /online-directories/, so the Jadu address may redirect. Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "note": "The find-a-playground directory moved to /online-directories/ in 2026 (the old Jadu /directory/23/ address is gone). One page links all 122 playgrounds; each gives an address such as 'Adjacent 27 Windsor Road, Arleston' and its equipment, but only some give a postcode, so the rest are placed from their street on OpenStreetMap's geocoder (22 November 2026).",
       "feed": {
-        "type": "jadu",
-        "directory": "https://www.telford.gov.uk/directory/23/find_a_playground",
+        "type": "pages",
+        "index": "https://www.telford.gov.uk/online-directories/sports-and-leisure/find-a-playground/",
+        "follow": "/online-directories/sports-and-leisure/find-a-playground/[a-z0-9-]+/?$",
         "allPlay": true,
-        "approximate": true
+        "address": "Address[;:\\s]+([^;]{4,120})",
+        "town": "Telford",
+        "near": {
+          "lat": 52.69,
+          "lng": -2.45,
+          "km": 14
+        }
       }
     },
     {
