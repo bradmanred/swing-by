@@ -1,8 +1,9 @@
 # Checks Swing By's coverage county by county, biggest population first, against playgrounds mapped on
 # OpenStreetMap, and says which councils' own play area lists to check first. The report appears on the run's
 # summary page and as a downloadable "coverage-report".
-# Runs every day at 03:41 (the repo is public, so standard Actions runners are free) and adds up to 1,000 playgrounds (change the number with a repository variable called
-# COVERAGE_WEEKLY_ADD, under Settings > Secrets and variables > Actions > Variables; 0 makes it report only).
+# Runs every day at 03:41 (the repo is public, so standard Actions runners are free) and adds every missing playground it finds, with no cap
+# (set a number with a repository variable called COVERAGE_WEEKLY_ADD, under Settings > Secrets and variables > Actions > Variables;
+# 0 makes it report only, and 'all', the default, means no cap).
 # It works in the same order as before: council lists it can read first (added as verified, with each pin moved onto
 # the play area mapped on OpenStreetMap, and replacing any OpenStreetMap-only listing of the same place), then
 # OpenStreetMap ones as Unverified, but only in councils whose own lists have been checked (src/data/council-sources.json).
@@ -16,7 +17,7 @@ on:
   workflow_dispatch:
     inputs:
       add:
-        description: 'Add up to this many missing playgrounds (0 = report only)'
+        description: 'Add up to this many missing playgrounds (all = no cap, 0 = report only)'
         default: '0'
       only:
         description: 'Check one county only, e.g. Kent, or several separated by commas (leave blank for all)'
@@ -37,7 +38,7 @@ concurrency:
 jobs:
   check:
     runs-on: ubuntu-24.04
-    timeout-minutes: 60
+    timeout-minutes: 120 # room for the save, toilets refresh and pull request after the scan
     steps:
       - uses: actions/checkout@v5
       - name: Decide how many to add
@@ -45,10 +46,10 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           MANUAL_ADD: ${{ inputs.add || '0' }}
-          WEEKLY_ADD: ${{ vars.COVERAGE_WEEKLY_ADD || '1000' }}
+          WEEKLY_ADD: ${{ vars.COVERAGE_WEEKLY_ADD || 'all' }}
         run: |
           if [ "${{ github.event_name }}" = "schedule" ]; then add="$WEEKLY_ADD"; else add="$MANUAL_ADD"; fi
-          case "$add" in ''|*[!0-9]*) echo "::error title=Check coverage::'$add' isn't a number of playgrounds."; exit 1;; esac
+          case "$add" in all|ALL|All) add=all;; ''|*[!0-9]*) echo "::error title=Check coverage::'$add' isn't a number of playgrounds or 'all'."; exit 1;; esac
           # An earlier coverage pull request that hasn't been merged or closed would overlap with a new one, because
           # both are built from main. On the daily run, wait for it to be dealt with.
           open=$(gh api "repos/$GITHUB_REPOSITORY/pulls?state=open&per_page=100" --jq '[.[] | select(.head.ref | startswith("coverage/"))] | length')
@@ -75,8 +76,8 @@ jobs:
           # Street lookups for council-list rows are saved into their CSVs, so they're only done once.
           SAVE_COUNCIL_PLACES: '1'
         run: |
-          # Counties are scanned for up to 35 minutes; the next run carries on from where this one stopped.
-          export SCAN_MINUTES=35
+          # Counties are started for up to 59 minutes 59 seconds; the next run carries on from where this one stopped.
+          export SCAN_MINUTES=59.9833
           if [ -n "$ONLY" ]; then node scripts/find-gaps.mjs --add "$ADD" --only "$ONLY" $FALLBACK; else node scripts/find-gaps.mjs --add "$ADD" $FALLBACK; fi
           # Sizes from council grades held in descriptions and council lists (scripts/apply-sizes.mjs).
           node scripts/apply-sizes.mjs
