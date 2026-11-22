@@ -26,8 +26,16 @@
       "district": "Tendring",
       "council": "Tendring District Council",
       "sources": [
+        "https://www.tendringdc.gov.uk/playparks",
+        "https://tendringdc.gov.uk/playparks/bathside",
         "https://www.tendringdc.gov.uk/"
-      ]
+      ],
+      "note": "Play area directory with one page per site (70 listed, with address, postcode and age range), covering the 38 district-run sites and parish-run ones. Feed set up 22 November 2026 and not yet tried.",
+      "feed": {
+        "type": "pages",
+        "index": "https://www.tendringdc.gov.uk/playparks",
+        "follow": "^/playparks/[a-z0-9-]+$"
+      }
     },
     {
       "district": "Colchester",
@@ -61,8 +69,20 @@
       "district": "Braintree",
       "council": "Braintree District Council",
       "sources": [
+        "https://www.braintree.gov.uk/directory/5/parks-and-play-areas-locations",
         "https://www.braintree.gov.uk/"
-      ]
+      ],
+      "note": "Jadu directory 5 of parks and play areas in three A-Z categories (7, 8, 9), each record with an address, equipment list and a map pin. Feed set up 22 November 2026 and not yet tried.",
+      "feed": {
+        "type": "jadu",
+        "directory": "https://www.braintree.gov.uk/directory/5/parks-and-play-areas-locations",
+        "category": [
+          7,
+          8,
+          9
+        ],
+        "approximate": true
+      }
     },
     {
       "district": "Dacorum",
@@ -75,8 +95,23 @@
       "district": "Harlow",
       "council": "Harlow Council",
       "sources": [
+        "https://www.harlow.gov.uk/playgrounds",
+        "https://www.harlow.gov.uk/news/playground-transformation-programme-announced",
+        "https://www.harlow.gov.uk/news/potters-field-transformed-playground-renewal-programme-continue",
+        "https://www.harlow.gov.uk/news/harlows-paddling-pools-and-splash-parks-now-open-summer-fun",
         "https://www.harlow.gov.uk/"
-      ]
+      ],
+      "note": "The playgrounds page names the council's 43 playgrounds in one list (no per-park pages, addresses or postcodes, so no feed). 41 named playgrounds plus the Town Park adventure and inclusive play areas, and Potters Field from renewal news, are in src/data/council-lists/harlow.csv; 'Church Langley Playing Field' was left out as it looks like the tennis court site. Harlow is unparished; Harlow Leisurezone has no outdoor playgrounds. 22 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/harlow.csv",
+        "page": "https://www.harlow.gov.uk/playgrounds",
+        "near": {
+          "lat": 51.77,
+          "lng": 0.1,
+          "km": 6
+        }
+      }
     },
     {
       "district": "North East Derbyshire",
@@ -340,8 +375,24 @@
       "district": "Medway",
       "council": "Medway Council",
       "sources": [
+        "https://www.medway.gov.uk/directory/22/find_a_country_park_open_space_park_or_play_area",
         "https://www.medway.gov.uk/directory/22/find_a_country_park_open_space_park_or_play_area/category/67"
-      ]
+      ],
+      "note": "The parks directory is split by area (Chatham 40, Cuxton and Halling 339, Gillingham 42, Hoo Peninsula 118, Rainham 116, Rochester 38, Strood 41), plus Multi-use game areas (67). Category 67 is MUGAs, not play areas, so the feed reads the area categories and keeps parks whose page mentions a play area. Records list play equipment and postcodes, and include parish-run sites such as Cliffe play area, High Halstow and Pottery Road recreation grounds. The A to Z is at /directory/22/a_to_z, with underscores. Feed set up 22 November 2026 and not yet tried.",
+      "feed": {
+        "type": "jadu",
+        "directory": "https://www.medway.gov.uk/directory/22/find_a_country_park_open_space_park_or_play_area",
+        "category": [
+          40,
+          339,
+          42,
+          118,
+          116,
+          38,
+          41
+        ],
+        "approximate": true
+      }
     },
     {
       "district": "Bedford",
@@ -2199,9 +2250,28 @@
       "district": "Cardiff",
       "council": "Cardiff Council",
       "sources": [
+        "https://cardiffnewsroom.co.uk/releases/c25/24656.html",
+        "https://www.cardiffnewsroom.co.uk/releases/c25/24426.html",
+        "https://cardiffnewsroom.co.uk/releases/c25/24495.html",
+        "https://www.cardiffnewsroom.co.uk/releases/c25/25863.html",
+        "https://cardiffnewsroom.co.uk/releases/c25/27692.html",
+        "https://cardiffnewsroom.co.uk/releases/c25/29091.html",
+        "https://cardiffnewsroom.co.uk/releases/c25/29770.html",
+        "https://cardiffnewsroom.co.uk/releases/c25/31548.html",
+        "https://www.outdoorcardiff.com/page-sitemap.xml",
         "https://apps8.cardiff.gov.uk/parks_search/index.php?lang=eng"
       ],
-      "note": "Checked 7 November 2026: the parks search (Outdoor Cardiff) can filter by playground but only works in a browser with JavaScript, and its basic page no longer exists; no published list. Play areas come from OpenStreetMap."
+      "note": "Checked 22 November 2026: the parks search only works in a browser with JavaScript, and Outdoor Cardiff has pages for only about 20 major parks. The council's 4 September 2020 news release names all 116 of its play areas by ward; the list combines the toddler and junior areas at the same site, leaves out the Maitland Road agility area, and adds Maltings Park plus details from later refurbishment releases and Outdoor Cardiff park pages. Ty'r Winch is listed under Old St Mellons Community Council instead. Committee reports on cardiff.moderngov.co.uk and the dog-control order schedule PDFs could not be fetched. Checked 22 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/cardiff.csv",
+        "page": "https://cardiffnewsroom.co.uk/releases/c25/24656.html",
+        "near": {
+          "lat": 51.5,
+          "lng": -3.2,
+          "km": 10
+        }
+      }
     },
     {
       "district": "Caerphilly",
@@ -3131,7 +3201,7 @@
         "file": "src/data/council-lists/gedling.csv",
         "page": "https://www.gedling.gov.uk/resident/parksandgreenspaces/findapark",
         "near": {
-          "lat": 53.0,
+          "lat": 53,
           "lng": -1.1,
           "km": 10
         }
@@ -3150,7 +3220,7 @@
         "page": "https://bassetlaw.gov.uk/parks-and-open-spaces/play-areas/play-area-locations",
         "near": {
           "lat": 53.33,
-          "lng": -1.0,
+          "lng": -1,
           "km": 20
         }
       }
@@ -3800,7 +3870,7 @@
         "file": "src/data/council-lists/horsham.csv",
         "page": "https://horsham.gov.uk/playareas",
         "near": {
-          "lat": 51.0,
+          "lat": 51,
           "lng": -0.35,
           "km": 25
         }
@@ -4532,8 +4602,8 @@
         "file": "src/data/council-lists/orkney.csv",
         "page": "https://www.orkney.gov.uk/our-services/leisure-and-culture/sport-and-leisure/play-areas/isles",
         "near": {
-          "lat": 59.0,
-          "lng": -3.0,
+          "lat": 59,
+          "lng": -3,
           "km": 60
         }
       }
@@ -4685,6 +4755,1165 @@
         "https://www.cne-siar.gov.uk/hebplay-play-sufficiency-assessment/appendices"
       ],
       "note": "Checked 20 November 2026: the 2025 play sufficiency assessment covers 54 sites, some due to be dismantled, but there's no current list. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Cardiff",
+      "parish": "Old St. Mellons",
+      "council": "Old St Mellons Community Council",
+      "sources": [
+        "https://www.oldstmellonscommunitycouncil.org.uk/ty-r-winch-playing-field"
+      ],
+      "note": "Owns and manages Ty'r Winch Playing Field, which has a children's play area beside the pavilion, as well as tennis courts. Checked 22 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/old-st-mellons-community.csv",
+        "page": "https://www.oldstmellonscommunitycouncil.org.uk/ty-r-winch-playing-field",
+        "near": {
+          "lat": 51.53,
+          "lng": -3.12,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "Cardiff",
+      "parish": "Pentyrch",
+      "council": "Pentyrch Community Council",
+      "sources": [
+        "https://pentyrch.cc/"
+      ],
+      "note": "Its site describes about 250 acres of land, mostly on the Garth, but mentions no play areas. The play areas in Pentyrch, Creigiau and Gwaelod-y-Garth are on Cardiff Council's list. Checked 22 November 2026."
+    },
+    {
+      "district": "Cardiff",
+      "parish": "Tongwynlais",
+      "council": "Tongwynlais Community Council",
+      "sources": [
+        "https://tongwynlaiscommunitycouncil.gov.wales/media/Council Documents/Reports/Annual Report 2025-26.pdf"
+      ],
+      "note": "The 2025-26 annual report lists Tanyard Hall, allotments, Sparrows Field and Merthyr Road Gardens, but no play area. Checked 22 November 2026."
+    },
+    {
+      "district": "Cardiff",
+      "parish": "Radyr and Morganstown",
+      "council": "Radyr and Morganstown Community Council",
+      "sources": [
+        "https://radyr.org.uk/?p=261"
+      ],
+      "note": "No official council page found that names play areas it runs. A community site describes a play area at Parc Radur but doesn't say who runs it. Cwm Farm, Fisherhill Way and Drovers Way are on Cardiff Council's list. Checked 22 November 2026."
+    },
+    {
+      "district": "Cardiff",
+      "parish": "Lisvane",
+      "council": "Lisvane Community Council",
+      "sources": [],
+      "note": "A web search found no play area run by the community council. Heol y Delyn and Mill Heath Drive are on Cardiff Council's list. Checked 22 November 2026."
+    },
+    {
+      "district": "Cardiff",
+      "parish": "St. Fagans",
+      "council": "St Fagans Community Council",
+      "sources": [],
+      "note": "A web search found no play area run by the community council. Checked 22 November 2026."
+    },
+    {
+      "district": "Chelmsford",
+      "parish": "South Woodham Ferrers",
+      "council": "South Woodham Ferrers Town Council",
+      "sources": [
+        "https://www.southwoodhamferrerstc.gov.uk/Open_Spaces__52523.aspx",
+        "https://www.southwoodhamferrerstc.gov.uk/_UserFiles/Files/ANNUAL2025.pdf",
+        "https://www.southwoodhamferrerstc.gov.uk/Local_Parks_16939.aspx"
+      ],
+      "note": "Runs one play area, by the Village Hall and Blue Cage on Hullbridge Road; Saltcoats Park, Compass Gardens and the town's other playgrounds are Chelmsford City Council's (22 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/south-woodham-ferrers-town.csv",
+        "page": "https://www.southwoodhamferrerstc.gov.uk/Open_Spaces__52523.aspx",
+        "near": {
+          "lat": 51.65,
+          "lng": 0.61,
+          "km": 4
+        }
+      }
+    },
+    {
+      "district": "Chelmsford",
+      "parish": "Great Baddow",
+      "council": "Great Baddow Parish Council",
+      "sources": [
+        "https://www.greatbaddowparishcouncil.gov.uk/our-community/parks/"
+      ],
+      "note": "Manages Great Baddow Recreation Ground, with a toddler and a junior playground; Baddow Hall Park and Meadgate Park are Chelmsford City Council's (22 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/great-baddow-parish.csv",
+        "page": "https://www.greatbaddowparishcouncil.gov.uk/our-community/parks/",
+        "near": {
+          "lat": 51.72,
+          "lng": 0.51,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "Chelmsford",
+      "parish": "Writtle",
+      "council": "Writtle Parish Council",
+      "sources": [
+        "https://writtle-pc.gov.uk/organisation/playing-fields/"
+      ],
+      "note": "Runs play areas at Paradise Road sports field and Oxney Green Park (22 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/writtle-parish.csv",
+        "page": "https://writtle-pc.gov.uk/organisation/playing-fields/",
+        "near": {
+          "lat": 51.73,
+          "lng": 0.43,
+          "km": 4
+        }
+      }
+    },
+    {
+      "district": "Chelmsford",
+      "parish": "Broomfield",
+      "council": "Broomfield Parish Council",
+      "sources": [
+        "https://www.broomfield-pc.gov.uk/council-assets/",
+        "https://www.broomfield-pc.gov.uk/parish-council/"
+      ],
+      "note": "Maintains the Angel Meadow play area (its pages also mention a play area at the Village Hall, probably the same site) (22 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/broomfield-parish.csv",
+        "page": "https://www.broomfield-pc.gov.uk/council-assets/",
+        "near": {
+          "lat": 51.77,
+          "lng": 0.47,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "Chelmsford",
+      "parish": "Danbury",
+      "council": "Danbury Parish Council",
+      "sources": [
+        "https://danbury-essex.gov.uk/services/dawson-memorial-field",
+        "https://www.danbury-essex.gov.uk/wp-content/uploads/sites/116/2023/12/Danbury-Parish-Council-Land-Document-1.pdf"
+      ],
+      "note": "Owns Dawson Memorial Field, with a junior and an adventure play area; Rumsey Fields and Potters Close are Chelmsford City Council's (22 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/danbury-parish.csv",
+        "page": "https://danbury-essex.gov.uk/services/dawson-memorial-field",
+        "near": {
+          "lat": 51.72,
+          "lng": 0.58,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "Chelmsford",
+      "parish": "Great Waltham",
+      "council": "Great Waltham Parish Council",
+      "sources": [
+        "https://e-voice.org.uk/greatwalthamparish/great-waltham-playground-refre"
+      ],
+      "note": "Runs playgrounds at its Great Waltham, Howe Street and Ford End recreation grounds (22 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/great-waltham-parish.csv",
+        "page": "https://e-voice.org.uk/greatwalthamparish/great-waltham-playground-refre",
+        "near": {
+          "lat": 51.79,
+          "lng": 0.45,
+          "km": 5
+        }
+      }
+    },
+    {
+      "district": "Chelmsford",
+      "parish": "Highwood",
+      "council": "Highwood Parish Council",
+      "sources": [
+        "https://highwoodparishcouncil.gov.uk/parish-playgrounds/"
+      ],
+      "note": "Lists two parish playgrounds, Loves Green and Edney Common (22 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/highwood-parish.csv",
+        "page": "https://highwoodparishcouncil.gov.uk/parish-playgrounds/",
+        "near": {
+          "lat": 51.7,
+          "lng": 0.37,
+          "km": 4
+        }
+      }
+    },
+    {
+      "district": "Chelmsford",
+      "parish": "Margaretting",
+      "council": "Margaretting Parish Council",
+      "sources": [
+        "https://e-voice.org.uk/margaretting/parish-council"
+      ],
+      "note": "Maintains the play equipment on the Maldon Road recreation field (22 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/margaretting-parish.csv",
+        "page": "https://e-voice.org.uk/margaretting/parish-council",
+        "near": {
+          "lat": 51.68,
+          "lng": 0.42,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "Chelmsford",
+      "parish": "Springfield",
+      "council": "Springfield Parish Council",
+      "sources": [
+        "https://www.springfield-pc.gov.uk/wp-content/uploads/2026/03/March-2026-Newsletter.pdf"
+      ],
+      "note": "No play areas found; the parish's parks are Chelmsford City Council's. Chelmer Village is within Springfield parish (22 November 2026)."
+    },
+    {
+      "district": "Chelmsford",
+      "parish": "Galleywood",
+      "council": "Galleywood Parish Council",
+      "sources": [
+        "https://www.galleywoodparishcouncil.gov.uk/council-services/open-spaces"
+      ],
+      "note": "Maintains Twitten Green, Pipers Tye and The Spinney, none with play equipment listed; no play areas found (22 November 2026)."
+    },
+    {
+      "district": "Chelmsford",
+      "parish": "Boreham",
+      "council": "Boreham Parish Council",
+      "sources": [
+        "https://boreham-pc.gov.uk",
+        "https://www.boreham-pc.gov.uk/parish-council/committees/boreham-recreation-ground-charity/"
+      ],
+      "note": "Manages the Boreham Recreation Ground charity (John Galley Memorial Ground) but doesn't list any play areas online (22 November 2026)."
+    },
+    {
+      "district": "Chelmsford",
+      "parish": "Sandon",
+      "council": "Sandon Parish Council",
+      "sources": [
+        "https://sandon-essex-parishcouncil.gov.uk/what-we-do/"
+      ],
+      "note": "Says it provides recreational facilities but names no play areas (22 November 2026)."
+    },
+    {
+      "district": "Chelmsford",
+      "parish": "Runwell",
+      "council": "Runwell Parish Council",
+      "sources": [
+        "https://runwellparishcouncil.gov.uk/?p=2941"
+      ],
+      "note": "No play areas listed on its website (22 November 2026)."
+    },
+    {
+      "district": "Chelmsford",
+      "parish": "Rettendon",
+      "council": "Rettendon Parish Council",
+      "sources": [
+        "https://e-voice.org.uk/rettendonparishcouncil/council-information"
+      ],
+      "note": "No play areas listed; Bell Fields is run by charity trustees (22 November 2026)."
+    },
+    {
+      "district": "Chelmsford",
+      "parish": "East Hanningfield",
+      "council": "East Hanningfield Parish Council",
+      "sources": [
+        "https://e-voice.org.uk/hannasfield/assets/documents/play-area-project-2026"
+      ],
+      "note": "The village play area on Hanna's Field is run by the Hanna's Field charity, not the parish council (22 November 2026)."
+    },
+    {
+      "district": "Chelmsford",
+      "parish": "Woodham Ferrers and Bicknacre",
+      "council": "Woodham Ferrers and Bicknacre Parish Council",
+      "sources": [
+        "https://www.chelmsford.gov.uk/leisure-centres/where/community-sport-and-wellbeing/play-in-the-park/priory-playing-field-woodham-ferrers-and-bicknacre-play-in-the-park-location-details/"
+      ],
+      "note": "Parish council website not found in searches; no official list of its play areas found (Priory Playing Fields, Main Road, Bicknacre hosts Play in the Park) (22 November 2026)."
+    },
+    {
+      "district": "Chelmsford",
+      "parish": "Stock",
+      "council": "Stock Parish Council",
+      "sources": [
+        "https://stock-pc.gov.uk/?p=7378"
+      ],
+      "note": "No play areas listed on its website (22 November 2026)."
+    },
+    {
+      "district": "Braintree",
+      "parish": "Coggeshall",
+      "council": "Coggeshall Parish Council",
+      "sources": [
+        "https://www.braintree.gov.uk/downloads/file/3499/potential-open-space-improvements-july-2023-formerly-open-spaces-action-plan-",
+        "https://www.braintree.gov.uk/news/article/643/work-complete-to-transform-play-area-in-coggeshall-with-upgraded-equipment"
+      ],
+      "note": "Owns play areas at East Street Recreation Ground and Fabians Park (from Braintree District Council's open space plan; the parish website refused automated fetching) (22 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/coggeshall-parish.csv",
+        "page": "https://www.braintree.gov.uk/downloads/file/3499/potential-open-space-improvements-july-2023-formerly-open-spaces-action-plan-",
+        "near": {
+          "lat": 51.87,
+          "lng": 0.69,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "Braintree",
+      "parish": "Kelvedon",
+      "council": "Kelvedon Parish Council",
+      "sources": [
+        "https://www.braintree.gov.uk/downloads/file/3499/potential-open-space-improvements-july-2023-formerly-open-spaces-action-plan-",
+        "https://www.braintree.gov.uk/directory-record/8147/freehold-transfer-to-kelvedon-parish-council"
+      ],
+      "note": "Owns the Glebe Road play area and the recreation ground playground (from Braintree District Council sources; no parish website found) (22 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/kelvedon-parish.csv",
+        "page": "https://www.braintree.gov.uk/downloads/file/3499/potential-open-space-improvements-july-2023-formerly-open-spaces-action-plan-",
+        "near": {
+          "lat": 51.84,
+          "lng": 0.7,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "Braintree",
+      "parish": "Hatfield Peverel",
+      "council": "Hatfield Peverel Parish Council",
+      "sources": [
+        "https://www.braintree.gov.uk/downloads/file/3499/potential-open-space-improvements-july-2023-formerly-open-spaces-action-plan-",
+        "https://www.braintree.gov.uk/news/article/589/hatfield-peverel-play-area-benefits-from-265000-investment"
+      ],
+      "note": "Runs the play area at Strutt Memorial Recreation Ground (jointly owned with Braintree District Council) (22 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/hatfield-peverel-parish.csv",
+        "page": "https://www.braintree.gov.uk/news/article/589/hatfield-peverel-play-area-benefits-from-265000-investment",
+        "near": {
+          "lat": 51.77,
+          "lng": 0.59,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "Braintree",
+      "parish": "Great Notley",
+      "council": "Great Notley Parish Council",
+      "sources": [
+        "https://greatnotley.org.uk/?p=239",
+        "https://www.braintree.gov.uk/downloads/file/3499/potential-open-space-improvements-july-2023-formerly-open-spaces-action-plan-"
+      ],
+      "note": "Runs the Levens Way play area (and the RAFT teen area, left out); Panners Bridge and Notley Green play areas are Braintree District Council's (22 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/great-notley-parish.csv",
+        "page": "https://greatnotley.org.uk/?p=239",
+        "near": {
+          "lat": 51.86,
+          "lng": 0.52,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "Braintree",
+      "parish": "Feering",
+      "council": "Feering Parish Council",
+      "sources": [
+        "https://www.feeringparishcouncil.gov.uk/",
+        "https://feeringparishcouncil.gov.uk/wp-content/uploads/2026/03/Asset-Register-2025-2026.pdf",
+        "https://www.braintree.gov.uk/downloads/file/3499/potential-open-space-improvements-july-2023-formerly-open-spaces-action-plan-"
+      ],
+      "note": "Owns the Rye Mill Lane playing field and its play area (22 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/feering-parish.csv",
+        "page": "https://www.feeringparishcouncil.gov.uk/",
+        "near": {
+          "lat": 51.85,
+          "lng": 0.71,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "Braintree",
+      "parish": "Cressing",
+      "council": "Cressing Parish Council",
+      "sources": [
+        "https://www.cressing-pc.gov.uk/organisation/the-playground/"
+      ],
+      "note": "Lists the village playground on Jeffreys Road, Tye Green (22 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/cressing-parish.csv",
+        "page": "https://www.cressing-pc.gov.uk/organisation/the-playground/",
+        "near": {
+          "lat": 51.85,
+          "lng": 0.58,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "Braintree",
+      "parish": "Earls Colne",
+      "council": "Earls Colne Parish Council",
+      "sources": [
+        "https://www.earlscolne-pc.gov.uk/Responsibilities?upsize=10"
+      ],
+      "note": "Maintains the play area at the Recreation Club; Hillie Bunnies playground is Braintree District Council's (22 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/earls-colne-parish.csv",
+        "page": "https://www.earlscolne-pc.gov.uk/Responsibilities?upsize=10",
+        "near": {
+          "lat": 51.93,
+          "lng": 0.7,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "Braintree",
+      "parish": "Steeple Bumpstead",
+      "council": "Steeple Bumpstead Parish Council",
+      "sources": [
+        "https://steeplebumpstead-pc.gov.uk/community/camping-close"
+      ],
+      "note": "Runs the children's play area on the Camping Close (22 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/steeple-bumpstead-parish.csv",
+        "page": "https://steeplebumpstead-pc.gov.uk/community/camping-close",
+        "near": {
+          "lat": 52.05,
+          "lng": 0.45,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "Braintree",
+      "parish": "Witham",
+      "council": "Witham Town Council",
+      "sources": [
+        "https://www.witham.gov.uk/what-the-council-manages",
+        "https://www.braintree.gov.uk/downloads/file/3499/potential-open-space-improvements-july-2023-formerly-open-spaces-action-plan-"
+      ],
+      "note": "Manages the River Walk and nature reserves but no play areas; Witham's play areas are Braintree District Council's (Haygreen Road community centre was due to pass to the town council) (22 November 2026)."
+    },
+    {
+      "district": "Braintree",
+      "parish": "Halstead",
+      "council": "Halstead Town Council",
+      "sources": [
+        "https://www.halsteadtowncouncil.org.uk/?p=23",
+        "https://www.halsteadtowncouncil.org.uk/site/wp-content/uploads/2025/12/Item-13-To-consider-taking-over-assets-currently-owned-and-managed-by-BDC.pdf"
+      ],
+      "note": "Runs no play areas; Halstead's are Braintree District Council's. In December 2025 it considered taking over the Public Gardens, King George V field, Ramsey Road and Mill Chase from BDC (22 November 2026)."
+    },
+    {
+      "district": "Braintree",
+      "parish": "Silver End",
+      "council": "Silver End Parish Council",
+      "sources": [
+        "https://www.silverendparishcouncil.gov.uk/_files/ugd/4e41c6_577114499dbf4a57a62aa722f72aff35.pdf",
+        "https://www.braintree.gov.uk/downloads/file/3499/potential-open-space-improvements-july-2023-formerly-open-spaces-action-plan-"
+      ],
+      "note": "No parish play areas found; Silver End Memorial Gardens and the Rivenhall play areas are Braintree District Council's (22 November 2026)."
+    },
+    {
+      "district": "Braintree",
+      "parish": "Black Notley",
+      "council": "Black Notley Parish Council",
+      "sources": [
+        "https://blacknotley-pc.gov.uk/?p=2641"
+      ],
+      "note": "Its playing field has a petanque court but no play equipment listed; John Ray Gardens and Notley Community Hall play areas are Braintree District Council's (22 November 2026)."
+    },
+    {
+      "district": "Braintree",
+      "parish": "Sible Hedingham",
+      "council": "Sible Hedingham Parish Council",
+      "sources": [
+        "https://siblehedingham-pc.gov.uk/the-parish/village-hall/",
+        "https://www.braintree.gov.uk/downloads/file/3499/potential-open-space-improvements-july-2023-formerly-open-spaces-action-plan-"
+      ],
+      "note": "No play areas listed on its website; Braintree District Council's plan records the Recreation Road recreation ground (a charity) as parish council's, with an outdoor gym and table tennis (22 November 2026)."
+    },
+    {
+      "district": "Basildon",
+      "parish": "Billericay",
+      "council": "Billericay Town Council",
+      "sources": [
+        "https://billericaytowncouncil.gov.uk/",
+        "https://billericaytowncouncil.gov.uk/services-facilities/"
+      ],
+      "note": "The town council doesn't list any play areas; its services list has no parks, and Billericay's play areas (e.g. Lake Meadows) are run by Basildon Borough Council. 22 November 2026."
+    },
+    {
+      "district": "Basildon",
+      "parish": "Noak Bridge",
+      "council": "Noak Bridge Parish Council",
+      "sources": [
+        "https://www.noakbridgeparishcouncil.gov.uk/play-park"
+      ],
+      "note": "The parish website has a 'Noak Bridge Play Park and Green' page with no details yet and doesn't say who runs it, so no list. 22 November 2026."
+    },
+    {
+      "district": "Basildon",
+      "parish": "Great Burstead and South Green",
+      "council": "Great Burstead and South Green Village Council",
+      "sources": [
+        "https://great-burstead-and-south-green.parish.uk/"
+      ],
+      "note": "No play areas run by the village council found online; no council website with facilities was found. 22 November 2026."
+    },
+    {
+      "district": "Basildon",
+      "parish": "Little Burstead",
+      "council": "Little Burstead Parish Council",
+      "sources": [
+        "https://little-burstead.parish.uk/"
+      ],
+      "note": "No parish play area found; Laindon Common is managed by the Laindon Common Conservators for Basildon Council. 22 November 2026."
+    },
+    {
+      "district": "Basildon",
+      "parish": "Ramsden Crays",
+      "council": "Ramsden Crays Parish Council",
+      "sources": [
+        "https://ramsdencrayspc.org.uk/"
+      ],
+      "note": "The parish council website mentions no play areas or playing fields. 22 November 2026."
+    },
+    {
+      "district": "Basildon",
+      "parish": "Ramsden Bellhouse",
+      "council": "Ramsden Bellhouse Parish Council",
+      "sources": [],
+      "note": "No parish council website or play area found; Ramsden Bellhouse Recreation Ground (Church Road) appears to be a Basildon Borough Council site. 22 November 2026."
+    },
+    {
+      "district": "Basildon",
+      "parish": "Bowers Gifford and North Benfleet",
+      "council": "Bowers Gifford and North Benfleet Parish Council",
+      "sources": [
+        "https://e-voice.org.uk/bgnb-parishcouncil/assets/documents/winter-2022",
+        "https://e-voice.org.uk/bgnb-parishcouncil/assets/documents/minutes-of-annual-meeting-2"
+      ],
+      "note": "The parish newsletter and minutes describe the council's play equipment at Westlake Park, Pound Lane (src/data/council-lists/bowers-gifford-and-north-benfleet-parish.csv). 22 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/bowers-gifford-and-north-benfleet-parish.csv",
+        "page": "https://e-voice.org.uk/bgnb-parishcouncil/assets/documents/winter-2022",
+        "near": {
+          "lat": 51.57,
+          "lng": 0.53,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "Castle Point",
+      "parish": "Canvey Island",
+      "council": "Canvey Island Town Council",
+      "sources": [
+        "https://www.canveyisland-tc.gov.uk/parks-and-play-areas",
+        "https://www.canveyisland-tc.gov.uk/news/36/canvey-lake-play-area-rules",
+        "https://www.canveyisland-tc.gov.uk/uploads/CITC Admin/CITC Broad Range of Activities.pdf"
+      ],
+      "note": "The town council runs one children's play area, at Canvey Lake (src/data/council-lists/canvey-island-town.csv). Its parks page also lists island parks run by Castle Point Borough Council. 22 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/canvey-island-town.csv",
+        "page": "https://www.canveyisland-tc.gov.uk/parks-and-play-areas",
+        "near": {
+          "lat": 51.52,
+          "lng": 0.58,
+          "km": 5
+        }
+      }
+    },
+    {
+      "district": "Rochford",
+      "parish": "Rayleigh",
+      "council": "Rayleigh Town Council",
+      "sources": [
+        "https://www.rayleightowncouncil.gov.uk/King_George_V_Playing_Field_41473.aspx",
+        "https://www.rayleightowncouncil.gov.uk/_VirDir/CoreContents/News/Display.aspx?id=45445"
+      ],
+      "note": "The town council's site covers King George V Playing Field (managed by the King George Trust) and its award-winning children's play area (src/data/council-lists/rayleigh-town.csv). Other Rayleigh play areas are Rochford District Council's. 22 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/rayleigh-town.csv",
+        "page": "https://www.rayleightowncouncil.gov.uk/King_George_V_Playing_Field_41473.aspx",
+        "near": {
+          "lat": 51.59,
+          "lng": 0.6,
+          "km": 4
+        }
+      }
+    },
+    {
+      "district": "Rochford",
+      "parish": "Rochford",
+      "council": "Rochford Town Council",
+      "sources": [
+        "https://www.rochfordtowncouncil.gov.uk/about-us/what-the-council-do/"
+      ],
+      "note": "Formerly Rochford Parish Council. Its list of functions has no play areas (it manages Doggetts Wildlife Area); Rochford's play areas are Rochford District Council's. 22 November 2026."
+    },
+    {
+      "district": "Rochford",
+      "parish": "Hockley",
+      "council": "Hockley Parish Council",
+      "sources": [
+        "http://www.hockley-essex.gov.uk/"
+      ],
+      "note": "No play areas mentioned on the parish council website; Hockley Woods play area is Rochford District Council's. 22 November 2026."
+    },
+    {
+      "district": "Rochford",
+      "parish": "Hawkwell",
+      "council": "Hawkwell Parish Council",
+      "sources": [
+        "https://hawkwellparishcouncil.gov.uk/council-assets/",
+        "https://hawkwellparishcouncil.gov.uk/magnolia-park-new-games-come-to-the-playground/"
+      ],
+      "note": "The council assets page lists two playgrounds, Magnolia Park and Elizabeth Close (src/data/council-lists/hawkwell-parish.csv). 22 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/hawkwell-parish.csv",
+        "page": "https://hawkwellparishcouncil.gov.uk/council-assets/",
+        "near": {
+          "lat": 51.59,
+          "lng": 0.67,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "Rochford",
+      "parish": "Hullbridge",
+      "council": "Hullbridge Parish Council",
+      "sources": [
+        "https://www.hullbridge-pc.gov.uk/Recreation_Ground_32211.aspx"
+      ],
+      "note": "The recreation ground play area in Pooles Lane was equipped jointly with Rochford District Council and is already in src/data/council-lists/rochford.csv, so no separate list. 22 November 2026."
+    },
+    {
+      "district": "Rochford",
+      "parish": "Great Wakering",
+      "council": "Great Wakering Parish Council",
+      "sources": [
+        "https://greatwakering-pc.gov.uk/the-common"
+      ],
+      "note": "The parish council manages The Common (grassland, no play area); Great Wakering Recreation Ground play area is Rochford District Council's. 22 November 2026."
+    },
+    {
+      "district": "Rochford",
+      "parish": "Ashingdon",
+      "council": "Ashingdon Parish Council",
+      "sources": [],
+      "note": "No parish council website found; Ashingdon Recreation Ground play area is in Rochford District Council's list. 22 November 2026."
+    },
+    {
+      "district": "Rochford",
+      "parish": "Canewdon",
+      "council": "Canewdon Parish Council",
+      "sources": [
+        "https://canewdon.parish.uk/"
+      ],
+      "note": "No parish council website listing play areas found; Canewdon Recreation Ground play area is in Rochford District Council's list. 22 November 2026."
+    },
+    {
+      "district": "Uttlesford",
+      "parish": "Saffron Walden",
+      "council": "Saffron Walden Town Council",
+      "sources": [
+        "https://saffronwalden.gov.uk/category/play-areas/",
+        "https://saffronwalden.gov.uk/play-areas/the-common/",
+        "https://saffronwalden.gov.uk/play-areas/anglo-american-memorial-playing-fields/",
+        "https://www.visitsaffronwalden.gov.uk/wp-content/uploads/2020/11/Family-Fun-in-the-Green-Spaces-of-Saffron-Walden-converted-1.pdf"
+      ],
+      "note": "5 play areas from the town council's play areas pages and its green spaces leaflet (The Common, Anglo American Playing Fields, Golden Acre, Tudor Park, Little Walden); no addresses given 22 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/saffron-walden-town.csv",
+        "page": "https://saffronwalden.gov.uk/category/play-areas/",
+        "near": {
+          "lat": 52.02,
+          "lng": 0.24,
+          "km": 4
+        }
+      }
+    },
+    {
+      "district": "Uttlesford",
+      "parish": "Great Dunmow",
+      "council": "Great Dunmow Town Council",
+      "sources": [
+        "https://greatdunmow-tc.gov.uk/services/",
+        "https://greatdunmow-tc.gov.uk/pdf/policies/tor/playgrounds.pdf"
+      ],
+      "note": "4 play areas named on the services page (Recreation Ground, Lower Millfield, Oakroyd Avenue, Talberds Ley) 22 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/great-dunmow-town.csv",
+        "page": "https://greatdunmow-tc.gov.uk/services/",
+        "near": {
+          "lat": 51.87,
+          "lng": 0.37,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "Uttlesford",
+      "parish": "Stansted Mountfitchet",
+      "council": "Stansted Mountfitchet Parish Council",
+      "sources": [
+        "https://stanstedmountfitchet-pc.gov.uk/wp-content/uploads/2023/09/Appendix-38-Audit-of-Open-Space-2019.pdf",
+        "https://stanstedmountfitchet-pc.gov.uk/?p=9491"
+      ],
+      "note": "No play area list; the 2019 open space audit (neighbourhood plan appendix) names 7 LEAPs and 11 small LAPs without owners. The 5 built LEAP sites are listed; LAPs on estates and the proposed Walpole Meadows LEAP left out 22 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/stansted-mountfitchet-parish.csv",
+        "page": "https://stanstedmountfitchet-pc.gov.uk/wp-content/uploads/2023/09/Appendix-38-Audit-of-Open-Space-2019.pdf",
+        "near": {
+          "lat": 51.9,
+          "lng": 0.2,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "Uttlesford",
+      "parish": "Thaxted",
+      "council": "Thaxted Parish Council",
+      "sources": [
+        "https://thaxted-pc.gov.uk/assets/Parish-Council-Minutes/2022-Minutes/Assets-Committee-Minutes-2022/Assetts-Services-March-2023-Draft.pdf"
+      ],
+      "note": "1 play area at the Recreation Ground, from assets committee minutes 22 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/thaxted-parish.csv",
+        "page": "https://thaxted-pc.gov.uk/assets/Parish-Council-Minutes/2022-Minutes/Assets-Committee-Minutes-2022/Assetts-Services-March-2023-Draft.pdf",
+        "near": {
+          "lat": 51.95,
+          "lng": 0.34,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "Uttlesford",
+      "parish": "Takeley",
+      "council": "Takeley Parish Council",
+      "sources": [
+        "https://www.takeley-pc.gov.uk/wp-content/uploads/sites/16/TPC-Asset-Register-2025-26-FINAL.pdf"
+      ],
+      "note": "2 play areas (Recreation Ground, The Pastures) from the 2025-26 asset register 22 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/takeley-parish.csv",
+        "page": "https://www.takeley-pc.gov.uk/wp-content/uploads/sites/16/TPC-Asset-Register-2025-26-FINAL.pdf",
+        "near": {
+          "lat": 51.87,
+          "lng": 0.27,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "Uttlesford",
+      "parish": "Elsenham",
+      "council": "Elsenham Parish Council",
+      "sources": [
+        "https://elsenham-pc.gov.uk/?p=550"
+      ],
+      "note": "1 play area on the parish-owned playing field 22 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/elsenham-parish.csv",
+        "page": "https://elsenham-pc.gov.uk/?p=550",
+        "near": {
+          "lat": 51.92,
+          "lng": 0.23,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "Uttlesford",
+      "parish": "Newport",
+      "council": "Newport Parish Council",
+      "sources": [],
+      "note": "No official parish council page about play areas found in search; a new play area was reported by a funder, not the council 22 November 2026."
+    },
+    {
+      "district": "Uttlesford",
+      "parish": "Hatfield Broad Oak",
+      "council": "Hatfield Broad Oak Parish Council",
+      "sources": [],
+      "note": "No official source naming play areas found in search 22 November 2026."
+    },
+    {
+      "district": "Uttlesford",
+      "parish": "Great Chesterford",
+      "council": "Great Chesterford Parish Council",
+      "sources": [
+        "https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/3969445/trustees"
+      ],
+      "note": "The recreation ground is held by the Great Chesterford Recreation Ground Trust (a charity); no parish council play area list found 22 November 2026."
+    },
+    {
+      "district": "Tendring",
+      "parish": "Brightlingsea",
+      "council": "Brightlingsea Town Council",
+      "sources": [
+        "https://brightlingseatowncouncil.gov.uk/services/",
+        "https://www.tendringdc.gov.uk/playparks"
+      ],
+      "note": "The town council's services page names Pawsons Playground (Promenade Way) and Bayard Recreation Ground; both are also in Tendring District Council's play area directory, so no separate list 22 November 2026."
+    },
+    {
+      "district": "Tendring",
+      "parish": "Frinton and Walton",
+      "council": "Frinton and Walton Town Council",
+      "sources": [
+        "https://www.tendringdc.gov.uk/playparks"
+      ],
+      "note": "Tendring District Council's play area directory covers parish-run as well as district play areas; no play area page found on the town council's site; the directory has 7 sites in Frinton, Walton, Kirby Cross and Great Holland. Its play areas are read through the Tendring District Council feed. Checked 22 November 2026."
+    },
+    {
+      "district": "Tendring",
+      "parish": "Harwich",
+      "council": "Harwich Town Council",
+      "sources": [
+        "https://www.tendringdc.gov.uk/playparks"
+      ],
+      "note": "Tendring District Council's play area directory covers parish-run as well as district play areas; the town council's site mentions only its skate park; the directory has 11 sites in Harwich, Dovercourt and Parkeston. Its play areas are read through the Tendring District Council feed. Checked 22 November 2026."
+    },
+    {
+      "district": "Tendring",
+      "parish": "Manningtree",
+      "council": "Manningtree Town Council",
+      "sources": [
+        "https://www.tendringdc.gov.uk/playparks"
+      ],
+      "note": "Tendring District Council's play area directory covers parish-run as well as district play areas; no sites listed in Manningtree itself (nearby ones are under Mistley and Lawford). Its play areas are read through the Tendring District Council feed. Checked 22 November 2026."
+    },
+    {
+      "district": "Tendring",
+      "parish": "Lawford",
+      "council": "Lawford Parish Council",
+      "sources": [
+        "https://www.tendringdc.gov.uk/playparks"
+      ],
+      "note": "Tendring District Council's play area directory covers parish-run as well as district play areas; the directory has 5 sites in Lawford. Its play areas are read through the Tendring District Council feed. Checked 22 November 2026."
+    },
+    {
+      "district": "Tendring",
+      "parish": "Alresford",
+      "council": "Alresford Parish Council",
+      "sources": [
+        "https://www.tendringdc.gov.uk/playparks"
+      ],
+      "note": "Tendring District Council's play area directory covers parish-run as well as district play areas; the directory has 1 site (St Andrews Close). Its play areas are read through the Tendring District Council feed. Checked 22 November 2026."
+    },
+    {
+      "district": "Tendring",
+      "parish": "Great Bentley",
+      "council": "Great Bentley Parish Council",
+      "sources": [
+        "https://www.tendringdc.gov.uk/playparks"
+      ],
+      "note": "Tendring District Council's play area directory covers parish-run as well as district play areas; the directory has 1 site (Heckford's Road). Its play areas are read through the Tendring District Council feed. Checked 22 November 2026."
+    },
+    {
+      "district": "Tendring",
+      "parish": "St Osyth",
+      "council": "St Osyth Parish Council",
+      "sources": [
+        "https://www.tendringdc.gov.uk/playparks"
+      ],
+      "note": "Tendring District Council's play area directory covers parish-run as well as district play areas; the directory has 3 sites in St Osyth and Point Clear. Its play areas are read through the Tendring District Council feed. Checked 22 November 2026."
+    },
+    {
+      "district": "Tendring",
+      "parish": "Little Clacton",
+      "council": "Little Clacton Parish Council",
+      "sources": [
+        "https://www.tendringdc.gov.uk/playparks"
+      ],
+      "note": "Tendring District Council's play area directory covers parish-run as well as district play areas; the directory has 1 site. Its play areas are read through the Tendring District Council feed. Checked 22 November 2026."
+    },
+    {
+      "district": "Tendring",
+      "parish": "Ardleigh",
+      "council": "Ardleigh Parish Council",
+      "sources": [
+        "https://www.tendringdc.gov.uk/playparks"
+      ],
+      "note": "Tendring District Council's play area directory covers parish-run as well as district play areas; the directory has 2 sites (Recreation Ground and Millennium Green, Primary School). Its play areas are read through the Tendring District Council feed. Checked 22 November 2026."
+    },
+    {
+      "district": "Tendring",
+      "parish": "Thorrington",
+      "council": "Thorrington Parish Council",
+      "sources": [
+        "https://www.tendringdc.gov.uk/playparks"
+      ],
+      "note": "Tendring District Council's play area directory covers parish-run as well as district play areas; the directory has 1 site (Hazel Close). Its play areas are read through the Tendring District Council feed. Checked 22 November 2026."
+    },
+    {
+      "district": "Colchester",
+      "parish": "West Mersea",
+      "council": "West Mersea Town Council",
+      "sources": [
+        "https://www.westmerseatowncouncil.gov.uk/Land-Premises"
+      ],
+      "note": "2 play areas (Wellhouse Play Park, West Mersea Park playground) with postcodes from the council's land and premises list 22 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/west-mersea-town.csv",
+        "page": "https://www.westmerseatowncouncil.gov.uk/Land-Premises",
+        "near": {
+          "lat": 51.78,
+          "lng": 0.92,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "Colchester",
+      "parish": "Tiptree",
+      "council": "Tiptree Parish Council",
+      "sources": [
+        "https://www.tiptreeparishcouncil.gov.uk/tiptree-parish-council-open-spaces/"
+      ],
+      "note": "3 play areas (Grove Road, Thyme Road, Caxton Close) from the open spaces page 22 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/tiptree-parish.csv",
+        "page": "https://www.tiptreeparishcouncil.gov.uk/tiptree-parish-council-open-spaces/",
+        "near": {
+          "lat": 51.81,
+          "lng": 0.75,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "Colchester",
+      "parish": "Wivenhoe",
+      "council": "Wivenhoe Town Council",
+      "sources": [
+        "https://wivenhoe.gov.uk/services/play-parks/"
+      ],
+      "note": "2 play parks (King George V playing field, Dean Park) with postcodes 22 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/wivenhoe-town.csv",
+        "page": "https://wivenhoe.gov.uk/services/play-parks/",
+        "near": {
+          "lat": 51.86,
+          "lng": 0.96,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "Colchester",
+      "parish": "Stanway",
+      "council": "Stanway Parish Council",
+      "sources": [
+        "https://stanway-pc.gov.uk/uploads/playground-upgrade-tender.pdf",
+        "https://stanway-pc.gov.uk/uploads/13467-stanway-parish-council-welcome-to-stanway-guide-a3-proof-2.pdf"
+      ],
+      "note": "2 playgrounds (Silver Witch Green, Lucy Lane South) from its playground tender and welcome guide 22 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/stanway-parish.csv",
+        "page": "https://stanway-pc.gov.uk/uploads/playground-upgrade-tender.pdf",
+        "near": {
+          "lat": 51.88,
+          "lng": 0.84,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "Colchester",
+      "parish": "West Bergholt",
+      "council": "West Bergholt Parish Council",
+      "sources": [
+        "https://westbergholt-pc.gov.uk/village-life/play-areas"
+      ],
+      "note": "1 play area listed (Lorkin Daniell Field); the page says Pirie Road/Erle Havard and Maltings Pocket Park are Colchester City Council's, so they're left out 22 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/west-bergholt-parish.csv",
+        "page": "https://westbergholt-pc.gov.uk/village-life/play-areas",
+        "near": {
+          "lat": 51.91,
+          "lng": 0.85,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "Colchester",
+      "parish": "Layer de la Haye",
+      "council": "Layer de la Haye Parish Council",
+      "sources": [
+        "https://layerdelahayeparishcouncil.gov.uk/layer-de-la-haye-parish-council-annual-project-update/"
+      ],
+      "note": "Upgrading its play park (tender done) but doesn't name or locate it online 22 November 2026."
+    },
+    {
+      "district": "Colchester",
+      "parish": "Dedham",
+      "council": "Dedham Parish Council",
+      "sources": [
+        "https://dedhamparishcouncil.gov.uk/",
+        "https://dedhamparishcouncil.gov.uk/local-community/village-amenities/"
+      ],
+      "note": "Manages the recreation ground, but its site doesn't mention a play area 22 November 2026."
+    },
+    {
+      "district": "Colchester",
+      "parish": "Myland",
+      "council": "Myland Community Council",
+      "sources": [
+        "https://mylandcommunitycouncil.gov.uk"
+      ],
+      "note": "Its website doesn't name any play areas 22 November 2026."
+    },
+    {
+      "district": "Colchester",
+      "parish": "East Donyland",
+      "council": "East Donyland Parish Council",
+      "sources": [],
+      "note": "No parish council page about its play areas found in search (a new playground is recorded only by a funder) 22 November 2026."
+    },
+    {
+      "district": "Colchester",
+      "parish": "Great Horkesley",
+      "council": "Great Horkesley Parish Council",
+      "sources": [
+        "https://colchester.oc2.uk/document/48/97"
+      ],
+      "note": "No parish council page naming play areas found; the city council's green spaces consultation lists the Recreation Ground without saying it has play equipment 22 November 2026."
+    },
+    {
+      "district": "Colchester",
+      "parish": "Marks Tey",
+      "council": "Marks Tey Parish Council",
+      "sources": [],
+      "note": "No parish council page naming play areas found in search 22 November 2026."
+    },
+    {
+      "district": "Colchester",
+      "parish": "Copford with Easthorpe",
+      "council": "Copford with Easthorpe Parish Council",
+      "sources": [],
+      "note": "No parish council page naming play areas found in search 22 November 2026."
+    },
+    {
+      "district": "Colchester",
+      "parish": "Eight Ash Green",
+      "council": "Eight Ash Green Parish Council",
+      "sources": [],
+      "note": "No parish council page naming play areas found in search 22 November 2026."
+    },
+    {
+      "district": "Folkestone and Hythe",
+      "parish": "Folkestone",
+      "council": "Folkestone Town Council",
+      "sources": [
+        "https://www.folkestone-tc.gov.uk/services/parks-gardens-3",
+        "https://www.folkestone-tc.gov.uk/_UserFiles/Files/CIL%20Statement%202022-23.pdf",
+        "https://www.folkestone-tc.gov.uk/downs-road-play-area-reopened-after-vandalism"
+      ],
+      "note": "The parks page doesn't name the 8 play parks, but the 2022-23 CIL statement does: Downs Road, Coniston Road, Naseby Ave, Roman Way, Southern Way, Firs Lane, George Gurr and Pine Way, all taken over from the district council in 2021. No addresses or equipment are given, so they are placed by street name. 22 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/folkestone-town.csv",
+        "page": "https://www.folkestone-tc.gov.uk/services/parks-gardens-3",
+        "near": {
+          "lat": 51.08,
+          "lng": 1.17,
+          "km": 5
+        }
+      }
+    },
+    {
+      "district": "Folkestone and Hythe",
+      "parish": "Hythe",
+      "council": "Hythe Town Council",
+      "sources": [],
+      "note": "One search found no Hythe Town Council page about play areas. Results were all district council papers. Not checked further. 22 November 2026."
+    },
+    {
+      "district": "Thanet",
+      "parish": "Ramsgate",
+      "council": "Ramsgate Town Council",
+      "sources": [
+        "https://www.ramsgatetown.org/upload/docs/RTC%20Town%20Plan.pdf",
+        "https://www.ramsgatetown.org/ramsgate/ramsgate-news/ramsgate-town-council-steps-in-to-care-for-smaller?c=2"
+      ],
+      "note": "The town council doesn't run play areas. Its town plan lists play parks at Warre Rec, King George VI Park and Jackey Baker's, but these are Thanet District Council projects. The green spaces it took over in 2025 are pocket parks without play equipment. 22 November 2026."
+    },
+    {
+      "district": "Thanet",
+      "parish": "Margate",
+      "council": "Margate Town Council",
+      "sources": [],
+      "note": "No Margate Town Council play area pages found. Margate play areas in search results were Thanet District Council's. 22 November 2026."
+    },
+    {
+      "district": "Thanet",
+      "parish": "Broadstairs and St. Peter's",
+      "council": "Broadstairs and St Peter's Town Council",
+      "sources": [
+        "https://www.broadstairs.gov.uk/community/local-green-spaces/",
+        "https://www.thanet.gov.uk/five-playground-refurbishments-set-to-begin-in-september/"
+      ],
+      "note": "No play areas run by the town council were found. The Broadstairs playgrounds (Vincent Close, Memorial Rec, St Peters Rec, Pierremont Park) were refurbished by Thanet District Council. 22 November 2026."
+    },
+    {
+      "district": "Swale",
+      "parish": "Faversham",
+      "council": "Faversham Town Council",
+      "sources": [
+        "https://favershamtowncouncil.gov.uk/?p=1987",
+        "https://favershamtowncouncil.gov.uk/neighbourhood-plan/exhibition-one/recreation-and-sport/"
+      ],
+      "note": "No play areas run by the town council were found. The neighbourhood plan pages show play parks only on map images, and the recreation ground is Swale Borough Council's. Swale's play site lists (ws., services. and democracy.swale.gov.uk) still refuse automated requests, so no swale.csv. 22 November 2026."
     }
   ]
 }
