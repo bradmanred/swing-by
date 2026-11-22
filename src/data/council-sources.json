@@ -2550,6 +2550,25 @@
       "note": "Checked 7 November 2026: the play spaces page names only Martello Park and Royal Green; most play areas are run by town and parish councils. Play areas come from OpenStreetMap."
     },
     {
+      "district": "East Suffolk",
+      "parish": "Lowestoft",
+      "council": "Lowestoft Town Council",
+      "sources": [
+        "https://lowestofttowncouncil.gov.uk/council-services/parks-and-open-spaces/play-areas/"
+      ],
+      "note": "Its play areas page describes the nine standalone play areas it runs, with postcodes; others sit inside its parks (Normanston, Kensington Gardens, Sparrows Nest, Fen Park and more), which are left to OpenStreetMap (22 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/lowestoft-town.csv",
+        "page": "https://lowestofttowncouncil.gov.uk/council-services/parks-and-open-spaces/play-areas/",
+        "near": {
+          "lat": 52.47,
+          "lng": 1.74,
+          "km": 6
+        }
+      }
+    },
+    {
       "district": "Babergh",
       "council": "Babergh District Council",
       "sources": [
@@ -2626,6 +2645,15 @@
         "https://huntingdonshire.gov.uk"
       ],
       "note": "Checked 7 November 2026: no play area list on the council's website; lists are only in committee papers. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Huntingdonshire",
+      "parish": "Huntingdon",
+      "council": "Huntingdon Town Council",
+      "sources": [
+        "https://democracy.huntingdonshire.gov.uk/moderngov/documents/s142150/4.%20Play%20Sufficiency%20Appendix%205.pdf"
+      ],
+      "note": "Runs some play areas (news reports name Nursery Road and King George V Field) but its website refuses automated requests and no official list was found; Huntingdonshire District Council's 16 in the town are on its list (22 November 2026)."
     },
     {
       "district": "South Cambridgeshire",
@@ -2967,6 +2995,34 @@
       }
     },
     {
+      "district": "Milton Keynes",
+      "parish": "Shenley Brook End",
+      "council": "Shenley Brook End Parish Council",
+      "sources": [
+        "https://shenleybrookend-pc.gov.uk/playparks"
+      ],
+      "note": "Manages 21 of the 40-plus play areas in the parish (Emerson Valley, Furzton, Kingsmead, Shenley Brook End, Shenley Lodge, Tattenhoe, Westcroft), listed by street; the rest are Milton Keynes City Council's or The Parks Trust's (22 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/shenley-brook-end.csv",
+        "page": "https://shenleybrookend-pc.gov.uk/playparks",
+        "near": {
+          "lat": 52.01,
+          "lng": -0.78,
+          "km": 4
+        }
+      }
+    },
+    {
+      "district": "Milton Keynes",
+      "parish": "Great Linford",
+      "council": "Great Linford Parish Council",
+      "sources": [
+        "https://www.great-linford.gov.uk/venues-to-hire/"
+      ],
+      "note": "Owns sports grounds and is building the Conniburrow Activity Zone, but publishes no play area list; Great Linford's play areas are Milton Keynes City Council's or The Parks Trust's (22 November 2026)."
+    },
+    {
       "district": "Bracknell Forest",
       "council": "Bracknell Forest Council",
       "sources": [
@@ -3165,6 +3221,25 @@
         "https://godalming-tc.gov.uk/wbc-play-area-strategy-appendix_a___waverley_playgrounds___areas_and_types___march_2014"
       ],
       "note": "Checked 17 November 2026: no current play area list on the council website; the play area strategy's 2014 site list (appendix A) is out of date. Town and parish councils (Farnham, Godalming, Haslemere, Cranleigh) run many play areas. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Waverley",
+      "parish": "Farnham",
+      "council": "Farnham Town Council",
+      "sources": [
+        "https://www.farnham.gov.uk/playground"
+      ],
+      "note": "Owns Gostrey Meadow and its new playground (opened 2025, phase two due 2026); Farnham's other playgrounds are Waverley Borough Council's (22 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/farnham-town.csv",
+        "page": "https://www.farnham.gov.uk/playground",
+        "near": {
+          "lat": 51.21,
+          "lng": -0.8,
+          "km": 3
+        }
+      }
     },
     {
       "district": "Epsom and Ewell",
@@ -3752,6 +3827,24 @@
       }
     },
     {
+      "district": "Cheshire West and Chester",
+      "parish": "City of Chester",
+      "council": "Chester City Council",
+      "sources": [
+        "https://www.cheshirewestandchester.gov.uk/your-council/policies-and-performance/council-plans-policies-and-strategies/play-strategy"
+      ],
+      "note": "No play areas run by the city (parish) council found; Chester's are Cheshire West and Chester Council's (22 November 2026)."
+    },
+    {
+      "district": "Cheshire West and Chester",
+      "parish": "Ellesmere Port",
+      "council": "Ellesmere Port Town Council",
+      "sources": [
+        "https://cheshirewestandchester.gov.uk/residents/leisure-parks-and-events/parks-and-open-spaces/parks-and-open-spaces-ellesmere-port"
+      ],
+      "note": "No play areas run by the town council found; Ellesmere Port's are Cheshire West and Chester Council's (22 November 2026)."
+    },
+    {
       "district": "Warrington",
       "council": "Warrington Borough Council",
       "sources": [
@@ -4048,6 +4141,25 @@
       }
     },
     {
+      "district": "Horsham",
+      "parish": "North Horsham",
+      "council": "North Horsham Parish Council",
+      "sources": [
+        "https://northhorsham-pc.gov.uk/parish-council-amenities/play-areas"
+      ],
+      "note": "Owns four play areas (Amberley Close, Birches Road, Earles Meadow, Holbrook Tythe Barn); North Horsham's many small estate play areas are Horsham District Council's (22 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/north-horsham.csv",
+        "page": "https://northhorsham-pc.gov.uk/parish-council-amenities/play-areas",
+        "near": {
+          "lat": 51.08,
+          "lng": -0.31,
+          "km": 3
+        }
+      }
+    },
+    {
       "district": "Worthing",
       "council": "Worthing Borough Council",
       "sources": [
@@ -4113,6 +4225,26 @@
         "https://midsussex.gov.uk/leisure-sport/playgrounds"
       ],
       "note": "Checked 20 November 2026: the council says it runs 122 playgrounds but publishes no list; town councils in Burgess Hill, East Grinstead and Haywards Heath run more. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Mid Sussex",
+      "parish": "Burgess Hill",
+      "council": "Burgess Hill Town Council",
+      "sources": [
+        "https://www.burgesshill.gov.uk/leisure-tourism/leisure-facilities/",
+        "https://burgesshill.gov.uk/?p=115"
+      ],
+      "note": "Says Burgess Hill's parks and play areas are Mid Sussex District Council's; it looks after the play area at Folders Meadow for Fields in Trust (22 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/burgess-hill-town.csv",
+        "page": "https://burgesshill.gov.uk/?p=115",
+        "near": {
+          "lat": 50.95,
+          "lng": -0.12,
+          "km": 4
+        }
+      }
     },
     {
       "district": "Chichester",
@@ -4275,12 +4407,48 @@
       }
     },
     {
+      "district": "North Northamptonshire",
+      "parish": "Kettering",
+      "council": "Kettering Town Council",
+      "sources": [
+        "https://www.northantstelegraph.co.uk/news/people/outdated-childrens-play-area-on-kettering-estate-in-line-for-ps80000-revamp-4382668"
+      ],
+      "note": "Contributes to improvements, but Kettering's play areas are North Northamptonshire Council's (formerly Kettering Borough Council's) (22 November 2026)."
+    },
+    {
+      "district": "North Northamptonshire",
+      "parish": "Corby",
+      "council": "Corby Town Council",
+      "sources": [
+        "https://www.northnorthants.gov.uk/news/refurbished-play-area-opens-focus-inclusion-nature-and-play-ages-1-14"
+      ],
+      "note": "No play areas run by the town council found; Corby's are North Northamptonshire Council's (22 November 2026)."
+    },
+    {
       "district": "West Northamptonshire",
       "council": "West Northamptonshire Council",
       "sources": [
         "https://www.westnorthants.gov.uk/parks-and-green-spaces/play-spaces-west-northamptonshire"
       ],
       "note": "Checked 20 November 2026: the council manages 116 play spaces (play areas, outdoor gyms and ball courts), shown only on its interactive map; Daventry Town Council and other town and parish councils run more. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "West Northamptonshire",
+      "parish": "Northampton",
+      "council": "Northampton Town Council",
+      "sources": [
+        "https://www.northamptontowncouncil.gov.uk/parks-and-gardens"
+      ],
+      "note": "Says Northampton's parks are managed by West Northamptonshire Council (22 November 2026)."
+    },
+    {
+      "district": "West Northamptonshire",
+      "parish": "Daventry",
+      "council": "Daventry Town Council",
+      "sources": [
+        "https://www.daventrytowncouncil.gov.uk/parks-and-gardens"
+      ],
+      "note": "Manages 43 play areas and the skate park, but shows them only as a screenshot of a map, with no list to read; its gaps are filled from OpenStreetMap (22 November 2026)."
     },
     {
       "district": "Dorset",
@@ -4304,6 +4472,25 @@
       }
     },
     {
+      "district": "Dorset",
+      "parish": "Weymouth",
+      "council": "Weymouth Town Council",
+      "sources": [
+        "https://www.weymouthtowncouncil.gov.uk/services/play-areas/"
+      ],
+      "note": "Manages 18 play areas, each a marker with address on the map on its play areas page; names, postcodes and the council's own points are in a CSV (22 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/weymouth-town.csv",
+        "page": "https://www.weymouthtowncouncil.gov.uk/services/play-areas/",
+        "near": {
+          "lat": 50.62,
+          "lng": -2.46,
+          "km": 7
+        }
+      }
+    },
+    {
       "district": "Bournemouth, Christchurch and Poole",
       "council": "BCP Council",
       "sources": [
@@ -4316,6 +4503,24 @@
         "include": "play ?(?:area|ground)|playground|adventure",
         "allPlay": true
       }
+    },
+    {
+      "district": "Bournemouth, Christchurch and Poole",
+      "parish": "Bournemouth",
+      "council": "Bournemouth Town Council",
+      "sources": [
+        "https://democracy.bcpcouncil.gov.uk/documents/s54144/BCP%20Council%20Plan%20For%20Play.pdf"
+      ],
+      "note": "Bournemouth's play areas are BCP Council's (its Plan for Play covers 153 play spaces); no town council play areas found (22 November 2026)."
+    },
+    {
+      "district": "Bournemouth, Christchurch and Poole",
+      "parish": "Poole",
+      "council": "Poole Town Council",
+      "sources": [
+        "https://democracy.bcpcouncil.gov.uk/documents/s54144/BCP%20Council%20Plan%20For%20Play.pdf"
+      ],
+      "note": "Poole's play areas are BCP Council's (its Plan for Play covers 153 play spaces); no town council play areas found (22 November 2026)."
     },
     {
       "district": "Bristol, City of",
@@ -4466,6 +4671,25 @@
       }
     },
     {
+      "district": "Cherwell",
+      "parish": "Bicester",
+      "council": "Bicester Town Council",
+      "sources": [
+        "https://www.bicester.gov.uk/services/open-spaces-play-areas-and-sports-pitches/"
+      ],
+      "note": "Its open spaces page numbers 61 play areas it looks after, by name only (with a map PDF). The 52 that aren't communal gardens are in a CSV, placed by name as a street in Bicester. Play areas on Kingsmere, Elmsbrook and Graven Hill are the developers' (22 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/bicester-town.csv",
+        "page": "https://www.bicester.gov.uk/services/open-spaces-play-areas-and-sports-pitches/",
+        "near": {
+          "lat": 51.9,
+          "lng": -1.15,
+          "km": 5
+        }
+      }
+    },
+    {
       "district": "Redditch",
       "council": "Redditch Borough Council",
       "sources": [
@@ -4517,6 +4741,37 @@
           "lng": -2.75,
           "km": 50
         }
+      }
+    },
+    {
+      "district": "Shropshire",
+      "parish": "Shrewsbury",
+      "council": "Shrewsbury Town Council",
+      "sources": [
+        "https://www.shrewsburytowncouncil.gov.uk/assets/page/2/"
+      ],
+      "note": "Manages 57 play areas; its assets directory (seven list pages) has a page for each with its location and equipment, read as pages; only pages named as a play area or recreation ground are kept (22 November 2026).",
+      "feed": {
+        "type": "pages",
+        "index": [
+          "https://www.shrewsburytowncouncil.gov.uk/assets-landing-page/",
+          "https://www.shrewsburytowncouncil.gov.uk/assets/page/2/",
+          "https://www.shrewsburytowncouncil.gov.uk/assets/page/3/",
+          "https://www.shrewsburytowncouncil.gov.uk/assets/page/4/",
+          "https://www.shrewsburytowncouncil.gov.uk/assets/page/5/",
+          "https://www.shrewsburytowncouncil.gov.uk/assets/page/6/",
+          "https://www.shrewsburytowncouncil.gov.uk/assets/page/7/"
+        ],
+        "follow": "/assets/[a-z0-9-]+/?$",
+        "address": "Location[;:\\s]+([^;]{4,120})",
+        "town": "Shrewsbury",
+        "near": {
+          "lat": 52.71,
+          "lng": -2.75,
+          "km": 7
+        },
+        "allPlay": true,
+        "include": "play|recreation ground"
       }
     },
     {
@@ -4590,6 +4845,15 @@
       "note": "Checked 20 November 2026: no play area list; the council has transferred over 100 play areas to town and parish councils (Warminster, Corsham, Bradford on Avon and others publish their own). Play areas come from OpenStreetMap."
     },
     {
+      "district": "Wiltshire",
+      "parish": "Trowbridge",
+      "council": "Trowbridge Town Council",
+      "sources": [
+        "https://cms.wiltshire.gov.uk/documents/s173084/grant%20application%20responses.pdf"
+      ],
+      "note": "Has taken over many assets from Wiltshire Council, but publishes no list of its play areas that could be found (22 November 2026)."
+    },
+    {
       "district": "Swindon",
       "council": "Swindon Borough Council",
       "sources": [
@@ -4620,6 +4884,15 @@
         "https://www.herefordshire.gov.uk/things/parks-play-areas-sports-pitches-search"
       ],
       "note": "Checked 20 November 2026: the council runs about 67 play areas, found through a search page that loads in the browser. Hereford City Council and parish councils run others. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Herefordshire, County of",
+      "parish": "Hereford",
+      "council": "Hereford City Council",
+      "sources": [
+        "https://www.herefordshire.gov.uk/news/2025/october/1-million-to-revitalise-play-areas-across-the-county"
+      ],
+      "note": "Hereford's play areas are Herefordshire Council's (64 across the county), which is offering them to city, town and parish councils by asset transfer; none listed by the city council yet (22 November 2026)."
     },
     {
       "district": "East Riding of Yorkshire",
