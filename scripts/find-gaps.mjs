@@ -39,7 +39,9 @@ const DIR = 'src/content/playgrounds';
 const UA = { 'User-Agent': 'SwingBy/1.0 (https://swing-by.co.uk; finds playgrounds missing from the site)' };
 const OVERPASS = ['https://overpass-api.de/api/interpreter', 'https://overpass.kumi.systems/api/interpreter', 'https://overpass.private.coffee/api/interpreter'];
 const arg = (name, dflt) => (process.argv.includes(name) ? process.argv[process.argv.indexOf(name) + 1] : dflt);
-const ADD = Number(arg('--add', 0)) || 0;
+// --add all adds every missing playground it finds, with no cap.
+const ADD_ARG = String(arg('--add', 0)).trim();
+const ADD = /^all$/i.test(ADD_ARG) ? Infinity : Number(ADD_ARG) || 0;
 // One county, or several separated by commas ("Norfolk, Suffolk, Cambridgeshire").
 const ONLY = arg('--only', '');
 const ONLY_SET = new Set(ONLY.split(',').map((x) => x.trim().toLowerCase()).filter(Boolean));
