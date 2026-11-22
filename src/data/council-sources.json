@@ -34,7 +34,8 @@
       "feed": {
         "type": "pages",
         "index": "https://www.tendringdc.gov.uk/playparks",
-        "follow": "^/playparks/[a-z0-9-]+$"
+        "follow": "tendringdc\\.gov\\.uk/playparks/[a-z0-9-]+/?$",
+        "allPlay": true
       }
     },
     {
