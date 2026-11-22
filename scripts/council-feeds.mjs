@@ -76,9 +76,18 @@ export async function readFeed(feed) {
       if (r.lat == null && pts[r.postcode]) Object.assign(r, pts[r.postcode], { from: 'postcode' });
       else if (r.lat != null && !r.from) r.from = 'map';
     await placeByParkName(recs, feed);
+    // Still unplaced: look the street up on OpenStreetMap's geocoder, from the page's address ("address" in the feed)
+    // or, with "town" set, the play area's own name in that town ("Nuthurst play area" → "Nuthurst, Bracknell").
+    if (feed.address || feed.town)
+      for (const r of recs.filter((r) => r.lat == null)) {
+        const street = r.where?.replace(/^(?:adjacent|adj\.?|opposite|opp\.?|rear of|off|near)\s+(?:to\s+)?(?:\d+[a-z]?\s+)?/i, '') || (feed.town ? r.name.replace(/\s*\b(?:play ?areas?|playground|play park|-\s*)\s*$/i, '').replace(/^.*?\s+-\s+/, '') : '');
+        if (!street) continue;
+        const at = await geocode(feed.town && !street.toLowerCase().includes(feed.town.toLowerCase()) ? `${street}, ${feed.town}` : street, feed.near);
+        if (at) Object.assign(r, at);
+      }
     const placed = recs.filter((r) => r.lat != null);
     if (placed.length < recs.length) console.log(`  ${recs.length - placed.length} left out: no map point or postcode on the page`);
-    return placed.map(({ text, ...r }) => r);
+    return placed.map(({ text, where, ...r }) => r);
   }
   if (feed.type === 'list') {
     const rows = parseCsv(await readFile(feed.file, 'utf8'));

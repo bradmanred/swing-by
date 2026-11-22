@@ -187,7 +187,10 @@ export function parsePark(html, url, feed, inCategory = false) {
   const need = feed.require ? new RegExp(feed.require, 'i') : PLAY;
   if (!inCategory && !need.test(feed.require ? html : t)) return null;
   const p = point(html);
-  return { name, lat: p?.lat ?? null, lng: p?.lng ?? null, postcode: t.match(POSTCODE)?.[1]?.replace(/\s*(\d[A-Z]{2})$/, ' $1') ?? null, url, ...describe(t), text: t.slice(0, 4000) };
+  // "address": a regex whose first group is the park's street on its page (Telford's "Address Adjacent 27 Windsor
+  // Road, Arleston"), looked up on OpenStreetMap's geocoder when the page has no map point or postcode.
+  const where = feed.address ? text(t.match(new RegExp(feed.address, 'i'))?.[1] ?? '').replace(/[;\s]+$/, '').trim() || null : null;
+  return { name, lat: p?.lat ?? null, lng: p?.lng ?? null, postcode: t.match(POSTCODE)?.[1]?.replace(/\s*(\d[A-Z]{2})$/, ' $1') ?? null, where, url, ...describe(t), text: t.slice(0, 4000) };
 }
 
 /** Reads every list page (page 1, 2, 3… until no new parks turn up), then each park's page. */
@@ -264,8 +267,17 @@ export async function readLocalGov(feed) {
       const xml = await get(`${base.origin}/sitemap.xml${page ? `?page=${page}` : ''}`);
       const locs = [...xml.matchAll(/<loc>\s*([^<\s]+)\s*<\/loc>/g)].map((m) => m[1].replace(/&amp;/g, '&'));
       if (!locs.length) break;
-      for (const u of locs) if (isRecord(u)) seed.push(u.replace('://www.', base.host.startsWith('www.') ? '://www.' : '://'));
-      if (!/<urlset/.test(xml)) break; // a sitemap index, not pages of one: stop here
+      // A sitemap index (Westmorland and Furness's points to /standard-sitemap/sitemap.xml?page=1, 2…): read the
+      // sitemaps it lists instead, then stop.
+      const pages = /<sitemapindex/.test(xml) ? [] : locs;
+      if (/<sitemapindex/.test(xml))
+        for (const sm of locs.slice(0, 20)) {
+          const x = await get(sm);
+          pages.push(...[...x.matchAll(/<loc>\s*([^<\s]+)\s*<\/loc>/g)].map((m) => m[1].replace(/&amp;/g, '&')));
+          await sleep(400);
+        }
+      for (const u of pages) if (isRecord(u)) seed.push(u.replace('://www.', base.host.startsWith('www.') ? '://www.' : '://'));
+      if (!/<urlset/.test(xml)) break; // a sitemap index (already read above): stop here
       await sleep(400);
     }
   }
