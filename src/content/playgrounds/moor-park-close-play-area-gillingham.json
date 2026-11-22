@@ -1,0 +1,35 @@
+{
+  "name": "Moor Park Close play area",
+  "region": "south-east",
+  "area": "Gillingham",
+  "lat": 51.35986,
+  "lng": 0.61976,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "bs",
+    "sw",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Medway Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Medway Council",
+  "sources": [
+    {
+      "label": "Medway Council: Moor Park Close play area",
+      "url": "https://www.medway.gov.uk/directory_record/2480/moor_park_close_play_area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/347357715"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

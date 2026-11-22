@@ -1,0 +1,30 @@
+{
+  "name": "Bishops Palace and play area",
+  "region": "south-east",
+  "area": "Halling",
+  "lat": 51.35083,
+  "lng": 0.44858,
+  "ages": [],
+  "equipment": [
+    "sw"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Medway Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Medway Council",
+  "sources": [
+    {
+      "label": "Medway Council: Bishops Palace and play area",
+      "url": "https://www.medway.gov.uk/directory_record/278653/bishops_palace_and_play_area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1026518289"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Allhallows play area",
+  "region": "south-east",
+  "area": "Allhallows",
+  "lat": 51.46891,
+  "lng": 0.64814,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Medway Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Medway Council",
+  "sources": [
+    {
+      "label": "Medway Council: Allhallows play area",
+      "url": "https://www.medway.gov.uk/directory_record/279733/allhallows_play_area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1454463495"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

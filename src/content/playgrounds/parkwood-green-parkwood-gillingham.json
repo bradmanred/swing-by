@@ -1,0 +1,39 @@
+{
+  "name": "Parkwood Green",
+  "region": "south-east",
+  "area": "Parkwood, Gillingham",
+  "lat": 51.34738,
+  "lng": 0.59628,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "bk",
+    "sw",
+    "cl",
+    "rb",
+    "sk",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Medway Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Medway Council",
+  "sources": [
+    {
+      "label": "Medway Council: Parkwood Green",
+      "url": "https://www.medway.gov.uk/directory_record/738/parkwood_green"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/346102448"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

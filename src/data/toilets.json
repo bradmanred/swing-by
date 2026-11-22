@@ -1158,6 +1158,50 @@
     "lng": -1.997998953
    }
   },
+  "adamscroft-play-area-adamsdown-cardiff": {
+   "nearest": {
+    "id": "dc3fd13c1ec09b629ca84118",
+    "name": "Cardiff Queen Street Station",
+    "m": 547,
+    "babyChange": false,
+    "accessible": true,
+    "free": true,
+    "lat": 51.48196277,
+    "lng": -3.170204472
+   },
+   "nearestBabyChange": {
+    "id": "223e1be78974daa2eb299fbc",
+    "name": "St David's — Floors 0 and 1",
+    "m": 757,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.479517099,
+    "lng": -3.174037635
+   }
+  },
+  "adamsdown-square-play-area-adamsdown-cardiff": {
+   "nearest": {
+    "id": "dc3fd13c1ec09b629ca84118",
+    "name": "Cardiff Queen Street Station",
+    "m": 587,
+    "babyChange": false,
+    "accessible": true,
+    "free": true,
+    "lat": 51.48196277,
+    "lng": -3.170204472
+   },
+   "nearestBabyChange": {
+    "id": "1ede282f841c342748f193d3",
+    "name": "The Central Bar Wetherspoons",
+    "m": 807,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.483337492,
+    "lng": -3.172880193
+   }
+  },
   "adbolton-lane-playground-lady-bay-west-bridgford": {
    "nearest": {
     "id": "8021942cf99b8613f40d904e",
@@ -3073,6 +3117,18 @@
     "free": false,
     "lat": 52.944182031,
     "lng": -1.496565342
+   }
+  },
+  "allhallows-play-area-allhallows": {
+   "nearest": {
+    "id": "94892b0212036bfb82f6f64f",
+    "name": "Grain Road",
+    "m": 1943,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.453278025,
+    "lng": 0.635597706
    }
   },
   "allhallowsgate-park-bondgate-ripon": {
@@ -6438,6 +6494,18 @@
     "lng": 0.219261557
    }
   },
+  "attlee-road-play-area-cefn-fforest-blackwood": {
+   "nearest": {
+    "id": "98ff283dbb8e44c7d9d54fed",
+    "name": "Cake shop",
+    "m": 446,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.665804733,
+    "lng": -3.195304871
+   }
+  },
   "aubrey-meads-play-area-bitton": {
    "nearest": {
     "id": "e2a7780149674c2d1da6a1f2",
@@ -7864,6 +7932,18 @@
     "lng": -3.395397663
    }
   },
+  "ballens-road-play-area-walderslade-chatham": {
+   "nearest": {
+    "id": "c02efe86f45f7207862d2249",
+    "name": "Wyevale Garden Centre - Gillingham",
+    "m": 1246,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 51.340944152,
+    "lng": 0.559551716
+   }
+  },
   "ballindalloch-castle-play-area": {
    "nearest": {
     "id": "a4745a078ce4301f4586f386",
@@ -8667,6 +8747,50 @@
     "lng": -1.083663404
    }
   },
+  "bargoed-community-centre-play-area-gilfach-bargoed": {
+   "nearest": {
+    "id": "f453cbc6cc7de6976f762265",
+    "name": "Public toilet",
+    "m": 802,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.6878275,
+    "lng": -3.2299684
+   },
+   "nearestBabyChange": {
+    "id": "3259a62d1f71ae6e653b8cc7",
+    "name": "Bargoed Library",
+    "m": 1013,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 51.689937512,
+    "lng": -3.228564262
+   }
+  },
+  "bargoed-park-play-area-gilfach-bargoed": {
+   "nearest": {
+    "id": "f453cbc6cc7de6976f762265",
+    "name": "Public toilet",
+    "m": 392,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.6878275,
+    "lng": -3.2299684
+   },
+   "nearestBabyChange": {
+    "id": "3259a62d1f71ae6e653b8cc7",
+    "name": "Bargoed Library",
+    "m": 616,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 51.689937512,
+    "lng": -3.228564262
+   }
+  },
   "barham-park-playground-brent": {
    "nearest": {
     "id": "c5993d7fe67f799acf764911",
@@ -9070,6 +9194,28 @@
     "lng": 0.548294485
    }
   },
+  "barnfield-recreation-ground-wayfield-chatham": {
+   "nearest": {
+    "id": "1b2d1cd3e0e65d203995d3a6",
+    "name": "Capstone Farm Country Park",
+    "m": 1534,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.3588976,
+    "lng": 0.5551873
+   },
+   "nearestBabyChange": {
+    "id": "fde6b78f016d919de0a7cca1",
+    "name": "Harmer Lavatorium",
+    "m": 1594,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 51.376284311,
+    "lng": 0.548294485
+   }
+  },
   "barnfield-rise-playground-anna-fields-andover": {
    "nearest": {
     "id": "949023f23b7e71d5e4ee3e1e",
@@ -9451,6 +9597,28 @@
     "free": true,
     "lat": 51.518013344,
     "lng": -0.027157379
+   }
+  },
+  "bartlett-street-play-area-st-martins-caerphilly": {
+   "nearest": {
+    "id": "34dd52b8dd429b1fb389ca58",
+    "name": "Public toilet",
+    "m": 281,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.5718467,
+    "lng": -3.2193272
+   },
+   "nearestBabyChange": {
+    "id": "70e6238c8b87e8e39cb4f651",
+    "name": "Food court toilets",
+    "m": 412,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.57440803,
+    "lng": -3.221198391
    }
   },
   "barton-aqueduct-pocket-park-salford": {
@@ -10102,6 +10270,18 @@
     "lng": 0.175995827
    }
   },
+  "bayswater-drive-play-area-parkwood-gillingham": {
+   "nearest": {
+    "id": "8fe386e984d54d27c2bb825f",
+    "name": "Medway Services - M2",
+    "m": 292,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.3416831,
+    "lng": 0.6081104
+   }
+  },
   "beach-house-grounds-gull-island-play-area-worthing": {
    "nearest": {
     "id": "fb629cd2f446feee6f0924d1",
@@ -10426,6 +10606,28 @@
     "free": true,
     "lat": 51.27224595,
     "lng": -0.72164797
+   }
+  },
+  "beaufort-square-play-area-windsor-village-cardiff": {
+   "nearest": {
+    "id": "4481dd62ba4c9f456aa61614",
+    "name": "Costa Coffee",
+    "m": 476,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 51.492997057,
+    "lng": -3.144482374
+   },
+   "nearestBabyChange": {
+    "id": "e09dd33bf19c6a847d69e0c0",
+    "name": "Morrissons",
+    "m": 572,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.499813665,
+    "lng": -3.142175674
    }
   },
   "beaumaris-pier-paddling-pool-park-playground-llanfaes-beauma": {
@@ -11697,6 +11899,28 @@
     "free": true,
     "lat": 53.267913017,
     "lng": -1.353967536
+   }
+  },
+  "belmont-walk-play-area-butetown-cardiff": {
+   "nearest": {
+    "id": "0cb6ade372849ea1e5cd85d6",
+    "name": "Public toilet",
+    "m": 470,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.4636533,
+    "lng": -3.1648996
+   },
+   "nearestBabyChange": {
+    "id": "2905b190298303ae87d1855c",
+    "name": "Mermaid Quay",
+    "m": 480,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.463392521,
+    "lng": -3.165634274
    }
   },
   "belmont": {
@@ -13758,6 +13982,18 @@
     "free": true,
     "lat": 51.622266418,
     "lng": 0.303132534
+   }
+  },
+  "bishops-palace-and-play-area-halling": {
+   "nearest": {
+    "id": "b44d9b163601cc543a88b9e1",
+    "name": "Court Farm Country Larder & Butchery",
+    "m": 1445,
+    "babyChange": false,
+    "accessible": true,
+    "free": false,
+    "lat": 51.35323088,
+    "lng": 0.428131521
    }
   },
   "bishops-park-playground-fulham-greater-london": {
@@ -18063,6 +18299,28 @@
     "lng": -2.073401213
    }
   },
+  "brewery-park-play-area-adamsdown-cardiff": {
+   "nearest": {
+    "id": "048565a61f5dc316f3969ef3",
+    "name": "Waterloo Team Rooms",
+    "m": 911,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.494559767,
+    "lng": -3.155468702
+   },
+   "nearestBabyChange": {
+    "id": "dae474e18a5aced028551c28",
+    "name": "Sainsbury's",
+    "m": 1134,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.495643736,
+    "lng": -3.147920966
+   }
+  },
   "brewery-park-play-area-torquay-torbay": {
    "nearest": {
     "id": "0454c5a43f9c9c388fda6334",
@@ -18244,6 +18502,9 @@
     "lat": 51.988710782,
     "lng": -0.987374783
    }
+  },
+  "bridge-street-play-area-ynysddu-ynys-ddu": {
+   "nearest": null
   },
   "bridgefield-park-play-area-ashford": {
    "nearest": {
@@ -18542,7 +18803,7 @@
     "lng": -0.5409894
    }
   },
-  "britannia-park-playground-cardiff-bay-cardiff": {
+  "britannia-park-play-area-cardiff-bay-cardiff": {
    "nearest": {
     "id": "5cefb4c40ee2f956e785b192",
     "name": "Pierhead Building",
@@ -18698,6 +18959,28 @@
     "free": true,
     "lat": 53.1509412,
     "lng": -3.824653
+   }
+  },
+  "bro-helen-play-area-caernarfon-caernarfon": {
+   "nearest": {
+    "id": "fe75738c9859e23875260c5c",
+    "name": "Ffestiniog railway station",
+    "m": 521,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 53.138005233,
+    "lng": -4.27313447
+   },
+   "nearestBabyChange": {
+    "id": "f5b6a9625322e76e093d87c7",
+    "name": "Galeri",
+    "m": 1095,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 53.143304918,
+    "lng": -4.275084217
    }
   },
   "bro-rhos-play-area-bethel-bethel": {
@@ -20527,6 +20810,18 @@
     "lng": -3.723733482
    }
   },
+  "bryn-glas-play-area-thornhill-cardiff": {
+   "nearest": {
+    "id": "305a602924dfb5685ddcc39d",
+    "name": "Ty Glas Road",
+    "m": 1404,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.528742416,
+    "lng": -3.190686107
+   }
+  },
   "bryn-glas-playground-llangyfelach-swansea": {
    "nearest": {
     "id": "1d16b03563d68fcfd1cb4505",
@@ -20625,6 +20920,18 @@
     "free": true,
     "lat": 53.075560922,
     "lng": -3.054365756
+   }
+  },
+  "brynawel-play-area-wattsville": {
+   "nearest": {
+    "id": "c2452833a09f488a9ea8ac75",
+    "name": "Public toilet",
+    "m": 955,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.6148159,
+    "lng": -3.1420773
    }
   },
   "bryncastell-park-play-area-bow-street": {
@@ -22273,6 +22580,40 @@
     "lng": -3.428151123
    }
   },
+  "bute-park-play-trail-civic-centre-cardiff": {
+   "nearest": {
+    "id": "58579a5b7846078177cc9f5b",
+    "name": "Cardiff Castle — Women's",
+    "m": 538,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.481401182,
+    "lng": -3.181864321
+   },
+   "nearestBabyChange": {
+    "id": "1ede282f841c342748f193d3",
+    "name": "The Central Bar Wetherspoons",
+    "m": 910,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.483337492,
+    "lng": -3.172880193
+   }
+  },
+  "butetown-play-area-rhymney": {
+   "nearest": {
+    "id": "4972d9eb3976c0a20e444350",
+    "name": "Rhymney Library Hub",
+    "m": 2083,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.759378902,
+    "lng": -3.283835737
+   }
+  },
   "butland-road-play-area-corby-village-corby": {
    "nearest": {
     "id": "82fe192800ee89ce7b53f357",
@@ -22385,6 +22726,18 @@
     "lng": -0.0864985
    }
   },
+  "butterfield-park-play-area-pontprennau-cardiff": {
+   "nearest": {
+    "id": "711260088d0db025e3c7cf2c",
+    "name": "Park and Ride, Pentwyn",
+    "m": 1598,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.520852303,
+    "lng": -3.13575983
+   }
+  },
   "buttermere-avenue-green-space-cippenham-slough": {
    "nearest": {
     "id": "7fdf9f2dce325a2fc515136a",
@@ -22395,18 +22748,6 @@
     "free": true,
     "lat": 51.531577932,
     "lng": -0.657865405
-   }
-  },
-  "buttermere-close-play-area-lynwood-folkestone": {
-   "nearest": {
-    "id": "d6b2725278dfe36d00f15419",
-    "name": "Sainsbury's Superstore - Park Farm, Folkestone",
-    "m": 558,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 51.094325297,
-    "lng": 1.165795326
    }
   },
   "butterscotch-walk-playground-scawthorpe-scawthorpe-doncaster": {
@@ -23861,6 +24202,18 @@
     "lng": -0.564975142
    }
   },
+  "canal-park-play-area-butetown-cardiff": {
+   "nearest": {
+    "id": "2905b190298303ae87d1855c",
+    "name": "Mermaid Quay",
+    "m": 689,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.463392521,
+    "lng": -3.165634274
+   }
+  },
   "canal-wharf-play-area-stonegravels": {
    "nearest": {
     "id": "c747f58ceb4b5f82eeff2311",
@@ -24221,18 +24574,6 @@
   "capel-newydd-newchapel-playground-capel-newydd-newchapel-pem": {
    "nearest": null
   },
-  "capel-playground-capel-felinfoel": {
-   "nearest": {
-    "id": "5fe73a89d6f922975356758d",
-    "name": "Public toilet",
-    "m": 1354,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.6785439,
-    "lng": -4.1337709
-   }
-  },
   "capel-seion-play-area-moriah": {
    "nearest": null
   },
@@ -24268,6 +24609,28 @@
     "free": true,
     "lat": 51.34621926,
     "lng": -2.60679034
+   }
+  },
+  "capstone-farm-country-park-and-play-area-upper-luton-chatham": {
+   "nearest": {
+    "id": "1b2d1cd3e0e65d203995d3a6",
+    "name": "Capstone Farm Country Park",
+    "m": 398,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.3588976,
+    "lng": 0.5551873
+   },
+   "nearestBabyChange": {
+    "id": "c02efe86f45f7207862d2249",
+    "name": "Wyevale Garden Centre - Gillingham",
+    "m": 1691,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 51.340944152,
+    "lng": 0.559551716
    }
   },
   "captains-garden-playground-colchester": {
@@ -24398,6 +24761,28 @@
     "id": "2905b190298303ae87d1855c",
     "name": "Mermaid Quay",
     "m": 1161,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.463392521,
+    "lng": -3.165634274
+   }
+  },
+  "cardiff-bay-barrage-play-area-cardiff-international-sports-v": {
+   "nearest": {
+    "id": "9ac821110d5296b7b2df90be",
+    "name": "Public toilet",
+    "m": 858,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.4548044,
+    "lng": -3.1625683
+   },
+   "nearestBabyChange": {
+    "id": "2905b190298303ae87d1855c",
+    "name": "Mermaid Quay",
+    "m": 1783,
     "babyChange": true,
     "accessible": false,
     "free": true,
@@ -25710,6 +26095,18 @@
   "cathel-square-play-park-kingskettle-kingskettle": {
    "nearest": null
   },
+  "catherine-gardens-play-area-rumney-cardiff": {
+   "nearest": {
+    "id": "e09dd33bf19c6a847d69e0c0",
+    "name": "Morrissons",
+    "m": 733,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.499813665,
+    "lng": -3.142175674
+   }
+  },
   "cathnor-park-playground-shepherds-bush-greater-london": {
    "nearest": {
     "id": "997e2de0b33074fec255f7ff",
@@ -26262,6 +26659,28 @@
     "lng": -3.078575134
    }
   },
+  "cefn-road-play-area-darran-valley-tir-phil": {
+   "nearest": {
+    "id": "27250b75db61563f76bc71e7",
+    "name": "St Gwyladys Church Happ",
+    "m": 2217,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.691995945,
+    "lng": -3.230774403
+   },
+   "nearestBabyChange": {
+    "id": "3259a62d1f71ae6e653b8cc7",
+    "name": "Bargoed Library",
+    "m": 2484,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 51.689937512,
+    "lng": -3.228564262
+   }
+  },
   "cefn-wood-play-area-pye-corner-newport": {
    "nearest": {
     "id": "e5d475e88ec3a70efe78b258",
@@ -26335,8 +26754,42 @@
     "lng": -1.482255757
    }
   },
+  "cemaes-crescent-play-area-trowbridge-cardiff": {
+   "nearest": {
+    "id": "7f403397fa040689ebdc813b",
+    "name": "Tesco",
+    "m": 1201,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.524563648,
+    "lng": -3.102834374
+   }
+  },
   "cemais-playground-cemais": {
    "nearest": null
+  },
+  "cemetery-park-play-area-adamsdown-cardiff": {
+   "nearest": {
+    "id": "dc3fd13c1ec09b629ca84118",
+    "name": "Cardiff Queen Street Station",
+    "m": 353,
+    "babyChange": false,
+    "accessible": true,
+    "free": true,
+    "lat": 51.48196277,
+    "lng": -3.170204472
+   },
+   "nearestBabyChange": {
+    "id": "1ede282f841c342748f193d3",
+    "name": "The Central Bar Wetherspoons",
+    "m": 559,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.483337492,
+    "lng": -3.172880193
+   }
   },
   "cemetery-park-polwarth-park-preston-prestonpans": {
    "nearest": {
@@ -28541,7 +28994,7 @@
     "lng": 1.17268854
    }
   },
-  "cherry-tree-play-area-gillingham": {
+  "cherry-tree-orchard-and-play-area-gillingham": {
    "nearest": {
     "id": "7579e01b86d38da9be2a17fd",
     "name": "Shopping Centre",
@@ -29434,40 +29887,6 @@
     "lng": -2.74481982
    }
   },
-  "childrens-play-area-town-hall-gardens-sally-port-gardens-cha": {
-   "nearest": {
-    "id": "b94fe5a6ea0dbc1414b3c60f",
-    "name": "Pentagon Shopping Centre",
-    "m": 199,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.384162621,
-    "lng": 0.525820255
-   }
-  },
-  "childrens-play-area-victoria-gardens-troy-town-chatham": {
-   "nearest": {
-    "id": "ef314add49ddb0297dece40e",
-    "name": "Chatham Station",
-    "m": 204,
-    "babyChange": false,
-    "accessible": false,
-    "free": true,
-    "lat": 51.380378084,
-    "lng": 0.521158168
-   },
-   "nearestBabyChange": {
-    "id": "b94fe5a6ea0dbc1414b3c60f",
-    "name": "Pentagon Shopping Centre",
-    "m": 525,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.384162621,
-    "lng": 0.525820255
-   }
-  },
   "childrens-play-pavilion-and-park-limehouse-greater-london": {
    "nearest": {
     "id": "136224231d82bced763612dd",
@@ -29964,6 +30383,28 @@
     "free": true,
     "lat": 54.91862436,
     "lng": -1.816396348
+   }
+  },
+  "chorley-close-play-area-pentrebane-cardiff": {
+   "nearest": {
+    "id": "e8996417a8c6c43a3b500190",
+    "name": "Public toilet",
+    "m": 1881,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.48867226,
+    "lng": -3.27812326
+   },
+   "nearestBabyChange": {
+    "id": "36043d13879faecbf5806368",
+    "name": "Victoria Park Public Toilets",
+    "m": 2320,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.483053262,
+    "lng": -3.218404055
    }
   },
   "chorlton-park-play-area-manchester": {
@@ -32965,6 +33406,18 @@
   "colebrooke-playground-colebrooke-mid-devon": {
    "nearest": null
   },
+  "coleford-drive-play-area-st-mellons-cardiff": {
+   "nearest": {
+    "id": "7f403397fa040689ebdc813b",
+    "name": "Tesco",
+    "m": 423,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.524563648,
+    "lng": -3.102834374
+   }
+  },
   "coleman-crescent-play-area-whitehall-ramsgate": {
    "nearest": {
     "id": "d1d67b6d9af44cc4b13c460f",
@@ -33167,6 +33620,28 @@
     "free": true,
     "lat": 50.431103258,
     "lng": -3.689188063
+   }
+  },
+  "college-road-play-area-gabalfa-cardiff": {
+   "nearest": {
+    "id": "25a9286201dc8b8287a067b8",
+    "name": "Public toilet",
+    "m": 880,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.49481946,
+    "lng": -3.2178618
+   },
+   "nearestBabyChange": {
+    "id": "36043d13879faecbf5806368",
+    "name": "Victoria Park Public Toilets",
+    "m": 2171,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.483053262,
+    "lng": -3.218404055
    }
   },
   "college-road-play-area-mapperley-nottingham": {
@@ -33738,6 +34213,18 @@
     "lng": -3.39160502
    }
   },
+  "coniston-road-play-area-lynwood-folkestone": {
+   "nearest": {
+    "id": "d6b2725278dfe36d00f15419",
+    "name": "Sainsbury's Superstore - Park Farm, Folkestone",
+    "m": 558,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 51.094325297,
+    "lng": 1.165795326
+   }
+  },
   "coniston-road-play-area-whitehill-whitehill-bordon": {
    "nearest": {
     "id": "7d1bc8eaf1b5e9817a8a8332",
@@ -33998,6 +34485,28 @@
     "free": false,
     "lat": 50.409582473,
     "lng": -4.149468541
+   }
+  },
+  "cooling-play-area-frindsbury-extra-wainscott": {
+   "nearest": {
+    "id": "e7759596d857022e4dc6c6fc",
+    "name": "Strood (Kent)",
+    "m": 1095,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.396548642,
+    "lng": 0.50019436
+   },
+   "nearestBabyChange": {
+    "id": "2b363126b78c646ba7b58b24",
+    "name": "Hub Library Strood",
+    "m": 1298,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.3952483,
+    "lng": 0.4940924
    }
   },
   "coombe-abbey-park-coombe-fields-cp-rugby": {
@@ -36141,6 +36650,18 @@
     "lng": -2.123462153
    }
   },
+  "craiglee-drive-play-area-butetown-cardiff": {
+   "nearest": {
+    "id": "d20b0d9fd3f844a89ad8695a",
+    "name": "Cardiff Bus Interchange Public Toilets",
+    "m": 695,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.476394791,
+    "lng": -3.178374767
+   }
+  },
   "craigmillar-castle-park-gilmerton-inch-city-of-edinburgh": {
    "nearest": {
     "id": "8e5a9619f31544e516225fb7",
@@ -36423,6 +36944,18 @@
   "crathorne-playground-crathorne": {
    "nearest": null
   },
+  "crawford-drive-play-area-pontprennau-cardiff": {
+   "nearest": {
+    "id": "711260088d0db025e3c7cf2c",
+    "name": "Park and Ride, Pentwyn",
+    "m": 1505,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.520852303,
+    "lng": -3.13575983
+   }
+  },
   "crawford-place-play-park-glenrothes-south-parks-glenrothes": {
    "nearest": {
     "id": "d1168a815dd88cdc649ba1ec",
@@ -36572,6 +37105,9 @@
     "lng": -0.030491352
    }
   },
+  "creigiau-play-area-creigiau-cardiff": {
+   "nearest": null
+  },
   "cressington-playground-cressington-liverpool": {
    "nearest": {
     "id": "bcc4ee3fad19a0b6082f2f7c",
@@ -36592,6 +37128,28 @@
     "free": true,
     "lat": 53.373375638,
     "lng": -2.921365664
+   }
+  },
+  "crestway-play-area-luton-chatham": {
+   "nearest": {
+    "id": "1b2d1cd3e0e65d203995d3a6",
+    "name": "Capstone Farm Country Park",
+    "m": 1276,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.3588976,
+    "lng": 0.5551873
+   },
+   "nearestBabyChange": {
+    "id": "fde6b78f016d919de0a7cca1",
+    "name": "Harmer Lavatorium",
+    "m": 1403,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 51.376284311,
+    "lng": 0.548294485
    }
   },
   "creswell-manor-farm-play-area-holmcroft-stafford": {
@@ -37997,6 +38555,28 @@
   "curteis-drive-play-park-brompton-on-swale-catterick-garrison": {
    "nearest": null
   },
+  "curtis-way-park-and-ride-play-area-snodhurst-rochester": {
+   "nearest": {
+    "id": "0ffffcf26ac2c03f13a9371b",
+    "name": "Shell Filling Station - Rochester",
+    "m": 704,
+    "babyChange": null,
+    "accessible": true,
+    "free": false,
+    "lat": 51.364327,
+    "lng": 0.498752
+   },
+   "nearestBabyChange": {
+    "id": "d4880b6929f29024be7873ea",
+    "name": "Asda Superstore - Chatham",
+    "m": 1581,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.345082537,
+    "lng": 0.508933067
+   }
+  },
   "curzon-street-moorlands-play-area-long-eaton": {
    "nearest": {
     "id": "9b2c63afd1adb0a974a65975",
@@ -38077,6 +38657,30 @@
     "free": true,
     "lat": 51.395082847,
     "lng": 0.491208719
+   }
+  },
+  "cwm-calon-play-area-cefn-hengoed": {
+   "nearest": {
+    "id": "8d0279e9b7cd9fe8bf6d33da",
+    "name": "Bedwlwyn Street, Ystrad Mynach",
+    "m": 1425,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.642524427,
+    "lng": -3.23577404
+   }
+  },
+  "cwm-farm-play-area-morganstown-cardiff": {
+   "nearest": {
+    "id": "2cd37d38558a9d971a082f0b",
+    "name": "Radyr Station",
+    "m": 1371,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.516658038,
+    "lng": -3.24932456
    }
   },
   "cwm-felin-play-area-blackmill-ogmore-valley-blackmill": {
@@ -38218,6 +38822,28 @@
     "free": true,
     "lat": 53.22474014,
     "lng": -4.09169934
+   }
+  },
+  "cyncoed-gardens-play-area-penylan-cardiff": {
+   "nearest": {
+    "id": "22d19581536a0ce45d598da8",
+    "name": "Roath Park Lake",
+    "m": 865,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.506368519,
+    "lng": -3.173943758
+   },
+   "nearestBabyChange": {
+    "id": "7bbf97365f5ce3fc364e8f88",
+    "name": "Penylan Library and Community Centre",
+    "m": 982,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.496709172,
+    "lng": -3.164910078
    }
   },
   "cynwyl-elfed-playground-cynwyl-elfed": {
@@ -40282,6 +40908,28 @@
     "lng": -0.753888488
    }
   },
+  "despenser-gardens-play-area-riverside-cardiff": {
+   "nearest": {
+    "id": "58579a5b7846078177cc9f5b",
+    "name": "Cardiff Castle — Women's",
+    "m": 550,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.481401182,
+    "lng": -3.181864321
+   },
+   "nearestBabyChange": {
+    "id": "e57a0965b064d91352e323ca",
+    "name": "Cardiff Central",
+    "m": 672,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.476026622,
+    "lng": -3.179311548
+   }
+  },
   "destruction-playground-begelly": {
    "nearest": {
     "id": "05a35241057d4bf4e269b012",
@@ -40671,6 +41319,18 @@
     "lng": -3.230136037
    }
   },
+  "dickens-court-play-area-trethomas": {
+   "nearest": {
+    "id": "c2452833a09f488a9ea8ac75",
+    "name": "Public toilet",
+    "m": 2852,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.6148159,
+    "lng": -3.1420773
+   }
+  },
   "dickens-drive-play-area-exeter": {
    "nearest": {
     "id": "13856756a9bd935ad0159651",
@@ -40877,18 +41537,6 @@
     "free": true,
     "lat": 52.0236451,
     "lng": -4.8955328
-   }
-  },
-  "dinas-dinlle-playground-dinas-dinlle-2": {
-   "nearest": {
-    "id": "908e1ad02c4fec08f5bbf920",
-    "name": "Dinas Dinlle - Marine",
-    "m": 17,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 53.083439,
-    "lng": -4.335624576
    }
   },
   "dinas-dinlle-playground-dinas-dinlle": {
@@ -41241,6 +41889,18 @@
     "free": true,
     "lat": 51.581733425,
     "lng": 0.702317091
+   }
+  },
+  "dol-y-pandy-play-area-bedwas": {
+   "nearest": {
+    "id": "70e6238c8b87e8e39cb4f651",
+    "name": "Food court toilets",
+    "m": 2362,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.57440803,
+    "lng": -3.221198391
    }
   },
   "dolbey-park-salford": {
@@ -42170,6 +42830,18 @@
     "lng": -2.822030783
    }
   },
+  "downs-road-play-area-park-farm-folkestone": {
+   "nearest": {
+    "id": "d6b2725278dfe36d00f15419",
+    "name": "Sainsbury's Superstore - Park Farm, Folkestone",
+    "m": 923,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 51.094325297,
+    "lng": 1.165795326
+   }
+  },
   "downside-cobham": {
    "nearest": {
     "id": "b2b2d1795dca3eb4b87318b9",
@@ -42390,6 +43062,18 @@
     "free": true,
     "lat": 51.774139616,
     "lng": -0.221732503
+   }
+  },
+  "drovers-way-play-area-radyr-cardiff": {
+   "nearest": {
+    "id": "2cd37d38558a9d971a082f0b",
+    "name": "Radyr Station",
+    "m": 486,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.516658038,
+    "lng": -3.24932456
    }
   },
   "druimlon-drumnadrochit": {
@@ -43400,6 +44084,9 @@
    "nearest": null
   },
   "dunvant-meadow-playground-dunvant": {
+   "nearest": null
+  },
+  "dunvant-park-playground-dunvant-2": {
    "nearest": null
   },
   "dunvant-park-playground-dunvant": {
@@ -46655,6 +47342,18 @@
     "lng": -0.676643216
    }
   },
+  "emblem-close-play-area-caerau-cardiff": {
+   "nearest": {
+    "id": "36043d13879faecbf5806368",
+    "name": "Victoria Park Public Toilets",
+    "m": 1532,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.483053262,
+    "lng": -3.218404055
+   }
+  },
   "emersons-green-village-park-play-area-vinney-green-emersons-": {
    "nearest": {
     "id": "f10b24b4c0a2974c93076d6f",
@@ -47225,6 +47924,28 @@
     "free": true,
     "lat": 51.437255853,
     "lng": -2.84833163
+   }
+  },
+  "esplanade-gardens-troy-town-rochester": {
+   "nearest": {
+    "id": "34e719d6e9b1ac061fef1811",
+    "name": "Castle Gardens Public Convenience, Castle Gardens, Castle hill road",
+    "m": 232,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.389406741,
+    "lng": 0.501803756
+   },
+   "nearestBabyChange": {
+    "id": "e6d39fb037969049c47fa42f",
+    "name": "Visitor’s centre ( closed until further notice)",
+    "m": 405,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.389151825,
+    "lng": 0.5043939
    }
   },
   "esplanade-play-area-pen-y-coed-penmaenmawr": {
@@ -48070,6 +48791,28 @@
     "lng": -2.284587622
    }
   },
+  "fairwater-park-play-area-fairwater-cardiff": {
+   "nearest": {
+    "id": "25a9286201dc8b8287a067b8",
+    "name": "Public toilet",
+    "m": 1592,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.49481946,
+    "lng": -3.2178618
+   },
+   "nearestBabyChange": {
+    "id": "36043d13879faecbf5806368",
+    "name": "Victoria Park Public Toilets",
+    "m": 1841,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.483053262,
+    "lng": -3.218404055
+   }
+  },
   "fairways-play-area-craig-y-don-llandudno": {
    "nearest": {
     "id": "515511de0e9089c3c51cfde7",
@@ -48768,7 +49511,7 @@
     "lng": -0.048947632
    }
   },
-  "feeder-row-childrens-playground-cwmcarn": {
+  "feeder-row-play-area-cwmcarn": {
    "nearest": {
     "id": "dcda5f15667f296fd09a1e1b",
     "name": "Cwmcarn Forest Drive",
@@ -49251,6 +49994,28 @@
     "lng": -3.134886503
    }
   },
+  "fernlea-play-area-pontymister-risca": {
+   "nearest": {
+    "id": "085a83b74e4f9df0a02715ef",
+    "name": "The Pantri",
+    "m": 643,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.607736872,
+    "lng": -3.1009233
+   },
+   "nearestBabyChange": {
+    "id": "ceaaad3a0acbb4e771d8936c",
+    "name": "Snug Coffee Shop",
+    "m": 700,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.607235223,
+    "lng": -3.100765049
+   }
+  },
   "fernwood-crescent-playground-wollaton-vale-nottingham": {
    "nearest": {
     "id": "a50d8c32538668b8dbc7456a",
@@ -49609,6 +50374,18 @@
     "free": true,
     "lat": 51.71590881,
     "lng": -4.043886065
+   }
+  },
+  "ffwrwm-road-play-area-machen": {
+   "nearest": {
+    "id": "c2452833a09f488a9ea8ac75",
+    "name": "Public toilet",
+    "m": 2267,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.6148159,
+    "lng": -3.1420773
    }
   },
   "fiddlers-folly-playground-eight-ash-green": {
@@ -50037,6 +50814,18 @@
     "free": false,
     "lat": 51.37401733,
     "lng": -2.360816002
+   }
+  },
+  "firs-lane-play-area-cheriton-folkestone": {
+   "nearest": {
+    "id": "e114b096323a535752385d58",
+    "name": "BP Connect Filling Station - Folkestone",
+    "m": 348,
+    "babyChange": null,
+    "accessible": true,
+    "free": false,
+    "lat": 51.088669967,
+    "lng": 1.135148406
    }
   },
   "firs-park-playground-westleigh-wigan": {
@@ -51644,6 +52433,18 @@
     "free": true,
     "lat": 52.5898108,
     "lng": -2.1259543
+   }
+  },
+  "fox-avenue-play-area-pentwyn-mawr-newbridge": {
+   "nearest": {
+    "id": "e3e1fdbf4fcd706cec65480f",
+    "name": "Sainsbury’s",
+    "m": 611,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.657849227,
+    "lng": -3.173729181
    }
   },
   "fox-hole-playground-foxhole-swansea": {
@@ -53326,6 +54127,28 @@
     "lng": -1.208860874
    }
   },
+  "garfield-street-play-area-woodfieldside-blackwood": {
+   "nearest": {
+    "id": "98ff283dbb8e44c7d9d54fed",
+    "name": "Cake shop",
+    "m": 367,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.665804733,
+    "lng": -3.195304871
+   },
+   "nearestBabyChange": {
+    "id": "e3e1fdbf4fcd706cec65480f",
+    "name": "Sainsbury’s",
+    "m": 1625,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.657849227,
+    "lng": -3.173729181
+   }
+  },
   "garfits-lane-play-area-st-thomas-boston": {
    "nearest": {
     "id": "fd40ed234128633fdc704780",
@@ -53595,6 +54418,18 @@
     "free": true,
     "lat": 53.9826397,
     "lng": -1.0523055
+   }
+  },
+  "garth-olwg-play-area-pentyrch-cardiff": {
+   "nearest": {
+    "id": "fe5a0e73ea1b8fcd4429a011",
+    "name": "Mcdonalds toilets",
+    "m": 1695,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.564729548,
+    "lng": -3.274873495
    }
   },
   "garth-park-play-area-maesteg-dinas": {
@@ -54110,6 +54945,18 @@
     "free": true,
     "lat": 56.317061829,
     "lng": -3.009143472
+   }
+  },
+  "george-gurr-play-area-park-farm-folkestone": {
+   "nearest": {
+    "id": "d6b2725278dfe36d00f15419",
+    "name": "Sainsbury's Superstore - Park Farm, Folkestone",
+    "m": 1133,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 51.094325297,
+    "lng": 1.165795326
    }
   },
   "george-nuttall-close-playground-cambridge-chesterton-cambrid": {
@@ -55443,6 +56290,9 @@
     "lat": 53.901547459,
     "lng": -1.990499496
    }
+  },
+  "glyn-derw-play-area-deri": {
+   "nearest": null
   },
   "glyn-estate-play-area-colwyn-bay": {
    "nearest": {
@@ -56809,6 +57659,40 @@
     "lng": -0.230680704
    }
   },
+  "grange-close-play-area-trecenydd-caerphilly": {
+   "nearest": {
+    "id": "70e6238c8b87e8e39cb4f651",
+    "name": "Food court toilets",
+    "m": 1101,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.57440803,
+    "lng": -3.221198391
+   }
+  },
+  "grange-gardens-play-area-grangetown-cardiff": {
+   "nearest": {
+    "id": "214de7a43a434635b55eb8dd",
+    "name": "Public toilet",
+    "m": 263,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.4648906,
+    "lng": -3.1834806
+   },
+   "nearestBabyChange": {
+    "id": "e57a0965b064d91352e323ca",
+    "name": "Cardiff Central",
+    "m": 1008,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.476026622,
+    "lng": -3.179311548
+   }
+  },
   "grange-lane-playground-burghwallis-burghwallis-doncaster": {
    "nearest": null
   },
@@ -56946,6 +57830,28 @@
     "free": true,
     "lat": 51.97800114,
     "lng": -0.230680704
+   }
+  },
+  "grange-road-cemetery-play-area-gillingham-2": {
+   "nearest": {
+    "id": "4d5d1286a39f2cb0177e042e",
+    "name": "Public toilet",
+    "m": 408,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.3944454,
+    "lng": 0.5633457
+   },
+   "nearestBabyChange": {
+    "id": "3977bc322f18f23c77ca0b72",
+    "name": "Gillingham (Kent) Station Toilets",
+    "m": 1067,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.38702767,
+    "lng": 0.551791191
    }
   },
   "grange-road-cemetery-play-area-gillingham": {
@@ -57529,6 +58435,18 @@
     "lng": -2.417925596
    }
   },
+  "great-lines-heritage-park-sally-port-gardens-chatham": {
+   "nearest": {
+    "id": "b94fe5a6ea0dbc1414b3c60f",
+    "name": "Pentagon Shopping Centre",
+    "m": 199,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.384162621,
+    "lng": 0.525820255
+   }
+  },
   "great-notley-community-hall-play-area-great-notley": {
    "nearest": {
     "id": "4000072c45a6dd7cc3e1cba6",
@@ -57876,6 +58794,18 @@
     "free": true,
     "lat": 52.238966027,
     "lng": 0.154575282
+   }
+  },
+  "green-farm-road-play-area-michaelston-super-ely-cardiff": {
+   "nearest": {
+    "id": "e8996417a8c6c43a3b500190",
+    "name": "Public toilet",
+    "m": 2019,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.48867226,
+    "lng": -3.27812326
    }
   },
   "green-gardens-playground-rhayader-rhayader": {
@@ -58700,6 +59630,18 @@
     "free": true,
     "lat": 52.95127512,
     "lng": -1.145971655
+   }
+  },
+  "greenway-road-play-area-rumney-cardiff": {
+   "nearest": {
+    "id": "7f403397fa040689ebdc813b",
+    "name": "Tesco",
+    "m": 1045,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.524563648,
+    "lng": -3.102834374
    }
   },
   "greenway-road-playing-field-loxdale-bilston": {
@@ -60325,6 +61267,28 @@
     "lng": -3.285137415
    }
   },
+  "hailey-park-play-area-llandaff-north-cardiff": {
+   "nearest": {
+    "id": "25a9286201dc8b8287a067b8",
+    "name": "Public toilet",
+    "m": 1259,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.49481946,
+    "lng": -3.2178618
+   },
+   "nearestBabyChange": {
+    "id": "36043d13879faecbf5806368",
+    "name": "Victoria Park Public Toilets",
+    "m": 2387,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.483053262,
+    "lng": -3.218404055
+   }
+  },
   "hailstonegreen-play-area-forth": {
    "nearest": null
   },
@@ -60832,7 +61796,7 @@
     "lng": -0.313231051
    }
   },
-  "hamadryad-park-playground-cardiff-bay-cardiff": {
+  "hamadryad-park-play-area-cardiff-bay-cardiff": {
    "nearest": {
     "id": "2905b190298303ae87d1855c",
     "name": "Mermaid Quay",
@@ -60983,6 +61947,18 @@
     "free": true,
     "lat": 51.511973,
     "lng": -0.2244689
+   }
+  },
+  "hammond-way-play-area-penylan-cardiff": {
+   "nearest": {
+    "id": "dae474e18a5aced028551c28",
+    "name": "Sainsbury's",
+    "m": 365,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.495643736,
+    "lng": -3.147920966
    }
   },
   "hammondstreet-road-play-area-cheshunt": {
@@ -62455,6 +63431,18 @@
     "free": true,
     "lat": 53.205299643,
     "lng": -0.580035372
+   }
+  },
+  "hartshorn-court-play-area-lansbury-park-caerphilly": {
+   "nearest": {
+    "id": "70e6238c8b87e8e39cb4f651",
+    "name": "Food court toilets",
+    "m": 1160,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.57440803,
+    "lng": -3.221198391
    }
   },
   "hartswood-avenue-play-area-reigate": {
@@ -63947,6 +64935,28 @@
     "lng": -0.6628668
    }
   },
+  "heath-park-play-area-heath-cardiff": {
+   "nearest": {
+    "id": "0bb3fa44031e75bae6a583c3",
+    "name": "Roath Park cafe",
+    "m": 877,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 51.506765853,
+    "lng": -3.176196814
+   },
+   "nearestBabyChange": {
+    "id": "7bbf97365f5ce3fc364e8f88",
+    "name": "Penylan Library and Community Centre",
+    "m": 2189,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.496709172,
+    "lng": -3.164910078
+   }
+  },
   "heath-town-park-heath-town-wolverhampton": {
    "nearest": {
     "id": "267181f3e017486b27e29c0d",
@@ -64805,6 +65815,18 @@
     "lng": -0.21476984
    }
   },
+  "hendredenny-play-area-hendredenny-abertridwr": {
+   "nearest": {
+    "id": "70e6238c8b87e8e39cb4f651",
+    "name": "Food court toilets",
+    "m": 2035,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.57440803,
+    "lng": -3.221198391
+   }
+  },
   "hendrie-crescent-play-park-east-wemyss-east-wemyss": {
    "nearest": null
   },
@@ -64840,6 +65862,28 @@
     "free": false,
     "lat": 51.44553046,
     "lng": -0.472717881
+   }
+  },
+  "henley-close-108-maidstone-road-play-area-rainham-mark-gilli": {
+   "nearest": {
+    "id": "7579e01b86d38da9be2a17fd",
+    "name": "Shopping Centre",
+    "m": 786,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.364209753,
+    "lng": 0.60827136
+   },
+   "nearestBabyChange": {
+    "id": "ba4f7a5de3536b6f28336d45",
+    "name": "Rainham (Kent)",
+    "m": 1077,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.366304807,
+    "lng": 0.611346972
    }
   },
   "henley-park-play-area-whiston-cross-whiston": {
@@ -64984,6 +66028,18 @@
     "lng": -2.3941624
    }
   },
+  "heol-booker-play-area-whitchurch-cardiff": {
+   "nearest": {
+    "id": "4d0be5329b2456d97fb338f5",
+    "name": "Whitchurch toilet",
+    "m": 969,
+    "babyChange": null,
+    "accessible": true,
+    "free": false,
+    "lat": 51.514116185,
+    "lng": -3.220683712
+   }
+  },
   "heol-bowys-playground-llanfair-caereinion-llanfair-caereinio": {
    "nearest": {
     "id": "216f37d9fce09003b9afa0ca",
@@ -65096,6 +66152,30 @@
     "lng": -3.727599978
    }
   },
+  "heol-llanishen-fach-play-area-rhiwbina-cardiff": {
+   "nearest": {
+    "id": "305a602924dfb5685ddcc39d",
+    "name": "Ty Glas Road",
+    "m": 1426,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.528742416,
+    "lng": -3.190686107
+   }
+  },
+  "heol-maes-eirwg-play-area-st-mellons-cardiff": {
+   "nearest": {
+    "id": "7f403397fa040689ebdc813b",
+    "name": "Tesco",
+    "m": 761,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.524563648,
+    "lng": -3.102834374
+   }
+  },
   "heol-tir-du-playground-ynysforgan-ynystawe": {
    "nearest": {
     "id": "1d16b03563d68fcfd1cb4505",
@@ -65118,6 +66198,18 @@
     "free": true,
     "lat": 52.404549477,
     "lng": -4.067548513
+   }
+  },
+  "heol-y-barcud-play-area-thornhill-cardiff": {
+   "nearest": {
+    "id": "d05deb951b72ede4acbfc2a0",
+    "name": "Public toilet",
+    "m": 495,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.5461415,
+    "lng": -3.1864952
    }
   },
   "heol-y-coed-cae-play-area-cwmllynfell-ystradowen": {
@@ -65145,6 +66237,18 @@
     "free": false,
     "lat": 51.515916949,
     "lng": -3.727599978
+   }
+  },
+  "heol-y-delyn-play-area-lisvane-cardiff": {
+   "nearest": {
+    "id": "d05deb951b72ede4acbfc2a0",
+    "name": "Public toilet",
+    "m": 1206,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.5461415,
+    "lng": -3.1864952
    }
   },
   "heol-y-felin-play-area-bettws-garw-valley-bettws": {
@@ -65204,6 +66308,28 @@
     "free": false,
     "lat": 51.756445009,
     "lng": -3.387823105
+   }
+  },
+  "herbert-avenue-play-area-t-sign-risca": {
+   "nearest": {
+    "id": "5c4ab592cbb76cf7e5553a70",
+    "name": "Morrisons",
+    "m": 759,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 51.596141089,
+    "lng": -3.078575134
+   },
+   "nearestBabyChange": {
+    "id": "604e78fbad6c380b0dfd0143",
+    "name": "The Sycamore Centre",
+    "m": 1081,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.609839629,
+    "lng": -3.089759946
    }
   },
   "herbert-street-play-area-devonport-plymouth": {
@@ -65340,6 +66466,18 @@
     "free": false,
     "lat": 51.367314513,
     "lng": 0.583090782
+   }
+  },
+  "heritage-park-play-area-st-mellons-cardiff": {
+   "nearest": {
+    "id": "7f403397fa040689ebdc813b",
+    "name": "Tesco",
+    "m": 413,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.524563648,
+    "lng": -3.102834374
    }
   },
   "hermes-crescent-play-area-manor-farm-estate-coventry": {
@@ -65510,6 +66648,18 @@
     "free": true,
     "lat": 51.252544944,
     "lng": -1.131049991
+   }
+  },
+  "heron-way-play-area-upper-stoke": {
+   "nearest": {
+    "id": "94892b0212036bfb82f6f64f",
+    "name": "Grain Road",
+    "m": 280,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.453278025,
+    "lng": 0.635597706
    }
   },
   "herristone-road-park-play-area-manchester": {
@@ -66768,6 +67918,18 @@
     "lng": -2.284587622
    }
   },
+  "hill-street-play-area-pontlottyn": {
+   "nearest": {
+    "id": "4972d9eb3976c0a20e444350",
+    "name": "Rhymney Library Hub",
+    "m": 841,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.759378902,
+    "lng": -3.283835737
+   }
+  },
   "hill-street-play-park-lisburn": {
    "nearest": {
     "id": "f7cf4d70c15f8f33e46e33f0",
@@ -67290,7 +68452,7 @@
     "lng": 0.551791191
    }
   },
-  "hillyfields-play-park-sally-port-gardens-gillingham": {
+  "hillyfields-community-park-sally-port-gardens-gillingham": {
    "nearest": {
     "id": "3cac3211fab14a86300f686a",
     "name": "Pier Road",
@@ -67560,6 +68722,28 @@
     "free": true,
     "lat": 51.603561684,
     "lng": 0.65901386
+   }
+  },
+  "hodges-square-play-area-butetown-cardiff": {
+   "nearest": {
+    "id": "0cb6ade372849ea1e5cd85d6",
+    "name": "Public toilet",
+    "m": 782,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.4636533,
+    "lng": -3.1648996
+   },
+   "nearestBabyChange": {
+    "id": "2905b190298303ae87d1855c",
+    "name": "Mermaid Quay",
+    "m": 783,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.463392521,
+    "lng": -3.165634274
    }
   },
   "hodings-road-playground-harlow": {
@@ -67879,6 +69063,28 @@
     "free": false,
     "lat": 53.8320014,
     "lng": -1.9578972
+   }
+  },
+  "holding-street-play-area-gillingham": {
+   "nearest": {
+    "id": "7579e01b86d38da9be2a17fd",
+    "name": "Shopping Centre",
+    "m": 238,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.364209753,
+    "lng": 0.60827136
+   },
+   "nearestBabyChange": {
+    "id": "ba4f7a5de3536b6f28336d45",
+    "name": "Rainham (Kent)",
+    "m": 415,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.366304807,
+    "lng": 0.611346972
    }
   },
   "holker-hall-and-gardens-play-area": {
@@ -68228,6 +69434,18 @@
     "free": true,
     "lat": 51.446904828,
     "lng": -0.328474045
+   }
+  },
+  "hollybush-play-area-coryton-cardiff": {
+   "nearest": {
+    "id": "2cd37d38558a9d971a082f0b",
+    "name": "Radyr Station",
+    "m": 984,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.516658038,
+    "lng": -3.24932456
    }
   },
   "hollybush-playground-sevenoaks": {
@@ -68880,6 +70098,28 @@
     "lng": -0.043982863
    }
   },
+  "hoo-swimming-pool-play-area-hoo-st-werburgh": {
+   "nearest": {
+    "id": "eeff1354bc41d33ba28ec89f",
+    "name": "Stoke Road",
+    "m": 1056,
+    "babyChange": false,
+    "accessible": null,
+    "free": true,
+    "lat": 51.420554984,
+    "lng": 0.564540625
+   },
+   "nearestBabyChange": {
+    "id": "056c9061c02d0e0af7653311",
+    "name": "Dockside Outlet Centre",
+    "m": 2395,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.400813767,
+    "lng": 0.533818603
+   }
+  },
   "hood-street-playground-sherwood-nottingham": {
    "nearest": {
     "id": "f406479fdd0165a24e7075f8",
@@ -68946,6 +70186,18 @@
     "free": true,
     "lat": 51.345082537,
     "lng": 0.508933067
+   }
+  },
+  "hook-wood-chatham": {
+   "nearest": {
+    "id": "c02efe86f45f7207862d2249",
+    "name": "Wyevale Garden Centre - Gillingham",
+    "m": 752,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 51.340944152,
+    "lng": 0.559551716
    }
   },
   "hookhill-community-centre-play-area-paignton-torbay": {
@@ -69508,6 +70760,28 @@
     "free": true,
     "lat": 53.780914593,
     "lng": -1.788883209
+   }
+  },
+  "horwood-close-play-area-splott-cardiff": {
+   "nearest": {
+    "id": "4481dd62ba4c9f456aa61614",
+    "name": "Costa Coffee",
+    "m": 523,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 51.492997057,
+    "lng": -3.144482374
+   },
+   "nearestBabyChange": {
+    "id": "dae474e18a5aced028551c28",
+    "name": "Sainsbury's",
+    "m": 767,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.495643736,
+    "lng": -3.147920966
    }
   },
   "horwood-gardens-open-space-viables-basingstoke": {
@@ -71452,6 +72726,18 @@
     "lng": -0.0693163
    }
   },
+  "iona-close-play-area-chatham": {
+   "nearest": {
+    "id": "c02efe86f45f7207862d2249",
+    "name": "Wyevale Garden Centre - Gillingham",
+    "m": 1377,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 51.340944152,
+    "lng": 0.559551716
+   }
+  },
   "irby-park-playground-irby": {
    "nearest": {
     "id": "3862ffd72c27ee34f291a734",
@@ -71869,6 +73155,28 @@
     "free": true,
     "lat": 57.145401904,
     "lng": -2.11036998
+   }
+  },
+  "jacksons-field-wheelpark-recreation-ground-and-play-area-tro": {
+   "nearest": {
+    "id": "828dec45f8a0f0ccf9b22cad",
+    "name": "Community Hub",
+    "m": 601,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.387301178,
+    "lng": 0.506932139
+   },
+   "nearestBabyChange": {
+    "id": "e6d39fb037969049c47fa42f",
+    "name": "Visitor’s centre ( closed until further notice)",
+    "m": 860,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.389151825,
+    "lng": 0.5043939
    }
   },
   "jaguar-road-play-area-hethersett-hethersett": {
@@ -77053,6 +78361,28 @@
     "lng": -2.701510191
    }
   },
+  "kingsfrith-play-area-and-playing-fields-wigmore-gillingham": {
+   "nearest": {
+    "id": "c82d8c1331daefaa99d36be7",
+    "name": "Hempstead Valley Shopping Centre",
+    "m": 596,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.34152891,
+    "lng": 0.572844744
+   },
+   "nearestBabyChange": {
+    "id": "c02efe86f45f7207862d2249",
+    "name": "Wyevale Garden Centre - Gillingham",
+    "m": 1511,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 51.340944152,
+    "lng": 0.559551716
+   }
+  },
   "kingshead-road-playground-ravenhill-swansea": {
    "nearest": {
     "id": "8e94762735f05730190099e0",
@@ -78131,6 +79461,28 @@
     "free": true,
     "lat": 50.400479891,
     "lng": -4.184913028
+   }
+  },
+  "kitchener-gardens-play-area-canton-cardiff": {
+   "nearest": {
+    "id": "eee04b8cc3ba8e92cfaea372",
+    "name": "Automatic Toilet",
+    "m": 202,
+    "babyChange": null,
+    "accessible": false,
+    "free": false,
+    "lat": 51.481345931,
+    "lng": -3.201177785
+   },
+   "nearestBabyChange": {
+    "id": "591ed869f00031b16f0d0e2b",
+    "name": "Chapter Arts Centre",
+    "m": 440,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.482991649,
+    "lng": -3.203558117
    }
   },
   "kitchener-road-park-playground-waltham-forest": {
@@ -79559,6 +80911,28 @@
     "lng": -4.16336554
    }
   },
+  "lamplighters-close-play-area-wigmore-gillingham": {
+   "nearest": {
+    "id": "c82d8c1331daefaa99d36be7",
+    "name": "Hempstead Valley Shopping Centre",
+    "m": 789,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.34152891,
+    "lng": 0.572844744
+   },
+   "nearestBabyChange": {
+    "id": "c02efe86f45f7207862d2249",
+    "name": "Wyevale Garden Centre - Gillingham",
+    "m": 1065,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 51.340944152,
+    "lng": 0.559551716
+   }
+  },
   "lampton-park-childrens-play-area-heston-greater-london": {
    "nearest": {
     "id": "ab0d4cc47f212bfea107598a",
@@ -80280,6 +81654,18 @@
     "free": true,
     "lat": 52.971860344,
     "lng": -1.306955628
+   }
+  },
+  "lascelles-drive-play-area-pontprennau-cardiff": {
+   "nearest": {
+    "id": "711260088d0db025e3c7cf2c",
+    "name": "Park and Ride, Pentwyn",
+    "m": 1467,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.520852303,
+    "lng": -3.13575983
    }
   },
   "lascelles-playing-fields-chalvey-slough": {
@@ -81609,6 +82995,28 @@
     "free": true,
     "lat": 51.6089827,
     "lng": -3.6580567
+   }
+  },
+  "lewis-street-play-area-aberbargoed-bargoed": {
+   "nearest": {
+    "id": "448e5eec6c9ad3435e146a0c",
+    "name": "Ystrad Mynach Library",
+    "m": 626,
+    "babyChange": null,
+    "accessible": true,
+    "free": false,
+    "lat": 51.694486558,
+    "lng": -3.223500252
+   },
+   "nearestBabyChange": {
+    "id": "3259a62d1f71ae6e653b8cc7",
+    "name": "Bargoed Library",
+    "m": 1223,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 51.689937512,
+    "lng": -3.228564262
    }
   },
   "lewisham-park-playground-lewisham": {
@@ -83425,6 +84833,28 @@
   "llanbrynmair-playground-llanbrynmair": {
    "nearest": null
   },
+  "llandaff-fields-play-area-pontcanna-cardiff": {
+   "nearest": {
+    "id": "804b9b19217457a77d5acfa3",
+    "name": "Tesco",
+    "m": 678,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.498097398,
+    "lng": -3.205344379
+   },
+   "nearestBabyChange": {
+    "id": "591ed869f00031b16f0d0e2b",
+    "name": "Chapter Arts Centre",
+    "m": 1010,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.482991649,
+    "lng": -3.203558117
+   }
+  },
   "llandarcy-playground-llandarcy": {
    "nearest": {
     "id": "9b7d718028c294bb1d0e3ee2",
@@ -83566,6 +84996,18 @@
     "free": true,
     "lat": 52.78937988,
     "lng": -4.096747041
+   }
+  },
+  "llanfach-play-area-gwyddon": {
+   "nearest": {
+    "id": "dcda5f15667f296fd09a1e1b",
+    "name": "Cwmcarn Forest Drive",
+    "m": 1898,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 51.63597729,
+    "lng": -3.114221692
    }
   },
   "llanfaes-play-space-ystradgynlais-ystradgynlais": {
@@ -83817,6 +85259,18 @@
   },
   "llanharry-playground-llanharry": {
    "nearest": null
+  },
+  "llanishen-park-play-area-llanishen-cardiff": {
+   "nearest": {
+    "id": "305a602924dfb5685ddcc39d",
+    "name": "Ty Glas Road",
+    "m": 362,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.528742416,
+    "lng": -3.190686107
+   }
   },
   "llannefydd-playground-llannefydd": {
    "nearest": null
@@ -84261,6 +85715,18 @@
     "free": false,
     "lat": 53.070757992,
     "lng": -4.284056425
+   }
+  },
+  "llwyn-yr-eos-play-area-nelson": {
+   "nearest": {
+    "id": "004e35af3d8a069edf32b3df",
+    "name": "Taff Bargoed Park",
+    "m": 2179,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.6702978,
+    "lng": -3.3003431
    }
   },
   "llwyncelyn-playground-coelbren-coelbren": {
@@ -85847,6 +87313,18 @@
     "lng": -1.640406847
    }
   },
+  "loudon-square-play-area-butetown-cardiff": {
+   "nearest": {
+    "id": "2905b190298303ae87d1855c",
+    "name": "Mermaid Quay",
+    "m": 786,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.463392521,
+    "lng": -3.165634274
+   }
+  },
   "lough-moss-play-park-carryduff": {
    "nearest": null
   },
@@ -86691,6 +88169,18 @@
   "luthrie-play-park-luthrie-luthrie": {
    "nearest": null
   },
+  "luton-millennium-green-daisy-banks-luton-chatham": {
+   "nearest": {
+    "id": "fde6b78f016d919de0a7cca1",
+    "name": "Harmer Lavatorium",
+    "m": 749,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 51.376284311,
+    "lng": 0.548294485
+   }
+  },
   "luxmore-gardens-playground-brockley": {
    "nearest": {
     "id": "b20fdb8e70213e2a2b56ab96",
@@ -87183,6 +88673,28 @@
     "lng": 1.2493676
    }
   },
+  "machen-welfare-play-area-machen": {
+   "nearest": {
+    "id": "c2452833a09f488a9ea8ac75",
+    "name": "Public toilet",
+    "m": 2355,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.6148159,
+    "lng": -3.1420773
+   },
+   "nearestBabyChange": {
+    "id": "ceaaad3a0acbb4e771d8936c",
+    "name": "Snug Coffee Shop",
+    "m": 2692,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.607235223,
+    "lng": -3.100765049
+   }
+  },
   "macivor-crescent-play-area-kittochside-village-east-kilbride": {
    "nearest": {
     "id": "7ebda33185168b14a02d79d9",
@@ -87553,6 +89065,28 @@
     "free": true,
     "lat": 53.180167801,
     "lng": -4.06236737
+   }
+  },
+  "maes-y-graig-street-play-area-gilfach-bargoed": {
+   "nearest": {
+    "id": "f453cbc6cc7de6976f762265",
+    "name": "Public toilet",
+    "m": 942,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.6878275,
+    "lng": -3.2299684
+   },
+   "nearestBabyChange": {
+    "id": "3259a62d1f71ae6e653b8cc7",
+    "name": "Bargoed Library",
+    "m": 1174,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 51.689937512,
+    "lng": -3.228564262
    }
   },
   "maes-y-llan-lane-play-area-ruabon-ruabon": {
@@ -88129,7 +89663,7 @@
     "lng": -3.429273963
    }
   },
-  "maindy-park-playground-maindy-cardiff": {
+  "maindy-park-play-area-maindy-cardiff": {
    "nearest": {
     "id": "804b9b19217457a77d5acfa3",
     "name": "Tesco",
@@ -88205,6 +89739,28 @@
     "free": true,
     "lat": 54.050463393,
     "lng": -2.800794715
+   }
+  },
+  "maitland-park-play-area-the-colonies-cardiff": {
+   "nearest": {
+    "id": "804b9b19217457a77d5acfa3",
+    "name": "Tesco",
+    "m": 856,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.498097398,
+    "lng": -3.205344379
+   },
+   "nearestBabyChange": {
+    "id": "7bbf97365f5ce3fc364e8f88",
+    "name": "Penylan Library and Community Centre",
+    "m": 2172,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.496709172,
+    "lng": -3.164910078
    }
   },
   "malcolm-gavin-hall-wandsworth": {
@@ -89786,6 +91342,18 @@
     "free": false,
     "lat": 52.624431126,
     "lng": 1.241119613
+   }
+  },
+  "marne-street-play-area-cwmcarn": {
+   "nearest": {
+    "id": "dcda5f15667f296fd09a1e1b",
+    "name": "Cwmcarn Forest Drive",
+    "m": 1342,
+    "babyChange": null,
+    "accessible": null,
+    "free": true,
+    "lat": 51.63597729,
+    "lng": -3.114221692
    }
   },
   "marnfield-crescent-green-play-area-tulse-hill": {
@@ -93257,6 +94825,18 @@
     "lng": 0.9045013
    }
   },
+  "mill-road-recreation-ground-play-area-ely-cardiff": {
+   "nearest": {
+    "id": "36043d13879faecbf5806368",
+    "name": "Victoria Park Public Toilets",
+    "m": 1065,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.483053262,
+    "lng": -3.218404055
+   }
+  },
   "mill-view-play-area-ormesby-st-margaret-ormesby-st-margaret": {
    "nearest": {
     "id": "8da22964b990f80a6a7e3463",
@@ -94510,6 +96090,18 @@
     "lng": -1.464298368
    }
   },
+  "moonstone-drive-play-area-walderslade-chatham": {
+   "nearest": {
+    "id": "c02efe86f45f7207862d2249",
+    "name": "Wyevale Garden Centre - Gillingham",
+    "m": 1660,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 51.340944152,
+    "lng": 0.559551716
+   }
+  },
   "moor-furlong-play-area-cippenham-slough": {
    "nearest": {
     "id": "61ae3f7febacd53a66edf7e9",
@@ -94566,6 +96158,18 @@
     "free": true,
     "lat": 53.849818044,
     "lng": -3.048045071
+   }
+  },
+  "moor-park-close-play-area-gillingham": {
+   "nearest": {
+    "id": "ba4f7a5de3536b6f28336d45",
+    "name": "Rainham (Kent)",
+    "m": 925,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.366304807,
+    "lng": 0.611346972
    }
   },
   "moor-park-crawforddyke-carluke": {
@@ -95031,6 +96635,18 @@
     "free": true,
     "lat": 53.294941286,
     "lng": -3.835229886
+   }
+  },
+  "morgan-jones-park-play-area-trecenydd-caerphilly": {
+   "nearest": {
+    "id": "70e6238c8b87e8e39cb4f651",
+    "name": "Food court toilets",
+    "m": 571,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.57440803,
+    "lng": -3.221198391
    }
   },
   "morgans-way-play-area-hevingham-hevingham": {
@@ -96910,6 +98526,28 @@
     "lng": 0.00110507
    }
   },
+  "naseby-avenue-play-area-cheriton-folkestone": {
+   "nearest": {
+    "id": "e114b096323a535752385d58",
+    "name": "BP Connect Filling Station - Folkestone",
+    "m": 843,
+    "babyChange": null,
+    "accessible": true,
+    "free": false,
+    "lat": 51.088669967,
+    "lng": 1.135148406
+   },
+   "nearestBabyChange": {
+    "id": "4d02264eca081634db98e568",
+    "name": "Morrisons Supermarket - Folkestone",
+    "m": 1777,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 51.085308573,
+    "lng": 1.161007777
+   }
+  },
   "nash-drive-play-area-chelmsford": {
    "nearest": null
   },
@@ -98020,9 +99658,6 @@
     "lat": 51.534621689,
     "lng": -3.577162044
    }
-  },
-  "new-tredegar-playground-new-tredegar": {
-   "nearest": null
   },
   "new-trinity-mews-pimlico-greater-london": {
    "nearest": {
@@ -100928,6 +102563,28 @@
     "free": true,
     "lat": 52.966899459,
     "lng": -1.090492979
+   }
+  },
+  "oakdale-terrace-play-area-woodfieldside-blackwood": {
+   "nearest": {
+    "id": "b7e5a55cefecad04246f4a55",
+    "name": "Coffee shop",
+    "m": 750,
+    "babyChange": false,
+    "accessible": true,
+    "free": true,
+    "lat": 51.666100968,
+    "lng": -3.194811344
+   },
+   "nearestBabyChange": {
+    "id": "e3e1fdbf4fcd706cec65480f",
+    "name": "Sainsbury’s",
+    "m": 1768,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.657849227,
+    "lng": -3.173729181
    }
   },
   "oakfield-drive-play-area-crickhowell-crickhowell": {
@@ -104424,6 +106081,18 @@
     "lng": -4.3621636
    }
   },
+  "parc-bach-play-area-llanberis-beddgelert-2": {
+   "nearest": {
+    "id": "5ce8b2297d7c6943d6a24781",
+    "name": "Beddgelert",
+    "m": 57,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 53.011446107,
+    "lng": -4.101634026
+   }
+  },
   "parc-bach-play-area-llanberis-beddgelert": {
    "nearest": {
     "id": "5ce8b2297d7c6943d6a24781",
@@ -104447,6 +106116,21 @@
     "lat": 51.79013989,
     "lng": -3.254195452
    }
+  },
+  "parc-coed-y-nant-play-area-pentwyn-cardiff": {
+   "nearest": {
+    "id": "711260088d0db025e3c7cf2c",
+    "name": "Park and Ride, Pentwyn",
+    "m": 777,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.520852303,
+    "lng": -3.13575983
+   }
+  },
+  "parc-cwm-darran-play-area-new-tredegar": {
+   "nearest": null
   },
   "parc-cyhoeddus-play-area-caernarfon-caernarfon": {
    "nearest": {
@@ -104924,6 +106608,18 @@
     "free": true,
     "lat": 51.36793216,
     "lng": -0.09185036
+   }
+  },
+  "park-lane-play-area-tredomen-ystrad-mynach": {
+   "nearest": {
+    "id": "8d0279e9b7cd9fe8bf6d33da",
+    "name": "Bedwlwyn Street, Ystrad Mynach",
+    "m": 815,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.642524427,
+    "lng": -3.23577404
    }
   },
   "park-lane-play-area-west-end-fareham": {
@@ -105559,6 +107255,28 @@
     "free": null,
     "lat": 53.591233202,
     "lng": -2.295019627
+   }
+  },
+  "parkwood-green-parkwood-gillingham": {
+   "nearest": {
+    "id": "2656f05b16053f8b65e5f24e",
+    "name": "Public toilet",
+    "m": 126,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.3484557,
+    "lng": 0.5956921
+   },
+   "nearestBabyChange": {
+    "id": "8fe386e984d54d27c2bb825f",
+    "name": "Medway Services - M2",
+    "m": 1038,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.3416831,
+    "lng": 0.6081104
    }
   },
   "parkwood-meadows-tile-hill-coventry": {
@@ -107558,6 +109276,21 @@
     "lng": -3.6822141
    }
   },
+  "penuel-road-play-area-pentyrch-cardiff": {
+   "nearest": null
+  },
+  "penybryn-play-area-maesycwmmer": {
+   "nearest": {
+    "id": "8d0279e9b7cd9fe8bf6d33da",
+    "name": "Bedwlwyn Street, Ystrad Mynach",
+    "m": 1314,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.642524427,
+    "lng": -3.23577404
+   }
+  },
   "penycae-play-area-clyro": {
    "nearest": null
   },
@@ -107610,6 +109343,18 @@
     "lng": -4.1578051
    }
   },
+  "penygaer-playing-fields-play-area-llanelli-halfway-llanelli": {
+   "nearest": {
+    "id": "5fe73a89d6f922975356758d",
+    "name": "Public toilet",
+    "m": 1354,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.6785439,
+    "lng": -4.1337709
+   }
+  },
   "penygelli-play-area-coedpoeth-coedpoeth": {
    "nearest": {
     "id": "cc82f66ab1f745176683068f",
@@ -107620,6 +109365,28 @@
     "free": false,
     "lat": 53.056369309,
     "lng": -3.058769703
+   }
+  },
+  "penylan-road-play-area-argoed": {
+   "nearest": {
+    "id": "448e5eec6c9ad3435e146a0c",
+    "name": "Ystrad Mynach Library",
+    "m": 2014,
+    "babyChange": null,
+    "accessible": true,
+    "free": false,
+    "lat": 51.694486558,
+    "lng": -3.223500252
+   },
+   "nearestBabyChange": {
+    "id": "3259a62d1f71ae6e653b8cc7",
+    "name": "Bargoed Library",
+    "m": 2483,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 51.689937512,
+    "lng": -3.228564262
    }
   },
   "peoples-park-play-area-llanelli-seaside-llanelli": {
@@ -107692,6 +109459,18 @@
   },
   "peover-heath-play-area-peover-superior-and-snelson-over-peov": {
    "nearest": null
+  },
+  "peppermint-park-play-area-pontprennau-cardiff": {
+   "nearest": {
+    "id": "711260088d0db025e3c7cf2c",
+    "name": "Park and Ride, Pentwyn",
+    "m": 1940,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.520852303,
+    "lng": -3.13575983
+   }
   },
   "peppers-green-play-area-reffley-kings-lynn": {
    "nearest": {
@@ -107921,7 +109700,7 @@
     "lng": -1.9075333
    }
   },
-  "perry-street-recreation-ground-troy-town-chatham": {
+  "perry-street-play-area-troy-town-chatham": {
    "nearest": {
     "id": "ef314add49ddb0297dece40e",
     "name": "Chatham Station",
@@ -108788,6 +110567,28 @@
     "lng": -2.5195497
    }
   },
+  "pine-way-play-area-cheriton-folkestone": {
+   "nearest": {
+    "id": "e114b096323a535752385d58",
+    "name": "BP Connect Filling Station - Folkestone",
+    "m": 586,
+    "babyChange": null,
+    "accessible": true,
+    "free": false,
+    "lat": 51.088669967,
+    "lng": 1.135148406
+   },
+   "nearestBabyChange": {
+    "id": "4d02264eca081634db98e568",
+    "name": "Morrisons Supermarket - Folkestone",
+    "m": 1776,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 51.085308573,
+    "lng": 1.161007777
+   }
+  },
   "pinegrove-plantation-fort-william": {
    "nearest": {
     "id": "20c46548c5299708a2fe275b",
@@ -109492,6 +111293,28 @@
     "lng": -2.630034685
    }
   },
+  "platters-park-and-play-area-wigmore-gillingham": {
+   "nearest": {
+    "id": "0f3d3b7bcacf01dd23dc4ae0",
+    "name": "Dobbies Garden Centre - Gillingham",
+    "m": 919,
+    "babyChange": null,
+    "accessible": true,
+    "free": false,
+    "lat": 51.365899478,
+    "lng": 0.581846237
+   },
+   "nearestBabyChange": {
+    "id": "f570bf5b6ed4d78dc795c176",
+    "name": "Tesco Extra - Gillingham (Kent)",
+    "m": 1022,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 51.367314513,
+    "lng": 0.583090782
+   }
+  },
   "play-area-1-younger-children-cradle-end-bishops-stortford": {
    "nearest": {
     "id": "46355e21569c3362e9083bbf",
@@ -109502,6 +111325,18 @@
     "free": true,
     "lat": 51.8708033,
     "lng": 0.1587879
+   }
+  },
+  "play-area-near-marine-hotel-dinas-dinlle-dinas-dinlle-2": {
+   "nearest": {
+    "id": "908e1ad02c4fec08f5bbf920",
+    "name": "Dinas Dinlle - Marine",
+    "m": 17,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 53.083439,
+    "lng": -4.335624576
    }
   },
   "play-area-near-marine-hotel-dinas-dinlle-dinas-dinlle": {
@@ -110653,50 +112488,6 @@
     "lng": -4.5200426
    }
   },
-  "playground-off-adamscroft-place-adamsdown-cardiff": {
-   "nearest": {
-    "id": "dc3fd13c1ec09b629ca84118",
-    "name": "Cardiff Queen Street Station",
-    "m": 547,
-    "babyChange": false,
-    "accessible": true,
-    "free": true,
-    "lat": 51.48196277,
-    "lng": -3.170204472
-   },
-   "nearestBabyChange": {
-    "id": "223e1be78974daa2eb299fbc",
-    "name": "St David's — Floors 0 and 1",
-    "m": 757,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.479517099,
-    "lng": -3.174037635
-   }
-  },
-  "playground-off-adamsdown-square-adamsdown-cardiff": {
-   "nearest": {
-    "id": "dc3fd13c1ec09b629ca84118",
-    "name": "Cardiff Queen Street Station",
-    "m": 587,
-    "babyChange": false,
-    "accessible": true,
-    "free": true,
-    "lat": 51.48196277,
-    "lng": -3.170204472
-   },
-   "nearestBabyChange": {
-    "id": "1ede282f841c342748f193d3",
-    "name": "The Central Bar Wetherspoons",
-    "m": 807,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.483337492,
-    "lng": -3.172880193
-   }
-  },
   "playground-off-adare-street-ogmore-valley-wyndham": {
    "nearest": null
   },
@@ -111075,18 +112866,6 @@
     "free": true,
     "lat": 53.378029413,
     "lng": -2.117925882
-   }
-  },
-  "playground-off-aintree-drive-caerau-cardiff": {
-   "nearest": {
-    "id": "36043d13879faecbf5806368",
-    "name": "Victoria Park Public Toilets",
-    "m": 856,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.483053262,
-    "lng": -3.218404055
    }
   },
   "playground-off-aird-street-portsoy": {
@@ -112068,18 +113847,6 @@
     "free": true,
     "lat": 53.36301834,
     "lng": -1.467726255
-   }
-  },
-  "playground-off-alexandra-road-luton-chatham": {
-   "nearest": {
-    "id": "fde6b78f016d919de0a7cca1",
-    "name": "Harmer Lavatorium",
-    "m": 749,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 51.376284311,
-    "lng": 0.548294485
    }
   },
   "playground-off-alexandra-road-sale-moor-sale": {
@@ -113303,28 +115070,6 @@
   },
   "playground-off-andrews-furlong-banham": {
    "nearest": null
-  },
-  "playground-off-andrews-road-llandaff-north-cardiff": {
-   "nearest": {
-    "id": "25a9286201dc8b8287a067b8",
-    "name": "Public toilet",
-    "m": 1259,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.49481946,
-    "lng": -3.2178618
-   },
-   "nearestBabyChange": {
-    "id": "36043d13879faecbf5806368",
-    "name": "Victoria Park Public Toilets",
-    "m": 2387,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.483053262,
-    "lng": -3.218404055
-   }
   },
   "playground-off-aneddfan-cwmavon": {
    "nearest": null
@@ -116307,18 +118052,6 @@
     "lng": -1.12504192
    }
   },
-  "playground-off-attlee-road-cefn-fforest-blackwood": {
-   "nearest": {
-    "id": "98ff283dbb8e44c7d9d54fed",
-    "name": "Cake shop",
-    "m": 446,
-    "babyChange": false,
-    "accessible": false,
-    "free": true,
-    "lat": 51.665804733,
-    "lng": -3.195304871
-   }
-  },
   "playground-off-attwood-lane-east-greenwich-greater-london": {
    "nearest": {
     "id": "5bd6a6d10034050086628eba",
@@ -118230,18 +119963,6 @@
     "free": true,
     "lat": 51.540432917,
     "lng": -0.033114552
-   }
-  },
-  "playground-off-ballens-road-walderslade-chatham": {
-   "nearest": {
-    "id": "c02efe86f45f7207862d2249",
-    "name": "Wyevale Garden Centre - Gillingham",
-    "m": 1231,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 51.340944152,
-    "lng": 0.559551716
    }
   },
   "playground-off-ballinger-way-yeading-greater-london": {
@@ -120665,18 +122386,6 @@
     "lng": -0.396478772
    }
   },
-  "playground-off-bayswater-drive-parkwood-gillingham": {
-   "nearest": {
-    "id": "8fe386e984d54d27c2bb825f",
-    "name": "Medway Services - M2",
-    "m": 292,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.3416831,
-    "lng": 0.6081104
-   }
-  },
   "playground-off-baytree-close-wix": {
    "nearest": null
   },
@@ -120830,28 +122539,6 @@
     "free": true,
     "lat": 51.224030683,
     "lng": 1.399372816
-   }
-  },
-  "playground-off-beacon-close-parkwood-gillingham": {
-   "nearest": {
-    "id": "7579e01b86d38da9be2a17fd",
-    "name": "Shopping Centre",
-    "m": 961,
-    "babyChange": null,
-    "accessible": true,
-    "free": true,
-    "lat": 51.364209753,
-    "lng": 0.60827136
-   },
-   "nearestBabyChange": {
-    "id": "ba4f7a5de3536b6f28336d45",
-    "name": "Rainham (Kent)",
-    "m": 1277,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.366304807,
-    "lng": 0.611346972
    }
   },
   "playground-off-beacon-drive-st-leonards-newton-abbot": {
@@ -121210,28 +122897,6 @@
     "free": true,
     "lat": 51.597704274,
     "lng": -0.239006281
-   }
-  },
-  "playground-off-beaufort-square-windsor-village-cardiff": {
-   "nearest": {
-    "id": "4481dd62ba4c9f456aa61614",
-    "name": "Costa Coffee",
-    "m": 476,
-    "babyChange": null,
-    "accessible": null,
-    "free": true,
-    "lat": 51.492997057,
-    "lng": -3.144482374
-   },
-   "nearestBabyChange": {
-    "id": "e09dd33bf19c6a847d69e0c0",
-    "name": "Morrissons",
-    "m": 572,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.499813665,
-    "lng": -3.142175674
    }
   },
   "playground-off-beaufort-street-thomas-more-estate-greater-lo": {
@@ -122280,18 +123945,6 @@
     "lng": 1.547599733
    }
   },
-  "playground-off-beili-glas-road-pengam-tir-y-berth": {
-   "nearest": {
-    "id": "98ff283dbb8e44c7d9d54fed",
-    "name": "Cake shop",
-    "m": 1823,
-    "babyChange": false,
-    "accessible": false,
-    "free": true,
-    "lat": 51.665804733,
-    "lng": -3.195304871
-   }
-  },
   "playground-off-beinn-view-conon-bridge": {
    "nearest": null
   },
@@ -122765,28 +124418,6 @@
     "free": true,
     "lat": 51.462816003,
     "lng": -0.135521293
-   }
-  },
-  "playground-off-belmont-walk-butetown-cardiff": {
-   "nearest": {
-    "id": "0cb6ade372849ea1e5cd85d6",
-    "name": "Public toilet",
-    "m": 470,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.4636533,
-    "lng": -3.1648996
-   },
-   "nearestBabyChange": {
-    "id": "2905b190298303ae87d1855c",
-    "name": "Mermaid Quay",
-    "m": 480,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.463392521,
-    "lng": -3.165634274
    }
   },
   "playground-off-belsfield-drive-hesketh-bank": {
@@ -123458,18 +125089,6 @@
     "free": true,
     "lat": 55.846422013,
     "lng": -4.341048002
-   }
-  },
-  "playground-off-berrymead-road-rhydypenau-cardiff": {
-   "nearest": {
-    "id": "c89f77546d9fadccbac6d7cf",
-    "name": "Rhydypennau Library",
-    "m": 610,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.519426997,
-    "lng": -3.177967072
    }
   },
   "playground-off-berse-road-broughton-stansty": {
@@ -129569,28 +131188,6 @@
   "playground-off-bro-gwgan-garndolbenmaen": {
    "nearest": null
   },
-  "playground-off-bro-helen-caernarfon": {
-   "nearest": {
-    "id": "fe75738c9859e23875260c5c",
-    "name": "Ffestiniog railway station",
-    "m": 521,
-    "babyChange": null,
-    "accessible": null,
-    "free": true,
-    "lat": 53.138005233,
-    "lng": -4.27313447
-   },
-   "nearestBabyChange": {
-    "id": "f5b6a9625322e76e093d87c7",
-    "name": "Galeri",
-    "m": 1095,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 53.143304918,
-    "lng": -4.275084217
-   }
-  },
   "playground-off-bro-llewelyn-llandegfan": {
    "nearest": {
     "id": "fca8418cb66a8110bb97a300",
@@ -131460,28 +133057,6 @@
     "lng": -1.775198579
    }
   },
-  "playground-off-brown-street-gillingham": {
-   "nearest": {
-    "id": "7579e01b86d38da9be2a17fd",
-    "name": "Shopping Centre",
-    "m": 238,
-    "babyChange": null,
-    "accessible": true,
-    "free": true,
-    "lat": 51.364209753,
-    "lng": 0.60827136
-   },
-   "nearestBabyChange": {
-    "id": "ba4f7a5de3536b6f28336d45",
-    "name": "Rainham (Kent)",
-    "m": 415,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.366304807,
-    "lng": 0.611346972
-   }
-  },
   "playground-off-browndens-road-upper-halling": {
    "nearest": {
     "id": "b44d9b163601cc543a88b9e1",
@@ -131929,18 +133504,6 @@
   },
   "playground-off-bryn-celyn-nannerch": {
    "nearest": null
-  },
-  "playground-off-bryn-celyn-road-pentwyn-cardiff": {
-   "nearest": {
-    "id": "711260088d0db025e3c7cf2c",
-    "name": "Park and Ride, Pentwyn",
-    "m": 757,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.520852303,
-    "lng": -3.13575983
-   }
   },
   "playground-off-bryn-ceunant-brynaman-uchaf-brynaman": {
    "nearest": null
@@ -133701,18 +135264,6 @@
     "lng": -2.493113279
    }
   },
-  "playground-off-butterfield-drive-pontprennau-cardiff": {
-   "nearest": {
-    "id": "711260088d0db025e3c7cf2c",
-    "name": "Park and Ride, Pentwyn",
-    "m": 1598,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.520852303,
-    "lng": -3.13575983
-   }
-  },
   "playground-off-buttermere-avenue-chorley-moor-chorley": {
    "nearest": {
     "id": "7d01201c065336e8cf87c863",
@@ -134456,28 +136007,6 @@
     "lng": -3.807988465
    }
   },
-  "playground-off-caer-wern-ynysfach-merthyr-tydfil": {
-   "nearest": {
-    "id": "954f0a9946395ac4f7c189fa",
-    "name": "Merthyr Bus Station",
-    "m": 433,
-    "babyChange": null,
-    "accessible": true,
-    "free": true,
-    "lat": 51.74430493,
-    "lng": -3.379537761
-   },
-   "nearestBabyChange": {
-    "id": "ca036e363fc13263dca90d5a",
-    "name": "Cyfarthfa Park Canolfan",
-    "m": 1695,
-    "babyChange": true,
-    "accessible": false,
-    "free": false,
-    "lat": 51.756445009,
-    "lng": -3.387823105
-   }
-  },
   "playground-off-caer-worgan-llantwit-major": {
    "nearest": {
     "id": "9406a07265f495bf7288d1db",
@@ -134492,18 +136021,6 @@
   },
   "playground-off-caerbryn-road-llandybie-caerbryn": {
    "nearest": null
-  },
-  "playground-off-caerleon-close-st-mellons-cardiff": {
-   "nearest": {
-    "id": "7f403397fa040689ebdc813b",
-    "name": "Tesco",
-    "m": 423,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.524563648,
-    "lng": -3.102834374
-   }
   },
   "playground-off-caerleon-road-ponthir": {
    "nearest": {
@@ -135690,28 +137207,6 @@
     "free": true,
     "lat": 51.6317221,
     "lng": -0.1117038
-   }
-  },
-  "playground-off-canon-close-troy-town-rochester": {
-   "nearest": {
-    "id": "0ffffcf26ac2c03f13a9371b",
-    "name": "Shell Filling Station - Rochester",
-    "m": 1150,
-    "babyChange": null,
-    "accessible": true,
-    "free": false,
-    "lat": 51.364327,
-    "lng": 0.498752
-   },
-   "nearestBabyChange": {
-    "id": "e6d39fb037969049c47fa42f",
-    "name": "Visitor’s centre ( closed until further notice)",
-    "m": 1712,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.389151825,
-    "lng": 0.5043939
    }
   },
   "playground-off-canonbury-villas-islington-greater-london": {
@@ -137879,28 +139374,6 @@
     "lng": 0.606136322
    }
   },
-  "playground-off-cavalry-court-cheriton-folkestone": {
-   "nearest": {
-    "id": "e114b096323a535752385d58",
-    "name": "BP Connect Filling Station - Folkestone",
-    "m": 843,
-    "babyChange": null,
-    "accessible": true,
-    "free": false,
-    "lat": 51.088669967,
-    "lng": 1.135148406
-   },
-   "nearestBabyChange": {
-    "id": "4d02264eca081634db98e568",
-    "name": "Morrisons Supermarket - Folkestone",
-    "m": 1777,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 51.085308573,
-    "lng": 1.161007777
-   }
-  },
   "playground-off-cavalry-crescent-hounslow-west-greater-london": {
    "nearest": {
     "id": "3f4516c0c1877e7d90dfd9ef",
@@ -138503,18 +139976,6 @@
   },
   "playground-off-celtic-way-font-y-gary-rhoose": {
    "nearest": null
-  },
-  "playground-off-cemaes-crescent-trowbridge-cardiff": {
-   "nearest": {
-    "id": "7f403397fa040689ebdc813b",
-    "name": "Tesco",
-    "m": 1201,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.524563648,
-    "lng": -3.102834374
-   }
   },
   "playground-off-cemetery-approach-cauldwell-south-shields": {
    "nearest": {
@@ -140035,28 +141496,6 @@
     "lng": -2.228738666
    }
   },
-  "playground-off-chatham-machen": {
-   "nearest": {
-    "id": "c2452833a09f488a9ea8ac75",
-    "name": "Public toilet",
-    "m": 2355,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.6148159,
-    "lng": -3.1420773
-   },
-   "nearestBabyChange": {
-    "id": "ceaaad3a0acbb4e771d8936c",
-    "name": "Snug Coffee Shop",
-    "m": 2692,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.607235223,
-    "lng": -3.100765049
-   }
-  },
   "playground-off-chatham-place-hackney-greater-london": {
    "nearest": {
     "id": "311328d6cadcee1adab117c4",
@@ -140520,18 +141959,6 @@
     "free": false,
     "lat": 51.51991935,
     "lng": -0.093705654
-   }
-  },
-  "playground-off-cheriton-high-street-cheriton-folkestone": {
-   "nearest": {
-    "id": "e114b096323a535752385d58",
-    "name": "BP Connect Filling Station - Folkestone",
-    "m": 119,
-    "babyChange": null,
-    "accessible": true,
-    "free": false,
-    "lat": 51.088669967,
-    "lng": 1.135148406
    }
   },
   "playground-off-cherry-blossom-way-sparkford": {
@@ -141660,28 +143087,6 @@
     "free": true,
     "lat": 51.574289081,
     "lng": -0.21476984
-   }
-  },
-  "playground-off-chorley-close-pentrebane-cardiff": {
-   "nearest": {
-    "id": "e8996417a8c6c43a3b500190",
-    "name": "Public toilet",
-    "m": 1881,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.48867226,
-    "lng": -3.27812326
-   },
-   "nearestBabyChange": {
-    "id": "36043d13879faecbf5806368",
-    "name": "Victoria Park Public Toilets",
-    "m": 2320,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.483053262,
-    "lng": -3.218404055
    }
   },
   "playground-off-chorley-old-road-clayton-green": {
@@ -143610,28 +145015,6 @@
     "lng": -0.106124282
    }
   },
-  "playground-off-city-way-troy-town-rochester": {
-   "nearest": {
-    "id": "828dec45f8a0f0ccf9b22cad",
-    "name": "Community Hub",
-    "m": 601,
-    "babyChange": null,
-    "accessible": true,
-    "free": true,
-    "lat": 51.387301178,
-    "lng": 0.506932139
-   },
-   "nearestBabyChange": {
-    "id": "e6d39fb037969049c47fa42f",
-    "name": "Visitor’s centre ( closed until further notice)",
-    "m": 860,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.389151825,
-    "lng": 0.5043939
-   }
-  },
   "playground-off-civray-avenue-downham-market": {
    "nearest": {
     "id": "8d7f3b6c3624c241636ab435",
@@ -143868,28 +145251,6 @@
     "free": true,
     "lat": 51.569094439,
     "lng": -0.059815943
-   }
-  },
-  "playground-off-clare-street-riverside-cardiff": {
-   "nearest": {
-    "id": "58579a5b7846078177cc9f5b",
-    "name": "Cardiff Castle — Women's",
-    "m": 550,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.481401182,
-    "lng": -3.181864321
-   },
-   "nearestBabyChange": {
-    "id": "e57a0965b064d91352e323ca",
-    "name": "Cardiff Central",
-    "m": 672,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.476026622,
-    "lng": -3.179311548
    }
   },
   "playground-off-claremont-crescent-rayleigh": {
@@ -145131,18 +146492,6 @@
     "lng": -3.218404055
    }
   },
-  "playground-off-clos-y-culfor-st-mellons-cardiff": {
-   "nearest": {
-    "id": "7f403397fa040689ebdc813b",
-    "name": "Tesco",
-    "m": 761,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.524563648,
-    "lng": -3.102834374
-   }
-  },
   "playground-off-clos-y-gelli-pemberton-dafen": {
    "nearest": {
     "id": "5fe73a89d6f922975356758d",
@@ -146010,28 +147359,6 @@
     "lng": -1.9264191
    }
   },
-  "playground-off-colbourne-walk-canton-cardiff": {
-   "nearest": {
-    "id": "eee04b8cc3ba8e92cfaea372",
-    "name": "Automatic Toilet",
-    "m": 202,
-    "babyChange": null,
-    "accessible": false,
-    "free": false,
-    "lat": 51.481345931,
-    "lng": -3.201177785
-   },
-   "nearestBabyChange": {
-    "id": "591ed869f00031b16f0d0e2b",
-    "name": "Chapter Arts Centre",
-    "m": 440,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.482991649,
-    "lng": -3.203558117
-   }
-  },
   "playground-off-colburn-lane-colburn": {
    "nearest": null
   },
@@ -146585,18 +147912,6 @@
     "free": true,
     "lat": 50.346640487,
     "lng": -3.601710498
-   }
-  },
-  "playground-off-collins-row-bute-town-rhymney": {
-   "nearest": {
-    "id": "4972d9eb3976c0a20e444350",
-    "name": "Rhymney Library Hub",
-    "m": 1950,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.759378902,
-    "lng": -3.283835737
    }
   },
   "playground-off-collinwood-avenue-ponders-end-greater-london": {
@@ -148952,18 +150267,6 @@
     "lng": -3.496087
    }
   },
-  "playground-off-countisbury-avenue-llanrumney-cardiff": {
-   "nearest": {
-    "id": "7f403397fa040689ebdc813b",
-    "name": "Tesco",
-    "m": 1089,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.524563648,
-    "lng": -3.102834374
-   }
-  },
   "playground-off-countrys-field-dymchurch": {
    "nearest": {
     "id": "a6bfdcb09699a46635a68125",
@@ -149079,28 +150382,6 @@
     "free": false,
     "lat": 52.1699619,
     "lng": -0.5578973
-   }
-  },
-  "playground-off-court-lodge-road-gillingham": {
-   "nearest": {
-    "id": "4d5d1286a39f2cb0177e042e",
-    "name": "Public toilet",
-    "m": 408,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.3944454,
-    "lng": 0.5633457
-   },
-   "nearestBabyChange": {
-    "id": "3977bc322f18f23c77ca0b72",
-    "name": "Gillingham (Kent) Station Toilets",
-    "m": 1067,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.38702767,
-    "lng": 0.551791191
    }
   },
   "playground-off-courthouse-road-llanvair-discoed": {
@@ -149479,18 +150760,6 @@
     "free": true,
     "lat": 56.118530868,
     "lng": -3.934711473
-   }
-  },
-  "playground-off-craiglee-drive-butetown-cardiff": {
-   "nearest": {
-    "id": "d20b0d9fd3f844a89ad8695a",
-    "name": "Cardiff Bus Interchange Public Toilets",
-    "m": 687,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.476394791,
-    "lng": -3.178374767
    }
   },
   "playground-off-craigrath-place-banchory": {
@@ -150266,28 +151535,6 @@
     "lng": -1.784704328
    }
   },
-  "playground-off-crestway-luton-chatham": {
-   "nearest": {
-    "id": "1b2d1cd3e0e65d203995d3a6",
-    "name": "Capstone Farm Country Park",
-    "m": 1276,
-    "babyChange": null,
-    "accessible": true,
-    "free": true,
-    "lat": 51.3588976,
-    "lng": 0.5551873
-   },
-   "nearestBabyChange": {
-    "id": "fde6b78f016d919de0a7cca1",
-    "name": "Harmer Lavatorium",
-    "m": 1403,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 51.376284311,
-    "lng": 0.548294485
-   }
-  },
   "playground-off-creswick-avenue-rose-hill-burnley": {
    "nearest": {
     "id": "36ac7e39d83524f52d91f0c3",
@@ -150942,28 +152189,6 @@
     "free": true,
     "lat": 53.542968351,
     "lng": -1.102909179
-   }
-  },
-  "playground-off-cross-street-gilfach-bargoed": {
-   "nearest": {
-    "id": "f453cbc6cc7de6976f762265",
-    "name": "Public toilet",
-    "m": 942,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.6878275,
-    "lng": -3.2299684
-   },
-   "nearestBabyChange": {
-    "id": "3259a62d1f71ae6e653b8cc7",
-    "name": "Bargoed Library",
-    "m": 1174,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 51.689937512,
-    "lng": -3.228564262
    }
   },
   "playground-off-cross-walk-humberstone-leicester": {
@@ -151699,18 +152924,6 @@
   "playground-off-culmbridge-road-hemyock-mid-devon": {
    "nearest": null
   },
-  "playground-off-cumalsie-crescent-pontllanfraith": {
-   "nearest": {
-    "id": "e3e1fdbf4fcd706cec65480f",
-    "name": "Sainsbury’s",
-    "m": 985,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.657849227,
-    "lng": -3.173729181
-   }
-  },
   "playground-off-cumberland-drive-bowdon-altrincham": {
    "nearest": {
     "id": "c35c965ccad38be50f97b44d",
@@ -151872,28 +153085,6 @@
     "free": false,
     "lat": 51.449092733,
     "lng": -1.311020851
-   }
-  },
-  "playground-off-curtis-way-snodhurst-rochester": {
-   "nearest": {
-    "id": "0ffffcf26ac2c03f13a9371b",
-    "name": "Shell Filling Station - Rochester",
-    "m": 704,
-    "babyChange": null,
-    "accessible": true,
-    "free": false,
-    "lat": 51.364327,
-    "lng": 0.498752
-   },
-   "nearestBabyChange": {
-    "id": "d4880b6929f29024be7873ea",
-    "name": "Asda Superstore - Chatham",
-    "m": 1581,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.345082537,
-    "lng": 0.508933067
    }
   },
   "playground-off-curzon-road-west-wallsend": {
@@ -152151,28 +153342,6 @@
     "lng": -3.015714884
    }
   },
-  "playground-off-cwrt-coch-street-aberbargoed-bargoed": {
-   "nearest": {
-    "id": "448e5eec6c9ad3435e146a0c",
-    "name": "Ystrad Mynach Library",
-    "m": 212,
-    "babyChange": null,
-    "accessible": true,
-    "free": false,
-    "lat": 51.694486558,
-    "lng": -3.223500252
-   },
-   "nearestBabyChange": {
-    "id": "3259a62d1f71ae6e653b8cc7",
-    "name": "Bargoed Library",
-    "m": 609,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 51.689937512,
-    "lng": -3.228564262
-   }
-  },
   "playground-off-cwrt-dochdwy-llandough": {
    "nearest": {
     "id": "d6b069c4f85918554cd070ad",
@@ -152277,28 +153446,6 @@
     "free": true,
     "lat": 51.8661105,
     "lng": 0.337851
-   }
-  },
-  "playground-off-cyncoed-road-penylan-cardiff": {
-   "nearest": {
-    "id": "22d19581536a0ce45d598da8",
-    "name": "Roath Park Lake",
-    "m": 865,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.506368519,
-    "lng": -3.173943758
-   },
-   "nearestBabyChange": {
-    "id": "7bbf97365f5ce3fc364e8f88",
-    "name": "Penylan Library and Community Centre",
-    "m": 982,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.496709172,
-    "lng": -3.164910078
    }
   },
   "playground-off-cypress-close-clayton-le-woods": {
@@ -156889,18 +158036,6 @@
     "lng": -0.0544657
    }
   },
-  "playground-off-downs-road-park-farm-folkestone": {
-   "nearest": {
-    "id": "d6b2725278dfe36d00f15419",
-    "name": "Sainsbury's Superstore - Park Farm, Folkestone",
-    "m": 923,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 51.094325297,
-    "lng": 1.165795326
-   }
-  },
   "playground-off-downs-view-cowbridge-with-llanblethian-aberth": {
    "nearest": {
     "id": "834008cd0f9c186c09f87440",
@@ -157231,18 +158366,6 @@
     "lng": -3.221198391
    }
   },
-  "playground-off-druidstone-road-old-st-mellons-cardiff": {
-   "nearest": {
-    "id": "7f403397fa040689ebdc813b",
-    "name": "Tesco",
-    "m": 969,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.524563648,
-    "lng": -3.102834374
-   }
-  },
   "playground-off-drumbowie-crescent-salsburgh": {
    "nearest": null
   },
@@ -157548,18 +158671,6 @@
   "playground-off-duffryn-lane-wenvoe-st-nicholas": {
    "nearest": null
   },
-  "playground-off-duffryn-road-wattsville": {
-   "nearest": {
-    "id": "c2452833a09f488a9ea8ac75",
-    "name": "Public toilet",
-    "m": 955,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.6148159,
-    "lng": -3.1420773
-   }
-  },
   "playground-off-dujardin-mews-ponders-end-greater-london": {
    "nearest": {
     "id": "1b11036241a7eda06ced1bbe",
@@ -157674,18 +158785,6 @@
     "free": true,
     "lat": 51.430514331,
     "lng": -0.080329478
-   }
-  },
-  "playground-off-dumballs-road-butetown-cardiff": {
-   "nearest": {
-    "id": "2905b190298303ae87d1855c",
-    "name": "Mermaid Quay",
-    "m": 786,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.463392521,
-    "lng": -3.165634274
    }
   },
   "playground-off-dumber-lane-ashton-upon-mersey-sale": {
@@ -161318,18 +162417,6 @@
     "lng": -1.61940515
    }
   },
-  "playground-off-emblem-close-caerau-cardiff": {
-   "nearest": {
-    "id": "36043d13879faecbf5806368",
-    "name": "Victoria Park Public Toilets",
-    "m": 1532,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.483053262,
-    "lng": -3.218404055
-   }
-  },
   "playground-off-emden-close-stockley-greater-london": {
    "nearest": {
     "id": "80abcbb7940e114e67c7a3fa",
@@ -161951,28 +163038,6 @@
     "free": true,
     "lat": 51.477327983,
     "lng": -3.704280853
-   }
-  },
-  "playground-off-esplanade-troy-town-rochester": {
-   "nearest": {
-    "id": "34e719d6e9b1ac061fef1811",
-    "name": "Castle Gardens Public Convenience, Castle Gardens, Castle hill road",
-    "m": 232,
-    "babyChange": null,
-    "accessible": true,
-    "free": true,
-    "lat": 51.389406741,
-    "lng": 0.501803756
-   },
-   "nearestBabyChange": {
-    "id": "e6d39fb037969049c47fa42f",
-    "name": "Visitor’s centre ( closed until further notice)",
-    "m": 405,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.389151825,
-    "lng": 0.5043939
    }
   },
   "playground-off-essendon-gardens-peartree-welwyn-garden-city": {
@@ -164176,28 +165241,6 @@
     "lng": 1.428084435
    }
   },
-  "playground-off-ferry-road-grangetown-cardiff": {
-   "nearest": {
-    "id": "214de7a43a434635b55eb8dd",
-    "name": "Public toilet",
-    "m": 286,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.4648906,
-    "lng": -3.1834806
-   },
-   "nearestBabyChange": {
-    "id": "2905b190298303ae87d1855c",
-    "name": "Mermaid Quay",
-    "m": 1105,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.463392521,
-    "lng": -3.165634274
-   }
-  },
   "playground-off-ferry-road-pennar": {
    "nearest": {
     "id": "79d2640a502ff706a12afe12",
@@ -164594,18 +165637,6 @@
     "free": true,
     "lat": 53.30279973,
     "lng": -3.468140888
-   }
-  },
-  "playground-off-ffordd-ffenics-phoenix-way-cefn-hengoed": {
-   "nearest": {
-    "id": "8d0279e9b7cd9fe8bf6d33da",
-    "name": "Bedwlwyn Street, Ystrad Mynach",
-    "m": 1425,
-    "babyChange": false,
-    "accessible": false,
-    "free": true,
-    "lat": 51.642524427,
-    "lng": -3.23577404
    }
   },
   "playground-off-ffordd-glan-mor-tal-y-bont-2-2-2": {
@@ -165070,18 +166101,6 @@
     "lng": -4.343644381
    }
   },
-  "playground-off-ffordd-y-berllan-morganstown-cardiff": {
-   "nearest": {
-    "id": "2cd37d38558a9d971a082f0b",
-    "name": "Radyr Station",
-    "m": 1371,
-    "babyChange": false,
-    "accessible": false,
-    "free": true,
-    "lat": 51.516658038,
-    "lng": -3.24932456
-   }
-  },
   "playground-off-ffordd-y-dolau-llanharan-bryncae": {
    "nearest": null
   },
@@ -165463,28 +166482,6 @@
     "free": true,
     "lat": 51.657849227,
     "lng": -3.173729181
-   }
-  },
-  "playground-off-fields-park-road-pontcanna-cardiff": {
-   "nearest": {
-    "id": "804b9b19217457a77d5acfa3",
-    "name": "Tesco",
-    "m": 678,
-    "babyChange": null,
-    "accessible": true,
-    "free": true,
-    "lat": 51.498097398,
-    "lng": -3.205344379
-   },
-   "nearestBabyChange": {
-    "id": "591ed869f00031b16f0d0e2b",
-    "name": "Chapter Arts Centre",
-    "m": 1010,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.482991649,
-    "lng": -3.203558117
    }
   },
   "playground-off-fieldway-forestdale-greater-london": {
@@ -165898,18 +166895,6 @@
     "free": false,
     "lat": 51.292431866,
     "lng": 0.474579334
-   }
-  },
-  "playground-off-firs-close-cheriton-folkestone": {
-   "nearest": {
-    "id": "e114b096323a535752385d58",
-    "name": "BP Connect Filling Station - Folkestone",
-    "m": 348,
-    "babyChange": null,
-    "accessible": true,
-    "free": false,
-    "lat": 51.088669967,
-    "lng": 1.135148406
    }
   },
   "playground-off-first-avenue-fringill-north-yorkshire": {
@@ -166838,28 +167823,6 @@
     "lng": -0.3389028
    }
   },
-  "playground-off-folly-road-east-cliff-folkestone": {
-   "nearest": {
-    "id": "ab5a17e48a1f0745daa8304d",
-    "name": "Harbour",
-    "m": 677,
-    "babyChange": false,
-    "accessible": false,
-    "free": true,
-    "lat": 51.080255606,
-    "lng": 1.186748743
-   },
-   "nearestBabyChange": {
-    "id": "c721e2a8db603d1b361b4ca9",
-    "name": "Asda Superstore - Folkestone",
-    "m": 984,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 51.080100581,
-    "lng": 1.17839098
-   }
-  },
   "playground-off-folly-view-penygarn-pontypool": {
    "nearest": {
     "id": "9dcf500ea232ce496b245429",
@@ -167737,18 +168700,6 @@
     "free": true,
     "lat": 53.7404968,
     "lng": -2.5161026
-   }
-  },
-  "playground-off-fox-avenue-pentwyn-mawr-newbridge": {
-   "nearest": {
-    "id": "e3e1fdbf4fcd706cec65480f",
-    "name": "Sainsbury’s",
-    "m": 611,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.657849227,
-    "lng": -3.173729181
    }
   },
   "playground-off-fox-field-northop": {
@@ -169624,28 +170575,6 @@
     "lng": -4.2038042
    }
   },
-  "playground-off-garfield-street-woodfieldside-blackwood": {
-   "nearest": {
-    "id": "98ff283dbb8e44c7d9d54fed",
-    "name": "Cake shop",
-    "m": 367,
-    "babyChange": false,
-    "accessible": false,
-    "free": true,
-    "lat": 51.665804733,
-    "lng": -3.195304871
-   },
-   "nearestBabyChange": {
-    "id": "e3e1fdbf4fcd706cec65480f",
-    "name": "Sainsbury’s",
-    "m": 1625,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.657849227,
-    "lng": -3.173729181
-   }
-  },
   "playground-off-garn-cross-garn-fach": {
    "nearest": {
     "id": "8e5292d756c15fdc9a0404e6",
@@ -169934,18 +170863,6 @@
   },
   "playground-off-garth-estate-pontllyfni-gwynedd": {
    "nearest": null
-  },
-  "playground-off-garth-olwg-pentyrch-cardiff": {
-   "nearest": {
-    "id": "fe5a0e73ea1b8fcd4429a011",
-    "name": "Mcdonalds toilets",
-    "m": 1695,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.564729548,
-    "lng": -3.274873495
-   }
   },
   "playground-off-garvock-road-laurencekirk": {
    "nearest": {
@@ -170418,18 +171335,6 @@
     "free": true,
     "lat": 52.791331068,
     "lng": 1.252836678
-   }
-  },
-  "playground-off-george-gurr-crescent-park-farm-folkestone": {
-   "nearest": {
-    "id": "d6b2725278dfe36d00f15419",
-    "name": "Sainsbury's Superstore - Park Farm, Folkestone",
-    "m": 1133,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 51.094325297,
-    "lng": 1.165795326
    }
   },
   "playground-off-george-long-mews-uppleby-easingwold": {
@@ -171855,9 +172760,6 @@
     "lng": -1.992853625
    }
   },
-  "playground-off-glyn-derw-deri": {
-   "nearest": null
-  },
   "playground-off-glyn-path-penmaenmawr-capelulo": {
    "nearest": {
     "id": "501d58190770f6e32f345044",
@@ -172340,28 +173242,6 @@
     "lng": -2.614800181
    }
   },
-  "playground-off-golve-drive-wayfield-chatham": {
-   "nearest": {
-    "id": "1b2d1cd3e0e65d203995d3a6",
-    "name": "Capstone Farm Country Park",
-    "m": 1534,
-    "babyChange": null,
-    "accessible": true,
-    "free": true,
-    "lat": 51.3588976,
-    "lng": 0.5551873
-   },
-   "nearestBabyChange": {
-    "id": "fde6b78f016d919de0a7cca1",
-    "name": "Harmer Lavatorium",
-    "m": 1594,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 51.376284311,
-    "lng": 0.548294485
-   }
-  },
   "playground-off-golwg-y-coed-gibbonsdown-barry": {
    "nearest": {
     "id": "0f8d386d70ab7c585e4c9b16",
@@ -172544,28 +173424,6 @@
     "free": true,
     "lat": 51.2735036,
     "lng": 1.2158167
-   }
-  },
-  "playground-off-goodrich-street-st-martins-caerphilly": {
-   "nearest": {
-    "id": "34dd52b8dd429b1fb389ca58",
-    "name": "Public toilet",
-    "m": 281,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.5718467,
-    "lng": -3.2193272
-   },
-   "nearestBabyChange": {
-    "id": "70e6238c8b87e8e39cb4f651",
-    "name": "Food court toilets",
-    "m": 412,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.57440803,
-    "lng": -3.221198391
    }
   },
   "playground-off-goodwood-avenue-hornchurch-greater-london": {
@@ -173709,18 +174567,6 @@
     "lng": -1.636941433
    }
   },
-  "playground-off-grays-gardens-trethomas": {
-   "nearest": {
-    "id": "c2452833a09f488a9ea8ac75",
-    "name": "Public toilet",
-    "m": 2852,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.6148159,
-    "lng": -3.1420773
-   }
-  },
   "playground-off-great-cambridge-road-southbury-greater-london": {
    "nearest": {
     "id": "91f300a3f0ef88d914191a80",
@@ -174124,18 +174970,6 @@
     "free": true,
     "lat": 52.438867254,
     "lng": -0.284062028
-   }
-  },
-  "playground-off-green-farm-road-michaelston-super-ely-cardiff": {
-   "nearest": {
-    "id": "e8996417a8c6c43a3b500190",
-    "name": "Public toilet",
-    "m": 2019,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.48867226,
-    "lng": -3.27812326
    }
   },
   "playground-off-green-glade-theydon-bois-epping-forest": {
@@ -176175,18 +177009,6 @@
   "playground-off-gwarfelin-llanilar": {
    "nearest": null
   },
-  "playground-off-gwaun-newydd-porset-park-caerphilly": {
-   "nearest": {
-    "id": "70e6238c8b87e8e39cb4f651",
-    "name": "Food court toilets",
-    "m": 1436,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.57440803,
-    "lng": -3.221198391
-   }
-  },
   "playground-off-gwaun-y-groes-llantrisant": {
    "nearest": {
     "id": "5f902b326fb21313ae80148a",
@@ -177053,28 +177875,6 @@
     "free": true,
     "lat": 55.846833464,
     "lng": -4.176063997
-   }
-  },
-  "playground-off-halliard-court-butetown-cardiff": {
-   "nearest": {
-    "id": "0cb6ade372849ea1e5cd85d6",
-    "name": "Public toilet",
-    "m": 719,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.4636533,
-    "lng": -3.1648996
-   },
-   "nearestBabyChange": {
-    "id": "2905b190298303ae87d1855c",
-    "name": "Mermaid Quay",
-    "m": 741,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.463392521,
-    "lng": -3.165634274
    }
   },
   "playground-off-hallside-place-gorbals-glasgow": {
@@ -178847,18 +179647,6 @@
     "free": false,
     "lat": 50.824122222,
     "lng": -1.374116292
-   }
-  },
-  "playground-off-hartshorn-court-lansbury-park-caerphilly": {
-   "nearest": {
-    "id": "70e6238c8b87e8e39cb4f651",
-    "name": "Food court toilets",
-    "m": 1160,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.57440803,
-    "lng": -3.221198391
    }
   },
   "playground-off-hartswood-close-otterspool-bushey": {
@@ -180869,28 +181657,6 @@
     "lng": 0.87254316
    }
   },
-  "playground-off-heathfield-road-the-colonies-cardiff": {
-   "nearest": {
-    "id": "804b9b19217457a77d5acfa3",
-    "name": "Tesco",
-    "m": 856,
-    "babyChange": null,
-    "accessible": true,
-    "free": true,
-    "lat": 51.498097398,
-    "lng": -3.205344379
-   },
-   "nearestBabyChange": {
-    "id": "7bbf97365f5ce3fc364e8f88",
-    "name": "Penylan Library and Community Centre",
-    "m": 2172,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.496709172,
-    "lng": -3.164910078
-   }
-  },
   "playground-off-heathlands-highclere-basingstoke-and-deane": {
    "nearest": {
     "id": "2337f0612b60887e47058a09",
@@ -181317,28 +182083,6 @@
     "free": false,
     "lat": 51.450898002,
     "lng": 0.012230873
-   }
-  },
-  "playground-off-henley-close-rainham-mark-gillingham": {
-   "nearest": {
-    "id": "7579e01b86d38da9be2a17fd",
-    "name": "Shopping Centre",
-    "m": 786,
-    "babyChange": null,
-    "accessible": true,
-    "free": true,
-    "lat": 51.364209753,
-    "lng": 0.60827136
-   },
-   "nearestBabyChange": {
-    "id": "ba4f7a5de3536b6f28336d45",
-    "name": "Rainham (Kent)",
-    "m": 1077,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.366304807,
-    "lng": 0.611346972
    }
   },
   "playground-off-henley-street-luddesdown": {
@@ -181822,18 +182566,6 @@
     "lng": -3.27812326
    }
   },
-  "playground-off-heol-iago-fochriw": {
-   "nearest": {
-    "id": "4972d9eb3976c0a20e444350",
-    "name": "Rhymney Library Hub",
-    "m": 2456,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.759378902,
-    "lng": -3.283835737
-   }
-  },
   "playground-off-heol-las-pencoed": {
    "nearest": null
   },
@@ -182102,18 +182834,6 @@
     "lng": -3.190686107
    }
   },
-  "playground-off-heol-y-barcud-thornhill-cardiff": {
-   "nearest": {
-    "id": "d05deb951b72ede4acbfc2a0",
-    "name": "Public toilet",
-    "m": 495,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.5461415,
-    "lng": -3.1864952
-   }
-  },
   "playground-off-heol-y-bryn-rhigos": {
    "nearest": {
     "id": "a676e5bba054fc9ac126a331",
@@ -182148,18 +182868,6 @@
     "free": true,
     "lat": 52.644161,
     "lng": -3.9567442
-   }
-  },
-  "playground-off-heol-y-delyn-lisvane-cardiff": {
-   "nearest": {
-    "id": "d05deb951b72ede4acbfc2a0",
-    "name": "Public toilet",
-    "m": 1206,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.5461415,
-    "lng": -3.1864952
    }
   },
   "playground-off-heol-y-deri-cwmbach": {
@@ -182273,23 +182981,8 @@
   "playground-off-heol-y-parc-ogmore-valley-evanstown": {
    "nearest": null
   },
-  "playground-off-heol-y-parc-pentyrch-cardiff": {
-   "nearest": null
-  },
   "playground-off-heol-y-parc-pontyberem": {
    "nearest": null
-  },
-  "playground-off-heol-y-parc-trecenydd-caerphilly": {
-   "nearest": {
-    "id": "70e6238c8b87e8e39cb4f651",
-    "name": "Food court toilets",
-    "m": 571,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.57440803,
-    "lng": -3.221198391
-   }
   },
   "playground-off-heol-y-plwyf-ynysybwl-and-coed-y-cwm-glyncoch": {
    "nearest": {
@@ -182413,28 +183106,6 @@
     "free": true,
     "lat": 53.959196844,
     "lng": -2.019270521
-   }
-  },
-  "playground-off-herbert-avenue-t-sign-risca": {
-   "nearest": {
-    "id": "5c4ab592cbb76cf7e5553a70",
-    "name": "Morrisons",
-    "m": 759,
-    "babyChange": null,
-    "accessible": null,
-    "free": true,
-    "lat": 51.596141089,
-    "lng": -3.078575134
-   },
-   "nearestBabyChange": {
-    "id": "604e78fbad6c380b0dfd0143",
-    "name": "The Sycamore Centre",
-    "m": 1081,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.609839629,
-    "lng": -3.089759946
    }
   },
   "playground-off-herbert-road-longbridge-birmingham": {
@@ -184543,18 +185214,6 @@
     "lng": -3.446643949
    }
   },
-  "playground-off-hill-street-pontlottyn": {
-   "nearest": {
-    "id": "4972d9eb3976c0a20e444350",
-    "name": "Rhymney Library Hub",
-    "m": 841,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.759378902,
-    "lng": -3.283835737
-   }
-  },
   "playground-off-hill-street-woodside-glasgow": {
    "nearest": {
     "id": "80a9720749fface2082e9fdd",
@@ -185253,18 +185912,6 @@
     "lng": 0.496916771
    }
   },
-  "playground-off-hodges-square-butetown-cardiff": {
-   "nearest": {
-    "id": "2905b190298303ae87d1855c",
-    "name": "Mermaid Quay",
-    "m": 689,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.463392521,
-    "lng": -3.165634274
-   }
-  },
   "playground-off-hodgsons-road-ystalyfera": {
    "nearest": {
     "id": "bafa1bb0bff147dcb3f5c15f",
@@ -185899,18 +186546,6 @@
     "free": true,
     "lat": 51.3952483,
     "lng": 0.4940924
-   }
-  },
-  "playground-off-holly-road-t-sign-risca": {
-   "nearest": {
-    "id": "604e78fbad6c380b0dfd0143",
-    "name": "The Sycamore Centre",
-    "m": 142,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.609839629,
-    "lng": -3.089759946
    }
   },
   "playground-off-holly-street-gilfach-goch-hendreforgan": {
@@ -188888,18 +189523,6 @@
     "free": true,
     "lat": 51.467384497,
     "lng": -0.364174247
-   }
-  },
-  "playground-off-iona-close-chatham": {
-   "nearest": {
-    "id": "c02efe86f45f7207862d2249",
-    "name": "Wyevale Garden Centre - Gillingham",
-    "m": 1377,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 51.340944152,
-    "lng": 0.559551716
    }
   },
   "playground-off-iona-close-honor-oak-greater-london": {
@@ -193252,28 +193875,6 @@
     "lng": -3.029372692
    }
   },
-  "playground-off-king-george-v-drive-east-heath-cardiff": {
-   "nearest": {
-    "id": "0bb3fa44031e75bae6a583c3",
-    "name": "Roath Park cafe",
-    "m": 877,
-    "babyChange": null,
-    "accessible": null,
-    "free": true,
-    "lat": 51.506765853,
-    "lng": -3.176196814
-   },
-   "nearestBabyChange": {
-    "id": "7bbf97365f5ce3fc364e8f88",
-    "name": "Penylan Library and Community Centre",
-    "m": 2189,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.496709172,
-    "lng": -3.164910078
-   }
-  },
   "playground-off-king-georges-close-raydon-babergh": {
    "nearest": null
   },
@@ -196542,18 +197143,6 @@
     "lng": -1.923277974
    }
   },
-  "playground-off-lascelles-drive-pontprennau-cardiff": {
-   "nearest": {
-    "id": "711260088d0db025e3c7cf2c",
-    "name": "Park and Ride, Pentwyn",
-    "m": 1465,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.520852303,
-    "lng": -3.13575983
-   }
-  },
   "playground-off-laugharne-close-monkton-pembroke": {
    "nearest": {
     "id": "fd162bc4b341c0705455d63d",
@@ -198483,28 +199072,6 @@
     "lng": -3.202858398
    }
   },
-  "playground-off-lewis-street-aberbargoed-bargoed": {
-   "nearest": {
-    "id": "448e5eec6c9ad3435e146a0c",
-    "name": "Ystrad Mynach Library",
-    "m": 626,
-    "babyChange": null,
-    "accessible": true,
-    "free": false,
-    "lat": 51.694486558,
-    "lng": -3.223500252
-   },
-   "nearestBabyChange": {
-    "id": "3259a62d1f71ae6e653b8cc7",
-    "name": "Bargoed Library",
-    "m": 1223,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 51.689937512,
-    "lng": -3.228564262
-   }
-  },
   "playground-off-lewis-street-bedlinog": {
    "nearest": null
   },
@@ -200089,18 +200656,6 @@
     "lng": -3.97504748
    }
   },
-  "playground-off-llanrumney-avenue-llanrumney-cardiff": {
-   "nearest": {
-    "id": "711260088d0db025e3c7cf2c",
-    "name": "Park and Ride, Pentwyn",
-    "m": 980,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.520852303,
-    "lng": -3.13575983
-   }
-  },
   "playground-off-llantrisant-road-groes-faen-pont-y-clun": {
    "nearest": {
     "id": "5f902b326fb21313ae80148a",
@@ -200444,18 +200999,6 @@
     "free": true,
     "lat": 53.166909762,
     "lng": -3.137253821
-   }
-  },
-  "playground-off-llys-hanner-erw-porset-park-caerphilly": {
-   "nearest": {
-    "id": "70e6238c8b87e8e39cb4f651",
-    "name": "Food court toilets",
-    "m": 1121,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.57440803,
-    "lng": -3.221198391
    }
   },
   "playground-off-llys-haulfryn-llanfwrog-ruthin": {
@@ -202217,18 +202760,6 @@
     "lng": -0.0864985
    }
   },
-  "playground-off-lordswood-lane-walderslade-chatham": {
-   "nearest": {
-    "id": "c02efe86f45f7207862d2249",
-    "name": "Wyevale Garden Centre - Gillingham",
-    "m": 1660,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 51.340944152,
-    "lng": 0.559551716
-   }
-  },
   "playground-off-lorne-road-stroud-green-greater-london": {
    "nearest": {
     "id": "034fc9daf9869b00d593a231",
@@ -202310,28 +202841,6 @@
     "free": true,
     "lat": 55.896836808,
     "lng": -4.217408895
-   }
-  },
-  "playground-off-loudoun-square-butetown-cardiff": {
-   "nearest": {
-    "id": "0cb6ade372849ea1e5cd85d6",
-    "name": "Public toilet",
-    "m": 782,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.4636533,
-    "lng": -3.1648996
-   },
-   "nearestBabyChange": {
-    "id": "2905b190298303ae87d1855c",
-    "name": "Mermaid Quay",
-    "m": 783,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.463392521,
-    "lng": -3.165634274
    }
   },
   "playground-off-loughborough-road-loughborough-junction-londo": {
@@ -202487,18 +202996,6 @@
     "free": true,
     "lat": 53.797653252,
     "lng": -1.25480175
-   }
-  },
-  "playground-off-low-meadow-halling": {
-   "nearest": {
-    "id": "b44d9b163601cc543a88b9e1",
-    "name": "Court Farm Country Larder & Butchery",
-    "m": 1445,
-    "babyChange": false,
-    "accessible": true,
-    "free": false,
-    "lat": 51.35323088,
-    "lng": 0.428131521
    }
   },
   "playground-off-low-road-alburgh-street": {
@@ -202777,28 +203274,6 @@
     "free": true,
     "lat": 51.407032618,
     "lng": -3.267019093
-   }
-  },
-  "playground-off-lower-rainham-road-twydall-gillingham": {
-   "nearest": {
-    "id": "0c1044e6f0ef5834e567ed76",
-    "name": "Riverside Country Park",
-    "m": 37,
-    "babyChange": null,
-    "accessible": true,
-    "free": true,
-    "lat": 51.3850038,
-    "lng": 0.5966511
-   },
-   "nearestBabyChange": {
-    "id": "b8636e50a4d6437516a7d5e1",
-    "name": "Riverside Country Park",
-    "m": 89,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.385486381,
-    "lng": 0.596523285
    }
   },
   "playground-off-lower-road-chart-mill-faversham": {
@@ -204033,28 +204508,6 @@
     "lng": -0.042657852
    }
   },
-  "playground-off-machen-place-riverside-cardiff": {
-   "nearest": {
-    "id": "eee04b8cc3ba8e92cfaea372",
-    "name": "Automatic Toilet",
-    "m": 676,
-    "babyChange": null,
-    "accessible": false,
-    "free": false,
-    "lat": 51.481345931,
-    "lng": -3.201177785
-   },
-   "nearestBabyChange": {
-    "id": "591ed869f00031b16f0d0e2b",
-    "name": "Chapter Arts Centre",
-    "m": 904,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.482991649,
-    "lng": -3.203558117
-   }
-  },
   "playground-off-mackay-terrace-portskerra": {
    "nearest": {
     "id": "fc6d82d6406dcff4813daf47",
@@ -204556,18 +205009,6 @@
   "playground-off-maes-yr-eglwys-pontwalby-glynneath": {
    "nearest": null
   },
-  "playground-off-maes-yr-onen-nelson": {
-   "nearest": {
-    "id": "004e35af3d8a069edf32b3df",
-    "name": "Taff Bargoed Park",
-    "m": 2179,
-    "babyChange": false,
-    "accessible": false,
-    "free": true,
-    "lat": 51.6702978,
-    "lng": -3.3003431
-   }
-  },
   "playground-off-maesafallen-clawdd-poncen-corwen": {
    "nearest": {
     "id": "158fb6e068812e3090471886",
@@ -204997,28 +205438,6 @@
   },
   "playground-off-main-road-higher-kinnerton": {
    "nearest": null
-  },
-  "playground-off-main-road-hoo-hoo-st-werburgh-2": {
-   "nearest": {
-    "id": "eeff1354bc41d33ba28ec89f",
-    "name": "Stoke Road",
-    "m": 1056,
-    "babyChange": false,
-    "accessible": null,
-    "free": true,
-    "lat": 51.420554984,
-    "lng": 0.564540625
-   },
-   "nearestBabyChange": {
-    "id": "056c9061c02d0e0af7653311",
-    "name": "Dockside Outlet Centre",
-    "m": 2395,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.400813767,
-    "lng": 0.533818603
-   }
   },
   "playground-off-main-road-hoo-hoo-st-werburgh": {
    "nearest": {
@@ -205837,18 +206256,6 @@
   },
   "playground-off-mallard-road-scotton": {
    "nearest": null
-  },
-  "playground-off-mallard-way-upper-stoke": {
-   "nearest": {
-    "id": "94892b0212036bfb82f6f64f",
-    "name": "Grain Road",
-    "m": 313,
-    "babyChange": false,
-    "accessible": false,
-    "free": true,
-    "lat": 51.453278025,
-    "lng": 0.635597706
-   }
   },
   "playground-off-mallards-road-barking-riverside-greater-londo": {
    "nearest": {
@@ -207800,18 +208207,6 @@
     "free": false,
     "lat": 54.401067505,
     "lng": -1.734509468
-   }
-  },
-  "playground-off-marne-street-cwmcarn": {
-   "nearest": {
-    "id": "dcda5f15667f296fd09a1e1b",
-    "name": "Cwmcarn Forest Drive",
-    "m": 1342,
-    "babyChange": null,
-    "accessible": null,
-    "free": true,
-    "lat": 51.63597729,
-    "lng": -3.114221692
    }
   },
   "playground-off-marriott-street-shaw-heath-stockport": {
@@ -210645,18 +211040,6 @@
     "lng": 0.164955854
    }
   },
-  "playground-off-meresborough-road-gillingham": {
-   "nearest": {
-    "id": "ba4f7a5de3536b6f28336d45",
-    "name": "Rainham (Kent)",
-    "m": 925,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.366304807,
-    "lng": 0.611346972
-   }
-  },
   "playground-off-mereside-fenay-bridge-kirklees": {
    "nearest": null
   },
@@ -212166,28 +212549,6 @@
     "lng": -2.74481982
    }
   },
-  "playground-off-millers-wood-woodfieldside-blackwood": {
-   "nearest": {
-    "id": "b7e5a55cefecad04246f4a55",
-    "name": "Coffee shop",
-    "m": 750,
-    "babyChange": false,
-    "accessible": true,
-    "free": true,
-    "lat": 51.666100968,
-    "lng": -3.194811344
-   },
-   "nearestBabyChange": {
-    "id": "e3e1fdbf4fcd706cec65480f",
-    "name": "Sainsbury’s",
-    "m": 1768,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.657849227,
-    "lng": -3.173729181
-   }
-  },
   "playground-off-millet-road-kirby-cross": {
    "nearest": {
     "id": "7c60fd764389a7230de8eb0f",
@@ -212533,18 +212894,6 @@
     "free": false,
     "lat": 54.959488477,
     "lng": -1.603200397
-   }
-  },
-  "playground-off-milton-street-plasnewydd-cardiff": {
-   "nearest": {
-    "id": "1ede282f841c342748f193d3",
-    "name": "The Central Bar Wetherspoons",
-    "m": 693,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.483337492,
-    "lng": -3.172880193
    }
   },
   "playground-off-milton-walk-boothroyd-dewsbury": {
@@ -213069,28 +213418,6 @@
     "free": true,
     "lat": 53.542968351,
     "lng": -1.102909179
-   }
-  },
-  "playground-off-moira-place-adamsdown-cardiff": {
-   "nearest": {
-    "id": "dc3fd13c1ec09b629ca84118",
-    "name": "Cardiff Queen Street Station",
-    "m": 399,
-    "babyChange": false,
-    "accessible": true,
-    "free": true,
-    "lat": 51.48196277,
-    "lng": -3.170204472
-   },
-   "nearestBabyChange": {
-    "id": "1ede282f841c342748f193d3",
-    "name": "The Central Bar Wetherspoons",
-    "m": 603,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.483337492,
-    "lng": -3.172880193
    }
   },
   "playground-off-moira-street-latimer-leicester": {
@@ -214095,28 +214422,6 @@
   },
   "playground-off-moorland-road-langho": {
    "nearest": null
-  },
-  "playground-off-moorland-road-splott-cardiff": {
-   "nearest": {
-    "id": "4481dd62ba4c9f456aa61614",
-    "name": "Costa Coffee",
-    "m": 523,
-    "babyChange": null,
-    "accessible": null,
-    "free": true,
-    "lat": 51.492997057,
-    "lng": -3.144482374
-   },
-   "nearestBabyChange": {
-    "id": "dae474e18a5aced028551c28",
-    "name": "Sainsbury's",
-    "m": 767,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.495643736,
-    "lng": -3.147920966
-   }
   },
   "playground-off-moorland-road-tremorfa-cardiff": {
    "nearest": {
@@ -216168,18 +216473,6 @@
     "lng": -3.377923965
    }
   },
-  "playground-off-nant-walla-rhiwbina-cardiff": {
-   "nearest": {
-    "id": "305a602924dfb5685ddcc39d",
-    "name": "Ty Glas Road",
-    "m": 1426,
-    "babyChange": null,
-    "accessible": true,
-    "free": true,
-    "lat": 51.528742416,
-    "lng": -3.190686107
-   }
-  },
   "playground-off-nant-y-bryn-halfway-dafen": {
    "nearest": {
     "id": "5fe73a89d6f922975356758d",
@@ -216516,28 +216809,6 @@
     "free": true,
     "lat": 51.504080375,
     "lng": -0.108893287
-   }
-  },
-  "playground-off-nelson-terrace-milton-terrace-new-tredegar-br": {
-   "nearest": {
-    "id": "448e5eec6c9ad3435e146a0c",
-    "name": "Ystrad Mynach Library",
-    "m": 2171,
-    "babyChange": null,
-    "accessible": true,
-    "free": false,
-    "lat": 51.694486558,
-    "lng": -3.223500252
-   },
-   "nearestBabyChange": {
-    "id": "3259a62d1f71ae6e653b8cc7",
-    "name": "Bargoed Library",
-    "m": 2583,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 51.689937512,
-    "lng": -3.228564262
    }
   },
   "playground-off-neptune-close-highfields-leicester": {
@@ -218817,28 +219088,6 @@
     "lng": -1.728331925
    }
   },
-  "playground-off-nora-street-adamsdown-cardiff": {
-   "nearest": {
-    "id": "048565a61f5dc316f3969ef3",
-    "name": "Waterloo Team Rooms",
-    "m": 911,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.494559767,
-    "lng": -3.155468702
-   },
-   "nearestBabyChange": {
-    "id": "dae474e18a5aced028551c28",
-    "name": "Sainsbury's",
-    "m": 1134,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.495643736,
-    "lng": -3.147920966
-   }
-  },
   "playground-off-nore-close-mile-town-sheerness": {
    "nearest": {
     "id": "395afd64f6a9abc870ed48cc",
@@ -219113,18 +219362,6 @@
     "free": true,
     "lat": 53.798325269,
     "lng": -1.251121759
-   }
-  },
-  "playground-off-north-dane-way-chatham": {
-   "nearest": {
-    "id": "c02efe86f45f7207862d2249",
-    "name": "Wyevale Garden Centre - Gillingham",
-    "m": 752,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 51.340944152,
-    "lng": 0.559551716
    }
   },
   "playground-off-north-deeside-road-crathes": {
@@ -224237,18 +224474,6 @@
     "lng": 0.103325844
    }
   },
-  "playground-off-pandy-mawr-road-bedwas": {
-   "nearest": {
-    "id": "70e6238c8b87e8e39cb4f651",
-    "name": "Food court toilets",
-    "m": 2362,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.57440803,
-    "lng": -3.221198391
-   }
-  },
   "playground-off-panmure-gardens-potterton": {
    "nearest": null
   },
@@ -224942,28 +225167,6 @@
   "playground-off-park-crescent-wiggenhall-st-mary-magdalen": {
    "nearest": null
   },
-  "playground-off-park-drive-gilfach-bargoed": {
-   "nearest": {
-    "id": "f453cbc6cc7de6976f762265",
-    "name": "Public toilet",
-    "m": 423,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.6878275,
-    "lng": -3.2299684
-   },
-   "nearestBabyChange": {
-    "id": "3259a62d1f71ae6e653b8cc7",
-    "name": "Bargoed Library",
-    "m": 650,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 51.689937512,
-    "lng": -3.228564262
-   }
-  },
   "playground-off-park-drive-llangattock": {
    "nearest": {
     "id": "22fad68889b0810228e78dbc",
@@ -225182,18 +225385,6 @@
     "free": true,
     "lat": 54.2853835,
     "lng": -1.8049517
-   }
-  },
-  "playground-off-park-lane-tredomen-ystrad-mynach": {
-   "nearest": {
-    "id": "8d0279e9b7cd9fe8bf6d33da",
-    "name": "Bedwlwyn Street, Ystrad Mynach",
-    "m": 815,
-    "babyChange": false,
-    "accessible": false,
-    "free": true,
-    "lat": 51.642524427,
-    "lng": -3.23577404
    }
   },
   "playground-off-park-lane-wesham": {
@@ -225551,18 +225742,6 @@
     "lng": -2.296636105
    }
   },
-  "playground-off-park-road-whitchurch-cardiff": {
-   "nearest": {
-    "id": "4d0be5329b2456d97fb338f5",
-    "name": "Whitchurch toilet",
-    "m": 501,
-    "babyChange": null,
-    "accessible": true,
-    "free": false,
-    "lat": 51.514116185,
-    "lng": -3.220683712
-   }
-  },
   "playground-off-park-road-wroxham": {
    "nearest": {
     "id": "fd6b2d8d488fa602345af088",
@@ -225776,28 +225955,6 @@
   "playground-off-park-view-filey": {
    "nearest": null
   },
-  "playground-off-park-view-gilfach-bargoed": {
-   "nearest": {
-    "id": "f453cbc6cc7de6976f762265",
-    "name": "Public toilet",
-    "m": 802,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.6878275,
-    "lng": -3.2299684
-   },
-   "nearestBabyChange": {
-    "id": "3259a62d1f71ae6e653b8cc7",
-    "name": "Bargoed Library",
-    "m": 1013,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 51.689937512,
-    "lng": -3.228564262
-   }
-  },
   "playground-off-park-view-highbury-greater-london": {
    "nearest": {
     "id": "83c0a588c695fc3eb898060a",
@@ -225929,28 +226086,6 @@
   },
   "playground-off-park-way-coxheath": {
    "nearest": null
-  },
-  "playground-off-park-wood-green-parkwood-gillingham": {
-   "nearest": {
-    "id": "2656f05b16053f8b65e5f24e",
-    "name": "Public toilet",
-    "m": 142,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.3484557,
-    "lng": 0.5956921
-   },
-   "nearestBabyChange": {
-    "id": "8fe386e984d54d27c2bb825f",
-    "name": "Medway Services - M2",
-    "m": 1067,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.3416831,
-    "lng": 0.6081104
-   }
   },
   "playground-off-parkeston-road-upper-dovercourt-dovercourt": {
    "nearest": {
@@ -228232,28 +228367,6 @@
     "lng": -4.096747041
    }
   },
-  "playground-off-pentrebane-street-grangetown-cardiff": {
-   "nearest": {
-    "id": "214de7a43a434635b55eb8dd",
-    "name": "Public toilet",
-    "m": 263,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.4648906,
-    "lng": -3.1834806
-   },
-   "nearestBabyChange": {
-    "id": "e57a0965b064d91352e323ca",
-    "name": "Cardiff Central",
-    "m": 1008,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.476026622,
-    "lng": -3.179311548
-   }
-  },
   "playground-off-pentridge-street-peckham-greater-london": {
    "nearest": {
     "id": "47313f7199088daef79c5d30",
@@ -228328,28 +228441,6 @@
     "free": true,
     "lat": 51.79387193,
     "lng": -3.987656817
-   }
-  },
-  "playground-off-penylan-road-argoed": {
-   "nearest": {
-    "id": "448e5eec6c9ad3435e146a0c",
-    "name": "Ystrad Mynach Library",
-    "m": 2014,
-    "babyChange": null,
-    "accessible": true,
-    "free": false,
-    "lat": 51.694486558,
-    "lng": -3.223500252
-   },
-   "nearestBabyChange": {
-    "id": "3259a62d1f71ae6e653b8cc7",
-    "name": "Bargoed Library",
-    "m": 2483,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 51.689937512,
-    "lng": -3.228564262
    }
   },
   "playground-off-penyrallt-cwmamman-garnant": {
@@ -229220,28 +229311,6 @@
     "free": true,
     "lat": 57.050817628,
     "lng": -2.500003955
-   }
-  },
-  "playground-off-pine-way-cheriton-folkestone": {
-   "nearest": {
-    "id": "e114b096323a535752385d58",
-    "name": "BP Connect Filling Station - Folkestone",
-    "m": 586,
-    "babyChange": null,
-    "accessible": true,
-    "free": false,
-    "lat": 51.088669967,
-    "lng": 1.135148406
-   },
-   "nearestBabyChange": {
-    "id": "4d02264eca081634db98e568",
-    "name": "Morrisons Supermarket - Folkestone",
-    "m": 1776,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 51.085308573,
-    "lng": 1.161007777
    }
   },
   "playground-off-pine-way-elmstead-market": {
@@ -231786,18 +231855,6 @@
     "lng": -4.629417658
    }
   },
-  "playground-off-princes-avenue-walderslade-chatham": {
-   "nearest": {
-    "id": "d4880b6929f29024be7873ea",
-    "name": "Asda Superstore - Chatham",
-    "m": 1284,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.345082537,
-    "lng": 0.508933067
-   }
-  },
   "playground-off-princes-road-moulsham-chelmsford": {
    "nearest": {
     "id": "6363ca688b8d5d4e9414541a",
@@ -234031,18 +234088,6 @@
   "playground-off-radwinter-road-sewards-end": {
    "nearest": null
   },
-  "playground-off-radyr-public-right-of-way-no-39-radyr-cardiff": {
-   "nearest": {
-    "id": "2cd37d38558a9d971a082f0b",
-    "name": "Radyr Station",
-    "m": 486,
-    "babyChange": false,
-    "accessible": false,
-    "free": true,
-    "lat": 51.516658038,
-    "lng": -3.24932456
-   }
-  },
   "playground-off-raeburn-place-gleadless-sheffield": {
    "nearest": {
     "id": "f53e529c4b394849aae96078",
@@ -235085,28 +235130,6 @@
     "free": true,
     "lat": 53.4609435,
     "lng": -1.4642393
-   }
-  },
-  "playground-off-reardon-smith-court-fairwater-cardiff": {
-   "nearest": {
-    "id": "25a9286201dc8b8287a067b8",
-    "name": "Public toilet",
-    "m": 1592,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.49481946,
-    "lng": -3.2178618
-   },
-   "nearestBabyChange": {
-    "id": "36043d13879faecbf5806368",
-    "name": "Victoria Park Public Toilets",
-    "m": 1841,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.483053262,
-    "lng": -3.218404055
    }
   },
   "playground-off-reception-wrea-green": {
@@ -236260,18 +236283,6 @@
     "lng": -3.41386989
    }
   },
-  "playground-off-rhiwlas-thornhill-cardiff": {
-   "nearest": {
-    "id": "305a602924dfb5685ddcc39d",
-    "name": "Ty Glas Road",
-    "m": 1404,
-    "babyChange": null,
-    "accessible": true,
-    "free": true,
-    "lat": 51.528742416,
-    "lng": -3.190686107
-   }
-  },
   "playground-off-rhodfa-cilcain-mold": {
    "nearest": {
     "id": "f60d6b0ccb40c86fd388ff98",
@@ -236514,18 +236525,6 @@
   },
   "playground-off-rhyd-y-fro-llangadog": {
    "nearest": null
-  },
-  "playground-off-rhydlafar-drive-st-fagans-cardiff": {
-   "nearest": {
-    "id": "2cd37d38558a9d971a082f0b",
-    "name": "Radyr Station",
-    "m": 2246,
-    "babyChange": false,
-    "accessible": false,
-    "free": true,
-    "lat": 51.516658038,
-    "lng": -3.24932456
-   }
   },
   "playground-off-rhydlanfair-llangybi": {
    "nearest": null
@@ -238968,28 +238967,6 @@
     "lng": -0.469558
    }
   },
-  "playground-off-rosedale-close-pentrebane-cardiff": {
-   "nearest": {
-    "id": "e8996417a8c6c43a3b500190",
-    "name": "Public toilet",
-    "m": 1954,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.48867226,
-    "lng": -3.27812326
-   },
-   "nearestBabyChange": {
-    "id": "36043d13879faecbf5806368",
-    "name": "Victoria Park Public Toilets",
-    "m": 2399,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.483053262,
-    "lng": -3.218404055
-   }
-  },
   "playground-off-rosedale-road-nunthorpe-middlesbrough": {
    "nearest": {
     "id": "46bb55846c9f9e45ee7bb86c",
@@ -240081,18 +240058,6 @@
     "lng": -0.318843783
    }
   },
-  "playground-off-runway-road-tremorfa-cardiff": {
-   "nearest": {
-    "id": "d46f79361e49d41709904a76",
-    "name": "Tesco Pengam Green",
-    "m": 616,
-    "babyChange": true,
-    "accessible": null,
-    "free": true,
-    "lat": 51.487351326,
-    "lng": -3.127911687
-   }
-  },
   "playground-off-rush-green-gardens-rush-green-greater-london": {
    "nearest": {
     "id": "0a020768bd0347d3ceaacc8a",
@@ -240169,18 +240134,6 @@
     "free": true,
     "lat": 51.2735036,
     "lng": 1.2158167
-   }
-  },
-  "playground-off-rushdean-road-strood": {
-   "nearest": {
-    "id": "1715c300b65e30fd295f13be",
-    "name": "Tesco Superstore - Strood (Kent)",
-    "m": 1906,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.395082847,
-    "lng": 0.491208719
    }
   },
   "playground-off-rushden-road-sandon-north-hertfordshire": {
@@ -240974,28 +240927,6 @@
     "lng": -1.433657734
    }
   },
-  "playground-off-saint-mary-street-pontymister-risca": {
-   "nearest": {
-    "id": "085a83b74e4f9df0a02715ef",
-    "name": "The Pantri",
-    "m": 643,
-    "babyChange": false,
-    "accessible": false,
-    "free": true,
-    "lat": 51.607736872,
-    "lng": -3.1009233
-   },
-   "nearestBabyChange": {
-    "id": "ceaaad3a0acbb4e771d8936c",
-    "name": "Snug Coffee Shop",
-    "m": 700,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.607235223,
-    "lng": -3.100765049
-   }
-  },
   "playground-off-saint-marys-crescent-fishburn-park-whitby": {
    "nearest": {
     "id": "20cb5116a390063a3edc9718",
@@ -241459,18 +241390,6 @@
     "free": true,
     "lat": 53.410632753,
     "lng": -2.159982557
-   }
-  },
-  "playground-off-samuels-crescent-whitchurch-cardiff": {
-   "nearest": {
-    "id": "4d0be5329b2456d97fb338f5",
-    "name": "Whitchurch toilet",
-    "m": 969,
-    "babyChange": null,
-    "accessible": true,
-    "free": false,
-    "lat": 51.514116185,
-    "lng": -3.220683712
    }
   },
   "playground-off-san-carlos-close-scotton": {
@@ -241984,28 +241903,6 @@
   },
   "playground-off-sandys-lane-upottery-east-devon": {
    "nearest": null
-  },
-  "playground-off-sanquhar-street-splott-cardiff": {
-   "nearest": {
-    "id": "dc3fd13c1ec09b629ca84118",
-    "name": "Cardiff Queen Street Station",
-    "m": 903,
-    "babyChange": false,
-    "accessible": true,
-    "free": true,
-    "lat": 51.48196277,
-    "lng": -3.170204472
-   },
-   "nearestBabyChange": {
-    "id": "1ede282f841c342748f193d3",
-    "name": "The Central Bar Wetherspoons",
-    "m": 1121,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.483337492,
-    "lng": -3.172880193
-   }
   },
   "playground-off-santa-cruz-avenue-saltcotes-lytham": {
    "nearest": {
@@ -243400,9 +243297,6 @@
     "lng": -1.7819858
    }
   },
-  "playground-off-school-street-new-tredegar-tir-phil": {
-   "nearest": null
-  },
   "playground-off-school-street-stairfoot-barnsley": {
    "nearest": {
     "id": "d18ce844935e7107d0888f4a",
@@ -243505,18 +243399,6 @@
     "free": true,
     "lat": 52.49442093,
     "lng": -1.818294525
-   }
-  },
-  "playground-off-schooner-walk-frindsbury-lower-upnor": {
-   "nearest": {
-    "id": "056c9061c02d0e0af7653311",
-    "name": "Dockside Outlet Centre",
-    "m": 1347,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.400813767,
-    "lng": 0.533818603
    }
   },
   "playground-off-schwartzman-drive-banks": {
@@ -246529,18 +246411,6 @@
     "lng": -0.014336407
    }
   },
-  "playground-off-sinclair-drive-penylan-cardiff": {
-   "nearest": {
-    "id": "dae474e18a5aced028551c28",
-    "name": "Sainsbury's",
-    "m": 365,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.495643736,
-    "lng": -3.147920966
-   }
-  },
   "playground-off-sinclair-estate-streatham-hill-greater-london": {
    "nearest": {
     "id": "681b86154eb96fb27d19252e",
@@ -247158,18 +247028,6 @@
     "free": true,
     "lat": 57.425904167,
     "lng": -2.239818832
-   }
-  },
-  "playground-off-smith-road-llanishen-cardiff": {
-   "nearest": {
-    "id": "305a602924dfb5685ddcc39d",
-    "name": "Ty Glas Road",
-    "m": 874,
-    "babyChange": null,
-    "accessible": true,
-    "free": true,
-    "lat": 51.528742416,
-    "lng": -3.190686107
    }
   },
   "playground-off-smithdown-lane-edge-hill-liverpool": {
@@ -250139,18 +249997,6 @@
     "lng": -4.970921874
    }
   },
-  "playground-off-st-davids-road-allhallows": {
-   "nearest": {
-    "id": "94892b0212036bfb82f6f64f",
-    "name": "Grain Road",
-    "m": 1943,
-    "babyChange": false,
-    "accessible": false,
-    "free": true,
-    "lat": 51.453278025,
-    "lng": 0.635597706
-   }
-  },
   "playground-off-st-davids-square-rhyl": {
    "nearest": {
     "id": "ee634ef1f496aa3651389bb6",
@@ -252648,9 +252494,6 @@
     "lng": -3.774704933
    }
   },
-  "playground-off-station-road-creigiau-cardiff": {
-   "nearest": null
-  },
   "playground-off-station-road-darley": {
    "nearest": {
     "id": "b8923ab4ad11454cf0a15558",
@@ -252823,18 +252666,6 @@
   },
   "playground-off-station-road-llanasa-talacre": {
    "nearest": null
-  },
-  "playground-off-station-road-llantwit-fardre-hawthorn": {
-   "nearest": {
-    "id": "1d5b3acc3d7430aa10f7f24b",
-    "name": "Road Runner Loo",
-    "m": 391,
-    "babyChange": false,
-    "accessible": true,
-    "free": true,
-    "lat": 51.565843319,
-    "lng": -3.317688704
-   }
   },
   "playground-off-station-road-meidrim-carmarthenshire": {
    "nearest": null
@@ -256121,18 +255952,6 @@
     "lng": -0.277773821
    }
   },
-  "playground-off-syndicate-terrace-cwmfelinfach": {
-   "nearest": {
-    "id": "c2452833a09f488a9ea8ac75",
-    "name": "Public toilet",
-    "m": 2624,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.6148159,
-    "lng": -3.1420773
-   }
-  },
   "playground-off-t-dan-y-wal-cwmtillery": {
    "nearest": {
     "id": "b6b12e78a9a504ececd03a6b",
@@ -256143,30 +255962,6 @@
     "free": true,
     "lat": 51.732307726,
     "lng": -3.133689165
-   }
-  },
-  "playground-off-t-draw-road-pontprennau-cardiff": {
-   "nearest": {
-    "id": "711260088d0db025e3c7cf2c",
-    "name": "Park and Ride, Pentwyn",
-    "m": 1940,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.520852303,
-    "lng": -3.13575983
-   }
-  },
-  "playground-off-t-glas-road-llanishen-cardiff": {
-   "nearest": {
-    "id": "305a602924dfb5685ddcc39d",
-    "name": "Ty Glas Road",
-    "m": 362,
-    "babyChange": null,
-    "accessible": true,
-    "free": true,
-    "lat": 51.528742416,
-    "lng": -3.190686107
    }
   },
   "playground-off-t-nant-road-morganstown-cardiff": {
@@ -258166,18 +257961,6 @@
   "playground-off-the-broad-walk-old-warden": {
    "nearest": null
   },
-  "playground-off-the-bryn-trethomas": {
-   "nearest": {
-    "id": "70e6238c8b87e8e39cb4f651",
-    "name": "Food court toilets",
-    "m": 2970,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.57440803,
-    "lng": -3.221198391
-   }
-  },
   "playground-off-the-buttlands-great-cressingham": {
    "nearest": null
   },
@@ -258621,18 +258404,6 @@
     "free": true,
     "lat": 52.1501833,
     "lng": -3.4025914
-   }
-  },
-  "playground-off-the-crescent-machen": {
-   "nearest": {
-    "id": "c2452833a09f488a9ea8ac75",
-    "name": "Public toilet",
-    "m": 2267,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.6148159,
-    "lng": -3.1420773
    }
   },
   "playground-off-the-crescent-monk-fryston": {
@@ -260363,28 +260134,6 @@
     "lng": 0.009296536
    }
   },
-  "playground-off-the-platters-wigmore-gillingham": {
-   "nearest": {
-    "id": "0f3d3b7bcacf01dd23dc4ae0",
-    "name": "Dobbies Garden Centre - Gillingham",
-    "m": 919,
-    "babyChange": null,
-    "accessible": true,
-    "free": false,
-    "lat": 51.365899478,
-    "lng": 0.581846237
-   },
-   "nearestBabyChange": {
-    "id": "f570bf5b6ed4d78dc795c176",
-    "name": "Tesco Extra - Gillingham (Kent)",
-    "m": 1022,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 51.367314513,
-    "lng": 0.583090782
-   }
-  },
   "playground-off-the-pleasance-roehampton-greater-london": {
    "nearest": {
     "id": "8a0245102a58bba34193fc04",
@@ -261262,18 +261011,6 @@
     "lng": 0.611346972
    }
   },
-  "playground-off-the-street-upper-stoke": {
-   "nearest": {
-    "id": "94892b0212036bfb82f6f64f",
-    "name": "Grain Road",
-    "m": 1165,
-    "babyChange": false,
-    "accessible": false,
-    "free": true,
-    "lat": 51.453278025,
-    "lng": 0.635597706
-   }
-  },
   "playground-off-the-street-wallington-north-hertfordshire": {
    "nearest": null
   },
@@ -262079,28 +261816,6 @@
     "free": true,
     "lat": 53.471341801,
     "lng": -2.293463945
-   }
-  },
-  "playground-off-thorncombe-road-woodfieldside-blackwood": {
-   "nearest": {
-    "id": "624c6e4d08a552f7804bcb2d",
-    "name": "Pub",
-    "m": 268,
-    "babyChange": false,
-    "accessible": true,
-    "free": true,
-    "lat": 51.665838016,
-    "lng": -3.194645047
-   },
-   "nearestBabyChange": {
-    "id": "e3e1fdbf4fcd706cec65480f",
-    "name": "Sainsbury’s",
-    "m": 1427,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.657849227,
-    "lng": -3.173729181
    }
   },
   "playground-off-thorndale-road-thorney-close-sunderland": {
@@ -264512,18 +264227,6 @@
     "lng": -3.254195452
    }
   },
-  "playground-off-trefonen-avenue-llandrindod": {
-   "nearest": {
-    "id": "5ffce172bb48e045bd72eb66",
-    "name": "Llandrindod Wells Town Council - Station Crescent",
-    "m": 500,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 52.242037934,
-    "lng": -3.37918371
-   }
-  },
   "playground-off-trefrhiw-road-llandybie-penybanc": {
    "nearest": {
     "id": "2e99d915dfa410d0ab91da8e",
@@ -264858,28 +264561,6 @@
     "free": null,
     "lat": 51.512224571,
     "lng": -0.02880156
-   }
-  },
-  "playground-off-trinity-court-pontymister-risca": {
-   "nearest": {
-    "id": "085a83b74e4f9df0a02715ef",
-    "name": "The Pantri",
-    "m": 544,
-    "babyChange": false,
-    "accessible": false,
-    "free": true,
-    "lat": 51.607736872,
-    "lng": -3.1009233
-   },
-   "nearestBabyChange": {
-    "id": "ceaaad3a0acbb4e771d8936c",
-    "name": "Snug Coffee Shop",
-    "m": 601,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.607235223,
-    "lng": -3.100765049
    }
   },
   "playground-off-trinity-park-sunniside-houghton-le-spring": {
@@ -265739,18 +265420,6 @@
     "lng": 0.386166061
    }
   },
-  "playground-off-twyn-road-gwyddon": {
-   "nearest": {
-    "id": "dcda5f15667f296fd09a1e1b",
-    "name": "Cwmcarn Forest Drive",
-    "m": 1898,
-    "babyChange": null,
-    "accessible": null,
-    "free": true,
-    "lat": 51.63597729,
-    "lng": -3.114221692
-   }
-  },
   "playground-off-twyncarn-road-crosskeys-pont-y-waun": {
    "nearest": {
     "id": "dcda5f15667f296fd09a1e1b",
@@ -265763,57 +265432,11 @@
     "lng": -3.114221692
    }
   },
-  "playground-off-twynyffald-road-cefn-fforest-blackwood": {
-   "nearest": {
-    "id": "b7e5a55cefecad04246f4a55",
-    "name": "Coffee shop",
-    "m": 978,
-    "babyChange": false,
-    "accessible": true,
-    "free": true,
-    "lat": 51.666100968,
-    "lng": -3.194811344
-   }
-  },
   "playground-off-ty-bruce-lane-hirwaun": {
    "nearest": null
   },
   "playground-off-ty-cerrig-drive-hope-caergwrle": {
    "nearest": null
-  },
-  "playground-off-ty-coch-llechryd-rhymney": {
-   "nearest": {
-    "id": "4972d9eb3976c0a20e444350",
-    "name": "Rhymney Library Hub",
-    "m": 1237,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.759378902,
-    "lng": -3.283835737
-   }
-  },
-  "playground-off-ty-gwyn-gardens-penylan-cardiff": {
-   "nearest": {
-    "id": "22d19581536a0ce45d598da8",
-    "name": "Roath Park Lake",
-    "m": 491,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.506368519,
-    "lng": -3.173943758
-   },
-   "nearestBabyChange": {
-    "id": "7bbf97365f5ce3fc364e8f88",
-    "name": "Penylan Library and Community Centre",
-    "m": 1122,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.496709172,
-    "lng": -3.164910078
-   }
   },
   "playground-off-ty-isha-terrace-cefn-fforest-blackwood": {
    "nearest": {
@@ -266333,18 +265956,6 @@
     "free": false,
     "lat": 51.581579916,
     "lng": -0.120865703
-   }
-  },
-  "playground-off-uplands-road-rumney-cardiff": {
-   "nearest": {
-    "id": "e09dd33bf19c6a847d69e0c0",
-    "name": "Morrissons",
-    "m": 733,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.499813665,
-    "lng": -3.142175674
    }
   },
   "playground-off-upper-breckland-road-new-costessey-norwich": {
@@ -266869,18 +266480,6 @@
   "playground-off-valance-road-langley-upper-green": {
    "nearest": null
   },
-  "playground-off-vale-drive-snodhurst-chatham": {
-   "nearest": {
-    "id": "d4880b6929f29024be7873ea",
-    "name": "Asda Superstore - Chatham",
-    "m": 1125,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.345082537,
-    "lng": 0.508933067
-   }
-  },
   "playground-off-vale-road-houghton-neyland": {
    "nearest": {
     "id": "d9b0b4407d11e411f0841505",
@@ -267347,18 +266946,6 @@
     "free": true,
     "lat": 51.489143486,
     "lng": 0.066424906
-   }
-  },
-  "playground-off-verallo-drive-cardiff": {
-   "nearest": {
-    "id": "36043d13879faecbf5806368",
-    "name": "Victoria Park Public Toilets",
-    "m": 629,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.483053262,
-    "lng": -3.218404055
    }
   },
   "playground-off-verbena-gardens-houghton-conquest": {
@@ -267892,18 +267479,6 @@
     "free": true,
     "lat": 52.625083928,
     "lng": -1.119259
-   }
-  },
-  "playground-off-victoria-park-road-west-cardiff": {
-   "nearest": {
-    "id": "36043d13879faecbf5806368",
-    "name": "Victoria Park Public Toilets",
-    "m": 94,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.483053262,
-    "lng": -3.218404055
    }
   },
   "playground-off-victoria-parkway-benton-newcastle-upon-tyne": {
@@ -268582,28 +268157,6 @@
     "lng": -0.039975643
    }
   },
-  "playground-off-virgil-street-leckwith-cardiff": {
-   "nearest": {
-    "id": "214de7a43a434635b55eb8dd",
-    "name": "Public toilet",
-    "m": 918,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.4648906,
-    "lng": -3.1834806
-   },
-   "nearestBabyChange": {
-    "id": "e57a0965b064d91352e323ca",
-    "name": "Cardiff Central",
-    "m": 1220,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.476026622,
-    "lng": -3.179311548
-   }
-  },
   "playground-off-vivian-street-six-bells": {
    "nearest": {
     "id": "6a2b56b93b208df817398565",
@@ -268913,18 +268466,6 @@
     "free": true,
     "lat": 53.645617775,
     "lng": -1.775198579
-   }
-  },
-  "playground-off-wakeley-road-gillingham": {
-   "nearest": {
-    "id": "ba4f7a5de3536b6f28336d45",
-    "name": "Rainham (Kent)",
-    "m": 245,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.366304807,
-    "lng": 0.611346972
    }
   },
   "playground-off-walcot-gardens-ettingshall": {
@@ -269785,18 +269326,6 @@
   },
   "playground-off-warmlake-road-chart-sutton": {
    "nearest": null
-  },
-  "playground-off-warne-street-pengam": {
-   "nearest": {
-    "id": "98ff283dbb8e44c7d9d54fed",
-    "name": "Cake shop",
-    "m": 1629,
-    "babyChange": false,
-    "accessible": false,
-    "free": true,
-    "lat": 51.665804733,
-    "lng": -3.195304871
-   }
   },
   "playground-off-warren-close-tulse-hill-london": {
    "nearest": {
@@ -270998,18 +270527,6 @@
     "lng": -1.992853625
    }
   },
-  "playground-off-waun-fach-pentwyn-cardiff": {
-   "nearest": {
-    "id": "711260088d0db025e3c7cf2c",
-    "name": "Park and Ride, Pentwyn",
-    "m": 1018,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.520852303,
-    "lng": -3.13575983
-   }
-  },
   "playground-off-waun-fach-terrace-ogmore-valley-price-town": {
    "nearest": null
   },
@@ -271060,9 +270577,6 @@
   "playground-off-waunaeron-crymych": {
    "nearest": null
   },
-  "playground-off-waunbant-road-pyle-kenfig-hill": {
-   "nearest": null
-  },
   "playground-off-waunddu-cwm-ffrwd-oer-pontypool": {
    "nearest": {
     "id": "9dcf500ea232ce496b245429",
@@ -271073,28 +270587,6 @@
     "free": true,
     "lat": 51.701415658,
     "lng": -3.039414883
-   }
-  },
-  "playground-off-waunfawr-park-road-crosskeys-2": {
-   "nearest": {
-    "id": "c2452833a09f488a9ea8ac75",
-    "name": "Public toilet",
-    "m": 1355,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.6148159,
-    "lng": -3.1420773
-   },
-   "nearestBabyChange": {
-    "id": "ceaaad3a0acbb4e771d8936c",
-    "name": "Snug Coffee Shop",
-    "m": 1794,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.607235223,
-    "lng": -3.100765049
    }
   },
   "playground-off-waunfawr-park-road-crosskeys": {
@@ -274236,18 +273728,6 @@
     "lng": -4.342389
    }
   },
-  "playground-off-whitaker-road-pengam-green-cardiff": {
-   "nearest": {
-    "id": "d46f79361e49d41709904a76",
-    "name": "Tesco Pengam Green",
-    "m": 565,
-    "babyChange": true,
-    "accessible": null,
-    "free": true,
-    "lat": 51.487351326,
-    "lng": -3.127911687
-   }
-  },
   "playground-off-whitburn-road-cleadon": {
    "nearest": {
     "id": "ca642a039109806d906d025a",
@@ -274847,28 +274327,6 @@
     "lng": -4.342389
    }
   },
-  "playground-off-whitland-crescent-fairwater-cardiff": {
-   "nearest": {
-    "id": "25a9286201dc8b8287a067b8",
-    "name": "Public toilet",
-    "m": 1505,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.49481946,
-    "lng": -3.2178618
-   },
-   "nearestBabyChange": {
-    "id": "36043d13879faecbf5806368",
-    "name": "Victoria Park Public Toilets",
-    "m": 2049,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.483053262,
-    "lng": -3.218404055
-   }
-  },
   "playground-off-whitley-farm-close-whitley": {
    "nearest": null
   },
@@ -274992,18 +274450,6 @@
     "free": true,
     "lat": 51.420554984,
     "lng": 0.564540625
-   }
-  },
-  "playground-off-whitworth-square-coryton-cardiff": {
-   "nearest": {
-    "id": "2cd37d38558a9d971a082f0b",
-    "name": "Radyr Station",
-    "m": 988,
-    "babyChange": false,
-    "accessible": false,
-    "free": true,
-    "lat": 51.516658038,
-    "lng": -3.24932456
    }
   },
   "playground-off-whitworth-way-wilshamstead-wilstead": {
@@ -275341,28 +274787,6 @@
   },
   "playground-off-wiggs-road-haddiscoe": {
    "nearest": null
-  },
-  "playground-off-wigmore-road-wigmore-gillingham": {
-   "nearest": {
-    "id": "c82d8c1331daefaa99d36be7",
-    "name": "Hempstead Valley Shopping Centre",
-    "m": 596,
-    "babyChange": null,
-    "accessible": true,
-    "free": true,
-    "lat": 51.34152891,
-    "lng": 0.572844744
-   },
-   "nearestBabyChange": {
-    "id": "c02efe86f45f7207862d2249",
-    "name": "Wyevale Garden Centre - Gillingham",
-    "m": 1511,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 51.340944152,
-    "lng": 0.559551716
-   }
   },
   "playground-off-wilberforce-road-brighstone": {
    "nearest": {
@@ -275984,9 +275408,6 @@
     "lng": -2.9109478
    }
   },
-  "playground-off-willow-court-pantside-newbridge": {
-   "nearest": null
-  },
   "playground-off-willow-drive-woodfieldside-blackwood": {
    "nearest": {
     "id": "624c6e4d08a552f7804bcb2d",
@@ -276112,18 +275533,6 @@
     "free": true,
     "lat": 50.7997118,
     "lng": -3.1908556
-   }
-  },
-  "playground-off-willowbrook-drive-st-mellons-cardiff": {
-   "nearest": {
-    "id": "7f403397fa040689ebdc813b",
-    "name": "Tesco",
-    "m": 413,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.524563648,
-    "lng": -3.102834374
    }
   },
   "playground-off-willowgrove-drive-blackburn": {
@@ -276600,18 +276009,6 @@
     "lng": -0.450364351
    }
   },
-  "playground-off-windsor-avenue-pentwyn-mawr-newbridge": {
-   "nearest": {
-    "id": "e3e1fdbf4fcd706cec65480f",
-    "name": "Sainsbury’s",
-    "m": 1670,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.657849227,
-    "lng": -3.173729181
-   }
-  },
   "playground-off-windsor-drive-flint": {
    "nearest": {
     "id": "3570a33384e74557217b7984",
@@ -276712,18 +276109,6 @@
     "free": false,
     "lat": 51.882848974,
     "lng": -0.42268095
-   }
-  },
-  "playground-off-windsor-terrace-cardiff-bay-cardiff": {
-   "nearest": {
-    "id": "2905b190298303ae87d1855c",
-    "name": "Mermaid Quay",
-    "m": 326,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.463392521,
-    "lng": -3.165634274
    }
   },
   "playground-off-windsor-terrace-cullercoats-whitley-bay": {
@@ -278131,9 +277516,6 @@
     "lat": 51.710850031,
     "lng": -3.141188622
    }
-  },
-  "playground-off-woodland-terrace-senghenydd": {
-   "nearest": null
   },
   "playground-off-woodland-terrace-west-end": {
    "nearest": {
@@ -280775,18 +280157,6 @@
     "lng": -3.995450735
    }
   },
-  "pontprennau-woods-playground-pontprennau-cardiff": {
-   "nearest": {
-    "id": "711260088d0db025e3c7cf2c",
-    "name": "Park and Ride, Pentwyn",
-    "m": 1504,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.520852303,
-    "lng": -3.13575983
-   }
-  },
   "pontrobert-playground-llangyniew-pontrobert": {
    "nearest": null
   },
@@ -281089,6 +280459,18 @@
     "free": true,
     "lat": 51.5175162,
     "lng": -0.1886781
+   }
+  },
+  "porset-park-play-area-porset-park-caerphilly": {
+   "nearest": {
+    "id": "70e6238c8b87e8e39cb4f651",
+    "name": "Food court toilets",
+    "m": 1436,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.57440803,
+    "lng": -3.221198391
    }
   },
   "port-clarence-play-area-port-clarence": {
@@ -281909,6 +281291,28 @@
     "lng": -1.457775235
    }
   },
+  "priestfields-recreation-ground-and-play-area-troy-town-roche": {
+   "nearest": {
+    "id": "0ffffcf26ac2c03f13a9371b",
+    "name": "Shell Filling Station - Rochester",
+    "m": 1150,
+    "babyChange": null,
+    "accessible": true,
+    "free": false,
+    "lat": 51.364327,
+    "lng": 0.498752
+   },
+   "nearestBabyChange": {
+    "id": "e6d39fb037969049c47fa42f",
+    "name": "Visitor’s centre ( closed until further notice)",
+    "m": 1712,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.389151825,
+    "lng": 0.5043939
+   }
+  },
   "priesthill-playground-priesthill-glasgow": {
    "nearest": {
     "id": "2793dd03c8dcacd811e23691",
@@ -282289,6 +281693,18 @@
     "free": false,
     "lat": 55.012797651,
     "lng": -1.61940515
+   }
+  },
+  "princes-park-play-area-walderslade-chatham": {
+   "nearest": {
+    "id": "d4880b6929f29024be7873ea",
+    "name": "Asda Superstore - Chatham",
+    "m": 1284,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.345082537,
+    "lng": 0.508933067
    }
   },
   "princes-park-playground-temple-fortune-greater-london": {
@@ -284665,6 +284081,18 @@
     "lng": 0.190656781
    }
   },
+  "rainham-recreation-ground-and-play-area-gillingham": {
+   "nearest": {
+    "id": "ba4f7a5de3536b6f28336d45",
+    "name": "Rainham (Kent)",
+    "m": 245,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.366304807,
+    "lng": 0.611346972
+   }
+  },
   "rainow-road-play-area-higher-hurdsfield-macclesfield": {
    "nearest": {
     "id": "5187ed09e3427f084f744f83",
@@ -286615,6 +286043,18 @@
     "lng": -0.13358742
    }
   },
+  "rhodfa-ganol-play-area-fochriw": {
+   "nearest": {
+    "id": "4972d9eb3976c0a20e444350",
+    "name": "Rhymney Library Hub",
+    "m": 2456,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.759378902,
+    "lng": -3.283835737
+   }
+  },
   "rhos-paddling-pool-play-area-rhos-on-sea-colwyn-bay": {
    "nearest": {
     "id": "a7280009489003f6b5357268",
@@ -286757,6 +286197,18 @@
     "lng": -2.364395907
    }
   },
+  "rhydlafar-play-area-rhydlafar-cardiff": {
+   "nearest": {
+    "id": "2cd37d38558a9d971a082f0b",
+    "name": "Radyr Station",
+    "m": 2249,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.516658038,
+    "lng": -3.24932456
+   }
+  },
   "rhydlewis-play-area-rhydlewis": {
    "nearest": null
   },
@@ -286784,6 +286236,18 @@
     "lng": -3.9554464
    }
   },
+  "rhydypenau-play-area-rhydypenau-cardiff": {
+   "nearest": {
+    "id": "c89f77546d9fadccbac6d7cf",
+    "name": "Rhydypennau Library",
+    "m": 610,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.519426997,
+    "lng": -3.177967072
+   }
+  },
   "rhyl-adventure-playground-rhyl": {
    "nearest": {
     "id": "ee634ef1f496aa3651389bb6",
@@ -286794,6 +286258,18 @@
     "free": true,
     "lat": 53.317217704,
     "lng": -3.488418994
+   }
+  },
+  "rhymney-park-play-area-bute-town-rhymney": {
+   "nearest": {
+    "id": "4972d9eb3976c0a20e444350",
+    "name": "Rhymney Library Hub",
+    "m": 1950,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.759378902,
+    "lng": -3.283835737
    }
   },
   "ribbleton-park-play-area-fishwick-preston": {
@@ -287298,6 +286774,28 @@
     "lng": -0.159382224
    }
   },
+  "rifleman-street-play-area-pontymister-risca": {
+   "nearest": {
+    "id": "085a83b74e4f9df0a02715ef",
+    "name": "The Pantri",
+    "m": 544,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.607736872,
+    "lng": -3.1009233
+   },
+   "nearestBabyChange": {
+    "id": "ceaaad3a0acbb4e771d8936c",
+    "name": "Snug Coffee Shop",
+    "m": 601,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.607235223,
+    "lng": -3.100765049
+   }
+  },
   "rigley-terrace-drachrig-play-park-cuthill-prestonpans": {
    "nearest": {
     "id": "a4b18ef6d5aa2494c76b90b8",
@@ -287423,7 +286921,7 @@
     "lng": 0.9045013
    }
   },
-  "risca-park-play-area-pontymister-risca": {
+  "risca-park-play-area-pontymister-risca-2": {
    "nearest": {
     "id": "085a83b74e4f9df0a02715ef",
     "name": "The Pantri",
@@ -287642,6 +287140,62 @@
     "free": true,
     "lat": 51.78114853,
     "lng": 0.095078945
+   }
+  },
+  "riverside-country-park-bloors-wharf-lower-rainham-gillingham": {
+   "nearest": {
+    "id": "0c1044e6f0ef5834e567ed76",
+    "name": "Riverside Country Park",
+    "m": 950,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.3850038,
+    "lng": 0.5966511
+   },
+   "nearestBabyChange": {
+    "id": "b8636e50a4d6437516a7d5e1",
+    "name": "Riverside Country Park",
+    "m": 995,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.385486381,
+    "lng": 0.596523285
+   }
+  },
+  "riverside-country-park-motney-hill-reserve-lower-rainham-gil": {
+   "nearest": {
+    "id": "ba4f7a5de3536b6f28336d45",
+    "name": "Rainham (Kent)",
+    "m": 1074,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.366304807,
+    "lng": 0.611346972
+   }
+  },
+  "riverside-country-park-twydall-gillingham": {
+   "nearest": {
+    "id": "0c1044e6f0ef5834e567ed76",
+    "name": "Riverside Country Park",
+    "m": 37,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.3850038,
+    "lng": 0.5966511
+   },
+   "nearestBabyChange": {
+    "id": "b8636e50a4d6437516a7d5e1",
+    "name": "Riverside Country Park",
+    "m": 89,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.385486381,
+    "lng": 0.596523285
    }
   },
   "riverside-drive-1-nungate-haddington": {
@@ -288144,7 +287698,7 @@
   "roackland-community-playground-rockland-all-saints": {
    "nearest": null
   },
-  "roath-park-playground-lakeside-cardiff": {
+  "roath-park-play-area-lakeside-cardiff": {
    "nearest": {
     "id": "22d19581536a0ce45d598da8",
     "name": "Roath Park Lake",
@@ -288166,7 +287720,7 @@
     "lng": -3.164910078
    }
   },
-  "roath-recreation-ground-playground-roath-cardiff": {
+  "roath-recreation-ground-play-area-roath-cardiff": {
    "nearest": {
     "id": "7bbf97365f5ce3fc364e8f88",
     "name": "Penylan Library and Community Centre",
@@ -288749,6 +288303,18 @@
     "lng": -2.958589196
    }
   },
+  "roman-way-play-area-cheriton-folkestone": {
+   "nearest": {
+    "id": "e114b096323a535752385d58",
+    "name": "BP Connect Filling Station - Folkestone",
+    "m": 119,
+    "babyChange": null,
+    "accessible": true,
+    "free": false,
+    "lat": 51.088669967,
+    "lng": 1.135148406
+   }
+  },
   "roman-way-playground-east-anton-andover": {
    "nearest": {
     "id": "f3325fb847759a6725f720f2",
@@ -289284,6 +288850,28 @@
     "free": true,
     "lat": 52.948062545,
     "lng": -1.211382151
+   }
+  },
+  "rosedale-play-area-pentrebane-cardiff": {
+   "nearest": {
+    "id": "e8996417a8c6c43a3b500190",
+    "name": "Public toilet",
+    "m": 1954,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.48867226,
+    "lng": -3.27812326
+   },
+   "nearestBabyChange": {
+    "id": "36043d13879faecbf5806368",
+    "name": "Victoria Park Public Toilets",
+    "m": 2399,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.483053262,
+    "lng": -3.218404055
    }
   },
   "rosedale-play-area-stewartfield-east-kilbride": {
@@ -290220,6 +289808,9 @@
   "rudgwick-recreation-ground-play-area-bucks-green": {
    "nearest": null
   },
+  "rudry-park-play-area-rudry": {
+   "nearest": null
+  },
   "rufforth-playing-fields-rufforth-york": {
    "nearest": null
   },
@@ -290247,6 +289838,18 @@
   },
   "rugby-field-playground-brotherton": {
    "nearest": null
+  },
+  "rumney-recreation-ground-play-area-llanrumney-cardiff": {
+   "nearest": {
+    "id": "711260088d0db025e3c7cf2c",
+    "name": "Park and Ride, Pentwyn",
+    "m": 980,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.520852303,
+    "lng": -3.13575983
+   }
   },
   "rumsey-fields-play-area-chelmsford": {
    "nearest": {
@@ -290354,6 +289957,18 @@
     "free": false,
     "lat": 51.432352147,
     "lng": -0.54656446
+   }
+  },
+  "runway-road-play-area-tremorfa-cardiff": {
+   "nearest": {
+    "id": "d46f79361e49d41709904a76",
+    "name": "Tesco Pengam Green",
+    "m": 616,
+    "babyChange": true,
+    "accessible": null,
+    "free": true,
+    "lat": 51.487351326,
+    "lng": -3.127911687
    }
   },
   "ruperra-street-play-area-pillgwenlly-newport": {
@@ -290483,6 +290098,18 @@
     "id": "1715c300b65e30fd295f13be",
     "name": "Tesco Superstore - Strood (Kent)",
     "m": 1751,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.395082847,
+    "lng": 0.491208719
+   }
+  },
+  "rushdean-road-play-area-strood": {
+   "nearest": {
+    "id": "1715c300b65e30fd295f13be",
+    "name": "Tesco Superstore - Strood (Kent)",
+    "m": 1906,
     "babyChange": true,
     "accessible": true,
     "free": true,
@@ -290906,6 +290533,28 @@
     "free": true,
     "lat": 54.04883525,
     "lng": -2.807822227
+   }
+  },
+  "ryetop-playing-fields-and-play-area-parkwood-gillingham": {
+   "nearest": {
+    "id": "7579e01b86d38da9be2a17fd",
+    "name": "Shopping Centre",
+    "m": 961,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.364209753,
+    "lng": 0.60827136
+   },
+   "nearestBabyChange": {
+    "id": "ba4f7a5de3536b6f28336d45",
+    "name": "Rainham (Kent)",
+    "m": 1277,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.366304807,
+    "lng": 0.611346972
    }
   },
   "ryland-street-play-area-ladywood-birmingham": {
@@ -291385,6 +291034,18 @@
     "free": true,
     "lat": 53.098257303,
     "lng": -2.4443459
+   }
+  },
+  "sanatorium-road-play-area-cardiff": {
+   "nearest": {
+    "id": "36043d13879faecbf5806368",
+    "name": "Victoria Park Public Toilets",
+    "m": 601,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.483053262,
+    "lng": -3.218404055
    }
   },
   "sand-water-play-area-tulse-hill-london": {
@@ -292400,6 +292061,21 @@
     "lng": 0.908112018
    }
   },
+  "school-street-play-area-pengam-tir-y-berth": {
+   "nearest": {
+    "id": "98ff283dbb8e44c7d9d54fed",
+    "name": "Cake shop",
+    "m": 1823,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.665804733,
+    "lng": -3.195304871
+   }
+  },
+  "school-street-play-area-tirphil-new-tredegar-tir-phil": {
+   "nearest": null
+  },
   "school-street-playground-darton-darton-barnsley": {
    "nearest": {
     "id": "007cdcc4e7c1e1c2c98c3b0d",
@@ -292422,6 +292098,40 @@
     "free": true,
     "lat": 54.0771522,
     "lng": -2.7331123
+   }
+  },
+  "schooner-walk-play-area-frindsbury-lower-upnor": {
+   "nearest": {
+    "id": "056c9061c02d0e0af7653311",
+    "name": "Dockside Outlet Centre",
+    "m": 1347,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.400813767,
+    "lng": 0.533818603
+   }
+  },
+  "schooner-way-play-area-butetown-cardiff": {
+   "nearest": {
+    "id": "0cb6ade372849ea1e5cd85d6",
+    "name": "Public toilet",
+    "m": 719,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.4636533,
+    "lng": -3.1648996
+   },
+   "nearestBabyChange": {
+    "id": "2905b190298303ae87d1855c",
+    "name": "Mermaid Quay",
+    "m": 741,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.463392521,
+    "lng": -3.165634274
    }
   },
   "schubert-close-play-area-brighton-hill-basingstoke": {
@@ -293127,6 +292837,18 @@
     "lng": -3.008229733
    }
   },
+  "sedgemoor-road-play-area-llanrumney-cardiff": {
+   "nearest": {
+    "id": "7f403397fa040689ebdc813b",
+    "name": "Tesco",
+    "m": 1089,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.524563648,
+    "lng": -3.102834374
+   }
+  },
   "sedgley-hall-farm-park-playground-sedgley-coseley": {
    "nearest": {
     "id": "327dd8f648e73ae44b3f073f",
@@ -293423,6 +293145,28 @@
     "free": true,
     "lat": 53.697108145,
     "lng": -2.690604923
+   }
+  },
+  "sevenoaks-park-play-area-leckwith-cardiff": {
+   "nearest": {
+    "id": "214de7a43a434635b55eb8dd",
+    "name": "Public toilet",
+    "m": 918,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.4648906,
+    "lng": -3.1834806
+   },
+   "nearestBabyChange": {
+    "id": "e57a0965b064d91352e323ca",
+    "name": "Cardiff Central",
+    "m": 1220,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.476026622,
+    "lng": -3.179311548
    }
   },
   "sevenoaks-playground-sevenoaks": {
@@ -294227,6 +293971,18 @@
     "free": true,
     "lat": 51.416327875,
     "lng": -2.501195237
+   }
+  },
+  "shelley-gardens-play-area-plasnewydd-cardiff": {
+   "nearest": {
+    "id": "1ede282f841c342748f193d3",
+    "name": "The Central Bar Wetherspoons",
+    "m": 693,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.483337492,
+    "lng": -3.172880193
    }
   },
   "shelley-rise-play-area-farnborough": {
@@ -295191,6 +294947,18 @@
     "free": true,
     "lat": 51.611074854,
     "lng": 0.520206495
+   }
+  },
+  "showfield-play-area-cefn-fforest-blackwood": {
+   "nearest": {
+    "id": "b7e5a55cefecad04246f4a55",
+    "name": "Coffee shop",
+    "m": 1009,
+    "babyChange": false,
+    "accessible": true,
+    "free": true,
+    "lat": 51.666100968,
+    "lng": -3.194811344
    }
   },
   "showfields-infant-play-area-tunbridge-wells": {
@@ -297703,6 +297471,28 @@
     "lng": 0.160578489
    }
   },
+  "southern-way-play-area-east-cliff-folkestone": {
+   "nearest": {
+    "id": "ab5a17e48a1f0745daa8304d",
+    "name": "Harbour",
+    "m": 677,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.080255606,
+    "lng": 1.186748743
+   },
+   "nearestBabyChange": {
+    "id": "c721e2a8db603d1b361b4ca9",
+    "name": "Asda Superstore - Folkestone",
+    "m": 984,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 51.080100581,
+    "lng": 1.17839098
+   }
+  },
   "southern-way-play-area-plymstock-dunstone-plymouth": {
    "nearest": {
     "id": "96d8d0ea0bf77d772c32872f",
@@ -298055,6 +297845,28 @@
     "free": true,
     "lat": 51.43751994,
     "lng": 0.071373582
+   }
+  },
+  "sovereign-chase-play-area-penylan-cardiff": {
+   "nearest": {
+    "id": "22d19581536a0ce45d598da8",
+    "name": "Roath Park Lake",
+    "m": 491,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.506368519,
+    "lng": -3.173943758
+   },
+   "nearestBabyChange": {
+    "id": "7bbf97365f5ce3fc364e8f88",
+    "name": "Penylan Library and Community Centre",
+    "m": 1122,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.496709172,
+    "lng": -3.164910078
    }
   },
   "sovereign-close-play-area-lowton-st-lukes-lowton": {
@@ -299106,6 +298918,18 @@
     "free": true,
     "lat": 51.6275202,
     "lng": 0.81021324
+   }
+  },
+  "springfield-play-area-pontllanfraith": {
+   "nearest": {
+    "id": "e3e1fdbf4fcd706cec65480f",
+    "name": "Sainsbury’s",
+    "m": 985,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.657849227,
+    "lng": -3.173729181
    }
   },
   "springfield-play-area-vinney-green-emersons-green": {
@@ -301908,6 +301732,18 @@
     "lng": -2.967150807
    }
   },
+  "stanley-street-play-area-cwmfelinfach": {
+   "nearest": {
+    "id": "c2452833a09f488a9ea8ac75",
+    "name": "Public toilet",
+    "m": 2624,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.6148159,
+    "lng": -3.1420773
+   }
+  },
   "stanleytown-park-stanleytown-pontygwaith": {
    "nearest": {
     "id": "c1bdd79feb5c3bda47e63be7",
@@ -302209,6 +302045,18 @@
     "free": true,
     "lat": 53.254050462,
     "lng": -1.41825327
+   }
+  },
+  "station-road-play-area-church-village": {
+   "nearest": {
+    "id": "1d5b3acc3d7430aa10f7f24b",
+    "name": "Road Runner Loo",
+    "m": 391,
+    "babyChange": false,
+    "accessible": true,
+    "free": true,
+    "lat": 51.565843319,
+    "lng": -3.317688704
    }
   },
   "station-road-play-area-hepthorne-lane": {
@@ -307226,6 +307074,28 @@
     "lng": -2.201036243
    }
   },
+  "tennyson-terrace-play-area-new-tredegar-brithdir": {
+   "nearest": {
+    "id": "448e5eec6c9ad3435e146a0c",
+    "name": "Ystrad Mynach Library",
+    "m": 2171,
+    "babyChange": null,
+    "accessible": true,
+    "free": false,
+    "lat": 51.694486558,
+    "lng": -3.223500252
+   },
+   "nearestBabyChange": {
+    "id": "3259a62d1f71ae6e653b8cc7",
+    "name": "Bargoed Library",
+    "m": 2583,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 51.689937512,
+    "lng": -3.228564262
+   }
+  },
   "tenscore-recreation-ground-playground-sedgley-coseley": {
    "nearest": {
     "id": "9b4e3625e9fc84f0d32e2260",
@@ -307677,6 +307547,18 @@
     "free": true,
     "lat": 51.256467059,
     "lng": -0.7196635
+   }
+  },
+  "the-bryn-play-area-trethomas": {
+   "nearest": {
+    "id": "70e6238c8b87e8e39cb4f651",
+    "name": "Food court toilets",
+    "m": 2970,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.57440803,
+    "lng": -3.221198391
    }
   },
   "the-burgh-playground-burghclere-down-andover": {
@@ -309033,6 +308915,28 @@
     "lng": 0.741813183
    }
   },
+  "the-marl-play-area-grangetown-cardiff": {
+   "nearest": {
+    "id": "214de7a43a434635b55eb8dd",
+    "name": "Public toilet",
+    "m": 286,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.4648906,
+    "lng": -3.1834806
+   },
+   "nearestBabyChange": {
+    "id": "2905b190298303ae87d1855c",
+    "name": "Mermaid Quay",
+    "m": 1105,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.463392521,
+    "lng": -3.165634274
+   }
+  },
   "the-meadow-play-area-cromer": {
    "nearest": {
     "id": "63e216146d7f1e168c548114",
@@ -309339,18 +309243,6 @@
     "free": true,
     "lat": 51.819635725,
     "lng": -0.790683031
-   }
-  },
-  "the-park-wyllie": {
-   "nearest": {
-    "id": "e3e1fdbf4fcd706cec65480f",
-    "name": "Sainsbury’s",
-    "m": 2341,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.657849227,
-    "lng": -3.173729181
    }
   },
   "the-phoenix-park-east-anton-andover": {
@@ -309711,6 +309603,18 @@
     "lng": 0.5588768
    }
   },
+  "the-street-play-area-upper-stoke-upper-stoke": {
+   "nearest": {
+    "id": "94892b0212036bfb82f6f64f",
+    "name": "Grain Road",
+    "m": 1165,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.453278025,
+    "lng": 0.635597706
+   }
+  },
   "the-super-slide-barn-cantley-doncaster": {
    "nearest": null
   },
@@ -309863,6 +309767,28 @@
     "free": true,
     "lat": 53.057177843,
     "lng": -3.008229733
+   }
+  },
+  "the-wern-play-area-ynysfach-merthyr-tydfil": {
+   "nearest": {
+    "id": "954f0a9946395ac4f7c189fa",
+    "name": "Merthyr Bus Station",
+    "m": 433,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.74430493,
+    "lng": -3.379537761
+   },
+   "nearestBabyChange": {
+    "id": "ca036e363fc13263dca90d5a",
+    "name": "Cyfarthfa Park Canolfan",
+    "m": 1695,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 51.756445009,
+    "lng": -3.387823105
    }
   },
   "the-willow-centre-play-area-cringleford": {
@@ -310223,6 +310149,28 @@
     "lng": -2.363043866
    }
   },
+  "thorncombe-road-play-area-woodfieldside-blackwood": {
+   "nearest": {
+    "id": "624c6e4d08a552f7804bcb2d",
+    "name": "Pub",
+    "m": 268,
+    "babyChange": false,
+    "accessible": true,
+    "free": true,
+    "lat": 51.665838016,
+    "lng": -3.194645047
+   },
+   "nearestBabyChange": {
+    "id": "e3e1fdbf4fcd706cec65480f",
+    "name": "Sainsbury’s",
+    "m": 1427,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.657849227,
+    "lng": -3.173729181
+   }
+  },
   "thorndale-street-playground-hellifield": {
    "nearest": null
   },
@@ -310336,6 +310284,18 @@
     "free": false,
     "lat": 52.55595792,
     "lng": -0.12729202
+   }
+  },
+  "thornhill-recreation-ground-play-area-thornhill-cardiff": {
+   "nearest": {
+    "id": "305a602924dfb5685ddcc39d",
+    "name": "Ty Glas Road",
+    "m": 1071,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.528742416,
+    "lng": -3.190686107
    }
   },
   "thornton-heath-recreation-ground-thornton-heath-greater-lond": {
@@ -312339,6 +312299,18 @@
   "trefeglwys-playground-trefeglwys": {
    "nearest": null
   },
+  "trefonnen-playground-llandrindod-wells-llandrindod-2": {
+   "nearest": {
+    "id": "5ffce172bb48e045bd72eb66",
+    "name": "Llandrindod Wells Town Council - Station Crescent",
+    "m": 500,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 52.242037934,
+    "lng": -3.37918371
+   }
+  },
   "trefonnen-playground-llandrindod-wells-llandrindod": {
    "nearest": {
     "id": "5ffce172bb48e045bd72eb66",
@@ -312439,6 +312411,18 @@
     "lng": -1.9096972
    }
   },
+  "trelai-park-play-area-caerau-cardiff": {
+   "nearest": {
+    "id": "36043d13879faecbf5806368",
+    "name": "Victoria Park Public Toilets",
+    "m": 856,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.483053262,
+    "lng": -3.218404055
+   }
+  },
   "trem-yr-wyddfa-play-area-penrhyndeudraeth-minffordd": {
    "nearest": {
     "id": "3394134bf04dde437cf8bea8",
@@ -312461,6 +312445,18 @@
     "free": null,
     "lat": 52.92539,
     "lng": -4.1293271
+   }
+  },
+  "tremorfa-park-play-area-pengam-green-cardiff": {
+   "nearest": {
+    "id": "d46f79361e49d41709904a76",
+    "name": "Tesco Pengam Green",
+    "m": 565,
+    "babyChange": true,
+    "accessible": null,
+    "free": true,
+    "lat": 51.487351326,
+    "lng": -3.127911687
    }
   },
   "trenant-play-area-penywaun-pen-y-waun-penywaun": {
@@ -313396,6 +313392,18 @@
     "lng": -2.16237545
    }
   },
+  "ty-coch-play-area-llechryd-rhymney": {
+   "nearest": {
+    "id": "4972d9eb3976c0a20e444350",
+    "name": "Rhymney Library Hub",
+    "m": 1237,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.759378902,
+    "lng": -3.283835737
+   }
+  },
   "ty-fry-play-area-aberdare-gadlys-aberdare": {
    "nearest": {
     "id": "9d1cb806e5e5f353d82dca31",
@@ -313416,6 +313424,18 @@
     "free": false,
     "lat": 51.712703099,
     "lng": -3.441687226
+   }
+  },
+  "ty-sign-play-area-t-sign-risca": {
+   "nearest": {
+    "id": "604e78fbad6c380b0dfd0143",
+    "name": "The Sycamore Centre",
+    "m": 142,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.609839629,
+    "lng": -3.089759946
    }
   },
   "tylorstown-playground-stanleytown-tylorstown": {
@@ -313478,6 +313498,18 @@
   },
   "typhoon-close-play-park-scorton": {
    "nearest": null
+  },
+  "tyr-winch-playing-field-play-area-old-st-mellons-cardiff": {
+   "nearest": {
+    "id": "7f403397fa040689ebdc813b",
+    "name": "Tesco",
+    "m": 969,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.524563648,
+    "lng": -3.102834374
+   }
   },
   "tyrell-gardens-play-area-dagenham-greater-london": {
    "nearest": {
@@ -314177,6 +314209,18 @@
     "free": true,
     "lat": 50.863174386,
     "lng": -0.14392395
+   }
+  },
+  "vale-drive-play-area-snodhurst-chatham": {
+   "nearest": {
+    "id": "d4880b6929f29024be7873ea",
+    "name": "Asda Superstore - Chatham",
+    "m": 1125,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.345082537,
+    "lng": 0.508933067
    }
   },
   "vale-farm-road-play-area-woking": {
@@ -314988,6 +315032,28 @@
     "lng": 0.928821
    }
   },
+  "victoria-gardens-and-play-area-troy-town-chatham": {
+   "nearest": {
+    "id": "ef314add49ddb0297dece40e",
+    "name": "Chatham Station",
+    "m": 204,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.380378084,
+    "lng": 0.521158168
+   },
+   "nearestBabyChange": {
+    "id": "b94fe5a6ea0dbc1414b3c60f",
+    "name": "Pentagon Shopping Centre",
+    "m": 525,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.384162621,
+    "lng": 0.525820255
+   }
+  },
   "victoria-gardens-play-area-neath-cimla-neath": {
    "nearest": {
     "id": "cd9941d5caf97787f0632d6e",
@@ -315138,6 +315204,18 @@
     "free": true,
     "lat": 51.611414474,
     "lng": -3.965479732
+   }
+  },
+  "victoria-park-play-area-cardiff": {
+   "nearest": {
+    "id": "36043d13879faecbf5806368",
+    "name": "Victoria Park Public Toilets",
+    "m": 139,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.483053262,
+    "lng": -3.218404055
    }
   },
   "victoria-park-play-area-castletown-stafford": {
@@ -316143,6 +316221,18 @@
     "free": true,
     "lat": 51.532601866,
     "lng": -0.181628466
+   }
+  },
+  "virginia-park-play-area-porset-park-caerphilly": {
+   "nearest": {
+    "id": "70e6238c8b87e8e39cb4f651",
+    "name": "Food court toilets",
+    "m": 1121,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.57440803,
+    "lng": -3.221198391
    }
   },
   "virginia-way-play-area-southcote-reading": {
@@ -317316,6 +317406,18 @@
     "lng": 0.30015354
    }
   },
+  "warne-street-play-area-pengam": {
+   "nearest": {
+    "id": "98ff283dbb8e44c7d9d54fed",
+    "name": "Cake shop",
+    "m": 1629,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.665804733,
+    "lng": -3.195304871
+   }
+  },
   "warout-cola-play-park-glenrothes-auchmuty-glenrothes": {
    "nearest": {
     "id": "d1168a815dd88cdc649ba1ec",
@@ -318113,6 +318215,18 @@
     "lng": -1.3116123
    }
   },
+  "watkins-square-play-area-llanishen-cardiff": {
+   "nearest": {
+    "id": "305a602924dfb5685ddcc39d",
+    "name": "Ty Glas Road",
+    "m": 874,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.528742416,
+    "lng": -3.190686107
+   }
+  },
   "watling-end-play-area-hatch-warren-basingstoke": {
    "nearest": {
     "id": "0c9b03e143031e77c177f6cb",
@@ -318205,11 +318319,48 @@
     "lng": -3.38792324
    }
   },
+  "waun-fach-play-area-pentwyn-cardiff": {
+   "nearest": {
+    "id": "711260088d0db025e3c7cf2c",
+    "name": "Park and Ride, Pentwyn",
+    "m": 1018,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.520852303,
+    "lng": -3.13575983
+   }
+  },
   "waunarlwydd-playground-waunarlwydd": {
+   "nearest": null
+  },
+  "waunbant-road-play-area-kenfig-hill-kenfig-hill": {
    "nearest": null
   },
   "waunbant-road-play-area-kenfig-hill-pyle-kenfig-hill": {
    "nearest": null
+  },
+  "waunfawr-park-play-area-crosskeys": {
+   "nearest": {
+    "id": "c2452833a09f488a9ea8ac75",
+    "name": "Public toilet",
+    "m": 1300,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.6148159,
+    "lng": -3.1420773
+   },
+   "nearestBabyChange": {
+    "id": "ceaaad3a0acbb4e771d8936c",
+    "name": "Snug Coffee Shop",
+    "m": 1850,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.607235223,
+    "lng": -3.100765049
+   }
   },
   "waunfawr-play-area-waunfawr-aberystwyth": {
    "nearest": {
@@ -321514,6 +321665,18 @@
     "lng": -2.284587622
    }
   },
+  "whitchurch-library-gardens-play-area-whitchurch-cardiff": {
+   "nearest": {
+    "id": "4d0be5329b2456d97fb338f5",
+    "name": "Whitchurch toilet",
+    "m": 501,
+    "babyChange": null,
+    "accessible": true,
+    "free": false,
+    "lat": 51.514116185,
+    "lng": -3.220683712
+   }
+  },
   "white-city-adventure-playground-robinswood-gloucester": {
    "nearest": {
     "id": "59e1efd55ff008b79f5a0c1c",
@@ -322056,6 +322219,28 @@
     "free": true,
     "lat": 52.050318675,
     "lng": 1.145387743
+   }
+  },
+  "whitland-crescent-play-area-fairwater-cardiff": {
+   "nearest": {
+    "id": "25a9286201dc8b8287a067b8",
+    "name": "Public toilet",
+    "m": 1505,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.49481946,
+    "lng": -3.2178618
+   },
+   "nearestBabyChange": {
+    "id": "36043d13879faecbf5806368",
+    "name": "Victoria Park Public Toilets",
+    "m": 2049,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.483053262,
+    "lng": -3.218404055
    }
   },
   "whitleigh-way-play-area-honicknowle-plymouth": {
@@ -322830,6 +323015,28 @@
     "lng": -0.087945474
    }
   },
+  "wilkinson-close-play-area-splott-cardiff": {
+   "nearest": {
+    "id": "dc3fd13c1ec09b629ca84118",
+    "name": "Cardiff Queen Street Station",
+    "m": 903,
+    "babyChange": false,
+    "accessible": true,
+    "free": true,
+    "lat": 51.48196277,
+    "lng": -3.170204472
+   },
+   "nearestBabyChange": {
+    "id": "1ede282f841c342748f193d3",
+    "name": "The Central Bar Wetherspoons",
+    "m": 1121,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.483337492,
+    "lng": -3.172880193
+   }
+  },
   "willaston-playing-fields-play-area-willaston": {
    "nearest": {
     "id": "0d803b329743f4402af0d9f8",
@@ -323194,6 +323401,9 @@
     "lat": 51.8844509,
     "lng": -0.5213695
    }
+  },
+  "willow-court-play-area-pantside-newbridge": {
+   "nearest": null
   },
   "willow-grange-play-park-ryhope-sunderland": {
    "nearest": {
@@ -323620,6 +323830,28 @@
     "lng": 0.164929032
    }
   },
+  "wilson-road-play-area-michaelston-super-ely-cardiff": {
+   "nearest": {
+    "id": "e8996417a8c6c43a3b500190",
+    "name": "Public toilet",
+    "m": 2277,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.48867226,
+    "lng": -3.27812326
+   },
+   "nearestBabyChange": {
+    "id": "36043d13879faecbf5806368",
+    "name": "Victoria Park Public Toilets",
+    "m": 2559,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.483053262,
+    "lng": -3.218404055
+   }
+  },
   "wilson-terrace-playground-presteigne-slough-presteigne": {
    "nearest": {
     "id": "0b972240e96a151a5b23596e",
@@ -323912,6 +324144,18 @@
     "lng": -1.317039728
    }
   },
+  "windsor-avenue-play-area-pentwyn-mawr-newbridge": {
+   "nearest": {
+    "id": "e3e1fdbf4fcd706cec65480f",
+    "name": "Sainsbury’s",
+    "m": 1670,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.657849227,
+    "lng": -3.173729181
+   }
+  },
   "windsor-avenue-playing-fields-penn-wolverhampton": {
    "nearest": {
     "id": "7041d8776de16394afe16a47",
@@ -323990,6 +324234,18 @@
     "free": true,
     "lat": 52.397289951,
     "lng": -0.534985363
+   }
+  },
+  "windsor-esplanade-play-area-cardiff-bay-cardiff": {
+   "nearest": {
+    "id": "2905b190298303ae87d1855c",
+    "name": "Mermaid Quay",
+    "m": 326,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 51.463392521,
+    "lng": -3.165634274
    }
   },
   "windsor-meadows-local-park-cippenham-slough": {
@@ -325284,6 +325540,28 @@
   "woodfield-way-playground-balby-lakeside-doncaster": {
    "nearest": null
   },
+  "woodfieldside-play-area-woodfieldside-croespen-maen": {
+   "nearest": {
+    "id": "b7e5a55cefecad04246f4a55",
+    "name": "Coffee shop",
+    "m": 435,
+    "babyChange": false,
+    "accessible": true,
+    "free": true,
+    "lat": 51.666100968,
+    "lng": -3.194811344
+   },
+   "nearestBabyChange": {
+    "id": "e3e1fdbf4fcd706cec65480f",
+    "name": "Sainsbury’s",
+    "m": 1566,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.657849227,
+    "lng": -3.173729181
+   }
+  },
   "woodford-childrens-playground-woodford": {
    "nearest": null
   },
@@ -325562,6 +325840,9 @@
     "lat": 52.83050931,
     "lng": 0.50773859
    }
+  },
+  "woodland-terrace-play-area-senghenydd": {
+   "nearest": null
   },
   "woodland-trail-stratford-greater-london": {
    "nearest": {
@@ -327009,6 +327290,18 @@
     "lng": -3.37918371
    }
   },
+  "wyllie-play-area-wyllie": {
+   "nearest": {
+    "id": "e3e1fdbf4fcd706cec65480f",
+    "name": "Sainsbury’s",
+    "m": 2341,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.657849227,
+    "lng": -3.173729181
+   }
+  },
   "wymondley-playground-wymondley-north-hertfordshire": {
    "nearest": {
     "id": "8f13612ae015328593f265dd",
@@ -327031,6 +327324,28 @@
     "free": true,
     "lat": 52.970460882,
     "lng": -1.321481371
+   }
+  },
+  "wyndham-street-play-area-riverside-cardiff": {
+   "nearest": {
+    "id": "eee04b8cc3ba8e92cfaea372",
+    "name": "Automatic Toilet",
+    "m": 676,
+    "babyChange": null,
+    "accessible": false,
+    "free": false,
+    "lat": 51.481345931,
+    "lng": -3.201177785
+   },
+   "nearestBabyChange": {
+    "id": "591ed869f00031b16f0d0e2b",
+    "name": "Chapter Arts Centre",
+    "m": 904,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.482991649,
+    "lng": -3.203558117
    }
   },
   "wynyard-woodland-park-play-area-thorpe-thewles": {
@@ -327397,6 +327712,28 @@
     "lng": 1.149305105
    }
   },
+  "yew-street-play-area-aberbargoed-bargoed": {
+   "nearest": {
+    "id": "448e5eec6c9ad3435e146a0c",
+    "name": "Ystrad Mynach Library",
+    "m": 212,
+    "babyChange": null,
+    "accessible": true,
+    "free": false,
+    "lat": 51.694486558,
+    "lng": -3.223500252
+   },
+   "nearestBabyChange": {
+    "id": "3259a62d1f71ae6e653b8cc7",
+    "name": "Bargoed Library",
+    "m": 609,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 51.689937512,
+    "lng": -3.228564262
+   }
+  },
   "yieldshields-play-area-roadmeetings-yieldshields": {
    "nearest": {
     "id": "d157baad4f880276c5e33cbb",
@@ -327471,9 +327808,6 @@
    }
   },
   "ynysdawley-playing-fields-seven-sisters": {
-   "nearest": null
-  },
-  "ynysddu-playground-ynys-ddu": {
    "nearest": null
   },
   "ynysderw-park-play-area-pontardawe-ynysmeudwy-pontardawe": {

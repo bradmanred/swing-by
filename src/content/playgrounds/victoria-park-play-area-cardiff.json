@@ -1,0 +1,34 @@
+{
+  "name": "Victoria Park Play Area",
+  "region": "wales",
+  "area": "Cardiff",
+  "lat": 51.48421,
+  "lng": -3.21915,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "wp"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Cardiff Council play area at Victoria Park, Canton, Cardiff, with separate toddler and junior areas on the council's 2020 list. Outdoor Cardiff describes a playground for children up to about 12, next to a seasonal splash pad with toddler, junior and family zones.",
+  "nearby": [],
+  "operator": "Cardiff Council",
+  "sources": [
+    {
+      "label": "Cardiff Council: Victoria Park Play Area",
+      "url": "https://www.outdoorcardiff.com/parks/victoria-park/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/250444341"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

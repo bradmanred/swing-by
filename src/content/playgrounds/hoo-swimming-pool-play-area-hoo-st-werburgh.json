@@ -1,0 +1,35 @@
+{
+  "name": "Hoo swimming pool play area",
+  "region": "south-east",
+  "area": "Hoo St Werburgh",
+  "lat": 51.42006,
+  "lng": 0.54933,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "spr",
+    "bb"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Medway Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Medway Council",
+  "sources": [
+    {
+      "label": "Medway Council: Hoo swimming pool play area",
+      "url": "https://www.medway.gov.uk/directory_record/279719/hoo_swimming_pool_play_area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1358564260"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
