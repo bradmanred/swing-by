@@ -1,9 +1,9 @@
 {
-  "name": "Station Road Play Area",
+  "name": "The Wern Play Area",
   "region": "wales",
-  "area": "Church Village",
-  "lat": 51.56235,
-  "lng": -3.31838,
+  "area": "Nelson",
+  "lat": 51.65208,
+  "lng": -3.27907,
   "ages": [],
   "equipment": [],
   "access": [],
@@ -16,12 +16,12 @@
   "operator": "Caerphilly County Borough Council",
   "sources": [
     {
-      "label": "Caerphilly County Borough Council: Station Road Play Area",
+      "label": "Caerphilly County Borough Council: The Wern Play Area",
       "url": "https://caerffili.gov.uk/CaerphillyDocs/Environmental-health/appendix-2-eng.aspx"
     },
     {
-      "label": "OpenStreetMap: play area",
-      "url": "https://www.openstreetmap.org/way/1112111820"
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/1017848394"
     }
   ],
   "checked": "2026-11-22",

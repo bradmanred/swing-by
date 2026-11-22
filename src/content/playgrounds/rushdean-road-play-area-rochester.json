@@ -1,10 +1,14 @@
 {
   "name": "Rushdean Road play area",
   "region": "south-east",
-  "area": "Rochester",
-  "lat": 51.3856,
-  "lng": 0.47106,
-  "ages": [],
+  "area": "Strood",
+  "lat": 51.38566,
+  "lng": 0.46826,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
   "equipment": [
     "sw",
     "bs"
@@ -21,9 +25,13 @@
     {
       "label": "Medway Council: Rushdean Road play area",
       "url": "https://www.medway.gov.uk/directory_record/736/rushdean_road_play_area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/636909151"
     }
   ],
-  "checked": "2026-10-24",
-  "notConfirmed": "Exact position (from the council's map), age ranges, opening hours, toilets and parking.",
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

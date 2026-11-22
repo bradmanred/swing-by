@@ -1,17 +1,23 @@
 {
   "name": "Barnfield Recreation Ground",
   "region": "south-east",
-  "area": "Chatham",
-  "lat": 51.36576,
-  "lng": 0.53655,
-  "ages": [],
+  "area": "Wayfield, Chatham",
+  "lat": 51.36457,
+  "lng": 0.53505,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
   "equipment": [
     "sw",
     "rb",
     "ss",
     "cl",
     "zw",
-    "sk"
+    "sk",
+    "spr",
+    "mg"
   ],
   "access": [],
   "facilities": [],
@@ -23,9 +29,13 @@
     {
       "label": "Medway Council: Barnfield Recreation Ground",
       "url": "https://www.medway.gov.uk/directory_record/2479/barnfield_recreation_ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/369995576"
     }
   ],
-  "checked": "2026-10-24",
-  "notConfirmed": "Exact position (from the council's map), age ranges, opening hours, toilets and parking.",
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

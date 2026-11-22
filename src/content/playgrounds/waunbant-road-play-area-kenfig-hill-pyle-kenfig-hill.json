@@ -1,9 +1,9 @@
 {
   "name": "Waunbant Road Play Area, Kenfig Hill",
   "region": "wales",
-  "area": "Pyle, Kenfig Hill",
-  "lat": 51.52536,
-  "lng": -3.66752,
+  "area": "Kenfig Hill",
+  "lat": 51.53188,
+  "lng": -3.67877,
   "ages": [],
   "equipment": [],
   "access": [],
@@ -16,9 +16,13 @@
     {
       "label": "Bridgend County Borough Council: Waunbant Road Play Area, Kenfig Hill",
       "url": "https://www.bridgend.gov.uk/residents/leisure-culture-and-libraries/playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/32663990"
     }
   ],
-  "checked": "2026-11-04",
-  "notConfirmed": "Exact position (approximate: the nearest mapped play area to the street the council names), age ranges, play equipment, opening hours, toilets and parking.",
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
   "photo": null
 }
