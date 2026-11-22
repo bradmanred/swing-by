@@ -53,13 +53,13 @@ const ages = [
     <div>
       <p class="counter"><strong>{total}</strong> playgrounds and counting</p>
       <h1 id="hero-title">Where shall we play today?</h1>
-      <p class="lede">Find a playground worth the trip, and know before you go: toilets, baby change, the swings they love, and whether it's free. We check playgrounds against the council's or operator's own website, and say clearly when one hasn't been checked yet.</p>
+      <p class="lede">Find a playground worth visiting: know what's there before you go.</p>
     </div>
     <form class="search" id="search" action="/playgrounds/" role="search" aria-label="Find playgrounds">
       <div>
         <label for="where">Town or postcode</label>
-        <input id="where" data-clarity-mask="true" name="q" type="text" autocomplete="postal-code" value="" placeholder="Your town or postcode" aria-describedby="where-hint" />
-        <p class="hint" id="where-hint" aria-live="polite">Enter a town or postcode, like Derby or SW1A 1AA.</p>
+        <input id="where" data-clarity-mask="true" name="q" type="text" autocomplete="postal-code" value="" placeholder="e.g. Derby or SW1A 1AA" aria-describedby="where-hint" />
+        <p class="hint" id="where-hint" aria-live="polite"></p>
         <div class="go">
           <button class="btn btn-yellow" type="button" id="locate"><span aria-hidden="true">📍</span> Near me</button>
           <button class="btn btn-red" type="submit">Let's go!</button>
