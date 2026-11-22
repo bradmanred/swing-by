@@ -1,0 +1,28 @@
+{
+  "name": "Coombe Park Play Area",
+  "region": "east-midlands",
+  "area": "Oadby",
+  "lat": 52.58619,
+  "lng": -1.06832,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Oadby and Wigston Borough Council's Coombe Park in Oadby, with a play area.",
+  "nearby": [],
+  "operator": "Oadby and Wigston Borough Council",
+  "sources": [
+    {
+      "label": "Oadby and Wigston Borough Council: Coombe Park Play Area",
+      "url": "https://www.oadby-wigston.gov.uk/pages/parks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/490505101"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

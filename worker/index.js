@@ -15,6 +15,14 @@ import { AREA_MOVES } from './area-moves.js';
 
 // Old playground address → the listing it was merged into. Add a line whenever two listings are merged.
 const MERGED = {
+  'cotton-play-area-holmes-chapel-cranage': 'middlewich-road-play-area-holmes-chapel',
+  'playground-off-church-lane-sandbach-heath-sandbach': 'sandbach-heath-play-area-sandbach-heath-sandbach',
+  'playground-off-lawrence-close-cranage': 'armistead-way-play-area-cranage',
+  'playground-off-kingston-avenue-east-clevedon-clevedon': 'cherry-avenue-play-area-east-clevedon-clevedon',
+  'kenn-moor-fields-playground-east-clevedon-clevedon': 'homeground-play-area-east-clevedon-clevedon',
+  'playground-off-riviera-way-little-stoke': 'adelante-close-play-area-stoke-gifford',
+  'playground-off-bakers-ground-little-stoke': 'bakers-ground-play-area-little-stoke-bradley-stoke',
+  'playground-off-kings-drive-little-stoke': 'kings-drive-play-area-little-stoke-bradley-stoke',
   'hutton-playground-hutton-mount-brentwood': 'hutton-recreation-ground-play-area-hutton',
   'playground-off-rayleigh-road-hutton-mount-brentwood': 'ingrave-johnstone-playing-fields-play-area-hutton',
   'playground-off-nursery-close-rayleigh': 'bedford-close-play-area-rayleigh',

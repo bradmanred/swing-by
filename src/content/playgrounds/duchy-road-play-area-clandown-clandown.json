@@ -1,0 +1,32 @@
+{
+  "name": "Duchy Road Play Area, Clandown",
+  "region": "south-west",
+  "area": "Clandown",
+  "lat": 51.30314,
+  "lng": -2.4592,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl",
+    "sk"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Bath and North East Somerset Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Bath and North East Somerset Council",
+  "sources": [
+    {
+      "label": "Bath and North East Somerset Council: Duchy Road Play Area, Clandown",
+      "url": "https://www.bathnes.gov.uk/duchy-road-play-area-clandown"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/124983239"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Monk Meadow Play Area",
+  "region": "south-west",
+  "area": "Linden, Gloucester",
+  "lat": 51.85509,
+  "lng": -2.2593,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area on Gloucester City Council's list of play areas in the city.",
+  "nearby": [],
+  "operator": "Gloucester City Council",
+  "sources": [
+    {
+      "label": "Gloucester City Council: Monk Meadow Play Area",
+      "url": "https://gloucester.gov.uk/culture-leisure/parks-open-spaces/play-areas-in-gloucester/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/269785116"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

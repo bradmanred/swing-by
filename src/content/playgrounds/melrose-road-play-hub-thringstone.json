@@ -1,0 +1,32 @@
+{
+  "name": "Melrose Road Play Hub",
+  "region": "east-midlands",
+  "area": "Thringstone",
+  "lat": 52.75363,
+  "lng": -1.36336,
+  "ages": [
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A play area in Thringstone looked after by North West Leicestershire District Council, with fenced equipment for younger children and a basketball court.",
+  "nearby": [],
+  "operator": "North West Leicestershire District Council",
+  "sources": [
+    {
+      "label": "North West Leicestershire District Council: Melrose Road Play Hub",
+      "url": "https://www.nwleics.gov.uk/pages/play_areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1211962948"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

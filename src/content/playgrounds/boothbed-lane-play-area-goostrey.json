@@ -1,0 +1,28 @@
+{
+  "name": "Boothbed Lane Play Area",
+  "region": "north-west",
+  "area": "Goostrey",
+  "lat": 53.22898,
+  "lng": -2.35523,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area in Goostrey, on Cheshire East Council's list of play areas.",
+  "nearby": [],
+  "operator": "Cheshire East Council",
+  "sources": [
+    {
+      "label": "Cheshire East Council: Boothbed Lane Play Area",
+      "url": "https://cheshireeast.gov.uk/leisure,_culture_and_tourism/parks_and_gardens/play-areas.aspx"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/920725303"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Uplands Park Play Area",
+  "region": "east-midlands",
+  "area": "Oadby",
+  "lat": 52.60035,
+  "lng": -1.07408,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Oadby and Wigston Borough Council's Uplands Park in Oadby, with two play areas.",
+  "nearby": [],
+  "operator": "Oadby and Wigston Borough Council",
+  "sources": [
+    {
+      "label": "Oadby and Wigston Borough Council: Uplands Park Play Area",
+      "url": "https://www.oadby-wigston.gov.uk/pages/parks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/875702053"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Mitton Play Area",
+  "region": "south-west",
+  "area": "Mitton, Tewkesbury",
+  "lat": 52.00085,
+  "lng": -2.14527,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by Tewkesbury Town Council.",
+  "nearby": [],
+  "operator": "Tewkesbury Town Council",
+  "sources": [
+    {
+      "label": "Tewkesbury Town Council: Mitton Play Area",
+      "url": "https://tewkesburytowncouncil.gov.uk/play-parks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1573780771"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Ashburton Road Play Area",
+  "region": "east-midlands",
+  "area": "Hugglescote",
+  "lat": 52.711,
+  "lng": -1.37493,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A play area in Hugglescote looked after by North West Leicestershire District Council, with a fenced area for toddlers to juniors.",
+  "nearby": [],
+  "operator": "North West Leicestershire District Council",
+  "sources": [
+    {
+      "label": "North West Leicestershire District Council: Ashburton Road Play Area",
+      "url": "https://www.nwleics.gov.uk/pages/play_areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1161177173"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Holmleigh Park Play Area",
+  "region": "south-west",
+  "area": "Lower Tuffley, Quedgeley",
+  "lat": 51.83442,
+  "lng": -2.26401,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area on Gloucester City Council's list of play areas in the city.",
+  "nearby": [],
+  "operator": "Gloucester City Council",
+  "sources": [
+    {
+      "label": "Gloucester City Council: Holmleigh Park Play Area",
+      "url": "https://gloucester.gov.uk/culture-leisure/parks-open-spaces/play-areas-in-gloucester/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/33179185"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

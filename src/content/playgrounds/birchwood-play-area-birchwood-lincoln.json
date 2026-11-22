@@ -1,0 +1,32 @@
+{
+  "name": "Birchwood Play Area",
+  "region": "east-midlands",
+  "area": "Birchwood, Lincoln",
+  "lat": 53.21646,
+  "lng": -0.60114,
+  "ages": [
+    "under-3"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "cf"
+  ],
+  "opens": "",
+  "description": "A playground on City of Lincoln Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of Lincoln Council",
+  "sources": [
+    {
+      "label": "City of Lincoln Council: Birchwood Play Area",
+      "url": "https://www.lincoln.gov.uk/directory-record/295/birchwood-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1449870543"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

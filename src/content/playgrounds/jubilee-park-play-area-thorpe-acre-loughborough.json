@@ -1,0 +1,33 @@
+{
+  "name": "Jubilee Park Play Area",
+  "region": "east-midlands",
+  "area": "Thorpe Acre, Loughborough",
+  "lat": 52.77681,
+  "lng": -1.24264,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area in Loughborough, on Charnwood Borough Council's play areas list. It has separate toddler, junior and teen areas.",
+  "nearby": [],
+  "operator": "Charnwood Borough Council",
+  "sources": [
+    {
+      "label": "Charnwood Borough Council: Jubilee Park Play Area",
+      "url": "https://www.charnwood.gov.uk/pages/play_areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/297407871"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

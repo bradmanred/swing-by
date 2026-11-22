@@ -1,0 +1,28 @@
+{
+  "name": "Randwick Park Play Area",
+  "region": "south-west",
+  "area": "Tuffley, Gloucester",
+  "lat": 51.83385,
+  "lng": -2.25163,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area on Gloucester City Council's list of play areas in the city.",
+  "nearby": [],
+  "operator": "Gloucester City Council",
+  "sources": [
+    {
+      "label": "Gloucester City Council: Randwick Park Play Area",
+      "url": "https://gloucester.gov.uk/culture-leisure/parks-open-spaces/play-areas-in-gloucester/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/33149369"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

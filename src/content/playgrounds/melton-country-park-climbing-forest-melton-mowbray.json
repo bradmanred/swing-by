@@ -1,0 +1,30 @@
+{
+  "name": "Melton Country Park Climbing Forest",
+  "region": "east-midlands",
+  "area": "Melton Mowbray",
+  "lat": 52.78003,
+  "lng": -0.87937,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "cf"
+  ],
+  "opens": "",
+  "description": "A Melton Borough Council play area in Melton Mowbray, in Melton Country Park, which has a visitor centre and café.",
+  "nearby": [],
+  "operator": "Melton Borough Council",
+  "sources": [
+    {
+      "label": "Melton Borough Council: Melton Country Park Climbing Forest",
+      "url": "https://www.melton.gov.uk/leisure-health-and-community/parks-and-green-spaces/play-areas-and-parks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/309302250"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

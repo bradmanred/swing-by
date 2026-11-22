@@ -1,0 +1,28 @@
+{
+  "name": "Longlevens Recreation Ground Play Area",
+  "region": "south-west",
+  "area": "Longlevens, Gloucester",
+  "lat": 51.87942,
+  "lng": -2.22066,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area on Gloucester City Council's list of play areas in the city.",
+  "nearby": [],
+  "operator": "Gloucester City Council",
+  "sources": [
+    {
+      "label": "Gloucester City Council: Longlevens Recreation Ground Play Area",
+      "url": "https://gloucester.gov.uk/culture-leisure/parks-open-spaces/play-areas-in-gloucester/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/229450452"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

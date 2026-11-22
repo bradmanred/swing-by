@@ -1,0 +1,34 @@
+{
+  "name": "Moira Furnace Playground",
+  "region": "east-midlands",
+  "area": "Moira",
+  "lat": 52.73367,
+  "lng": -1.53907,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl"
+  ],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A play area in Moira looked after by North West Leicestershire District Council, with a fenced play area for all ages with climbing frames, a slide and swings in Moira Furnace Country Park.",
+  "nearby": [],
+  "operator": "North West Leicestershire District Council",
+  "sources": [
+    {
+      "label": "North West Leicestershire District Council: Moira Furnace Playground",
+      "url": "https://www.nwleics.gov.uk/pages/play_areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/947809984"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

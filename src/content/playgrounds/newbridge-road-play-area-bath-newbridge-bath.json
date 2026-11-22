@@ -1,0 +1,33 @@
+{
+  "name": "Newbridge Road Play Area, Bath",
+  "region": "south-west",
+  "area": "Newbridge, Bath",
+  "lat": 51.38877,
+  "lng": -2.40493,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Bath and North East Somerset Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Bath and North East Somerset Council",
+  "sources": [
+    {
+      "label": "Bath and North East Somerset Council: Newbridge Road Play Area, Bath",
+      "url": "https://www.bathnes.gov.uk/newbridge-road-play-area-bath"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/38006269"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
