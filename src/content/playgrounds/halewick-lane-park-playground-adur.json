@@ -1,0 +1,30 @@
+{
+  "name": "Halewick Lane Park playground",
+  "region": "south-east",
+  "area": "Adur",
+  "lat": 50.84374,
+  "lng": -0.33124,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Adur District Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Adur District Council",
+  "sources": [
+    {
+      "label": "Adur District Council: Halewick Lane Park playground",
+      "url": "https://www.adur-worthing.gov.uk/parks/find/lancing-and-sompting/halewick-lane-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/493006032"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

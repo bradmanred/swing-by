@@ -1,0 +1,31 @@
+{
+  "name": "Goring Recreation Ground playground",
+  "region": "south-east",
+  "area": "Goring-by-Sea",
+  "lat": 50.81312,
+  "lng": -0.43337,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Worthing Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Worthing Borough Council",
+  "sources": [
+    {
+      "label": "Worthing Borough Council: Goring Recreation Ground playground",
+      "url": "https://www.adur-worthing.gov.uk/parks/find/worthing/goring-recreation-ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1000876448"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

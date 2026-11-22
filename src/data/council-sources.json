@@ -2281,7 +2281,7 @@
         "https://www.caerphilly.gov.uk/Things-To-Do/Play-areas-facilities",
         "https://caerffili.gov.uk/CaerphillyDocs/Environmental-health/appendix-2-eng.aspx"
       ],
-      "note": "The council's play areas page links a download the site refuses to automated requests, but its environmental health appendix lists the enclosed play areas (src/data/council-lists/caerphilly.csv, 105 play areas placed by street or park name; skate parks, outdoor gyms, youth shelters, kick walls and MUGAs left out), 20 November 2026. The council says it runs 177, so OpenStreetMap fills the rest. Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "note": "The council's play areas page links a download the site refuses to automated requests, but its environmental health appendix lists the enclosed play areas (src/data/council-lists/caerphilly.csv, 105 play areas placed by street or park name; skate parks, outdoor gyms, youth shelters, kick walls and MUGAs left out), 20 November 2026. The council says it runs 177, so OpenStreetMap fills the rest. Tried 22 November 2026: 62 of the 105 placed (43 couldn't be placed by street or park name). Not imported yet: the coverage check only reads a council's list where it has OpenStreetMap gaps, and Caerphilly has none.",
       "feed": {
         "type": "list",
         "file": "src/data/council-lists/caerphilly.csv",
@@ -4035,7 +4035,7 @@
       "sources": [
         "https://horsham.gov.uk/playareas"
       ],
-      "note": "The play areas page lists the district council's play areas with postcodes (src/data/council-lists/horsham.csv, 43 read of the 52 it says it runs, 20 November 2026). Parish councils run many more, such as Storrington, Steyning, Henfield and Billingshurst. Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "note": "The play areas page lists the district council's play areas with postcodes (src/data/council-lists/horsham.csv, 43 read of the 52 it says it runs, 20 November 2026). Parish councils run many more, such as Storrington, Steyning, Henfield and Billingshurst. Tried and imported 22 November 2026 (43 read).",
       "feed": {
         "type": "list",
         "file": "src/data/council-lists/horsham.csv",
@@ -4053,7 +4053,7 @@
       "sources": [
         "https://www.adur-worthing.gov.uk/playgrounds/find/worthing"
       ],
-      "note": "Adur & Worthing Councils' find-a-playground pages link a page for each of Worthing's 28 playgrounds, with address, postcode and facilities. Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "note": "Adur & Worthing Councils' find-a-playground pages link a page for each of Worthing's 28 playgrounds, with address, postcode and facilities. Tried and imported 22 November 2026 (28 read; names tidied from “X and playground” to “X playground”).",
       "feed": {
         "type": "pages",
         "index": [
@@ -4073,7 +4073,7 @@
       "sources": [
         "https://www.adur-worthing.gov.uk/playgrounds/find"
       ],
-      "note": "Adur & Worthing Councils' find-a-playground pages link a page for each playground in Lancing and Sompting, Shoreham-by-Sea, and Southwick and Fishersgate (about 23; some Lancing ones are Lancing Parish Council's), with address, postcode and facilities. Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "note": "Adur & Worthing Councils' find-a-playground pages link a page for each playground in Lancing and Sompting, Shoreham-by-Sea, and Southwick and Fishersgate (about 23; some Lancing ones are Lancing Parish Council's), with address, postcode and facilities. Tried and imported 22 November 2026 (24 read; Ham Road Skatepark excluded, names tidied from “X and playground” to “X playground”).",
       "feed": {
         "type": "pages",
         "index": [
@@ -4081,6 +4081,7 @@
           "https://www.adur-worthing.gov.uk/playgrounds/find/shoreham-by-sea",
           "https://www.adur-worthing.gov.uk/playgrounds/find/southwick-and-fishersgate"
         ],
+        "exclude": "skate ?park$",
         "follow": "/parks/find/(?:lancing-and-sompting|shoreham-by-sea|southwick-and-fishersgate)/[a-z0-9-]+/?$",
         "near": {
           "lat": 50.84,
@@ -4119,7 +4120,7 @@
       "sources": [
         "https://www.chichester.gov.uk/article/23999/Childrens-play-areas"
       ],
-      "note": "The district council runs six play areas, all in Chichester city: Parklands (Sherborne Road), Whyke Oval, the Amphitheatre, Priory Park, Florence Park and Oaklands Park, placed by park name (src/data/council-lists/chichester.csv, 20 November 2026). Town and parish councils (Selsey, Midhurst, Petworth and others) run the rest, which come from OpenStreetMap. Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "note": "The district council runs six play areas, all in Chichester city: Parklands (Sherborne Road), Whyke Oval, the Amphitheatre, Priory Park, Florence Park and Oaklands Park, placed by park name (src/data/council-lists/chichester.csv, 20 November 2026). Town and parish councils (Selsey, Midhurst, Petworth and others) run the rest, which come from OpenStreetMap. Tried and imported 22 November 2026 (6 read).",
       "feed": {
         "type": "list",
         "file": "src/data/council-lists/chichester.csv",
@@ -4138,7 +4139,7 @@
         "https://stockton.gov.uk/play-areas",
         "https://moderngov.stockton.gov.uk/documents/s5866/SBC%20-%20Play%20Areas%20List%20Dec%2023.pdf"
       ],
-      "note": "The play areas page names only the five biggest; the December 2023 committee list of play areas (with postcodes, src/data/council-lists/stockton-on-tees.csv; planned sites left out) covers about 50, a few run by parish and town councils. Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "note": "The play areas page names only the five biggest; the December 2023 committee list of play areas (with postcodes, src/data/council-lists/stockton-on-tees.csv; planned sites left out) covers about 50, a few run by parish and town councils. Tried and imported 22 November 2026 (49 read; Newburn Bridge couldn't be placed).",
       "feed": {
         "type": "list",
         "file": "src/data/council-lists/stockton-on-tees.csv",
@@ -4156,7 +4157,7 @@
       "sources": [
         "https://www.hartlepool.gov.uk/parks-green-spaces/play-areas-hartlepool"
       ],
-      "note": "The play areas page lists the council's play areas by ward with no addresses; the 24 that aren't skate parks are in src/data/council-lists/hartlepool.csv, placed by park or street name (20 November 2026). Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "note": "The play areas page lists the council's play areas by ward with no addresses; the 24 that aren't skate parks are in src/data/council-lists/hartlepool.csv, placed by park or street name (20 November 2026). Tried and imported 22 November 2026 (23 read, most placed by street).",
       "feed": {
         "type": "list",
         "file": "src/data/council-lists/hartlepool.csv",
@@ -4174,7 +4175,7 @@
       "sources": [
         "https://new.darlington.gov.uk/environment/parks-and-green-spaces"
       ],
-      "note": "The parks page describes 16 parks and 10 nature reserves; the seven parks it says have play areas are in src/data/council-lists/darlington.csv, placed by park name. The council's estate and village play areas (26 or so in the town) aren't listed, so they come from OpenStreetMap (20 November 2026). Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "note": "The parks page describes 16 parks and 10 nature reserves; the seven parks it says have play areas are in src/data/council-lists/darlington.csv, placed by park name. The council's estate and village play areas (26 or so in the town) aren't listed, so they come from OpenStreetMap (20 November 2026). Tried and imported 22 November 2026 (7 read).",
       "feed": {
         "type": "list",
         "file": "src/data/council-lists/darlington.csv",
@@ -4200,7 +4201,7 @@
       "sources": [
         "https://www.hastings.gov.uk/parks_gardens_allotments/playgrounds/playgrounds/"
       ],
-      "note": "The playgrounds page lists the council's play spaces with postcodes; the 33 with play equipment are in src/data/council-lists/hastings.csv (kick-about area and seafront trail pieces left out, 20 November 2026). Housing association play areas (Orbit and others) aren't on it. Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "note": "The playgrounds page lists the council's play spaces with postcodes; the 33 with play equipment are in src/data/council-lists/hastings.csv (kick-about area and seafront trail pieces left out, 20 November 2026). Housing association play areas (Orbit and others) aren't on it. Tried and imported 22 November 2026 (33 read).",
       "feed": {
         "type": "list",
         "file": "src/data/council-lists/hastings.csv",
@@ -4219,7 +4220,7 @@
         "https://www.rother.gov.uk/leisure-and-events/play-in-rother/play-facilities/childrens-play-areas-in-bexhill",
         "https://www.rother.gov.uk/leisure-and-events/play-in-rother/"
       ],
-      "note": "The children's play areas in Bexhill page lists the council's Bexhill play areas with postcodes (src/data/council-lists/rother.csv, 20 November 2026). Its other play areas in Battle and Rye (such as Rye Salts) have no list, and town and parish councils run most outside Bexhill; those come from OpenStreetMap. Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "note": "The children's play areas in Bexhill page lists the council's Bexhill play areas with postcodes (src/data/council-lists/rother.csv, 20 November 2026). Its other play areas in Battle and Rye (such as Rye Salts) have no list, and town and parish councils run most outside Bexhill; those come from OpenStreetMap. Tried and imported 22 November 2026 (14 read).",
       "feed": {
         "type": "list",
         "file": "src/data/council-lists/rother.csv",
@@ -4261,7 +4262,7 @@
       "sources": [
         "https://www.northnorthants.gov.uk/parks-sports-and-leisure/local-parks-and-pocket-parks"
       ],
-      "note": "The local parks page lists parks and play areas with addresses and postcodes for the Corby, East Northamptonshire, Kettering and Wellingborough areas; the 70 that are play areas (by name or listed play equipment) are in src/data/council-lists/north-northamptonshire.csv, with East Northamptonshire's mostly run by Rushden and other town councils (20 November 2026). Parks with no play equipment listed, skate parks and ball courts were left out. Wicksteed Park is a charity's. Feed set up 20 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "note": "The local parks page lists parks and play areas with addresses and postcodes for the Corby, East Northamptonshire, Kettering and Wellingborough areas; the 70 that are play areas (by name or listed play equipment) are in src/data/council-lists/north-northamptonshire.csv, with East Northamptonshire's mostly run by Rushden and other town councils (20 November 2026). Parks with no play equipment listed, skate parks and ball courts were left out. Wicksteed Park is a charity's. Tried and imported 22 November 2026 (70 read).",
       "feed": {
         "type": "list",
         "file": "src/data/council-lists/north-northamptonshire.csv",
