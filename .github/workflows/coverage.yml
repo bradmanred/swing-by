@@ -11,7 +11,8 @@
 # next councils to research by hand (docs/finding-playgrounds.md). It refreshes the nearest toilets and opens one
 # pull request for you to review, and skips the day if an earlier coverage pull request is still open, so
 # unreviewed work never piles up or overlaps.
-# From the Actions tab you can also run it on demand, for one county, or with the OpenStreetMap fallback.
+# From the Actions tab you can also run it on demand, for one county, or with the OpenStreetMap fallback. Naming counties, or
+# ticking "Read every council list", also reads the lists of councils with no OpenStreetMap gaps, which the daily run skips.
 name: Check coverage
 on:
   workflow_dispatch:
@@ -24,6 +25,10 @@ on:
         default: ''
       osm_fallback:
         description: "Also fill gaps from OpenStreetMap in councils whose own lists haven't been checked yet"
+        type: boolean
+        default: false
+      all_feeds:
+        description: "Read every council list in the counties checked, even where OpenStreetMap shows no gaps (always on when counties are named)"
         type: boolean
         default: false
   schedule:
@@ -73,12 +78,13 @@ jobs:
           ADD: ${{ steps.plan.outputs.add }}
           ONLY: ${{ inputs.only || '' }}
           FALLBACK: ${{ inputs.osm_fallback && '--osm-fallback' || '' }}
+          ALL_FEEDS: ${{ inputs.all_feeds && '--all-feeds' || '' }}
           # Street lookups for council-list rows are saved into their CSVs, so they're only done once.
           SAVE_COUNCIL_PLACES: '1'
         run: |
           # Counties are started for up to 59 minutes 59 seconds; the next run carries on from where this one stopped.
           export SCAN_MINUTES=59.9833
-          if [ -n "$ONLY" ]; then node scripts/find-gaps.mjs --add "$ADD" --only "$ONLY" $FALLBACK; else node scripts/find-gaps.mjs --add "$ADD" $FALLBACK; fi
+          if [ -n "$ONLY" ]; then node scripts/find-gaps.mjs --add "$ADD" --only "$ONLY" $FALLBACK $ALL_FEEDS; else node scripts/find-gaps.mjs --add "$ADD" $FALLBACK $ALL_FEEDS; fi
           # Sizes from council grades held in descriptions and council lists (scripts/apply-sizes.mjs).
           node scripts/apply-sizes.mjs
       - uses: actions/cache/save@v4
