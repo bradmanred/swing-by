@@ -136,6 +136,29 @@ Before merging, open the dropped listing's live page: parent photos, pin reports
 against its address and don't move with it, so list any in the PR under "For the owner to decide" instead of merging.
 Up to about 50 pairs a run.
 
+### Playground sizes (`scripts/size-gaps.mjs`)
+
+The weekly "Check sizes" report lists councils not yet checked for play area sizes, most playgrounds first. The goal
+is more graded playgrounds: the home page's size filter is hidden until over 10% have a size. Up to about 5 councils
+a run, in the order listed. For each:
+
+- Look for the council's own grading: a play strategy or play area audit (often a PDF with a table of sites), a
+  playable space planning document, the play area list or map, or its open data portal. Fields in Trust grades are
+  LAP = small, LEAP = medium and NEAP = large; a council's own small / medium / large categories also count. Town and
+  parish councils sometimes grade their own sites. Use the `fetch-pages` workflow for council sites that block reading.
+- **Found:** set `size` on each of the council's playgrounds the source grades, matching by name and place. Never
+  guess from equipment or photos, and leave ungraded sites alone. If the council has a list in
+  `src/data/council-lists/`, add a `size` column to it (then `node scripts/apply-sizes.mjs` fills in matching
+  playgrounds); for a geojson or csv feed with a grade field, add `sizeField` to its feed in
+  `src/data/council-sources.json`. Both carry sizes onto playgrounds the coverage check adds later.
+- **Not found:** record it anyway, with `"grading": "none"`, so it isn't checked again for two years.
+- Either way, add the council to `src/data/size-sources.json` with its sources and today's date as `checked`.
+- "Recorded as grading, but none of our playgrounds has a size": apply the sizes from the recorded sources.
+- "Checked over two years ago": look again, and update `checked` (and `grading` if sizes have appeared).
+
+Size changes don't need the "Update nearest toilets" workflow. Don't change `checked` on a playground just for adding
+its size.
+
 ### Cloudflare file count (`scripts/count-assets.mjs`)
 
 The build checks count the built site's files against Cloudflare's limit per deploy (20,000 on the free Workers plan).

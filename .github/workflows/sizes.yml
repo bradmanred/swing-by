@@ -1,0 +1,62 @@
+# Playground sizes (scripts/size-gaps.mjs): how many playgrounds have a size from their council's grading, and which
+# councils to check next, most playgrounds first. Runs without Claude in a few minutes: it reads the playground files,
+# looks up each one's council on postcodes.io, and changes nothing. It opens a "Councils to check for playground
+# sizes" issue labelled check-report, which the daily "Fix check reports" Claude task works through (see the
+# "Playground sizes" section of docs/fixing-check-reports.md), skipping that while the last one is still open.
+# Once graded playgrounds pass the threshold (10%), it also opens one "Playground sizes have passed 10%" issue, not a
+# check-report, for the owner to decide whether to bring the size filter back to the home page (SHOW_SIZES in
+# src/pages/index.astro). Runs every Monday and on demand.
+name: Check sizes
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 6 * * 1'
+permissions:
+  contents: read
+  issues: write
+concurrency:
+  group: sizes
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Count sizes and list councils to check
+        run: node scripts/size-gaps.mjs --out reports
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sizes
+          path: reports/
+      - name: Open the report as an issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          cat reports/sizes.md >> "$GITHUB_STEP_SUMMARY"
+          read -r percent threshold graded total < <(node -e 'const r=require("./reports/sizes.json");console.log(r.percent,r.threshold,r.graded,r.total)')
+          # Passed the threshold: tell the owner once (any earlier issue with this title, open or closed, counts).
+          if node -e "process.exit($percent >= $threshold ? 0 : 1)"; then
+            title="Playground sizes have passed ${threshold}%"
+            seen=$(gh issue list --repo "$GITHUB_REPOSITORY" --state all --search "in:title passed" --limit 200 --json title --jq "[.[] | select(.title == \"$title\")] | length")
+            if [ "$seen" = "0" ]; then
+              printf '%s\n' "$graded of $total playgrounds ($percent%) now have a size from their council's grading." "" \
+                "The size filter was taken off the home page in November 2026 until enough playgrounds were graded to make it useful. To bring it back, set \`SHOW_SIZES\` to \`true\` in \`src/pages/index.astro\` and restore the size checks in \`tests/a11y.mjs\` (see the git history of that test)." "" \
+                "Report: [this run]($GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID)." > alert.md
+              gh api "repos/$GITHUB_REPOSITORY/issues" -f title="$title" -F body=@alert.md --jq .html_url
+            fi
+          fi
+          if [ "$(node -e 'const r=require("./reports/sizes.json");console.log(r.todo.length+r.behind.length+r.stale.length)')" = "0" ]; then
+            echo "No councils to check."; exit 0
+          fi
+          open=$(gh api "repos/$GITHUB_REPOSITORY/issues?state=open&labels=check-report&per_page=100" --jq '[.[] | select(.title | startswith("Councils to check for playground sizes"))] | length')
+          if [ "$open" != "0" ]; then
+            echo "The last sizes issue is still open; not opening another."; exit 0
+          fi
+          { cat reports/sizes.md; echo; echo "Every council: the sizes artifact on [this run]($GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID)."; } > body.md
+          head -c 60000 body.md > issue.md
+          gh api "repos/$GITHUB_REPOSITORY/issues" -f title="Councils to check for playground sizes, $(date +%Y-%m-%d)" -F body=@issue.md -f "labels[]=check-report" --jq .html_url

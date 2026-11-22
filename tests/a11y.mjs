@@ -226,16 +226,13 @@ try {
     await p2.close();
   }
 
-  // Play area size sits with Hide unverified and Free entry only under "Which playgrounds?", and only shows graded
-  // playgrounds of that size.
+  // "Which playgrounds?" holds Hide unverified and Free entry only. Play area size is hidden for now (too few
+  // playgrounds are graded) and stays off Advanced search.
   await page.goto(BASE + '/');
   const which = page.getByRole('group', { name: 'Which playgrounds?' });
-  for (const name of [/^Large/, /^Hide unverified/, /^Free entry only/])
+  for (const name of [/^Hide unverified/, /^Free entry only/])
     if (!(await which.getByRole('checkbox', { name }).count())) fail(`"Which playgrounds?" should hold ${name}`);
-  await which.getByRole('checkbox', { name: /^Large/ }).check();
-  const sized = await page.locator('#cards .card').count();
-  const large = await page.locator('#cards .card .size-large').count();
-  if (!(sized > 0 && sized === large)) fail(`size filter: ${sized} cards, ${large} marked large`);
+  if (await page.locator('input[name=size]').count()) fail('play area size should be hidden on the home page for now');
   if (await page.goto(BASE + '/search/').then(() => page.locator('input[name=size]').count())) fail('play area size should not be on Advanced search');
 
   // Free entry only: hides every playground with a fee, and only those.

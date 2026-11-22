@@ -4,7 +4,8 @@
 // coordinates on each record page, and optionally "require", a regex a record page must match, such as a playground in
 // its facilities list), or 'geojson' / 'csv' (url, name field, and lat/lng fields; a geojson feed can give "nameFormat", such as
 // "{Street} Play Park, {Town}", to build names from several fields). Returns [{ name, lat, lng, url }],
-// plus postcode, equipment, ages, access and facilities from the 'jadu' and 'localgov' readers. Parks whose page has
+// plus postcode, equipment, ages, access and facilities from the 'jadu' and 'localgov' readers, and size (the
+// council's grading, scripts/sizes.mjs) from a geojson or csv feed's "sizeField" or a list's size column or text. Parks whose page has
 // no map point are placed from their postcode; ones with neither are left out.
 // type 'list' is for councils whose playgrounds are all on one page with no machine-readable version (Bexley's table,
 // Westminster's playgrounds page): the rows are copied into a CSV in src/data/council-lists/ (name, postcode, url,
@@ -16,6 +17,7 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { gunzipSync } from 'node:zlib';
 import { describe, readJadu, readLocalGov, readPages } from './council-readers.mjs';
+import { gradeOf, sizeValue } from './sizes.mjs';
 
 const UA = { 'User-Agent': 'SwingBy/1.0 (https://swing-by.co.uk; reads council playground lists)' };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -89,7 +91,7 @@ export async function readFeed(feed) {
       // "placed" says where a saved point came from: 'street' for one an earlier run looked up from "where" (below).
       const given = Number(r.lat) && Number(r.lng) ? { lat: Number(r.lat), lng: Number(r.lng), from: r.placed === 'street' ? 'street' : 'park' } : null;
       const at = given ?? pts[r.postcode?.toUpperCase().trim()];
-      out.push({ name: r.name, park: r.park || undefined, lat: null, lng: null, ...(at && { from: 'postcode', ...at }), postcode: r.postcode, url: r.url || feed.page, description: r.text ?? '', ...describe(r.text ?? '') });
+      out.push({ name: r.name, park: r.park || undefined, lat: null, lng: null, ...(at && { from: 'postcode', ...at }), postcode: r.postcode, url: r.url || feed.page, description: r.text ?? '', ...describe(r.text ?? ''), size: sizeValue(r.size) ?? gradeOf(r.text) });
     }
     await placeByParkName(out, feed);
     // Rows still unplaced that say where they are ("where": a street and town, such as "Mercel Avenue, Armthorpe,
@@ -135,7 +137,7 @@ export async function readFeed(feed) {
       // A point, or the first point of a multipoint (Aberdeen's play areas layer stores each one as a multipoint).
       const g = f.geometry;
       const [lng, lat] = g?.type === 'Point' ? g.coordinates : g?.type === 'MultiPoint' ? g.coordinates?.[0] ?? [] : [];
-      if (lat != null) recs.push({ name: geoName(f.properties ?? {}, feed), lat, lng, url: feed.page ?? feed.url });
+      if (lat != null) recs.push({ name: geoName(f.properties ?? {}, feed), lat, lng, url: feed.page ?? feed.url, size: feed.sizeField ? sizeValue(f.properties?.[feed.sizeField]) : null });
     }
   } else if (feed.type === 'csv') {
     const text = await fetch(feed.url, { headers: UA }).then((r) => r.text()).catch(() => '');
@@ -143,7 +145,7 @@ export async function readFeed(feed) {
     const col = (k) => head.findIndex((h) => h.trim().replace(/"/g, '') === k);
     for (const r of rows) {
       const lat = Number(r[col(feed.latField)]), lng = Number(r[col(feed.lngField)]);
-      if (Number.isFinite(lat) && Number.isFinite(lng)) recs.push({ name: strip(r[col(feed.nameField)]?.replace(/"/g, '')), lat, lng, url: feed.page ?? feed.url });
+      if (Number.isFinite(lat) && Number.isFinite(lng)) recs.push({ name: strip(r[col(feed.nameField)]?.replace(/"/g, '')), lat, lng, url: feed.page ?? feed.url, size: feed.sizeField ? sizeValue(r[col(feed.sizeField)]?.replace(/"/g, '')) : null });
     }
   }
   return recs.filter((x) => x.name);

@@ -44,3 +44,17 @@ assert.equal(geoName({ Street: 'Forth Street', Town: null }, fife), 'Forth Stree
 assert.equal(geoName({ Street: null, Town: null }, fife), '');
 assert.equal(geoName({ PLAYGROUND: 'Hove Park' }, { nameField: 'PLAYGROUND' }), 'Hove Park');
 console.log('feeds: ok');
+
+// Play area sizes from council grading (scripts/sizes.mjs).
+{
+  const { gradeOf, sizeValue } = await import('../scripts/sizes.mjs');
+  assert.equal(gradeOf('On Ipswich Borough Council\'s list of play areas. A local equipped area for play (LEAP).'), 'medium');
+  assert.equal(gradeOf('A local area for play (LAP), for young children.'), 'small');
+  assert.equal(gradeOf('A locally equipped area for play, as Chesterfield Borough Council describes it.'), 'medium');
+  assert.equal(gradeOf('A NEAP with a LAP for toddlers'), 'large', 'the largest grade wins');
+  assert.equal(gradeOf('Take a leap onto the climbing frame, or sit on your lap'), null, 'everyday words are not grades');
+  assert.equal(gradeOf('A large park with a playground'), null, 'only council grades count');
+  assert.equal(sizeValue('Medium'), 'medium');
+  assert.equal(sizeValue('NEAP'), 'large');
+  assert.equal(sizeValue(''), null);
+}
