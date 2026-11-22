@@ -37,7 +37,8 @@ const WATCH = {
   'Table tennis': ['table tennis', 'ping pong'],
   'Climbing wall': ['climbing wall', 'bouldering'],
   'Balance beam': ['balance beam', 'stepping stones', 'balance trail'],
-  'Spinner': ['spinner', 'spinning cup', 'spinning bowl', 'carousel'],
+  // Not 'carousel': councils use it for roundabouts and carousel swings. The pattern skips the street "Spinners Way".
+  'Spinner': [/\bspinners?\b(?! way)/i, 'spinning cup', 'spinning bowl', 'spinning dish', 'spinning disc', 'spinning pole'],
   'Embankment slide': ['embankment slide', 'hill slide'],
   'Wobbly bridge': ['wobbly bridge', 'rope bridge', 'suspension bridge'],
   'Tunnel': ['tunnel', 'crawl tube'],
@@ -61,10 +62,10 @@ for (const f of (await readdir(dir)).filter((f) => f.endsWith('.json'))) {
   const p = JSON.parse(await readFile(join(dir, f), 'utf8'));
   parks.push({ id: f.replace(/\.json$/, ''), text: `${p.description ?? ''} ${p.notConfirmed ?? ''}`.toLowerCase(), has: [...(p.equipment ?? []), ...(p.access ?? []), ...(p.facilities ?? [])] });
 }
-const mentions = (words) => parks.filter((p) => words.some((w) => new RegExp(`\\b${w.replace(/[^a-z0-9 ]/g, '.')}`, 'i').test(p.text))).length;
+const mentions = (words) => parks.filter((p) => words.some((w) => (w instanceof RegExp ? w : new RegExp(`\\b${w.replace(/[^a-z0-9 ]/g, '.')}`, 'i')).test(p.text))).length;
 // Is this already a tick box? Matches the name loosely, so "zip wires" is the "Zip wire" tick box.
 const isTick = (name, words = []) =>
-  [name, ...words].some((w) => {
+  [name, ...words.filter((w) => typeof w === 'string')].some((w) => {
     const n = w.toLowerCase().replace(/s$/, '');
     return tickNames.some((t) => t.replace(/s$/, '') === n || (words.includes(w) && t.includes(n)));
   });

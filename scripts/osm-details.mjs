@@ -38,13 +38,14 @@ const EQUIPMENT = {
   sandpit: 'sp', sand: 'sp',
   splash_pad: 'wp', splashpad: 'wp', water: 'wp', pump: 'wp', water_play: 'wp',
   roundabout: 'rb', basketrotator: 'rb', roundabout_inclusive: 'rb',
+  spinner: 'spn', spinning_disc: 'spn', spinning_bowl: 'spn',
   seesaw: 'ss', see_saw: 'ss',
   springy: 'spr', spring_rider: 'spr', springer: 'spr',
   trampoline: 'tp',
   horizontal_ladder: 'mb', monkey_bars: 'mb', monkeybars: 'mb',
   balancebeam: 'bb', balance_beam: 'bb',
 };
-const ORDER = ['sw', 'bs', 'bk', 'sl', 'cl', 'mb', 'zw', 'rb', 'ss', 'spr', 'tp', 'bb', 'sp', 'wp'];
+const ORDER = ['sw', 'bs', 'bk', 'sl', 'cl', 'mb', 'zw', 'rb', 'spn', 'ss', 'spr', 'tp', 'bb', 'sp', 'wp'];
 /** The equipment code for one mapped item's tags, or null. A swing with a baby or basket seat counts as that. */
 export function equipmentCode(t = {}) {
   const v = String(t.playground ?? '').toLowerCase().split(';')[0].trim();
