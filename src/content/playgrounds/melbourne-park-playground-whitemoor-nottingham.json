@@ -1,0 +1,30 @@
+{
+  "name": "Melbourne Park Playground",
+  "region": "east-midlands",
+  "area": "Whitemoor, Nottingham",
+  "lat": 52.97281,
+  "lng": -1.1905,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground at Melbourne Park, Melbourne Road, on Nottingham City Council's list of its outdoor play facilities. The site also has multi-use games areas.",
+  "nearby": [],
+  "operator": "Nottingham City Council",
+  "sources": [
+    {
+      "label": "Nottingham City Council: Melbourne Park Playground",
+      "url": "https://nottinghamcity.gov.uk/media/r1jdart4/outdoor-play-facilities.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/166725190"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

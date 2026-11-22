@@ -1,0 +1,33 @@
+{
+  "name": "Meadowcroft Open Space Park (Aylesbury)",
+  "region": "south-east",
+  "area": "Quarrendon, Aylesbury",
+  "lat": 51.82967,
+  "lng": -0.83195,
+  "ages": [],
+  "equipment": [
+    "rb",
+    "mg"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Buckinghamshire Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Buckinghamshire Council",
+  "sources": [
+    {
+      "label": "Buckinghamshire Council: Meadowcroft Open Space Park (Aylesbury)",
+      "url": "https://www.buckinghamshire.gov.uk/schools-libraries-and-parks/parks-leisure-and-staying-active/find-a-park-or-play-area/meadowcroft-open-space-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/5166132006"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

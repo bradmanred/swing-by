@@ -1,0 +1,28 @@
+{
+  "name": "Springfield Play Area",
+  "region": "essex",
+  "area": "Burnham-on-Crouch",
+  "lat": 51.6339,
+  "lng": 0.80699,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A Maldon District Council play area in Burnham-on-Crouch, renewed in 2026.",
+  "nearby": [],
+  "operator": "Maldon District Council",
+  "sources": [
+    {
+      "label": "Maldon District Council: Springfield Play Area",
+      "url": "https://burnhamoncrouchtowncouncil.gov.uk/notices/mdc-play-site-renewals-spring-summer-2026/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1013460905"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

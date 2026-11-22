@@ -1,0 +1,30 @@
+{
+  "name": "Cavendish Road Recreation Ground Play Area",
+  "region": "east-midlands",
+  "area": "Gedling, Carlton",
+  "lat": 52.97213,
+  "lng": -1.09101,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area at Cavendish Road Recreation Ground, Cavendish Road, Carlton, on Gedling Borough Council's find-a-park list. It also has a ball court.",
+  "nearby": [],
+  "operator": "Gedling Borough Council",
+  "sources": [
+    {
+      "label": "Gedling Borough Council: Cavendish Road Recreation Ground Play Area",
+      "url": "https://www.gedling.gov.uk/resident/parksandgreenspaces/findapark"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/152747072"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

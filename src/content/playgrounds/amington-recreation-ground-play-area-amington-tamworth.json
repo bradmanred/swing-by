@@ -1,0 +1,33 @@
+{
+  "name": "Amington Recreation Ground Play Area",
+  "region": "west-midlands",
+  "area": "Amington, Tamworth",
+  "lat": 52.6348,
+  "lng": -1.66066,
+  "ages": [],
+  "equipment": [
+    "sl",
+    "cl",
+    "rb",
+    "ss"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A Tamworth Borough Council play area for ages 3 and up, with slides, a seesaw, a climbing frame, a roundabout and climbing rocks.",
+  "nearby": [],
+  "operator": "Tamworth Borough Council",
+  "sources": [
+    {
+      "label": "Tamworth Borough Council: Amington Recreation Ground Play Area",
+      "url": "https://tamworth.gov.uk/leisure/sports-and-activities/play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/384598086"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

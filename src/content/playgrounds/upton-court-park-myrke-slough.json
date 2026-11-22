@@ -1,0 +1,30 @@
+{
+  "name": "Upton Court Park",
+  "region": "south-east",
+  "area": "Myrke, Slough",
+  "lat": 51.49925,
+  "lng": -0.58303,
+  "ages": [],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Slough Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Slough Borough Council",
+  "sources": [
+    {
+      "label": "Slough Borough Council: Upton Court Park",
+      "url": "https://www.slough.gov.uk/directory-record/81/upton-court-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/546141913"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

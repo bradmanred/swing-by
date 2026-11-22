@@ -1,0 +1,30 @@
+{
+  "name": "Birchover Park Playground",
+  "region": "east-midlands",
+  "area": "Bilborough, Nottingham",
+  "lat": 52.95918,
+  "lng": -1.23791,
+  "ages": [],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground at Birchover Park, Birchover Road, on Nottingham City Council's list of its outdoor play facilities. The site also has a basketball hoop and an outdoor gym.",
+  "nearby": [],
+  "operator": "Nottingham City Council",
+  "sources": [
+    {
+      "label": "Nottingham City Council: Birchover Park Playground",
+      "url": "https://nottinghamcity.gov.uk/media/r1jdart4/outdoor-play-facilities.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1497492793"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Heathfield Avenue Play Area",
+  "region": "west-midlands",
+  "area": "Little Stoke, Stone",
+  "lat": 52.89458,
+  "lng": -2.14484,
+  "ages": [],
+  "equipment": [
+    "sw"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A Stafford Borough Council play area in Stone with swings.",
+  "nearby": [],
+  "operator": "Stafford Borough Council",
+  "sources": [
+    {
+      "label": "Stafford Borough Council: Heathfield Avenue Play Area",
+      "url": "https://staffordbc.gov.uk/node/162493"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1459359345"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

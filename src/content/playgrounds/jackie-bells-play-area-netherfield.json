@@ -1,0 +1,33 @@
+{
+  "name": "Jackie Bells Play Area",
+  "region": "east-midlands",
+  "area": "Netherfield",
+  "lat": 52.96223,
+  "lng": -1.07277,
+  "ages": [
+    "teens"
+  ],
+  "equipment": [
+    "sk",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area at Jackie Bells Play Area, Netherfield, on Gedling Borough Council's find-a-park list. It also has a skate park, a ball court and a teen shelter.",
+  "nearby": [],
+  "operator": "Gedling Borough Council",
+  "sources": [
+    {
+      "label": "Gedling Borough Council: Jackie Bells Play Area",
+      "url": "https://www.gedling.gov.uk/resident/parksandgreenspaces/findapark"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/relation/4740909"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Cambrian Green Play Area",
+  "region": "west-midlands",
+  "area": "Glascote Heath, Fazeley",
+  "lat": 52.62087,
+  "lng": -1.66315,
+  "ages": [],
+  "equipment": [
+    "sl",
+    "cl",
+    "rb",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A Tamworth Borough Council play area for ages 3 and up, with slides, a climbing frame, a roundabout and a springer.",
+  "nearby": [],
+  "operator": "Tamworth Borough Council",
+  "sources": [
+    {
+      "label": "Tamworth Borough Council: Cambrian Green Play Area",
+      "url": "https://tamworth.gov.uk/leisure/sports-and-activities/play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1460098838"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

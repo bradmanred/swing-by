@@ -1,0 +1,28 @@
+{
+  "name": "Brookside Play Area",
+  "region": "south-east",
+  "area": "Chertsey",
+  "lat": 51.39183,
+  "lng": -0.51496,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Runnymede Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Runnymede Borough Council",
+  "sources": [
+    {
+      "label": "Runnymede Borough Council: Brookside Play Area",
+      "url": "https://www.runnymede.gov.uk/directory-record/49/brookside-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1500170001"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

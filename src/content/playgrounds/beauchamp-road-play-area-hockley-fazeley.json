@@ -1,0 +1,30 @@
+{
+  "name": "Beauchamp Road Play Area",
+  "region": "west-midlands",
+  "area": "Hockley, Fazeley",
+  "lat": 52.60109,
+  "lng": -1.66505,
+  "ages": [],
+  "equipment": [
+    "cl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A Tamworth Borough Council play area for ages 6 and over, with ropes and a climbing frame.",
+  "nearby": [],
+  "operator": "Tamworth Borough Council",
+  "sources": [
+    {
+      "label": "Tamworth Borough Council: Beauchamp Road Play Area",
+      "url": "https://tamworth.gov.uk/leisure/sports-and-activities/play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1460099374"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

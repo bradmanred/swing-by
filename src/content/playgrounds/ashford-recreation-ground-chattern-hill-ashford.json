@@ -1,0 +1,34 @@
+{
+  "name": "Ashford Recreation Ground",
+  "region": "south-east",
+  "area": "Chattern Hill, Ashford",
+  "lat": 51.43393,
+  "lng": -0.45374,
+  "ages": [
+    "teens"
+  ],
+  "equipment": [
+    "gym"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Spelthorne Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Spelthorne Borough Council",
+  "sources": [
+    {
+      "label": "Spelthorne Borough Council: Ashford Recreation Ground",
+      "url": "https://www.spelthorne.gov.uk/page/946/ashford-recreation-ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/927109520"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

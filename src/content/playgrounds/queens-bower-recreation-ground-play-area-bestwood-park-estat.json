@@ -1,0 +1,30 @@
+{
+  "name": "Queens Bower Recreation Ground Play Area",
+  "region": "east-midlands",
+  "area": "Bestwood Park Estate, Arnold",
+  "lat": 53.00391,
+  "lng": -1.14932,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area at Queens Bower Recreation Ground, Queens Bower Road, Bestwood, on Gedling Borough Council's find-a-park list. It has zip lines and a ball court.",
+  "nearby": [],
+  "operator": "Gedling Borough Council",
+  "sources": [
+    {
+      "label": "Gedling Borough Council: Queens Bower Recreation Ground Play Area",
+      "url": "https://www.gedling.gov.uk/resident/parksandgreenspaces/findapark"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1112690642"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

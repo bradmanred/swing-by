@@ -1,0 +1,33 @@
+{
+  "name": "Whitemill Lane Play Area",
+  "region": "west-midlands",
+  "area": "Stonefield, Stone",
+  "lat": 52.89591,
+  "lng": -2.15517,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A Stafford Borough Council play area in Stone with a junior multi-play unit, a rocker and swings.",
+  "nearby": [],
+  "operator": "Stafford Borough Council",
+  "sources": [
+    {
+      "label": "Stafford Borough Council: Whitemill Lane Play Area",
+      "url": "https://staffordbc.gov.uk/node/162493"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/211907911"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

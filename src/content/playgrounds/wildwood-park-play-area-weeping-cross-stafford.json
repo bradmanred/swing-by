@@ -1,0 +1,33 @@
+{
+  "name": "Wildwood Park Play Area",
+  "region": "west-midlands",
+  "area": "Weeping Cross, Stafford",
+  "lat": 52.78916,
+  "lng": -2.0845,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "zw",
+    "sk",
+    "tp",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A Stafford Borough Council play area in Stafford with toddler and junior multi-play units, trampolines, a zip wire, natural play, a skate park and a multi-use games area.",
+  "nearby": [],
+  "operator": "Stafford Borough Council",
+  "sources": [
+    {
+      "label": "Stafford Borough Council: Wildwood Park Play Area",
+      "url": "https://staffordbc.gov.uk/Stafford-Play-Areas"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (approximate: mapped from the postcode), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

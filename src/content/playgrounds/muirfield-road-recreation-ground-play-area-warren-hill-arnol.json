@@ -1,0 +1,31 @@
+{
+  "name": "Muirfield Road Recreation Ground Play Area",
+  "region": "east-midlands",
+  "area": "Warren Hill, Arnold",
+  "lat": 53.01318,
+  "lng": -1.16212,
+  "ages": [],
+  "equipment": [
+    "gym",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area at Muirfield Road Recreation Ground, Muirfield Road, Bestwood, on Gedling Borough Council's find-a-park list. It also has a ball court and gym equipment.",
+  "nearby": [],
+  "operator": "Gedling Borough Council",
+  "sources": [
+    {
+      "label": "Gedling Borough Council: Muirfield Road Recreation Ground Play Area",
+      "url": "https://www.gedling.gov.uk/resident/parksandgreenspaces/findapark"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/198275903"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

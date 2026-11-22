@@ -1,0 +1,28 @@
+{
+  "name": "Littleton Recreation Ground",
+  "region": "south-east",
+  "area": "Littleton, Chertsey",
+  "lat": 51.4031,
+  "lng": -0.46645,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Spelthorne Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Spelthorne Borough Council",
+  "sources": [
+    {
+      "label": "Spelthorne Borough Council: Littleton Recreation Ground",
+      "url": "https://www.spelthorne.gov.uk/page/956/littleton-recreation-ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/946799659"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Kenyngton Manor Recreation Ground",
+  "region": "south-east",
+  "area": "Sunbury-on-Thames",
+  "lat": 51.42965,
+  "lng": -0.41608,
+  "ages": [],
+  "equipment": [
+    "sk",
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Spelthorne Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Spelthorne Borough Council",
+  "sources": [
+    {
+      "label": "Spelthorne Borough Council: Kenyngton Manor Recreation Ground",
+      "url": "https://www.spelthorne.gov.uk/page/973/kenyngton-manor-recreation-ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/253079146"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

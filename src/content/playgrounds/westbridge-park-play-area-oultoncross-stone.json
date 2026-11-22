@@ -1,0 +1,33 @@
+{
+  "name": "Westbridge Park Play Area",
+  "region": "west-midlands",
+  "area": "Oultoncross, Stone",
+  "lat": 52.89992,
+  "lng": -2.14625,
+  "ages": [],
+  "equipment": [
+    "sl",
+    "zw",
+    "tp",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A Stafford Borough Council play area in Stone with a giant tower and slide, an embankment slide, a zip wire, a sunken trampoline, natural woodland play, a wheeled sports plaza and a multi-use games area.",
+  "nearby": [],
+  "operator": "Stafford Borough Council",
+  "sources": [
+    {
+      "label": "Stafford Borough Council: Westbridge Park Play Area",
+      "url": "https://staffordbc.gov.uk/node/162493"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/763106774"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

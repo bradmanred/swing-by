@@ -1,0 +1,30 @@
+{
+  "name": "Explorer Avenue play area and MUGA",
+  "region": "south-east",
+  "area": "Stanwell",
+  "lat": 51.44927,
+  "lng": -0.47235,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Spelthorne Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Spelthorne Borough Council",
+  "sources": [
+    {
+      "label": "Spelthorne Borough Council: Explorer Avenue play area and MUGA",
+      "url": "https://www.spelthorne.gov.uk/resident-services/parks-and-open-spaces/explorer-avenue-play-area-and-muga"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1026446852"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

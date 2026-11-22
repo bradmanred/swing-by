@@ -1,0 +1,28 @@
+{
+  "name": "Albert Road",
+  "region": "south-east",
+  "area": "Bagshot",
+  "lat": 51.35267,
+  "lng": -0.69412,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Surrey Heath Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Surrey Heath Borough Council",
+  "sources": [
+    {
+      "label": "Surrey Heath Borough Council: Albert Road",
+      "url": "https://www.surreyheath.gov.uk/parks-and-play-areas/parks-greenspaces-and-play-areas/albert-road"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/850035748"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Chalkwell Park Playground",
+  "region": "essex",
+  "area": "Westcliff-on-Sea, Southend-on-Sea",
+  "lat": 51.54544,
+  "lng": 0.67684,
+  "ages": [
+    "under-3",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground in Chalkwell Park, Westcliff, one of the park play areas Southend-on-Sea City Council is refurbishing in its play area programme. It has separate areas for infants and older children.",
+  "nearby": [],
+  "operator": "Southend-on-Sea City Council",
+  "sources": [
+    {
+      "label": "Southend-on-Sea City Council: Chalkwell Park Playground",
+      "url": "https://southend.gov.uk/news/article/3112/have-your-say-on-playground-improvements-in-southend-s-parks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/292193308"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

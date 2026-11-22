@@ -1,0 +1,33 @@
+{
+  "name": "Burgess Park Play Trail",
+  "region": "west-midlands",
+  "area": "Glascote Heath, Fazeley",
+  "lat": 52.62046,
+  "lng": -1.66192,
+  "ages": [],
+  "equipment": [
+    "sl",
+    "cl",
+    "rb",
+    "ss"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A Tamworth Borough Council play area a play trail with slides, seesaws, ropes, a climbing frame and a roundabout.",
+  "nearby": [],
+  "operator": "Tamworth Borough Council",
+  "sources": [
+    {
+      "label": "Tamworth Borough Council: Burgess Park Play Trail",
+      "url": "https://tamworth.gov.uk/leisure/sports-and-activities/play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/899199831"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

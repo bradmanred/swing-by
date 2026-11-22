@@ -1,0 +1,32 @@
+{
+  "name": "Southglade Park Playground",
+  "region": "east-midlands",
+  "area": "Top Valley, Bulwell",
+  "lat": 52.9987,
+  "lng": -1.17252,
+  "ages": [],
+  "equipment": [
+    "sk",
+    "gym",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground at Southglade Park, Southglade Road, on Nottingham City Council's list of its outdoor play facilities. The site also has a multi-use games area, an outdoor gym and a skate park.",
+  "nearby": [],
+  "operator": "Nottingham City Council",
+  "sources": [
+    {
+      "label": "Nottingham City Council: Southglade Park Playground",
+      "url": "https://nottinghamcity.gov.uk/media/r1jdart4/outdoor-play-facilities.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/228279711"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

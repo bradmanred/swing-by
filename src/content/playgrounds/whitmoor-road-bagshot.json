@@ -1,0 +1,28 @@
+{
+  "name": "Whitmoor Road",
+  "region": "south-east",
+  "area": "Bagshot",
+  "lat": 51.35488,
+  "lng": -0.68925,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Surrey Heath Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Surrey Heath Borough Council",
+  "sources": [
+    {
+      "label": "Surrey Heath Borough Council: Whitmoor Road",
+      "url": "https://www.surreyheath.gov.uk/parks-and-play-areas/parks-greenspaces-and-play-areas/whitmoor-road"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/506078988"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

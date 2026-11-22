@@ -1,0 +1,32 @@
+{
+  "name": "Lakeside Play Area",
+  "region": "west-midlands",
+  "area": "Belgrave, Fazeley",
+  "lat": 52.62276,
+  "lng": -1.67902,
+  "ages": [],
+  "equipment": [
+    "bs",
+    "sl",
+    "cl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A Tamworth Borough Council play area for ages 3 and up, with slides, a cradle swing and a climbing frame.",
+  "nearby": [],
+  "operator": "Tamworth Borough Council",
+  "sources": [
+    {
+      "label": "Tamworth Borough Council: Lakeside Play Area",
+      "url": "https://tamworth.gov.uk/leisure/sports-and-activities/play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/387890361"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

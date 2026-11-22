@@ -1,0 +1,28 @@
+{
+  "name": "Manorcrofts Recreation Ground",
+  "region": "south-east",
+  "area": "Egham",
+  "lat": 51.42922,
+  "lng": -0.54629,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Runnymede Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Runnymede Borough Council",
+  "sources": [
+    {
+      "label": "Runnymede Borough Council: Manorcrofts Recreation Ground",
+      "url": "https://www.runnymede.gov.uk/directory-record/66/manorcrofts-recreation-ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/133661369"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

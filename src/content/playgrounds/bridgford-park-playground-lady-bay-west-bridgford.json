@@ -1,0 +1,30 @@
+{
+  "name": "Bridgford Park Playground",
+  "region": "east-midlands",
+  "area": "Lady Bay, West Bridgford",
+  "lat": 52.9338,
+  "lng": -1.12601,
+  "ages": [],
+  "equipment": [],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "Rushcliffe Borough Council's playground in Bridgford Park, reopened with new accessible equipment.",
+  "nearby": [],
+  "operator": "Rushcliffe Borough Council",
+  "sources": [
+    {
+      "label": "Rushcliffe Borough Council: Bridgford Park Playground",
+      "url": "https://www.rushcliffe.gov.uk/leisure-and-culture/parks-and-play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/87871533"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

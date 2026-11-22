@@ -1,0 +1,28 @@
+{
+  "name": "Thorpe Green",
+  "region": "south-east",
+  "area": "Thorpe Green",
+  "lat": 51.40399,
+  "lng": -0.54393,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Runnymede Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Runnymede Borough Council",
+  "sources": [
+    {
+      "label": "Runnymede Borough Council: Thorpe Green",
+      "url": "https://www.runnymede.gov.uk/directory-record/76/thorpe-green"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/958781338"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

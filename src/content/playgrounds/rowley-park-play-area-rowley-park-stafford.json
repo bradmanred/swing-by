@@ -1,0 +1,37 @@
+{
+  "name": "Rowley Park Play Area",
+  "region": "west-midlands",
+  "area": "Rowley Park, Stafford",
+  "lat": 52.79449,
+  "lng": -2.12493,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "cl",
+    "zw",
+    "sp"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A Stafford Borough Council play area in Stafford with toddler and junior multi-play units, a zip wire, a climbing net, a sand pit and swings; run by Freedom Leisure.",
+  "nearby": [],
+  "operator": "Stafford Borough Council",
+  "sources": [
+    {
+      "label": "Stafford Borough Council: Rowley Park Play Area",
+      "url": "https://staffordbc.gov.uk/Stafford-Play-Areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/75138933"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

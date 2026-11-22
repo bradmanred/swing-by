@@ -1,0 +1,28 @@
+{
+  "name": "Beomonds Play Area",
+  "region": "south-east",
+  "area": "Chertsey",
+  "lat": 51.38892,
+  "lng": -0.50375,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Runnymede Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Runnymede Borough Council",
+  "sources": [
+    {
+      "label": "Runnymede Borough Council: Beomonds Play Area",
+      "url": "https://www.runnymede.gov.uk/directory-record/47/beomonds-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/132877047"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

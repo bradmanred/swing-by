@@ -1,0 +1,30 @@
+{
+  "name": "Horsemoor Green",
+  "region": "south-east",
+  "area": "Langley",
+  "lat": 51.49601,
+  "lng": -0.54393,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Slough Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Slough Borough Council",
+  "sources": [
+    {
+      "label": "Slough Borough Council: Horsemoor Green",
+      "url": "https://www.slough.gov.uk/directory-record/65/horsemoor-green"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/887508727"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Reedmace Play Area",
+  "region": "west-midlands",
+  "area": "Kettlebrook, Fazeley",
+  "lat": 52.62331,
+  "lng": -1.68839,
+  "ages": [],
+  "equipment": [
+    "spr"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A Tamworth Borough Council play area with a springer.",
+  "nearby": [],
+  "operator": "Tamworth Borough Council",
+  "sources": [
+    {
+      "label": "Tamworth Borough Council: Reedmace Play Area",
+      "url": "https://tamworth.gov.uk/leisure/sports-and-activities/play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/925520216"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

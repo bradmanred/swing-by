@@ -1,0 +1,30 @@
+{
+  "name": "Coppice Recreation Ground Playground",
+  "region": "east-midlands",
+  "area": "Mapperley Park, Nottingham",
+  "lat": 52.97246,
+  "lng": -1.1327,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground at Coppice Recreation Ground, Ransom Road, on Nottingham City Council's list of its outdoor play facilities. The site also has a multi-use games area.",
+  "nearby": [],
+  "operator": "Nottingham City Council",
+  "sources": [
+    {
+      "label": "Nottingham City Council: Coppice Recreation Ground Playground",
+      "url": "https://nottinghamcity.gov.uk/media/r1jdart4/outdoor-play-facilities.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/166744520"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

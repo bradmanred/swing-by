@@ -1,0 +1,28 @@
+{
+  "name": "Stanwell Recreation Ground",
+  "region": "south-east",
+  "area": "Stanwell",
+  "lat": 51.45581,
+  "lng": -0.47876,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Spelthorne Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Spelthorne Borough Council",
+  "sources": [
+    {
+      "label": "Spelthorne Borough Council: Stanwell Recreation Ground",
+      "url": "https://www.spelthorne.gov.uk/page/965/stanwell-recreation-ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1008997819"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

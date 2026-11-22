@@ -1,0 +1,30 @@
+{
+  "name": "Snape Wood Playground",
+  "region": "east-midlands",
+  "area": "Hempshill Vale, Bulwell",
+  "lat": 53.00335,
+  "lng": -1.21646,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground at Snape Wood, Snape Wood Road, on Nottingham City Council's list of its outdoor play facilities. The site also has a multi-use games area.",
+  "nearby": [],
+  "operator": "Nottingham City Council",
+  "sources": [
+    {
+      "label": "Nottingham City Council: Snape Wood Playground",
+      "url": "https://nottinghamcity.gov.uk/media/r1jdart4/outdoor-play-facilities.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/108357707"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

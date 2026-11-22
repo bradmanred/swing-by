@@ -1,0 +1,28 @@
+{
+  "name": "Old Bathing Station",
+  "region": "south-east",
+  "area": "Sunbury-on-Thames",
+  "lat": 51.40129,
+  "lng": -0.41526,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Spelthorne Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Spelthorne Borough Council",
+  "sources": [
+    {
+      "label": "Spelthorne Borough Council: Old Bathing Station",
+      "url": "https://www.spelthorne.gov.uk/page/976/old-bathing-station"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/957133058"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

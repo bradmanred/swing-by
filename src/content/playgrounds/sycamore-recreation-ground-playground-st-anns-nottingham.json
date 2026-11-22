@@ -1,0 +1,30 @@
+{
+  "name": "Sycamore Recreation Ground Playground",
+  "region": "east-midlands",
+  "area": "St Ann's, Nottingham",
+  "lat": 52.96672,
+  "lng": -1.13919,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground at Sycamore Recreation Ground, Hungerhill Road, on Nottingham City Council's list of its outdoor play facilities. The site also has a multi-use games area.",
+  "nearby": [],
+  "operator": "Nottingham City Council",
+  "sources": [
+    {
+      "label": "Nottingham City Council: Sycamore Recreation Ground Playground",
+      "url": "https://nottinghamcity.gov.uk/media/r1jdart4/outdoor-play-facilities.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/37065880"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

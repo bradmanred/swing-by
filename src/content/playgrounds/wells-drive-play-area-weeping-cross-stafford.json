@@ -1,0 +1,32 @@
+{
+  "name": "Wells Drive Play Area",
+  "region": "west-midlands",
+  "area": "Weeping Cross, Stafford",
+  "lat": 52.7868,
+  "lng": -2.07402,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl",
+    "ss"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A Stafford Borough Council play area in Stafford with a slide, a seesaw and swings.",
+  "nearby": [],
+  "operator": "Stafford Borough Council",
+  "sources": [
+    {
+      "label": "Stafford Borough Council: Wells Drive Play Area",
+      "url": "https://staffordbc.gov.uk/Stafford-Play-Areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/92316180"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Wellington Park",
+  "region": "south-east",
+  "area": "Old Dean, Camberley",
+  "lat": 51.34388,
+  "lng": -0.70998,
+  "ages": [],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Surrey Heath Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Surrey Heath Borough Council",
+  "sources": [
+    {
+      "label": "Surrey Heath Borough Council: Wellington Park",
+      "url": "https://www.surreyheath.gov.uk/parks-and-play-areas/parks-greenspaces-and-play-areas/wellington-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1079618959"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Gedling Country Park",
+  "region": "east-midlands",
+  "area": "Nottingham",
+  "lat": 52.99345,
+  "lng": -1.08467,
+  "ages": [],
+  "equipment": [
+    "sl"
+  ],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A play area at Gedling Country Park, Spring Lane, Gedling, on Gedling Borough Council's find-a-park list. Its play area has a mining-themed tower slide and train; the park has public toilets.",
+  "nearby": [],
+  "operator": "Gedling Borough Council",
+  "sources": [
+    {
+      "label": "Gedling Borough Council: Gedling Country Park",
+      "url": "https://www.gedling.gov.uk/resident/parksandgreenspaces/findapark"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1447769224"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours and parking.",
+  "photo": null
+}
