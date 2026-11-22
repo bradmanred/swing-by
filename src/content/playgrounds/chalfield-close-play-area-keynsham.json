@@ -1,0 +1,33 @@
+{
+  "name": "Chalfield Close Play Area",
+  "region": "south-west",
+  "area": "Keynsham",
+  "lat": 51.39891,
+  "lng": -2.48717,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Bath and North East Somerset Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Bath and North East Somerset Council",
+  "sources": [
+    {
+      "label": "Bath and North East Somerset Council: Chalfield Close Play Area, Keynsham",
+      "url": "https://www.bathnes.gov.uk/chalfield-close-play-area-keynsham"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1164460782"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

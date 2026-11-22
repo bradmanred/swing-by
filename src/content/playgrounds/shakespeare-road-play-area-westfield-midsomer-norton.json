@@ -1,0 +1,36 @@
+{
+  "name": "Shakespeare Road Play Area",
+  "region": "south-west",
+  "area": "Westfield, Midsomer Norton",
+  "lat": 51.28688,
+  "lng": -2.47057,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "rb",
+    "tp"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Bath and North East Somerset Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Bath and North East Somerset Council",
+  "sources": [
+    {
+      "label": "Bath and North East Somerset Council: Shakespeare Road Play Area, Westfield",
+      "url": "https://www.bathnes.gov.uk/shakespeare-road-play-area-westfield"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/300561898"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

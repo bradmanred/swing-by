@@ -1,0 +1,31 @@
+{
+  "name": "Kilmersdon Road Play Area",
+  "region": "south-west",
+  "area": "Fox Hills, Radstock",
+  "lat": 51.28239,
+  "lng": -2.451,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Bath and North East Somerset Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Bath and North East Somerset Council",
+  "sources": [
+    {
+      "label": "Bath and North East Somerset Council: Kilmersdon Road Play Area, Haydon",
+      "url": "https://www.bathnes.gov.uk/kilmersdon-road-play-area-haydon"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/240953108"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
