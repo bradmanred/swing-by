@@ -5,9 +5,9 @@
   "licence": "CC BY 4.0",
   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
   "note": "Nearest toilets worked out by Swing By from the Toilet Map data.",
-  "export": "toilets-2026-11-17T00%3A00%3A40.684Z-JFrv616ju0t1FOiMpPv9mRwfIWlVRu.csv"
+  "export": "toilets-2026-11-22T00%3A00%3A40.764Z-z7Ki0f7qK6NPKa172SkkJv27H9JM50.csv"
  },
- "toilets": 15862,
+ "toilets": 15864,
  "parks": {
   "1066-battle-abbey-natural-play-area": {
    "nearest": {
@@ -28700,8 +28700,8 @@
     "babyChange": null,
     "accessible": false,
     "free": true,
-    "lat": 51.5653158,
-    "lng": -0.134315441
+    "lat": 51.565328,
+    "lng": -0.134314
    },
    "nearestBabyChange": {
     "id": "340a1661c32eef2350be759b",
@@ -34046,22 +34046,12 @@
    "nearest": {
     "id": "2152913e5bea491bd7292791",
     "name": "Welwyn North Station",
-    "m": 593,
+    "m": 450,
     "babyChange": false,
     "accessible": false,
     "free": true,
     "lat": 51.82350199,
     "lng": -0.192087402
-   },
-   "nearestBabyChange": {
-    "id": "79d41a66dcbb321022e72fdb",
-    "name": "Welwyn Hatfield Borough Council",
-    "m": 1946,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.803937635,
-    "lng": -0.20566084
    }
   },
   "dilkes-park-play-area-south-ockendon": {
@@ -39094,12 +39084,12 @@
    "nearest": {
     "id": "0706273779f5f605dd5fb7a4",
     "name": "Starbucks",
-    "m": 824,
+    "m": 823,
     "babyChange": null,
     "accessible": false,
     "free": true,
-    "lat": 51.5653158,
-    "lng": -0.134315441
+    "lat": 51.565328,
+    "lng": -0.134314
    },
    "nearestBabyChange": {
     "id": "9ab69ef0e3909dd89d516ffe",
@@ -40244,19 +40234,19 @@
   },
   "fairlands": {
    "nearest": {
-    "id": "23e2690266f91d7706776eaa",
+    "id": "b360f0ae0b3c3d257fae4706",
     "name": "Public toilet",
-    "m": 754,
+    "m": 33,
     "babyChange": null,
     "accessible": false,
     "free": true,
-    "lat": 51.901222,
-    "lng": -0.1783918
+    "lat": 51.9035562,
+    "lng": -0.1803977
    },
    "nearestBabyChange": {
     "id": "3923101fc6db84232c7e238f",
     "name": "Stevenage Indoor Market",
-    "m": 1031,
+    "m": 1323,
     "babyChange": true,
     "accessible": true,
     "free": true,
@@ -61524,16 +61514,6 @@
     "free": false,
     "lat": 53.39314217,
     "lng": -1.408427954
-   },
-   "nearestBabyChange": {
-    "id": "fffc56a29b1ccebd8f4d9cfb",
-    "name": "bog",
-    "m": 767,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 53.398955801,
-    "lng": -1.403125226
    }
   },
   "jungle-play-baneswell-newport": {
@@ -96664,6 +96644,16 @@
   },
   "playground-off-archway-road-archway-greater-london": {
    "nearest": {
+    "id": "0706273779f5f605dd5fb7a4",
+    "name": "Starbucks",
+    "m": 160,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.565328,
+    "lng": -0.134314
+   },
+   "nearestBabyChange": {
     "id": "9ab69ef0e3909dd89d516ffe",
     "name": "McDonalds",
     "m": 160,
@@ -110345,14 +110335,14 @@
     "lng": -1.409495473
    },
    "nearestBabyChange": {
-    "id": "fffc56a29b1ccebd8f4d9cfb",
-    "name": "bog",
-    "m": 1818,
+    "id": "d15223e67941c22c2169ea61",
+    "name": "The Green Estate CIC",
+    "m": 1946,
     "babyChange": true,
     "accessible": true,
-    "free": true,
-    "lat": 53.398955801,
-    "lng": -1.403125226
+    "free": false,
+    "lat": 53.376832578,
+    "lng": -1.434938908
    }
   },
   "playground-off-briton-court-west-minster-sheerness": {
@@ -131664,8 +131654,8 @@
     "babyChange": null,
     "accessible": false,
     "free": true,
-    "lat": 51.5653158,
-    "lng": -0.134315441
+    "lat": 51.565328,
+    "lng": -0.134314
    },
    "nearestBabyChange": {
     "id": "340a1661c32eef2350be759b",
@@ -150693,16 +150683,6 @@
     "free": false,
     "lat": 53.392169689,
     "lng": -1.409495473
-   },
-   "nearestBabyChange": {
-    "id": "fffc56a29b1ccebd8f4d9cfb",
-    "name": "bog",
-    "m": 1011,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 53.398955801,
-    "lng": -1.403125226
    }
   },
   "playground-off-greenlea-court-waterloo-kirklees": {
@@ -151731,12 +151711,12 @@
    "nearest": {
     "id": "0706273779f5f605dd5fb7a4",
     "name": "Starbucks",
-    "m": 233,
+    "m": 232,
     "babyChange": null,
     "accessible": false,
     "free": true,
-    "lat": 51.5653158,
-    "lng": -0.134315441
+    "lat": 51.565328,
+    "lng": -0.134314
    },
    "nearestBabyChange": {
     "id": "340a1661c32eef2350be759b",
@@ -157927,18 +157907,6 @@
     "lng": -0.20566084
    }
   },
-  "playground-off-hertford-road-welwyn-welwyn-hatfield": {
-   "nearest": {
-    "id": "2152913e5bea491bd7292791",
-    "name": "Welwyn North Station",
-    "m": 450,
-    "babyChange": false,
-    "accessible": false,
-    "free": true,
-    "lat": 51.82350199,
-    "lng": -0.192087402
-   }
-  },
   "playground-off-hesketh-lane-tingley-morley": {
    "nearest": {
     "id": "5e67123ab2dbdd99932804a2",
@@ -158237,14 +158205,14 @@
     "lng": -1.409495473
    },
    "nearestBabyChange": {
-    "id": "fffc56a29b1ccebd8f4d9cfb",
-    "name": "bog",
-    "m": 1721,
+    "id": "d15223e67941c22c2169ea61",
+    "name": "The Green Estate CIC",
+    "m": 2279,
     "babyChange": true,
     "accessible": true,
-    "free": true,
-    "lat": 53.398955801,
-    "lng": -1.403125226
+    "free": false,
+    "lat": 53.376832578,
+    "lng": -1.434938908
    }
   },
   "playground-off-high-hill-ferry-clapton-greater-london": {
@@ -163139,16 +163107,6 @@
     "free": false,
     "lat": 53.392169689,
     "lng": -1.409495473
-   },
-   "nearestBabyChange": {
-    "id": "fffc56a29b1ccebd8f4d9cfb",
-    "name": "bog",
-    "m": 1428,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 53.398955801,
-    "lng": -1.403125226
    }
   },
   "playground-off-ingestre-road-kentish-town-greater-london": {
@@ -179811,8 +179769,8 @@
     "babyChange": null,
     "accessible": false,
     "free": true,
-    "lat": 51.5653158,
-    "lng": -0.134315441
+    "lat": 51.565328,
+    "lng": -0.134314
    },
    "nearestBabyChange": {
     "id": "340a1661c32eef2350be759b",
@@ -190898,8 +190856,8 @@
     "babyChange": null,
     "accessible": false,
     "free": true,
-    "lat": 51.5653158,
-    "lng": -0.134315441
+    "lat": 51.565328,
+    "lng": -0.134314
    },
    "nearestBabyChange": {
     "id": "340a1661c32eef2350be759b",
@@ -209942,12 +209900,12 @@
    "nearest": {
     "id": "0706273779f5f605dd5fb7a4",
     "name": "Starbucks",
-    "m": 541,
+    "m": 540,
     "babyChange": null,
     "accessible": false,
     "free": true,
-    "lat": 51.5653158,
-    "lng": -0.134315441
+    "lat": 51.565328,
+    "lng": -0.134314
    },
    "nearestBabyChange": {
     "id": "340a1661c32eef2350be759b",
@@ -213588,14 +213546,14 @@
     "lng": -1.409495473
    },
    "nearestBabyChange": {
-    "id": "fffc56a29b1ccebd8f4d9cfb",
-    "name": "bog",
-    "m": 1533,
+    "id": "d15223e67941c22c2169ea61",
+    "name": "The Green Estate CIC",
+    "m": 1772,
     "babyChange": true,
     "accessible": true,
-    "free": true,
-    "lat": 53.398955801,
-    "lng": -1.403125226
+    "free": false,
+    "lat": 53.376832578,
+    "lng": -1.434938908
    }
   },
   "playground-off-shirland-road-lydford-estate-greater-london": {
@@ -218238,16 +218196,6 @@
     "free": true,
     "lat": 53.3592223,
     "lng": -1.3783803
-   },
-   "nearestBabyChange": {
-    "id": "fffc56a29b1ccebd8f4d9cfb",
-    "name": "bog",
-    "m": 2921,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 53.398955801,
-    "lng": -1.403125226
    }
   },
   "playground-off-st-jude-street-islington-greater-london": {
@@ -221975,8 +221923,8 @@
     "babyChange": null,
     "accessible": false,
     "free": true,
-    "lat": 51.5653158,
-    "lng": -0.134315441
+    "lat": 51.565328,
+    "lng": -0.134314
    },
    "nearestBabyChange": {
     "id": "340a1661c32eef2350be759b",
@@ -269455,12 +269403,12 @@
    "nearest": {
     "id": "0706273779f5f605dd5fb7a4",
     "name": "Starbucks",
-    "m": 1005,
+    "m": 1004,
     "babyChange": null,
     "accessible": false,
     "free": true,
-    "lat": 51.5653158,
-    "lng": -0.134315441
+    "lat": 51.565328,
+    "lng": -0.134314
    },
    "nearestBabyChange": {
     "id": "fc5794c259f10351f0899cab",
