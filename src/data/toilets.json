@@ -100932,18 +100932,6 @@
     "lng": -0.392632484
    }
   },
-  "north-devon-playground-north-devon": {
-   "nearest": {
-    "id": "a0dc380e03f70b6fb292dfee",
-    "name": "Public toilet",
-    "m": 1600,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.14733324,
-    "lng": -3.98765564
-   }
-  },
   "north-down-forestdale-greater-london": {
    "nearest": {
     "id": "838e4f818013cc2e4c5d9303",
@@ -294662,6 +294650,18 @@
     "free": true,
     "lat": 50.923441308,
     "lng": -1.434080601
+   }
+  },
+  "shirwell-playground-shirwell": {
+   "nearest": {
+    "id": "a0dc380e03f70b6fb292dfee",
+    "name": "Public toilet",
+    "m": 1600,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.14733324,
+    "lng": -3.98765564
    }
   },
   "shodshillmill-play-area-braehead": {
