@@ -1,0 +1,37 @@
+{
+  "name": "Vale Drive play area",
+  "region": "south-east",
+  "area": "Snodhurst, Chatham",
+  "lat": 51.35473,
+  "lng": 0.51382,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "bs",
+    "sw",
+    "cl",
+    "rb"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Medway Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Medway Council",
+  "sources": [
+    {
+      "label": "Medway Council: Vale Drive play area",
+      "url": "https://www.medway.gov.uk/directory_record/699/vale_drive_play_area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1574337060"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

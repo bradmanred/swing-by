@@ -1,0 +1,32 @@
+{
+  "name": "Hailey Park Play Area",
+  "region": "wales",
+  "area": "Llandaff North, Cardiff",
+  "lat": 51.50328,
+  "lng": -3.22994,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Cardiff Council play area at Hailey Park, Llandaff North, Cardiff, with separate toddler and junior areas on the council's 2020 list. Outdoor Cardiff describes a playground for children up to about 12; the council lists toddler and junior areas.",
+  "nearby": [],
+  "operator": "Cardiff Council",
+  "sources": [
+    {
+      "label": "Cardiff Council: Hailey Park Play Area",
+      "url": "https://www.outdoorcardiff.com/parks/hailey-park/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/26457586"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

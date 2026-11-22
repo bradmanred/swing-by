@@ -1,0 +1,28 @@
+{
+  "name": "Riverside Country Park",
+  "region": "south-east",
+  "area": "Twydall, Gillingham",
+  "lat": 51.38469,
+  "lng": 0.59648,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Medway Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Medway Council",
+  "sources": [
+    {
+      "label": "Medway Council: Riverside Country Park",
+      "url": "https://www.medway.gov.uk/directory_record/523/riverside_country_park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/60973202"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -2,9 +2,13 @@
   "name": "Grange Road Cemetery/ play area",
   "region": "south-east",
   "area": "Gillingham",
-  "lat": 51.39036,
-  "lng": 0.56202,
-  "ages": [],
+  "lat": 51.39109,
+  "lng": 0.56572,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
   "equipment": [
     "sw",
     "bs",
@@ -21,9 +25,13 @@
     {
       "label": "Medway Council: Grange Road Cemetery/ play area",
       "url": "https://www.medway.gov.uk/directory_record/713/grange_road_cemetery_play_area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/591372296"
     }
   ],
-  "checked": "2026-10-24",
-  "notConfirmed": "Exact position (from the council's map), age ranges, opening hours, toilets and parking.",
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

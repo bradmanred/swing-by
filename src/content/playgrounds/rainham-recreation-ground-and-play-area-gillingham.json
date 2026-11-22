@@ -1,0 +1,36 @@
+{
+  "name": "Rainham Recreation Ground and play area",
+  "region": "south-east",
+  "area": "Gillingham",
+  "lat": 51.36563,
+  "lng": 0.61471,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "sw",
+    "cl",
+    "rb",
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Medway Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Medway Council",
+  "sources": [
+    {
+      "label": "Medway Council: Rainham Recreation Ground and play area",
+      "url": "https://www.medway.gov.uk/directory_record/739/rainham_recreation_ground_and_play_area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/576405709"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

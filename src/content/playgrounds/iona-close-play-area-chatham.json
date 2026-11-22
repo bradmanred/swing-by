@@ -1,0 +1,37 @@
+{
+  "name": "Iona Close play area",
+  "region": "south-east",
+  "area": "Chatham",
+  "lat": 51.33107,
+  "lng": 0.54759,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "bs",
+    "sw",
+    "ss",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Medway Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Medway Council",
+  "sources": [
+    {
+      "label": "Medway Council: Iona Close play area",
+      "url": "https://www.medway.gov.uk/directory_record/753/iona_close_play_area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1340051006"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

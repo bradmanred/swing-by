@@ -1,0 +1,38 @@
+{
+  "name": "Ballens Road play area",
+  "region": "south-east",
+  "area": "Walderslade, Chatham",
+  "lat": 51.33668,
+  "lng": 0.54296,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "rb",
+    "spr"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Medway Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Medway Council",
+  "sources": [
+    {
+      "label": "Medway Council: Ballens Road play area",
+      "url": "https://www.medway.gov.uk/directory_record/752/ballens_road_play_area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/665275079"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

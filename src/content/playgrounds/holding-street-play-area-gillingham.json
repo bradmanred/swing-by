@@ -1,0 +1,34 @@
+{
+  "name": "Holding Street Play Area",
+  "region": "south-east",
+  "area": "Gillingham",
+  "lat": 51.36549,
+  "lng": 0.60552,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Medway Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Medway Council",
+  "sources": [
+    {
+      "label": "Medway Council: Holding Street Play Area",
+      "url": "https://www.medway.gov.uk/directory_record/279718/holding_street_play_area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/890851087"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

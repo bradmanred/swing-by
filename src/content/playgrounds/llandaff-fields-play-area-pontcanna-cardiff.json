@@ -1,0 +1,35 @@
+{
+  "name": "Llandaff Fields Play Area",
+  "region": "wales",
+  "area": "Pontcanna, Cardiff",
+  "lat": 51.492,
+  "lng": -3.20543,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sl",
+    "cl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Cardiff Council play area at Llandaff Fields, Riverside, Cardiff, with separate toddler and junior areas on the council's 2020 list. A 2021 refurbishment added three large slides, climbing nets and ropes, sphere stepping stones and a raised embankment play feature.",
+  "nearby": [],
+  "operator": "Cardiff Council",
+  "sources": [
+    {
+      "label": "Cardiff Council: Llandaff Fields Play Area",
+      "url": "https://cardiffnewsroom.co.uk/releases/c25/27692.html"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/209686489"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Grange Gardens Play Area",
+  "region": "wales",
+  "area": "Grangetown, Cardiff",
+  "lat": 51.46719,
+  "lng": -3.18259,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Cardiff Council play area at Grange Gardens, Grangetown, Cardiff, one of the 116 on the council's 2020 list. Its 2021 refurbishment added a multi-unit climbing frame with slides and rope bridges, a cone climber, a playhouse, swings, wobble boards and a leaf-themed play trail.",
+  "nearby": [],
+  "operator": "Cardiff Council",
+  "sources": [
+    {
+      "label": "Cardiff Council: Grange Gardens Play Area",
+      "url": "https://www.cardiffnewsroom.co.uk/releases/c25/25863.html"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/804911046"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

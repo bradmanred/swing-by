@@ -1,0 +1,36 @@
+{
+  "name": "Moonstone Drive play area",
+  "region": "south-east",
+  "area": "Walderslade, Chatham",
+  "lat": 51.33826,
+  "lng": 0.53605,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "bs",
+    "sw",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Medway Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Medway Council",
+  "sources": [
+    {
+      "label": "Medway Council: Moonstone Drive play area",
+      "url": "https://www.medway.gov.uk/directory_record/755/moonstone_drive_play_area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/9708492621"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Heol Llanishen Fach play area",
+  "region": "wales",
+  "area": "Rhiwbina, Cardiff",
+  "lat": 51.52815,
+  "lng": -3.21128,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "rb"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "Cardiff Council play area at Heol Llanishen Fach, Rhiwbina, Cardiff, one of the 116 on the council's 2020 list. Refurbished in 2023 with an oak theme, separate toddler and junior areas, swings, a spinner, a wheelchair-accessible roundabout and carved oak logs.",
+  "nearby": [],
+  "operator": "Cardiff Council",
+  "sources": [
+    {
+      "label": "Cardiff Council: Heol Llanishen Fach play area",
+      "url": "https://cardiffnewsroom.co.uk/releases/c25/31548.html"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1559368814"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Cwm Farm Play Area",
+  "region": "wales",
+  "area": "Morganstown, Cardiff",
+  "lat": 51.5261,
+  "lng": -3.26207,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Cardiff Council play area at Cwm Farm, Radyr, Cardiff, with separate toddler and junior areas on the council's 2020 list.",
+  "nearby": [],
+  "operator": "Cardiff Council",
+  "sources": [
+    {
+      "label": "Cardiff Council: Cwm Farm Play Area",
+      "url": "https://cardiffnewsroom.co.uk/releases/c25/24656.html"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/469230012"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

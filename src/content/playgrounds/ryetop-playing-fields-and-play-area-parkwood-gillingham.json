@@ -1,0 +1,36 @@
+{
+  "name": "Ryetop playing fields and play area",
+  "region": "south-east",
+  "area": "Parkwood, Gillingham",
+  "lat": 51.35777,
+  "lng": 0.59905,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "bs",
+    "sw",
+    "spr",
+    "bb"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Medway Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Medway Council",
+  "sources": [
+    {
+      "label": "Medway Council: Ryetop playing fields and play area",
+      "url": "https://www.medway.gov.uk/directory_record/746/ryetop_playing_fields_and_play_area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1059684433"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

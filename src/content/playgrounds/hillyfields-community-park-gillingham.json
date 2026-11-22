@@ -1,16 +1,20 @@
 {
   "name": "Hillyfields Community Park",
   "region": "south-east",
-  "area": "Gillingham",
-  "lat": 51.39003,
-  "lng": 0.55601,
-  "ages": [],
+  "area": "Sally Port Gardens, Gillingham",
+  "lat": 51.39128,
+  "lng": 0.55712,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
   "equipment": [
     "sw",
     "bs",
     "sl",
     "rb",
-    "cl"
+    "cl",
+    "bk"
   ],
   "access": [
     "sf"
@@ -24,9 +28,13 @@
     {
       "label": "Medway Council: Hillyfields Community Park",
       "url": "https://www.medway.gov.uk/directory_record/703/hillyfields_community_park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/293976875"
     }
   ],
-  "checked": "2026-10-24",
-  "notConfirmed": "Exact position (from the council's map), age ranges, opening hours, toilets and parking.",
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), opening hours, toilets and parking.",
   "photo": null
 }

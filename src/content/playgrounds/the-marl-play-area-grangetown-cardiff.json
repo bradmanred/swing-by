@@ -1,0 +1,32 @@
+{
+  "name": "The Marl Play Area",
+  "region": "wales",
+  "area": "Grangetown, Cardiff",
+  "lat": 51.46262,
+  "lng": -3.18154,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Cardiff Council play area at The Marl, Grangetown, Cardiff, with separate toddler and junior areas on the council's 2020 list.",
+  "nearby": [],
+  "operator": "Cardiff Council",
+  "sources": [
+    {
+      "label": "Cardiff Council: The Marl Play Area",
+      "url": "https://cardiffnewsroom.co.uk/releases/c25/24656.html"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/95697675"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
