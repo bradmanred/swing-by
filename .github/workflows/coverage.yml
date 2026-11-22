@@ -1,15 +1,14 @@
 # Checks Swing By's coverage county by county, biggest population first, against playgrounds mapped on
 # OpenStreetMap, and says which councils' own play area lists to check first. The report appears on the run's
 # summary page and as a downloadable "coverage-report".
-# Runs on the 8th of each month (after the monthly OpenStreetMap snapshot; monthly rather than weekly to save Actions
-# minutes) and adds up to 1,000 playgrounds (change the number with a repository variable called
+# Runs every day at 03:41 (the repo is public, so standard Actions runners are free) and adds up to 1,000 playgrounds (change the number with a repository variable called
 # COVERAGE_WEEKLY_ADD, under Settings > Secrets and variables > Actions > Variables; 0 makes it report only).
 # It works in the same order as before: council lists it can read first (added as verified, with each pin moved onto
 # the play area mapped on OpenStreetMap, and replacing any OpenStreetMap-only listing of the same place), then
 # OpenStreetMap ones as Unverified, but only in councils whose own lists have been checked (src/data/council-sources.json).
 # It never fills a council that hasn't been checked, so when it runs out of those, the pull request lists the
 # next councils to research by hand (docs/finding-playgrounds.md). It refreshes the nearest toilets and opens one
-# pull request for you to review, and skips the month if an earlier coverage pull request is still open, so
+# pull request for you to review, and skips the day if an earlier coverage pull request is still open, so
 # unreviewed work never piles up or overlaps.
 # From the Actions tab you can also run it on demand, for one county, or with the OpenStreetMap fallback.
 name: Check coverage
@@ -27,7 +26,7 @@ on:
         type: boolean
         default: false
   schedule:
-    - cron: '41 3 8 * *'
+    - cron: '41 3 * * *' # daily; does nothing new while a coverage pull request is waiting for review
 permissions:
   contents: write
   pull-requests: write
@@ -51,10 +50,10 @@ jobs:
           if [ "${{ github.event_name }}" = "schedule" ]; then add="$WEEKLY_ADD"; else add="$MANUAL_ADD"; fi
           case "$add" in ''|*[!0-9]*) echo "::error title=Check coverage::'$add' isn't a number of playgrounds."; exit 1;; esac
           # An earlier coverage pull request that hasn't been merged or closed would overlap with a new one, because
-          # both are built from main. On the monthly run, wait for it to be dealt with.
+          # both are built from main. On the daily run, wait for it to be dealt with.
           open=$(gh api "repos/$GITHUB_REPOSITORY/pulls?state=open&per_page=100" --jq '[.[] | select(.head.ref | startswith("coverage/"))] | length')
           if [ "${{ github.event_name }}" = "schedule" ] && [ "$open" != "0" ] && [ "$add" != "0" ]; then
-            echo "::notice title=Check coverage::A coverage pull request is still open, so this month is report only."
+            echo "::notice title=Check coverage::A coverage pull request is still open, so today is report only."
             add=0
           fi
           echo "add=$add" >> "$GITHUB_OUTPUT"
@@ -76,7 +75,7 @@ jobs:
           # Street lookups for council-list rows are saved into their CSVs, so they're only done once.
           SAVE_COUNCIL_PLACES: '1'
         run: |
-          # Counties are scanned for up to 35 minutes; the next month carries on from where this one stopped.
+          # Counties are scanned for up to 35 minutes; the next run carries on from where this one stopped.
           export SCAN_MINUTES=35
           if [ -n "$ONLY" ]; then node scripts/find-gaps.mjs --add "$ADD" --only "$ONLY" $FALLBACK; else node scripts/find-gaps.mjs --add "$ADD" $FALLBACK; fi
           # Sizes from council grades held in descriptions and council lists (scripts/apply-sizes.mjs).
@@ -109,7 +108,7 @@ jobs:
           gh workflow run ci.yml --ref "$branch" || echo "::warning title=Check coverage::Couldn't start the build checks; re-run them from the pull request."
           grep -E '^(Added|Nothing added|- )' reports/coverage.md > body.md || true
           # The next councils to research by hand, biggest counties first (the whole list is in the coverage-report).
-          { printf '\n## Next councils to check by hand\n\nThese have gaps on OpenStreetMap but their own play area lists haven'"'"'t been checked yet (docs/finding-playgrounds.md). Once one is done, add it to src/data/council-sources.json and the next monthly run can fill its remaining gaps.\n\n'; awk '/^\| County \| Council \| Missing/{f=1} f&&/^\|/{print; n++} n>=14{exit}' reports/coverage.md; } >> body.md
+          { printf '\n## Next councils to check by hand\n\nThese have gaps on OpenStreetMap but their own play area lists haven'"'"'t been checked yet (docs/finding-playgrounds.md). Once one is done, add it to src/data/council-sources.json and the next daily run can fill its remaining gaps.\n\n'; awk '/^\| County \| Council \| Missing/{f=1} f&&/^\|/{print; n++} n>=14{exit}' reports/coverage.md; } >> body.md
           printf '\n\nFound by the "Check coverage" workflow. Council-listed playgrounds are verified, with the council as source; OpenStreetMap ones are Unverified, with their OpenStreetMap page as source. The build and accessibility checks start by themselves once the branch is pushed.\n' >> body.md
           gh pr create --base main --head "$branch" --title "Coverage check: add missing playgrounds" --body-file body.md \
             || echo "::warning title=Check coverage::Pushed $branch but couldn't open a pull request (Settings > Actions > General > 'Allow GitHub Actions to create pull requests'). Open it from the branch instead."
