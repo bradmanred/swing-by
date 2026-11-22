@@ -440,7 +440,7 @@
         "https://www.plymouth.gov.uk/find-playground",
         "https://www.plymouth.gov.uk/find-park"
       ],
-      "note": "Its find-a-playground page lists about 140 play areas in tables by ward (location, ages, surfacing, fencing), with no links, postcodes or map points. The site refuses automated downloads, so the rows are copied into plymouth.csv (taken 22 November 2026), leaving out its ball games area, skate park, outdoor gym and the primary school, and rows listed twice. Feed set up 22 November 2026.",
+      "note": "Its find-a-playground page lists about 140 play areas in tables by ward (location, ages, surfacing, fencing), with no links, postcodes or map points. The site refuses automated downloads, so the rows are copied into plymouth.csv (taken 22 November 2026), leaving out its ball games area, skate park, outdoor gym and the primary school, and rows listed twice. Feed tried 22 November 2026 with Try a council list: 109 of 130 rows placed (11 from the park name, 98 from the street); 21 had no street that could be found.",
       "feed": {
         "type": "list",
         "file": "src/data/council-lists/plymouth.csv",
@@ -458,7 +458,7 @@
       "sources": [
         "https://www.torbay.gov.uk/leisure-sports-and-community/parks/find-a-park/"
       ],
-      "note": "Find a park has one page per park (about 80); the feed keeps those that mention a play area. Feed set up 22 November 2026.",
+      "note": "Find a park has one page per park (about 80); the feed keeps those that mention a play area. Feed tried 22 November 2026 with Try a council list: 81 park pages, 46 play areas placed from their postcodes.",
       "feed": {
         "type": "pages",
         "index": "https://www.torbay.gov.uk/leisure-sports-and-community/parks/find-a-park/",
@@ -484,7 +484,7 @@
       "sources": [
         "https://www.middevon.gov.uk/residents/parks-and-play-areas"
       ],
-      "note": "Its parks and play areas page lists the play areas it runs in Crediton, Cullompton and Tiverton with postcodes, and a few in surrounding villages without. Copied into mid-devon.csv (22 November 2026), leaving out skate parks, the BMX track and the Linear Park assault course. Town and parish councils run others. Feed set up 22 November 2026.",
+      "note": "Its parks and play areas page lists the play areas it runs in Crediton, Cullompton and Tiverton with postcodes, and a few in surrounding villages without. Copied into mid-devon.csv (22 November 2026), leaving out skate parks, the BMX track and the Linear Park assault course. Town and parish councils run others. Feed tried 22 November 2026 with Try a council list: 60 of 62 placed (49 from postcodes).",
       "feed": {
         "type": "list",
         "file": "src/data/council-lists/mid-devon.csv",
@@ -502,7 +502,7 @@
       "sources": [
         "https://www.northdevon.gov.uk/leisure-and-lifestyle/parks-play-areas-and-allotments"
       ],
-      "note": "Its parks, play areas and allotments page names its play areas by town (Barnstaple, Braunton, Fremington, Ilfracombe, South Molton) with age ranges, but no postcodes. Copied into north-devon.csv (22 November 2026). Rock Park's play area is run by Barnstaple Town Council. The site refuses automated downloads. Feed set up 22 November 2026.",
+      "note": "Its parks, play areas and allotments page names its play areas by town (Barnstaple, Braunton, Fremington, Ilfracombe, South Molton) with age ranges, but no postcodes. Copied into north-devon.csv (22 November 2026). Rock Park's play area is run by Barnstaple Town Council. The site refuses automated downloads. Feed tried 22 November 2026 with Try a council list: 20 of 21 placed from the street.",
       "feed": {
         "type": "list",
         "file": "src/data/council-lists/north-devon.csv",
