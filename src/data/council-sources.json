@@ -4749,7 +4749,7 @@
       "sources": [
         "https://www.shrewsburytowncouncil.gov.uk/assets/page/2/"
       ],
-      "note": "Manages 57 play areas; its assets directory (seven list pages) has a page for each with its location and equipment, read as pages; only those mentioning play are kept (22 November 2026).",
+      "note": "Manages 57 play areas; its assets directory (seven list pages) has a page for each with its location and equipment, read as pages; only pages named as a play area or recreation ground are kept (22 November 2026).",
       "feed": {
         "type": "pages",
         "index": [
@@ -4762,14 +4762,15 @@
           "https://www.shrewsburytowncouncil.gov.uk/assets/page/7/"
         ],
         "follow": "/assets/[a-z0-9-]+/?$",
-        "exclude": "countryside|allotment|conveniences|garden$|woodland|meadows$|cemetery",
         "address": "Location[;:\\s]+([^;]{4,120})",
         "town": "Shrewsbury",
         "near": {
           "lat": 52.71,
           "lng": -2.75,
           "km": 7
-        }
+        },
+        "allPlay": true,
+        "include": "play|recreation ground"
       }
     },
     {
