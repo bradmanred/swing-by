@@ -44,6 +44,15 @@ Full lists are in the `quarterly-check` artifact on the run linked at the bottom
   now "Tarnerland"), update `name` and the description, and keep the old name in the description ("formerly …") so
   parents can still find it. Don't rename the file: links must keep working. If every rename for one council shows
   the same generic text, it's a checker bug, not a rename.
+- **Unverified but on the council's list:** an Unverified playground listed from OpenStreetMap alone matches a
+  playground on the council's list (within 150 m, or 400 m with a shared word in the name). Check the council's
+  entry really is the same play area (same park or street, not a second playground nearby). If it is, add the council
+  page as the first source, set `operator` to the council and `checked` to today, use the council's name if ours is a
+  made-up one ("Playground off Elm Road", "Victoria Park Playground"), and keep the OpenStreetMap source. Replace the
+  stock "A playground on OpenStreetMap…" description with one from the council's page (or the stock council line,
+  "A playground on <council>'s own list of play areas."), and keep only equipment and ages the council confirms;
+  move the rest of `notConfirmed`'s OpenStreetMap wording to "Exact position (taken from OpenStreetMap)". Don't
+  rename the file. If it's a different play area, leave it and note it in the PR.
 - **New on the council's list:** leave these to the weekly "Check coverage" job, unless the report shows the
   council's entries without proper names (a checker bug: fix it).
 - **Deleted from OpenStreetMap / no longer tagged as a playground / now private:** look on OpenStreetMap for a
