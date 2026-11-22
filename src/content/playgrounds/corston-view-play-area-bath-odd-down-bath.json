@@ -1,0 +1,33 @@
+{
+  "name": "Corston View Play Area, Bath",
+  "region": "south-west",
+  "area": "Odd Down, Bath",
+  "lat": 51.36014,
+  "lng": -2.3805,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "sw"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Bath and North East Somerset Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Bath and North East Somerset Council",
+  "sources": [
+    {
+      "label": "Bath and North East Somerset Council: Corston View Play Area, Bath",
+      "url": "https://www.bathnes.gov.uk/corston-view-play-area-bath"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/3140203653"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

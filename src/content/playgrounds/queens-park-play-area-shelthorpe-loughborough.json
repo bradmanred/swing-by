@@ -1,0 +1,32 @@
+{
+  "name": "Queen's Park Play Area",
+  "region": "east-midlands",
+  "area": "Shelthorpe, Loughborough",
+  "lat": 52.76909,
+  "lng": -1.21082,
+  "ages": [
+    "teens"
+  ],
+  "equipment": [],
+  "access": [
+    "sen"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area in Loughborough, on Charnwood Borough Council's play areas list. It has separate children's and teen areas, with a sensory area and a zip line.",
+  "nearby": [],
+  "operator": "Charnwood Borough Council",
+  "sources": [
+    {
+      "label": "Charnwood Borough Council: Queen's Park Play Area",
+      "url": "https://www.charnwood.gov.uk/pages/play_areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/386917654"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

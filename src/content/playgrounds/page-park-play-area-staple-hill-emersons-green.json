@@ -1,0 +1,30 @@
+{
+  "name": "Page Park Play Area",
+  "region": "south-west",
+  "area": "Staple Hill, Emersons Green",
+  "lat": 51.48166,
+  "lng": -2.49784,
+  "ages": [
+    "teens"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area in Staple Hill on South Gloucestershire Council's list of parks with play areas. It has bespoke play, a teen area and traditional park play.",
+  "nearby": [],
+  "operator": "South Gloucestershire Council",
+  "sources": [
+    {
+      "label": "South Gloucestershire Council: Page Park Play Area",
+      "url": "https://www.southglos.gov.uk/leisure-and-culture/parks-and-open-spaces/find-a-park-with-a-play-area/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/265427937"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

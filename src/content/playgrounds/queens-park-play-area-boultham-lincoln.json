@@ -1,0 +1,28 @@
+{
+  "name": "Queens Park Play Area",
+  "region": "east-midlands",
+  "area": "Boultham, Lincoln",
+  "lat": 53.21524,
+  "lng": -0.54269,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on City of Lincoln Council's own list of play areas.",
+  "nearby": [],
+  "operator": "City of Lincoln Council",
+  "sources": [
+    {
+      "label": "City of Lincoln Council: Queens Park Play Area",
+      "url": "https://www.lincoln.gov.uk/directory-record/306/queens-park-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/3708390"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

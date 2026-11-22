@@ -1,0 +1,28 @@
+{
+  "name": "Scalford Brook Play Area",
+  "region": "east-midlands",
+  "area": "Melton Mowbray",
+  "lat": 52.7721,
+  "lng": -0.8764,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A Melton Borough Council play area in Melton Mowbray.",
+  "nearby": [],
+  "operator": "Melton Borough Council",
+  "sources": [
+    {
+      "label": "Melton Borough Council: Scalford Brook Play Area",
+      "url": "https://www.melton.gov.uk/leisure-health-and-community/parks-and-green-spaces/play-areas-and-parks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/309117377"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

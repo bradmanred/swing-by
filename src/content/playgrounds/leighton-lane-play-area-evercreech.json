@@ -1,0 +1,31 @@
+{
+  "name": "Leighton Lane Play Area",
+  "region": "south-west",
+  "area": "Evercreech",
+  "lat": 51.14964,
+  "lng": -2.50339,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A Somerset Council play area in Evercreech for toddlers, on its list of play areas in the former Mendip district.",
+  "nearby": [],
+  "operator": "Somerset Council",
+  "sources": [
+    {
+      "label": "Somerset Council: Leighton Lane Play Area",
+      "url": "https://www.somerset.gov.uk/tables/mendip-play-areas-kickabouts-netball-and-skate-parks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/340890610"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

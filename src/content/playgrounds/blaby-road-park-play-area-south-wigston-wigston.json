@@ -1,0 +1,30 @@
+{
+  "name": "Blaby Road Park Play Area",
+  "region": "east-midlands",
+  "area": "South Wigston, Wigston",
+  "lat": 52.57753,
+  "lng": -1.13067,
+  "ages": [],
+  "equipment": [
+    "sk"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Oadby and Wigston Borough Council's Blaby Road Park in South Wigston, with three play areas, a skate and BMX area and a games court.",
+  "nearby": [],
+  "operator": "Oadby and Wigston Borough Council",
+  "sources": [
+    {
+      "label": "Oadby and Wigston Borough Council: Blaby Road Park Play Area",
+      "url": "https://www.oadby-wigston.gov.uk/pages/parks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/489930520"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

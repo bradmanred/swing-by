@@ -1,0 +1,31 @@
+{
+  "name": "Southfields Park Play Area",
+  "region": "east-midlands",
+  "area": "Shelthorpe, Loughborough",
+  "lat": 52.76811,
+  "lng": -1.20229,
+  "ages": [],
+  "equipment": [
+    "sk",
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area in Loughborough, on Charnwood Borough Council's play areas list. The park also has a skate park and an outdoor gym.",
+  "nearby": [],
+  "operator": "Charnwood Borough Council",
+  "sources": [
+    {
+      "label": "Charnwood Borough Council: Southfields Park Play Area",
+      "url": "https://www.charnwood.gov.uk/pages/play_areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/5575423137"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

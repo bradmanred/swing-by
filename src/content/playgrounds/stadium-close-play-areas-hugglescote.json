@@ -1,0 +1,30 @@
+{
+  "name": "Stadium Close Play Areas",
+  "region": "east-midlands",
+  "area": "Hugglescote",
+  "lat": 52.71814,
+  "lng": -1.37342,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A play area in Coalville looked after by North West Leicestershire District Council, with three fenced play areas close together.",
+  "nearby": [],
+  "operator": "North West Leicestershire District Council",
+  "sources": [
+    {
+      "label": "North West Leicestershire District Council: Stadium Close Play Areas",
+      "url": "https://www.nwleics.gov.uk/pages/play_areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/369840964"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

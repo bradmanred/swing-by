@@ -1,0 +1,32 @@
+{
+  "name": "Salthouse Fields Play Area",
+  "region": "south-west",
+  "area": "West End, Clevedon",
+  "lat": 51.43458,
+  "lng": -2.86859,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area in Clevedon on North Somerset Council's list of the play areas it looks after. It has toddler and junior areas.",
+  "nearby": [],
+  "operator": "North Somerset Council",
+  "sources": [
+    {
+      "label": "North Somerset Council: Salthouse Fields Play Area",
+      "url": "https://n-somerset.gov.uk/my-services/libraries-leisure-open-spaces/parks-countryside/parks-open-spaces/play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/165237250"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

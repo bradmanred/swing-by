@@ -1,0 +1,36 @@
+{
+  "name": "Pennyquick Play Area, Bath",
+  "region": "south-west",
+  "area": "Twerton, Bath",
+  "lat": 51.38247,
+  "lng": -2.40366,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "bk",
+    "sw",
+    "sk",
+    "ss"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Bath and North East Somerset Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Bath and North East Somerset Council",
+  "sources": [
+    {
+      "label": "Bath and North East Somerset Council: Pennyquick Play Area, Bath",
+      "url": "https://www.bathnes.gov.uk/pennyquick-play-area-bath"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/38845808"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -3400,7 +3400,7 @@
       "sources": [
         "https://www.southtyneside.gov.uk/article/11040/Play-areas"
       ],
-      "note": "The play areas list (five pages, about 41 play areas) links to one page per play area with its address and postcode. Feed set up 17 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "note": "The play areas list (five pages, about 41 play areas) links to one page per play area with its address and postcode, but the site refuses requests from GitHub's servers (HTTP 403 to Fetch pages and Try a council list, 22 November 2026), so the feed reads nothing. Its gaps are filled from OpenStreetMap until the list is copied into a CSV by hand.",
       "feed": {
         "type": "pages",
         "index": [
@@ -3521,11 +3521,16 @@
       "sources": [
         "https://www.harborough.gov.uk/directory/14/play_areas_in_harborough"
       ],
-      "note": "Jadu directory 'Play areas in Harborough' with the 28 play areas the council looks after. Feed set up 17 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "note": "Jadu directory 'Play areas in Harborough' with the 28 play areas the council looks after. Its records are at /directory_record/ addresses, which the jadu reader doesn't follow, so it's read as pages: Try a council list found 19 with map points on 22 November 2026 (the directory page links 20, one of them a skate park; the other play areas aren't linked from it).",
       "feed": {
-        "type": "jadu",
-        "directory": "https://www.harborough.gov.uk/directory/14/play_areas_in_harborough",
+        "type": "pages",
+        "index": [
+          "https://www.harborough.gov.uk/directory/14/play_areas_in_harborough",
+          "https://www.harborough.gov.uk/directory/14/a_to_z"
+        ],
+        "follow": "/directory_record/\\d+/[a-z0-9_]+$",
         "allPlay": true,
+        "exclude": "skate park",
         "near": {
           "lat": 52.5,
           "lng": -0.95,
@@ -3555,7 +3560,7 @@
       "sources": [
         "https://www.lincoln.gov.uk/parks-open-spaces/open-spaces-lincoln"
       ],
-      "note": "Jadu 'Open spaces in Lincoln' directory; each record says whether the site has a play area. Feed set up 17 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "note": "Jadu 'Open spaces in Lincoln' directory; each record says whether the site has a play area. Try a council list found 25 with map points on 22 November 2026.",
       "feed": {
         "type": "pages",
         "index": "https://www.lincoln.gov.uk/parks-open-spaces/open-spaces-lincoln",
@@ -3747,7 +3752,7 @@
         "https://www.bathnes.gov.uk/taxonomy/term/1533",
         "https://www.bathnes.gov.uk/find-play-areas-outside-bath"
       ],
-      "note": "Pages for each of the council's 60 play areas ('Widcombe Play Area, Bath', 'Calton Road Play Area, Bath') linked from its find-a-play-area pages. Feed set up 17 November 2026 and not yet tried: check it with Try a council list before the import.",
+      "note": "Pages for each of the council's 60 play areas ('Widcombe Play Area, Bath', 'Calton Road Play Area, Bath') linked from its find-a-play-area pages. Try a council list found 38, placed from their postcodes, on 22 November 2026.",
       "feed": {
         "type": "pages",
         "index": [

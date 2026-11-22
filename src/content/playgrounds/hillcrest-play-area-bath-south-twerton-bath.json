@@ -1,0 +1,32 @@
+{
+  "name": "Hillcrest Play Area, Bath",
+  "region": "south-west",
+  "area": "South Twerton, Bath",
+  "lat": 51.37349,
+  "lng": -2.39091,
+  "ages": [],
+  "equipment": [
+    "bk",
+    "sl",
+    "cl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Bath and North East Somerset Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Bath and North East Somerset Council",
+  "sources": [
+    {
+      "label": "Bath and North East Somerset Council: Hillcrest Play Area, Bath",
+      "url": "https://www.bathnes.gov.uk/hillcrest-play-area-bath"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/47205345"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

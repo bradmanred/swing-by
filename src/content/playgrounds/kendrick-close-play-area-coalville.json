@@ -1,0 +1,30 @@
+{
+  "name": "Kendrick Close Play Area",
+  "region": "east-midlands",
+  "area": "Coalville",
+  "lat": 52.72724,
+  "lng": -1.38628,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A play area in Coalville looked after by North West Leicestershire District Council, with a fenced play area.",
+  "nearby": [],
+  "operator": "North West Leicestershire District Council",
+  "sources": [
+    {
+      "label": "North West Leicestershire District Council: Kendrick Close Play Area",
+      "url": "https://www.nwleics.gov.uk/pages/play_areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/905135450"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

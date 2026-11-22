@@ -1,0 +1,35 @@
+{
+  "name": "Claverton Road Play Area, Saltford",
+  "region": "south-west",
+  "area": "Saltford",
+  "lat": 51.40022,
+  "lng": -2.46201,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "rb"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Bath and North East Somerset Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Bath and North East Somerset Council",
+  "sources": [
+    {
+      "label": "Bath and North East Somerset Council: Claverton Road Play Area, Saltford",
+      "url": "https://www.bathnes.gov.uk/claverton-road-play-area-saltford"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/109097756"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

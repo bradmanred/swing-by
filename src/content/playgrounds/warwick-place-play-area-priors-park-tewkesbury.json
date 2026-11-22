@@ -1,0 +1,28 @@
+{
+  "name": "Warwick Place Play Area",
+  "region": "south-west",
+  "area": "Priors Park, Tewkesbury",
+  "lat": 51.98546,
+  "lng": -2.15253,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by Tewkesbury Town Council.",
+  "nearby": [],
+  "operator": "Tewkesbury Town Council",
+  "sources": [
+    {
+      "label": "Tewkesbury Town Council: Warwick Place Play Area",
+      "url": "https://tewkesburytowncouncil.gov.uk/play-parks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/695585698"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

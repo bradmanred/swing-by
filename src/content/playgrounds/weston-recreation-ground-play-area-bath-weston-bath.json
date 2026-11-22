@@ -1,0 +1,33 @@
+{
+  "name": "Weston Recreation Ground Play Area, Bath",
+  "region": "south-west",
+  "area": "Weston, Bath",
+  "lat": 51.39601,
+  "lng": -2.39741,
+  "ages": [],
+  "equipment": [
+    "bk",
+    "sw",
+    "sl",
+    "cl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Bath and North East Somerset Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Bath and North East Somerset Council",
+  "sources": [
+    {
+      "label": "Bath and North East Somerset Council: Weston Recreation Ground Play Area, Bath",
+      "url": "https://www.bathnes.gov.uk/weston-recreation-ground-play-area-bath"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1410134465"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

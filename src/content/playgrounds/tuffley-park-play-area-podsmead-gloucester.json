@@ -1,0 +1,28 @@
+{
+  "name": "Tuffley Park Play Area",
+  "region": "south-west",
+  "area": "Podsmead, Gloucester",
+  "lat": 51.84423,
+  "lng": -2.25264,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area on Gloucester City Council's list of play areas in the city.",
+  "nearby": [],
+  "operator": "Gloucester City Council",
+  "sources": [
+    {
+      "label": "Gloucester City Council: Tuffley Park Play Area",
+      "url": "https://gloucester.gov.uk/culture-leisure/parks-open-spaces/play-areas-in-gloucester/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1098911794"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
