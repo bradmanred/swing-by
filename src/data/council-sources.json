@@ -3706,6 +3706,24 @@
       }
     },
     {
+      "district": "Cheshire East",
+      "parish": "Macclesfield",
+      "council": "Macclesfield Town Council",
+      "sources": [
+        "https://www.macclesfield-tc.gov.uk/wp-content/uploads/2026/03/13.-Parks-and-Play-Areas.pdf"
+      ],
+      "note": "Funds about £100,000 a year of play area improvements, but the play areas belong to Cheshire East Council and are on its list (22 November 2026)."
+    },
+    {
+      "district": "Cheshire East",
+      "parish": "Crewe",
+      "council": "Crewe Town Council",
+      "sources": [
+        "https://www.crewetowncouncil.gov.uk/?p=14670"
+      ],
+      "note": "Says the public spaces in Crewe don't belong to it; it funds play area improvements, but the play areas are Cheshire East Council's (22 November 2026)."
+    },
+    {
       "district": "Cheshire West and Chester",
       "council": "Cheshire West and Chester Council",
       "sources": [
@@ -3714,12 +3732,41 @@
       "note": "Checked 17 November 2026: 108 council play areas, shown only on an interactive map; the play strategy's locality frameworks list them but are long PDFs. Play areas come from OpenStreetMap."
     },
     {
+      "district": "Cheshire West and Chester",
+      "parish": "Winsford",
+      "council": "Winsford Town Council",
+      "sources": [
+        "https://winsford.gov.uk/services/",
+        "https://winsford.gov.uk/?p=880"
+      ],
+      "note": "Runs the play areas at King George VI Playing Fields, Leaf Lane, Stanthorne, Meadow Bank and Over Recreation Ground, and manages Winsford Town Park on a lease; each has a page under Services (22 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/winsford-town.csv",
+        "page": "https://winsford.gov.uk/services/",
+        "near": {
+          "lat": 53.19,
+          "lng": -2.52,
+          "km": 4
+        }
+      }
+    },
+    {
       "district": "Warrington",
       "council": "Warrington Borough Council",
       "sources": [
         "https://www.warrington.gov.uk/parks"
       ],
       "note": "Checked 17 November 2026: no play area list on the parks pages. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Warrington",
+      "parish": "Great Sankey",
+      "council": "Great Sankey Parish Council",
+      "sources": [
+        "https://www.warrington.gov.uk/village-greens-and-commons"
+      ],
+      "note": "No play areas run by the parish council found online; Great Sankey's playgrounds are Warrington Borough Council's (22 November 2026)."
     },
     {
       "district": "Halton",
@@ -3749,6 +3796,56 @@
       }
     },
     {
+      "district": "Somerset",
+      "parish": "Taunton",
+      "council": "Taunton Town Council",
+      "sources": [
+        "https://bookings.taunton-tc.gov.uk/",
+        "https://www.find-tender.service.gov.uk/Notice/Attachment/A-3044"
+      ],
+      "note": "Formed in 2023, it took over 12 play areas from Somerset Council; its September 2024 play area assessment (published with its play upgrade tender) lists all 12 with postcodes, copied into a CSV (22 November 2026). French Weir Park and Comeytrowe are due for rebuilds under its £1.2m upgrade programme. The rest of Taunton's play areas are Somerset Council's.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/taunton.csv",
+        "page": "https://bookings.taunton-tc.gov.uk/",
+        "near": {
+          "lat": 51.02,
+          "lng": -3.1,
+          "km": 5
+        }
+      }
+    },
+    {
+      "district": "Somerset",
+      "parish": "Bridgwater",
+      "council": "Bridgwater Town Council",
+      "sources": [
+        "https://bridgwater-tc.gov.uk/news/misuse-of-play-areas/",
+        "https://bridgwater-tc.gov.uk/news/bridgwater-town-council-condemns-vandalism-in-local-parks/"
+      ],
+      "note": "Owns over 240 pieces of play equipment across the town but publishes no list of its play areas; the eight its news pages name (Victoria Park, Bower Ponds, Marsa Way, Chamberlin Avenue, Cranleigh Gardens, Northgate Yard, Gloucester Road, Mansfield Park) are in a CSV. Others may be missing (22 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/bridgwater-town.csv",
+        "page": "https://bridgwater-tc.gov.uk/news/misuse-of-play-areas/",
+        "near": {
+          "lat": 51.13,
+          "lng": -3.0,
+          "km": 4
+        }
+      }
+    },
+    {
+      "district": "Somerset",
+      "parish": "Wellington",
+      "council": "Wellington Town Council",
+      "sources": [
+        "https://www.wellingtontowncouncil.co.uk/?p=8517",
+        "https://www.wellingtontowncouncil.co.uk/?p=8393"
+      ],
+      "note": "Took over 16 or 17 of Wellington's 27 play areas from Somerset Council in April 2025. Its play areas page shows them only on an interactive map (names and what3words in pop-ups), with no list to read, so its gaps are filled from OpenStreetMap (22 November 2026)."
+    },
+    {
       "district": "North Somerset",
       "council": "North Somerset Council",
       "sources": [
@@ -3763,6 +3860,44 @@
           "lat": 51.4,
           "lng": -2.85,
           "km": 18
+        }
+      }
+    },
+    {
+      "district": "North Somerset",
+      "parish": "Weston-super-Mare",
+      "council": "Weston-super-Mare Town Council",
+      "sources": [
+        "https://wsm-tc.gov.uk/our-services/parks-play-areas"
+      ],
+      "note": "Its parks and play areas page names the 29 sites it looks after (plus more coming from North Somerset Council through devolution), but gives no addresses; the 26 children's play areas (not the two skate parks or the Castle Batch MUGA) are in a CSV, placed by park name or name and area on OpenStreetMap (22 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/weston-super-mare-town.csv",
+        "page": "https://wsm-tc.gov.uk/our-services/parks-play-areas",
+        "near": {
+          "lat": 51.34,
+          "lng": -2.96,
+          "km": 6
+        }
+      }
+    },
+    {
+      "district": "North Somerset",
+      "parish": "Portishead",
+      "council": "Portishead Town Council",
+      "sources": [
+        "https://www.portishead.gov.uk/playgrounds"
+      ],
+      "note": "Its play areas page lists five children's play areas it runs (plus two skate parks and seafront fitness kit); all other play areas in the town are North Somerset Council's (22 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/portishead-town.csv",
+        "page": "https://www.portishead.gov.uk/playgrounds",
+        "near": {
+          "lat": 51.48,
+          "lng": -2.77,
+          "km": 4
         }
       }
     },
@@ -3789,6 +3924,15 @@
           "km": 18
         }
       }
+    },
+    {
+      "district": "Bath and North East Somerset",
+      "parish": "Keynsham",
+      "council": "Keynsham Town Council",
+      "sources": [
+        "https://www.keynsham-tc.gov.uk/Facilities_31432.aspx"
+      ],
+      "note": "Runs the skate facility at Memorial Park, some equipment at Kelston Road Park and football pitches, but Keynsham's play areas are Bath & North East Somerset Council's (22 November 2026)."
     },
     {
       "district": "Gloucester",
