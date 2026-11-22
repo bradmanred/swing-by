@@ -40,7 +40,8 @@ export function summerFilters(today = new Date()) {
   if (!more.children.length) more.closest('details')?.remove();
 }
 
-export function startFinder() {
+/** onPhotos hears the approved parent photos once they've loaded (an empty list if they couldn't be loaded). */
+export function startFinder(o: { onPhotos?: (photos: Record<string, CardPhoto>, parks: ClientPark[]) => void } = {}) {
   const { parks, towns } = JSON.parse($('#parks-data').textContent!) as { parks: ClientPark[]; towns: Town[] };
   const first = towns[0];
   const st = {
@@ -338,8 +339,9 @@ export function startFinder() {
         st.photos = photos;
         render(false);
       }
+      o.onPhotos?.(photos ?? {}, parks);
     })
-    .catch(() => {});
+    .catch(() => o.onPhotos?.({}, parks));
 
   // The map is an extra; everything above works without it.
   import('./map')
