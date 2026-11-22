@@ -1,0 +1,30 @@
+{
+  "name": "Englefield Green",
+  "region": "south-east",
+  "area": "Englefield Green",
+  "lat": 51.43421,
+  "lng": -0.57608,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A playground on Runnymede Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Runnymede Borough Council",
+  "sources": [
+    {
+      "label": "Runnymede Borough Council: Englefield Green",
+      "url": "https://www.runnymede.gov.uk/directory-record/82/englefield-green"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/166586088"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours and parking.",
+  "photo": null
+}

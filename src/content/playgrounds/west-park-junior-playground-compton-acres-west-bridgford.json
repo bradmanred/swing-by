@@ -1,0 +1,32 @@
+{
+  "name": "West Park Junior Playground",
+  "region": "east-midlands",
+  "area": "Compton Acres, West Bridgford",
+  "lat": 52.92732,
+  "lng": -1.13845,
+  "ages": [
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Rushcliffe Borough Council's junior playground in West Park; there's a separate teen playground.",
+  "nearby": [],
+  "operator": "Rushcliffe Borough Council",
+  "sources": [
+    {
+      "label": "Rushcliffe Borough Council: West Park Junior Playground",
+      "url": "https://www.rushcliffe.gov.uk/leisure-and-culture/parks-and-play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/87852766"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

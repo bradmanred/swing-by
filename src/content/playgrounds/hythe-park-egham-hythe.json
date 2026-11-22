@@ -1,0 +1,30 @@
+{
+  "name": "Hythe Park",
+  "region": "south-east",
+  "area": "Egham Hythe",
+  "lat": 51.43002,
+  "lng": -0.52709,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Runnymede Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Runnymede Borough Council",
+  "sources": [
+    {
+      "label": "Runnymede Borough Council: Hythe Park",
+      "url": "https://www.runnymede.gov.uk/directory-record/33/hythe-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/132882676"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

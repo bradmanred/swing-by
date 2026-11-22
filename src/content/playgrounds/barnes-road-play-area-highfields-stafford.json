@@ -1,0 +1,32 @@
+{
+  "name": "Barnes Road Play Area",
+  "region": "west-midlands",
+  "area": "Highfields, Stafford",
+  "lat": 52.78939,
+  "lng": -2.12403,
+  "ages": [],
+  "equipment": [
+    "bs",
+    "rb",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A Stafford Borough Council play area in Stafford with a multi-play unit, a cradle swing, a roundabout and a springer.",
+  "nearby": [],
+  "operator": "Stafford Borough Council",
+  "sources": [
+    {
+      "label": "Stafford Borough Council: Barnes Road Play Area",
+      "url": "https://staffordbc.gov.uk/Stafford-Play-Areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/74000536"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

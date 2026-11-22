@@ -1,0 +1,36 @@
+{
+  "name": "Lovatt Street Play Area",
+  "region": "west-midlands",
+  "area": "Astonfields, Stafford",
+  "lat": 52.81613,
+  "lng": -2.11965,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "bk",
+    "rb",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A Stafford Borough Council play area in Stafford with junior and toddler multi-play units, a group swing, a roundabout and springers.",
+  "nearby": [],
+  "operator": "Stafford Borough Council",
+  "sources": [
+    {
+      "label": "Stafford Borough Council: Lovatt Street Play Area",
+      "url": "https://staffordbc.gov.uk/Stafford-Play-Areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/45387831"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Longbarn Lane Recreation Ground",
+  "region": "south-east",
+  "area": "Whitley, Reading",
+  "lat": 51.43659,
+  "lng": -0.96379,
+  "ages": [],
+  "equipment": [
+    "sk",
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Reading Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Reading Borough Council",
+  "sources": [
+    {
+      "label": "Reading Borough Council: Longbarn Lane Recreation Ground",
+      "url": "https://www.reading.gov.uk/leisure/outdoors/parks-outdoor-facilities-open-spaces/longbarn-lane-recreation-ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/1099276185"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

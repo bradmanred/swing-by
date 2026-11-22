@@ -1,0 +1,32 @@
+{
+  "name": "Blagrave Recreation Ground",
+  "region": "south-east",
+  "area": "Tilehurst, Reading",
+  "lat": 51.45926,
+  "lng": -1.03618,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Reading Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Reading Borough Council",
+  "sources": [
+    {
+      "label": "Reading Borough Council: Blagrave Recreation Ground",
+      "url": "https://www.reading.gov.uk/leisure/outdoors/parks-outdoor-facilities-open-spaces/blagrave-recreation-ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/113193506"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

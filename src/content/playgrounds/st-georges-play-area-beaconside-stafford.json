@@ -1,0 +1,34 @@
+{
+  "name": "St Georges Play Area",
+  "region": "west-midlands",
+  "area": "Beaconside, Stafford",
+  "lat": 52.80058,
+  "lng": -2.09952,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "sw",
+    "ss"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A Stafford Borough Council play area in Stafford with a toddler multi-play unit, a seesaw and swings.",
+  "nearby": [],
+  "operator": "Stafford Borough Council",
+  "sources": [
+    {
+      "label": "Stafford Borough Council: St Georges Play Area",
+      "url": "https://staffordbc.gov.uk/Stafford-Play-Areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/78194278"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

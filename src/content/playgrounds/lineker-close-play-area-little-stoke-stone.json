@@ -1,0 +1,34 @@
+{
+  "name": "Lineker Close Play Area",
+  "region": "west-midlands",
+  "area": "Little Stoke, Stone",
+  "lat": 52.8889,
+  "lng": -2.12615,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "rb",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A Stafford Borough Council play area in Stone with a junior multi-play unit, springers and a spinner bowl.",
+  "nearby": [],
+  "operator": "Stafford Borough Council",
+  "sources": [
+    {
+      "label": "Stafford Borough Council: Lineker Close Play Area",
+      "url": "https://staffordbc.gov.uk/node/162493"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1459358941"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

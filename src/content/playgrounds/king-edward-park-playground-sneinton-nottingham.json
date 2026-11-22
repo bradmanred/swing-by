@@ -1,0 +1,32 @@
+{
+  "name": "King Edward Park Playground",
+  "region": "east-midlands",
+  "area": "Sneinton, Nottingham",
+  "lat": 52.95555,
+  "lng": -1.13285,
+  "ages": [],
+  "equipment": [
+    "sk",
+    "gym",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground at King Edward Park, Carlton Road, on Nottingham City Council's list of its outdoor play facilities. The site also has a multi-use games area, an outdoor gym and a skate park.",
+  "nearby": [],
+  "operator": "Nottingham City Council",
+  "sources": [
+    {
+      "label": "Nottingham City Council: King Edward Park Playground",
+      "url": "https://nottinghamcity.gov.uk/media/r1jdart4/outdoor-play-facilities.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/113988668"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

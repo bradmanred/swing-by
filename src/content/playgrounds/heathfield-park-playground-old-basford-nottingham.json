@@ -1,0 +1,31 @@
+{
+  "name": "Heathfield Park Playground",
+  "region": "east-midlands",
+  "area": "Old Basford, Nottingham",
+  "lat": 52.98625,
+  "lng": -1.16797,
+  "ages": [],
+  "equipment": [
+    "gym",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground at Heathfield Park, Ventnor Rise, on Nottingham City Council's list of its outdoor play facilities. The site also has a multi-use games area and an outdoor gym.",
+  "nearby": [],
+  "operator": "Nottingham City Council",
+  "sources": [
+    {
+      "label": "Nottingham City Council: Heathfield Park Playground",
+      "url": "https://nottinghamcity.gov.uk/media/r1jdart4/outdoor-play-facilities.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/210084668"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

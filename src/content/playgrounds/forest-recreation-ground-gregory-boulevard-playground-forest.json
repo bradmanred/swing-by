@@ -1,0 +1,31 @@
+{
+  "name": "Forest Recreation Ground (Gregory Boulevard) Playground",
+  "region": "east-midlands",
+  "area": "Forest Fields, Nottingham",
+  "lat": 52.96724,
+  "lng": -1.15793,
+  "ages": [],
+  "equipment": [
+    "gym",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground at Forest Recreation Ground (Gregory Boulevard), Gregory Boulevard, on Nottingham City Council's list of its outdoor play facilities. The site also has a multi-use games area and an outdoor gym.",
+  "nearby": [],
+  "operator": "Nottingham City Council",
+  "sources": [
+    {
+      "label": "Nottingham City Council: Forest Recreation Ground (Gregory Boulevard) Playground",
+      "url": "https://nottinghamcity.gov.uk/media/r1jdart4/outdoor-play-facilities.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/119639661"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

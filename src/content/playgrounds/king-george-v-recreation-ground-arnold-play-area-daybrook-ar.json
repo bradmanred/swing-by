@@ -1,0 +1,31 @@
+{
+  "name": "King George V Recreation Ground, Arnold Play Area",
+  "region": "east-midlands",
+  "area": "Daybrook, Arnold",
+  "lat": 53.00147,
+  "lng": -1.12776,
+  "ages": [],
+  "equipment": [
+    "sk",
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area at King George V Recreation Ground, Hallams Lane, Arnold, on Gedling Borough Council's find-a-park list. It also has a skate park and gym equipment.",
+  "nearby": [],
+  "operator": "Gedling Borough Council",
+  "sources": [
+    {
+      "label": "Gedling Borough Council: King George V Recreation Ground, Arnold Play Area",
+      "url": "https://www.gedling.gov.uk/resident/parksandgreenspaces/findapark"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/664462367"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

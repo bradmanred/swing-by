@@ -1,0 +1,30 @@
+{
+  "name": "Burton Road Jubilee Park",
+  "region": "east-midlands",
+  "area": "Gedling, Netherfield",
+  "lat": 52.97083,
+  "lng": -1.07149,
+  "ages": [],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area at Burton Road Jubilee Park, Burton Road, Carlton, on Gedling Borough Council's find-a-park list. It has zip lines, outdoor gym equipment and a wheeled sports area.",
+  "nearby": [],
+  "operator": "Gedling Borough Council",
+  "sources": [
+    {
+      "label": "Gedling Borough Council: Burton Road Jubilee Park",
+      "url": "https://www.gedling.gov.uk/resident/parksandgreenspaces/findapark"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/240387397"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

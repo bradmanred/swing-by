@@ -1,0 +1,30 @@
+{
+  "name": "Whitemoor Drive Playground",
+  "region": "east-midlands",
+  "area": "Old Basford, Nottingham",
+  "lat": 52.97837,
+  "lng": -1.18026,
+  "ages": [],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground at Whitemoor Drive, Tintern Drive, on Nottingham City Council's list of its outdoor play facilities. The site also has an outdoor gym.",
+  "nearby": [],
+  "operator": "Nottingham City Council",
+  "sources": [
+    {
+      "label": "Nottingham City Council: Whitemoor Drive Playground",
+      "url": "https://nottinghamcity.gov.uk/media/r1jdart4/outdoor-play-facilities.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1490368469"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

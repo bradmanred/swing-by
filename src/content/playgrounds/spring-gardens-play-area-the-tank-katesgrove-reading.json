@@ -1,0 +1,30 @@
+{
+  "name": "Spring Gardens Play Area (The Tank)",
+  "region": "south-east",
+  "area": "Katesgrove, Reading",
+  "lat": 51.4451,
+  "lng": -0.96693,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A playground on Reading Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Reading Borough Council",
+  "sources": [
+    {
+      "label": "Reading Borough Council: Spring Gardens Play Area (The Tank)",
+      "url": "https://www.reading.gov.uk/leisure/outdoors/parks-outdoor-facilities-open-spaces/spring-gardens-play-area-the-tank"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/146631886"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

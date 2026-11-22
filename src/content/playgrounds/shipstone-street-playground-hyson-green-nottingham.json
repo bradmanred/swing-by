@@ -1,0 +1,30 @@
+{
+  "name": "Shipstone Street Playground",
+  "region": "east-midlands",
+  "area": "Hyson Green, Nottingham",
+  "lat": 52.97142,
+  "lng": -1.17341,
+  "ages": [],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground at Shipstone Street, Shipstone Street, on Nottingham City Council's list of its outdoor play facilities. The site also has an outdoor gym.",
+  "nearby": [],
+  "operator": "Nottingham City Council",
+  "sources": [
+    {
+      "label": "Nottingham City Council: Shipstone Street Playground",
+      "url": "https://nottinghamcity.gov.uk/media/r1jdart4/outdoor-play-facilities.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1294482330"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

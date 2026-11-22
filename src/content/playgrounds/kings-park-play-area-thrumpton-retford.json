@@ -1,0 +1,28 @@
+{
+  "name": "Kings' Park Play Area",
+  "region": "east-midlands",
+  "area": "Thrumpton, Retford",
+  "lat": 53.32179,
+  "lng": -0.94891,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area in Retford, one of the 37 playgrounds Bassetlaw District Council looks after.",
+  "nearby": [],
+  "operator": "Bassetlaw District Council",
+  "sources": [
+    {
+      "label": "Bassetlaw District Council: Kings' Park Play Area",
+      "url": "https://bassetlaw.gov.uk/parks-and-open-spaces/play-areas/play-area-locations"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/relation/13631696"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

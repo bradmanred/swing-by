@@ -1,0 +1,28 @@
+{
+  "name": "Patriot Place Play Centre",
+  "region": "south-east",
+  "area": "Newtown, Reading",
+  "lat": 51.45639,
+  "lng": -0.96007,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Reading Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Reading Borough Council",
+  "sources": [
+    {
+      "label": "Reading Borough Council: Patriot Place Play Centre",
+      "url": "https://www.reading.gov.uk/leisure/outdoors/parks-outdoor-facilities-open-spaces/patriot-place-play-centre"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/11047225207"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

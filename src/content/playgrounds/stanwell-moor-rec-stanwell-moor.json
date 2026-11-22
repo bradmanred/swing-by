@@ -1,0 +1,30 @@
+{
+  "name": "Stanwell Moor Rec",
+  "region": "south-east",
+  "area": "Stanwell Moor",
+  "lat": 51.46173,
+  "lng": -0.5003,
+  "ages": [],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Spelthorne Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Spelthorne Borough Council",
+  "sources": [
+    {
+      "label": "Spelthorne Borough Council: Stanwell Moor Rec",
+      "url": "https://www.spelthorne.gov.uk/page/969/stanwell-moor-rec"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1011047285"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

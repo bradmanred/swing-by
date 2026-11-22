@@ -1,0 +1,34 @@
+{
+  "name": "Priory Road Play Area",
+  "region": "west-midlands",
+  "area": "Little Stoke, Stone",
+  "lat": 52.89832,
+  "lng": -2.14015,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "sw",
+    "rb"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A Stafford Borough Council play area in Stone with a toddler multi-play unit, a spinner and swings.",
+  "nearby": [],
+  "operator": "Stafford Borough Council",
+  "sources": [
+    {
+      "label": "Stafford Borough Council: Priory Road Play Area",
+      "url": "https://staffordbc.gov.uk/node/162493"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/631973401"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

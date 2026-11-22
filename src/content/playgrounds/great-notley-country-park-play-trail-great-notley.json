@@ -1,0 +1,33 @@
+{
+  "name": "Great Notley Country Park Play Trail",
+  "region": "essex",
+  "area": "Great Notley",
+  "lat": 51.86411,
+  "lng": 0.51589,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl",
+    "sp",
+    "ss"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "The longest play trail in Essex, about 1.2km, in Essex County Council's Great Notley Country Park, with giant seesaws, swings, rope climbers, slides, forts and a big sand play area. Car park charges apply.",
+  "nearby": [],
+  "operator": "Essex County Council",
+  "sources": [
+    {
+      "label": "Essex County Council: Great Notley Country Park Play Trail",
+      "url": "https://www.explore-essex.com/places-to-go/kids-play-and-trails"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1216014992"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

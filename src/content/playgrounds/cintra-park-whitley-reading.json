@@ -1,0 +1,30 @@
+{
+  "name": "Cintra Park",
+  "region": "south-east",
+  "area": "Whitley, Reading",
+  "lat": 51.44058,
+  "lng": -0.95975,
+  "ages": [],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Reading Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Reading Borough Council",
+  "sources": [
+    {
+      "label": "Reading Borough Council: Cintra Park",
+      "url": "https://www.reading.gov.uk/leisure/outdoors/parks-outdoor-facilities-open-spaces/cintra-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/95050685"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

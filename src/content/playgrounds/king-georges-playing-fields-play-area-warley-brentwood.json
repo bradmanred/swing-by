@@ -1,0 +1,34 @@
+{
+  "name": "King George's Playing Fields Play Area",
+  "region": "essex",
+  "area": "Warley, Brentwood",
+  "lat": 51.6108,
+  "lng": 0.31208,
+  "ages": [
+    "3-6"
+  ],
+  "equipment": [
+    "wp"
+  ],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A play area in Brentwood, on Brentwood Borough Council's list of its play areas. It is the borough's largest play area, with an adventure play area for ages 8 and over and a splash pad for younger children that opens on warmer days. The playing fields have a car park and public toilets.",
+  "nearby": [],
+  "operator": "Brentwood Borough Council",
+  "sources": [
+    {
+      "label": "Brentwood Borough Council: King George's Playing Fields Play Area",
+      "url": "https://www.brentwood.gov.uk/countryside-sites-and-parks"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/199749936"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

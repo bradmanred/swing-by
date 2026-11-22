@@ -1,0 +1,37 @@
+{
+  "name": "Falmouth Avenue Play Area",
+  "region": "west-midlands",
+  "area": "Weeping Cross, Stafford",
+  "lat": 52.79534,
+  "lng": -2.07461,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "bk",
+    "zw",
+    "tp",
+    "ss"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A Stafford Borough Council play area in Stafford with toddler and junior multi-play units, a basket swing, a trampoline, a seesaw and a zip wire.",
+  "nearby": [],
+  "operator": "Stafford Borough Council",
+  "sources": [
+    {
+      "label": "Stafford Borough Council: Falmouth Avenue Play Area",
+      "url": "https://staffordbc.gov.uk/Stafford-Play-Areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/93130077"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

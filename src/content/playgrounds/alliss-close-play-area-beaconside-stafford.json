@@ -1,0 +1,32 @@
+{
+  "name": "Alliss Close Play Area",
+  "region": "west-midlands",
+  "area": "Beaconside, Stafford",
+  "lat": 52.81027,
+  "lng": -2.09085,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "rb",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A Stafford Borough Council play area in Stafford with swings, a roundabout and a springer.",
+  "nearby": [],
+  "operator": "Stafford Borough Council",
+  "sources": [
+    {
+      "label": "Stafford Borough Council: Alliss Close Play Area",
+      "url": "https://staffordbc.gov.uk/Stafford-Play-Areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/78431808"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

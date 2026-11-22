@@ -1,0 +1,30 @@
+{
+  "name": "Milestone Way Play Area",
+  "region": "south-east",
+  "area": "Caversham Park, Reading",
+  "lat": 51.48226,
+  "lng": -0.95352,
+  "ages": [],
+  "equipment": [
+    "sk"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Reading Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Reading Borough Council",
+  "sources": [
+    {
+      "label": "Reading Borough Council: Milestone Way Play Area",
+      "url": "https://www.reading.gov.uk/leisure/outdoors/parks-outdoor-facilities-open-spaces/milestone-way-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/675888324"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

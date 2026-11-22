@@ -1,0 +1,30 @@
+{
+  "name": "Bowyer Recreation Ground",
+  "region": "south-east",
+  "area": "Wexham Court, Slough",
+  "lat": 51.51569,
+  "lng": -0.58684,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Slough Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Slough Borough Council",
+  "sources": [
+    {
+      "label": "Slough Borough Council: Bowyer Recreation Ground",
+      "url": "https://www.slough.gov.uk/directory-record/31/bowyer-recreation-ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/665499493"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

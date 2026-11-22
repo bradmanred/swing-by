@@ -1,0 +1,28 @@
+{
+  "name": "Norton Play Area",
+  "region": "east-midlands",
+  "area": "Norton",
+  "lat": 53.24223,
+  "lng": -1.14513,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area in Norton, one of the 37 playgrounds Bassetlaw District Council looks after.",
+  "nearby": [],
+  "operator": "Bassetlaw District Council",
+  "sources": [
+    {
+      "label": "Bassetlaw District Council: Norton Play Area",
+      "url": "https://bassetlaw.gov.uk/parks-and-open-spaces/play-areas/play-area-locations"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/984704464"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

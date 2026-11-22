@@ -1,0 +1,32 @@
+{
+  "name": "Palmer Park",
+  "region": "south-east",
+  "area": "Newtown, Reading",
+  "lat": 51.45147,
+  "lng": -0.94075,
+  "ages": [],
+  "equipment": [],
+  "access": [
+    "inc"
+  ],
+  "facilities": [
+    "cf"
+  ],
+  "opens": "",
+  "description": "A playground on Reading Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Reading Borough Council",
+  "sources": [
+    {
+      "label": "Reading Borough Council: Palmer Park",
+      "url": "https://www.reading.gov.uk/leisure/outdoors/parks-outdoor-facilities-open-spaces/palmer-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/222053954"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

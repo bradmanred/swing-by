@@ -1,0 +1,37 @@
+{
+  "name": "Meadow Road Play Area",
+  "region": "west-midlands",
+  "area": "Rowley Park, Stafford",
+  "lat": 52.79308,
+  "lng": -2.1041,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "zw",
+    "sk",
+    "gym",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A Stafford Borough Council play area in Stafford with a junior multi-play unit, swings, a 25m zip wire, a skate park, an outdoor gym and a multi-use games area.",
+  "nearby": [],
+  "operator": "Stafford Borough Council",
+  "sources": [
+    {
+      "label": "Stafford Borough Council: Meadow Road Play Area",
+      "url": "https://staffordbc.gov.uk/Stafford-Play-Areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/77656015"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

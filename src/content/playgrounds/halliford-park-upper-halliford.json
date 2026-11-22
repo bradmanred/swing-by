@@ -1,0 +1,28 @@
+{
+  "name": "Halliford Park",
+  "region": "south-east",
+  "area": "Upper Halliford",
+  "lat": 51.40885,
+  "lng": -0.43129,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Spelthorne Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Spelthorne Borough Council",
+  "sources": [
+    {
+      "label": "Spelthorne Borough Council: Halliford Park",
+      "url": "https://www.spelthorne.gov.uk/page/959/halliford-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/364738460"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

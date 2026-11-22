@@ -1,0 +1,30 @@
+{
+  "name": "Bridgfield Teen Park",
+  "region": "east-midlands",
+  "area": "Lady Bay, West Bridgford",
+  "lat": 52.93432,
+  "lng": -1.12902,
+  "ages": [
+    "teens"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Rushcliffe Borough Council's teen play area at Bridge Field.",
+  "nearby": [],
+  "operator": "Rushcliffe Borough Council",
+  "sources": [
+    {
+      "label": "Rushcliffe Borough Council: Bridgfield Teen Park",
+      "url": "https://www.rushcliffe.gov.uk/leisure-and-culture/parks-and-play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/30689162"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

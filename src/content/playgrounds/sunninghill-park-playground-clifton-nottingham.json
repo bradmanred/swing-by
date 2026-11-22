@@ -1,0 +1,30 @@
+{
+  "name": "Sunninghill Park Playground",
+  "region": "east-midlands",
+  "area": "Clifton, Nottingham",
+  "lat": 52.91062,
+  "lng": -1.17688,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground at Sunninghill Park, Sunninghill Drive, on Nottingham City Council's list of its outdoor play facilities. The site also has a multi-use games area.",
+  "nearby": [],
+  "operator": "Nottingham City Council",
+  "sources": [
+    {
+      "label": "Nottingham City Council: Sunninghill Park Playground",
+      "url": "https://nottinghamcity.gov.uk/media/r1jdart4/outdoor-play-facilities.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1075546581"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

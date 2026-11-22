@@ -1,0 +1,30 @@
+{
+  "name": "Torridge Drive Play Area",
+  "region": "west-midlands",
+  "area": "Highfields, Stafford",
+  "lat": 52.79206,
+  "lng": -2.13953,
+  "ages": [],
+  "equipment": [
+    "sw"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A Stafford Borough Council play area in Stafford with an activity trail, swings and play panels.",
+  "nearby": [],
+  "operator": "Stafford Borough Council",
+  "sources": [
+    {
+      "label": "Stafford Borough Council: Torridge Drive Play Area",
+      "url": "https://staffordbc.gov.uk/Stafford-Play-Areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/98010697"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Pembroke Drive Play Area",
+  "region": "west-midlands",
+  "area": "Little Stoke, Stone",
+  "lat": 52.89713,
+  "lng": -2.1275,
+  "ages": [
+    "teens"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A Stafford Borough Council play area in Stone with an activity trail, a basketball hoop and a youth shelter.",
+  "nearby": [],
+  "operator": "Stafford Borough Council",
+  "sources": [
+    {
+      "label": "Stafford Borough Council: Pembroke Drive Play Area",
+      "url": "https://staffordbc.gov.uk/node/162493"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/763161346"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,35 @@
+{
+  "name": "Lawnsfield Walk Play Area",
+  "region": "west-midlands",
+  "area": "Weeping Cross, Stafford",
+  "lat": 52.79289,
+  "lng": -2.09082,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "rb",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A Stafford Borough Council play area in Stafford with a junior multi-play unit, a springer, a spinner and swings.",
+  "nearby": [],
+  "operator": "Stafford Borough Council",
+  "sources": [
+    {
+      "label": "Stafford Borough Council: Lawnsfield Walk Play Area",
+      "url": "https://staffordbc.gov.uk/Stafford-Play-Areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/1038546532"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Hadleigh Memorial Park Playground",
+  "region": "essex",
+  "area": "Hadleigh",
+  "lat": 51.55554,
+  "lng": 0.60192,
+  "ages": [],
+  "equipment": [
+    "cl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground in Hadleigh's Memorial Park, where Castle Point Borough Council is adding a castle-themed play tower for climbing.",
+  "nearby": [],
+  "operator": "Castle Point Borough Council",
+  "sources": [
+    {
+      "label": "Castle Point Borough Council: Hadleigh Memorial Park Playground",
+      "url": "https://www.castlepoint.gov.uk/w/-1-million-project-transforming-play-areas-in-local-parks-to-begin"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1053433005"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

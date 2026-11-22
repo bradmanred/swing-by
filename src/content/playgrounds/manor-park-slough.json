@@ -1,0 +1,27 @@
+{
+  "name": "Manor Park",
+  "region": "south-east",
+  "area": "Slough",
+  "lat": 51.52781,
+  "lng": -0.6076,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Slough Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Slough Borough Council",
+  "sources": [
+    {
+      "label": "Slough Borough Council: Manor Park",
+      "url": "https://www.slough.gov.uk/directory-record/18/manor-park"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (from the council's map), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
