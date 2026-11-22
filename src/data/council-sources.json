@@ -437,36 +437,82 @@
       "district": "Plymouth",
       "council": "Plymouth City Council",
       "sources": [
-        "https://www.plymouth.gov.uk/find-playground"
-      ]
+        "https://www.plymouth.gov.uk/find-playground",
+        "https://www.plymouth.gov.uk/find-park"
+      ],
+      "note": "Its find-a-playground page lists about 140 play areas in tables by ward (location, ages, surfacing, fencing), with no links, postcodes or map points. The site refuses automated downloads, so the rows are copied into plymouth.csv (taken 22 November 2026), leaving out its ball games area, skate park, outdoor gym and the primary school, and rows listed twice. Feed set up 22 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/plymouth.csv",
+        "page": "https://www.plymouth.gov.uk/find-playground",
+        "near": {
+          "lat": 50.39,
+          "lng": -4.12,
+          "km": 12
+        }
+      }
     },
     {
       "district": "Torbay",
       "council": "Torbay Council",
       "sources": [
         "https://www.torbay.gov.uk/leisure-sports-and-community/parks/find-a-park/"
-      ]
+      ],
+      "note": "Find a park has one page per park (about 80); the feed keeps those that mention a play area. Feed set up 22 November 2026.",
+      "feed": {
+        "type": "pages",
+        "index": "https://www.torbay.gov.uk/leisure-sports-and-community/parks/find-a-park/",
+        "follow": "/parks/find-a-park/[a-z0-9-]+/?$",
+        "near": {
+          "lat": 50.45,
+          "lng": -3.55,
+          "km": 12
+        }
+      }
     },
     {
       "district": "Exeter",
       "council": "Exeter City Council",
       "sources": [
-        "https://exeter.gov.uk/leisure-and-culture/parks-and-green-spaces/find-a-park-or-play-area/"
-      ]
+        "https://exeter.gov.uk/leisure-and-culture/parks-and-open-spaces/find-a-park-or-play-area"
+      ],
+      "note": "Its find a park or play area page loads its list from a map, so no list could be read (checked 22 November 2026), and the site refuses automated downloads. Look again by hand, or for the council's open data."
     },
     {
       "district": "Mid Devon",
       "council": "Mid Devon District Council",
       "sources": [
-        "https://www.middevon.gov.uk/residents/parks-and-open-spaces/"
-      ]
+        "https://www.middevon.gov.uk/residents/parks-and-play-areas"
+      ],
+      "note": "Its parks and play areas page lists the play areas it runs in Crediton, Cullompton and Tiverton with postcodes, and a few in surrounding villages without. Copied into mid-devon.csv (22 November 2026), leaving out skate parks, the BMX track and the Linear Park assault course. Town and parish councils run others. Feed set up 22 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/mid-devon.csv",
+        "page": "https://www.middevon.gov.uk/residents/parks-and-play-areas",
+        "near": {
+          "lat": 50.87,
+          "lng": -3.5,
+          "km": 25
+        }
+      }
     },
     {
       "district": "North Devon",
       "council": "North Devon Council",
       "sources": [
         "https://www.northdevon.gov.uk/leisure-and-lifestyle/parks-play-areas-and-allotments"
-      ]
+      ],
+      "note": "Its parks, play areas and allotments page names its play areas by town (Barnstaple, Braunton, Fremington, Ilfracombe, South Molton) with age ranges, but no postcodes. Copied into north-devon.csv (22 November 2026). Rock Park's play area is run by Barnstaple Town Council. The site refuses automated downloads. Feed set up 22 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/north-devon.csv",
+        "page": "https://www.northdevon.gov.uk/leisure-and-lifestyle/parks-play-areas-and-allotments",
+        "near": {
+          "lat": 51.1,
+          "lng": -4.03,
+          "km": 25
+        }
+      }
     },
     {
       "district": "Torridge",
@@ -3923,7 +3969,7 @@
         "page": "https://bridgwater-tc.gov.uk/news/misuse-of-play-areas/",
         "near": {
           "lat": 51.13,
-          "lng": -3.0,
+          "lng": -3,
           "km": 4
         }
       }
