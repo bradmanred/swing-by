@@ -41,6 +41,11 @@ const memberCount = data.filter((p) => p.m).length;
 // The weekly "Check sizes" workflow opens an issue once graded playgrounds pass 10%; then set this back to true.
 const SHOW_SIZES = false;
 const sizes = (['small', 'medium', 'large'] as const).map((k) => ({ k, label: k[0].toUpperCase() + k.slice(1), n: data.filter((p) => p.s === k).length }));
+// Curated photos (openly licensed, from the playground files) for the decorative hero photo. Approved parent photos
+// join them in the browser once they've loaded.
+const heroPhotos = parks
+  .filter((p) => p.photo?.src)
+  .map((p) => ({ id: p.id, name: p.name, src: p.photo!.src, credit: [p.photo!.credit, p.photo!.licence].filter(Boolean).join(', ') }));
 const ages = [
   ['under-3', 'Toddlers'],
   ['3-6', '3–6'],
@@ -50,10 +55,14 @@ const ages = [
 ---
 <Base title="Swing By" fullTitle="Swing By: find playgrounds near you, with toilets and baby change" current="/">
   <section class="hero" aria-labelledby="hero-title">
-    <div>
+    <div class="hero-intro">
       <p class="counter"><strong>{total}</strong> playgrounds and counting</p>
       <h1 id="hero-title">Where shall we play today?</h1>
       <p class="lede">Find a playground worth visiting: know what's there before you go.</p>
+      <figure class="hero-photo" id="hero-photo" hidden>
+        <img alt="" decoding="async" />
+        <figcaption><a href="/playgrounds/"></a><span class="hero-photo-credit"></span></figcaption>
+      </figure>
     </div>
     <form class="search" id="search" action="/playgrounds/" role="search" aria-label="Find playgrounds">
       <div>
@@ -179,12 +188,24 @@ const ages = [
   </section>
 
   <script type="application/json" id="parks-data" set:html={JSON.stringify({ parks: data, towns })} />
+  <script type="application/json" id="hero-photos" set:html={JSON.stringify(heroPhotos)} />
   <script>
     import { startFinder } from '../scripts/finder';
     import { startFeedback } from '../scripts/feedback';
     import { summerFilters } from '../scripts/finder';
+    import { startHeroPhoto, type HeroPhoto } from '../scripts/hero-photo';
     summerFilters();
-    startFinder();
+    const curated = JSON.parse(document.getElementById('hero-photos')!.textContent!) as HeroPhoto[];
+    startFinder({
+      // Wait for approved parent photos so the hero picks once from every photo, rather than swapping after it loads.
+      onPhotos: (approved, parks) => {
+        const name = new Map(parks.map((p) => [p.id, p.n]));
+        const fromParents = Object.entries(approved)
+          .filter(([id]) => name.has(id) && !curated.some((c) => c.id === id))
+          .map(([id, ph]) => ({ id, name: name.get(id)!, src: ph.url, credit: ph.credit ?? '' }));
+        startHeroPhoto([...curated, ...fromParents]);
+      },
+    });
     startFeedback();
   </script>
 </Base>
