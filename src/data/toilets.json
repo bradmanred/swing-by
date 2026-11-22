@@ -9184,18 +9184,6 @@
   },
   "barnfield-recreation-ground-chatham": {
    "nearest": {
-    "id": "fde6b78f016d919de0a7cca1",
-    "name": "Harmer Lavatorium",
-    "m": 1426,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 51.376284311,
-    "lng": 0.548294485
-   }
-  },
-  "barnfield-recreation-ground-wayfield-chatham": {
-   "nearest": {
     "id": "1b2d1cd3e0e65d203995d3a6",
     "name": "Capstone Farm Country Park",
     "m": 1534,
@@ -24573,6 +24561,18 @@
   },
   "capel-newydd-newchapel-playground-capel-newydd-newchapel-pem": {
    "nearest": null
+  },
+  "capel-playground-capel-felinfoel": {
+   "nearest": {
+    "id": "5fe73a89d6f922975356758d",
+    "name": "Public toilet",
+    "m": 1354,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.6785439,
+    "lng": -4.1337709
+   }
   },
   "capel-seion-play-area-moriah": {
    "nearest": null
@@ -41539,6 +41539,18 @@
     "lng": -4.8955328
    }
   },
+  "dinas-dinlle-playground-dinas-dinlle-2": {
+   "nearest": {
+    "id": "908e1ad02c4fec08f5bbf920",
+    "name": "Dinas Dinlle - Marine",
+    "m": 17,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 53.083439,
+    "lng": -4.335624576
+   }
+  },
   "dinas-dinlle-playground-dinas-dinlle": {
    "nearest": {
     "id": "908e1ad02c4fec08f5bbf920",
@@ -44084,9 +44096,6 @@
    "nearest": null
   },
   "dunvant-meadow-playground-dunvant": {
-   "nearest": null
-  },
-  "dunvant-park-playground-dunvant-2": {
    "nearest": null
   },
   "dunvant-park-playground-dunvant": {
@@ -57832,7 +57841,7 @@
     "lng": -0.230680704
    }
   },
-  "grange-road-cemetery-play-area-gillingham-2": {
+  "grange-road-cemetery-play-area-gillingham": {
    "nearest": {
     "id": "4d5d1286a39f2cb0177e042e",
     "name": "Public toilet",
@@ -57847,28 +57856,6 @@
     "id": "3977bc322f18f23c77ca0b72",
     "name": "Gillingham (Kent) Station Toilets",
     "m": 1067,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.38702767,
-    "lng": 0.551791191
-   }
-  },
-  "grange-road-cemetery-play-area-gillingham": {
-   "nearest": {
-    "id": "4d5d1286a39f2cb0177e042e",
-    "name": "Public toilet",
-    "m": 463,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.3944454,
-    "lng": 0.5633457
-   },
-   "nearestBabyChange": {
-    "id": "3977bc322f18f23c77ca0b72",
-    "name": "Gillingham (Kent) Station Toilets",
-    "m": 801,
     "babyChange": true,
     "accessible": false,
     "free": true,
@@ -68441,18 +68428,6 @@
    }
   },
   "hillyfields-community-park-gillingham": {
-   "nearest": {
-    "id": "3977bc322f18f23c77ca0b72",
-    "name": "Gillingham (Kent) Station Toilets",
-    "m": 444,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.38702767,
-    "lng": 0.551791191
-   }
-  },
-  "hillyfields-community-park-sally-port-gardens-gillingham": {
    "nearest": {
     "id": "3cac3211fab14a86300f686a",
     "name": "Pier Road",
@@ -106081,18 +106056,6 @@
     "lng": -4.3621636
    }
   },
-  "parc-bach-play-area-llanberis-beddgelert-2": {
-   "nearest": {
-    "id": "5ce8b2297d7c6943d6a24781",
-    "name": "Beddgelert",
-    "m": 57,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 53.011446107,
-    "lng": -4.101634026
-   }
-  },
   "parc-bach-play-area-llanberis-beddgelert": {
    "nearest": {
     "id": "5ce8b2297d7c6943d6a24781",
@@ -109343,18 +109306,6 @@
     "lng": -4.1578051
    }
   },
-  "penygaer-playing-fields-play-area-llanelli-halfway-llanelli": {
-   "nearest": {
-    "id": "5fe73a89d6f922975356758d",
-    "name": "Public toilet",
-    "m": 1354,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 51.6785439,
-    "lng": -4.1337709
-   }
-  },
   "penygelli-play-area-coedpoeth-coedpoeth": {
    "nearest": {
     "id": "cc82f66ab1f745176683068f",
@@ -111325,18 +111276,6 @@
     "free": true,
     "lat": 51.8708033,
     "lng": 0.1587879
-   }
-  },
-  "play-area-near-marine-hotel-dinas-dinlle-dinas-dinlle-2": {
-   "nearest": {
-    "id": "908e1ad02c4fec08f5bbf920",
-    "name": "Dinas Dinlle - Marine",
-    "m": 17,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 53.083439,
-    "lng": -4.335624576
    }
   },
   "play-area-near-marine-hotel-dinas-dinlle-dinas-dinlle": {
@@ -136005,6 +135944,28 @@
     "free": true,
     "lat": 53.283827931,
     "lng": -3.807988465
+   }
+  },
+  "playground-off-caer-wern-ynysfach-merthyr-tydfil": {
+   "nearest": {
+    "id": "954f0a9946395ac4f7c189fa",
+    "name": "Merthyr Bus Station",
+    "m": 433,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 51.74430493,
+    "lng": -3.379537761
+   },
+   "nearestBabyChange": {
+    "id": "ca036e363fc13263dca90d5a",
+    "name": "Cyfarthfa Park Canolfan",
+    "m": 1695,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 51.756445009,
+    "lng": -3.387823105
    }
   },
   "playground-off-caer-worgan-llantwit-major": {
@@ -252667,6 +252628,18 @@
   "playground-off-station-road-llanasa-talacre": {
    "nearest": null
   },
+  "playground-off-station-road-llantwit-fardre-hawthorn": {
+   "nearest": {
+    "id": "1d5b3acc3d7430aa10f7f24b",
+    "name": "Road Runner Loo",
+    "m": 391,
+    "babyChange": false,
+    "accessible": true,
+    "free": true,
+    "lat": 51.565843319,
+    "lng": -3.317688704
+   }
+  },
   "playground-off-station-road-meidrim-carmarthenshire": {
    "nearest": null
   },
@@ -264227,6 +264200,18 @@
     "lng": -3.254195452
    }
   },
+  "playground-off-trefonen-avenue-llandrindod": {
+   "nearest": {
+    "id": "5ffce172bb48e045bd72eb66",
+    "name": "Llandrindod Wells Town Council - Station Crescent",
+    "m": 500,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 52.242037934,
+    "lng": -3.37918371
+   }
+  },
   "playground-off-trefrhiw-road-llandybie-penybanc": {
    "nearest": {
     "id": "2e99d915dfa410d0ab91da8e",
@@ -271774,18 +271759,6 @@
     "free": true,
     "lat": 53.249703333,
     "lng": -3.132530451
-   }
-  },
-  "playground-off-wern-crescent-nelson": {
-   "nearest": {
-    "id": "004e35af3d8a069edf32b3df",
-    "name": "Taff Bargoed Park",
-    "m": 2501,
-    "babyChange": false,
-    "accessible": false,
-    "free": true,
-    "lat": 51.6702978,
-    "lng": -3.3003431
    }
   },
   "playground-off-wern-gethin-lane-st-mellons-cardiff": {
@@ -290085,28 +290058,6 @@
   },
   "rushdean-road-play-area-rochester": {
    "nearest": {
-    "id": "09f90c7e0f92c6281925e673",
-    "name": "Morrisons Supermarket - Strood (Kent)",
-    "m": 1745,
-    "babyChange": null,
-    "accessible": true,
-    "free": true,
-    "lat": 51.393003596,
-    "lng": 0.49323678
-   },
-   "nearestBabyChange": {
-    "id": "1715c300b65e30fd295f13be",
-    "name": "Tesco Superstore - Strood (Kent)",
-    "m": 1751,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.395082847,
-    "lng": 0.491208719
-   }
-  },
-  "rushdean-road-play-area-strood": {
-   "nearest": {
     "id": "1715c300b65e30fd295f13be",
     "name": "Tesco Superstore - Strood (Kent)",
     "m": 1906,
@@ -302047,18 +301998,6 @@
     "lng": -1.41825327
    }
   },
-  "station-road-play-area-church-village": {
-   "nearest": {
-    "id": "1d5b3acc3d7430aa10f7f24b",
-    "name": "Road Runner Loo",
-    "m": 391,
-    "babyChange": false,
-    "accessible": true,
-    "free": true,
-    "lat": 51.565843319,
-    "lng": -3.317688704
-   }
-  },
   "station-road-play-area-hepthorne-lane": {
    "nearest": {
     "id": "1deebba23b80b9b587389eab",
@@ -309769,26 +309708,16 @@
     "lng": -3.008229733
    }
   },
-  "the-wern-play-area-ynysfach-merthyr-tydfil": {
+  "the-wern-play-area-nelson": {
    "nearest": {
-    "id": "954f0a9946395ac4f7c189fa",
-    "name": "Merthyr Bus Station",
-    "m": 433,
-    "babyChange": null,
-    "accessible": true,
-    "free": true,
-    "lat": 51.74430493,
-    "lng": -3.379537761
-   },
-   "nearestBabyChange": {
-    "id": "ca036e363fc13263dca90d5a",
-    "name": "Cyfarthfa Park Canolfan",
-    "m": 1695,
-    "babyChange": true,
+    "id": "004e35af3d8a069edf32b3df",
+    "name": "Taff Bargoed Park",
+    "m": 2501,
+    "babyChange": false,
     "accessible": false,
-    "free": false,
-    "lat": 51.756445009,
-    "lng": -3.387823105
+    "free": true,
+    "lat": 51.6702978,
+    "lng": -3.3003431
    }
   },
   "the-willow-centre-play-area-cringleford": {
@@ -312298,18 +312227,6 @@
   },
   "trefeglwys-playground-trefeglwys": {
    "nearest": null
-  },
-  "trefonnen-playground-llandrindod-wells-llandrindod-2": {
-   "nearest": {
-    "id": "5ffce172bb48e045bd72eb66",
-    "name": "Llandrindod Wells Town Council - Station Crescent",
-    "m": 500,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 52.242037934,
-    "lng": -3.37918371
-   }
   },
   "trefonnen-playground-llandrindod-wells-llandrindod": {
    "nearest": {
@@ -318332,9 +318249,6 @@
    }
   },
   "waunarlwydd-playground-waunarlwydd": {
-   "nearest": null
-  },
-  "waunbant-road-play-area-kenfig-hill-kenfig-hill": {
    "nearest": null
   },
   "waunbant-road-play-area-kenfig-hill-pyle-kenfig-hill": {
