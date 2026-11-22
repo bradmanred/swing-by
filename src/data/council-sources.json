@@ -30,7 +30,7 @@
         "https://tendringdc.gov.uk/playparks/bathside",
         "https://www.tendringdc.gov.uk/"
       ],
-      "note": "Play area directory with one page per site (70 listed, with address, postcode and age range), covering the 38 district-run sites and parish-run ones. Feed set up 22 November 2026 and not yet tried.",
+      "note": "Play area directory with one page per site (70 listed, with address, postcode and age range), covering the 38 district-run sites and parish-run ones. Feed tried 22 November 2026 with Try a council list: 64 play areas found, placed from their postcodes.",
       "feed": {
         "type": "pages",
         "index": "https://www.tendringdc.gov.uk/playparks",
@@ -73,7 +73,7 @@
         "https://www.braintree.gov.uk/directory/5/parks-and-play-areas-locations",
         "https://www.braintree.gov.uk/"
       ],
-      "note": "Jadu directory 5 of parks and play areas in three A-Z categories (7, 8, 9), each record with an address, equipment list and a map pin. Feed set up 22 November 2026 and not yet tried.",
+      "note": "Jadu directory 5 of parks and play areas in three A-Z categories (7, 8, 9), each record with an address, equipment list and a map pin. Feed tried 22 November 2026 with Try a council list: 49 play areas found, placed from their postcodes.",
       "feed": {
         "type": "jadu",
         "directory": "https://www.braintree.gov.uk/directory/5/parks-and-play-areas-locations",
@@ -102,7 +102,7 @@
         "https://www.harlow.gov.uk/news/harlows-paddling-pools-and-splash-parks-now-open-summer-fun",
         "https://www.harlow.gov.uk/"
       ],
-      "note": "The playgrounds page names the council's 43 playgrounds in one list (no per-park pages, addresses or postcodes, so no feed). 41 named playgrounds plus the Town Park adventure and inclusive play areas, and Potters Field from renewal news, are in src/data/council-lists/harlow.csv; 'Church Langley Playing Field' was left out as it looks like the tennis court site. Harlow is unparished; Harlow Leisurezone has no outdoor playgrounds. 22 November 2026.",
+      "note": "The playgrounds page names the council's 43 playgrounds in one list (no per-park pages, addresses or postcodes, so no feed). 41 named playgrounds plus the Town Park adventure and inclusive play areas, and Potters Field from renewal news, are in src/data/council-lists/harlow.csv; 'Church Langley Playing Field' was left out as it looks like the tennis court site. Harlow is unparished; Harlow Leisurezone has no outdoor playgrounds. 22 November 2026. Tried with Try a council list: 40 of 44 placed (street lookups saved in the list).",
       "feed": {
         "type": "list",
         "file": "src/data/council-lists/harlow.csv",
@@ -379,7 +379,7 @@
         "https://www.medway.gov.uk/directory/22/find_a_country_park_open_space_park_or_play_area",
         "https://www.medway.gov.uk/directory/22/find_a_country_park_open_space_park_or_play_area/category/67"
       ],
-      "note": "The parks directory is split by area (Chatham 40, Cuxton and Halling 339, Gillingham 42, Hoo Peninsula 118, Rainham 116, Rochester 38, Strood 41), plus Multi-use game areas (67). Category 67 is MUGAs, not play areas, so the feed reads the area categories and keeps parks whose page mentions a play area. Records list play equipment and postcodes, and include parish-run sites such as Cliffe play area, High Halstow and Pottery Road recreation grounds. The A to Z is at /directory/22/a_to_z, with underscores. Feed set up 22 November 2026 and not yet tried.",
+      "note": "The parks directory is split by area (Chatham 40, Cuxton and Halling 339, Gillingham 42, Hoo Peninsula 118, Rainham 116, Rochester 38, Strood 41), plus Multi-use game areas (67). Category 67 is MUGAs, not play areas, so the feed reads the area categories and keeps parks whose page mentions a play area. Records list play equipment and postcodes, and include parish-run sites such as Cliffe play area, High Halstow and Pottery Road recreation grounds. The A to Z is at /directory/22/a_to_z, with underscores. Feed tried 22 November 2026 with Try a council list: 80 play areas found, each with a map point.",
       "feed": {
         "type": "jadu",
         "directory": "https://www.medway.gov.uk/directory/22/find_a_country_park_open_space_park_or_play_area",
@@ -2262,7 +2262,7 @@
         "https://www.outdoorcardiff.com/page-sitemap.xml",
         "https://apps8.cardiff.gov.uk/parks_search/index.php?lang=eng"
       ],
-      "note": "Checked 22 November 2026: the parks search only works in a browser with JavaScript, and Outdoor Cardiff has pages for only about 20 major parks. The council's 4 September 2020 news release names all 116 of its play areas by ward; the list combines the toddler and junior areas at the same site, leaves out the Maitland Road agility area, and adds Maltings Park plus details from later refurbishment releases and Outdoor Cardiff park pages. Ty'r Winch is listed under Old St Mellons Community Council instead. Committee reports on cardiff.moderngov.co.uk and the dog-control order schedule PDFs could not be fetched. Checked 22 November 2026.",
+      "note": "Checked 22 November 2026: the parks search only works in a browser with JavaScript, and Outdoor Cardiff has pages for only about 20 major parks. The council's 4 September 2020 news release names all 116 of its play areas by ward; the list combines the toddler and junior areas at the same site, leaves out the Maitland Road agility area, and adds Maltings Park plus details from later refurbishment releases and Outdoor Cardiff park pages. Ty'r Winch is listed under Old St Mellons Community Council instead. Committee reports on cardiff.moderngov.co.uk and the dog-control order schedule PDFs could not be fetched. Checked 22 November 2026. Tried with Try a council list: 79 of 102 placed (street lookups saved in the list); the rest are left to the import's street lookups.",
       "feed": {
         "type": "list",
         "file": "src/data/council-lists/cardiff.csv",
