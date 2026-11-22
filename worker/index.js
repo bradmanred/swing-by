@@ -15,6 +15,17 @@ import { AREA_MOVES } from './area-moves.js';
 
 // Old playground address → the listing it was merged into. Add a line whenever two listings are merged.
 const MERGED = {
+  'the-rec-norton-stockton-on-tees': 'bluehall-recreation-ground-play-area-norton-stockton-on-tees',
+  'playground-off-tintern-avenue-billingham-green-billingham': 'john-whitehead-park-play-area-billingham-green-billingham',
+  'playground-off-forest-lane-kirklevington': 'kirklevington-play-area-kirklevington',
+  'playground-off-acklam-road-thornaby-thornaby-on-tees': 'littleboy-park-play-area-thornaby-on-tees',
+  'playground-off-west-auckland-road-faverdale-darlington': 'west-park-natural-play-area-westpark-levy-area-darlington',
+  'playground-off-highfield-woodford': 'woodford-childrens-playground-woodford',
+  'playground-off-crown-lane-rothwell': 'greening-road-play-area-woodland-valley-rothwell',
+  'rothwell-playground-rothwell': 'manor-park-play-area-rothwell',
+  'playground-off-saunders-close-leisure-village-kettering': 'meadow-road-park-play-area-leisure-village-kettering',
+  'playground-off-westlake-avenue-bowers-gifford-and-north-benf': 'westlake-park-play-area-bowers-gifford',
+  'playground-off-bull-lane-rayleigh': 'king-george-v-playing-field-childrens-play-area-rayleigh',
   'cotton-play-area-holmes-chapel-cranage': 'middlewich-road-play-area-holmes-chapel',
   'playground-off-church-lane-sandbach-heath-sandbach': 'sandbach-heath-play-area-sandbach-heath-sandbach',
   'playground-off-lawrence-close-cranage': 'armistead-way-play-area-cranage',

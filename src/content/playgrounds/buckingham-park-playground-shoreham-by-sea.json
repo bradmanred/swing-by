@@ -1,0 +1,35 @@
+{
+  "name": "Buckingham Park playground",
+  "region": "south-east",
+  "area": "Shoreham-by-Sea",
+  "lat": 50.83989,
+  "lng": -0.26738,
+  "ages": [
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "cl",
+    "zw",
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Adur District Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Adur District Council",
+  "sources": [
+    {
+      "label": "Adur District Council: Buckingham Park playground",
+      "url": "https://www.adur-worthing.gov.uk/parks/find/shoreham-by-sea/buckingham-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/315877973"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Phoenix Centre Play Area",
+  "region": "north-east",
+  "area": "West View, Hartlepool",
+  "lat": 54.70158,
+  "lng": -1.21184,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area on Hartlepool Borough Council's list of the play areas it manages.",
+  "nearby": [],
+  "operator": "Hartlepool Borough Council",
+  "sources": [
+    {
+      "label": "Hartlepool Borough Council: Phoenix Centre Play Area",
+      "url": "https://www.hartlepool.gov.uk/parks-green-spaces/play-areas-hartlepool"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/10130856859"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

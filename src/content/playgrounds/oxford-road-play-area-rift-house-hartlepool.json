@@ -1,0 +1,28 @@
+{
+  "name": "Oxford Road Play Area",
+  "region": "north-east",
+  "area": "Rift House, Hartlepool",
+  "lat": 54.67286,
+  "lng": -1.23434,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area on Hartlepool Borough Council's list of the play areas it manages.",
+  "nearby": [],
+  "operator": "Hartlepool Borough Council",
+  "sources": [
+    {
+      "label": "Hartlepool Borough Council: Oxford Road Play Area",
+      "url": "https://www.hartlepool.gov.uk/parks-green-spaces/play-areas-hartlepool"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1086728418"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Foster Lane Play Area",
+  "region": "south-east",
+  "area": "Ashington",
+  "lat": 50.93337,
+  "lng": -0.39443,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area on Horsham District Council's list of the play areas it manages.",
+  "nearby": [],
+  "operator": "Horsham District Council",
+  "sources": [
+    {
+      "label": "Horsham District Council: Foster Lane Play Area",
+      "url": "https://horsham.gov.uk/playareas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/8923220306"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

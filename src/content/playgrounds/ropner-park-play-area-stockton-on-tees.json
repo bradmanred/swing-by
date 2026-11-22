@@ -1,0 +1,28 @@
+{
+  "name": "Ropner Park Play Area",
+  "region": "north-east",
+  "area": "Stockton-on-Tees",
+  "lat": 54.55834,
+  "lng": -1.33124,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area on Stockton-on-Tees Borough Council's 2023 list of play areas in the borough.",
+  "nearby": [],
+  "operator": "Stockton-on-Tees Borough Council",
+  "sources": [
+    {
+      "label": "Stockton-on-Tees Borough Council: Ropner Park Play Area",
+      "url": "https://moderngov.stockton.gov.uk/documents/s5866/SBC%20-%20Play%20Areas%20List%20Dec%2023.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/32064187"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

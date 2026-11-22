@@ -1,0 +1,28 @@
+{
+  "name": "Sidley House Play Area",
+  "region": "south-east",
+  "area": "Sidley, Bexhill-on-Sea",
+  "lat": 50.85714,
+  "lng": 0.46607,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area on Rother District Council's list of children's play areas in Bexhill.",
+  "nearby": [],
+  "operator": "Rother District Council",
+  "sources": [
+    {
+      "label": "Rother District Council: Sidley House Play Area",
+      "url": "https://www.rother.gov.uk/leisure-and-events/play-in-rother/play-facilities/childrens-play-areas-in-bexhill"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/446841021"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

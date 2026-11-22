@@ -7,11 +7,15 @@
   },
   {
    "name": "Kent",
-   "playgrounds": 1178
+   "playgrounds": 1181
   },
   {
    "name": "Devon",
    "playgrounds": 1141
+  },
+  {
+   "name": "Essex",
+   "playgrounds": 1052
   },
   {
    "name": "North Yorkshire",
@@ -22,16 +26,16 @@
    "playgrounds": 949
   },
   {
-   "name": "Essex",
-   "playgrounds": 907
-  },
-  {
    "name": "Norfolk",
    "playgrounds": 809
   },
   {
    "name": "Hertfordshire",
    "playgrounds": 734
+  },
+  {
+   "name": "West Midlands",
+   "playgrounds": 729
   },
   {
    "name": "Greater Manchester",
@@ -52,10 +56,6 @@
   {
    "name": "Bedfordshire",
    "playgrounds": 522
-  },
-  {
-   "name": "West Midlands",
-   "playgrounds": 521
   },
   {
    "name": "Tyne and Wear",
@@ -110,6 +110,22 @@
    "playgrounds": 106
   },
   {
+   "name": "Durham",
+   "playgrounds": 106
+  },
+  {
+   "name": "West Sussex",
+   "playgrounds": 104
+  },
+  {
+   "name": "Northamptonshire",
+   "playgrounds": 103
+  },
+  {
+   "name": "East Sussex",
+   "playgrounds": 92
+  },
+  {
    "name": "Isle of Wight",
    "playgrounds": 79
   },
@@ -120,18 +136,6 @@
   {
    "name": "Lincolnshire",
    "playgrounds": 68
-  },
-  {
-   "name": "East Sussex",
-   "playgrounds": 49
-  },
-  {
-   "name": "Northamptonshire",
-   "playgrounds": 39
-  },
-  {
-   "name": "Durham",
-   "playgrounds": 34
   },
   {
    "name": "Cumbria",
@@ -170,10 +174,6 @@
    "playgrounds": 8
   },
   {
-   "name": "West Sussex",
-   "playgrounds": 8
-  },
-  {
    "name": "Cornwall",
    "playgrounds": 7
   },
@@ -189,7 +189,7 @@
  "nations": [
   {
    "name": "Wales",
-   "playgrounds": 2564
+   "playgrounds": 2921
   },
   {
    "name": "Scotland",

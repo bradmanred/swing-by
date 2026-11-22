@@ -1,0 +1,34 @@
+{
+  "name": "Westlake Park play area",
+  "region": "essex",
+  "area": "Bowers Gifford",
+  "lat": 51.5703,
+  "lng": 0.53076,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "zw",
+    "tp"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Play area at Westlake Park, Bowers Gifford, with parish council play equipment including a zip wire, a pirate-themed climber and a ground-level trampoline in the junior area.",
+  "nearby": [],
+  "operator": "Bowers Gifford and North Benfleet Parish Council",
+  "sources": [
+    {
+      "label": "Bowers Gifford and North Benfleet Parish Council: Westlake Park play area",
+      "url": "https://e-voice.org.uk/bgnb-parishcouncil/assets/documents/winter-2022"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/919099273"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

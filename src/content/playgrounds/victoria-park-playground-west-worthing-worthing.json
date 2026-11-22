@@ -1,0 +1,33 @@
+{
+  "name": "Victoria Park playground",
+  "region": "south-east",
+  "area": "West Worthing, Worthing",
+  "lat": 50.81485,
+  "lng": -0.38075,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Worthing Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Worthing Borough Council",
+  "sources": [
+    {
+      "label": "Worthing Borough Council: Victoria Park playground",
+      "url": "https://www.adur-worthing.gov.uk/parks/find/worthing/victoria-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/287675069"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

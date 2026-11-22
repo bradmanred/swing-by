@@ -1,0 +1,33 @@
+{
+  "name": "Bourne Close playground",
+  "region": "south-east",
+  "area": "Durrington, Worthing",
+  "lat": 50.83043,
+  "lng": -0.42591,
+  "ages": [
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Worthing Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Worthing Borough Council",
+  "sources": [
+    {
+      "label": "Worthing Borough Council: Bourne Close playground",
+      "url": "https://www.adur-worthing.gov.uk/parks/find/worthing/bourne-close"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/513161004"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Elwick Village Play Area",
+  "region": "north-east",
+  "area": "Elwick",
+  "lat": 54.68213,
+  "lng": -1.29736,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area on Hartlepool Borough Council's list of the play areas it manages.",
+  "nearby": [],
+  "operator": "Hartlepool Borough Council",
+  "sources": [
+    {
+      "label": "Hartlepool Borough Council: Elwick Village Play Area",
+      "url": "https://www.hartlepool.gov.uk/parks-green-spaces/play-areas-hartlepool"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/669640520"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

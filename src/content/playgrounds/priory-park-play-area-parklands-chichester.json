@@ -1,0 +1,28 @@
+{
+  "name": "Priory Park Play Area",
+  "region": "south-east",
+  "area": "Parklands, Chichester",
+  "lat": 50.83999,
+  "lng": -0.77581,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by Chichester District Council, one of six it looks after in Chichester.",
+  "nearby": [],
+  "operator": "Chichester District Council",
+  "sources": [
+    {
+      "label": "Chichester District Council: Priory Park Play Area",
+      "url": "https://www.chichester.gov.uk/article/23999/Childrens-play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/56004718"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
