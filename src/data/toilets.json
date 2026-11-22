@@ -34046,22 +34046,12 @@
    "nearest": {
     "id": "2152913e5bea491bd7292791",
     "name": "Welwyn North Station",
-    "m": 593,
+    "m": 450,
     "babyChange": false,
     "accessible": false,
     "free": true,
     "lat": 51.82350199,
     "lng": -0.192087402
-   },
-   "nearestBabyChange": {
-    "id": "79d41a66dcbb321022e72fdb",
-    "name": "Welwyn Hatfield Borough Council",
-    "m": 1946,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 51.803937635,
-    "lng": -0.20566084
    }
   },
   "dilkes-park-play-area-south-ockendon": {
@@ -157915,18 +157905,6 @@
     "free": true,
     "lat": 51.803937635,
     "lng": -0.20566084
-   }
-  },
-  "playground-off-hertford-road-welwyn-welwyn-hatfield": {
-   "nearest": {
-    "id": "2152913e5bea491bd7292791",
-    "name": "Welwyn North Station",
-    "m": 450,
-    "babyChange": false,
-    "accessible": false,
-    "free": true,
-    "lat": 51.82350199,
-    "lng": -0.192087402
    }
   },
   "playground-off-hesketh-lane-tingley-morley": {
