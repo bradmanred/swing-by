@@ -70,7 +70,7 @@ legend { font-weight: 700; padding: 0; margin-bottom: 8px; }
 
 /* Hero */
 .hero { background: var(--blue); color: var(--white); border: var(--line); border-radius: 28px; box-shadow: 8px 8px 0 var(--ink); padding: 24px; display: grid; gap: 24px; }
-@media (min-width: 900px) { .hero { grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); align-items: center; padding: 32px; } }
+@media (min-width: 900px) { .hero { grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); align-items: start; padding: 32px; } }
 .hero .lede { margin-top: 14px; font-size: 1.25rem; max-width: 46ch; }
 .search { background: var(--white); color: var(--ink); border: var(--line); border-radius: var(--radius); padding: 20px; display: grid; gap: 16px; }
 .hero .counter { display: inline-flex; align-items: baseline; gap: 8px; margin: 0 0 16px; padding: 4px 16px; border: 3px solid var(--ink); border-radius: 999px; background: var(--yellow); color: var(--ink); font-weight: 700; }
