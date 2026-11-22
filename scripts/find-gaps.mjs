@@ -14,6 +14,12 @@
 //   node scripts/find-gaps.mjs --only "Kent" --add 50
 //   node scripts/find-gaps.mjs --osm-fallback --add 50   also fill gaps from OpenStreetMap in councils not yet checked
 //   node scripts/find-gaps.mjs --limit 5              only the first 5 counties (for a quick test)
+//   node scripts/find-gaps.mjs --all-feeds --add all  read every council list in the counties checked, gaps or not
+//
+// Council lists are normally read only for councils with OpenStreetMap gaps. With --only, or --all-feeds, every list in
+// the counties checked is read, so a list added after its area was filled from OpenStreetMap still gets read: its
+// records replace the OpenStreetMap-only listings (Unverified) and add playgrounds OpenStreetMap doesn't have. The
+// report always lists the councils with a list but no gaps, and whether their lists were read.
 //
 // With SCAN_MINUTES set, it stops starting new counties after that many minutes and carries on with what it has.
 // The county to start from next time is kept in .coverage-progress.json (the workflow keeps that file between runs),
@@ -47,6 +53,7 @@ const ONLY = arg('--only', '');
 const ONLY_SET = new Set(ONLY.split(',').map((x) => x.trim().toLowerCase()).filter(Boolean));
 const LIMIT = Number(arg('--limit', 0)) || Infinity;
 const OSM_FALLBACK = process.argv.includes('--osm-fallback');
+const ALL_FEEDS = process.argv.includes('--all-feeds') || !!ONLY;
 const TODAY = new Date().toISOString().slice(0, 10);
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
@@ -212,6 +219,10 @@ function snap(rec, approximate) {
 // don't list in that county's squares and their neighbours are looked up one by one, as Overpass's would be. Listed
 // ones are counted by their square's county, which is close enough for the coverage figures.
 const cellCounty = new Map();
+// County for each council (by norm()'d district name), from every postcodes.io lookup in the run, so a council's list
+// can be read even where it has no gaps.
+const districtCounty = new Map();
+const noteDistricts = (pcs) => { for (const pc of pcs) if (pc?.admin_district) districtCounty.set(norm(pc.admin_district), countyOf(pc)); };
 const square = (p) => `${Math.floor(p.lat * 20)},${Math.floor(p.lng * 12)}`;
 async function fromSnapshot(name) {
   const pub = SNAP.filter((p) => p.lat != null && isPublicPlay(p));
@@ -220,6 +231,7 @@ async function fromSnapshot(name) {
   const todo = [...bySquare.keys()].filter((k) => !cellCounty.has(k));
   const where = await lookup(todo.map((k) => bySquare.get(k)[0]));
   todo.forEach((k, i) => cellCounty.set(k, countyOf(where[i])));
+  noteDistricts(where);
   const near = (k) => {
     const [y, x] = k.split(',').map(Number);
     for (let a = -1; a <= 1; a++) for (let b = -1; b <= 1; b++) if (cellCounty.get(`${y + a},${x + b}`) === name) return true;
@@ -236,6 +248,7 @@ async function fromSnapshot(name) {
     }
   }
   const pcs = await lookup(maybe);
+  noteDistricts(pcs);
   maybe.forEach((p, i) => {
     if (countyOf(pcs[i]) !== name) return;
     p.pc = pcs[i];
@@ -284,6 +297,7 @@ for (const a of areas) {
     // Which council each missing playground is in.
     const where = await lookup(missing);
     missing.forEach((p, i) => (p.pc = where[i]));
+    noteDistricts(where);
     await sleep(5000);
   }
   results.push({ ...a, osm: osm.length, covered: osm.length - missing.length, missing });
@@ -306,10 +320,22 @@ for (const r of done) {
 // 2. Council feeds: read the council's own list (scripts/council-feeds.mjs) and add anything on it we don't have, as verified.
 const toAdd = []; // { kind: 'council' | 'osm', ... }
 const feedReport = [];
+// Councils with a list in the counties checked but no OpenStreetMap gaps. Their lists used to be skipped, so one added
+// after its area was filled from OpenStreetMap was never read. A council not seen in any lookup is placed from its
+// feed's "near" point.
+const gapDistricts = new Set(byCouncil.map((g) => norm(g.district)));
+const checkedCounties = new Set(done.map((r) => r.name));
+const noGap = councils.filter((c) => c.feed && !gapDistricts.has(norm(c.district)));
+const unplaced = noGap.filter((c) => !districtCounty.has(norm(c.district)) && c.feed.near);
+noteDistricts(await lookup(unplaced.map((c) => c.feed.near)));
+const noGapHere = noGap.filter((c) => checkedCounties.has(districtCounty.get(norm(c.district))));
+const unknownCounty = noGap.filter((c) => !districtCounty.has(norm(c.district)));
+const noGapRead = new Set();
 if (ADD > 0) {
-  const districts = new Set(byCouncil.map((g) => g.district));
-  for (const c of councils.filter((c) => c.feed && [...districts].some((d) => norm(d) === norm(c.district)))) {
+  const feeds = councils.filter((c) => c.feed && (gapDistricts.has(norm(c.district)) || (ALL_FEEDS && noGapHere.includes(c))));
+  for (const c of feeds) {
     if (toAdd.length >= ADD) break;
+    if (!gapDistricts.has(norm(c.district))) noGapRead.add(c);
     const recs = await readFeed(c.feed);
     let fresh = 0, replacing = 0;
     for (const x of recs) {
@@ -334,7 +360,7 @@ if (ADD > 0) {
       toAdd.push({ kind: 'council', ...x, council: c });
       remember({ id: null, lat: x.lat, lng: x.lng, osmOnly: false, name: x.name, osm: x.osm ? [x.osm] : [], rough: x.placed !== 'osm' && x.rough }); // so OpenStreetMap copies of the same place aren't added too
     }
-    feedReport.push(`${c.council}: ${recs.length} on the council's list, ${fresh} new${replacing ? ` (${replacing} replacing OpenStreetMap-only listings)` : ''}`);
+    feedReport.push(`${c.council}: ${recs.length} on the council's list, ${fresh} new${replacing ? ` (${replacing} replacing OpenStreetMap-only listings)` : ''}${gapDistricts.has(norm(c.district)) ? '' : ' (no OpenStreetMap gaps)'}`);
   }
   // 3. OpenStreetMap, only where the council's own list has been checked (unless --osm-fallback).
   for (const g of byCouncil) {
@@ -472,6 +498,18 @@ if (parishTodo.length)
     ...(parishTodo.length > 40 ? [``, `…and ${parishTodo.length - 40} more.`] : []),
   );
 if (feedReport.length) lines.push('', '## Council lists read', '', ...feedReport.map((l) => `- ${l}`));
+const notRead = noGapHere.filter((c) => !noGapRead.has(c));
+if (notRead.length)
+  lines.push(
+    '',
+    '## Council lists not read: no OpenStreetMap gaps',
+    '',
+    `These councils have a list but no OpenStreetMap gaps, so their lists weren't read this time${ADD > 0 ? ' (run with --all-feeds, or for named counties, to read them)' : ' (nothing is read on a report-only run)'}. They may still have playgrounds OpenStreetMap doesn't, or verified records of playgrounds listed from OpenStreetMap only.`,
+    '',
+    ...notRead.map((c) => `- ${c.council} (${districtCounty.get(norm(c.district))})`),
+  );
+if (!ONLY && unknownCounty.length && results.length === AREAS.length)
+  lines.push('', `Couldn't tell which county these councils' lists are in (no lookup matched their district and the feed has no "near"): ${unknownCounty.map((c) => c.council).join(', ')}.`);
 if (added.council || added.osm)
   lines.push('', `Added ${added.council} playgrounds from council lists (verified${replaced.length ? `, ${replaced.length} of them replacing OpenStreetMap-only listings, whose old addresses now redirect` : ''}) and ${added.osm} from OpenStreetMap (Unverified, in councils whose own lists have been checked${OSM_FALLBACK ? ', plus councils not yet checked' : ''}).`);
 else if (ADD > 0) lines.push('', 'Nothing added: no council list had new playgrounds, and the remaining gaps are all in councils whose own lists need checking first.');
