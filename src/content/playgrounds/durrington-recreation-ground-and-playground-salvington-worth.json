@@ -1,0 +1,30 @@
+{
+  "name": "Durrington Recreation Ground and playground",
+  "region": "south-east",
+  "area": "Salvington, Worthing",
+  "lat": 50.8307,
+  "lng": -0.39582,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Worthing Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Worthing Borough Council",
+  "sources": [
+    {
+      "label": "Worthing Borough Council: Durrington Recreation Ground and playground",
+      "url": "https://www.adur-worthing.gov.uk/parks/find/worthing/durrington-recreation-ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/969917008"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

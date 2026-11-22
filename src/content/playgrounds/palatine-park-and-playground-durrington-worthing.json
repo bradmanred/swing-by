@@ -1,0 +1,31 @@
+{
+  "name": "Palatine Park and playground",
+  "region": "south-east",
+  "area": "Durrington, Worthing",
+  "lat": 50.82408,
+  "lng": -0.42362,
+  "ages": [
+    "7-12",
+    "teens"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Worthing Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Worthing Borough Council",
+  "sources": [
+    {
+      "label": "Worthing Borough Council: Palatine Park and playground",
+      "url": "https://www.adur-worthing.gov.uk/parks/find/worthing/palatine-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/969911518"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

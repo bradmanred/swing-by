@@ -1,0 +1,33 @@
+{
+  "name": "Ham Road Skatepark",
+  "region": "south-east",
+  "area": "Shoreham-by-Sea",
+  "lat": 50.83047,
+  "lng": -0.26268,
+  "ages": [
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "sk"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Adur District Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Adur District Council",
+  "sources": [
+    {
+      "label": "Adur District Council: Ham Road Skatepark",
+      "url": "https://www.adur-worthing.gov.uk/parks/find/shoreham-by-sea/ham-road-skatepark"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/493108563"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

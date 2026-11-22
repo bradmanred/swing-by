@@ -1,0 +1,30 @@
+{
+  "name": "Southwick Green and playground",
+  "region": "south-east",
+  "area": "Portslade Village, Southwick",
+  "lat": 50.8344,
+  "lng": -0.23812,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Adur District Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Adur District Council",
+  "sources": [
+    {
+      "label": "Adur District Council: Southwick Green and playground",
+      "url": "https://www.adur-worthing.gov.uk/parks/find/southwick-and-fishersgate/southwick-green"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/598625098"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

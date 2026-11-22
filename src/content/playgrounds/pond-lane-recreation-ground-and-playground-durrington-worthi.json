@@ -1,0 +1,36 @@
+{
+  "name": "Pond Lane Recreation Ground and playground",
+  "region": "south-east",
+  "area": "Durrington, Worthing",
+  "lat": 50.83481,
+  "lng": -0.41278,
+  "ages": [
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A playground on Worthing Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Worthing Borough Council",
+  "sources": [
+    {
+      "label": "Worthing Borough Council: Pond Lane Recreation Ground and playground",
+      "url": "https://www.adur-worthing.gov.uk/parks/find/worthing/pond-lane-recreation-ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/969915522"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

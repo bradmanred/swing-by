@@ -1,0 +1,42 @@
+{
+  "name": "Longcroft Park and playground",
+  "region": "south-east",
+  "area": "Durrington, Worthing",
+  "lat": 50.82659,
+  "lng": -0.42087,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "rb",
+    "spr",
+    "gym"
+  ],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A playground on Worthing Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Worthing Borough Council",
+  "sources": [
+    {
+      "label": "Worthing Borough Council: Longcroft Park and playground",
+      "url": "https://www.adur-worthing.gov.uk/parks/find/worthing/longcroft-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/969910805"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Cookson Gardens Play Space",
+  "region": "south-east",
+  "area": "Ore, Hastings",
+  "lat": 50.87278,
+  "lng": 0.60016,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play space on Hastings Borough Council's list of the playgrounds it provides.",
+  "nearby": [],
+  "operator": "Hastings Borough Council",
+  "sources": [
+    {
+      "label": "Hastings Borough Council: Cookson Gardens Play Space",
+      "url": "https://www.hastings.gov.uk/parks_gardens_allotments/playgrounds/playgrounds/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1090968157"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

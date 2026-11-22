@@ -1,0 +1,28 @@
+{
+  "name": "South Park Play Area",
+  "region": "north-east",
+  "area": "Skerne Park, Darlington",
+  "lat": 54.51436,
+  "lng": -1.55778,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area in one of Darlington Borough Council's parks.",
+  "nearby": [],
+  "operator": "Darlington Borough Council",
+  "sources": [
+    {
+      "label": "Darlington Borough Council: South Park Play Area",
+      "url": "https://new.darlington.gov.uk/environment/parks-and-green-spaces"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/384009555"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

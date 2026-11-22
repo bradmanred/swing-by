@@ -1,0 +1,28 @@
+{
+  "name": "Burbank Play Area",
+  "region": "north-east",
+  "area": "Stranton, Hartlepool",
+  "lat": 54.68114,
+  "lng": -1.2057,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area on Hartlepool Borough Council's list of the play areas it manages.",
+  "nearby": [],
+  "operator": "Hartlepool Borough Council",
+  "sources": [
+    {
+      "label": "Hartlepool Borough Council: Burbank Play Area",
+      "url": "https://www.hartlepool.gov.uk/parks-green-spaces/play-areas-hartlepool"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1084292402"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

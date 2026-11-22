@@ -1,0 +1,28 @@
+{
+  "name": "Carlton Village Play Area",
+  "region": "north-east",
+  "area": "Carlton",
+  "lat": 54.59062,
+  "lng": -1.39325,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area on Stockton-on-Tees Borough Council's 2023 list of play areas in the borough, run by Carlton Parish Council.",
+  "nearby": [],
+  "operator": "Stockton-on-Tees Borough Council",
+  "sources": [
+    {
+      "label": "Stockton-on-Tees Borough Council: Carlton Village Play Area",
+      "url": "https://moderngov.stockton.gov.uk/documents/s5866/SBC%20-%20Play%20Areas%20List%20Dec%2023.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/935821067"
+    }
+  ],
+  "checked": "2026-11-22",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

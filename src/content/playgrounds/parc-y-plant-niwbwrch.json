@@ -1,0 +1,28 @@
+{
+  "name": "Parc y Plant",
+  "region": "wales",
+  "area": "Niwbwrch",
+  "lat": 53.16545,
+  "lng": -4.35643,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "ss"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap near Heol Y Wal, Niwbwrch. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "sources": [
+    {
+      "label": "OpenStreetMap: Parc y Plant",
+      "url": "https://www.openstreetmap.org/way/310305250"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment (what is mapped on OpenStreetMap, which may be incomplete), opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}
