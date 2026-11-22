@@ -18,6 +18,7 @@ const MERGED = {
   'cotton-play-area-holmes-chapel-cranage': 'middlewich-road-play-area-holmes-chapel',
   'playground-off-church-lane-sandbach-heath-sandbach': 'sandbach-heath-play-area-sandbach-heath-sandbach',
   'playground-off-lawrence-close-cranage': 'armistead-way-play-area-cranage',
+  'playground-off-lawrence-close-cranage-2': 'armistead-way-play-area-cranage',
   'playground-off-kingston-avenue-east-clevedon-clevedon': 'cherry-avenue-play-area-east-clevedon-clevedon',
   'kenn-moor-fields-playground-east-clevedon-clevedon': 'homeground-play-area-east-clevedon-clevedon',
   'playground-off-riviera-way-little-stoke': 'adelante-close-play-area-stoke-gifford',
