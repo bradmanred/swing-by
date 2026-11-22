@@ -28,8 +28,8 @@ jobs:
       pull-requests: read
       issues: write # to open a check-report issue when the site nears Cloudflare's file limit
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: 22
           cache: npm
@@ -70,7 +70,7 @@ jobs:
           printf '%s\n' "The build on \`${GITHUB_HEAD_REF:-$GITHUB_REF_NAME}\` has $COUNT files, with $LEFT left before Cloudflare's free plan refuses deploys." "" "Nothing has been changed. This needs a decision from the owner: see \"Cloudflare file count\" in docs/fixing-check-reports.md." > issue.md
           gh api "repos/$GITHUB_REPOSITORY/issues" -f title="$title" -F body=@issue.md -f "labels[]=check-report" --jq .html_url || echo "::warning::Couldn't open the file-limit issue."
       - run: npm run test:quick
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         if: steps.scope.outputs.mode != 'none'
         with:
           path: ~/.cache/ms-playwright
