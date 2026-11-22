@@ -1525,7 +1525,7 @@
     "lng": -4.470217824
    }
   },
-  "adur-recreation-ground-adur-rec-and-playground-shoreham-by-s": {
+  "adur-recreation-ground-adur-rec-playground-shoreham-by-sea": {
    "nearest": {
     "id": "5c018e937ae791a10a973325",
     "name": "Adur Recreation Ground, Shoreham",
@@ -20887,7 +20887,7 @@
     "lng": -4.212049842
    }
   },
-  "buckingham-park-and-playground-shoreham-by-sea": {
+  "buckingham-park-playground-shoreham-by-sea": {
    "nearest": {
     "id": "96965bc85f2f465be0096189",
     "name": "Buckingham Park Pavilion, Shoreham-by-sea",
@@ -29590,7 +29590,7 @@
     "lng": -2.507983446
    }
   },
-  "chiltern-crescent-playground-blue-park-skate-area-salvington": {
+  "chiltern-crescent-playground-salvington-worthing": {
    "nearest": {
     "id": "da9e7c475436de9ba78e7357",
     "name": "Pond Lane Rec Ground, Worthing",
@@ -36920,7 +36920,7 @@
     "lng": -1.5591242
    }
   },
-  "cromleigh-recreation-ground-and-playground-mile-oak-southwic": {
+  "cromleigh-recreation-ground-playground-mile-oak-southwick": {
    "nearest": {
     "id": "ac6a203598ef1c4443779d2c",
     "name": "Mile Oak Library",
@@ -37050,7 +37050,7 @@
   "crosby-ravensworth-playground-crosby-ravensworth": {
    "nearest": null
   },
-  "croshaw-recreation-ground-and-playground-sompting": {
+  "croshaw-recreation-ground-playground-sompting": {
    "nearest": {
     "id": "516c620afdf354d4797cd87e",
     "name": "Brooklands Park, Sompting",
@@ -41365,7 +41365,7 @@
   "dominion-playground-balby-doncaster": {
    "nearest": null
   },
-  "dominion-road-open-space-kittys-field-and-playground-broadwa": {
+  "dominion-road-open-space-kittys-field-playground-broadwater": {
    "nearest": {
     "id": "14283eaf7099e18d2ffb1a2c",
     "name": "BP Filling Station - Worthing (Broadwater)",
@@ -43485,7 +43485,7 @@
   "duror-duror": {
    "nearest": null
   },
-  "durrington-recreation-ground-and-playground-salvington-worth": {
+  "durrington-recreation-ground-playground-salvington-worthing": {
    "nearest": {
     "id": "94d0649192a36e54e9e4675e",
     "name": "Church House Park, Tarring",
@@ -44114,7 +44114,7 @@
     "lng": -0.1650324
    }
   },
-  "east-lancing-recreation-ground-and-playground-lancing": {
+  "east-lancing-recreation-ground-playground-lancing": {
    "nearest": {
     "id": "e9050bb3f5a08cfc07fc2a3d",
     "name": "Yewtree Close, Lancing",
@@ -49669,7 +49669,7 @@
     "lng": -2.91564703
    }
   },
-  "field-place-park-and-playground-west-worthing-worthing": {
+  "field-place-park-playground-west-worthing-worthing": {
    "nearest": {
     "id": "2c2f9065281f66499cf366d5",
     "name": "George V Avenue",
@@ -50177,7 +50177,7 @@
     "lng": -0.00428932
    }
   },
-  "fishersgate-recreation-ground-and-playground-portslade-villa": {
+  "fishersgate-recreation-ground-playground-portslade-village-s": {
    "nearest": {
     "id": "72c494a838391b8681517e10",
     "name": "Victoria Recreation Ground",
@@ -51870,7 +51870,7 @@
     "lng": -1.492726137
    }
   },
-  "foxglove-walk-park-and-playground-durrington-worthing": {
+  "foxglove-walk-park-playground-durrington-worthing": {
    "nearest": {
     "id": "67e11edc0d7b79877453938e",
     "name": "Tesco West Durrington Front Disabled Toilet",
@@ -56306,7 +56306,7 @@
     "lng": -3.218372941
    }
   },
-  "goring-recreation-ground-and-playground-goring-by-sea": {
+  "goring-recreation-ground-playground-goring-by-sea": {
    "nearest": {
     "id": "d898d7e1e24c972a2297d544",
     "name": "Plantation (Goring Gap), Goring",
@@ -60386,7 +60386,7 @@
     "lng": -0.20566084
    }
   },
-  "halewick-lane-park-and-playground-adur": {
+  "halewick-lane-park-playground-adur": {
    "nearest": {
     "id": "e9050bb3f5a08cfc07fc2a3d",
     "name": "Yewtree Close, Lancing",
@@ -60820,28 +60820,6 @@
     "lng": -3.2465752
    }
   },
-  "ham-road-skatepark-shoreham-by-sea": {
-   "nearest": {
-    "id": "74818bfb97e3900dc7ce697c",
-    "name": "Shoreham-by-Sea - Railway Station",
-    "m": 772,
-    "babyChange": false,
-    "accessible": false,
-    "free": true,
-    "lat": 50.83442192,
-    "lng": -0.271709718
-   },
-   "nearestBabyChange": {
-    "id": "eafff34a3b37f297a93ee630",
-    "name": "Tesco Extra - Shoreham",
-    "m": 1826,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 50.844697288,
-    "lng": -0.24970293
-   }
-  },
   "ham-village-green-ham-greater-london": {
    "nearest": {
     "id": "a462951232de04049ae9cc57",
@@ -60878,7 +60856,7 @@
     "lng": -1.674839258
    }
   },
-  "hamble-recreation-ground-and-playground-sompting": {
+  "hamble-recreation-ground-playground-sompting": {
    "nearest": {
     "id": "516c620afdf354d4797cd87e",
     "name": "Brooklands Park, Sompting",
@@ -66719,7 +66697,7 @@
     "lng": -6.042767465
    }
   },
-  "hill-barn-rotary-recreation-grounds-and-playground-broadwate": {
+  "hill-barn-rotary-recreation-grounds-playground-broadwater-wo": {
    "nearest": {
     "id": "57bb8161773ba41cfbb30c94",
     "name": "Broadwater Green, Worthing",
@@ -68695,7 +68673,7 @@
     "lng": -0.040646195
    }
   },
-  "homefield-park-and-playground-broadwater-worthing": {
+  "homefield-park-playground-broadwater-worthing": {
    "nearest": {
     "id": "c44645f25510247a53d21d04",
     "name": "BP Connect Filling Station - Worthing (Brooklands)",
@@ -79808,7 +79786,7 @@
     "lng": -2.102177719
    }
   },
-  "lancing-beach-green-and-playground-lancing": {
+  "lancing-beach-green-playground-lancing": {
    "nearest": {
     "id": "d9b1029c5e465ebf36e5f74e",
     "name": "Beach Green, Lancing",
@@ -79820,7 +79798,7 @@
     "lng": -0.325158834
    }
   },
-  "lancing-manor-park-and-playground-lancing-shoreham-by-sea": {
+  "lancing-manor-park-playground-lancing-shoreham-by-sea": {
    "nearest": {
     "id": "0d6d403d9fdfa8f520a1d1c7",
     "name": "Brighton City Airport - Terminal Building",
@@ -80246,7 +80224,7 @@
     "lng": 0.045348108
    }
   },
-  "larkfield-close-recreation-ground-and-playground-lancing": {
+  "larkfield-close-recreation-ground-playground-lancing": {
    "nearest": {
     "id": "79f92613e11dd96a9d297717",
     "name": "Shopsdam Road, Lancing",
@@ -85362,7 +85340,7 @@
     "lng": -1.41308555
    }
   },
-  "longcroft-park-and-playground-durrington-worthing": {
+  "longcroft-park-playground-durrington-worthing": {
    "nearest": {
     "id": "67e11edc0d7b79877453938e",
     "name": "Tesco West Durrington Front Disabled Toilet",
@@ -87033,7 +87011,7 @@
     "lng": -1.416402161
    }
   },
-  "lyons-farm-open-space-and-playground-sompting-adur": {
+  "lyons-farm-open-space-playground-sompting-adur": {
    "nearest": {
     "id": "516c620afdf354d4797cd87e",
     "name": "Brooklands Park, Sompting",
@@ -92572,7 +92550,7 @@
     "lng": -2.171143354
    }
   },
-  "middle-road-recreation-ground-and-playground-kingston-buci": {
+  "middle-road-recreation-ground-playground-kingston-buci": {
    "nearest": {
     "id": "6e9317c752af795b0d48b202",
     "name": "Forthaven, Shoreham-on-sea",
@@ -94338,7 +94316,7 @@
     "lng": -3.66132617
    }
   },
-  "monks-recreation-ground-and-playground-lancing": {
+  "monks-recreation-ground-playground-lancing": {
    "nearest": {
     "id": "e9050bb3f5a08cfc07fc2a3d",
     "name": "Yewtree Close, Lancing",
@@ -99715,7 +99693,7 @@
     "lng": 0.01880765
    }
   },
-  "northbrook-recreation-ground-and-playground-worthing": {
+  "northbrook-recreation-ground-playground-worthing": {
    "nearest": {
     "id": "f061a785200b99a5e9dd37d4",
     "name": "Highdown Gardens, Worthing",
@@ -103980,7 +103958,7 @@
     "lng": -0.071293461
    }
   },
-  "palatine-park-and-playground-durrington-worthing": {
+  "palatine-park-playground-durrington-worthing": {
    "nearest": {
     "id": "67e11edc0d7b79877453938e",
     "name": "Tesco West Durrington Front Disabled Toilet",
@@ -105398,7 +105376,7 @@
     "lng": -2.147859409
    }
   },
-  "parklands-park-and-playground-kingston-buci": {
+  "parklands-park-playground-kingston-buci": {
    "nearest": {
     "id": "eafff34a3b37f297a93ee630",
     "name": "Tesco Extra - Shoreham",
@@ -107224,7 +107202,7 @@
     "lng": -3.002201915
    }
   },
-  "pennycress-avenue-park-and-playground-durrington-worthing": {
+  "pennycress-avenue-park-playground-durrington-worthing": {
    "nearest": {
     "id": "67e11edc0d7b79877453938e",
     "name": "Tesco West Durrington Front Disabled Toilet",
@@ -280666,7 +280644,7 @@
     "lng": -0.65816313
    }
   },
-  "pond-lane-recreation-ground-and-playground-durrington-worthi": {
+  "pond-lane-recreation-ground-playground-durrington-worthing": {
    "nearest": {
     "id": "da9e7c475436de9ba78e7357",
     "name": "Pond Lane Rec Ground, Worthing",
@@ -283474,7 +283452,7 @@
     "lng": -3.068109155
    }
   },
-  "quayside-recreation-ground-and-playground-mile-oak-southwick": {
+  "quayside-recreation-ground-playground-mile-oak-southwick": {
    "nearest": {
     "id": "eafff34a3b37f297a93ee630",
     "name": "Tesco Extra - Shoreham",
@@ -292594,7 +292572,7 @@
     "lng": 0.40750824
    }
   },
-  "scotney-close-park-and-playground-durrington-worthing": {
+  "scotney-close-park-playground-durrington-worthing": {
    "nearest": {
     "id": "67e11edc0d7b79877453938e",
     "name": "Tesco West Durrington Front Disabled Toilet",
@@ -293683,7 +293661,7 @@
     "lng": -0.0544657
    }
   },
-  "shadwells-road-park-and-playground-lancing": {
+  "shadwells-road-park-playground-lancing": {
    "nearest": {
     "id": "e9050bb3f5a08cfc07fc2a3d",
     "name": "Yewtree Close, Lancing",
@@ -295075,7 +295053,7 @@
     "lng": -0.0693163
    }
   },
-  "shoreham-beach-green-and-playground-shoreham-by-sea": {
+  "shoreham-beach-green-playground-shoreham-by-sea": {
    "nearest": {
     "id": "4203fcf956b5e868b67ad414",
     "name": "Beach Green, Shoreham-by-Sea",
@@ -296887,7 +296865,7 @@
     "lng": -3.162348455
    }
   },
-  "sompting-recreation-ground-and-playground-sompting": {
+  "sompting-recreation-ground-playground-sompting": {
    "nearest": {
     "id": "516c620afdf354d4797cd87e",
     "name": "Brooklands Park, Sompting",
@@ -297977,7 +297955,7 @@
     "lng": 0.091199581
    }
   },
-  "southwick-green-and-playground-portslade-village-southwick": {
+  "southwick-green-playground-portslade-village-southwick": {
    "nearest": {
     "id": "f61911c3a1365d7168f1372a",
     "name": "Southwick Square, Southwick",
@@ -297999,7 +297977,7 @@
     "lng": -0.24970293
    }
   },
-  "southwick-recreation-ground-and-playground-portslade-village": {
+  "southwick-recreation-ground-playground-portslade-village-sou": {
    "nearest": {
     "id": "f61911c3a1365d7168f1372a",
     "name": "Southwick Square, Southwick",
@@ -306708,7 +306686,7 @@
     "lng": -4.458268583
    }
   },
-  "tarring-recreation-ground-and-playground-west-worthing-worth": {
+  "tarring-recreation-ground-playground-west-worthing-worthing": {
    "nearest": {
     "id": "94d0649192a36e54e9e4675e",
     "name": "Church House Park, Tarring",
@@ -309101,7 +309079,7 @@
     "lng": -3.573313951
    }
   },
-  "the-meads-park-and-playground-shoreham-by-sea": {
+  "the-meads-park-playground-shoreham-by-sea": {
    "nearest": {
     "id": "39a2654f1a2823ce19048a81",
     "name": "Shoreham Centre, Shoreham-on-Sea",
@@ -315066,28 +315044,6 @@
     "lng": -2.232971191
    }
   },
-  "victoria-park-and-playground-west-worthing-worthing": {
-   "nearest": {
-    "id": "094477ab75e30eadc91bef5f",
-    "name": "Victoria Park, Worthing",
-    "m": 51,
-    "babyChange": null,
-    "accessible": true,
-    "free": true,
-    "lat": 50.814870163,
-    "lng": -0.380026102
-   },
-   "nearestBabyChange": {
-    "id": "bdaabcfa794bc0717de3f3b7",
-    "name": "Worthing - Railway Station",
-    "m": 518,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 50.8184932,
-    "lng": -0.376163686
-   }
-  },
   "victoria-park-finchley-playground-fallow-corner-barnet": {
    "nearest": {
     "id": "a6aebda6e33ba337fc10215f",
@@ -315427,6 +315383,28 @@
     "free": true,
     "lat": 53.5706619,
     "lng": -1.7859184
+   }
+  },
+  "victoria-park-playground-west-worthing-worthing": {
+   "nearest": {
+    "id": "094477ab75e30eadc91bef5f",
+    "name": "Victoria Park, Worthing",
+    "m": 51,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 50.814870163,
+    "lng": -0.380026102
+   },
+   "nearestBabyChange": {
+    "id": "bdaabcfa794bc0717de3f3b7",
+    "name": "Worthing - Railway Station",
+    "m": 518,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 50.8184932,
+    "lng": -0.376163686
    }
   },
   "victoria-park-portslade": {
@@ -319911,18 +319889,6 @@
     "lng": -0.094186702
    }
   },
-  "west-park-and-playground-west-worthing-worthing": {
-   "nearest": {
-    "id": "2c2f9065281f66499cf366d5",
-    "name": "George V Avenue",
-    "m": 283,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 50.813903848,
-    "lng": -0.403938409
-   }
-  },
   "west-park-drive-play-area-swallownest": {
    "nearest": {
     "id": "b565ff57e564884bf77c60a5",
@@ -320016,6 +319982,18 @@
     "free": false,
     "lat": 52.58806612,
     "lng": -2.14086378
+   }
+  },
+  "west-park-playground-west-worthing-worthing": {
+   "nearest": {
+    "id": "2c2f9065281f66499cf366d5",
+    "name": "George V Avenue",
+    "m": 283,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 50.813903848,
+    "lng": -0.403938409
    }
   },
   "west-pilton-park-west-pilton-west-granton-city-of-edinburgh": {
