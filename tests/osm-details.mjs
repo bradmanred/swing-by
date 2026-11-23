@@ -8,13 +8,14 @@ import { mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, writeFileSyn
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { gunzipSync } from 'node:zlib';
-import { agesFrom, equipmentCode, groundsKind, isPublic, isPublicPlay, madeUpName, osmNotConfirmed, osmPlaygroundDoc, playgroundName } from '../scripts/osm-details.mjs';
+import { NOT_PUBLIC, agesFrom, equipmentCode, groundsKind, isPublic, isPublicPlay, madeUpName, osmNotConfirmed, osmPlaygroundDoc, playgroundName } from '../scripts/osm-details.mjs';
 
 // Public or not.
 assert.ok(isPublic({}));
 assert.ok(!isPublic({ access: 'residents' }));
 assert.ok(!isPublic({ name: 'St Mary’s Primary School playground' }));
 assert.ok(!isPublicPlay({ tags: {}, within: 'school' }), 'inside school grounds');
+assert.ok(NOT_PUBLIC.has('way/1046353451') && !isPublicPlay({ id: 'way/1046353451', tags: {} }), 'one a parish council says is private');
 assert.equal(groundsKind({ amenity: 'kindergarten' }), 'school');
 assert.equal(groundsKind({ tourism: 'caravan_site' }), 'holiday park');
 assert.equal(groundsKind({ leisure: 'park' }), null);

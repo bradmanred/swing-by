@@ -11,12 +11,17 @@
 //   access from its own tags. These go on the page as Unverified details: notConfirmed says they come from
 //   OpenStreetMap and may be incomplete.
 
+import { readFileSync } from 'node:fs';
+
+/** Mapped playgrounds an official source says aren't public (src/data/not-public.json), by OpenStreetMap id. */
+export const NOT_PUBLIC = new Set(Object.keys(JSON.parse(readFileSync(new URL('../src/data/not-public.json', import.meta.url), 'utf8')).playgrounds));
+
 export const BAD = /school|nursery|academy|primary|college|\bpub\b|inn\b|hotel|caravan|holiday park|soft play|ikea|mcdonald/i;
 const CLOSED = new Set(['private', 'no', 'customers', 'residents', 'permit', 'students']);
 /** Whether a mapped playground's own tags allow it: not private or indoor, and not named as a school's, pub's and so on. */
 export const isPublic = (t = {}) => !CLOSED.has(t.access) && t.indoor !== 'yes' && !BAD.test(`${t.name ?? ''} ${t.operator ?? ''}`);
-/** The same for a snapshot playground, which also knows whose grounds it is inside ("within"). */
-export const isPublicPlay = (p) => isPublic(p.tags ?? {}) && !p.within;
+/** The same for a snapshot playground, which also knows whose grounds it is inside ("within"), and not one we've been told is private. */
+export const isPublicPlay = (p) => isPublic(p.tags ?? {}) && !p.within && !NOT_PUBLIC.has(p.id);
 
 /** The kind of grounds whose playgrounds aren't open to everyone, from an area's tags, or null. */
 export function groundsKind(t = {}) {

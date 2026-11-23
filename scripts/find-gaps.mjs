@@ -39,7 +39,7 @@ import { mkdir, readFile, readdir, unlink, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { readFeed } from './council-feeds.mjs';
 import { snapshotNames } from './osm-names.mjs';
-import { isPublic, isPublicPlay, osmPlaygroundDoc } from './osm-details.mjs';
+import { NOT_PUBLIC, isPublic, isPublicPlay, osmPlaygroundDoc } from './osm-details.mjs';
 
 const DIR = 'src/content/playgrounds';
 const UA = { 'User-Agent': 'SwingBy/1.0 (https://swing-by.co.uk; finds playgrounds missing from the site)' };
@@ -292,7 +292,7 @@ for (const a of areas) {
     }
     osm = els
       .map((e) => ({ id: `${e.type}/${e.id}`, lat: e.lat ?? e.center?.lat, lng: e.lon ?? e.center?.lon, tags: e.tags ?? {} }))
-      .filter((p) => p.lat != null && isPublic(p.tags));
+      .filter((p) => p.lat != null && isPublic(p.tags) && !NOT_PUBLIC.has(p.id));
     missing = osm.filter((p) => !listed(p));
     // Which council each missing playground is in.
     const where = await lookup(missing);

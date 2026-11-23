@@ -13,7 +13,7 @@
 import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { snapshotNames } from './osm-names.mjs';
-import { isPublic, isPublicPlay, osmPlaygroundDoc } from './osm-details.mjs';
+import { NOT_PUBLIC, isPublic, isPublicPlay, osmPlaygroundDoc } from './osm-details.mjs';
 
 const DIR = 'src/content/playgrounds';
 const UA = { 'User-Agent': 'SwingBy/1.0 (https://swing-by.co.uk; finds playgrounds near motorway junctions)' };
@@ -100,7 +100,7 @@ for (const road of order) {
     if (!els) { console.log('  OpenStreetMap could not be reached'); continue; }
     for (const e of els) {
       const p = { id: `${e.type}/${e.id}`, lat: e.lat ?? e.center?.lat, lng: e.lon ?? e.center?.lon, tags: e.tags ?? {} };
-      if (p.lat != null && isPublic(p.tags) && !osm.some((q) => q.id === p.id)) osm.push(p);
+      if (p.lat != null && isPublic(p.tags) && !NOT_PUBLIC.has(p.id) && !osm.some((q) => q.id === p.id)) osm.push(p);
     }
     await sleep(3000);
   }
@@ -130,7 +130,7 @@ if (snapshot && toAdd.length) {
   const q = ['node', 'way', 'relation'].filter((t) => ids(t).length).map((t) => `${t}(id:${ids(t).join(',')});`).join('');
   const live = await overpass(`[out:json][timeout:180];(${q});out tags;`);
   if (live) {
-    const ok = new Set(live.filter((e) => e.tags?.leisure === 'playground' && isPublic(e.tags)).map((e) => `${e.type}/${e.id}`));
+    const ok = new Set(live.filter((e) => e.tags?.leisure === 'playground' && isPublic(e.tags) && !NOT_PUBLIC.has(`${e.type}/${e.id}`)).map((e) => `${e.type}/${e.id}`));
     const before = toAdd.length;
     toAdd.splice(0, toAdd.length, ...toAdd.filter((p) => ok.has(p.id)));
     console.log(`Checked live: ${toAdd.length} of ${before} still mapped and public`);
