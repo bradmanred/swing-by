@@ -144,7 +144,9 @@ async function approvedIndex(env) {
   ).all();
   const out = {};
   for (const r of results) out[r.park] = { id: r.id, url: imageUrl(r.id), credit: creditFor(r) };
-  return json(out, 200, { 'Cache-Control': 'no-cache' });
+  // Browsers reuse it for 5 minutes, like /api/equipment/open, so moving between the home page, search and area pages
+  // doesn't ask the Worker again each time (every Worker request counts towards the daily limit).
+  return json(out, 200, { 'Cache-Control': 'public, max-age=300' });
 }
 
 async function image(request, env, id) {
@@ -154,7 +156,9 @@ async function image(request, env, id) {
   return new Response(new Uint8Array(row.image), {
     headers: {
       'Content-Type': row.mime,
-      'Cache-Control': row.status === 'approved' ? 'public, max-age=300' : 'private, no-store',
+      // A photo's bytes never change for its id, so browsers can keep approved ones for a day (one Worker request per
+      // photo per visitor per day, instead of every 5 minutes). A photo removed later can stay in a browser for up to a day.
+      'Cache-Control': row.status === 'approved' ? 'public, max-age=86400' : 'private, no-store',
       'X-Content-Type-Options': 'nosniff',
     },
   });

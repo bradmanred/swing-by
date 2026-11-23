@@ -7,7 +7,8 @@
   // Without this, every deploy deletes them and the editor's GitHub sign-in breaks.
   "keep_vars": true,
   // The site's own domain. Cloudflare creates the DNS records and certificates on deploy.
-  // The zone swing-by.co.uk must be in the same Cloudflare account. www redirects to the bare domain (worker/index.js).
+  // The zone swing-by.co.uk must be in the same Cloudflare account. www redirects to the bare domain (worker/index.js)
+  // only for the paths in run_worker_first below; a Redirect Rule in the Cloudflare dashboard covers the rest (README).
   "routes": [
     { "pattern": "swing-by.co.uk", "custom_domain": true },
     { "pattern": "www.swing-by.co.uk", "custom_domain": true }
@@ -16,7 +17,11 @@
     "directory": "./dist",
     "binding": "ASSETS",
     "not_found_handling": "404-page",
-    "run_worker_first": true
+    // Only these paths run worker/index.js. Everything else (CSS, scripts, images, search data, other pages) is served
+    // straight from dist/, which is free and doesn't count towards the free plan's 100,000 Worker requests a day.
+    // With "true" here, every file on every page view was a Worker request.
+    // /playgrounds/* covers the packed playground pages and the redirects for merged, renamed and "c-" addresses.
+    "run_worker_first": ["/api/*", "/playgrounds/*", "/_pages/*"]
   },
   "d1_databases": [
     // Parent photos (held for approval before they're shown), parents' reports and site feedback. Tables: db/*.sql
