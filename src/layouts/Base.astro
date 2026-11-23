@@ -24,6 +24,10 @@ const jsonLdText = jsonLd ? JSON.stringify(jsonLd).replace(/</g, '\\u003c') : nu
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {/* Pages served straight from static assets skip the Worker's www redirect (wrangler.jsonc run_worker_first),
+        so send www visitors to the bare domain here, before Analytics runs. A Cloudflare Redirect Rule (README)
+        does this as a proper 301 before the page loads; this covers anything it misses. */}
+    <script is:inline>if(location.hostname==='www.swing-by.co.uk')location.replace('https://swing-by.co.uk'+location.pathname+location.search+location.hash)</script>
     <title>{full}</title>
     {analytics && <Analytics />}
     <meta name="description" content={description} />
