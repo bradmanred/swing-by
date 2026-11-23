@@ -7,7 +7,7 @@
 //      Also flags Unverified playgrounds listed from OpenStreetMap alone that are on the council's list, so they can
 //      be verified with the council as source without waiting for the county's next coverage import.
 //      And flags playgrounds removed for being inside school grounds (src/data/school-grounds.json) that are on the
-//      council's list, so a person can confirm they're public and re-add them with the council as source.
+//      council's list, so they're added back with the council as source.
 //   2. OpenStreetMap: for playgrounds whose source is an OpenStreetMap page, checks the mapped playground is still
 //      there, still tagged as a playground, and not now marked private.
 //   3. Broken official links: checks each official source link still works. A page that's gone (404 or 410) often
@@ -197,7 +197,7 @@ L.push('Things to look at. Nothing has been changed: check each against its offi
 L.push('## Summary', '');
 const c = result.councils;
 if (!SKIP.has('councils')) L.push(`- **Council lists:** ${c.length} read; ${c.reduce((a, r) => a + r.gone.length, 0)} playgrounds no longer on the council's list, ${c.reduce((a, r) => a + r.renamed.length, 0)} possibly renamed, ${c.reduce((a, r) => a + r.fresh.length, 0)} new on the council's list, ${c.reduce((a, r) => a + r.verify.length, 0)} Unverified playgrounds now on a council's list, ${c.reduce((a, r) => a + r.school.length, 0)} removed from school grounds but now on a council's list`);
-if (!SKIP.has('councils')) L.push(`- **Removed from school grounds, waiting for an official source:** ${SCHOOL_GROUNDS.size} (src/data/school-grounds.json). When checking an area's council or parish lists by hand, look for these too.`);
+if (!SKIP.has('councils')) L.push(`- **Removed from school grounds, waiting for an official source:** ${SCHOOL_GROUNDS.size} (src/data/school-grounds.json). Any official source brings one back: add it with that source and its entry clears itself.`);
 if (!SKIP.has('osm')) L.push(`- **OpenStreetMap:** ${result.osm.checked} checked; ${result.osm.gone.length} deleted, ${result.osm.retagged.length} no longer tagged as a playground, ${result.osm.private.length} now private`);
 if (!SKIP.has('links')) L.push(`- **Official links:** ${result.links.checked} checked; ${result.links.broken.length} broken`);
 if (!SKIP.has('stale')) L.push(`- **Not checked for over a year (or never):** ${result.stale.length} playgrounds with an official source`);
@@ -210,7 +210,7 @@ if (!SKIP.has('councils')) {
     if (r.gone.length) L.push('No longer on the council\'s list (closed, removed or moved?):', ...r.gone.slice(0, MAX).map((p) => `- ${link(p)}`), ...more(r.gone.length), '');
     if (r.renamed.length) L.push('Possibly renamed:', ...r.renamed.slice(0, MAX).map((x) => `- ${link(x.p)}: the council now says "${x.now}"`), ...more(r.renamed.length), '');
     if (r.verify.length) L.push("Unverified (listed from OpenStreetMap only) but on the council's list: add the council as source and a checked date:", ...r.verify.slice(0, MAX).map((v) => `- ${link(v.p)}: the council lists [${v.x.name}](${v.x.url}) ${v.d} m away`), ...more(r.verify.length), '');
-    if (r.school.length) L.push("Removed in November 2026 for being inside school grounds, but on the council's list: check it's open to everyone, then re-add it with the council as source and delete its entry from src/data/school-grounds.json:", ...r.school.slice(0, MAX).map((v) => `- [${v.x.name}](${v.x.url}): was ${v.was.name}, ${v.was.area} ([${v.osm}](https://www.openstreetmap.org/${v.osm}))`), ...more(r.school.length), '');
+    if (r.school.length) L.push("Removed in November 2026 for being inside school grounds, but on the council's list: add it back with the council as source (its entry in src/data/school-grounds.json clears itself):", ...r.school.slice(0, MAX).map((v) => `- [${v.x.name}](${v.x.url}): was ${v.was.name}, ${v.was.area} ([${v.osm}](https://www.openstreetmap.org/${v.osm}))`), ...more(r.school.length), '');
     if (r.fresh.length) L.push("New on the council's list (the weekly coverage job adds these):", ...r.fresh.slice(0, MAX).map((x) => `- [${x.name}](${x.url})`), ...more(r.fresh.length), '');
   }
 }

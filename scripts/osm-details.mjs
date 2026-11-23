@@ -16,7 +16,7 @@ import { readFileSync } from 'node:fs';
 const data = (f) => JSON.parse(readFileSync(new URL(`../src/data/${f}`, import.meta.url), 'utf8'));
 /**
  * Listings removed because they're inside school grounds (src/data/school-grounds.json), by OpenStreetMap id. They
- * wait for an official source: a council list that includes one is flagged by the coverage and quarterly checks.
+ * wait for an official source: any official listing brings one back and clears its entry (scripts/school-grounds.mjs).
  */
 export const SCHOOL_GROUNDS = new Map(Object.entries(data('school-grounds.json').playgrounds));
 /**

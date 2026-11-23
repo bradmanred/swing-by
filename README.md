@@ -132,7 +132,7 @@ Run it from the Actions tab (Check pin positions > Run workflow), with a region 
 Four times a year (the 10th of January, April, July and October) the **Quarterly playground check** workflow (`.github/workflows/quarterly-check.yml`, `scripts/quarterly-check.mjs`) looks for changes to playgrounds we already list, without needing Claude. It changes no files. It opens a "Quarterly playground check" issue listing:
 
 - playgrounds a council with a machine-readable list (a `feed` in `src/data/council-sources.json`) no longer lists, ones that may have been renamed, and new ones on the council's list;
-- playgrounds removed for being inside school grounds (`src/data/school-grounds.json`) that a council's list now includes, so they can be re-added with the council as source once someone has checked they're public (the daily coverage check flags the same in its pull request);
+- playgrounds removed for being inside school grounds (`src/data/school-grounds.json`) that a council's list now includes, so they can be added back with the council as source (any official source brings one back: the daily coverage check adds those on the council lists it reads, and clears the entry of any that has an official listing, `scripts/school-grounds.mjs`);
 - playgrounds sourced from OpenStreetMap whose mapped playground has been deleted, retagged or marked private;
 - official source links that now return "not found" (404 or 410), which often means a listing has changed or gone;
 - playgrounds with an official source that haven't been checked for over a year.
