@@ -13,8 +13,17 @@
 
 import { readFileSync } from 'node:fs';
 
-/** Mapped playgrounds an official source says aren't public (src/data/not-public.json), by OpenStreetMap id. */
-export const NOT_PUBLIC = new Set(Object.keys(JSON.parse(readFileSync(new URL('../src/data/not-public.json', import.meta.url), 'utf8')).playgrounds));
+const data = (f) => JSON.parse(readFileSync(new URL(`../src/data/${f}`, import.meta.url), 'utf8'));
+/**
+ * Listings removed because they're inside school grounds (src/data/school-grounds.json), by OpenStreetMap id. They
+ * wait for an official source: a council list that includes one is flagged by the coverage and quarterly checks.
+ */
+export const SCHOOL_GROUNDS = new Map(Object.entries(data('school-grounds.json').playgrounds));
+/**
+ * Mapped playgrounds never to add again from OpenStreetMap, by id: ones an official source says aren't public
+ * (src/data/not-public.json), and the school-grounds ones above.
+ */
+export const NOT_PUBLIC = new Set([...Object.keys(data('not-public.json').playgrounds), ...SCHOOL_GROUNDS.keys()]);
 
 export const BAD = /school|nursery|academy|primary|college|\bpub\b|inn\b|hotel|caravan|holiday park|soft play|ikea|mcdonald/i;
 const CLOSED = new Set(['private', 'no', 'customers', 'residents', 'permit', 'students']);

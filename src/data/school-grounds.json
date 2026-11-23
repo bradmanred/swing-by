@@ -1,0 +1,4782 @@
+{
+ "about": "Playgrounds once listed from OpenStreetMap alone that the OpenStreetMap snapshot puts inside school grounds, removed on 23 November 2026 because school playgrounds usually aren't open to everyone. Keyed by OpenStreetMap id. They aren't added again from OpenStreetMap; a council list that includes one is flagged by the coverage check and the quarterly check, so a person can confirm it's public and re-add it with the official source (then delete its entry here). The old page addresses are kept in \"page\".",
+ "removed": "2026-11-23",
+ "playgrounds": {
+  "way/330031880": {
+   "page": "playground-off-hadden-heights-bampton",
+   "name": "Playground off Hadden Heights",
+   "area": "Bampton",
+   "region": "devon",
+   "lat": 50.98892,
+   "lng": -3.49573
+  },
+  "way/480399402": {
+   "page": "playground-off-bowley-meadow-bradninch",
+   "name": "Playground off Bowley Meadow",
+   "area": "Bradninch",
+   "region": "devon",
+   "lat": 50.82199,
+   "lng": -3.42834
+  },
+  "way/40201309": {
+   "page": "playground-off-moor-lane-budleigh-salterton",
+   "name": "Playground off Moor Lane",
+   "area": "Budleigh Salterton",
+   "region": "devon",
+   "lat": 50.63561,
+   "lng": -3.333
+  },
+  "way/482902579": {
+   "page": "playground-off-meadow-lane-cullompton",
+   "name": "Playground off Meadow Lane",
+   "area": "Cullompton",
+   "region": "devon",
+   "lat": 50.85171,
+   "lng": -3.39209
+  },
+  "way/985365187": {
+   "page": "playground-off-prospect-row-devonport-plymouth",
+   "name": "Playground off Prospect Row",
+   "area": "Devonport, Plymouth",
+   "region": "devon",
+   "lat": 50.36694,
+   "lng": -4.17681
+  },
+  "way/1315036679": {
+   "page": "playground-off-charles-road-littletown-honiton",
+   "name": "Playground off Charles Road",
+   "area": "Littletown, Honiton",
+   "region": "devon",
+   "lat": 50.80234,
+   "lng": -3.18728
+  },
+  "way/1467300715": {
+   "page": "merton-playground-merton-torridge",
+   "name": "Merton Playground",
+   "area": "Merton",
+   "region": "devon",
+   "lat": 50.88776,
+   "lng": -4.09398
+  },
+  "way/1269161431": {
+   "page": "playground-off-lyme-road-sector-axminster",
+   "name": "Playground off Lyme Road",
+   "area": "Sector, Axminster",
+   "region": "devon",
+   "lat": 50.77974,
+   "lng": -2.99215
+  },
+  "way/536422929": {
+   "page": "playground-off-dunsford-road-st-thomas-exeter",
+   "name": "Playground off Dunsford Road",
+   "area": "St Thomas, Exeter",
+   "region": "devon",
+   "lat": 50.71491,
+   "lng": -3.54807
+  },
+  "way/804410545": {
+   "page": "playground-off-paradise-road-stoke-plymouth",
+   "name": "Playground off Paradise Road",
+   "area": "Stoke, Plymouth",
+   "region": "devon",
+   "lat": 50.37417,
+   "lng": -4.16274
+  },
+  "way/266656147": {
+   "page": "stokenham-playground-stokenham-south-hams",
+   "name": "Stokenham Playground",
+   "area": "Stokenham",
+   "region": "devon",
+   "lat": 50.2737,
+   "lng": -3.68072
+  },
+  "way/804410546": {
+   "page": "playground-off-edgcumbe-avenue-stonehouse-plymouth",
+   "name": "Playground off Edgcumbe Avenue",
+   "area": "Stonehouse, Plymouth",
+   "region": "devon",
+   "lat": 50.37398,
+   "lng": -4.16101
+  },
+  "way/832541669": {
+   "page": "playground-off-venn-ottery-road-ottery-st-mary-east-devon",
+   "name": "Playground off Venn Ottery Road",
+   "area": "Tipton St John",
+   "region": "devon",
+   "lat": 50.71889,
+   "lng": -3.29349
+  },
+  "way/832541699": {
+   "page": "ottery-st-mary-playground-ottery-st-mary-east-devon",
+   "name": "Tipton St John Playground",
+   "area": "Tipton St John",
+   "region": "devon",
+   "lat": 50.71881,
+   "lng": -3.29222
+  },
+  "way/172270324": {
+   "page": "playground-off-belle-cross-road-west-alvington-kingsbridge",
+   "name": "Playground off Belle Cross Road",
+   "area": "West Alvington, Kingsbridge",
+   "region": "devon",
+   "lat": 50.28847,
+   "lng": -3.76831
+  },
+  "way/172270332": {
+   "page": "playground-off-washabrook-lane-west-alvington-kingsbridge",
+   "name": "Playground off Washabrook Lane",
+   "area": "West Alvington, Kingsbridge",
+   "region": "devon",
+   "lat": 50.28794,
+   "lng": -3.76867
+  },
+  "way/903804615": {
+   "page": "playground-off-castle-lane-woodbury-east-devon-2-2",
+   "name": "Playground off Castle Lane",
+   "area": "Woodbury",
+   "region": "devon",
+   "lat": 50.67694,
+   "lng": -3.39871
+  },
+  "way/479670897": {
+   "page": "playground-off-woolwell-road-woolwell-south-hams",
+   "name": "Playground off Woolwell Road",
+   "area": "Woolwell, Plymouth",
+   "region": "devon",
+   "lat": 50.43406,
+   "lng": -4.10287
+  },
+  "way/1329675171": {
+   "page": "playground-off-yealm-park-yealmpton-south-hams",
+   "name": "Playground off Yealm Park",
+   "area": "Yealmpton",
+   "region": "devon",
+   "lat": 50.34658,
+   "lng": -4.00559
+  },
+  "way/1394993554": {
+   "page": "playground-off-school-road-alby-hill-north-norfolk",
+   "name": "Playground off School Road",
+   "area": "Alby Hill",
+   "region": "east",
+   "lat": 52.86194,
+   "lng": 1.25337
+  },
+  "way/467590673": {
+   "page": "playground-off-church-road-aslacton",
+   "name": "Playground off Church Road",
+   "area": "Aslacton",
+   "region": "east",
+   "lat": 52.47472,
+   "lng": 1.17634
+  },
+  "way/393886158": {
+   "page": "playground-off-andrews-furlong-banham-2",
+   "name": "Playground off Andrews Furlong",
+   "area": "Banham",
+   "region": "east",
+   "lat": 52.45781,
+   "lng": 1.04836
+  },
+  "way/393886155": {
+   "page": "playground-off-andrews-furlong-banham",
+   "name": "Playground off Andrews Furlong",
+   "area": "Banham",
+   "region": "east",
+   "lat": 52.45698,
+   "lng": 1.04842
+  },
+  "way/295851803": {
+   "page": "playground-off-bowling-green-close-besthorpe-attleborough",
+   "name": "Playground off Bowling Green Close",
+   "area": "Besthorpe, Attleborough",
+   "region": "east",
+   "lat": 52.52003,
+   "lng": 1.01795
+  },
+  "way/1117635489": {
+   "page": "playground-off-eagle-farm-road-biggleswade",
+   "name": "Playground off Eagle Farm Road",
+   "area": "Biggleswade",
+   "region": "east",
+   "lat": 52.08627,
+   "lng": -0.25103
+  },
+  "way/440757772": {
+   "page": "playground-off-west-walk-bottisham-east-cambridgeshire",
+   "name": "Playground off West Walk",
+   "area": "Bottisham",
+   "region": "east",
+   "lat": 52.22105,
+   "lng": 0.26352
+  },
+  "way/555581439": {
+   "page": "playground-off-braydeston-avenue-brundall",
+   "name": "Playground off Braydeston Avenue",
+   "area": "Brundall",
+   "region": "east",
+   "lat": 52.62119,
+   "lng": 1.43714
+  },
+  "way/555581440": {
+   "page": "playground-off-the-dales-brundall",
+   "name": "Playground off The Dales",
+   "area": "Brundall",
+   "region": "east",
+   "lat": 52.6221,
+   "lng": 1.43729
+  },
+  "way/1474980211": {
+   "page": "playground-off-dunstable-road-bury-park-luton",
+   "name": "Playground off Dunstable Road",
+   "area": "Bury Park, Luton",
+   "region": "east",
+   "lat": 51.88651,
+   "lng": -0.43314
+  },
+  "way/139510138": {
+   "page": "playground-off-red-lion-close-cranfield",
+   "name": "Playground off Red Lion Close",
+   "area": "Cranfield",
+   "region": "east",
+   "lat": 52.07008,
+   "lng": -0.60399
+  },
+  "way/466067911": {
+   "page": "playground-off-dereham-road-dereham",
+   "name": "Playground off Dereham Road",
+   "area": "Dereham",
+   "region": "east",
+   "lat": 52.67856,
+   "lng": 0.91829
+  },
+  "node/3953167997": {
+   "page": "playground-off-vawdrey-road-drayton",
+   "name": "Playground off Vawdrey Road",
+   "area": "Drayton",
+   "region": "east",
+   "lat": 52.68014,
+   "lng": 1.2231
+  },
+  "way/256637800": {
+   "page": "playground-off-orwell-clsoe-fairstead-kings-lynn",
+   "name": "Playground off Orwell Clsoe",
+   "area": "Fairstead, King's Lynn",
+   "region": "east",
+   "lat": 52.7519,
+   "lng": 0.44131
+  },
+  "node/6457194223": {
+   "page": "playground-off-aslacton-road-forncett-st-peter",
+   "name": "Playground off Aslacton Road",
+   "area": "Forncett St Peter",
+   "region": "east",
+   "lat": 52.49014,
+   "lng": 1.18693
+  },
+  "way/257924195": {
+   "page": "playground-off-haconsfield-path-hethersett",
+   "name": "Playground off Haconsfield Path",
+   "area": "Hethersett",
+   "region": "east",
+   "lat": 52.59956,
+   "lng": 1.18393
+  },
+  "node/3475231501": {
+   "page": "playground-off-cromer-road-hunstanton",
+   "name": "Playground off Cromer Road",
+   "area": "Hunstanton",
+   "region": "east",
+   "lat": 52.94303,
+   "lng": 0.49614
+  },
+  "way/1416347093": {
+   "page": "playground-off-brooklands-drive-leighton-linslade-leighton-b",
+   "name": "Playground off Brooklands Drive",
+   "area": "Leighton Buzzard",
+   "region": "east",
+   "lat": 51.91531,
+   "lng": -0.64691
+  },
+  "way/1393300356": {
+   "page": "playground-off-birchfield-lane-mulbarton",
+   "name": "Playground off Birchfield Lane",
+   "area": "Mulbarton",
+   "region": "east",
+   "lat": 52.55911,
+   "lng": 1.23446
+  },
+  "way/1458070530": {
+   "page": "playground-off-upper-breckland-road-new-costessey-norwich",
+   "name": "Playground off Upper Breckland Road",
+   "area": "New Costessey, Norwich",
+   "region": "east",
+   "lat": 52.64656,
+   "lng": 1.22068
+  },
+  "way/467594328": {
+   "page": "playground-off-the-green-old-buckenham",
+   "name": "Playground off The Green",
+   "area": "Old Buckenham",
+   "region": "east",
+   "lat": 52.4849,
+   "lng": 1.03967
+  },
+  "way/1058665405": {
+   "page": "playground-off-birkbeck-close-south-wootton-kings-lynn",
+   "name": "Playground off Birkbeck Close",
+   "area": "South Wootton, King's Lynn",
+   "region": "east",
+   "lat": 52.7757,
+   "lng": 0.42854
+  },
+  "way/1058665404": {
+   "page": "playground-off-hall-lane-south-wootton-kings-lynn",
+   "name": "Playground off Hall Lane",
+   "area": "South Wootton, King's Lynn",
+   "region": "east",
+   "lat": 52.77478,
+   "lng": 0.42904
+  },
+  "way/922461481": {
+   "page": "playground-off-falcon-road-west-sprowston-norwich",
+   "name": "Playground off Falcon Road West",
+   "area": "Sprowston, Norwich",
+   "region": "east",
+   "lat": 52.6511,
+   "lng": 1.32886
+  },
+  "way/474162399": {
+   "page": "playground-off-the-glebe-stibbard-north-norfolk",
+   "name": "Playground off The Glebe",
+   "area": "Stibbard",
+   "region": "east",
+   "lat": 52.81919,
+   "lng": 0.94043
+  },
+  "way/467585670": {
+   "page": "playground-off-henry-preston-road-tasburgh",
+   "name": "Playground off Henry Preston Road",
+   "area": "Tasburgh",
+   "region": "east",
+   "lat": 52.51635,
+   "lng": 1.24689
+  },
+  "way/316090413": {
+   "page": "playground-off-beech-avenue-taverham",
+   "name": "Playground off Beech Avenue",
+   "area": "Taverham",
+   "region": "east",
+   "lat": 52.68691,
+   "lng": 1.18575
+  },
+  "node/9521520554": {
+   "page": "playground-off-saxon-bank-thetford",
+   "name": "Playground off Saxon Bank",
+   "area": "Thetford",
+   "region": "east",
+   "lat": 52.41056,
+   "lng": 0.73823
+  },
+  "way/98668828": {
+   "page": "playground-off-school-lane-toftwood-dereham",
+   "name": "Playground off School Lane",
+   "area": "Toftwood, Dereham",
+   "region": "east",
+   "lat": 52.66322,
+   "lng": 0.94493
+  },
+  "way/120531874": {
+   "page": "playground-off-william-cowper-close-toftwood-dereham",
+   "name": "Playground off William Cowper Close",
+   "area": "Toftwood, Dereham",
+   "region": "east",
+   "lat": 52.66467,
+   "lng": 0.94395
+  },
+  "way/474017319": {
+   "page": "playground-off-south-rise-tungate-north-walsham",
+   "name": "Playground off South Rise",
+   "area": "Tungate, North Walsham",
+   "region": "east",
+   "lat": 52.81476,
+   "lng": 1.37551
+  },
+  "way/178266720": {
+   "page": "playground-off-astill-lodge-road-beaumont-leys-leicester",
+   "name": "Playground off Astill Lodge Road",
+   "area": "Beaumont Leys, Leicester",
+   "region": "east-midlands",
+   "lat": 52.6743,
+   "lng": -1.16049
+  },
+  "way/544007814": {
+   "page": "bugbrooke-playground-bugbrooke",
+   "name": "Bugbrooke Playground",
+   "area": "Bugbrooke",
+   "region": "east-midlands",
+   "lat": 52.21153,
+   "lng": -1.00824
+  },
+  "way/1370696614": {
+   "page": "playground-off-school-lane-kislingbury",
+   "name": "Playground off School Lane",
+   "area": "Kislingbury",
+   "region": "east-midlands",
+   "lat": 52.22998,
+   "lng": -0.97836
+  },
+  "way/1401152737": {
+   "page": "playground-off-palmerston-way-knighton-leicester",
+   "name": "Playground off Palmerston Way",
+   "area": "Knighton, Leicester",
+   "region": "east-midlands",
+   "lat": 52.60251,
+   "lng": -1.11148
+  },
+  "way/1526554179": {
+   "page": "playground-off-brandon-street-latimer-leicester",
+   "name": "Playground off Brandon Street",
+   "area": "Latimer, Leicester",
+   "region": "east-midlands",
+   "lat": 52.64729,
+   "lng": -1.12018
+  },
+  "way/436175588": {
+   "page": "long-whatton-play-area-long-whatton-north-west-leicestershir",
+   "name": "Long Whatton Play Area",
+   "area": "Long Whatton",
+   "region": "east-midlands",
+   "lat": 52.80463,
+   "lng": -1.28557
+  },
+  "way/1532813886": {
+   "page": "playground-off-raywell-road-nether-hall-leicester",
+   "name": "Playground off Raywell Road",
+   "area": "Nether Hall, Leicester",
+   "region": "east-midlands",
+   "lat": 52.65338,
+   "lng": -1.05278
+  },
+  "way/153214002": {
+   "page": "playground-off-middle-street-nether-heyford",
+   "name": "Playground off Middle Street",
+   "area": "Nether Heyford",
+   "region": "east-midlands",
+   "lat": 52.22132,
+   "lng": -1.03367
+  },
+  "way/1188671950": {
+   "page": "playground-off-beechways-ordsall-retford",
+   "name": "Playground off Beechways",
+   "area": "Ordsall, Retford",
+   "region": "east-midlands",
+   "lat": 53.31124,
+   "lng": -0.95169
+  },
+  "way/118446625": {
+   "page": "playground-off-gleneagles-avenue-rushey-mead-leicester",
+   "name": "Playground off Gleneagles Avenue",
+   "area": "Rushey Mead, Leicester",
+   "region": "east-midlands",
+   "lat": 52.66373,
+   "lng": -1.10469
+  },
+  "way/118936356": {
+   "page": "playground-off-lyle-close-rushey-mead-leicester",
+   "name": "Playground off Lyle Close",
+   "area": "Rushey Mead, Leicester",
+   "region": "east-midlands",
+   "lat": 52.66752,
+   "lng": -1.09754
+  },
+  "way/166377831": {
+   "page": "playground-off-orton-road-stocking-farm-leicester",
+   "name": "Playground off Orton Road",
+   "area": "Stocking Farm, Leicester",
+   "region": "east-midlands",
+   "lat": 52.65917,
+   "lng": -1.13767
+  },
+  "way/458580745": {
+   "page": "playground-off-wellinger-way-western-park-leicester",
+   "name": "Playground off Wellinger Way",
+   "area": "Western Park, Leicester",
+   "region": "east-midlands",
+   "lat": 52.62927,
+   "lng": -1.18351
+  },
+  "way/30476236": {
+   "page": "playground-off-harrow-road-wollaton-park-city-of-nottingham",
+   "name": "Playground off Harrow Road",
+   "area": "Wollaton Park, Nottingham",
+   "region": "east-midlands",
+   "lat": 52.95382,
+   "lng": -1.195
+  },
+  "way/422821465": {
+   "page": "playground-off-new-hall-way-chelmsford",
+   "name": "Playground off New Hall Way",
+   "area": "Chelmsford",
+   "region": "essex",
+   "lat": 51.76518,
+   "lng": 0.50867
+  },
+  "way/407907590": {
+   "page": "playground-off-kingsland-road-colchester",
+   "name": "Playground off Kingsland Road",
+   "area": "Colchester",
+   "region": "essex",
+   "lat": 51.77708,
+   "lng": 0.91767
+  },
+  "way/1451072359": {
+   "page": "playground-off-deerleap-way-deerleap-way-braintree",
+   "name": "Playground off Deerleap Way",
+   "area": "Deerleap Way, Braintree",
+   "region": "essex",
+   "lat": 51.88433,
+   "lng": 0.57954
+  },
+  "way/687651523": {
+   "page": "playground-off-duffield-road-great-baddow-chelmsford",
+   "name": "Playground off Duffield Road",
+   "area": "Great Baddow, Chelmsford",
+   "region": "essex",
+   "lat": 51.71321,
+   "lng": 0.48588
+  },
+  "way/1454745016": {
+   "page": "playground-off-hay-lane-north-hay-lane-north-braintree",
+   "name": "Playground off Hay Lane North",
+   "area": "Hay Lane North, Braintree",
+   "region": "essex",
+   "lat": 51.88083,
+   "lng": 0.57274
+  },
+  "way/763414821": {
+   "page": "playground-off-ivy-chimneys-road-ivy-chimneys-epping",
+   "name": "Playground off Ivy Chimneys Road",
+   "area": "Ivy Chimneys, Epping",
+   "region": "essex",
+   "lat": 51.69,
+   "lng": 0.10639
+  },
+  "way/799084807": {
+   "page": "playground-off-alderton-hall-lane-debden-green-loughton",
+   "name": "Playground off Alderton Hall Lane",
+   "area": "Loughton",
+   "region": "essex",
+   "lat": 51.64383,
+   "lng": 0.06785
+  },
+  "way/439995041": {
+   "page": "playground-off-west-ridge-sunnymede-billericay",
+   "name": "Playground off West Ridge",
+   "area": "Sunnymede, Billericay",
+   "region": "essex",
+   "lat": 51.62106,
+   "lng": 0.41345
+  },
+  "way/1073298592": {
+   "page": "playground-off-orion-way-the-fairveiw-braintree",
+   "name": "Playground off Orion Way",
+   "area": "The Fairveiw, Braintree",
+   "region": "essex",
+   "lat": 51.88565,
+   "lng": 0.56639
+  },
+  "way/1451387129": {
+   "page": "playground-off-beckers-green-road-the-greens-of-east-braintr-2",
+   "name": "Playground off Beckers Green Road",
+   "area": "The Greens Of East Braintree, Braintree",
+   "region": "essex",
+   "lat": 51.87461,
+   "lng": 0.5798
+  },
+  "way/1073295357": {
+   "page": "playground-off-beckers-green-road-the-greens-of-east-braintr",
+   "name": "Playground off Beckers Green Road",
+   "area": "The Greens Of East Braintree, Braintree",
+   "region": "essex",
+   "lat": 51.87406,
+   "lng": 0.58061
+  },
+  "way/212827321": {
+   "page": "playground-off-silver-street-wethersfield",
+   "name": "Playground off Silver Street",
+   "area": "Wethersfield",
+   "region": "essex",
+   "lat": 51.95308,
+   "lng": 0.48727
+  },
+  "way/1353571456": {
+   "page": "playground-off-radlett-road-aldenham-hertsmere",
+   "name": "Playground off Radlett Road",
+   "area": "Aldenham, St Albans",
+   "region": "herts",
+   "lat": 51.67727,
+   "lng": -0.34767
+  },
+  "way/961549468": {
+   "page": "playground-off-the-crescent-ardeley-east-hertfordshire-2",
+   "name": "Playground off The Crescent",
+   "area": "Ardeley",
+   "region": "herts",
+   "lat": 51.92614,
+   "lng": -0.0989
+  },
+  "way/392528200": {
+   "page": "playground-off-moorland-road-batford-harpenden",
+   "name": "Playground off Moorland Road",
+   "area": "Batford, Harpenden",
+   "region": "herts",
+   "lat": 51.82925,
+   "lng": -0.3536
+  },
+  "way/874628803": {
+   "page": "playground-off-the-common-chipperfield-dacorum",
+   "name": "Playground off The Common",
+   "area": "Chipperfield",
+   "region": "herts",
+   "lat": 51.70365,
+   "lng": -0.49335
+  },
+  "way/239137116": {
+   "page": "playground-off-chipperfield-road-chipperfield-kings-langley",
+   "name": "Playground off Chipperfield Road",
+   "area": "Chipperfield, Kings Langley",
+   "region": "herts",
+   "lat": 51.71248,
+   "lng": -0.46177
+  },
+  "way/943864140": {
+   "page": "playground-off-little-green-lane-croxley-green-three-rivers",
+   "name": "Playground off Little Green Lane",
+   "area": "Croxley Green",
+   "region": "herts",
+   "lat": 51.65784,
+   "lng": -0.44619
+  },
+  "way/1012030210": {
+   "page": "playground-off-cherwell-close-croxley-green-rickmansworth",
+   "name": "Playground off Cherwell Close",
+   "area": "Croxley Green, Rickmansworth",
+   "region": "herts",
+   "lat": 51.65055,
+   "lng": -0.45152
+  },
+  "way/943900946": {
+   "page": "playground-off-winton-crescent-croxley-green-rickmansworth",
+   "name": "Playground off Winton Crescent",
+   "area": "Croxley Green, Rickmansworth",
+   "region": "herts",
+   "lat": 51.65001,
+   "lng": -0.43966
+  },
+  "way/194835261": {
+   "page": "playground-off-church-lane-little-munden-east-hertfordshire",
+   "name": "Playground off Church Lane",
+   "area": "Dane End",
+   "region": "herts",
+   "lat": 51.87919,
+   "lng": -0.06345
+  },
+  "way/1305556338": {
+   "page": "playground-off-cow-lane-garston-watford",
+   "name": "Playground off Cow Lane",
+   "area": "Garston, Watford",
+   "region": "herts",
+   "lat": 51.68303,
+   "lng": -0.38649
+  },
+  "way/685138347": {
+   "page": "playground-off-astwick-avenue-hatfield-garden-village-hatfie",
+   "name": "Playground off Astwick Avenue",
+   "area": "Hatfield Garden Village, Hatfield",
+   "region": "herts",
+   "lat": 51.77551,
+   "lng": -0.23409
+  },
+  "way/479554883": {
+   "page": "playground-off-ascot-close-hockerill-bishops-stortford",
+   "name": "Playground off Ascot Close",
+   "area": "Hockerill, Bishop's Stortford",
+   "region": "herts",
+   "lat": 51.87306,
+   "lng": 0.18
+  },
+  "way/945183682": {
+   "page": "playground-off-tolpits-lane-holywell-estate-watford",
+   "name": "Playground off Tolpits Lane",
+   "area": "Holywell Estate, Watford",
+   "region": "herts",
+   "lat": 51.64359,
+   "lng": -0.41827
+  },
+  "way/983657178": {
+   "page": "playground-off-victoria-passage-holywell-estate-watford",
+   "name": "Playground off Victoria Passage",
+   "area": "Holywell Estate, Watford",
+   "region": "herts",
+   "lat": 51.65359,
+   "lng": -0.40362
+  },
+  "way/237069889": {
+   "page": "playground-off-stortford-road-little-hadham-east-hertfordshi",
+   "name": "Playground off Stortford Road",
+   "area": "Little Hadham",
+   "region": "herts",
+   "lat": 51.88349,
+   "lng": 0.09419
+  },
+  "way/909270489": {
+   "page": "playground-off-chandlers-road-marshalswick-st-albans",
+   "name": "Playground off Chandlers Road",
+   "area": "Marshalswick, St Albans",
+   "region": "herts",
+   "lat": 51.76723,
+   "lng": -0.30344
+  },
+  "way/962206645": {
+   "page": "playground-off-juniper-gate-moneyhill-rickmansworth",
+   "name": "Playground off Juniper Gate",
+   "area": "Moneyhill, Rickmansworth",
+   "region": "herts",
+   "lat": 51.6303,
+   "lng": -0.4735
+  },
+  "way/1069693533": {
+   "page": "much-hadham-playground-much-hadham-east-hertfordshire",
+   "name": "Much Hadham Playground",
+   "area": "Much Hadham, Perry Green",
+   "region": "herts",
+   "lat": 51.82973,
+   "lng": 0.08725
+  },
+  "way/1076818604": {
+   "page": "playground-off-wonder-path-north-watford-watford",
+   "name": "Playground off Wonder path",
+   "area": "North Watford, Watford",
+   "region": "herts",
+   "lat": 51.66593,
+   "lng": -0.42227
+  },
+  "way/971393880": {
+   "page": "playground-off-tiverton-road-oakmere-potters-bar",
+   "name": "Playground off Tiverton Road",
+   "area": "Oakmere, Potters Bar",
+   "region": "herts",
+   "lat": 51.69464,
+   "lng": -0.1636
+  },
+  "way/1476969588": {
+   "page": "playground-off-stevenage-road-st-ippolyts-north-hertfordshir",
+   "name": "Playground off Stevenage Road",
+   "area": "St Ippolyts",
+   "region": "herts",
+   "lat": 51.93794,
+   "lng": -0.25786
+  },
+  "way/998471245": {
+   "page": "playground-off-park-road-the-cedars-estate-rickmansworth",
+   "name": "Playground off Park Road",
+   "area": "The Cedars Estate, Rickmansworth",
+   "region": "herts",
+   "lat": 51.64192,
+   "lng": -0.46782
+  },
+  "way/171838240": {
+   "page": "playground-off-batchwood-gardens-townsend-st-albans",
+   "name": "Playground off Batchwood Gardens",
+   "area": "Townsend, St Albans",
+   "region": "herts",
+   "lat": 51.76509,
+   "lng": -0.33773
+  },
+  "way/170670750": {
+   "page": "playground-off-icknield-way-willian-letchworth",
+   "name": "Playground off Icknield Way",
+   "area": "Westbury Estate, Letchworth",
+   "region": "herts",
+   "lat": 51.97591,
+   "lng": -0.24928
+  },
+  "way/823805629": {
+   "page": "playground-off-the-quarterdeck-barkantine-greater-london",
+   "name": "Playground off The Quarterdeck",
+   "area": "Barkantine, Greater London",
+   "region": "london",
+   "lat": 51.49844,
+   "lng": -0.02445
+  },
+  "way/1237399129": {
+   "page": "playground-off-carlton-drive-barkingside-greater-london",
+   "name": "Playground off Carlton Drive",
+   "area": "Barkingside, Greater London",
+   "region": "london",
+   "lat": 51.5878,
+   "lng": 0.08737
+  },
+  "way/1237399128": {
+   "page": "playground-off-footpath-85-barkingside-greater-london",
+   "name": "Playground off Footpath 85",
+   "area": "Barkingside, Greater London",
+   "region": "london",
+   "lat": 51.58852,
+   "lng": 0.08863
+  },
+  "way/1231171908": {
+   "page": "playground-off-mossford-lane-barkingside-greater-london",
+   "name": "Playground off Mossford Lane",
+   "area": "Barkingside, Greater London",
+   "region": "london",
+   "lat": 51.59256,
+   "lng": 0.0768
+  },
+  "way/1475393222": {
+   "page": "playground-off-lavender-road-battersea-greater-london",
+   "name": "Playground off Lavender Road",
+   "area": "Battersea, Greater London",
+   "region": "london",
+   "lat": 51.46789,
+   "lng": -0.17542
+  },
+  "way/1122219852": {
+   "page": "playground-off-parsloes-avenue-becontree-greater-london",
+   "name": "Playground off Parsloes Avenue",
+   "area": "Becontree, Greater London",
+   "region": "london",
+   "lat": 51.54852,
+   "lng": 0.13227
+  },
+  "way/833886135": {
+   "page": "playground-off-athelney-street-bellingham-greater-london",
+   "name": "Playground off Athelney Street",
+   "area": "Bellingham, Greater London",
+   "region": "london",
+   "lat": 51.43432,
+   "lng": -0.02413
+  },
+  "way/830710073": {
+   "page": "playground-off-elfrida-crescent-bellingham-greater-london",
+   "name": "Playground off Elfrida Crescent",
+   "area": "Bellingham, Greater London",
+   "region": "london",
+   "lat": 51.42918,
+   "lng": -0.02375
+  },
+  "way/830710075": {
+   "page": "playground-off-overdown-road-bellingham-greater-london",
+   "name": "Playground off Overdown Road",
+   "area": "Bellingham, Greater London",
+   "region": "london",
+   "lat": 51.42911,
+   "lng": -0.02276
+  },
+  "way/1197815842": {
+   "page": "bermondsey-playground-bermondsey-greater-london-2-2",
+   "name": "Bermondsey Playground",
+   "area": "Bermondsey, Greater London",
+   "region": "london",
+   "lat": 51.4937,
+   "lng": -0.0588
+  },
+  "way/1127607597": {
+   "page": "playground-off-white-hart-lane-bowes-greater-london",
+   "name": "Playground off White Hart Lane",
+   "area": "Bowes, Greater London",
+   "region": "london",
+   "lat": 51.60325,
+   "lng": -0.10069
+  },
+  "way/1357176408": {
+   "page": "playground-off-rosecourt-road-broad-green-greater-london",
+   "name": "Playground off Rosecourt Road",
+   "area": "Broad Green, Greater London",
+   "region": "london",
+   "lat": 51.38753,
+   "lng": -0.12224
+  },
+  "way/854888135": {
+   "page": "playground-off-queensberry-way-brompton-greater-london",
+   "name": "Playground off Queensberry Way",
+   "area": "Brompton, Greater London",
+   "region": "london",
+   "lat": 51.49444,
+   "lng": -0.17674
+  },
+  "node/1305571445": {
+   "page": "playground-off-faroe-road-brook-green-greater-london",
+   "name": "Playground off Faroe Road",
+   "area": "Brook Green, Greater London",
+   "region": "london",
+   "lat": 51.49818,
+   "lng": -0.21599
+  },
+  "node/9173826866": {
+   "page": "playground-off-rowan-road-brook-green-greater-london",
+   "name": "Playground off Rowan Road",
+   "area": "Brook Green, Greater London",
+   "region": "london",
+   "lat": 51.49447,
+   "lng": -0.2184
+  },
+  "way/986636877": {
+   "page": "playground-off-wyndcliff-road-charlton-greater-london",
+   "name": "Playground off Wyndcliff Road",
+   "area": "Charlton, Greater London",
+   "region": "london",
+   "lat": 51.48051,
+   "lng": 0.02593
+  },
+  "way/1108394455": {
+   "page": "playground-off-charville-lane-charville-greater-london",
+   "name": "Playground off Charville Lane",
+   "area": "Charville, Greater London",
+   "region": "london",
+   "lat": 51.5375,
+   "lng": -0.42827
+  },
+  "way/856929012": {
+   "page": "playground-off-glebe-place-chelsea-greater-london",
+   "name": "Playground off Glebe Place",
+   "area": "Chelsea, Greater London",
+   "region": "london",
+   "lat": 51.48531,
+   "lng": -0.1693
+  },
+  "way/678624917": {
+   "page": "playground-off-balgonie-road-chingford-greater-london",
+   "name": "Playground off Balgonie Road",
+   "area": "Chingford, Greater London",
+   "region": "london",
+   "lat": 51.62869,
+   "lng": 0.00187
+  },
+  "way/678659646": {
+   "page": "playground-off-wellington-avenue-chingford-greater-london",
+   "name": "Playground off Wellington Avenue",
+   "area": "Chingford, Greater London",
+   "region": "london",
+   "lat": 51.6246,
+   "lng": -0.01401
+  },
+  "way/460909862": {
+   "page": "playground-off-clapham-common-north-side-clapham-junction-gr",
+   "name": "Playground off Clapham Common North Side",
+   "area": "Clapham Junction, Greater London",
+   "region": "london",
+   "lat": 51.46141,
+   "lng": -0.15405
+  },
+  "way/1123017309": {
+   "page": "playground-off-wickersley-road-clapham-junction-greater-lond-2",
+   "name": "Playground off Wickersley Road",
+   "area": "Clapham Junction, Greater London",
+   "region": "london",
+   "lat": 51.46919,
+   "lng": -0.15385
+  },
+  "way/1123017307": {
+   "page": "playground-off-wickersley-road-clapham-junction-greater-lond",
+   "name": "Playground off Wickersley Road",
+   "area": "Clapham Junction, Greater London",
+   "region": "london",
+   "lat": 51.46977,
+   "lng": -0.15394
+  },
+  "way/984658019": {
+   "page": "playground-off-arundel-road-cranford-greater-london-2",
+   "name": "Playground off Arundel Road",
+   "area": "Cranford, Greater London",
+   "region": "london",
+   "lat": 51.46986,
+   "lng": -0.40049
+  },
+  "way/984658018": {
+   "page": "playground-off-arundel-road-cranford-greater-london",
+   "name": "Playground off Arundel Road",
+   "area": "Cranford, Greater London",
+   "region": "london",
+   "lat": 51.4694,
+   "lng": -0.40129
+  },
+  "way/984659904": {
+   "page": "playground-off-chaucer-avenue-cranford-greater-london",
+   "name": "Playground off Chaucer Avenue",
+   "area": "Cranford, Greater London",
+   "region": "london",
+   "lat": 51.47403,
+   "lng": -0.40961
+  },
+  "way/1422637916": {
+   "page": "playground-off-hermiston-avenue-crouch-end-greater-london",
+   "name": "Playground off Hermiston Avenue",
+   "area": "Crouch End, Greater London",
+   "region": "london",
+   "lat": 51.58278,
+   "lng": -0.121
+  },
+  "way/158792348": {
+   "page": "childrens-garden-cyprus-greater-london",
+   "name": "Children's Garden",
+   "area": "Cyprus, Greater London",
+   "region": "london",
+   "lat": 51.50708,
+   "lng": 0.06497
+  },
+  "way/393231683": {
+   "page": "playground-off-garnet-road-dudden-hill-greater-london",
+   "name": "Playground off Garnet Road",
+   "area": "Dudden Hill, Greater London",
+   "region": "london",
+   "lat": 51.54856,
+   "lng": -0.25168
+  },
+  "way/854975285": {
+   "page": "playground-off-farm-lane-earls-court-greater-london",
+   "name": "Playground off Farm Lane",
+   "area": "Earl's Court, Greater London",
+   "region": "london",
+   "lat": 51.48369,
+   "lng": -0.19738
+  },
+  "way/984125872": {
+   "page": "east-greenwich-playground-east-greenwich-greater-london",
+   "name": "East Greenwich Playground",
+   "area": "East Greenwich, Greater London",
+   "region": "london",
+   "lat": 51.49329,
+   "lng": 0.01137
+  },
+  "way/777379136": {
+   "page": "playground-off-chevington-way-elm-park-greater-london",
+   "name": "Playground off Chevington Way",
+   "area": "Elm Park, Greater London",
+   "region": "london",
+   "lat": 51.54965,
+   "lng": 0.21564
+  },
+  "way/778012197": {
+   "page": "playground-off-scotney-walk-elm-park-greater-london",
+   "name": "Playground off Scotney Walk",
+   "area": "Elm Park, Greater London",
+   "region": "london",
+   "lat": 51.54388,
+   "lng": 0.21192
+  },
+  "way/1388914769": {
+   "page": "playground-off-spring-gardens-elm-park-greater-london",
+   "name": "Playground off Spring Gardens",
+   "area": "Elm Park, Greater London",
+   "region": "london",
+   "lat": 51.55019,
+   "lng": 0.2032
+  },
+  "way/508463526": {
+   "page": "playground-off-south-avenue-finchley-greater-london",
+   "name": "Playground off South Avenue",
+   "area": "Finchley, Greater London",
+   "region": "london",
+   "lat": 51.59065,
+   "lng": -0.18761
+  },
+  "way/510487460": {
+   "page": "playground-off-squires-lane-finchley-greater-london",
+   "name": "Playground off Squires Lane",
+   "area": "Finchley, Greater London",
+   "region": "london",
+   "lat": 51.60085,
+   "lng": -0.18172
+  },
+  "way/434727532": {
+   "page": "playground-off-netley-street-fitzrovia-greater-london",
+   "name": "Playground off Netley Street",
+   "area": "Fitzrovia, Greater London",
+   "region": "london",
+   "lat": 51.52773,
+   "lng": -0.14014
+  },
+  "way/289995163": {
+   "page": "playground-off-shackleton-close-forest-hill-greater-london",
+   "name": "Playground off Shackleton Close",
+   "area": "Forest Hill, Greater London",
+   "region": "london",
+   "lat": 51.43719,
+   "lng": -0.06076
+  },
+  "way/1219561967": {
+   "page": "playground-off-ashwood-gardens-forestdale-greater-london",
+   "name": "Playground off Ashwood Gardens",
+   "area": "Forestdale, Greater London",
+   "region": "london",
+   "lat": 51.35513,
+   "lng": -0.01893
+  },
+  "way/1219527196": {
+   "page": "playground-off-dunley-drive-forestdale-greater-london",
+   "name": "Playground off Dunley Drive",
+   "area": "Forestdale, Greater London",
+   "region": "london",
+   "lat": 51.35514,
+   "lng": -0.01733
+  },
+  "way/1561096810": {
+   "page": "playground-off-bishops-road-fulham-greater-london",
+   "name": "Playground off Bishop's Road",
+   "area": "Fulham, Greater London",
+   "region": "london",
+   "lat": 51.47712,
+   "lng": -0.20962
+  },
+  "way/1548975502": {
+   "page": "playground-off-kelvedon-road-fulham-greater-london",
+   "name": "Playground off Kelvedon Road",
+   "area": "Fulham, Greater London",
+   "region": "london",
+   "lat": 51.47753,
+   "lng": -0.20251
+  },
+  "way/1551813867": {
+   "page": "playground-off-sherbrooke-road-fulham-greater-london",
+   "name": "Playground off Sherbrooke Road",
+   "area": "Fulham, Greater London",
+   "region": "london",
+   "lat": 51.48127,
+   "lng": -0.207
+  },
+  "way/1232511721": {
+   "page": "playground-off-the-drive-gants-hill-greater-london",
+   "name": "Playground off The Drive",
+   "area": "Gants Hill, Greater London",
+   "region": "london",
+   "lat": 51.57201,
+   "lng": 0.05694
+  },
+  "way/845481430": {
+   "page": "playground-off-cedar-avenue-greater-london",
+   "name": "Playground off Cedar Avenue",
+   "area": "Greater London",
+   "region": "london",
+   "lat": 51.55197,
+   "lng": -0.396
+  },
+  "way/1095267823": {
+   "page": "playground-off-clyfford-road-greater-london",
+   "name": "Playground off Clyfford Road",
+   "area": "Greater London",
+   "region": "london",
+   "lat": 51.55946,
+   "lng": -0.41251
+  },
+  "way/1199516527": {
+   "page": "playground-off-coombe-road-greater-london",
+   "name": "Playground off Coombe Road",
+   "area": "Greater London",
+   "region": "london",
+   "lat": 51.36229,
+   "lng": -0.07459
+  },
+  "way/1194243519": {
+   "page": "playground-off-fairchildes-avenue-greater-london-2-2",
+   "name": "Playground off Fairchildes Avenue",
+   "area": "Greater London",
+   "region": "london",
+   "lat": 51.33329,
+   "lng": -0.00527
+  },
+  "way/1194236625": {
+   "page": "playground-off-fairchildes-avenue-greater-london-2",
+   "name": "Playground off Fairchildes Avenue",
+   "area": "Greater London",
+   "region": "london",
+   "lat": 51.33364,
+   "lng": -0.00317
+  },
+  "way/1194236624": {
+   "page": "playground-off-fairchildes-avenue-greater-london",
+   "name": "Playground off Fairchildes Avenue",
+   "area": "Greater London",
+   "region": "london",
+   "lat": 51.33295,
+   "lng": -0.0043
+  },
+  "way/1219515254": {
+   "page": "playground-off-fieldway-greater-london",
+   "name": "Playground off Fieldway",
+   "area": "Greater London",
+   "region": "london",
+   "lat": 51.35557,
+   "lng": -0.01652
+  },
+  "way/1194223001": {
+   "page": "playground-off-king-henrys-drive-greater-london-2",
+   "name": "Playground off King Henry's Drive",
+   "area": "Greater London",
+   "region": "london",
+   "lat": 51.33293,
+   "lng": 0.00031
+  },
+  "way/1193525190": {
+   "page": "playground-off-king-henrys-drive-greater-london",
+   "name": "Playground off King Henry's Drive",
+   "area": "Greater London",
+   "region": "london",
+   "lat": 51.33335,
+   "lng": -0.00099
+  },
+  "way/229764516": {
+   "page": "playground-off-st-thomas-road-grove-park-greater-london",
+   "name": "Playground off St. Thomas' Road",
+   "area": "Grove Park, Greater London",
+   "region": "london",
+   "lat": 51.4842,
+   "lng": -0.27076
+  },
+  "way/678685311": {
+   "page": "playground-off-brookfield-path-hale-end-greater-london",
+   "name": "Playground off Brookfield Path",
+   "area": "Hale End, Greater London",
+   "region": "london",
+   "lat": 51.60537,
+   "lng": 0.00746
+  },
+  "way/971050384": {
+   "page": "playground-off-banim-street-hammersmith-greater-london",
+   "name": "Playground off Banim Street",
+   "area": "Hammersmith, Greater London",
+   "region": "london",
+   "lat": 51.49498,
+   "lng": -0.23105
+  },
+  "way/201627359": {
+   "page": "playground-off-fairholme-gardens-hendon-greater-london",
+   "name": "Playground off Fairholme Gardens",
+   "area": "Hendon, Greater London",
+   "region": "london",
+   "lat": 51.59107,
+   "lng": -0.20614
+  },
+  "way/30692184": {
+   "page": "playground-off-keens-yard-highbury-greater-london",
+   "name": "Playground off Keens Yard",
+   "area": "Highbury, Greater London",
+   "region": "london",
+   "lat": 51.54526,
+   "lng": -0.1007
+  },
+  "way/30723540": {
+   "page": "playground-off-sable-street-highbury-greater-london",
+   "name": "Playground off Sable Street",
+   "area": "Highbury, Greater London",
+   "region": "london",
+   "lat": 51.54224,
+   "lng": -0.10156
+  },
+  "way/532025276": {
+   "page": "playground-off-bedford-road-highwood-hill-greater-london",
+   "name": "Playground off Bedford Road",
+   "area": "Highwood Hill, Greater London",
+   "region": "london",
+   "lat": 51.62872,
+   "lng": -0.25049
+  },
+  "way/198635993": {
+   "page": "playground-off-worcester-crescent-highwood-hill-greater-lond",
+   "name": "Playground off Worcester Crescent",
+   "area": "Highwood Hill, Greater London",
+   "region": "london",
+   "lat": 51.63035,
+   "lng": -0.24881
+  },
+  "way/625129398": {
+   "page": "playground-off-rosebery-avenue-holborn-greater-london",
+   "name": "Playground off Rosebery Avenue",
+   "area": "Holborn, Greater London",
+   "region": "london",
+   "lat": 51.52269,
+   "lng": -0.11196
+  },
+  "node/3717358335": {
+   "page": "playground-off-sussex-way-holloway-greater-london",
+   "name": "Playground off Sussex Way",
+   "area": "Holloway, Greater London",
+   "region": "london",
+   "lat": 51.56358,
+   "lng": -0.11988
+  },
+  "way/1306429410": {
+   "page": "playground-off-baring-road-horn-park-greater-london",
+   "name": "Playground off Baring Road",
+   "area": "Horn Park, Greater London",
+   "region": "london",
+   "lat": 51.44418,
+   "lng": 0.01422
+  },
+  "way/778080418": {
+   "page": "playground-off-goodwood-avenue-hornchurch-greater-london",
+   "name": "Playground off Goodwood Avenue",
+   "area": "Hornchurch, Greater London",
+   "region": "london",
+   "lat": 51.55071,
+   "lng": 0.22513
+  },
+  "way/1422637915": {
+   "page": "playground-off-hermiston-avenue-hornsey-greater-london",
+   "name": "Playground off Hermiston Avenue",
+   "area": "Hornsey, Greater London",
+   "region": "london",
+   "lat": 51.58328,
+   "lng": -0.12032
+  },
+  "way/1160043543": {
+   "page": "kennington-playground-kennington-greater-london-2-2-2-2",
+   "name": "Kennington Playground",
+   "area": "Kennington, Greater London",
+   "region": "london",
+   "lat": 51.48537,
+   "lng": -0.11952
+  },
+  "way/1174463426": {
+   "page": "playground-off-reedworth-street-kennington-greater-london",
+   "name": "Playground off Reedworth Street",
+   "area": "Kennington, Greater London",
+   "region": "london",
+   "lat": 51.49142,
+   "lng": -0.10929
+  },
+  "way/1066377559": {
+   "page": "playground-off-bonfield-road-ladywell-greater-london",
+   "name": "Playground off Bonfield Road",
+   "area": "Ladywell, Greater London",
+   "region": "london",
+   "lat": 51.4598,
+   "lng": -0.01033
+  },
+  "way/679216810": {
+   "page": "playground-off-grange-road-leyton-greater-london",
+   "name": "Playground off Grange Road",
+   "area": "Leyton, Greater London",
+   "region": "london",
+   "lat": 51.56596,
+   "lng": -0.01866
+  },
+  "way/678698222": {
+   "page": "playground-off-hibbert-road-leyton-greater-london",
+   "name": "Playground off Hibbert Road",
+   "area": "Leyton, Greater London",
+   "region": "london",
+   "lat": 51.57005,
+   "lng": -0.02727
+  },
+  "way/678698213": {
+   "page": "playground-off-sybourn-street-leyton-greater-london",
+   "name": "Playground off Sybourn Street",
+   "area": "Leyton, Greater London",
+   "region": "london",
+   "lat": 51.57048,
+   "lng": -0.02627
+  },
+  "way/333316104": {
+   "page": "playground-off-the-driveway-leyton-greater-london",
+   "name": "Playground off The Driveway",
+   "area": "Leyton, Greater London",
+   "region": "london",
+   "lat": 51.57737,
+   "lng": -0.01725
+  },
+  "way/679216806": {
+   "page": "playground-off-vicarage-road-leyton-greater-london",
+   "name": "Playground off Vicarage Road",
+   "area": "Leyton, Greater London",
+   "region": "london",
+   "lat": 51.56855,
+   "lng": -0.01642
+  },
+  "way/417875909": {
+   "page": "playground-off-cowbridge-lane-little-ilford-greater-london",
+   "name": "Playground off Cowbridge Lane",
+   "area": "Little Ilford, Greater London",
+   "region": "london",
+   "lat": 51.54009,
+   "lng": 0.07161
+  },
+  "way/1159394473": {
+   "page": "playground-off-jack-cornwell-street-little-ilford-greater-lo-2",
+   "name": "Playground off Jack Cornwell Street",
+   "area": "Little Ilford, Greater London",
+   "region": "london",
+   "lat": 51.55199,
+   "lng": 0.06217
+  },
+  "way/877406538": {
+   "page": "playground-off-fulham-road-lots-village-greater-london",
+   "name": "Playground off Fulham Road",
+   "area": "Lot's Village, Greater London",
+   "region": "london",
+   "lat": 51.4848,
+   "lng": -0.18345
+  },
+  "way/414769334": {
+   "page": "playground-off-north-street-loxford-greater-london",
+   "name": "Playground off North Street",
+   "area": "Loxford, Greater London",
+   "region": "london",
+   "lat": 51.54146,
+   "lng": 0.07534
+  },
+  "way/1191675701": {
+   "page": "playground-off-calley-down-crescent-new-addington-greater-lo",
+   "name": "Playground off Calley Down Crescent",
+   "area": "New Addington, Greater London",
+   "region": "london",
+   "lat": 51.3424,
+   "lng": -0.00765
+  },
+  "way/1183338038": {
+   "page": "playground-off-castle-hill-avenue-new-addington-greater-lond",
+   "name": "Playground off Castle Hill Avenue",
+   "area": "New Addington, Greater London",
+   "region": "london",
+   "lat": 51.34981,
+   "lng": -0.01309
+  },
+  "way/1183338037": {
+   "page": "playground-off-headley-drive-new-addington-greater-london",
+   "name": "Playground off Headley Drive",
+   "area": "New Addington, Greater London",
+   "region": "london",
+   "lat": 51.35029,
+   "lng": -0.01154
+  },
+  "way/1191673185": {
+   "page": "playground-off-king-henrys-drive-new-addington-greater-londo-2",
+   "name": "Playground off King Henry's Drive",
+   "area": "New Addington, Greater London",
+   "region": "london",
+   "lat": 51.3437,
+   "lng": -0.00645
+  },
+  "way/1183338036": {
+   "page": "playground-off-king-henrys-drive-new-addington-greater-londo",
+   "name": "Playground off King Henry's Drive",
+   "area": "New Addington, Greater London",
+   "region": "london",
+   "lat": 51.34892,
+   "lng": -0.01194
+  },
+  "way/638667851": {
+   "page": "playground-off-hainault-street-new-eltham-greater-london",
+   "name": "Playground off Hainault Street",
+   "area": "New Eltham, Greater London",
+   "region": "london",
+   "lat": 51.43951,
+   "lng": 0.0685
+  },
+  "way/638665383": {
+   "page": "playground-off-ivor-grove-new-eltham-greater-london",
+   "name": "Playground off Ivor Grove",
+   "area": "New Eltham, Greater London",
+   "region": "london",
+   "lat": 51.43987,
+   "lng": 0.06929
+  },
+  "way/1280978212": {
+   "page": "playground-off-leyswood-drive-newbury-park-greater-london",
+   "name": "Playground off Leyswood Drive",
+   "area": "Newbury Park, Greater London",
+   "region": "london",
+   "lat": 51.57854,
+   "lng": 0.09807
+  },
+  "node/5604640610": {
+   "page": "playground-off-wadhurst-road-clapham-junction-greater-london",
+   "name": "Playground off Wadhurst Road",
+   "area": "Nine Elms, Greater London",
+   "region": "london",
+   "lat": 51.47746,
+   "lng": -0.13965
+  },
+  "way/194759323": {
+   "page": "playground-off-peel-street-notting-hill-greater-london",
+   "name": "Playground off Peel Street",
+   "area": "Notting Hill, Greater London",
+   "region": "london",
+   "lat": 51.50707,
+   "lng": -0.19691
+  },
+  "way/676854013": {
+   "page": "playground-off-chaseville-park-road-oakwood-greater-london",
+   "name": "Playground off Chaseville Park Road",
+   "area": "Oakwood, Greater London",
+   "region": "london",
+   "lat": 51.64346,
+   "lng": -0.11552
+  },
+  "way/677048881": {
+   "page": "playground-off-dalrymple-close-oakwood-greater-london-2",
+   "name": "Playground off Dalrymple Close",
+   "area": "Oakwood, Greater London",
+   "region": "london",
+   "lat": 51.63921,
+   "lng": -0.12708
+  },
+  "way/677032655": {
+   "page": "playground-off-dalrymple-close-oakwood-greater-london",
+   "name": "Playground off Dalrymple Close",
+   "area": "Oakwood, Greater London",
+   "region": "london",
+   "lat": 51.63709,
+   "lng": -0.126
+  },
+  "way/1108788322": {
+   "page": "oval-playground-oval-greater-london",
+   "name": "Oval Playground",
+   "area": "Oval, Greater London",
+   "region": "london",
+   "lat": 51.48199,
+   "lng": -0.11562
+  },
+  "way/1159265760": {
+   "page": "playground-off-oval-way-oval-greater-london",
+   "name": "Playground off Oval Way",
+   "area": "Oval, Greater London",
+   "region": "london",
+   "lat": 51.48489,
+   "lng": -0.11713
+  },
+  "way/677031097": {
+   "page": "playground-off-cannon-road-palmers-green-greater-london",
+   "name": "Playground off Cannon Road",
+   "area": "Palmers Green, Greater London",
+   "region": "london",
+   "lat": 51.62238,
+   "lng": -0.12065
+  },
+  "node/5846641277": {
+   "page": "peckham-playground-peckham-greater-london",
+   "name": "Peckham Playground",
+   "area": "Peckham, Greater London",
+   "region": "london",
+   "lat": 51.48011,
+   "lng": -0.05578
+  },
+  "node/5838572886": {
+   "page": "playground-off-bird-in-bush-road-peckham-greater-london",
+   "name": "Playground off Bird in Bush Road",
+   "area": "Peckham, Greater London",
+   "region": "london",
+   "lat": 51.47983,
+   "lng": -0.06675
+  },
+  "node/2916660699": {
+   "page": "playground-off-friary-road-peckham-greater-london",
+   "name": "Playground off Friary Road",
+   "area": "Peckham, Greater London",
+   "region": "london",
+   "lat": 51.47696,
+   "lng": -0.06523
+  },
+  "node/2916660680": {
+   "page": "playground-off-marmont-road-peckham-greater-london",
+   "name": "Playground off Marmont Road",
+   "area": "Peckham, Greater London",
+   "region": "london",
+   "lat": 51.47642,
+   "lng": -0.06542
+  },
+  "way/863580481": {
+   "page": "playground-off-fairlea-place-perivale-greater-london",
+   "name": "Playground off Fairlea Place",
+   "area": "Perivale, Greater London",
+   "region": "london",
+   "lat": 51.52512,
+   "lng": -0.30675
+  },
+  "way/863580483": {
+   "page": "playground-off-westmoreland-place-perivale-greater-london",
+   "name": "Playground off Westmoreland Place",
+   "area": "Perivale, Greater London",
+   "region": "london",
+   "lat": 51.52459,
+   "lng": -0.30637
+  },
+  "way/985770931": {
+   "page": "playground-off-wren-path-plumstead-greater-london",
+   "name": "Playground off Wren Path",
+   "area": "Plumstead, Greater London",
+   "region": "london",
+   "lat": 51.49381,
+   "lng": 0.08429
+  },
+  "way/264141188": {
+   "page": "playground-off-stroud-crescent-putney-vale-greater-london",
+   "name": "Playground off Stroud Crescent",
+   "area": "Putney Vale, Greater London",
+   "region": "london",
+   "lat": 51.43653,
+   "lng": -0.24412
+  },
+  "way/465223062": {
+   "page": "playground-off-ripple-road-scrattons-farm-greater-london",
+   "name": "Playground off Ripple Road",
+   "area": "Scrattons Farm, Greater London",
+   "region": "london",
+   "lat": 51.53252,
+   "lng": 0.12582
+  },
+  "way/1111183539": {
+   "page": "kolbe-playground-seven-kings-greater-london",
+   "name": "Kolbe Playground",
+   "area": "Seven Kings, Greater London",
+   "region": "london",
+   "lat": 51.56482,
+   "lng": 0.09356
+  },
+  "way/1111183536": {
+   "page": "palmer-playground-seven-kings-greater-london",
+   "name": "Palmer Playground",
+   "area": "Seven Kings, Greater London",
+   "region": "london",
+   "lat": 51.56432,
+   "lng": 0.09505
+  },
+  "way/699821473": {
+   "page": "playground-off-trenance-gardens-seven-kings-greater-london",
+   "name": "Playground off Trenance Gardens",
+   "area": "Seven Kings, Greater London",
+   "region": "london",
+   "lat": 51.55672,
+   "lng": 0.10648
+  },
+  "way/1333561623": {
+   "page": "playground-off-water-lane-seven-kings-greater-london",
+   "name": "Playground off Water Lane",
+   "area": "Seven Kings, Greater London",
+   "region": "london",
+   "lat": 51.5576,
+   "lng": 0.09747
+  },
+  "way/937060643": {
+   "page": "playground-off-coverdale-road-shepherds-bush-greater-london",
+   "name": "Playground off Coverdale Road",
+   "area": "Shepherd's Bush, Greater London",
+   "region": "london",
+   "lat": 51.50462,
+   "lng": -0.22877
+  },
+  "way/230556666": {
+   "page": "playground-off-chrome-road-slade-green-greater-london",
+   "name": "Playground off Chrome Road",
+   "area": "Slade Green, Greater London",
+   "region": "london",
+   "lat": 51.47348,
+   "lng": 0.19169
+  },
+  "way/1210738969": {
+   "page": "playground-off-bellingham-road-southend-greater-london",
+   "name": "Playground off Bellingham Road",
+   "area": "Southend, Greater London",
+   "region": "london",
+   "lat": 51.43392,
+   "lng": -0.0092
+  },
+  "way/188834800": {
+   "page": "playground-off-chase-way-southgate-greater-london",
+   "name": "Playground off Chase Way",
+   "area": "Southgate, Greater London",
+   "region": "london",
+   "lat": 51.63343,
+   "lng": -0.1352
+  },
+  "way/1359118598": {
+   "page": "playground-off-leigh-hunt-drive-southgate-greater-london",
+   "name": "Playground off Leigh Hunt Drive",
+   "area": "Southgate, Greater London",
+   "region": "london",
+   "lat": 51.62987,
+   "lng": -0.12599
+  },
+  "way/677032657": {
+   "page": "playground-off-mayfair-terrace-southgate-greater-london",
+   "name": "Playground off Mayfair Terrace",
+   "area": "Southgate, Greater London",
+   "region": "london",
+   "lat": 51.63654,
+   "lng": -0.12535
+  },
+  "way/179008574": {
+   "page": "playground-off-warton-road-stratford-greater-london",
+   "name": "Playground off Warton Road",
+   "area": "Stratford, Greater London",
+   "region": "london",
+   "lat": 51.5362,
+   "lng": -0.0064
+  },
+  "way/812744334": {
+   "page": "playground-off-thornton-gardens-streatham-hill-greater-londo",
+   "name": "Playground off Thornton Gardens",
+   "area": "Streatham Hill, Greater London",
+   "region": "london",
+   "lat": 51.44427,
+   "lng": -0.13522
+  },
+  "way/821867027": {
+   "page": "playground-off-wyatt-park-road-streatham-hill-greater-london",
+   "name": "Playground off Wyatt Park Road",
+   "area": "Streatham Hill, Greater London",
+   "region": "london",
+   "lat": 51.44084,
+   "lng": -0.12103
+  },
+  "way/952995056": {
+   "page": "playground-off-granton-road-streatham-greater-london",
+   "name": "Playground off Granton Road",
+   "area": "Streatham, Greater London",
+   "region": "london",
+   "lat": 51.4142,
+   "lng": -0.14229
+  },
+  "way/812837638": {
+   "page": "playground-off-hyde-farm-mews-streatham-greater-london",
+   "name": "Playground off Hyde Farm Mews",
+   "area": "Streatham, Greater London",
+   "region": "london",
+   "lat": 51.44281,
+   "lng": -0.13701
+  },
+  "way/484729832": {
+   "page": "playground-off-sunnyhill-road-streatham-greater-london",
+   "name": "Playground off Sunnyhill Road",
+   "area": "Streatham, Greater London",
+   "region": "london",
+   "lat": 51.42891,
+   "lng": -0.12004
+  },
+  "way/832236648": {
+   "page": "playground-off-ennis-road-stroud-green-greater-london",
+   "name": "Playground off Ennis Road",
+   "area": "Stroud Green, Greater London",
+   "region": "london",
+   "lat": 51.56841,
+   "lng": -0.1075
+  },
+  "way/265893274": {
+   "page": "playground-off-monument-way-tottenham-hale-greater-london",
+   "name": "Playground off Monument Way",
+   "area": "Tottenham Hale, Greater London",
+   "region": "london",
+   "lat": 51.5892,
+   "lng": -0.069
+  },
+  "way/291790847": {
+   "page": "playground-off-goodinge-road-tufnell-park-greater-london",
+   "name": "Playground off Goodinge Road",
+   "area": "Tufnell Park, Greater London",
+   "region": "london",
+   "lat": 51.5487,
+   "lng": -0.12568
+  },
+  "way/291790845": {
+   "page": "playground-off-north-road-tufnell-park-greater-london",
+   "name": "Playground off North Road",
+   "area": "Tufnell Park, Greater London",
+   "region": "london",
+   "lat": 51.54808,
+   "lng": -0.12655
+  },
+  "way/289995162": {
+   "page": "playground-off-thorpewood-avenue-upper-sydenham-greater-lond",
+   "name": "Playground off Thorpewood Avenue",
+   "area": "Upper Sydenham, Greater London",
+   "region": "london",
+   "lat": 51.43665,
+   "lng": -0.06126
+  },
+  "way/1161892048": {
+   "page": "playground-off-wickham-street-vauxhall-greater-london",
+   "name": "Playground off Wickham Street",
+   "area": "Vauxhall, Greater London",
+   "region": "london",
+   "lat": 51.48912,
+   "lng": -0.11812
+  },
+  "way/1070842572": {
+   "page": "playground-off-buckhold-road-wandsworth-greater-london",
+   "name": "Playground off Buckhold Road",
+   "area": "Wandsworth, Greater London",
+   "region": "london",
+   "lat": 51.45452,
+   "lng": -0.19638
+  },
+  "way/1211301162": {
+   "page": "reception-playground-wandsworth-greater-london",
+   "name": "Reception playground",
+   "area": "Wandsworth, Greater London",
+   "region": "london",
+   "lat": 51.45354,
+   "lng": -0.18598
+  },
+  "way/1552706955": {
+   "page": "playground-off-delaford-street-west-kensington-greater-londo",
+   "name": "Playground off Delaford Street",
+   "area": "West Kensington, Greater London",
+   "region": "london",
+   "lat": 51.48272,
+   "lng": -0.20961
+  },
+  "way/551188814": {
+   "page": "playground-off-gipsy-road-west-norwood-greater-london-2",
+   "name": "Playground off Gipsy Road",
+   "area": "West Norwood, Greater London",
+   "region": "london",
+   "lat": 51.42679,
+   "lng": -0.08952
+  },
+  "way/551188813": {
+   "page": "playground-off-gipsy-road-west-norwood-greater-london",
+   "name": "Playground off Gipsy Road",
+   "area": "West Norwood, Greater London",
+   "region": "london",
+   "lat": 51.42699,
+   "lng": -0.09063
+  },
+  "node/3243817892": {
+   "page": "playground-off-wades-hill-palmers-green-greater-london",
+   "name": "Playground off Wades Hill",
+   "area": "Winchmore Hill, Greater London",
+   "region": "london",
+   "lat": 51.63581,
+   "lng": -0.10322
+  },
+  "way/236369456": {
+   "page": "playground-off-friary-lane-woodford-wells-greater-london",
+   "name": "Playground off Friary Lane",
+   "area": "Woodford Wells, Greater London",
+   "region": "london",
+   "lat": 51.61577,
+   "lng": 0.02335
+  },
+  "way/236369454": {
+   "page": "playground-off-mornington-road-woodford-wells-greater-london",
+   "name": "Playground off Mornington Road",
+   "area": "Woodford Wells, Greater London",
+   "region": "london",
+   "lat": 51.6163,
+   "lng": 0.02419
+  },
+  "way/24579666": {
+   "page": "playground-off-kingsmead-avenue-worcester-park-greater-londo",
+   "name": "Playground off Kingsmead Avenue",
+   "area": "Worcester Park, Greater London",
+   "region": "london",
+   "lat": 51.37599,
+   "lng": -0.23826
+  },
+  "way/24524823": {
+   "page": "playground-off-ruskin-drive-worcester-park-greater-london",
+   "name": "Playground off Ruskin Drive",
+   "area": "Worcester Park, Greater London",
+   "region": "london",
+   "lat": 51.3799,
+   "lng": -0.23124
+  },
+  "way/448999512": {
+   "page": "playground-off-raisby-close-acklam-middlesbrough",
+   "name": "Playground off Raisby Close",
+   "area": "Acklam, Middlesbrough",
+   "region": "north-east",
+   "lat": 54.53558,
+   "lng": -1.26034
+  },
+  "way/1415684138": {
+   "page": "playground-off-beaconsfield-street-arthurs-hill-newcastle-up",
+   "name": "Playground off Beaconsfield Street",
+   "area": "Arthur's Hill, Newcastle upon Tyne",
+   "region": "north-east",
+   "lat": 54.97437,
+   "lng": -1.63794
+  },
+  "way/1414265032": {
+   "page": "playground-off-houston-street-arthurs-hill-newcastle-upon-ty",
+   "name": "Playground off Houston Street",
+   "area": "Arthur's Hill, Newcastle upon Tyne",
+   "region": "north-east",
+   "lat": 54.96937,
+   "lng": -1.6302
+  },
+  "way/1414265034": {
+   "page": "playground-off-summerhill-grove-arthurs-hill-newcastle-upon-",
+   "name": "Playground off Summerhill Grove",
+   "area": "Arthur's Hill, Newcastle upon Tyne",
+   "region": "north-east",
+   "lat": 54.97007,
+   "lng": -1.62947
+  },
+  "way/317342647": {
+   "page": "playground-off-balmoral-terrace-east-herrington-sunderland",
+   "name": "Playground off Balmoral Terrace",
+   "area": "East Herrington, Sunderland",
+   "region": "north-east",
+   "lat": 54.87148,
+   "lng": -1.43746
+  },
+  "way/317342648": {
+   "page": "playground-off-charter-drive-east-herrington-sunderland",
+   "name": "Playground off Charter Drive",
+   "area": "East Herrington, Sunderland",
+   "region": "north-east",
+   "lat": 54.87173,
+   "lng": -1.43874
+  },
+  "node/3048792774": {
+   "page": "playground-off-lambton-road-haymarket-newcastle-upon-tyne",
+   "name": "Playground off Lambton Road",
+   "area": "Haymarket, Newcastle upon Tyne",
+   "region": "north-east",
+   "lat": 54.98358,
+   "lng": -1.61016
+  },
+  "way/944269657": {
+   "page": "playground-off-campbell-park-road-primrose-hebburn",
+   "name": "Playground off Campbell Park Road",
+   "area": "Primrose, Hebburn",
+   "region": "north-east",
+   "lat": 54.96891,
+   "lng": -1.51025
+  },
+  "way/263736780": {
+   "page": "playground-off-twizell-avenue-stella",
+   "name": "Playground off Twizell Avenue",
+   "area": "Stella",
+   "region": "north-east",
+   "lat": 54.96182,
+   "lng": -1.72619
+  },
+  "way/263736781": {
+   "page": "playground-off-twizell-avenue-stella-blaydon-on-tyne",
+   "name": "Playground off Twizell Avenue",
+   "area": "Stella, Blaydon on Tyne",
+   "region": "north-east",
+   "lat": 54.96139,
+   "lng": -1.7256
+  },
+  "way/1076649582": {
+   "page": "playground-off-morrison-street-teams-newcastle-upon-tyne",
+   "name": "Playground off Morrison Street",
+   "area": "Teams, Newcastle upon Tyne",
+   "region": "north-east",
+   "lat": 54.95775,
+   "lng": -1.62069
+  },
+  "way/1188056222": {
+   "page": "playground-off-north-farm-court-throckley-newcastle-upon-tyn",
+   "name": "Playground off North Farm Court",
+   "area": "Throckley, Newcastle upon Tyne",
+   "region": "north-east",
+   "lat": 54.99707,
+   "lng": -1.76158
+  },
+  "way/460369640": {
+   "page": "playground-off-kenilworth-road-ainsdale-sefton",
+   "name": "Playground off Kenilworth Road",
+   "area": "Ainsdale",
+   "region": "north-west",
+   "lat": 53.59923,
+   "lng": -3.04751
+  },
+  "way/54412540": {
+   "page": "science-yard-ashton-on-ribble-preston",
+   "name": "Science Yard",
+   "area": "Ashton-on-Ribble, Preston",
+   "region": "north-west",
+   "lat": 53.77024,
+   "lng": -2.75086
+  },
+  "way/694042211": {
+   "page": "playground-off-formby-avenue-atherton",
+   "name": "Playground off Formby Avenue",
+   "area": "Atherton",
+   "region": "north-west",
+   "lat": 53.52857,
+   "lng": -2.4908
+  },
+  "way/456441263": {
+   "page": "playground-off-longview-lane-stockbridge-village-huyton",
+   "name": "Playground off Longview Lane",
+   "area": "Bakers Green, Huyton",
+   "region": "north-west",
+   "lat": 53.42146,
+   "lng": -2.83464
+  },
+  "way/405437465": {
+   "page": "playground-off-regent-place-bradley-nelson",
+   "name": "Playground off Regent Place",
+   "area": "Bradley, Nelson",
+   "region": "north-west",
+   "lat": 53.8424,
+   "lng": -2.20924
+  },
+  "way/1016094585": {
+   "page": "playground-off-chestnut-drive-broadheath-trafford",
+   "name": "Playground off Chestnut Drive",
+   "area": "Broadheath, West Timperley",
+   "region": "north-west",
+   "lat": 53.41037,
+   "lng": -2.34541
+  },
+  "way/414787985": {
+   "page": "junior-playground-brooklands-sale",
+   "name": "Junior Playground",
+   "area": "Brooklands, Sale",
+   "region": "north-west",
+   "lat": 53.41273,
+   "lng": -2.32516
+  },
+  "way/411740325": {
+   "page": "key-stage-3-quad-brooklands-sale",
+   "name": "Key Stage 3 Quad",
+   "area": "Brooklands, Sale",
+   "region": "north-west",
+   "lat": 53.41835,
+   "lng": -2.31499
+  },
+  "way/414980520": {
+   "page": "playground-off-brownhill-drive-brownhill-blackburn",
+   "name": "Playground off Brownhill Drive",
+   "area": "Brownhill, Blackburn",
+   "region": "north-west",
+   "lat": 53.7713,
+   "lng": -2.47212
+  },
+  "way/405873274": {
+   "page": "playground-off-queen-victoria-road-burnley",
+   "name": "Playground off Queen Victoria Road",
+   "area": "Burnley",
+   "region": "north-west",
+   "lat": 53.80118,
+   "lng": -2.22893
+  },
+  "way/405873276": {
+   "page": "playground-off-williams-road-burnley",
+   "name": "Playground off Williams Road",
+   "area": "Burnley",
+   "region": "north-west",
+   "lat": 53.80099,
+   "lng": -2.22983
+  },
+  "way/1383950264": {
+   "page": "calder-vale-playground-calder-vale-wyre",
+   "name": "Calder Vale Playground",
+   "area": "Calder Vale",
+   "region": "north-west",
+   "lat": 53.91096,
+   "lng": -2.70481
+  },
+  "way/993674119": {
+   "page": "playground-off-arundel-drive-carleton",
+   "name": "Playground off Arundel Drive",
+   "area": "Carleton",
+   "region": "north-west",
+   "lat": 53.85723,
+   "lng": -3.00508
+  },
+  "way/993674105": {
+   "page": "playground-off-bispham-road-carleton",
+   "name": "Playground off Bispham Road",
+   "area": "Carleton",
+   "region": "north-west",
+   "lat": 53.8535,
+   "lng": -3.00766
+  },
+  "way/1292388342": {
+   "page": "playground-off-church-lane-charnock-richard",
+   "name": "Playground off Church Lane",
+   "area": "Charnock Richard",
+   "region": "north-west",
+   "lat": 53.63597,
+   "lng": -2.67374
+  },
+  "way/1109643615": {
+   "page": "playground-off-pembroke-close-cheadle-hulme",
+   "name": "Playground off Pembroke Close",
+   "area": "Cheadle Hulme",
+   "region": "north-west",
+   "lat": 53.37624,
+   "lng": -2.20814
+  },
+  "way/1110039468": {
+   "page": "playground-off-talbot-street-chipping",
+   "name": "Playground off Talbot Street",
+   "area": "Chipping",
+   "region": "north-west",
+   "lat": 53.88387,
+   "lng": -2.57636
+  },
+  "way/1537954457": {
+   "page": "playground-off-preston-new-road-crossens-southport-2-2",
+   "name": "Playground off Preston New Road",
+   "area": "Crossens, Southport",
+   "region": "north-west",
+   "lat": 53.66623,
+   "lng": -2.96252
+  },
+  "way/1537945116": {
+   "page": "playground-off-preston-new-road-crossens-southport-2",
+   "name": "Playground off Preston New Road",
+   "area": "Crossens, Southport",
+   "region": "north-west",
+   "lat": 53.66677,
+   "lng": -2.96211
+  },
+  "way/1180925702": {
+   "page": "playground-off-preston-new-road-crossens-southport",
+   "name": "Playground off Preston New Road",
+   "area": "Crossens, Southport",
+   "region": "north-west",
+   "lat": 53.66557,
+   "lng": -2.96352
+  },
+  "way/1409967121": {
+   "page": "davyhulme-playground-davyhulme-urmston",
+   "name": "Davyhulme Playground",
+   "area": "Davyhulme, Urmston",
+   "region": "north-west",
+   "lat": 53.45808,
+   "lng": -2.36003
+  },
+  "way/1409967135": {
+   "page": "playground-off-davyhulme-road-davyhulme-urmston",
+   "name": "Playground off Davyhulme Road",
+   "area": "Davyhulme, Urmston",
+   "region": "north-west",
+   "lat": 53.4575,
+   "lng": -2.35984
+  },
+  "way/392861318": {
+   "page": "playground-off-ullet-road-dingle-liverpool",
+   "name": "Playground off Ullet Road",
+   "area": "Dingle, Liverpool",
+   "region": "north-west",
+   "lat": 53.38329,
+   "lng": -2.95435
+  },
+  "way/472355602": {
+   "page": "playground-off-grant-road-dovecot-liverpool",
+   "name": "Playground off Grant Road",
+   "area": "Dovecot, Liverpool",
+   "region": "north-west",
+   "lat": 53.41635,
+   "lng": -2.87003
+  },
+  "way/472355608": {
+   "page": "playground-off-page-moss-lane-dovecot-liverpool",
+   "name": "Playground off Page Moss Lane",
+   "area": "Dovecot, Liverpool",
+   "region": "north-west",
+   "lat": 53.41582,
+   "lng": -2.86948
+  },
+  "way/100696550": {
+   "page": "playground-off-south-spine-ellel",
+   "name": "Playground off South Spine",
+   "area": "Ellel",
+   "region": "north-west",
+   "lat": 54.00684,
+   "lng": -2.78425
+  },
+  "way/406285206": {
+   "page": "playground-off-clayton-way-ewood-blackburn",
+   "name": "Playground off Clayton Way",
+   "area": "Ewood, Blackburn",
+   "region": "north-west",
+   "lat": 53.72189,
+   "lng": -2.4923
+  },
+  "way/346482132": {
+   "page": "playground-off-st-james-road-four-lane-ends-blackburn",
+   "name": "Playground off St James Road",
+   "area": "Four Lane Ends, Blackburn",
+   "region": "north-west",
+   "lat": 53.76182,
+   "lng": -2.47555
+  },
+  "way/1099353941": {
+   "page": "playground-off-james-street-frenchwood-preston",
+   "name": "Playground off James Street",
+   "area": "Frenchwood, Preston",
+   "region": "north-west",
+   "lat": 53.75691,
+   "lng": -2.68559
+  },
+  "node/3320785980": {
+   "page": "playground-off-danefield-road-garston-liverpool",
+   "name": "Playground off Danefield Road",
+   "area": "Garston, Liverpool",
+   "region": "north-west",
+   "lat": 53.36382,
+   "lng": -2.88832
+  },
+  "way/111429720": {
+   "page": "playground-off-millers-fold-gillars-green-st-helens",
+   "name": "Playground off Millers Fold",
+   "area": "Gillar's Green, St Helens",
+   "region": "north-west",
+   "lat": 53.4554,
+   "lng": -2.76921
+  },
+  "way/1030736514": {
+   "page": "playground-off-burnley-road-gisburn",
+   "name": "Playground off Burnley Road",
+   "area": "Gisburn",
+   "region": "north-west",
+   "lat": 53.93345,
+   "lng": -2.26405
+  },
+  "way/315950380": {
+   "page": "lower-cage-grange-caldy",
+   "name": "Lower Cage",
+   "area": "Grange, Caldy",
+   "region": "north-west",
+   "lat": 53.36742,
+   "lng": -3.16191
+  },
+  "way/315950383": {
+   "page": "upper-cage-grange-caldy",
+   "name": "Upper Cage",
+   "area": "Grange, Caldy",
+   "region": "north-west",
+   "lat": 53.36723,
+   "lng": -3.16276
+  },
+  "way/1461937164": {
+   "page": "playground-off-cooks-road-great-crosby-crosby",
+   "name": "Playground off Cooks Road",
+   "area": "Great Crosby, Crosby",
+   "region": "north-west",
+   "lat": 53.49345,
+   "lng": -3.02797
+  },
+  "way/1499147743": {
+   "page": "playground-off-ince-avenue-great-crosby-crosby",
+   "name": "Playground off Ince Avenue",
+   "area": "Great Crosby, Crosby",
+   "region": "north-west",
+   "lat": 53.49387,
+   "lng": -3.03261
+  },
+  "way/694042232": {
+   "page": "playground-off-car-bank-street-hag-fold-wigan-2",
+   "name": "Playground off Car Bank Street",
+   "area": "Hag Fold",
+   "region": "north-west",
+   "lat": 53.52906,
+   "lng": -2.49273
+  },
+  "way/694042223": {
+   "page": "playground-off-car-bank-street-hag-fold-wigan",
+   "name": "Playground off Car Bank Street",
+   "area": "Hag Fold",
+   "region": "north-west",
+   "lat": 53.52919,
+   "lng": -2.49178
+  },
+  "way/1556631414": {
+   "page": "playground-off-crantock-close-halewood-green-halewood-2",
+   "name": "Playground off Crantock Close",
+   "area": "Halewood Green, Halewood",
+   "region": "north-west",
+   "lat": 53.36618,
+   "lng": -2.83138
+  },
+  "way/405492209": {
+   "page": "playground-off-manchester-road-hapton",
+   "name": "Playground off Manchester Road",
+   "area": "Hapton",
+   "region": "north-west",
+   "lat": 53.78059,
+   "lng": -2.31774
+  },
+  "way/40772913": {
+   "page": "playground-off-edgeley-road-heaton-norris-cheadle",
+   "name": "Playground off Edgeley Road",
+   "area": "Heaton Norris, Cheadle",
+   "region": "north-west",
+   "lat": 53.39979,
+   "lng": -2.18947
+  },
+  "way/937818055": {
+   "page": "playground-off-bengal-street-heaton-norris-stockport",
+   "name": "Playground off Bengal Street",
+   "area": "Heaton Norris, Stockport",
+   "region": "north-west",
+   "lat": 53.40343,
+   "lng": -2.16384
+  },
+  "way/534530002": {
+   "page": "playground-off-middleton-road-heysham",
+   "name": "Playground off Middleton Road",
+   "area": "Heysham",
+   "region": "north-west",
+   "lat": 54.03633,
+   "lng": -2.89572
+  },
+  "way/405871730": {
+   "page": "playground-off-st-clement-street-higher-audley-blackburn",
+   "name": "Playground off St Clement Street",
+   "area": "Higher Audley, Blackburn",
+   "region": "north-west",
+   "lat": 53.74821,
+   "lng": -2.46134
+  },
+  "way/1109624786": {
+   "page": "playground-off-littledale-avenue-higher-heysham-heysham",
+   "name": "Playground off Littledale Avenue",
+   "area": "Higher Heysham, Heysham",
+   "region": "north-west",
+   "lat": 54.04908,
+   "lng": -2.88295
+  },
+  "way/841509285": {
+   "page": "playground-off-billinge-road-highfield-wigan",
+   "name": "Playground off Billinge Road",
+   "area": "Highfield, Wigan",
+   "region": "north-west",
+   "lat": 53.52967,
+   "lng": -2.67503
+  },
+  "way/405736591": {
+   "page": "playground-off-arago-street-hillock-vale-accrington",
+   "name": "Playground off Arago Street",
+   "area": "Hillock Vale, Accrington",
+   "region": "north-west",
+   "lat": 53.75808,
+   "lng": -2.36082
+  },
+  "way/1208373817": {
+   "page": "playground-off-back-lane-holland-moor-skelmersdale",
+   "name": "Playground off Back Lane",
+   "area": "Holland Moor, Skelmersdale",
+   "region": "north-west",
+   "lat": 53.53953,
+   "lng": -2.75158
+  },
+  "way/969927356": {
+   "page": "playground-off-beaufort-close-hough-green-widnes",
+   "name": "Playground off Beaufort Close",
+   "area": "Hough Green, Widnes",
+   "region": "north-west",
+   "lat": 53.36591,
+   "lng": -2.78081
+  },
+  "way/969927357": {
+   "page": "playground-off-clincton-view-hough-green-widnes",
+   "name": "Playground off Clincton View",
+   "area": "Hough Green, Widnes",
+   "region": "north-west",
+   "lat": 53.36539,
+   "lng": -2.78067
+  },
+  "way/1073653251": {
+   "page": "playground-off-newman-close-ince-in-makerfield-hindley",
+   "name": "Playground off Newman Close",
+   "area": "Ince-in-Makerfield, Hindley",
+   "region": "north-west",
+   "lat": 53.53715,
+   "lng": -2.58415
+  },
+  "way/502660712": {
+   "page": "playground-off-st-anthonys-drive-ingol-preston",
+   "name": "Playground off St Anthony's Drive",
+   "area": "Ingol, Preston",
+   "region": "north-west",
+   "lat": 53.78004,
+   "lng": -2.72432
+  },
+  "way/994948413": {
+   "page": "playground-off-preston-road-inskip",
+   "name": "Playground off Preston Road",
+   "area": "Inskip",
+   "region": "north-west",
+   "lat": 53.83466,
+   "lng": -2.82565
+  },
+  "way/1273827987": {
+   "page": "playground-off-ebony-way-kirkby",
+   "name": "Playground off Ebony Way",
+   "area": "Kirkby",
+   "region": "north-west",
+   "lat": 53.49506,
+   "lng": -2.88681
+  },
+  "way/475613247": {
+   "page": "playground-off-elm-road-kirkby",
+   "name": "Playground off Elm Road",
+   "area": "Kirkby",
+   "region": "north-west",
+   "lat": 53.48564,
+   "lng": -2.89537
+  },
+  "way/1273827985": {
+   "page": "playground-off-windmill-close-kirkby",
+   "name": "Playground off Windmill Close",
+   "area": "Kirkby",
+   "region": "north-west",
+   "lat": 53.49481,
+   "lng": -2.8877
+  },
+  "way/405111489": {
+   "page": "playground-off-hindle-street-knowle-fold-darwen",
+   "name": "Playground off Hindle Street",
+   "area": "Knowle Fold, Darwen",
+   "region": "north-west",
+   "lat": 53.70201,
+   "lng": -2.47956
+  },
+  "way/405112571": {
+   "page": "playground-off-sycamore-grove-knowle-fold-darwen",
+   "name": "Playground off Sycamore Grove",
+   "area": "Knowle Fold, Darwen",
+   "region": "north-west",
+   "lat": 53.7019,
+   "lng": -2.46244
+  },
+  "way/792046348": {
+   "page": "playground-off-oldfield-crescent-lache-chester",
+   "name": "Playground off Oldfield Crescent",
+   "area": "Lache, Chester",
+   "region": "north-west",
+   "lat": 53.17245,
+   "lng": -2.91395
+  },
+  "way/989825186": {
+   "page": "playground-off-carlisle-avenue-larkholme-fleetwood",
+   "name": "Playground off Carlisle Avenue",
+   "area": "Larkholme, Fleetwood",
+   "region": "north-west",
+   "lat": 53.90908,
+   "lng": -3.03721
+  },
+  "way/319864122": {
+   "page": "playground-off-ainsdale-drive-lea-preston",
+   "name": "Playground off Ainsdale Drive",
+   "area": "Lea, Preston",
+   "region": "north-west",
+   "lat": 53.7715,
+   "lng": -2.7567
+  },
+  "way/457051460": {
+   "page": "liverpool-playground-liverpool",
+   "name": "Liverpool Playground",
+   "area": "Liverpool",
+   "region": "north-west",
+   "lat": 53.38263,
+   "lng": -2.87782
+  },
+  "way/1043574224": {
+   "page": "playground-off-waters-edge-marple-bridge-stockport",
+   "name": "Playground off Waters Edge",
+   "area": "Marple Bridge",
+   "region": "north-west",
+   "lat": 53.40394,
+   "lng": -2.0548
+  },
+  "way/1537955256": {
+   "page": "playground-off-larkfield-lane-marshside-southport",
+   "name": "Playground off Larkfield Lane",
+   "area": "Marshside, Southport",
+   "region": "north-west",
+   "lat": 53.66642,
+   "lng": -2.96339
+  },
+  "way/370029585": {
+   "page": "playground-off-ovington-drive-meols-cop-southport",
+   "name": "Playground off Ovington Drive",
+   "area": "Meols Cop, Southport",
+   "region": "north-west",
+   "lat": 53.63036,
+   "lng": -2.97758
+  },
+  "way/610325287": {
+   "page": "playground-off-aspels-crescent-middleforth-penwortham",
+   "name": "Playground off Aspels Crescent",
+   "area": "Middleforth, Penwortham",
+   "region": "north-west",
+   "lat": 53.74165,
+   "lng": -2.72611
+  },
+  "way/162863829": {
+   "page": "playground-off-slater-lane-moss-side-leyland",
+   "name": "Playground off Slater Lane",
+   "area": "Moss Side, Leyland",
+   "region": "north-west",
+   "lat": 53.69021,
+   "lng": -2.73494
+  },
+  "way/456627574": {
+   "page": "playground-off-long-jump-whiston-lane-ends-huyton",
+   "name": "Playground off Long Jump",
+   "area": "Mosscroft, Huyton",
+   "region": "north-west",
+   "lat": 53.41328,
+   "lng": -2.83046
+  },
+  "way/1394140698": {
+   "page": "playground-off-back-lane-newburgh",
+   "name": "Playground off Back Lane",
+   "area": "Newburgh",
+   "region": "north-west",
+   "lat": 53.58812,
+   "lng": -2.78408
+  },
+  "way/159052267": {
+   "page": "playground-off-gregory-avenue-norbreck-cleveleys",
+   "name": "Playground off Gregory Avenue",
+   "area": "Norbreck, Cleveleys",
+   "region": "north-west",
+   "lat": 53.8559,
+   "lng": -3.04351
+  },
+  "way/343936936": {
+   "page": "playground-off-broad-square-norris-green-liverpool",
+   "name": "Playground off Broad Square",
+   "area": "Norris Green, Liverpool",
+   "region": "north-west",
+   "lat": 53.43804,
+   "lng": -2.92202
+  },
+  "way/1091639015": {
+   "page": "playground-off-rossall-road-old-swan-liverpool",
+   "name": "Playground off Rossall Road",
+   "area": "Old Swan, Liverpool",
+   "region": "north-west",
+   "lat": 53.41166,
+   "lng": -2.90813
+  },
+  "way/615199463": {
+   "page": "playground-off-east-union-street-old-trafford-stretford",
+   "name": "Playground off East Union Street",
+   "area": "Old Trafford, Stretford",
+   "region": "north-west",
+   "lat": 53.46517,
+   "lng": -2.26586
+  },
+  "way/1494630812": {
+   "page": "playground-off-nately-road-old-trafford-stretford",
+   "name": "Playground off Nately Road",
+   "area": "Old Trafford, Stretford",
+   "region": "north-west",
+   "lat": 53.45171,
+   "lng": -2.28289
+  },
+  "way/615199465": {
+   "page": "playground-off-stretford-road-old-trafford-stretford",
+   "name": "Playground off Stretford Road",
+   "area": "Old Trafford, Stretford",
+   "region": "north-west",
+   "lat": 53.46479,
+   "lng": -2.26496
+  },
+  "way/964719541": {
+   "page": "playground-off-fleet-lane-parr-earlestown",
+   "name": "Playground off Fleet Lane",
+   "area": "Parr, Earlestown",
+   "region": "north-west",
+   "lat": 53.44898,
+   "lng": -2.70312
+  },
+  "way/1414671077": {
+   "page": "playground-off-sycamore-road-partington",
+   "name": "Playground off Sycamore Road",
+   "area": "Partington",
+   "region": "north-west",
+   "lat": 53.41828,
+   "lng": -2.43689
+  },
+  "way/459598215": {
+   "page": "playground-off-robins-lane-peasley-cross-st-helens",
+   "name": "Playground off Robins Lane",
+   "area": "Peasley Cross, St Helens",
+   "region": "north-west",
+   "lat": 53.438,
+   "lng": -2.71919
+  },
+  "way/333422310": {
+   "page": "playground-off-lower-willworth-pleckgate-blackburn-2",
+   "name": "Playground off Lower Willworth",
+   "area": "Pleckgate, Blackburn",
+   "region": "north-west",
+   "lat": 53.76917,
+   "lng": -2.4831
+  },
+  "way/333421858": {
+   "page": "playground-off-lower-willworth-pleckgate-blackburn",
+   "name": "Playground off Lower Willworth",
+   "area": "Pleckgate, Blackburn",
+   "region": "north-west",
+   "lat": 53.76992,
+   "lng": -2.48369
+  },
+  "way/474787041": {
+   "page": "playground-off-bretherton-road-prescot",
+   "name": "Playground off Bretherton Road",
+   "area": "Prescot",
+   "region": "north-west",
+   "lat": 53.42852,
+   "lng": -2.79174
+  },
+  "way/480704061": {
+   "page": "playground-off-evelyn-avenue-prescot",
+   "name": "Playground off Evelyn Avenue",
+   "area": "Prescot",
+   "region": "north-west",
+   "lat": 53.43124,
+   "lng": -2.79439
+  },
+  "way/474787037": {
+   "page": "playground-off-laurel-road-prescot",
+   "name": "Playground off Laurel Road",
+   "area": "Prescot",
+   "region": "north-west",
+   "lat": 53.42915,
+   "lng": -2.79206
+  },
+  "way/922302614": {
+   "page": "playground-off-shaw-lane-prescot",
+   "name": "Playground off Shaw Lane",
+   "area": "Prescot",
+   "region": "north-west",
+   "lat": 53.4202,
+   "lng": -2.79014
+  },
+  "way/472334525": {
+   "page": "playground-off-ward-street-prescot",
+   "name": "Playground off Ward Street",
+   "area": "Prescot",
+   "region": "north-west",
+   "lat": 53.43248,
+   "lng": -2.80121
+  },
+  "way/985852397": {
+   "page": "playground-off-postern-gate-road-quernmore-lancaster",
+   "name": "Playground off Postern Gate Road",
+   "area": "Quernmore, Lancaster",
+   "region": "north-west",
+   "lat": 54.03628,
+   "lng": -2.7379
+  },
+  "way/1300530267": {
+   "page": "playground-off-rufford-road-rainford-st-helens",
+   "name": "Playground off Rufford Road",
+   "area": "Rainford",
+   "region": "north-west",
+   "lat": 53.50738,
+   "lng": -2.78518
+  },
+  "way/474190717": {
+   "page": "roby-playground-roby-huyton",
+   "name": "Roby Playground",
+   "area": "Roby, Huyton",
+   "region": "north-west",
+   "lat": 53.41363,
+   "lng": -2.84448
+  },
+  "way/342063881": {
+   "page": "rockcliffe-playground-rockcliffe",
+   "name": "Rockcliffe Playground",
+   "area": "Rockcliffe",
+   "region": "north-west",
+   "lat": 54.94729,
+   "lng": -3.00107
+  },
+  "way/589524450": {
+   "page": "playground-off-ringway-rossall-beach-cleveleys",
+   "name": "Playground off Ringway",
+   "area": "Rossall Beach, Cleveleys",
+   "region": "north-west",
+   "lat": 53.88621,
+   "lng": -3.03182
+  },
+  "way/497460597": {
+   "page": "playground-off-alexandra-road-sale-moor-sale",
+   "name": "Playground off Alexandra Road",
+   "area": "Sale Moor, Sale",
+   "region": "north-west",
+   "lat": 53.41986,
+   "lng": -2.30868
+  },
+  "way/901248159": {
+   "page": "playground-off-cross-lane-salterforth",
+   "name": "Playground off Cross Lane",
+   "area": "Salterforth",
+   "region": "north-west",
+   "lat": 53.90575,
+   "lng": -2.16912
+  },
+  "way/1043472632": {
+   "page": "playground-off-ruff-lane-scarth-hill-ormskirk-2",
+   "name": "Playground off Ruff Lane",
+   "area": "Scarth Hill, Ormskirk",
+   "region": "north-west",
+   "lat": 53.55907,
+   "lng": -2.8679
+  },
+  "way/1043472631": {
+   "page": "playground-off-ruff-lane-scarth-hill-ormskirk",
+   "name": "Playground off Ruff Lane",
+   "area": "Scarth Hill, Ormskirk",
+   "region": "north-west",
+   "lat": 53.56025,
+   "lng": -2.86769
+  },
+  "way/1044256546": {
+   "page": "playground-off-st-helens-road-scarth-hill-ormskirk",
+   "name": "Playground off St Helens Road",
+   "area": "Scarth Hill, Ormskirk",
+   "region": "north-west",
+   "lat": 53.55668,
+   "lng": -2.86647
+  },
+  "way/414858278": {
+   "page": "playground-off-chesnut-grove-seaforth-bootle",
+   "name": "Playground off Chesnut Grove",
+   "area": "Seaforth, Bootle",
+   "region": "north-west",
+   "lat": 53.4574,
+   "lng": -2.99794
+  },
+  "way/1000357935": {
+   "page": "playground-off-marriott-street-shaw-heath-stockport",
+   "name": "Playground off Marriott Street",
+   "area": "Shaw Heath, Stockport",
+   "region": "north-west",
+   "lat": 53.40419,
+   "lng": -2.1551
+  },
+  "way/1071030295": {
+   "page": "playground-off-woodstock-avenue-smithy-green-cheadle-hulme",
+   "name": "Playground off Woodstock Avenue",
+   "area": "Smithy Green, Cheadle Hulme",
+   "region": "north-west",
+   "lat": 53.36223,
+   "lng": -2.19146
+  },
+  "way/140923249": {
+   "page": "playground-off-avondale-street-standish-wigan",
+   "name": "Playground off Avondale Street",
+   "area": "Standish, Wigan",
+   "region": "north-west",
+   "lat": 53.5905,
+   "lng": -2.66388
+  },
+  "way/135133868": {
+   "page": "playground-off-green-lane-standish-wigan-2",
+   "name": "Playground off Green Lane",
+   "area": "Standish, Wigan",
+   "region": "north-west",
+   "lat": 53.58407,
+   "lng": -2.66734
+  },
+  "way/135133883": {
+   "page": "playground-off-green-lane-standish-wigan",
+   "name": "Playground off Green Lane",
+   "area": "Standish, Wigan",
+   "region": "north-west",
+   "lat": 53.58388,
+   "lng": -2.66577
+  },
+  "way/135116287": {
+   "page": "playground-off-kenyon-road-standish-wigan",
+   "name": "Playground off Kenyon Road",
+   "area": "Standish, Wigan",
+   "region": "north-west",
+   "lat": 53.5919,
+   "lng": -2.67369
+  },
+  "way/140779238": {
+   "page": "playground-off-rectory-lane-thornhill-wigan",
+   "name": "Playground off Rectory Lane",
+   "area": "Standish, Wigan",
+   "region": "north-west",
+   "lat": 53.58697,
+   "lng": -2.65626
+  },
+  "way/135097353": {
+   "page": "playground-off-standish-mineral-line-standish-wigan",
+   "name": "Playground off Standish Mineral Line",
+   "area": "Standish, Wigan",
+   "region": "north-west",
+   "lat": 53.59089,
+   "lng": -2.67553
+  },
+  "relation/7144468": {
+   "page": "playground-off-dudley-way-stockbridge-village-huyton",
+   "name": "Playground off Dudley Way",
+   "area": "Stockbridge Village, Huyton",
+   "region": "north-west",
+   "lat": 53.42556,
+   "lng": -2.83996
+  },
+  "way/473390929": {
+   "page": "playground-off-hillside-road-stockbridge-village-huyton",
+   "name": "Playground off Hillside Road",
+   "area": "Stockbridge Village, Huyton",
+   "region": "north-west",
+   "lat": 53.42526,
+   "lng": -2.84081
+  },
+  "way/445794887": {
+   "page": "playground-off-mundella-lane-stockbridge-village-huyton",
+   "name": "Playground off Mundella Lane",
+   "area": "Stockbridge Village, Huyton",
+   "region": "north-west",
+   "lat": 53.42679,
+   "lng": -2.8387
+  },
+  "way/472381409": {
+   "page": "playground-off-park-view-stockbridge-village-huyton",
+   "name": "Playground off Park View",
+   "area": "Stockbridge Village, Huyton",
+   "region": "north-west",
+   "lat": 53.41871,
+   "lng": -2.85507
+  },
+  "way/445794891": {
+   "page": "playground-off-unsworth-road-stockbridge-village-huyton",
+   "name": "Playground off Unsworth Road",
+   "area": "Stockbridge Village, Huyton",
+   "region": "north-west",
+   "lat": 53.42722,
+   "lng": -2.83982
+  },
+  "way/1187592274": {
+   "page": "playground-off-gardner-road-stoneycroft-liverpool-2",
+   "name": "Playground off Gardner Road",
+   "area": "Stoneycroft, Liverpool",
+   "region": "north-west",
+   "lat": 53.42472,
+   "lng": -2.92522
+  },
+  "way/1187459190": {
+   "page": "playground-off-gardner-road-stoneycroft-liverpool",
+   "name": "Playground off Gardner Road",
+   "area": "Stoneycroft, Liverpool",
+   "region": "north-west",
+   "lat": 53.42403,
+   "lng": -2.92583
+  },
+  "way/1187472740": {
+   "page": "playground-off-rockbank-road-stoneycroft-liverpool",
+   "name": "Playground off Rockbank Road",
+   "area": "Stoneycroft, Liverpool",
+   "region": "north-west",
+   "lat": 53.42349,
+   "lng": -2.92668
+  },
+  "way/479860967": {
+   "page": "playground-off-monksdown-road-west-derby-liverpool",
+   "name": "Playground off Monksdown Road",
+   "area": "West Derby, Liverpool",
+   "region": "north-west",
+   "lat": 53.44129,
+   "lng": -2.91425
+  },
+  "way/1218650511": {
+   "page": "playground-off-shelley-street-westleigh-leigh",
+   "name": "Playground off Shelley Street",
+   "area": "Westleigh, Leigh",
+   "region": "north-west",
+   "lat": 53.51003,
+   "lng": -2.53537
+  },
+  "way/1218650513": {
+   "page": "playground-off-tennyson-avenue-westleigh-leigh",
+   "name": "Playground off Tennyson Avenue",
+   "area": "Westleigh, Leigh",
+   "region": "north-west",
+   "lat": 53.51026,
+   "lng": -2.53728
+  },
+  "way/445947734": {
+   "page": "playground-off-bedford-close-whiston-lane-ends-huyton",
+   "name": "Playground off Bedford Close",
+   "area": "Whiston Lane Ends, Huyton",
+   "region": "north-west",
+   "lat": 53.41482,
+   "lng": -2.82223
+  },
+  "way/445947736": {
+   "page": "playground-off-lynton-road-whiston-lane-ends-huyton",
+   "name": "Playground off Lynton Road",
+   "area": "Whiston Lane Ends, Huyton",
+   "region": "north-west",
+   "lat": 53.41436,
+   "lng": -2.82128
+  },
+  "way/405494897": {
+   "page": "playground-off-st-philips-street-witton-blackburn",
+   "name": "Playground off St Philip's Street",
+   "area": "Witton, Blackburn",
+   "region": "north-west",
+   "lat": 53.74078,
+   "lng": -2.50447
+  },
+  "way/1104821386": {
+   "page": "playground-off-snowden-avenue-worsley-mesnes-wigan",
+   "name": "Playground off Snowden Avenue",
+   "area": "Worsley Mesnes, Wigan",
+   "region": "north-west",
+   "lat": 53.52886,
+   "lng": -2.6466
+  },
+  "way/1075874042": {
+   "page": "playground-off-halstead-street-worsthorne",
+   "name": "Playground off Halstead Street",
+   "area": "Worsthorne",
+   "region": "north-west",
+   "lat": 53.78903,
+   "lng": -2.19211
+  },
+  "way/506246735": {
+   "page": "playground-off-greystone-road-ballycraigy-antrim",
+   "name": "Playground off Greystone Road",
+   "area": "Ballycraigy, Antrim",
+   "region": "northern-ireland",
+   "lat": 54.71293,
+   "lng": -6.18971
+  },
+  "way/454067588": {
+   "page": "playground-off-foxhill-ballymena",
+   "name": "Playground off Foxhill",
+   "area": "Ballymena",
+   "region": "northern-ireland",
+   "lat": 54.87288,
+   "lng": -6.29738
+  },
+  "way/662754702": {
+   "page": "playground-off-ballyrobert-road-ballyrobert",
+   "name": "Playground off Ballyrobert Road",
+   "area": "Ballyrobert",
+   "region": "northern-ireland",
+   "lat": 54.71605,
+   "lng": -6.00273
+  },
+  "way/454555411": {
+   "page": "playground-off-murob-park-dunclug-ballymena",
+   "name": "Playground off Murob Park",
+   "area": "Dunclug, Ballymena",
+   "region": "northern-ireland",
+   "lat": 54.88059,
+   "lng": -6.28033
+  },
+  "way/453862639": {
+   "page": "playground-off-crebilly-road-harryville-ballymena-2-2",
+   "name": "Playground off Crebilly Road",
+   "area": "Harryville, Ballymena",
+   "region": "northern-ireland",
+   "lat": 54.85961,
+   "lng": -6.25628
+  },
+  "way/453862638": {
+   "page": "playground-off-crebilly-road-harryville-ballymena",
+   "name": "Playground off Crebilly Road",
+   "area": "Harryville, Ballymena",
+   "region": "northern-ireland",
+   "lat": 54.85903,
+   "lng": -6.25625
+  },
+  "way/889592680": {
+   "page": "playground-off-gorsten-road-ballachulish",
+   "name": "Playground off Gorsten Road",
+   "area": "Ballachulish",
+   "region": "scotland",
+   "lat": 56.6726,
+   "lng": -5.13485
+  },
+  "way/1553312342": {
+   "page": "playground-off-hill-of-banchory-south-banchory-2",
+   "name": "Playground off Hill of Banchory South",
+   "area": "Banchory",
+   "region": "scotland",
+   "lat": 57.05796,
+   "lng": -2.48054
+  },
+  "way/1302611520": {
+   "page": "playground-off-caulfield-road-cradlehall-inverness",
+   "name": "Playground off Caulfield Road",
+   "area": "Cradlehall, Inverness",
+   "region": "scotland",
+   "lat": 57.47314,
+   "lng": -4.16099
+  },
+  "way/172427911": {
+   "page": "playground-off-cally-avenue-drumchapel-glasgow",
+   "name": "Playground off Cally Avenue",
+   "area": "Drumchapel, Glasgow",
+   "region": "scotland",
+   "lat": 55.91404,
+   "lng": -4.36518
+  },
+  "way/663766405": {
+   "page": "playground-off-hays-way-elrick-westhill",
+   "name": "Playground off Hay's Way",
+   "area": "Elrick, Westhill",
+   "region": "scotland",
+   "lat": 57.15613,
+   "lng": -2.28891
+  },
+  "way/952027735": {
+   "page": "playground-off-cuminestown-road-fyvie",
+   "name": "Playground off Cuminestown Road",
+   "area": "Fyvie",
+   "region": "scotland",
+   "lat": 57.43346,
+   "lng": -2.39077
+  },
+  "way/222441603": {
+   "page": "playground-off-hallside-place-gorbals-glasgow",
+   "name": "Playground off Hallside Place",
+   "area": "Gorbals, Glasgow",
+   "region": "scotland",
+   "lat": 55.84627,
+   "lng": -4.24883
+  },
+  "way/998793030": {
+   "page": "playground-off-south-road-invernettie-peterhead-2",
+   "name": "Playground off South Road",
+   "area": "Invernettie, Peterhead",
+   "region": "scotland",
+   "lat": 57.49551,
+   "lng": -1.79621
+  },
+  "way/1044290699": {
+   "page": "playground-off-carnie-road-kintore",
+   "name": "Playground off Carnie Road",
+   "area": "Kintore",
+   "region": "scotland",
+   "lat": 57.22654,
+   "lng": -2.33849
+  },
+  "way/1054281903": {
+   "page": "playground-off-morrison-way-midmill-kintore-2",
+   "name": "Playground off Morrison Way",
+   "area": "Midmill, Kintore",
+   "region": "scotland",
+   "lat": 57.22454,
+   "lng": -2.34478
+  },
+  "way/1054218978": {
+   "page": "playground-off-morrison-way-midmill-kintore",
+   "name": "Playground off Morrison Way",
+   "area": "Midmill, Kintore",
+   "region": "scotland",
+   "lat": 57.22506,
+   "lng": -2.34545
+  },
+  "way/619575780": {
+   "page": "playground-off-golf-course-road-newtonmore",
+   "name": "Playground off Golf Course Road",
+   "area": "Newtonmore",
+   "region": "scotland",
+   "lat": 57.06553,
+   "lng": -4.11775
+  },
+  "way/188948810": {
+   "page": "playground-off-glebe-street-sighthill-glasgow",
+   "name": "Playground off Glebe Street",
+   "area": "Sighthill, Glasgow",
+   "region": "scotland",
+   "lat": 55.86549,
+   "lng": -4.23861
+  },
+  "way/358371184": {
+   "page": "playground-off-springfield-road-springfield-linlithgow",
+   "name": "Playground off Springfield Road",
+   "area": "Springfield, Linlithgow",
+   "region": "scotland",
+   "lat": 55.98103,
+   "lng": -3.58062
+  },
+  "way/949843435": {
+   "page": "playground-off-sleigh-crescent-strichen",
+   "name": "Playground off Sleigh Crescent",
+   "area": "Strichen",
+   "region": "scotland",
+   "lat": 57.58671,
+   "lng": -2.08616
+  },
+  "way/537638160": {
+   "page": "playground-off-criswick-close-abbotts-ann-test-valley",
+   "name": "Playground off Criswick Close",
+   "area": "Abbotts Ann",
+   "region": "south-east",
+   "lat": 51.18462,
+   "lng": -1.53091
+  },
+  "way/269161815": {
+   "page": "radley-playground-radley-abingdon",
+   "name": "Abingdon Playground",
+   "area": "Abingdon",
+   "region": "south-east",
+   "lat": 51.70735,
+   "lng": -1.26919
+  },
+  "way/1341076439": {
+   "page": "playground-off-oxford-road-radley-abingdon",
+   "name": "Playground off Oxford Road",
+   "area": "Abingdon",
+   "region": "south-east",
+   "lat": 51.70755,
+   "lng": -1.26883
+  },
+  "node/2335582138": {
+   "page": "playground-off-back-lane-appleshaw-test-valley",
+   "name": "Playground off Back Lane",
+   "area": "Appleshaw",
+   "region": "south-east",
+   "lat": 51.24069,
+   "lng": -1.55799
+  },
+  "way/868257390": {
+   "page": "playground-off-westborough-mews-barming-maidstone-2",
+   "name": "Playground off Westborough Mews",
+   "area": "Barming, Maidstone",
+   "region": "south-east",
+   "lat": 51.26941,
+   "lng": 0.49154
+  },
+  "way/868257389": {
+   "page": "playground-off-westborough-mews-barming-maidstone",
+   "name": "Playground off Westborough Mews",
+   "area": "Barming, Maidstone",
+   "region": "south-east",
+   "lat": 51.26904,
+   "lng": 0.49088
+  },
+  "way/89902196": {
+   "page": "playground-off-park-road-south-bedhampton-havant",
+   "name": "Playground off Park Road South",
+   "area": "Bedhampton, Havant",
+   "region": "south-east",
+   "lat": 50.84881,
+   "lng": -0.98315
+  },
+  "way/990899387": {
+   "page": "playground-off-cedar-avenue-christian-fields-gravesend",
+   "name": "Playground off Cedar Avenue",
+   "area": "Christian Fields, Gravesend",
+   "region": "south-east",
+   "lat": 51.41838,
+   "lng": 0.37457
+  },
+  "way/990899383": {
+   "page": "playground-off-windsor-road-christian-fields-gravesend",
+   "name": "Playground off Windsor Road",
+   "area": "Christian Fields, Gravesend",
+   "region": "south-east",
+   "lat": 51.41859,
+   "lng": 0.3729
+  },
+  "way/921977508": {
+   "page": "playground-off-collier-street-collier-street",
+   "name": "Playground off Collier Street",
+   "area": "Collier Street",
+   "region": "south-east",
+   "lat": 51.1881,
+   "lng": 0.45391
+  },
+  "way/830301056": {
+   "page": "playground-off-linton-gore-coxheath",
+   "name": "Playground off Linton Gore",
+   "area": "Coxheath",
+   "region": "south-east",
+   "lat": 51.23299,
+   "lng": 0.49688
+  },
+  "way/830301051": {
+   "page": "playground-off-park-way-coxheath",
+   "name": "Playground off Park Way",
+   "area": "Coxheath",
+   "region": "south-east",
+   "lat": 51.23366,
+   "lng": 0.49655
+  },
+  "way/1299314758": {
+   "page": "playground-off-lillian-road-east-cliff-ramsgate",
+   "name": "Playground off Lillian Road",
+   "area": "East Cliff, Ramsgate",
+   "region": "south-east",
+   "lat": 51.34039,
+   "lng": 1.42389
+  },
+  "way/401912365": {
+   "page": "playground-off-wilsons-lane-east-farleigh",
+   "name": "Playground off Wilsons Lane",
+   "area": "East Farleigh",
+   "region": "south-east",
+   "lat": 51.24859,
+   "lng": 0.48433
+  },
+  "way/1315141112": {
+   "page": "playground-off-springhead-parkway-ebbsfleet-garden-city-nort-2",
+   "name": "Playground off Springhead Parkway",
+   "area": "Ebbsfleet Garden City, Northfleet",
+   "region": "south-east",
+   "lat": 51.43385,
+   "lng": 0.32741
+  },
+  "way/98717657": {
+   "page": "playground-off-teachers-way-fawley-new-forest",
+   "name": "Playground off Teachers Way",
+   "area": "Fawley, Little Holbury",
+   "region": "south-east",
+   "lat": 50.83385,
+   "lng": -1.3909
+  },
+  "way/1304113035": {
+   "page": "playground-off-brookland-close-highfield-new-forest",
+   "name": "Playground off Brookland Close",
+   "area": "Highfield, Lymington",
+   "region": "south-east",
+   "lat": 50.75506,
+   "lng": -1.55702
+  },
+  "way/1304113028": {
+   "page": "playground-off-priestlands-road-highfield-new-forest-2",
+   "name": "Playground off Priestlands Road",
+   "area": "Highfield, Lymington",
+   "region": "south-east",
+   "lat": 50.75473,
+   "lng": -1.55787
+  },
+  "way/1304113025": {
+   "page": "playground-off-priestlands-road-highfield-new-forest",
+   "name": "Playground off Priestlands Road",
+   "area": "Highfield, Pennington",
+   "region": "south-east",
+   "lat": 50.75485,
+   "lng": -1.55935
+  },
+  "way/96566739": {
+   "page": "playground-off-kiln-close-hollybank-new-forest",
+   "name": "Playground off Kiln Close",
+   "area": "Hollybank, Hythe",
+   "region": "south-east",
+   "lat": 50.86133,
+   "lng": -1.41424
+  },
+  "way/96566740": {
+   "page": "playground-off-water-lane-hollybank-new-forest",
+   "name": "Playground off Water Lane",
+   "area": "Hollybank, Hythe",
+   "region": "south-east",
+   "lat": 50.86056,
+   "lng": -1.4141
+  },
+  "way/1247719002": {
+   "page": "playground-off-main-road-hoo-hoo-st-werburgh",
+   "name": "Playground off Main Road Hoo",
+   "area": "Hoo St Werburgh",
+   "region": "south-east",
+   "lat": 51.42105,
+   "lng": 0.54558
+  },
+  "way/1190527628": {
+   "page": "horndean-playground-horndean-east-hampshire",
+   "name": "Horndean Playground",
+   "area": "Horndean",
+   "region": "south-east",
+   "lat": 50.91376,
+   "lng": -1.0033
+  },
+  "way/277279416": {
+   "page": "playground-off-sevenoaks-road-ightham",
+   "name": "Playground off Sevenoaks Road",
+   "area": "Ightham",
+   "region": "south-east",
+   "lat": 51.2851,
+   "lng": 0.27985
+  },
+  "way/22881328": {
+   "page": "playground-off-gibson-drive-kings-hill",
+   "name": "Playground off Gibson Drive",
+   "area": "Kings Hill",
+   "region": "south-east",
+   "lat": 51.27268,
+   "lng": 0.39853
+  },
+  "way/550337246": {
+   "page": "kingsclere-playground-kingsclere-basingstoke-and-deane",
+   "name": "Kingsclere Playground",
+   "area": "Kingsclere",
+   "region": "south-east",
+   "lat": 51.3254,
+   "lng": -1.24418
+  },
+  "way/229919921": {
+   "page": "playground-off-the-rise-kingsdown-2",
+   "name": "Playground off The Rise",
+   "area": "Kingsdown",
+   "region": "south-east",
+   "lat": 51.18544,
+   "lng": 1.39571
+  },
+  "way/1119901168": {
+   "page": "playground-off-ashford-crescent-langdown-hythe-2",
+   "name": "Playground off Ashford Crescent",
+   "area": "Langdown, Hythe",
+   "region": "south-east",
+   "lat": 50.86337,
+   "lng": -1.39461
+  },
+  "way/154960865": {
+   "page": "playground-off-ashford-crescent-langdown-hythe",
+   "name": "Playground off Ashford Crescent",
+   "area": "Langdown, Hythe",
+   "region": "south-east",
+   "lat": 50.86393,
+   "lng": -1.39631
+  },
+  "way/1119901159": {
+   "page": "playground-off-langdown-road-langdown-hythe",
+   "name": "Playground off Langdown Road",
+   "area": "Langdown, Hythe",
+   "region": "south-east",
+   "lat": 50.86384,
+   "lng": -1.39516
+  },
+  "node/12293520369": {
+   "page": "playground-off-brickfield-farm-longfield",
+   "name": "Playground off Brickfield Farm",
+   "area": "Longfield",
+   "region": "south-east",
+   "lat": 51.39432,
+   "lng": 0.31488
+  },
+  "way/1011310054": {
+   "page": "playground-off-luton-road-luton-chatham",
+   "name": "Playground off Luton Road",
+   "area": "Luton, Chatham",
+   "region": "south-east",
+   "lat": 51.37198,
+   "lng": 0.54424
+  },
+  "way/905640975": {
+   "page": "playground-off-millmead-road-millmead-margate",
+   "name": "Playground off Millmead Road",
+   "area": "Millmead, Margate",
+   "region": "south-east",
+   "lat": 51.38004,
+   "lng": 1.40874
+  },
+  "relation/13346629": {
+   "page": "playground-off-albion-road-milton-gravesend",
+   "name": "Playground off Albion Road",
+   "area": "Milton, Gravesend",
+   "region": "south-east",
+   "lat": 51.44122,
+   "lng": 0.37908
+  },
+  "way/167444203": {
+   "page": "playground-off-molineux-road-minster",
+   "name": "Playground off Molineux Road",
+   "area": "Minster",
+   "region": "south-east",
+   "lat": 51.33287,
+   "lng": 1.31181
+  },
+  "node/12293520371": {
+   "page": "playground-off-main-road-new-barn",
+   "name": "Playground off Main Road",
+   "area": "New Barn",
+   "region": "south-east",
+   "lat": 51.39446,
+   "lng": 0.31624
+  },
+  "node/3374598602": {
+   "page": "playground-off-st-johns-road-orchard-valley-folkestone-and-h",
+   "name": "Playground off St Johns Road",
+   "area": "Orchard Valley, Saltwood",
+   "region": "south-east",
+   "lat": 51.07857,
+   "lng": 1.07182
+  },
+  "way/1408748916": {
+   "page": "playground-off-barlows-lane-rooksbury-mill-andover",
+   "name": "Playground off Barlows Lane",
+   "area": "Rooksbury Mill, Andover",
+   "region": "south-east",
+   "lat": 51.20069,
+   "lng": -1.4834
+  },
+  "way/1228042418": {
+   "page": "playground-off-lees-court-road-sheldwich",
+   "name": "Playground off Lees Court Road",
+   "area": "Sheldwich",
+   "region": "south-east",
+   "lat": 51.27266,
+   "lng": 0.88209
+  },
+  "way/951917775": {
+   "page": "playground-off-oxford-gardens-shepway-maidstone",
+   "name": "Playground off Oxford Gardens",
+   "area": "Shepway, Maidstone",
+   "region": "south-east",
+   "lat": 51.25612,
+   "lng": 0.55154
+  },
+  "way/1028633701": {
+   "page": "playground-off-dairy-lane-shide-newport",
+   "name": "Playground off Dairy Lane",
+   "area": "Shide, Newport",
+   "region": "south-east",
+   "lat": 50.68989,
+   "lng": -1.29132
+  },
+  "way/1550662040": {
+   "page": "playground-off-bucksford-lane-singleton-ashford",
+   "name": "Playground off Bucksford Lane",
+   "area": "Singleton, Ashford",
+   "region": "south-east",
+   "lat": 51.14567,
+   "lng": 0.84403
+  },
+  "node/9572891453": {
+   "page": "playground-off-arethusa-road-snodhurst-rochester",
+   "name": "Playground off Arethusa Road",
+   "area": "Snodhurst, Rochester",
+   "region": "south-east",
+   "lat": 51.36356,
+   "lng": 0.50649
+  },
+  "way/846547406": {
+   "page": "playground-off-oak-tree-road-south-ashford-ashford",
+   "name": "Playground off Oak Tree Road",
+   "area": "South Ashford, Ashford",
+   "region": "south-east",
+   "lat": 51.14065,
+   "lng": 0.8576
+  },
+  "way/284353398": {
+   "page": "playground-off-eliot-hill-st-stephens-canterbury",
+   "name": "Playground off Eliot Hill",
+   "area": "St. Stephen's, Canterbury",
+   "region": "south-east",
+   "lat": 51.2933,
+   "lng": 1.07283
+  },
+  "way/1166135026": {
+   "page": "central-astroturph-sundridge",
+   "name": "Central astroturph",
+   "area": "Sundridge",
+   "region": "south-east",
+   "lat": 51.28232,
+   "lng": 0.12216
+  },
+  "way/1184027758": {
+   "page": "playground-off-combe-bank-drive-sundridge",
+   "name": "Playground off Combe Bank Drive",
+   "area": "Sundridge",
+   "region": "south-east",
+   "lat": 51.28132,
+   "lng": 0.12249
+  },
+  "way/1392394516": {
+   "page": "playground-off-craylands-lane-swanscombe-2",
+   "name": "Playground off Craylands Lane",
+   "area": "Swanscombe",
+   "region": "south-east",
+   "lat": 51.44831,
+   "lng": 0.30001
+  },
+  "way/1105653535": {
+   "page": "playground-off-priory-road-the-brents-faversham",
+   "name": "Playground off Priory Road",
+   "area": "The Brents, Faversham",
+   "region": "south-east",
+   "lat": 51.32059,
+   "lng": 0.88392
+  },
+  "way/468667395": {
+   "page": "playground-off-king-edward-road-troy-town-rochester",
+   "name": "Playground off King Edward Road",
+   "area": "Troy Town, Rochester",
+   "region": "south-east",
+   "lat": 51.38559,
+   "lng": 0.50154
+  },
+  "way/468667394": {
+   "page": "playground-off-lockington-grove-troy-town-rochester",
+   "name": "Playground off Lockington Grove",
+   "area": "Troy Town, Rochester",
+   "region": "south-east",
+   "lat": 51.38577,
+   "lng": 0.50337
+  },
+  "way/468672204": {
+   "page": "playground-off-maidstone-road-troy-town-rochester",
+   "name": "Playground off Maidstone Road",
+   "area": "Troy Town, Rochester",
+   "region": "south-east",
+   "lat": 51.37047,
+   "lng": 0.49849
+  },
+  "way/468667391": {
+   "page": "playground-off-the-precinct-troy-town-rochester",
+   "name": "Playground off The Precinct",
+   "area": "Troy Town, Rochester",
+   "region": "south-east",
+   "lat": 51.38789,
+   "lng": 0.50213
+  },
+  "way/468672206": {
+   "page": "playground-off-valley-view-road-troy-town-rochester",
+   "name": "Playground off Valley View Road",
+   "area": "Troy Town, Rochester",
+   "region": "south-east",
+   "lat": 51.37005,
+   "lng": 0.49759
+  },
+  "way/806556739": {
+   "page": "pre-prep-playground-upper-clatford-test-valley",
+   "name": "Pre-prep playground",
+   "area": "Upper Clatford",
+   "region": "south-east",
+   "lat": 51.17403,
+   "lng": -1.5179
+  },
+  "way/89902191": {
+   "page": "playground-off-the-parchment-west-leigh-havant",
+   "name": "Playground off The Parchment",
+   "area": "Warblington, Havant",
+   "region": "south-east",
+   "lat": 50.84958,
+   "lng": -0.98334
+  },
+  "way/470625505": {
+   "page": "playground-off-halterworth-lane-whitenap-romsey-2",
+   "name": "Playground off Halterworth Lane",
+   "area": "Whitenap, Romsey",
+   "region": "south-east",
+   "lat": 50.98864,
+   "lng": -1.47007
+  },
+  "way/470625503": {
+   "page": "playground-off-halterworth-lane-whitenap-romsey",
+   "name": "Playground off Halterworth Lane",
+   "area": "Whitenap, Romsey",
+   "region": "south-east",
+   "lat": 50.98795,
+   "lng": -1.46983
+  },
+  "way/992511030": {
+   "page": "playground-off-sheppy-place-windmill-hill-gravesend",
+   "name": "Playground off Sheppy Place",
+   "area": "Windmill Hill, Gravesend",
+   "region": "south-east",
+   "lat": 51.43709,
+   "lng": 0.36819
+  },
+  "way/992511014": {
+   "page": "playground-off-wrotham-road-windmill-hill-gravesend",
+   "name": "Playground off Wrotham Road",
+   "area": "Windmill Hill, Gravesend",
+   "region": "south-east",
+   "lat": 51.43714,
+   "lng": 0.36688
+  },
+  "way/1080556084": {
+   "page": "woolton-hill-playground-woolton-hill-basingstoke-and-deane",
+   "name": "Woolton Hill Playground",
+   "area": "Woolton Hill",
+   "region": "south-east",
+   "lat": 51.34915,
+   "lng": -1.37867
+  },
+  "way/514535808": {
+   "page": "playground-off-somerton-road-east-clevedon-clevedon",
+   "name": "Playground off Somerton Road",
+   "area": "East Clevedon, Clevedon",
+   "region": "south-west",
+   "lat": 51.4313,
+   "lng": -2.84778
+  },
+  "way/729736700": {
+   "page": "playground-off-ableton-court-severn-beach",
+   "name": "Playground off Ableton Court",
+   "area": "Severn Beach",
+   "region": "south-west",
+   "lat": 51.55869,
+   "lng": -2.66046
+  },
+  "way/881912536": {
+   "page": "playground-off-west-street-newcastle-higher-aberkenfig",
+   "name": "Playground off West Street",
+   "area": "Aberkenfig",
+   "region": "wales",
+   "lat": 51.54061,
+   "lng": -3.60053
+  },
+  "way/982831917": {
+   "page": "playground-off-abertridwr-abertridwr",
+   "name": "Playground off Abertridwr",
+   "area": "Abertridwr",
+   "region": "wales",
+   "lat": 52.76078,
+   "lng": -3.43214
+  },
+  "way/218241968": {
+   "page": "playground-off-leaches-lane-aston-park-mancot",
+   "name": "Playground off Leaches Lane",
+   "area": "Aston Park, Mancot",
+   "region": "wales",
+   "lat": 53.19965,
+   "lng": -3.01184
+  },
+  "way/218748383": {
+   "page": "botwnnog-playground-botwnnog",
+   "name": "Botwnnog Playground",
+   "area": "Botwnnog",
+   "region": "wales",
+   "lat": 52.85281,
+   "lng": -4.58108
+  },
+  "way/1359312119": {
+   "page": "playground-off-st-georges-avenue-bridgend",
+   "name": "Playground off St. George's Avenue",
+   "area": "Bridgend",
+   "region": "wales",
+   "lat": 51.52307,
+   "lng": -3.57982
+  },
+  "way/1238903928": {
+   "page": "playground-off-tegid-drive-broughton-stansty",
+   "name": "Playground off Tegid Drive",
+   "area": "Broughton, Stansty",
+   "region": "wales",
+   "lat": 53.05782,
+   "lng": -3.03275
+  },
+  "way/1157911897": {
+   "page": "playground-off-tabor-terrace-bryn-dafen",
+   "name": "Playground off Tabor Terrace",
+   "area": "Bryn, Dafen",
+   "region": "wales",
+   "lat": 51.68498,
+   "lng": -4.10981
+  },
+  "way/1295391209": {
+   "page": "playground-off-oakland-terrace-bute-town-rhymney",
+   "name": "Playground off Oakland Terrace",
+   "area": "Bute Town, Rhymney",
+   "region": "wales",
+   "lat": 51.76668,
+   "lng": -3.29077
+  },
+  "way/724139804": {
+   "page": "playground-off-llwyn-mawr-close-carnglas-swansea",
+   "name": "Playground off LLwyn Mawr Close",
+   "area": "Carnglas, Swansea",
+   "region": "wales",
+   "lat": 51.62544,
+   "lng": -3.99488
+  },
+  "way/724139807": {
+   "page": "playground-off-llwynmawr-road-carnglas-swansea",
+   "name": "Playground off Llwynmawr Road",
+   "area": "Carnglas, Swansea",
+   "region": "wales",
+   "lat": 51.62546,
+   "lng": -3.99339
+  },
+  "way/1446762579": {
+   "page": "playground-off-bro-dewi-casmael-puncheston",
+   "name": "Playground off Bro Dewi",
+   "area": "Casmael / Puncheston",
+   "region": "wales",
+   "lat": 51.93057,
+   "lng": -4.90247
+  },
+  "way/1455150571": {
+   "page": "playground-off-hazel-close-cefn",
+   "name": "Playground off Hazel Close",
+   "area": "Cefn",
+   "region": "wales",
+   "lat": 52.68854,
+   "lng": -3.0761
+  },
+  "way/1557673083": {
+   "page": "playground-off-hoelion-grove-cefn-rhiwderin",
+   "name": "Playground off Hoelion Grove",
+   "area": "Cefn, Rhiwderin",
+   "region": "wales",
+   "lat": 51.58252,
+   "lng": -3.05773
+  },
+  "way/654740595": {
+   "page": "playground-off-stryd-cemaes-cemaes-street-cilgerran",
+   "name": "Playground off Stryd Cemaes / Cemaes Street",
+   "area": "Cilgerran",
+   "region": "wales",
+   "lat": 52.05561,
+   "lng": -4.63843
+  },
+  "way/1193850381": {
+   "page": "playground-off-heol-capel-isaf-coed-cae-llanelli",
+   "name": "Playground off Heol Capel Isaf",
+   "area": "Coed Cae, Llanelli",
+   "region": "wales",
+   "lat": 51.68482,
+   "lng": -4.13836
+  },
+  "way/1299580370": {
+   "page": "playground-off-waunaeron-crymych",
+   "name": "Playground off Waunaeron",
+   "area": "Crymych",
+   "region": "wales",
+   "lat": 51.97001,
+   "lng": -4.64564
+  },
+  "way/1000592481": {
+   "page": "playground-off-bro-deg-cwmbach",
+   "name": "Playground off Bro Deg",
+   "area": "Cwmbach",
+   "region": "wales",
+   "lat": 51.70297,
+   "lng": -3.41219
+  },
+  "way/1414265675": {
+   "page": "playground-off-glynmarch-street-deri",
+   "name": "Playground off Glynmarch Street",
+   "area": "Deri",
+   "region": "wales",
+   "lat": 51.70881,
+   "lng": -3.26675
+  },
+  "node/4418246613": {
+   "page": "playground-off-north-drive-esgairgeiliog-ceinws",
+   "name": "Playground off North Drive",
+   "area": "Esgairgeiliog Ceinws",
+   "region": "wales",
+   "lat": 52.62393,
+   "lng": -3.83955
+  },
+  "way/897570470": {
+   "page": "playground-off-poyser-street-felin-puleston-wrexham",
+   "name": "Playground off Poyser Street",
+   "area": "Felin Puleston, Wrexham",
+   "region": "wales",
+   "lat": 53.0418,
+   "lng": -3.00137
+  },
+  "way/255384610": {
+   "page": "llansantffraid-glyn-ceiriog-playground-llansantffraid-glyn-c",
+   "name": "Glyn Ceiriog Playground",
+   "area": "Glyn Ceiriog",
+   "region": "wales",
+   "lat": 52.9335,
+   "lng": -3.18035
+  },
+  "way/1192707270": {
+   "page": "playground-off-cefn-brith-halfway-dafen",
+   "name": "Playground off Cefn Brith",
+   "area": "Halfway, Dafen",
+   "region": "wales",
+   "lat": 51.68764,
+   "lng": -4.13325
+  },
+  "way/327784562": {
+   "page": "playground-off-strand-walk-holywell",
+   "name": "Playground off Strand Walk",
+   "area": "Holywell",
+   "region": "wales",
+   "lat": 53.27777,
+   "lng": -3.21679
+  },
+  "way/224242389": {
+   "page": "playground-off-kelsterton-road-kelsterton-connahs-quay",
+   "name": "Playground off Kelsterton Road",
+   "area": "Kelsterton, Connah's Quay",
+   "region": "wales",
+   "lat": 53.22615,
+   "lng": -3.07766
+  },
+  "node/11314972069": {
+   "page": "playground-off-dunvant-road-killay-dunvant",
+   "name": "Playground off Dunvant Road",
+   "area": "Killay, Dunvant",
+   "region": "wales",
+   "lat": 51.62239,
+   "lng": -4.01549
+  },
+  "way/1075552883": {
+   "page": "playground-off-meadow-croft-laleston",
+   "name": "Playground off Meadow Croft",
+   "area": "Laleston",
+   "region": "wales",
+   "lat": 51.50404,
+   "lng": -3.62479
+  },
+  "way/1467689021": {
+   "page": "playground-off-sycamore-close-litchard-bridgend",
+   "name": "Playground off Sycamore Close",
+   "area": "Litchard, Bridgend",
+   "region": "wales",
+   "lat": 51.52439,
+   "lng": -3.579
+  },
+  "way/297638537": {
+   "page": "playground-off-nant-y-gro-llanasa-upper-gronant",
+   "name": "Playground off Nant y Gro",
+   "area": "Llanasa, Upper Gronant",
+   "region": "wales",
+   "lat": 53.33825,
+   "lng": -3.35659
+  },
+  "way/1022212104": {
+   "page": "playground-off-dinas-road-llanfaes-brecon",
+   "name": "Playground off Dinas Road",
+   "area": "Llanfaes, Brecon",
+   "region": "wales",
+   "lat": 51.94595,
+   "lng": -3.39427
+  },
+  "way/157750539": {
+   "page": "bryn-playground-bryn-llangennech-2",
+   "name": "Llangennech Playground",
+   "area": "Llangennech",
+   "region": "wales",
+   "lat": 51.70225,
+   "lng": -4.07942
+  },
+  "way/157750536": {
+   "page": "bryn-playground-bryn-llangennech",
+   "name": "Llangennech Playground",
+   "area": "Llangennech",
+   "region": "wales",
+   "lat": 51.70259,
+   "lng": -4.07846
+  },
+  "way/1463948118": {
+   "page": "playground-off-heol-nant-llannon",
+   "name": "Playground off Heol Nant",
+   "area": "Llannon",
+   "region": "wales",
+   "lat": 51.75821,
+   "lng": -4.11377
+  },
+  "way/1334256719": {
+   "page": "playground-off-watling-street-llanrwst",
+   "name": "Playground off Watling Street",
+   "area": "Llanrwst",
+   "region": "wales",
+   "lat": 53.13796,
+   "lng": -3.79452
+  },
+  "way/199102448": {
+   "page": "playground-off-dolecoed-road-llanwrtyd-wells",
+   "name": "Playground off Dolecoed Road",
+   "area": "Llanwrtyd Wells",
+   "region": "wales",
+   "lat": 52.10734,
+   "lng": -3.64154
+  },
+  "way/42198509": {
+   "page": "playground-off-oliphant-circle-malpas-court-newport",
+   "name": "Playground off Oliphant Circle",
+   "area": "Malpas Court, Newport",
+   "region": "wales",
+   "lat": 51.61727,
+   "lng": -3.01421
+  },
+  "way/42198390": {
+   "page": "playground-off-almond-drive-malpas-park-newport",
+   "name": "Playground off Almond Drive",
+   "area": "Malpas Park, Newport",
+   "region": "wales",
+   "lat": 51.61649,
+   "lng": -3.00635
+  },
+  "way/145251949": {
+   "page": "playground-off-graig-park-avenue-malpas-park-newport",
+   "name": "Playground off Graig Park Avenue",
+   "area": "Malpas Park, Newport",
+   "region": "wales",
+   "lat": 51.6094,
+   "lng": -3.00231
+  },
+  "way/145252075": {
+   "page": "playground-off-pillmawr-road-malpas-park-newport-2",
+   "name": "Playground off Pillmawr Road",
+   "area": "Malpas Park, Newport",
+   "region": "wales",
+   "lat": 51.61,
+   "lng": -3.00216
+  },
+  "way/753323099": {
+   "page": "playground-off-townhill-road-mayhill-swansea",
+   "name": "Playground off Townhill Road",
+   "area": "Mayhill, Swansea",
+   "region": "wales",
+   "lat": 51.62722,
+   "lng": -3.96228
+  },
+  "way/874027972": {
+   "page": "mold-playground-mold-2",
+   "name": "Mold Playground",
+   "area": "Mold",
+   "region": "wales",
+   "lat": 53.1648,
+   "lng": -3.13911
+  },
+  "way/132153357": {
+   "page": "playground-off-the-park-mold",
+   "name": "Playground off The Park",
+   "area": "Mold",
+   "region": "wales",
+   "lat": 53.16298,
+   "lng": -3.14505
+  },
+  "way/874027971": {
+   "page": "playground-off-victoria-road-mold",
+   "name": "Playground off Victoria Road",
+   "area": "Mold",
+   "region": "wales",
+   "lat": 53.16536,
+   "lng": -3.13818
+  },
+  "way/1407863922": {
+   "page": "playground-off-ffordd-owen-northop",
+   "name": "Playground off Ffordd Owen",
+   "area": "Northop",
+   "region": "wales",
+   "lat": 53.20838,
+   "lng": -3.13666
+  },
+  "way/298120844": {
+   "page": "playground-off-saint-peters-park-northop",
+   "name": "Playground off Saint Peters Park",
+   "area": "Northop",
+   "region": "wales",
+   "lat": 53.2089,
+   "lng": -3.13599
+  },
+  "way/441751173": {
+   "page": "playground-off-lower-st-marys-street-parrog-newport",
+   "name": "Playground off Lower St Mary's Street",
+   "area": "Parrog, Newport",
+   "region": "wales",
+   "lat": 52.01852,
+   "lng": -4.83082
+  },
+  "way/852795915": {
+   "page": "newcastle-higher-playground-newcastle-higher-pen-y-fai",
+   "name": "Pen-y-fai Playground",
+   "area": "Pen-y-fai",
+   "region": "wales",
+   "lat": 51.52645,
+   "lng": -3.59686
+  },
+  "way/1007569258": {
+   "page": "playground-off-park-road-llanrhidian-higher-penclawdd",
+   "name": "Playground off Park Road",
+   "area": "Penclawdd",
+   "region": "wales",
+   "lat": 51.64163,
+   "lng": -4.11083
+  },
+  "way/609899653": {
+   "page": "playground-off-bush-street-pennar-pembroke-dock-2",
+   "name": "Playground off Bush Street",
+   "area": "Pennar, Pembroke Dock",
+   "region": "wales",
+   "lat": 51.69016,
+   "lng": -4.9361
+  },
+  "way/609899654": {
+   "page": "playground-off-st-peters-road-pennar-pembroke-dock",
+   "name": "Playground off St. Peter's Road",
+   "area": "Pennar, Pembroke Dock",
+   "region": "wales",
+   "lat": 51.69001,
+   "lng": -4.93484
+  },
+  "way/820166510": {
+   "page": "playground-off-bronllwyn-pentyrch-cardiff",
+   "name": "Playground off Bronllwyn",
+   "area": "Pentyrch, Cardiff",
+   "region": "wales",
+   "lat": 51.5293,
+   "lng": -3.30066
+  },
+  "way/927863496": {
+   "page": "playground-off-parc-brychan-penybryn-pant",
+   "name": "Playground off Parc Brychan",
+   "area": "Penybryn, Pant",
+   "region": "wales",
+   "lat": 51.76253,
+   "lng": -3.36339
+  },
+  "way/614192339": {
+   "page": "playground-off-brookpark-avenue-prestatyn",
+   "name": "Playground off Brookpark Avenue",
+   "area": "Prestatyn",
+   "region": "wales",
+   "lat": 53.33909,
+   "lng": -3.40261
+  },
+  "way/145221446": {
+   "page": "playground-off-heol-erwin-rhiwbina-cardiff",
+   "name": "Playground off Heol Erwin",
+   "area": "Rhiwbina, Cardiff",
+   "region": "wales",
+   "lat": 51.53157,
+   "lng": -3.20791
+  },
+  "way/145221445": {
+   "page": "playground-off-heol-uchaf-rhiwbina-cardiff-2",
+   "name": "Playground off Heol Uchaf",
+   "area": "Rhiwbina, Cardiff",
+   "region": "wales",
+   "lat": 51.5315,
+   "lng": -3.20967
+  },
+  "way/145221443": {
+   "page": "playground-off-heol-uchaf-rhiwbina-cardiff",
+   "name": "Playground off Heol Uchaf",
+   "area": "Rhiwbina, Cardiff",
+   "region": "wales",
+   "lat": 51.53097,
+   "lng": -3.20834
+  },
+  "way/256652456": {
+   "page": "playground-off-heol-caradoc-rhosllanerchrugog",
+   "name": "Playground off Heol Caradoc",
+   "area": "Rhosllanerchrugog",
+   "region": "wales",
+   "lat": 53.00721,
+   "lng": -3.06343
+  },
+  "way/1331604974": {
+   "page": "rhostrehwfa-playground-rhostrehwfa",
+   "name": "Rhostrehwfa Playground",
+   "area": "Rhostrehwfa",
+   "region": "wales",
+   "lat": 53.23601,
+   "lng": -4.35349
+  },
+  "way/1058335995": {
+   "page": "playground-off-frances-lane-saundersfoot",
+   "name": "Playground off Frances Lane",
+   "area": "Saundersfoot",
+   "region": "wales",
+   "lat": 51.71331,
+   "lng": -4.69979
+  },
+  "way/1018667108": {
+   "page": "playground-off-east-drive-st-donats-st-donats",
+   "name": "Playground off East Drive",
+   "area": "St Donats",
+   "region": "wales",
+   "lat": 51.40119,
+   "lng": -3.53082
+  },
+  "way/132154144": {
+   "page": "playground-off-primrose-hill-st-george",
+   "name": "Playground off Primrose Hill",
+   "area": "St. George",
+   "region": "wales",
+   "lat": 53.27066,
+   "lng": -3.53928
+  },
+  "way/1015261106": {
+   "page": "playground-off-stryd-fawr-talsarnau",
+   "name": "Playground off Stryd Fawr",
+   "area": "Talsarnau",
+   "region": "wales",
+   "lat": 52.90171,
+   "lng": -4.06659
+  },
+  "way/1491611503": {
+   "page": "playground-off-new-road-tir-y-berth-2-2",
+   "name": "Playground off New Road",
+   "area": "Tir-y-Berth",
+   "region": "wales",
+   "lat": 51.67183,
+   "lng": -3.2249
+  },
+  "way/1491611502": {
+   "page": "playground-off-new-road-tir-y-berth-2",
+   "name": "Playground off New Road",
+   "area": "Tir-y-Berth",
+   "region": "wales",
+   "lat": 51.67241,
+   "lng": -3.22435
+  },
+  "way/130006612": {
+   "page": "playground-off-gelert-street-tre-boeth-swansea",
+   "name": "Playground off Gelert Street",
+   "area": "Tre-boeth, Swansea",
+   "region": "wales",
+   "lat": 51.64956,
+   "lng": -3.95037
+  },
+  "way/915124836": {
+   "page": "playground-off-london-road-trelawnyd-and-gwaenysgor-trelawny",
+   "name": "Playground off London Road",
+   "area": "Trelawnyd",
+   "region": "wales",
+   "lat": 53.30698,
+   "lng": -3.36962
+  },
+  "way/566733902": {
+   "page": "playground-off-newton-street-troed-y-rhiw-abercanaid",
+   "name": "Playground off Newton Street",
+   "area": "Troed-y-rhiw, Abercanaid",
+   "region": "wales",
+   "lat": 51.7223,
+   "lng": -3.36172
+  },
+  "way/999945424": {
+   "page": "playground-off-copperworks-road-t-isaf-llanelli-2",
+   "name": "Playground off Copperworks Road",
+   "area": "Tŷ-isaf, Llanelli",
+   "region": "wales",
+   "lat": 51.67247,
+   "lng": -4.16302
+  },
+  "way/999945422": {
+   "page": "playground-off-copperworks-road-t-isaf-llanelli",
+   "name": "Playground off Copperworks Road",
+   "area": "Tŷ-isaf, Llanelli",
+   "region": "wales",
+   "lat": 51.67241,
+   "lng": -4.16195
+  },
+  "way/42198394": {
+   "page": "playground-off-wavell-drive-woodlands-newport",
+   "name": "Playground off Wavell Drive",
+   "area": "Woodlands, Newport",
+   "region": "wales",
+   "lat": 51.61711,
+   "lng": -3.00695
+  },
+  "way/842195482": {
+   "page": "playground-off-high-street-ynys-ddu",
+   "name": "Playground off High Street",
+   "area": "Ynys-ddu",
+   "region": "wales",
+   "lat": 51.62415,
+   "lng": -3.18626
+  },
+  "way/1382854818": {
+   "page": "rooftop-playground-bearwood-cape-hill",
+   "name": "Rooftop Playground",
+   "area": "Bearwood, Cape Hill",
+   "region": "west-midlands",
+   "lat": 52.48311,
+   "lng": -1.96384
+  },
+  "way/403670244": {
+   "page": "playground-off-theodore-close-brades-vilage-oldbury",
+   "name": "Playground off Theodore Close",
+   "area": "Brades Vilage, Oldbury",
+   "region": "west-midlands",
+   "lat": 52.51146,
+   "lng": -2.02913
+  },
+  "way/174949933": {
+   "page": "playground-off-grafton-road-causeway-green-sandwell",
+   "name": "Playground off Grafton Road",
+   "area": "Causeway Green",
+   "region": "west-midlands",
+   "lat": 52.481,
+   "lng": -2.01945
+  },
+  "way/174948888": {
+   "page": "playground-off-heath-croft-causeway-green-sandwell",
+   "name": "Playground off Heath Croft",
+   "area": "Causeway Green",
+   "region": "west-midlands",
+   "lat": 52.48162,
+   "lng": -2.02001
+  },
+  "way/309912885": {
+   "page": "playground-off-the-street-causeway-green-sandwell",
+   "name": "Playground off The Street",
+   "area": "Causeway Green",
+   "region": "west-midlands",
+   "lat": 52.48013,
+   "lng": -2.01013
+  },
+  "way/830306142": {
+   "page": "playground-off-handsworth-drive-hamstead-sandwell",
+   "name": "Playground off Handsworth Drive",
+   "area": "Hamstead, Birmingham",
+   "region": "west-midlands",
+   "lat": 52.54944,
+   "lng": -1.92372
+  },
+  "way/547291359": {
+   "page": "playground-off-carisbrooke-road-hill-top-sandwell",
+   "name": "Playground off Carisbrooke Road",
+   "area": "Hill Top, Wednesbury",
+   "region": "west-midlands",
+   "lat": 52.55021,
+   "lng": -1.98918
+  },
+  "way/1032872736": {
+   "page": "playground-off-houlton-way-houlton-rugby",
+   "name": "Playground off Houlton Way",
+   "area": "Houlton, Rugby",
+   "region": "west-midlands",
+   "lat": 52.3571,
+   "lng": -1.18332
+  },
+  "relation/18231346": {
+   "page": "playground-off-west-bromwich-parkway-kenrick-village-west-br",
+   "name": "Playground off West Bromwich Parkway",
+   "area": "Kenrick Village, West Bromwich",
+   "region": "west-midlands",
+   "lat": 52.51064,
+   "lng": -1.98799
+  },
+  "way/545009142": {
+   "page": "playground-off-wheelers-lane-kings-heath-birmingham",
+   "name": "Playground off Wheelers Lane",
+   "area": "Kings Heath, Birmingham",
+   "region": "west-midlands",
+   "lat": 52.42862,
+   "lng": -1.88721
+  },
+  "way/316919556": {
+   "page": "trim-trail-kings-heath-birmingham",
+   "name": "Trim Trail",
+   "area": "Kings Heath, Birmingham",
+   "region": "west-midlands",
+   "lat": 52.43736,
+   "lng": -1.89052
+  },
+  "way/645621647": {
+   "page": "playground-off-knottsall-lane-langley-green-sandwell",
+   "name": "Playground off Knottsall Lane",
+   "area": "Langley Green",
+   "region": "west-midlands",
+   "lat": 52.48362,
+   "lng": -2.00177
+  },
+  "way/179156339": {
+   "page": "playground-off-gravity-mews-moat-farm-warley",
+   "name": "Playground off Gravity Mews",
+   "area": "Moat Farm, Warley",
+   "region": "west-midlands",
+   "lat": 52.4833,
+   "lng": -1.99772
+  },
+  "way/179460231": {
+   "page": "playground-off-moore-crescent-moat-farm-warley",
+   "name": "Playground off Moore Crescent",
+   "area": "Moat Farm, Warley",
+   "region": "west-midlands",
+   "lat": 52.48384,
+   "lng": -1.99849
+  },
+  "way/542168625": {
+   "page": "playground-off-barncroft-road-oakham-sandwell",
+   "name": "Playground off Barncroft Road",
+   "area": "Oakham",
+   "region": "west-midlands",
+   "lat": 52.50738,
+   "lng": -2.05827
+  },
+  "way/542165460": {
+   "page": "playground-off-regent-road-oakham-sandwell",
+   "name": "Playground off Regent Road",
+   "area": "Oakham, Dudley",
+   "region": "west-midlands",
+   "lat": 52.50794,
+   "lng": -2.05777
+  },
+  "way/900214152": {
+   "page": "playground-off-aldridge-road-queslett-birmingham",
+   "name": "Playground off Aldridge Road",
+   "area": "Queslett, Birmingham",
+   "region": "west-midlands",
+   "lat": 52.54086,
+   "lng": -1.89956
+  },
+  "way/343751542": {
+   "page": "playground-off-gresham-road-rood-end-sandwell",
+   "name": "Playground off Gresham Road",
+   "area": "Rood End",
+   "region": "west-midlands",
+   "lat": 52.49567,
+   "lng": -2.00054
+  },
+  "way/335610434": {
+   "page": "playground-off-redwood-trade-park-rood-end-sandwell",
+   "name": "Playground off Redwood Trade Park",
+   "area": "Rood End",
+   "region": "west-midlands",
+   "lat": 52.5016,
+   "lng": -1.9955
+  },
+  "node/5021787603": {
+   "page": "parade-ground-selly-park-birmingham",
+   "name": "Parade Ground",
+   "area": "Selly Park, Birmingham",
+   "region": "west-midlands",
+   "lat": 52.4509,
+   "lng": -1.92205
+  },
+  "way/179155523": {
+   "page": "playground-off-bristnall-hall-road-the-beeches-warley",
+   "name": "Playground off Bristnall Hall Road",
+   "area": "The Beeches, Warley",
+   "region": "west-midlands",
+   "lat": 52.48321,
+   "lng": -1.99887
+  },
+  "way/403670255": {
+   "page": "tividale-playground-tividale-sandwell-2",
+   "name": "Tividale Playground",
+   "area": "Tividale",
+   "region": "west-midlands",
+   "lat": 52.51181,
+   "lng": -2.03004
+  },
+  "way/181644053": {
+   "page": "playground-off-bleakhouse-road-warley-salop-sandwell",
+   "name": "Playground off Bleakhouse Road",
+   "area": "Warley Salop",
+   "region": "west-midlands",
+   "lat": 52.47568,
+   "lng": -1.99941
+  },
+  "way/307464472": {
+   "page": "playground-off-queens-drive-whiteheath-gate-sandwell",
+   "name": "Playground off Queens Drive",
+   "area": "Whiteheath Gate, Blackheath",
+   "region": "west-midlands",
+   "lat": 52.48738,
+   "lng": -2.03111
+  },
+  "way/836439410": {
+   "page": "playground-off-ascot-way-acomb-york",
+   "name": "Playground off Ascot Way",
+   "area": "Acomb, York",
+   "region": "yorkshire",
+   "lat": 53.94864,
+   "lng": -1.11908
+  },
+  "way/938134316": {
+   "page": "playground-off-silver-street-barton",
+   "name": "Playground off Silver Street",
+   "area": "Barton",
+   "region": "yorkshire",
+   "lat": 54.47475,
+   "lng": -1.64257
+  },
+  "way/839247832": {
+   "page": "playground-off-crest-hill-road-brackenhall-huddersfield-2",
+   "name": "Playground off Crest Hill Road",
+   "area": "Brackenhall, Huddersfield",
+   "region": "yorkshire",
+   "lat": 53.67075,
+   "lng": -1.77489
+  },
+  "way/839247828": {
+   "page": "playground-off-crest-hill-road-brackenhall-huddersfield",
+   "name": "Playground off Crest Hill Road",
+   "area": "Brackenhall, Huddersfield",
+   "region": "yorkshire",
+   "lat": 53.67064,
+   "lng": -1.7738
+  },
+  "way/839247831": {
+   "page": "playground-off-weavers-drive-brackenhall-huddersfield",
+   "name": "Playground off Weavers Drive",
+   "area": "Brackenhall, Huddersfield",
+   "region": "yorkshire",
+   "lat": 53.67021,
+   "lng": -1.77572
+  },
+  "node/2284606562": {
+   "page": "playground-off-bramham-road-bramham-leeds",
+   "name": "Playground off Bramham Road",
+   "area": "Bramham",
+   "region": "yorkshire",
+   "lat": 53.88736,
+   "lng": -1.35108
+  },
+  "way/1201139866": {
+   "page": "playground-off-bolton-street-broomhall-sheffield",
+   "name": "Playground off Bolton Street",
+   "area": "Broomhall, Sheffield",
+   "region": "yorkshire",
+   "lat": 53.37837,
+   "lng": -1.48141
+  },
+  "way/265529308": {
+   "page": "playground-off-elmham-road-cantley-doncaster-2",
+   "name": "Playground off Elmham Road",
+   "area": "Cantley, Doncaster",
+   "region": "yorkshire",
+   "lat": 53.51235,
+   "lng": -1.07679
+  },
+  "way/265529307": {
+   "page": "playground-off-elmham-road-cantley-doncaster",
+   "name": "Playground off Elmham Road",
+   "area": "Cantley, Doncaster",
+   "region": "yorkshire",
+   "lat": 53.51208,
+   "lng": -1.07812
+  },
+  "node/13960036224": {
+   "page": "playground-off-keresforth-road-dodworth-barnsley",
+   "name": "Playground off Keresforth Road",
+   "area": "Dodworth, Barnsley",
+   "region": "yorkshire",
+   "lat": 53.5402,
+   "lng": -1.51688
+  },
+  "way/442540986": {
+   "page": "playground-off-wendy-avenue-gallows-hill-ripon",
+   "name": "Playground off Wendy Avenue",
+   "area": "Gallows Hill, Ripon",
+   "region": "yorkshire",
+   "lat": 54.12667,
+   "lng": -1.52873
+  },
+  "way/178357014": {
+   "page": "playground-off-st-wilfrids-circus-gipton-leeds",
+   "name": "Playground off St Wilfrids Circus",
+   "area": "Gipton, Leeds",
+   "region": "yorkshire",
+   "lat": 53.8138,
+   "lng": -1.506
+  },
+  "way/380232341": {
+   "page": "playground-off-colne-road-glusburn",
+   "name": "Playground off Colne Road",
+   "area": "Glusburn",
+   "region": "yorkshire",
+   "lat": 53.89896,
+   "lng": -1.99682
+  },
+  "way/1133252362": {
+   "page": "playground-off-manor-road-golcar-kirklees",
+   "name": "Playground off Manor Road",
+   "area": "Golcar",
+   "region": "yorkshire",
+   "lat": 53.64016,
+   "lng": -1.85326
+  },
+  "way/1204946027": {
+   "page": "playground-off-high-street-grey-green",
+   "name": "Playground off High Street",
+   "area": "Grey Green",
+   "region": "yorkshire",
+   "lat": 53.55548,
+   "lng": -0.81613
+  },
+  "way/911414952": {
+   "page": "playground-off-rawthorpe-lane-grove-place-huddersfield",
+   "name": "Playground off Rawthorpe Lane",
+   "area": "Grove Place, Huddersfield",
+   "region": "yorkshire",
+   "lat": 53.6517,
+   "lng": -1.76131
+  },
+  "way/178357006": {
+   "page": "playground-off-ashton-court-harehills-leeds",
+   "name": "Playground off Ashton Court",
+   "area": "Harehills, Leeds",
+   "region": "yorkshire",
+   "lat": 53.81209,
+   "lng": -1.51455
+  },
+  "way/178357007": {
+   "page": "playground-off-conway-place-harehills-leeds",
+   "name": "Playground off Conway Place",
+   "area": "Harehills, Leeds",
+   "region": "yorkshire",
+   "lat": 53.81141,
+   "lng": -1.51358
+  },
+  "way/1247747477": {
+   "page": "playground-off-school-road-hemingbrough",
+   "name": "Playground off School Road",
+   "area": "Hemingbrough",
+   "region": "yorkshire",
+   "lat": 53.76604,
+   "lng": -0.97372
+  },
+  "way/124854584": {
+   "page": "playground-off-west-moor-lane-heslington-york",
+   "name": "Playground off West Moor Lane",
+   "area": "Heslington, York",
+   "region": "yorkshire",
+   "lat": 53.94136,
+   "lng": -1.0486
+  },
+  "way/361184928": {
+   "page": "playground-off-coronation-avenue-hinderwell",
+   "name": "Playground off Coronation Avenue",
+   "area": "Hinderwell",
+   "region": "yorkshire",
+   "lat": 54.53756,
+   "lng": -0.77594
+  },
+  "way/767830902": {
+   "page": "playground-off-wrangham-drive-hunmanby",
+   "name": "Playground off Wrangham Drive",
+   "area": "Hunmanby",
+   "region": "yorkshire",
+   "lat": 54.18381,
+   "lng": -0.31724
+  },
+  "node/5874315574": {
+   "page": "playground-off-langbaurgh-road-hutton-rudby",
+   "name": "Playground off Langbaurgh Road",
+   "area": "Hutton Rudby",
+   "region": "yorkshire",
+   "lat": 54.44792,
+   "lng": -1.28402
+  },
+  "way/1392382246": {
+   "page": "playground-off-swanee-road-kendray-barnsley",
+   "name": "Playground off Swanee Road",
+   "area": "Kendray, Barnsley",
+   "region": "yorkshire",
+   "lat": 53.5418,
+   "lng": -1.45684
+  },
+  "way/1434053536": {
+   "page": "playground-off-raley-street-kingstone-barnsley-2",
+   "name": "Playground off Raley Street",
+   "area": "Kingstone, Barnsley",
+   "region": "yorkshire",
+   "lat": 53.54819,
+   "lng": -1.49365
+  },
+  "way/1434053531": {
+   "page": "playground-off-raley-street-kingstone-barnsley",
+   "name": "Playground off Raley Street",
+   "area": "Kingstone, Barnsley",
+   "region": "yorkshire",
+   "lat": 53.54774,
+   "lng": -1.49448
+  },
+  "way/869742725": {
+   "page": "langton-playground-langton",
+   "name": "Langton Playground",
+   "area": "Langton",
+   "region": "yorkshire",
+   "lat": 54.09348,
+   "lng": -0.78484
+  },
+  "way/1116613000": {
+   "page": "playground-off-wensleydale-avenue-leyburn",
+   "name": "Playground off Wensleydale Avenue",
+   "area": "Leyburn",
+   "region": "yorkshire",
+   "lat": 54.31089,
+   "lng": -1.82132
+  },
+  "way/206676583": {
+   "page": "playground-off-lockwood-road-lockwood-kirklees",
+   "name": "Playground off Lockwood Road",
+   "area": "Lockwood, Huddersfield",
+   "region": "yorkshire",
+   "lat": 53.63473,
+   "lng": -1.79375
+  },
+  "way/282568945": {
+   "page": "playground-off-heath-crescent-low-bradley",
+   "name": "Playground off Heath Crescent",
+   "area": "Low Bradley",
+   "region": "yorkshire",
+   "lat": 53.93325,
+   "lng": -1.99835
+  },
+  "way/1061338070": {
+   "page": "playground-off-overdale-gardens-middle-deepdale-scarborough",
+   "name": "Playground off Overdale Gardens",
+   "area": "Middle Deepdale, Scarborough",
+   "region": "yorkshire",
+   "lat": 54.24644,
+   "lng": -0.39332
+  },
+  "way/1061338066": {
+   "page": "playground-off-the-boulevard-middle-deepdale-scarborough",
+   "name": "Playground off The Boulevard",
+   "area": "Middle Deepdale, Scarborough",
+   "region": "yorkshire",
+   "lat": 54.247,
+   "lng": -0.39321
+  },
+  "way/503513010": {
+   "page": "playground-off-st-stephens-close-mill-fields-skipton",
+   "name": "Playground off St Stephen's Close",
+   "area": "Mill Fields, Skipton",
+   "region": "yorkshire",
+   "lat": 53.96315,
+   "lng": -2.02046
+  },
+  "way/123318274": {
+   "page": "playground-off-millhouses-lane-millhouses-sheffield",
+   "name": "Playground off Millhouses Lane",
+   "area": "Millhouses, Sheffield",
+   "region": "yorkshire",
+   "lat": 53.35127,
+   "lng": -1.50877
+  },
+  "way/835845192": {
+   "page": "playground-off-pingle-road-millhouses-sheffield-2",
+   "name": "Playground off Pingle Road",
+   "area": "Millhouses, Sheffield",
+   "region": "yorkshire",
+   "lat": 53.34718,
+   "lng": -1.50956
+  },
+  "way/835845189": {
+   "page": "playground-off-pingle-road-millhouses-sheffield",
+   "name": "Playground off Pingle Road",
+   "area": "Millhouses, Sheffield",
+   "region": "yorkshire",
+   "lat": 53.34742,
+   "lng": -1.5087
+  },
+  "way/1450926335": {
+   "page": "playground-off-school-street-holme-valley-kirklees",
+   "name": "Playground off School Street",
+   "area": "Netherthong",
+   "region": "yorkshire",
+   "lat": 53.58435,
+   "lng": -1.78957
+  },
+  "way/1227350258": {
+   "page": "playground-off-western-bank-netherthorpe-sheffield",
+   "name": "Playground off Western Bank",
+   "area": "Netherthorpe, Sheffield",
+   "region": "yorkshire",
+   "lat": 53.38047,
+   "lng": -1.49063
+  },
+  "way/432248074": {
+   "page": "chapter-house-playground-north-yorkshire",
+   "name": "Chapter House Playground",
+   "area": "North Yorkshire",
+   "region": "yorkshire",
+   "lat": 54.02688,
+   "lng": -1.29309
+  },
+  "way/469115502": {
+   "page": "playground-off-thorpe-green-lane-north-yorkshire-2",
+   "name": "Playground off Thorpe Green Lane",
+   "area": "North Yorkshire",
+   "region": "yorkshire",
+   "lat": 54.02829,
+   "lng": -1.29478
+  },
+  "way/469106719": {
+   "page": "playground-off-thorpe-green-lane-north-yorkshire",
+   "name": "Playground off Thorpe Green Lane",
+   "area": "North Yorkshire",
+   "region": "yorkshire",
+   "lat": 54.02685,
+   "lng": -1.29536
+  },
+  "way/480314915": {
+   "page": "playground-off-brompton-road-northallerton",
+   "name": "Playground off Brompton Road",
+   "area": "Northallerton",
+   "region": "yorkshire",
+   "lat": 54.34659,
+   "lng": -1.43115
+  },
+  "node/3287967964": {
+   "page": "playground-off-arthington-lane-pool-leeds",
+   "name": "Playground off Arthington Lane",
+   "area": "Pool, Leeds",
+   "region": "yorkshire",
+   "lat": 53.90134,
+   "lng": -1.62387
+  },
+  "node/7683285511": {
+   "page": "playground-off-north-hill-road-ripon",
+   "name": "Playground off North Hill Road",
+   "area": "Ripon",
+   "region": "yorkshire",
+   "lat": 54.13491,
+   "lng": -1.39984
+  },
+  "way/169540673": {
+   "page": "playground-off-byland-road-ruswarp-whitby",
+   "name": "Playground off Byland Road",
+   "area": "Ruswarp, Whitby",
+   "region": "yorkshire",
+   "lat": 54.4846,
+   "lng": -0.63019
+  },
+  "way/942466621": {
+   "page": "playground-off-rose-avenue-sherburn-in-elmet",
+   "name": "Playground off Rose Avenue",
+   "area": "Sherburn in Elmet",
+   "region": "yorkshire",
+   "lat": 53.78774,
+   "lng": -1.25161
+  },
+  "way/1196526077": {
+   "page": "playground-off-holbeck-hill-south-cliff-scarborough-2",
+   "name": "Playground off Holbeck Hill",
+   "area": "South Cliff, Scarborough",
+   "region": "yorkshire",
+   "lat": 54.2621,
+   "lng": -0.38954
+  },
+  "way/1193954327": {
+   "page": "playground-off-holbeck-hill-south-cliff-scarborough",
+   "name": "Playground off Holbeck Hill",
+   "area": "South Cliff, Scarborough",
+   "region": "yorkshire",
+   "lat": 54.26282,
+   "lng": -0.39085
+  },
+  "way/1393583046": {
+   "page": "playground-off-lockeaflash-gardens-stairfoot-barnsley",
+   "name": "Playground off Lockeaflash Gardens",
+   "area": "Stairfoot, Barnsley",
+   "region": "yorkshire",
+   "lat": 53.54085,
+   "lng": -1.44324
+  },
+  "way/280335435": {
+   "page": "playground-off-halifax-road-thurgoland-barnsley",
+   "name": "Playground off Halifax Road",
+   "area": "Thurgoland",
+   "region": "yorkshire",
+   "lat": 53.50613,
+   "lng": -1.56833
+  },
+  "way/895212426": {
+   "page": "playground-off-woodthorpe-road-woodthorpe-sheffield",
+   "name": "Playground off Woodthorpe Road",
+   "area": "Woodthorpe, Sheffield",
+   "region": "yorkshire",
+   "lat": 53.36449,
+   "lng": -1.41381
+  },
+  "node/1066264462": {
+   "page": "playground-off-cartworth-road-holme-valley-holmfirth",
+   "name": "Playground off Cartworth Road",
+   "area": "Wooldale, Holmfirth",
+   "region": "yorkshire",
+   "lat": 53.56764,
+   "lng": -1.78547
+  }
+ }
+}

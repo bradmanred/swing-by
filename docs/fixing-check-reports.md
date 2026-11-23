@@ -53,6 +53,12 @@ Full lists are in the `quarterly-check` artifact on the run linked at the bottom
   "A playground on <council>'s own list of play areas."), and keep only equipment and ages the council confirms;
   move the rest of `notConfirmed`'s OpenStreetMap wording to "Exact position (taken from OpenStreetMap)". Don't
   rename the file. If it's a different play area, leave it and note it in the PR.
+- **Removed from school grounds, but on the council's list:** a playground we took off in November 2026 because
+  OpenStreetMap puts it inside school grounds (`src/data/school-grounds.json`) is within 150 m of one on the
+  council's list. Check the council's page shows it's open to everyone (a village play area beside the school, not
+  the school's own). If it is, add it back as a council playground under its old address (`page` in the entry), with
+  the council as source and `checked` today, and delete its entry from `src/data/school-grounds.json`. If it's the
+  school's own, leave it out and note it in the PR. Don't treat the OpenStreetMap entry alone as enough.
 - **New on the council's list:** leave these to the weekly "Check coverage" job, unless the report shows the
   council's entries without proper names (a checker bug: fix it).
 - **Deleted from OpenStreetMap / no longer tagged as a playground / now private:** look on OpenStreetMap for a
