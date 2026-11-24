@@ -3,11 +3,11 @@
  "counties": [
   {
    "name": "Greater London",
-   "playgrounds": 3000
+   "playgrounds": 2998
   },
   {
    "name": "Hampshire",
-   "playgrounds": 1218
+   "playgrounds": 1216
   },
   {
    "name": "Kent",
@@ -43,7 +43,7 @@
   },
   {
    "name": "Cambridgeshire",
-   "playgrounds": 865
+   "playgrounds": 864
   },
   {
    "name": "Derbyshire",
@@ -51,7 +51,7 @@
   },
   {
    "name": "Somerset",
-   "playgrounds": 817
+   "playgrounds": 816
   },
   {
    "name": "Cheshire",
@@ -87,7 +87,7 @@
   },
   {
    "name": "Oxfordshire",
-   "playgrounds": 698
+   "playgrounds": 697
   },
   {
    "name": "West Sussex",
@@ -115,7 +115,7 @@
   },
   {
    "name": "Nottinghamshire",
-   "playgrounds": 600
+   "playgrounds": 599
   },
   {
    "name": "Cornwall",
@@ -135,11 +135,11 @@
   },
   {
    "name": "Dorset",
-   "playgrounds": 460
+   "playgrounds": 459
   },
   {
    "name": "Cumbria",
-   "playgrounds": 456
+   "playgrounds": 454
   },
   {
    "name": "Tyne and Wear",
@@ -147,11 +147,11 @@
   },
   {
    "name": "Shropshire",
-   "playgrounds": 424
+   "playgrounds": 420
   },
   {
    "name": "Warwickshire",
-   "playgrounds": 411
+   "playgrounds": 410
   },
   {
    "name": "Worcestershire",
@@ -193,7 +193,7 @@
  "nations": [
   {
    "name": "Scotland",
-   "playgrounds": 6388
+   "playgrounds": 6387
   },
   {
    "name": "Wales",
