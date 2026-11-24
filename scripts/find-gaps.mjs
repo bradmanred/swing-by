@@ -129,8 +129,20 @@ async function lookup(points) {
 const grid = new Map();
 const cellKey = (lat, lng) => `${Math.floor(lat * 100)},${Math.floor(lng * 60)}`;
 const remember = (p) => grid.set(cellKey(p.lat, p.lng), [...(grid.get(cellKey(p.lat, p.lng)) ?? []), p]);
+// Council records we already list, by source page and name, so one whose pin comes out differently this time isn't
+// added a second time (it happened in Telford and Wales, where a street lookup put the copy over 150 m away).
+const listedRecords = new Set();
+const recordKey = (url, name) => `${url}|${String(name ?? '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim()}`;
+// Skate parks, BMX and pump tracks that councils put on their play area lists: not playgrounds, unless the name says
+// there's play equipment too ("Ormsgill Skate playground").
+const NOT_PLAY = /\bskate ?(?:park|bowl)s?\b|\bbmx\b|\bpump ?track\b/i;
+const notPlay = (name) => NOT_PLAY.test(name ?? '') && !/\bplay/i.test(name ?? '');
+// OpenStreetMap playgrounds whose name (their own, or the one given from the area around them) says they're really a
+// games area or court, or a school's: left out like the ones tagged as a school's (scripts/osm-details.mjs).
+const NOT_PLAY_OSM = /^(?:muga|multi[ -]?use games area(?: \(muga\))?)$|\bbasket ?ball court\b|\bprimary school\b|\bschool rugby\b/i;
 for (const f of (await readdir(DIR)).filter((f) => f.endsWith('.json'))) {
   const d = JSON.parse(await readFile(join(DIR, f), 'utf8'));
+  for (const s of d.sources ?? []) if (d.checked && s.url && !/openstreetmap\.org\//.test(s.url)) listedRecords.add(recordKey(s.url, d.name));
   const osmOnly = !d.checked && (d.sources ?? []).length > 0 && d.sources.every((x) => /openstreetmap\.org\//.test(x.url));
   remember({ id: f.replace(/\.json$/, ''), lat: d.lat, lng: d.lng, osmOnly, name: d.name, osm: osmIds(d.sources), rough: roughPin(d.notConfirmed) });
 }
@@ -342,6 +354,7 @@ if (ADD > 0) {
     let fresh = 0, replacing = 0;
     for (const x of recs) {
       if (toAdd.length >= ADD) break;
+      if (notPlay(x.name) || (x.url && listedRecords.has(recordKey(x.url, x.name)))) continue;
       const before = { lat: x.lat, lng: x.lng };
       x.placed = snap(x, c.feed.approximate);
       x.rough = x.placed !== 'osm' && (x.placed !== 'map' || !!c.feed.approximate);
@@ -434,6 +447,7 @@ if (toAdd.length) {
       };
     } else {
       doc = osmPlaygroundDoc(p, { road, place, area, region: reg });
+      if (NOT_PLAY_OSM.test(doc.name) || notPlay(doc.name)) continue;
     }
     let id = slug(`${doc.name}-${doc.area}`).slice(0, 60);
     for (let n = 2, base = id; existing.has(`${id}.json`); n++) id = `${base}-${n}`;

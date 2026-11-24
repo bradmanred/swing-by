@@ -15069,18 +15069,6 @@
     "lng": -4.396671653
    }
   },
-  "bartholomew-school-rugby-playground-eynsham": {
-   "nearest": {
-    "id": "ad2b35fc514c4aee8fe9abdb",
-    "name": "Eynsham",
-    "m": 501,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 51.781541805,
-    "lng": -1.376957595
-   }
-  },
   "bartholomew-way-play-area-roffey-horsham": {
    "nearest": {
     "id": "9f0e48da3a17c1b4fe0e35e2",
@@ -15402,18 +15390,6 @@
     "free": false,
     "lat": 52.567703627,
     "lng": -1.345605254
-   }
-  },
-  "barwick-and-stoford-community-primary-school-playground-barw": {
-   "nearest": {
-    "id": "a87bd94d9aff90de6db1bcf9",
-    "name": "Yeovil Junction (Train Station)",
-    "m": 1073,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 50.92472119,
-    "lng": -2.612267733
    }
   },
   "baschurch-park-playground-baschurch": {
@@ -37744,18 +37720,6 @@
     "lng": -4.028353393
    }
   },
-  "camp-hill-basketball-court-camp-hill-nuneaton": {
-   "nearest": {
-    "id": "861ba18099d87aedf87b6e20",
-    "name": "ASDA Nuneaton",
-    "m": 2195,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 52.526306844,
-    "lng": -1.466588974
-   }
-  },
   "camp-road-play-area-ellenborough-maryport": {
    "nearest": {
     "id": "bacfa96c12ba6758deaec618",
@@ -39262,28 +39226,6 @@
     "free": false,
     "lat": 54.879236015,
     "lng": -2.909301892
-   }
-  },
-  "carlisle-park-hampton-greater-london-2": {
-   "nearest": {
-    "id": "6fe7a61c390e0533c6944955",
-    "name": "Carlisle Park",
-    "m": 82,
-    "babyChange": false,
-    "accessible": true,
-    "free": true,
-    "lat": 51.421835,
-    "lng": -0.3668122
-   },
-   "nearestBabyChange": {
-    "id": "c741ebbba38b157ecbb18448",
-    "name": "The Greenwood Centre",
-    "m": 748,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.426287681,
-    "lng": -0.359810293
    }
   },
   "carlisle-park-hampton-greater-london": {
@@ -42992,28 +42934,6 @@
     "free": true,
     "lat": 52.0559415,
     "lng": -2.7060284
-   }
-  },
-  "central-park-rush-green-greater-london-2": {
-   "nearest": {
-    "id": "0a020768bd0347d3ceaacc8a",
-    "name": "Central Park, Next to Pavillion",
-    "m": 391,
-    "babyChange": false,
-    "accessible": false,
-    "free": true,
-    "lat": 51.560987879,
-    "lng": 0.162944198
-   },
-   "nearestBabyChange": {
-    "id": "f3fe83ff0bed741e3ba37e94",
-    "name": "Eastbrookend Country Park, Inside Millennium Centre",
-    "m": 877,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 51.552979939,
-    "lng": 0.175995827
    }
   },
   "central-park-rush-green-greater-london": {
@@ -72540,18 +72460,6 @@
   "egremont-road-play-area-hardwick": {
    "nearest": null
   },
-  "egremont-skatepark-gill-foot-egremont": {
-   "nearest": {
-    "id": "ee54947e62b833aca2101b4d",
-    "name": "Egremont public library",
-    "m": 390,
-    "babyChange": null,
-    "accessible": null,
-    "free": true,
-    "lat": 54.484088106,
-    "lng": -3.529615402
-   }
-  },
   "egstow-playing-field-play-area-clay-cross": {
    "nearest": {
     "id": "1deebba23b80b9b587389eab",
@@ -89303,18 +89211,6 @@
     "id": "1c568e505a26e3e9885c8982",
     "name": "Retford Station",
     "m": 770,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 53.315175562,
-    "lng": -0.947878147
-   }
-  },
-  "goosemoor-lane-play-area-whitehouses-bassetlaw": {
-   "nearest": {
-    "id": "1c568e505a26e3e9885c8982",
-    "name": "Retford Station",
-    "m": 1160,
     "babyChange": true,
     "accessible": true,
     "free": true,
@@ -129865,28 +129761,6 @@
     "lng": -1.691514349
    }
   },
-  "leegomery-community-centre-leegomery-wellington-2": {
-   "nearest": {
-    "id": "321f8fda4611da78c4483690",
-    "name": "Leegomery Community Centre, Leegate Avenue,",
-    "m": 79,
-    "babyChange": false,
-    "accessible": false,
-    "free": false,
-    "lat": 52.711621847,
-    "lng": -2.499673264
-   },
-   "nearestBabyChange": {
-    "id": "ac881174fac64d3c1cf0ba6b",
-    "name": "Hadley Learning Community, Waterloo Road",
-    "m": 1403,
-    "babyChange": true,
-    "accessible": false,
-    "free": false,
-    "lat": 52.70153866,
-    "lng": -2.48591365
-   }
-  },
   "leegomery-community-centre-leegomery-wellington": {
    "nearest": {
     "id": "321f8fda4611da78c4483690",
@@ -131773,18 +131647,6 @@
     "free": true,
     "lat": 52.54618592,
     "lng": -1.53393438
-   }
-  },
-  "lilleshall-limekiln-lane-lilleshall-2": {
-   "nearest": {
-    "id": "ad6cd435f2aabb505d16f201",
-    "name": "Wellington rd surgery",
-    "m": 2560,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 52.764251828,
-    "lng": -2.379301786
    }
   },
   "lilleshall-limekiln-lane-lilleshall": {
@@ -154453,30 +154315,6 @@
     "lng": -2.639057636
    }
   },
-  "muga-brockenhurst": {
-   "nearest": {
-    "id": "9ca28b080de0dc8378de5840",
-    "name": "Brockenhurst Station (2 locations)",
-    "m": 364,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 50.81682895,
-    "lng": -1.573542545
-   }
-  },
-  "muga-drumsagard-cambuslang": {
-   "nearest": {
-    "id": "881b2afb5d1735e923ba4d18",
-    "name": "Public toilet",
-    "m": 2463,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 55.8325194,
-    "lng": -4.1144716
-   }
-  },
   "mugdock-country-park-playground-craigallian-milngavie-2": {
    "nearest": {
     "id": "af3fc587caf2dfd0445b09fc",
@@ -154755,50 +154593,6 @@
   },
   "mulsford-lane-play-area-worthenbury-willington-worthenbury-w": {
    "nearest": null
-  },
-  "multi-use-games-area-blitterlees-silloth": {
-   "nearest": {
-    "id": "10730b50d205947e0c77e263",
-    "name": "Silloth Changing Places",
-    "m": 324,
-    "babyChange": false,
-    "accessible": true,
-    "free": true,
-    "lat": 54.869804971,
-    "lng": -3.388756183
-   },
-   "nearestBabyChange": {
-    "id": "0699c1697d875d8dabb09615",
-    "name": "Criffel Street toilets",
-    "m": 340,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 54.869951627,
-    "lng": -3.388729605
-   }
-  },
-  "multi-use-games-area-muga-wyton-on-the-hill": {
-   "nearest": {
-    "id": "121c21689a23db7c7c81c7bc",
-    "name": "Houghton Mill toilets",
-    "m": 2101,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 52.331509888,
-    "lng": -0.120277406
-   },
-   "nearestBabyChange": {
-    "id": "aea0f1a46167749ec1f1db9c",
-    "name": "Co-op store",
-    "m": 2724,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 52.343518235,
-    "lng": -0.075627565
-   }
   },
   "multon-lea-play-area-chelmsford": {
    "nearest": {
@@ -158128,18 +157922,6 @@
     "lng": 0.090529919
    }
   },
-  "newlands-walk-play-area-old-park-farm-waterlooville": {
-   "nearest": {
-    "id": "2a2514654232f31d2510edfe",
-    "name": "Waterlooville - Leisure Centre",
-    "m": 779,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 50.887123303,
-    "lng": -1.041533947
-   }
-  },
   "newlands-walk-play-area-wecock-havant": {
    "nearest": {
     "id": "2a2514654232f31d2510edfe",
@@ -158305,18 +158087,6 @@
     "id": "75c4defbd06f909a50d90504",
     "name": "Waitrose toilets",
     "m": 1104,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 52.768721323,
-    "lng": -2.375546694
-   }
-  },
-  "newport-shukers-field-newport": {
-   "nearest": {
-    "id": "75c4defbd06f909a50d90504",
-    "name": "Waitrose toilets",
-    "m": 711,
     "babyChange": true,
     "accessible": true,
     "free": true,
@@ -517769,18 +517539,6 @@
     "lng": -0.237162262
    }
   },
-  "redhill-basket-ball-court-ensbury-park-bournemouth": {
-   "nearest": {
-    "id": "b39002474f832a4df61eee68",
-    "name": "AUB Library toilet",
-    "m": 1769,
-    "babyChange": null,
-    "accessible": null,
-    "free": true,
-    "lat": 50.741128735,
-    "lng": -1.897512674
-   }
-  },
   "redhill-common-meadvale-redhill": {
    "nearest": {
     "id": "57251ade26cda3be6cfa7e09",
@@ -582903,18 +582661,6 @@
   },
   "wolvey-playing-field-wolvey": {
    "nearest": null
-  },
-  "wombridge-skate-bowl-trench-lock-oakengates": {
-   "nearest": {
-    "id": "eeef97b9cb8d42665459a887",
-    "name": "Oakengates Leisure Centre, New Road,",
-    "m": 467,
-    "babyChange": false,
-    "accessible": false,
-    "free": true,
-    "lat": 52.707612299,
-    "lng": -2.445589968
-   }
   },
   "wombwell-park-northfleet": {
    "nearest": {
