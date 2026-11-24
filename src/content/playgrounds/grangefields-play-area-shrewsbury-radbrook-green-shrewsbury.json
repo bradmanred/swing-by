@@ -1,0 +1,33 @@
+{
+  "name": "Grangefields Play Area, Shrewsbury",
+  "region": "west-midlands",
+  "area": "Radbrook Green, Shrewsbury",
+  "lat": 52.70006,
+  "lng": -2.77141,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "bs"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Shrewsbury Town Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Shrewsbury Town Council",
+  "sources": [
+    {
+      "label": "Shrewsbury Town Council: Grangefields Play Area, Shrewsbury",
+      "url": "https://www.shrewsburytowncouncil.gov.uk/assets/grangefields-shrewsbury"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/229394439"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

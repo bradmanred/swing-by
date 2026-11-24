@@ -1,0 +1,25 @@
+{
+  "name": "Roundabout",
+  "region": "south-east",
+  "area": "Edlesborough",
+  "lat": 51.86693,
+  "lng": -0.58554,
+  "ages": [],
+  "equipment": [
+    "rb"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap in The Green near Moor End, Edlesborough. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "sources": [
+    {
+      "label": "OpenStreetMap: Roundabout",
+      "url": "https://www.openstreetmap.org/node/4635907021"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment (what is mapped on OpenStreetMap, which may be incomplete), opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

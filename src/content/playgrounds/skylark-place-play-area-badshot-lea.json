@@ -1,0 +1,29 @@
+{
+  "name": "Skylark Place Play Area",
+  "region": "south-east",
+  "area": "Badshot Lea",
+  "lat": 51.22923,
+  "lng": -0.75975,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap near Skylark Place, Badshot Lea. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "operator": "Skylark Managment Company Ltd",
+  "sources": [
+    {
+      "label": "OpenStreetMap: Skylark Place Play Area",
+      "url": "https://www.openstreetmap.org/way/916009678"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges (from OpenStreetMap), play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

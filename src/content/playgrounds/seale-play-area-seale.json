@@ -1,0 +1,29 @@
+{
+  "name": "Seale Play Area",
+  "region": "south-east",
+  "area": "Seale",
+  "lat": 51.22381,
+  "lng": -0.72277,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap in Seale Recreation Ground near Seale Lane, Seale. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "operator": "Seale & Sands Parish Council",
+  "sources": [
+    {
+      "label": "OpenStreetMap: Seale Play Area",
+      "url": "https://www.openstreetmap.org/way/660279034"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges (from OpenStreetMap), play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

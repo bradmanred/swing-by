@@ -1,0 +1,33 @@
+{
+  "name": "South Hill Road play area",
+  "region": "south-east",
+  "area": "Birch Hill, Bracknell",
+  "lat": 51.40071,
+  "lng": -0.7469,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "cl",
+    "rb",
+    "mb",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Bracknell Town Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Bracknell Town Council",
+  "sources": [
+    {
+      "label": "Bracknell Town Council: South Hill Road play area",
+      "url": "https://bracknelltowncouncil.gov.uk/council-services/play-areas-and-green-spaces/south-hill-road-play-area"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (approximate: the nearest mapped play area to the street the council names), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

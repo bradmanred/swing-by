@@ -1,0 +1,32 @@
+{
+  "name": "Whitehouse",
+  "region": "south-east",
+  "area": "Whitehouse, Milton Keynes",
+  "lat": 52.02999,
+  "lng": -0.81492,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on The Parks Trust's own list of play areas.",
+  "nearby": [],
+  "operator": "The Parks Trust",
+  "sources": [
+    {
+      "label": "The Parks Trust: Whitehouse",
+      "url": "https://www.theparkstrust.com/find-a-park/whitehouse"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/10591338619"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

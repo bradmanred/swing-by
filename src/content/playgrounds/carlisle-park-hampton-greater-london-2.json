@@ -1,0 +1,39 @@
+{
+  "name": "Carlisle Park",
+  "region": "london",
+  "area": "Hampton, Greater London",
+  "lat": 51.4219,
+  "lng": -0.36799,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "bk",
+    "rb",
+    "gym"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A playground on Richmond Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Richmond Council",
+  "sources": [
+    {
+      "label": "Richmond Council: Carlisle Park",
+      "url": "https://www.richmond.gov.uk/services/parks_and_open_spaces/find_a_park/carlisle_park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/91648715"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

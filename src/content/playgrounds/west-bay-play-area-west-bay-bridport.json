@@ -1,0 +1,35 @@
+{
+  "name": "West Bay Play Area",
+  "region": "south-west",
+  "area": "West Bay, Bridport",
+  "lat": 50.71198,
+  "lng": -2.75798,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "rb",
+    "tp"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap near West Bay Road, West Bay. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "operator": "West Dorset District Council",
+  "sources": [
+    {
+      "label": "OpenStreetMap: West Bay Play Area",
+      "url": "https://www.openstreetmap.org/way/437877847"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges (from OpenStreetMap), play equipment (what is mapped on OpenStreetMap, which may be incomplete), opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

@@ -1,0 +1,30 @@
+{
+  "name": "North Wroughton Play Area",
+  "region": "south-west",
+  "area": "Middle Wichel, Swindon",
+  "lat": 51.53406,
+  "lng": -1.78672,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "bs",
+    "sl",
+    "cl",
+    "rb"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap near Clyde Cottages, Middle Wichel. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "operator": "Wroughton Parish Council",
+  "sources": [
+    {
+      "label": "OpenStreetMap: North Wroughton Play Area",
+      "url": "https://www.openstreetmap.org/way/34955792"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment (what is mapped on OpenStreetMap, which may be incomplete), opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

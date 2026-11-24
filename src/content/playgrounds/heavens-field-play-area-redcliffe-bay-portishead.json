@@ -1,0 +1,28 @@
+{
+  "name": "Heaven's Field play area",
+  "region": "south-west",
+  "area": "Redcliffe Bay, Portishead",
+  "lat": 51.47651,
+  "lng": -2.80819,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by Portishead Town Council.",
+  "nearby": [],
+  "operator": "Portishead Town Council",
+  "sources": [
+    {
+      "label": "Portishead Town Council: Heaven's Field play area",
+      "url": "https://www.portishead.gov.uk/playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/629651045"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Kingsgate Park Playground",
+  "region": "south-west",
+  "area": "Abbotswood, Yate",
+  "lat": 51.53429,
+  "lng": -2.41229,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "bk",
+    "sl",
+    "cl",
+    "zw",
+    "rb",
+    "ss",
+    "bb"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap near Stanshawes Court Drive, Abbotswood. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "sources": [
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/26432345"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment (what is mapped on OpenStreetMap, which may be incomplete), opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

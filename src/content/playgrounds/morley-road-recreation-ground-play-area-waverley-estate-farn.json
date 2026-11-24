@@ -1,0 +1,32 @@
+{
+  "name": "Morley Road Recreation Ground Play Area",
+  "region": "south-east",
+  "area": "Waverley Estate, Farnham",
+  "lat": 51.20773,
+  "lng": -0.78962,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "bs",
+    "rb"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap near Trebor Avenue, Waverley Estate. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "operator": "Waverley Borough Council",
+  "sources": [
+    {
+      "label": "OpenStreetMap: Morley Road Recreation Ground Play Area",
+      "url": "https://www.openstreetmap.org/way/1186296517"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges (from OpenStreetMap), play equipment (what is mapped on OpenStreetMap, which may be incomplete), opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

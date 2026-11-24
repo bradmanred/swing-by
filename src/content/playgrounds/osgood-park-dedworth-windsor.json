@@ -1,0 +1,30 @@
+{
+  "name": "Osgood Park",
+  "region": "south-east",
+  "area": "Dedworth, Windsor",
+  "lat": 51.47463,
+  "lng": -0.64572,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A playground on Royal Borough of Windsor and Maidenhead's own list of play areas.",
+  "nearby": [],
+  "operator": "Royal Borough of Windsor and Maidenhead",
+  "sources": [
+    {
+      "label": "Royal Borough of Windsor and Maidenhead: Osgood Park",
+      "url": "https://www.rbwm.gov.uk/leisure-and-culture/parks-and-open-spaces/osgood-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/791857544"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours and parking.",
+  "photo": null
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Florence Park",
+  "region": "west-midlands",
+  "area": "Normacot, Longton",
+  "lat": 52.97491,
+  "lng": -2.12916,
+  "ages": [
+    "teens"
+  ],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Stoke-on-Trent City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Stoke-on-Trent City Council",
+  "sources": [
+    {
+      "label": "Stoke-on-Trent City Council: Florence Park",
+      "url": "https://www.stoke.gov.uk/directory_record/331277/florence_park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/25762169"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

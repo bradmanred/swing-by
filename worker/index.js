@@ -16,6 +16,11 @@ import { SCHOOL_PAGES, schoolGroundsPage } from './school-grounds.js';
 
 // Old playground address → the listing it was merged into. Add a line whenever two listings are merged.
 const MERGED = {
+  'playground-off-oxenhope-way-brook-furlong-milton-keynes': 'broughton-brook-brook-furlong-milton-keynes',
+  'playground-off-ockwells-road-cox-green-maidenhead': 'ockwells-park-cox-green-maidenhead',
+  'playground-off-alexander-drive-bitteswell-lutterworth': 'moorbarns-lane-play-area-lutterworth',
+  'playground-off-chamberlin-avenue-bridgwater': 'chamberlin-avenue-play-area-east-bower-bridgwater',
+  'playground-off-hunter-terrace-straiton-loanhead': 'hunter-avenue-play-area-straiton-loanhead',
   'playground-off-darbys-lane-oakdale-poole': 'oakdale-park-play-area-oakdale-poole',
   'playground-off-worgret-road-stanley-green-poole': 'st-georges-play-area-stanley-green-poole',
   'playground-off-mancroft-avenue-shirehampton-bristol': 'mancroft-park-play-area-shirehampton-bristol',

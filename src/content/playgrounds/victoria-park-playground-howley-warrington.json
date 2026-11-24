@@ -1,0 +1,30 @@
+{
+  "name": "Victoria Park Playground",
+  "region": "north-west",
+  "area": "Howley, Warrington",
+  "lat": 53.38347,
+  "lng": -2.57425,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "bs",
+    "cl",
+    "rb",
+    "ss"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap near Knutsford Road, Howley. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "operator": "Warrington Borough Council",
+  "sources": [
+    {
+      "label": "OpenStreetMap: Victoria Park Playground",
+      "url": "https://www.openstreetmap.org/way/966309719"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment (what is mapped on OpenStreetMap, which may be incomplete), opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Troon South Beach Playpark",
+  "region": "scotland",
+  "area": "Troon",
+  "lat": 55.54214,
+  "lng": -4.66414,
+  "ages": [],
+  "equipment": [
+    "bk",
+    "cl",
+    "rb",
+    "spr"
+  ],
+  "access": [
+    "sf"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap near Academy Street, Troon. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "operator": "Kyle & Carrick District Council",
+  "sources": [
+    {
+      "label": "OpenStreetMap: Troon South Beach Playpark",
+      "url": "https://www.openstreetmap.org/way/55364223"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment (what is mapped on OpenStreetMap, which may be incomplete), opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

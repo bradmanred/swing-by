@@ -1,0 +1,33 @@
+{
+  "name": "Great Hollands recreation ground",
+  "region": "south-east",
+  "area": "Hanworth, Bracknell",
+  "lat": 51.39013,
+  "lng": -0.77727,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "wp",
+    "rb",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Bracknell Town Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Bracknell Town Council",
+  "sources": [
+    {
+      "label": "Bracknell Town Council: Great Hollands recreation ground",
+      "url": "https://bracknelltowncouncil.gov.uk/council-services/play-areas-and-green-spaces/great-hollands-recreation-ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1469747597"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

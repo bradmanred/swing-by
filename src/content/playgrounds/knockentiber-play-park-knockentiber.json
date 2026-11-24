@@ -1,0 +1,28 @@
+{
+  "name": "Knockentiber Play Park",
+  "region": "scotland",
+  "area": "Knockentiber",
+  "lat": 55.62033,
+  "lng": -4.54558,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play park on East Ayrshire Council's list of the play parks Greener Communities looks after.",
+  "nearby": [],
+  "operator": "East Ayrshire Council",
+  "sources": [
+    {
+      "label": "East Ayrshire Council: Knockentiber Play Park",
+      "url": "https://www.east-ayrshire.gov.uk/community/ParksGardensAndOpenSpaces/Playparks.aspx"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1070087683"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

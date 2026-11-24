@@ -1,0 +1,28 @@
+{
+  "name": "Lyngford Park play area",
+  "region": "south-west",
+  "area": "Priorswood, Taunton",
+  "lat": 51.03176,
+  "lng": -3.09353,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by Taunton Town Council.",
+  "nearby": [],
+  "operator": "Taunton Town Council",
+  "sources": [
+    {
+      "label": "Taunton Town Council: Lyngford Park play area",
+      "url": "https://www.find-tender.service.gov.uk/Notice/Attachment/A-3044"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1475349565"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

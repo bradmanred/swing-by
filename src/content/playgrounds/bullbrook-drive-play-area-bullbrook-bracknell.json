@@ -1,0 +1,37 @@
+{
+  "name": "Bullbrook Drive play area",
+  "region": "south-east",
+  "area": "Bullbrook, Bracknell",
+  "lat": 51.41784,
+  "lng": -0.72847,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "bs",
+    "cl",
+    "rb",
+    "ss",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Bracknell Town Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Bracknell Town Council",
+  "sources": [
+    {
+      "label": "Bracknell Town Council: Bullbrook Drive play area",
+      "url": "https://bracknelltowncouncil.gov.uk/council-services/play-areas-and-green-spaces/bullbrook-drive-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1326265584"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

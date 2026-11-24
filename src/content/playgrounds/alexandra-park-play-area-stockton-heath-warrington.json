@@ -1,0 +1,30 @@
+{
+  "name": "Alexandra Park Play Area",
+  "region": "north-west",
+  "area": "Stockton Heath, Warrington",
+  "lat": 53.37245,
+  "lng": -2.57641,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "bk",
+    "sl",
+    "rb",
+    "ss",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap near Alexandra Road, Stockton Heath. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "sources": [
+    {
+      "label": "OpenStreetMap: Alexandra Park Play Area",
+      "url": "https://www.openstreetmap.org/way/1033596221"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment (what is mapped on OpenStreetMap, which may be incomplete), opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

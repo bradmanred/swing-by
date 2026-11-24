@@ -1,0 +1,30 @@
+{
+  "name": "Heynes Green",
+  "region": "south-east",
+  "area": "Cox Green, Maidenhead",
+  "lat": 51.50575,
+  "lng": -0.75321,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A playground on Royal Borough of Windsor and Maidenhead's own list of play areas.",
+  "nearby": [],
+  "operator": "Royal Borough of Windsor and Maidenhead",
+  "sources": [
+    {
+      "label": "Royal Borough of Windsor and Maidenhead: Heynes Green",
+      "url": "https://rbwm.gov.uk/leisure-and-culture/parks-and-open-spaces/heynes-green"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/468832380"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours and parking.",
+  "photo": null
+}

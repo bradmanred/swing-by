@@ -1,0 +1,30 @@
+{
+  "name": "Great Kingshill Children's Playground",
+  "region": "south-east",
+  "area": "Great Kingshill",
+  "lat": 51.67406,
+  "lng": -0.73201,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "bk",
+    "sl",
+    "cl",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap in Great Kingshill Recreation Ground near Common Road, Great Kingshill. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "operator": "Hughenden Parish Council",
+  "sources": [
+    {
+      "label": "OpenStreetMap: Great Kingshill Children's Playground",
+      "url": "https://www.openstreetmap.org/way/575306232"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment (what is mapped on OpenStreetMap, which may be incomplete), opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Willen Lake",
+  "region": "south-east",
+  "area": "Newlands, Milton Keynes",
+  "lat": 52.05585,
+  "lng": -0.72162,
+  "ages": [],
+  "equipment": [
+    "wp",
+    "rb",
+    "gym"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "A playground on The Parks Trust's own list of play areas.",
+  "nearby": [],
+  "operator": "The Parks Trust",
+  "sources": [
+    {
+      "label": "The Parks Trust: Willen Lake",
+      "url": "https://www.theparkstrust.com/find-a-park/willen-lake"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (approximate: the park's point on OpenStreetMap, not the play area itself), age ranges, the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Under 8s Playground",
+  "region": "south-east",
+  "area": "Effingham",
+  "lat": 51.2703,
+  "lng": -0.39665,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "ss",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap in King George V Playing Fields near Barnes Wallis Close, Effingham. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "operator": "Effingham Village Recreation Trust",
+  "sources": [
+    {
+      "label": "OpenStreetMap: Under 8s Playground",
+      "url": "https://www.openstreetmap.org/way/847183230"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges (from OpenStreetMap), play equipment (what is mapped on OpenStreetMap, which may be incomplete), opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

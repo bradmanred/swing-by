@@ -1,0 +1,28 @@
+{
+  "name": "Station Park",
+  "region": "scotland",
+  "area": "Seatown, Lossiemouth",
+  "lat": 57.72178,
+  "lng": -3.27967,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on The Moray Council's own list of play areas.",
+  "nearby": [],
+  "operator": "The Moray Council",
+  "sources": [
+    {
+      "label": "The Moray Council: Station Park",
+      "url": "https://www.moray.gov.uk/community-life-sports-and-leisure/lands-parks-and-countryside/parks-gardens-and-playing-fields/find-a-play-park/station-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/907282124"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

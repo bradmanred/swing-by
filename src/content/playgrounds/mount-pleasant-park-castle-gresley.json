@@ -1,0 +1,31 @@
+{
+  "name": "Mount Pleasant Park",
+  "region": "derbyshire",
+  "area": "Castle Gresley",
+  "lat": 52.75425,
+  "lng": -1.57979,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "rb",
+    "ss",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap near Mount Pleasant Road, Castle Gresley. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "operator": "South Derbyshire County Council",
+  "sources": [
+    {
+      "label": "OpenStreetMap: Mount Pleasant Park",
+      "url": "https://www.openstreetmap.org/way/594320804"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment (what is mapped on OpenStreetMap, which may be incomplete), opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

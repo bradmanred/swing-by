@@ -1,0 +1,35 @@
+{
+  "name": "Pollardrow Avenue play area",
+  "region": "south-east",
+  "area": "Easthampstead, Bracknell",
+  "lat": 51.42045,
+  "lng": -0.77054,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "bs",
+    "sw",
+    "sl",
+    "cl",
+    "rb",
+    "ss",
+    "bb"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Bracknell Town Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Bracknell Town Council",
+  "sources": [
+    {
+      "label": "Bracknell Town Council: Pollardrow Avenue play area",
+      "url": "https://bracknelltowncouncil.gov.uk/council-services/play-areas-and-green-spaces/pollardrow-avenue-play-area"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (approximate: the nearest mapped play area to the street the council names), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
