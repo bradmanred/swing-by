@@ -5,9 +5,9 @@
   "licence": "CC BY 4.0",
   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
   "note": "Nearest toilets worked out by Swing By from the Toilet Map data.",
-  "export": "toilets-2026-11-22T00%3A00%3A40.764Z-z7Ki0f7qK6NPKa172SkkJv27H9JM50.csv"
+  "export": "toilets-2026-11-24T00%3A00%3A40.646Z-ypn4NrIdp5BoqaaWDnEC0oxrpamz6t.csv"
  },
- "toilets": 15864,
+ "toilets": 15860,
  "parks": {
   "1066-battle-abbey-natural-play-area": {
    "nearest": {
@@ -8251,9 +8251,9 @@
   "banana-splits-seaburn-sunderland": {
    "nearest": {
     "id": "fe24b12a792e07555388083c",
-    "name": "Public toilet",
+    "name": "Seaburn victorion tram stop toilets",
     "m": 114,
-    "babyChange": null,
+    "babyChange": false,
     "accessible": false,
     "free": true,
     "lat": 54.936352635,
@@ -24835,14 +24835,24 @@
   },
   "carley-hill-play-area-carley-hill-sunderland": {
    "nearest": {
-    "id": "fd924ce9754990ca8735d256",
-    "name": "Southwick Green",
-    "m": 1077,
-    "babyChange": null,
+    "id": "b61eaa6ffd898d5982e598c7",
+    "name": "Roker park men's tolets",
+    "m": 2286,
+    "babyChange": false,
     "accessible": false,
     "free": true,
-    "lat": 54.91975142,
-    "lng": -1.401413913
+    "lat": 54.922502228,
+    "lng": -1.371338343
+   },
+   "nearestBabyChange": {
+    "id": "125b46def8d188ca76bb3835",
+    "name": "Culture house",
+    "m": 2759,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 54.906816125,
+    "lng": -1.386494637
    }
   },
   "carling-close-play-area-castlefields-stafford": {
@@ -71063,21 +71073,11 @@
     "id": "ba6964fb30edbfbbfa7b9dba",
     "name": "Sunderland Station",
     "m": 642,
-    "babyChange": null,
+    "babyChange": true,
     "accessible": true,
     "free": true,
     "lat": 54.905386783,
     "lng": -1.38258948
-   },
-   "nearestBabyChange": {
-    "id": "3843824a939311fc6f3412ac",
-    "name": "Sunderland Minster",
-    "m": 1042,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 54.905771312,
-    "lng": -1.388865232
    }
   },
   "hudswell-park-hudswell": {
@@ -71880,7 +71880,7 @@
     "name": "Sunderland Royal Hospital",
     "m": 2892,
     "babyChange": true,
-    "accessible": false,
+    "accessible": true,
     "free": true,
     "lat": 54.903510731,
     "lng": -1.411314011
@@ -110702,7 +110702,7 @@
     "name": "Sunderland Royal Hospital",
     "m": 2304,
     "babyChange": true,
-    "accessible": false,
+    "accessible": true,
     "free": true,
     "lat": 54.903510731,
     "lng": -1.411314011
@@ -112428,18 +112428,18 @@
   },
   "playground-off-akeld-mews-monkwearmouth-sunderland": {
    "nearest": {
-    "id": "1f3971ae04738868b72e8629",
-    "name": "National Glass Centre",
-    "m": 368,
-    "babyChange": null,
-    "accessible": true,
+    "id": "b61eaa6ffd898d5982e598c7",
+    "name": "Roker park men's tolets",
+    "m": 733,
+    "babyChange": false,
+    "accessible": false,
     "free": true,
-    "lat": 54.912787638,
-    "lng": -1.37085557
+    "lat": 54.922502228,
+    "lng": -1.371338343
    },
    "nearestBabyChange": {
     "id": "488758ecd5563b08e81525df",
-    "name": "Marine walk",
+    "name": "Marine walk (Roker Beach)",
     "m": 739,
     "babyChange": true,
     "accessible": true,
@@ -120203,7 +120203,7 @@
     "name": "Sunderland Royal Hospital",
     "m": 992,
     "babyChange": true,
-    "accessible": false,
+    "accessible": true,
     "free": true,
     "lat": 54.903510731,
     "lng": -1.411314011
@@ -120225,7 +120225,7 @@
     "name": "Sunderland Royal Hospital",
     "m": 1030,
     "babyChange": true,
-    "accessible": false,
+    "accessible": true,
     "free": true,
     "lat": 54.903510731,
     "lng": -1.411314011
@@ -120499,7 +120499,7 @@
     "name": "Sunderland Royal Hospital",
     "m": 2579,
     "babyChange": true,
-    "accessible": false,
+    "accessible": true,
     "free": true,
     "lat": 54.903510731,
     "lng": -1.411314011
@@ -121909,14 +121909,24 @@
   },
   "playground-off-beaumont-street-southwick-sunderland": {
    "nearest": {
-    "id": "fd924ce9754990ca8735d256",
-    "name": "Southwick Green",
-    "m": 399,
-    "babyChange": null,
+    "id": "b61eaa6ffd898d5982e598c7",
+    "name": "Roker park men's tolets",
+    "m": 1957,
+    "babyChange": false,
     "accessible": false,
     "free": true,
-    "lat": 54.91975142,
-    "lng": -1.401413913
+    "lat": 54.922502228,
+    "lng": -1.371338343
+   },
+   "nearestBabyChange": {
+    "id": "125b46def8d188ca76bb3835",
+    "name": "Culture house",
+    "m": 2084,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 54.906816125,
+    "lng": -1.386494637
    }
   },
   "playground-off-beauvais-square-shortstown": {
@@ -124667,7 +124677,7 @@
     "name": "Sunderland Royal Hospital",
     "m": 2112,
     "babyChange": true,
-    "accessible": false,
+    "accessible": true,
     "free": true,
     "lat": 54.903510731,
     "lng": -1.411314011
@@ -133223,16 +133233,6 @@
   },
   "playground-off-burnt-barn-road-chepstow": {
    "nearest": {
-    "id": "bded24de6bec283af829abdd",
-    "name": "Chepstow Station",
-    "m": 1838,
-    "babyChange": false,
-    "accessible": false,
-    "free": true,
-    "lat": 51.639976024,
-    "lng": -2.671110034
-   },
-   "nearestBabyChange": {
     "id": "d3ff29062b17137da18677e0",
     "name": "Chepstow bus station",
     "m": 1930,
@@ -141605,9 +141605,9 @@
   "playground-off-church-lane-seaburn-sunderland": {
    "nearest": {
     "id": "fe24b12a792e07555388083c",
-    "name": "Public toilet",
+    "name": "Seaburn victorion tram stop toilets",
     "m": 1185,
-    "babyChange": null,
+    "babyChange": false,
     "accessible": false,
     "free": true,
     "lat": 54.936352635,
@@ -148375,7 +148375,7 @@
     "name": "Sunderland Royal Hospital",
     "m": 2864,
     "babyChange": true,
-    "accessible": false,
+    "accessible": true,
     "free": true,
     "lat": 54.903510731,
     "lng": -1.411314011
@@ -161248,7 +161248,7 @@
     "name": "Sunderland Royal Hospital",
     "m": 447,
     "babyChange": true,
-    "accessible": false,
+    "accessible": true,
     "free": true,
     "lat": 54.903510731,
     "lng": -1.411314011
@@ -161625,7 +161625,7 @@
     "name": "Sunderland Royal Hospital",
     "m": 1481,
     "babyChange": true,
-    "accessible": false,
+    "accessible": true,
     "free": true,
     "lat": 54.903510731,
     "lng": -1.411314011
@@ -172662,7 +172662,7 @@
     "name": "Sunderland Royal Hospital",
     "m": 2014,
     "babyChange": true,
-    "accessible": false,
+    "accessible": true,
     "free": true,
     "lat": 54.903510731,
     "lng": -1.411314011
@@ -172684,7 +172684,7 @@
     "name": "Sunderland Royal Hospital",
     "m": 2015,
     "babyChange": true,
-    "accessible": false,
+    "accessible": true,
     "free": true,
     "lat": 54.903510731,
     "lng": -1.411314011
@@ -182235,7 +182235,7 @@
     "name": "Sunderland Royal Hospital",
     "m": 1613,
     "babyChange": true,
-    "accessible": false,
+    "accessible": true,
     "free": true,
     "lat": 54.903510731,
     "lng": -1.411314011
@@ -198606,9 +198606,9 @@
   "playground-off-lowry-road-seaburn-sunderland": {
    "nearest": {
     "id": "fe24b12a792e07555388083c",
-    "name": "Public toilet",
+    "name": "Seaburn victorion tram stop toilets",
     "m": 155,
-    "babyChange": null,
+    "babyChange": false,
     "accessible": false,
     "free": true,
     "lat": 54.936352635,
@@ -202793,7 +202793,7 @@
   "playground-off-marine-walk-roker-marina-sunderland": {
    "nearest": {
     "id": "488758ecd5563b08e81525df",
-    "name": "Marine walk",
+    "name": "Marine walk (Roker Beach)",
     "m": 23,
     "babyChange": true,
     "accessible": true,
@@ -226311,9 +226311,9 @@
   "playground-off-promotion-close-roker-sunderland": {
    "nearest": {
     "id": "b61eaa6ffd898d5982e598c7",
-    "name": "Park Parade",
+    "name": "Roker park men's tolets",
     "m": 300,
-    "babyChange": null,
+    "babyChange": false,
     "accessible": false,
     "free": true,
     "lat": 54.922502228,
@@ -226321,7 +226321,7 @@
    },
    "nearestBabyChange": {
     "id": "488758ecd5563b08e81525df",
-    "name": "Marine walk",
+    "name": "Marine walk (Roker Beach)",
     "m": 730,
     "babyChange": true,
     "accessible": true,
@@ -237549,16 +237549,6 @@
   },
   "playground-off-severn-crescent-chepstow": {
    "nearest": {
-    "id": "bded24de6bec283af829abdd",
-    "name": "Chepstow Station",
-    "m": 387,
-    "babyChange": false,
-    "accessible": false,
-    "free": true,
-    "lat": 51.639976024,
-    "lng": -2.671110034
-   },
-   "nearestBabyChange": {
     "id": "d3ff29062b17137da18677e0",
     "name": "Chepstow bus station",
     "m": 513,
@@ -239263,18 +239253,18 @@
   },
   "playground-off-side-cliff-road-roker-sunderland": {
    "nearest": {
-    "id": "91d0fded2d5e5181b3d5d9cc",
-    "name": "Marine Walk",
-    "m": 271,
+    "id": "951a78bc0d86447c4496e4c1",
+    "name": "Roker park woman's and disabled tolet",
+    "m": 21,
     "babyChange": null,
     "accessible": true,
     "free": true,
-    "lat": 54.92477976,
-    "lng": -1.365789976
+    "lat": 54.926022004,
+    "lng": -1.369814873
    },
    "nearestBabyChange": {
     "id": "488758ecd5563b08e81525df",
-    "name": "Marine walk",
+    "name": "Marine walk (Roker Beach)",
     "m": 683,
     "babyChange": true,
     "accessible": true,
@@ -239437,7 +239427,7 @@
     "name": "Sunderland Royal Hospital",
     "m": 2339,
     "babyChange": true,
-    "accessible": false,
+    "accessible": true,
     "free": true,
     "lat": 54.903510731,
     "lng": -1.411314011
@@ -239459,7 +239449,7 @@
     "name": "Sunderland Royal Hospital",
     "m": 2274,
     "babyChange": true,
-    "accessible": false,
+    "accessible": true,
     "free": true,
     "lat": 54.903510731,
     "lng": -1.411314011
@@ -250598,23 +250588,23 @@
   "playground-off-the-cedars-ashbrooke-sunderland": {
    "nearest": {
     "id": "a1ce79ba12142b6ac2fc714a",
-    "name": "Transport Interchange",
+    "name": "Sunderland interchange (park-lane)",
     "m": 1115,
     "babyChange": false,
     "accessible": true,
-    "free": false,
+    "free": true,
     "lat": 54.902929479,
     "lng": -1.38535111
    },
    "nearestBabyChange": {
-    "id": "3843824a939311fc6f3412ac",
-    "name": "Sunderland Minster",
-    "m": 1489,
+    "id": "ba6964fb30edbfbbfa7b9dba",
+    "name": "Sunderland Station",
+    "m": 1347,
     "babyChange": true,
     "accessible": true,
     "free": true,
-    "lat": 54.905771312,
-    "lng": -1.388865232
+    "lat": 54.905386783,
+    "lng": -1.38258948
    }
   },
   "playground-off-the-cedars-llanfoist": {
@@ -254081,24 +254071,24 @@
   },
   "playground-off-thompson-road-southwick-sunderland": {
    "nearest": {
-    "id": "fd924ce9754990ca8735d256",
-    "name": "Southwick Green",
-    "m": 581,
-    "babyChange": null,
+    "id": "b61eaa6ffd898d5982e598c7",
+    "name": "Roker park men's tolets",
+    "m": 1486,
+    "babyChange": false,
     "accessible": false,
     "free": true,
-    "lat": 54.91975142,
-    "lng": -1.401413913
+    "lat": 54.922502228,
+    "lng": -1.371338343
    },
    "nearestBabyChange": {
-    "id": "488758ecd5563b08e81525df",
-    "name": "Marine walk",
-    "m": 1955,
+    "id": "125b46def8d188ca76bb3835",
+    "name": "Culture house",
+    "m": 1892,
     "babyChange": true,
     "accessible": true,
     "free": true,
-    "lat": 54.920597356,
-    "lng": -1.364293406
+    "lat": 54.906816125,
+    "lng": -1.386494637
    }
   },
   "playground-off-thong-lane-riverview-park-gravesend": {
@@ -254248,7 +254238,7 @@
     "name": "Sunderland Royal Hospital",
     "m": 2589,
     "babyChange": true,
-    "accessible": false,
+    "accessible": true,
     "free": true,
     "lat": 54.903510731,
     "lng": -1.411314011
@@ -255934,23 +255924,23 @@
   "playground-off-toward-road-ashbrooke-sunderland": {
    "nearest": {
     "id": "a1ce79ba12142b6ac2fc714a",
-    "name": "Transport Interchange",
+    "name": "Sunderland interchange (park-lane)",
     "m": 436,
     "babyChange": false,
     "accessible": true,
-    "free": false,
+    "free": true,
     "lat": 54.902929479,
     "lng": -1.38535111
    },
    "nearestBabyChange": {
-    "id": "3843824a939311fc6f3412ac",
-    "name": "Sunderland Minster",
-    "m": 779,
+    "id": "ba6964fb30edbfbbfa7b9dba",
+    "name": "Sunderland Station",
+    "m": 467,
     "babyChange": true,
     "accessible": true,
     "free": true,
-    "lat": 54.905771312,
-    "lng": -1.388865232
+    "lat": 54.905386783,
+    "lng": -1.38258948
    }
   },
   "playground-off-tower-lane-fulwood-preston": {
@@ -263428,14 +263418,24 @@
   },
   "playground-off-wembley-road-marley-pots-sunderland": {
    "nearest": {
-    "id": "fd924ce9754990ca8735d256",
-    "name": "Southwick Green",
-    "m": 1011,
-    "babyChange": null,
+    "id": "b61eaa6ffd898d5982e598c7",
+    "name": "Roker park men's tolets",
+    "m": 2515,
+    "babyChange": false,
     "accessible": false,
     "free": true,
-    "lat": 54.91975142,
-    "lng": -1.401413913
+    "lat": 54.922502228,
+    "lng": -1.371338343
+   },
+   "nearestBabyChange": {
+    "id": "6ba7a74c03e2079e0896ba87",
+    "name": "Sunderland Royal Hospital",
+    "m": 2667,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 54.903510731,
+    "lng": -1.411314011
    }
   },
   "playground-off-wembury-close-redcar": {
@@ -265491,14 +265491,14 @@
   },
   "playground-off-whitburn-road-cleadon": {
    "nearest": {
-    "id": "ca642a039109806d906d025a",
-    "name": "Dene Lane",
-    "m": 2605,
-    "babyChange": null,
+    "id": "fe24b12a792e07555388083c",
+    "name": "Seaburn victorion tram stop toilets",
+    "m": 2670,
+    "babyChange": false,
     "accessible": false,
     "free": true,
-    "lat": 54.930169537,
-    "lng": -1.382220664
+    "lat": 54.936352635,
+    "lng": -1.368312988
    }
   },
   "playground-off-white-cross-drive-woolmer-green-welwyn-hatfie": {
@@ -270983,6 +270983,18 @@
     "free": true,
     "lat": 57.400755647,
     "lng": -5.490280688
+   }
+  },
+  "playpark-near-icy-park-aveton-gifford-south-hams": {
+   "nearest": {
+    "id": "d30681c99423c9ef981dfd79",
+    "name": "Village Hall",
+    "m": 2800,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 50.323037364,
+    "lng": -3.800239563
    }
   },
   "playzone-aston-by-budworth-cheshire-east": {
@@ -289449,23 +289461,23 @@
   "spelter-works-road-play-area-grangetown-sunderland": {
    "nearest": {
     "id": "a1ce79ba12142b6ac2fc714a",
-    "name": "Transport Interchange",
+    "name": "Sunderland interchange (park-lane)",
     "m": 2014,
     "babyChange": false,
     "accessible": true,
-    "free": false,
+    "free": true,
     "lat": 54.902929479,
     "lng": -1.38535111
    },
    "nearestBabyChange": {
-    "id": "3843824a939311fc6f3412ac",
-    "name": "Sunderland Minster",
-    "m": 2401,
+    "id": "ba6964fb30edbfbbfa7b9dba",
+    "name": "Sunderland Station",
+    "m": 2137,
     "babyChange": true,
     "accessible": true,
     "free": true,
-    "lat": 54.905771312,
-    "lng": -1.388865232
+    "lat": 54.905386783,
+    "lng": -1.38258948
    }
   },
   "spelthorne-grove-play-area-sunbury-common-sunbury-on-thames": {
@@ -295140,16 +295152,6 @@
   },
   "strongbow-park-playground-chepstow": {
    "nearest": {
-    "id": "bded24de6bec283af829abdd",
-    "name": "Chepstow Station",
-    "m": 647,
-    "babyChange": false,
-    "accessible": false,
-    "free": true,
-    "lat": 51.639976024,
-    "lng": -2.671110034
-   },
-   "nearestBabyChange": {
     "id": "d3ff29062b17137da18677e0",
     "name": "Chepstow bus station",
     "m": 728,
