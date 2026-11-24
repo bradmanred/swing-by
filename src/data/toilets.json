@@ -51336,18 +51336,6 @@
     "lng": 1.123571992
    }
   },
-  "egremont-skatepark-gill-foot-egremont": {
-   "nearest": {
-    "id": "ee54947e62b833aca2101b4d",
-    "name": "Egremont public library",
-    "m": 390,
-    "babyChange": null,
-    "accessible": null,
-    "free": true,
-    "lat": 54.484088106,
-    "lng": -3.529615402
-   }
-  },
   "egstow-playing-field-play-area-clay-cross": {
    "nearest": {
     "id": "1deebba23b80b9b587389eab",
@@ -91379,28 +91367,6 @@
     "lng": -1.691514349
    }
   },
-  "leegomery-community-centre-leegomery-wellington-2": {
-   "nearest": {
-    "id": "321f8fda4611da78c4483690",
-    "name": "Leegomery Community Centre, Leegate Avenue,",
-    "m": 79,
-    "babyChange": false,
-    "accessible": false,
-    "free": false,
-    "lat": 52.711621847,
-    "lng": -2.499673264
-   },
-   "nearestBabyChange": {
-    "id": "ac881174fac64d3c1cf0ba6b",
-    "name": "Hadley Learning Community, Waterloo Road",
-    "m": 1403,
-    "babyChange": true,
-    "accessible": false,
-    "free": false,
-    "lat": 52.70153866,
-    "lng": -2.48591365
-   }
-  },
   "leegomery-community-centre-leegomery-wellington": {
    "nearest": {
     "id": "321f8fda4611da78c4483690",
@@ -92807,18 +92773,6 @@
     "free": true,
     "lat": 52.54618592,
     "lng": -1.53393438
-   }
-  },
-  "lilleshall-limekiln-lane-lilleshall-2": {
-   "nearest": {
-    "id": "ad6cd435f2aabb505d16f201",
-    "name": "Wellington rd surgery",
-    "m": 2560,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 52.764251828,
-    "lng": -2.379301786
    }
   },
   "lilleshall-limekiln-lane-lilleshall": {
@@ -111656,18 +111610,6 @@
     "id": "75c4defbd06f909a50d90504",
     "name": "Waitrose toilets",
     "m": 1104,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 52.768721323,
-    "lng": -2.375546694
-   }
-  },
-  "newport-shukers-field-newport": {
-   "nearest": {
-    "id": "75c4defbd06f909a50d90504",
-    "name": "Waitrose toilets",
-    "m": 711,
     "babyChange": true,
     "accessible": true,
     "free": true,
@@ -345063,18 +345005,6 @@
   },
   "wolverton-playing-field-baughurst-basingstoke-and-deane": {
    "nearest": null
-  },
-  "wombridge-skate-bowl-trench-lock-oakengates": {
-   "nearest": {
-    "id": "eeef97b9cb8d42665459a887",
-    "name": "Oakengates Leisure Centre, New Road,",
-    "m": 467,
-    "babyChange": false,
-    "accessible": false,
-    "free": true,
-    "lat": 52.707612299,
-    "lng": -2.445589968
-   }
   },
   "wombwell-park-northfleet": {
    "nearest": {
