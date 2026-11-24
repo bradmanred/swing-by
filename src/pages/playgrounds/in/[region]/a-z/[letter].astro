@@ -1,0 +1,35 @@
+---
+// One page of the A to Z: the playgrounds in one region whose town or area starts with one letter (see azPages).
+import Base from '../../../../../layouts/Base.astro';
+import { paidEntry, type Park } from '../../../../../lib/parks';
+import { azLabel, azPages, azUrl, breadcrumbLd } from '../../../../../lib/places';
+
+export async function getStaticPaths() {
+  const all = await azPages();
+  return all.flatMap((r) => r.letters.map((l) => ({ params: { region: r.id, letter: l.key }, props: { r, key: l.key, parks: l.parks } })));
+}
+const { r, key, parks } = Astro.props as { r: Awaited<ReturnType<typeof azPages>>[number]; key: string; parks: Park[] };
+const label = azLabel(key);
+const areas = [...new Set(parks.map((p) => p.area))].sort((a, b) => a.localeCompare(b, 'en-GB'));
+const crumbs = breadcrumbLd(Astro.site, [['Find', '/'], ['All playgrounds A to Z', '/playgrounds/'], [`${r.name}: ${label}`, azUrl(r.id, key)]]);
+---
+<Base title={`Playgrounds in ${r.name}: towns starting ${label}`} description={`${parks.length.toLocaleString('en-GB')} playgrounds in ${r.name} towns and areas starting with ${label}.`} jsonLd={crumbs}>
+  <p class="crumbs"><a href="/">Find</a> › <a href="/playgrounds/">All playgrounds A to Z</a> › <a href={`/playgrounds/#r-${r.id}`}>{r.name}</a> › {label}</p>
+  <h1>{r.name}: {label}</h1>
+  <p>Playgrounds in towns and areas starting with {label}. Places marked "Unverified" haven't been checked yet, and places marked <span class="pound" aria-hidden="true">£</span> Paid entry charge to get in.</p>
+  <nav aria-label={`${r.name} A to Z`}>
+    <ul class="place-links az-letters">
+      {r.letters.map((l) => <li>{l.key === key ? <span aria-current="page"><strong>{azLabel(l.key)}</strong></span> : <a href={azUrl(r.id, l.key)}>{azLabel(l.key)}</a>}</li>)}
+    </ul>
+  </nav>
+  {areas.map((a) => (
+    <div style="margin-top:16px">
+      <h2>{a}</h2>
+      <ul>
+        {parks.filter((p) => p.area === a).map((p) => (
+          <li><a href={`/playgrounds/${p.id}/`}>{p.name}</a>{paidEntry(p) && <> <span class="pay-tag"><span class="pound" aria-hidden="true">£</span> Paid entry</span></>}{!p.checked && ' (Unverified)'}</li>
+        ))}
+      </ul>
+    </div>
+  ))}
+</Base>

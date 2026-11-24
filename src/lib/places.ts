@@ -132,3 +132,31 @@ export const blurb = (text: string, max = 170) => {
   if (t.length <= max) return t;
   return t.slice(0, max).replace(/\s+\S*$/, '') + '…';
 };
+
+/**
+ * The A to Z list, split so no page is huge: one page per region and first letter of the town or area name.
+ * (It was one page of every playground, which reached 6 MB.) Names that don't start with a letter go under 0–9.
+ */
+export const azKey = (area: string) => {
+  const c = area.trim().normalize('NFKD').charAt(0).toLowerCase();
+  return c >= 'a' && c <= 'z' ? c : '0-9';
+};
+export const azLabel = (key: string) => (key === '0-9' ? '0–9' : key.toUpperCase());
+export const azUrl = (regionId: string, key: string) => `/playgrounds/in/${regionId}/a-z/${key}/`;
+/** Each region's playgrounds by A to Z page, letters in order; every region with a playground is included. */
+export async function azPages() {
+  const parks = await allParks();
+  return regions
+    .map((r) => {
+      const inR = parks.filter((p) => p.region === r.id);
+      const keys = new Map<string, Park[]>();
+      for (const p of inR) {
+        const k = azKey(p.area);
+        if (!keys.has(k)) keys.set(k, []);
+        keys.get(k)!.push(p);
+      }
+      const letters = [...keys].sort((a, b) => (a[0] === '0-9' ? -1 : b[0] === '0-9' ? 1 : a[0].localeCompare(b[0]))).map(([key, ps]) => ({ key, parks: ps }));
+      return { id: r.id, name: r.name, count: inR.length, letters };
+    })
+    .filter((r) => r.count > 0);
+}
