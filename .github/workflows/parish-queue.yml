@@ -1,0 +1,58 @@
+# Town and parish councils to check next (scripts/parish-queue.mjs): ranks the parishes whose council isn't in
+# src/data/council-sources.json yet by how many Unverified (OpenStreetMap-only) listings they hold, and opens a
+# "Parish councils to check" issue labelled check-report with the next batch. The daily "Fix check reports" Claude task
+# researches and registers them (docs/fixing-check-reports.md), and the next daily Check coverage run reads any lists
+# it adds, turning those listings into verified ones. Runs every Monday and on demand, in about two minutes, and skips
+# opening an issue while the last one is still open, so a batch is never handed out twice. The batch size is the
+# PARISH_BATCH repository variable (default 15).
+name: Parish councils to check
+on:
+  workflow_dispatch:
+    inputs:
+      batch:
+        description: 'How many councils in this batch'
+        required: false
+  schedule:
+    - cron: '17 5 * * 1'
+permissions:
+  contents: read
+  issues: write
+concurrency:
+  group: parish-queue
+  cancel-in-progress: false
+jobs:
+  queue:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - uses: ./.github/actions/osm-snapshot
+        with:
+          max-age-days: '70'
+      - name: Rank the parishes
+        env:
+          PARISH_BATCH: ${{ inputs.batch || vars.PARISH_BATCH || '15' }}
+        run: node scripts/parish-queue.mjs --out reports
+      - uses: actions/upload-artifact@v4
+        with:
+          name: parish-queue
+          path: reports/
+      - name: Open the next batch as an issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          cat reports/parish-queue.md >> "$GITHUB_STEP_SUMMARY"
+          if [ "$(node -e 'console.log(require("./reports/parish-queue.json").queue.length)')" = "0" ]; then
+            echo "No town or parish councils left to check."; exit 0
+          fi
+          open=$(gh api "repos/$GITHUB_REPOSITORY/issues?state=open&labels=check-report&per_page=100" --jq '[.[] | select(.title | startswith("Parish councils to check"))] | length')
+          if [ "$open" != "0" ]; then
+            echo "The last parish batch is still open; not opening another."; exit 0
+          fi
+          { cat reports/parish-queue.md; echo; echo "Every parish: the parish-queue artifact on [this run]($GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID)."; } > body.md
+          head -c 60000 body.md > issue.md
+          gh api "repos/$GITHUB_REPOSITORY/issues" -f title="Parish councils to check, $(date +%Y-%m-%d)" -F body=@issue.md -f "labels[]=check-report" --jq .html_url

@@ -363,8 +363,73 @@
       "district": "Central Bedfordshire",
       "council": "Central Bedfordshire Council",
       "sources": [
+        "https://www.centralbedfordshire.gov.uk/directory/67/play_areas",
         "https://www.centralbedfordshire.gov.uk/directory/play-areas"
-      ]
+      ],
+      "note": "Jadu 'Play areas' directory (records at /directory_record/ with name, address, town, postcode, age range and who manages it), grouped by town; read as a pages feed over its A to Z (24 November 2026, not tried against the live site yet). Town and parish councils, such as Leighton-Linslade, run many more.",
+      "feed": {
+        "type": "pages",
+        "index": [
+          "https://www.centralbedfordshire.gov.uk/directory/67/play_areas",
+          "https://www.centralbedfordshire.gov.uk/directory/67/a_to_z/A",
+          "https://www.centralbedfordshire.gov.uk/directory/67/a_to_z/B",
+          "https://www.centralbedfordshire.gov.uk/directory/67/a_to_z/C",
+          "https://www.centralbedfordshire.gov.uk/directory/67/a_to_z/D",
+          "https://www.centralbedfordshire.gov.uk/directory/67/a_to_z/E",
+          "https://www.centralbedfordshire.gov.uk/directory/67/a_to_z/F",
+          "https://www.centralbedfordshire.gov.uk/directory/67/a_to_z/G",
+          "https://www.centralbedfordshire.gov.uk/directory/67/a_to_z/H",
+          "https://www.centralbedfordshire.gov.uk/directory/67/a_to_z/I",
+          "https://www.centralbedfordshire.gov.uk/directory/67/a_to_z/J",
+          "https://www.centralbedfordshire.gov.uk/directory/67/a_to_z/K",
+          "https://www.centralbedfordshire.gov.uk/directory/67/a_to_z/L",
+          "https://www.centralbedfordshire.gov.uk/directory/67/a_to_z/M",
+          "https://www.centralbedfordshire.gov.uk/directory/67/a_to_z/N",
+          "https://www.centralbedfordshire.gov.uk/directory/67/a_to_z/O",
+          "https://www.centralbedfordshire.gov.uk/directory/67/a_to_z/P",
+          "https://www.centralbedfordshire.gov.uk/directory/67/a_to_z/Q",
+          "https://www.centralbedfordshire.gov.uk/directory/67/a_to_z/R",
+          "https://www.centralbedfordshire.gov.uk/directory/67/a_to_z/S",
+          "https://www.centralbedfordshire.gov.uk/directory/67/a_to_z/T",
+          "https://www.centralbedfordshire.gov.uk/directory/67/a_to_z/U",
+          "https://www.centralbedfordshire.gov.uk/directory/67/a_to_z/V",
+          "https://www.centralbedfordshire.gov.uk/directory/67/a_to_z/W",
+          "https://www.centralbedfordshire.gov.uk/directory/67/a_to_z/X",
+          "https://www.centralbedfordshire.gov.uk/directory/67/a_to_z/Y",
+          "https://www.centralbedfordshire.gov.uk/directory/67/a_to_z/Z"
+        ],
+        "follow": "/directory_record/\\d+/[a-z0-9_-]+$",
+        "allPlay": true,
+        "near": {
+          "lat": 52.0,
+          "lng": -0.45,
+          "km": 30
+        }
+      }
+    },
+    {
+      "district": "Central Bedfordshire",
+      "parish": "Leighton-Linslade",
+      "council": "Leighton-Linslade Town Council",
+      "sources": [
+        "https://www.contractsfinder.service.gov.uk/Notice/23b38c21-d918-4139-b863-4d64af359b85",
+        "https://www.contractsfinder.service.gov.uk/Notice/Attachment/80613401-561a-413e-b5e7-33d61a437a26",
+        "https://www.contractsfinder.service.gov.uk/Notice/Attachment/e503c437-8550-41bf-ba44-67a0e7947d40",
+        "https://www.contractsfinder.service.gov.uk/Notice/Attachment/8fa5b153-891b-459f-be0c-fa5a88ac4e7b",
+        "https://www.contractsfinder.service.gov.uk/Notice/Attachment/3785b175-cf82-472a-8595-139b809c80ad",
+        "https://www.contractsfinder.service.gov.uk/Notice/Attachment/40ac9f27-5cdd-4bc9-8625-5836678d8b52"
+      ],
+      "note": "The town council publishes no play area list; its own tender notices on Contracts Finder (2017–2023) name eight of its play areas, which are in src/data/council-lists/leighton-linslade-town.csv, placed by park or street name (24 November 2026). Others are Central Bedfordshire Council's (its housing play areas are in the district's directory).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/leighton-linslade-town.csv",
+        "page": "https://www.contractsfinder.service.gov.uk/Notice/23b38c21-d918-4139-b863-4d64af359b85",
+        "near": {
+          "lat": 51.915,
+          "lng": -0.665,
+          "km": 4
+        }
+      }
     },
     {
       "district": "Luton",
@@ -1701,6 +1766,15 @@
       }
     },
     {
+      "district": "New Forest",
+      "parish": "Totton and Eling",
+      "council": "Totton and Eling Town Council",
+      "sources": [
+        "https://www.tottoneling-tc.gov.uk/?p=23"
+      ],
+      "note": "The town council says it has 23 children's play areas (30 in its 2023 annual report) but publishes no list of them; they come from OpenStreetMap until one is found. (24 November 2026)."
+    },
+    {
       "district": "Hart",
       "council": "Hart District Council",
       "sources": [
@@ -2369,6 +2443,24 @@
       "note": "Checked 7 November 2026: no play area list on the council's website. Play areas come from OpenStreetMap."
     },
     {
+      "district": "Denbighshire",
+      "parish": "Rhyl",
+      "council": "Rhyl Town Council",
+      "sources": [
+        "https://rhyltowncouncil.org.uk/en/town-map"
+      ],
+      "note": "Rhyl's play areas (Drift Park and others) are Denbighshire County Council's; the town council publishes no play area list. (24 November 2026)."
+    },
+    {
+      "district": "Denbighshire",
+      "parish": "Prestatyn",
+      "council": "Prestatyn Town Council",
+      "sources": [
+        "https://prestatyntc.gov.wales/?p=4645"
+      ],
+      "note": "The town council's play parks page says Denbighshire County Council's Leisure Services run the play areas in Prestatyn and Meliden. (24 November 2026)."
+    },
+    {
       "district": "Ceredigion",
       "council": "Ceredigion County Council",
       "sources": [
@@ -2578,9 +2670,10 @@
       "district": "West Suffolk",
       "council": "West Suffolk Council",
       "sources": [
+        "https://www.westsuffolk.gov.uk/community/pspo/pspodogexclusionareas.cfm",
         "https://www.westsuffolk.gov.uk/leisure/Parks/play-areas.cfm"
       ],
-      "note": "Play areas page: four rural play areas with postcodes, in src/data/council-lists/west-suffolk.csv; the town play areas are only on the council's map, so they come from OpenStreetMap (7 November 2026).",
+      "note": "Play areas page: four rural play areas with postcodes; the town play areas are only on the council's map, but its dog exclusion order lists every council play area with a postcode, so 81 more are in src/data/council-lists/west-suffolk.csv (24 November 2026). Play areas the order says town or parish councils own (Newmarket's Memorial Hall Gardens, Exning, Gazeley, Barningham, Fornham All Saints, Great Whelnetham, Horringer, Stanton, Clare Castle Country Park, Cavendish, Great Thurlow, Stoke-by-Clare) are left out; ball courts, MUGAs and green gyms too.",
       "feed": {
         "type": "list",
         "file": "src/data/council-lists/west-suffolk.csv",
@@ -2591,6 +2684,15 @@
           "km": 30
         }
       }
+    },
+    {
+      "district": "West Suffolk",
+      "parish": "Bury St. Edmunds",
+      "council": "Bury St Edmunds Town Council",
+      "sources": [
+        "https://www.westsuffolk.gov.uk/community/pspo/pspodogexclusionareas.cfm"
+      ],
+      "note": "The town's play areas are West Suffolk Council's, now read from its dog exclusion order list. (24 November 2026)."
     },
     {
       "district": "East Suffolk",
@@ -2705,6 +2807,25 @@
         "https://democracy.huntingdonshire.gov.uk/moderngov/documents/s142150/4.%20Play%20Sufficiency%20Appendix%205.pdf"
       ],
       "note": "Runs some play areas (news reports name Nursery Road and King George V Field) but its website refuses automated requests and no official list was found; Huntingdonshire District Council's 16 in the town are on its list (22 November 2026)."
+    },
+    {
+      "district": "Huntingdonshire",
+      "parish": "St. Neots",
+      "council": "St Neots Town Council",
+      "sources": [
+        "https://www.stneots-tc.gov.uk/?p=1427"
+      ],
+      "note": "The play areas page names the town council's play areas in St Neots, Eaton Socon and Eynesbury with what3words only, so they're placed by street (Monarch Road youth shelter and the Sydney Banks outdoor gym left out) (13 in src/data/council-lists/st-neots-town.csv, 24 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/st-neots-town.csv",
+        "page": "https://www.stneots-tc.gov.uk/?p=1427",
+        "near": {
+          "lat": 52.23,
+          "lng": -0.27,
+          "km": 4
+        }
+      }
     },
     {
       "district": "South Cambridgeshire",
@@ -3074,6 +3195,15 @@
       "note": "Owns sports grounds and is building the Conniburrow Activity Zone, but publishes no play area list; Great Linford's play areas are Milton Keynes City Council's or The Parks Trust's (22 November 2026)."
     },
     {
+      "district": "Milton Keynes",
+      "parish": "Bradwell",
+      "council": "Bradwell Parish Council",
+      "sources": [
+        "https://www.bradwell-pc.gov.uk/Home_28746.aspx"
+      ],
+      "note": "The play areas in Bradwell, Heelands and Rooksley are Milton Keynes City Council's (the parish council helps fund some, such as Heelands); no parish list. The city council's play area action plan has an appendix of parish-owned play areas worth reading for other Milton Keynes parishes. (24 November 2026)."
+    },
+    {
       "district": "Bracknell Forest",
       "council": "Bracknell Forest Council",
       "sources": [
@@ -3203,12 +3333,69 @@
       }
     },
     {
+      "district": "West Berkshire",
+      "parish": "Newbury",
+      "council": "Newbury Town Council",
+      "sources": [
+        "https://newbury.gov.uk/services/playgrounds"
+      ],
+      "note": "The playgrounds page lists the town council's playgrounds with postcodes and equipment (Skylings, a ball games area only, and Victoria Park's skate park and splash park left out) (13 in src/data/council-lists/newbury-town.csv, 24 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/newbury-town.csv",
+        "page": "https://newbury.gov.uk/services/playgrounds",
+        "near": {
+          "lat": 51.4,
+          "lng": -1.32,
+          "km": 4
+        }
+      }
+    },
+    {
       "district": "Wokingham",
       "council": "Wokingham Borough Council",
       "sources": [
         "https://www.wokingham.gov.uk/countryside-parks-and-conservation/play-areas"
       ],
       "note": "Checked 17 November 2026: play areas are only shown on the council's map (about 99 council play areas, plus town and parish ones such as Woodley and Wokingham Town). Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Wokingham",
+      "parish": "Wokingham",
+      "council": "Wokingham Town Council",
+      "sources": [
+        "https://www.wokingham-tc.gov.uk/parks"
+      ],
+      "note": "The parks page names the town council's eight parks, five with children's play areas; Wokingham Borough Council runs the town's other play areas (5 in src/data/council-lists/wokingham-town.csv, 24 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/wokingham-town.csv",
+        "page": "https://www.wokingham-tc.gov.uk/parks",
+        "near": {
+          "lat": 51.41,
+          "lng": -0.83,
+          "km": 4
+        }
+      }
+    },
+    {
+      "district": "Wokingham",
+      "parish": "Shinfield",
+      "council": "Shinfield Parish Council",
+      "sources": [
+        "https://shinfieldparish.gov.uk/?p=677"
+      ],
+      "note": "The facilities page names the parish council's playgrounds; Kendall Avenue and Church Lane are marked closed, so they're left out. Play areas on the new developments are Wokingham Borough Council's or the developers' (2 in src/data/council-lists/shinfield.csv, 24 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/shinfield.csv",
+        "page": "https://shinfieldparish.gov.uk/?p=677",
+        "near": {
+          "lat": 51.41,
+          "lng": -0.95,
+          "km": 5
+        }
+      }
     },
     {
       "district": "Runnymede",
@@ -4354,12 +4541,41 @@
       "note": "Checked 20 November 2026: the council runs over 90 play areas but publishes no list; town and parish councils run about 10 more. Play areas come from OpenStreetMap."
     },
     {
+      "district": "Arun",
+      "parish": "Littlehampton",
+      "council": "Littlehampton Town Council",
+      "sources": [
+        "https://www.littlehampton-tc.gov.uk/news/2020/inclusive-playground-rosemead-park-opens"
+      ],
+      "note": "The town council's own playground is at Rosemead Park; Arun District Council runs Littlehampton's other play areas (Lion's Den, Brookfield, Bluebell, Southfields, Linden Park and more) (1 in src/data/council-lists/littlehampton-town.csv, 24 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/littlehampton-town.csv",
+        "page": "https://www.littlehampton-tc.gov.uk/news/2020/inclusive-playground-rosemead-park-opens",
+        "near": {
+          "lat": 50.81,
+          "lng": -0.54,
+          "km": 3
+        }
+      }
+    },
+    {
       "district": "Mid Sussex",
       "council": "Mid Sussex District Council",
       "sources": [
         "https://midsussex.gov.uk/leisure-sport/playgrounds"
       ],
-      "note": "Checked 20 November 2026: the council says it runs 122 playgrounds but publishes no list; town councils in Burgess Hill, East Grinstead and Haywards Heath run more. Play areas come from OpenStreetMap."
+      "note": "The council says it runs 122 playgrounds but publishes no full list; its playgrounds page names its main ones and inclusive play areas (13, src/data/council-lists/mid-sussex.csv, placed by park or street name; the towns for Fry Crescent, Cissbury Road, Clair Park, Forest Fields, Lingfield Road and Worlds End are taken from where those streets and parks are), 24 November 2026. Town councils in Burgess Hill, East Grinstead and Haywards Heath run a few more.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/mid-sussex.csv",
+        "page": "https://midsussex.gov.uk/leisure-sport/playgrounds",
+        "near": {
+          "lat": 51.0,
+          "lng": -0.1,
+          "km": 15
+        }
+      }
     },
     {
       "district": "Mid Sussex",
@@ -4380,6 +4596,15 @@
           "km": 4
         }
       }
+    },
+    {
+      "district": "Mid Sussex",
+      "parish": "Haywards Heath",
+      "council": "Haywards Heath Town Council",
+      "sources": [
+        "https://midsussex.gov.uk/leisure-sport/playgrounds"
+      ],
+      "note": "Haywards Heath's main playgrounds (Victoria Park, Beech Hurst Gardens, Clair Park and others) are Mid Sussex District Council's; no town council play area list found. (24 November 2026)."
     },
     {
       "district": "Chichester",
@@ -5474,17 +5699,22 @@
       "sources": [
         "https://www.shrewsburytowncouncil.gov.uk/assets/page/2/"
       ],
-      "note": "Manages 57 play areas; its assets directory (seven list pages) has a page for each with its location and equipment, read as pages; only pages named as a play area or recreation ground are kept (22 November 2026).",
+      "note": "Manages 57 play areas; its assets directory has a page for each with its location and equipment, read as pages; only pages named as a play area or recreation ground are kept (22 November 2026). The feed read the old landing page and seven list pages, so only 11 were found; the directory is now at /assets/ with 12 list pages, all read (24 November 2026).",
       "feed": {
         "type": "pages",
         "index": [
-          "https://www.shrewsburytowncouncil.gov.uk/assets-landing-page/",
+          "https://www.shrewsburytowncouncil.gov.uk/assets/",
           "https://www.shrewsburytowncouncil.gov.uk/assets/page/2/",
           "https://www.shrewsburytowncouncil.gov.uk/assets/page/3/",
           "https://www.shrewsburytowncouncil.gov.uk/assets/page/4/",
           "https://www.shrewsburytowncouncil.gov.uk/assets/page/5/",
           "https://www.shrewsburytowncouncil.gov.uk/assets/page/6/",
-          "https://www.shrewsburytowncouncil.gov.uk/assets/page/7/"
+          "https://www.shrewsburytowncouncil.gov.uk/assets/page/7/",
+          "https://www.shrewsburytowncouncil.gov.uk/assets/page/8/",
+          "https://www.shrewsburytowncouncil.gov.uk/assets/page/9/",
+          "https://www.shrewsburytowncouncil.gov.uk/assets/page/10/",
+          "https://www.shrewsburytowncouncil.gov.uk/assets/page/11/",
+          "https://www.shrewsburytowncouncil.gov.uk/assets/page/12/"
         ],
         "follow": "/assets/[a-z0-9-]+/?$",
         "address": "Location[;:\\s]+([^;]{4,120})",
@@ -5584,6 +5814,44 @@
         "https://www.swindon.gov.uk/parks"
       ],
       "note": "Checked 20 November 2026: play areas are mostly run by parish councils (West Swindon, Haydon Wick, Central Swindon North, South Swindon and others), not the borough. Play areas come from OpenStreetMap."
+    },
+    {
+      "district": "Swindon",
+      "parish": "West Swindon",
+      "council": "West Swindon Parish Council",
+      "sources": [
+        "https://www.westswindon-pc.gov.uk/services/parish-play-areas-west-swindon/"
+      ],
+      "note": "The play areas page lists the parish council's 20 play areas with postcodes (Rivermead skate park left out) (20 in src/data/council-lists/west-swindon.csv, 24 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/west-swindon.csv",
+        "page": "https://www.westswindon-pc.gov.uk/services/parish-play-areas-west-swindon/",
+        "near": {
+          "lat": 51.56,
+          "lng": -1.83,
+          "km": 5
+        }
+      }
+    },
+    {
+      "district": "Swindon",
+      "parish": "Haydon Wick",
+      "council": "Haydon Wick Parish Council",
+      "sources": [
+        "https://haydonwick.gov.uk/wp-content/uploads/2024/10/Play-Area-Inspection-Policy-2024.pdf"
+      ],
+      "note": "Its play area inspection policy names the parish council's 22 play areas (the skate park left out; Francomes, in Abbey Meads, is the borough council's). No addresses are given, so they're placed by name near Haydon Wick (21 in src/data/council-lists/haydon-wick.csv, 24 November 2026).",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/haydon-wick.csv",
+        "page": "https://haydonwick.gov.uk/wp-content/uploads/2024/10/Play-Area-Inspection-Policy-2024.pdf",
+        "near": {
+          "lat": 51.59,
+          "lng": -1.8,
+          "km": 4
+        }
+      }
     },
     {
       "district": "Cornwall",
