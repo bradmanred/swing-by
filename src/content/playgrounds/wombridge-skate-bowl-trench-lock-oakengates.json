@@ -1,0 +1,33 @@
+{
+  "name": "Wombridge Skate Bowl",
+  "region": "west-midlands",
+  "area": "Trench Lock, Oakengates",
+  "lat": 52.70823,
+  "lng": -2.45244,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sk"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Telford & Wrekin Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Telford & Wrekin Council",
+  "sources": [
+    {
+      "label": "Telford & Wrekin Council: Wombridge Skate Bowl",
+      "url": "https://www.telford.gov.uk/online-directories/sports-and-leisure/find-a-playground/wombridge-skate-bowl"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/448364294"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
