@@ -1,0 +1,31 @@
+{
+  "name": "Newport Shukers Field",
+  "region": "west-midlands",
+  "area": "Newport",
+  "lat": 52.76742,
+  "lng": -2.3652,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Telford & Wrekin Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Telford & Wrekin Council",
+  "sources": [
+    {
+      "label": "Telford & Wrekin Council: Newport Shukers Field",
+      "url": "https://www.telford.gov.uk/online-directories/sports-and-leisure/find-a-playground/newport-shukers-field"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/685940635"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Felpham Play Area",
+  "region": "south-east",
+  "area": "Bognor Regis",
+  "lat": 50.7918,
+  "lng": -0.66398,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap in Felpham Recreation Ground near Brooks Lane, Bognor Regis. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "operator": "Arun District Council",
+  "sources": [
+    {
+      "label": "OpenStreetMap: Felpham Play Area",
+      "url": "https://www.openstreetmap.org/way/478151533"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges (from OpenStreetMap), play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}
