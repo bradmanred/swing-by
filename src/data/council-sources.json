@@ -64,7 +64,8 @@
       "council": "Lisburn & Castlereagh City Council",
       "sources": [
         "https://digitalservices.lisburncastlereagh.gov.uk/-/play-parks-across-lisburn-and-castlereagh"
-      ]
+      ],
+      "note": "The play parks page is built in the browser, so its list can't be read automatically (Fetch pages gets an empty page). Gaps are filled from OpenStreetMap. Checked again 24 November 2026."
     },
     {
       "district": "Braintree",
@@ -6411,6 +6412,145 @@
         "https://favershamtowncouncil.gov.uk/neighbourhood-plan/exhibition-one/recreation-and-sport/"
       ],
       "note": "No play areas run by the town council were found. The neighbourhood plan pages show play parks only on map images, and the recreation ground is Swale Borough Council's. Swale's play site lists (ws., services. and democracy.swale.gov.uk) still refuse automated requests, so no swale.csv. 22 November 2026."
+    },
+    {
+      "district": "Belfast",
+      "council": "Belfast City Council",
+      "sources": [
+        "https://www.belfastcity.gov.uk/Things-to-Do/Parks-and-Open-Spaces/Playgrounds"
+      ],
+      "note": "The playgrounds page has one table of every council playground (102 rows, with street and postcode). Copied into belfast.csv, leaving out Skipper Street (closed) and Ardoyne 'Pitch and Mitch' (a pitch). The OpenDataNI playgrounds CSV linked from data.gov.uk is dated 2016 and now gives a 404. There are no town or parish councils in Northern Ireland. Feed read 24 November 2026 with Fetch pages.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/belfast.csv",
+        "page": "https://www.belfastcity.gov.uk/Things-to-Do/Parks-and-Open-Spaces/Playgrounds",
+        "near": {
+          "lat": 54.6,
+          "lng": -5.93,
+          "km": 12
+        }
+      }
+    },
+    {
+      "district": "Ards and North Down",
+      "council": "Ards and North Down Borough Council",
+      "sources": [
+        "https://www.ardsandnorthdown.gov.uk/play",
+        "https://experience.arcgis.com/experience/4369e79240b84af3971b078434f9e217?org=ndbc"
+      ],
+      "note": "The play page lists 64 play areas with addresses, each linked to the council's ArcGIS map, whose play park layer (68 outlines, including the Millisle and Ballywalter ship play areas) is read directly; each outline stands for its middle point. Feed read 24 November 2026 with Fetch pages.",
+      "feed": {
+        "type": "geojson",
+        "url": "https://services3.arcgis.com/arG2UzeMsqPNJzQ1/arcgis/rest/services/ANDBC_PlayPark_View_Layer/FeatureServer/0/query?where=1%3D1&outFields=*&f=geojson&outSR=4326",
+        "nameField": "Name",
+        "page": "https://www.ardsandnorthdown.gov.uk/play"
+      }
+    },
+    {
+      "district": "Armagh City, Banbridge and Craigavon",
+      "council": "Armagh City, Banbridge and Craigavon Borough Council",
+      "sources": [
+        "https://getactiveabc.com/play",
+        "https://arcg.is/Wr8PC"
+      ],
+      "note": "The play page links the council's Play Area GIS Map, whose layer (PlayparksDataset_Jan24_Count94, 94 play parks with name and address) is read directly. A few are at primary schools (Darkley, Hamiltonsbawn, Our Lady's) but are listed by the council as its play parks. Feed read 24 November 2026 with Fetch pages.",
+      "feed": {
+        "type": "geojson",
+        "url": "https://services1.arcgis.com/z1F5K3NhPAd5urkg/arcgis/rest/services/PlayparksDataset_Jan24_Count94/FeatureServer/0/query?where=1%3D1&outFields=*&f=geojson&outSR=4326",
+        "nameField": "Name",
+        "page": "https://getactiveabc.com/play"
+      }
+    },
+    {
+      "district": "Causeway Coast and Glens",
+      "council": "Causeway Coast and Glens Borough Council",
+      "sources": [
+        "https://causewaycoastandglens.gov.uk/see-do/parks-and-open-spaces"
+      ],
+      "note": "The Play Areas page lists council play areas only on an embedded ArcGIS map, whose Play Parks layer (92 records with name, address and postcode) is read directly. A few names in the layer end in '?', which the reader drops. Feed read 24 November 2026 with Fetch pages.",
+      "feed": {
+        "type": "geojson",
+        "url": "https://services.arcgis.com/kNPftFdcdm7bfDuO/arcgis/rest/services/Play_Parks_CCGBC/FeatureServer/0/query?where=1%3D1&outFields=*&f=geojson&outSR=4326",
+        "nameField": "Name",
+        "page": "https://causewaycoastandglens.gov.uk/see-do/parks-and-open-spaces"
+      }
+    },
+    {
+      "district": "Mid Ulster",
+      "council": "Mid Ulster District Council",
+      "sources": [
+        "https://www.midulstercouncil.org/leisure/parks,-play-open-spaces/play-near-me"
+      ],
+      "note": "Play Near Me has only an ArcGIS map of its 'over 120' play parks. The map's layer (MUDC_Parks_Services_Facilities, also on OpenDataNI) is read directly, keeping the 86 records flagged Play_area = Yes; it gives place names only, so ' Play Park' is added. Feed read 24 November 2026 with Fetch pages.",
+      "feed": {
+        "type": "geojson",
+        "url": "https://services1.arcgis.com/IBPnlgK2X1Ngocds/arcgis/rest/services/MUDC_Parks_Services_Facilities/FeatureServer/0/query?where=Play_area%3D%27Yes%27&outFields=*&f=geojson&outSR=4326",
+        "nameFormat": "{Facility} Play Park",
+        "page": "https://www.midulstercouncil.org/leisure/parks,-play-open-spaces/play-near-me"
+      }
+    },
+    {
+      "district": "Mid and East Antrim",
+      "council": "Mid and East Antrim Borough Council",
+      "sources": [
+        "https://www.midandeastantrim.gov.uk/things-to-do/parks/play/"
+      ],
+      "note": "The play page links a play park locations map; its layer (MEA_PlayAreas2024, 62 play parks with address and a description of the equipment) is read directly. Feed read 24 November 2026 with Fetch pages.",
+      "feed": {
+        "type": "geojson",
+        "url": "https://services5.arcgis.com/65ux41b9DoQZACr1/arcgis/rest/services/MEA_PlayAreas2024/FeatureServer/0/query?where=1%3D1&outFields=*&f=geojson&outSR=4326",
+        "nameField": "Play_Par_1",
+        "page": "https://www.midandeastantrim.gov.uk/things-to-do/parks/play/"
+      }
+    },
+    {
+      "district": "Fermanagh and Omagh",
+      "council": "Fermanagh and Omagh District Council",
+      "sources": [
+        "https://www.fermanaghomagh.com/services/parks-and-open-spaces/play-parks/",
+        "https://www.fermanaghomagh.com/app/uploads/2026/09/Play-Parks-List-2026-3.pdf"
+      ],
+      "note": "The play parks page has a 2026 list (PDF, places only) and an ArcGIS map, whose layer (Play_Parks_Read_Only_View, 110 playgrounds) is read directly. Feed read 24 November 2026 with Fetch pages.",
+      "feed": {
+        "type": "geojson",
+        "url": "https://services.arcgis.com/39IZsk7UcOCbMcPx/arcgis/rest/services/Play_Parks_Read_Only_View/FeatureServer/0/query?where=1%3D1&outFields=*&f=geojson&outSR=4326",
+        "nameField": "name",
+        "page": "https://www.fermanaghomagh.com/services/parks-and-open-spaces/play-parks/"
+      }
+    },
+    {
+      "district": "Newry, Mourne and Down",
+      "council": "Newry, Mourne and Down District Council",
+      "sources": [
+        "https://www.newrymournedown.org/play-parks"
+      ],
+      "note": "The play parks page has one table of 169 council sites (name and town only), mixing play areas with kickabouts, pitches, MUGAs and grass areas. The 88 play areas, playgrounds and play parks are in newry-mourne-and-down.csv (repeated rows and a 'former' play area left out), placed by street and town. Feed read 24 November 2026 with Fetch pages.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/newry-mourne-and-down.csv",
+        "page": "https://www.newrymournedown.org/play-parks",
+        "near": {
+          "lat": 54.25,
+          "lng": -6.05,
+          "km": 40
+        }
+      }
+    },
+    {
+      "district": "Antrim and Newtownabbey",
+      "council": "Antrim and Newtownabbey Borough Council",
+      "sources": [
+        "https://antrimandnewtownabbey.gov.uk/visitor/parks-open-spaces/playgrounds/"
+      ],
+      "note": "The playgrounds page shows them only on an interactive map built in the page's own scripts, with no list, file or open data layer found. Gaps are filled from OpenStreetMap. Checked 24 November 2026."
+    },
+    {
+      "district": "Derry City and Strabane",
+      "council": "Derry City and Strabane District Council",
+      "sources": [
+        "https://derrystrabane.com/services/parks-and-play/parks"
+      ],
+      "note": "The parks page has no list of play parks, only consultation pages for a few (Hazelbank, Rossdowney, Derg area). The site refuses automated requests (403 to Fetch pages). Gaps are filled from OpenStreetMap. Checked 24 November 2026."
     }
   ]
 }
