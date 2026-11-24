@@ -53,7 +53,7 @@ A district council's list never covers the play areas its town and parish counci
 { "district": "North Yorkshire", "parish": "Knaresborough", "council": "Knaresborough Town Council", "sources": ["https://…/play-areas"], "note": "…", "feed": { "type": "list", "file": "src/data/council-lists/knaresborough.csv", "page": "https://…/play-areas" } }
 ```
 
-Give it a `feed` (usually a small `list`) when it names its play areas; with no list, register it anyway with a `note` saying what you found, so it drops off the to-do table. Its feed is read whenever its district is checked, and its records replace any OpenStreetMap-only copies of the same play areas. Until a town or parish council is checked, its district's gaps there are still filled from OpenStreetMap as Unverified, and the coverage report lists it under "Then their town and parish councils".
+Give it a `feed` (usually a small `list`) when it names its play areas; with no list, register it anyway with a `note` saying what you found, so it drops off the to-do table. Its feed is read whenever its district is checked (on the daily run, a list is read when its district still has OpenStreetMap gaps or when none of that council's playgrounds is verified yet, so a list added after its area was filled from OpenStreetMap is still read once), and its records replace any OpenStreetMap-only copies of the same play areas. Until a town or parish council is checked, its district's gaps there are still filled from OpenStreetMap as Unverified, and the coverage report lists it under "Then their town and parish councils".
 
 ## 2. Cross-check for gaps
 

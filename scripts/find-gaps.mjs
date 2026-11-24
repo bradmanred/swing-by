@@ -16,7 +16,8 @@
 //   node scripts/find-gaps.mjs --limit 5              only the first 5 counties (for a quick test)
 //   node scripts/find-gaps.mjs --all-feeds --add all  read every council list in the counties checked, gaps or not
 //
-// Council lists are normally read only for councils with OpenStreetMap gaps. With --only, or --all-feeds, every list in
+// Council lists are normally read only for councils with OpenStreetMap gaps, or with no verified listing of their own yet
+// (a list never read before). With --only, or --all-feeds, every list in
 // the counties checked is read, so a list added after its area was filled from OpenStreetMap still gets read: its
 // records replace the OpenStreetMap-only listings (Unverified) and add playgrounds OpenStreetMap doesn't have. The
 // report always lists the councils with a list but no gaps, and whether their lists were read.
@@ -132,6 +133,9 @@ const remember = (p) => grid.set(cellKey(p.lat, p.lng), [...(grid.get(cellKey(p.
 // Council records we already list, by source page and name, so one whose pin comes out differently this time isn't
 // added a second time (it happened in Telford and Wales, where a street lookup put the copy over 150 m away).
 const listedRecords = new Set();
+// Councils with at least one verified listing of their own. A council with a list and none yet has never been read
+// (its list was added after its area was filled from OpenStreetMap), so its list is read even without gaps (below).
+const verifiedOperators = new Set();
 const recordKey = (url, name) => `${url}|${String(name ?? '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim()}`;
 // Skate parks, BMX and pump tracks that councils put on their play area lists: not playgrounds, unless the name says
 // there's play equipment too ("Ormsgill Skate playground").
@@ -143,6 +147,7 @@ const NOT_PLAY_OSM = /^(?:muga|multi[ -]?use games area(?: \(muga\))?)$|\bbasket
 for (const f of (await readdir(DIR)).filter((f) => f.endsWith('.json'))) {
   const d = JSON.parse(await readFile(join(DIR, f), 'utf8'));
   for (const s of d.sources ?? []) if (d.checked && s.url && !/openstreetmap\.org\//.test(s.url)) listedRecords.add(recordKey(s.url, d.name));
+  if (d.checked && d.operator) verifiedOperators.add(norm(d.operator.replace(/\s*\(.*\)\s*$/, ''))); // "X Council (run by Better)" counts as X Council's
   const osmOnly = !d.checked && (d.sources ?? []).length > 0 && d.sources.every((x) => /openstreetmap\.org\//.test(x.url));
   remember({ id: f.replace(/\.json$/, ''), lat: d.lat, lng: d.lng, osmOnly, name: d.name, osm: osmIds(d.sources), rough: roughPin(d.notConfirmed) });
 }
@@ -346,7 +351,8 @@ const noGapHere = noGap.filter((c) => checkedCounties.has(districtCounty.get(nor
 const unknownCounty = noGap.filter((c) => !districtCounty.has(norm(c.district)));
 const noGapRead = new Set();
 if (ADD > 0) {
-  const feeds = councils.filter((c) => c.feed && (gapDistricts.has(norm(c.district)) || (ALL_FEEDS && noGapHere.includes(c))));
+  const neverRead = (c) => !verifiedOperators.has(norm(c.council));
+  const feeds = councils.filter((c) => c.feed && (gapDistricts.has(norm(c.district)) || ((ALL_FEEDS || neverRead(c)) && noGapHere.includes(c))));
   for (const c of feeds) {
     if (toAdd.length >= ADD) break;
     if (!gapDistricts.has(norm(c.district))) noGapRead.add(c);
