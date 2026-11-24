@@ -27,6 +27,20 @@ try {
   assert.deepEqual(stale.map((p) => p.id).sort(), ['council-never-checked', 'council-old']);
   assert.deepEqual(names.map((p) => p.id), ['village-street']);
   assert.deepEqual(thin.map((p) => p.id), ['village-street']);
+
+  // A playground removed for being inside school grounds (src/data/school-grounds.json) that a council's list now
+  // includes is flagged for a person to check, not reported as new.
+  const { SCHOOL_GROUNDS } = await import('../scripts/osm-details.mjs');
+  const [osm, gone] = [...SCHOOL_GROUNDS][0];
+  const csv = join(dir, 'list.csv');
+  await writeFile(csv, `name,park,postcode,url,text,where,lat,lng,placed\nVillage Play Area,,,https://www.example.gov.uk/play,A play area.,,${gone.lat},${gone.lng},\n`);
+  const councils = join(dir, 'councils.json');
+  await writeFile(councils, JSON.stringify({ councils: [{ district: 'Example', council: 'Example Council', sources: ['https://www.example.gov.uk/play'], feed: { type: 'list', file: csv, page: 'https://www.example.gov.uk/play' } }] }));
+  execFileSync('node', ['scripts/quarterly-check.mjs', '--dir', play, '--out', dir, '--councils', councils, '--skip', 'osm,links,stale,names'], { stdio: 'pipe' });
+  const q = JSON.parse(await readFile(join(dir, 'quarterly-check.json'), 'utf8'));
+  assert.deepEqual(q.councils[0].school.map((x) => x.osm), [osm], 'school-grounds playground on a council list');
+  assert.equal(q.councils[0].fresh.length, 0, 'not reported as new');
+  assert.match(await readFile(join(dir, 'quarterly-check.md'), 'utf8'), /Removed in November 2026 for being inside school grounds/);
   console.log('quarterly: ok');
 } finally {
   await rm(dir, { recursive: true, force: true });

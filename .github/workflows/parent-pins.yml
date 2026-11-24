@@ -3,6 +3,8 @@
 # households agree on the same spot, and more agree on it than on anywhere else, this moves the pin, updates the
 # nearest toilets, checks the site still builds and passes its tests, and pushes the change to main, which
 # deploys it. If main can't be pushed to directly, it opens a pull request instead.
+# It also puts back playgrounds taken off for being inside school grounds once two parents say they're open to everyone
+# (scripts/school-grounds.mjs --parents; parents answer on the old page address, worker/school-grounds.js).
 # Runs every morning and on demand. Tick "Just look" to see what would move without changing anything.
 # Needs the MOD_TOKEN repository secret (the same moderator key as the Worker).
 name: Move pins parents agree on
@@ -37,6 +39,11 @@ jobs:
           SITE: https://swing-by.co.uk
           MOD_TOKEN: ${{ secrets.MOD_TOKEN }}
         run: node scripts/parent-pins.mjs ${{ inputs.dry_run && '--dry-run' || '' }}
+      - name: Put back school-grounds playgrounds parents say are public
+        if: ${{ !inputs.dry_run }}
+        env:
+          SITE: https://swing-by.co.uk
+        run: node scripts/school-grounds.mjs --parents --report reports/parent-pins.md
       - name: See whether anything moved
         id: changed
         run: echo "moved=$([ -n "$(git status --porcelain -- src/content/playgrounds)" ] && echo yes || echo no)" >> "$GITHUB_OUTPUT"
@@ -55,8 +62,8 @@ jobs:
         run: |
           git config user.name "swing-by-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/content/playgrounds src/data/pins-checked.json src/data/toilets.json
-          { echo "Move pins that parents agree are in the wrong place"; echo; grep '^| \[' reports/parent-pins.md || true; } > msg.txt
+          git add src/content/playgrounds src/data/pins-checked.json src/data/toilets.json src/data/school-grounds.json
+          { echo "Move pins and put back playgrounds that parents agree on"; echo; grep -E '^(\| \[|- \[)' reports/parent-pins.md || true; } > msg.txt
           git commit -q -F msg.txt
           if [ "${{ github.ref }}" = "refs/heads/main" ] && git push origin HEAD:main; then
             echo "Pushed to main; the site deploys from there."

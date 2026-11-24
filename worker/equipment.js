@@ -21,6 +21,7 @@
 import labels from '../src/data/labels.json' with { type: 'json' };
 import { isModerator } from './auth.js';
 import { PARK, canonicalPark } from './ids.js';
+import { SCHOOL_PAGES } from './school-grounds.js';
 
 // What parents can tick: the equipment, access and facility lists used across the site, except toilets and
 // baby change, which only come from official sources and the Toilet Map.
@@ -96,8 +97,12 @@ function summarise(rows) {
   return { confirmed, open, parents: new Set(rows.map((r) => r.reporter)).size };
 }
 
+// A playground's id, or the old address of one taken off for being in school grounds (worker/school-grounds.js), whose
+// page still asks parents whether it's public.
+const parkOrSchool = async (request, env, given) => (await canonicalPark(request, env, given)) ?? (SCHOOL_PAGES.has(String(given ?? '')) ? String(given) : null);
+
 async function forPark(request, env, given) {
-  const park = await canonicalPark(request, env, given);
+  const park = await parkOrSchool(request, env, given);
   if (!park) return json({ error: 'Which playground?' }, 400);
   const { results } = await env.PHOTOS_DB.prepare('SELECT reporter, conn, item, present FROM equipment_reports WHERE park = ?').bind(park).all();
   const me = parentFrom(request);
@@ -115,7 +120,7 @@ async function submit(request, env) {
   } catch {
     return json({ error: 'Send your answers as JSON.' }, 400);
   }
-  const park = await canonicalPark(request, env, body.park);
+  const park = await parkOrSchool(request, env, body.park);
   const typed = parseOther(Array.isArray(body.other) ? body.other.join(', ') : body.other);
   const items = [...new Set([...(Array.isArray(body.items) ? body.items : []).map(String), ...typed.items])].filter((k) => ITEMS.has(k));
   const open = body.open === true ? 1 : body.open === false ? 0 : null;
