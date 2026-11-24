@@ -137,6 +137,9 @@ const recordKey = (url, name) => `${url}|${String(name ?? '').toLowerCase().repl
 // there's play equipment too ("Ormsgill Skate playground").
 const NOT_PLAY = /\bskate ?(?:park|bowl)s?\b|\bbmx\b|\bpump ?track\b/i;
 const notPlay = (name) => NOT_PLAY.test(name ?? '') && !/\bplay/i.test(name ?? '');
+// OpenStreetMap playgrounds whose name (their own, or the one given from the area around them) says they're really a
+// games area or court, or a school's: left out like the ones tagged as a school's (scripts/osm-details.mjs).
+const NOT_PLAY_OSM = /^(?:muga|multi[ -]?use games area(?: \(muga\))?)$|\bbasket ?ball court\b|\bprimary school\b|\bschool rugby\b/i;
 for (const f of (await readdir(DIR)).filter((f) => f.endsWith('.json'))) {
   const d = JSON.parse(await readFile(join(DIR, f), 'utf8'));
   for (const s of d.sources ?? []) if (d.checked && s.url && !/openstreetmap\.org\//.test(s.url)) listedRecords.add(recordKey(s.url, d.name));
@@ -444,6 +447,7 @@ if (toAdd.length) {
       };
     } else {
       doc = osmPlaygroundDoc(p, { road, place, area, region: reg });
+      if (NOT_PLAY_OSM.test(doc.name) || notPlay(doc.name)) continue;
     }
     let id = slug(`${doc.name}-${doc.area}`).slice(0, 60);
     for (let n = 2, base = id; existing.has(`${id}.json`); n++) id = `${base}-${n}`;
