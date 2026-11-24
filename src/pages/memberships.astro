@@ -1,6 +1,5 @@
 ---
 import Base from '../layouts/Base.astro';
-import MembershipPick from '../components/MembershipPick.astro';
 import { allParks, L, regionName } from '../lib/parks';
 import regionsFile from '../data/regions.json';
 const parks = (await allParks()).filter((p) => p.membership);
@@ -24,7 +23,6 @@ const groups = Object.entries(L.memberships).map(([k, short]) => {
       {g.list.length ? (
         <>
           <p class="hint" style="margin-top:6px">{g.list.length} play areas.</p>
-          <MembershipPick membership={g.k} place="memberships-page" />
           {g.byRegion.map((r) => (
             <details style="margin-top:10px">
               <summary><strong>{regionName(r.id)}</strong> <span class="hint">({r.list.length})</span></summary>
