@@ -1,0 +1,35 @@
+{
+  "name": "Jocks Lane park",
+  "region": "south-east",
+  "area": "Temple Park, Bracknell",
+  "lat": 51.4252,
+  "lng": -0.76607,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "wp",
+    "rb"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Bracknell Town Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Bracknell Town Council",
+  "sources": [
+    {
+      "label": "Bracknell Town Council: Jocks Lane park",
+      "url": "https://bracknelltowncouncil.gov.uk/council-services/play-areas-and-green-spaces/jocks-lane-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/878421947"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

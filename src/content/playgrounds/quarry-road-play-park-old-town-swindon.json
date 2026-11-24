@@ -1,0 +1,37 @@
+{
+  "name": "Quarry Road Play Park",
+  "region": "south-west",
+  "area": "Old Town, Swindon",
+  "lat": 51.5505,
+  "lng": -1.78047,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "sw",
+    "bs",
+    "bk",
+    "cl",
+    "rb",
+    "ss",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap near Quarry Road, Old Town. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "operator": "South Swindon Parish Council",
+  "sources": [
+    {
+      "label": "OpenStreetMap: Quarry Road Play Park",
+      "url": "https://www.openstreetmap.org/way/1276512501"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges (from OpenStreetMap), play equipment (what is mapped on OpenStreetMap, which may be incomplete), opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

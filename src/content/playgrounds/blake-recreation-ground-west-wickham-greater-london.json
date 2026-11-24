@@ -1,0 +1,30 @@
+{
+  "name": "Blake Recreation Ground",
+  "region": "london",
+  "area": "West Wickham, Greater London",
+  "lat": 51.38012,
+  "lng": -0.01903,
+  "ages": [],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Bromley Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Bromley Council",
+  "sources": [
+    {
+      "label": "Bromley Council: Blake Recreation Ground",
+      "url": "https://www.bromley.gov.uk/directory-record/918/blake-recreation-ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/307058746"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

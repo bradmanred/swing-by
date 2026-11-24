@@ -1,0 +1,32 @@
+{
+  "name": "Edward Road play area",
+  "region": "east-midlands",
+  "area": "Fleckney",
+  "lat": 52.53178,
+  "lng": -1.04725,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Harborough District Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Harborough District Council",
+  "sources": [
+    {
+      "label": "Harborough District Council: Edward Road play area",
+      "url": "https://www.harborough.gov.uk/directory_record/826/edward_road_play_area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1461865308"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

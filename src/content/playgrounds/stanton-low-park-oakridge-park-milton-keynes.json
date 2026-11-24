@@ -1,0 +1,41 @@
+{
+  "name": "Stanton Low Park",
+  "region": "south-east",
+  "area": "Oakridge Park, Milton Keynes",
+  "lat": 52.07294,
+  "lng": -0.77545,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "bk",
+    "sw",
+    "sl",
+    "cl",
+    "sk",
+    "ss"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "A playground on The Parks Trust's own list of play areas.",
+  "nearby": [],
+  "operator": "The Parks Trust",
+  "sources": [
+    {
+      "label": "The Parks Trust: Stanton Low Park",
+      "url": "https://www.theparkstrust.com/find-a-park/stanton-low-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/656193892"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

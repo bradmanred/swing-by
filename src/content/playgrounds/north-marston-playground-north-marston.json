@@ -1,0 +1,30 @@
+{
+  "name": "North Marston Playground",
+  "region": "south-east",
+  "area": "North Marston",
+  "lat": 51.89896,
+  "lng": -0.87755,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [
+    "sf"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap near Quainton Road, North Marston. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "operator": "North Marston Council",
+  "sources": [
+    {
+      "label": "OpenStreetMap: North Marston Playground",
+      "url": "https://www.openstreetmap.org/way/1388533046"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges (from OpenStreetMap), play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

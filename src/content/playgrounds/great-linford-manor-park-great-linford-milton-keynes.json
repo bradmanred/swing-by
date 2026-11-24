@@ -1,0 +1,38 @@
+{
+  "name": "Great Linford Manor Park",
+  "region": "south-east",
+  "area": "Great Linford, Milton Keynes",
+  "lat": 52.07248,
+  "lng": -0.75578,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "rb",
+    "spr"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [
+    "cf"
+  ],
+  "opens": "",
+  "description": "A playground on The Parks Trust's own list of play areas.",
+  "nearby": [],
+  "operator": "The Parks Trust",
+  "sources": [
+    {
+      "label": "The Parks Trust: Great Linford Manor Park",
+      "url": "https://www.theparkstrust.com/find-a-park/great-linford-manor-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/933359706"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

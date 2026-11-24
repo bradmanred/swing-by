@@ -1,0 +1,28 @@
+{
+  "name": "Mead Road play area",
+  "region": "south-west",
+  "area": "North Weston",
+  "lat": 51.47089,
+  "lng": -2.77303,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by Portishead Town Council.",
+  "nearby": [],
+  "operator": "Portishead Town Council",
+  "sources": [
+    {
+      "label": "Portishead Town Council: Mead Road play area",
+      "url": "https://www.portishead.gov.uk/playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/900671015"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

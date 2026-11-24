@@ -1,0 +1,39 @@
+{
+  "name": "Mill Park",
+  "region": "south-east",
+  "area": "Hanworth, Bracknell",
+  "lat": 51.40397,
+  "lng": -0.76629,
+  "ages": [],
+  "equipment": [
+    "bk",
+    "sw",
+    "sl",
+    "cl",
+    "rb",
+    "sk",
+    "ss",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [
+    "cf"
+  ],
+  "opens": "",
+  "description": "A playground on Bracknell Town Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Bracknell Town Council",
+  "sources": [
+    {
+      "label": "Bracknell Town Council: Mill Park",
+      "url": "https://bracknelltowncouncil.gov.uk/council-services/play-areas-and-green-spaces/mill-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/899317571"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

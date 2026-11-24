@@ -1,0 +1,44 @@
+{
+  "name": "Broughton Brook",
+  "region": "south-east",
+  "area": "Brook Furlong, Milton Keynes",
+  "lat": 52.05167,
+  "lng": -0.69812,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "bk",
+    "sw",
+    "sl",
+    "cl",
+    "rb",
+    "sk",
+    "ss",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A playground on The Parks Trust's own list of play areas.",
+  "nearby": [],
+  "operator": "The Parks Trust",
+  "sources": [
+    {
+      "label": "The Parks Trust: Broughton Brook",
+      "url": "https://www.theparkstrust.com/find-a-park/broughton-brook"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/879765851"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

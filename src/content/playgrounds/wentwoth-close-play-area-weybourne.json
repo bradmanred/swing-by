@@ -1,0 +1,29 @@
+{
+  "name": "Wentwoth Close Play Area",
+  "region": "south-east",
+  "area": "Weybourne",
+  "lat": 51.23124,
+  "lng": -0.77549,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap near Bartlett Avenue, Weybourne. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "operator": "Waverley Borough Council",
+  "sources": [
+    {
+      "label": "OpenStreetMap: Wentwoth Close Play Area",
+      "url": "https://www.openstreetmap.org/way/526514220"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges (from OpenStreetMap), play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

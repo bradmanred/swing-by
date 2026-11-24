@@ -1,0 +1,29 @@
+{
+  "name": "Great Horwood Rec Ground",
+  "region": "south-east",
+  "area": "Great Horwood",
+  "lat": 51.96836,
+  "lng": -0.87806,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap near Spring Lane, Great Horwood. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "operator": "Great Horwood Council",
+  "sources": [
+    {
+      "label": "OpenStreetMap: Great Horwood Rec Ground",
+      "url": "https://www.openstreetmap.org/way/1158718734"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges (from OpenStreetMap), play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Ashcombe Park",
+  "region": "south-west",
+  "area": "Milton, Weston-super-Mare",
+  "lat": 51.35528,
+  "lng": -2.95318,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by Weston-super-Mare Town Council.",
+  "nearby": [],
+  "operator": "Weston-super-Mare Town Council",
+  "sources": [
+    {
+      "label": "Weston-super-Mare Town Council: Ashcombe Park",
+      "url": "https://wsm-tc.gov.uk/our-services/parks-play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/186389701"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

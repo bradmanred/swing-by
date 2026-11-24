@@ -1,0 +1,28 @@
+{
+  "name": "Oscar's Playground",
+  "region": "london",
+  "area": "Merton, Greater London",
+  "lat": 51.4083,
+  "lng": -0.18521,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap near Phipps Bridge Road, Merton. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "operator": "Deen City Farm",
+  "sources": [
+    {
+      "label": "OpenStreetMap: Oscar's Playground",
+      "url": "https://www.openstreetmap.org/node/12666623047"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges (from OpenStreetMap), play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

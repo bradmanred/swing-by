@@ -1,0 +1,31 @@
+{
+  "name": "White Cottages Close Play Area",
+  "region": "south-east",
+  "area": "Hale",
+  "lat": 51.2306,
+  "lng": -0.78702,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "bs"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap near Willow Way, Hale. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "operator": "Waverley Borough Council",
+  "sources": [
+    {
+      "label": "OpenStreetMap: White Cottages Close Play Area",
+      "url": "https://www.openstreetmap.org/way/790323963"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges (from OpenStreetMap), play equipment (what is mapped on OpenStreetMap, which may be incomplete), opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

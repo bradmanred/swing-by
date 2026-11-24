@@ -1,0 +1,35 @@
+{
+  "name": "Boyn Grove",
+  "region": "south-east",
+  "area": "St Marks, Maidenhead",
+  "lat": 51.52011,
+  "lng": -0.74625,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "rb",
+    "tp",
+    "bb"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A playground on Royal Borough of Windsor and Maidenhead's own list of play areas.",
+  "nearby": [],
+  "operator": "Royal Borough of Windsor and Maidenhead",
+  "sources": [
+    {
+      "label": "Royal Borough of Windsor and Maidenhead: Boyn Grove",
+      "url": "https://rbwm.gov.uk/leisure-and-culture/parks-and-open-spaces/boyn-grove"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (from the council's map), age ranges, the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

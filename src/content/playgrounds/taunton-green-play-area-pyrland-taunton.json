@@ -1,0 +1,28 @@
+{
+  "name": "Taunton Green play area",
+  "region": "south-west",
+  "area": "Pyrland, Taunton",
+  "lat": 51.03584,
+  "lng": -3.10295,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by Taunton Town Council.",
+  "nearby": [],
+  "operator": "Taunton Town Council",
+  "sources": [
+    {
+      "label": "Taunton Town Council: Taunton Green play area",
+      "url": "https://www.find-tender.service.gov.uk/Notice/Attachment/A-3044"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/122110584"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

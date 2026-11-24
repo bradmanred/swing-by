@@ -1,0 +1,28 @@
+{
+  "name": "Moorhill Crescent Play Area",
+  "region": "scotland",
+  "area": "Netherplace Estate, Newton Mearns",
+  "lat": 55.77152,
+  "lng": -4.3384,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on East Renfrewshire Council's list of playgrounds and parks.",
+  "nearby": [],
+  "operator": "East Renfrewshire Council",
+  "sources": [
+    {
+      "label": "East Renfrewshire Council: Moorhill Crescent Play Area",
+      "url": "https://eastrenfrewshire.gov.uk/playgrounds-and-parks-list"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/732228152"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

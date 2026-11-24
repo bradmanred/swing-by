@@ -1,0 +1,30 @@
+{
+  "name": "Cottage Lane play area",
+  "region": "east-midlands",
+  "area": "Broughton Astley",
+  "lat": 52.52874,
+  "lng": -1.21328,
+  "ages": [
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Harborough District Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Harborough District Council",
+  "sources": [
+    {
+      "label": "Harborough District Council: Cottage Lane play area",
+      "url": "https://www.harborough.gov.uk/directory_record/822/cottage_lane_play_area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1539870550"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

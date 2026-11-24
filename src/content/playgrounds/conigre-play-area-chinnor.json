@@ -1,0 +1,30 @@
+{
+  "name": "Conigre Play Area",
+  "region": "south-east",
+  "area": "Chinnor",
+  "lat": 51.70447,
+  "lng": -0.91223,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "bk",
+    "cl",
+    "rb",
+    "spr",
+    "bb"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap in Conigre Field near Station Road, Chinnor. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "sources": [
+    {
+      "label": "OpenStreetMap: Conigre Play Area",
+      "url": "https://www.openstreetmap.org/way/97683546"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment (what is mapped on OpenStreetMap, which may be incomplete), opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Craichie Village Play Area",
+  "region": "scotland",
+  "area": "Craichie",
+  "lat": 56.61409,
+  "lng": -2.8123,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "bs",
+    "sl",
+    "cl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap near High Rigg, Craichie. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "sources": [
+    {
+      "label": "OpenStreetMap: Craichie Village Play Area",
+      "url": "https://www.openstreetmap.org/way/345801979"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment (what is mapped on OpenStreetMap, which may be incomplete), opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

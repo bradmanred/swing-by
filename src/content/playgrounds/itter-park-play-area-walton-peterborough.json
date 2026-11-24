@@ -1,0 +1,30 @@
+{
+  "name": "Itter Park Play Area",
+  "region": "east",
+  "area": "Walton, Peterborough",
+  "lat": 52.60199,
+  "lng": -0.25533,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "bs",
+    "bk",
+    "cl",
+    "rb",
+    "ss"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap near Rockbourne Place, Walton. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "sources": [
+    {
+      "label": "OpenStreetMap: Itter Park Play Area",
+      "url": "https://www.openstreetmap.org/way/324081489"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment (what is mapped on OpenStreetMap, which may be incomplete), opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Cherwell Close",
+  "region": "south-east",
+  "area": "North Town, Maidenhead",
+  "lat": 51.52766,
+  "lng": -0.71723,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A playground on Royal Borough of Windsor and Maidenhead's own list of play areas.",
+  "nearby": [],
+  "operator": "Royal Borough of Windsor and Maidenhead",
+  "sources": [
+    {
+      "label": "Royal Borough of Windsor and Maidenhead: Cherwell Close",
+      "url": "https://rbwm.gov.uk/leisure-and-culture/parks-and-open-spaces/cherwell-close"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/720360473"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours and parking.",
+  "photo": null
+}
