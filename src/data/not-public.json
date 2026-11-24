@@ -1,0 +1,6 @@
+{
+  "about": "Playgrounds mapped on OpenStreetMap that an official source says aren't open to the public, so the jobs that add Unverified playgrounds from OpenStreetMap (scripts/find-gaps.mjs, scripts/junction-gaps.mjs) never add them again. Key: the OpenStreetMap id (way/123). Add one whenever a listing is removed for this reason, with a short note saying who told us.",
+  "playgrounds": {
+    "way/1046353451": "Off Pulleys Close, Aveton Gifford: on school land and private, says Aveton Gifford Parish Council (23 November 2026)."
+  }
+}

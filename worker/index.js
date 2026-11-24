@@ -12,6 +12,7 @@ import { equipment } from './equipment.js';
 import { pins } from './pins.js';
 import { servePacked } from './packs.js';
 import { AREA_MOVES } from './area-moves.js';
+import { SCHOOL_PAGES, schoolGroundsPage } from './school-grounds.js';
 
 // Old playground address → the listing it was merged into. Add a line whenever two listings are merged.
 const MERGED = {
@@ -455,6 +456,8 @@ export default {
     const res = await env.ASSETS.fetch(request);
     // Playgrounds merged into another listing: send old links to the one we kept.
     const gone = /^\/playgrounds\/([a-z0-9-]+)\/?$/.exec(pathname);
+    // Playgrounds taken off for being in school grounds: ask parents whether they're public (worker/school-grounds.js).
+    if (res.status === 404 && gone && SCHOOL_PAGES.has(gone[1])) return schoolGroundsPage(gone[1]);
     if (res.status === 404 && gone && MERGED[gone[1]]) {
       url.pathname = `/playgrounds/${MERGED[gone[1]]}/`;
       return Response.redirect(url.toString(), 301);

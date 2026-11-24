@@ -11,12 +11,26 @@
 //   access from its own tags. These go on the page as Unverified details: notConfirmed says they come from
 //   OpenStreetMap and may be incomplete.
 
+import { readFileSync } from 'node:fs';
+
+const data = (f) => JSON.parse(readFileSync(new URL(`../src/data/${f}`, import.meta.url), 'utf8'));
+/**
+ * Listings removed because they're inside school grounds (src/data/school-grounds.json), by OpenStreetMap id. They
+ * wait for an official source or two parents: either brings one back and clears its entry (scripts/school-grounds.mjs).
+ */
+export const SCHOOL_GROUNDS = new Map(Object.entries(data('school-grounds.json').playgrounds));
+/**
+ * Mapped playgrounds never to add again from OpenStreetMap, by id: ones an official source says aren't public
+ * (src/data/not-public.json), and the school-grounds ones above.
+ */
+export const NOT_PUBLIC = new Set([...Object.keys(data('not-public.json').playgrounds), ...SCHOOL_GROUNDS.keys()]);
+
 export const BAD = /school|nursery|academy|primary|college|\bpub\b|inn\b|hotel|caravan|holiday park|soft play|ikea|mcdonald/i;
 const CLOSED = new Set(['private', 'no', 'customers', 'residents', 'permit', 'students']);
 /** Whether a mapped playground's own tags allow it: not private or indoor, and not named as a school's, pub's and so on. */
 export const isPublic = (t = {}) => !CLOSED.has(t.access) && t.indoor !== 'yes' && !BAD.test(`${t.name ?? ''} ${t.operator ?? ''}`);
-/** The same for a snapshot playground, which also knows whose grounds it is inside ("within"). */
-export const isPublicPlay = (p) => isPublic(p.tags ?? {}) && !p.within;
+/** The same for a snapshot playground, which also knows whose grounds it is inside ("within"), and not one we've been told is private. */
+export const isPublicPlay = (p) => isPublic(p.tags ?? {}) && !p.within && !NOT_PUBLIC.has(p.id);
 
 /** The kind of grounds whose playgrounds aren't open to everyone, from an area's tags, or null. */
 export function groundsKind(t = {}) {

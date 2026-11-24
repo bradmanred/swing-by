@@ -3,67 +3,67 @@
  "counties": [
   {
    "name": "Greater London",
-   "playgrounds": 2954
+   "playgrounds": 2819
   },
   {
    "name": "Kent",
-   "playgrounds": 1182
+   "playgrounds": 1144
   },
   {
    "name": "Devon",
-   "playgrounds": 1141
+   "playgrounds": 1125
   },
   {
    "name": "Essex",
-   "playgrounds": 1052
+   "playgrounds": 1040
   },
   {
    "name": "North Yorkshire",
-   "playgrounds": 955
+   "playgrounds": 930
   },
   {
    "name": "Lancashire",
-   "playgrounds": 949
+   "playgrounds": 908
   },
   {
    "name": "Norfolk",
-   "playgrounds": 809
+   "playgrounds": 783
   },
   {
    "name": "Hertfordshire",
-   "playgrounds": 734
+   "playgrounds": 710
   },
   {
    "name": "West Midlands",
-   "playgrounds": 730
+   "playgrounds": 706
   },
   {
    "name": "Greater Manchester",
-   "playgrounds": 702
+   "playgrounds": 672
   },
   {
    "name": "Hampshire",
-   "playgrounds": 655
+   "playgrounds": 635
   },
   {
    "name": "West Yorkshire",
-   "playgrounds": 554
-  },
-  {
-   "name": "South Yorkshire",
    "playgrounds": 541
   },
   {
+   "name": "South Yorkshire",
+   "playgrounds": 527
+  },
+  {
    "name": "Bedfordshire",
-   "playgrounds": 522
+   "playgrounds": 518
   },
   {
    "name": "Tyne and Wear",
-   "playgrounds": 447
+   "playgrounds": 436
   },
   {
    "name": "Merseyside",
-   "playgrounds": 407
+   "playgrounds": 362
   },
   {
    "name": "Derbyshire",
@@ -75,39 +75,23 @@
   },
   {
    "name": "Leicestershire",
-   "playgrounds": 264
-  },
-  {
-   "name": "Cumbria",
-   "playgrounds": 187
-  },
-  {
-   "name": "West Sussex",
-   "playgrounds": 185
+   "playgrounds": 255
   },
   {
    "name": "Nottinghamshire",
-   "playgrounds": 181
+   "playgrounds": 179
   },
   {
    "name": "Cambridgeshire",
-   "playgrounds": 178
+   "playgrounds": 177
   },
   {
    "name": "Cheshire",
-   "playgrounds": 167
-  },
-  {
-   "name": "Dorset",
-   "playgrounds": 161
-  },
-  {
-   "name": "Shropshire",
-   "playgrounds": 148
+   "playgrounds": 164
   },
   {
    "name": "Gloucestershire",
-   "playgrounds": 147
+   "playgrounds": 146
   },
   {
    "name": "Berkshire",
@@ -118,20 +102,8 @@
    "playgrounds": 128
   },
   {
-   "name": "Warwickshire",
-   "playgrounds": 126
-  },
-  {
    "name": "Somerset",
-   "playgrounds": 124
-  },
-  {
-   "name": "Worcestershire",
    "playgrounds": 123
-  },
-  {
-   "name": "Oxfordshire",
-   "playgrounds": 112
   },
   {
    "name": "Suffolk",
@@ -142,12 +114,12 @@
    "playgrounds": 106
   },
   {
-   "name": "Northamptonshire",
-   "playgrounds": 103
+   "name": "West Sussex",
+   "playgrounds": 104
   },
   {
-   "name": "East Riding of Yorkshire",
-   "playgrounds": 102
+   "name": "Northamptonshire",
+   "playgrounds": 100
   },
   {
    "name": "East Sussex",
@@ -155,7 +127,7 @@
   },
   {
    "name": "Isle of Wight",
-   "playgrounds": 79
+   "playgrounds": 78
   },
   {
    "name": "Buckinghamshire",
@@ -163,23 +135,51 @@
   },
   {
    "name": "Lincolnshire",
-   "playgrounds": 68
+   "playgrounds": 67
   },
   {
-   "name": "Bristol",
-   "playgrounds": 59
+   "name": "Cumbria",
+   "playgrounds": 29
+  },
+  {
+   "name": "Oxfordshire",
+   "playgrounds": 24
+  },
+  {
+   "name": "Warwickshire",
+   "playgrounds": 19
+  },
+  {
+   "name": "Worcestershire",
+   "playgrounds": 16
   },
   {
    "name": "Wiltshire",
    "playgrounds": 16
   },
   {
+   "name": "East Riding of Yorkshire",
+   "playgrounds": 11
+  },
+  {
+   "name": "Shropshire",
+   "playgrounds": 10
+  },
+  {
    "name": "Northumberland",
    "playgrounds": 10
   },
   {
+   "name": "Dorset",
+   "playgrounds": 8
+  },
+  {
    "name": "Cornwall",
    "playgrounds": 7
+  },
+  {
+   "name": "Bristol",
+   "playgrounds": 6
   },
   {
    "name": "Herefordshire",
@@ -189,15 +189,15 @@
  "nations": [
   {
    "name": "Wales",
-   "playgrounds": 2934
+   "playgrounds": 2864
   },
   {
    "name": "Scotland",
-   "playgrounds": 2311
+   "playgrounds": 2296
   },
   {
    "name": "Northern Ireland",
-   "playgrounds": 107
+   "playgrounds": 101
   }
  ]
 }

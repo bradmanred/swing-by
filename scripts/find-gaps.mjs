@@ -38,8 +38,9 @@ import { SAME_M, ROUGH_M, namesAgree, osmIds, roughPin, samePlace } from './same
 import { mkdir, readFile, readdir, unlink, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { readFeed } from './council-feeds.mjs';
+import { clearListed } from './school-grounds.mjs';
 import { snapshotNames } from './osm-names.mjs';
-import { isPublic, isPublicPlay, osmPlaygroundDoc } from './osm-details.mjs';
+import { NOT_PUBLIC, SCHOOL_GROUNDS, isPublic, isPublicPlay, osmPlaygroundDoc } from './osm-details.mjs';
 
 const DIR = 'src/content/playgrounds';
 const UA = { 'User-Agent': 'SwingBy/1.0 (https://swing-by.co.uk; finds playgrounds missing from the site)' };
@@ -187,6 +188,7 @@ for (const p of SNAP) {
   snapGrid.set(k, [...(snapGrid.get(k) ?? []), p]);
 }
 const usedOsm = new Set();
+const schoolBack = []; // council records that match a playground removed for being in school grounds
 const address = await snapshotNames();
 const NAME_SKIP = new Set('play area areas playground playgrounds park parks the and of gardens garden recreation ground open space common green field fields playing children childrens'.split(' '));
 const nameWords = (s) => String(s ?? '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').split(' ').filter((w) => w.length > 2 && !NAME_SKIP.has(w));
@@ -292,7 +294,7 @@ for (const a of areas) {
     }
     osm = els
       .map((e) => ({ id: `${e.type}/${e.id}`, lat: e.lat ?? e.center?.lat, lng: e.lon ?? e.center?.lon, tags: e.tags ?? {} }))
-      .filter((p) => p.lat != null && isPublic(p.tags));
+      .filter((p) => p.lat != null && isPublic(p.tags) && !NOT_PUBLIC.has(p.id));
     missing = osm.filter((p) => !listed(p));
     // Which council each missing playground is in.
     const where = await lookup(missing);
@@ -358,6 +360,10 @@ if (ADD > 0) {
       }
       fresh++;
       toAdd.push({ kind: 'council', ...x, council: c });
+      // A playground we removed for being inside school grounds (src/data/school-grounds.json): the council's list
+      // is the official source it was waiting for, so it's back (scripts/school-grounds.mjs clears its entry below).
+      const school = [...SCHOOL_GROUNDS].find(([id, r]) => id === x.osm || km(x, r) * 1000 < SAME_M);
+      if (school) schoolBack.push({ name: x.name, council: c.council, url: x.url, osm: school[0], was: school[1] });
       remember({ id: null, lat: x.lat, lng: x.lng, osmOnly: false, name: x.name, osm: x.osm ? [x.osm] : [], rough: x.placed !== 'osm' && x.rough }); // so OpenStreetMap copies of the same place aren't added too
     }
     feedReport.push(`${c.council}: ${recs.length} on the council's list, ${fresh} new${replacing ? ` (${replacing} replacing OpenStreetMap-only listings)` : ''}${gapDistricts.has(norm(c.district)) ? '' : ' (no OpenStreetMap gaps)'}`);
@@ -441,6 +447,9 @@ if (toAdd.length) {
   }
 }
 
+// School-grounds playgrounds now on an official source (any added above, or by hand) leave the waiting list.
+const schoolCleared = await clearListed(DIR);
+
 // Keep replaced listings' old addresses working (worker/index.js sends them to the new listing).
 if (replaced.length) {
   const w = await readFile('worker/index.js', 'utf8');
@@ -498,6 +507,16 @@ if (parishTodo.length)
     ...(parishTodo.length > 40 ? [``, `…and ${parishTodo.length - 40} more.`] : []),
   );
 if (feedReport.length) lines.push('', '## Council lists read', '', ...feedReport.map((l) => `- ${l}`));
+if (schoolBack.length || schoolCleared.length)
+  lines.push(
+    '',
+    '## Back from the school-grounds list',
+    '',
+    "These were taken off in November 2026 because OpenStreetMap puts them inside school grounds. An official source now lists them, so they're back and their entries have been cleared from src/data/school-grounds.json.",
+    '',
+    ...schoolBack.map((b) => `- ${b.url ? `[${b.name}](${b.url})` : b.name} (${b.council}, added in this run): was [${b.was.name}](https://www.openstreetmap.org/${b.osm}) in ${b.was.area}`),
+    ...schoolCleared.filter((c) => !schoolBack.some((b) => b.osm === c.osm)).map((c) => `- ${c.by}: already listed with an official source, was [${c.was.name}](https://www.openstreetmap.org/${c.osm}) in ${c.was.area}`),
+  );
 const notRead = noGapHere.filter((c) => !noGapRead.has(c));
 if (notRead.length)
   lines.push(
