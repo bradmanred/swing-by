@@ -1,0 +1,37 @@
+{
+  "name": "Sherborn Crescent play area",
+  "region": "south-west",
+  "area": "Canford Heath, Poole",
+  "lat": 50.74778,
+  "lng": -1.95966,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "zw",
+    "rb",
+    "sk"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on BCP Council's own list of play areas.",
+  "nearby": [],
+  "operator": "BCP Council",
+  "sources": [
+    {
+      "label": "BCP Council: Sherborn Crescent play area",
+      "url": "https://www.bcpcouncil.gov.uk/parks-nature-and-green-spaces/find-a-park-play-area-or-green-space/sherborn-crescent-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/311922376"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

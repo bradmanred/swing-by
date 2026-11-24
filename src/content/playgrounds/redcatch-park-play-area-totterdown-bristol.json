@@ -1,0 +1,28 @@
+{
+  "name": "Redcatch Park Play Area",
+  "region": "south-west",
+  "area": "Totterdown, Bristol",
+  "lat": 51.43466,
+  "lng": -2.57159,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A park with play equipment in Knowle, on Bristol City Council's park finder.",
+  "nearby": [],
+  "operator": "Bristol City Council",
+  "sources": [
+    {
+      "label": "Bristol City Council: Redcatch Park Play Area",
+      "url": "https://www.bristol.gov.uk/residents/museums-parks-sports-and-culture/parks-and-open-spaces/parks-with-play-equipment/park-finder/park?id=54"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/116503920"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

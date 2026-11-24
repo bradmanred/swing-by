@@ -1,0 +1,33 @@
+{
+  "name": "Church Aston Wallshead Way",
+  "region": "west-midlands",
+  "area": "Newport",
+  "lat": 52.7595,
+  "lng": -2.37926,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Telford & Wrekin Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Telford & Wrekin Council",
+  "sources": [
+    {
+      "label": "Telford & Wrekin Council: Church Aston Wallshead Way",
+      "url": "https://www.telford.gov.uk/online-directories/sports-and-leisure/find-a-playground/church-aston-wallshead-way"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/558859916"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

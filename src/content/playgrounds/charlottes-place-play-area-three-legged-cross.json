@@ -1,0 +1,28 @@
+{
+  "name": "Charlotte's Place Play Area",
+  "region": "south-west",
+  "area": "Three Legged Cross",
+  "lat": 50.85117,
+  "lng": -1.88553,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area at Three Legged Cross Recreation Ground, on Dorset Council's list of play areas in Verwood.",
+  "nearby": [],
+  "operator": "Dorset Council",
+  "sources": [
+    {
+      "label": "Dorset Council: Charlotte's Place Play Area",
+      "url": "https://www.dorsetcouncil.gov.uk/countryside-coast-parks/childrens-play-areas/east-dorset-play-areas/verwood-play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/relation/16631000"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

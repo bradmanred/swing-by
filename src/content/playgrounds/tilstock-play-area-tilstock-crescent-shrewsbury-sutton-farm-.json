@@ -1,0 +1,36 @@
+{
+  "name": "Tilstock Play Area, Tilstock Crescent, Shrewsbury",
+  "region": "west-midlands",
+  "area": "Sutton Farm, Shrewsbury",
+  "lat": 52.69057,
+  "lng": -2.73015,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "ss",
+    "mb"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Shrewsbury Town Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Shrewsbury Town Council",
+  "sources": [
+    {
+      "label": "Shrewsbury Town Council: Tilstock Play Area, Tilstock Crescent, Shrewsbury",
+      "url": "https://www.shrewsburytowncouncil.gov.uk/assets/tilstock-play-area-tilstock-crescent-shrewsbury"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/978788628"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Dawley Park",
+  "region": "west-midlands",
+  "area": "Heath Hill, Dawley",
+  "lat": 52.66266,
+  "lng": -2.47156,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Telford & Wrekin Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Telford & Wrekin Council",
+  "sources": [
+    {
+      "label": "Telford & Wrekin Council: Dawley Park",
+      "url": "https://www.telford.gov.uk/online-directories/sports-and-leisure/find-a-playground/dawley-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/585767023"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

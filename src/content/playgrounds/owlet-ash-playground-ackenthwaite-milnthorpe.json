@@ -1,0 +1,32 @@
+{
+  "name": "Owlet Ash playground",
+  "region": "north-west",
+  "area": "Ackenthwaite, Milnthorpe",
+  "lat": 54.23047,
+  "lng": -2.76411,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Westmorland and Furness Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Westmorland and Furness Council",
+  "sources": [
+    {
+      "label": "Westmorland and Furness Council: Owlet Ash playground",
+      "url": "https://www.westmorlandandfurness.gov.uk/parks-culture-and-leisure/parks-and-open-spaces/find-playground-near-you/owlet-ash-playground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1133538108"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

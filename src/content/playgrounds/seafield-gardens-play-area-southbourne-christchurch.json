@@ -1,0 +1,37 @@
+{
+  "name": "Seafield Gardens play area",
+  "region": "south-west",
+  "area": "Southbourne, Christchurch",
+  "lat": 50.7246,
+  "lng": -1.80211,
+  "ages": [
+    "under-3",
+    "3-6",
+    "teens"
+  ],
+  "equipment": [
+    "sw",
+    "zw",
+    "rb",
+    "ss"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on BCP Council's own list of play areas.",
+  "nearby": [],
+  "operator": "BCP Council",
+  "sources": [
+    {
+      "label": "BCP Council: Seafield Gardens play area",
+      "url": "https://www.bcpcouncil.gov.uk/parks-nature-and-green-spaces/find-a-park-play-area-or-green-space/seafield-gardens-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/199726405"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,35 @@
+{
+  "name": "Lightburn Park playground",
+  "region": "north-west",
+  "area": "Ulverston",
+  "lat": 54.19106,
+  "lng": -3.08901,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sk",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Westmorland and Furness Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Westmorland and Furness Council",
+  "sources": [
+    {
+      "label": "Westmorland and Furness Council: Lightburn Park playground",
+      "url": "https://www.westmorlandandfurness.gov.uk/parks-culture-and-leisure/parks-and-open-spaces/find-playground-near-you/lightburn-park-playground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/407960334"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

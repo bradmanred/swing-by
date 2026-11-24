@@ -1,0 +1,28 @@
+{
+  "name": "Telford Close play area",
+  "region": "south-west",
+  "area": "Preston",
+  "lat": 50.64631,
+  "lng": -2.42776,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by Weymouth Town Council.",
+  "nearby": [],
+  "operator": "Weymouth Town Council",
+  "sources": [
+    {
+      "label": "Weymouth Town Council: Telford Close play area",
+      "url": "https://www.weymouthtowncouncil.gov.uk/services/play-areas/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1480662683"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,39 @@
+{
+  "name": "Puddletown Crescent play area",
+  "region": "south-west",
+  "area": "Canford Heath, Poole",
+  "lat": 50.75159,
+  "lng": -1.96151,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "spr",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A playground on BCP Council's own list of play areas.",
+  "nearby": [],
+  "operator": "BCP Council",
+  "sources": [
+    {
+      "label": "BCP Council: Puddletown Crescent play area",
+      "url": "https://www.bcpcouncil.gov.uk/parks-nature-and-green-spaces/find-a-park-play-area-or-green-space/puddletown-crescent-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/312259430"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

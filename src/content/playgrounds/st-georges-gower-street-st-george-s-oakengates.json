@@ -1,0 +1,31 @@
+{
+  "name": "St Georges Gower Street",
+  "region": "west-midlands",
+  "area": "St George’s, Oakengates",
+  "lat": 52.69946,
+  "lng": -2.43724,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Telford & Wrekin Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Telford & Wrekin Council",
+  "sources": [
+    {
+      "label": "Telford & Wrekin Council: St Georges Gower Street",
+      "url": "https://www.telford.gov.uk/online-directories/sports-and-leisure/find-a-playground/st-georges-gower-street"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1216581511"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

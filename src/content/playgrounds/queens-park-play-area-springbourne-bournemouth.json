@@ -1,0 +1,36 @@
+{
+  "name": "Queen's Park play area",
+  "region": "south-west",
+  "area": "Springbourne, Bournemouth",
+  "lat": 50.73848,
+  "lng": -1.85079,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on BCP Council's own list of play areas.",
+  "nearby": [],
+  "operator": "BCP Council",
+  "sources": [
+    {
+      "label": "BCP Council: Queen's Park play area",
+      "url": "https://www.bcpcouncil.gov.uk/parks-nature-and-green-spaces/find-a-park-play-area-or-green-space/queens-park-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/308579851"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

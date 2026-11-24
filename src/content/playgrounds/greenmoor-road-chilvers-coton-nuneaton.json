@@ -1,0 +1,31 @@
+{
+  "name": "Greenmoor Road",
+  "region": "west-midlands",
+  "area": "Chilvers Coton, Nuneaton",
+  "lat": 52.51779,
+  "lng": -1.48271,
+  "ages": [],
+  "equipment": [
+    "sk",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Nuneaton and Bedworth Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Nuneaton and Bedworth Borough Council",
+  "sources": [
+    {
+      "label": "Nuneaton and Bedworth Borough Council: Greenmoor Road",
+      "url": "https://www.nuneatonandbedworth.gov.uk/directory-record/4342/greenmoor-road"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/330037328"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

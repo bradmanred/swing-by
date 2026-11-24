@@ -1,0 +1,34 @@
+{
+  "name": "North Lonsdale Road playground",
+  "region": "north-west",
+  "area": "Ulverston",
+  "lat": 54.19355,
+  "lng": -3.07408,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Westmorland and Furness Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Westmorland and Furness Council",
+  "sources": [
+    {
+      "label": "Westmorland and Furness Council: North Lonsdale Road playground",
+      "url": "https://www.westmorlandandfurness.gov.uk/parks-culture-and-leisure/parks-and-open-spaces/find-playground-near-you/north-lonsdale-road-playground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/412071237"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

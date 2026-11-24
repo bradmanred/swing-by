@@ -1,0 +1,28 @@
+{
+  "name": "The Marsh",
+  "region": "south-west",
+  "area": "Westham, Weymouth",
+  "lat": 50.60988,
+  "lng": -2.47136,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by Weymouth Town Council.",
+  "nearby": [],
+  "operator": "Weymouth Town Council",
+  "sources": [
+    {
+      "label": "Weymouth Town Council: The Marsh",
+      "url": "https://www.weymouthtowncouncil.gov.uk/services/play-areas/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/280223068"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

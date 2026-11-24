@@ -1,0 +1,28 @@
+{
+  "name": "Westmacott play area",
+  "region": "south-west",
+  "area": "Redlands, Weymouth",
+  "lat": 50.63648,
+  "lng": -2.47244,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by Weymouth Town Council.",
+  "nearby": [],
+  "operator": "Weymouth Town Council",
+  "sources": [
+    {
+      "label": "Weymouth Town Council: Westmacott play area",
+      "url": "https://www.weymouthtowncouncil.gov.uk/services/play-areas/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1258986441"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

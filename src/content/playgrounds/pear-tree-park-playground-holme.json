@@ -1,0 +1,32 @@
+{
+  "name": "Pear Tree Park playground",
+  "region": "north-west",
+  "area": "Holme",
+  "lat": 54.20551,
+  "lng": -2.73249,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Westmorland and Furness Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Westmorland and Furness Council",
+  "sources": [
+    {
+      "label": "Westmorland and Furness Council: Pear Tree Park playground",
+      "url": "https://www.westmorlandandfurness.gov.uk/parks-culture-and-leisure/parks-and-open-spaces/find-playground-near-you/pear-tree-park-playground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1159436503"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

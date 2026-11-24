@@ -1,0 +1,36 @@
+{
+  "name": "Ashley Cross Green play area",
+  "region": "south-west",
+  "area": "Parkstone, Poole",
+  "lat": 50.72341,
+  "lng": -1.94982,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "bb"
+  ],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A playground on BCP Council's own list of play areas.",
+  "nearby": [],
+  "operator": "BCP Council",
+  "sources": [
+    {
+      "label": "BCP Council: Ashley Cross Green play area",
+      "url": "https://www.bcpcouncil.gov.uk/parks-nature-and-green-spaces/find-a-park-play-area-or-green-space/ashley-cross-green-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/2038239538"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Vicars Field playground",
+  "region": "north-west",
+  "area": "Kirkbarrow, Kendal",
+  "lat": 54.31959,
+  "lng": -2.75312,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Westmorland and Furness Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Westmorland and Furness Council",
+  "sources": [
+    {
+      "label": "Westmorland and Furness Council: Vicars Field playground",
+      "url": "https://www.westmorlandandfurness.gov.uk/parks-culture-and-leisure/parks-and-open-spaces/find-playground-near-you/vicars-field-playground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/469230075"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

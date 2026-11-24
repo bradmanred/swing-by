@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22",
+ "updated": "2026-11-24",
  "counties": [
   {
    "name": "Greater London",
@@ -35,7 +35,7 @@
   },
   {
    "name": "West Midlands",
-   "playgrounds": 729
+   "playgrounds": 730
   },
   {
    "name": "Greater Manchester",
@@ -78,6 +78,14 @@
    "playgrounds": 264
   },
   {
+   "name": "Cumbria",
+   "playgrounds": 188
+  },
+  {
+   "name": "West Sussex",
+   "playgrounds": 185
+  },
+  {
    "name": "Nottinghamshire",
    "playgrounds": 181
   },
@@ -88,6 +96,14 @@
   {
    "name": "Cheshire",
    "playgrounds": 167
+  },
+  {
+   "name": "Dorset",
+   "playgrounds": 161
+  },
+  {
+   "name": "Shropshire",
+   "playgrounds": 149
   },
   {
    "name": "Gloucestershire",
@@ -102,8 +118,20 @@
    "playgrounds": 128
   },
   {
+   "name": "Warwickshire",
+   "playgrounds": 126
+  },
+  {
    "name": "Somerset",
    "playgrounds": 124
+  },
+  {
+   "name": "Worcestershire",
+   "playgrounds": 123
+  },
+  {
+   "name": "Oxfordshire",
+   "playgrounds": 112
   },
   {
    "name": "Suffolk",
@@ -114,12 +142,12 @@
    "playgrounds": 106
   },
   {
-   "name": "West Sussex",
-   "playgrounds": 104
-  },
-  {
    "name": "Northamptonshire",
    "playgrounds": 103
+  },
+  {
+   "name": "East Riding of Yorkshire",
+   "playgrounds": 102
   },
   {
    "name": "East Sussex",
@@ -138,48 +166,20 @@
    "playgrounds": 68
   },
   {
-   "name": "Cumbria",
-   "playgrounds": 30
-  },
-  {
-   "name": "Oxfordshire",
-   "playgrounds": 26
-  },
-  {
-   "name": "Warwickshire",
-   "playgrounds": 20
-  },
-  {
-   "name": "Worcestershire",
-   "playgrounds": 16
+   "name": "Bristol",
+   "playgrounds": 59
   },
   {
    "name": "Wiltshire",
    "playgrounds": 16
   },
   {
-   "name": "East Riding of Yorkshire",
-   "playgrounds": 11
-  },
-  {
-   "name": "Shropshire",
-   "playgrounds": 10
-  },
-  {
    "name": "Northumberland",
    "playgrounds": 10
   },
   {
-   "name": "Dorset",
-   "playgrounds": 8
-  },
-  {
    "name": "Cornwall",
    "playgrounds": 7
-  },
-  {
-   "name": "Bristol",
-   "playgrounds": 6
   },
   {
    "name": "Herefordshire",

@@ -1,0 +1,39 @@
+{
+  "name": "Kings Park play area for toddlers to teens",
+  "region": "south-west",
+  "area": "Springbourne, Bournemouth",
+  "lat": 50.73254,
+  "lng": -1.84159,
+  "ages": [
+    "under-3",
+    "3-6",
+    "teens"
+  ],
+  "equipment": [
+    "sw",
+    "cl",
+    "rb",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [
+    "cf"
+  ],
+  "opens": "",
+  "description": "A playground on BCP Council's own list of play areas.",
+  "nearby": [],
+  "operator": "BCP Council",
+  "sources": [
+    {
+      "label": "BCP Council: Kings Park play area for toddlers to teens",
+      "url": "https://www.bcpcouncil.gov.uk/parks-nature-and-green-spaces/find-a-park-play-area-or-green-space/kings-park-play-area-for-toddlers-to-teens"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/100832319"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

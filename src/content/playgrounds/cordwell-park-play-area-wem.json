@@ -1,0 +1,28 @@
+{
+  "name": "Cordwell Park Play Area",
+  "region": "west-midlands",
+  "area": "Wem",
+  "lat": 52.85604,
+  "lng": -2.71544,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area on Shropshire Council's list of the children's play areas it looks after.",
+  "nearby": [],
+  "operator": "Shropshire Council",
+  "sources": [
+    {
+      "label": "Shropshire Council: Cordwell Park Play Area",
+      "url": "https://next.shropshire.gov.uk/street-care-and-cleaning/childrens-play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/377637021"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

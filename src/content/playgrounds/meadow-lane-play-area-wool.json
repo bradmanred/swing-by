@@ -1,0 +1,28 @@
+{
+  "name": "Meadow Lane Play Area",
+  "region": "south-west",
+  "area": "Wool",
+  "lat": 50.67848,
+  "lng": -2.2249,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area on Dorset Council's list of play areas in Purbeck, run by Wool Parish Council.",
+  "nearby": [],
+  "operator": "Dorset Council",
+  "sources": [
+    {
+      "label": "Dorset Council: Meadow Lane Play Area",
+      "url": "https://www.dorsetcouncil.gov.uk/w/purbeck-play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/339621381"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

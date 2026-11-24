@@ -1,0 +1,31 @@
+{
+  "name": "Shawbirch Brockwood Copse",
+  "region": "west-midlands",
+  "area": "Shawbirch, Wellington",
+  "lat": 52.71522,
+  "lng": -2.53463,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Telford & Wrekin Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Telford & Wrekin Council",
+  "sources": [
+    {
+      "label": "Telford & Wrekin Council: Shawbirch Brockwood Copse",
+      "url": "https://www.telford.gov.uk/online-directories/sports-and-leisure/find-a-playground/shawbirch-brockwood-copse"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1455281612"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

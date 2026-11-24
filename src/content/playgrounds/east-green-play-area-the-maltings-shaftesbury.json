@@ -1,0 +1,28 @@
+{
+  "name": "East Green Play Area",
+  "region": "south-west",
+  "area": "The Maltings, Shaftesbury",
+  "lat": 51.00248,
+  "lng": -2.17808,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by Dorset Council in North Dorset.",
+  "nearby": [],
+  "operator": "Dorset Council",
+  "sources": [
+    {
+      "label": "Dorset Council: East Green Play Area",
+      "url": "https://dorsetcouncil.gov.uk/w/north-dorset-play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/538997563"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

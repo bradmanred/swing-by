@@ -1,0 +1,28 @@
+{
+  "name": "Wyke Gardens",
+  "region": "south-west",
+  "area": "Wyke Regis",
+  "lat": 50.59436,
+  "lng": -2.47627,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by Weymouth Town Council.",
+  "nearby": [],
+  "operator": "Weymouth Town Council",
+  "sources": [
+    {
+      "label": "Weymouth Town Council: Wyke Gardens",
+      "url": "https://www.weymouthtowncouncil.gov.uk/services/play-areas/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1480382332"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

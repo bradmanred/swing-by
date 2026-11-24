@@ -1,0 +1,28 @@
+{
+  "name": "Victor Street Play Area",
+  "region": "yorkshire",
+  "area": "Summergangs, Hull",
+  "lat": 53.75146,
+  "lng": -0.30891,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area on Hull City Council's list of play areas in east Hull.",
+  "nearby": [],
+  "operator": "Hull City Council",
+  "sources": [
+    {
+      "label": "Hull City Council: Victor Street Play Area",
+      "url": "https://parks.hull.gov.uk/east-hull-play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1446058581"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

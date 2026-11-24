@@ -1,0 +1,38 @@
+{
+  "name": "Sandbanks Beach play area",
+  "region": "south-west",
+  "area": "Sandbanks, Poole",
+  "lat": 50.68938,
+  "lng": -1.93807,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "cl",
+    "sp",
+    "rb",
+    "spr"
+  ],
+  "access": [
+    "sen"
+  ],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A playground on BCP Council's own list of play areas.",
+  "nearby": [],
+  "operator": "BCP Council",
+  "sources": [
+    {
+      "label": "BCP Council: Sandbanks Beach play area",
+      "url": "https://www.bcpcouncil.gov.uk/parks-nature-and-green-spaces/find-a-park-play-area-or-green-space/sandbanks-beach-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/158557122"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Brookside Brindleyford",
+  "region": "west-midlands",
+  "area": "Brookside, Madeley",
+  "lat": 52.64922,
+  "lng": -2.4483,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Telford & Wrekin Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Telford & Wrekin Council",
+  "sources": [
+    {
+      "label": "Telford & Wrekin Council: Brookside Brindleyford",
+      "url": "https://www.telford.gov.uk/online-directories/sports-and-leisure/find-a-playground/brookside-brindleyford"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1238902550"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

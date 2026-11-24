@@ -1,0 +1,28 @@
+{
+  "name": "King George's Field Play Area",
+  "region": "south-west",
+  "area": "Durlston, Swanage",
+  "lat": 50.61116,
+  "lng": -1.96552,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area on Dorset Council's list of play areas in Purbeck, run by Swanage Town Council.",
+  "nearby": [],
+  "operator": "Dorset Council",
+  "sources": [
+    {
+      "label": "Dorset Council: King George's Field Play Area",
+      "url": "https://www.dorsetcouncil.gov.uk/w/purbeck-play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/108413461"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

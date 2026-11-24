@@ -1,0 +1,34 @@
+{
+  "name": "Donnington Broadoaks Playing Field",
+  "region": "west-midlands",
+  "area": "Donnington, Oakengates",
+  "lat": 52.72228,
+  "lng": -2.43785,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sk",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Telford & Wrekin Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Telford & Wrekin Council",
+  "sources": [
+    {
+      "label": "Telford & Wrekin Council: Donnington Broadoaks Playing Field",
+      "url": "https://www.telford.gov.uk/online-directories/sports-and-leisure/find-a-playground/donnington-broadoaks-playing-field"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/447981723"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

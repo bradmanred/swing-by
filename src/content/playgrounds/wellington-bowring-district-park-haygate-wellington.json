@@ -1,0 +1,35 @@
+{
+  "name": "Wellington Bowring District Park",
+  "region": "west-midlands",
+  "area": "Haygate, Wellington",
+  "lat": 52.69796,
+  "lng": -2.52081,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [
+    "cf"
+  ],
+  "opens": "",
+  "description": "A playground on Telford & Wrekin Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Telford & Wrekin Council",
+  "sources": [
+    {
+      "label": "Telford & Wrekin Council: Wellington Bowring District Park",
+      "url": "https://www.telford.gov.uk/online-directories/sports-and-leisure/find-a-playground/wellington-bowring-district-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/469079580"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

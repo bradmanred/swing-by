@@ -1,0 +1,31 @@
+{
+  "name": "Leegomery Warwick Way",
+  "region": "west-midlands",
+  "area": "Hadley Castle, Wellington",
+  "lat": 52.71359,
+  "lng": -2.487,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Telford & Wrekin Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Telford & Wrekin Council",
+  "sources": [
+    {
+      "label": "Telford & Wrekin Council: Leegomery Warwick Way",
+      "url": "https://www.telford.gov.uk/online-directories/sports-and-leisure/find-a-playground/leegomery-warwick-way"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1228043705"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

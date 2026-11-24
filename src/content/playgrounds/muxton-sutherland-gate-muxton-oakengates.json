@@ -1,0 +1,31 @@
+{
+  "name": "Muxton Sutherland Gate",
+  "region": "west-midlands",
+  "area": "Muxton, Oakengates",
+  "lat": 52.72603,
+  "lng": -2.43234,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Telford & Wrekin Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Telford & Wrekin Council",
+  "sources": [
+    {
+      "label": "Telford & Wrekin Council: Muxton Sutherland Gate",
+      "url": "https://www.telford.gov.uk/online-directories/sports-and-leisure/find-a-playground/muxton-sutherland-gate"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/358556056"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

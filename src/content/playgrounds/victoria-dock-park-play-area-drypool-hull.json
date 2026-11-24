@@ -1,0 +1,28 @@
+{
+  "name": "Victoria Dock Park Play Area",
+  "region": "yorkshire",
+  "area": "Drypool, Hull",
+  "lat": 53.74326,
+  "lng": -0.31853,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area on Hull City Council's list of play areas in east Hull.",
+  "nearby": [],
+  "operator": "Hull City Council",
+  "sources": [
+    {
+      "label": "Hull City Council: Victoria Dock Park Play Area",
+      "url": "https://parks.hull.gov.uk/east-hull-play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/628264258"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

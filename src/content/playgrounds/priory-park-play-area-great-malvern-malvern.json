@@ -1,0 +1,28 @@
+{
+  "name": "Priory Park Play Area",
+  "region": "west-midlands",
+  "area": "Great Malvern, Malvern",
+  "lat": 52.10963,
+  "lng": -2.32611,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "One of the four play areas Malvern Hills District Council owns and manages.",
+  "nearby": [],
+  "operator": "Malvern Hills District Council",
+  "sources": [
+    {
+      "label": "Malvern Hills District Council: Priory Park Play Area",
+      "url": "https://www.malvernhills.gov.uk/parks-and-open-spaces/our-play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1260629298"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

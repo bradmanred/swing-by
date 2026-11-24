@@ -1,0 +1,37 @@
+{
+  "name": "Winton Recreation Ground play area",
+  "region": "south-west",
+  "area": "Charminster, Bournemouth",
+  "lat": 50.73887,
+  "lng": -1.86798,
+  "ages": [
+    "under-3",
+    "3-6",
+    "teens"
+  ],
+  "equipment": [
+    "rb",
+    "ss"
+  ],
+  "access": [
+    "sen"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on BCP Council's own list of play areas.",
+  "nearby": [],
+  "operator": "BCP Council",
+  "sources": [
+    {
+      "label": "BCP Council: Winton Recreation Ground play area",
+      "url": "https://www.bcpcouncil.gov.uk/parks-nature-and-green-spaces/find-a-park-play-area-or-green-space/winton-recreation-ground-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/154109484"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,30 @@
+{
+  "name": "St. Giles recreation ground",
+  "region": "west-midlands",
+  "area": "Bedworth Heath, Coventry",
+  "lat": 52.46234,
+  "lng": -1.50236,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Nuneaton and Bedworth Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Nuneaton and Bedworth Borough Council",
+  "sources": [
+    {
+      "label": "Nuneaton and Bedworth Borough Council: St. Giles recreation ground",
+      "url": "https://www.nuneatonandbedworth.gov.uk/directory-record/4321/st-giles-recreation-ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/965448579"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

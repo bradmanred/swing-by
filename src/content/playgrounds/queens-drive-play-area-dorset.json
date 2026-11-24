@@ -1,0 +1,28 @@
+{
+  "name": "Queens Drive Play Area",
+  "region": "south-west",
+  "area": "Dorset",
+  "lat": 50.7013,
+  "lng": -2.31428,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area on Dorset Council's list of play areas in Purbeck, run by Dorset Council.",
+  "nearby": [],
+  "operator": "Dorset Council",
+  "sources": [
+    {
+      "label": "Dorset Council: Queens Drive Play Area",
+      "url": "https://www.dorsetcouncil.gov.uk/w/purbeck-play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1480654456"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

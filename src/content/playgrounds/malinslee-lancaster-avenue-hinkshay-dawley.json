@@ -1,0 +1,31 @@
+{
+  "name": "Malinslee Lancaster Avenue",
+  "region": "west-midlands",
+  "area": "Hinkshay, Dawley",
+  "lat": 52.66436,
+  "lng": -2.46249,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Telford & Wrekin Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Telford & Wrekin Council",
+  "sources": [
+    {
+      "label": "Telford & Wrekin Council: Malinslee Lancaster Avenue",
+      "url": "https://www.telford.gov.uk/online-directories/sports-and-leisure/find-a-playground/malinslee-lancaster-avenue"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1176268369"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

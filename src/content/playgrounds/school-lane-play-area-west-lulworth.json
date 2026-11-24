@@ -1,0 +1,28 @@
+{
+  "name": "School Lane Play Area",
+  "region": "south-west",
+  "area": "West Lulworth",
+  "lat": 50.62587,
+  "lng": -2.24184,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area on Dorset Council's list of play areas in Purbeck, run by West Lulworth Parish Council.",
+  "nearby": [],
+  "operator": "Dorset Council",
+  "sources": [
+    {
+      "label": "Dorset Council: School Lane Play Area",
+      "url": "https://www.dorsetcouncil.gov.uk/w/purbeck-play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/202756053"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

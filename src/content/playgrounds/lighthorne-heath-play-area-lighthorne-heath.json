@@ -1,0 +1,28 @@
+{
+  "name": "Lighthorne Heath Play Area",
+  "region": "west-midlands",
+  "area": "Lighthorne Heath",
+  "lat": 52.19829,
+  "lng": -1.48781,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area managed by Stratford-on-Avon District Council.",
+  "nearby": [],
+  "operator": "Stratford-on-Avon District Council",
+  "sources": [
+    {
+      "label": "Stratford-on-Avon District Council: Lighthorne Heath Play Area",
+      "url": "https://www.stratford.gov.uk/sport-leisure-arts/lighthorne-heath.cfm"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/650777586"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

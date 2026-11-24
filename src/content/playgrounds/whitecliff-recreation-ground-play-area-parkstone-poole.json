@@ -1,0 +1,39 @@
+{
+  "name": "Whitecliff Recreation Ground play area",
+  "region": "south-west",
+  "area": "Parkstone, Poole",
+  "lat": 50.71657,
+  "lng": -1.95924,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "bs",
+    "sw",
+    "cl",
+    "sp"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "fen"
+  ],
+  "opens": "",
+  "description": "A playground on BCP Council's own list of play areas.",
+  "nearby": [],
+  "operator": "BCP Council",
+  "sources": [
+    {
+      "label": "BCP Council: Whitecliff Recreation Ground play area",
+      "url": "https://www.bcpcouncil.gov.uk/parks-nature-and-green-spaces/find-a-park-play-area-or-green-space/whitecliff-recreation-ground-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/95850035"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

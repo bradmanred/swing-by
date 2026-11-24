@@ -1,0 +1,33 @@
+{
+  "name": "Ketley First Avenue",
+  "region": "west-midlands",
+  "area": "Ketley Bank, Oakengates",
+  "lat": 52.68714,
+  "lng": -2.4491,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Telford & Wrekin Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Telford & Wrekin Council",
+  "sources": [
+    {
+      "label": "Telford & Wrekin Council: Ketley First Avenue",
+      "url": "https://www.telford.gov.uk/online-directories/sports-and-leisure/find-a-playground/ketley-first-avenue"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/623161802"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Malinslee Jubilee Gardens",
+  "region": "west-midlands",
+  "area": "Malinslee, Telford",
+  "lat": 52.67464,
+  "lng": -2.45781,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Telford & Wrekin Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Telford & Wrekin Council",
+  "sources": [
+    {
+      "label": "Telford & Wrekin Council: Malinslee Jubilee Gardens",
+      "url": "https://www.telford.gov.uk/online-directories/sports-and-leisure/find-a-playground/malinslee-jubilee-gardens"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1180261745"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

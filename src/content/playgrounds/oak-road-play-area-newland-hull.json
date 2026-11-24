@@ -1,0 +1,28 @@
+{
+  "name": "Oak Road Play Area",
+  "region": "yorkshire",
+  "area": "Newland, Hull",
+  "lat": 53.77233,
+  "lng": -0.34686,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area on Hull City Council's list of play areas in west Hull.",
+  "nearby": [],
+  "operator": "Hull City Council",
+  "sources": [
+    {
+      "label": "Hull City Council: Oak Road Play Area",
+      "url": "https://parks.hull.gov.uk/west-hull-play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/200817250"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

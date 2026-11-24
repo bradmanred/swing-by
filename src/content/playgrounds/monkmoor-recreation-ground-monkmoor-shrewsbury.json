@@ -1,0 +1,39 @@
+{
+  "name": "Monkmoor Recreation Ground",
+  "region": "west-midlands",
+  "area": "Monkmoor, Shrewsbury",
+  "lat": 52.71356,
+  "lng": -2.72982,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "bk",
+    "sw",
+    "sl",
+    "cl",
+    "zw",
+    "rb"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Shrewsbury Town Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Shrewsbury Town Council",
+  "sources": [
+    {
+      "label": "Shrewsbury Town Council: Monkmoor Recreation Ground",
+      "url": "https://www.shrewsburytowncouncil.gov.uk/assets/monkmoor-recreation-ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/976643911"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
