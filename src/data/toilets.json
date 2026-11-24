@@ -4051,28 +4051,6 @@
     "lng": -5.938092113
    }
   },
-  "alexandra-lower-playground-short-strand-belfast": {
-   "nearest": {
-    "id": "d12c319c8832844ca2278934",
-    "name": "Belfast Central Train Station",
-    "m": 610,
-    "babyChange": false,
-    "accessible": false,
-    "free": true,
-    "lat": 54.5952931,
-    "lng": -5.9170576
-   },
-   "nearestBabyChange": {
-    "id": "4e51677b67049a9da1acdee9",
-    "name": "SSE Arena",
-    "m": 793,
-    "babyChange": true,
-    "accessible": false,
-    "free": true,
-    "lat": 54.603736553,
-    "lng": -5.914539099
-   }
-  },
   "alexandra-park-ashford-common-sunbury-on-thames": {
    "nearest": {
     "id": "bfde37d04dc703738c782bf4",
@@ -11888,18 +11866,6 @@
    }
   },
   "backburn-path-play-park-whitehill-limavady": {
-   "nearest": {
-    "id": "01fbe5cd792b4bd480a9cc0c",
-    "name": "Limavadi Main Street Public Toilet",
-    "m": 287,
-    "babyChange": null,
-    "accessible": true,
-    "free": false,
-    "lat": 55.05276226,
-    "lng": -6.950624943
-   }
-  },
-  "backburn-path-playground-whitehill-limavady": {
    "nearest": {
     "id": "abe402e5a89f247c4aafb607",
     "name": "Catherine Street Public Toilet",
@@ -20982,7 +20948,7 @@
     "lng": -1.84243083
    }
   },
-  "berkeley-square-t-hogue-play-park-tullaghoge-mid-ulster": {
+  "berkeley-square-play-park-tullyhogue": {
    "nearest": {
     "id": "073e7ec2b16214ce76e00a74",
     "name": "Mid Ulster Sports Arena",
@@ -25383,7 +25349,7 @@
     "lng": -1.78979516
    }
   },
-  "blythefield-park-playground-sandy-row-belfast": {
+  "blythefield-playground-sandy-row-belfast": {
    "nearest": {
     "id": "0671f4824c4a841a056ab4f4",
     "name": "Donegal Road Eurospar",
@@ -25398,28 +25364,6 @@
     "id": "cc70b6a247a073c503645c59",
     "name": "Bankmore Square Toilets",
     "m": 930,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 54.592580101,
-    "lng": -5.931158066
-   }
-  },
-  "blythefield-playground-sandy-row-belfast": {
-   "nearest": {
-    "id": "4c6e6399f1a1f6f4a1c9b005",
-    "name": "Great Victoria Street station",
-    "m": 367,
-    "babyChange": null,
-    "accessible": null,
-    "free": true,
-    "lat": 54.59415272,
-    "lng": -5.936404467
-   },
-   "nearestBabyChange": {
-    "id": "cc70b6a247a073c503645c59",
-    "name": "Bankmore Square Toilets",
-    "m": 587,
     "babyChange": true,
     "accessible": true,
     "free": false,
@@ -53264,18 +53208,6 @@
   },
   "clonduff-drive-playground-castlereagh-belfast-city-district": {
    "nearest": {
-    "id": "4e235deaa510bb094cae7a7b",
-    "name": "Connswater, Westminster Avenue Toilets",
-    "m": 2360,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 54.598527822,
-    "lng": -5.888244867
-   }
-  },
-  "clonduff-drive-playground-castlereagh-belfast": {
-   "nearest": {
     "id": "1b6b3ae9cdc65679a3f77fd8",
     "name": "Forestside shopping centre",
     "m": 2223,
@@ -69708,16 +69640,16 @@
     "lng": -1.568960845
    }
   },
-  "dr-pitt-park-playground-bloomfield-belfast": {
+  "dr-pitt-park-playground-short-strand-belfast": {
    "nearest": {
-    "id": "4e235deaa510bb094cae7a7b",
-    "name": "Connswater, Westminster Avenue Toilets",
-    "m": 176,
+    "id": "4e51677b67049a9da1acdee9",
+    "name": "SSE Arena",
+    "m": 749,
     "babyChange": true,
-    "accessible": true,
+    "accessible": false,
     "free": true,
-    "lat": 54.598527822,
-    "lng": -5.888244867
+    "lat": 54.603736553,
+    "lng": -5.914539099
    }
   },
   "dragon-croft-playground-dent": {
@@ -80243,7 +80175,7 @@
     "lng": -5.9560177
    }
   },
-  "falls-park-playground-upper-falls-belfast": {
+  "falls-playground-upper-falls-belfast": {
    "nearest": {
     "id": "87def20530f94a5b19aa7f46",
     "name": "Sainsbury's Toilet",
@@ -80263,18 +80195,6 @@
     "free": true,
     "lat": 54.5746948,
     "lng": -5.9560177
-   }
-  },
-  "falls-playground-whiterock-belfast": {
-   "nearest": {
-    "id": "bbd869b477d34394e3a560ae",
-    "name": "Bowling Pavilion, Falls Park",
-    "m": 633,
-    "babyChange": false,
-    "accessible": false,
-    "free": true,
-    "lat": 54.58914225,
-    "lng": -5.98347187
    }
   },
   "falmouth-avenue-play-area-weeping-cross-stafford": {
@@ -87530,23 +87450,11 @@
     "lng": -0.55854857
    }
   },
-  "fullerton-park-dunmurry-lisburn-2": {
-   "nearest": {
-    "id": "79dd568786fad279371dbe79",
-    "name": "Applegreen Services",
-    "m": 2683,
-    "babyChange": null,
-    "accessible": true,
-    "free": true,
-    "lat": 54.525993824,
-    "lng": -6.002193689
-   }
-  },
   "fullerton-park-dunmurry-lisburn": {
    "nearest": {
     "id": "79dd568786fad279371dbe79",
     "name": "Applegreen Services",
-    "m": 2742,
+    "m": 2683,
     "babyChange": null,
     "accessible": true,
     "free": true,
@@ -94093,11 +94001,11 @@
     "lng": -1.150376878
    }
   },
-  "grampian-avenue-playground-bloomfield-belfast-city-district": {
+  "grampian-avenue-playground-bloomfield-belfast": {
    "nearest": {
     "id": "4e235deaa510bb094cae7a7b",
     "name": "Connswater, Westminster Avenue Toilets",
-    "m": 157,
+    "m": 176,
     "babyChange": true,
     "accessible": true,
     "free": true,
@@ -160223,9 +160131,19 @@
   },
   "mountforde-playground-short-strand-belfast": {
    "nearest": {
+    "id": "d12c319c8832844ca2278934",
+    "name": "Belfast Central Train Station",
+    "m": 630,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 54.5952931,
+    "lng": -5.9170576
+   },
+   "nearestBabyChange": {
     "id": "4e51677b67049a9da1acdee9",
     "name": "SSE Arena",
-    "m": 751,
+    "m": 791,
     "babyChange": true,
     "accessible": false,
     "free": true,
@@ -318890,18 +318808,6 @@
     "free": true,
     "lat": 54.836089722,
     "lng": -1.335428953
-   }
-  },
-  "playground-off-hawthorn-walk-dromore": {
-   "nearest": {
-    "id": "0eef2e32036db06035ae7bcd",
-    "name": "Public toilet",
-    "m": 407,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 54.4144955,
-    "lng": -6.1491774
    }
   },
   "playground-off-hawthorn-wynd-perceton-north-ayrshire": {
@@ -494884,18 +494790,6 @@
     "lng": -1.570698096
    }
   },
-  "playground-off-wallace-park-dromore": {
-   "nearest": {
-    "id": "0eef2e32036db06035ae7bcd",
-    "name": "Public toilet",
-    "m": 360,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 54.4144955,
-    "lng": -6.1491774
-   }
-  },
   "playground-off-wallace-street-tradeston-glasgow": {
    "nearest": {
     "id": "efeba74cb5df79e66d8ab28a",
@@ -577771,18 +577665,6 @@
    }
   },
   "victoria-park-playground-sydenham-belfast-city-district": {
-   "nearest": {
-    "id": "4e235deaa510bb094cae7a7b",
-    "name": "Connswater, Westminster Avenue Toilets",
-    "m": 568,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 54.598527822,
-    "lng": -5.888244867
-   }
-  },
-  "victoria-park-playground-sydenham-belfast": {
    "nearest": {
     "id": "4e235deaa510bb094cae7a7b",
     "name": "Connswater, Westminster Avenue Toilets",
