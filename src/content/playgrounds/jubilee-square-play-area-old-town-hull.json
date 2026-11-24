@@ -1,0 +1,28 @@
+{
+  "name": "Jubilee Square Play Area",
+  "region": "yorkshire",
+  "area": "Old Town, Hull",
+  "lat": 53.74912,
+  "lng": -0.3356,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area on Hull City Council's list of play areas in west Hull.",
+  "nearby": [],
+  "operator": "Hull City Council",
+  "sources": [
+    {
+      "label": "Hull City Council: Jubilee Square Play Area",
+      "url": "https://parks.hull.gov.uk/west-hull-play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1446057167"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

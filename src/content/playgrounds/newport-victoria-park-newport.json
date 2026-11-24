@@ -1,0 +1,33 @@
+{
+  "name": "Newport Victoria Park",
+  "region": "west-midlands",
+  "area": "Newport",
+  "lat": 52.77085,
+  "lng": -2.37804,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Telford & Wrekin Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Telford & Wrekin Council",
+  "sources": [
+    {
+      "label": "Telford & Wrekin Council: Newport Victoria Park",
+      "url": "https://www.telford.gov.uk/online-directories/sports-and-leisure/find-a-playground/newport-victoria-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/523845347"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

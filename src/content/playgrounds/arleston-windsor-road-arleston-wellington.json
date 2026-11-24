@@ -1,0 +1,34 @@
+{
+  "name": "Arleston Windsor Road",
+  "region": "west-midlands",
+  "area": "Arleston, Wellington",
+  "lat": 52.69491,
+  "lng": -2.49624,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sk",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Telford & Wrekin Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Telford & Wrekin Council",
+  "sources": [
+    {
+      "label": "Telford & Wrekin Council: Arleston Windsor Road",
+      "url": "https://www.telford.gov.uk/online-directories/sports-and-leisure/find-a-playground/arleston-windsor-road"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/549744080"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Springfield Road Play Area",
+  "region": "west-midlands",
+  "area": "St Peters, Worcester",
+  "lat": 52.1746,
+  "lng": -2.20762,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area on Worcester City Council's list of the play sites it manages.",
+  "nearby": [],
+  "operator": "Worcester City Council",
+  "sources": [
+    {
+      "label": "Worcester City Council: Springfield Road Play Area",
+      "url": "https://www.worcester.gov.uk/play-area-sites"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/54836487"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

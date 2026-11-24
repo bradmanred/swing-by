@@ -1,0 +1,34 @@
+{
+  "name": "Wellington George Place",
+  "region": "west-midlands",
+  "area": "Haygate, Wellington",
+  "lat": 52.7012,
+  "lng": -2.52641,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sk",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Telford & Wrekin Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Telford & Wrekin Council",
+  "sources": [
+    {
+      "label": "Telford & Wrekin Council: Wellington George Place",
+      "url": "https://www.telford.gov.uk/online-directories/sports-and-leisure/find-a-playground/wellington-george-place"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1077440399"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

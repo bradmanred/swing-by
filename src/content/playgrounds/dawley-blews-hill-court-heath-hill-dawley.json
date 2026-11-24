@@ -1,0 +1,31 @@
+{
+  "name": "Dawley Blews Hill Court",
+  "region": "west-midlands",
+  "area": "Heath Hill, Dawley",
+  "lat": 52.6662,
+  "lng": -2.46834,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Telford & Wrekin Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Telford & Wrekin Council",
+  "sources": [
+    {
+      "label": "Telford & Wrekin Council: Dawley Blews Hill Court",
+      "url": "https://www.telford.gov.uk/online-directories/sports-and-leisure/find-a-playground/dawley-blews-hill-court"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1111180530"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

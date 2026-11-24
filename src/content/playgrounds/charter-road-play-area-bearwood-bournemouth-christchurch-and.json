@@ -1,0 +1,37 @@
+{
+  "name": "Charter Road play area",
+  "region": "south-west",
+  "area": "Bearwood, Bournemouth, Christchurch and Poole",
+  "lat": 50.76877,
+  "lng": -1.93355,
+  "ages": [],
+  "equipment": [
+    "bs",
+    "sw",
+    "cl",
+    "zw",
+    "sk",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A playground on BCP Council's own list of play areas.",
+  "nearby": [],
+  "operator": "BCP Council",
+  "sources": [
+    {
+      "label": "BCP Council: Charter Road play area",
+      "url": "https://www.bcpcouncil.gov.uk/parks-nature-and-green-spaces/find-a-park-play-area-or-green-space/charter-road-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/902685693"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

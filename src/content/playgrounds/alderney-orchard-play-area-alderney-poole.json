@@ -1,0 +1,37 @@
+{
+  "name": "Alderney Orchard play area",
+  "region": "south-west",
+  "area": "Alderney, Poole",
+  "lat": 50.7524,
+  "lng": -1.93964,
+  "ages": [
+    "under-3",
+    "teens"
+  ],
+  "equipment": [
+    "bs",
+    "sl",
+    "cl",
+    "spr",
+    "bb"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on BCP Council's own list of play areas.",
+  "nearby": [],
+  "operator": "BCP Council",
+  "sources": [
+    {
+      "label": "BCP Council: Alderney Orchard play area",
+      "url": "https://www.bcpcouncil.gov.uk/parks-nature-and-green-spaces/find-a-park-play-area-or-green-space/alderney-orchard-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/902684724"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

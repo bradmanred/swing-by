@@ -1,0 +1,28 @@
+{
+  "name": "Hurley Recreation Ground Play Area",
+  "region": "west-midlands",
+  "area": "Hurley",
+  "lat": 52.55961,
+  "lng": -1.6493,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by North Warwickshire Borough Council.",
+  "nearby": [],
+  "operator": "North Warwickshire Borough Council",
+  "sources": [
+    {
+      "label": "North Warwickshire Borough Council: Hurley Recreation Ground Play Area",
+      "url": "https://www.northwarks.gov.uk/news/article/176/new-smoke-free-play-area-signs-revealed-for-parks-in-north-warwickshire"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1039896881"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

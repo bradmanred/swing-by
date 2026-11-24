@@ -1,0 +1,28 @@
+{
+  "name": "Piccadilly Recreation Ground Play Area",
+  "region": "west-midlands",
+  "area": "Wood End",
+  "lat": 52.57857,
+  "lng": -1.66524,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by North Warwickshire Borough Council.",
+  "nearby": [],
+  "operator": "North Warwickshire Borough Council",
+  "sources": [
+    {
+      "label": "North Warwickshire Borough Council: Piccadilly Recreation Ground Play Area",
+      "url": "https://www.northwarks.gov.uk/news/article/176/new-smoke-free-play-area-signs-revealed-for-parks-in-north-warwickshire"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/706111587"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Victory Park Play Area",
+  "region": "south-west",
+  "area": "Brislington, Bristol",
+  "lat": 51.43715,
+  "lng": -2.54325,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A park with play equipment in Brislington East, on Bristol City Council's park finder.",
+  "nearby": [],
+  "operator": "Bristol City Council",
+  "sources": [
+    {
+      "label": "Bristol City Council: Victory Park Play Area",
+      "url": "https://www.bristol.gov.uk/residents/museums-parks-sports-and-culture/parks-and-open-spaces/parks-with-play-equipment/park-finder/park?id=69"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/74039425"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

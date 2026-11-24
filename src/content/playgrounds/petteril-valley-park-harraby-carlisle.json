@@ -1,0 +1,34 @@
+{
+  "name": "Petteril Valley Park",
+  "region": "north-west",
+  "area": "Harraby, Carlisle",
+  "lat": 54.87213,
+  "lng": -2.90154,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A playground on Cumberland Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Cumberland Council",
+  "sources": [
+    {
+      "label": "Cumberland Council: Petteril Valley Park",
+      "url": "https://www.cumberland.gov.uk/parks-culture-and-leisure/find-parks-and-public-gardens-near-you/petteril-valley-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/333586853"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

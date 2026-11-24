@@ -1,0 +1,34 @@
+{
+  "name": "Barrow Park playground",
+  "region": "north-west",
+  "area": "Newbarns, Barrow",
+  "lat": 54.1175,
+  "lng": -3.2176,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "sk",
+    "gym"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Westmorland and Furness Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Westmorland and Furness Council",
+  "sources": [
+    {
+      "label": "Westmorland and Furness Council: Barrow Park playground",
+      "url": "https://www.westmorlandandfurness.gov.uk/parks-culture-and-leisure/parks-and-open-spaces/find-playground-near-you/barrow-park-playground"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (from the council's map), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

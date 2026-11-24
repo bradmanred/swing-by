@@ -1,0 +1,28 @@
+{
+  "name": "Bellevue Road Park Play Area",
+  "region": "south-west",
+  "area": "Easton, Bristol",
+  "lat": 51.46708,
+  "lng": -2.56149,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A park with play equipment in Easton, on Bristol City Council's park finder.",
+  "nearby": [],
+  "operator": "Bristol City Council",
+  "sources": [
+    {
+      "label": "Bristol City Council: Bellevue Road Park Play Area",
+      "url": "https://www.bristol.gov.uk/residents/museums-parks-sports-and-culture/parks-and-open-spaces/parks-with-play-equipment/park-finder/park?id=11"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/159830400"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

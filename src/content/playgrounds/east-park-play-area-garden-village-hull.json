@@ -1,0 +1,28 @@
+{
+  "name": "East Park Play Area",
+  "region": "yorkshire",
+  "area": "Garden Village, Hull",
+  "lat": 53.76559,
+  "lng": -0.30101,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area on Hull City Council's list of play areas in east Hull.",
+  "nearby": [],
+  "operator": "Hull City Council",
+  "sources": [
+    {
+      "label": "Hull City Council: East Park Play Area",
+      "url": "https://parks.hull.gov.uk/east-hull-play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/594337272"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

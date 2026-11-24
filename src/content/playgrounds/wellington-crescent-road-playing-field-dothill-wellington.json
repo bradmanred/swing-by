@@ -1,0 +1,31 @@
+{
+  "name": "Wellington Crescent Road Playing Field",
+  "region": "west-midlands",
+  "area": "Dothill, Wellington",
+  "lat": 52.70636,
+  "lng": -2.52206,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Telford & Wrekin Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Telford & Wrekin Council",
+  "sources": [
+    {
+      "label": "Telford & Wrekin Council: Wellington Crescent Road Playing Field",
+      "url": "https://www.telford.gov.uk/online-directories/sports-and-leisure/find-a-playground/wellington-crescent-road-playing-field"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/625252720"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

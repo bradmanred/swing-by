@@ -1,0 +1,31 @@
+{
+  "name": "Ketley Mannerley Wood",
+  "region": "west-midlands",
+  "area": "Ketley, Oakengates",
+  "lat": 52.69009,
+  "lng": -2.47552,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Telford & Wrekin Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Telford & Wrekin Council",
+  "sources": [
+    {
+      "label": "Telford & Wrekin Council: Ketley Mannerley Wood",
+      "url": "https://www.telford.gov.uk/online-directories/sports-and-leisure/find-a-playground/ketley-mannerley-wood"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1074005960"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

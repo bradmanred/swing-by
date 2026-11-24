@@ -1,0 +1,28 @@
+{
+  "name": "Burbage Avenue Play Area",
+  "region": "west-midlands",
+  "area": "Bishopton, Stratford-upon-Avon",
+  "lat": 52.20381,
+  "lng": -1.71259,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area managed by Stratford-on-Avon District Council.",
+  "nearby": [],
+  "operator": "Stratford-on-Avon District Council",
+  "sources": [
+    {
+      "label": "Stratford-on-Avon District Council: Burbage Avenue Play Area",
+      "url": "https://www.stratford.gov.uk/sport-leisure-arts/burbage-avenue.cfm"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/1634338880"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

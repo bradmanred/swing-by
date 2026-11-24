@@ -1,0 +1,33 @@
+{
+  "name": "Hadley Etrutia Village",
+  "region": "west-midlands",
+  "area": "Hadley, Oakengates",
+  "lat": 52.70395,
+  "lng": -2.47051,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Telford & Wrekin Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Telford & Wrekin Council",
+  "sources": [
+    {
+      "label": "Telford & Wrekin Council: Hadley Etrutia Village",
+      "url": "https://www.telford.gov.uk/online-directories/sports-and-leisure/find-a-playground/hadley-etrutia-village"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1227572214"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

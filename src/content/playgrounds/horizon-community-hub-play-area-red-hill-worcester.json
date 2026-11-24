@@ -1,0 +1,28 @@
+{
+  "name": "Horizon Community Hub Play Area",
+  "region": "west-midlands",
+  "area": "Red Hill, Worcester",
+  "lat": 52.18995,
+  "lng": -2.21039,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area on Worcester City Council's list of the play sites it manages.",
+  "nearby": [],
+  "operator": "Worcester City Council",
+  "sources": [
+    {
+      "label": "Worcester City Council: Horizon Community Hub Play Area",
+      "url": "https://www.worcester.gov.uk/play-area-sites"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1461618267"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

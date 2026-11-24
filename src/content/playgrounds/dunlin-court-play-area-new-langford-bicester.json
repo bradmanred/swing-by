@@ -1,0 +1,28 @@
+{
+  "name": "Dunlin Court play area",
+  "region": "south-east",
+  "area": "New Langford, Bicester",
+  "lat": 51.89367,
+  "lng": -1.14598,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by Bicester Town Council.",
+  "nearby": [],
+  "operator": "Bicester Town Council",
+  "sources": [
+    {
+      "label": "Bicester Town Council: Dunlin Court play area",
+      "url": "https://www.bicester.gov.uk/services/open-spaces-play-areas-and-sports-pitches/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/967633723"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

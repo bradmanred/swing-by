@@ -1,0 +1,35 @@
+{
+  "name": "Telford Town Park",
+  "region": "west-midlands",
+  "area": "Hinkshay, Dawley",
+  "lat": 52.66763,
+  "lng": -2.4468,
+  "ages": [
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "wp",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Telford & Wrekin Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Telford & Wrekin Council",
+  "sources": [
+    {
+      "label": "Telford & Wrekin Council: Telford Town Park",
+      "url": "https://www.telford.gov.uk/online-directories/sports-and-leisure/find-a-playground/telford-town-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/773931621"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Victoria Park Play Area",
+  "region": "west-midlands",
+  "area": "Milverton, Royal Leamington Spa",
+  "lat": 52.28785,
+  "lng": -1.5451,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area on Warwick District Council's list of the play areas it maintains.",
+  "nearby": [],
+  "operator": "Warwick District Council",
+  "sources": [
+    {
+      "label": "Warwick District Council: Victoria Park Play Area",
+      "url": "https://www.warwickdc.gov.uk/playareas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1446690810"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Newport Wellington Road",
+  "region": "west-midlands",
+  "area": "Newport",
+  "lat": 52.76486,
+  "lng": -2.38323,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Telford & Wrekin Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Telford & Wrekin Council",
+  "sources": [
+    {
+      "label": "Telford & Wrekin Council: Newport Wellington Road",
+      "url": "https://www.telford.gov.uk/online-directories/sports-and-leisure/find-a-playground/newport-wellington-road"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/685940633"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

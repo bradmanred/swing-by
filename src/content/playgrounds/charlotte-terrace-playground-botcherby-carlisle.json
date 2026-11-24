@@ -1,0 +1,35 @@
+{
+  "name": "Charlotte Terrace Playground",
+  "region": "north-west",
+  "area": "Botcherby, Carlisle",
+  "lat": 54.8942,
+  "lng": -2.90398,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A playground on Cumberland Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Cumberland Council",
+  "sources": [
+    {
+      "label": "Cumberland Council: Charlotte Terrace Playground",
+      "url": "https://www.cumberland.gov.uk/parks-culture-and-leisure/find-parks-and-public-gardens-near-you/charlotte-terrace-playground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/333818172"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

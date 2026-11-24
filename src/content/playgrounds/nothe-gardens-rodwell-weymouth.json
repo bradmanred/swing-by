@@ -1,0 +1,28 @@
+{
+  "name": "Nothe Gardens",
+  "region": "south-west",
+  "area": "Rodwell, Weymouth",
+  "lat": 50.60688,
+  "lng": -2.44642,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by Weymouth Town Council.",
+  "nearby": [],
+  "operator": "Weymouth Town Council",
+  "sources": [
+    {
+      "label": "Weymouth Town Council: Nothe Gardens",
+      "url": "https://www.weymouthtowncouncil.gov.uk/services/play-areas/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1480384730"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

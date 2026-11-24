@@ -1,0 +1,28 @@
+{
+  "name": "Kestrel Way play area",
+  "region": "south-east",
+  "area": "Langford Village, Bicester",
+  "lat": 51.88781,
+  "lng": -1.14234,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by Bicester Town Council.",
+  "nearby": [],
+  "operator": "Bicester Town Council",
+  "sources": [
+    {
+      "label": "Bicester Town Council: Kestrel Way play area",
+      "url": "https://www.bicester.gov.uk/services/open-spaces-play-areas-and-sports-pitches/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/4329378"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

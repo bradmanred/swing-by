@@ -1,0 +1,31 @@
+{
+  "name": "Ketley Playing Fields",
+  "region": "west-midlands",
+  "area": "Ketley, Oakengates",
+  "lat": 52.69698,
+  "lng": -2.47894,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Telford & Wrekin Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Telford & Wrekin Council",
+  "sources": [
+    {
+      "label": "Telford & Wrekin Council: Ketley Playing Fields",
+      "url": "https://www.telford.gov.uk/online-directories/sports-and-leisure/find-a-playground/ketley-playing-fields"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/554507280"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

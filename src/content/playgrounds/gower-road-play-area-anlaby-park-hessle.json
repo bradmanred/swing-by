@@ -1,0 +1,28 @@
+{
+  "name": "Gower Road Play Area",
+  "region": "yorkshire",
+  "area": "Anlaby Park, Hessle",
+  "lat": 53.73155,
+  "lng": -0.4167,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area on Hull City Council's list of play areas in west Hull.",
+  "nearby": [],
+  "operator": "Hull City Council",
+  "sources": [
+    {
+      "label": "Hull City Council: Gower Road Play Area",
+      "url": "https://parks.hull.gov.uk/west-hull-play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/731196340"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Crindledyke Playground",
+  "region": "north-west",
+  "area": "Kingmoor, Carlisle",
+  "lat": 54.93431,
+  "lng": -2.97112,
+  "ages": [],
+  "equipment": [
+    "sl"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A playground on Cumberland Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Cumberland Council",
+  "sources": [
+    {
+      "label": "Cumberland Council: Crindledyke Playground",
+      "url": "https://www.cumberland.gov.uk/parks-culture-and-leisure/find-parks-and-public-gardens-near-you/crindledyke-playground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/898022700"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

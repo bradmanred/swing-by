@@ -1,0 +1,34 @@
+{
+  "name": "Madeley Hills Lane",
+  "region": "west-midlands",
+  "area": "Hills Lane, Madeley",
+  "lat": 52.63573,
+  "lng": -2.44219,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sk",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Telford & Wrekin Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Telford & Wrekin Council",
+  "sources": [
+    {
+      "label": "Telford & Wrekin Council: Madeley Hills Lane",
+      "url": "https://www.telford.gov.uk/online-directories/sports-and-leisure/find-a-playground/madeley-hills-lane"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/397992288"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

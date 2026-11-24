@@ -1,0 +1,37 @@
+{
+  "name": "Oakfield Drive/Rad Valley Road Open Space and Play Area, Shrewsbury",
+  "region": "west-midlands",
+  "area": "Radbrook, Shrewsbury",
+  "lat": 52.70401,
+  "lng": -2.7848,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "bs",
+    "sw",
+    "sl",
+    "rb"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Shrewsbury Town Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Shrewsbury Town Council",
+  "sources": [
+    {
+      "label": "Shrewsbury Town Council: Oakfield Drive/Rad Valley Road Open Space and Play Area, Shrewsbury",
+      "url": "https://www.shrewsburytowncouncil.gov.uk/assets/oakfield-drive-rad-valley-road-open-space-and-play-area-shrewsbury"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/919179530"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

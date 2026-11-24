@@ -1,0 +1,33 @@
+{
+  "name": "Spider Park Playground",
+  "region": "north-west",
+  "area": "Belle Vue, Carlisle",
+  "lat": 54.89511,
+  "lng": -2.97502,
+  "ages": [
+    "teens"
+  ],
+  "equipment": [
+    "sw",
+    "sl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Cumberland Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Cumberland Council",
+  "sources": [
+    {
+      "label": "Cumberland Council: Spider Park Playground",
+      "url": "https://www.cumberland.gov.uk/parks-culture-and-leisure/find-parks-and-public-gardens-near-you/spider-park-playground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/331044751"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Sunderland Drive play area",
+  "region": "south-east",
+  "area": "Elmsbrook, Bicester",
+  "lat": 51.91162,
+  "lng": -1.14176,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by Bicester Town Council.",
+  "nearby": [],
+  "operator": "Bicester Town Council",
+  "sources": [
+    {
+      "label": "Bicester Town Council: Sunderland Drive play area",
+      "url": "https://www.bicester.gov.uk/services/open-spaces-play-areas-and-sports-pitches/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/4405773"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

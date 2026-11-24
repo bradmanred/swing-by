@@ -1,0 +1,28 @@
+{
+  "name": "Hemble Way Play Area",
+  "region": "yorkshire",
+  "area": "Kingswood, Hull",
+  "lat": 53.79591,
+  "lng": -0.34437,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area on Hull City Council's list of play areas in east Hull.",
+  "nearby": [],
+  "operator": "Hull City Council",
+  "sources": [
+    {
+      "label": "Hull City Council: Hemble Way Play Area",
+      "url": "https://parks.hull.gov.uk/east-hull-play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/27410365"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

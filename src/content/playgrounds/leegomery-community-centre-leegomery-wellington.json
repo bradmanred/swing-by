@@ -1,0 +1,31 @@
+{
+  "name": "Leegomery Community Centre",
+  "region": "west-midlands",
+  "area": "Leegomery, Wellington",
+  "lat": 52.70914,
+  "lng": -2.49455,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Telford & Wrekin Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Telford & Wrekin Council",
+  "sources": [
+    {
+      "label": "Telford & Wrekin Council: Leegomery Community Centre",
+      "url": "https://www.telford.gov.uk/online-directories/sports-and-leisure/find-a-playground/leegomery-community-centre"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/552384564"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

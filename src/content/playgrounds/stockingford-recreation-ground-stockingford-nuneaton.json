@@ -1,0 +1,32 @@
+{
+  "name": "Stockingford recreation ground",
+  "region": "west-midlands",
+  "area": "Stockingford, Nuneaton",
+  "lat": 52.51834,
+  "lng": -1.50266,
+  "ages": [],
+  "equipment": [
+    "sk",
+    "gym",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Nuneaton and Bedworth Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Nuneaton and Bedworth Borough Council",
+  "sources": [
+    {
+      "label": "Nuneaton and Bedworth Borough Council: Stockingford recreation ground",
+      "url": "https://www.nuneatonandbedworth.gov.uk/directory-record/4334/stockingford-recreation-ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/462774203"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

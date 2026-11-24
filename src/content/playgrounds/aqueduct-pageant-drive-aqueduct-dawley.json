@@ -1,0 +1,31 @@
+{
+  "name": "Aqueduct Pageant Drive",
+  "region": "west-midlands",
+  "area": "Aqueduct, Dawley",
+  "lat": 52.65231,
+  "lng": -2.45995,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Telford & Wrekin Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Telford & Wrekin Council",
+  "sources": [
+    {
+      "label": "Telford & Wrekin Council: Aqueduct Pageant Drive",
+      "url": "https://www.telford.gov.uk/online-directories/sports-and-leisure/find-a-playground/aqueduct-pageant-drive"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/584026695"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

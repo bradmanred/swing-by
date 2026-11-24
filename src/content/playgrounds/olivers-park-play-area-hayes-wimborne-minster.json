@@ -1,0 +1,30 @@
+{
+  "name": "Oliver's Park Play Area",
+  "region": "south-west",
+  "area": "Hayes, Wimborne Minster",
+  "lat": 50.80405,
+  "lng": -1.95306,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A fenced play area in Oliver's Park, on Dorset Council's list, run by Colehill Town Council.",
+  "nearby": [],
+  "operator": "Dorset Council",
+  "sources": [
+    {
+      "label": "Dorset Council: Oliver's Park Play Area",
+      "url": "https://www.dorsetcouncil.gov.uk/countryside-coast-parks/childrens-play-areas/east-dorset-play-areas/colehill-play-areas.aspx"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/901604014"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

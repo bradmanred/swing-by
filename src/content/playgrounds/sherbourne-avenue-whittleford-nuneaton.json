@@ -1,0 +1,30 @@
+{
+  "name": "Sherbourne Avenue",
+  "region": "west-midlands",
+  "area": "Whittleford, Nuneaton",
+  "lat": 52.52405,
+  "lng": -1.51588,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Nuneaton and Bedworth Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Nuneaton and Bedworth Borough Council",
+  "sources": [
+    {
+      "label": "Nuneaton and Bedworth Borough Council: Sherbourne Avenue",
+      "url": "https://www.nuneatonandbedworth.gov.uk/directory-record/4296/sherbourne-avenue"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/463529623"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

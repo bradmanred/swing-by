@@ -1,0 +1,35 @@
+{
+  "name": "Ling Road Playground",
+  "region": "north-west",
+  "area": "Egremont",
+  "lat": 54.47617,
+  "lng": -3.53859,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A playground on Cumberland Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Cumberland Council",
+  "sources": [
+    {
+      "label": "Cumberland Council: Ling Road Playground",
+      "url": "https://www.cumberland.gov.uk/parks-culture-and-leisure/find-parks-and-public-gardens-near-you/ling-road-playground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1054027386"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

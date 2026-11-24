@@ -1,0 +1,36 @@
+{
+  "name": "Sweetlake Meadow Play Area",
+  "region": "west-midlands",
+  "area": "Radbrook Green, Shrewsbury",
+  "lat": 52.69108,
+  "lng": -2.77476,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "rb",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Shrewsbury Town Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Shrewsbury Town Council",
+  "sources": [
+    {
+      "label": "Shrewsbury Town Council: Sweetlake Meadow Play Area",
+      "url": "https://www.shrewsburytowncouncil.gov.uk/assets/sweetlake-meadow-play-area-d57"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1172014249"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

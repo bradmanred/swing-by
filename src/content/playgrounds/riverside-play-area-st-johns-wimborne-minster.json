@@ -1,0 +1,28 @@
+{
+  "name": "Riverside Play Area",
+  "region": "south-west",
+  "area": "St Johns, Wimborne Minster",
+  "lat": 50.79269,
+  "lng": -1.97538,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area on Dorset Council's list of play areas in Wimborne.",
+  "nearby": [],
+  "operator": "Dorset Council",
+  "sources": [
+    {
+      "label": "Dorset Council: Riverside Play Area",
+      "url": "https://www.dorsetcouncil.gov.uk/w/wimborne-play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/869793110"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

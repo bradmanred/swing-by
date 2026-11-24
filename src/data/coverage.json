@@ -35,7 +35,11 @@
   },
   {
    "name": "West Midlands",
-   "playgrounds": 706
+   "playgrounds": 707
+  },
+  {
+   "name": "West Sussex",
+   "playgrounds": 674
   },
   {
    "name": "Greater Manchester",
@@ -58,6 +62,10 @@
    "playgrounds": 518
   },
   {
+   "name": "Durham",
+   "playgrounds": 493
+  },
+  {
    "name": "Tyne and Wear",
    "playgrounds": 436
   },
@@ -78,6 +86,14 @@
    "playgrounds": 255
   },
   {
+   "name": "East Sussex",
+   "playgrounds": 210
+  },
+  {
+   "name": "Cumbria",
+   "playgrounds": 188
+  },
+  {
    "name": "Nottinghamshire",
    "playgrounds": 179
   },
@@ -88,6 +104,14 @@
   {
    "name": "Cheshire",
    "playgrounds": 164
+  },
+  {
+   "name": "Dorset",
+   "playgrounds": 161
+  },
+  {
+   "name": "Shropshire",
+   "playgrounds": 152
   },
   {
    "name": "Gloucestershire",
@@ -102,28 +126,32 @@
    "playgrounds": 128
   },
   {
+   "name": "Warwickshire",
+   "playgrounds": 125
+  },
+  {
    "name": "Somerset",
    "playgrounds": 123
+  },
+  {
+   "name": "Worcestershire",
+   "playgrounds": 123
+  },
+  {
+   "name": "Oxfordshire",
+   "playgrounds": 110
   },
   {
    "name": "Suffolk",
    "playgrounds": 106
   },
   {
-   "name": "Durham",
-   "playgrounds": 106
-  },
-  {
-   "name": "West Sussex",
-   "playgrounds": 104
+   "name": "East Riding of Yorkshire",
+   "playgrounds": 102
   },
   {
    "name": "Northamptonshire",
    "playgrounds": 100
-  },
-  {
-   "name": "East Sussex",
-   "playgrounds": 92
   },
   {
    "name": "Isle of Wight",
@@ -138,48 +166,20 @@
    "playgrounds": 67
   },
   {
-   "name": "Cumbria",
-   "playgrounds": 29
-  },
-  {
-   "name": "Oxfordshire",
-   "playgrounds": 24
-  },
-  {
-   "name": "Warwickshire",
-   "playgrounds": 19
-  },
-  {
-   "name": "Worcestershire",
-   "playgrounds": 16
+   "name": "Bristol",
+   "playgrounds": 59
   },
   {
    "name": "Wiltshire",
    "playgrounds": 16
   },
   {
-   "name": "East Riding of Yorkshire",
-   "playgrounds": 11
-  },
-  {
-   "name": "Shropshire",
-   "playgrounds": 10
-  },
-  {
    "name": "Northumberland",
    "playgrounds": 10
   },
   {
-   "name": "Dorset",
-   "playgrounds": 8
-  },
-  {
    "name": "Cornwall",
    "playgrounds": 7
-  },
-  {
-   "name": "Bristol",
-   "playgrounds": 6
   },
   {
    "name": "Herefordshire",

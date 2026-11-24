@@ -1,0 +1,30 @@
+{
+  "name": "Goldsmith's Recreation Ground Playground",
+  "region": "south-east",
+  "area": "St John's, Crowborough",
+  "lat": 51.06322,
+  "lng": 0.16505,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "sp"
+  ],
+  "access": [
+    "sf"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap near Pilmer Road, St John's. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "sources": [
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/99244120"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment (what is mapped on OpenStreetMap, which may be incomplete), opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}
