@@ -1,0 +1,28 @@
+{
+  "name": "Clarence Park",
+  "region": "south-west",
+  "area": "Whitecross Village, Weston-super-Mare",
+  "lat": 51.33678,
+  "lng": -2.98065,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by Weston-super-Mare Town Council.",
+  "nearby": [],
+  "operator": "Weston-super-Mare Town Council",
+  "sources": [
+    {
+      "label": "Weston-super-Mare Town Council: Clarence Park",
+      "url": "https://wsm-tc.gov.uk/our-services/parks-play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/826751292"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

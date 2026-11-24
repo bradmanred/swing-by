@@ -1,0 +1,28 @@
+{
+  "name": "Cotman Close Play Area",
+  "region": "east",
+  "area": "Lowestoft",
+  "lat": 52.50193,
+  "lng": 1.73967,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by Lowestoft Town Council.",
+  "nearby": [],
+  "operator": "Lowestoft Town Council",
+  "sources": [
+    {
+      "label": "Lowestoft Town Council: Cotman Close Play Area",
+      "url": "https://lowestofttowncouncil.gov.uk/council-services/parks-and-open-spaces/play-areas/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/318262095"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

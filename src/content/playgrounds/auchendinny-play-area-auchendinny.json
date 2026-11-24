@@ -1,0 +1,28 @@
+{
+  "name": "Auchendinny Play Area",
+  "region": "scotland",
+  "area": "Auchendinny",
+  "lat": 55.84786,
+  "lng": -3.19056,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Midlothian Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Midlothian Council",
+  "sources": [
+    {
+      "label": "Midlothian Council: Auchendinny Play Area",
+      "url": "https://www.midlothian.gov.uk/directory_record/118/auchendinny_play_area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/265121017"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

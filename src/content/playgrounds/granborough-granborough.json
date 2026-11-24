@@ -1,0 +1,28 @@
+{
+  "name": "Granborough",
+  "region": "south-east",
+  "area": "Granborough",
+  "lat": 51.91719,
+  "lng": -0.88861,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap near Church Lane, Granborough. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "operator": "Granborough Council",
+  "sources": [
+    {
+      "label": "OpenStreetMap: Granborough",
+      "url": "https://www.openstreetmap.org/way/1075983892"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges (from OpenStreetMap), play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

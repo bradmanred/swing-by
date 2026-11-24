@@ -1,0 +1,28 @@
+{
+  "name": "Omega Play Park",
+  "region": "south-east",
+  "area": "Somers Town, Portsmouth",
+  "lat": 50.79671,
+  "lng": -1.08287,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap in Omega Park near Omega Street, Somers Town. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "operator": "portsmouth city council",
+  "sources": [
+    {
+      "label": "OpenStreetMap: Omega Play Park",
+      "url": "https://www.openstreetmap.org/way/611215183"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges (from OpenStreetMap), play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

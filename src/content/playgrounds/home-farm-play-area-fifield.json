@@ -1,0 +1,31 @@
+{
+  "name": "Home Farm play area",
+  "region": "south-east",
+  "area": "Fifield",
+  "lat": 51.46028,
+  "lng": -0.67625,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl",
+    "rb",
+    "tp",
+    "ss",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Bracknell Town Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Bracknell Town Council",
+  "sources": [
+    {
+      "label": "Bracknell Town Council: Home Farm play area",
+      "url": "https://bracknelltowncouncil.gov.uk/council-services/play-areas-and-green-spaces/home-farm-play-area"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (approximate: the nearest mapped play area to the street the council names), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

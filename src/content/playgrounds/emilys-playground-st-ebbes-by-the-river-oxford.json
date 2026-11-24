@@ -1,0 +1,31 @@
+{
+  "name": "Emily's Playground",
+  "region": "south-east",
+  "area": "St Ebbe's by the River, Oxford",
+  "lat": 51.74706,
+  "lng": -1.26152,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "bk",
+    "sl",
+    "cl",
+    "mb",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap near Friars Wharf, St Ebbe's by the River. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "operator": "Oxford City Council",
+  "sources": [
+    {
+      "label": "OpenStreetMap: Emily's Playground",
+      "url": "https://www.openstreetmap.org/way/126104157"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment (what is mapped on OpenStreetMap, which may be incomplete), opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

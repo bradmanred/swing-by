@@ -1,0 +1,28 @@
+{
+  "name": "North Lake",
+  "region": "south-east",
+  "area": "Birch Hill, Bracknell",
+  "lat": 51.3933,
+  "lng": -0.75028,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Bracknell Town Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Bracknell Town Council",
+  "sources": [
+    {
+      "label": "Bracknell Town Council: North Lake",
+      "url": "https://bracknelltowncouncil.gov.uk/council-services/play-areas-and-green-spaces/north-lake"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1359337904"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

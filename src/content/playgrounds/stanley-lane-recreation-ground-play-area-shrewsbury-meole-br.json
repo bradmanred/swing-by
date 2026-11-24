@@ -1,0 +1,36 @@
+{
+  "name": "Stanley Lane Recreation Ground & Play Area, Shrewsbury",
+  "region": "west-midlands",
+  "area": "Meole Brace, Shrewsbury",
+  "lat": 52.69154,
+  "lng": -2.76563,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "bs",
+    "sl",
+    "zw"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Shrewsbury Town Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Shrewsbury Town Council",
+  "sources": [
+    {
+      "label": "Shrewsbury Town Council: Stanley Lane Recreation Ground & Play Area, Shrewsbury",
+      "url": "https://www.shrewsburytowncouncil.gov.uk/assets/stanley-lane-recreation-ground-shrewsbury"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/899099035"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

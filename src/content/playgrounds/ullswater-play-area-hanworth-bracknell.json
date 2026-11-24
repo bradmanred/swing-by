@@ -1,0 +1,38 @@
+{
+  "name": "Ullswater play area",
+  "region": "south-east",
+  "area": "Hanworth, Bracknell",
+  "lat": 51.39422,
+  "lng": -0.77051,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "bk",
+    "sw",
+    "cl",
+    "rb",
+    "ss",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Bracknell Town Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Bracknell Town Council",
+  "sources": [
+    {
+      "label": "Bracknell Town Council: Ullswater play area",
+      "url": "https://bracknelltowncouncil.gov.uk/council-services/play-areas-and-green-spaces/ullswater-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1326264097"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

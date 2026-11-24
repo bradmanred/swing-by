@@ -1,0 +1,30 @@
+{
+  "name": "Raymond Road",
+  "region": "south-east",
+  "area": "St Marks, Maidenhead",
+  "lat": 51.52441,
+  "lng": -0.7361,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A playground on Royal Borough of Windsor and Maidenhead's own list of play areas.",
+  "nearby": [],
+  "operator": "Royal Borough of Windsor and Maidenhead",
+  "sources": [
+    {
+      "label": "Royal Borough of Windsor and Maidenhead: Raymond Road",
+      "url": "https://rbwm.gov.uk/leisure-and-culture/parks-and-open-spaces/raymond-road"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/755544228"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours and parking.",
+  "photo": null
+}

@@ -1,0 +1,39 @@
+{
+  "name": "Freeborn Way play area",
+  "region": "south-east",
+  "area": "Bullbrook, Bracknell",
+  "lat": 51.41902,
+  "lng": -0.72515,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "bs",
+    "sw",
+    "sl",
+    "cl",
+    "rb",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Bracknell Town Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Bracknell Town Council",
+  "sources": [
+    {
+      "label": "Bracknell Town Council: Freeborn Way play area",
+      "url": "https://bracknelltowncouncil.gov.uk/council-services/play-areas-and-green-spaces/freeborn-way-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1326265603"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Jubilee Gardens",
+  "region": "london",
+  "area": "Waterloo, Greater London",
+  "lat": 51.50352,
+  "lng": -0.11823,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap near Belvedere Road, Waterloo. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "sources": [
+    {
+      "label": "OpenStreetMap: Jubilee Gardens",
+      "url": "https://www.openstreetmap.org/relation/7929522"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges (from OpenStreetMap), play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Jubilee Park",
+  "region": "south-east",
+  "area": "Long Crendon",
+  "lat": 51.77247,
+  "lng": -0.99603,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "sw",
+    "bs",
+    "bk",
+    "cl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap in Long Crendon Recreational Ground near The Square, Long Crendon. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "operator": "Long Crendon Parish Council",
+  "sources": [
+    {
+      "label": "OpenStreetMap: Jubilee Park",
+      "url": "https://www.openstreetmap.org/way/1151519889"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges (from OpenStreetMap), play equipment (what is mapped on OpenStreetMap, which may be incomplete), opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

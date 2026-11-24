@@ -1,0 +1,25 @@
+{
+  "name": "Carloggas Playground",
+  "region": "south-west",
+  "area": "Carloggas",
+  "lat": 50.43567,
+  "lng": -5.00449,
+  "ages": [],
+  "equipment": [
+    "sw"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap near Carloggas. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "sources": [
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/1466093848"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment (what is mapped on OpenStreetMap, which may be incomplete), opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

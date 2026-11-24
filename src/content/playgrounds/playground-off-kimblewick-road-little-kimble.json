@@ -1,0 +1,29 @@
+{
+  "name": "Playground off Kimblewick Road",
+  "region": "south-east",
+  "area": "Little Kimble",
+  "lat": 51.75089,
+  "lng": -0.81616,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "bk",
+    "sl",
+    "cl",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap near Kimblewick Road, Little Kimble. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "sources": [
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/172591950"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment (what is mapped on OpenStreetMap, which may be incomplete), opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

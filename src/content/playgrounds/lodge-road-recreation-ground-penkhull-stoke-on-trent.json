@@ -1,0 +1,32 @@
+{
+  "name": "Lodge Road Recreation Ground",
+  "region": "west-midlands",
+  "area": "Penkhull, Stoke-on-Trent",
+  "lat": 53.00283,
+  "lng": -2.20614,
+  "ages": [
+    "teens"
+  ],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Stoke-on-Trent City Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Stoke-on-Trent City Council",
+  "sources": [
+    {
+      "label": "Stoke-on-Trent City Council: Lodge Road Recreation Ground",
+      "url": "https://www.stoke.gov.uk/directory_record/331271/lodge_road_recreation_ground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1455968428"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

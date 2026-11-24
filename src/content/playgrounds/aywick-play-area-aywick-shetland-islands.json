@@ -1,0 +1,28 @@
+{
+  "name": "Aywick Play Area",
+  "region": "scotland",
+  "area": "Aywick, Shetland Islands",
+  "lat": 60.56199,
+  "lng": -1.03333,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area on Shetland Islands Council's list of children's play areas.",
+  "nearby": [],
+  "operator": "Shetland Islands Council",
+  "sources": [
+    {
+      "label": "Shetland Islands Council: Aywick Play Area",
+      "url": "https://www.shetland.gov.uk/sport-leisure/play-areas-multi-courts"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/895705182"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

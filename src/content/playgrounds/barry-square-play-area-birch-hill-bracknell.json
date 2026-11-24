@@ -1,0 +1,35 @@
+{
+  "name": "Barry Square play area",
+  "region": "south-east",
+  "area": "Birch Hill, Bracknell",
+  "lat": 51.39138,
+  "lng": -0.74123,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl",
+    "spr",
+    "bb"
+  ],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A playground on Bracknell Town Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Bracknell Town Council",
+  "sources": [
+    {
+      "label": "Bracknell Town Council: Barry Square play area",
+      "url": "https://bracknelltowncouncil.gov.uk/council-services/play-areas-and-green-spaces/barry-square-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/53568954"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

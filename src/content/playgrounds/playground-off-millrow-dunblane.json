@@ -1,0 +1,30 @@
+{
+  "name": "Playground off Millrow",
+  "region": "scotland",
+  "area": "Dunblane",
+  "lat": 56.18792,
+  "lng": -3.96505,
+  "ages": [],
+  "equipment": [
+    "bs",
+    "sl",
+    "cl",
+    "rb",
+    "ss"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap near Millrow, Dunblane. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "operator": "Stirling Council",
+  "sources": [
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/432816914"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment (what is mapped on OpenStreetMap, which may be incomplete), opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

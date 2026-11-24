@@ -1,0 +1,28 @@
+{
+  "name": "Kingston Park Play Area",
+  "region": "south-east",
+  "area": "Fratton, Portsmouth",
+  "lat": 50.80168,
+  "lng": -1.06922,
+  "ages": [
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap in Kingston Recreation Ground near Clarkes Road, Fratton. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "operator": "Portsmouth City Council",
+  "sources": [
+    {
+      "label": "OpenStreetMap: Kingston Park Play Area",
+      "url": "https://www.openstreetmap.org/way/940934916"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges (from OpenStreetMap), play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

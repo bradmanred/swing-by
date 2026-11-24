@@ -1,0 +1,30 @@
+{
+  "name": "Kings Quarter",
+  "region": "south-east",
+  "area": "Fishery, Maidenhead",
+  "lat": 51.52288,
+  "lng": -0.71029,
+  "ages": [],
+  "equipment": [
+    "cl",
+    "rb",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "A playground on Royal Borough of Windsor and Maidenhead's own list of play areas.",
+  "nearby": [],
+  "operator": "Royal Borough of Windsor and Maidenhead",
+  "sources": [
+    {
+      "label": "Royal Borough of Windsor and Maidenhead: Kings Quarter",
+      "url": "https://rbwm.gov.uk/leisure-and-culture/parks-and-open-spaces/kings-quarter"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (from the council's map), age ranges, the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Devitt Way play area",
+  "region": "east-midlands",
+  "area": "Broughton Astley",
+  "lat": 52.52296,
+  "lng": -1.21899,
+  "ages": [
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Harborough District Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Harborough District Council",
+  "sources": [
+    {
+      "label": "Harborough District Council: Devitt Way play area",
+      "url": "https://www.harborough.gov.uk/directory_record/825/devitt_way_play_area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1039618979"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

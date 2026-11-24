@@ -1,0 +1,37 @@
+{
+  "name": "Calfridus Way play area",
+  "region": "south-east",
+  "area": "Birch Hill, Bracknell",
+  "lat": 51.41002,
+  "lng": -0.7307,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "bs",
+    "sw",
+    "sl",
+    "ss",
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Bracknell Town Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Bracknell Town Council",
+  "sources": [
+    {
+      "label": "Bracknell Town Council: Calfridus Way play area",
+      "url": "https://bracknelltowncouncil.gov.uk/council-services/play-areas-and-green-spaces/calfridus-way-play-area"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1326265067"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

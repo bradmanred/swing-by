@@ -1,0 +1,28 @@
+{
+  "name": "Hartland Country Park Playarea",
+  "region": "south-east",
+  "area": "Fleet",
+  "lat": 51.28673,
+  "lng": -0.8028,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap near Bramshot Lane, Fleet. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "operator": "Hart District Council",
+  "sources": [
+    {
+      "label": "OpenStreetMap: Hartland Country Park Playarea",
+      "url": "https://www.openstreetmap.org/way/1146963912"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges (from OpenStreetMap), play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

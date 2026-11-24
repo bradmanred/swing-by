@@ -1,0 +1,34 @@
+{
+  "name": "Buryfield Toddler Play Area",
+  "region": "south-east",
+  "area": "South Heath, Great Missenden",
+  "lat": 51.70327,
+  "lng": -0.70426,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "rb"
+  ],
+  "access": [
+    "sf"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap in Buryfield Recreation Ground near Buryfield Lane, South Heath. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "operator": "Great Missenden Parish Council",
+  "sources": [
+    {
+      "label": "OpenStreetMap: Buryfield Toddler Play Area",
+      "url": "https://www.openstreetmap.org/way/118046168"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges (from OpenStreetMap), play equipment (what is mapped on OpenStreetMap, which may be incomplete), opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

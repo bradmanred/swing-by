@@ -1,0 +1,28 @@
+{
+  "name": "McDiarmid Park Play Area",
+  "region": "scotland",
+  "area": "Hillside, Barrhead",
+  "lat": 55.79881,
+  "lng": -4.40026,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on East Renfrewshire Council's list of playgrounds and parks.",
+  "nearby": [],
+  "operator": "East Renfrewshire Council",
+  "sources": [
+    {
+      "label": "East Renfrewshire Council: McDiarmid Park Play Area",
+      "url": "https://eastrenfrewshire.gov.uk/playgrounds-and-parks-list"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1118481409"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
