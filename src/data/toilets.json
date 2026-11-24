@@ -294652,6 +294652,18 @@
     "lng": -1.434080601
    }
   },
+  "shirwell-playground-shirwell": {
+   "nearest": {
+    "id": "a0dc380e03f70b6fb292dfee",
+    "name": "Public toilet",
+    "m": 1600,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 51.14733324,
+    "lng": -3.98765564
+   }
+  },
   "shodshillmill-play-area-braehead": {
    "nearest": null
   },
@@ -310659,6 +310671,28 @@
     "lng": -0.07646902
    }
   },
+  "timber-play-area-west-park-plymouth": {
+   "nearest": {
+    "id": "626f3b2c6314e65de359fc38",
+    "name": "West Park Library",
+    "m": 615,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 50.412570338,
+    "lng": -4.166511297
+   },
+   "nearestBabyChange": {
+    "id": "fbb4de0db297ddad56fb34bf",
+    "name": "Tesco",
+    "m": 1065,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 50.409582473,
+    "lng": -4.149468541
+   }
+  },
   "timbertree-play-area-haden-hill-old-hill": {
    "nearest": {
     "id": "7f8fbf98f1cddf6890b9c503",
@@ -312798,6 +312832,18 @@
     "free": true,
     "lat": 51.84045773,
     "lng": -2.236822844
+   }
+  },
+  "tufty-park-cullompton": {
+   "nearest": {
+    "id": "53f8105f309542710bc71ce5",
+    "name": "Station Road",
+    "m": 570,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 50.858967179,
+    "lng": -3.39160502
    }
   },
   "tulach-pay-area-highfield-wigan": {
