@@ -1,6 +1,6 @@
 // Checks the council website readers (scripts/council-readers.mjs) on small pages shaped like the real ones.
 import assert from 'node:assert/strict';
-import { describe, parsePark, point, jaduAZ } from '../scripts/council-readers.mjs';
+import { describe, parsePark, point, jaduAZ, readPages } from '../scripts/council-readers.mjs';
 
 // A Jadu directory record (Bromley, Hounslow, Greenwich, Rotherham…).
 const jadu = `<html><head><title>Alexandra Recreation Ground - Parks in Bromley | London Borough of Bromley</title></head><body>
@@ -83,3 +83,27 @@ const telford = `<h1>Arleston - Windsor Road</h1><table><tr><th>Address</th><td>
 const tw = parsePark(telford, 'https://www.telford.gov.uk/online-directories/sports-and-leisure/find-a-playground/arleston-windsor-road/', { allPlay: true, address: 'Address[;:\\s]+([^;]{4,120})' }, true);
 assert.equal(tw.where, 'Adjacent 27 Windsor Road, Arleston');
 assert.equal(parsePark(telford, 'https://example.gov.uk/x/', {}, true).where, null);
+
+// Moray: the street and town are the first line after the park's name ("address" picks them out).
+const moray = `<h1>Cuthill Park</h1><p>Chapel Street, Keith</p><ul><li>Car parking</li><li>Seating</li><li>Play equipment</li></ul>`;
+const mw = parsePark(moray, 'https://www.moray.gov.uk/x/find-a-play-park/cuthill-park/', { allPlay: true, address: "^[^;]+;\\s*([^;]{3,80}?,\\s*[A-Z][A-Za-z' -]{2,30})\\s*;" }, true);
+assert.equal(mw.where, 'Chapel Street, Keith');
+
+// "sitemap": true finds park pages a browser-drawn list doesn't link (Buckinghamshire).
+{
+  const site = {
+    'https://www.example.gov.uk/parks/find-a-park/': '<h1>Find a park</h1><a href="/country/black-park/">Black Park</a>',
+    'https://www.example.gov.uk/sitemap.xml': '<urlset><url><loc>https://www.example.gov.uk/parks/find-a-park/elm-green-park/</loc></url><url><loc>https://www.example.gov.uk/bins/</loc></url></urlset>',
+    'https://www.example.gov.uk/parks/find-a-park/elm-green-park/': '<h1>Elm Green Park and play area (Aylesbury)</h1><p>Elm Green, Aylesbury HP21 8HR</p><p>a fenced play space for ages 2 to 12</p>',
+  };
+  const realFetch = globalThis.fetch;
+  globalThis.fetch = async (url) => { const b = site[url] ?? site[`${url}/`]; return b != null ? new Response(b) : new Response('', { status: 404 }); };
+  try {
+    const feed = { type: 'pages', index: 'https://www.example.gov.uk/parks/find-a-park/', follow: '/find-a-park/[a-z0-9-]+/?$' };
+    assert.equal((await readPages(feed)).length, 0, 'without the site map, the list links no park pages');
+    const recs = await readPages({ ...feed, sitemap: true });
+    assert.deepEqual(recs.map((r) => [r.name, r.postcode]), [['Elm Green Park and play area (Aylesbury)', 'HP21 8HR']]);
+  } finally {
+    globalThis.fetch = realFetch;
+  }
+}

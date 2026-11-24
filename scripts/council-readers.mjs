@@ -18,7 +18,8 @@
 // website whose park list links to one page per park (Richmond, Kensington and Chelsea, Islington).
 //
 // Optional for all three: "nameFrom": "title" (the park's name is in the page title, not its heading), "allPlay", "require" (a regex a park's page must match, replacing the playground test), "approximate"
-// (the map point is the park's, not the play area's), "include"/"exclude" (regexes on the park's name).
+// (the map point is the park's, not the play area's), "include"/"exclude" (regexes on the park's name). For "pages",
+// "sitemap": true also reads park pages from the site's sitemap.xml.
 //
 // Each record: { name, lat, lng, postcode, url, equipment, ages, access, facilities, text }. lat/lng are null when
 // the page has no map point; find-gaps.mjs then places it from the postcode. equipment, ages, access and facilities
@@ -216,7 +217,7 @@ async function crawl(feed, listPages, isRecord, inCategory, normalise = (u) => u
     }
     await sleep(500);
   }
-  console.log(`  ${feed.directory}: ${found.size} park pages, ${out.length} with a playground`);
+  console.log(`  ${feed.directory ?? [].concat(feed.index ?? feed.pages ?? [])[0]}: ${found.size} park pages, ${out.length} with a playground`);
   return out;
 }
 
@@ -261,37 +262,47 @@ export async function readLocalGov(feed) {
   // The first list page without "?page=0" (some sites, such as Haringey, refuse list addresses with it), then ?page=1…
   const list = (page) => (page === 0 ? (feed.query ? `${dir}?${feed.query}` : dir) : `${dir}?${feed.query ? `${feed.query}&` : ''}page=${page}`);
   // Parks the list pages don't reach, from the site map (unless a filter query narrows the list to playgrounds).
-  const seed = [];
-  if (!feed.query) {
-    for (let page = 0; page < 10; page++) {
-      const xml = await get(`${base.origin}/sitemap.xml${page ? `?page=${page}` : ''}`);
-      const locs = [...xml.matchAll(/<loc>\s*([^<\s]+)\s*<\/loc>/g)].map((m) => m[1].replace(/&amp;/g, '&'));
-      if (!locs.length) break;
-      // A sitemap index (Westmorland and Furness's points to /standard-sitemap/sitemap.xml?page=1, 2…): read the
-      // sitemaps it lists instead, then stop.
-      const pages = /<sitemapindex/.test(xml) ? [] : locs;
-      if (/<sitemapindex/.test(xml))
-        for (const sm of locs.slice(0, 20)) {
-          const x = await get(sm);
-          pages.push(...[...x.matchAll(/<loc>\s*([^<\s]+)\s*<\/loc>/g)].map((m) => m[1].replace(/&amp;/g, '&')));
-          await sleep(400);
-        }
-      for (const u of pages) if (isRecord(u)) seed.push(u.replace('://www.', base.host.startsWith('www.') ? '://www.' : '://'));
-      if (!/<urlset/.test(xml)) break; // a sitemap index (already read above): stop here
-      await sleep(400);
-    }
-  }
+  const seed = feed.query ? [] : await sitemapPages(base, isRecord);
   return crawl(feed, [list], isRecord, !!feed.allPlay && !feed.require, (u) => u.replace(/\/$/, ''), seed);
+}
+
+/**
+ * Pages in a site's site map (sitemap.xml, its ?page=1, 2… and, for a sitemap index, the sitemaps it lists) that
+ * isRecord accepts, written with or without "www." to match base.
+ */
+async function sitemapPages(base, isRecord) {
+  const seed = [];
+  for (let page = 0; page < 10; page++) {
+    const xml = await get(`${base.origin}/sitemap.xml${page ? `?page=${page}` : ''}`);
+    const locs = [...xml.matchAll(/<loc>\s*([^<\s]+)\s*<\/loc>/g)].map((m) => m[1].replace(/&amp;/g, '&'));
+    if (!locs.length) break;
+    // A sitemap index (Westmorland and Furness's points to /standard-sitemap/sitemap.xml?page=1, 2…): read the
+    // sitemaps it lists instead, then stop.
+    const pages = /<sitemapindex/.test(xml) ? [] : locs;
+    if (/<sitemapindex/.test(xml))
+      for (const sm of locs.slice(0, 20)) {
+        const x = await get(sm);
+        pages.push(...[...x.matchAll(/<loc>\s*([^<\s]+)\s*<\/loc>/g)].map((m) => m[1].replace(/&amp;/g, '&')));
+        await sleep(400);
+      }
+    for (const u of pages) if (isRecord(u)) seed.push(u.replace('://www.', base.host.startsWith('www.') ? '://www.' : '://'));
+    if (!/<urlset/.test(xml)) break; // a sitemap index (already read above): stop here
+    await sleep(400);
+  }
+  return [...new Set(seed)];
 }
 
 /**
  * Any other website: { "type": "pages", "index": ["https://…/parks?alpha=A", …], "follow": "/find_a_park/[a-z_]+$" }.
  * Every link on the index pages whose address matches "follow" is a park's page, read like a Jadu or LocalGov one.
- * "pages" lists park pages to read as well (or instead, for a site with no list page).
+ * "pages" lists park pages to read as well (or instead, for a site with no list page). "sitemap": true also reads the
+ * site map of the first index page's site for park pages, for a list drawn by the browser (Buckinghamshire's).
  */
 export async function readPages(feed) {
   const follow = new RegExp(feed.follow);
   const isRecord = (u) => follow.test(u.replace(/[?#].*$/, ''));
   const norm = (u) => u.replace(/[?#].*$/, '').replace(/\/$/, '');
-  return crawl(feed, [].concat(feed.index ?? []).map((u) => (page) => (page ? null : u)), isRecord, !!feed.allPlay && !feed.require, norm, [].concat(feed.pages ?? []));
+  const seed = [].concat(feed.pages ?? []);
+  if (feed.sitemap) seed.push(...(await sitemapPages(new URL([].concat(feed.index)[0]), isRecord)));
+  return crawl(feed, [].concat(feed.index ?? []).map((u) => (page) => (page ? null : u)), isRecord, !!feed.allPlay && !feed.require, norm, seed);
 }

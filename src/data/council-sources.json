@@ -561,11 +561,15 @@
       "sources": [
         "https://www.buckinghamshire.gov.uk/schools-libraries-and-parks/parks-leisure-and-staying-active/find-a-park-or-play-area/"
       ],
-      "note": "Its find-a-park pages give each park's address, postcode and play facilities (for example Calvert Green, Bedgrove, Whitehill). Parks in the former Chiltern area are mostly run by parish councils. Feed set up 17 November 2026; imported 22–24 November 2026, with 4 verified playgrounds from it.",
+      "note": "Its find-a-park pages give each park's address, postcode and play facilities (for example Calvert Green, Bedgrove, Whitehill, Badger Way in Hazlemere). The list moved to /health-wellbeing-and-sports/parks-and-open-spaces/ in 2026 and is now drawn in the browser, so the reader only saw the four country parks and the 22–24 November 2026 imports found 4; the feed now reads the park pages from the site map as well (24 November 2026, not tried against the live site yet). Parks in the former Chiltern area are mostly run by parish councils.",
       "feed": {
         "type": "pages",
-        "index": "https://www.buckinghamshire.gov.uk/schools-libraries-and-parks/parks-leisure-and-staying-active/find-a-park-or-play-area/",
-        "follow": "/find-a-park-or-play-area/[a-z0-9-]+/?$",
+        "index": [
+          "https://www.buckinghamshire.gov.uk/health-wellbeing-and-sports/parks-and-open-spaces/find-a-park-or-play-area/"
+        ],
+        "follow": "/(?:health-wellbeing-and-sports/parks-and-open-spaces|schools-libraries-and-parks/parks-leisure-and-staying-active)/find-a-park-or-play-area/[a-z0-9-]+/?$",
+        "sitemap": true,
+        "exclude": "Ball Court",
         "near": {
           "lat": 51.75,
           "lng": -0.8,
@@ -3024,15 +3028,15 @@
         "https://www.theparkstrust.com/activities/play-areas/",
         "https://www.theparkstrust.com/find-a-park/?Great%2Bfor...=Play%2BAreas"
       ],
-      "note": "The charity that runs Milton Keynes's main parks looks after 30-plus play areas. Its play areas now sit on each park's page under /find-a-park/ (the old /activities/play-areas/ pages went in 2026), and the find-a-park list filtered to play areas links the parks that have them. Try a council list found 10 parks on 22 November 2026; their points are the park's, not the play area's, so the coverage check snaps them onto the nearest mapped playground.",
+      "note": "The charity that runs Milton Keynes's main parks looks after 30-plus play areas across 40-plus parks. Its play areas sit on each park's page under /find-a-park/ (the old /activities/play-areas/ pages went in 2026). The find-a-park list's play area filter is drawn in the browser, so the 22 November 2026 import read only the parks linked from its menus and found 10; the feed now reads every park page in the site map and keeps those whose page mentions a play area (24 November 2026, not tried against the live site yet). Points are the park's, not the play area's, so the coverage check snaps them onto the nearest mapped playground.",
       "feed": {
         "type": "pages",
         "index": [
-          "https://www.theparkstrust.com/find-a-park/?Great%2Bfor...=Play%2BAreas",
-          "https://www.theparkstrust.com/activities/play-areas/"
+          "https://www.theparkstrust.com/activities/play-areas/",
+          "https://www.theparkstrust.com/find-a-park/"
         ],
         "follow": "/find-a-park/[a-z0-9-]+/?$",
-        "allPlay": true,
+        "sitemap": true,
         "approximate": true,
         "near": {
           "lat": 52.04,
@@ -3094,7 +3098,7 @@
       "sources": [
         "https://www.bracknelltowncouncil.gov.uk/council-services/play-areas-and-green-spaces/"
       ],
-      "note": "Runs 35-plus children's play areas, one page each under /council-services/play-areas-and-green-spaces/ (moved there from /recreation-facilities/council-sites/ in 2026). The pages list equipment but give no address or map, so each is placed by its park's name on OpenStreetMap or, failing that, by its name as a street in Bracknell (22 November 2026).",
+      "note": "Runs 35-plus children's play areas, one page each under /council-services/play-areas-and-green-spaces/ (moved there from /recreation-facilities/council-sites/ in 2026). The pages list equipment but give no address or map, so each is placed by its park's name on OpenStreetMap or, failing that, by its name as a street in Bracknell (22 November 2026). Imported 22 November 2026: 28 verified.",
       "feed": {
         "type": "pages",
         "index": "https://www.bracknelltowncouncil.gov.uk/council-services/play-areas-and-green-spaces/",
@@ -3156,7 +3160,7 @@
         "https://www.rbwm.gov.uk/leisure-and-culture/parks-and-open-spaces/parks-windsor",
         "https://rbwm.gov.uk/leisure-and-culture/parks-and-open-spaces/parks-maidenhead"
       ],
-      "note": "Windsor and Maidenhead park directories with one page per park listing its play area and ages (Oaken Grove, Grenfell Park, Kidwells Park, Clewer Memorial). Datchet and other parish play areas aren't registered yet. Try a council list found 37 on 22 November 2026.",
+      "note": "Windsor and Maidenhead park directories with one page per park listing its play area and ages (Oaken Grove, Grenfell Park, Kidwells Park, Clewer Memorial). Datchet and other parish play areas aren't registered yet. Try a council list found 37 on 22 November 2026, and all 37 were imported.",
       "feed": {
         "type": "pages",
         "index": [
@@ -3177,7 +3181,26 @@
       "sources": [
         "https://westberks.gov.uk/parks"
       ],
-      "note": "Checked 17 November 2026: the council's play areas are on an online map and in a Word list ('List of Children's Play Areas in West Berkshire', 2021-22) that couldn't be read from here; save it with Fetch pages and turn it into a list. Most play areas in Newbury and Thatcham belong to the town councils. Until then play areas come from OpenStreetMap."
+      "note": "Checked 17 November 2026: the council's play areas are on an online map and in a Word list ('List of Children's Play Areas in West Berkshire', 2021-22) that couldn't be read from here; save it with Fetch pages and turn it into a list. Most play areas in Newbury and Thatcham belong to the town councils. Until then play areas come from OpenStreetMap. Checked again 24 November 2026: the Word list still refuses downloads, from here and from GitHub's servers (Fetch pages got a 403). Thatcham Town Council's play areas are now registered separately."
+    },
+    {
+      "district": "West Berkshire",
+      "parish": "Thatcham",
+      "council": "Thatcham Town Council",
+      "sources": [
+        "https://thatchamtowncouncil.gov.uk/?p=71246"
+      ],
+      "note": "The town council's services pages name the 13 play areas it manages (Thatcham has 16; the rest are West Berkshire Council's); only Burdwood gives a postcode, so the rest are placed by name or street (src/data/council-lists/thatcham-town.csv), 24 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/thatcham-town.csv",
+        "page": "https://thatchamtowncouncil.gov.uk/?p=71246",
+        "near": {
+          "lat": 51.4,
+          "lng": -1.26,
+          "km": 4
+        }
+      }
     },
     {
       "district": "Wokingham",
@@ -3419,7 +3442,7 @@
       "sources": [
         "https://www.stoke.gov.uk/playgrounds"
       ],
-      "note": "Parks directory (Jadu, /directory_record/ pages) giving each park's address, postcode and map point, and 'Children's play equipment: Yes/No'. The /playgrounds page only shows the first 20, so the feed reads the directory's A to Z, and only keeps records saying Yes (22 November 2026).",
+      "note": "Parks directory (Jadu, /directory_record/ pages) giving each park's address, postcode and map point, and 'Children's play equipment: Yes/No'. The /playgrounds page only shows the first 20, so the feed reads the directory's A to Z, and only keeps records saying Yes (22 November 2026). Imported 22 November 2026: 31 verified.",
       "feed": {
         "type": "pages",
         "index": [
@@ -3687,12 +3710,25 @@
       "sources": [
         "https://www.harborough.gov.uk/directory/14/play_areas_in_harborough"
       ],
-      "note": "Jadu directory 'Play areas in Harborough' with the 28 play areas the council looks after. Its records are at /directory_record/ addresses, which the jadu reader doesn't follow, so it's read as pages: Try a council list found 19 with map points on 22 November 2026 (the directory page links 20, one of them a skate park; the other play areas aren't linked from it).",
+      "note": "Jadu directory 'Play areas in Harborough' with the 28 play areas the council looks after. Its records are at /directory_record/ addresses, which the jadu reader doesn't follow, so it's read as pages. The directory page links only 20 (one a skate park) and the A to Z's first page only shows A, so 19 were imported on 22 November 2026; the feed now reads every letter of the A to Z (24 November 2026).",
       "feed": {
         "type": "pages",
         "index": [
           "https://www.harborough.gov.uk/directory/14/play_areas_in_harborough",
-          "https://www.harborough.gov.uk/directory/14/a_to_z"
+          "https://www.harborough.gov.uk/directory/14/a_to_z",
+          "https://www.harborough.gov.uk/directory/14/a_to_z/B",
+          "https://www.harborough.gov.uk/directory/14/a_to_z/C",
+          "https://www.harborough.gov.uk/directory/14/a_to_z/D",
+          "https://www.harborough.gov.uk/directory/14/a_to_z/E",
+          "https://www.harborough.gov.uk/directory/14/a_to_z/F",
+          "https://www.harborough.gov.uk/directory/14/a_to_z/G",
+          "https://www.harborough.gov.uk/directory/14/a_to_z/L",
+          "https://www.harborough.gov.uk/directory/14/a_to_z/M",
+          "https://www.harborough.gov.uk/directory/14/a_to_z/N",
+          "https://www.harborough.gov.uk/directory/14/a_to_z/R",
+          "https://www.harborough.gov.uk/directory/14/a_to_z/S",
+          "https://www.harborough.gov.uk/directory/14/a_to_z/T",
+          "https://www.harborough.gov.uk/directory/14/a_to_z/W"
         ],
         "follow": "/directory_record/\\d+/[a-z0-9_]+$",
         "allPlay": true,
@@ -4157,7 +4193,26 @@
       "sources": [
         "https://stroud.moderngov.co.uk/documents/s4338/Appendix D- List of SDC owned play areas map.pdf"
       ],
-      "note": "Checked 17 November 2026: the district runs about 21 play areas (listed in a 2022 committee appendix that couldn't be opened from here); most are run by town and parish councils. Play areas come from OpenStreetMap."
+      "note": "Checked 17 November 2026: the district runs about 21 play areas (listed in a 2022 committee appendix that couldn't be opened from here); most are run by town and parish councils. Play areas come from OpenStreetMap. Checked again 24 November 2026: the committee appendices still refuse downloads, from here and from GitHub's servers (Fetch pages got a 403). Stroud Town Council's play areas are now registered separately."
+    },
+    {
+      "district": "Stroud",
+      "parish": "Stroud",
+      "council": "Stroud Town Council",
+      "sources": [
+        "https://www.stroudtown.gov.uk/play-areas-and-playing-fields"
+      ],
+      "note": "The play areas and playing fields page names five sites with play equipment (Daisy Bank, High Street, The Leazes, Uplands and Park Gardens), with no addresses, so they're placed by name or street (src/data/council-lists/stroud-town.csv), 24 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/stroud-town.csv",
+        "page": "https://www.stroudtown.gov.uk/play-areas-and-playing-fields",
+        "near": {
+          "lat": 51.745,
+          "lng": -2.215,
+          "km": 3
+        }
+      }
     },
     {
       "district": "Tewkesbury",
@@ -4405,7 +4460,596 @@
       "sources": [
         "https://durham.gov.uk/dogcontrol"
       ],
-      "note": "Checked 20 November 2026: the council runs about 175 play areas but publishes no list; its dog control order lists fenced play areas in a table the page loads in the browser, which couldn't be read from here. Town and parish councils (Great Aycliffe, Chilton, Shildon, Monk Hesleden and others) run many more. Play areas come from OpenStreetMap."
+      "note": "Checked 20 November 2026: the council runs about 175 play areas but publishes no list; its dog control order lists fenced play areas in a table the page loads in the browser, which couldn't be read from here. Town and parish councils (Great Aycliffe, Chilton, Shildon, Monk Hesleden and others) run many more. Play areas come from OpenStreetMap. Checked again 24 November 2026: the dog control order's council play area table still only loads in the browser, but its Schedule 2 names the fenced play areas of about 30 town and parish councils, now registered separately."
+    },
+    {
+      "district": "County Durham",
+      "parish": "Great Aycliffe",
+      "council": "Great Aycliffe Town Council",
+      "sources": [
+        "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+      ],
+      "note": "Named in Schedule 2 of Durham County Council's August 2025 dog control order, which lists the fenced play areas town and parish councils asked to include (13 here, in durham-great-aycliffe.csv; placed by park or street name, as the order gives no addresses), 24 November 2026. Unfenced play areas, and any not added to the order, aren't on it.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/durham-great-aycliffe.csv",
+        "page": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf",
+        "near": {
+          "lat": 54.7,
+          "lng": -1.65,
+          "km": 40
+        }
+      }
+    },
+    {
+      "district": "County Durham",
+      "parish": "East Hedleyhope",
+      "council": "East Hedleyhope Parish Council",
+      "sources": [
+        "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+      ],
+      "note": "Named in Schedule 2 of Durham County Council's August 2025 dog control order, which lists the fenced play areas town and parish councils asked to include (1 here, in durham-east-hedleyhope.csv; placed by park or street name, as the order gives no addresses), 24 November 2026. Unfenced play areas, and any not added to the order, aren't on it.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/durham-east-hedleyhope.csv",
+        "page": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf",
+        "near": {
+          "lat": 54.7,
+          "lng": -1.65,
+          "km": 40
+        }
+      }
+    },
+    {
+      "district": "County Durham",
+      "parish": "West Auckland",
+      "council": "West Auckland Parish Council",
+      "sources": [
+        "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+      ],
+      "note": "Named in Schedule 2 of Durham County Council's August 2025 dog control order, which lists the fenced play areas town and parish councils asked to include (1 here, in durham-west-auckland.csv; placed by park or street name, as the order gives no addresses), 24 November 2026. Unfenced play areas, and any not added to the order, aren't on it.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/durham-west-auckland.csv",
+        "page": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf",
+        "near": {
+          "lat": 54.7,
+          "lng": -1.65,
+          "km": 40
+        }
+      }
+    },
+    {
+      "district": "County Durham",
+      "parish": "Brandon and Byshottles",
+      "council": "Brandon and Byshottles Parish Council",
+      "sources": [
+        "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+      ],
+      "note": "Named in Schedule 2 of Durham County Council's August 2025 dog control order, which lists the fenced play areas town and parish councils asked to include (2 here, in durham-brandon-and-byshottles.csv; placed by park or street name, as the order gives no addresses), 24 November 2026. Unfenced play areas, and any not added to the order, aren't on it.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/durham-brandon-and-byshottles.csv",
+        "page": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf",
+        "near": {
+          "lat": 54.7,
+          "lng": -1.65,
+          "km": 40
+        }
+      }
+    },
+    {
+      "district": "County Durham",
+      "parish": "Spennymoor",
+      "council": "Spennymoor Town Council",
+      "sources": [
+        "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+      ],
+      "note": "Named in Schedule 2 of Durham County Council's August 2025 dog control order, which lists the fenced play areas town and parish councils asked to include (5 here, in durham-spennymoor.csv; placed by park or street name, as the order gives no addresses), 24 November 2026. Unfenced play areas, and any not added to the order, aren't on it.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/durham-spennymoor.csv",
+        "page": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf",
+        "near": {
+          "lat": 54.7,
+          "lng": -1.65,
+          "km": 40
+        }
+      }
+    },
+    {
+      "district": "County Durham",
+      "parish": "Edmondsley",
+      "council": "Edmondsley Parish Council",
+      "sources": [
+        "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+      ],
+      "note": "Named in Schedule 2 of Durham County Council's August 2025 dog control order, which lists the fenced play areas town and parish councils asked to include (1 here, in durham-edmondsley.csv; placed by park or street name, as the order gives no addresses), 24 November 2026. Unfenced play areas, and any not added to the order, aren't on it.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/durham-edmondsley.csv",
+        "page": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf",
+        "near": {
+          "lat": 54.7,
+          "lng": -1.65,
+          "km": 40
+        }
+      }
+    },
+    {
+      "district": "County Durham",
+      "parish": "Evenwood and Barony",
+      "council": "Evenwood and Barony Parish Council",
+      "sources": [
+        "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+      ],
+      "note": "Named in Schedule 2 of Durham County Council's August 2025 dog control order, which lists the fenced play areas town and parish councils asked to include (2 here, in durham-evenwood-and-barony.csv; placed by park or street name, as the order gives no addresses), 24 November 2026. Unfenced play areas, and any not added to the order, aren't on it.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/durham-evenwood-and-barony.csv",
+        "page": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf",
+        "near": {
+          "lat": 54.7,
+          "lng": -1.65,
+          "km": 40
+        }
+      }
+    },
+    {
+      "district": "County Durham",
+      "parish": "Gainford and Langton",
+      "council": "Gainford and Langton Parish Council",
+      "sources": [
+        "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+      ],
+      "note": "Named in Schedule 2 of Durham County Council's August 2025 dog control order, which lists the fenced play areas town and parish councils asked to include (1 here, in durham-gainford-and-langton.csv; placed by park or street name, as the order gives no addresses), 24 November 2026. Unfenced play areas, and any not added to the order, aren't on it.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/durham-gainford-and-langton.csv",
+        "page": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf",
+        "near": {
+          "lat": 54.7,
+          "lng": -1.65,
+          "km": 40
+        }
+      }
+    },
+    {
+      "district": "County Durham",
+      "parish": "Fishburn",
+      "council": "Fishburn Parish Council",
+      "sources": [
+        "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+      ],
+      "note": "Named in Schedule 2 of Durham County Council's August 2025 dog control order, which lists the fenced play areas town and parish councils asked to include (1 here, in durham-fishburn.csv; placed by park or street name, as the order gives no addresses), 24 November 2026. Unfenced play areas, and any not added to the order, aren't on it.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/durham-fishburn.csv",
+        "page": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf",
+        "near": {
+          "lat": 54.7,
+          "lng": -1.65,
+          "km": 40
+        }
+      }
+    },
+    {
+      "district": "County Durham",
+      "parish": "Witton-le-Wear",
+      "council": "Witton-le-Wear Parish Council",
+      "sources": [
+        "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+      ],
+      "note": "Named in Schedule 2 of Durham County Council's August 2025 dog control order, which lists the fenced play areas town and parish councils asked to include (1 here, in durham-witton-le-wear.csv; placed by park or street name, as the order gives no addresses), 24 November 2026. Unfenced play areas, and any not added to the order, aren't on it.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/durham-witton-le-wear.csv",
+        "page": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf",
+        "near": {
+          "lat": 54.7,
+          "lng": -1.65,
+          "km": 40
+        }
+      }
+    },
+    {
+      "district": "County Durham",
+      "parish": "Monk Hesleden",
+      "council": "Monk Hesleden Parish Council",
+      "sources": [
+        "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+      ],
+      "note": "Named in Schedule 2 of Durham County Council's August 2025 dog control order, which lists the fenced play areas town and parish councils asked to include (5 here, in durham-monk-hesleden.csv; placed by park or street name, as the order gives no addresses), 24 November 2026. Unfenced play areas, and any not added to the order, aren't on it.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/durham-monk-hesleden.csv",
+        "page": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf",
+        "near": {
+          "lat": 54.7,
+          "lng": -1.65,
+          "km": 40
+        }
+      }
+    },
+    {
+      "district": "County Durham",
+      "parish": "Satley",
+      "council": "Satley Parish Council",
+      "sources": [
+        "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+      ],
+      "note": "Named in Schedule 2 of Durham County Council's August 2025 dog control order, which lists the fenced play areas town and parish councils asked to include (1 here, in durham-satley.csv; placed by park or street name, as the order gives no addresses), 24 November 2026. Unfenced play areas, and any not added to the order, aren't on it.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/durham-satley.csv",
+        "page": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf",
+        "near": {
+          "lat": 54.7,
+          "lng": -1.65,
+          "km": 40
+        }
+      }
+    },
+    {
+      "district": "County Durham",
+      "parish": "North Lodge",
+      "council": "North Lodge Parish Council",
+      "sources": [
+        "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+      ],
+      "note": "Named in Schedule 2 of Durham County Council's August 2025 dog control order, which lists the fenced play areas town and parish councils asked to include (2 here, in durham-north-lodge.csv; placed by park or street name, as the order gives no addresses), 24 November 2026. Unfenced play areas, and any not added to the order, aren't on it.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/durham-north-lodge.csv",
+        "page": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf",
+        "near": {
+          "lat": 54.7,
+          "lng": -1.65,
+          "km": 40
+        }
+      }
+    },
+    {
+      "district": "County Durham",
+      "parish": "Middleton-in-Teesdale and Newbiggin",
+      "council": "Middleton-in-Teesdale and Newbiggin Parish Council",
+      "sources": [
+        "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+      ],
+      "note": "Named in Schedule 2 of Durham County Council's August 2025 dog control order, which lists the fenced play areas town and parish councils asked to include (1 here, in durham-middleton-in-teesdale-and-newbiggin.csv; placed by park or street name, as the order gives no addresses), 24 November 2026. Unfenced play areas, and any not added to the order, aren't on it.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/durham-middleton-in-teesdale-and-newbiggin.csv",
+        "page": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf",
+        "near": {
+          "lat": 54.7,
+          "lng": -1.65,
+          "km": 40
+        }
+      }
+    },
+    {
+      "district": "County Durham",
+      "parish": "Shildon",
+      "council": "Shildon Town Council",
+      "sources": [
+        "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+      ],
+      "note": "Named in Schedule 2 of Durham County Council's August 2025 dog control order, which lists the fenced play areas town and parish councils asked to include (1 here, in durham-shildon.csv; placed by park or street name, as the order gives no addresses), 24 November 2026. Unfenced play areas, and any not added to the order, aren't on it.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/durham-shildon.csv",
+        "page": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf",
+        "near": {
+          "lat": 54.7,
+          "lng": -1.65,
+          "km": 40
+        }
+      }
+    },
+    {
+      "district": "County Durham",
+      "parish": "Seaham",
+      "council": "Seaham Town Council",
+      "sources": [
+        "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+      ],
+      "note": "Named in Schedule 2 of Durham County Council's August 2025 dog control order, which lists the fenced play areas town and parish councils asked to include (5 here, in durham-seaham.csv; placed by park or street name, as the order gives no addresses), 24 November 2026. Unfenced play areas, and any not added to the order, aren't on it.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/durham-seaham.csv",
+        "page": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf",
+        "near": {
+          "lat": 54.7,
+          "lng": -1.65,
+          "km": 40
+        }
+      }
+    },
+    {
+      "district": "County Durham",
+      "parish": "Haswell",
+      "council": "Haswell Parish Council",
+      "sources": [
+        "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+      ],
+      "note": "Named in Schedule 2 of Durham County Council's August 2025 dog control order, which lists the fenced play areas town and parish councils asked to include (3 here, in durham-haswell.csv; placed by park or street name, as the order gives no addresses), 24 November 2026. Unfenced play areas, and any not added to the order, aren't on it.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/durham-haswell.csv",
+        "page": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf",
+        "near": {
+          "lat": 54.7,
+          "lng": -1.65,
+          "km": 40
+        }
+      }
+    },
+    {
+      "district": "County Durham",
+      "parish": "Chilton",
+      "council": "Chilton Town Council",
+      "sources": [
+        "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+      ],
+      "note": "Named in Schedule 2 of Durham County Council's August 2025 dog control order, which lists the fenced play areas town and parish councils asked to include (4 here, in durham-chilton.csv; placed by park or street name, as the order gives no addresses), 24 November 2026. Unfenced play areas, and any not added to the order, aren't on it.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/durham-chilton.csv",
+        "page": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf",
+        "near": {
+          "lat": 54.7,
+          "lng": -1.65,
+          "km": 40
+        }
+      }
+    },
+    {
+      "district": "County Durham",
+      "parish": "Easington Colliery",
+      "council": "Easington Colliery Parish Council",
+      "sources": [
+        "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+      ],
+      "note": "Named in Schedule 2 of Durham County Council's August 2025 dog control order, which lists the fenced play areas town and parish councils asked to include (2 here, in durham-easington-colliery.csv; placed by park or street name, as the order gives no addresses), 24 November 2026. Unfenced play areas, and any not added to the order, aren't on it.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/durham-easington-colliery.csv",
+        "page": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf",
+        "near": {
+          "lat": 54.7,
+          "lng": -1.65,
+          "km": 40
+        }
+      }
+    },
+    {
+      "district": "County Durham",
+      "parish": "Barnard Castle",
+      "council": "Barnard Castle Town Council",
+      "sources": [
+        "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+      ],
+      "note": "Named in Schedule 2 of Durham County Council's August 2025 dog control order, which lists the fenced play areas town and parish councils asked to include (4 here, in durham-barnard-castle.csv; placed by park or street name, as the order gives no addresses), 24 November 2026. Unfenced play areas, and any not added to the order, aren't on it.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/durham-barnard-castle.csv",
+        "page": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf",
+        "near": {
+          "lat": 54.7,
+          "lng": -1.65,
+          "km": 40
+        }
+      }
+    },
+    {
+      "district": "County Durham",
+      "parish": "Trimdon",
+      "council": "Trimdon Parish Council",
+      "sources": [
+        "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+      ],
+      "note": "Named in Schedule 2 of Durham County Council's August 2025 dog control order, which lists the fenced play areas town and parish councils asked to include (2 here, in durham-trimdon.csv; placed by park or street name, as the order gives no addresses), 24 November 2026. Unfenced play areas, and any not added to the order, aren't on it.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/durham-trimdon.csv",
+        "page": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf",
+        "near": {
+          "lat": 54.7,
+          "lng": -1.65,
+          "km": 40
+        }
+      }
+    },
+    {
+      "district": "County Durham",
+      "parish": "Thornley",
+      "council": "Thornley Parish Council",
+      "sources": [
+        "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+      ],
+      "note": "Named in Schedule 2 of Durham County Council's August 2025 dog control order, which lists the fenced play areas town and parish councils asked to include (1 here, in durham-thornley.csv; placed by park or street name, as the order gives no addresses), 24 November 2026. Unfenced play areas, and any not added to the order, aren't on it.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/durham-thornley.csv",
+        "page": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf",
+        "near": {
+          "lat": 54.7,
+          "lng": -1.65,
+          "km": 40
+        }
+      }
+    },
+    {
+      "district": "County Durham",
+      "parish": "Bishop Middleham",
+      "council": "Bishop Middleham Parish Council",
+      "sources": [
+        "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+      ],
+      "note": "Named in Schedule 2 of Durham County Council's August 2025 dog control order, which lists the fenced play areas town and parish councils asked to include (1 here, in durham-bishop-middleham.csv; placed by park or street name, as the order gives no addresses), 24 November 2026. Unfenced play areas, and any not added to the order, aren't on it.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/durham-bishop-middleham.csv",
+        "page": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf",
+        "near": {
+          "lat": 54.7,
+          "lng": -1.65,
+          "km": 40
+        }
+      }
+    },
+    {
+      "district": "County Durham",
+      "parish": "Lanchester",
+      "council": "Lanchester Parish Council",
+      "sources": [
+        "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+      ],
+      "note": "Named in Schedule 2 of Durham County Council's August 2025 dog control order, which lists the fenced play areas town and parish councils asked to include (5 here, in durham-lanchester.csv; placed by park or street name, as the order gives no addresses), 24 November 2026. Unfenced play areas, and any not added to the order, aren't on it.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/durham-lanchester.csv",
+        "page": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf",
+        "near": {
+          "lat": 54.7,
+          "lng": -1.65,
+          "km": 40
+        }
+      }
+    },
+    {
+      "district": "County Durham",
+      "parish": "Trimdon Foundry",
+      "council": "Trimdon Foundry Parish Council",
+      "sources": [
+        "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+      ],
+      "note": "Named in Schedule 2 of Durham County Council's August 2025 dog control order, which lists the fenced play areas town and parish councils asked to include (1 here, in durham-trimdon-foundry.csv; placed by park or street name, as the order gives no addresses), 24 November 2026. Unfenced play areas, and any not added to the order, aren't on it.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/durham-trimdon-foundry.csv",
+        "page": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf",
+        "near": {
+          "lat": 54.7,
+          "lng": -1.65,
+          "km": 40
+        }
+      }
+    },
+    {
+      "district": "County Durham",
+      "parish": "Stanhope",
+      "council": "Stanhope Parish Council",
+      "sources": [
+        "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+      ],
+      "note": "Named in Schedule 2 of Durham County Council's August 2025 dog control order, which lists the fenced play areas town and parish councils asked to include (6 here, in durham-stanhope.csv; placed by park or street name, as the order gives no addresses), 24 November 2026. Unfenced play areas, and any not added to the order, aren't on it.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/durham-stanhope.csv",
+        "page": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf",
+        "near": {
+          "lat": 54.7,
+          "lng": -1.65,
+          "km": 40
+        }
+      }
+    },
+    {
+      "district": "County Durham",
+      "parish": "Framwellgate Moor",
+      "council": "Framwellgate Moor Parish Council",
+      "sources": [
+        "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+      ],
+      "note": "Named in Schedule 2 of Durham County Council's August 2025 dog control order, which lists the fenced play areas town and parish councils asked to include (1 here, in durham-framwellgate-moor.csv; placed by park or street name, as the order gives no addresses), 24 November 2026. Unfenced play areas, and any not added to the order, aren't on it.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/durham-framwellgate-moor.csv",
+        "page": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf",
+        "near": {
+          "lat": 54.7,
+          "lng": -1.65,
+          "km": 40
+        }
+      }
+    },
+    {
+      "district": "County Durham",
+      "parish": "Ferryhill",
+      "council": "Ferryhill Town Council",
+      "sources": [
+        "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+      ],
+      "note": "Named in Schedule 2 of Durham County Council's August 2025 dog control order, which lists the fenced play areas town and parish councils asked to include (4 here, in durham-ferryhill.csv; placed by park or street name, as the order gives no addresses), 24 November 2026. Unfenced play areas, and any not added to the order, aren't on it.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/durham-ferryhill.csv",
+        "page": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf",
+        "near": {
+          "lat": 54.7,
+          "lng": -1.65,
+          "km": 40
+        }
+      }
+    },
+    {
+      "district": "County Durham",
+      "parish": "Belmont",
+      "council": "Belmont Parish Council",
+      "sources": [
+        "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+      ],
+      "note": "Named in Schedule 2 of Durham County Council's August 2025 dog control order, which lists the fenced play areas town and parish councils asked to include (4 here, in durham-belmont.csv; placed by park or street name, as the order gives no addresses), 24 November 2026. Unfenced play areas, and any not added to the order, aren't on it.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/durham-belmont.csv",
+        "page": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf",
+        "near": {
+          "lat": 54.7,
+          "lng": -1.65,
+          "km": 40
+        }
+      }
+    },
+    {
+      "district": "County Durham",
+      "parish": "Ouston",
+      "council": "Ouston Parish Council",
+      "sources": [
+        "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+      ],
+      "note": "Named in Schedule 2 of Durham County Council's August 2025 dog control order, which lists the fenced play areas town and parish councils asked to include (1 here, in durham-ouston.csv; placed by park or street name, as the order gives no addresses), 24 November 2026. Unfenced play areas, and any not added to the order, aren't on it.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/durham-ouston.csv",
+        "page": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf",
+        "near": {
+          "lat": 54.7,
+          "lng": -1.65,
+          "km": 40
+        }
+      }
+    },
+    {
+      "district": "County Durham",
+      "parish": "Willington",
+      "council": "Willington Parish Council",
+      "sources": [
+        "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+      ],
+      "note": "Named in Schedule 2 of Durham County Council's August 2025 dog control order, which lists the fenced play areas town and parish councils asked to include (1 here, in durham-willington.csv; placed by park or street name, as the order gives no addresses), 24 November 2026. Unfenced play areas, and any not added to the order, aren't on it.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/durham-willington.csv",
+        "page": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf",
+        "near": {
+          "lat": 54.7,
+          "lng": -1.65,
+          "km": 40
+        }
+      }
     },
     {
       "district": "Hastings",
@@ -4626,7 +5270,7 @@
       "sources": [
         "https://www.westmorlandandfurness.gov.uk/parks-culture-and-leisure/parks-and-open-spaces/find-playground-near-you"
       ],
-      "note": "The find-a-playground directory (LocalGov Drupal) moved under /parks-and-open-spaces/ in 2026, and its list page now fails with a server error, but the site map lists about 120 playground pages, each with facilities and postcode, which the reader picks up (22 November 2026). Town and parish councils run others.",
+      "note": "The find-a-playground directory (LocalGov Drupal) moved under /parks-and-open-spaces/ in 2026, and its list page now fails with a server error, but the site map lists about 120 playground pages, each with facilities and postcode, which the reader picks up (22 November 2026). Town and parish councils run others. Imported 22–24 November 2026: 117 verified.",
       "feed": {
         "type": "localgov",
         "directory": "https://www.westmorlandandfurness.gov.uk/parks-culture-and-leisure/parks-and-open-spaces/find-playground-near-you",
@@ -4671,7 +5315,7 @@
       "sources": [
         "https://www.telford.gov.uk/online-directories/sports-and-leisure/find-a-playground/"
       ],
-      "note": "The find-a-playground directory moved to /online-directories/ in 2026 (the old Jadu /directory/23/ address is gone). One page links all 122 playgrounds; each gives an address such as 'Adjacent 27 Windsor Road, Arleston' and its equipment, but only some give a postcode, so the rest are placed from their street on OpenStreetMap's geocoder (22 November 2026).",
+      "note": "The find-a-playground directory moved to /online-directories/ in 2026 (the old Jadu /directory/23/ address is gone). One page links all 122 playgrounds; each gives an address such as 'Adjacent 27 Windsor Road, Arleston' and its equipment, but only some give a postcode, so the rest are placed from their street on OpenStreetMap's geocoder (22 November 2026). Imported 22–24 November 2026: 79 of the 122 verified; the other 43 have neither a postcode nor a street the geocoder could find, so OpenStreetMap fills them.",
       "feed": {
         "type": "pages",
         "index": "https://www.telford.gov.uk/online-directories/sports-and-leisure/find-a-playground/",
@@ -5192,7 +5836,7 @@
       "sources": [
         "https://www.moray.gov.uk/community-life-sports-and-leisure/lands-parks-and-countryside/parks-gardens-and-playing-fields/find-a-play-park/"
       ],
-      "note": "The find-a-play-park pages give each of the council's 120 or so play parks a page with its equipment (for example Tinniver Park, Station Park, Hopeman Playing Field), linked from a map; the feed reads any the index page links to. Feed set up 20 November 2026; imported 22–24 November 2026, with 12 verified playgrounds from it.",
+      "note": "The find-a-play-park page links 91 play park pages (for example Cuthill Park, Station Park, Hopeman Playing Field). Each gives the park's street and town ('Chapel Street, Keith') and its equipment, but no postcode or map point, so the 22–24 November 2026 imports could only place 12 of them by park name; the feed now also looks each street up on OpenStreetMap's geocoder (24 November 2026, not tried against the live site yet).",
       "feed": {
         "type": "pages",
         "index": [
@@ -5204,7 +5848,8 @@
           "lat": 57.55,
           "lng": -3.2,
           "km": 45
-        }
+        },
+        "address": "^[^;]+;\\s*([^;]{3,80}?,\\s*[A-Z][A-Za-z' -]{2,30})\\s*;"
       }
     },
     {
@@ -5261,7 +5906,7 @@
       "sources": [
         "https://south-ayrshire.gov.uk/parks"
       ],
-      "note": "Checked 20 November 2026: the parks list couldn't be read from here and names few play areas. Play areas come from OpenStreetMap."
+      "note": "Checked 20 November 2026: the parks list couldn't be read from here and names few play areas. Play areas come from OpenStreetMap. Checked again 24 November 2026: the parks page's list loads in the browser, its park pages (/article/<number>/<name>) give a street but no postcode, and its site refuses GitHub's servers too; still no list to read."
     },
     {
       "district": "Clackmannanshire",
