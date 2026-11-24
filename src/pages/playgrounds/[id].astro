@@ -1,21 +1,24 @@
 ---
 import MembershipPick from '../../components/MembershipPick.astro';
 import Base from '../../layouts/Base.astro';
-import { allParks, clientPark, looUrl, miles, paidEntry, toiletInfo, toiletSource, fmtDate, hoursText, km, L, regionName, ICON, type Park } from '../../lib/parks';
+import { allParks, clientPark, looUrl, miles, paidEntry, toiletInfo, toiletSource, fmtDate, hoursText, L, regionName, ICON, type Park } from '../../lib/parks';
 import { areaUrl, breadcrumbLd, locate, regionUrl } from '../../lib/places';
 import { art, fmtMiles } from '../../lib/card';
 import { whatsHere } from '../../lib/whats-here';
+import { nearestOthers } from '../../lib/nearest';
 
 export async function getStaticPaths() {
   const parks = await allParks();
-  return parks.map((p) => ({ params: { id: p.id }, props: { p, parks } }));
+  // Worked out once for every page, not per page: with 40,000+ playgrounds, doing these on each page made the build too slow.
+  const nearest = nearestOthers(parks, 3);
+  // What parents can tick, most common across our playgrounds first. Toilets and baby change only come from official sources.
+  const pickable = [...Object.entries(L.equipment), ...Object.entries(L.access), ...Object.entries(L.facilities)].filter(([k]) => !['wc', 'bc'].includes(k));
+  const seen: Record<string, number> = {};
+  for (const x of parks) for (const k of [...x.equipment, ...x.access, ...x.facilities]) seen[k] = (seen[k] ?? 0) + 1;
+  pickable.sort((a, b) => (seen[b[0]] ?? 0) - (seen[a[0]] ?? 0) || a[1].localeCompare(b[1]));
+  return parks.map((p) => ({ params: { id: p.id }, props: { p, others: nearest.get(p.id) ?? [], pickable } }));
 }
-const { p, parks } = Astro.props as { p: Park; parks: Park[] };
-const others = parks
-  .filter((x) => x.id !== p.id)
-  .map((x) => ({ x, d: km(p, x) }))
-  .sort((a, b) => a.d - b.d)
-  .slice(0, 3);
+const { p, others, pickable } = Astro.props as { p: Park; others: { x: Park; d: number }[]; pickable: [string, string][] };
 const feats = (keys: string[], names: Record<string, string>) => keys.filter((k) => names[k]).map((k) => ({ k, label: names[k] }));
 const eq = feats(p.equipment, L.equipment);
 const acc = feats(p.access, L.access);
@@ -29,11 +32,6 @@ const spots = [
   ...p.nearby.filter((n) => n.lat != null && n.lng != null).map((n) => ({ lat: n.lat!, lng: n.lng!, label: `${L.nearby[n.type] ?? 'Nearby'}: ${n.label}`, kind: L.nearby[n.type] ? n.type : 'other' })),
   ...others.map(({ x, d }) => ({ lat: x.lat, lng: x.lng, label: `${x.name}, ${fmtMiles(d)}${x.fee ? ', paid entry' : ''}`, kind: 'nearby', href: `/playgrounds/${x.id}/` })),
 ];
-// What parents can tick, most common across our playgrounds first. Toilets and baby change only come from official sources.
-const pickable = [...Object.entries(L.equipment), ...Object.entries(L.access), ...Object.entries(L.facilities)].filter(([k]) => !['wc', 'bc'].includes(k));
-const seen: Record<string, number> = {};
-for (const x of parks) for (const k of [...x.equipment, ...x.access, ...x.facilities]) seen[k] = (seen[k] ?? 0) + 1;
-pickable.sort((a, b) => (seen[b[0]] ?? 0) - (seen[a[0]] ?? 0) || a[1].localeCompare(b[1]));
 const official = new Set([...p.equipment, ...p.access, ...p.facilities]);
 const needsParents = !p.checked || p.equipment.length === 0;
 const fms = `https://www.fixmystreet.com/around?latitude=${p.lat}&longitude=${p.lng}`;
