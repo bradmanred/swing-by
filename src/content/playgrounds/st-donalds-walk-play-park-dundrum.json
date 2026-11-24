@@ -1,0 +1,29 @@
+{
+  "name": "St Donald's Walk Play Park",
+  "region": "northern-ireland",
+  "area": "Dundrum",
+  "lat": 54.2588,
+  "lng": -5.84965,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "ss"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap near St Donard's Walk, Dundrum. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "operator": "Newry, Mourne and Down District Council",
+  "sources": [
+    {
+      "label": "OpenStreetMap: St Donald's Walk Play Park",
+      "url": "https://www.openstreetmap.org/way/1189375963"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment (what is mapped on OpenStreetMap, which may be incomplete), opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

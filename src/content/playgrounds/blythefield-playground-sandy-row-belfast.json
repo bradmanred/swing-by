@@ -1,0 +1,28 @@
+{
+  "name": "Blythefield Playground",
+  "region": "northern-ireland",
+  "area": "Sandy Row, Belfast",
+  "lat": 54.59165,
+  "lng": -5.94013,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Belfast City Council's list of the playgrounds it runs.",
+  "nearby": [],
+  "operator": "Belfast City Council",
+  "sources": [
+    {
+      "label": "Belfast City Council: Blythefield Playground",
+      "url": "https://www.belfastcity.gov.uk/Things-to-Do/Parks-and-Open-Spaces/Playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/79291195"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,35 @@
+{
+  "name": "Clonduff Drive Playground",
+  "region": "northern-ireland",
+  "area": "Castlereagh, Belfast",
+  "lat": 54.57618,
+  "lng": -5.88138,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "sw",
+    "bs",
+    "bk"
+  ],
+  "access": [
+    "sf"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap near Clonduff Drive, Castlereagh. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "operator": "Belfast City Council",
+  "sources": [
+    {
+      "label": "OpenStreetMap: Clonduff Drive Playground",
+      "url": "https://www.openstreetmap.org/way/1427766572"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges (from OpenStreetMap), play equipment (what is mapped on OpenStreetMap, which may be incomplete), opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

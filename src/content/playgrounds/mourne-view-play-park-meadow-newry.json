@@ -1,0 +1,28 @@
+{
+  "name": "Mourne View Play Park",
+  "region": "northern-ireland",
+  "area": "Meadow, Newry",
+  "lat": 54.18216,
+  "lng": -6.337,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap near Mourne View Park, Meadow. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "operator": "Newry, Mourne and Down District Council",
+  "sources": [
+    {
+      "label": "OpenStreetMap: Mourne View Play Park",
+      "url": "https://www.openstreetmap.org/way/821210592"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment (what is mapped on OpenStreetMap, which may be incomplete), opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Killough Play Park",
+  "region": "northern-ireland",
+  "area": "Killough",
+  "lat": 54.25149,
+  "lng": -5.63962,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "rb"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap near Quay Lane, Killough. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "operator": "Newry, Mourne and Down District Council",
+  "sources": [
+    {
+      "label": "OpenStreetMap: Killough Play Park",
+      "url": "https://www.openstreetmap.org/way/1042019936"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment (what is mapped on OpenStreetMap, which may be incomplete), opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}
