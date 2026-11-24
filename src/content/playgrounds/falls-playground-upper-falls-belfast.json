@@ -1,9 +1,9 @@
 {
-  "name": "Grampian Avenue Playground",
+  "name": "Falls Playground",
   "region": "northern-ireland",
-  "area": "Bloomfield, Belfast City District",
-  "lat": 54.59817,
-  "lng": -5.88588,
+  "area": "Upper Falls, Belfast",
+  "lat": 54.58602,
+  "lng": -5.97439,
   "ages": [],
   "equipment": [],
   "access": [],
@@ -14,11 +14,15 @@
   "operator": "Belfast City Council",
   "sources": [
     {
-      "label": "Belfast City Council: Grampian Avenue Playground",
+      "label": "Belfast City Council: Falls Playground",
       "url": "https://www.belfastcity.gov.uk/Things-to-Do/Parks-and-Open-Spaces/Playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/146343387"
     }
   ],
   "checked": "2026-11-24",
-  "notConfirmed": "Exact position (approximate: mapped from the postcode), age ranges, play equipment, opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
   "photo": null
 }

@@ -1,9 +1,9 @@
 {
-  "name": "Alexandra Lower Playground",
+  "name": "Grampian Avenue Playground",
   "region": "northern-ireland",
-  "area": "Short Strand, Belfast",
-  "lat": 54.59755,
-  "lng": -5.90843,
+  "area": "Bloomfield, Belfast",
+  "lat": 54.59776,
+  "lng": -5.88585,
   "ages": [],
   "equipment": [],
   "access": [],
@@ -14,12 +14,12 @@
   "operator": "Belfast City Council",
   "sources": [
     {
-      "label": "Belfast City Council: Alexandra Lower Playground",
+      "label": "Belfast City Council: Grampian Avenue Playground",
       "url": "https://www.belfastcity.gov.uk/Things-to-Do/Parks-and-Open-Spaces/Playgrounds"
     },
     {
       "label": "OpenStreetMap: play area",
-      "url": "https://www.openstreetmap.org/way/750268051"
+      "url": "https://www.openstreetmap.org/way/768679915"
     }
   ],
   "checked": "2026-11-24",

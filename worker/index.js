@@ -16,8 +16,8 @@ import { SCHOOL_PAGES, schoolGroundsPage } from './school-grounds.js';
 
 // Old playground address → the listing it was merged into. Add a line whenever two listings are merged.
 const MERGED = {
-  'playground-off-mountforde-road-short-strand-belfast': 'alexandra-lower-playground-short-strand-belfast',
-  'dr-pitt-memorial-park-play-area-short-strand-belfast': 'mountforde-playground-short-strand-belfast',
+  'dr-pitt-memorial-park-play-area-short-strand-belfast': 'dr-pitt-park-playground-short-strand-belfast',
+  'playground-off-mountforde-road-short-strand-belfast': 'mountforde-playground-short-strand-belfast',
   'playground-off-moltke-street-the-village-belfast-city-distri': 'nubia-street-playground-the-village-belfast',
   'playground-off-iveagh-street-the-village-belfast-city-distri': 'willowbank-playground-the-village-belfast',
   'mahon-playground-mahon-portadown': 'brownstown-play-park-mahon-portadown',

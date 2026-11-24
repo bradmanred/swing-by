@@ -1,9 +1,9 @@
 {
   "name": "Victoria Park Playground",
   "region": "northern-ireland",
-  "area": "Sydenham, Belfast City District",
-  "lat": 54.60359,
-  "lng": -5.88702,
+  "area": "Sydenham, Belfast",
+  "lat": 54.60747,
+  "lng": -5.88308,
   "ages": [],
   "equipment": [],
   "access": [],
@@ -16,9 +16,13 @@
     {
       "label": "Belfast City Council: Victoria Park Playground",
       "url": "https://www.belfastcity.gov.uk/Things-to-Do/Parks-and-Open-Spaces/Playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/700174189"
     }
   ],
   "checked": "2026-11-24",
-  "notConfirmed": "Exact position (approximate: mapped from the postcode), age ranges, play equipment, opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
   "photo": null
 }
