@@ -26,7 +26,8 @@ export const strip = (s) => String(s ?? '').replace(/<[^>]+>/g, ' ').replace(/&a
 /** A geojson feature's name: its nameField, or with "nameFormat" ("{Street} Play Park, {Town}") several fields at once.
  * A format whose fields are all empty gives ''. */
 export function geoName(props, feed) {
-  if (!feed.nameFormat) return strip(props[feed.nameField]);
+  // Trailing question marks are a mapper's note to self ("Benone Play Park?" in Causeway Coast and Glens' layer), not part of the name.
+  if (!feed.nameFormat) return strip(props[feed.nameField]).replace(/\s*\?+$/, '');
   let filled = false;
   const name = feed.nameFormat.replace(/\{(\w+)\}/g, (_, k) => {
     const v = strip(props[k]);
@@ -144,8 +145,11 @@ export async function readFeed(feed) {
     const j = await fetch(feed.url, { headers: UA }).then((r) => r.json()).catch(() => null);
     for (const f of j?.features ?? []) {
       // A point, or the first point of a multipoint (Aberdeen's play areas layer stores each one as a multipoint).
+      // A polygon (Ards and North Down maps each play area's outline) stands for the middle of its outer ring.
       const g = f.geometry;
-      const [lng, lat] = g?.type === 'Point' ? g.coordinates : g?.type === 'MultiPoint' ? g.coordinates?.[0] ?? [] : [];
+      const ring = g?.type === 'Polygon' ? g.coordinates?.[0] : g?.type === 'MultiPolygon' ? g.coordinates?.[0]?.[0] : null;
+      const mid = ring?.length ? [0, 1].map((i) => ring.reduce((t, c) => t + c[i], 0) / ring.length) : null;
+      const [lng, lat] = g?.type === 'Point' ? g.coordinates : g?.type === 'MultiPoint' ? g.coordinates?.[0] ?? [] : mid ?? [];
       if (lat != null) recs.push({ name: geoName(f.properties ?? {}, feed), lat, lng, url: feed.page ?? feed.url, size: feed.sizeField ? sizeValue(f.properties?.[feed.sizeField]) : null });
     }
   } else if (feed.type === 'csv') {

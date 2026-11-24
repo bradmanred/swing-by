@@ -1,0 +1,28 @@
+{
+  "name": "Ravenhill Playground",
+  "region": "northern-ireland",
+  "area": "Ravenhill, Belfast",
+  "lat": 54.58945,
+  "lng": -5.91153,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Belfast City Council's list of the playgrounds it runs.",
+  "nearby": [],
+  "operator": "Belfast City Council",
+  "sources": [
+    {
+      "label": "Belfast City Council: Ravenhill Playground",
+      "url": "https://www.belfastcity.gov.uk/Things-to-Do/Parks-and-Open-Spaces/Playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/296902219"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

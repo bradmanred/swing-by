@@ -1,0 +1,28 @@
+{
+  "name": "Lagmore activity park",
+  "region": "northern-ireland",
+  "area": "Mount Eagles, Lisburn",
+  "lat": 54.55652,
+  "lng": -6.04209,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Belfast City Council's list of the playgrounds it runs.",
+  "nearby": [],
+  "operator": "Belfast City Council",
+  "sources": [
+    {
+      "label": "Belfast City Council: Lagmore activity park",
+      "url": "https://www.belfastcity.gov.uk/Things-to-Do/Parks-and-Open-Spaces/Playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/475116216"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

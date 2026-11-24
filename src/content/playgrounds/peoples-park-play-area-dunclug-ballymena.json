@@ -1,0 +1,28 @@
+{
+  "name": "People's Park Play Area",
+  "region": "northern-ireland",
+  "area": "Dunclug, Ballymena",
+  "lat": 54.87221,
+  "lng": -6.28116,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Mid and East Antrim Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Mid and East Antrim Borough Council",
+  "sources": [
+    {
+      "label": "Mid and East Antrim Borough Council: People's Park Play Area",
+      "url": "https://www.midandeastantrim.gov.uk/things-to-do/parks/play/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/405118795"
+    }
+  ],
+  "checked": "2026-11-24",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

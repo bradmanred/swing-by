@@ -1,0 +1,31 @@
+{
+  "name": "Mo Mowlam Playpark",
+  "region": "northern-ireland",
+  "area": "Tullycarnet, Dundonald",
+  "lat": 54.59573,
+  "lng": -5.83682,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [],
+  "access": [
+    "sf"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap in Stormont Estate near Upper Newtownards Road, Tullycarnet. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "operator": "Stormont State Management Unit",
+  "sources": [
+    {
+      "label": "OpenStreetMap: Mo Mowlam Playpark",
+      "url": "https://www.openstreetmap.org/way/224723608"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges (from OpenStreetMap), play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}
