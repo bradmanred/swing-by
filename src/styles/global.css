@@ -289,3 +289,7 @@ img.art { aspect-ratio: 360 / 170; object-fit: cover; background: var(--blue-sof
 .place-list p { margin-top: 8px; }
 .place-links { list-style: none; margin: 12px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 12px; }
 .place-links a { font-weight: 700; }
+/* A to Z letters: single characters, so give each a full-size tap target. */
+.az-letters { gap: 8px; }
+.az-letters a, .az-letters [aria-current] { display: inline-flex; align-items: center; justify-content: center; min-width: 40px; min-height: 40px; padding: 0 8px; border: 2px solid currentColor; border-radius: 8px; }
+.az-letters [aria-current] { background: var(--ink, #222); color: #fff; }

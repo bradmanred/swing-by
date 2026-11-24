@@ -10,7 +10,7 @@ import { AxeBuilder } from '@axe-core/playwright';
 import { serve, WCAG } from './serve.mjs';
 
 const ONLY = (process.env.A11Y_ONLY ?? '').split(',').map((s) => s.trim()).filter(Boolean);
-const PAGES = ['/', '/playgrounds/', '/playgrounds/verulamium/', '/playgrounds/stanborough/', '/road-trips/', '/memberships/', '/my-parks/', '/about/', '/search/', '/search/?q=moneyhole', '/404/', '/playgrounds/in/', '/playgrounds/in/herts/', '/playgrounds/in/herts/st-albans/', '/playgrounds/in/devon/', '/playgrounds/in/essex/chelmsford/'];
+const PAGES = ['/', '/playgrounds/', '/playgrounds/verulamium/', '/playgrounds/stanborough/', '/road-trips/', '/memberships/', '/my-parks/', '/about/', '/search/', '/search/?q=moneyhole', '/404/', '/playgrounds/in/', '/playgrounds/in/herts/', '/playgrounds/in/herts/st-albans/', '/playgrounds/in/devon/', '/playgrounds/in/essex/chelmsford/', '/playgrounds/in/herts/a-z/s/'];
 
 const { server, base: BASE } = await serve(4329);
 
@@ -277,11 +277,13 @@ try {
   if (!(await page.locator('#jf-results .jf-best li').count())) fail('road trips: no playgrounds listed for the nearest junction');
 
   // Site search finds a park by name (including a missing space or a slip) and by town.
-  for (const [q, want] of [['moneyhole', 'Moneyhole Lane Playing Fields Playground'], ['money hole lane', 'Moneyhole Lane Playing Fields Playground'], ['digswel', 'Digswell Playing Fields Play Area']]) {
+  // Moneyhole Lane Playing Fields has two listings (the main playground and a separate toddler area): either can come first.
+  const moneyhole = ['Moneyhole Lane Playing Fields Playground', 'Moneyhole Lane Park'];
+  for (const [q, want] of [['moneyhole', moneyhole], ['money hole lane', moneyhole], ['digswel', ['Digswell Playing Fields Play Area']]]) {
     await page.goto(BASE + '/search/?q=' + encodeURIComponent(q));
     await page.locator('#search-results .hit').first().waitFor();
     const first = await page.locator('#search-results .hit > a').first().textContent();
-    if (first !== want) fail(`search "${q}" put "${first}" first`);
+    if (!want.includes(first)) fail(`search "${q}" put "${first}" first`);
   }
   // The header has no search box: advanced search is linked from the footer, and Find stays in the header.
   await page.goto(BASE + '/');

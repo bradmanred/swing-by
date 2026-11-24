@@ -1,28 +1,19 @@
 ---
+// The A to Z, as a short page of regions with a link for each letter. The playgrounds themselves are on the letter
+// pages (src/pages/playgrounds/in/[region]/a-z/[letter].astro), so this page stays small enough for a phone.
 import Base from '../../layouts/Base.astro';
-import { allParks, paidEntry, regions } from '../../lib/parks';
-const parks = await allParks();
+import { azLabel, azPages, azUrl, regionUrl } from '../../lib/places';
+const all = await azPages();
 ---
-<Base title="All playgrounds A to Z">
+<Base title="All playgrounds A to Z" description="Every playground we list, by county and region, then town A to Z.">
   <h1>All playgrounds A to Z</h1>
-  <p>Every playground we list, grouped by county and town. Places marked "Unverified" haven't been checked yet, and places marked <span class="pound" aria-hidden="true">£</span> Paid entry charge to get in.</p>
-  {regions.map((r) => {
-    const inR = parks.filter((p) => p.region === r.id);
-    const areas = [...new Set(inR.map((p) => p.area))].sort((a, b) => a.localeCompare(b, 'en-GB'));
-    return (
-      <section aria-labelledby={`r-${r.id}`}>
-        <h2 id={`r-${r.id}`}>{r.name} ({inR.length})</h2>
-        {areas.map((a) => (
-          <div style="margin-top:16px">
-            <h3>{a}</h3>
-            <ul>
-              {inR.filter((p) => p.area === a).map((p) => (
-                <li><a href={`/playgrounds/${p.id}/`}>{p.name}</a>{paidEntry(p) && <> <span class="pay-tag"><span class="pound" aria-hidden="true">£</span> Paid entry</span></>}{!p.checked && ' (Unverified)'}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </section>
-    );
-  })}
+  <p>Every playground we list, by county or region and then by the first letter of the town or area. To search by postcode, use <a href="/">Find</a>, or <a href="/playgrounds/in/">browse by area</a>.</p>
+  {all.map((r) => (
+    <section aria-labelledby={`r-${r.id}`}>
+      <h2 id={`r-${r.id}`}><a href={regionUrl(r.id)}>{r.name}</a> ({r.count.toLocaleString('en-GB')})</h2>
+      <ul class="place-links az-letters" aria-label={`Towns and areas in ${r.name}, A to Z`}>
+        {r.letters.map((l) => <li><a href={azUrl(r.id, l.key)} aria-label={`${r.name}: ${azLabel(l.key)} (${l.parks.length} playgrounds)`}>{azLabel(l.key)}</a></li>)}
+      </ul>
+    </section>
+  ))}
 </Base>
