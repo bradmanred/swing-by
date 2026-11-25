@@ -4,7 +4,7 @@
 # researches and registers them (docs/fixing-check-reports.md), and the next daily Check coverage run reads any lists
 # it adds, turning those listings into verified ones. Runs every Monday and on demand, in about two minutes, and skips
 # opening an issue while the last one is still open, so a batch is never handed out twice. The batch size is the
-# PARISH_BATCH repository variable (default 15).
+# PARISH_BATCH repository variable (default 30: two daily runs of about 15).
 name: Parish councils to check
 on:
   workflow_dispatch:
@@ -34,7 +34,7 @@ jobs:
           max-age-days: '70'
       - name: Rank the parishes
         env:
-          PARISH_BATCH: ${{ inputs.batch || vars.PARISH_BATCH || '15' }}
+          PARISH_BATCH: ${{ inputs.batch || vars.PARISH_BATCH || '30' }}
         run: node scripts/parish-queue.mjs --out reports
       - uses: actions/upload-artifact@v4
         with:
