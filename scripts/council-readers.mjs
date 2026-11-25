@@ -158,7 +158,15 @@ export function describe(t) {
 const DIRECTORY_PART = /\b(?:directory|council)\b|^(?:parks?|playgrounds?|open spaces?)\b|\bin [A-Z][a-z]+$/i;
 const cleanName = (s) => {
   const parts = text(s).replace(/[;\s]+$/, '').split(/\s+[-|–]\s+/).map((x) => x.trim()).filter(Boolean);
-  return (parts.length > 1 ? parts.find((x) => !DIRECTORY_PART.test(x)) : parts[0]) ?? parts[0] ?? '';
+  return dropAddress((parts.length > 1 ? parts.find((x) => !DIRECTORY_PART.test(x)) : parts[0]) ?? parts[0] ?? '');
+};
+// Watford's titles carry the address: "Oxhey Green, Lower Paddock Road, WD19 4DS" → "Oxhey Green". Trailing parts after
+// a comma go when they're a postcode or a street, as long as something is left.
+const STREETISH = /^(?:\d+[a-z]?\s+)?[\w'’. -]*\b(?:road|rd|street|st|lane|avenue|ave|drive|close|way|crescent|grove|place|gardens|hill|rise|walk|terrace|parade|square|view|row|mews|the [a-z]+)$|^[A-Z]{1,2}\d[A-Z\d]?\s*\d[A-Z]{2}$/i;
+const dropAddress = (name) => {
+  const parts = name.split(/\s*,\s*/);
+  while (parts.length > 1 && STREETISH.test(parts[parts.length - 1])) parts.pop();
+  return parts.join(', ');
 };
 
 /** One park's page → a record, or null if it has no playground. */

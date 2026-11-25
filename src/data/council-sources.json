@@ -185,7 +185,12 @@
         "type": "jadu",
         "directory": "https://www.broxbourne.gov.uk/directory/41/playing-fields-and-playgrounds",
         "approximate": true,
-        "exclude": "^(?:Holmesdale Tunnel|Winnipeg Way|Jubilee Gardens)$"
+        "exclude": "^(?:Holmesdale Tunnel|Winnipeg Way|Jubilee Gardens)$",
+        "near": {
+          "lat": 51.71,
+          "lng": -0.03,
+          "km": 6
+        }
       }
     },
     {

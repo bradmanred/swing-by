@@ -75,6 +75,13 @@ assert.ok(parsePark(rbkc, 'https://x/avondale-park', {}), 'a "Contact us" menu l
 assert.equal(jaduAZ('https://www.edinburgh.gov.uk/directory/10216/play-areas'), 'https://www.edinburgh.gov.uk/directory/10216/a-to-z');
 assert.equal(jaduAZ('https://www.bromley.gov.uk/directory/26'), 'https://www.bromley.gov.uk/directory/26/a-to-z');
 assert.equal(jaduAZ('https://www.southlanarkshire.gov.uk/directory/150/parks_and_play_areas/'), 'https://www.southlanarkshire.gov.uk/directory/150/a-to-z');
+// Addresses after the name are dropped (Watford's directory titles).
+for (const [t, want] of [
+  ['Oxhey Green, Lower Paddock Road, WD19 4DS', 'Oxhey Green'],
+  ['Harebreaks Recreation Ground and Harebreaks Wood, The Harebreaks, WD24 6NX', 'Harebreaks Recreation Ground and Harebreaks Wood'],
+  ['Cassiobury Park and Whippendell Wood, Gade Avenue, WD18 7LG', 'Cassiobury Park and Whippendell Wood'],
+  ['King George V Playing Fields, Hemel Hempstead', 'King George V Playing Fields, Hemel Hempstead'],
+]) assert.equal(parsePark(`<h1>${t}</h1><p>Play area with swings.</p>`, 'https://x.gov.uk/directory-record/1/a', {}, true)?.name, want);
 console.log('readers: ok');
 
 // "address": a page with no map point or postcode gives its street for the geocoder (Telford & Wrekin).
