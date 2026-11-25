@@ -55,6 +55,16 @@
       "id": "king-george-v-playing-fields-welwyn-garden-city",
       "checked": "2026-11-01",
       "note": "Merged with the OpenStreetMap listing 'Playground off Homestead Lane' (way/177852535) and moved onto its position, which the owner confirmed is right; the old pin was mapped from the postcode, about 370 m away."
+    },
+    {
+      "id": "carlisle-park-hampton-greater-london",
+      "checked": "2026-11-25",
+      "note": "Moved onto Carlisle Park Play Area on OpenStreetMap (way/91648715); the old pin was on a school playground (way/869114255) about 220 m away."
+    },
+    {
+      "id": "alexandra-recreation-ground-playground-sydenham",
+      "checked": "2026-11-25",
+      "note": "Moved from the park centre onto the play area inside Alexandra Recreation Ground on OpenStreetMap (way/687047976); merged with the Bromley Council record and the OpenStreetMap-only listing of the same play area."
     }
   ]
 }
