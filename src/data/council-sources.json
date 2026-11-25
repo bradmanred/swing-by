@@ -7560,6 +7560,244 @@
         "https://derrystrabane.com/services/parks-and-play/parks"
       ],
       "note": "The parks page has no list of play parks, only consultation pages for a few (Hazelbank, Rossdowney, Derg area). The site refuses automated requests (403 to Fetch pages). Gaps are filled from OpenStreetMap. Checked 24 November 2026."
+    },
+    {
+      "district": "Wiltshire",
+      "parish": "Devizes",
+      "council": "Devizes Town Council",
+      "sources": [
+        "https://www.devizes-tc.gov.uk/children-s-play-areas/",
+        "https://devizine.com/2022/03/20/swings-and-roundabouts-hope-for-dilapidated-playgrounds-in-the-devizes-area/"
+      ],
+      "note": "The town council's play areas page names 4 (two at Hillworth Park, The Green and Avon Road), placed by park or street. A 2022 town council report (as covered by Devizine) lists about 20 more estate play areas taken over from Wiltshire Council, but the council doesn't publish that list itself, so they stay as OpenStreetMap listings. 25 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/devizes-town.csv",
+        "page": "https://www.devizes-tc.gov.uk/children-s-play-areas/",
+        "near": {
+          "lat": 51.35,
+          "lng": -1.99,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "Swindon",
+      "parish": "South Swindon",
+      "council": "South Swindon Parish Council",
+      "sources": [
+        "https://southswindon-pc.gov.uk/services/play-areas/"
+      ],
+      "note": "Play areas page lists all 21 the parish council runs, with postcodes (19 leased from Swindon Borough Council; Euclid Street and Oakfield maintained only). The Buckhurst skate park is left as part of the play area entry. 25 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/south-swindon.csv",
+        "page": "https://southswindon-pc.gov.uk/services/play-areas/",
+        "near": {
+          "lat": 51.55,
+          "lng": -1.77,
+          "km": 4
+        }
+      }
+    },
+    {
+      "district": "Milton Keynes",
+      "parish": "Walton",
+      "council": "Walton Community Council",
+      "sources": [
+        "https://www.milton-keynes.gov.uk/sites/default/files/2025-03/Play%20area%20Action%20plan%20Final.pdf",
+        "https://www.mkfm.com/news/local-news/local-community-to-take-ownership-of-local-open-space-and-childrens-play-area-in-milton-keynes"
+      ],
+      "note": "The community council owns two play areas, Browns Wood Sports Ground and Hindhead Knoll (named in Milton Keynes City Council's 2025 Play Area Action Plan). The rest in the parish are Milton Keynes City Council's or The Parks Trust's. 25 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/walton-mk.csv",
+        "page": "https://www.milton-keynes.gov.uk/sites/default/files/2025-03/Play%20area%20Action%20plan%20Final.pdf",
+        "near": {
+          "lat": 52.02,
+          "lng": -0.71,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "Kirklees",
+      "parish": "Kirkburton",
+      "council": "Kirkburton Parish Council",
+      "sources": [
+        "https://www.kirklees.gov.uk/beta/countryside-parks-and-open-spaces/grange-moor.aspx",
+        "https://www.kirklees.gov.uk/beta/countryside-parks-and-open-spaces/lepton-recreation-ground.aspx"
+      ],
+      "note": "No play areas run by the parish council were found. The play areas in the parish (Lepton, Flockton, Shepley, Grange Moor) are Kirklees Council's; the two Grange Moor ones were added to kirklees.csv. 25 November 2026."
+    },
+    {
+      "district": "Milton Keynes",
+      "parish": "Woughton",
+      "council": "Woughton Community Council",
+      "sources": [
+        "https://www.woughtoncommunitycouncil.gov.uk/",
+        "https://www.milton-keynes.gov.uk/news/2025/more-accessible-play-park-opens-coffee-hall"
+      ],
+      "note": "No play area list. The play areas in Woughton's estates are Milton Keynes City Council's (shown only on its My Milton Keynes map); the community council partners on some, such as the accessible Coffee Hall park. 25 November 2026."
+    },
+    {
+      "district": "North Yorkshire",
+      "parish": "Harrogate",
+      "council": "Harrogate Town Council",
+      "sources": [
+        "https://www.northyorks.gov.uk/parks-play-areas-woodlands"
+      ],
+      "note": "Harrogate Town Council (set up in 2025) runs no play areas. Harrogate's play parks are North Yorkshire Council's, read from its parks directory feed. 25 November 2026."
+    },
+    {
+      "district": "Wiltshire",
+      "parish": "Chippenham",
+      "council": "Chippenham Town Council",
+      "sources": [
+        "https://www.chippenham.gov.uk/?p=15543",
+        "https://www.chippenham.gov.uk/?p=15538",
+        "https://www.chippenham.gov.uk/wp-content/uploads/2021/09/List-of-CTC-Land-Buildings-lease.pdf"
+      ],
+      "note": "No play area page. John Coles Park and Monkton Park have play areas, and the council's land list names Wood Lane and Blackwellhams play areas: 4 in all, placed by park or street. Other estate play areas may still be Wiltshire Council's. 25 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/chippenham-town.csv",
+        "page": "https://www.chippenham.gov.uk/wp-content/uploads/2021/09/List-of-CTC-Land-Buildings-lease.pdf",
+        "near": {
+          "lat": 51.46,
+          "lng": -2.12,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "Wokingham",
+      "parish": "Earley",
+      "council": "Earley Town Council",
+      "sources": [
+        "https://earley-tc.gov.uk/sol-joel-park",
+        "https://www.earley-tc.gov.uk/?p=95",
+        "https://earley-tc.gov.uk/other-parks-and-open-spaces/"
+      ],
+      "note": "The town council's parks pages name play areas at Sol Joel Park, Meadow Park and Collins Drive. The rest in Earley are Wokingham Borough Council's (map only). 25 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/earley-town.csv",
+        "page": "https://earley-tc.gov.uk/other-parks-and-open-spaces/",
+        "near": {
+          "lat": 51.43,
+          "lng": -0.93,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "Mid Sussex",
+      "parish": "East Grinstead",
+      "council": "East Grinstead Town Council",
+      "sources": [
+        "https://www.eastgrinstead.gov.uk/the-council/services/playground"
+      ],
+      "note": "The town council runs one playground, at East Court; its page says the other East Grinstead playgrounds are Mid Sussex District Council's. 25 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/east-grinstead-town.csv",
+        "page": "https://www.eastgrinstead.gov.uk/the-council/services/playground",
+        "near": {
+          "lat": 51.13,
+          "lng": -0.0,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "Bradford",
+      "parish": "Keighley",
+      "council": "Keighley Town Council",
+      "sources": [
+        "https://bradforddistrictparks.org/?p=17",
+        "https://bradford.moderngov.co.uk/documents/s16779/KAC14SeptDocH.pdf"
+      ],
+      "note": "No play areas run by the town council were found. Keighley's parks and play areas are City of Bradford Council's (Bradford District Parks, already read from bradford.csv). 25 November 2026."
+    },
+    {
+      "district": "Wiltshire",
+      "parish": "Salisbury",
+      "council": "Salisbury City Council",
+      "sources": [
+        "https://salisburycitycouncil.gov.uk/?p=1744"
+      ],
+      "note": "Our responsibilities page lists 13 play areas taken over from Wiltshire Council in 2017, placed by park or street. Sports walls and the Bemerton Heath pump track are left out. 25 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/salisbury-city.csv",
+        "page": "https://salisburycitycouncil.gov.uk/?p=1744",
+        "near": {
+          "lat": 51.07,
+          "lng": -1.8,
+          "km": 4
+        }
+      }
+    },
+    {
+      "district": "Milton Keynes",
+      "parish": "Campbell Park",
+      "council": "Campbell Park Community Council",
+      "sources": [
+        "https://www.campbell-park.gov.uk/community-council/services/",
+        "https://miltonkeynes.co.uk/news/fishermead-play-park-to-transfer-to-parish-from-milton-keynes-council-for-ps1-111298"
+      ],
+      "note": "No play area list. The community council owns Kernow Crescent play area in Fishermead and works with Milton Keynes City Council on the rest, which are the city council's. 25 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/campbell-park-mk.csv",
+        "page": "https://www.campbell-park.gov.uk/community-council/services/",
+        "near": {
+          "lat": 52.03,
+          "lng": -0.74,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "South Oxfordshire",
+      "parish": "Didcot",
+      "council": "Didcot Town Council",
+      "sources": [
+        "https://www.didcot.gov.uk/play-areas",
+        "https://www.didcot.gov.uk/edmonds-park",
+        "https://www.didcot.gov.uk/smallbone-recreation-ground"
+      ],
+      "note": "Play areas page names Great Western Drive, Loyd and Marsh Recreation Grounds; Edmonds Park (three play areas, one entry) and Smallbone Recreation Ground have their own pages. Stubbings Land has no play equipment, so it's left out. 25 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/didcot-town.csv",
+        "page": "https://www.didcot.gov.uk/play-areas",
+        "near": {
+          "lat": 51.61,
+          "lng": -1.24,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "North Yorkshire",
+      "parish": "Selby",
+      "council": "Selby Town Council",
+      "sources": [
+        "https://selbytowncouncil.gov.uk/resident/play-areas"
+      ],
+      "note": "Play areas page lists the 4 the town council maintains (Flaxley Road, Barwic Parade, Wistow Road, Community Centre). Others in Selby are North Yorkshire Council's. 25 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/selby-town.csv",
+        "page": "https://selbytowncouncil.gov.uk/resident/play-areas",
+        "near": {
+          "lat": 53.78,
+          "lng": -1.07,
+          "km": 3
+        }
+      }
     }
   ]
 }
