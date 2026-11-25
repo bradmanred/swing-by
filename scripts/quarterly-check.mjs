@@ -4,6 +4,8 @@
 //   1. Council lists: for councils with a machine-readable "feed" in src/data/council-sources.json, compares the
 //      council's own list with the playgrounds we list for that council. Flags ones the council no longer lists,
 //      ones whose name may have changed, and new ones on the council's list (the weekly coverage job adds those).
+//      Saved lists (feed type "list") are checked against the council pages they were copied from: rows a page no
+//      longer names count as gone, and pages that can't be read are listed.
 //      Also flags Unverified playgrounds listed from OpenStreetMap alone that are on the council's list, so they can
 //      be verified with the council as source without waiting for the county's next coverage import.
 //      And flags playgrounds removed for being inside school grounds (src/data/school-grounds.json) that are on the
@@ -69,14 +71,47 @@ const osmOnly = parks.filter((p) => !p.checked && p.sources.length && p.sources.
 const result = { councils: [], osm: { gone: [], retagged: [], private: [], checked: 0 }, links: { broken: [], checked: 0 }, stale: [], names: [], thin: [] };
 
 // 1. Council lists.
+// The words of a row's name that a council page has to contain for the row to count as still listed: the name's own
+// words, leaving out generic ones ("play area", "park", "road"), so "Gadebridge Park play area" needs "gadebridge".
+// A row whose name is all generic words can't be tested, so it's kept.
+const flat = (s) => ` ${String(s ?? '').toLowerCase().replace(/&amp;/g, '&').replace(/[’']/g, '').replace(/[^a-z0-9]+/g, ' ').trim()} `;
+async function stillOnPage(recs) {
+  const pages = new Map();
+  for (const u of new Set(recs.map((x) => x.url).filter(Boolean))) {
+    try {
+      const res = await fetch(u, { headers: UA, redirect: 'follow', signal: AbortSignal.timeout(40000) });
+      pages.set(u, res.ok ? flat((await res.text()).replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/gi, ' ').replace(/<[^>]+>/g, ' ')) : null);
+    } catch {
+      pages.set(u, null);
+    }
+    await sleep(1000);
+  }
+  // Named on the page: at least half of the name's own words appear (our names sometimes add "and Splash Park").
+  const named = (x, page) => {
+    const need = [...words(x.name)];
+    return !need.length || need.filter((w) => page.includes(` ${w} `)).length * 2 >= need.length;
+  };
+  // A page that names none of its rows was probably not read properly (a map drawn by script, such as an ArcGIS
+  // story map, or a page that moved to a "not found" page that still answers 200), so treat it as unread.
+  for (const [u, t] of pages) if (t != null && !recs.some((x) => x.url === u && named(x, t))) pages.set(u, null);
+  const unread = [...pages].filter(([, t]) => t == null).map(([u]) => u);
+  const kept = recs.filter((x) => pages.get(x.url) == null || named(x, pages.get(x.url)));
+  return { recs: kept, unread };
+}
 if (!SKIP.has('councils')) {
   const { councils } = JSON.parse(await readFile(arg('--councils', 'src/data/council-sources.json'), 'utf8'));
   for (const c of councils.filter((c) => c.feed)) {
     console.log(`Council list: ${c.council}`);
-    const recs = await readFeed(c.feed).catch(() => []);
+    let recs = await readFeed(c.feed).catch(() => []);
+    // A saved list (type "list") is a copy of the council's page, so it never changes by itself. Read each page it came
+    // from again and keep only the rows the page still names: a play area the council has taken off its page then
+    // shows as "no longer on the council's list". Pages that can't be read keep their rows and are reported.
+    let unread = [];
+    if (c.feed.type === 'list' && recs.length) ({ recs, unread } = await stillOnPage(recs));
     const hosts = new Set([...(c.sources ?? []), c.feed.url, c.feed.page, c.feed.directory, ...(c.feed.index ?? [])].filter(Boolean).map(host));
     const ours = parks.filter((p) => (p.operator ?? '').toLowerCase().includes(c.council.toLowerCase()) || p.sources.some((s) => hosts.has(host(s.url))));
     const r = { council: c.council, listed: recs.length, ours: ours.length, gone: [], renamed: [], fresh: [], verify: [], school: [] };
+    if (unread.length) r.unread = unread;
     if (!recs.length) r.error = "Couldn't read the council's list (it may have moved or changed format): check the feed in council-sources.json.";
     else {
       for (const p of ours) {
@@ -207,6 +242,7 @@ if (!SKIP.has('councils')) {
   if (!c.length) L.push('No councils have a machine-readable list yet.');
   for (const r of c) {
     L.push(`### ${r.council}`, '', r.error ?? `${r.listed} on the council's list, ${r.ours} listed by us.`, '');
+    if (r.unread?.length) L.push("Couldn't read these pages of the council's saved list, so their play areas weren't checked (the page may have moved: update the url in the list's CSV):", ...r.unread.map((u) => `- ${u}`), '');
     if (r.gone.length) L.push('No longer on the council\'s list (closed, removed or moved?):', ...r.gone.slice(0, MAX).map((p) => `- ${link(p)}`), ...more(r.gone.length), '');
     if (r.renamed.length) L.push('Possibly renamed:', ...r.renamed.slice(0, MAX).map((x) => `- ${link(x.p)}: the council now says "${x.now}"`), ...more(r.renamed.length), '');
     if (r.verify.length) L.push("Unverified (listed from OpenStreetMap only) but on the council's list: add the council as source and a checked date:", ...r.verify.slice(0, MAX).map((v) => `- ${link(v.p)}: the council lists [${v.x.name}](${v.x.url}) ${v.d} m away`), ...more(r.verify.length), '');
