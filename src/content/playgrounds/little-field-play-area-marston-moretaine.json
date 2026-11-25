@@ -4,7 +4,10 @@
   "area": "Marston Moretaine",
   "lat": 52.06499,
   "lng": -0.53937,
-  "ages": [],
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
   "equipment": [],
   "access": [],
   "facilities": [],
@@ -19,6 +22,6 @@
     }
   ],
   "checked": null,
-  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges (from OpenStreetMap), play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
   "photo": null
 }

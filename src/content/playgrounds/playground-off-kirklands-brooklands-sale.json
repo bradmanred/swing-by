@@ -5,7 +5,10 @@
   "lat": 53.41461,
   "lng": -2.32763,
   "ages": [],
-  "equipment": [],
+  "equipment": [
+    "sw",
+    "ss"
+  ],
   "access": [],
   "facilities": [],
   "opens": "",
@@ -18,6 +21,6 @@
     }
   ],
   "checked": null,
-  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment (what is mapped on OpenStreetMap, which may be incomplete), opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
   "photo": null
 }

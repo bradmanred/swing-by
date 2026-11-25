@@ -1,0 +1,29 @@
+{
+  "name": "Ruchill Park Playground",
+  "region": "scotland",
+  "area": "Ruchill, Glasgow",
+  "lat": 55.88554,
+  "lng": -4.27098,
+  "ages": [],
+  "equipment": [
+    "bs",
+    "bk",
+    "cl",
+    "ss",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on OpenStreetMap near Leny Street, Ruchill. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "nearby": [],
+  "sources": [
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/305295788"
+    }
+  ],
+  "checked": null,
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment (what is mapped on OpenStreetMap, which may be incomplete), opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "photo": null
+}
