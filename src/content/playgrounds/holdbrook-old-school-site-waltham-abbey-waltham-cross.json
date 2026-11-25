@@ -1,0 +1,38 @@
+{
+  "name": "Holdbrook Old School Site",
+  "region": "herts",
+  "area": "Waltham Abbey, Waltham Cross",
+  "lat": 51.68691,
+  "lng": -0.02365,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "rb",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Borough of Broxbourne Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Borough of Broxbourne Council",
+  "sources": [
+    {
+      "label": "Borough of Broxbourne Council: Holdbrook Old School Site",
+      "url": "https://www.broxbourne.gov.uk/directory-record/630589/holdbrook-old-school-site"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1385894137"
+    }
+  ],
+  "checked": "2026-11-25",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
