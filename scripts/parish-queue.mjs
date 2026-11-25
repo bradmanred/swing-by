@@ -4,7 +4,7 @@
 // Unverified listings they hold. A council's own list would turn those into verified listings (docs/finding-playgrounds.md).
 // A second list shows registered town and parish councils whose lists still leave many Unverified listings behind.
 //
-//   OSM_AREAS=/tmp/areas.json node scripts/parish-queue.mjs [--out reports] [--batch 15] [--min 5] [--no-lookup]
+//   OSM_AREAS=/tmp/areas.json node scripts/parish-queue.mjs [--out reports] [--batch 30] [--min 5] [--no-lookup]
 //
 // Each parish's district and its name as postcodes.io gives it (which council-sources.json needs) come from one
 // postcodes.io lookup at a listing inside it; --no-lookup skips that (the district is then left blank). Writes
@@ -18,7 +18,7 @@ const arg = (name, fallback) => {
   return i > 0 ? process.argv[i + 1] : fallback;
 };
 const OUT = arg('--out', 'reports');
-const BATCH = Number(arg('--batch', process.env.PARISH_BATCH || 15)) || 15;
+const BATCH = Number(arg('--batch', process.env.PARISH_BATCH || 30)) || 30;
 const MIN = Number(arg('--min', 5)) || 5;
 const LOOKUP = !process.argv.includes('--no-lookup');
 const DIR = 'src/content/playgrounds';
