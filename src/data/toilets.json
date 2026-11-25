@@ -4478,29 +4478,7 @@
     "lng": -0.297995591
    }
   },
-  "alexandra-recreation-ground-penge-greater-london": {
-   "nearest": {
-    "id": "667fc70692980d63902c5cbc",
-    "name": "Penge East Station",
-    "m": 199,
-    "babyChange": false,
-    "accessible": false,
-    "free": true,
-    "lat": 51.419334483,
-    "lng": -0.054142784
-   },
-   "nearestBabyChange": {
-    "id": "0e16b2db6ef22c2509692eea",
-    "name": "Sainsbury's store",
-    "m": 829,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.412967335,
-    "lng": -0.051342845
-   }
-  },
-  "alexandra-recreation-ground-playground-penge-greater-london": {
+  "alexandra-recreation-ground-playground-sydenham": {
    "nearest": {
     "id": "667fc70692980d63902c5cbc",
     "name": "Penge East Station",
@@ -4520,28 +4498,6 @@
     "free": true,
     "lat": 51.412967335,
     "lng": -0.051342845
-   }
-  },
-  "alexandra-recreation-ground-playground-sydenham": {
-   "nearest": {
-    "id": "667fc70692980d63902c5cbc",
-    "name": "Penge East Station",
-    "m": 357,
-    "babyChange": false,
-    "accessible": false,
-    "free": true,
-    "lat": 51.419334483,
-    "lng": -0.054142784
-   },
-   "nearestBabyChange": {
-    "id": "10e164e4a034a6cd9d53b1d1",
-    "name": "Mayow Park Toilet",
-    "m": 875,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.428795257,
-    "lng": -0.047035217
    }
   },
   "alexandra-road-park-bensham-gateshead": {
@@ -40838,28 +40794,6 @@
    }
   },
   "carlisle-park-hampton-greater-london": {
-   "nearest": {
-    "id": "6fe7a61c390e0533c6944955",
-    "name": "Carlisle Park",
-    "m": 178,
-    "babyChange": false,
-    "accessible": true,
-    "free": true,
-    "lat": 51.421835,
-    "lng": -0.3668122
-   },
-   "nearestBabyChange": {
-    "id": "95f3cc387d5efe3308f58e70",
-    "name": "Hampton Pool",
-    "m": 556,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.418472791,
-    "lng": -0.358040035
-   }
-  },
-  "carlisle-park-play-area-hampton-greater-london": {
    "nearest": {
     "id": "6fe7a61c390e0533c6944955",
     "name": "Carlisle Park",
@@ -393108,6 +393042,28 @@
     "id": "0e16b2db6ef22c2509692eea",
     "name": "Sainsbury's store",
     "m": 763,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.412967335,
+    "lng": -0.051342845
+   }
+  },
+  "playground-off-newlands-park-penge-greater-london": {
+   "nearest": {
+    "id": "667fc70692980d63902c5cbc",
+    "name": "Penge East Station",
+    "m": 186,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.419334483,
+    "lng": -0.054142784
+   },
+   "nearestBabyChange": {
+    "id": "0e16b2db6ef22c2509692eea",
+    "name": "Sainsbury's store",
+    "m": 842,
     "babyChange": true,
     "accessible": true,
     "free": true,
