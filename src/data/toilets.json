@@ -5,7 +5,7 @@
   "licence": "CC BY 4.0",
   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
   "note": "Nearest toilets worked out by Swing By from the Toilet Map data.",
-  "export": "toilets-2026-11-24T00%3A00%3A40.646Z-ypn4NrIdp5BoqaaWDnEC0oxrpamz6t.csv"
+  "export": "toilets-2026-11-25T00%3A00%3A41.055Z-BAGtjta6yWu6au4v27Wa4dPkILDWzs.csv"
  },
  "toilets": 15860,
  "parks": {
@@ -4476,6 +4476,28 @@
     "free": true,
     "lat": 51.39274676,
     "lng": -0.297995591
+   }
+  },
+  "alexandra-recreation-ground-penge-greater-london": {
+   "nearest": {
+    "id": "667fc70692980d63902c5cbc",
+    "name": "Penge East Station",
+    "m": 199,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.419334483,
+    "lng": -0.054142784
+   },
+   "nearestBabyChange": {
+    "id": "0e16b2db6ef22c2509692eea",
+    "name": "Sainsbury's store",
+    "m": 829,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.412967335,
+    "lng": -0.051342845
    }
   },
   "alexandra-recreation-ground-playground-penge-greater-london": {
@@ -40837,6 +40859,28 @@
     "lng": -0.358040035
    }
   },
+  "carlisle-park-play-area-hampton-greater-london": {
+   "nearest": {
+    "id": "6fe7a61c390e0533c6944955",
+    "name": "Carlisle Park",
+    "m": 82,
+    "babyChange": false,
+    "accessible": true,
+    "free": true,
+    "lat": 51.421835,
+    "lng": -0.3668122
+   },
+   "nearestBabyChange": {
+    "id": "c741ebbba38b157ecbb18448",
+    "name": "The Greenwood Centre",
+    "m": 748,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 51.426287681,
+    "lng": -0.359810293
+   }
+  },
   "carloggas-playground-carloggas": {
    "nearest": {
     "id": "d6cb656461a2ebbd748bd0f0",
@@ -44814,6 +44858,28 @@
     "free": false,
     "lat": 55.866907638,
     "lng": -3.979459405
+   }
+  },
+  "central-park-playground-rush-green-greater-london": {
+   "nearest": {
+    "id": "0a020768bd0347d3ceaacc8a",
+    "name": "Central Park, Next to Pavillion",
+    "m": 391,
+    "babyChange": false,
+    "accessible": false,
+    "free": true,
+    "lat": 51.560987879,
+    "lng": 0.162944198
+   },
+   "nearestBabyChange": {
+    "id": "f3fe83ff0bed741e3ba37e94",
+    "name": "Eastbrookend Country Park, Inside Millennium Centre",
+    "m": 877,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 51.552979939,
+    "lng": 0.175995827
    }
   },
   "central-park-playground-wingates-westhoughton": {
@@ -393049,28 +393115,6 @@
     "lng": -0.051342845
    }
   },
-  "playground-off-newlands-park-penge-greater-london": {
-   "nearest": {
-    "id": "667fc70692980d63902c5cbc",
-    "name": "Penge East Station",
-    "m": 186,
-    "babyChange": false,
-    "accessible": false,
-    "free": true,
-    "lat": 51.419334483,
-    "lng": -0.054142784
-   },
-   "nearestBabyChange": {
-    "id": "0e16b2db6ef22c2509692eea",
-    "name": "Sainsbury's store",
-    "m": 842,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 51.412967335,
-    "lng": -0.051342845
-   }
-  },
   "playground-off-newlands-road-ansdell-lytham-st-annes": {
    "nearest": {
     "id": "fed8492bf7f84429ff2e3926",
@@ -486086,18 +486130,6 @@
     "lng": -3.218404055
    }
   },
-  "playground-off-tresham-walk-hackney-greater-london": {
-   "nearest": {
-    "id": "9a9c3626c1c1d420488342f0",
-    "name": "St Johns Garden, Mare Street",
-    "m": 465,
-    "babyChange": true,
-    "accessible": false,
-    "free": false,
-    "lat": 51.5476693,
-    "lng": -0.0544657
-   }
-  },
   "playground-off-trevanion-close-gonvena-wadebridge": {
    "nearest": {
     "id": "349011f99f9dcaead831b0ce",
@@ -550516,6 +550548,18 @@
     "free": false,
     "lat": 51.658660426,
     "lng": -0.399270952
+   }
+  },
+  "st-johns-churchyard-gardens-playground-jack-dunning-estate-g": {
+   "nearest": {
+    "id": "9a9c3626c1c1d420488342f0",
+    "name": "St Johns Garden, Mare Street",
+    "m": 466,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 51.5476693,
+    "lng": -0.0544657
    }
   },
   "st-johns-close-playground-rishworth-ripponden": {
