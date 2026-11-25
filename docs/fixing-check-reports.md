@@ -180,6 +180,38 @@ comment on the issue with the current count and how many files are left, and lis
 
 Leave the issue open until the owner has decided. New-area imports can carry on until the check fails.
 
+### Parish councils to check (`scripts/parish-queue.mjs`)
+
+The weekly "Parish councils to check" report lists the town and parish councils that aren't registered yet, ranked by
+how many Unverified (OpenStreetMap-only) listings their parish holds. The goal is turning those listings into verified
+ones: once a council is registered with a list, the next daily Check coverage run reads it and its records replace the
+OpenStreetMap-only copies. Up to about 15 councils a run, in the order of "This batch". For each, work through
+`docs/finding-playgrounds.md` (section 1, the town and parish rows):
+
+- Look for the council's play areas page, recreation grounds or open spaces pages, its asset register, play area
+  inspection policy or reports, and tender notices on Contracts Finder (they often list every site with a postcode).
+  Search with WebSearch, then WebFetch the results. Use the `fetch-pages` workflow for sites that block reading.
+- **It names its play areas:** copy them into `src/data/council-lists/<parish>.csv` (`name`, `park`, `postcode`, `url`,
+  `text`, `where`; see the `list` feed in `docs/finding-playgrounds.md`) and add an entry with `district`, `parish`
+  (exactly as the report shows it), `council`, `sources`, a `note` saying what the list is and what was left out
+  (skate parks, MUGAs, outdoor gyms, closed sites), and the `feed` with a `near` point. A park name in `park` or a
+  street and town in `where` places rows with no postcode. For a site with one page per play area, a `pages` feed
+  saves copying, but check it with **Try a council list** first.
+- **Its play areas are someone else's:** often the district council runs them, and the town council only a few or
+  none. Register it anyway with a `note` saying who runs them, so it drops off the list. If that district council's
+  entry is only a note, look for the district's own list while you're there (a play areas page, a dog control or
+  exclusion order, which usually lists every fenced play area with a postcode, or a directory), and add it to the
+  district's entry. That verifies far more listings than any one parish.
+- **Nothing found:** don't register it; say so in the PR, so the council stays in the queue for another try later.
+- Don't edit playground files for this report: the coverage check does that from the lists.
+
+"Registered, but their lists leave many Unverified": check whether the council has a fuller list than the one
+registered (a list page that moved, more list pages, a newer asset register), and fix the feed or CSV. If the rest are
+the district council's, add a sentence saying so to the note.
+
+When the batch is done, comment with what each council came to and close the issue. Monday's run opens the next
+batch, ranked afresh. No playgrounds change, so the "Update nearest toilets" workflow isn't needed.
+
 ### Adding a new check
 
 A new workflow that reports problems for fixing should open its issue with the `check-report` label
