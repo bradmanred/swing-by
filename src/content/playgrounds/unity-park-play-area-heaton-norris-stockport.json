@@ -4,8 +4,14 @@
   "area": "Reddish, Stockport",
   "lat": 53.43251,
   "lng": -2.15577,
-  "ages": [],
-  "equipment": [],
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "bs",
+    "bk"
+  ],
   "access": [],
   "facilities": [],
   "opens": "",
@@ -19,6 +25,6 @@
     }
   ],
   "checked": null,
-  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges (from OpenStreetMap), play equipment (what is mapped on OpenStreetMap, which may be incomplete), opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
   "photo": null
 }

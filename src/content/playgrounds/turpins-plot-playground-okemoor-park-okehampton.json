@@ -4,7 +4,11 @@
   "area": "Okemoor Park, Okehampton",
   "lat": 50.73965,
   "lng": -3.98918,
-  "ages": [],
+  "ages": [
+    "3-6",
+    "7-12",
+    "teens"
+  ],
   "equipment": [],
   "access": [],
   "facilities": [],
@@ -18,6 +22,6 @@
     }
   ],
   "checked": null,
-  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges (from OpenStreetMap), play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
   "photo": null
 }

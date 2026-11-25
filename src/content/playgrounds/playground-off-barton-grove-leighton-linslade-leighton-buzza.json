@@ -4,8 +4,18 @@
   "area": "Leighton Buzzard",
   "lat": 51.91089,
   "lng": -0.63637,
-  "ages": [],
-  "equipment": [],
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "bs",
+    "sl",
+    "rb",
+    "ss",
+    "spr"
+  ],
   "access": [],
   "facilities": [],
   "opens": "",
@@ -18,6 +28,6 @@
     }
   ],
   "checked": null,
-  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges (from OpenStreetMap), play equipment (what is mapped on OpenStreetMap, which may be incomplete), opening hours, toilets and parking. Listed from OpenStreetMap (© OpenStreetMap contributors) only, so whether it is open to the public is unconfirmed too.",
   "photo": null
 }
