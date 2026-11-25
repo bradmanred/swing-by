@@ -1,0 +1,37 @@
+{
+  "name": "Meadway",
+  "region": "herts",
+  "area": "Broxbourne",
+  "lat": 51.75015,
+  "lng": -0.00969,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "rb"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground on Borough of Broxbourne Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Borough of Broxbourne Council",
+  "sources": [
+    {
+      "label": "Borough of Broxbourne Council: Meadway",
+      "url": "https://www.broxbourne.gov.uk/directory-record/630596/meadway"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/905421064"
+    }
+  ],
+  "checked": "2026-11-25",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
