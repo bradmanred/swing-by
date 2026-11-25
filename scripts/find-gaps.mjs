@@ -35,7 +35,7 @@
 // and from Overpass only when there isn't; new playgrounds are named from it too (scripts/osm-names.mjs).
 // Run by .github/workflows/coverage.yml.
 import { countyOf } from './counties.mjs';
-import { SAME_M, ROUGH_M, namesAgree, osmIds, roughPin, samePlace } from './same-place.mjs';
+import { SAME_M, ROUGH_M, NAMED_M, namesAgree, osmIds, roughPin, samePlace, sameNamed } from './same-place.mjs';
 import { mkdir, readFile, readdir, unlink, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { readFeed } from './council-feeds.mjs';
@@ -193,6 +193,10 @@ const sameListed = (rec, at = rec) => {
     for (let b = -1; b <= 1; b++)
       for (const q of grid.get(`${Math.floor(at.lat * 100) + a},${Math.floor(at.lng * 60) + b}`) ?? []) near.push({ q, d: km(at, q) * 1000 });
   near.sort((x, y) => x.d - y.d);
+  // A listing with an official source and the same name wins over a nearer OpenStreetMap-only playground: the council's
+  // pin is often the park's middle, so it can land on a different play area in the same park (Cassiobury Park).
+  const named = near.find(({ q, d }) => !q.osmOnly && d < NAMED_M && sameNamed(rec.name, q.name));
+  if (named) return named.q;
   return near.find(({ q, d }) => samePlace(rec, q, d))?.q ?? null;
 };
 

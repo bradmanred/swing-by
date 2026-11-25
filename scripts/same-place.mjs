@@ -17,6 +17,9 @@
 export const SAME_M = 150;
 export const CLOSE_M = 40;
 export const ROUGH_M = 300;
+// A listing we already have with an official source and the same name, up to this far from the record's pin, is the
+// same place even when an OpenStreetMap-only playground sits nearer (see sameNamed).
+export const NAMED_M = 400;
 
 /** Whether a listing's pin is only approximate, from its notConfirmed line ("Exact position (approximate: …)"). */
 export function roughPin(notConfirmed) {
@@ -44,6 +47,20 @@ export function namesAgree(x, y) {
   const a = new Set(madeUpName(x) ? [] : nameWords(x));
   const b = madeUpName(y) ? [] : nameWords(y);
   return !a.size || !b.length || b.some((w) => a.has(w));
+}
+
+/**
+ * Whether two names are the same place's name: every distinctive word of one is in the other ("Cassiobury Park
+ * Playgrounds" and "Cassiobury Park and Whippendell Wood"; "Holdbrook Old School Site" and "Holdbrook Old School Site
+ * Play Area"), and there is at least one. "Holdbrook West" and "Holdbrook Old School Site" don't match.
+ */
+export function sameNamed(x, y) {
+  if (madeUpName(x) || madeUpName(y)) return false;
+  const a = new Set(nameWords(x));
+  const b = new Set(nameWords(y));
+  if (!a.size || !b.size) return false;
+  const [small, big] = a.size <= b.size ? [a, b] : [b, a];
+  return [...small].every((w) => big.has(w));
 }
 
 export const osmIds = (sources) => (sources ?? []).map((s) => /openstreetmap\.org\/((?:node|way|relation)\/\d+)/.exec(s.url)?.[1]).filter(Boolean);
