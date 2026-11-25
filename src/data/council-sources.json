@@ -56,8 +56,14 @@
       "district": "East Hertfordshire",
       "council": "East Herts Council",
       "sources": [
-        "https://www.eastherts.gov.uk/"
-      ]
+        "https://www.eastherts.gov.uk/sports-leisure-parks/local-parks-open-spaces-villages"
+      ],
+      "note": "Play areas listed on town pages (Hertford, Bishop's Stortford, Ware, Sawbridgeworth, villages). Buntingford's are run by the town council. Saved list from the October 2026 import, re-read by the quarterly check.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/east-herts.csv",
+        "page": "https://www.eastherts.gov.uk/sports-leisure-parks/local-parks-open-spaces-villages"
+      }
     },
     {
       "district": "Lisburn and Castlereagh",
@@ -90,8 +96,14 @@
       "district": "Dacorum",
       "council": "Dacorum Borough Council",
       "sources": [
-        "https://www.dacorum.gov.uk/"
-      ]
+        "https://www.dacorum.gov.uk/home/leisure-culture/parks-play-and-open-spaces/play-areas"
+      ],
+      "note": "All play areas on one page (tables by town, including town and parish council ones), plus the adventure playgrounds' own pages. Saved list from the October 2026 import; the quarterly check re-reads the pages for play areas taken off them.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/dacorum.csv",
+        "page": "https://www.dacorum.gov.uk/home/leisure-culture/parks-play-and-open-spaces/play-areas"
+      }
     },
     {
       "district": "Harlow",
@@ -140,29 +152,56 @@
       "district": "Welwyn Hatfield",
       "council": "Welwyn Hatfield Borough Council",
       "sources": [
-        "https://www.welhat.gov.uk/"
-      ]
+        "https://www.welhat.gov.uk/directory/8/play-area-finder"
+      ],
+      "note": "Play area finder (Jadu). Playing fields run by Better and town and parish play areas are listed separately (see docs/finding-playgrounds.md).",
+      "feed": {
+        "type": "jadu",
+        "directory": "https://www.welhat.gov.uk/directory/8/play-area-finder",
+        "allPlay": true
+      }
     },
     {
       "district": "North Hertfordshire",
       "council": "North Herts Council",
       "sources": [
-        "https://www.north-herts.gov.uk/"
-      ]
+        "https://www.north-herts.gov.uk/sports-pitches-and-play-areas"
+      ],
+      "note": "Sports pitches and play areas directory, one page per site. The LocalGov reader finds nothing on it (tried November 2026), so this is a saved list from the October 2026 import, with each site's own page, re-read by the quarterly check.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/north-herts.csv",
+        "page": "https://www.north-herts.gov.uk/sports-pitches-and-play-areas"
+      }
     },
     {
       "district": "Broxbourne",
       "council": "Borough of Broxbourne Council",
       "sources": [
-        "https://www.broxbourne.gov.uk/"
-      ]
+        "https://www.broxbourne.gov.uk/directory/41/playing-fields-and-playgrounds"
+      ],
+      "note": "Playing fields and playgrounds directory (Jadu). Every record carries the 'playgrounds' category, so Holmesdale Tunnel, Winnipeg Way and Jubilee Gardens, whose pages list only a games area or nothing, are excluded.",
+      "feed": {
+        "type": "jadu",
+        "directory": "https://www.broxbourne.gov.uk/directory/41/playing-fields-and-playgrounds",
+        "approximate": true,
+        "exclude": "^(?:Holmesdale Tunnel|Winnipeg Way|Jubilee Gardens)$"
+      }
     },
     {
       "district": "Watford",
       "council": "Watford Borough Council",
       "sources": [
-        "https://www.watford.gov.uk/"
-      ]
+        "https://www.watford.gov.uk/directory/7/parks-open-spaces-and-playgrounds/category/12"
+      ],
+      "note": "Playgrounds category of the parks directory (Jadu).",
+      "feed": {
+        "type": "jadu",
+        "directory": "https://www.watford.gov.uk/directory/7/parks-open-spaces-and-playgrounds",
+        "category": 12,
+        "allPlay": true,
+        "approximate": true
+      }
     },
     {
       "district": "High Peak",
@@ -188,8 +227,14 @@
       "district": "Three Rivers",
       "council": "Three Rivers District Council",
       "sources": [
-        "https://www.threerivers.gov.uk/"
-      ]
+        "https://www.threerivers.gov.uk/services/leisure-parks-culture/play-areas"
+      ],
+      "note": "Six area pages, each with several play areas. Saved list from the October 2026 import, re-read by the quarterly check.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/three-rivers.csv",
+        "page": "https://www.threerivers.gov.uk/services/leisure-parks-culture/play-areas"
+      }
     },
     {
       "district": "Lambeth",
@@ -202,8 +247,14 @@
       "district": "Hertsmere",
       "council": "Hertsmere Borough Council",
       "sources": [
-        "https://www.parksherts.co.uk/"
-      ]
+        "https://www.hertsmere.gov.uk/"
+      ],
+      "note": "Play areas from ParksHerts park pages and the council's play area story map (drawn by script, so the quarterly check reports it as unread rather than checking it). Saved list from the October 2026 import. Its sources and page stay on hertsmere.gov.uk: the quarterly check matches our playgrounds to a council by those sites, and ParksHerts and ArcGIS serve other councils too.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/hertsmere.csv",
+        "page": "https://www.hertsmere.gov.uk/"
+      }
     },
     {
       "district": "Bolsover",
@@ -223,8 +274,14 @@
       "district": "Stevenage",
       "council": "Stevenage Borough Council",
       "sources": [
-        "https://www.stevenage.gov.uk/"
-      ]
+        "https://www.stevenage.gov.uk/leisure-culture-and-wellbeing/parks-and-open-spaces"
+      ],
+      "note": "No list of the council's 56 play areas is published: only park pages (every one carries the same 'Managing play areas' text, so a pages feed can't tell which have one) and news of refurbishments. Saved list of those found, re-read by the quarterly check.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/stevenage.csv",
+        "page": "https://www.stevenage.gov.uk/leisure-culture-and-wellbeing/parks-and-open-spaces"
+      }
     },
     {
       "district": "Derby",
@@ -273,7 +330,8 @@
       "council": "St Albans City and District Council",
       "sources": [
         "https://www.stalbans.gov.uk/"
-      ]
+      ],
+      "note": "No list of play areas is published: only news of new playgrounds and green space action plans (PDFs). Listings rely on those, ParksHerts and the town and parish councils."
     },
     {
       "district": "South Derbyshire",
