@@ -1,6 +1,6 @@
 // Council feed names: a directory's own heading must never be read as a park's name.
 import assert from 'node:assert/strict';
-import { namesAgree, osmIds, roughPin, samePlace } from '../scripts/same-place.mjs';
+import { namesAgree, osmIds, roughPin, samePlace, sameNamed } from '../scripts/same-place.mjs';
 import { geoName, parseCsv, recordName, slugName } from '../scripts/council-feeds.mjs';
 
 assert.equal(recordName('Church Meadows - Parks and recreation directory'), 'Church Meadows');
@@ -13,6 +13,11 @@ assert.equal(slugName('https://www.braintree.gov.uk/directory-record/100/'), '')
 assert.deepEqual(parseCsv('name,postcode,text\nDanson Park Playground,DA6 8HL,"Splash park, open ""May to September"""\n'), [{ name: 'Danson Park Playground', postcode: 'DA6 8HL', text: 'Splash park, open "May to September"' }]);
 // Same place or a separate one close by (scripts/same-place.mjs), from Islington's adventure playgrounds.
 const park = (name, osm = [], osmOnly = false) => ({ name, osm, osmOnly });
+assert.equal(sameNamed('Holdbrook Old School Site', 'Holdbrook Old School Site Play Area'), true);
+assert.equal(sameNamed('Cassiobury Park and Whippendell Wood', 'Cassiobury Park Playgrounds'), true);
+assert.equal(sameNamed('Holdbrook Old School Site', 'Holdbrook West Play Area'), false, 'one shared word is not enough');
+assert.equal(sameNamed('Playground off Gammons Lane', 'Gammons Lane'), false, 'made-up names never match');
+assert.equal(sameNamed('Play area', 'Playground'), false);
 assert.equal(samePlace({ name: 'Lumpy Hill Adventure Playground', osm: 'way/260462113' }, park('Caledonian Park', ['way/87685649']), 80), false, 'differently named site 80 m away is separate');
 assert.equal(samePlace({ name: 'Martin Luther King Adventure Playground' }, park('Paradise Park'), 51), false);
 assert.equal(samePlace({ name: 'Hayward Adventure Playground', osm: 'way/87685649' }, park('Caledonian Park', ['way/87685649']), 0), true, 'same OpenStreetMap play area');
