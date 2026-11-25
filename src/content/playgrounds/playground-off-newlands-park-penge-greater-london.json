@@ -1,22 +1,20 @@
 {
-  "name": "Alexandra Recreation Ground Playground",
+  "name": "Playground off Newlands Park",
   "region": "london",
   "area": "Penge, Greater London",
-  "lat": 51.4193,
-  "lng": -0.05083,
+  "lat": 51.42052,
+  "lng": -0.05226,
   "ages": [],
   "equipment": [],
-  "access": [
-    "sf"
-  ],
+  "access": [],
   "facilities": [],
   "opens": "",
-  "description": "A playground on OpenStreetMap near Maitland Road, Penge. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
+  "description": "A playground on OpenStreetMap near Newlands Park, Penge. No council list we've checked includes it yet, so we can't confirm it's open to everyone or what it has.",
   "nearby": [],
   "sources": [
     {
       "label": "OpenStreetMap: playground",
-      "url": "https://www.openstreetmap.org/way/687047976"
+      "url": "https://www.openstreetmap.org/way/1452312809"
     }
   ],
   "checked": null,

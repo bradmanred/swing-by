@@ -16,7 +16,7 @@ import { SCHOOL_PAGES, schoolGroundsPage } from './school-grounds.js';
 
 // Old playground address → the listing it was merged into. Add a line whenever two listings are merged.
 const MERGED = {
-  'playground-off-newlands-park-penge-greater-london': 'alexandra-recreation-ground-penge-greater-london',
+  'alexandra-recreation-ground-playground-penge-greater-london': 'alexandra-recreation-ground-playground-sydenham',
   'playground-off-tresham-walk-hackney-greater-london': 'st-johns-churchyard-gardens-playground-jack-dunning-estate-g',
   'dr-pitt-memorial-park-play-area-short-strand-belfast': 'dr-pitt-park-playground-short-strand-belfast',
   'playground-off-mountforde-road-short-strand-belfast': 'mountforde-playground-short-strand-belfast',
