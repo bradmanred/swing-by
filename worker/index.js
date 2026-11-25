@@ -16,6 +16,9 @@ import { SCHOOL_PAGES, schoolGroundsPage } from './school-grounds.js';
 
 // Old playground address → the listing it was merged into. Add a line whenever two listings are merged.
 const MERGED = {
+  'cassiobury-park-pools-playground-cassiobury-watford': 'cassiobury-park-and-whippendell-wood-gade-avenue-wd18-7lg-ca',
+  'playground-off-gammons-lane-north-watford-watford': 'harebreaks-recreation-ground-and-harebreaks-wood-the-harebre',
+  'playground-off-upper-paddock-road-watford-heath-watford': 'oxhey-green-lower-paddock-road-wd19-4ds-watford-heath-bushey',
   'alexandra-recreation-ground-playground-penge-greater-london': 'alexandra-recreation-ground-playground-sydenham',
   'playground-off-tresham-walk-hackney-greater-london': 'st-johns-churchyard-gardens-playground-jack-dunning-estate-g',
   'dr-pitt-memorial-park-play-area-short-strand-belfast': 'dr-pitt-park-playground-short-strand-belfast',

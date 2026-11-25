@@ -1,0 +1,33 @@
+{
+  "name": "Cassiobury Park and Whippendell Wood, Gade Avenue, WD18 7LG",
+  "region": "herts",
+  "area": "Cassiobury, Watford",
+  "lat": 51.66208,
+  "lng": -0.42327,
+  "ages": [],
+  "equipment": [
+    "wp",
+    "gym"
+  ],
+  "access": [],
+  "facilities": [
+    "cf"
+  ],
+  "opens": "",
+  "description": "A playground on Watford Borough Council's own list of play areas.",
+  "nearby": [],
+  "operator": "Watford Borough Council",
+  "sources": [
+    {
+      "label": "Watford Borough Council: Cassiobury Park and Whippendell Wood, Gade Avenue, WD18 7LG",
+      "url": "https://www.watford.gov.uk/directory-record/345/cassiobury-park-and-whippendell-wood"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/519963671"
+    }
+  ],
+  "checked": "2026-11-25",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
