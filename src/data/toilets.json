@@ -5,7 +5,7 @@
   "licence": "CC BY 4.0",
   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
   "note": "Nearest toilets worked out by Swing By from the Toilet Map data.",
-  "export": "toilets-2026-11-25T00%3A00%3A41.055Z-BAGtjta6yWu6au4v27Wa4dPkILDWzs.csv"
+  "export": "toilets-2026-11-26T00%3A00%3A40.605Z-QoGcRTZZ7IQpUIvytv7RYZd18bLBBd.csv"
  },
  "toilets": 15860,
  "parks": {
@@ -1525,6 +1525,9 @@
     "lat": 52.62996944,
     "lng": -2.259723544
    }
+  },
+  "abram-labour-club-play-area-abram": {
+   "nearest": null
   },
   "abram-park-playground-stubshaw-cross-wigan": {
    "nearest": null
@@ -7040,6 +7043,18 @@
     "free": true,
     "lat": 52.488836693,
     "lng": -1.524433494
+   }
+  },
+  "andover-crescent-play-space-winstanley-wigan": {
+   "nearest": {
+    "id": "2f4ba84d3992e0fd0d54d2f4",
+    "name": "B&M",
+    "m": 871,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 53.521712717,
+    "lng": -2.653309219
    }
   },
   "andrew-lang-crescent-play-park-st-andrews-mount-melville": {
@@ -19700,6 +19715,18 @@
     "lng": -0.018716966
    }
   },
+  "beacon-road-play-area-hindley-green-hindley": {
+   "nearest": {
+    "id": "9e0eccd84e877ff35b4ebba3",
+    "name": "Sainsburys",
+    "m": 2515,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 53.500401179,
+    "lng": -2.526671067
+   }
+  },
   "beaconsfield-recreation-ground-play-area-great-yarmouth-nort": {
    "nearest": {
     "id": "929b8b72430741b8b10138bc",
@@ -21029,6 +21056,18 @@
     "free": false,
     "lat": 57.152132688,
     "lng": -2.119527468
+   }
+  },
+  "beech-walk-play-area-winstanley-wigan": {
+   "nearest": {
+    "id": "2f4ba84d3992e0fd0d54d2f4",
+    "name": "B&M",
+    "m": 1701,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 53.521712717,
+    "lng": -2.653309219
    }
   },
   "beechbrooke-play-park-ryhope-sunderland": {
@@ -24734,6 +24773,18 @@
     "free": true,
     "lat": 52.122526295,
     "lng": -0.281779666
+   }
+  },
+  "bickershaw-play-area-no-1-bickershaw-hindley": {
+   "nearest": {
+    "id": "9e0eccd84e877ff35b4ebba3",
+    "name": "Sainsburys",
+    "m": 2657,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 53.500401179,
+    "lng": -2.526671067
    }
   },
   "bickerstaffe-park-playground-bickerstaffe-ormskirk": {
@@ -29130,6 +29181,9 @@
   "bolton-playground-bolton": {
    "nearest": null
   },
+  "bolton-road-play-area-hindley": {
+   "nearest": null
+  },
   "bolton-road-playing-fields-irlams-o-th-height-salford": {
    "nearest": {
     "id": "a52884dcfdcf7581a780a09a",
@@ -32021,7 +32075,7 @@
     "lng": 0.551791191
    }
   },
-  "braithwaite-playground-lowton-st-lukes-lowton": {
+  "braithwaite-road-play-area-lowton-st-lukes-lowton": {
    "nearest": {
     "id": "dd5f0a80d2fc6241d4068505",
     "name": "Lidl",
@@ -38610,6 +38664,18 @@
     "lng": -3.723733482
    }
   },
+  "bryn-gates-play-area-bamfurlong-wigan": {
+   "nearest": {
+    "id": "4b83f0496ec568fadc8a3999",
+    "name": "Princess Road Ashton",
+    "m": 2545,
+    "babyChange": null,
+    "accessible": false,
+    "free": false,
+    "lat": 53.487458245,
+    "lng": -2.635914087
+   }
+  },
   "bryn-glas-play-area-thornhill-cardiff": {
    "nearest": {
     "id": "305a602924dfb5685ddcc39d",
@@ -40470,6 +40536,18 @@
     "lng": -0.048365593
    }
   },
+  "burley-crescent-play-space-worsley-mesnes-wigan": {
+   "nearest": {
+    "id": "2f4ba84d3992e0fd0d54d2f4",
+    "name": "B&M",
+    "m": 1512,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 53.521712717,
+    "lng": -2.653309219
+   }
+  },
   "burley-lawn-playground-hyde-park-leeds": {
    "nearest": {
     "id": "2fcc8b52c34492d51596fddf",
@@ -42050,28 +42128,6 @@
     "lng": -0.565189719
    }
   },
-  "butts-park-playground-bedford-leigh": {
-   "nearest": {
-    "id": "ae09f947ee746600214b72c7",
-    "name": "Leigh Bus Station",
-    "m": 1549,
-    "babyChange": null,
-    "accessible": true,
-    "free": false,
-    "lat": 53.495568945,
-    "lng": -2.518865018
-   },
-   "nearestBabyChange": {
-    "id": "a0b11c62e10e819f9266ea1c",
-    "name": "Pennington hall park",
-    "m": 2144,
-    "babyChange": true,
-    "accessible": false,
-    "free": false,
-    "lat": 53.486313616,
-    "lng": -2.526512777
-   }
-  },
   "butts-road-rec-weston-common-southampton": {
    "nearest": {
     "id": "df44807992b0098e27273fbf",
@@ -43312,7 +43368,7 @@
     "lng": -2.163153291
    }
   },
-  "cale-lane-playing-fields-new-springs-wigan": {
+  "cale-lane-play-area-new-springs-wigan": {
    "nearest": {
     "id": "03c357f32012531904d1224a",
     "name": "Grand Arcade",
@@ -59891,6 +59947,28 @@
     "lng": -2.214206457
    }
   },
+  "clough-house-drive-play-area-bedford-leigh": {
+   "nearest": {
+    "id": "ae09f947ee746600214b72c7",
+    "name": "Leigh Bus Station",
+    "m": 1258,
+    "babyChange": null,
+    "accessible": true,
+    "free": false,
+    "lat": 53.495568945,
+    "lng": -2.518865018
+   },
+   "nearestBabyChange": {
+    "id": "a0b11c62e10e819f9266ea1c",
+    "name": "Pennington hall park",
+    "m": 2260,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 53.486313616,
+    "lng": -2.526512777
+   }
+  },
   "clough-park-play-area-wapping-barnoldswick": {
    "nearest": {
     "id": "bc34d91fab979997c7755a0c",
@@ -60460,7 +60538,7 @@
     "lng": -0.221732503
    }
   },
-  "cob-moor-park-playground-longshaw": {
+  "cob-moor-play-area-longshaw-wigan": {
    "nearest": {
     "id": "d15d868c24c40fd49a8cc5c9",
     "name": "The Mount Restaurant Toilet",
@@ -63411,6 +63489,18 @@
     "lng": -2.161291838
    }
   },
+  "copeland-drive-play-area-standish": {
+   "nearest": {
+    "id": "b1d81c9960035528d77004ad",
+    "name": "Public toilet",
+    "m": 1402,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 53.57798142,
+    "lng": -2.65027102
+   }
+  },
   "copenhagen-avenue-play-area-whitehills-east-kilbride": {
    "nearest": {
     "id": "68e89fb443876ba08c8c00b8",
@@ -65669,6 +65759,18 @@
     "lng": -1.424896717
    }
   },
+  "coupland-road-play-area-hindley-green-hindley": {
+   "nearest": {
+    "id": "9e0eccd84e877ff35b4ebba3",
+    "name": "Sainsburys",
+    "m": 2777,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 53.500401179,
+    "lng": -2.526671067
+   }
+  },
   "courage-park-coley-park-reading": {
    "nearest": {
     "id": "a318d929c92290531ea29e1d",
@@ -67242,6 +67344,28 @@
     "lng": -2.526512777
    }
   },
+  "crankwood-road-play-area-pennington-wharf-leigh": {
+   "nearest": {
+    "id": "8c57a14c1ef9ee3e8d8490b5",
+    "name": "Morrisons",
+    "m": 1493,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 53.489902591,
+    "lng": -2.5323659
+   },
+   "nearestBabyChange": {
+    "id": "a0b11c62e10e819f9266ea1c",
+    "name": "Pennington hall park",
+    "m": 1982,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 53.486313616,
+    "lng": -2.526512777
+   }
+  },
   "cranleigh-gardens-play-area-eastover-bridgwater": {
    "nearest": {
     "id": "f33fe9705764d112cac65e70",
@@ -67373,6 +67497,9 @@
     "lat": 54.966791351,
     "lng": -1.789093083
    }
+  },
+  "crawford-avenue-play-area-new-springs-wigan": {
+   "nearest": null
   },
   "crawford-drive-play-area-pontprennau-cardiff": {
    "nearest": {
@@ -68339,6 +68466,18 @@
     "free": true,
     "lat": 57.3387497,
     "lng": -3.5380246
+   }
+  },
+  "cromer-drive-play-area-westleigh-atherton": {
+   "nearest": {
+    "id": "7b9836bfbd79f237f30ce55b",
+    "name": "Flapper Fold Lane",
+    "m": 1383,
+    "babyChange": null,
+    "accessible": false,
+    "free": false,
+    "lat": 53.524192964,
+    "lng": -2.493113279
    }
   },
   "cromford-play-area-cromford": {
@@ -76823,7 +76962,7 @@
     "lng": 1.6020907
    }
   },
-  "dootsons-park-playground-bedford-leigh": {
+  "dootson-park-playground-bedford-leigh": {
    "nearest": {
     "id": "ae09f947ee746600214b72c7",
     "name": "Leigh Bus Station",
@@ -77141,6 +77280,18 @@
     "free": true,
     "lat": 51.3772231,
     "lng": -2.3762085
+   }
+  },
+  "dorset-road-play-area-thornhill-wigan": {
+   "nearest": {
+    "id": "b1d81c9960035528d77004ad",
+    "name": "Public toilet",
+    "m": 1090,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 53.57798142,
+    "lng": -2.65027102
    }
   },
   "dorward-drive-play-park-crail-crail": {
@@ -84074,7 +84225,7 @@
     "lng": -0.069214254
    }
   },
-  "edmund-collins-park-playground-bryn-wigan": {
+  "edmund-collins-play-area-bryn": {
    "nearest": {
     "id": "2f4ba84d3992e0fd0d54d2f4",
     "name": "B&M",
@@ -85143,6 +85294,28 @@
     "free": false,
     "lat": 53.514254697,
     "lng": -2.467294335
+   }
+  },
+  "ellesmere-street-play-area-bedford-leigh": {
+   "nearest": {
+    "id": "ae09f947ee746600214b72c7",
+    "name": "Leigh Bus Station",
+    "m": 118,
+    "babyChange": null,
+    "accessible": true,
+    "free": false,
+    "lat": 53.495568945,
+    "lng": -2.518865018
+   },
+   "nearestBabyChange": {
+    "id": "a0b11c62e10e819f9266ea1c",
+    "name": "Pennington hall park",
+    "m": 1079,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 53.486313616,
+    "lng": -2.526512777
    }
   },
   "ellingham-play-park-ellingham": {
@@ -97821,6 +97994,9 @@
     "lng": -0.018716966
    }
   },
+  "furlong-close-play-area-bamfurlong": {
+   "nearest": null
+  },
   "furnace-green-playing-fields-furnace-green": {
    "nearest": {
     "id": "c69584db134c4fbd3252bcb9",
@@ -99912,6 +100088,18 @@
     "free": true,
     "lat": 51.597498214,
     "lng": -1.809012737
+   }
+  },
+  "gayton-close-play-area-highfield-wigan": {
+   "nearest": {
+    "id": "2f4ba84d3992e0fd0d54d2f4",
+    "name": "B&M",
+    "m": 1043,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 53.521712717,
+    "lng": -2.653309219
    }
   },
   "gec-recreation-ground-playground-hillmorton-paddox-rugby": {
@@ -105697,6 +105885,18 @@
     "lng": 0.551791191
    }
   },
+  "grange-road-play-area-bryn": {
+   "nearest": {
+    "id": "4b83f0496ec568fadc8a3999",
+    "name": "Princess Road Ashton",
+    "m": 1794,
+    "babyChange": null,
+    "accessible": false,
+    "free": false,
+    "lat": 53.487458245,
+    "lng": -2.635914087
+   }
+  },
   "grange-road-play-area-lower-tuffley-quedgeley": {
    "nearest": {
     "id": "59e1efd55ff008b79f5a0c1c",
@@ -106078,28 +106278,6 @@
     "lng": -0.451233805
    }
   },
-  "grasmere-park-westleigh-leigh": {
-   "nearest": {
-    "id": "9e0eccd84e877ff35b4ebba3",
-    "name": "Sainsburys",
-    "m": 292,
-    "babyChange": null,
-    "accessible": true,
-    "free": true,
-    "lat": 53.500401179,
-    "lng": -2.526671067
-   },
-   "nearestBabyChange": {
-    "id": "a0b11c62e10e819f9266ea1c",
-    "name": "Pennington hall park",
-    "m": 1607,
-    "babyChange": true,
-    "accessible": false,
-    "free": false,
-    "lat": 53.486313616,
-    "lng": -2.526512777
-   }
-  },
   "grasmere-play-area-crosshouse-east-kilbride": {
    "nearest": {
     "id": "a7f7dabd0aecc52c72c6392e",
@@ -106132,6 +106310,28 @@
     "free": true,
     "lat": 53.682105208,
     "lng": -1.494521499
+   }
+  },
+  "grasmere-street-play-area-westleigh-leigh": {
+   "nearest": {
+    "id": "9e0eccd84e877ff35b4ebba3",
+    "name": "Sainsburys",
+    "m": 292,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 53.500401179,
+    "lng": -2.526671067
+   },
+   "nearestBabyChange": {
+    "id": "a0b11c62e10e819f9266ea1c",
+    "name": "Pennington hall park",
+    "m": 1607,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 53.486313616,
+    "lng": -2.526512777
    }
   },
   "grassacres-park-playground-leigh-park-westbury": {
@@ -107271,7 +107471,7 @@
     "lng": 1.160778693
    }
   },
-  "green-avenue-park-blackmoor-wigan": {
+  "green-avenue-play-area-blackmoor": {
    "nearest": {
     "id": "1ea6dccdbfa6b1aad07d771c",
     "name": "The Square",
@@ -109389,9 +109589,6 @@
     "lng": -2.507983446
    }
   },
-  "grimshaw-park-stubshaw-cross-wigan": {
-   "nearest": null
-  },
   "grimsthorpe-castle-park-and-gardens-play-area": {
    "nearest": null
   },
@@ -111441,7 +111638,7 @@
     "lng": -0.106022358
    }
   },
-  "haigh-woodland-park-adventure-play-area-haigh-wigan": {
+  "haigh-hall-playground-haigh": {
    "nearest": {
     "id": "b1d81c9960035528d77004ad",
     "name": "Public toilet",
@@ -113157,6 +113354,18 @@
     "free": true,
     "lat": 51.3952483,
     "lng": 0.4940924
+   }
+  },
+  "hand-lane-1-play-area-pennington": {
+   "nearest": {
+    "id": "a0b11c62e10e819f9266ea1c",
+    "name": "Pennington hall park",
+    "m": 58,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 53.486313616,
+    "lng": -2.526512777
    }
   },
   "handcross-recreation-ground-playground-handcross": {
@@ -120986,6 +121195,18 @@
     "lng": -2.782003284
    }
   },
+  "herons-wharf-play-area-shevington-vale-wigan": {
+   "nearest": {
+    "id": "4869299268e68ec09ed9e5ab",
+    "name": "Pumpkin Patch Toilet",
+    "m": 2140,
+    "babyChange": false,
+    "accessible": null,
+    "free": true,
+    "lat": 53.557069613,
+    "lng": -2.722006864
+   }
+  },
   "heronswood-road-play-area-aggborough-kidderminster": {
    "nearest": {
     "id": "87686b1a46f8be793686743a",
@@ -122552,7 +122773,7 @@
     "lng": -2.728738444
    }
   },
-  "higher-folds-park-playground-higher-folds": {
+  "higher-folds-play-area-higher-folds": {
    "nearest": {
     "id": "b38d33a5257b064fe19b5221",
     "name": "McDonalds Tyldesley",
@@ -122662,6 +122883,28 @@
     "free": true,
     "lat": 52.459235696,
     "lng": -1.997998953
+   }
+  },
+  "highfield-gardens-play-area-bedford-wigan": {
+   "nearest": {
+    "id": "ae09f947ee746600214b72c7",
+    "name": "Leigh Bus Station",
+    "m": 1686,
+    "babyChange": null,
+    "accessible": true,
+    "free": false,
+    "lat": 53.495568945,
+    "lng": -2.518865018
+   },
+   "nearestBabyChange": {
+    "id": "a0b11c62e10e819f9266ea1c",
+    "name": "Pennington hall park",
+    "m": 2093,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 53.486313616,
+    "lng": -2.526512777
    }
   },
   "highfield-park-playground-highfield-wigan": {
@@ -124493,6 +124736,28 @@
     "free": true,
     "lat": 56.110509055,
     "lng": -3.345615864
+   }
+  },
+  "hilton-street-play-area-lower-ince-wigan": {
+   "nearest": {
+    "id": "470fe792222c017b0f6b166f",
+    "name": "The BrickWorks",
+    "m": 1196,
+    "babyChange": false,
+    "accessible": true,
+    "free": false,
+    "lat": 53.541510254,
+    "lng": -2.635087967
+   },
+   "nearestBabyChange": {
+    "id": "f17b40de550f7495e1c27ea6",
+    "name": "Wigan North Western Train Station",
+    "m": 1210,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 53.543451342,
+    "lng": -2.633130699
    }
   },
   "himalayan-garden-playground-sevenoaks": {
@@ -129311,6 +129576,18 @@
     "free": true,
     "lat": 54.305105126,
     "lng": -2.7218467
+   }
+  },
+  "howe-bridge-play-area-hag-fold-atherton": {
+   "nearest": {
+    "id": "7b9836bfbd79f237f30ce55b",
+    "name": "Flapper Fold Lane",
+    "m": 523,
+    "babyChange": null,
+    "accessible": false,
+    "free": false,
+    "lat": 53.524192964,
+    "lng": -2.493113279
    }
   },
   "howe-dell-play-area-hatfield": {
@@ -137576,6 +137853,28 @@
   "kennet-way-play-area-oakley-basingstoke-and-deane": {
    "nearest": null
   },
+  "kennet-way-play-area-westleigh-leigh": {
+   "nearest": {
+    "id": "9e0eccd84e877ff35b4ebba3",
+    "name": "Sainsburys",
+    "m": 1114,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 53.500401179,
+    "lng": -2.526671067
+   },
+   "nearestBabyChange": {
+    "id": "a0b11c62e10e819f9266ea1c",
+    "name": "Pennington hall park",
+    "m": 2499,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 53.486313616,
+    "lng": -2.526512777
+   }
+  },
   "kenning-park-play-areas-clay-cross": {
    "nearest": {
     "id": "f1105cfbdb27585318bcf0b0",
@@ -137880,6 +138179,9 @@
     "lat": 51.352446933,
     "lng": -2.912771702
    }
+  },
+  "kent-avenue-play-area-platt-bridge": {
+   "nearest": null
   },
   "kent-close-play-area-malvern-link-malvern": {
    "nearest": {
@@ -149435,6 +149737,18 @@
     "lng": -1.41825327
    }
   },
+  "langtree-lane-play-area-wigan": {
+   "nearest": {
+    "id": "b1d81c9960035528d77004ad",
+    "name": "Public toilet",
+    "m": 2396,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 53.57798142,
+    "lng": -2.65027102
+   }
+  },
   "langworthy-park-chimney-pot-park-salford": {
    "nearest": {
     "id": "184091ba51b076b9498b96bf",
@@ -150285,6 +150599,18 @@
     "free": true,
     "lat": 51.407401968,
     "lng": -0.168246415
+   }
+  },
+  "lavender-play-street-crooke-wigan": {
+   "nearest": {
+    "id": "e3d0cca80938c5205dad0793",
+    "name": "market toilet",
+    "m": 1693,
+    "babyChange": true,
+    "accessible": false,
+    "free": true,
+    "lat": 53.548679805,
+    "lng": -2.631862149
    }
   },
   "lavender-road-play-area-wymondham-wymondham": {
@@ -151545,7 +151871,7 @@
   "leggate-play-park-leggate-new-cumnock": {
    "nearest": null
   },
-  "legh-street-park-lowton-heath-golborne": {
+  "legh-street-recreation-ground-playground-lowton-heath-golbor": {
    "nearest": {
     "id": "dd5f0a80d2fc6241d4068505",
     "name": "Lidl",
@@ -153355,6 +153681,28 @@
     "free": true,
     "lat": 51.798542228,
     "lng": -0.072151423
+   }
+  },
+  "lilford-park-playground-bedford-leigh": {
+   "nearest": {
+    "id": "ae09f947ee746600214b72c7",
+    "name": "Leigh Bus Station",
+    "m": 1392,
+    "babyChange": null,
+    "accessible": true,
+    "free": false,
+    "lat": 53.495568945,
+    "lng": -2.518865018
+   },
+   "nearestBabyChange": {
+    "id": "a0b11c62e10e819f9266ea1c",
+    "name": "Pennington hall park",
+    "m": 2519,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 53.486313616,
+    "lng": -2.526512777
    }
   },
   "lilian-bland-park-playground-glengormley-newtownabbey": {
@@ -166689,6 +167037,18 @@
     "lng": -1.218959391
    }
   },
+  "margaret-street-play-area-gidlow-wigan": {
+   "nearest": {
+    "id": "dc8bdd08dba6ed6308fcf40a",
+    "name": "Wigan Bus Station",
+    "m": 802,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 53.547153757,
+    "lng": -2.634404387
+   }
+  },
   "margaret-terrace-play-area-blaengwynfi-gwynfi-and-croeserw-b": {
    "nearest": null
   },
@@ -167696,6 +168056,28 @@
     "free": true,
     "lat": 51.537752295,
     "lng": -0.060408711
+   }
+  },
+  "marsh-green-play-area-marsh-green-wigan": {
+   "nearest": {
+    "id": "0abe4fcd72887c747a3618df",
+    "name": "KFC PEMBERTON",
+    "m": 1867,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 53.536877133,
+    "lng": -2.685320377
+   },
+   "nearestBabyChange": {
+    "id": "dc8bdd08dba6ed6308fcf40a",
+    "name": "Wigan Bus Station",
+    "m": 2316,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 53.547153757,
+    "lng": -2.634404387
    }
   },
   "marsh-green-playground-edenbridge": {
@@ -183297,6 +183679,9 @@
     "lng": -2.869475484
    }
   },
+  "neville-street-play-area-low-green": {
+   "nearest": null
+  },
   "nevis-road-inverlochy-fort-william": {
    "nearest": {
     "id": "3d2a1afb9f6c5008d9809db6",
@@ -184660,6 +185045,9 @@
     "lng": -1.592379212
    }
   },
+  "newman-close-play-area-hindley": {
+   "nearest": null
+  },
   "newman-collard-playing-field-liss": {
    "nearest": {
     "id": "cf6421bdccaedb5eae4e8d9a",
@@ -185373,6 +185761,18 @@
     "free": true,
     "lat": 51.7568451,
     "lng": 0.1124114
+   }
+  },
+  "nicol-mere-play-area-town-green-ashton-in-makerfield": {
+   "nearest": {
+    "id": "4b83f0496ec568fadc8a3999",
+    "name": "Princess Road Ashton",
+    "m": 1260,
+    "babyChange": null,
+    "accessible": false,
+    "free": false,
+    "lat": 53.487458245,
+    "lng": -2.635914087
    }
   },
   "nicol-park-playground-hillside-portlethen-2": {
@@ -189374,6 +189774,18 @@
     "lng": -0.743014812
    }
   },
+  "oakenden-play-area-bryn": {
+   "nearest": {
+    "id": "4b83f0496ec568fadc8a3999",
+    "name": "Princess Road Ashton",
+    "m": 1580,
+    "babyChange": null,
+    "accessible": false,
+    "free": false,
+    "lat": 53.487458245,
+    "lng": -2.635914087
+   }
+  },
   "oakengates-hartshill-district-park-wombridge-oakengates": {
    "nearest": {
     "id": "f35d7efa9355461d1cc50376",
@@ -189846,6 +190258,28 @@
     "free": true,
     "lat": 52.464246294,
     "lng": -1.84243083
+   }
+  },
+  "oaklands-road-play-area-lowton-st-marys-lowton": {
+   "nearest": {
+    "id": "dd5f0a80d2fc6241d4068505",
+    "name": "Lidl",
+    "m": 2420,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 53.47259437,
+    "lng": -2.597931325
+   },
+   "nearestBabyChange": {
+    "id": "a0b11c62e10e819f9266ea1c",
+    "name": "Pennington hall park",
+    "m": 2722,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 53.486313616,
+    "lng": -2.526512777
    }
   },
   "oaklands-road-play-area-ollerton": {
@@ -197192,6 +197626,9 @@
     "lng": -2.909301892
    }
   },
+  "parklands-drive-play-area-aspull-moor": {
+   "nearest": null
+  },
   "parklands-open-space-playground-withymoor-village-dudley": {
    "nearest": {
     "id": "4439e513b668c2cd822c1f95",
@@ -200175,11 +200612,21 @@
     "lng": -2.526512777
    }
   },
-  "pennington-hall-park-playground-pennington": {
+  "pennington-flash-playground-lowton-common-lowton": {
    "nearest": {
+    "id": "8c57a14c1ef9ee3e8d8490b5",
+    "name": "Morrisons",
+    "m": 1162,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 53.489902591,
+    "lng": -2.5323659
+   },
+   "nearestBabyChange": {
     "id": "a0b11c62e10e819f9266ea1c",
     "name": "Pennington hall park",
-    "m": 58,
+    "m": 1513,
     "babyChange": true,
     "accessible": false,
     "free": false,
@@ -200207,28 +200654,6 @@
     "free": false,
     "lat": 51.156883615,
     "lng": 0.291191339
-   }
-  },
-  "pennington-wharf-childrens-park-pennington-wharf-lowton": {
-   "nearest": {
-    "id": "8c57a14c1ef9ee3e8d8490b5",
-    "name": "Morrisons",
-    "m": 1493,
-    "babyChange": null,
-    "accessible": true,
-    "free": true,
-    "lat": 53.489902591,
-    "lng": -2.5323659
-   },
-   "nearestBabyChange": {
-    "id": "a0b11c62e10e819f9266ea1c",
-    "name": "Pennington hall park",
-    "m": 1982,
-    "babyChange": true,
-    "accessible": false,
-    "free": false,
-    "lat": 53.486313616,
-    "lng": -2.526512777
    }
   },
   "penny-crescent-play-area-malpas-court-newport": {
@@ -224482,18 +224907,6 @@
     "lng": -4.149468541
    }
   },
-  "playground-off-beacon-road-bickershaw-hindley": {
-   "nearest": {
-    "id": "9e0eccd84e877ff35b4ebba3",
-    "name": "Sainsburys",
-    "m": 2515,
-    "babyChange": null,
-    "accessible": true,
-    "free": true,
-    "lat": 53.500401179,
-    "lng": -2.526671067
-   }
-  },
   "playground-off-beacon-road-hampeth-northumberland": {
    "nearest": null
   },
@@ -226331,18 +226744,6 @@
     "lng": -0.683223009
    }
   },
-  "playground-off-beech-walk-worsley-mesnes-wigan": {
-   "nearest": {
-    "id": "2f4ba84d3992e0fd0d54d2f4",
-    "name": "B&M",
-    "m": 1701,
-    "babyChange": null,
-    "accessible": true,
-    "free": true,
-    "lat": 53.521712717,
-    "lng": -2.653309219
-   }
-  },
   "playground-off-beecham-close-benwell-newcastle-upon-tyne": {
    "nearest": {
     "id": "ee609afbb7e6fa75cd7b846c",
@@ -228084,18 +228485,6 @@
     "free": true,
     "lat": 56.018429694,
     "lng": -3.606417775
-   }
-  },
-  "playground-off-benjamin-fold-town-green-wigan": {
-   "nearest": {
-    "id": "4b83f0496ec568fadc8a3999",
-    "name": "Princess Road Ashton",
-    "m": 1260,
-    "babyChange": null,
-    "accessible": false,
-    "free": false,
-    "lat": 53.487458245,
-    "lng": -2.635914087
    }
   },
   "playground-off-benn-street-homerton-greater-london": {
@@ -234321,9 +234710,6 @@
     "lat": 53.624570545,
     "lng": -1.877835989
    }
-  },
-  "playground-off-bolton-road-aspull-wigan": {
-   "nearest": null
   },
   "playground-off-bolton-road-edgworth": {
    "nearest": {
@@ -255621,18 +256007,6 @@
     "lng": 0.113115256
    }
   },
-  "playground-off-central-avenue-shakerley-wigan": {
-   "nearest": {
-    "id": "7b9836bfbd79f237f30ce55b",
-    "name": "Flapper Fold Lane",
-    "m": 1172,
-    "babyChange": null,
-    "accessible": false,
-    "free": false,
-    "lat": 53.524192964,
-    "lng": -2.493113279
-   }
-  },
   "playground-off-central-drive-charlesville-pontypool": {
    "nearest": {
     "id": "9dcf500ea232ce496b245429",
@@ -256791,18 +257165,6 @@
     "free": true,
     "lat": 52.21532516,
     "lng": 1.49154596
-   }
-  },
-  "playground-off-chantry-walk-town-green-wigan": {
-   "nearest": {
-    "id": "4b83f0496ec568fadc8a3999",
-    "name": "Princess Road Ashton",
-    "m": 1794,
-    "babyChange": null,
-    "accessible": false,
-    "free": false,
-    "lat": 53.487458245,
-    "lng": -2.635914087
    }
   },
   "playground-off-chapel-close-crantock": {
@@ -260556,28 +260918,6 @@
     "free": true,
     "lat": 52.786754758,
     "lng": -0.150249302
-   }
-  },
-  "playground-off-chilton-close-westleigh-leigh": {
-   "nearest": {
-    "id": "9e0eccd84e877ff35b4ebba3",
-    "name": "Sainsburys",
-    "m": 1114,
-    "babyChange": null,
-    "accessible": true,
-    "free": true,
-    "lat": 53.500401179,
-    "lng": -2.526671067
-   },
-   "nearestBabyChange": {
-    "id": "a0b11c62e10e819f9266ea1c",
-    "name": "Pennington hall park",
-    "m": 2499,
-    "babyChange": true,
-    "accessible": false,
-    "free": false,
-    "lat": 53.486313616,
-    "lng": -2.526512777
    }
   },
   "playground-off-chilton-road-chilton-trinity": {
@@ -270667,18 +271007,6 @@
     "lng": -1.6210655
    }
   },
-  "playground-off-copeland-drive-standish-wigan": {
-   "nearest": {
-    "id": "b1d81c9960035528d77004ad",
-    "name": "Public toilet",
-    "m": 1414,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 53.57798142,
-    "lng": -2.65027102
-   }
-  },
   "playground-off-copeland-street-tyersal-gate-bradford": {
    "nearest": {
     "id": "92da4fc37db57de36fb26434",
@@ -273189,18 +273517,6 @@
     "free": true,
     "lat": 56.49558425,
     "lng": -3.0425767
-   }
-  },
-  "playground-off-coupland-road-howe-bridge-wigan": {
-   "nearest": {
-    "id": "9e0eccd84e877ff35b4ebba3",
-    "name": "Sainsburys",
-    "m": 2777,
-    "babyChange": null,
-    "accessible": true,
-    "free": true,
-    "lat": 53.500401179,
-    "lng": -2.526671067
    }
   },
   "playground-off-court-close-st-nicholas-and-bonvilston-bonvil": {
@@ -280179,9 +280495,6 @@
     "lat": 53.257731608,
     "lng": -2.518889308
    }
-  },
-  "playground-off-danes-avenue-hindley-green-hindley": {
-   "nearest": null
   },
   "playground-off-danes-close-weelsby-grimsby": {
    "nearest": {
@@ -294772,28 +295085,6 @@
     "lng": -0.154366493
    }
   },
-  "playground-off-elmridge-westleigh-wigan": {
-   "nearest": {
-    "id": "ae09f947ee746600214b72c7",
-    "name": "Leigh Bus Station",
-    "m": 1392,
-    "babyChange": null,
-    "accessible": true,
-    "free": false,
-    "lat": 53.495568945,
-    "lng": -2.518865018
-   },
-   "nearestBabyChange": {
-    "id": "a0b11c62e10e819f9266ea1c",
-    "name": "Pennington hall park",
-    "m": 2519,
-    "babyChange": true,
-    "accessible": false,
-    "free": false,
-    "lat": 53.486313616,
-    "lng": -2.526512777
-   }
-  },
   "playground-off-elms-drive-maybole": {
    "nearest": {
     "id": "5a60d3e3d902568b679bfde0",
@@ -304468,9 +304759,6 @@
     "lng": -1.8572742
    }
   },
-  "playground-off-forest-drive-shevington-wigan": {
-   "nearest": null
-  },
   "playground-off-forest-front-buttsash-new-forest": {
    "nearest": {
     "id": "9476a984a9f49145ccf7ef52",
@@ -310312,18 +310600,6 @@
     "free": false,
     "lat": 54.304061267,
     "lng": -2.199604511
-   }
-  },
-  "playground-off-gayton-close-highfield-wigan": {
-   "nearest": {
-    "id": "2f4ba84d3992e0fd0d54d2f4",
-    "name": "B&M",
-    "m": 1043,
-    "babyChange": null,
-    "accessible": true,
-    "free": true,
-    "lat": 53.521712717,
-    "lng": -2.653309219
    }
   },
   "playground-off-gaywood-close-streatham-hill-london-2": {
@@ -318590,18 +318866,6 @@
     "lng": -2.279791832
    }
   },
-  "playground-off-green-lane-hindley-green-hindley": {
-   "nearest": {
-    "id": "4656a940ca1d9e9a1dee264a",
-    "name": "Westhoughton Town, Market Street",
-    "m": 2827,
-    "babyChange": false,
-    "accessible": false,
-    "free": false,
-    "lat": 53.549126834,
-    "lng": -2.524204612
-   }
-  },
   "playground-off-green-lane-lofthouse-leeds": {
    "nearest": {
     "id": "3db8ec66b02c3b7af56d515e",
@@ -318786,18 +319050,6 @@
     "free": true,
     "lat": 53.510289593,
     "lng": -2.158334145
-   }
-  },
-  "playground-off-green-meadows-lowton-heath-wigan": {
-   "nearest": {
-    "id": "dd5f0a80d2fc6241d4068505",
-    "name": "Lidl",
-    "m": 2006,
-    "babyChange": null,
-    "accessible": true,
-    "free": true,
-    "lat": 53.47259437,
-    "lng": -2.597931325
    }
   },
   "playground-off-green-moor-road-hunshelf-barnsley": {
@@ -332446,18 +332698,6 @@
     "lng": -2.417925596
    }
   },
-  "playground-off-herons-wharf-shevington-vale-wigan": {
-   "nearest": {
-    "id": "4869299268e68ec09ed9e5ab",
-    "name": "Pumpkin Patch Toilet",
-    "m": 2140,
-    "babyChange": false,
-    "accessible": null,
-    "free": true,
-    "lat": 53.557069613,
-    "lng": -2.722006864
-   }
-  },
   "playground-off-herries-road-shirecliffe-sheffield": {
    "nearest": {
     "id": "12e4984d37d48b01c7ad6eb8",
@@ -333177,18 +333417,6 @@
     "free": true,
     "lat": 52.398890553,
     "lng": 0.272319317
-   }
-  },
-  "playground-off-high-beeches-crescent-town-green-wigan": {
-   "nearest": {
-    "id": "4b83f0496ec568fadc8a3999",
-    "name": "Princess Road Ashton",
-    "m": 1580,
-    "babyChange": null,
-    "accessible": false,
-    "free": false,
-    "lat": 53.487458245,
-    "lng": -2.635914087
    }
   },
   "playground-off-high-croft-kelso": {
@@ -334300,18 +334528,6 @@
   "playground-off-high-street-tadlow": {
    "nearest": null
   },
-  "playground-off-high-street-thornhill-wigan": {
-   "nearest": {
-    "id": "b1d81c9960035528d77004ad",
-    "name": "Public toilet",
-    "m": 1157,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 53.57798142,
-    "lng": -2.65027102
-   }
-  },
   "playground-off-high-street-thorpe-le-soken": {
    "nearest": {
     "id": "6e9faf0b9710cae710711542",
@@ -334912,18 +335128,6 @@
     "free": true,
     "lat": 51.206698547,
     "lng": -4.03745681
-   }
-  },
-  "playground-off-highfield-grange-avenue-marus-bridge-wigan": {
-   "nearest": {
-    "id": "2f4ba84d3992e0fd0d54d2f4",
-    "name": "B&M",
-    "m": 871,
-    "babyChange": null,
-    "accessible": true,
-    "free": true,
-    "lat": 53.521712717,
-    "lng": -2.653309219
    }
   },
   "playground-off-highfield-grove-torthorwald": {
@@ -335703,9 +335907,6 @@
     "lat": 53.323687787,
     "lng": -0.941028595
    }
-  },
-  "playground-off-hillcrest-spring-view-wigan": {
-   "nearest": null
   },
   "playground-off-hilldrop-close-ramsbury": {
    "nearest": null
@@ -349626,9 +349827,6 @@
     "lng": -1.641855011
    }
   },
-  "playground-off-kent-avenue-spring-view-wigan": {
-   "nearest": null
-  },
   "playground-off-kent-court-craigendoran-helensburgh": {
    "nearest": {
     "id": "dba7799e60b2a13c388e24cd",
@@ -350341,18 +350539,6 @@
     "free": true,
     "lat": 55.86397274,
     "lng": -3.982897473
-   }
-  },
-  "playground-off-kestrel-drive-town-green-ashton-in-makerfield": {
-   "nearest": {
-    "id": "4b83f0496ec568fadc8a3999",
-    "name": "Princess Road Ashton",
-    "m": 1913,
-    "babyChange": null,
-    "accessible": false,
-    "free": false,
-    "lat": 53.487458245,
-    "lng": -2.635914087
    }
   },
   "playground-off-kestrel-lane-hamilton-leicester": {
@@ -354252,28 +354438,6 @@
     "lng": -0.26485293
    }
   },
-  "playground-off-kitt-green-road-crooke-wigan": {
-   "nearest": {
-    "id": "0abe4fcd72887c747a3618df",
-    "name": "KFC PEMBERTON",
-    "m": 1750,
-    "babyChange": null,
-    "accessible": true,
-    "free": true,
-    "lat": 53.536877133,
-    "lng": -2.685320377
-   },
-   "nearestBabyChange": {
-    "id": "dc8bdd08dba6ed6308fcf40a",
-    "name": "Wigan Bus Station",
-    "m": 2313,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 53.547153757,
-    "lng": -2.634404387
-   }
-  },
   "playground-off-kitten-close-haverhill": {
    "nearest": {
     "id": "25c9231bf222c60a0d815e82",
@@ -356506,28 +356670,6 @@
     "lng": -0.800110846
    }
   },
-  "playground-off-lancaster-road-crooke-wigan": {
-   "nearest": {
-    "id": "0abe4fcd72887c747a3618df",
-    "name": "KFC PEMBERTON",
-    "m": 1867,
-    "babyChange": null,
-    "accessible": true,
-    "free": true,
-    "lat": 53.536877133,
-    "lng": -2.685320377
-   },
-   "nearestBabyChange": {
-    "id": "dc8bdd08dba6ed6308fcf40a",
-    "name": "Wigan Bus Station",
-    "m": 2316,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 53.547153757,
-    "lng": -2.634404387
-   }
-  },
   "playground-off-lancaster-road-lower-new-inn-cwmbr-n": {
    "nearest": {
     "id": "ee46e648197ff8a608fc0e4e",
@@ -357436,18 +357578,6 @@
     "free": false,
     "lat": 50.856969285,
     "lng": -2.163105011
-   }
-  },
-  "playground-off-langtree-lane-standish-wigan": {
-   "nearest": {
-    "id": "b1d81c9960035528d77004ad",
-    "name": "Public toilet",
-    "m": 2396,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 53.57798142,
-    "lng": -2.65027102
    }
   },
   "playground-off-lannacombe-road-longbridge-birmingham": {
@@ -360266,18 +360396,6 @@
   "playground-off-leigh-street-leigh-upon-mendip": {
    "nearest": null
   },
-  "playground-off-leighton-avenue-westleigh-wigan": {
-   "nearest": {
-    "id": "7b9836bfbd79f237f30ce55b",
-    "name": "Flapper Fold Lane",
-    "m": 523,
-    "babyChange": null,
-    "accessible": false,
-    "free": false,
-    "lat": 53.524192964,
-    "lng": -2.493113279
-   }
-  },
   "playground-off-leighton-close-bramley-basingstoke-and-deane": {
    "nearest": {
     "id": "21f70c3ad2c1738decc6fbad",
@@ -361693,9 +361811,6 @@
     "lat": 52.1360181,
     "lng": -0.4677724
    }
-  },
-  "playground-off-lily-lane-bamfurlong-wigan": {
-   "nearest": null
   },
   "playground-off-lily-loch-road-red-cloak-stonehaven": {
    "nearest": {
@@ -375730,18 +375845,6 @@
     "free": true,
     "lat": 55.905256174,
     "lng": -3.220957518
-   }
-  },
-  "playground-off-margaret-street-gidlow-wigan": {
-   "nearest": {
-    "id": "dc8bdd08dba6ed6308fcf40a",
-    "name": "Wigan Bus Station",
-    "m": 802,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 53.547153757,
-    "lng": -2.634404387
    }
   },
   "playground-off-margaret-street-ludworth-durham": {
@@ -393119,9 +393222,6 @@
   "playground-off-neville-smith-close-sapcote": {
    "nearest": null
   },
-  "playground-off-neville-street-spring-view-wigan": {
-   "nearest": null
-  },
   "playground-off-neville-turner-way-waltham": {
    "nearest": null
   },
@@ -395289,9 +395389,6 @@
     "lat": 53.844085017,
     "lng": -0.432318449
    }
-  },
-  "playground-off-newman-close-ince-in-makerfield-hindley-2": {
-   "nearest": null
   },
   "playground-off-newman-close-willesden-green-greater-london": {
    "nearest": {
@@ -409415,9 +409512,6 @@
     "lng": -1.545103951
    }
   },
-  "playground-off-parklands-drive-new-springs-wigan": {
-   "nearest": null
-  },
   "playground-off-parklands-hemsby": {
    "nearest": {
     "id": "b3740990fa7d75e3e0073af6",
@@ -416912,28 +417006,6 @@
     "free": true,
     "lat": 51.597498214,
     "lng": -1.809012737
-   }
-  },
-  "playground-off-pond-street-lowton-common-lowton": {
-   "nearest": {
-    "id": "8c57a14c1ef9ee3e8d8490b5",
-    "name": "Morrisons",
-    "m": 2064,
-    "babyChange": null,
-    "accessible": true,
-    "free": true,
-    "lat": 53.489902591,
-    "lng": -2.5323659
-   },
-   "nearestBabyChange": {
-    "id": "a0b11c62e10e819f9266ea1c",
-    "name": "Pennington hall park",
-    "m": 2134,
-    "babyChange": true,
-    "accessible": false,
-    "free": false,
-    "lat": 53.486313616,
-    "lng": -2.526512777
    }
   },
   "playground-off-pond-view-close-hersden-canterbury": {
@@ -425754,28 +425826,6 @@
     "lng": -2.741482257
    }
   },
-  "playground-off-redpol-avenue-bedford-leigh": {
-   "nearest": {
-    "id": "ae09f947ee746600214b72c7",
-    "name": "Leigh Bus Station",
-    "m": 1258,
-    "babyChange": null,
-    "accessible": true,
-    "free": false,
-    "lat": 53.495568945,
-    "lng": -2.518865018
-   },
-   "nearestBabyChange": {
-    "id": "a0b11c62e10e819f9266ea1c",
-    "name": "Pennington hall park",
-    "m": 2260,
-    "babyChange": true,
-    "accessible": false,
-    "free": false,
-    "lat": 53.486313616,
-    "lng": -2.526512777
-   }
-  },
   "playground-off-redpoll-way-thamesmead-greater-london": {
    "nearest": {
     "id": "958eefbf2614f268da174b0d",
@@ -426772,28 +426822,6 @@
   },
   "playground-off-reoch-park-springholm": {
    "nearest": null
-  },
-  "playground-off-repton-avenue-spring-view-wigan": {
-   "nearest": {
-    "id": "470fe792222c017b0f6b166f",
-    "name": "The BrickWorks",
-    "m": 2153,
-    "babyChange": false,
-    "accessible": true,
-    "free": false,
-    "lat": 53.541510254,
-    "lng": -2.635087967
-   },
-   "nearestBabyChange": {
-    "id": "f17b40de550f7495e1c27ea6",
-    "name": "Wigan North Western Train Station",
-    "m": 2212,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 53.543451342,
-    "lng": -2.633130699
-   }
   },
   "playground-off-repton-road-ticknall": {
    "nearest": {
@@ -446653,18 +446681,6 @@
     "free": true,
     "lat": 51.73875985,
     "lng": -2.640616894
-   }
-  },
-  "playground-off-smithwood-avenue-hindley-green-hindley": {
-   "nearest": {
-    "id": "4656a940ca1d9e9a1dee264a",
-    "name": "Westhoughton Town, Market Street",
-    "m": 2791,
-    "babyChange": false,
-    "accessible": false,
-    "free": false,
-    "lat": 53.549126834,
-    "lng": -2.524204612
    }
   },
   "playground-off-smithy-close-parwich": {
@@ -483500,18 +483516,6 @@
     "lng": -0.119001567
    }
   },
-  "playground-off-vauxhall-road-longshoot-wigan": {
-   "nearest": {
-    "id": "03c357f32012531904d1224a",
-    "name": "Grand Arcade",
-    "m": 671,
-    "babyChange": true,
-    "accessible": true,
-    "free": false,
-    "lat": 53.547234009,
-    "lng": -2.630034685
-   }
-  },
   "playground-off-vawers-close-albert-town-haverfordwest": {
    "nearest": {
     "id": "e5db323bcae82e744ded2646",
@@ -487395,9 +487399,6 @@
     "lng": -2.075141428
    }
   },
-  "playground-off-ward-street-hindley-green-hindley": {
-   "nearest": null
-  },
   "playground-off-wardend-place-new-elgin-elgin": {
    "nearest": {
     "id": "b4cc174a541ec89a106c5cc9",
@@ -487866,28 +487867,6 @@
     "free": false,
     "lat": 53.486313616,
     "lng": -2.526512777
-   }
-  },
-  "playground-off-warrington-road-ince-in-makerfield-wigan": {
-   "nearest": {
-    "id": "470fe792222c017b0f6b166f",
-    "name": "The BrickWorks",
-    "m": 1196,
-    "babyChange": false,
-    "accessible": true,
-    "free": false,
-    "lat": 53.541510254,
-    "lng": -2.635087967
-   },
-   "nearestBabyChange": {
-    "id": "f17b40de550f7495e1c27ea6",
-    "name": "Wigan North Western Train Station",
-    "m": 1210,
-    "babyChange": true,
-    "accessible": true,
-    "free": true,
-    "lat": 53.543451342,
-    "lng": -2.633130699
    }
   },
   "playground-off-warrington-road-union-bank-st-helens": {
@@ -497708,18 +497687,6 @@
     "lng": -3.168602944
    }
   },
-  "playground-off-wigan-road-howe-bridge-wigan": {
-   "nearest": {
-    "id": "7b9836bfbd79f237f30ce55b",
-    "name": "Flapper Fold Lane",
-    "m": 1438,
-    "babyChange": null,
-    "accessible": false,
-    "free": false,
-    "lat": 53.524192964,
-    "lng": -2.493113279
-   }
-  },
   "playground-off-wigeon-road-wistaston": {
    "nearest": {
     "id": "7b2ebf0732ba96803d7dba8b",
@@ -502752,18 +502719,6 @@
     "lng": -0.043333769
    }
   },
-  "playground-off-woodhurst-drive-standish-wigan": {
-   "nearest": {
-    "id": "b1d81c9960035528d77004ad",
-    "name": "Public toilet",
-    "m": 1612,
-    "babyChange": null,
-    "accessible": false,
-    "free": true,
-    "lat": 53.57798142,
-    "lng": -2.65027102
-   }
-  },
   "playground-off-woodilee-road-newarthill": {
    "nearest": null
   },
@@ -506094,18 +506049,6 @@
     "lng": -3.0736332
    }
   },
-  "playground-off-yewdale-road-town-green-wigan": {
-   "nearest": {
-    "id": "2f4ba84d3992e0fd0d54d2f4",
-    "name": "B&M",
-    "m": 1574,
-    "babyChange": null,
-    "accessible": true,
-    "free": true,
-    "lat": 53.521712717,
-    "lng": -2.653309219
-   }
-  },
   "playground-off-yewlands-avenue-boothroyden-middleton": {
    "nearest": {
     "id": "c186752dd61ac0ad9b7a243a",
@@ -507738,6 +507681,28 @@
     "free": true,
     "lat": 50.83213122,
     "lng": -0.426031351
+   }
+  },
+  "pond-street-play-area-lowton-common-lowton": {
+   "nearest": {
+    "id": "8c57a14c1ef9ee3e8d8490b5",
+    "name": "Morrisons",
+    "m": 2064,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 53.489902591,
+    "lng": -2.5323659
+   },
+   "nearestBabyChange": {
+    "id": "a0b11c62e10e819f9266ea1c",
+    "name": "Pennington hall park",
+    "m": 2134,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 53.486313616,
+    "lng": -2.526512777
    }
   },
   "ponderosa-playground-netherthorpe-sheffield-2": {
@@ -516566,6 +516531,9 @@
     "lat": 51.518602351,
     "lng": -0.722335147
    }
+  },
+  "rayner-park-playground-hindley": {
+   "nearest": null
   },
   "rayners-green-fordham-fordham": {
    "nearest": {
@@ -527866,6 +527834,28 @@
     "lng": -2.068909093
    }
   },
+  "sandersons-croft-play-area-bedford-leigh": {
+   "nearest": {
+    "id": "ae09f947ee746600214b72c7",
+    "name": "Leigh Bus Station",
+    "m": 1549,
+    "babyChange": null,
+    "accessible": true,
+    "free": false,
+    "lat": 53.495568945,
+    "lng": -2.518865018
+   },
+   "nearestBabyChange": {
+    "id": "a0b11c62e10e819f9266ea1c",
+    "name": "Pennington hall park",
+    "m": 2144,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 53.486313616,
+    "lng": -2.526512777
+   }
+  },
   "sanderspool-cross-recreation-area-playground-south-brent": {
    "nearest": {
     "id": "86b694b0bc7368e3bca076f4",
@@ -537264,6 +537254,18 @@
     "lng": -4.176405868
    }
   },
+  "smithwood-avenue-play-space-hindley": {
+   "nearest": {
+    "id": "4656a940ca1d9e9a1dee264a",
+    "name": "Westhoughton Town, Market Street",
+    "m": 2791,
+    "babyChange": false,
+    "accessible": false,
+    "free": false,
+    "lat": 53.549126834,
+    "lng": -2.524204612
+   }
+  },
   "smithy-bridge-park-playground-smithy-bridge": {
    "nearest": {
     "id": "99f2fb0eb8858c71a457fcb0",
@@ -541805,6 +541807,28 @@
     "free": true,
     "lat": 53.526141,
     "lng": -1.6255329
+   }
+  },
+  "spring-view-play-area-spring-view-hindley": {
+   "nearest": {
+    "id": "470fe792222c017b0f6b166f",
+    "name": "The BrickWorks",
+    "m": 2153,
+    "babyChange": false,
+    "accessible": true,
+    "free": false,
+    "lat": 53.541510254,
+    "lng": -2.635087967
+   },
+   "nearestBabyChange": {
+    "id": "f17b40de550f7495e1c27ea6",
+    "name": "Wigan North Western Train Station",
+    "m": 2212,
+    "babyChange": true,
+    "accessible": true,
+    "free": true,
+    "lat": 53.543451342,
+    "lng": -2.633130699
    }
   },
   "springate-field-langley-slough": {
@@ -547190,6 +547214,18 @@
     "lng": -0.015535355
    }
   },
+  "standish-library-playground-standish": {
+   "nearest": {
+    "id": "b1d81c9960035528d77004ad",
+    "name": "Public toilet",
+    "m": 1157,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 53.57798142,
+    "lng": -2.65027102
+   }
+  },
   "standlake-playground-standlake": {
    "nearest": {
     "id": "3da448a697cd96109718f8aa",
@@ -549419,6 +549455,18 @@
   },
   "stockland-playground-stockland-east-devon": {
    "nearest": null
+  },
+  "stockley-drive-play-area-shevington-vale-wigan": {
+   "nearest": {
+    "id": "4869299268e68ec09ed9e5ab",
+    "name": "Pumpkin Patch Toilet",
+    "m": 2999,
+    "babyChange": false,
+    "accessible": null,
+    "free": true,
+    "lat": 53.557069613,
+    "lng": -2.722006864
+   }
   },
   "stockley-recreation-ground-playground-west-drayton-greater-l": {
    "nearest": {
@@ -551733,7 +551781,7 @@
     "lng": -1.464298368
    }
   },
-  "stubshaw-park-playground-town-green-wigan": {
+  "stubshaw-cross-play-area-stubshaw-cross-ashton-in-makerfield": {
    "nearest": {
     "id": "4b83f0496ec568fadc8a3999",
     "name": "Princess Road Ashton",
@@ -560359,28 +560407,6 @@
     "lng": -2.489411831
    }
   },
-  "the-laburnum-playing-field-lowton-st-marys-lowton": {
-   "nearest": {
-    "id": "dd5f0a80d2fc6241d4068505",
-    "name": "Lidl",
-    "m": 2420,
-    "babyChange": null,
-    "accessible": true,
-    "free": true,
-    "lat": 53.47259437,
-    "lng": -2.597931325
-   },
-   "nearestBabyChange": {
-    "id": "a0b11c62e10e819f9266ea1c",
-    "name": "Pennington hall park",
-    "m": 2722,
-    "babyChange": true,
-    "accessible": false,
-    "free": false,
-    "lat": 53.486313616,
-    "lng": -2.526512777
-   }
-  },
   "the-lane-recreation-ground-playground-awsworth": {
    "nearest": {
     "id": "b5a47f1823f9d75e5f40c555",
@@ -564972,6 +564998,18 @@
     "free": false,
     "lat": 50.6998822,
     "lng": -1.2969806
+   }
+  },
+  "three-sisters-playground-stubshaw-cross-ashton-in-makerfield": {
+   "nearest": {
+    "id": "4b83f0496ec568fadc8a3999",
+    "name": "Princess Road Ashton",
+    "m": 1913,
+    "babyChange": null,
+    "accessible": false,
+    "free": false,
+    "lat": 53.487458245,
+    "lng": -2.635914087
    }
   },
   "threemiletown-park-playground-threemiletown-winchburgh": {
@@ -571268,6 +571306,28 @@
     "lng": -2.034960585
    }
   },
+  "union-street-play-area-westleigh-leigh": {
+   "nearest": {
+    "id": "ae09f947ee746600214b72c7",
+    "name": "Leigh Bus Station",
+    "m": 345,
+    "babyChange": null,
+    "accessible": true,
+    "free": false,
+    "lat": 53.495568945,
+    "lng": -2.518865018
+   },
+   "nearestBabyChange": {
+    "id": "a0b11c62e10e819f9266ea1c",
+    "name": "Pennington hall park",
+    "m": 1490,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 53.486313616,
+    "lng": -2.526512777
+   }
+  },
   "union-terrace-gardens-play-area-city-centre-aberdeen-city": {
    "nearest": {
     "id": "e4cf281f5a5c09538eedaf4b",
@@ -572109,6 +572169,18 @@
     "free": true,
     "lat": 51.6009834,
     "lng": -1.24941072
+   }
+  },
+  "upton-road-play-area-over-hulton-atherton": {
+   "nearest": {
+    "id": "7b9836bfbd79f237f30ce55b",
+    "name": "Flapper Fold Lane",
+    "m": 1160,
+    "babyChange": null,
+    "accessible": false,
+    "free": false,
+    "lat": 53.524192964,
+    "lng": -2.493113279
    }
   },
   "upton-rocks-park-playground-upton-rocks-widnes": {
@@ -573227,6 +573299,18 @@
     "free": true,
     "lat": 51.480774788,
     "lng": -0.128188133
+   }
+  },
+  "vauxhall-road-play-area-scholes-wigan": {
+   "nearest": {
+    "id": "03c357f32012531904d1224a",
+    "name": "Grand Arcade",
+    "m": 656,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 53.547234009,
+    "lng": -2.630034685
    }
   },
   "vauxhall-walk-playground-vauxhall-greater-london": {
@@ -576618,6 +576702,28 @@
     "lng": -3.548147958
    }
   },
+  "vulcan-road-play-area-marsh-green-wigan": {
+   "nearest": {
+    "id": "0abe4fcd72887c747a3618df",
+    "name": "KFC PEMBERTON",
+    "m": 1750,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 53.536877133,
+    "lng": -2.685320377
+   },
+   "nearestBabyChange": {
+    "id": "dc8bdd08dba6ed6308fcf40a",
+    "name": "Wigan Bus Station",
+    "m": 2313,
+    "babyChange": true,
+    "accessible": true,
+    "free": false,
+    "lat": 53.547153757,
+    "lng": -2.634404387
+   }
+  },
   "vulcan-road-playground-salthouse-barrow-in-furness": {
    "nearest": {
     "id": "8f9dc50003072a8083ddc45a",
@@ -578428,6 +578534,9 @@
     "lat": 52.564758536,
     "lng": -2.075141428
    }
+  },
+  "ward-street-play-area-hindley": {
+   "nearest": null
   },
   "wardle-avenue-play-area-barbridge": {
    "nearest": {
@@ -584552,6 +584661,9 @@
     "lng": -1.145721674
    }
   },
+  "westcroft-play-area-low-green": {
+   "nearest": null
+  },
   "westend-park-playground-langloan-coatbridge": {
    "nearest": {
     "id": "f7f73777024fff4c8aceb5b5",
@@ -585151,6 +585263,18 @@
     "free": true,
     "lat": 51.578916413,
     "lng": 0.496916771
+   }
+  },
+  "westlake-play-area-hindley-green-hindley": {
+   "nearest": {
+    "id": "4656a940ca1d9e9a1dee264a",
+    "name": "Westhoughton Town, Market Street",
+    "m": 2827,
+    "babyChange": false,
+    "accessible": false,
+    "free": false,
+    "lat": 53.549126834,
+    "lng": -2.524204612
    }
   },
   "westland-country-park-playground-colchester": {
@@ -587037,6 +587161,9 @@
     "lng": 1.099488437
    }
   },
+  "whiteacre-play-area-shevington-vale-wigan": {
+   "nearest": null
+  },
   "whitebushes-common-earlswood": {
    "nearest": {
     "id": "09f010d4a06a96dad6f460da",
@@ -587777,6 +587904,28 @@
     "free": true,
     "lat": 55.045537567,
     "lng": -1.44791519
+   }
+  },
+  "whitley-play-area-pennington-wharf-lowton": {
+   "nearest": {
+    "id": "8c57a14c1ef9ee3e8d8490b5",
+    "name": "Morrisons",
+    "m": 1451,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 53.489902591,
+    "lng": -2.5323659
+   },
+   "nearestBabyChange": {
+    "id": "a0b11c62e10e819f9266ea1c",
+    "name": "Pennington hall park",
+    "m": 1920,
+    "babyChange": true,
+    "accessible": false,
+    "free": false,
+    "lat": 53.486313616,
+    "lng": -2.526512777
    }
   },
   "whitley-rec-park-roselands-eastbourne": {
@@ -591876,6 +592025,18 @@
     "lng": -1.864693165
    }
   },
+  "winton-road-play-area-lane-head": {
+   "nearest": {
+    "id": "dd5f0a80d2fc6241d4068505",
+    "name": "Lidl",
+    "m": 2024,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 53.47259437,
+    "lng": -2.597931325
+   }
+  },
   "winwick-playground-winwick": {
    "nearest": {
     "id": "84954d6a6ba85ba2e27742f7",
@@ -593824,6 +593985,18 @@
     "lng": -0.2111187
    }
   },
+  "woodhurst-drive-play-area-standish": {
+   "nearest": {
+    "id": "b1d81c9960035528d77004ad",
+    "name": "Public toilet",
+    "m": 1612,
+    "babyChange": null,
+    "accessible": false,
+    "free": true,
+    "lat": 53.57798142,
+    "lng": -2.65027102
+   }
+  },
   "woodingdean-central-park-woodingdean": {
    "nearest": {
     "id": "2309907e3b85dd650ec28947",
@@ -594324,18 +594497,6 @@
     "free": false,
     "lat": 50.926677296,
     "lng": -1.389652491
-   }
-  },
-  "woodnook-park-playground-shevington-vale": {
-   "nearest": {
-    "id": "4869299268e68ec09ed9e5ab",
-    "name": "Pumpkin Patch Toilet",
-    "m": 2993,
-    "babyChange": false,
-    "accessible": null,
-    "free": true,
-    "lat": 53.557069613,
-    "lng": -2.722006864
    }
   },
   "woodpecker-close-play-area-new-langford-bicester": {
@@ -597258,6 +597419,18 @@
     "free": true,
     "lat": 54.8902638,
     "lng": -2.94771166
+   }
+  },
+  "yewdale-road-play-area-marus-bridge-ashton-in-makerfield": {
+   "nearest": {
+    "id": "2f4ba84d3992e0fd0d54d2f4",
+    "name": "B&M",
+    "m": 1574,
+    "babyChange": null,
+    "accessible": true,
+    "free": true,
+    "lat": 53.521712717,
+    "lng": -2.653309219
    }
   },
   "yieldshields-play-area-roadmeetings-yieldshields": {
