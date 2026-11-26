@@ -1,0 +1,78 @@
+# Quarterly re-check of listed playgrounds against their own official source pages, without Claude
+# (scripts/recheck-sources.mjs). Playgrounds whose page still names them, with nothing about closure, get today's
+# checked date in a pull request for the owner to merge. Pages that mention closure or rebuilding, playgrounds that
+# may have reopened, and ones whose links have all gone go into an issue labelled check-report.
+#   - 1st of January, April, July and October: membership playgrounds (National Trust, English Heritage and so on).
+#   - 15th of the same months: up to 1,250 playgrounds not checked for over a year, oldest first.
+# The separate "Quarterly playground check" (quarterly-check.yml, on the 10th) reads council lists, OpenStreetMap and
+# broken links. Run on demand from the Actions tab too.
+name: Quarterly re-check of playground pages
+on:
+  workflow_dispatch:
+    inputs:
+      scope:
+        description: 'membership, stale (not checked for a year) or all'
+        default: stale
+      limit:
+        description: 'Most stale playgrounds to re-check'
+        default: '1250'
+  schedule:
+    - cron: '51 5 1 1,4,7,10 *'
+    - cron: '23 6 15 1,4,7,10 *'
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+concurrency:
+  group: recheck
+  cancel-in-progress: false
+jobs:
+  recheck:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Re-check playground pages
+        id: run
+        run: |
+          scope="${{ inputs.scope }}"
+          if [ -z "$scope" ]; then
+            if [ "${{ github.event.schedule }}" = "51 5 1 1,4,7,10 *" ]; then scope=membership; else scope=stale; fi
+          fi
+          echo "scope=$scope" >> "$GITHUB_OUTPUT"
+          node scripts/recheck-sources.mjs --scope "$scope" --limit "${{ inputs.limit || '1250' }}"
+          cat reports/recheck.md >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: recheck
+          path: reports/
+      - name: Open a pull request with the new checked dates
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if [ -z "$(git status --porcelain -- src/content/playgrounds)" ]; then echo "No checked dates changed"; exit 0; fi
+          branch="recheck/$(date +%Y-%m-%d)-${{ steps.run.outputs.scope }}"
+          git config user.name "swing-by-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add src/content/playgrounds
+          git commit -m "Re-check playground pages: update checked dates [skip toilets]"
+          git push -u origin "$branch"
+          gh workflow run ci.yml --ref "$branch" || true
+          { sed -n '1,/^Nothing else was changed/p' reports/recheck.md; echo; echo "Only \`checked\` dates change here. The playgrounds to look at are in the check-report issue opened by the same run."; } > pr.md
+          gh pr create --base main --head "$branch" --title "Re-check playground pages (${{ steps.run.outputs.scope }}): update checked dates" --body-file pr.md \
+            || echo "::warning title=Re-check::Pushed $branch but couldn't open a pull request. Open it from the branch."
+      - name: Open an issue with what needs looking at
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          n=$(node -e "const r=require('./reports/recheck.json');console.log(r.closure.length+r.reopened.length+r.gone.length)")
+          if [ "$n" = "0" ]; then echo "Nothing to look at"; exit 0; fi
+          { cat reports/recheck.md; echo; echo "Full lists: the recheck artifact on [this run]($GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID)."; } > body.md
+          head -c 60000 body.md > issue.md
+          gh api "repos/$GITHUB_REPOSITORY/issues" -f title="Playground re-check (${{ steps.run.outputs.scope }}), $(date +%Y-%m-%d)" -F body=@issue.md -f "labels[]=check-report" --jq .html_url

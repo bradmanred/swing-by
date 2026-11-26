@@ -212,9 +212,26 @@ the district council's, add a sentence saying so to the note.
 When the batch is done, comment with what each council came to and close the issue. Monday's run opens the next
 batch, ranked afresh. No playgrounds change, so the "Update nearest toilets" workflow isn't needed.
 
+### Playground re-check (`scripts/recheck-sources.mjs`)
+
+The quarterly re-check (`.github/workflows/recheck.yml`: membership playgrounds on the 1st of January, April, July
+and October, and up to 1,250 playgrounds not checked for over a year on the 15th) re-reads each playground's official
+source pages. Playgrounds whose page still names them, with nothing about closure, already have a new `checked` date
+in the run's pull request: merge it. The issue lists the rest:
+
+- **Mention closure, refurbishment or rebuilding:** read the page. If it's closed for now or being rebuilt, say so in
+  the description (with any reopening date) and update `checked`. If it has gone for good, say so in the description
+  and leave the decision to remove it to the owner. If the words were about something else, just update `checked`.
+- **May have reopened:** the description says closed or rebuilding, but the page doesn't any more. Update the
+  description, equipment and `checked` from the page.
+- **Every official source link "not found":** look for the listing's new page (search the council or operator's
+  site) and replace the link. If there's no sign of it, note it in the description and leave it for the owner.
+- **Couldn't confirm:** usually pages that block robots or list play areas in a map. Nothing to do unless you're
+  re-checking that council anyway.
+
 ### Adding a new check
 
 A new workflow that reports problems for fixing should open its issue with the `check-report` label
 (`-f "labels[]=check-report"`), say in the issue body that nothing has been changed, and get a section here
-describing each kind of finding and how to fix it. Reports that already have their own scheduled task (the weekly
-tick-box review) don't use the label.
+describing each kind of finding and how to fix it. The weekly tick-box review doesn't use the label: it adds the tick boxes it can by itself and
+lists the rest in its own issue.

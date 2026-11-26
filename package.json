@@ -8,7 +8,7 @@
     "preview": "astro preview",
     "test": "npm run test:quick && node tests/a11y.mjs",
     "cms": "npx decap-server",
-    "test:quick": "node tests/packs.mjs && node tests/feeds.mjs && node tests/names.mjs && node tests/osm-details.mjs && node tests/school-grounds.mjs && node tests/readers.mjs && node tests/links.mjs && node tests/quarterly.mjs && node tests/positions.mjs && node tests/pins.mjs && node tests/dusk.mjs && node tests/ci-scope.mjs && node tests/duplicates.mjs && node tests/parishes.mjs && node tests/site.mjs && node tests/assets.mjs",
+    "test:quick": "node tests/packs.mjs && node tests/feeds.mjs && node tests/names.mjs && node tests/osm-details.mjs && node tests/school-grounds.mjs && node tests/readers.mjs && node tests/links.mjs && node tests/quarterly.mjs && node tests/recheck.mjs && node tests/tick-box.mjs && node tests/positions.mjs && node tests/pins.mjs && node tests/dusk.mjs && node tests/ci-scope.mjs && node tests/duplicates.mjs && node tests/parishes.mjs && node tests/site.mjs && node tests/assets.mjs",
     "test:a11y-full": "node tests/a11y-full.mjs"
   },
   "repository": {

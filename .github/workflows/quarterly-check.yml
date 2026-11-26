@@ -2,9 +2,9 @@
 # reads the council lists that have a feed in src/data/council-sources.json, checks playgrounds sourced from
 # OpenStreetMap are still mapped, checks every official source link still works, and lists playgrounds not checked
 # for over a year. It changes no files; it opens a "Quarterly playground check" issue with what it found, and the
-# full lists are in the run's "quarterly-check" artifact. The issue is labelled check-report, so the daily "Fix check
-# reports" Claude task works through it (see docs/fixing-check-reports.md). Runs on the 10th of January, April, July
-# and October, and on demand.
+# full lists are in the run's "quarterly-check" artifact. The issue is labelled check-report (see
+# docs/fixing-check-reports.md for how to deal with each finding). Runs on the 10th of January, April, July and
+# October, and on demand. Re-reading each playground's own pages is a separate workflow, recheck.yml.
 name: Quarterly playground check
 on:
   workflow_dispatch:
