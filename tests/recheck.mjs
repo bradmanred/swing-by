@@ -11,7 +11,9 @@ const list = flat(`<h1>Our play areas</h1><ul><li>Gadebridge Park: swings, slide
   ${'<li>Somewhere else entirely with lots of words to keep things apart from each other in this list.</li>'.repeat(12)}
   <li>Bennetts End play area is temporarily closed for refurbishment until spring.</li></ul>`);
 assert.deepEqual(assess(list, 'Gadebridge Park play area'), { named: true, closure: false }, 'closure elsewhere on the page and "closed at dusk" are ignored');
-assert.deepEqual(assess(list, "Bennett's End"), { named: true, closure: true }, 'closure near the name counts');
+const b = assess(list, "Bennett's End");
+assert.equal(b.closure, true, 'closure near the name counts');
+assert.match(b.said, /temporarily closed/, 'and the words are quoted for the report');
 assert.equal(assess(list, 'Warners End').named, false, "every distinctive word of a short name must appear");
 assert.equal(assess(list, 'Play area').named, false, 'a name with no distinctive words is never confirmed');
 assert.equal(assess(flat('<p>Rumsey Fields playground has been vandalised and removed.</p>'), 'Rumsey Fields').closure, true);

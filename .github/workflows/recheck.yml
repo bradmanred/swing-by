@@ -48,6 +48,7 @@ jobs:
           echo "scope=$scope" >> "$GITHUB_OUTPUT"
           node scripts/recheck-sources.mjs --scope "$scope" --limit "${{ inputs.limit || '500' }}"
           cat reports/recheck.md >> "$GITHUB_STEP_SUMMARY"
+          cat reports/recheck.md # TEMPORARY
       - uses: actions/upload-artifact@v4
         with:
           name: recheck

@@ -59,10 +59,16 @@ export function assess(page, name) {
   // Look at the text around each place the first distinctive word appears (a page often lists many playgrounds).
   const key = hits.sort((a, b) => b.length - a.length)[0];
   let closure = false;
+  let said = '';
   for (let i = page.indexOf(` ${key} `); i >= 0 && !closure; i = page.indexOf(` ${key} `, i + 1)) {
-    closure = CLOSURE.test(page.slice(Math.max(0, i - WINDOW), i + WINDOW));
+    const near = page.slice(Math.max(0, i - WINDOW), i + WINDOW);
+    const m = near.match(CLOSURE);
+    if (m) {
+      closure = true;
+      said = near.slice(Math.max(0, m.index - 60), m.index + m[0].length + 60).trim();
+    }
   }
-  return { named: true, closure };
+  return closure ? { named: true, closure, said } : { named: true, closure };
 }
 
 const UA = { 'User-Agent': 'SwingBy/1.0 (https://swing-by.co.uk; quarterly check of playground sources)' };
@@ -138,7 +144,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1]
         const named = looks.filter((x) => x.named);
         const saysClosed = /\b(?:closed|closure|refurbish|rebuil|replac|reopen|fenced off|vandal)/i.test(`${p.description ?? ''}`);
         const entry = { id: p.id, name: p.name, area: p.area, membership: p.membership ?? null, checked: p.checked ?? null, urls };
-        if (named.some((x) => x.closure)) res.closure.push({ ...entry, url: named.find((x) => x.closure).url });
+        if (named.some((x) => x.closure)) res.closure.push({ ...entry, url: named.find((x) => x.closure).url, said: named.find((x) => x.closure).said });
         else if (named.length && saysClosed) res.reopened.push({ ...entry, url: named[0].url });
         else if (named.length) {
           res.confirmed.push(entry);
@@ -167,7 +173,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1]
     '',
   );
   L.push('## Pages that mention closure, refurbishment or rebuilding near the playground', '');
-  L.push(...(res.closure.length ? res.closure.slice(0, MAX).map((x) => `- ${link(x)}: ${x.url}`) : ['None.']), ...more(res.closure.length), '');
+  L.push(...(res.closure.length ? res.closure.slice(0, MAX).map((x) => `- ${link(x)}: ${x.url} (\"…${x.said}…\")`) : ['None.']), ...more(res.closure.length), '');
   L.push('## Described as closed or being rebuilt, but the page no longer says so', '', 'They may have reopened: update the description (and equipment) from the page.', '');
   L.push(...(res.reopened.length ? res.reopened.slice(0, MAX).map((x) => `- ${link(x)}: ${x.url}`) : ['None.']), ...more(res.reopened.length), '');
   L.push('## Every official source link now "not found"', '', 'The listing may have moved or the playground gone: look for a new page.', '');
