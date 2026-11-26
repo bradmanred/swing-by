@@ -8,7 +8,8 @@
 //
 //   SITE=https://swing-by.co.uk MOD_TOKEN=… node scripts/other-equipment.mjs [--out report.md]
 //
-// Run weekly by .github/workflows/tick-box-review.yml, which posts the report to the "Weekly tick-box review" issue.
+// Run weekly by .github/workflows/tick-box-review.yml, which posts the report to the "Weekly tick-box review" issue
+// and then runs scripts/tick-box-apply.mjs to add the new tick boxes it can.
 // Without MOD_TOKEN it reports on playground descriptions only.
 //
 // Adding a tick box: give it a short code in src/data/labels.json (equipment, access or facilities), an icon in
@@ -18,7 +19,10 @@ import { join } from 'node:path';
 
 const SITE = process.env.SITE || 'https://swing-by.co.uk';
 const TOKEN = process.env.MOD_TOKEN;
-const OUT = process.argv.includes('--out') ? process.argv[process.argv.indexOf('--out') + 1] : null;
+const arg = (name) => (process.argv.includes(name) ? process.argv[process.argv.indexOf(name) + 1] : null);
+const OUT = arg('--out');
+// --json writes the suggestions for scripts/tick-box-apply.mjs, which adds the ones it can without a person.
+const JSON_OUT = arg('--json');
 // Suggest a new tick box once a typed-in thing has been seen at this many playgrounds by this many households,
 // or is mentioned in this many playground descriptions.
 const MIN_PARKS = 3;
@@ -82,6 +86,7 @@ const today = new Date().toISOString().slice(0, 10);
 lines.push(`Tick-box review, ${today}. Current tick boxes: ${Object.values(ticks).join(', ')}.`, '');
 
 const suggest = [];
+const found = []; // the same suggestions as data: { name, from: 'typed' | 'descriptions', count }
 lines.push('## What parents typed into "Something else?"', '');
 if (!typed) lines.push('_Not available this week (no moderator key, or the site could not be reached)._', '');
 else if (!typed.length) lines.push('_Nothing typed in yet._', '');
@@ -90,7 +95,10 @@ else {
   for (const o of typed.slice(0, 40)) {
     const desc = mentions([o.key]);
     const ok = o.parks.length >= MIN_PARKS && o.parents >= MIN_PARENTS;
-    if (ok) suggest.push(`**${o.text}**: seen at ${o.parks.length} playgrounds by ${o.parents} households, and in ${desc} descriptions`);
+    if (ok) {
+      suggest.push(`**${o.text}**: seen at ${o.parks.length} playgrounds by ${o.parents} households, and in ${desc} descriptions`);
+      found.push({ name: o.text, from: 'typed', count: o.parks.length, households: o.parents });
+    }
     lines.push(`| ${o.text.replace(/\|/g, '/')}${ok ? ' ⭐' : ''} | ${o.parks.length} | ${o.parents} | ${desc} |`);
   }
   lines.push('');
@@ -102,7 +110,10 @@ const rows = Object.entries(WATCH)
   .map(([name, words]) => ({ name, n: mentions(words), tick: isTick(name, words) }))
   .sort((a, b) => b.n - a.n);
 for (const r of rows) {
-  if (!r.tick && r.n >= MIN_DESCRIPTIONS) suggest.push(`**${r.name}**: mentioned in ${r.n} playground descriptions`);
+  if (!r.tick && r.n >= MIN_DESCRIPTIONS) {
+    suggest.push(`**${r.name}**: mentioned in ${r.n} playground descriptions`);
+    found.push({ name: r.name, from: 'descriptions', count: r.n });
+  }
   lines.push(`| ${r.name}${!r.tick && r.n >= MIN_DESCRIPTIONS ? ' ⭐' : ''} | ${r.n} | ${r.tick ? 'Yes' : 'No'} |`);
 }
 lines.push('');
@@ -121,4 +132,5 @@ const head = [
 ];
 const report = [...head, ...lines].join('\n');
 if (OUT) await writeFile(OUT, report);
+if (JSON_OUT) await writeFile(JSON_OUT, JSON.stringify(found, null, 1));
 console.log(report);

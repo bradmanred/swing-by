@@ -264,7 +264,7 @@ if (!SKIP.has('links')) {
   L.push(...(result.links.broken.length ? result.links.broken.slice(0, MAX).map((b) => `- ${b.url} (${b.status}), used by ${b.parks.slice(0, 5).map(link).join(', ')}${b.parks.length > 5 ? ` and ${b.parks.length - 5} more` : ''}`) : ['None.']), ...more(result.links.broken.length));
 }
 if (!SKIP.has('stale')) {
-  L.push('', '## 4. Not checked for over a year', '', 'Oldest first. The quarterly Claude task works through these; membership playgrounds have their own check.', '');
+  L.push('', '## 4. Not checked for over a year', '', 'Oldest first. The quarterly re-check (recheck.yml, on the 15th) re-reads these pages; membership playgrounds are re-checked on the 1st.', '');
   L.push(...(result.stale.length ? result.stale.slice(0, MAX).map((p) => `- ${link(p)}: ${p.checked ? `checked ${p.checked}` : 'never checked'}`) : ['None.']), ...more(result.stale.length));
 }
 if (!SKIP.has('names')) {

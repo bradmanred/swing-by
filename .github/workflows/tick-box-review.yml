@@ -1,30 +1,77 @@
-# Weekly tick-box review for the "What did you see?" picker on playground pages. Reads what parents typed into
-# "Something else?" and how often common equipment comes up in playground descriptions, then posts the report as a
-# comment on the "Weekly tick-box review" issue (opening it the first time). The weekly scheduled Claude task reads
-# that issue and adds new tick boxes when something comes up often enough.
-# Needs the MOD_TOKEN repository secret (the same moderator key as the Worker). Runs every Sunday and on demand.
+# Weekly tick-box review for the "What did you see?" picker on playground pages. Runs without Claude.
+# 1. Reads what parents typed into "Something else?" and how often common equipment comes up in playground
+#    descriptions (scripts/other-equipment.mjs).
+# 2. Adds up to 3 new tick boxes for equipment commonly mentioned in descriptions (scripts/tick-box-apply.mjs, which
+#    only adds things it has a code and icon ready for), builds and tests the site, and pushes to main, which deploys.
+#    If the build or tests fail, it opens a pull request instead.
+# 3. Posts the report and what was added (or left for the owner, such as anything parents typed in) as a comment on
+#    the "Weekly tick-box review" issue (opening it the first time).
+# Needs the MOD_TOKEN repository secret (the same moderator key as the Worker) for the typed-in part. Runs every
+# Sunday and on demand (tick "report only" to post the report without changing anything).
 name: Tick-box review
 on:
   workflow_dispatch:
+    inputs:
+      report_only:
+        description: 'Report only (add no tick boxes)'
+        type: boolean
+        default: false
   schedule:
     - cron: '41 5 * * 0'
 permissions:
-  contents: read
+  contents: write
   issues: write
+  pull-requests: write
+concurrency:
+  group: tick-box-review
+  cancel-in-progress: false
 jobs:
   review:
     runs-on: ubuntu-24.04
-    timeout-minutes: 10
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
         with:
           node-version: 22
+          cache: npm
       - name: Build the report
         env:
           SITE: https://swing-by.co.uk
           MOD_TOKEN: ${{ secrets.MOD_TOKEN }}
-        run: node scripts/other-equipment.mjs --out report.md
+        run: node scripts/other-equipment.mjs --out report.md --json suggestions.json
+      - name: Add new tick boxes
+        if: ${{ !inputs.report_only }}
+        run: node scripts/tick-box-apply.mjs suggestions.json --out applied.md
+      - name: Build and test
+        id: test
+        if: ${{ !inputs.report_only }}
+        run: |
+          if [ -z "$(git status --porcelain -- src public)" ]; then echo "changed=no" >> "$GITHUB_OUTPUT"; exit 0; fi
+          echo "changed=yes" >> "$GITHUB_OUTPUT"
+          npm ci
+          if npm run build && npm run test:quick; then echo "ok=yes" >> "$GITHUB_OUTPUT"; else echo "ok=no" >> "$GITHUB_OUTPUT"; fi
+      - name: Push to main (or open a pull request if the checks failed)
+        if: ${{ steps.test.outputs.changed == 'yes' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          git config user.name "swing-by-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/labels.json src/lib/parks.ts public/admin/config.yml
+          git commit -m "Add new tick boxes from the weekly review"
+          if [ "${{ steps.test.outputs.ok }}" = "yes" ] && [ "${{ github.ref }}" = "refs/heads/main" ] && git push origin HEAD:main; then
+            echo "Pushed to main; the site deploys from there." | tee -a applied.md
+            exit 0
+          fi
+          branch="tick-boxes/$(date +%Y-%m-%d)"
+          git push -u origin "HEAD:refs/heads/$branch"
+          gh workflow run ci.yml --ref "$branch" || true
+          { cat applied.md; echo; echo "The build or tests failed on the weekly run (or it wasn't run on main), so this wasn't pushed to main. Check the run log, fix, and merge."; } > pr.md
+          url=$(gh pr create --base main --head "$branch" --title "Add new tick boxes from the weekly review" --body-file pr.md || echo "")
+          echo "" >> applied.md
+          echo "Not pushed to main because the checks failed: see ${url:-the branch $branch}." >> applied.md
       - name: Post it to the review issue
         env:
           GH_TOKEN: ${{ github.token }}
@@ -34,6 +81,7 @@ jobs:
           n=$(gh api "repos/$GITHUB_REPOSITORY/issues?state=open&per_page=100" --jq ".[] | select(.title == \"$title\") | .number" | head -1)
           if [ -z "$n" ]; then
             n=$(gh api "repos/$GITHUB_REPOSITORY/issues" -f title="$title" \
-              -f body='Each week the tick-box review posts what parents typed into "Something else?" on playground pages, and how often common equipment comes up in playground descriptions. Things marked ⭐ are worth adding as tick boxes. See scripts/other-equipment.mjs.' --jq .number)
+              -f body='Each week the tick-box review posts what parents typed into "Something else?" on playground pages, and how often common equipment comes up in playground descriptions. Things marked ⭐ are worth adding as tick boxes; the workflow adds the ones it can by itself (see scripts/tick-box-apply.mjs).' --jq .number)
           fi
-          gh api "repos/$GITHUB_REPOSITORY/issues/$n/comments" -F body=@report.md --jq .html_url
+          { [ -f applied.md ] && { cat applied.md; echo; echo '---'; echo; }; cat report.md; } > comment.md
+          gh api "repos/$GITHUB_REPOSITORY/issues/$n/comments" -F body=@comment.md --jq .html_url
