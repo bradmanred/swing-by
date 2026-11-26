@@ -16,6 +16,7 @@ import { SCHOOL_PAGES, schoolGroundsPage } from './school-grounds.js';
 
 // Old playground address → the listing it was merged into. Add a line whenever two listings are merged.
 const MERGED = {
+  'pennington-flash-county-park-playground-pennington-leigh': 'pennington-flash-playground-lowton-common-lowton',
   'grimshaw-park-stubshaw-cross-wigan': 'abram-labour-club-play-area-abram',
   'playground-off-langtree-lane-standish-wigan': 'langtree-lane-play-area-wigan',
   'playground-off-highfield-grange-avenue-marus-bridge-wigan': 'andover-crescent-play-space-winstanley-wigan',

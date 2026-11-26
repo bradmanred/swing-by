@@ -1,9 +1,9 @@
 {
   "name": "Pennington Flash Playground",
   "region": "north-west",
-  "area": "Lowton Common, Lowton",
-  "lat": 53.48719,
-  "lng": -2.54933,
+  "area": "Pennington, Leigh",
+  "lat": 53.48799,
+  "lng": -2.53978,
   "ages": [],
   "equipment": [],
   "access": [],
@@ -16,9 +16,13 @@
     {
       "label": "Wigan Council: Pennington Flash Playground",
       "url": "https://www.wigan.gov.uk/Resident/Leisure/Parks/Childrens-play-area.aspx"
+    },
+    {
+      "label": "OpenStreetMap: playground",
+      "url": "https://www.openstreetmap.org/way/952991625"
     }
   ],
   "checked": "2026-11-26",
-  "notConfirmed": "Exact position (approximate: the nearest mapped play area to the street the council names), age ranges, play equipment, opening hours, toilets and parking.",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
   "photo": null
 }
