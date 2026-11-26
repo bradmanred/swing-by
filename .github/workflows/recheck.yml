@@ -3,7 +3,7 @@
 # checked date in a pull request for the owner to merge. Pages that mention closure or rebuilding, playgrounds that
 # may have reopened, and ones whose links have all gone go into an issue labelled check-report.
 #   - 1st of January, April, July and October: membership playgrounds (National Trust, English Heritage and so on).
-#   - 15th of the same months: up to 500 playgrounds not checked for over a year, oldest first.
+#   - 15th of the same months: up to 1,250 playgrounds not checked for over a year, oldest first.
 # The separate "Quarterly playground check" (quarterly-check.yml, on the 10th) reads council lists, OpenStreetMap and
 # broken links. Run on demand from the Actions tab too.
 name: Quarterly re-check of playground pages
@@ -15,7 +15,7 @@ on:
         default: stale
       limit:
         description: 'Most stale playgrounds to re-check'
-        default: '500'
+        default: '1250'
   schedule:
     - cron: '51 5 1 1,4,7,10 *'
     - cron: '23 6 15 1,4,7,10 *'
@@ -29,7 +29,7 @@ concurrency:
 jobs:
   recheck:
     runs-on: ubuntu-24.04
-    timeout-minutes: 120
+    timeout-minutes: 240
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
@@ -43,7 +43,7 @@ jobs:
             if [ "${{ github.event.schedule }}" = "51 5 1 1,4,7,10 *" ]; then scope=membership; else scope=stale; fi
           fi
           echo "scope=$scope" >> "$GITHUB_OUTPUT"
-          node scripts/recheck-sources.mjs --scope "$scope" --limit "${{ inputs.limit || '500' }}"
+          node scripts/recheck-sources.mjs --scope "$scope" --limit "${{ inputs.limit || '1250' }}"
           cat reports/recheck.md >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@v4
         with:

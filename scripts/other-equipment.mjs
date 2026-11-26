@@ -56,6 +56,11 @@ const WATCH = {
   'Teen shelter': ['teen shelter', 'youth shelter'],
 };
 
+// Also count everything in the tick-box catalogue, so items there are suggested (and added by
+// scripts/tick-box-apply.mjs) once they're common. Covered items count towards their existing tick box's words.
+const catalogue = JSON.parse(await readFile('src/data/tick-box-catalogue.json', 'utf8')).items;
+for (const k of catalogue.filter((k) => k.group)) WATCH[k.name] = [...new Set([...(WATCH[k.name] ?? []), ...k.words])];
+
 const labels = JSON.parse(await readFile('src/data/labels.json', 'utf8'));
 const ticks = { ...labels.equipment, ...labels.access, ...labels.facilities };
 const tickNames = Object.values(ticks).map((n) => n.toLowerCase());

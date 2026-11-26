@@ -215,7 +215,7 @@ batch, ranked afresh. No playgrounds change, so the "Update nearest toilets" wor
 ### Playground re-check (`scripts/recheck-sources.mjs`)
 
 The quarterly re-check (`.github/workflows/recheck.yml`: membership playgrounds on the 1st of January, April, July
-and October, and up to 500 playgrounds not checked for over a year on the 15th) re-reads each playground's official
+and October, and up to 1,250 playgrounds not checked for over a year on the 15th) re-reads each playground's official
 source pages. Playgrounds whose page still names them, with nothing about closure, already have a new `checked` date
 in the run's pull request: merge it. The issue lists the rest:
 

@@ -1,10 +1,11 @@
 // Adds new tick boxes to the "What did you see?" picker without a person or Claude, from the suggestions the weekly
 // tick-box review makes (scripts/other-equipment.mjs --json suggestions.json).
 //
-// Only equipment that is commonly mentioned in playground descriptions is added automatically, and only things listed
-// in KNOWN below, which already has a short code, a UK-English name and an icon for each. Things parents typed into
-// "Something else?" are never added automatically (they need a person to judge them: duplicates, rude or personal
-// text, things that aren't equipment); they're listed in the report for the owner instead. At most 3 a week.
+// Only things in the tick-box catalogue (src/data/tick-box-catalogue.json), which has a short code, a UK-English name
+// and an icon ready for each, are added automatically: when they're commonly mentioned in playground descriptions, or
+// when what parents typed into "Something else?" matches one of a catalogue item's words. Anything else parents typed
+// is never added automatically (it needs a person to judge it: duplicates, rude or personal text, things that aren't
+// equipment); it's listed in the report for the owner instead. At most 3 a week.
 //
 // Each new tick box gets a code and name in src/data/labels.json, an icon in ICON in src/lib/parks.ts and an option in
 // public/admin/config.yml (the picker sorts itself). Toilets and baby change are never added: those only come from
@@ -19,22 +20,13 @@ import { pathToFileURL } from 'node:url';
 
 const MAX_PER_WEEK = 3;
 
-// Equipment the description count (WATCH in scripts/other-equipment.mjs) can suggest, ready to become a tick box.
-// covered: an existing tick box already means the same thing, so it's never added.
-export const KNOWN = {
-  'Tunnel': { group: 'equipment', code: 'tun', label: 'Tunnel', icon: '🕳️' },
-  'Trim trail': { group: 'equipment', code: 'trm', label: 'Trim trail', icon: '🏃' },
-  'Musical play': { group: 'equipment', code: 'mus', label: 'Musical play', icon: '🎵' },
-  'Climbing wall': { group: 'equipment', code: 'cw', label: 'Climbing wall', icon: '🪨' },
-  'Rocking horse': { group: 'equipment', code: 'rh', label: 'Rocking horse', icon: '🏇' },
-  'Tyre swing': { group: 'equipment', code: 'tyr', label: 'Tyre swing', icon: '🛞' },
-  'Embankment slide': { group: 'equipment', code: 'es', label: 'Embankment slide', icon: '⛰️' },
-  'Wobbly bridge': { group: 'equipment', code: 'wb', label: 'Wobbly bridge', icon: '🌉' },
-  'Play house': { group: 'equipment', code: 'ph', label: 'Play house', icon: '🏠' },
-  'Pirate ship': { group: 'equipment', code: 'ps', label: 'Pirate ship', icon: '⛵' },
-  'Sensory panels': { covered: 'Sensory play' },
-  'Cableway': { covered: 'Zip wire' },
-};
+// The catalogue of tick boxes ready to add: src/data/tick-box-catalogue.json. Each item has a code, name, icon and the
+// words that count as it (in descriptions and in what parents type). Items with "covered" mean the same as an existing
+// tick box and are never added.
+export const loadCatalogue = async (root = '.') => JSON.parse(await readFile(join(root, 'src/data/tick-box-catalogue.json'), 'utf8')).items;
+const norm = (s) => String(s ?? '').toLowerCase().replace(/[’']/g, '').replace(/[^a-z0-9]+/g, ' ').trim().replace(/s$/, '');
+// The catalogue item a suggestion is, by its name or one of the item's words ("spiders web" is the climbing net).
+export const findItem = (catalogue, name) => catalogue.find((k) => norm(k.name) === norm(name) || (k.words ?? []).some((w) => norm(w) === norm(name)));
 
 // Adds one tick box to the three files' text. Pure, so tests can run it on made-up copies.
 export function addTick({ labels, icons, config }, t) {
@@ -68,7 +60,7 @@ export function addTick({ labels, icons, config }, t) {
 }
 
 // Which suggestions can be added now, which are left for the owner, and why.
-export function plan(suggestions, labelsText) {
+export function plan(suggestions, labelsText, catalogue) {
   const l = JSON.parse(labelsText);
   const codes = new Set(Object.values(l).flatMap((g) => Object.keys(g)));
   const names = new Set(Object.values(l).flatMap((g) => Object.values(g)).map((n) => String(n).toLowerCase()));
@@ -76,16 +68,14 @@ export function plan(suggestions, labelsText) {
   const owner = [];
   for (const s of [...suggestions].sort((a, b) => b.count - a.count)) {
     if (/toilet|baby ?chang/i.test(s.name)) continue;
-    if (s.from === 'typed') {
-      owner.push({ ...s, why: 'typed in by parents, so a person should decide' });
-      continue;
-    }
-    const k = KNOWN[s.name];
     if (names.has(s.name.toLowerCase())) continue; // already a tick box
-    if (!k) owner.push({ ...s, why: 'no code or icon ready for it in scripts/tick-box-apply.mjs' });
+    const k = findItem(catalogue, s.name);
+    if (!k && s.from === 'typed') owner.push({ ...s, why: "typed in by parents and not in the tick-box catalogue, so a person should decide" });
+    else if (!k) owner.push({ ...s, why: 'not in src/data/tick-box-catalogue.json yet' });
     else if (k.covered) continue;
     else if (codes.has(k.code) || names.has(k.label.toLowerCase())) continue;
     else if (add.length >= MAX_PER_WEEK) owner.push({ ...s, why: `waiting: at most ${MAX_PER_WEEK} new tick boxes a week` });
+    else if (add.some((t) => t.code === k.code)) continue; // the same item suggested twice (typed in and in descriptions)
     else add.push({ ...s, ...k });
   }
   return { add, owner };
@@ -99,14 +89,14 @@ if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1]
   const suggestions = file ? JSON.parse(await readFile(file, 'utf8')) : [];
   const paths = { labels: join(ROOT, 'src/data/labels.json'), icons: join(ROOT, 'src/lib/parks.ts'), config: join(ROOT, 'public/admin/config.yml') };
   let text = { labels: await readFile(paths.labels, 'utf8'), icons: await readFile(paths.icons, 'utf8'), config: await readFile(paths.config, 'utf8') };
-  const { add, owner } = plan(suggestions, text.labels);
+  const { add, owner } = plan(suggestions, text.labels, await loadCatalogue(ROOT));
   for (const t of add) text = addTick(text, t);
   if (add.length) for (const k of Object.keys(paths)) await writeFile(paths[k], text[k]);
 
   const L = [];
-  if (add.length) L.push('**Added as new tick boxes this week** (the site rebuilds from main):', ...add.map((t) => `- ${t.icon} ${t.label} (\`${t.code}\`): mentioned in ${t.count} playground descriptions`), '');
+  if (add.length) L.push('**Added as new tick boxes this week** (the site rebuilds from main):', ...add.map((t) => `- ${t.icon} ${t.label} (\`${t.code}\`): ${t.from === 'typed' ? `typed in as "${t.name}" at ${t.count} playgrounds by ${t.households} households` : `mentioned in ${t.count} playground descriptions`}`), '');
   else L.push('Reviewed: no new tick boxes this week.', '');
-  if (owner.length) L.push('**For the owner to decide** (not added automatically):', ...owner.map((s) => `- ${s.name}: ${s.from === 'typed' ? `seen at ${s.count} playgrounds by ${s.households} households` : `in ${s.count} descriptions`} (${s.why})`), '', 'To add one by hand: a code and name in src/data/labels.json, an icon in ICON in src/lib/parks.ts and an option in public/admin/config.yml. Or add it to KNOWN in scripts/tick-box-apply.mjs and the next weekly run adds it.', '');
+  if (owner.length) L.push('**For the owner to decide** (not added automatically):', ...owner.map((s) => `- ${s.name}: ${s.from === 'typed' ? `seen at ${s.count} playgrounds by ${s.households} households` : `in ${s.count} descriptions`} (${s.why})`), '', 'To add one by hand: a code and name in src/data/labels.json, an icon in ICON in src/lib/parks.ts and an option in public/admin/config.yml. Or add it to src/data/tick-box-catalogue.json and the next weekly run adds it.', '');
   const report = L.join('\n');
   if (OUT) await writeFile(OUT, report);
   console.log(report);

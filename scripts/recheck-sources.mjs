@@ -15,10 +15,10 @@
 // Scope:
 //   --scope membership   every playground with a membership field (National Trust, English Heritage and so on)
 //   --scope stale        playgrounds with an official source whose checked date is over a year old (or missing),
-//                        oldest first, up to --limit (default 500), membership ones left out
+//                        oldest first, up to --limit (default 1250), membership ones left out
 //   --scope all          both
 //
-//   node scripts/recheck-sources.mjs --scope stale [--limit 500] [--dir src/content/playgrounds] [--out reports]
+//   node scripts/recheck-sources.mjs --scope stale [--limit 1250] [--dir src/content/playgrounds] [--out reports]
 //
 // Run by .github/workflows/recheck.yml, which opens a pull request with the new checked dates and posts the rest as
 // a check-report issue.
@@ -109,7 +109,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1]
   const DIR = arg('--dir', 'src/content/playgrounds');
   const OUT = arg('--out', 'reports');
   const SCOPE = arg('--scope', 'stale');
-  const LIMIT = Number(arg('--limit', 500));
+  const LIMIT = Number(arg('--limit', 1250));
   const STALE_DAYS = Number(arg('--stale-days', 365));
   const today = new Date().toISOString().slice(0, 10);
   const cutoff = new Date(Date.now() - STALE_DAYS * 864e5).toISOString().slice(0, 10);
