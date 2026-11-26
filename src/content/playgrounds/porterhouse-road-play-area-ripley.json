@@ -4,21 +4,34 @@
   "area": "Ripley",
   "lat": 53.04869,
   "lng": -1.39305,
-  "ages": [],
-  "equipment": [],
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "bb",
+    "spr",
+    "mg"
+  ],
   "access": [],
   "facilities": [],
-  "opens": "",
-  "description": "Play area owned and maintained by Ripley Town Council, inspected weekly.",
+  "opens": "24h",
+  "description": "Ripley Town Council's play area on Porterhouse Road, for ages 2 to teens. It has a junior multi-unit, step logs, a wobble bridge, a balance beam and a balance rope trail, plus a spring horse and a four-way springer. For older children there's a basketball hoop and two five-a-side goals. There are benches and litter bins, and it's open all day, every day.",
   "nearby": [],
   "operator": "Ripley Town Council",
   "sources": [
+    {
+      "label": "Ripley Town Council (by email, 26 November 2026)",
+      "url": "https://www.ripleytowncouncil.gov.uk/"
+    },
     {
       "label": "Ripley Town Council: play areas",
       "url": "https://www.ripleytowncouncil.gov.uk/about-us/play-areas/"
     }
   ],
-  "checked": "2026-10-23",
-  "notConfirmed": "Exact position (approximate, from the street or place name), age ranges, play equipment, opening hours, toilets and parking.",
+  "checked": "2026-11-26",
+  "notConfirmed": "Exact position (approximate, from the street or place name), toilets and parking.",
   "photo": null
 }
