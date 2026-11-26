@@ -16,8 +16,6 @@ on:
       limit:
         description: 'Most stale playgrounds to re-check'
         default: '500'
-  push: # TEMPORARY test trigger, removed before merging
-    branches: [claude/independent-checks]
   schedule:
     - cron: '51 5 1 1,4,7,10 *'
     - cron: '23 6 15 1,4,7,10 *'
@@ -41,20 +39,17 @@ jobs:
         id: run
         run: |
           scope="${{ inputs.scope }}"
-          if [ "${{ github.event_name }}" = "push" ]; then scope=all; fi
           if [ -z "$scope" ]; then
             if [ "${{ github.event.schedule }}" = "51 5 1 1,4,7,10 *" ]; then scope=membership; else scope=stale; fi
           fi
           echo "scope=$scope" >> "$GITHUB_OUTPUT"
           node scripts/recheck-sources.mjs --scope "$scope" --limit "${{ inputs.limit || '500' }}"
           cat reports/recheck.md >> "$GITHUB_STEP_SUMMARY"
-          cat reports/recheck.md # TEMPORARY
       - uses: actions/upload-artifact@v4
         with:
           name: recheck
           path: reports/
       - name: Open a pull request with the new checked dates
-        if: github.event_name != 'push'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -72,7 +67,6 @@ jobs:
           gh pr create --base main --head "$branch" --title "Re-check playground pages (${{ steps.run.outputs.scope }}): update checked dates" --body-file pr.md \
             || echo "::warning title=Re-check::Pushed $branch but couldn't open a pull request. Open it from the branch."
       - name: Open an issue with what needs looking at
-        if: github.event_name != 'push'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
