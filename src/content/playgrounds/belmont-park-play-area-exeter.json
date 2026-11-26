@@ -5,8 +5,13 @@
   "lat": 50.72829,
   "lng": -3.51643,
   "ages": [],
-  "equipment": [],
-  "access": [],
+  "equipment": [
+    "gym",
+    "mg"
+  ],
+  "access": [
+    "sen"
+  ],
   "facilities": [],
   "opens": "",
   "description": "A children's play area at Belmont Park, listed by Exeter City Council. The site also has: Basketball Half-Court, Belmont Bowling Club, Newton Community Hut, Outdoor Gym, Award-winning Sensory Garden.",

@@ -1,7 +1,9 @@
 {
   "region": "london",
   "ages": [],
-  "equipment": [],
+  "equipment": [
+    "gym"
+  ],
   "access": [],
   "facilities": [],
   "opens": "",

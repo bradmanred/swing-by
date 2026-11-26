@@ -5,7 +5,10 @@
   "lat": 51.32276,
   "lng": -0.19795,
   "ages": [],
-  "equipment": [],
+  "equipment": [
+    "gym",
+    "mg"
+  ],
   "access": [],
   "facilities": [],
   "opens": "",

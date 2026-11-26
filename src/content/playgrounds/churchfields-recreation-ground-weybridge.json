@@ -5,7 +5,11 @@
   "lat": 51.37086,
   "lng": -0.45843,
   "ages": [],
-  "equipment": [],
+  "equipment": [
+    "wp",
+    "mg",
+    "tt"
+  ],
   "access": [],
   "facilities": [],
   "opens": "",

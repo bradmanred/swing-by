@@ -5,7 +5,12 @@
   "lat": 53.30586,
   "lng": -1.36252,
   "ages": [],
-  "equipment": [],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "spr"
+  ],
   "access": [],
   "facilities": [],
   "opens": "",
