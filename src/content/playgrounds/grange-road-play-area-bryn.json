@@ -1,0 +1,28 @@
+{
+  "name": "Grange Road Play Area",
+  "region": "north-west",
+  "area": "Bryn",
+  "lat": 53.49956,
+  "lng": -2.65385,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "On Wigan Council's list of equipped play areas (Bryn).",
+  "nearby": [],
+  "operator": "Wigan Council",
+  "sources": [
+    {
+      "label": "Wigan Council: Grange Road Play Area",
+      "url": "https://www.wigan.gov.uk/Resident/Leisure/Parks/Childrens-play-area.aspx"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1084289774"
+    }
+  ],
+  "checked": "2026-11-26",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

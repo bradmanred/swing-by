@@ -1,0 +1,28 @@
+{
+  "name": "Parklands Drive Play Area",
+  "region": "north-west",
+  "area": "Aspull Moor",
+  "lat": 53.57195,
+  "lng": -2.587,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "On Wigan Council's list of equipped play areas (Aspull).",
+  "nearby": [],
+  "operator": "Wigan Council",
+  "sources": [
+    {
+      "label": "Wigan Council: Parklands Drive Play Area",
+      "url": "https://www.wigan.gov.uk/Resident/Leisure/Parks/Childrens-play-area.aspx"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/469420455"
+    }
+  ],
+  "checked": "2026-11-26",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

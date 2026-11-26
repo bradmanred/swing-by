@@ -1,0 +1,28 @@
+{
+  "name": "Green Avenue Play Area",
+  "region": "north-west",
+  "area": "Blackmoor",
+  "lat": 53.49312,
+  "lng": -2.46664,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "On Wigan Council's list of equipped play areas.",
+  "nearby": [],
+  "operator": "Wigan Council",
+  "sources": [
+    {
+      "label": "Wigan Council: Green Avenue Play Area",
+      "url": "https://www.wigan.gov.uk/Resident/Leisure/Parks/Childrens-play-area.aspx"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1070048408"
+    }
+  ],
+  "checked": "2026-11-26",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
