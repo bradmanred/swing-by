@@ -9,9 +9,11 @@
     "sw",
     "sl",
     "cl",
-    "rb",
     "ad",
-    "bs"
+    "rb",
+    "bs",
+    "bk",
+    "spn"
   ],
   "access": [
     "inc"

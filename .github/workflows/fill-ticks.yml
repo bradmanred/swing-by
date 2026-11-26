@@ -1,0 +1,39 @@
+# Fills in tick boxes from playground descriptions (scripts/fill-ticks.mjs), without Claude, so playgrounds added in
+# bulk show up when families use the home page filters ("What do they love?"). Only adds equipment the description
+# clearly mentions (plus inclusive and sensory play), never facilities such as toilets, and never removes anything.
+# Pushes straight to main, which deploys. Runs every Monday, after the weekend's imports have been merged, and on demand.
+# OpenStreetMap-only playgrounds get their mapped equipment from the "Tidy OpenStreetMap listings" job instead.
+name: Fill tick boxes from descriptions
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '53 6 * * 1'
+permissions:
+  contents: write
+concurrency:
+  group: coverage # changes the same files as the coverage job
+  cancel-in-progress: false
+jobs:
+  fill:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Fill tick boxes
+        run: |
+          node scripts/fill-ticks.mjs
+          cat reports/fill-ticks.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Push to main
+        if: github.ref == 'refs/heads/main'
+        run: |
+          set -euo pipefail
+          if [ -z "$(git status --porcelain -- src/content/playgrounds)" ]; then echo "Nothing to fill"; exit 0; fi
+          node tests/fill-ticks.mjs
+          git config user.name "swing-by-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/content/playgrounds
+          git commit -m "Fill tick boxes from playground descriptions [skip toilets]" -m "$(cat reports/fill-ticks.md)"
+          git push origin HEAD:main

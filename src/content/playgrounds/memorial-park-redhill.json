@@ -5,8 +5,12 @@
   "lat": 51.24374,
   "lng": -0.16644,
   "ages": [],
-  "equipment": [],
-  "access": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [
+    "sen"
+  ],
   "facilities": [
     "wc"
   ],

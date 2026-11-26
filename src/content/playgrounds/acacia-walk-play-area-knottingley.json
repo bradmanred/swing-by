@@ -5,7 +5,13 @@
   "lat": 53.70382,
   "lng": -1.26102,
   "ages": [],
-  "equipment": [],
+  "equipment": [
+    "sw",
+    "cl",
+    "rb",
+    "ss",
+    "spr"
+  ],
   "access": [
     "inc"
   ],

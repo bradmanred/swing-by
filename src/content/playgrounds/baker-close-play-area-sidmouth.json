@@ -5,7 +5,10 @@
   "lat": 50.70003,
   "lng": -3.24313,
   "ages": [],
-  "equipment": [],
+  "equipment": [
+    "rb",
+    "tp"
+  ],
   "access": [
     "inc"
   ],

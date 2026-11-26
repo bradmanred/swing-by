@@ -5,8 +5,15 @@
   "lat": 52.88174,
   "lng": -1.44932,
   "ages": [],
-  "equipment": [],
-  "access": [],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "rb"
+  ],
+  "access": [
+    "inc"
+  ],
   "facilities": [],
   "opens": "",
   "description": "Inclusive play area refurbished in 2026, with swings including an inclusive seat, climbing structures with slides, a wheelchair-accessible roundabout and play panels, as Derby City Council describes it.",

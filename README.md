@@ -127,6 +127,10 @@ Early playgrounds were pinned by hand, from a postcode or from a street name, be
 
 Run it from the Actions tab (Check pin positions > Run workflow), with a region such as `derbyshire` to start small. Leave "Move the clear ones" unticked to just read the report; tick it to move the "move" pins, refresh the nearest toilets and open a pull request. Look at a few moved pins on the map before merging. Pins with several possible matches are never moved automatically. Moved pins say "taken from OpenStreetMap" afterwards, so each is only checked once. `tests/positions.mjs` tests the script on made-up data, and runs with `npm test`.
 
+## Filling in tick boxes
+
+Most playgrounds added in bulk have no tick boxes, so they don't show up when families use the home page filters ("What do they love?"), which rank themselves by how many playgrounds have each one. Every Monday the **Fill tick boxes from descriptions** workflow (`.github/workflows/fill-ticks.yml`, `scripts/fill-ticks.mjs`) ticks the equipment each description clearly mentions (swings, slides, a MUGA and so on, plus inclusive and sensory play) and pushes to main. It never removes a tick, never ticks toilets, baby change or other facilities, and skips sentences that say something is missing, closed or removed. OpenStreetMap-only playgrounds get their mapped equipment from **Tidy OpenStreetMap listings** (`.github/workflows/osm-tidy.yml`), which now runs on the 4th of each month, after the monthly snapshot, and opens a pull request. `tests/fill-ticks.mjs` tests the word matching.
+
 ## Quarterly check for changes
 
 Four times a year (the 10th of January, April, July and October) the **Quarterly playground check** workflow (`.github/workflows/quarterly-check.yml`, `scripts/quarterly-check.mjs`) looks for changes to playgrounds we already list, without needing Claude. It changes no files. It opens a "Quarterly playground check" issue listing:

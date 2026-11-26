@@ -5,7 +5,9 @@
   "lat": 50.84128,
   "lng": -0.21265,
   "ages": [],
-  "equipment": [],
+  "equipment": [
+    "gym"
+  ],
   "access": [],
   "facilities": [
     "wc",

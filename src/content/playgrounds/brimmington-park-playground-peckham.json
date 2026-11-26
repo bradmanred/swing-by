@@ -1,7 +1,10 @@
 {
   "region": "london",
   "ages": [],
-  "equipment": [],
+  "equipment": [
+    "gym",
+    "mg"
+  ],
   "access": [],
   "facilities": [],
   "opens": "24h",

@@ -1,8 +1,8 @@
 # Tidies playgrounds already listed from OpenStreetMap alone (scripts/osm-tidy.mjs): renames made-up names
 # ("Playground off Elm Road") after the park they're in, fills in equipment, ages and step-free access mapped on
 # OpenStreetMap, and lists ones inside school, pub, hotel or holiday park grounds for a person to check. Opens one pull
-# request for you to review. On demand only: run it after a monthly OpenStreetMap snapshot made with park and
-# equipment details (from December 2026), a region at a time if the pull request would be too big to review.
+# request for you to review. Runs on the 4th of each month, after the monthly OpenStreetMap snapshot (the 2nd), and on
+# demand (a region at a time if the pull request would be too big to review).
 name: Tidy OpenStreetMap listings
 on:
   workflow_dispatch:
@@ -17,6 +17,8 @@ on:
         description: 'Report only (no pull request)'
         type: boolean
         default: false
+  schedule:
+    - cron: '29 5 4 * *'
 permissions:
   contents: write
   pull-requests: write
