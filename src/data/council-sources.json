@@ -2091,7 +2091,7 @@
         "https://www.llanellitowncouncil.gov.uk/index.php?id=63",
         "https://www.llanelli-rural.gov.uk/childrens-play-areas"
       ],
-      "note": "Checked 4 November 2026: the county council publishes no list of play areas, and many have moved to town and community councils. Llanelli Town Council's eight parks with play areas are in src/data/council-lists/llanelli-town.csv; Llanelli Rural Council and the others publish no lists. Other play areas come from OpenStreetMap.",
+      "note": "Checked 4 November 2026: the county council publishes no list of play areas, and many have moved to town and community councils. Llanelli Town Council's eight parks with play areas are in src/data/council-lists/llanelli-town.csv; Llanelli Rural Council's list has its own entry (26 November 2026); the others publish no lists. Other play areas come from OpenStreetMap.",
       "feed": {
         "type": "list",
         "file": "src/data/council-lists/llanelli-town.csv",
@@ -7795,6 +7795,216 @@
         "near": {
           "lat": 53.78,
           "lng": -1.07,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "Northumberland",
+      "parish": "Blyth",
+      "council": "Blyth Town Council",
+      "sources": [
+        "https://www.blythtowncouncil.gov.uk/playareas"
+      ],
+      "note": "Play areas page lists the 18 play areas the town council runs (Axwell Drive, Cottingwood Green, South Beach, North Farm Adventure Trail and others), by street, with no postcodes; skate parks, MUGAs and the unfinished Isabella Play Space left out. 26 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/blyth-town.csv",
+        "page": "https://www.blythtowncouncil.gov.uk/playareas",
+        "near": {
+          "lat": 55.127,
+          "lng": -1.51,
+          "km": 4
+        }
+      }
+    },
+    {
+      "district": "Torridge",
+      "parish": "Bideford",
+      "council": "Bideford Town Council",
+      "sources": [
+        "https://www.bideford-tc.gov.uk/your-community/town-amenities/",
+        "https://torridge.gov.uk/victoriapark",
+        "https://www.torridge.gov.uk/article/22492/Torridge-Play-Area-Strategy"
+      ],
+      "note": "The town council runs no play areas (its amenities are Ford Woodland, the library, a recycling centre, allotments and the pannier market). Bideford's play areas, including Victoria Park, are Torridge District Council's; its Play Area Strategy page names 12 in Bideford, without addresses. 26 November 2026."
+    },
+    {
+      "district": "East Devon",
+      "parish": "Exmouth",
+      "council": "Exmouth Town Council",
+      "sources": [
+        "https://exmouth.gov.uk/?p=25",
+        "https://azure.eastdevon.gov.uk/parks-gardens-and-recreation/parks-gardens-green-spaces/list-of-east-devons-main-green-spaces/exmouth/"
+      ],
+      "note": "The town council runs halls, allotments, arts and tourism but no play areas; its site says Exmouth's open spaces (Phear Park, Manor Gardens, Imperial Recreation Ground and others) belong to East Devon District Council, which runs the play areas. 26 November 2026."
+    },
+    {
+      "district": "Welwyn Hatfield",
+      "parish": "Hatfield",
+      "council": "Hatfield Town Council",
+      "sources": [
+        "https://hatfield-herts.gov.uk/estates/",
+        "https://hatfield-herts.gov.uk/facilities/?filter=play-areas"
+      ],
+      "note": "The town council looks after 37 sites. Its facilities list names 20 play areas with postcodes, including Lemsford and Newgate Street; outdoor gyms and open spaces without play equipment left out. Welwyn Hatfield Borough Council's own play areas are in its Jadu feed. 26 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/hatfield-town.csv",
+        "page": "https://hatfield-herts.gov.uk/facilities/?filter=play-areas",
+        "near": {
+          "lat": 51.76,
+          "lng": -0.19,
+          "km": 7
+        }
+      }
+    },
+    {
+      "district": "Kirklees",
+      "parish": "Holme Valley",
+      "council": "Holme Valley Parish Council",
+      "sources": [
+        "https://www.holmevalleyparishcouncil.gov.uk/your-council/about-the-council/",
+        "https://www.kirklees.gov.uk/beta/countryside-parks-and-open-spaces/playable-spaces.aspx"
+      ],
+      "note": "The parish council's assets are toilets, bus shelters, war memorials, phone boxes, allotments, garages and benches, with no play areas. Holme Valley's recreation grounds and play areas (Sands, Victoria Park, Cinderhills, Wilshaw, Broadlands, Honley, Scholes) are Kirklees Council's and already in src/data/council-lists/kirklees.csv. 26 November 2026."
+    },
+    {
+      "district": "Vale of White Horse",
+      "parish": "Wantage",
+      "council": "Wantage Town Council",
+      "sources": [
+        "https://wantagetowncouncil.gov.uk/who-does-what"
+      ],
+      "note": "The \"Who does what\" page lists play areas under Vale of White Horse District Council; the town council looks after the Market Place, the cemetery grounds and allotments. Wantage play areas come from the Vale's list (src/data/council-lists/vale-of-white-horse.csv) and OpenStreetMap. 26 November 2026."
+    },
+    {
+      "district": "Wokingham",
+      "parish": "Woodley",
+      "council": "Woodley Town Council",
+      "sources": [
+        "https://woodley.gov.uk/?p=224",
+        "https://woodley.gov.uk/?p=19520",
+        "https://woodley.gov.uk/?p=19521",
+        "https://woodley.gov.uk/?p=15656"
+      ],
+      "note": "The town council runs Woodford, Wheble, Malone and Bulmershe Parks and the Rivermead and Loddon Mead open spaces. Woodford, Wheble and Malone have play areas (Malone's two share one row). The town's other play areas (Alderwood, Badgers Rise, Blanchard Close, Enstone Road, Hearn Road, Mollison Way, Redwood Avenue, Southlake Crescent, Vauxhall Drive, Woodley Town Centre) are Wokingham Borough Council's. 26 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/woodley-town.csv",
+        "page": "https://woodley.gov.uk/?p=19520",
+        "near": {
+          "lat": 51.45,
+          "lng": -0.9,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "Guildford",
+      "parish": "Ash",
+      "council": "Ash Parish Council",
+      "sources": [
+        "https://www.ashpcsurrey.gov.uk/services-a-z/",
+        "https://www.ashpcsurrey.gov.uk/parks-and-play-areas/"
+      ],
+      "note": "The parish council manages five playgrounds: Ash Common, Ashley Park, Carrington, Harpers and Shawfield Recreation Grounds, with postcodes from the parks page. Ash Common skatepark, the Parsons Nose teen shelter and the Coronation Gardens kick wall left out. 26 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/ash-parish.csv",
+        "page": "https://www.ashpcsurrey.gov.uk/parks-and-play-areas/",
+        "near": {
+          "lat": 51.25,
+          "lng": -0.72,
+          "km": 4
+        }
+      }
+    },
+    {
+      "district": "East Staffordshire",
+      "parish": "Branston",
+      "council": "Branston Parish Council",
+      "sources": [
+        "https://branstonparishcouncil.gov.uk/download/76/2022-2023/3154/2022-2023assets",
+        "https://www.contractsfinder.service.gov.uk/Notice/bba4c132-3757-4731-95c5-1739801b1b51"
+      ],
+      "note": "No play areas page, but the parish council's asset register lists play equipment at its two parks, Clays Lane Park and Aviation Lane Park. Its 2022 refurbishment tender gives the Clays Lane postcode. The Clays Lane MUGA is left out. 26 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/branston-parish.csv",
+        "page": "https://branstonparishcouncil.gov.uk/download/76/2022-2023/3154/2022-2023assets",
+        "near": {
+          "lat": 52.79,
+          "lng": -1.66,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "Wychavon",
+      "parish": "Evesham",
+      "council": "Evesham Town Council",
+      "sources": [
+        "https://www.eveshamtowncouncil.gov.uk",
+        "https://wychavon.gov.uk/park-and-open-spaces/parks"
+      ],
+      "note": "The town council lists allotments, cemeteries, the market and the museum among its services, but no parks or play areas. Wychavon District Council is responsible for parks and open spaces in Evesham. Evesham Adventure Playground is run separately. 26 November 2026."
+    },
+    {
+      "district": "Carmarthenshire",
+      "parish": "Llanelli Rural",
+      "council": "Llanelli Rural Council",
+      "sources": [
+        "https://www.llanelli-rural.gov.uk/facility-category/parks-and-play-areas/",
+        "https://www.llanelli-rural.gov.uk/facility-category/parks-and-play-areas/page/2/"
+      ],
+      "note": "The council's Parks and Play Areas listing has a page for each play area, most with addresses and postcodes (16 here). The MUGA at Parc y Gwili is left out, and so is Trallwm, whose installation was reported as held up. Some sites are still being transferred from Carmarthenshire County Council. 26 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/llanelli-rural.csv",
+        "page": "https://www.llanelli-rural.gov.uk/facility-category/parks-and-play-areas/",
+        "near": {
+          "lat": 51.7,
+          "lng": -4.14,
+          "km": 10
+        }
+      }
+    },
+    {
+      "district": "Rhondda Cynon Taf",
+      "parish": "Llantwit Fardre",
+      "council": "Llantwit Fardre Community Council",
+      "sources": [
+        "https://www.llantwitfardrecommunitycouncil.org/play-areas"
+      ],
+      "note": "Play areas page lists the community council's 10 play areas in Tonteg, Church Village, Efail Isaf and Llantwit Fardre, with postcodes. 26 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/llantwit-fardre-community.csv",
+        "page": "https://www.llantwitfardrecommunitycouncil.org/play-areas",
+        "near": {
+          "lat": 51.56,
+          "lng": -3.33,
+          "km": 3
+        }
+      }
+    },
+    {
+      "district": "West Suffolk",
+      "parish": "Newmarket",
+      "council": "Newmarket Town Council",
+      "sources": [
+        "https://www.newmarket.gov.uk/2022/09/02/inclusive-play-space-in-the-memorial-gardens/",
+        "https://www.westsuffolk.gov.uk/community/pspo/pspodogexclusionareas.cfm"
+      ],
+      "note": "The town council's one play area is in the Memorial Gardens: West Suffolk's dog exclusion order lists it as town council land, and the council's site covers its inclusive play space. The other Newmarket play areas are West Suffolk Council's. 26 November 2026.",
+      "feed": {
+        "type": "list",
+        "file": "src/data/council-lists/newmarket-town.csv",
+        "page": "https://www.newmarket.gov.uk/2022/09/02/inclusive-play-space-in-the-memorial-gardens/",
+        "near": {
+          "lat": 52.245,
+          "lng": 0.405,
           "km": 3
         }
       }
