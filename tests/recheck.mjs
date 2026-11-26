@@ -20,6 +20,12 @@ assert.equal(assess(flat('<p>Rumsey Fields playground has been vandalised and re
 assert.equal(assess(flat('<p>The Level playground is being rebuilt and will reopen in spring.</p>'), 'The Level').closure, true);
 assert.deepEqual(assess(flat('<script>var closed = true; // Hazel Grove</script><p>Hazel Grove playground: swings.</p>'), 'Hazel Grove'), assess(flat('<p>Hazel Grove playground: swings.</p>'), 'Hazel Grove'), 'scripts are ignored');
 
+const house = flat(`<p>Burghley House is open Saturday to Thursday. The house is closed on Fridays and was rebuilt in 1587.</p>
+  <p>${'Lots of other words about the gardens, the deer park and the sculpture garden here. '.repeat(3)}</p><p>Adventure play area for children.</p>`);
+assert.equal(assess(house, 'Burghley House Play Area').closure, false, 'closure words far from any play word are ignored');
+assert.deepEqual(assess(flat('<p>Belsay Wild Man play area is right beside the refurbished cafe.</p>'), 'Belsay Wild Man Play Area'), { named: true, closure: false }, 'a refurbished café is not a closure');
+assert.equal(assess(flat('<p>Croome: the RAF play area will be closed from 14 October.</p>'), 'Croome').closure, true);
+
 const file = '{\n  "name": "X",\n  "lat": 1,\n  "checked": "2024-01-02",\n  "photo": null\n}\n';
 assert.equal(setChecked(file, '2027-01-15'), file.replace('2024-01-02', '2027-01-15'));
 assert.equal(setChecked(file.replace('"2024-01-02"', 'null'), '2027-01-15'), file.replace('2024-01-02', '2027-01-15'));

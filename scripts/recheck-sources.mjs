@@ -46,8 +46,12 @@ export const flat = (html) =>
     .trim()} `;
 
 // Words that mean the play area is (or is about to be) out of use. "closed at dusk" and the like don't count.
-export const CLOSURE = /\b(?:temporarily closed|(?:is|are|now|been|be|currently|remains?|has|have) closed|closed (?:for|until|due|while|from)|closure|closing (?:for|on|from)|refurbish\w*|being (?:replaced|refurbished|rebuilt|upgraded|redeveloped)|rebuil(?:d|t|ding)|redevelop\w*|removed|demolish\w*|decommission\w*|out of (?:use|action|order)|under construction|fenced off|cordoned|due to reopen|will reopen|reopen(?:s|ing)? (?:in|on|later|soon)|vandal\w*)\b/;
+export const CLOSURE = /\b(?:temporarily closed|(?:is|are|now|been|be|currently|remains?|has|have) closed|closed (?:for|until|due|while|from)|closure|closing (?:for|on|from)|refurbish\w*(?! (?:cafe|caf|cottage|shop|toilets?|rooms?|house|kitchen|restaurant|visitor))|being (?:replaced|refurbished|rebuilt|upgraded|redeveloped)|rebuil(?:d|t|ding)|redevelop\w*|removed|demolish\w*|decommission\w*|out of (?:use|action|order)|under construction|fenced off|cordoned|due to reopen|will reopen|reopen(?:s|ing)? (?:in|on|later|soon)|vandal\w*)\b/;
 const WINDOW = 300; // characters either side of the playground's name
+// A closure only counts when a play word is close to it, so "the house is closed on Fridays" on a stately home's page
+// doesn't flag its play area.
+const PLAY = /\b(?:play\w*|adventure|swings?|slides?|equipment)\b/;
+const PLAY_GAP = 80;
 
 // Does the page name the playground, and does it mention closure near the name? Pure, for tests.
 export function assess(page, name) {
@@ -62,10 +66,11 @@ export function assess(page, name) {
   let said = '';
   for (let i = page.indexOf(` ${key} `); i >= 0 && !closure; i = page.indexOf(` ${key} `, i + 1)) {
     const near = page.slice(Math.max(0, i - WINDOW), i + WINDOW);
-    const m = near.match(CLOSURE);
-    if (m) {
+    for (const m of near.matchAll(new RegExp(CLOSURE.source, 'g'))) {
+      if (!PLAY.test(near.slice(Math.max(0, m.index - PLAY_GAP), m.index + m[0].length + PLAY_GAP))) continue;
       closure = true;
       said = near.slice(Math.max(0, m.index - 60), m.index + m[0].length + 60).trim();
+      break;
     }
   }
   return closure ? { named: true, closure, said } : { named: true, closure };
@@ -128,6 +133,8 @@ if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1]
   console.log(`${todo.length} playgrounds to re-check (${membership.length} membership, ${stale.length} of ${staleTotal} not checked for a year)`);
 
   const res = { confirmed: [], closure: [], reopened: [], gone: [], unconfirmed: [] };
+  const hostOf = (u) => new URL(u).hostname;
+  const missing = []; // decided at the end: a site that answers "not found" to every page is probably blocking robots
   let next = 0;
   let done = 0;
   await Promise.all(
@@ -149,12 +156,19 @@ if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1]
         else if (named.length) {
           res.confirmed.push(entry);
           await writeFile(p.file, setChecked(await readFile(p.file, 'utf8'), today));
-        } else if (pages.length && pages.every((x) => x.status === 404 || x.status === 410)) res.gone.push(entry);
+        } else if (pages.length && pages.every((x) => x.status === 404 || x.status === 410)) missing.push(entry);
         else res.unconfirmed.push({ ...entry, why: looks.length ? looks[0].reason : `pages couldn't be read (${pages.map((x) => x.status || 'no answer').join(', ')})` });
         if (++done % 50 === 0) console.log(`  ${done} of ${todo.length}`);
       }
     }),
   );
+
+  const okHosts = new Set();
+  for (const [u, pr] of cache) if ((await pr).text) okHosts.add(hostOf(u));
+  for (const e of missing) {
+    if (e.urls.every((u) => okHosts.has(hostOf(u)))) res.gone.push(e);
+    else res.unconfirmed.push({ ...e, why: "the site answered \"not found\" to every page we asked for (it may be blocking robots)" });
+  }
 
   const MAX = 60;
   const link = (x) => `[${x.name}](${SITE}${x.id}/)${x.area ? `, ${x.area}` : ''}`;
