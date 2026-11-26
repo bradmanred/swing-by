@@ -4,21 +4,40 @@
   "area": "Ripley",
   "lat": 53.04669,
   "lng": -1.40785,
-  "ages": [],
-  "equipment": [],
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12",
+    "teens"
+  ],
+  "equipment": [
+    "sw",
+    "bs",
+    "bk",
+    "sl",
+    "rb",
+    "ss",
+    "spr"
+  ],
   "access": [],
-  "facilities": [],
-  "opens": "",
-  "description": "Play area owned and maintained by Ripley Town Council, inspected weekly.",
+  "facilities": [
+    "pic"
+  ],
+  "opens": "24h",
+  "description": "Ripley Town Council's play area on Cedar Avenue, for ages 2 to teens. It has swings (a cradle seat, a group seat and a flat seat), a slide, a roundabout, a see-saw, a rocking horse, a spring whale and a spring car, plus a nine-item trim trail. There's a picnic table, benches and litter bins, and it's open all day, every day.",
   "nearby": [],
   "operator": "Ripley Town Council",
   "sources": [
+    {
+      "label": "Ripley Town Council (by email, 26 November 2026)",
+      "url": "https://www.ripleytowncouncil.gov.uk/"
+    },
     {
       "label": "Ripley Town Council: play areas",
       "url": "https://www.ripleytowncouncil.gov.uk/about-us/play-areas/"
     }
   ],
-  "checked": "2026-10-23",
-  "notConfirmed": "Exact position (approximate, from the street or place name), age ranges, play equipment, opening hours, toilets and parking.",
+  "checked": "2026-11-26",
+  "notConfirmed": "Exact position (approximate, from the street or place name), toilets and parking.",
   "photo": null
 }
