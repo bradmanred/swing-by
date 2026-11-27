@@ -53,7 +53,7 @@ const picture = (p: ClientPark, photo?: CardPhoto) =>
     ? `<figure class="card-photo"><img class="art" src="${esc(photo.url)}" alt="" loading="lazy" decoding="async" />${photo.credit ? `<figcaption>Photo: ${esc(photo.credit)}</figcaption>` : ''}</figure>`
     : art(p);
 
-export function cardHTML(p: ClientPark, o: { dist?: number; num?: number; mine?: { v?: boolean; r?: number }; photo?: CardPhoto; parents?: boolean } = {}) {
+export function cardHTML(p: ClientPark, o: { dist?: number; num?: number; mine?: { v?: boolean; r?: number }; photo?: CardPhoto; parents?: boolean; rated?: [number, number] } = {}) {
   const chips = p.f
     .filter((k) => NAMES[k])
     .slice(0, 4)
@@ -61,6 +61,7 @@ export function cardHTML(p: ClientPark, o: { dist?: number; num?: number; mine?:
   if (p.s && SIZES[p.s]) chips.unshift(`<li class="size size-${esc(p.s)}"><span class="size-dots" aria-hidden="true">${'●'.repeat(p.s === 'small' ? 1 : p.s === 'medium' ? 2 : 3)}</span> ${esc(SIZES[p.s])}</li>`);
   if (p.pay) chips.unshift(PAY_CHIP);
   if (p.m) chips.push(`<li class="mem">${esc(MEM[p.m])}</li>`);
+  if (o.rated) chips.push(`<li class="rate"><span aria-hidden="true">★</span> ${o.rated[0].toFixed(1)}<span class="sr-only"> out of 5</span> from ${o.rated[1]} parents</li>`);
   if (o.mine?.r) chips.push(`<li class="rate">Your rating: ${o.mine.r} out of 5</li>`);
   const foot = p.c
     ? `✓ Checked ${fmtDate(p.c)}`

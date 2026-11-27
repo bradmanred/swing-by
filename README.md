@@ -103,6 +103,12 @@ Every Sunday the **Tick-box review** workflow (`.github/workflows/tick-box-revie
 
 Moderators see every playground with parent answers at `/moderate/`, can clear a playground's answers, and can copy confirmed items into the playground's file to make them part of the listing (and the search filters).
 
+## Parents' ratings
+
+Parents can give any playground 1 to 5 stars under "Been here?" on its page. Ratings are shared: the page shows the average ("★ 4.3 out of 5 from 6 parents") and the home page has a **Rated 4★ or more by parents** filter, a **Parents' top rated** sort and the average on result cards. Like the tick boxes, **one parent's rating is never shown on its own**: an average appears only once two households (different browsers and different connections) have rated, and two browsers on one connection count once, using the newest rating. Ratings are stored in the photos database (table: `db/ratings.sql`, `worker/ratings.js`) with a random browser id and a one-way hash of the connection, never a name. One connection can rate up to 40 playgrounds a day, and a parent can change or remove their rating at any time. A moderator can clear every rating for a playground with `POST /api/ratings/clear` (moderator key, JSON `{ "park": "<id>" }`).
+
+"Been here" and favourites still stay on the device, and each rating is kept on the device too, for "Your rating" on cards and My parks. Ratings given before November 2026 were on-device only, so they aren't shared automatically: the playground page offers a "Share my rating with other parents" button for them.
+
 ## Checking coverage
 
 The **Check coverage** workflow (`.github/workflows/coverage.yml`, `scripts/find-gaps.mjs`) compares the playgrounds mapped on OpenStreetMap with the ones we list, county by county, biggest population first: London, Scotland, Wales, the West Midlands, Greater Manchester and so on down to Rutland. A playground counts as covered if we list one within 150 m, or within 300 m when that listing's pin is only approximate (from a postcode, a street or a park's middle) and the names agree; an approximate pin covers only one mapped playground that way, the nearest. A council's own record is the exception: a differently named place 40 to 150 m from a listing, on a different mapped play area, is added as a separate site, such as an adventure playground beside a park's playground (`scripts/same-place.mjs`). A council record whose pin is still approximate and that replaces an OpenStreetMap-only listing takes that listing's pin. Ones tagged private, residents-only or indoor, and ones at schools, pubs, hotels and holiday parks (by name, or because the snapshot puts them inside such grounds), are left out, and so are ones named as a games area, basketball court or school's, skate parks, BMX and pump tracks (from council lists too, unless the name mentions play), and council records already listed under the same page and name. An OpenStreetMap playground with no name of its own is named after the park it's in ("Victoria Park Playground"), or else its nearest street, and gets the equipment, age ranges and step-free access mapped there, all still Unverified (`scripts/osm-details.mjs`). It works out which council each missing playground is in.
@@ -171,7 +177,6 @@ To merge a pair, run `node scripts/merge-playgrounds.mjs <keep> <drop>` (add `--
 
 ## Coming next
 
-- Shared parent reports and ratings (Supabase free tier), with reports shown once another parent has confirmed them.
 - Postcode positions for the 96 council playgrounds that aren't mapped yet.
 - More counties, following the UK-wide data plan in the project brief.
 - When each playground is busiest. Google's "Popular times" can't be used: there's no API for it, and Google Maps data isn't allowed here (see the content rules). Possible routes: a quick "How busy was it?" question for parents on playground pages (time of day and day of week, shown once enough answers agree, like the equipment checks), plus general patterns such as school holidays and after-school hours.
