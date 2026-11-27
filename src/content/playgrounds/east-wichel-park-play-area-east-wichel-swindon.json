@@ -1,0 +1,28 @@
+{
+  "name": "East Wichel Park play area",
+  "region": "south-west",
+  "area": "East Wichel, Swindon",
+  "lat": 51.54253,
+  "lng": -1.78774,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by South Swindon Parish Council.",
+  "nearby": [],
+  "operator": "South Swindon Parish Council",
+  "sources": [
+    {
+      "label": "South Swindon Parish Council: East Wichel Park play area",
+      "url": "https://southswindon-pc.gov.uk/services/play-areas/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/759715626"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

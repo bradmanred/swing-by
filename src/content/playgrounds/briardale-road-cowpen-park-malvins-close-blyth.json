@@ -1,0 +1,31 @@
+{
+  "name": "Briardale Road (Cowpen Park)",
+  "region": "north-east",
+  "area": "Malvin's Close, Blyth",
+  "lat": 55.12915,
+  "lng": -1.53923,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A toddler play area run by Blyth Town Council.",
+  "nearby": [],
+  "operator": "Blyth Town Council",
+  "sources": [
+    {
+      "label": "Blyth Town Council: Briardale Road (Cowpen Park)",
+      "url": "https://www.blythtowncouncil.gov.uk/playareas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/6188974179"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

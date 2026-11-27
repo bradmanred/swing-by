@@ -1,0 +1,35 @@
+{
+  "name": "Ash Common Recreation Ground Play Area",
+  "region": "south-east",
+  "area": "Ash",
+  "lat": 51.2561,
+  "lng": -0.71817,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "rb"
+  ],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A fenced play area with swings, slides, a roundabout, a climbing wall and multi-play units, run by Ash Parish Council.",
+  "nearby": [],
+  "operator": "Ash Parish Council",
+  "sources": [
+    {
+      "label": "Ash Parish Council: Ash Common Recreation Ground Play Area",
+      "url": "https://www.ashpcsurrey.gov.uk/parks-and-play-areas/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/966546477"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

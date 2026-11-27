@@ -1,0 +1,30 @@
+{
+  "name": "Axwell Drive",
+  "region": "north-east",
+  "area": "Malvin's Close, Newsham",
+  "lat": 55.12415,
+  "lng": -1.53627,
+  "ages": [
+    "teens"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by Blyth Town Council, refurbished in 2024, with a teen shelter.",
+  "nearby": [],
+  "operator": "Blyth Town Council",
+  "sources": [
+    {
+      "label": "Blyth Town Council: Axwell Drive",
+      "url": "https://www.blythtowncouncil.gov.uk/playareas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/473189902"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

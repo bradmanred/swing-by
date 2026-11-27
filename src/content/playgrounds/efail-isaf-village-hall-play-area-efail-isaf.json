@@ -1,0 +1,31 @@
+{
+  "name": "Efail Isaf Village Hall Play Area",
+  "region": "wales",
+  "area": "Efail Isaf",
+  "lat": 51.55344,
+  "lng": -3.31716,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A small play area with swings and a slide behind the village hall, run by Llantwit Fardre Community Council.",
+  "nearby": [],
+  "operator": "Llantwit Fardre Community Council",
+  "sources": [
+    {
+      "label": "Llantwit Fardre Community Council: Efail Isaf Village Hall Play Area",
+      "url": "https://www.llantwitfardrecommunitycouncil.org/play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/586903032"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

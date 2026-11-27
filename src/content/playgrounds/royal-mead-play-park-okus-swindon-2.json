@@ -1,0 +1,28 @@
+{
+  "name": "Royal Mead Play Park",
+  "region": "south-west",
+  "area": "Okus, Swindon",
+  "lat": 51.54941,
+  "lng": -1.79204,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by South Swindon Parish Council.",
+  "nearby": [],
+  "operator": "South Swindon Parish Council",
+  "sources": [
+    {
+      "label": "South Swindon Parish Council: Royal Mead Play Park",
+      "url": "https://southswindon-pc.gov.uk/services/play-areas/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/168567268"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

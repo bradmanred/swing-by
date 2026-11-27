@@ -1,0 +1,30 @@
+{
+  "name": "Edmonds Park play areas",
+  "region": "south-east",
+  "area": "Fleet Meadow, Didcot",
+  "lat": 51.60105,
+  "lng": -1.25199,
+  "ages": [],
+  "equipment": [
+    "wp"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Didcot's flagship park, with three play areas, a splash pad, sports courts and football pitches. Run by Didcot Town Council.",
+  "nearby": [],
+  "operator": "Didcot Town Council",
+  "sources": [
+    {
+      "label": "Didcot Town Council: Edmonds Park play areas",
+      "url": "https://www.didcot.gov.uk/edmonds-park"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/929380775"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

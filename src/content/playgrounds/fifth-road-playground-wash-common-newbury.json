@@ -1,0 +1,33 @@
+{
+  "name": "Fifth Road playground",
+  "region": "south-east",
+  "area": "Wash Common, Newbury",
+  "lat": 51.39221,
+  "lng": -1.34079,
+  "ages": [],
+  "equipment": [
+    "bk",
+    "sw",
+    "cl",
+    "sk"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "All ages: cable runway, multi-play units, climbing net, basket swing, swings, train and a BMX track.",
+  "nearby": [],
+  "operator": "Newbury Town Council",
+  "sources": [
+    {
+      "label": "Newbury Town Council: Fifth Road playground",
+      "url": "https://newbury.gov.uk/services/playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/relation/1845040"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

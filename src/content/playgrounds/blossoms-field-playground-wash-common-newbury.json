@@ -1,0 +1,37 @@
+{
+  "name": "Blossoms Field playground",
+  "region": "south-east",
+  "area": "Wash Common, Newbury",
+  "lat": 51.38083,
+  "lng": -1.35026,
+  "ages": [],
+  "equipment": [
+    "bk",
+    "sw",
+    "sl",
+    "cl",
+    "rb",
+    "tp",
+    "ss",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "All ages: climbing net with slide, rope swing, trampoline, swings, basket swing, roundabout, seesaw, trim trail and a MUGA.",
+  "nearby": [],
+  "operator": "Newbury Town Council",
+  "sources": [
+    {
+      "label": "Newbury Town Council: Blossoms Field playground",
+      "url": "https://newbury.gov.uk/services/playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/2268522108"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

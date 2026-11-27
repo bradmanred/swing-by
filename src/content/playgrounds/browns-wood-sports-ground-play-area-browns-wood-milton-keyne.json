@@ -1,0 +1,31 @@
+{
+  "name": "Browns Wood Sports Ground play area",
+  "region": "south-east",
+  "area": "Browns Wood, Milton Keynes",
+  "lat": 52.01387,
+  "lng": -0.68241,
+  "ages": [],
+  "equipment": [
+    "gym",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area at Browns Wood Sports Ground, owned by Walton Community Council, alongside a pump track, outdoor gym and MUGA.",
+  "nearby": [],
+  "operator": "Walton Community Council",
+  "sources": [
+    {
+      "label": "Walton Community Council: Browns Wood Sports Ground play area",
+      "url": "https://wikishire.co.uk/wiki/Walton,_Milton_Keynes"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1112554913"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

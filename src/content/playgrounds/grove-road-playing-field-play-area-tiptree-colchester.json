@@ -1,0 +1,32 @@
+{
+  "name": "Grove Road Playing Field Play Area",
+  "region": "essex",
+  "area": "Tiptree, Colchester",
+  "lat": 51.81404,
+  "lng": 0.75265,
+  "ages": [],
+  "equipment": [
+    "sk"
+  ],
+  "access": [],
+  "facilities": [
+    "wc"
+  ],
+  "opens": "",
+  "description": "Tiptree Parish Council's play area at Grove Road Playing Field, Tiptree, for all ages, next to a skate park, with toilets and a small car park; no dogs.",
+  "nearby": [],
+  "operator": "Tiptree Parish Council",
+  "sources": [
+    {
+      "label": "Tiptree Parish Council: Grove Road Playing Field Play Area",
+      "url": "https://www.tiptreeparishcouncil.gov.uk/tiptree-parish-council-open-spaces/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1143185422"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

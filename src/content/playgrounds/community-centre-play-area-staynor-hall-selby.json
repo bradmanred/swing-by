@@ -1,0 +1,30 @@
+{
+  "name": "Community Centre Play Area",
+  "region": "yorkshire",
+  "area": "Staynor Hall, Selby",
+  "lat": 53.78502,
+  "lng": -1.0742,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Play areas for younger and older children on the community field, maintained by Selby Town Council for Selby Community Trust.",
+  "nearby": [],
+  "operator": "Selby Town Council",
+  "sources": [
+    {
+      "label": "Selby Town Council: Community Centre Play Area",
+      "url": "https://selbytowncouncil.gov.uk/resident/community-centre-scott-road"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/659615780"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

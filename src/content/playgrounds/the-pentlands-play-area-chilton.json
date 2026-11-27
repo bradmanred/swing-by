@@ -1,0 +1,30 @@
+{
+  "name": "The Pentlands play area",
+  "region": "north-east",
+  "area": "Chilton",
+  "lat": 54.66088,
+  "lng": -1.55268,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A fenced play area run by Chilton Town Council, listed in Durham County Council's dog control order (August 2025).",
+  "nearby": [],
+  "operator": "Chilton Town Council",
+  "sources": [
+    {
+      "label": "Chilton Town Council: The Pentlands play area",
+      "url": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/511788880"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

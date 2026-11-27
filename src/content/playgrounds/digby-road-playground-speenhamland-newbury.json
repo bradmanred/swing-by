@@ -1,0 +1,34 @@
+{
+  "name": "Digby Road playground",
+  "region": "south-east",
+  "area": "Speenhamland, Newbury",
+  "lat": 51.40785,
+  "lng": -1.33409,
+  "ages": [],
+  "equipment": [
+    "bk",
+    "sw",
+    "cl",
+    "spr",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "All ages: basket swing, climbing rocks, swings, multi-games unit, climbing frame, springers and a MUGA.",
+  "nearby": [],
+  "operator": "Newbury Town Council",
+  "sources": [
+    {
+      "label": "Newbury Town Council: Digby Road playground",
+      "url": "https://newbury.gov.uk/services/playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/201293720"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

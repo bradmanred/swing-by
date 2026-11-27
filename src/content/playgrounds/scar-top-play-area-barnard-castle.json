@@ -1,0 +1,30 @@
+{
+  "name": "Scar Top play area",
+  "region": "north-east",
+  "area": "Barnard Castle",
+  "lat": 54.54482,
+  "lng": -1.92654,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A fenced play area run by Barnard Castle Town Council, listed in Durham County Council's dog control order (August 2025).",
+  "nearby": [],
+  "operator": "Barnard Castle Town Council",
+  "sources": [
+    {
+      "label": "Barnard Castle Town Council: Scar Top play area",
+      "url": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1017204509"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

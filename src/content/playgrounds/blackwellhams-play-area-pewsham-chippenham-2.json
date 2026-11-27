@@ -1,0 +1,28 @@
+{
+  "name": "Blackwellhams Play Area",
+  "region": "south-west",
+  "area": "Pewsham, Chippenham",
+  "lat": 51.44886,
+  "lng": -2.11234,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area owned by Chippenham Town Council.",
+  "nearby": [],
+  "operator": "Chippenham Town Council",
+  "sources": [
+    {
+      "label": "Chippenham Town Council: Blackwellhams Play Area",
+      "url": "https://www.chippenham.gov.uk/wp-content/uploads/2021/09/List-of-CTC-Land-Buildings-lease.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/28125367"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

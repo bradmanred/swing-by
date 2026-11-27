@@ -1,0 +1,30 @@
+{
+  "name": "Gainford play area",
+  "region": "north-east",
+  "area": "Gainford",
+  "lat": 54.54747,
+  "lng": -1.73516,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A fenced play area run by Gainford and Langton Parish Council, listed in Durham County Council's dog control order (August 2025).",
+  "nearby": [],
+  "operator": "Gainford and Langton Parish Council",
+  "sources": [
+    {
+      "label": "Gainford and Langton Parish Council: Gainford play area",
+      "url": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1084033769"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

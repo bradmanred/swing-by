@@ -1,0 +1,37 @@
+{
+  "name": "Christie Heights playground",
+  "region": "south-east",
+  "area": "Speenhamland, Newbury",
+  "lat": 51.38784,
+  "lng": -1.31673,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [
+    "bk",
+    "sw",
+    "sl",
+    "cl",
+    "rb",
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Ages 7 to 14: climbing net, spinner, basket swing, swings, slide and fitness equipment.",
+  "nearby": [],
+  "operator": "Newbury Town Council",
+  "sources": [
+    {
+      "label": "Newbury Town Council: Christie Heights playground",
+      "url": "https://newbury.gov.uk/services/playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1574021781"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

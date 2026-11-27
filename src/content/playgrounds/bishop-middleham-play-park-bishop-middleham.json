@@ -1,0 +1,30 @@
+{
+  "name": "Bishop Middleham play park",
+  "region": "north-east",
+  "area": "Bishop Middleham",
+  "lat": 54.67494,
+  "lng": -1.49052,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A fenced play area run by Bishop Middleham Parish Council, listed in Durham County Council's dog control order (August 2025).",
+  "nearby": [],
+  "operator": "Bishop Middleham Parish Council",
+  "sources": [
+    {
+      "label": "Bishop Middleham Parish Council: Bishop Middleham play park",
+      "url": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/node/1255817925"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

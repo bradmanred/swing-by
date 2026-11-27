@@ -1,0 +1,33 @@
+{
+  "name": "Woodford Park Play Area",
+  "region": "south-east",
+  "area": "Woodley",
+  "lat": 51.4563,
+  "lng": -0.90413,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "wp"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A destination play area opened in 2022, run by Woodley Town Council, with a toddler paddling pool in summer.",
+  "nearby": [],
+  "operator": "Woodley Town Council",
+  "sources": [
+    {
+      "label": "Woodley Town Council: Woodford Park Play Area",
+      "url": "https://woodley.gov.uk/?p=19521"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/104111618"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

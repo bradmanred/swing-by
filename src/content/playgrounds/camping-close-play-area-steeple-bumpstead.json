@@ -1,0 +1,32 @@
+{
+  "name": "Camping Close Play Area",
+  "region": "essex",
+  "area": "Steeple Bumpstead",
+  "lat": 52.0413,
+  "lng": 0.44798,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "Steeple Bumpstead Parish Council's children's play area on the Camping Close, with a section for older children and a fenced area for younger ones.",
+  "nearby": [],
+  "operator": "Steeple Bumpstead Parish Council",
+  "sources": [
+    {
+      "label": "Steeple Bumpstead Parish Council: Camping Close Play Area",
+      "url": "https://steeplebumpstead-pc.gov.uk/community/camping-close"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/317439905"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

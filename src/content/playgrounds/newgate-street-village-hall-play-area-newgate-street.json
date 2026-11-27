@@ -1,0 +1,28 @@
+{
+  "name": "Newgate Street Village Hall Play Area",
+  "region": "herts",
+  "area": "Newgate Street",
+  "lat": 51.72885,
+  "lng": -0.11864,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area at Newgate Street Village Hall, run by Hatfield Town Council.",
+  "nearby": [],
+  "operator": "Hatfield Town Council",
+  "sources": [
+    {
+      "label": "Hatfield Town Council: Newgate Street Village Hall Play Area",
+      "url": "https://hatfield-herts.gov.uk/facilities/?filter=play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/763168800"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

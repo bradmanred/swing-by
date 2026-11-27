@@ -1,0 +1,30 @@
+{
+  "name": "St Georges Avenue playground",
+  "region": "south-east",
+  "area": "Speenhamland, Newbury",
+  "lat": 51.39789,
+  "lng": -1.3324,
+  "ages": [],
+  "equipment": [
+    "sl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "All ages: an embankment slide and an open space with goals.",
+  "nearby": [],
+  "operator": "Newbury Town Council",
+  "sources": [
+    {
+      "label": "Newbury Town Council: St Georges Avenue playground",
+      "url": "https://newbury.gov.uk/services/playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1544672714"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

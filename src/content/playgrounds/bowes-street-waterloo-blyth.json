@@ -1,0 +1,28 @@
+{
+  "name": "Bowes Street",
+  "region": "north-east",
+  "area": "Waterloo, Blyth",
+  "lat": 55.12668,
+  "lng": -1.5165,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by Blyth Town Council (formerly known as High Street).",
+  "nearby": [],
+  "operator": "Blyth Town Council",
+  "sources": [
+    {
+      "label": "Blyth Town Council: Bowes Street",
+      "url": "https://www.blythtowncouncil.gov.uk/playareas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/39545421"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

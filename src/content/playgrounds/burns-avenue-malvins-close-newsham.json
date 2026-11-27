@@ -1,0 +1,35 @@
+{
+  "name": "Burns Avenue",
+  "region": "north-east",
+  "area": "Malvin's Close, Newsham",
+  "lat": 55.11762,
+  "lng": -1.52691,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "bs"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by Blyth Town Council, with a toddler swing and accessible equipment.",
+  "nearby": [],
+  "operator": "Blyth Town Council",
+  "sources": [
+    {
+      "label": "Blyth Town Council: Burns Avenue",
+      "url": "https://www.blythtowncouncil.gov.uk/playareas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/434344609"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

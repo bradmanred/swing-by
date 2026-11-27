@@ -1,0 +1,36 @@
+{
+  "name": "Levens Way Play Area",
+  "region": "essex",
+  "area": "Great Notley",
+  "lat": 51.85834,
+  "lng": 0.52488,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "rb"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Great Notley Parish Council's play area on Levens Way, Great Notley, for younger children, with a toddler slide, swings, climbing frames, bouncers and a roundabout.",
+  "nearby": [],
+  "operator": "Great Notley Parish Council",
+  "sources": [
+    {
+      "label": "Great Notley Parish Council: Levens Way Play Area",
+      "url": "https://greatnotley.org.uk/?p=239"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/163561395"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

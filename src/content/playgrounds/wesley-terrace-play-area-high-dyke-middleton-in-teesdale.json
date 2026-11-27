@@ -1,0 +1,30 @@
+{
+  "name": "Wesley Terrace play area",
+  "region": "north-east",
+  "area": "High Dyke, Middleton-in-Teesdale",
+  "lat": 54.62472,
+  "lng": -2.08105,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A fenced play area run by Middleton-in-Teesdale and Newbiggin Parish Council, listed in Durham County Council's dog control order (August 2025).",
+  "nearby": [],
+  "operator": "Middleton-in-Teesdale and Newbiggin Parish Council",
+  "sources": [
+    {
+      "label": "Middleton-in-Teesdale and Newbiggin Parish Council: Wesley Terrace play area",
+      "url": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/958968487"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

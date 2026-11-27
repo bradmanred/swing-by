@@ -1,0 +1,35 @@
+{
+  "name": "Barwic Parade Play Area",
+  "region": "yorkshire",
+  "area": "Staynor Hall, Selby",
+  "lat": 53.77614,
+  "lng": -1.05671,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [
+    "gym",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "Areas for younger and older children, adult gym equipment and a fenced ball court. Run by Selby Town Council.",
+  "nearby": [],
+  "operator": "Selby Town Council",
+  "sources": [
+    {
+      "label": "Selby Town Council: Barwic Parade Play Area",
+      "url": "https://selbytowncouncil.gov.uk/resident/barwic-parade-play-area/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/246364424"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

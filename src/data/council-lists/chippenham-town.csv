@@ -1,5 +1,5 @@
-name,park,postcode,url,text,where
-John Coles Park play area,John Coles Park,,https://www.chippenham.gov.uk/?p=15543,"A play area with summer splash pad in John Coles Park, owned and managed by Chippenham Town Council.","John Coles Park, Chippenham"
-Monkton Park play area,Monkton Park,,https://www.chippenham.gov.uk/?p=15538,"A children's play area and MUGA in Monkton Park, run by Chippenham Town Council since 2019.","Monkton Park, Chippenham"
-Wood Lane Play Area,,,https://www.chippenham.gov.uk/wp-content/uploads/2021/09/List-of-CTC-Land-Buildings-lease.pdf,A play area owned by Chippenham Town Council.,"Wood Lane, Chippenham"
-Blackwellhams Play Area,,,https://www.chippenham.gov.uk/wp-content/uploads/2021/09/List-of-CTC-Land-Buildings-lease.pdf,A play area owned by Chippenham Town Council.,"Blackwellhams, Chippenham"
+name,park,postcode,url,text,where,lat,lng,placed
+John Coles Park play area,John Coles Park,,https://www.chippenham.gov.uk/?p=15543,"A play area with summer splash pad in John Coles Park, owned and managed by Chippenham Town Council.","John Coles Park, Chippenham",,,
+Monkton Park play area,Monkton Park,,https://www.chippenham.gov.uk/?p=15538,"A children's play area and MUGA in Monkton Park, run by Chippenham Town Council since 2019.","Monkton Park, Chippenham",,,
+Wood Lane Play Area,,,https://www.chippenham.gov.uk/wp-content/uploads/2021/09/List-of-CTC-Land-Buildings-lease.pdf,A play area owned by Chippenham Town Council.,"Wood Lane, Chippenham",51.45589,-2.11369,street
+Blackwellhams Play Area,,,https://www.chippenham.gov.uk/wp-content/uploads/2021/09/List-of-CTC-Land-Buildings-lease.pdf,A play area owned by Chippenham Town Council.,"Blackwellhams, Chippenham",,,

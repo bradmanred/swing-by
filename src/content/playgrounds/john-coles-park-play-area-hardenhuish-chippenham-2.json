@@ -1,0 +1,30 @@
+{
+  "name": "John Coles Park play area",
+  "region": "south-west",
+  "area": "Hardenhuish, Chippenham",
+  "lat": 51.46497,
+  "lng": -2.12205,
+  "ages": [],
+  "equipment": [
+    "wp"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area with summer splash pad in John Coles Park, owned and managed by Chippenham Town Council.",
+  "nearby": [],
+  "operator": "Chippenham Town Council",
+  "sources": [
+    {
+      "label": "Chippenham Town Council: John Coles Park play area",
+      "url": "https://www.chippenham.gov.uk/?p=15543"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/347765400"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Cottingwood Green",
+  "region": "north-east",
+  "area": "New Delaval, Newsham",
+  "lat": 55.10588,
+  "lng": -1.53008,
+  "ages": [
+    "under-3",
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [
+    "sw",
+    "cl",
+    "rb"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by Blyth Town Council for children of all ages, refurbished in 2025 with toddler and junior climbing frames, a roundabout, swings and a buddy board.",
+  "nearby": [],
+  "operator": "Blyth Town Council",
+  "sources": [
+    {
+      "label": "Blyth Town Council: Cottingwood Green",
+      "url": "https://www.blythtowncouncil.gov.uk/playareas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/699180133"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

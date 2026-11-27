@@ -1,0 +1,28 @@
+{
+  "name": "Sovereign Place Play Area",
+  "region": "herts",
+  "area": "The Ryde, Hatfield",
+  "lat": 51.77454,
+  "lng": -0.2149,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by Hatfield Town Council.",
+  "nearby": [],
+  "operator": "Hatfield Town Council",
+  "sources": [
+    {
+      "label": "Hatfield Town Council: Sovereign Place Play Area",
+      "url": "https://hatfield-herts.gov.uk/facilities/?filter=play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/764878629"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

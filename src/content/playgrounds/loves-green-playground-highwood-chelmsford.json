@@ -1,0 +1,33 @@
+{
+  "name": "Loves Green Playground",
+  "region": "essex",
+  "area": "Highwood, Chelmsford",
+  "lat": 51.71261,
+  "lng": 0.37794,
+  "ages": [
+    "under-3",
+    "3-6",
+    "teens"
+  ],
+  "equipment": [
+    "sw",
+    "sl",
+    "cl",
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Highwood Parish Council's playground behind the village hall at Loves Green, with climbing frames, swings and slides for toddlers to teenagers, plus adult gym equipment and a football goal.",
+  "nearby": [],
+  "operator": "Highwood Parish Council",
+  "sources": [
+    {
+      "label": "Highwood Parish Council: Loves Green Playground",
+      "url": "https://highwoodparishcouncil.gov.uk/parish-playgrounds/"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (approximate: the nearest mapped play area to the street the council names), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

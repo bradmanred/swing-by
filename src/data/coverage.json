@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26",
+ "updated": "2026-11-27",
  "counties": [
   {
    "name": "Greater London",
@@ -7,7 +7,7 @@
   },
   {
    "name": "Hampshire",
-   "playgrounds": 1216
+   "playgrounds": 1217
   },
   {
    "name": "Kent",
@@ -19,7 +19,7 @@
   },
   {
    "name": "Essex",
-   "playgrounds": 1076
+   "playgrounds": 1089
   },
   {
    "name": "West Yorkshire",
@@ -31,11 +31,11 @@
   },
   {
    "name": "North Yorkshire",
-   "playgrounds": 930
+   "playgrounds": 931
   },
   {
    "name": "Lancashire",
-   "playgrounds": 909
+   "playgrounds": 912
   },
   {
    "name": "Norfolk",
@@ -43,7 +43,7 @@
   },
   {
    "name": "Cambridgeshire",
-   "playgrounds": 864
+   "playgrounds": 866
   },
   {
    "name": "Derbyshire",
@@ -67,11 +67,11 @@
   },
   {
    "name": "Lincolnshire",
-   "playgrounds": 726
+   "playgrounds": 729
   },
   {
    "name": "Hertfordshire",
-   "playgrounds": 723
+   "playgrounds": 724
   },
   {
    "name": "Leicestershire",
@@ -79,7 +79,7 @@
   },
   {
    "name": "Gloucestershire",
-   "playgrounds": 713
+   "playgrounds": 714
   },
   {
    "name": "West Midlands",
@@ -95,7 +95,7 @@
   },
   {
    "name": "Wiltshire",
-   "playgrounds": 663
+   "playgrounds": 666
   },
   {
    "name": "Staffordshire",
@@ -111,11 +111,11 @@
   },
   {
    "name": "Berkshire",
-   "playgrounds": 616
+   "playgrounds": 617
   },
   {
    "name": "Nottinghamshire",
-   "playgrounds": 599
+   "playgrounds": 608
   },
   {
    "name": "Cornwall",
@@ -131,7 +131,7 @@
   },
   {
    "name": "Durham",
-   "playgrounds": 493
+   "playgrounds": 504
   },
   {
    "name": "Dorset",
@@ -143,11 +143,11 @@
   },
   {
    "name": "Tyne and Wear",
-   "playgrounds": 436
+   "playgrounds": 446
   },
   {
    "name": "Shropshire",
-   "playgrounds": 420
+   "playgrounds": 423
   },
   {
    "name": "Warwickshire",
@@ -171,7 +171,7 @@
   },
   {
    "name": "Northumberland",
-   "playgrounds": 301
+   "playgrounds": 306
   },
   {
    "name": "Herefordshire",
@@ -197,11 +197,11 @@
   },
   {
    "name": "Wales",
-   "playgrounds": 2866
+   "playgrounds": 2871
   },
   {
    "name": "Northern Ireland",
-   "playgrounds": 1051
+   "playgrounds": 1053
   }
  ]
 }

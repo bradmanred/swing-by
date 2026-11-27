@@ -1,0 +1,31 @@
+{
+  "name": "Cromwell Road playground",
+  "region": "south-east",
+  "area": "Speenhamland, Newbury",
+  "lat": 51.41129,
+  "lng": -1.3105,
+  "ages": [],
+  "equipment": [
+    "cl",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "All ages: multi-games unit, climbing net, train and a MUGA.",
+  "nearby": [],
+  "operator": "Newbury Town Council",
+  "sources": [
+    {
+      "label": "Newbury Town Council: Cromwell Road playground",
+      "url": "https://newbury.gov.uk/services/playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/569765737"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

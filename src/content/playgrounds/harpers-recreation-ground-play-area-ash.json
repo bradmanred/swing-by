@@ -1,0 +1,34 @@
+{
+  "name": "Harpers Recreation Ground Play Area",
+  "region": "south-east",
+  "area": "Ash",
+  "lat": 51.25219,
+  "lng": -0.70551,
+  "ages": [
+    "under-3",
+    "3-6",
+    "teens"
+  ],
+  "equipment": [
+    "cl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area with accessible toddler equipment and teen climbing frames, run by Ash Parish Council.",
+  "nearby": [],
+  "operator": "Ash Parish Council",
+  "sources": [
+    {
+      "label": "Ash Parish Council: Harpers Recreation Ground Play Area",
+      "url": "https://www.ashpcsurrey.gov.uk/new-play-area-opens-at-harpers-recreation-ground/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/483216297"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

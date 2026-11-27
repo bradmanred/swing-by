@@ -1,0 +1,28 @@
+{
+  "name": "Forest Fields play area",
+  "region": "south-east",
+  "area": "Franklands Village, Haywards Heath",
+  "lat": 50.99646,
+  "lng": -0.08019,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground run by Mid Sussex District Council.",
+  "nearby": [],
+  "operator": "Mid Sussex District Council",
+  "sources": [
+    {
+      "label": "Mid Sussex District Council: Forest Fields play area",
+      "url": "https://midsussex.gov.uk/leisure-sport/playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/784800156"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

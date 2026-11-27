@@ -1,5 +1,5 @@
-name,park,postcode,url,text,where
-Flaxley Road Play Area,,,https://selbytowncouncil.gov.uk/resident/flaxley-road-play-area/,"A play area for children of all ages in the north of Selby, run by Selby Town Council.","Flaxley Road, Selby"
-Barwic Parade Play Area,,,https://selbytowncouncil.gov.uk/resident/barwic-parade-play-area/,"Areas for younger and older children, adult gym equipment and a fenced ball court. Run by Selby Town Council.","Barwic Parade, Selby"
-Wistow Road Play Area,,,https://selbytowncouncil.gov.uk/resident/wistow-road-play-area,"A refurbished play area with adult gym equipment, off Bondgate. Run by Selby Town Council.","Wistow Road, Selby"
-Community Centre Play Area,,,https://selbytowncouncil.gov.uk/resident/community-centre-scott-road,"Play areas for younger and older children on the community field, maintained by Selby Town Council for Selby Community Trust.","Scott Road, Selby"
+name,park,postcode,url,text,where,lat,lng,placed
+Flaxley Road Play Area,,,https://selbytowncouncil.gov.uk/resident/flaxley-road-play-area/,"A play area for children of all ages in the north of Selby, run by Selby Town Council.","Flaxley Road, Selby",53.78527,-1.08046,street
+Barwic Parade Play Area,,,https://selbytowncouncil.gov.uk/resident/barwic-parade-play-area/,"Areas for younger and older children, adult gym equipment and a fenced ball court. Run by Selby Town Council.","Barwic Parade, Selby",53.77602,-1.05697,street
+Wistow Road Play Area,,,https://selbytowncouncil.gov.uk/resident/wistow-road-play-area,"A refurbished play area with adult gym equipment, off Bondgate. Run by Selby Town Council.","Wistow Road, Selby",53.80058,-1.08881,street
+Community Centre Play Area,,,https://selbytowncouncil.gov.uk/resident/community-centre-scott-road,"Play areas for younger and older children on the community field, maintained by Selby Town Council for Selby Community Trust.","Scott Road, Selby",53.78511,-1.0747,street

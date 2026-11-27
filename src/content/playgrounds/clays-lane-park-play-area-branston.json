@@ -1,0 +1,33 @@
+{
+  "name": "Clays Lane Park Play Area",
+  "region": "west-midlands",
+  "area": "Branston",
+  "lat": 52.7923,
+  "lng": -1.66308,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "bk"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area with an under-5s area and a basket swing, run by Branston Parish Council.",
+  "nearby": [],
+  "operator": "Branston Parish Council",
+  "sources": [
+    {
+      "label": "Branston Parish Council: Clays Lane Park Play Area",
+      "url": "https://www.contractsfinder.service.gov.uk/Notice/bba4c132-3757-4731-95c5-1739801b1b51"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/506394790"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

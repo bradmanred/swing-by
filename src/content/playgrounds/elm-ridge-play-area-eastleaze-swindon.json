@@ -1,0 +1,28 @@
+{
+  "name": "Elm Ridge play area",
+  "region": "south-west",
+  "area": "Eastleaze, Swindon",
+  "lat": 51.56663,
+  "lng": -1.82806,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A neighbourhood play space. Run by West Swindon Parish Council.",
+  "nearby": [],
+  "operator": "West Swindon Parish Council",
+  "sources": [
+    {
+      "label": "West Swindon Parish Council: Elm Ridge play area",
+      "url": "https://www.westswindon-pc.gov.uk/services/parish-play-areas-west-swindon/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1301967657"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

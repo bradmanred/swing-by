@@ -1,0 +1,28 @@
+{
+  "name": "Cuckfield Recreation Ground playground",
+  "region": "south-east",
+  "area": "Cuckfield",
+  "lat": 51.00835,
+  "lng": -0.14428,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground run by Mid Sussex District Council.",
+  "nearby": [],
+  "operator": "Mid Sussex District Council",
+  "sources": [
+    {
+      "label": "Mid Sussex District Council: Cuckfield Recreation Ground playground",
+      "url": "https://midsussex.gov.uk/leisure-sport/playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/539517010"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
