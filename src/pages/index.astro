@@ -94,6 +94,10 @@ const ages = [
           <label class="chk"><input type="checkbox" id="hide-unverified" name="verified" value="1" aria-describedby="unverified-hint" /> Hide unverified places</label>
           <p class="hint" id="unverified-hint">Only shows playgrounds an official source or two parents have confirmed.</p>
         </div>
+        <div class="free-only">
+          <label class="chk"><input type="checkbox" id="top-rated" name="rated" value="1" aria-describedby="top-rated-hint" /> Rated 4<span aria-hidden="true">★</span><span class="sr-only"> stars</span> or more by parents</label>
+          <p class="hint" id="top-rated-hint">Only shows playgrounds at least two parents have rated, averaging 4 out of 5 or more.</p>
+        </div>
         {paidCount > 0 && (
           <div class="free-only">
             <label class="chk"><input type="checkbox" id="free-only" name="free" value="1" aria-describedby="free-hint" /> Free entry only</label>
@@ -152,6 +156,7 @@ const ages = [
         <select id="sort">
           <option value="near">Closest</option>
           <option value="fav">Your favourites</option>
+          <option value="parents">Parents' top rated</option>
           <option value="rated">Your top rated</option>
           <option value="new">Not been yet</option>
         </select>

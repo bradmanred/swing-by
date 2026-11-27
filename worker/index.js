@@ -1,5 +1,6 @@
 // Cloudflare Worker: GitHub sign-in for Decap CMS at /api/auth and /api/callback, home page suggestions at /api/feedback,
-// parent photos at /api/photos, parents' equipment reports at /api/equipment, parents' pin corrections at /api/pins;
+// parent photos at /api/photos, parents' equipment reports at /api/equipment, parents' pin corrections at /api/pins,
+// parents' star ratings at /api/ratings;
 // playground pages from their pack files (worker/packs.js); everything else is the static site. Also redirects www to
 // the bare domain.
 // Needs GITHUB_CLIENT_ID and GITHUB_CLIENT_SECRET set as variables and secrets on the Worker, the PHOTOS_DB
@@ -10,6 +11,7 @@ import { feedback } from './feedback.js';
 import { photos } from './photos.js';
 import { equipment } from './equipment.js';
 import { pins } from './pins.js';
+import { ratings } from './ratings.js';
 import { servePacked } from './packs.js';
 import { AREA_MOVES } from './area-moves.js';
 import { SCHOOL_PAGES, schoolGroundsPage } from './school-grounds.js';
@@ -3212,6 +3214,7 @@ export default {
     if (pathname === '/api/photos' || pathname.startsWith('/api/photos/')) return photos({ request, env, pathname });
     if (pathname === '/api/equipment' || pathname.startsWith('/api/equipment/')) return equipment({ request, env, pathname });
     if (pathname === '/api/pins' || pathname.startsWith('/api/pins/')) return pins({ request, env, pathname });
+    if (pathname === '/api/ratings' || pathname.startsWith('/api/ratings/')) return ratings({ request, env, pathname });
     // The pack files are only for the Worker to read; don't serve them as pages.
     if (pathname.startsWith('/_pages/')) {
       const missing = await env.ASSETS.fetch(new Request(new URL('/404.html', url)));

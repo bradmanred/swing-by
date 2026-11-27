@@ -178,6 +178,7 @@ const ld = [
       <div class="panel" id="mine" data-id={p.id}>
         <h2 style="font-size:1.75rem">Been here?</h2>
         <p style="margin-top:12px"><label class="chk"><input type="checkbox" id="been" /> We've been here</label></p>
+        <p class="parents-rating" id="parents-rating" hidden></p>
         <fieldset style="margin-top:16px">
           <legend>Your rating</legend>
           <div class="stars">
@@ -186,7 +187,8 @@ const ld = [
             ))}
           </div>
         </fieldset>
-        <p class="hint" id="mine-status" aria-live="polite" style="margin-top:10px">Saved on this device only.</p>
+        <p class="hint" id="mine-status" aria-live="polite" style="margin-top:10px">Your rating is shared with other parents, without your name. "Been here" stays on this device.</p>
+        <p class="hint"><button class="linkbtn" type="button" id="rate-share" hidden>Share my rating with other parents</button> <button class="linkbtn" type="button" id="rate-remove" hidden>Remove my rating</button></p>
         <div class="photo-nudge" id="photo-nudge" hidden>
           <p data-photo-none={"<strong>Did you take a photo while you were here?</strong> A picture helps other parents see what it's like before they go. You can also tick off the equipment you saw."} data-photo-some={"<strong>Did you get a better photo while you were here?</strong> A clearer or more recent picture helps other parents see what it's like now. You can also tick off the equipment you saw."} set:html={p.photo ? "<strong>Did you get a better photo while you were here?</strong> A clearer or more recent picture helps other parents see what it's like now. You can also tick off the equipment you saw." : "<strong>Did you take a photo while you were here?</strong> A picture helps other parents see what it's like before they go. You can also tick off the equipment you saw."} />
           <div class="row">
@@ -295,14 +297,67 @@ const ld = [
     const cur = getMine()[id] ?? {};
     been.checked = !!cur.v;
     if (cur.r) (document.getElementById(`r${cur.r}`) as HTMLInputElement).checked = true;
+    // "Been here" and favourites stay on this device. Ratings are kept here too (for cards and My parks) and shared
+    // with other parents through /api/ratings, which only shows an average once two households have rated.
+    const parentsLine = document.getElementById('parents-rating')!;
+    const shareBtn = document.getElementById('rate-share') as HTMLButtonElement;
+    const removeBtn = document.getElementById('rate-remove') as HTMLButtonElement;
+    type Shared = { stars: number | null; parents: number; mine: number | null };
+    function showShared(j: Shared) {
+      if (j.stars != null) {
+        parentsLine.innerHTML = `<span aria-hidden="true">★</span> <strong>${j.stars.toFixed(1)} out of 5</strong> from ${j.parents} parents`;
+        parentsLine.hidden = false;
+      } else if (j.parents === 1) {
+        parentsLine.textContent = 'One parent has rated this so far. We show the average once two have.';
+        parentsLine.hidden = false;
+      } else parentsLine.hidden = true;
+      removeBtn.hidden = j.mine == null;
+      // A rating saved before ratings were shared stays on this device until the parent chooses to share it.
+      shareBtn.hidden = j.mine != null || !getMine()[id]?.r;
+    }
+    async function share(stars: number | null) {
+      const res = await fetch('/api/ratings', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ park: id, stars }) });
+      const j = await res.json().catch(() => null);
+      if (!res.ok || !j) throw new Error(j?.error || "Couldn't share your rating just now.");
+      showShared(j);
+    }
+    fetch(`/api/ratings?park=${encodeURIComponent(id)}`)
+      .then((r) => (r.ok && r.headers.get('Content-Type')?.includes('json') ? r.json() : null))
+      .then((j: Shared | null) => {
+        if (!j) return;
+        if (j.mine != null) {
+          (document.getElementById(`r${j.mine}`) as HTMLInputElement).checked = true;
+          const mine = getMine();
+          mine[id] = { ...mine[id], v: true, r: j.mine };
+          store.set('sb-mine', mine);
+          been.checked = true;
+        }
+        showShared(j);
+      })
+      .catch(() => {});
     function save(msg: string) {
       const mine = getMine();
       const r = Number((box.querySelector('input[name=rating]:checked') as HTMLInputElement | null)?.value) || undefined;
       mine[id] = { ...mine[id], v: been.checked || !!r, r, t: new Date().toISOString().slice(0, 10) };
       if (r) been.checked = true;
       store.set('sb-mine', mine);
-      status.textContent = `${msg} Saved on this device only.`;
+      status.textContent = msg;
     }
+    function rate(stars: number | null, msg: string) {
+      share(stars)
+        .then(() => (status.textContent = msg))
+        .catch((e: Error) => (status.textContent = `${e.message} It's still saved on this device.`));
+    }
+    shareBtn.addEventListener('click', () => {
+      const r = getMine()[id]?.r;
+      if (r) rate(r, `Shared your ${r} out of 5 with other parents. Thank you!`);
+    });
+    removeBtn.addEventListener('click', () => {
+      box.querySelectorAll<HTMLInputElement>('input[name=rating]').forEach((x) => (x.checked = false));
+      save('Rating removed.');
+      rate(null, 'Rating removed.');
+      been.focus();
+    });
     // After ticking "We've been here", ask for a photo, unless they've already said not now for this playground.
     const nudge = document.getElementById('photo-nudge')!;
     const nudgeKey = `sb-nudge-${id}`;
@@ -333,12 +388,14 @@ const ld = [
       been.focus();
     });
     been.addEventListener('change', () => {
-      save(been.checked ? 'Ticked off.' : 'Unticked.');
+      save(been.checked ? 'Ticked off. Saved on this device.' : 'Unticked.');
       showNudge();
     });
     box.querySelectorAll('input[name=rating]').forEach((r) =>
       r.addEventListener('change', () => {
-        save(`Rated ${(r as HTMLInputElement).value} out of 5.`);
+        const n = Number((r as HTMLInputElement).value);
+        save(`Rated ${n} out of 5.`);
+        rate(n, `Rated ${n} out of 5 and shared with other parents, without your name.`);
         showNudge();
       }),
     );

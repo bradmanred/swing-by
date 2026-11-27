@@ -17,6 +17,7 @@ const km = (a: { lat: number; lng: number }, b: { lat: number; lng: number }) =>
 };
 
 const PAGE = 12;
+const TOP_RATED = 4; // the "Rated 4★ or more by parents" filter
 const HIDDEN_KM = 4.83; // 3 miles: how far to look when saying how many unverified playgrounds are hidden
 
 /**
@@ -53,6 +54,9 @@ export function startFinder(o: { onPhotos?: (photos: Record<string, CardPhoto>, 
     hideUnverified: store.get<boolean>('sb-hide-unverified', false),
     // Playgrounds two parents confirm are there count as verified (filled in from /api/equipment/open).
     parentOk: new Set<string>(),
+    // Parents' shared ratings, [average, parents], for playgrounds two households have rated (from /api/ratings/all).
+    rated: {} as Record<string, [number, number]>,
+    topRated: false,
     sort: 'near',
     limit: PAGE,
     photos: {} as Record<string, CardPhoto>,
@@ -75,7 +79,8 @@ export function startFinder(o: { onPhotos?: (photos: Record<string, CardPhoto>, 
       .filter((p) => !st.ages.size || p.ages.some((a) => st.ages.has(a)))
       .filter((p) => [...st.loves].every((k) => p.f.includes(k)))
       .filter((p) => !st.sizes.size || (p.s != null && st.sizes.has(p.s)))
-      .filter((p) => !st.freeOnly || !p.pay);
+      .filter((p) => !st.freeOnly || !p.pay)
+      .filter((p) => !st.topRated || (st.rated[p.id]?.[0] ?? 0) >= TOP_RATED);
   }
 
   function list() {
@@ -85,7 +90,12 @@ export function startFinder(o: { onPhotos?: (photos: Record<string, CardPhoto>, 
       .map((p) => ({ p, d: km(st.area ?? st.origin, p), m: mine[p.id] }));
     if (st.sort === 'new') rows = rows.filter((x) => !x.m?.v);
     if (st.sort === 'fav') rows = rows.filter((x) => x.m?.fav);
-    rows.sort((a, b) => (st.sort === 'rated' ? (b.m?.r ?? 0) - (a.m?.r ?? 0) || a.d - b.d : a.d - b.d));
+    const parents = (id: string) => st.rated[id]?.[0] ?? 0;
+    rows.sort((a, b) =>
+      st.sort === 'rated' ? (b.m?.r ?? 0) - (a.m?.r ?? 0) || a.d - b.d
+      : st.sort === 'parents' ? parents(b.p.id) - parents(a.p.id) || a.d - b.d
+      : a.d - b.d,
+    );
     return rows;
   }
 
@@ -96,7 +106,7 @@ export function startFinder(o: { onPhotos?: (photos: Record<string, CardPhoto>, 
     $('#near-title').textContent = st.area ? 'Parks in this area' : 'Parks near you';
     $('#cards').innerHTML = rows
       .slice(0, st.limit)
-      .map((x, i) => cardHTML(x.p, { dist: x.d, num: i < 5 ? i + 1 : undefined, mine: x.m, photo: st.photos[x.p.id], parents: st.parentOk.has(x.p.id) }))
+      .map((x, i) => cardHTML(x.p, { dist: x.d, num: i < 5 ? i + 1 : undefined, mine: x.m, photo: st.photos[x.p.id], parents: st.parentOk.has(x.p.id), rated: st.rated[x.p.id] }))
       .join('');
     queueMicrotask(() => syncFavs?.());
     $('#nearlist').innerHTML = rows
@@ -105,7 +115,9 @@ export function startFinder(o: { onPhotos?: (photos: Record<string, CardPhoto>, 
         (x, i) =>
           `<li><a href="/playgrounds/${esc(x.p.id)}/" data-num="${i + 1}"><span class="num" aria-hidden="true">${i + 1}</span><span>${esc(x.p.n)}${x.p.pay ? ' <span class="pound" aria-hidden="true">£</span><span class="sr-only">, paid entry</span>' : ''}</span><span class="dist">${fmtMiles(x.d)}</span></a></li>`,
       )
-      .join('') || '<li>No playgrounds match those choices. Try removing a filter.</li>';
+      .join('') || (st.topRated
+        ? "<li>No playgrounds here have a parents' rating of 4 or more yet. Rate the ones you've been to, to help other parents.</li>"
+        : '<li>No playgrounds match those choices. Try removing a filter.</li>');
     // Say how many nearby playgrounds the filter is hiding, so an area never looks emptier than it is.
     const note = $('#unverified-note');
     const hidden = st.hideUnverified ? matching().filter((p) => !verified(p) && km(st.area ?? st.origin, p) <= HIDDEN_KM).length : 0;
@@ -295,6 +307,12 @@ export function startFinder(o: { onPhotos?: (photos: Record<string, CardPhoto>, 
       render();
     });
   }
+  const top = document.querySelector<HTMLInputElement>('#top-rated');
+  top?.addEventListener('change', () => {
+    st.topRated = top.checked;
+    st.limit = PAGE;
+    render();
+  });
   document.querySelectorAll<HTMLButtonElement>('[data-love]').forEach((b) =>
     b.addEventListener('click', () => {
       const k = b.dataset.love!;
@@ -326,6 +344,17 @@ export function startFinder(o: { onPhotos?: (photos: Record<string, CardPhoto>, 
     .then((j: { parks: string[] } | null) => {
       if (j?.parks?.length) {
         st.parentOk = new Set(j.parks);
+        render(false);
+      }
+    })
+    .catch(() => {});
+
+  // Parents' shared ratings, for the "Rated 4★ or more" filter, the parents' sort and the stars on cards.
+  fetch('/api/ratings/all')
+    .then((r) => (r.ok && r.headers.get('Content-Type')?.includes('json') ? r.json() : null))
+    .then((j: { parks: Record<string, [number, number]> } | null) => {
+      if (j?.parks && Object.keys(j.parks).length) {
+        st.rated = j.parks;
         render(false);
       }
     })
