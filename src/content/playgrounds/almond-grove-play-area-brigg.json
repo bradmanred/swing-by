@@ -1,0 +1,28 @@
+{
+  "name": "Almond Grove play area",
+  "region": "yorkshire",
+  "area": "Brigg",
+  "lat": 53.55501,
+  "lng": -0.49672,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A children's playground on North Lincolnshire Council's list of the playgrounds it manages, off Almond Grove, Brigg.",
+  "nearby": [],
+  "operator": "North Lincolnshire Council",
+  "sources": [
+    {
+      "label": "North Lincolnshire Council: Almond Grove play area",
+      "url": "https://northlincs.gov.uk/planning-and-environment/parks-playgrounds-and-open-spaces"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1446691248"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Memorial Park play area",
+  "region": "north-east",
+  "area": "Quaking Houses",
+  "lat": 54.85558,
+  "lng": -1.70514,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A fenced play area run by Easington Colliery Parish Council, listed in Durham County Council's dog control order (August 2025).",
+  "nearby": [],
+  "operator": "Easington Colliery Parish Council",
+  "sources": [
+    {
+      "label": "Easington Colliery Parish Council: Memorial Park play area",
+      "url": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1089630230"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

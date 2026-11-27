@@ -1,0 +1,33 @@
+{
+  "name": "Shelfinch play area",
+  "region": "south-west",
+  "area": "Toothill, Swindon",
+  "lat": 51.55348,
+  "lng": -1.81839,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Toddler and youth play areas and a kickabout. Run by West Swindon Parish Council.",
+  "nearby": [],
+  "operator": "West Swindon Parish Council",
+  "sources": [
+    {
+      "label": "West Swindon Parish Council: Shelfinch play area",
+      "url": "https://www.westswindon-pc.gov.uk/services/parish-play-areas-west-swindon/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1301819561"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

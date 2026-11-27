@@ -1,0 +1,35 @@
+{
+  "name": "Cresswell Road playground",
+  "region": "south-east",
+  "area": "Speenhamland, Newbury",
+  "lat": 51.4072,
+  "lng": -1.29574,
+  "ages": [],
+  "equipment": [
+    "bk",
+    "sw",
+    "sl",
+    "cl",
+    "rb",
+    "ss"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "All ages: multi-games units with slide, climbing frame, basket swing, swings, roundabout and seesaw.",
+  "nearby": [],
+  "operator": "Newbury Town Council",
+  "sources": [
+    {
+      "label": "Newbury Town Council: Cresswell Road playground",
+      "url": "https://newbury.gov.uk/services/playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/484115610"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Victoria Park playground",
+  "region": "south-east",
+  "area": "Speenhamland, Newbury",
+  "lat": 51.40344,
+  "lng": -1.31974,
+  "ages": [],
+  "equipment": [
+    "bk",
+    "sw",
+    "sl",
+    "cl",
+    "sp",
+    "wp",
+    "rb",
+    "ss"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "All ages: climbing tower with tube slides, cable runway, swings, basket swings, sandpit, roundabouts, seesaw and a splash park nearby.",
+  "nearby": [],
+  "operator": "Newbury Town Council",
+  "sources": [
+    {
+      "label": "Newbury Town Council: Victoria Park playground",
+      "url": "https://newbury.gov.uk/services/playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/986770616"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

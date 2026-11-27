@@ -1,0 +1,33 @@
+{
+  "name": "Shawfield Recreation Ground Play Area",
+  "region": "south-east",
+  "area": "Ash",
+  "lat": 51.2495,
+  "lng": -0.72715,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl"
+  ],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A fenced play area with swings, slides and multi-play units, run by Ash Parish Council.",
+  "nearby": [],
+  "operator": "Ash Parish Council",
+  "sources": [
+    {
+      "label": "Ash Parish Council: Shawfield Recreation Ground Play Area",
+      "url": "https://www.ashpcsurrey.gov.uk/parks-and-play-areas/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1150733345"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

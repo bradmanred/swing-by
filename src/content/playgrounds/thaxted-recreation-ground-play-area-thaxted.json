@@ -1,0 +1,30 @@
+{
+  "name": "Thaxted Recreation Ground Play Area",
+  "region": "essex",
+  "area": "Thaxted",
+  "lat": 51.95854,
+  "lng": 0.34392,
+  "ages": [],
+  "equipment": [
+    "zw"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Thaxted Parish Council's play area at the Recreation Ground in Thaxted, which has a zip wire.",
+  "nearby": [],
+  "operator": "Thaxted Parish Council",
+  "sources": [
+    {
+      "label": "Thaxted Parish Council: Thaxted Recreation Ground Play Area",
+      "url": "https://thaxted-pc.gov.uk/assets/Parish-Council-Minutes/2022-Minutes/Assets-Committee-Minutes-2022/Assetts-Services-March-2023-Draft.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/363755937"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

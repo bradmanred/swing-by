@@ -1,0 +1,30 @@
+{
+  "name": "Hutton Grove play area",
+  "region": "north-east",
+  "area": "Haswell",
+  "lat": 54.78465,
+  "lng": -1.41915,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A fenced play area run by Haswell Parish Council, listed in Durham County Council's dog control order (August 2025).",
+  "nearby": [],
+  "operator": "Haswell Parish Council",
+  "sources": [
+    {
+      "label": "Haswell Parish Council: Hutton Grove play area",
+      "url": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/469058861"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

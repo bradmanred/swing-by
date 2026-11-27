@@ -1,0 +1,30 @@
+{
+  "name": "Seaham Town Park play area",
+  "region": "north-east",
+  "area": "Eastlea, Seaham",
+  "lat": 54.84189,
+  "lng": -1.36473,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A fenced play area run by Seaham Town Council, listed in Durham County Council's dog control order (August 2025).",
+  "nearby": [],
+  "operator": "Seaham Town Council",
+  "sources": [
+    {
+      "label": "Seaham Town Council: Seaham Town Park play area",
+      "url": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1078029622"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

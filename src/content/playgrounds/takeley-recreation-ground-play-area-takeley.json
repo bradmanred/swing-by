@@ -1,0 +1,35 @@
+{
+  "name": "Takeley Recreation Ground Play Area",
+  "region": "essex",
+  "area": "Takeley",
+  "lat": 51.86929,
+  "lng": 0.26322,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "sw",
+    "rb",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Takeley Parish Council's play area at the Recreation Ground in Takeley, with an adventure trail, carousel, toddler multi-play unit, swings and spring rockers.",
+  "nearby": [],
+  "operator": "Takeley Parish Council",
+  "sources": [
+    {
+      "label": "Takeley Parish Council: Takeley Recreation Ground Play Area",
+      "url": "https://www.takeley-pc.gov.uk/wp-content/uploads/sites/16/TPC-Asset-Register-2025-26-FINAL.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1117211253"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

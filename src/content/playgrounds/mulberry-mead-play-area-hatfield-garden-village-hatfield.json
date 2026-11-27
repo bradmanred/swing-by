@@ -1,0 +1,28 @@
+{
+  "name": "Mulberry Mead Play Area",
+  "region": "herts",
+  "area": "Hatfield Garden Village, Hatfield",
+  "lat": 51.7762,
+  "lng": -0.2395,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by Hatfield Town Council.",
+  "nearby": [],
+  "operator": "Hatfield Town Council",
+  "sources": [
+    {
+      "label": "Hatfield Town Council: Mulberry Mead Play Area",
+      "url": "https://hatfield-herts.gov.uk/facilities/?filter=play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/685141668"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

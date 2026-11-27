@@ -1,0 +1,35 @@
+{
+  "name": "Walton Way playground",
+  "region": "south-east",
+  "area": "Speenhamland, Newbury",
+  "lat": 51.4065,
+  "lng": -1.31036,
+  "ages": [],
+  "equipment": [
+    "bk",
+    "sw",
+    "sl",
+    "cl",
+    "rb",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "All ages: multi-play unit, slide, climbing net, roundabout, spinner, springers, swings and basket swing.",
+  "nearby": [],
+  "operator": "Newbury Town Council",
+  "sources": [
+    {
+      "label": "Newbury Town Council: Walton Way playground",
+      "url": "https://newbury.gov.uk/services/playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/481366713"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

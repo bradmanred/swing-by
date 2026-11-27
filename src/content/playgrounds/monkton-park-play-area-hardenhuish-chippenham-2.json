@@ -1,0 +1,30 @@
+{
+  "name": "Monkton Park play area",
+  "region": "south-west",
+  "area": "Hardenhuish, Chippenham",
+  "lat": 51.46058,
+  "lng": -2.11219,
+  "ages": [],
+  "equipment": [
+    "mg"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A children's play area and MUGA in Monkton Park, run by Chippenham Town Council since 2019.",
+  "nearby": [],
+  "operator": "Chippenham Town Council",
+  "sources": [
+    {
+      "label": "Chippenham Town Council: Monkton Park play area",
+      "url": "https://www.chippenham.gov.uk/?p=15538"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/342631738"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Savernake Play Park",
+  "region": "south-west",
+  "area": "Eastcott, Swindon",
+  "lat": 51.55584,
+  "lng": -1.78485,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by South Swindon Parish Council.",
+  "nearby": [],
+  "operator": "South Swindon Parish Council",
+  "sources": [
+    {
+      "label": "South Swindon Parish Council: Savernake Play Park",
+      "url": "https://southswindon-pc.gov.uk/services/play-areas/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1190721330"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

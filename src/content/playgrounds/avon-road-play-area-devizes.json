@@ -1,0 +1,31 @@
+{
+  "name": "Avon Road play area",
+  "region": "south-west",
+  "area": "Devizes",
+  "lat": 51.35083,
+  "lng": -2.01521,
+  "ages": [
+    "3-6",
+    "7-12"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A half-hectare play area for under-11s with a mini basketball court, trim trail, football goal and junior pitch. Run by Devizes Town Council.",
+  "nearby": [],
+  "operator": "Devizes Town Council",
+  "sources": [
+    {
+      "label": "Devizes Town Council: Avon Road play area",
+      "url": "https://www.devizes-tc.gov.uk/children-s-play-areas/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/899630067"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

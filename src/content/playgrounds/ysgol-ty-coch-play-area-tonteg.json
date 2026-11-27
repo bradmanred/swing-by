@@ -1,0 +1,30 @@
+{
+  "name": "Ysgol Ty Coch Play Area",
+  "region": "wales",
+  "area": "Tonteg",
+  "lat": 51.56775,
+  "lng": -3.30621,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A fenced play area next to Ysgol Ty Coch, run by Llantwit Fardre Community Council.",
+  "nearby": [],
+  "operator": "Llantwit Fardre Community Council",
+  "sources": [
+    {
+      "label": "Llantwit Fardre Community Council: Ysgol Ty Coch Play Area",
+      "url": "https://www.llantwitfardrecommunitycouncil.org/play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1413829334"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

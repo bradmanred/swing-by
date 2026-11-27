@@ -1,0 +1,30 @@
+{
+  "name": "Green Lane play area",
+  "region": "north-east",
+  "area": "Barnard Castle",
+  "lat": 54.54603,
+  "lng": -1.91245,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A fenced play area run by Barnard Castle Town Council, listed in Durham County Council's dog control order (August 2025).",
+  "nearby": [],
+  "operator": "Barnard Castle Town Council",
+  "sources": [
+    {
+      "label": "Barnard Castle Town Council: Green Lane play area",
+      "url": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/380571844"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

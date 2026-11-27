@@ -1,0 +1,32 @@
+{
+  "name": "Recreation Ground Play Area",
+  "region": "essex",
+  "area": "Bentfield, Stansted Mountfitchet",
+  "lat": 51.90203,
+  "lng": 0.19447,
+  "ages": [
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "Play area at the Recreation Ground in Stansted Mountfitchet, listed in the parish council's open space audit, with a fenced area for younger children.",
+  "nearby": [],
+  "operator": "Stansted Mountfitchet Parish Council",
+  "sources": [
+    {
+      "label": "Stansted Mountfitchet Parish Council: Recreation Ground Play Area",
+      "url": "https://stanstedmountfitchet-pc.gov.uk/wp-content/uploads/2023/09/Appendix-38-Audit-of-Open-Space-2019.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/922685928"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

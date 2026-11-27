@@ -1,0 +1,28 @@
+{
+  "name": "Chestnut Avenue",
+  "region": "north-east",
+  "area": "Malvin's Close, Blyth",
+  "lat": 55.13014,
+  "lng": -1.52282,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by Blyth Town Council, opened in 2023.",
+  "nearby": [],
+  "operator": "Blyth Town Council",
+  "sources": [
+    {
+      "label": "Blyth Town Council: Chestnut Avenue",
+      "url": "https://www.blythtowncouncil.gov.uk/playareas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/911087669"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

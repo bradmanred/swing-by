@@ -1,0 +1,31 @@
+{
+  "name": "Hillworth Park under 5s play area",
+  "region": "south-west",
+  "area": "Devizes",
+  "lat": 51.34673,
+  "lng": -1.99527,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area for under-5s just inside the main entrance of Hillworth Park, run by Devizes Town Council.",
+  "nearby": [],
+  "operator": "Devizes Town Council",
+  "sources": [
+    {
+      "label": "Devizes Town Council: Hillworth Park under 5s play area",
+      "url": "https://www.devizes-tc.gov.uk/children-s-play-areas/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/562900451"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Wood Lane Play Area",
+  "region": "south-west",
+  "area": "Pewsham, Chippenham",
+  "lat": 51.45331,
+  "lng": -2.11106,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area owned by Chippenham Town Council.",
+  "nearby": [],
+  "operator": "Chippenham Town Council",
+  "sources": [
+    {
+      "label": "Chippenham Town Council: Wood Lane Play Area",
+      "url": "https://www.chippenham.gov.uk/wp-content/uploads/2021/09/List-of-CTC-Land-Buildings-lease.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/664948099"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

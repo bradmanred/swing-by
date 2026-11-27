@@ -1,0 +1,28 @@
+{
+  "name": "The Chesters play area",
+  "region": "south-west",
+  "area": "Eastleaze, Swindon",
+  "lat": 51.56396,
+  "lng": -1.82303,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Mixed play areas. Run by West Swindon Parish Council.",
+  "nearby": [],
+  "operator": "West Swindon Parish Council",
+  "sources": [
+    {
+      "label": "West Swindon Parish Council: The Chesters play area",
+      "url": "https://www.westswindon-pc.gov.uk/services/parish-play-areas-west-swindon/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/152029201"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Bodin Gardens playground",
+  "region": "south-east",
+  "area": "Speenhamland, Newbury",
+  "lat": 51.38722,
+  "lng": -1.31887,
+  "ages": [
+    "7-12"
+  ],
+  "equipment": [
+    "bk",
+    "sw",
+    "sl",
+    "cl",
+    "spr"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Ages 7 to 14: multi-games unit, slide, swings, basket swing, climbing rock and springers.",
+  "nearby": [],
+  "operator": "Newbury Town Council",
+  "sources": [
+    {
+      "label": "Newbury Town Council: Bodin Gardens playground",
+      "url": "https://newbury.gov.uk/services/playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1574020143"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

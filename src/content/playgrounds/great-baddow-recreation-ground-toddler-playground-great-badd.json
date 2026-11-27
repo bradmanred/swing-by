@@ -1,0 +1,33 @@
+{
+  "name": "Great Baddow Recreation Ground Toddler Playground",
+  "region": "essex",
+  "area": "Great Baddow, Chelmsford",
+  "lat": 51.71819,
+  "lng": 0.49564,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [
+    "gym"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "The toddler playground at Great Baddow Parish Council's recreation ground off Baddow Road, Great Baddow; the ground also has an outdoor gym, table tennis and a tree trail.",
+  "nearby": [],
+  "operator": "Great Baddow Parish Council",
+  "sources": [
+    {
+      "label": "Great Baddow Parish Council: Great Baddow Recreation Ground Toddler Playground",
+      "url": "https://www.greatbaddowparishcouncil.gov.uk/our-community/parks/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1282649097"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

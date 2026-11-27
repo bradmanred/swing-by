@@ -1,0 +1,30 @@
+{
+  "name": "Kirk Merrington play area",
+  "region": "north-east",
+  "area": "Kirk Merrington",
+  "lat": 54.67347,
+  "lng": -1.59585,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A fenced play area run by Spennymoor Town Council, listed in Durham County Council's dog control order (August 2025).",
+  "nearby": [],
+  "operator": "Spennymoor Town Council",
+  "sources": [
+    {
+      "label": "Spennymoor Town Council: Kirk Merrington play area",
+      "url": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/403971148"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

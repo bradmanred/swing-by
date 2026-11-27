@@ -1,0 +1,31 @@
+{
+  "name": "Woodlands Upper Play Area",
+  "region": "wales",
+  "area": "Llantwit Fardre",
+  "lat": 51.55883,
+  "lng": -3.34316,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "cl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area with climbing frames and swings, run by Llantwit Fardre Community Council.",
+  "nearby": [],
+  "operator": "Llantwit Fardre Community Council",
+  "sources": [
+    {
+      "label": "Llantwit Fardre Community Council: Woodlands Upper Play Area",
+      "url": "https://www.llantwitfardrecommunitycouncil.org/play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1205252511"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

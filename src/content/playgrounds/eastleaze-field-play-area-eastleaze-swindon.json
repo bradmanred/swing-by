@@ -1,0 +1,31 @@
+{
+  "name": "Eastleaze Field play area",
+  "region": "south-west",
+  "area": "Eastleaze, Swindon",
+  "lat": 51.56383,
+  "lng": -1.82963,
+  "ages": [
+    "under-3",
+    "3-6"
+  ],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Primary and toddler play space. Run by West Swindon Parish Council.",
+  "nearby": [],
+  "operator": "West Swindon Parish Council",
+  "sources": [
+    {
+      "label": "West Swindon Parish Council: Eastleaze Field play area",
+      "url": "https://www.westswindon-pc.gov.uk/services/parish-play-areas-west-swindon/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/180302800"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

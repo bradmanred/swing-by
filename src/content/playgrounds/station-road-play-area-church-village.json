@@ -1,0 +1,31 @@
+{
+  "name": "Station Road Play Area",
+  "region": "wales",
+  "area": "Church Village",
+  "lat": 51.56235,
+  "lng": -3.31838,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sl"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area with slides, swings and picnic tables beside the allotments, run by Llantwit Fardre Community Council.",
+  "nearby": [],
+  "operator": "Llantwit Fardre Community Council",
+  "sources": [
+    {
+      "label": "Llantwit Fardre Community Council: Station Road Play Area",
+      "url": "https://www.llantwitfardrecommunitycouncil.org/play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1112111820"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

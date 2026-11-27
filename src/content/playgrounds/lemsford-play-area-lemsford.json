@@ -1,0 +1,28 @@
+{
+  "name": "Lemsford Play Area",
+  "region": "herts",
+  "area": "Lemsford",
+  "lat": 51.79323,
+  "lng": -0.23333,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area at Lemsford Village Hall, run by Hatfield Town Council.",
+  "nearby": [],
+  "operator": "Hatfield Town Council",
+  "sources": [
+    {
+      "label": "Hatfield Town Council: Lemsford Play Area",
+      "url": "https://hatfield-herts.gov.uk/facilities/?filter=play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1363955623"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

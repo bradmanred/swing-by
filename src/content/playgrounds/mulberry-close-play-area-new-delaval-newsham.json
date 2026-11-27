@@ -1,0 +1,30 @@
+{
+  "name": "Mulberry Close Play Area",
+  "region": "north-east",
+  "area": "New Delaval, Newsham",
+  "lat": 55.10896,
+  "lng": -1.52076,
+  "ages": [],
+  "equipment": [],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by Blyth Town Council, with accessible equipment.",
+  "nearby": [],
+  "operator": "Blyth Town Council",
+  "sources": [
+    {
+      "label": "Blyth Town Council: Mulberry Close Play Area",
+      "url": "https://www.blythtowncouncil.gov.uk/playareas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/833433429"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

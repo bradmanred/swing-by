@@ -1,0 +1,40 @@
+{
+  "name": "Shiremoor Adventure Playground",
+  "region": "north-east",
+  "area": "Shiremoor",
+  "lat": 55.03285,
+  "lng": -1.50741,
+  "ages": [
+    "under-3",
+    "3-6",
+    "teens"
+  ],
+  "equipment": [
+    "bk",
+    "sw",
+    "ad",
+    "mg"
+  ],
+  "access": [],
+  "facilities": [
+    "wc",
+    "cf"
+  ],
+  "opens": "",
+  "description": "A playground on North Tyneside Council's own list of play areas.",
+  "nearby": [],
+  "operator": "North Tyneside Council",
+  "sources": [
+    {
+      "label": "North Tyneside Council: Shiremoor Adventure Playground",
+      "url": "https://www.northtyneside.gov.uk/sport-and-leisure/outdoor-spaces/parks-and-play-sites/shiremoor-adventure-playground"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1074247615"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), the full list of play equipment, opening hours and parking.",
+  "photo": null
+}

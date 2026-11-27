@@ -1,0 +1,35 @@
+{
+  "name": "Memorial Gardens Play Area",
+  "region": "east",
+  "area": "Studlands Park, Newmarket",
+  "lat": 52.24346,
+  "lng": 0.40287,
+  "ages": [],
+  "equipment": [
+    "sw",
+    "sp",
+    "wp",
+    "rb"
+  ],
+  "access": [
+    "inc"
+  ],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area with a splash pad, sandpit, swings and an inclusive roundabout, run by Newmarket Town Council.",
+  "nearby": [],
+  "operator": "Newmarket Town Council",
+  "sources": [
+    {
+      "label": "Newmarket Town Council: Memorial Gardens Play Area",
+      "url": "https://www.newmarket.gov.uk/2022/09/02/inclusive-play-space-in-the-memorial-gardens/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1167402041"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

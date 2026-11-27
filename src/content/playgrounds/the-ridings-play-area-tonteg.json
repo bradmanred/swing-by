@@ -1,0 +1,32 @@
+{
+  "name": "The Ridings Play Area",
+  "region": "wales",
+  "area": "Tonteg",
+  "lat": 51.56553,
+  "lng": -3.31035,
+  "ages": [],
+  "equipment": [
+    "sl",
+    "cl",
+    "mb"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area with a slide, climbing frame and monkey bars, run by Llantwit Fardre Community Council.",
+  "nearby": [],
+  "operator": "Llantwit Fardre Community Council",
+  "sources": [
+    {
+      "label": "Llantwit Fardre Community Council: The Ridings Play Area",
+      "url": "https://www.llantwitfardrecommunitycouncil.org/play-areas"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1558146295"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Angel Ridge Play Area",
+  "region": "south-west",
+  "area": "Okus, Swindon",
+  "lat": 51.54778,
+  "lng": -1.79475,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area run by South Swindon Parish Council.",
+  "nearby": [],
+  "operator": "South Swindon Parish Council",
+  "sources": [
+    {
+      "label": "South Swindon Parish Council: Angel Ridge Play Area",
+      "url": "https://southswindon-pc.gov.uk/services/play-areas/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/1134412560"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

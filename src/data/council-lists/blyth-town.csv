@@ -1,19 +1,19 @@
-name,park,postcode,url,text,where
-Axwell Drive,,,https://www.blythtowncouncil.gov.uk/playareas,"A play area run by Blyth Town Council, refurbished in 2024, with a teen shelter.","Axwell Drive, Blyth"
-Bowes Street,,,https://www.blythtowncouncil.gov.uk/playareas,A play area run by Blyth Town Council (formerly known as High Street).,"Bowes Street, Blyth"
-Briardale Road (Cowpen Park),Cowpen Park,,https://www.blythtowncouncil.gov.uk/playareas,A toddler play area run by Blyth Town Council.,"Briardale Road, Blyth"
-Broadway,,,https://www.blythtowncouncil.gov.uk/playareas,"A play area run by Blyth Town Council, completed in 2021.","Broadway, Blyth"
-Burns Avenue,,,https://www.blythtowncouncil.gov.uk/playareas,"A play area run by Blyth Town Council, with a toddler swing and accessible equipment.","Burns Avenue, Blyth"
-Chase Farm Drive,,,https://www.blythtowncouncil.gov.uk/playareas,"A play area run by Blyth Town Council, refurbished in 2019 with equipment for children with special needs.","Chase Farm Drive, Blyth"
-Chestnut Avenue,,,https://www.blythtowncouncil.gov.uk/playareas,"A play area run by Blyth Town Council, opened in 2023.","Chestnut Avenue, Blyth"
-Cottingwood Green,Cottingwood Green,,https://www.blythtowncouncil.gov.uk/playareas,"A play area run by Blyth Town Council for children of all ages, refurbished in 2025 with toddler and junior climbing frames, a roundabout, swings and a buddy board.","Cottingwood Green, Blyth"
-Kitty Brewster,,,https://www.blythtowncouncil.gov.uk/playareas,"A play area run by Blyth Town Council, opened in 2023.","Kitty Brewster, Blyth"
-Laverock Place,,,https://www.blythtowncouncil.gov.uk/playareas,"A play area run by Blyth Town Council, fully renovated.","Laverock Place, Blyth"
-Lindsey Avenue,,,https://www.blythtowncouncil.gov.uk/playareas,A play area run by Blyth Town Council.,"Lindsey Avenue, Blyth"
-Millfield Gardens,,,https://www.blythtowncouncil.gov.uk/playareas,A play area run by Blyth Town Council.,"Millfield Gardens, Blyth"
-Mulberry Close Play Area,,,https://www.blythtowncouncil.gov.uk/playareas,"A play area run by Blyth Town Council, with accessible equipment.","Mulberry Close, Blyth"
-Newsham Farm Play Area,,,https://www.blythtowncouncil.gov.uk/playareas,"A play area run by Blyth Town Council opposite Newsham Primary School, with accessible equipment.","Newsham, Blyth"
-North Farm Adventure Trail,,,https://www.blythtowncouncil.gov.uk/playareas,"An adventure play trail run by Blyth Town Council, with accessible equipment.","North Farm, Blyth"
-Ogle Drive (The Olga Potts Play Area),,,https://www.blythtowncouncil.gov.uk/playareas,A play area run by Blyth Town Council.,"Ogle Drive, Blyth"
-South Beach Play Area,,,https://www.blythtowncouncil.gov.uk/playareas,"A play area run by Blyth Town Council, completed in 2022.","South Beach, Blyth"
-St John's Park - Cowpen Quay,St John's Park,,https://www.blythtowncouncil.gov.uk/playareas,A play area run by Blyth Town Council.,"Cowpen Quay, Blyth"
+name,park,postcode,url,text,where,lat,lng,placed
+Axwell Drive,,,https://www.blythtowncouncil.gov.uk/playareas,"A play area run by Blyth Town Council, refurbished in 2024, with a teen shelter.","Axwell Drive, Blyth",55.12346,-1.5348,street
+Bowes Street,,,https://www.blythtowncouncil.gov.uk/playareas,A play area run by Blyth Town Council (formerly known as High Street).,"Bowes Street, Blyth",55.12679,-1.51526,street
+Briardale Road (Cowpen Park),Cowpen Park,,https://www.blythtowncouncil.gov.uk/playareas,A toddler play area run by Blyth Town Council.,"Briardale Road, Blyth",55.12705,-1.54077,street
+Broadway,,,https://www.blythtowncouncil.gov.uk/playareas,"A play area run by Blyth Town Council, completed in 2021.","Broadway, Blyth",55.1202,-1.51389,street
+Burns Avenue,,,https://www.blythtowncouncil.gov.uk/playareas,"A play area run by Blyth Town Council, with a toddler swing and accessible equipment.","Burns Avenue, Blyth",55.11729,-1.5266,street
+Chase Farm Drive,,,https://www.blythtowncouncil.gov.uk/playareas,"A play area run by Blyth Town Council, refurbished in 2019 with equipment for children with special needs.","Chase Farm Drive, Blyth",55.12177,-1.54692,street
+Chestnut Avenue,,,https://www.blythtowncouncil.gov.uk/playareas,"A play area run by Blyth Town Council, opened in 2023.","Chestnut Avenue, Blyth",55.13195,-1.52136,street
+Cottingwood Green,Cottingwood Green,,https://www.blythtowncouncil.gov.uk/playareas,"A play area run by Blyth Town Council for children of all ages, refurbished in 2025 with toddler and junior climbing frames, a roundabout, swings and a buddy board.","Cottingwood Green, Blyth",55.10672,-1.52971,street
+Kitty Brewster,,,https://www.blythtowncouncil.gov.uk/playareas,"A play area run by Blyth Town Council, opened in 2023.","Kitty Brewster, Blyth",55.13248,-1.55765,street
+Laverock Place,,,https://www.blythtowncouncil.gov.uk/playareas,"A play area run by Blyth Town Council, fully renovated.","Laverock Place, Blyth",55.10875,-1.53396,street
+Lindsey Avenue,,,https://www.blythtowncouncil.gov.uk/playareas,A play area run by Blyth Town Council.,"Lindsey Avenue, Blyth",,,
+Millfield Gardens,,,https://www.blythtowncouncil.gov.uk/playareas,A play area run by Blyth Town Council.,"Millfield Gardens, Blyth",55.13296,-1.51619,street
+Mulberry Close Play Area,,,https://www.blythtowncouncil.gov.uk/playareas,"A play area run by Blyth Town Council, with accessible equipment.","Mulberry Close, Blyth",55.10951,-1.52292,street
+Newsham Farm Play Area,,,https://www.blythtowncouncil.gov.uk/playareas,"A play area run by Blyth Town Council opposite Newsham Primary School, with accessible equipment.","Newsham, Blyth",55.10275,-1.52398,street
+North Farm Adventure Trail,,,https://www.blythtowncouncil.gov.uk/playareas,"An adventure play trail run by Blyth Town Council, with accessible equipment.","North Farm, Blyth",55.1065,-1.51645,street
+Ogle Drive (The Olga Potts Play Area),,,https://www.blythtowncouncil.gov.uk/playareas,A play area run by Blyth Town Council.,"Ogle Drive, Blyth",55.12243,-1.52823,street
+South Beach Play Area,,,https://www.blythtowncouncil.gov.uk/playareas,"A play area run by Blyth Town Council, completed in 2022.","South Beach, Blyth",55.10218,-1.49429,street
+St John's Park - Cowpen Quay,St John's Park,,https://www.blythtowncouncil.gov.uk/playareas,A play area run by Blyth Town Council.,"Cowpen Quay, Blyth",,,

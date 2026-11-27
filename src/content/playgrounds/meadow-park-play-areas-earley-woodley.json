@@ -1,0 +1,30 @@
+{
+  "name": "Meadow Park play areas",
+  "region": "south-east",
+  "area": "Earley, Woodley",
+  "lat": 51.43603,
+  "lng": -0.91028,
+  "ages": [],
+  "equipment": [
+    "sw"
+  ],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "Two areas of play equipment and a swing area in Meadow Park, run by Earley Town Council.",
+  "nearby": [],
+  "operator": "Earley Town Council",
+  "sources": [
+    {
+      "label": "Earley Town Council: Meadow Park play areas",
+      "url": "https://www.earley-tc.gov.uk/?p=95"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/164545212"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, the full list of play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

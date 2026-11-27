@@ -1,0 +1,30 @@
+{
+  "name": "Riverside play area",
+  "region": "north-east",
+  "area": "Chester-le-Street",
+  "lat": 54.85357,
+  "lng": -1.56124,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [
+    "fen"
+  ],
+  "opens": "",
+  "description": "A fenced play area run by Stanhope Parish Council, listed in Durham County Council's dog control order (August 2025).",
+  "nearby": [],
+  "operator": "Stanhope Parish Council",
+  "sources": [
+    {
+      "label": "Stanhope Parish Council: Riverside play area",
+      "url": "https://easingtonvillageparishcouncil.gov.uk/wp-content/uploads/2025/10/PublicSpaceProtectionOrderForResponsibleDogOwnership.pdf"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/240922705"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

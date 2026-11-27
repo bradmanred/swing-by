@@ -1,0 +1,28 @@
+{
+  "name": "The Green play area",
+  "region": "south-west",
+  "area": "Devizes",
+  "lat": 51.35185,
+  "lng": -1.98726,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A play area for under-12s with modern equipment, next to the Crammer pond. Run by Devizes Town Council.",
+  "nearby": [],
+  "operator": "Devizes Town Council",
+  "sources": [
+    {
+      "label": "Devizes Town Council: The Green play area",
+      "url": "https://www.devizes-tc.gov.uk/children-s-play-areas/"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/62032659"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}

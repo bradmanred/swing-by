@@ -1,0 +1,28 @@
+{
+  "name": "Clair Park play area",
+  "region": "south-east",
+  "area": "Lucastes, Haywards Heath",
+  "lat": 51.00404,
+  "lng": -0.10082,
+  "ages": [],
+  "equipment": [],
+  "access": [],
+  "facilities": [],
+  "opens": "",
+  "description": "A playground run by Mid Sussex District Council.",
+  "nearby": [],
+  "operator": "Mid Sussex District Council",
+  "sources": [
+    {
+      "label": "Mid Sussex District Council: Clair Park play area",
+      "url": "https://midsussex.gov.uk/leisure-sport/playgrounds"
+    },
+    {
+      "label": "OpenStreetMap: play area",
+      "url": "https://www.openstreetmap.org/way/183606606"
+    }
+  ],
+  "checked": "2026-11-27",
+  "notConfirmed": "Exact position (taken from OpenStreetMap), age ranges, play equipment, opening hours, toilets and parking.",
+  "photo": null
+}
