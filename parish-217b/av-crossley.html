@@ -1,0 +1,873 @@
+
+
+
+<!DOCTYPE html>
+
+<html lang="en-GB">
+    
+<head>
+
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="91ff495d-2161-415f-b4a0-9f3d07ca2de0" data-blockingmode="auto"  type="text/javascript" ></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="description" content="This is the description of Crossley Park" />
+    <!-- eGov Meta Data  -->
+    <!-- this will make your html5 page invalid! -->
+    <meta name="DC.Subject" content="">
+    <meta name="DC.Date" content="13/07/2026 14:35:05">
+    <meta name="DC.Creator" content="Amber Valley Borough Council">
+    <meta name="DC.Publisher" content="Amber Valley Borough Council">
+    <meta name="DC.Title" content="Crossley Park ">
+    <!-- end eGov -->
+
+
+
+    <title>Crossley Park</title>
+    
+    <link rel="stylesheet" href="/css/avmain.css">
+    <link rel="stylesheet" href="/css/contourForms.css">
+
+    <!-- Unpublished jQuery libraries-->
+    <!--
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/mvc/5.1/jquery.validate.unobtrusive.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/mvc/5.1/jquery.validate.unobtrusive.min.js"></script>
+    -->
+    <!--end of Unpublished jQuery libraries-->
+    
+    <!-- new jQuery libraries -->
+    <script src="/scripts/jQuery/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="/scripts/jQuery/jquery-3.7.0.js"></script>
+    <link rel="stylesheet" href="//cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+    <script src="//cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/mvc/5.2.3/jquery.validate.unobtrusive.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js" integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/code.jquery.com_ui_1.13.1_themes_smoothness_jquery-ui.css">
+    <!-- end of new jQuery libraries -->
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-accessibility.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/scripts/bootstrap-accessibility.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
+    <script src="//cdn.datatables.net/plug-ins/1.10.19/sorting/datetime-moment.js"></script>
+    <script src="https://cdn.datatables.net/plug-ins/1.10.20/sorting/date-uk.js"></script>
+    <script src="/scripts/natural.js"></script>
+    <script type="text/javascript" src="/scripts/full_numbers_no_ellipses.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+      integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin="anonymous" />
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+      integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin="anonymous"></script>
+      
+    <link rel="stylesheet" href="/scripts/leaflet-measure/dist/leaflet-measure.css"  crossorigin="anonymous">
+    <script src="/scripts/dist/bundle.js"></script>
+    <script src="/scripts/leaflet-measure/dist/leaflet-measure.js"></script>
+    <script src="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js" crossorigin="anonymous"></script>
+    <link href="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css" rel="stylesheet" crossorigin="anonymous" />
+    <script src="/scripts/leafletpip/leaflet-pip.js" ></script>
+    <script src="/scripts/spin.js"></script>
+    <script src="/scripts/date-uk.js"></script>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.css" rel="stylesheet" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.js"></script>
+    <script src="/js/forms-propertylookup.js"></script>
+    <link href="/css/glyphicons.css" rel="stylesheet" />
+    
+    <!-- Global site tag (gtag.js) - Google Analytics Universal -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2965051-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-2965051-1' , { 'anonymize_ip': true });
+    </script>
+    -->
+    
+    <!-- Global site tag (gtag.js) - Google Analytics 4 replacing Universal in 2023-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EG1NVCML6B"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-EG1NVCML6B');
+    </script>
+    
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/fav-icons/apple-touch-icon.png?v=lk9w5JY0zl">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/fav-icons/favicon-32x32.png?v=lk9w5JY0zl">
+    <link rel="icon" type="image/png" sizes="194x194" href="/images/fav-icons/favicon-194x194.png?v=lk9w5JY0zl">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/fav-icons/android-chrome-192x192.png?v=lk9w5JY0zl">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/fav-icons/favicon-16x16.png?v=lk9w5JY0zl">
+    <link rel="shortcut icon" href="/images/fav-icons/favicon.ico?v=lk9w5JY0zl">
+    <meta name="msapplication-TileColor" content="#008080">
+    <meta name="msapplication-TileImage" content="/images/fav-icons/mstile-144x144.png?v=lk9w5JY0zl">
+    <meta name="msapplication-config" content="/images/fav-icons/browserconfig.xml?v=lk9w5JY0zl">
+    <meta name="theme-color" content="#ffffff">
+    
+    
+    
+    
+    <script type="text/javascript" src="https://www.browsealoud.com/plus/scripts/3.1.0/ba.js" crossorigin="anonymous" integrity="sha256-VCrJcQdV3IbbIVjmUyF7DnCqBbWD1BcZ/1sda2KWeFc= sha384-k2OQFn+wNFrKjU9HiaHAcHlEvLbfsVfvOnpmKBGWVBrpmGaIleDNHnnCJO4z2Y2H sha512-gxDfysgvGhVPSHDTieJ/8AlcIEjFbF3MdUgZZL2M5GXXDdIXCcX0CpH7Dh6jsHLOLOjRzTFdXASWZtxO+eMgyQ==">  </script>
+    
+    <script>
+    
+        //var avGlobalIsIntranet = window.location.hostname.toLowerCase().includes("avbc.gov.uk");
+        
+        /*#####################
+        Additional jQuery (required)
+        #####################*/
+        $(document).ready(function () {
+
+            var clickEvent = false;
+            $('#myCarousel').carousel({
+                interval: 4000
+            }).on('click', '.list-group li', function () {
+                clickEvent = true;
+                $('.list-group li').removeClass('active');
+                $(this).addClass('active');
+            }).on('slid.bs.carousel', function (e) {
+                if (!clickEvent) {
+                    var count = $('.list-group').children().length - 1;
+                    var current = $('.list-group li.active');
+                    current.removeClass('active').next().addClass('active');
+                    var id = parseInt(current.data('slide-to'));
+                    if (count == id) {
+                        $('.list-group li').first().addClass('active');
+                    }
+                }
+                clickEvent = false;
+            });
+            $('#btnA2Z').click(function () {
+                $('#searchPopout').hide();
+                $('#menuPopout').hide();
+                if ($('#a2zPopout').css('display') == 'none' || $('#a2zPopout').css("visibility") == "hidden") {
+                    $('#a2zPopout').slideDown("slow");
+                }
+                else {
+                    $('#a2zPopout').slideUp("slow");
+                }
+
+            });
+            $('#btnMenu').click(function () {
+                //closeAllPopouts();
+                $('#searchPopout').hide();
+                $('#a2zPopout').hide();
+                if ($('#menuPopout').css('display') == 'none' || $('#menuPopout').css("visibility") == "hidden") {
+                    $('#menuPopout').slideDown("slow");
+                }
+                else {
+                    $('#menuPopout').slideUp("slow");
+                }
+            });
+            $('#btnOpenSearch').click(function () {
+                $('#a2zPopout').hide();
+                $('#menuPopout').hide();
+                if ($('#searchPopout').css('display') == 'none' || $('#searchPopout').css("visibility") == "hidden") {
+                    $('#searchPopout').slideDown("slow");
+                }
+                else {
+                    $('#searchPopout').slideUp("slow");
+                }
+            });
+            $('.close').click(function () {
+                $('#searchPopout').hide();
+                $('#a2zPopout').hide();
+                $('#menuPopout').hide();
+            });
+            
+
+        })
+        $(window).load(function () {
+            var boxheight = $('#myCarousel .carousel-inner').innerHeight();
+            var itemlength = $('#myCarousel .item').length;
+            var triggerheight = Math.round(boxheight / itemlength + 1);
+
+            $('#myCarousel .list-group-item').outerHeight(triggerheight);
+        });
+        
+        $.fn.dataTable.moment( 'DD-MM-YYYY' );
+        $.fn.dataTable.moment( 'DD/MM/YYYY' );
+    </script>
+    
+</head>
+
+    <body>
+        
+        <div id="__ba_launchpad"></div>
+
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <a href="/Default.aspx"><p style="display:none">home link</p><img src="/images/logo.jpg" alt="council logo" style="width:277px;height:69px"></a>
+                    </div>
+                    <div class="col-sm-4">
+                    </div>    
+                </div>
+            </div>
+        </header>
+
+        <div class="navigationMenu" style="">
+            <nav class="navbar navbar-default"  style="text-align:right">
+                <div class="container-fluid" style="text-align:right; ">
+                    <div class="navbar-header" style="text-align:right;width:100%; ">
+                            <div style="float:left;" class="hidden-sm hidden-xs">
+                                    <ul class="breadcrumb" aria-label="Breadcrumb">
+        <li><a href="/"><span class="forceBlack">Home</span></a></li>
+            <li class=""><a href="/environment/"><span class="forceBlack">Environment</span></a></li>
+            <li class=""><a href="/environment/parks-and-gardens/"><span class="forceBlack">Parks and gardens</span></a></li>
+            <li class="current"><a href="/environment/parks-and-gardens/crossley-park/"><span class="forceBlack">Crossley Park</span></a></li>
+    </ul>
+
+                            </div>
+                            
+                            <div class="form-group navbar-right" style="text-align:right">
+                                <button id="btnOpenSearch" type="submit" style="padding-top:5px; padding-bottom:5px" aria-label="Search" title="Search Button" class="navbar-toggle collapse in">
+                                    <span class="sr-only forceBlack">Search Button</span>
+                                    <span class="glyphicon glyphicon-search forceBlack"></span>
+                                </button>
+
+                                <button id="btnA2Z" type="button" class="navbar-toggle collapse in" style="padding-top:5px; padding-bottom:5px">
+                                    <span class="forceBlack">A - Z</span>
+                                </button> 
+                                
+                                <button id="btnMenu" type="button" style="padding-top:5px; padding-bottom:5px" class="navbar-toggle collapse in">
+                                    <span class="sr-only forceBlack">Toggle navigation</span>
+                                    <span class="hidden-sm hidden-xs forceBlack">Menu</span>
+                                    <span style="margin-top:4px;margin-bottom:4px" class="icon-bar hidden-lg hidden-md forceBlack"></span>
+                                    <span style="margin-top:4px;margin-bottom:4px" class="icon-bar hidden-lg hidden-md forceBlack"></span>
+                                    <span style="margin-top:4px;margin-bottom:4px" class="icon-bar hidden-lg hidden-md forceBlack"></span>
+                                </button>
+                            </div>
+                    </div>
+                </div>
+                
+                <div id="a2zPopout" class="popoutContainerAZ">
+                    <script>
+
+        $(document).ready(function () {
+            $(".a2zItem").click(function (event) {
+                event.preventDefault();
+                GetA2ZItems($(this).children('a').text(), function(data){
+                    populateA2Z(data);
+                });
+            });
+        });
+        
+        function GetA2ZItems(firstLetter, callback) {
+            $.ajax({
+                url: 'https://info.ambervalley.gov.uk/WebServices/AVBCFeeds/TaxonomyJSON.asmx/GetA2ZByFirstLetter',
+                type: 'POST',
+                data: {"firstLetter": firstLetter},
+                dataType: 'json',
+                success: function (data) {
+                    callback(data);
+                }
+            });
+            
+        }
+        
+        function populateA2Z(data){
+            var html1 = '';
+            var html2 = '';
+             $.each(data, function (index, value) {
+                if(index < data.length / 2){
+                    html1 += '<p class="a2zResult"><a href="' + data[index].url + '"';
+                    if(data[index].ext != "0"){html1 += ' target="_blank"';}
+                    html1 += '>' + data[index].term + '</a></p>';
+                }
+                else{
+                    html2 += '<p class="a2zResult"><a href="' + data[index].url + '"';
+                    if(data[index].ext != "0"){html2 += ' target="_blank"';}
+                    html2 += '>' + data[index].term + '</a></p>';
+                }
+            });
+            $("#a2zcol1").html(html1);
+            $("#a2zcol2").html(html2);
+
+        }
+        
+        function isEven(n) {
+          return n == parseFloat(n)? !(n%2) : void 0;
+        }
+        
+</script>
+
+<div style="margin: 0 auto;">
+    <div class="a2zmenu">
+	    <div class="a2zItem" aria-label="Open A to Z items starting with A" tabindex="0"><a class="a2zLetter">A</a></div><div class="a2zItem" aria-label="Open A to Z items starting with B" tabindex="0"><a class="a2zLetter">B</a></div><div class="a2zItem" aria-label="Open A to Z items starting with C" tabindex="0"><a class="a2zLetter">C</a></div>
+        <div class="a2zItem" aria-label="Open A to Z items starting with D" tabindex="0"><a class="a2zLetter">D</a></div><div class="a2zItem" aria-label="Open A to Z items starting with E" tabindex="0"><a class="a2zLetter">E</a></div><div class="a2zItem" aria-label="Open A to Z items starting with F" tabindex="0"><a class="a2zLetter">F</a></div>
+        <div class="a2zItem" aria-label="Open A to Z items starting with G" tabindex="0"><a class="a2zLetter">G</a></div><div class="a2zItem" aria-label="Open A to Z items starting with H" tabindex="0"><a class="a2zLetter">H</a></div><div class="a2zItem" aria-label="Open A to Z items starting with I" tabindex="0"><a class="a2zLetter">I</a></div>
+        <div class="a2zItem" aria-label="Open A to Z items starting with J" tabindex="0"><a class="a2zLetter">J</a></div><div class="a2zItem" aria-label="Open A to Z items starting with K" tabindex="0"><a class="a2zLetter">K</a></div><div class="a2zItem" aria-label="Open A to Z items starting with L" tabindex="0"><a class="a2zLetter">L</a></div>
+        <div class="a2zItem" aria-label="Open A to Z items starting with M" tabindex="0"><a class="a2zLetter">M</a></div><div class="a2zItem" aria-label="Open A to Z items starting with N" tabindex="0"><a class="a2zLetter">N</a></div><div class="a2zItem" aria-label="Open A to Z items starting with O" tabindex="0"><a class="a2zLetter">O</a></div>
+        <div class="a2zItem" aria-label="Open A to Z items starting with P" tabindex="0"><a class="a2zLetter">P</a></div><div class="a2zItem" aria-label="Open A to Z items starting with Q" tabindex="0"><a class="a2zLetter">Q</a></div><div class="a2zItem" aria-label="Open A to Z items starting with R" tabindex="0"><a class="a2zLetter">R</a></div>
+        <div class="a2zItem" aria-label="Open A to Z items starting with S" tabindex="0"><a class="a2zLetter">S</a></div><div class="a2zItem" aria-label="Open A to Z items starting with T" tabindex="0"><a class="a2zLetter">T</a></div><div class="a2zItem" aria-label="Open A to Z items starting with U" tabindex="0"><a class="a2zLetter">U</a></div>
+        <div class="a2zItem" aria-label="Open A to Z items starting with V" tabindex="0"><a class="a2zLetter">V</a></div><div class="a2zItem" aria-label="Open A to Z items starting with W" tabindex="0"><a class="a2zLetter">W</a></div><div class="a2zItem" aria-label="Open A to Z items starting with X" tabindex="0"><a class="a2zLetter">X</a></div>
+        <div class="a2zItem" aria-label="Open A to Z items starting with Y" tabindex="0"><a class="a2zLetter">Y</a></div><div class="a2zItem" aria-label="Open A to Z items starting with Z" tabindex="0"><a class="a2zLetter">Z</a></div>
+    </div>
+    <br class="brclear" />
+    <div class="a2zResultContainer">
+        <div id="a2zcol1" class="col-sm-6">
+        </div>
+        <div id="a2zcol2" class="col-sm-6">
+        </div>
+    </div>
+</div>
+                </div>                
+                <div id="menuPopout" class="popoutContainerMenu">
+                        <div class="topLevelBackground">
+
+        <div class="row">
+            <div class="col-sm-6 col-md-4 tmitem">
+                <a href="/benefits" class="tmlink">
+                    <span aria-hidden="true" class="tmchevron">
+        		        >
+                    </span> 
+                    <span class="tmtext">
+                        Benefits
+                    </span>                       
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 tmitem">
+                <a href="/business" class="tmlink">
+                    <span aria-hidden="true" class="tmchevron">
+        		        >
+                    </span> 
+                    <span class="tmtext">
+                        Business
+                    </span> 
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 tmitem">
+                <a href="/community" class="tmlink">
+                    <span aria-hidden="true" class="tmchevron">
+        		        >
+                    </span> 
+                    <span class="tmtext">
+                        Community
+                    </span> 
+                </a>
+            </div>
+
+            <div class="col-sm-6 col-md-4 tmitem">
+                <a href="/council" class="tmlink">
+            		<span aria-hidden="true" class="tmchevron">
+            	        >
+                    </span>
+                    <span class="tmtext">
+                        Council
+                    </span>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 tmitem">
+                <a href="/council-tax" class="tmlink">
+                	<span aria-hidden="true" class="tmchevron">
+            	        >
+                    </span>
+                    <span class="tmtext">
+                        Council tax
+                    </span>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 tmitem">
+                <a href="/councillors-and-elections" class="tmlink">
+            		<span aria-hidden="true" class="tmchevron">
+        		        >
+                    </span>   
+                    <span class="tmtext">
+                        Councillors and elections
+                    </span>             
+                </a>
+            </div>    
+    
+
+            <div class="col-sm-6 col-md-4 tmitem">
+                <a href="/environment" class="tmlink">
+                    <span aria-hidden="true" class="tmchevron">
+        		        >
+                    </span> 
+                    <span class="tmtext">
+                        Environment
+                    </span>                       
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 tmitem">
+                <a href="/housing" class="tmlink">
+                    <span aria-hidden="true" class="tmchevron">
+        		        >
+                    </span> 
+                    <span class="tmtext">
+                        Housing
+                    </span> 
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 tmitem">
+                <a href="/licensing" class="tmlink">
+                    <span aria-hidden="true" class="tmchevron">
+        		        >
+                    </span> 
+                    <span class="tmtext">
+                        Licensing
+                    </span> 
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 tmitem">
+                <a href="/planning" class="tmlink">
+                    <span aria-hidden="true" class="tmchevron">
+        		        >
+                    </span> 
+                    <span class="tmtext">
+                        Planning
+                    </span> 
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 tmitem">
+                <a href="/roads-and-parking" class="tmlink">
+                    <span aria-hidden="true" class="tmchevron">
+        		        >
+                    </span> 
+                    <span class="tmtext">
+                        Roads and parking
+                    </span> 
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 tmitem">
+                <a href="/rubbish-waste-and-recycling" class="tmlink">
+                    <span aria-hidden="true" class="tmchevron">
+        		        >
+                    </span> 
+                    <span class="tmtext">
+                        Rubbish, waste and recycling
+                    </span> 
+                </a>
+            </div>            
+        </div>
+    
+    </div>
+                </div>            
+                <div id="searchPopout" class="popoutContainerSearch">
+                    <p>Our site search is powered by Google. If you cannot see the search bar then you will need to allow our 'marketing' cookies, you can change your consent to these cookies on our <a style="color: #008080 !important; text-decoration: underline;" href="/our-website/cookies/">cookies page</a>. However, the consent of any cookies on our website is the choice of the user.</p>
+                    <script>
+
+    var imgAltTagsFix = function() {
+        //customSearchControl.setSearchCompleteCallback(this,function(){ alert("search completed");});
+        //google.load("search", "1", {"callback" : onLoadCallback});
+        //console.log("hello" + $('.gsc-adBlock'));
+        $('.gsc-adBlock').hide();
+        $('img.gsc-branding-img').attr("alt", "Google Custom Search Branding");
+        $('input.gsc-search-button').attr('alt', "Google Custom Search Button");
+        $('.gsc-thumbnail-inside').css("padding", "0");
+        
+        $('table.gstl_50').attr('role', "presentation");
+        $('table.gstl_50').removeAttr('cellpadding');
+        $('table.gstl_50').removeAttr('cellspacing');
+        $('table.gstl_50').attr('style', "padding:0;");   
+        
+        $('table.gsc-above-wrapper-area-container').attr('role', "presentation");
+        $('table.gsc-above-wrapper-area-container').removeAttr('cellpadding');
+        $('table.gsc-above-wrapper-area-container').removeAttr('cellspacing');
+        $('table.gsc-above-wrapper-area-container').attr('style', "padding:0;");
+        
+        $('table.gsc-resultsHeader').attr('role', "presentation");
+        $('table.gsc-resultsHeader').removeAttr('cellpadding');
+        $('table.gsc-resultsHeader').removeAttr('cellspacing');
+        $('table.gsc-resultsHeader').attr('style', "padding:0;");
+        
+        $('table.gsc-search-box').attr('role', "presentation");
+        $('table.gsc-search-box').removeAttr('cellpadding');
+        $('table.gsc-search-box').removeAttr('cellspacing');
+        $('table.gsc-search-box').attr('style', "padding:0;");
+        $('table.gsc-search-box').attr('title', "Site Search");
+        
+        //$('td.gsc-search-button').html('<button type="button" class="gsc-search-button gsc-search-button-v2">search</button>');
+
+    };
+    
+    function onLoadCallback(){
+        //console.log("hello2" + $('.gsc-adBlock'));
+    }
+    
+    window.__gcse = {
+        callback: imgAltTagsFix
+    };
+
+    (function() {
+        var cx = '011253090859162375191:mzr5uftn9hu';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+    })();
+    
+</script>
+
+    <div style="margin: 0 auto;">
+        <div class="gcse-search"></div>
+    </div>
+                </div> 
+                
+            </nav>
+        </div>
+        
+        <!--- Area to add an urgent message to EVERY PAGE ON THE WEBSITE via the Master Template. This will show below the menu section. Use the area below and remove the code to unhide the html --->
+
+<!---
+    <div class="container"> 
+
+        <div class="alert alert-danger">
+            <h2>Essential system maintenance – Saturday 16 May</h2>
+            <p><strong>Please be aware that Amber Valley Borough Council will carry out a full power shutdown on Saturday 16 May, starting at 7am.</strong></p>
+            
+            <p>During this time:</p>
+            
+            <p>All Amber Valley–hosted websites and online services will be unavailable, including payments, planning applications, and other digital services</p>
+            <P>Our phone lines will also be affected </P>
+            <p>In an emergency posing a threat to life or property, please call 07795 343684.</P>
+            <p>Thank you for your patience.</P>
+            
+        </div>
+
+    </div>
+    --->
+        
+        
+
+
+    <div class="container">
+        <div class="row row-fluid">
+        
+            <div class="col-md-9 col-md-push-3">
+
+                    <div>
+        <h1>Crossley Park
+        </h1>
+    </div>
+            
+                <div class="bodyText">
+                    
+                    <p>Welcome to the green flag award winning Crossley Park a little oasis in the centre of Ripley.</p>
+<p>Crossley Park has been open to the public for over a hundred years. The park is a hive of activity in the mornings with people walking their dogs and chatting to each other. The play area is always in use with children of all ages enjoying the play equipment, and during the summer months the new interactive water play facility is full to bursting with local children and grown-ups alike running through the spraying water.</p>
+<p>There is an abundance of beautiful mature trees and an excellent display of horse chestnut trees which surround the bandstand. The borders contain a selection of shrubs and herbaceous plants providing a natural habitat for wildlife.</p>
+<p><span>Click on the links below to read more.</span></p>
+<button class="accordion">When is it open?
+        <span aria-hidden="true">&#709;</span>
+    </button>
+    <div class="panel faqPanel">
+      <p><span>The park is open daily from 8.00am and closes at dusk.</span></p>
+    </div>
+    <button class="accordion">History of the site
+        <span aria-hidden="true">&#709;</span>
+    </button>
+    <div class="panel faqPanel">
+      <p><span>The land was originally owned by the Crossley family who donated it to Ripley Town in 1901 at which time it became known as the Central Recreation Ground. Over the years improvement works were carried out and the park was re-opened on the 6th May 1935. </span><br /><br /><span>The Crossley family donated further funding in 1937 to enable a bandstand to be constructed in memory of those who died during WWI and was formally opened on Coronation Day 1937. A new bandstand was built in 1999 following a fire in 1997 which completely destroyed the original bandstand. </span><br /><br /><span>Amber Valley Borough Council commissioned a sun dial to be built to commemorate the Millennium. </span><br /><br /><span>In November 2014 a rededication ceremony was held to commemorate 100 years of world War 1 which included the installation of the new War Memorial surrounding the bandstand.</span></p>
+    </div>
+    <button class="accordion">Facilities
+        <span aria-hidden="true">&#709;</span>
+    </button>
+    <div class="panel faqPanel">
+      <p>Play area - the park has a well-equipped play area suitable for all ages. <br /><br />Water play facility – in May 2014 the old and dated paddling pool was replaced with a new water play facility. Come along during the summer months and enjoy this free facility operating between 10.00am – 6.00pm (the times may vary due to inclement weather or maintenance) <br /><br />Circular path - a tarmac path runs around the park and links the various features together and provides a circular walk. <br /><br />Central green area – this is used for a variety of activities and has a small set of goal posts. <br /><br />Toilet – are available Monday to Friday from the end of March through to the end of October. For the remainder of the year the toilets will be open when the park keeper is in attendance. <br /><br />Bandstand – this is located at the bottom end of the park and is host to band concerts throughout the summer months. <br /><br />World War I Memorial<span> - to commemorate the centenary of World War I ten stone plinths have been installed around the bandstand. Set into these plinths are mosaics designed by local school children showing their images of WWI.</span></p>
+    </div>
+    <button class="accordion">Access / location
+        <span aria-hidden="true">&#709;</span>
+    </button>
+    <div class="panel faqPanel">
+      <p><span>The park can be accessed from School Lane, Albert Street and through the Borough Council car park on Cromford Road. </span><br /><br /><span>Parking is available in the pay &amp; display car park on Cromford Road, Ripley DE5 3FP. Further parking is available at weekends in the council car park located off Cromford Road.</span></p>
+    </div>
+    <button class="accordion">Events
+        <span aria-hidden="true">&#709;</span>
+    </button>
+    <div class="panel faqPanel">
+      <p>No scheduled events at this time.</p>
+<p><span>To view all event applications for the borough's parks and gardens, or to apply for your own event please view our <a data-udi="umb://document/9ddab7f01a4e4ee3aab67c39bc8a770c" href="#" title="Events on council land">events on council land</a> page. Alternatively please contact the landscapes team on 01773 841542.</span></p>
+    </div>
+    <button class="accordion">Site management
+        <span aria-hidden="true">&#709;</span>
+    </button>
+    <div class="panel faqPanel">
+      <p><span>The park is owned by Amber Valley Borough Council and is managed by the landscape services department.</span><br /><br /><span>There is an active friends group who help raise funds and support the events.</span></p>
+    </div>
+    <button class="accordion">Responsible use of the site
+        <span aria-hidden="true">&#709;</span>
+    </button>
+    <div class="panel faqPanel">
+      <p><span>The borough council are always keen to promote positive use of the site and a good park user guide is visible at all entrances to the park. </span><br /><br /><span>For further information please contact landscape services on 01773 841570.</span></p>
+    </div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var faqPanel = this.nextElementSibling;
+        if (faqPanel.style.display === "block") {
+            faqPanel.style.display = "none";
+        } else {
+            faqPanel.style.display = "block";
+        }
+    });
+}
+</script>
+
+                    <div class="lgLinkContainer">
+                        
+
+
+                    </div>
+                    
+                    <div class="furtherHelp">Need further help or information?</div>
+                    <p>Contact the team directly on 01773 841335 or email <a href="mailto:envadmin@ambervalley.gov.uk">envadmin@ambervalley.gov.uk</a></p>
+
+                </div>
+          
+            </div>
+
+            <div class="col-md-3 col-md-pull-9">
+
+                <div class="hidden-sm hidden-lg hidden-md">
+                    
+                <div class="usefulLinksMenu">
+                    <span class="list-group-item" style="background-color: #008080; color: #fff;">Useful Links</span> 
+                            <a href="http://info.ambervalley.gov.uk/docarc/docviewer.aspx?docGuid=946f0a1367504c3f82e68fa5051d329c" target="_blank" class="list-group-item list-group-item-action">Crossley Park management plan</a>
+                            <a href="http://info.ambervalley.gov.uk/docarc/docviewer.aspx?docguid=b75111c833454dda996a1463de251408" target="_blank" class="list-group-item list-group-item-action">Park information leaflet</a>
+                </div>
+
+                
+
+                </div>
+                    <div class="sideNavigation hidden-print">
+        <span class="list-group-item list-group-header">Pages in Crossley Park</span>
+            <span class="hidden-lg hidden-md"><a href="/environment/parks-and-gardens/" class="list-group-item list-group-item-action"><span aria-hidden="true">&lt; </span>Back to Parks and gardens</a></span>
+            <a href="/environment/parks-and-gardens/crossley-park/war-and-remembrance-in-ripley/" class="list-group-item list-group-item-action">War and remembrance in Ripley</a>
+    </div>
+                
+                <div class="hidden-xs">
+                    
+                <div class="usefulLinksMenu">
+                    <span class="list-group-item" style="background-color: #008080; color: #fff;">Useful Links</span> 
+                            <a href="http://info.ambervalley.gov.uk/docarc/docviewer.aspx?docGuid=946f0a1367504c3f82e68fa5051d329c" target="_blank" class="list-group-item list-group-item-action">Crossley Park management plan</a>
+                            <a href="http://info.ambervalley.gov.uk/docarc/docviewer.aspx?docguid=b75111c833454dda996a1463de251408" target="_blank" class="list-group-item list-group-item-action">Park information leaflet</a>
+                </div>
+
+                
+
+                </div>
+                    
+            </div>
+
+        </div>
+    </div>
+
+        <footer class="footer .hidden-print">
+            <div class="container">
+                <div class="row">
+
+<script>
+    $(document).ready(function () {
+        $('.feedbackOption').on('click', function(){
+            //console.log($(this).data
+            $("#feedbackOption").val($(this).data("option"));
+            console.log(window.location.pathname);
+            $(".feedbackInitiallyHidden").show();
+        });
+        $('#rateThisPage').on('click', openFeedbackDlg);
+        $('#btnSubmitFeedback').on('click', submitPageFeedback);
+    })
+ 
+    function openFeedbackDlg(){
+        $('#dlgFeedback').modal('show');
+    }
+
+    function submitPageFeedback() {
+        console.log("submit page feedback");
+        //var response = grecaptcha.getResponse();
+        //if(response.length == 0) 
+        //{ 
+        //    //reCaptcha not verified
+        //    alert("please verify you are human!"); 
+        //    return false;
+        //}
+        //else
+        //{
+            var data = {};
+            data['pageUrl'] = window.location.pathname;
+            data['rating'] = $('#feedbackOption').val();
+            data['pageName'] = "";
+            data['comments'] = $('#feedbackExplanation').val();
+            data['personName'] = "";
+            data['personAddress'] = "";
+            data['personEmail'] = $('#feedbackEmail').val();
+            data['personTelNum'] = "";
+    
+            $.ajax({
+                url: 'https://info.ambervalley.gov.uk/WebServices/AVBCFeeds/ComplaintsJSON.asmx/SubmitPageFeedback',
+                type: 'POST',
+                data: {
+                    "data": JSON.stringify(data)
+                },
+                dataType: 'json',
+                success: function (rdata) {
+                    console.log(rdata)
+                    //callback(rdata);
+                }
+                //error: function(xhr, ajaxOptions, thrownError) {
+                //    alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                //}
+            });
+        //}
+
+    }
+
+</script>
+
+ <div class="hidden-print">
+     
+    <div class="col-xs-6 col-sm-3">
+        <div class="subHeading">Contact us</div>
+        <ul>
+            <li>
+                <a href="/contact-us/">How to get in touch</a>
+            </li>
+            <!--<li>
+                <a href="#" id="rateThisPage">Rate this page</a>
+            </li>-->
+        </ul>   
+    </div> 
+    
+    <div class="col-xs-6 col-sm-3">
+        <div class="subHeading">Corporate</div>
+        <ul>
+            <li>
+                <a href="/our-website/accessibility/">Accessibility</a>
+            </li>
+            <li>
+                <a href="/council/data-protection/">Data protection</a>
+            </li>
+            <li>
+                <a href="/our-website/">Our website</a>
+            </li>    
+            <li>
+                <a href="/council/budgets-and-spending/transparency/">Transparency</a>
+            </li>             
+        </ul>
+    </div> 
+    
+    <div class="col-xs-6 col-sm-3">
+        <div class="subHeading">News</div>
+        <ul>
+            <li>
+                <a href="/council/news/">Latest news</a>
+            </li>
+            <li>
+                <a href="/council/public-notices/">Public notices</a>
+            </li>
+        </ul>
+        <br/>
+        <a href="https://twitter.com/AmberValleyBC" target="_blank"><img src="/media/2437/x_twiiter_logo.png" alt="Twitter" style="width: 30px; height: 30px;" /></a>
+        <a href="http://www.facebook.com/AmberValleyBC" target="_blank"><img src="/media/2435/facebook_logo.png" alt="Facebook" style="margin-left: 5px; width: 30px; height: 30px;" /></a>
+    <a href="https://www.linkedin.com/company/amber-valley-borough-council/posts/?feedView=all" target="_blank"><img src="/media/2436/linkedin_logo.png" alt="LinkedIn" style="margin-left: 5px; width: 30px; height: 30px;" /></a>
+    </div>
+     
+    <div class="col-xs-6 col-sm-3">
+        <div class="subHeading">Login</div>
+        <ul>
+            <li>
+                <a href="/councillors-area/">Councillor's area</a>
+            </li>
+        </ul>
+        <ul>
+        </ul>
+    </div>
+    
+</div>
+
+    <div id="dlgFeedback" class="modal fade" role="dialog">
+		<div class="modal-dialog" id="dlgModalFeedback">
+			<div class="modal-content">
+				<div class="modal-header" style="color: #FFFFFF; background-color:#008080;">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<p class="modal-title" style="color: #FFFFFF !important;background-color:#008080;text-align:center !important">Page feedback</p>
+				</div>
+				<div class="modal-body">
+					<div id="pnlFeedback">
+						<div class="dataListContainer">
+							<div class="dataItemRow">
+							    <p>Did this page help you with your query or service request?</p>
+                                <div class="feedbackChoice">
+                                    <div class="feedbackOption" data-option="Good"><img src="/images/feedback/feedbackGood.jpg" width="60" height="60" alt="Page Feedback Good" /><p>Yes</p></div>
+                                    <div class="feedbackOption" data-option="Partial"><img src="/images/feedback/feedbackNeutral.jpg" width="60" height="60" alt="Page Feedback Neutral" /><p>Partially</p></div>
+                                    <div class="feedbackOption" data-option="Poor"><img src="/images/feedback/feedbackPoor.jpg" width="60" height="60" alt="Page Feedback Poor" /><p>No</p></div>
+                                </div>	
+                                <input type="hidden" id="feedbackOption" name="feedbackOption" aria-hidden="true" />
+                            </div>
+ 							<div class="dataItemRow feedbackInitiallyHidden">	
+								<p><label for="feedbackExplanation">To help us improve our site please give a brief explanation of your rating:</label></p>
+								<textarea id="feedbackExplanation" style="width:100%" rows="5"></textarea>									 
+							</div>
+							<div class="dataItemRow feedbackInitiallyHidden">
+								 <p><label for="feedbackEmail">Email address:</label></p>
+								 <input type="text" id="feedbackEmail" style="width:100%" />
+							</div>
+							<div class="dataItemRow feedbackInitiallyHidden">
+							    <p>If you have a general comment or complaint about the council's services, please visit our 
+							    <a href="/council/comments-and-complaints/comments-and-compliments/">comments</a> or <a href="/council/comments-and-complaints/complaints/">complaints</a> page.</p>
+							</div>
+                        </div>
+					</div>
+				</div>
+				<div class="modal-footer feedbackInitiallyHidden">
+					<button type="button" class="btn btn-default fb9" data-dismiss="modal" id="btnSubmitFeedback">Submit</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+                </div>
+                <div class="row">
+		            <div class="copyright">&copy; Amber Valley Borough Council 2025</div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            $(document).ready(function () {
+                $('select option').filter(function() {
+                    return !this.value || $.trim(this.value).length == 0 ;
+                }).text("Please select");
+                
+                $(".umbraco-forms-form * input[type=text]").each(function(){
+                    if($('label[for="' + $(this).attr('name') + '"]').length == 0 && !$(this).attr('title')){
+                        !$(this).attr('title', 'hidden system field - please ignore');
+                        !$(this).attr('aria-hidden', 'true');
+                    }
+                });
+                $('a[title="View Fullscreen"]').html("-");
+                $('a[title="Layers"]').html("-");
+                //console.log($(".umbraco-forms-form * input[type=checkbox]").parent().parent());
+                //$(".umbraco-forms-form * input[type=checkbox]").parent().parent().css("float", "left !important");
+                //$(".umbraco-forms-form * input[type=checkbox]").parent().css("border", "1px solid blue");
+                //$(".umbraco-forms-form * input[type=checkbox]").parent().css("height", "30");
+            });
+        </script>
+        
+    </body>
+</html>
