@@ -15,7 +15,7 @@ export const store = {
   },
 };
 
-// v: been here, r: rating, t: date last changed, fav: saved as a favourite. All kept on this device only.
+// v: been here, r: rating, t: date last changed, fav: saved as a favourite. All kept on this device; ratings are also shared via /api/ratings (playground page).
 export type Mine = Record<string, { v?: boolean; r?: number; t?: string; fav?: boolean }>;
 export const getMine = () => {
   const mine = store.get<Mine>('sb-mine', {});
